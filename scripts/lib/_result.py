@@ -59,7 +59,7 @@ class Comparison:
                     self._geometric_mean = line.split("|")[3].strip() + suffix
                     break
             else:
-                return "not sig"
+                self._geometric_mean = "not sig"
 
         return self._geometric_mean
 

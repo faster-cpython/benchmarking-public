@@ -106,6 +106,7 @@ def main(cpython, all_with_prefix, latest_with_prefix, weekly_since, machine):
             _gh.benchmark(ref=commit.hash, machine=machine, publish=True)
             break
 
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         """

@@ -64,11 +64,6 @@ The following is only a summary of certain key revisions. There is also a [compl
 | [2022-11-12](results/bm-20221112-python-main-3.12.0a2+-57be545) | python | main | 3.12.0a2+ | 57be545 | [1.31x faster \*](results/bm-20221112-python-main-3.12.0a2+-57be545/bm-20221112-linux-amd64-python-main-3.12.0a2+-57be545-vs-3.10.4.md) | [1.01x faster \*](results/bm-20221112-python-main-3.12.0a2+-57be545/bm-20221112-linux-amd64-python-main-3.12.0a2+-57be545-vs-3.11.0b3.md) |  |
 | [2022-11-19](results/bm-20221119-python-main-3.12.0a3+-b0e1f9c) | python | main | 3.12.0a3+ | b0e1f9c | [1.31x faster \*](results/bm-20221119-python-main-3.12.0a3+-b0e1f9c/bm-20221119-linux-amd64-python-main-3.12.0a3+-b0e1f9c-vs-3.10.4.md) | [1.02x faster \*](results/bm-20221119-python-main-3.12.0a3+-b0e1f9c/bm-20221119-linux-amd64-python-main-3.12.0a3+-b0e1f9c-vs-3.11.0b3.md) |  |
 
-## windows amd64
-| date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0b3: | vs. base: |
-| --- | --- | --- | --- | --- | ---: | ---: | ---: |
-| [2022-12-15](results/bm-20221215-python-main-3.12.0a3+-b7e4f1d) | python | main | 3.12.0a3+ | b7e4f1d |  |  |  |
-
 <!-- END table -->
 
 `*` indicates that the exact same versions of pyperformance was not used.

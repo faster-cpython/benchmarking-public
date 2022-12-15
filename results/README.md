@@ -29,14 +29,6 @@
 | [2022-11-12](bm-20221112-python-main-3.12.0a2+-57be545) | python | main | 3.12.0a2+ | 57be545 | [1.31x faster \*](bm-20221112-python-main-3.12.0a2+-57be545/bm-20221112-linux-amd64-python-main-3.12.0a2+-57be545-vs-3.10.4.md) | [1.01x faster \*](bm-20221112-python-main-3.12.0a2+-57be545/bm-20221112-linux-amd64-python-main-3.12.0a2+-57be545-vs-3.11.0b3.md) |  |
 | [2022-11-19](bm-20221119-python-main-3.12.0a3+-b0e1f9c) | python | main | 3.12.0a3+ | b0e1f9c | [1.31x faster \*](bm-20221119-python-main-3.12.0a3+-b0e1f9c/bm-20221119-linux-amd64-python-main-3.12.0a3+-b0e1f9c-vs-3.10.4.md) | [1.02x faster \*](bm-20221119-python-main-3.12.0a3+-b0e1f9c/bm-20221119-linux-amd64-python-main-3.12.0a3+-b0e1f9c-vs-3.11.0b3.md) |  |
 
-## windows amd64
-| date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0b3: | vs. base: |
-| --- | --- | --- | --- | --- | ---: | ---: | ---: |
-| [2022-12-12](bm-20221212-mdboom-fix_pystats-3.12.0a3+-efa0bb6) | mdboom | fix_pystats | 3.12.0a3+ | efa0bb6 |  |  | [not sig](bm-20221212-mdboom-fix_pystats-3.12.0a3+-efa0bb6/bm-20221212-windows-amd64-mdboom-fix_pystats-3.12.0a3+-efa0bb6-vs-base.md) |
-| [2022-12-12](bm-20221212-python-158b8a07212cea6066af-3.12.0a3+-158b8a0) | python | 158b8a07212cea6066af | 3.12.0a3+ | 158b8a0 |  |  |  |
-| [2022-12-12](bm-20221212-python-158b8a07212cea6066af-3.12.0a3+-158b8a0721) | python | 158b8a07212cea6066af | 3.12.0a3+ | 158b8a0721 |  |  |  |
-| [2022-12-15](bm-20221215-python-main-3.12.0a3+-b7e4f1d) | python | main | 3.12.0a3+ | b7e4f1d |  |  |  |
-
 <!-- END table -->
 
 `*` indicates that the exact same versions of pyperformance was not used.

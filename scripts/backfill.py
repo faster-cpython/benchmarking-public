@@ -94,7 +94,8 @@ def main(cpython, all_with_prefix, latest_with_prefix, weekly_since, machine):
     print(f"{'date':10s} {'hash':7s} {'ref':15s} source")
     for commit in commits:
         print(
-            f"{str(commit.date)[:10]} {commit.hash[:7]:7s} {commit.ref[:15]:15s} {commit.source}"
+            f"{str(commit.date)[:10]} {commit.hash[:7]:7s} "
+            f"{commit.ref[:15]:15s} {commit.source}"
         )
 
     print()

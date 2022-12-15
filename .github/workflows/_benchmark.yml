@@ -1,0 +1,206 @@
+name: _benchmark
+
+env:
+  PYSTON_BENCHMARKS_HASH: 797dfd384464d648e91d23b65453471b8cf68eee
+
+"on":
+  workflow_call:
+    inputs:
+      fork:
+        description: 'Fork of cpython to benchmark'
+        type: string
+      ref:
+        description: 'Branch, tag or (full) SHA commit to benchmark'
+        type: string
+      machine:
+        description: 'Machine to run on'
+        type: string
+      benchmarks:
+        description: 'Benchmarks to run (comma-separated; empty runs all benchmarks)'
+        type: string
+      pgo:
+        description: 'Build with PGO'
+        type: boolean
+      publish:
+        description: 'Publish results to the public repo'
+        type: boolean
+      dry_run:
+        description: 'Dry run: Do not commit to the repo'
+        type: boolean
+
+jobs:
+  benchmark-windows:
+    if: ${{ inputs.machine == 'windows-x86_64' || inputs.machine == 'all' }}
+
+    runs-on: [self-hosted, windows]
+
+    steps:
+      # Tell git to checkout repos with symlinks (required by pyston
+      # benchmarks).
+      # Requires "Developer Mode" switched on in Windows 10/11
+      - name: core.symlinks
+        run: |
+          git config --global core.symlinks true
+      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        with:
+          repository: pyston/python-macrobenchmarks
+          path: pyston-benchmarks
+          ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+      - uses: actions/checkout@v3
+        with:
+          repository: mdboom/pyperformance
+          path: pyperformance
+          ref: fix-manifest-parsing
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ inputs.fork }}/cpython
+          path: cpython
+          ref: ${{ inputs.ref }}
+          fetch-depth: 0
+      # Install a "base" Python to run the pyperformance orchestration
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install pyperformance
+        run: |
+          python -m pip install setuptools wheel
+          python -m pip install .\pyperformance
+      - name: Build Python
+        run: |
+          cd cpython
+          PCbuild/build.bat ${{ inputs.pgo == 'true' && '--pgo' || '' }} -c Release
+          # Copy the build products to a place that libraries can find them.
+          Copy-Item -Path "PCBuild/amd64" -Destination "libs" -Recurse
+      - name: Running pyperformance
+        run: |
+          python scripts/run_benchmarks.py cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks }} ${{ inputs.publish }}
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: benchmark
+          path: |
+            benchmark.json
+      # Pull again, since another job may have committed results in the meantime
+      - name: pull
+        run: |
+          git pull
+      - name: Add to repo
+        uses: EndBug/add-and-commit@v9
+        if: ${{ !inputs.dry_run }}
+        with:
+          add: results
+          pull: '.'
+
+  benchmark-linux:
+    if: ${{ inputs.machine == 'linux-x86_64' || inputs.machine == 'all' }}
+
+    runs-on: [self-hosted, linux]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        with:
+          repository: pyston/python-macrobenchmarks
+          path: pyston-benchmarks
+          ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+      - uses: actions/checkout@v3
+        with:
+          repository: mdboom/pyperformance
+          path: pyperformance
+          ref: fix-manifest-parsing
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ inputs.fork }}/cpython
+          path: cpython
+          ref: ${{ inputs.ref }}
+          fetch-depth: 0
+      - name: Build Python
+        run: |
+          cd cpython
+          ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }}
+          make -j4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install pyperformance
+        run: |
+          python -m pip install setuptools wheel
+          python -m pip install ./pyperformance
+      - name: Tune system
+        run: |
+          sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH `which python` -m pyperf system tune
+      - name: Running pyperformance
+        run: |
+          python scripts/run_benchmarks.py cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks }} ${{ inputs.publish }}
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: benchmark
+          path: |
+            benchmark.json
+      # Pull again, since another job may have committed results in the meantime
+      - name: pull
+        run: |
+          git pull
+      - name: Add to repo
+        uses: EndBug/add-and-commit@v9
+        if: ${{ !inputs.dry_run }}
+        with:
+          add: results
+          pull: '.'
+
+  benchmark-macos:
+    if: ${{ inputs.machine == 'macos-arm64' || inputs.machine == 'all' }}
+
+    runs-on: [self-hosted, macos]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        with:
+          repository: pyston/python-macrobenchmarks
+          path: pyston-benchmarks
+          ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+      - uses: actions/checkout@v3
+        with:
+          repository: mdboom/pyperformance
+          path: pyperformance
+          ref: fix-manifest-parsing
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ inputs.fork }}/cpython
+          path: cpython
+          ref: ${{ inputs.ref }}
+          fetch-depth: 0
+      - name: Build Python
+        run: |
+          cd cpython
+          ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }}
+          make -j4
+      # On macos ARM64, actions/setup-python isn't available, so we rely on a
+      # pre-installed homebrew one, used through a venv
+      - name: Install pyperformance
+        run: |
+          python3 -m venv venv
+          venv/bin/python -m pip install setuptools wheel
+          venv/bin/python -m pip install ./pyperformance
+      - name: Running pyperformance
+        run: |
+          venv/bin/python scripts/run_benchmarks.py cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks }} ${{ inputs.publish }}
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: benchmark
+          path: |
+            benchmark.json
+      # Pull again, since another job may have committed results in the meantime
+      - name: pull
+        run: |
+          git pull
+      - name: Add to repo
+        uses: EndBug/add-and-commit@v9
+        if: ${{ !inputs.dry_run }}
+        with:
+          add: results
+          pull: '.'

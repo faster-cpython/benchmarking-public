@@ -1,0 +1,90 @@
+name: benchmark
+
+"on":
+  workflow_dispatch:
+    inputs:
+      fork:
+        description: 'Fork of cpython to benchmark'
+        default: 'python'
+      ref:
+        description: 'Branch, tag or (full) SHA commit to benchmark'
+        default: 'main'
+      machine:
+        description: 'Machine to run on'
+        default: 'linux-x86_64'
+        type: choice
+        options:
+        - linux-x86_64
+        - windows-x86_64
+        - macos-arm64
+        - all
+      benchmark_base:
+        description: 'Also benchmark the base of this commit'
+        type: boolean
+        default: false
+      publish:
+        description: 'Publish results to the public repo'
+        type: boolean
+        default: false
+
+jobs:
+  # Determine the base commit of the selected commit. The output is passed to
+  # the `base` job below. If the data already exists for this commit, it will be
+  # skipped.
+  determine_base:
+    runs-on: ubuntu-latest
+    outputs:
+      ref: ${{ steps.base.outputs.ref }}
+      need_to_run: ${{ steps.base.outputs.need_to_run }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        if: ${{ inputs.benchmark_base }}
+        with:
+          repository: ${{ inputs.fork }}/cpython
+          path: cpython
+          ref: ${{ inputs.ref }}
+          fetch-depth: 0
+      - name: Determine base
+        id: base
+        run: |
+          python scripts/get_merge_base.py ${{ inputs.benchmark_base }} >> $GITHUB_OUTPUT
+          cat $GITHUB_OUTPUT
+
+  head:
+    uses: ./.github/workflows/_benchmark.yml
+    with:
+      fork: ${{ inputs.fork }}
+      ref: ${{ inputs.ref }}
+      machine: ${{ inputs.machine }}
+      benchmarks: all
+      pgo: true
+      publish: ${{ inputs.publish }}
+    secrets: inherit
+
+  base:
+    uses: ./.github/workflows/_benchmark.yml
+    needs: determine_base
+    if: ${{ needs.determine_base.outputs.need_to_run != 'false' }}
+    with:
+      fork: python
+      ref: ${{ needs.determine_base.outputs.ref }}
+      machine: ${{ inputs.machine }}
+      benchmarks: all
+      pgo: true
+      publish: ${{ inputs.publish }}
+    secrets: inherit
+
+  generate:
+    uses: ./.github/workflows/_generate.yml
+    with:
+      force: false
+    if: ${{ always() }}
+    needs: [head, base]
+    secrets: inherit
+
+  publish:
+    uses: ./.github/workflows/_publish.yml
+    if: ${{ always() && inputs.publish }}
+    needs: [head, base]
+    secrets: inherit

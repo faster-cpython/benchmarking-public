@@ -30,7 +30,7 @@ env:
 
 jobs:
   benchmark-windows:
-    if: ${{ inputs.machine == 'windows-x86_64' || inputs.machine == 'all' }}
+    if: ${{ inputs.machine == 'windows-arm64' || inputs.machine == 'all' }}
 
     runs-on: [self-hosted, windows]
 
@@ -93,7 +93,7 @@ jobs:
           pull: '.'
 
   benchmark-linux:
-    if: ${{ inputs.machine == 'linux-x86_64' || inputs.machine == 'all' }}
+    if: ${{ inputs.machine == 'linux-arm64' || inputs.machine == 'all' }}
 
     runs-on: [self-hosted, linux]
 

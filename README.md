@@ -13,7 +13,7 @@ The available parameters are:
 - `ref`: The branch, tag or commit SHA to benchmark.
   If a SHA, it must be the full SHA, since finding it by a prefix is not supported.
 - `machine`: The machine to run on.
-  One of `linux-x86_64` (default), `windows-x86_64`, `macos-arm64` or `all`.
+  One of `linux-amd64` (default), `windows-amd64`, `macos-arm64` or `all`.
 - `benchmark_base`: If checked, the base of the selected branch will also be benchmarked.
   The base is determined by running `git merge-base upstream/main $ref`.
 - `publish`: If checked, the results will be published in the public [ideas repo](https://github.com/faster-cpython/ideas) upon successful completion.

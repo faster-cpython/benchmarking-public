@@ -137,7 +137,7 @@ if __name__ == "__main__":
         help="Select one commit per week since the given iso date, e.g. 2022-09-01",
     )
     parser.add_argument(
-        "--machine", default="linux-x86_64", help="The machine to run on."
+        "--machine", default="linux-arm64", help="The machine to run on."
     )
     parser.add_argument("cpython", help="The path to a checkout of CPython")
 

@@ -19,7 +19,7 @@ def _get_flags(d):
     return flags
 
 
-MACHINES = ["linux-x86_64", "windows-x86_64", "macos-arm64", "all"]
+MACHINES = ["linux-arm64", "windows-arm64", "macos-arm64", "all"]
 
 
 def benchmark(fork=None, ref=None, machine=None, benchmark_base=None, publish=None):

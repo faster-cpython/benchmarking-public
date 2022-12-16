@@ -1,9 +1,13 @@
 name: ci
 
-"on": [pull_request, push]
+"on":
+  pull_request:
+  push:
+    branches:
+      - main
 
 jobs:
-  ci:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

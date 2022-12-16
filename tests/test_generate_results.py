@@ -5,7 +5,6 @@ import shutil
 
 
 from scripts import generate_results
-from scripts.lib import _result
 
 
 DATA_PATH = Path(__file__).parent / "data"

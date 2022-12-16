@@ -90,8 +90,8 @@ def test_from_scratch(monkeypatch):
     )
 
     assert result.filename == Path(
-        f"results/bm-20221119-my_fork-9d38120e335357a3b294-{platform.version()}"
+        f"results/bm-20221119-my_fork-9d38120e335357a3b294-{platform.python_version()}"
         "-b7e4f1d/"
         f"bm-20221119-{platform.system().lower()}-{platform.machine().lower()}"
-        "-my_fork-9d38120e335357a3b294-3.10.6-b7e4f1d.json"
+        f"-my_fork-9d38120e335357a3b294-{platform.python_version()}-b7e4f1d.json"
     )

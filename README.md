@@ -48,6 +48,11 @@ Any of the parameters described above are available at the commandline using the
 The following is only a summary of certain key revisions. There is also a [complete list of results](results/README.md).
 
 <!-- START table -->
+## darwin arm64
+| date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0b3: | vs. base: |
+| --- | --- | --- | --- | --- | ---: | ---: | ---: |
+| [2022-12-16](results/bm-20221216-python-main-3.12.0a3+-432117c) | python | main | 3.12.0a3+ | 432117c |  |  |  |
+
 ## linux amd64
 | date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0b3: | vs. base: |
 | --- | --- | --- | --- | --- | ---: | ---: | ---: |

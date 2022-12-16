@@ -1,6 +1,11 @@
 # Benchmark results
 
 <!-- START table -->
+## darwin arm64
+| date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0b3: | vs. base: |
+| --- | --- | --- | --- | --- | ---: | ---: | ---: |
+| [2022-12-16](bm-20221216-python-main-3.12.0a3+-432117c) | python | main | 3.12.0a3+ | 432117c |  |  |  |
+
 ## linux amd64
 | date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0b3: | vs. base: |
 | --- | --- | --- | --- | --- | ---: | ---: | ---: |

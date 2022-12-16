@@ -5,6 +5,7 @@
 | date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0b3: | vs. base: |
 | --- | --- | --- | --- | --- | ---: | ---: | ---: |
 | [2021-11-05](bm-20211105-python-e2b4e4bab90b69fbd361-3.11.0a2-e2b4e4b) | python | e2b4e4bab90b69fbd361 | 3.11.0a2 | e2b4e4b |  |  |  |
+| [2021-12-08](bm-20211208-python-2e91dba437fe5c56c6f8-3.11.0a3-2e91dba) | python | 2e91dba437fe5c56c6f8 | 3.11.0a3 | 2e91dba |  |  |  |
 | [2022-12-16](bm-20221216-python-main-3.12.0a3+-432117c) | python | main | 3.12.0a3+ | 432117c |  |  |  |
 
 ## linux amd64

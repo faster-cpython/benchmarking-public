@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from lib import _gh
 from lib import _git
+from lib import _result
 
 
 DEFAULTS = (["v3.11"], ["v3.10"], ["2022-09-01"])
@@ -69,7 +70,18 @@ def get_weekly_since(cpython, entry):
                 break
 
 
-def main(cpython, all_with_prefix, latest_with_prefix, weekly_since, machine):
+def remove_existing(commits):
+    results = _result.load_all_results([], Path("results"))
+    has_commits = [result.cpython_hash for result in results]
+    commits = [
+        commit
+        for commit in commits
+        if not any(commit.hash.startswith(hash) for hash in has_commits)
+    ]
+    return commits
+
+
+def main(cpython, all_with_prefix, latest_with_prefix, weekly_since, machine, force):
     all_with_prefix = all_with_prefix or []
     latest_with_prefix = latest_with_prefix or []
     weekly_since = weekly_since or []
@@ -88,6 +100,9 @@ def main(cpython, all_with_prefix, latest_with_prefix, weekly_since, machine):
 
     for entry in weekly_since:
         commits.extend(get_weekly_since(cpython, entry))
+
+    if not force:
+        commits = remove_existing(commits)
 
     commits.sort(key=lambda x: x.date)
 
@@ -139,6 +154,11 @@ if __name__ == "__main__":
     parser.add_argument(
         "--machine", default="linux-arm64", help="The machine to run on."
     )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-run benchmark, even if we already have results for that commit hash.",
+    ),
     parser.add_argument("cpython", help="The path to a checkout of CPython")
 
     args = parser.parse_args()
@@ -149,4 +169,5 @@ if __name__ == "__main__":
         args.latest_with_prefix,
         args.weekly_since,
         args.machine,
+        args.force,
     )

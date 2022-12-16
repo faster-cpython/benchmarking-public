@@ -120,7 +120,6 @@ def main(cpython, all_with_prefix, latest_with_prefix, weekly_since, machine, fo
     if choice.lower() in ("y", "yes"):
         for commit in commits:
             _gh.benchmark(ref=commit.hash, machine=machine, publish=True)
-            break
 
 
 if __name__ == "__main__":
@@ -152,7 +151,7 @@ if __name__ == "__main__":
         help="Select one commit per week since the given iso date, e.g. 2022-09-01",
     )
     parser.add_argument(
-        "--machine", default="linux-arm64", help="The machine to run on."
+        "--machine", default="linux-amd64", help="The machine to run on."
     )
     parser.add_argument(
         "--force",

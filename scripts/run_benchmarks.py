@@ -22,7 +22,7 @@ def run_benchmarks(python, benchmarks):
 
     returncode = subprocess.call(
         [
-            "python",
+            "python3",
             "-m",
             "pyperformance",
             "run",

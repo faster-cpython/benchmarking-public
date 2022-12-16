@@ -76,7 +76,6 @@ def update_metadata(filename, fork, ref, publish):
 
 def copy_to_directory(filename, python, fork, ref):
     result = _result.Result.from_scratch(python, fork, ref)
-    result._commit_datetime = _git.get_git_commit_date("cpython")
     result.filename.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(filename, result.filename)
 

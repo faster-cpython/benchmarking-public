@@ -44,6 +44,7 @@ def replace_section(filename, name, content):
             if line == f"<!-- START {name} -->":
                 fd.write(line + "\n")
                 fd.write(content)
+                fd.write("\n")
 
                 while True:
                     line = next(lines)

@@ -154,7 +154,7 @@ class Result:
 
     @classmethod
     def from_scratch(cls, python, fork, ref):
-        return cls(
+        result = cls(
             _clean(_get_platform_value(python, "system")),
             _clean(_get_platform_value(python, "machine")),
             _clean(fork),
@@ -164,6 +164,8 @@ class Result:
             [],
             ".json",
         )
+        result._commit_datetime = _git.get_git_commit_date("cpython")
+        return result
 
     @property
     def filename(self):

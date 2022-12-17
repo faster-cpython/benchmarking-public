@@ -9,4 +9,6 @@
 ## darwin arm64
 
 - [raw results](bm-20220307-darwin-arm64-python-3ddfa55df48a67a5972f-3.11.0a6-3ddfa55.json)
+- [table vs. 3.11.0b3](bm-20220307-darwin-arm64-python-3ddfa55df48a67a5972f-3.11.0a6-3ddfa55-vs-3.11.0b3.md)
+- [plot vs. 3.11.0b3](bm-20220307-darwin-arm64-python-3ddfa55df48a67a5972f-3.11.0a6-3ddfa55-vs-3.11.0b3.png)
 

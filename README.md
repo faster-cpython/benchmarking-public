@@ -51,7 +51,7 @@ The following is only a summary of certain key revisions. There is also a [compl
 ## darwin arm64
 | date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0b3: | vs. base: |
 | --- | --- | --- | --- | --- | ---: | ---: | ---: |
-| [2022-12-16](results/bm-20221216-python-main-3.12.0a3+-432117c) | python | main | 3.12.0a3+ | 432117c |  |  |  |
+| [2022-12-16](results/bm-20221216-python-main-3.12.0a3+-432117c) | python | main | 3.12.0a3+ | 432117c |  | [1.05x faster](results/bm-20221216-python-main-3.12.0a3+-432117c/bm-20221216-darwin-arm64-python-main-3.12.0a3+-432117c-vs-3.11.0b3.md) |  |
 
 ## linux amd64
 | date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0b3: | vs. base: |

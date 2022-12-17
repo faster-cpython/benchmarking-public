@@ -4,6 +4,7 @@
 ## darwin arm64
 | date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0b3: | vs. base: |
 | --- | --- | --- | --- | --- | ---: | ---: | ---: |
+| [2022-10-24](bm-20221024-python-deaf509e8fc6e0363bd6-3.11.0-deaf509) | python | deaf509e8fc6e0363bd6 | 3.11.0 | deaf509 |  | [1.01x faster](bm-20221024-python-deaf509e8fc6e0363bd6-3.11.0-deaf509/bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509-vs-3.11.0b3.md) |  |
 | [2021-11-05](bm-20211105-python-e2b4e4bab90b69fbd361-3.11.0a2-e2b4e4b) | python | e2b4e4bab90b69fbd361 | 3.11.0a2 | e2b4e4b |  | [1.05x slower](bm-20211105-python-e2b4e4bab90b69fbd361-3.11.0a2-e2b4e4b/bm-20211105-darwin-arm64-python-e2b4e4bab90b69fbd361-3.11.0a2-e2b4e4b-vs-3.11.0b3.md) |  |
 | [2021-12-08](bm-20211208-python-2e91dba437fe5c56c6f8-3.11.0a3-2e91dba) | python | 2e91dba437fe5c56c6f8 | 3.11.0a3 | 2e91dba |  | [1.07x slower](bm-20211208-python-2e91dba437fe5c56c6f8-3.11.0a3-2e91dba/bm-20211208-darwin-arm64-python-2e91dba437fe5c56c6f8-3.11.0a3-2e91dba-vs-3.11.0b3.md) |  |
 | [2022-01-13](bm-20220113-python-9471106fd5b47418ffd2-3.11.0a4-9471106) | python | 9471106fd5b47418ffd2 | 3.11.0a4 | 9471106 |  | [1.05x slower](bm-20220113-python-9471106fd5b47418ffd2-3.11.0a4-9471106/bm-20220113-darwin-arm64-python-9471106fd5b47418ffd2-3.11.0a4-9471106-vs-3.11.0b3.md) |  |

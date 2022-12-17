@@ -34,6 +34,7 @@
 | [2022-11-21](bm-20221121-python-cdde29dde90947df9bac-3.12.0a2+-cdde29d) | python | cdde29dde90947df9bac | 3.12.0a2+ | cdde29d |  | [1.01x faster](bm-20221121-python-cdde29dde90947df9bac-3.12.0a2+-cdde29d/bm-20221121-darwin-arm64-python-cdde29dde90947df9bac-3.12.0a2+-cdde29d-vs-3.11.0b3.md) |  |
 | [2022-11-28](bm-20221128-python-594de165bf2f21d6b28e-3.12.0a2+-594de16) | python | 594de165bf2f21d6b28e | 3.12.0a2+ | 594de16 |  | [1.00x faster](bm-20221128-python-594de165bf2f21d6b28e-3.12.0a2+-594de16/bm-20221128-darwin-arm64-python-594de165bf2f21d6b28e-3.12.0a2+-594de16-vs-3.11.0b3.md) |  |
 | [2022-12-05](bm-20221205-python-e3a3863cb9561705d3dd-3.12.0a2+-e3a3863) | python | e3a3863cb9561705d3dd | 3.12.0a2+ | e3a3863 |  | [1.01x slower](bm-20221205-python-e3a3863cb9561705d3dd-3.12.0a2+-e3a3863/bm-20221205-darwin-arm64-python-e3a3863cb9561705d3dd-3.12.0a2+-e3a3863-vs-3.11.0b3.md) |  |
+| [2022-12-11](bm-20221211-python-70be5e42f6e288de32e0-3.12.0a3+-70be5e4) | python | 70be5e42f6e288de32e0 | 3.12.0a3+ | 70be5e4 |  | [1.05x faster](bm-20221211-python-70be5e42f6e288de32e0-3.12.0a3+-70be5e4/bm-20221211-darwin-arm64-python-70be5e42f6e288de32e0-3.12.0a3+-70be5e4-vs-3.11.0b3.md) |  |
 | [2022-12-16](bm-20221216-python-main-3.12.0a3+-432117c) | python | main | 3.12.0a3+ | 432117c |  | [1.05x faster](bm-20221216-python-main-3.12.0a3+-432117c/bm-20221216-darwin-arm64-python-main-3.12.0a3+-432117c-vs-3.11.0b3.md) |  |
 
 ## linux amd64

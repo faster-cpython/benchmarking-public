@@ -11,6 +11,7 @@
 | [2022-03-07](bm-20220307-python-3ddfa55df48a67a5972f-3.11.0a6-3ddfa55) | python | 3ddfa55df48a67a5972f | 3.11.0a6 | 3ddfa55 |  | [1.00x faster](bm-20220307-python-3ddfa55df48a67a5972f-3.11.0a6-3ddfa55/bm-20220307-darwin-arm64-python-3ddfa55df48a67a5972f-3.11.0a6-3ddfa55-vs-3.11.0b3.md) |  |
 | [2022-04-05](bm-20220405-python-2e49bd06c5ffab7d1540-3.11.0a7-2e49bd0) | python | 2e49bd06c5ffab7d1540 | 3.11.0a7 | 2e49bd0 |  | [1.01x faster](bm-20220405-python-2e49bd06c5ffab7d1540-3.11.0a7-2e49bd0/bm-20220405-darwin-arm64-python-2e49bd06c5ffab7d1540-3.11.0a7-2e49bd0-vs-3.11.0b3.md) |  |
 | [2022-05-06](bm-20220506-python-8d32a5c8c4e9c90b0a21-3.11.0b1-8d32a5c) | python | 8d32a5c8c4e9c90b0a21 | 3.11.0b1 | 8d32a5c |  | [1.01x faster](bm-20220506-python-8d32a5c8c4e9c90b0a21-3.11.0b1-8d32a5c/bm-20220506-darwin-arm64-python-8d32a5c8c4e9c90b0a21-3.11.0b1-8d32a5c-vs-3.11.0b3.md) |  |
+| [2022-05-30](bm-20220530-python-72f00f420afaba3bc873-3.11.0b2-72f00f4) | python | 72f00f420afaba3bc873 | 3.11.0b2 | 72f00f4 |  | [1.00x faster](bm-20220530-python-72f00f420afaba3bc873-3.11.0b2-72f00f4/bm-20220530-darwin-arm64-python-72f00f420afaba3bc873-3.11.0b2-72f00f4-vs-3.11.0b3.md) |  |
 | [2022-06-01](bm-20220601-python-eb0004c27163ec089201-3.11.0b3-eb0004c) | python | eb0004c27163ec089201 | 3.11.0b3 | eb0004c |  |  |  |
 | [2022-12-16](bm-20221216-python-main-3.12.0a3+-432117c) | python | main | 3.12.0a3+ | 432117c |  | [1.05x faster](bm-20221216-python-main-3.12.0a3+-432117c/bm-20221216-darwin-arm64-python-main-3.12.0a3+-432117c-vs-3.11.0b3.md) |  |
 

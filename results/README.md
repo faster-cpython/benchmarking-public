@@ -10,6 +10,7 @@
 | [2022-02-03](bm-20220203-python-c4e4b91557f18f881f39-3.11.0a5-c4e4b91) | python | c4e4b91557f18f881f39 | 3.11.0a5 | c4e4b91 |  |  |  |
 | [2022-03-07](bm-20220307-python-3ddfa55df48a67a5972f-3.11.0a6-3ddfa55) | python | 3ddfa55df48a67a5972f | 3.11.0a6 | 3ddfa55 |  |  |  |
 | [2022-04-05](bm-20220405-python-2e49bd06c5ffab7d1540-3.11.0a7-2e49bd0) | python | 2e49bd06c5ffab7d1540 | 3.11.0a7 | 2e49bd0 |  |  |  |
+| [2022-05-06](bm-20220506-python-8d32a5c8c4e9c90b0a21-3.11.0b1-8d32a5c) | python | 8d32a5c8c4e9c90b0a21 | 3.11.0b1 | 8d32a5c |  |  |  |
 | [2022-12-16](bm-20221216-python-main-3.12.0a3+-432117c) | python | main | 3.12.0a3+ | 432117c |  |  |  |
 
 ## linux amd64

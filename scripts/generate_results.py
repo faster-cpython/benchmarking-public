@@ -48,7 +48,7 @@ def save_generated_results(results, force=False):
     print()
 
 
-def output_results_table(fd, bases, results, filename):
+def output_results_index(fd, bases, results, filename):
     """
     Outputs a results index table.
     """
@@ -112,8 +112,9 @@ def results_by_platform(results):
 
 def summarize_results(results):
     """
-    Create a shorter list of results where only the most recent for each Python
-    version is included.
+    Create a shorter list of results where only the most recent result for each
+    Python version is included. Only results from the main `python` fork are
+    included.
     """
     results = list(results)
     new_results = []
@@ -127,7 +128,7 @@ def summarize_results(results):
     return new_results[::-1]
 
 
-def generate_table(filename, bases, results, summarize):
+def generate_index(filename, bases, results, summarize=False):
     """
     Generate the tables, by each platform.
     """
@@ -136,21 +137,20 @@ def generate_table(filename, bases, results, summarize):
         content.write(f"## {system} {machine}\n")
         if summarize:
             results = summarize_results(results)
-        output_results_table(content, bases, results, filename)
+        output_results_index(content, bases, results, filename)
         content.write("\n")
     _table.replace_section(filename, "table", content.getvalue())
 
 
-def generate_tables(bases, results, repo_dir):
-    generate_table(repo_dir / "README.md", bases, results, True)
-    generate_table(repo_dir / "results" / "README.md", bases, results, False)
+def generate_master_indices(bases, results, repo_dir):
+    """
+    Generate both indices:
 
-
-def link_to_hash(hash, fork):
-    return _table.md_link(
-        hash,
-        f"https://github.com/{fork}/cpython/commit/{hash}",
-    )
+    - The summary one in `./README.md`
+    - The full on in `./results/README.md`
+    """
+    generate_index(repo_dir / "README.md", bases, results, True)
+    generate_index(repo_dir / "results" / "README.md", bases, results, False)
 
 
 def generate_directory_indices(results_dir):
@@ -160,6 +160,7 @@ def generate_directory_indices(results_dir):
     for path in results_dir.iterdir():
         if not path.is_dir():
             continue
+
         results = []
         for filename in path.iterdir():
             if filename.name == "README.md":
@@ -167,22 +168,24 @@ def generate_directory_indices(results_dir):
             results.append(_result.Result.from_filename(filename))
         if not len(results):
             continue
+
         for result in results:
             if result.suffix == ".json":
                 break
         else:
             raise ValueError(f"Couldn't find raw results in {path}")
+
         with open(path / "README.md", "w") as fd:
             fd.write("# Results\n\n")
 
             entries = [
                 ("fork", result.fork),
                 ("ref", result.ref),
-                ("commit hash", link_to_hash(result.cpython_hash, result.fork)),
+                ("commit hash", _table.link_to_hash(result.cpython_hash, result.fork)),
                 ("commit date", result.commit_datetime),
                 (
                     "commit merge base",
-                    link_to_hash(result.commit_merge_base, result.fork),
+                    _table.link_to_hash(result.commit_merge_base, result.fork),
                 ),
             ]
 
@@ -219,7 +222,7 @@ def main(repo_dir, force=False):
     print("Generating comparison tables")
     save_generated_results(results, force=force)
     print("Generating indices")
-    generate_tables(bases, results, repo_dir)
+    generate_master_indices(bases, results, repo_dir)
     generate_directory_indices(repo_dir / "results")
 
 

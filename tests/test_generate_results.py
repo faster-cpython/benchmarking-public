@@ -16,13 +16,6 @@ def _copy_repo(tmp_path):
     return repo_path
 
 
-def test_link_to_hash():
-    assert (
-        generate_results.link_to_hash("MYHASH", "MYFORK")
-        == "[MYHASH](https://github.com/MYFORK/cpython/commit/MYHASH)"
-    )
-
-
 def test_main(tmp_path):
     repo_path = _copy_repo(tmp_path)
     results_path = repo_path / "results"

@@ -62,3 +62,13 @@ def md_link(text, link, root=None):
     if root is not None:
         link = Path(link).resolve().relative_to(Path(root).parent.resolve())
     return f"[{text}]({link})"
+
+
+def link_to_hash(hash, fork):
+    """
+    Create a markdown link to a specific hash of a specific fork on GitHub.
+    """
+    return md_link(
+        hash,
+        f"https://github.com/{fork}/cpython/commit/{hash}",
+    )

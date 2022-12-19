@@ -56,3 +56,10 @@ def test_md_link():
     assert _table.md_link("text", "link") == "[text](link)"
     assert _table.md_link("text", "relative/link", "relative/other") == "[text](link)"
     assert _table.md_link("text", "relative/link", "other") == "[text](relative/link)"
+
+
+def test_link_to_hash():
+    assert (
+        _table.link_to_hash("MYHASH", "MYFORK")
+        == "[MYHASH](https://github.com/MYFORK/cpython/commit/MYHASH)"
+    )

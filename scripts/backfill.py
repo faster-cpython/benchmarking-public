@@ -16,6 +16,9 @@ DEFAULTS = (["v3.11"], ["v3.10"], ["2022-09-01"])
 
 
 class Commit:
+    """
+    Represents a single commit to possibly benchmark.
+    """
     def __init__(self, cpython, ref, source):
         self.ref = ref
         hash, date = _git.get_log("%H %cI", cpython, ref).split()
@@ -24,37 +27,49 @@ class Commit:
         self.source = source
 
 
-def get_all_with_prefix(cpython, tags, entry):
+def get_all_with_prefix(cpython, tags, prefix):
+    """
+    Get all tags with the given prefix.
+    """
     for tag in tags:
-        if tag.startswith(entry):
-            yield Commit(cpython, tag, f"--all-with-prefix {entry}")
+        if tag.startswith(prefix):
+            yield Commit(cpython, tag, f"--all-with-prefix {prefix}")
 
 
-def get_latest_with_prefix(cpython, tags, entry):
+def get_latest_with_prefix(cpython, tags, prefix):
+    """
+    Get the most recent (by commit date) tag with the given prefix.
+    """
     commits = []
     for tag in tags:
-        if tag.startswith(entry):
-            commits.append(Commit(cpython, tag, f"--latest-with-prefix {entry}"))
+        if tag.startswith(prefix):
+            commits.append(Commit(cpython, tag, f"--latest-with-prefix {prefix}"))
 
     commits.sort(key=lambda x: x.date)
     yield commits[-1]
 
 
 def next_weekday(d, weekday):
+    """
+    Given datetime `d`, returns the next date on the given ISO weekday.
+    """
     days_ahead = weekday - d.weekday()
     if days_ahead <= 0:  # Target day already happened this week
         days_ahead += 7
     return d + datetime.timedelta(days_ahead)
 
 
-def get_weekly_since(cpython, entry):
-    start_date = datetime.datetime.fromisoformat(entry).replace(
+def get_weekly_since(cpython, start_date):
+    """
+    Get weekly commits on Sundays since the given start date.
+    """
+    start_date = datetime.datetime.fromisoformat(start_date).replace(
         tzinfo=datetime.timezone.utc
     )
     today = datetime.datetime.now().replace(tzinfo=datetime.timezone.utc)
 
     commits = _git.get_log(
-        "%cI %h", cpython, n=None, extra=[f"--since={entry}"]
+        "%cI %h", cpython, n=None, extra=[f"--since={start_date}"]
     ).splitlines()
     commits.sort()
     commits = [x.split() for x in commits]
@@ -65,12 +80,23 @@ def get_weekly_since(cpython, entry):
         while len(commits):
             commit_date, ref = commits.pop(0)
             if commit_date > current_date:
-                yield Commit(cpython, ref, f"--weekly-since {entry}")
+                yield Commit(cpython, ref, f"--weekly-since {start_date}")
                 current_date = next_weekday(current_date, 7)
                 break
 
 
-def remove_existing(commits):
+def remove_existing(commits, machine):
+    """
+    Remove any commits that we already have results for the given machine.
+    """
+    if machine == "all":
+        all_commits = set()
+        for submachine in _gh.MACHINES:
+            if submachine == "all":
+                continue
+            all_commits |= set(remove_existing(commits, submachine))
+        return list(all_commits)
+
     results = _result.load_all_results([], Path("results"))
     has_commits = [result.cpython_hash for result in results]
     commits = [

@@ -77,7 +77,7 @@ def output_results_table(fd, bases, results, filename):
             [
                 _table.md_link(result.commit_date, result.filename.parent, filename),
                 result.fork,
-                result.ref,
+                result.ref[:10],
                 result.version,
                 result.cpython_hash,
             ]

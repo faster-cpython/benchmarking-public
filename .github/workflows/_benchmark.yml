@@ -150,10 +150,10 @@ jobs:
           add: results
           pull: '.'
 
-  benchmark-macos:
-    if: ${{ inputs.machine == 'macos-arm64' || inputs.machine == 'all' }}
+  benchmark-darwin:
+    if: ${{ inputs.machine == 'darwin-arm64' || inputs.machine == 'all' }}
 
-    runs-on: [self-hosted, macos]
+    runs-on: [self-hosted, darwin]
 
     steps:
       - uses: actions/checkout@v3

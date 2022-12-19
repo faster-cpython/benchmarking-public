@@ -1,3 +1,7 @@
+from pathlib import Path
+from typing import Any, Dict
+
+
 from matplotlib import pyplot as plt
 import matplotlib
 import numpy as np
@@ -6,7 +10,10 @@ import numpy as np
 matplotlib.use("agg")
 
 
-def get_data(result):
+from lib import _result
+
+
+def get_data(result: _result.Result) -> Dict[str, Any]:
     results = {}
 
     for benchmark in result.contents["benchmarks"]:
@@ -63,7 +70,9 @@ def formatter(val, pos):
     return f"{val:.02f}x"
 
 
-def plot_diff(ref, head, output_filename, title):
+def plot_diff(
+    ref: _result.Result, head: _result.Result, output_filename: Path, title: str
+) -> None:
     ref_data = get_data(ref)
     head_data = get_data(head)
 

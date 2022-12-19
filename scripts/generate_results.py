@@ -2,6 +2,7 @@ import argparse
 import io
 from pathlib import Path
 import sys
+from typing import Iterable, List, TextIO, Tuple
 
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -14,7 +15,9 @@ from lib import _table
 from lib import _util
 
 
-def save_generated_results(results, force=False):
+def save_generated_results(
+    results: Iterable[_result.Result], force: bool = False
+) -> None:
     """
     Write out the comparison tables and plots for every result.
 
@@ -48,7 +51,9 @@ def save_generated_results(results, force=False):
     print()
 
 
-def output_results_index(fd, bases, results, filename):
+def output_results_index(
+    fd: TextIO, bases: List[str], results: Iterable[_result.Result], filename: Path
+):
     """
     Outputs a results index table.
     """
@@ -86,7 +91,9 @@ def output_results_index(fd, bases, results, filename):
     _table.output_table(fd, head, rows)
 
 
-def results_by_platform(results):
+def results_by_platform(
+    results: Iterable[_result.Result],
+) -> Iterable[Tuple[str, str, Iterable[_result.Result]]]:
     """
     Separate results by platform (system/machine pairs).
     """
@@ -110,7 +117,7 @@ def results_by_platform(results):
         )
 
 
-def summarize_results(results):
+def summarize_results(results: Iterable[_result.Result]) -> Iterable[_result.Result]:
     """
     Create a shorter list of results where only the most recent result for each
     Python version is included. Only results from the main `python` fork are
@@ -128,7 +135,12 @@ def summarize_results(results):
     return new_results[::-1]
 
 
-def generate_index(filename, bases, results, summarize=False):
+def generate_index(
+    filename: Path,
+    bases: List[str],
+    results: Iterable[_result.Result],
+    summarize: bool = False,
+) -> None:
     """
     Generate the tables, by each platform.
     """
@@ -142,7 +154,9 @@ def generate_index(filename, bases, results, summarize=False):
     _table.replace_section(filename, "table", content.getvalue())
 
 
-def generate_master_indices(bases, results, repo_dir):
+def generate_master_indices(
+    bases: List[str], results: Iterable[_result.Result], repo_dir: Path
+) -> None:
     """
     Generate both indices:
 
@@ -153,7 +167,7 @@ def generate_master_indices(bases, results, repo_dir):
     generate_index(repo_dir / "results" / "README.md", bases, results, False)
 
 
-def generate_directory_indices(results_dir):
+def generate_directory_indices(results_dir: Path) -> None:
     """
     Generate the indices that go in each results directory.
     """
@@ -213,7 +227,7 @@ def generate_directory_indices(results_dir):
                 fd.write("\n")
 
 
-def main(repo_dir, force=False):
+def main(repo_dir: Path, force: bool = False):
     results_dir = repo_dir / "results"
     bases = _bases.get_bases()
     print(f"Comparing to bases {bases}")

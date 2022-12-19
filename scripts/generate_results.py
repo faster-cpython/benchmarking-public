@@ -90,10 +90,13 @@ def results_by_platform(results):
     """
     Separate results by platform (system/machine pairs).
     """
+    # We want linux first, as the most meaningful/reliable one
+    order = ["linux", "windows", "darwin"]
+
     platforms = set()
     for result in results:
         platforms.add((result.system, result.machine))
-    platforms = sorted(list(platforms))
+    platforms = sorted(list(platforms), key=lambda x: (order.index(x[0]), x[1]))
 
     for system, machine in platforms:
         yield (

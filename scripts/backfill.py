@@ -98,6 +98,13 @@ def remove_existing(commits, machine):
         return list(all_commits)
 
     results = _result.load_all_results([], Path("results"))
+    if machine != "all":
+        system, machine = machine.split("-")
+        results = [
+            result
+            for result in results
+            if result.system == system and result.machine == machine
+        ]
     has_commits = [result.cpython_hash for result in results]
     commits = [
         commit
@@ -128,7 +135,7 @@ def main(cpython, all_with_prefix, latest_with_prefix, weekly_since, machine, fo
         commits.extend(get_weekly_since(cpython, entry))
 
     if not force:
-        commits = remove_existing(commits)
+        commits = remove_existing(commits, machine)
 
     commits.sort(key=lambda x: x.date)
 
@@ -177,7 +184,10 @@ if __name__ == "__main__":
         help="Select one commit per week since the given iso date, e.g. 2022-09-01",
     )
     parser.add_argument(
-        "--machine", default="linux-amd64", help="The machine to run on."
+        "--machine",
+        choices=_gh.MACHINES,
+        default="linux-amd64",
+        help="The machine to run on.",
     )
     parser.add_argument(
         "--force",

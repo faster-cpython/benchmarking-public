@@ -2,4 +2,5 @@ black==22.12.0
 flake8==6.0.0
 matplotlib==3.6.2
 pyperf==2.5.0
+pyright==1.1.284
 pytest==7.2.0

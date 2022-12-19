@@ -2,6 +2,7 @@ import argparse
 import datetime
 from pathlib import Path
 import sys
+from typing import Iterable, Sequence
 
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -19,7 +20,8 @@ class Commit:
     """
     Represents a single commit to possibly benchmark.
     """
-    def __init__(self, cpython, ref, source):
+
+    def __init__(self, cpython: Path, ref: str, source: str):
         self.ref = ref
         hash, date = _git.get_log("%H %cI", cpython, ref).split()
         self.hash = hash
@@ -27,7 +29,9 @@ class Commit:
         self.source = source
 
 
-def get_all_with_prefix(cpython, tags, prefix):
+def get_all_with_prefix(
+    cpython: Path, tags: Iterable[str], prefix: str
+) -> Iterable[Commit]:
     """
     Get all tags with the given prefix.
     """
@@ -36,7 +40,9 @@ def get_all_with_prefix(cpython, tags, prefix):
             yield Commit(cpython, tag, f"--all-with-prefix {prefix}")
 
 
-def get_latest_with_prefix(cpython, tags, prefix):
+def get_latest_with_prefix(
+    cpython: Path, tags: Iterable[str], prefix: str
+) -> Iterable[Commit]:
     """
     Get the most recent (by commit date) tag with the given prefix.
     """
@@ -49,7 +55,7 @@ def get_latest_with_prefix(cpython, tags, prefix):
     yield commits[-1]
 
 
-def next_weekday(d, weekday):
+def next_weekday(d: datetime.datetime, weekday: int) -> datetime.datetime:
     """
     Given datetime `d`, returns the next date on the given ISO weekday.
     """
@@ -59,23 +65,23 @@ def next_weekday(d, weekday):
     return d + datetime.timedelta(days_ahead)
 
 
-def get_weekly_since(cpython, start_date):
+def get_weekly_since(cpython: Path, start_date: str) -> Iterable[Commit]:
     """
     Get weekly commits on Sundays since the given start date.
     """
-    start_date = datetime.datetime.fromisoformat(start_date).replace(
+    start = datetime.datetime.fromisoformat(start_date).replace(
         tzinfo=datetime.timezone.utc
     )
     today = datetime.datetime.now().replace(tzinfo=datetime.timezone.utc)
 
     commits = _git.get_log(
-        "%cI %h", cpython, n=None, extra=[f"--since={start_date}"]
+        "%cI %h", cpython, n=0, extra=[f"--since={start_date}"]
     ).splitlines()
     commits.sort()
     commits = [x.split() for x in commits]
     commits = [(datetime.datetime.fromisoformat(x), y) for x, y in commits]
 
-    current_date = next_weekday(start_date, 7)
+    current_date = next_weekday(start, 7)
     while current_date < today and len(commits):
         while len(commits):
             commit_date, ref = commits.pop(0)
@@ -85,36 +91,63 @@ def get_weekly_since(cpython, start_date):
                 break
 
 
-def remove_existing(commits, machine):
+def remove_existing(
+    commits: Iterable[Commit], machine: str, results=None
+) -> Iterable[Commit]:
     """
     Remove any commits that we already have results for the given machine.
     """
+    if results is None:
+        results = _result.load_all_results([], Path("results"))
+
     if machine == "all":
         all_commits = set()
         for submachine in _gh.MACHINES:
             if submachine == "all":
                 continue
-            all_commits |= set(remove_existing(commits, submachine))
-        return list(all_commits)
+            all_commits |= set(remove_existing(commits, submachine, results))
+        yield from all_commits
+        return
 
-    results = _result.load_all_results([], Path("results"))
-    if machine != "all":
-        system, machine = machine.split("-")
-        results = [
-            result
-            for result in results
-            if result.system == system and result.machine == machine
-        ]
-    has_commits = [result.cpython_hash for result in results]
-    commits = [
-        commit
-        for commit in commits
-        if not any(commit.hash.startswith(hash) for hash in has_commits)
-    ]
-    return commits
+    system, machine = machine.split("-")
+
+    for commit in commits:
+        for result in results:
+            if (
+                result.system == system
+                and result.machine == machine
+                and commit.hash.startswith(result.cpython_hash)
+            ):
+                break
+        else:
+            yield commit
 
 
-def main(cpython, all_with_prefix, latest_with_prefix, weekly_since, machine, force):
+def get_commits(
+    cpython: Path,
+    tags: Iterable[str],
+    all_with_prefix: Iterable[str],
+    latest_with_prefix: Iterable[str],
+    weekly_since: Iterable[str],
+) -> Iterable[Commit]:
+    for entry in all_with_prefix:
+        yield from get_all_with_prefix(cpython, tags, entry)
+
+    for entry in latest_with_prefix:
+        yield from get_latest_with_prefix(cpython, tags, entry)
+
+    for entry in weekly_since:
+        yield from get_weekly_since(cpython, entry)
+
+
+def main(
+    cpython: Path,
+    all_with_prefix: Sequence[str] | None,
+    latest_with_prefix: Sequence[str] | None,
+    weekly_since: Sequence[str] | None,
+    machine: str,
+    force: bool,
+) -> None:
     all_with_prefix = all_with_prefix or []
     latest_with_prefix = latest_with_prefix or []
     weekly_since = weekly_since or []
@@ -122,22 +155,16 @@ def main(cpython, all_with_prefix, latest_with_prefix, weekly_since, machine, fo
     if all_with_prefix == [] and latest_with_prefix == [] and weekly_since == []:
         all_with_prefix, latest_with_prefix, weekly_since = DEFAULTS
 
-    commits = []
     tags = _git.get_tags(cpython)
 
-    for entry in all_with_prefix:
-        commits.extend(get_all_with_prefix(cpython, tags, entry))
-
-    for entry in latest_with_prefix:
-        commits.extend(get_latest_with_prefix(cpython, tags, entry))
-
-    for entry in weekly_since:
-        commits.extend(get_weekly_since(cpython, entry))
+    commits = get_commits(
+        cpython, tags, all_with_prefix, latest_with_prefix, weekly_since
+    )
 
     if not force:
         commits = remove_existing(commits, machine)
 
-    commits.sort(key=lambda x: x.date)
+    commits = sorted(commits, key=lambda x: x.date)
 
     print(f"{'date':10s} {'hash':7s} {'ref':15s} source")
     for commit in commits:
@@ -194,7 +221,7 @@ if __name__ == "__main__":
         action="store_true",
         help="Re-run benchmark, even if we already have results for that commit hash.",
     ),
-    parser.add_argument("cpython", help="The path to a checkout of CPython")
+    parser.add_argument("cpython", type=Path, help="The path to a checkout of CPython")
 
     args = parser.parse_args()
 

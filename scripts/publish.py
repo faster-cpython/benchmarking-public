@@ -4,7 +4,7 @@ from pathlib import Path
 import shutil
 
 
-def main(src, dst):
+def main(src: Path, dst: Path):
     for srcfile in Path(src).glob("**/*.json"):
         with open(srcfile) as fd:
             contents = json.load(fd)
@@ -19,8 +19,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         "Copies .json files flagged as 'publish' from a source dir to a dest dir."
     )
-    parser.add_argument("src")
-    parser.add_argument("dst")
+    parser.add_argument("src", type=Path)
+    parser.add_argument("dst", type=Path)
 
     args = parser.parse_args()
 

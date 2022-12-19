@@ -13,10 +13,10 @@ from lib import _git
 from lib import _result
 
 
-BENCHMARK_JSON = "benchmark.json"
+BENCHMARK_JSON = Path("benchmark.json")
 
 
-def run_benchmarks(python, benchmarks):
+def run_benchmarks(python: Path | str, benchmarks: str) -> None:
     if benchmarks.strip() == "":
         benchmarks = "all"
 
@@ -51,8 +51,8 @@ def run_benchmarks(python, benchmarks):
             sys.exit(1)
 
 
-def update_metadata(filename, fork, ref, publish):
-    publish = publish.lower() == "true"
+def update_metadata(filename: Path, fork: str, ref: str, publish: str) -> None:
+    publish_bool = publish.lower() == "true"
 
     with open(filename) as fd:
         content = json.load(fd)
@@ -68,19 +68,19 @@ def update_metadata(filename, fork, ref, publish):
     metadata["benchmark_hash"] = _git.generate_combined_hash(
         ["pyperformance", "pyston-benchmarks"]
     )
-    metadata["publish"] = publish
+    metadata["publish"] = publish_bool
 
     with open(filename, "w") as fd:
         json.dump(content, fd, indent=2)
 
 
-def copy_to_directory(filename, python, fork, ref):
+def copy_to_directory(filename: Path, python: str, fork: str, ref: str) -> None:
     result = _result.Result.from_scratch(python, fork, ref)
     result.filename.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(filename, result.filename)
 
 
-def main(python, fork, ref, benchmarks, publish):
+def main(python: str, fork: str, ref: str, benchmarks: str, publish: str) -> None:
     run_benchmarks(python, benchmarks)
     update_metadata(BENCHMARK_JSON, fork, ref, publish)
     copy_to_directory(BENCHMARK_JSON, python, fork, ref)

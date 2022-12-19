@@ -5,12 +5,13 @@ import functools
 import json
 from pathlib import Path
 import subprocess
+from typing import Any, Dict, Iterable, List
 
 
 from lib import _git
 
 
-def _clean(string):
+def _clean(string: str) -> str:
     """
     Clean an arbitrary string to be suitable for a filename.
 
@@ -19,7 +20,7 @@ def _clean(string):
     return string.replace("-", "_")
 
 
-def _get_platform_value(python, item):
+def _get_platform_value(python: str, item: str) -> str:
     """
     Get a value from the platform module of the given Python interpreter.
     """
@@ -30,7 +31,7 @@ def _get_platform_value(python, item):
 
 
 class Comparison:
-    def __init__(self, ref, head, base):
+    def __init__(self, ref: "Result", head: "Result", base: str):
         self.ref = ref
         self.head = head
         self.base = base
@@ -38,12 +39,15 @@ class Comparison:
         self._geometric_mean = None
 
     @property
-    def geometric_mean(self):
+    def geometric_mean(self) -> str:
         if self.ref == self.head:
             return ""
 
         if self._geometric_mean is None:
             contents = self.contents
+            if contents is None:
+                return ""
+
             lines = list(contents.splitlines())
 
             if (
@@ -64,8 +68,11 @@ class Comparison:
         return self._geometric_mean
 
     @property
-    def contents(self):
+    def contents(self) -> str | None:
         if self._contents is None:
+            if self.filename is None:
+                return None
+
             if self.filename.with_suffix(".md").is_file():
                 with open(
                     self.filename.with_suffix(".md"), "r", encoding="utf-8"
@@ -87,7 +94,7 @@ class Comparison:
         return self._contents
 
     @property
-    def filename(self):
+    def filename(self) -> Path | None:
         if self.ref == self.head:
             return None
 
@@ -103,15 +110,15 @@ class Result:
 
     def __init__(
         self,
-        system,
-        machine,
-        fork,
-        ref,
-        version,
-        cpython_hash,
-        extra=[],
-        suffix=".json",
-        commit_datetime=None,
+        system: str,
+        machine: str,
+        fork: str,
+        ref: str,
+        version: str,
+        cpython_hash: str,
+        extra: List[str] = [],
+        suffix: str = ".json",
+        commit_datetime: str | None = None,
     ):
         self.system = system
         self.machine = machine
@@ -126,7 +133,7 @@ class Result:
         self.bases = {}
 
     @classmethod
-    def from_filename(cls, filename):
+    def from_filename(cls, filename: Path) -> "Result":
         (
             name,
             date,
@@ -153,7 +160,7 @@ class Result:
         return obj
 
     @classmethod
-    def from_scratch(cls, python, fork, ref):
+    def from_scratch(cls, python: str, fork: str, ref: str) -> "Result":
         result = cls(
             _clean(_get_platform_value(python, "system")),
             _clean(_get_platform_value(python, "machine")),
@@ -163,12 +170,12 @@ class Result:
             _git.get_git_hash("cpython")[:7],
             [],
             ".json",
+            commit_datetime=_git.get_git_commit_date("cpython"),
         )
-        result._commit_datetime = _git.get_git_commit_date("cpython")
         return result
 
     @property
-    def filename(self):
+    def filename(self) -> Path:
         if self._filename is None:
             date = self.commit_date.replace("-", "")
             if self.extra:
@@ -208,33 +215,33 @@ class Result:
 
     @property
     @functools.cache
-    def contents(self):
+    def contents(self) -> Dict[str, Any]:
         with open(self.filename) as fd:
             return json.load(fd)
 
     @property
-    def metadata(self):
+    def metadata(self) -> Dict[str, Any]:
         return self.contents.get("metadata", {})
 
     @property
-    def commit_datetime(self):
+    def commit_datetime(self) -> str:
         if self._commit_datetime is not None:
             return self._commit_datetime
         return self.metadata.get("commit_date", "<unknown>")
 
     @property
-    def commit_date(self):
+    def commit_date(self) -> str:
         return self.commit_datetime[:10]
 
     @property
-    def commit_merge_base(self):
+    def commit_merge_base(self) -> str:
         return self.metadata.get("commit_merge_base", None)
 
     @property
-    def benchmark_hash(self):
+    def benchmark_hash(self) -> str:
         return self.metadata.get("benchmark_hash", None)
 
-    def match_to_bases(self, bases, results):
+    def match_to_bases(self, bases: List[str], results: Iterable["Result"]) -> None:
         loose_results = [
             ref
             for ref in results
@@ -274,7 +281,7 @@ class Result:
             find_match("base", lambda ref: merge_base.startswith(ref.cpython_hash))
 
 
-def load_all_results(bases, results_dir):
+def load_all_results(bases: List[str], results_dir: Path) -> List[Result]:
     results = []
 
     for entry in results_dir.glob("**/*.json"):

@@ -4,9 +4,12 @@ Utilities to generate markdown tables.
 
 
 from pathlib import Path
+from typing import TextIO, Sequence
 
 
-def output_table(fd, head, rows):
+def output_table(
+    fd: TextIO, head: Sequence[str], rows: Sequence[Sequence[str]]
+) -> None:
     """
     Output a table in markdown format.
     """
@@ -20,7 +23,7 @@ def output_table(fd, head, rows):
         output_row(row)
 
 
-def replace_section(filename, name, content):
+def replace_section(filename: Path, name: str, content: str) -> None:
     """
     Replace a table in a markdown file with the new content.
 
@@ -55,7 +58,7 @@ def replace_section(filename, name, content):
                 fd.write(line + "\n")
 
 
-def md_link(text, link, root=None):
+def md_link(text: str, link: str | Path, root: str | Path | None = None) -> str:
     """
     Formats a Markdown link. The link is resolved relative to the given root.
     """
@@ -64,7 +67,7 @@ def md_link(text, link, root=None):
     return f"[{text}]({link})"
 
 
-def link_to_hash(hash, fork):
+def link_to_hash(hash: str, fork: str) -> str:
     """
     Create a markdown link to a specific hash of a specific fork on GitHub.
     """

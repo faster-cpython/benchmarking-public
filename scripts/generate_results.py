@@ -116,7 +116,7 @@ def summarize_results(results):
     new_results = []
     prev_version = None
     for result in results[::-1]:
-        if not (result.fork == "python" and result.ref == "main"):
+        if result.fork != "python":
             continue
         if result.version != prev_version:
             new_results.append(result)

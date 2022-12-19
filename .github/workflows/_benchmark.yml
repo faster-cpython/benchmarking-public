@@ -152,7 +152,7 @@ jobs:
   benchmark-darwin:
     if: ${{ inputs.machine == 'darwin-arm64' || inputs.machine == 'all' }}
 
-    runs-on: [self-hosted, darwin]
+    runs-on: [self-hosted, macos]
 
     steps:
       - uses: actions/checkout@v3

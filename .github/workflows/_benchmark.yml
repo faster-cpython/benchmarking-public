@@ -30,7 +30,8 @@ env:
 
 jobs:
   benchmark-windows:
-    if: ${{ inputs.machine == 'windows-arm64' || inputs.machine == 'all' }}
+    # TODO: Disabling Windows entirely for now since we don't have the machine
+    if: ${{ false && (inputs.machine == 'windows-amd64' || inputs.machine == 'all') }}
 
     runs-on: [self-hosted, windows]
 
@@ -38,7 +39,7 @@ jobs:
       # Tell git to checkout repos with symlinks (required by pyston
       # benchmarks).
       # Requires "Developer Mode" switched on in Windows 10/11
-      - name: core.symlinks
+      - name: Enable symlinks for git
         run: |
           git config --global core.symlinks true
       - uses: actions/checkout@v3
@@ -90,10 +91,9 @@ jobs:
         if: ${{ !inputs.dry_run }}
         with:
           add: results
-          pull: '.'
 
   benchmark-linux:
-    if: ${{ inputs.machine == 'linux-arm64' || inputs.machine == 'all' }}
+    if: ${{ inputs.machine == 'linux-amd64' || inputs.machine == 'all' }}
 
     runs-on: [self-hosted, linux]
 
@@ -148,7 +148,6 @@ jobs:
         if: ${{ !inputs.dry_run }}
         with:
           add: results
-          pull: '.'
 
   benchmark-darwin:
     if: ${{ inputs.machine == 'darwin-arm64' || inputs.machine == 'all' }}
@@ -206,4 +205,3 @@ jobs:
         if: ${{ !inputs.dry_run }}
         with:
           add: results
-          pull: '.'

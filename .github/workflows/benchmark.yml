@@ -11,11 +11,11 @@ name: benchmark
         default: 'main'
       machine:
         description: 'Machine to run on'
-        default: 'linux-arm64'
+        default: 'linux-amd64'
         type: choice
         options:
-        - linux-arm64
-        - windows-arm64
+        - linux-amd64
+        - windows-amd64
         - darwin-arm64
         - all
       benchmark_base:

@@ -8,6 +8,9 @@ import subprocess
 from typing import Any, Dict, Iterable, List, Optional
 
 
+from packaging import version as pkg_version
+
+
 from lib import _git
 
 
@@ -292,6 +295,11 @@ def load_all_results(bases: List[str], results_dir: Path) -> List[Result]:
     for result in results:
         result.match_to_bases(bases, results)
 
-    results.sort(key=lambda x: (x.version, x.commit_datetime))
+    results.sort(
+        key=lambda x: (
+            pkg_version.parse(x.version.replace("+", "0")),
+            x.commit_datetime,
+        )
+    )
 
     return results

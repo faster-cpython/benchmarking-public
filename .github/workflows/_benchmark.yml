@@ -58,7 +58,7 @@ jobs:
           repository: ${{ inputs.fork }}/cpython
           path: cpython
           ref: ${{ inputs.ref }}
-          fetch-depth: 0
+          fetch-depth: 50
       # Install a "base" Python to run the pyperformance orchestration
       - uses: actions/setup-python@v4
         with:
@@ -114,7 +114,7 @@ jobs:
           repository: ${{ inputs.fork }}/cpython
           path: cpython
           ref: ${{ inputs.ref }}
-          fetch-depth: 0
+          fetch-depth: 50
       - name: Build Python
         run: |
           cd cpython
@@ -171,7 +171,7 @@ jobs:
           repository: ${{ inputs.fork }}/cpython
           path: cpython
           ref: ${{ inputs.ref }}
-          fetch-depth: 0
+          fetch-depth: 50
       - name: Setup environment
         run: |
           echo "PKG_CONFIG_PATH=$(brew --prefix openssl@1.1)/lib/pkgconfig" >> $GITHUB_ENV

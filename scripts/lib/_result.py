@@ -5,7 +5,7 @@ import functools
 import json
 from pathlib import Path
 import subprocess
-from typing import Any, Dict, Iterable, List
+from typing import Any, Dict, Iterable, List, Optional
 
 
 from lib import _git
@@ -68,7 +68,7 @@ class Comparison:
         return self._geometric_mean
 
     @property
-    def contents(self) -> str | None:
+    def contents(self) -> Optional[str]:
         if self._contents is None:
             if self.filename is None:
                 return None
@@ -94,7 +94,7 @@ class Comparison:
         return self._contents
 
     @property
-    def filename(self) -> Path | None:
+    def filename(self) -> Optional[Path]:
         if self.ref == self.head:
             return None
 
@@ -118,7 +118,7 @@ class Result:
         cpython_hash: str,
         extra: List[str] = [],
         suffix: str = ".json",
-        commit_datetime: str | None = None,
+        commit_datetime: Optional[str] = None,
     ):
         self.system = system
         self.machine = machine

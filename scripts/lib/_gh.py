@@ -4,7 +4,7 @@ Utilities to use the `gh` CLI for workflow automation.
 
 from pathlib import Path
 import subprocess
-from typing import Any, List, Mapping
+from typing import Any, List, Mapping, Optional
 
 
 def _get_flags(d: Mapping[str, Any]) -> List[str]:
@@ -24,11 +24,11 @@ MACHINES = ["linux-amd64", "windows-amd64", "darwin-arm64", "all"]
 
 
 def benchmark(
-    fork: str | None = None,
-    ref: str | None = None,
-    machine: str | None = None,
-    benchmark_base: bool | None = None,
-    publish: bool | None = None,
+    fork: Optional[str] = None,
+    ref: Optional[str] = None,
+    machine: Optional[str] = None,
+    benchmark_base: Optional[str] = None,
+    publish: Optional[str] = None,
 ) -> None:
     if not (fork is None or isinstance(fork, str)):
         raise TypeError(f"fork must be a str, got {type(fork)}")

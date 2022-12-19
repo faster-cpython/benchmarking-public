@@ -3,13 +3,13 @@
 
 import hashlib
 import subprocess
-from typing import Iterable, List
+from typing import Iterable, List, Optional
 
 
 def get_log(
     format: str,
     dirname,
-    ref: str | None = None,
+    ref: Optional[str] = None,
     n: int = 1,
     extra: List[str] = [],
 ) -> str:

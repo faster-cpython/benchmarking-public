@@ -4,3 +4,4 @@ matplotlib==3.6.2
 pyperf==2.5.0
 pyright==1.1.284
 pytest==7.2.0
+yamllint==1.28.0

@@ -58,6 +58,11 @@ To set this up, create a personal access token with commit rights to the ideas r
 
 The implementation of this workflow is in `scripts/publish.py`.
 
+### _weekly.yml
+
+This does a benchmarking run automatically every Sunday.
+It tests `python/cpython main` on Linux-x86_64 and then publishes the results.
+
 ## Results naming convention
 
 Results are organized into directories.

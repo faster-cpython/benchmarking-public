@@ -1,5 +1,7 @@
 # Faster CPython Benchmark Infrastructure
 
+[▶️ START A BENCHMARK RUN](https://github.com/faster-cpython/benchmarking/actions/workflows/benchmark.yml)
+
 For documentation about how this works, see the [developer docs](DEVELOPER.md).
 
 ## Running benchmarks from the GitHub web UI

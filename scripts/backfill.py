@@ -179,7 +179,7 @@ def main(
 
     if choice.lower() in ("y", "yes"):
         for commit in commits:
-            _gh.benchmark(ref=commit.hash, machine=machine, publish='true')
+            _gh.benchmark(ref=commit.hash, machine=machine, publish="true")
 
 
 if __name__ == "__main__":

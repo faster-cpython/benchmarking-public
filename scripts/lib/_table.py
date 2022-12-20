@@ -58,7 +58,9 @@ def replace_section(filename: Path, name: str, content: str) -> None:
                 fd.write(line + "\n")
 
 
-def md_link(text: str, link: Union[str, Path], root: Union[str, Path, None] = None) -> str:
+def md_link(
+    text: str, link: Union[str, Path], root: Union[str, Path, None] = None
+) -> str:
     """
     Formats a Markdown link. The link is resolved relative to the given root.
     """

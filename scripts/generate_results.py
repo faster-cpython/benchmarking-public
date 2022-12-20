@@ -3,7 +3,7 @@ import io
 from pathlib import Path
 import re
 import sys
-from typing import Iterable, List, TextIO, Tuple
+from typing import Iterable, List, Optional, TextIO, Tuple
 
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -237,9 +237,10 @@ def generate_directory_indices(results_dir: Path) -> None:
                 fd.write("\n")
 
 
-def main(repo_dir: Path, force: bool = False):
+def main(repo_dir: Path, force: bool = False, bases: Optional[List[str]] = None):
     results_dir = repo_dir / "results"
-    bases = _bases.get_bases()
+    if bases is None:
+        bases = _bases.get_bases()
     print(f"Comparing to bases {bases}")
     results = _result.load_all_results(bases, results_dir)
     print(f"Found {len(results)} results")

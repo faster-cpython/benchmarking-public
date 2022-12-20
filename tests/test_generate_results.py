@@ -35,7 +35,7 @@ def test_main(tmp_path):
         json.dump(contents, fd)
     # End hack
 
-    generate_results.main(repo_path)
+    generate_results.main(repo_path, bases=["3.10.4", "3.11.0b3"])
 
     for dirpath in results_path.iterdir():
         if not dirpath.is_dir():

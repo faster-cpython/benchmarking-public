@@ -1,6 +1,7 @@
 import argparse
 import io
 from pathlib import Path
+import re
 import sys
 from typing import Iterable, List, TextIO, Tuple
 
@@ -48,6 +49,15 @@ def save_generated_results(
                     )
                 else:
                     _util.status("/")
+
+        # Remove any outdated comparison files if the bases have changed.
+        for filename in result.filename.parent.iterdir():
+            match = re.match(r".*-vs-(?P<base>.*)", filename.stem)
+            if match is not None:
+                if match.group("base") not in result.bases:
+                    _util.status("x")
+                    filename.unlink()
+
     print()
 
 

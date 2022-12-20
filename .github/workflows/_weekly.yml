@@ -1,0 +1,29 @@
+name: Weekly benchmark
+
+"on":
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  weekly:
+    uses: ./.github/workflows/_benchmark.yml
+    with:
+      fork: python
+      ref: main
+      machine: linux-amd64
+      benchmarks: all
+      pgo: true
+      publish: true
+    secrets: inherit
+
+  generate:
+    uses: ./.github/workflows/_generate.yml
+    with:
+      force: false
+    needs: [weekly]
+    secrets: inherit
+
+  publish:
+    uses: ./.github/workflows/_publish.yml
+    needs: [weekly]
+    secrets: inherit

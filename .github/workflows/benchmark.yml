@@ -1,3 +1,4 @@
+---
 name: benchmark
 
 "on":
@@ -14,10 +15,10 @@ name: benchmark
         default: 'linux-amd64'
         type: choice
         options:
-        - linux-amd64
-        - windows-amd64
-        - darwin-arm64
-        - all
+          - linux-amd64
+          - windows-amd64
+          - darwin-arm64
+          - all
       benchmark_base:
         description: 'Also benchmark the base of this commit'
         type: boolean

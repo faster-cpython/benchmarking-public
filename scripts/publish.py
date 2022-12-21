@@ -4,15 +4,25 @@ from pathlib import Path
 import shutil
 
 
-def main(src: Path, dst: Path):
+def copy(srcfile: Path, src: Path, dst: Path) -> None:
+    dstfile = dst / srcfile.relative_to(src)
+    dstfile.parent.mkdir(parents=True, exist_ok=True)
+    print(f"Copying {srcfile.resolve()} to {dstfile.resolve()}")
+    shutil.copyfile(srcfile, dstfile)
+
+
+def main(src: Path, dst: Path) -> None:
     for srcfile in Path(src).glob("**/*.json"):
         with open(srcfile) as fd:
             contents = json.load(fd)
         if contents.get("metadata", {}).get("publish"):
-            dstfile = dst / srcfile.relative_to(src)
-            dstfile.parent.mkdir(parents=True, exist_ok=True)
-            print(f"Copying {srcfile.resolve()} to {dstfile.resolve()}")
-            shutil.copyfile(srcfile, dstfile)
+            copy(srcfile, src, dst)
+
+            # pystats have a companion markdown file
+            if srcfile.name.endswith("-pystats.json"):
+                copy(
+                    Path(str(srcfile).replace("-pystats.json", "-pystats.md")), src, dst
+                )
 
 
 if __name__ == "__main__":

@@ -19,8 +19,15 @@ name: benchmark
           - windows-amd64
           - darwin-arm64
           - all
+      benchmarks:
+        description: 'Benchmarks to run (comma-separated; empty runs all benchmarks)'
+        type: string
       benchmark_base:
         description: 'Also benchmark the base of this commit'
+        type: boolean
+        default: false
+      pystats:
+        description: 'Also collect pystats for this commit'
         type: boolean
         default: false
       publish:
@@ -58,7 +65,7 @@ jobs:
       fork: ${{ inputs.fork }}
       ref: ${{ inputs.ref }}
       machine: ${{ inputs.machine }}
-      benchmarks: all
+      benchmarks: ${{ inputs.benchmarks }}
       pgo: true
       publish: ${{ inputs.publish }}
     secrets: inherit
@@ -71,9 +78,30 @@ jobs:
       fork: python
       ref: ${{ needs.determine_base.outputs.ref }}
       machine: ${{ inputs.machine }}
-      benchmarks: all
+      benchmarks: ${{ inputs.benchmarks }}
       pgo: true
       publish: ${{ inputs.publish }}
+    secrets: inherit
+
+  pystats-head:
+    uses: ./.github/workflows/_pystats.yml
+    if: ${{ inputs.pystats }}
+    with:
+      fork: ${{ inputs.fork }}
+      ref: ${{ inputs.ref }}
+      benchmarks: ${{ inputs.benchmarks }}
+      publish: ${{ inputs.publish }}
+    secrets: inherit
+
+  pystats-base:
+    uses: ./.github/workflows/_pystats.yml
+    needs: determine_base
+    if: ${{ inputs.pystats && needs.determine_base.outputs.need_to_run != 'false' }}
+    with:
+      fork: python
+      ref: ${{ needs.determine_base.outputs.ref }}
+      benchmarks: ${{ inputs.benchmarks }}
+      publish:: ${{ inputs.publish }}
     secrets: inherit
 
   generate:

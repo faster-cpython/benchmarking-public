@@ -194,7 +194,7 @@ def generate_directory_indices(results_dir: Path) -> None:
             continue
 
         for result in results:
-            if result.suffix == ".json":
+            if result.result_type == "raw results":
                 break
         else:
             raise ValueError(f"Couldn't find raw results in {path}")
@@ -221,20 +221,11 @@ def generate_directory_indices(results_dir: Path) -> None:
                 results = sorted(results, key=lambda x: (x.extra, x.suffix))
                 fd.write(f"## {system} {machine}\n\n")
                 for result in results:
-                    if result.suffix == ".json":
-                        fd.write(
-                            f"- {_table.md_link('raw results', result.filename.name)}\n"
-                        )
-                    elif result.suffix in (".md", ".png"):
-                        if result.suffix == ".md":
-                            filetype = "table"
-                        else:
-                            filetype = "plot"
-                        link = _table.md_link(
-                            f"{filetype} vs. {result.extra[-1]}", result.filename.name
-                        )
-                        fd.write(f"- {link}\n")
+                    link = _table.md_link(result.result_type, result.filename.name)
+                    fd.write(f"- {link}\n")
                 fd.write("\n")
+
+        _util.status(".")
 
 
 def main(repo_dir: Path, force: bool = False, bases: Optional[List[str]] = None):
@@ -249,6 +240,7 @@ def main(repo_dir: Path, force: bool = False, bases: Optional[List[str]] = None)
     print("Generating indices")
     generate_master_indices(bases, results, repo_dir)
     generate_directory_indices(repo_dir / "results")
+    print()
 
 
 if __name__ == "__main__":

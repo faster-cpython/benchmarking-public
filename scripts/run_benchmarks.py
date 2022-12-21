@@ -4,6 +4,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import textwrap
 from typing import Union
 
 
@@ -60,7 +61,7 @@ def update_metadata(
     with open(filename) as fd:
         content = json.load(fd)
 
-    metadata = content["metadata"]
+    metadata = content.setdefault("metadata", {})
 
     metadata["commit_id"] = _git.get_git_hash(cpython)
     metadata["commit_fork"] = fork
@@ -85,10 +86,54 @@ def copy_to_directory(filename: Path, python: str, fork: str, ref: str) -> None:
     shutil.copyfile(filename, result.filename)
 
 
-def main(python: str, fork: str, ref: str, benchmarks: str, publish: str) -> None:
+def run_summarize_stats(python: str, fork: str, ref: str, publish: str) -> None:
+    summarize_stats_path = (
+        Path(python).parent / "Tools" / "scripts" / "summarize_stats.py"
+    )
+
+    table = subprocess.check_output(
+        [python, summarize_stats_path, "--json-output", "pystats.json"],
+        encoding="utf-8",
+    )
+
+    header = textwrap.dedent(
+        f"""
+    # Pystats results
+
+    - fork: {fork}
+    - ref: {ref}
+    - commit hash: {_git.get_git_hash('cpython')[:7]}
+    - commit date: {_git.get_git_commit_date('cpython')}
+
+    """
+    )
+
+    result = _result.Result.from_scratch(python, fork, ref, ["pystats"])
+    result.filename.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(
+        result.filename.with_suffix(".md"),
+        "w",
+    ) as fd:
+        fd.write(header)
+        fd.write(table)
+
+    update_metadata(Path("pystats.json"), fork, ref, publish)
+    shutil.copy(
+        "pystats.json",
+        result.filename.with_suffix(".json"),
+    )
+
+
+def main(
+    mode: str, python: str, fork: str, ref: str, benchmarks: str, publish: str
+) -> None:
     run_benchmarks(python, benchmarks)
-    update_metadata(BENCHMARK_JSON, fork, ref, publish)
-    copy_to_directory(BENCHMARK_JSON, python, fork, ref)
+    if mode == "benchmark":
+        update_metadata(BENCHMARK_JSON, fork, ref, publish)
+        copy_to_directory(BENCHMARK_JSON, python, fork, ref)
+    elif mode == "pystats":
+        run_summarize_stats(python, fork, ref, publish)
 
 
 if __name__ == "__main__":
@@ -99,6 +144,9 @@ if __name__ == "__main__":
         correct location in the results tree.
         """
     )
+    parser.add_argument(
+        "mode", choices=["benchmark", "pystats"], help="The mode of execution"
+    )
     parser.add_argument("python", help="The path to the Python executable")
     parser.add_argument("fork", help="The fork of CPython")
     parser.add_argument("ref", help="The git ref in the fork")
@@ -106,4 +154,4 @@ if __name__ == "__main__":
     parser.add_argument("publish", help="Publish results to the public repo")
     args = parser.parse_args()
 
-    main(args.python, args.fork, args.ref, args.benchmarks, args.publish)
+    main(args.mode, args.python, args.fork, args.ref, args.benchmarks, args.publish)

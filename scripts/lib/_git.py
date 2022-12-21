@@ -3,6 +3,7 @@
 
 import datetime
 import hashlib
+from pathlib import Path
 import subprocess
 from typing import Iterable, List, Optional
 
@@ -86,6 +87,7 @@ def get_tags(dirname) -> List[str]:
 def generate_combined_hash(dirs: Iterable) -> str:
     hash = hashlib.sha256()
     for dirname in dirs:
-        subhash = get_git_hash(dirname)
-        hash.update(subhash.encode("ascii"))
+        if Path(dirname).is_dir():
+            subhash = get_git_hash(dirname)
+            hash.update(subhash.encode("ascii"))
     return hash.hexdigest()[:6]

@@ -52,7 +52,9 @@ def run_benchmarks(python: Union[Path, str], benchmarks: str) -> None:
             sys.exit(1)
 
 
-def update_metadata(filename: Path, fork: str, ref: str, publish: str) -> None:
+def update_metadata(
+    filename: Path, fork: str, ref: str, publish: str, cpython="cpython"
+) -> None:
     publish_bool = publish.lower() == "true"
 
     with open(filename) as fd:
@@ -60,12 +62,12 @@ def update_metadata(filename: Path, fork: str, ref: str, publish: str) -> None:
 
     metadata = content["metadata"]
 
-    metadata["commit_id"] = _git.get_git_hash("cpython")
+    metadata["commit_id"] = _git.get_git_hash(cpython)
     metadata["commit_fork"] = fork
     metadata["commit_branch"] = ref
-    metadata["commit_date"] = _git.get_git_commit_date("cpython")
+    metadata["commit_date"] = _git.get_git_commit_date(cpython)
     if fork != "python" and ref != "main":
-        merge_base = _git.get_git_merge_base("cpython")
+        merge_base = _git.get_git_merge_base(cpython)
         if merge_base is not None:
             metadata["commit_merge_base"] = merge_base
     metadata["benchmark_hash"] = _git.generate_combined_hash(

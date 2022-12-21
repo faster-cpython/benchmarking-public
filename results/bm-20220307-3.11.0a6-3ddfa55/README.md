@@ -1,7 +1,7 @@
 # Results
 
 - fork: python
-- ref: main
+- ref: 3ddfa55df48a67a5972f
 - commit hash: [3ddfa55](https://github.com/python/cpython/commit/3ddfa55)
 - commit date: 2022-03-07T12:32:18+00:00
 - commit merge base: [None](https://github.com/python/cpython/commit/None)

@@ -1,7 +1,7 @@
 # Results
 
 - fork: python
-- ref: v3.11.0
+- ref: deaf509e8fc6e0363bd6
 - commit hash: [deaf509](https://github.com/python/cpython/commit/deaf509)
 - commit date: 2022-10-24T18:35:39+01:00
 - commit merge base: [None](https://github.com/python/cpython/commit/None)

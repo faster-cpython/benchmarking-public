@@ -4,6 +4,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+from typing import Union
 
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -16,7 +17,7 @@ from lib import _result
 BENCHMARK_JSON = Path("benchmark.json")
 
 
-def run_benchmarks(python: Path | str, benchmarks: str) -> None:
+def run_benchmarks(python: Union[Path, str], benchmarks: str) -> None:
     if benchmarks.strip() == "":
         benchmarks = "all"
 

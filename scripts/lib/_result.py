@@ -62,10 +62,12 @@ class Comparison:
                 suffix = ""
 
             for line in lines:
+                # We want to get the *last* geometric mean in the file, in case
+                # it's divided by tags
                 if "Geometric mean" in line:
                     self._geometric_mean = line.split("|")[3].strip() + suffix
-                    break
-            else:
+
+            if self._geometric_mean is None:
                 self._geometric_mean = "not sig"
 
         return self._geometric_mean

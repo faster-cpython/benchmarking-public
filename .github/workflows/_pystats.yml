@@ -18,7 +18,6 @@ env:
       benchmarks:
         description: 'Benchmarks to run (comma-separated; empty runs all benchmarks)'
         type: string
-        default: all
       publish:
         description: 'Publish results to the public repo'
         type: boolean

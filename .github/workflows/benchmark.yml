@@ -109,11 +109,11 @@ jobs:
     with:
       force: false
     if: ${{ always() }}
-    needs: [head, base]
+    needs: [head, base, pystats-head, pystats-base]
     secrets: inherit
 
   publish:
     uses: ./.github/workflows/_publish.yml
     if: ${{ always() && inputs.publish }}
-    needs: [head, base]
+    needs: [head, base, pystats-head, pystats-base]
     secrets: inherit

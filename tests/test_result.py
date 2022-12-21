@@ -47,7 +47,7 @@ def test_merge_base(tmp_path):
     # Hack up so one of the results has an explicit commit_merge_base
     result_with_base = (
         results_path
-        / "bm-20221119-python-main-3.12.0a3+-b0e1f9c"
+        / "bm-20221119-3.12.0a3+-b0e1f9c"
         / "bm-20221119-linux-x86_64-python-main-3.12.0a3+-b0e1f9c.json"
     )
     with open(result_with_base) as fd:
@@ -90,8 +90,7 @@ def test_from_scratch(monkeypatch):
     )
 
     assert result.filename == Path(
-        f"results/bm-20221119-my_fork-9d38120e335357a3b294-{platform.python_version()}"
-        "-b7e4f1d/"
+        f"results/bm-20221119-{platform.python_version()}-b7e4f1d/"
         f"bm-20221119-{platform.system().lower()}-{platform.machine().lower()}"
         f"-my_fork-9d38120e335357a3b294-{platform.python_version()}-b7e4f1d.json"
     )

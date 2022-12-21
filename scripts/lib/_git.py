@@ -1,6 +1,7 @@
 # Various git-related utilities
 
 
+import datetime
 import hashlib
 import subprocess
 from typing import Iterable, List, Optional
@@ -43,17 +44,36 @@ def get_git_commit_date(dirname) -> str:
     return get_log("%cI", dirname)
 
 
-def get_git_merge_base(dirname) -> str:
+def get_git_merge_base(dirname) -> Optional[str]:
+    # We need to make sure we have commits from main that are old enough to be
+    # the base of this branch, but not so old that we waste a ton of bandwidth
+    commit_date = datetime.datetime.fromisoformat(get_git_commit_date(dirname))
+    commit_date = commit_date - datetime.timedelta(90)
+
     subprocess.check_call(
         ["git", "remote", "add", "upstream", "https://github.com/python/cpython.git"],
         cwd=dirname,
     )
     subprocess.check_call(
-        ["git", "fetch", "upstream", "main", "--depth", "50"], cwd=dirname
+        [
+            "git",
+            "fetch",
+            "upstream",
+            "main",
+            "--shallow-since",
+            commit_date.isoformat(),
+        ],
+        cwd=dirname,
     )
-    return subprocess.check_output(
-        ["git", "merge-base", "upstream/main", "HEAD"], cwd=dirname, encoding="utf-8"
-    ).strip()
+    try:
+        return subprocess.check_output(
+            ["git", "merge-base", "upstream/main", "HEAD"],
+            cwd=dirname,
+            encoding="utf-8",
+        ).strip()
+    except subprocess.CalledProcessError:
+        print("Failed to get merge base")
+        return None
 
 
 def get_tags(dirname) -> List[str]:

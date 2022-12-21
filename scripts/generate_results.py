@@ -186,7 +186,7 @@ def generate_directory_indices(results_dir: Path) -> None:
             continue
 
         results = []
-        for filename in path.iterdir():
+        for filename in sorted(list(path.iterdir())):
             if filename.name == "README.md":
                 continue
             results.append(_result.Result.from_filename(filename))

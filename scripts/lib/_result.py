@@ -191,8 +191,6 @@ class Result:
                     [
                         "bm",
                         date,
-                        self.fork,
-                        self.ref,
                         self.version,
                         self.cpython_hash,
                     ]

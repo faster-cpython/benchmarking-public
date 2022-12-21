@@ -165,7 +165,9 @@ class Result:
         return obj
 
     @classmethod
-    def from_scratch(cls, python: str, fork: str, ref: str) -> "Result":
+    def from_scratch(
+        cls, python: str, fork: str, ref: str, extra: List[str] = []
+    ) -> "Result":
         result = cls(
             _clean(_get_platform_value(python, "system")),
             _clean(_get_platform_value(python, "machine")),
@@ -173,7 +175,7 @@ class Result:
             _clean(ref[:20]),
             _clean(_get_platform_value(python, "python_version")),
             _git.get_git_hash("cpython")[:7],
-            [],
+            extra,
             ".json",
             commit_datetime=_git.get_git_commit_date("cpython"),
         )
@@ -215,6 +217,26 @@ class Result:
                 )
             )
         return self._filename
+
+    @property
+    @functools.cache
+    def result_type(self) -> str:
+        """
+        Get a human-readable description of the result type.
+        """
+        if self.extra == [] and self.suffix == ".json":
+            return "raw results"
+        elif self.extra == ["pystats"]:
+            if self.suffix == ".md":
+                return "pystats table"
+            elif self.suffix == ".json":
+                return "pystats raw data"
+        elif len(self.extra) == 2 and self.extra[0] == "vs":
+            if self.suffix == ".md":
+                return f"table vs. {self.extra[1]}"
+            elif self.suffix == ".png":
+                return f"plot vs. {self.extra[1]}"
+        raise ValueError("Unknown result type")
 
     @property
     @functools.cache
@@ -288,6 +310,9 @@ def load_all_results(bases: List[str], results_dir: Path) -> List[Result]:
     results = []
 
     for entry in results_dir.glob("**/*.json"):
+        result = Result.from_filename(entry)
+        if not result.result_type == "raw results":
+            continue
         results.append(Result.from_filename(entry))
     if len(results) == 0:
         raise ValueError("Didn't find any results.  That seems fishy.")

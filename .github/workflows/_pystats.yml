@@ -1,0 +1,100 @@
+---
+name: _pystats
+
+env:
+  PYSTON_BENCHMARKS_HASH: 797dfd384464d648e91d23b65453471b8cf68eee
+
+"on":
+  workflow_dispatch:
+    inputs:
+      fork:
+        description: 'Fork of cpython to benchmark'
+        type: string
+        default: python
+      ref:
+        description: 'Branch, tag or (full) SHA commit to benchmark'
+        type: string
+        default: main
+      benchmarks:
+        description: 'Benchmarks to run (comma-separated; empty runs all benchmarks)'
+        type: string
+        default: all
+      publish:
+        description: 'Publish results to the public repo'
+        type: boolean
+        default: false
+      dry_run:
+        description: 'Dry run: Do not commit to the repo'
+        type: boolean
+        default: false
+
+  workflow_call:
+    inputs:
+      fork:
+        description: 'Fork of cpython to benchmark'
+        type: string
+      ref:
+        description: 'Branch, tag or (full) SHA commit to benchmark'
+        type: string
+      benchmarks:
+        description: 'Benchmarks to run (comma-separated; empty runs all benchmarks)'
+        type: string
+      publish:
+        description: 'Publish results to the public repo'
+        type: boolean
+      dry_run:
+        description: 'Dry run: Do not commit to the repo'
+        type: boolean
+
+jobs:
+  collect-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        with:
+          repository: pyston/python-macrobenchmarks
+          path: pyston-benchmarks
+          ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+      - uses: actions/checkout@v3
+        with:
+          repository: mdboom/pyperformance
+          path: pyperformance
+          ref: fix-manifest-parsing
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ inputs.fork }}/cpython
+          ref: ${{ inputs.ref }}
+          path: cpython
+      - name: Install Dependencies
+        run: |
+          cd cpython
+          sudo ./.github/workflows/posix-deps-apt.sh
+      - name: Create pystats directory
+        run: |
+          # If we don't do this, stats are printed to the console
+          mkdir /tmp/py_stats
+      - name: Compile
+        run: |
+          cd cpython
+          ./configure --enable-pystats --prefix=$PWD/install
+          make -j4
+          make install
+      - name: Install pyperformance into the system python
+        run: |
+          python -m pip install ./pyperformance
+      - name: Running pyperformance
+        run: |
+          python scripts/run_benchmarks.py pystats cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks }} ${{ inputs.publish }}
+      # Pull again, since another job may have committed results in the meantime
+      - name: pull
+        run: |
+          git pull
+      - name: Add to repo
+        uses: EndBug/add-and-commit@v9
+        if: ${{ !inputs.dry_run }}
+        with:
+          add: results

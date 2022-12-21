@@ -49,7 +49,7 @@ def get_git_merge_base(dirname) -> str:
         cwd=dirname,
     )
     subprocess.check_call(
-        ["git", "fetch", "upstream", "main", "--depth", "1"], cwd=dirname
+        ["git", "fetch", "upstream", "main"], cwd=dirname
     )
     return subprocess.check_output(
         ["git", "merge-base", "upstream/main", "HEAD"], cwd=dirname, encoding="utf-8"

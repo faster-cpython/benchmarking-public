@@ -67,7 +67,9 @@ def get_git_merge_base(dirname) -> Optional[str]:
     )
     try:
         return subprocess.check_output(
-            ["git", "merge-base", "upstream/main", "HEAD"], cwd=dirname, encoding="utf-8"
+            ["git", "merge-base", "upstream/main", "HEAD"],
+            cwd=dirname,
+            encoding="utf-8",
         ).strip()
     except subprocess.CalledProcessError:
         print("Failed to get merge base")

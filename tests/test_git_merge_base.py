@@ -23,12 +23,15 @@ def test_get_merge_base(tmp_path, capsys):
 
     captured = capsys.readouterr()
 
-    assert captured.out.strip() == textwrap.dedent(
-        """
+    assert (
+        captured.out.strip()
+        == textwrap.dedent(
+            """
     ref=158b8a07212cea6066afe8bb91f1cd542d922dba
     need_to_run=true
     """
-    ).strip()
+        ).strip()
+    )
 
 
 def test_hard_coded(capsys):

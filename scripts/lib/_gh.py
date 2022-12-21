@@ -27,8 +27,8 @@ def benchmark(
     fork: Optional[str] = None,
     ref: Optional[str] = None,
     machine: Optional[str] = None,
-    benchmark_base: Optional[str] = None,
-    publish: Optional[str] = None,
+    benchmark_base: Optional[bool] = None,
+    publish: Optional[bool] = None,
 ) -> None:
     if not (fork is None or isinstance(fork, str)):
         raise TypeError(f"fork must be a str, got {type(fork)}")

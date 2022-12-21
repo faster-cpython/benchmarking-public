@@ -13,7 +13,7 @@ from lib import _git
 from lib import _result
 
 
-DEFAULTS = (["v3.11"], ["v3.10"], ["2022-09-01"])
+DEFAULTS = (["v3.11"], ["v3.10"], ["2022-11-20"])
 
 
 class Commit:
@@ -91,6 +91,12 @@ def get_weekly_since(cpython: Path, start_date: str) -> Iterable[Commit]:
                 break
 
 
+def match_machine(a, b):
+    return (
+        (a == "amd64" and b == "x86_64") or (a == "x86_64" and b == "amd64") or (a == b)
+    )
+
+
 def remove_existing(
     commits: Iterable[Commit], machine: str, results=None
 ) -> Iterable[Commit]:
@@ -115,7 +121,7 @@ def remove_existing(
         for result in results:
             if (
                 result.system == system
-                and result.machine == machine
+                and match_machine(result.machine, machine)
                 and commit.hash.startswith(result.cpython_hash)
             ):
                 break
@@ -179,7 +185,7 @@ def main(
 
     if choice.lower() in ("y", "yes"):
         for commit in commits:
-            _gh.benchmark(ref=commit.hash, machine=machine, publish="true")
+            _gh.benchmark(ref=commit.hash, machine=machine, publish=True)
 
 
 if __name__ == "__main__":

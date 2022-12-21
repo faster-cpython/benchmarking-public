@@ -101,7 +101,7 @@ jobs:
       fork: python
       ref: ${{ needs.determine_base.outputs.ref }}
       benchmarks: ${{ inputs.benchmarks }}
-      publish:: ${{ inputs.publish }}
+      publish: ${{ inputs.publish }}
     secrets: inherit
 
   generate:

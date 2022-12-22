@@ -160,4 +160,4 @@ All benchmarks:
 | Geometric mean          | (ref)                                                               | 1.02x faster                                           |
 
 Benchmark hidden because not significant (3): json, pidigits, xml_etree_iterparse
-Ignored benchmarks (7) of /home/mdboom/Work/builds/benchmarking/results/bm-20221024-python-deaf509e8fc6e0363bd6-3.11.0-deaf509/bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+Ignored benchmarks (7) of /home/mdboom/Work/builds/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http

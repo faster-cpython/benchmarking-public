@@ -28,19 +28,25 @@ def save_generated_results(
     for result in results:
         for compare in result.bases.values():
             if compare.filename is not None:
-                if not compare.filename.with_suffix(".md").exists() or force:
+                md_file = compare.filename.with_suffix(".md")
+                if not md_file.exists() or force:
                     _util.status(".")
+                    if md_file.exists():
+                        md_file.unlink()
+                    compare._contents = None
                     contents = compare.contents
-                    with open(compare.filename.with_suffix(".md"), "w") as fd:
+                    with open(md_file, "w") as fd:
                         fd.write(contents)
                 else:
                     _util.status("/")
-                if not compare.filename.with_suffix(".png").exists() or force:
+
+                png_file = compare.filename.with_suffix(".png")
+                if not png_file.exists() or force:
                     _util.status(".")
                     _plot.plot_diff(
                         compare.ref,
                         compare.head,
-                        compare.filename.with_suffix(".png"),
+                        png_file,
                         (
                             f"{compare.head.fork}-{compare.head.ref}-"
                             f"{compare.head.cpython_hash}"

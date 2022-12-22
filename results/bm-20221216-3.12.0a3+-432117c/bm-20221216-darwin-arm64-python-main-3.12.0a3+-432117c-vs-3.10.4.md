@@ -159,4 +159,4 @@ All benchmarks:
 | xml_etree_generate      | 54.5 ms                                                | 47.0 ms: 1.16x faster                                  |
 | xml_etree_process       | 45.1 ms                                                | 34.4 ms: 1.31x faster                                  |
 | Geometric mean          | (ref)                                                  | 1.24x faster                                           |
-Ignored benchmarks (7) of /home/runner/work/benchmarking/benchmarking/results/bm-20220323-python-v3.10.4-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+Ignored benchmarks (7) of /home/mdboom/Work/builds/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http

@@ -17,6 +17,14 @@ jobs:
       publish: true
     secrets: inherit
 
+  pystats:
+    uses: ./.github/workflows/_pystats.yml
+    with:
+      fork: python
+      ref: main
+      benchmarks: all
+      publish: true
+
   generate:
     uses: ./.github/workflows/_generate.yml
     with:

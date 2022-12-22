@@ -23,7 +23,15 @@ If the user chose to run on all machines, these jobs may run in parallel, but ot
 There are additional parameters available to save time during debugging, but these are not exposed to the user since they create results that aren't useful for full comparisons:
 
 - `pgo`: Build with PGO and LTO
-- `benchmarks`: Specify a comma-separated list of benchmarks to run.
+- `dry_run`: Don't save the results to the repo
+
+The implementation of this workflow (for everything but the CPython compilation itself) is in `scripts/run_benchmarks.py`.
+
+### _pystats.yml
+
+This workflow runs the benchmarks using a build with `--enable-pystats`, and then saves the results run through CPython's `Tools/scripts/summarize_stats.py` script.
+
+Unlike the regular benchmarks, we don't care about timings, so this workflow is run on GitHub's cloud compute, on Linux only.
 
 The implementation of this workflow (for everything but the CPython compilation itself) is in `scripts/run_benchmarks.py`.
 
@@ -70,13 +78,11 @@ Each directory contains results for a specific commit hash, but may contain resu
 The directories are named:
 
 ```
-bm-{date}-{fork}-{ref}-{version}-{cpython_hash}
+bm-{date}-{version}-{cpython_hash}
 ```
 
 - `date`: the commit date of the revision being benchmarked.
   This is an ISO date with the dashes removed.
-- `fork`: the fork of CPython as requested to the benchmark job.
-- `ref`: the branch, tag or SHA specified to run as requested to the benchmark job.
   It is truncated 20 characters, since full SHAs can make the paths too long for Windows to handle.
 - `version`: the version of CPython, as returned by `platform.python_version()`.
 - `cpython_hash`: The first 8 characters of the git hash. (`fork`, `ref` and `version` can be strictly derived from the git hash, but are included for convenience).
@@ -91,12 +97,16 @@ In addition to the fields defined above, the filenames add:
 
 - `system`: Operating system, as returned by `platform.system()`
 - `machine`: CPU architecture, as returned by `platform.machine()`
+- `fork`: the fork of CPython as requested to the benchmark job.
+- `ref`: the branch, tag or SHA specified to run as requested to the benchmark job.
 
 With this base, there are files with the following suffixes:
 
 - `.json`: The raw results from `pyperformance`.
 - `-vs-{base}.md`: A table comparing the results against the given base, as returned by `pyperf compare_to`.
 - `-vs-{base}.png`: A set of violin plots with the distribution of differences for each benchmark.
+- `-pystats.json`: The raw results from a pystats run.
+- `-pystats.md`: The results of a pystats run, summarized in human-readable form.
 
 ## Metadata
 

@@ -46,7 +46,7 @@ jobs:
           python scripts/publish.py results public/results
       - name: Regenerate derived results and tables
         run: |
-          python scripts/generate_results.py public ${{ inputs.force == 'true' && '--force' || '' }}
+          python scripts/generate_results.py public ${{ inputs.force == true && '--force' || '' }}
       - name: Add to repository
         uses: EndBug/add-and-commit@v9
         if: ${{ !inputs.dry_run }}

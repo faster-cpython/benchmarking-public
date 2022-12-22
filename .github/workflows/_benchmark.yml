@@ -71,7 +71,7 @@ jobs:
       - name: Build Python
         run: |
           cd cpython
-          PCbuild/build.bat ${{ inputs.pgo == 'true' && '--pgo' || '' }} -c Release
+          PCbuild/build.bat ${{ inputs.pgo == true && '--pgo' || '' }} -c Release
           # Copy the build products to a place that libraries can find them.
           Copy-Item -Path "PCBuild/amd64" -Destination "libs" -Recurse
       - name: Running pyperformance

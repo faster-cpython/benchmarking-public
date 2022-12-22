@@ -37,7 +37,7 @@ jobs:
           python -m pip install -r requirements.txt
       - name: regenerate
         run:
-          python scripts/generate_results.py ${{ inputs.force == 'true' && '--force' || '' }}
+          python scripts/generate_results.py ${{ inputs.force == true && '--force' || '' }}
       - name: Add to repo
         uses: EndBug/add-and-commit@v9
         if: ${{ !inputs.dry_run }}

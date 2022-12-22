@@ -76,7 +76,7 @@ jobs:
           Copy-Item -Path "PCBuild/amd64" -Destination "libs" -Recurse
       - name: Running pyperformance
         run: |
-          python scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks }} ${{ inputs.publish }}
+          python scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }}
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
@@ -133,7 +133,7 @@ jobs:
           sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH `which python` -m pyperf system tune
       - name: Running pyperformance
         run: |
-          python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks }} ${{ inputs.publish }}
+          python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }}
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
@@ -190,7 +190,7 @@ jobs:
           venv/bin/python -m pip install ./pyperformance
       - name: Running pyperformance
         run: |
-          venv/bin/python scripts/run_benchmarks.py benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks }} ${{ inputs.publish }}
+          venv/bin/python scripts/run_benchmarks.py benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }}
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:

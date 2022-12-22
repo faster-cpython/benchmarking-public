@@ -87,7 +87,7 @@ jobs:
           python -m pip install ./pyperformance
       - name: Running pyperformance
         run: |
-          python scripts/run_benchmarks.py pystats cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks }} ${{ inputs.publish }}
+          python scripts/run_benchmarks.py pystats cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }}
       # Pull again, since another job may have committed results in the meantime
       - name: pull
         run: |

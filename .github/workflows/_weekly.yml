@@ -29,10 +29,10 @@ jobs:
     uses: ./.github/workflows/_generate.yml
     with:
       force: false
-    needs: [weekly]
+    needs: [weekly, pystats]
     secrets: inherit
 
   publish:
     uses: ./.github/workflows/_publish.yml
-    needs: [weekly]
+    needs: [weekly, pystats]
     secrets: inherit

@@ -1,3 +1,13 @@
+
+# Results vs. 3.11.0
+
+- fork: pablogsal
+- ref: gc_nogen
+- machine: linux-x86_64
+- commit hash: 663a965
+- commit date: 2022-12-21
+- overall geometric mean: 1.08x faster
+
 Benchmarks with tag 'apps':
 ===========================
 

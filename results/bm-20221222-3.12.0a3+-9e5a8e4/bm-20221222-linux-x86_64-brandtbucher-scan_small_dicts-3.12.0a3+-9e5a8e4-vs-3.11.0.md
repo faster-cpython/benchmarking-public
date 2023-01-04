@@ -1,3 +1,13 @@
+
+# Results vs. 3.11.0
+
+- fork: brandtbucher
+- ref: scan_small_dicts
+- machine: linux-x86_64
+- commit hash: 9e5a8e4
+- commit date: 2022-12-22
+- overall geometric mean: 1.02x faster
+
 Benchmarks with tag 'apps':
 ===========================
 
@@ -157,5 +167,5 @@ All benchmarks:
 | Geometric mean          | (ref)                                                  | 1.02x faster                                                             |
 
 Benchmark hidden because not significant (5): bench_mp_pool, meteor_contest, scimark_lu, scimark_monte_carlo, xml_etree_generate
-Ignored benchmarks (7) of /home/runner/work/benchmarking/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
-Ignored benchmarks (1) of /home/runner/work/benchmarking/benchmarking/results/bm-20221222-3.12.0a3+-9e5a8e4/bm-20221222-linux-x86_64-brandtbucher-scan_small_dicts-3.12.0a3+-9e5a8e4.json: djangocms
+Ignored benchmarks (7) of /home/mdboom/Work/builds/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+Ignored benchmarks (1) of /home/mdboom/Work/builds/benchmarking/results/bm-20221222-3.12.0a3+-9e5a8e4/bm-20221222-linux-x86_64-brandtbucher-scan_small_dicts-3.12.0a3+-9e5a8e4.json: djangocms

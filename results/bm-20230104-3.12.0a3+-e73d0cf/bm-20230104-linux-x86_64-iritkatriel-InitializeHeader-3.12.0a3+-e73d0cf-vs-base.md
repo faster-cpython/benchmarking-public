@@ -1,3 +1,13 @@
+
+# Results vs. base
+
+- fork: iritkatriel
+- ref: InitializeHeader
+- machine: linux-x86_64
+- commit hash: e73d0cf
+- commit date: 2023-01-04
+- overall geometric mean: 1.00x faster
+
 Benchmarks with tag 'apps':
 ===========================
 

@@ -3,6 +3,7 @@ import io
 from pathlib import Path
 import re
 import sys
+import textwrap
 from typing import Iterable, List, Optional, TextIO, Tuple
 
 
@@ -14,6 +15,50 @@ from lib import _plot
 from lib import _result
 from lib import _table
 from lib import _util
+
+
+def write_markdown_results(filename: Path, compare: _result.Comparison) -> None:
+    if filename.exists():
+        filename.unlink()
+        compare._contents = None
+
+    contents = compare.contents
+    if contents is None:
+        return
+
+    header = textwrap.dedent(
+        f"""
+    # Results vs. {compare.base}
+
+    - fork: {compare.head.fork}
+    - ref: {compare.head.ref}
+    - machine: {compare.head.system}-{compare.head.machine}
+    - commit hash: {compare.head.cpython_hash}
+    - commit date: {compare.head.commit_date}
+    - overall geometric mean: {compare.geometric_mean}
+
+    """
+    )
+
+    with open(filename, "w") as fd:
+        fd.write(header)
+        fd.write(contents)
+
+
+def write_plot_results(filename: Path, compare: _result.Comparison) -> None:
+    _plot.plot_diff(
+        compare.ref,
+        compare.head,
+        filename,
+        (
+            f"{compare.head.fork}-{compare.head.ref}-"
+            f"{compare.head.cpython_hash}"
+            f" vs. {compare.ref.version}"
+        ),
+    )
+
+
+RESULT_TYPES = {".md": write_markdown_results, ".png": write_plot_results}
 
 
 def save_generated_results(
@@ -28,33 +73,13 @@ def save_generated_results(
     for result in results:
         for compare in result.bases.values():
             if compare.filename is not None:
-                md_file = compare.filename.with_suffix(".md")
-                if not md_file.exists() or force:
-                    _util.status(".")
-                    if md_file.exists():
-                        md_file.unlink()
-                    compare._contents = None
-                    contents = compare.contents
-                    with open(md_file, "w") as fd:
-                        fd.write(contents)
-                else:
-                    _util.status("/")
-
-                png_file = compare.filename.with_suffix(".png")
-                if not png_file.exists() or force:
-                    _util.status(".")
-                    _plot.plot_diff(
-                        compare.ref,
-                        compare.head,
-                        png_file,
-                        (
-                            f"{compare.head.fork}-{compare.head.ref}-"
-                            f"{compare.head.cpython_hash}"
-                            f" vs. {compare.ref.version}"
-                        ),
-                    )
-                else:
-                    _util.status("/")
+                for suffix, func in RESULT_TYPES.items():
+                    filename = compare.filename.with_suffix(suffix)
+                    if not filename.exists() or force:
+                        _util.status(".")
+                        func(filename, compare)
+                    else:
+                        _util.status("/")
 
         # Remove any outdated comparison files if the bases have changed.
         for filename in result.filename.parent.iterdir():
@@ -116,10 +141,10 @@ def results_by_platform(
     # We want linux first, as the most meaningful/reliable one
     order = ["linux", "windows", "darwin"]
 
-    platforms = set()
-    for result in results:
-        platforms.add((result.system, result.machine))
-    platforms = sorted(list(platforms), key=lambda x: (order.index(x[0]), x[1]))
+    platforms = sorted(
+        set((result.system, result.machine) for result in results),
+        key=lambda x: (order.index(x[0]), x[1]),
+    )
 
     for system, machine in platforms:
         yield (
@@ -183,6 +208,46 @@ def generate_master_indices(
     generate_index(repo_dir / "results" / "README.md", bases, results, False)
 
 
+def generate_directory_index(result_dir: Path) -> None:
+    results = []
+    for filename in sorted(list(result_dir.iterdir())):
+        if filename.name == "README.md":
+            continue
+        results.append(_result.Result.from_filename(filename))
+
+    for result in results:
+        if result.result_type == "raw results":
+            break
+    else:
+        raise ValueError(f"Couldn't find raw results in {result_dir}")
+
+    with open(result_dir / "README.md", "w") as fd:
+        fd.write("# Results\n\n")
+
+        entries = [
+            ("fork", result.fork),
+            ("ref", result.ref),
+            ("commit hash", _table.link_to_hash(result.cpython_hash, result.fork)),
+            ("commit date", result.commit_datetime),
+            (
+                "commit merge base",
+                _table.link_to_hash(result.commit_merge_base, result.fork),
+            ),
+        ]
+
+        for key, val in entries:
+            fd.write(f"- {key}: {val}\n")
+        fd.write("\n")
+
+        for system, machine, results in results_by_platform(results):
+            results = sorted(results, key=lambda x: (x.extra, x.suffix))
+            fd.write(f"## {system} {machine}\n\n")
+            for result in results:
+                link = _table.md_link(result.result_type, result.filename.name)
+                fd.write(f"- {link}\n")
+            fd.write("\n")
+
+
 def generate_directory_indices(results_dir: Path) -> None:
     """
     Generate the indices that go in each results directory.
@@ -191,45 +256,7 @@ def generate_directory_indices(results_dir: Path) -> None:
         if not path.is_dir():
             continue
 
-        results = []
-        for filename in sorted(list(path.iterdir())):
-            if filename.name == "README.md":
-                continue
-            results.append(_result.Result.from_filename(filename))
-        if not len(results):
-            continue
-
-        for result in results:
-            if result.result_type == "raw results":
-                break
-        else:
-            raise ValueError(f"Couldn't find raw results in {path}")
-
-        with open(path / "README.md", "w") as fd:
-            fd.write("# Results\n\n")
-
-            entries = [
-                ("fork", result.fork),
-                ("ref", result.ref),
-                ("commit hash", _table.link_to_hash(result.cpython_hash, result.fork)),
-                ("commit date", result.commit_datetime),
-                (
-                    "commit merge base",
-                    _table.link_to_hash(result.commit_merge_base, result.fork),
-                ),
-            ]
-
-            for key, val in entries:
-                fd.write(f"- {key}: {val}\n")
-            fd.write("\n")
-
-            for system, machine, results in results_by_platform(results):
-                results = sorted(results, key=lambda x: (x.extra, x.suffix))
-                fd.write(f"## {system} {machine}\n\n")
-                for result in results:
-                    link = _table.md_link(result.result_type, result.filename.name)
-                    fd.write(f"- {link}\n")
-                fd.write("\n")
+        generate_directory_index(path)
 
         _util.status(".")
 

@@ -85,7 +85,8 @@ def test_change_bases(tmp_path):
     _run_for_bases(["3.10.4", "3.11.0b2"], repo_path, force=True)
 
     (
-        repo_path / "results"
+        repo_path
+        / "results"
         / "bm-20221119-3.12.0a3+-b0e1f9c"
         / "bm-20221119-linux-x86_64-python-main-3.12.0a3+-b0e1f9c.json"
     ).unlink()

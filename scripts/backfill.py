@@ -2,7 +2,7 @@ import argparse
 import datetime
 from pathlib import Path
 import sys
-from typing import Iterable, Sequence
+from typing import Iterable, Optional, Sequence
 
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -148,9 +148,9 @@ def get_commits(
 
 def main(
     cpython: Path,
-    all_with_prefix: Sequence[str] | None,
-    latest_with_prefix: Sequence[str] | None,
-    weekly_since: Sequence[str] | None,
+    all_with_prefix: Optional[Sequence[str]],
+    latest_with_prefix: Optional[Sequence[str]],
+    weekly_since: Optional[Sequence[str]],
     machine: str,
     force: bool,
 ) -> None:

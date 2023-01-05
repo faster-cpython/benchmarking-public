@@ -87,7 +87,11 @@ jobs:
       # Pull again, since another job may have committed results in the meantime
       - name: pull
         run: |
-          git pull
+          # Another benchmarking task may have created results for the same
+          # commit while the above was running. This "magic" incantation means
+          # that any local results for this commit will override anything we
+          # just pulled in in that case.
+          git pull -s recursive -X ours --autostash
       - name: Add to repo
         uses: EndBug/add-and-commit@v9
         if: ${{ !inputs.dry_run }}
@@ -145,7 +149,11 @@ jobs:
       # Pull again, since another job may have committed results in the meantime
       - name: pull
         run: |
-          git pull
+          # Another benchmarking task may have created results for the same
+          # commit while the above was running. This "magic" incantation means
+          # that any local results for this commit will override anything we
+          # just pulled in in that case.
+          git pull -s recursive -X ours --autostash
       - name: Add to repo
         uses: EndBug/add-and-commit@v9
         if: ${{ !inputs.dry_run }}
@@ -202,7 +210,11 @@ jobs:
       # Pull again, since another job may have committed results in the meantime
       - name: pull
         run: |
-          git pull
+          # Another benchmarking task may have created results for the same
+          # commit while the above was running. This "magic" incantation means
+          # that any local results for this commit will override anything we
+          # just pulled in in that case.
+          git pull -s recursive -X ours --autostash
       - name: Add to repo
         uses: EndBug/add-and-commit@v9
         if: ${{ !inputs.dry_run }}

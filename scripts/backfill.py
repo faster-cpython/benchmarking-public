@@ -226,7 +226,7 @@ if __name__ == "__main__":
         "--force",
         action="store_true",
         help="Re-run benchmark, even if we already have results for that commit hash.",
-    ),
+    )
     parser.add_argument("cpython", type=Path, help="The path to a checkout of CPython")
 
     args = parser.parse_args()

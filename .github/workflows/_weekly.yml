@@ -11,7 +11,7 @@ jobs:
     with:
       fork: python
       ref: main
-      machine: linux-amd64
+      machine: all
       benchmarks: all
       pgo: true
       publish: true

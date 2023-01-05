@@ -123,7 +123,7 @@ jobs:
           # commit while the above was running. This "magic" incantation means
           # that any local results for this commit will override anything we
           # just pulled in in that case.
-          git pull -s recursive -X ours --autostash
+          git pull -s recursive -X ours --autostash --rebase
       - name: Add to repo
         uses: EndBug/add-and-commit@v9
         if: ${{ !inputs.dry_run }}
@@ -185,7 +185,7 @@ jobs:
           # commit while the above was running. This "magic" incantation means
           # that any local results for this commit will override anything we
           # just pulled in in that case.
-          git pull -s recursive -X ours --autostash
+          git pull -s recursive -X ours --autostash --rebase
       - name: Add to repo
         uses: EndBug/add-and-commit@v9
         if: ${{ !inputs.dry_run }}
@@ -246,7 +246,7 @@ jobs:
           # commit while the above was running. This "magic" incantation means
           # that any local results for this commit will override anything we
           # just pulled in in that case.
-          git pull -s recursive -X ours --autostash
+          git pull -s recursive -X ours --autostash --rebase
       - name: Add to repo
         uses: EndBug/add-and-commit@v9
         if: ${{ !inputs.dry_run }}

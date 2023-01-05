@@ -1,5 +1,13 @@
 ---
 name: _benchmark
+description: |
+  **Triggering this workflow directly is only useful for debugging. Most cases
+  should use the `benchmark` workflow.**
+
+  This workflow manages building a specific revision of CPython, runs a complete
+  set of benchmarks, and then commits the pyperformance-style `.json` file to
+  this repo. Both the `pyperformance` and `pyston` benchmarks suites are run,
+  configured by the `benchmark.manifest` file in this repo.
 
 env:
   PYSTON_BENCHMARKS_HASH: 797dfd384464d648e91d23b65453471b8cf68eee

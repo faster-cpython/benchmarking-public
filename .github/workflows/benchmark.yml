@@ -1,8 +1,5 @@
 ---
 name: benchmark
-description: |
-  See [README.md](https://github.com/faster-cpython/benchmarking/) for
-  information about using this action.
 
 "on":
   workflow_dispatch:

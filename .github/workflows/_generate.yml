@@ -1,11 +1,5 @@
 ---
 name: _generate
-description: |
-  **Triggering this workflow directly is only useful for debugging. Most cases
-  should use the `benchmark` workflow.**
-
-  This workflow reads the `.json` files created in the `_benchmark` workflow and
-  creates derived tables and plots, as well as master indices of the results.
 
 "on":
   workflow_call:

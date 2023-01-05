@@ -1,12 +1,5 @@
 ---
 name: _pystats
-description: |
-  **Triggering this workflow directly is only useful for debugging. Most cases
-  should use the `benchmark` workflow.**
-
-  This workflow runs the benchmarks using a build with `--enable-pystats`, and
-  then saves the results run through CPython's
-  `Tools/scripts/summarize_stats.py` script.
 
 env:
   PYSTON_BENCHMARKS_HASH: 797dfd384464d648e91d23b65453471b8cf68eee

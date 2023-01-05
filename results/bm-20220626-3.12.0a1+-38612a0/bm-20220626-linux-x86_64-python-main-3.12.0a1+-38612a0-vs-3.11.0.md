@@ -1,3 +1,13 @@
+
+# Results vs. 3.11.0
+
+- fork: python
+- ref: main
+- machine: linux-x86_64
+- commit hash: 38612a0
+- commit date: 2022-06-26
+- overall geometric mean: 1.04x faster \*
+
 Benchmarks with tag 'apps':
 ===========================
 

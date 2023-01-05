@@ -1,3 +1,13 @@
+
+# Results vs. 3.10.4
+
+- fork: python
+- ref: 2b428a1faed88f148ede
+- machine: darwin-arm64
+- commit hash: 2b428a1
+- commit date: 2022-09-26
+- overall geometric mean: 1.20x faster
+
 Benchmarks with tag 'apps':
 ===========================
 

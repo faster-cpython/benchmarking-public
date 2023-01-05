@@ -1,3 +1,13 @@
+
+# Results vs. base
+
+- fork: brandtbucher
+- ref: scan_small_dicts
+- machine: linux-x86_64
+- commit hash: ba16621
+- commit date: 2022-12-17
+- overall geometric mean: 1.00x faster
+
 Benchmarks with tag 'apps':
 ===========================
 

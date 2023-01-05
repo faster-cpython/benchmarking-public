@@ -1,3 +1,13 @@
+
+# Results vs. base
+
+- fork: pablogsal
+- ref: gc_nogen
+- machine: linux-x86_64
+- commit hash: 663a965
+- commit date: 2022-12-21
+- overall geometric mean: 1.05x faster
+
 Benchmarks with tag 'apps':
 ===========================
 

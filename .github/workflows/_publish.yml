@@ -64,7 +64,7 @@ jobs:
           token: ${{ secrets.BENCHMARK_MIRROR }}
       - name: Mirror
         run: |
-          git remote add upstream git@github.com:faster-cpython/benchmarking.git
+          git remote add upstream https://github.com/faster-cpython/benchmarking
           git fetch upstream
           git reset --hard upstream/main
           git push origin main

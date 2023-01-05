@@ -114,6 +114,6 @@ jobs:
 
   publish:
     uses: ./.github/workflows/_publish.yml
-    if: ${{ always() && inputs.publish }}
+    if: ${{ always() }}
     needs: [head, base, pystats-head, pystats-base]
     secrets: inherit

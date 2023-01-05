@@ -147,3 +147,19 @@ def test_run_benchmarks(tmp_path):
         "deepcopy_memo",
         "deepcopy_reduce",
     }
+
+    # Run an unknown benchmark, expect an error
+    returncode = subprocess.call(
+        [
+            venv_python,
+            run_benchmarks.__file__,
+            "benchmark",
+            sys.executable,
+            "python",
+            "main",
+            "foo",
+            "false",
+        ],
+        cwd=tmp_path,
+    )
+    assert returncode == 1

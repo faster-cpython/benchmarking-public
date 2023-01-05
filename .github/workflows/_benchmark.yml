@@ -29,6 +29,38 @@ env:
         description: 'Dry run: Do not commit to the repo'
         type: boolean
 
+  workflow_dispatch:
+    inputs:
+      fork:
+        description: 'Fork of cpython to benchmark'
+        type: string
+        default: 'python'
+      ref:
+        description: 'Branch, tag or (full) SHA commit to benchmark'
+        type: string
+        default: 'main'
+      machine:
+        description: 'Machine to run on'
+        default: 'linux-amd64'
+        type: choice
+        options:
+          - linux-amd64
+          - windows-amd64
+          - darwin-arm64
+          - all
+      benchmarks:
+        description: 'Benchmarks to run (comma-separated; empty runs all benchmarks)'
+        type: string
+      pgo:
+        description: 'Build with PGO'
+        type: boolean
+      publish:
+        description: 'Publish results to the public repo'
+        type: boolean
+      dry_run:
+        description: 'Dry run: Do not commit to the repo'
+        type: boolean
+
 jobs:
   benchmark-windows:
     # TODO: Disabling Windows entirely for now since we don't have the machine

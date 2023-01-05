@@ -26,13 +26,13 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: main
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
           cache: pip
-      - uses: actions/checkout@v3
-        with:
-          ref: main
       - uses: actions/checkout@v3
         with:
           repository: faster-cpython/ideas

@@ -1,14 +1,5 @@
 ---
 name: _publish
-description: |
-  **Triggering this workflow directly is only useful for debugging. Most cases
-  should use the `benchmark` workflow.**
-
-  This workflow copies any `.json` files with a metadata key `publish` set to
-  `true` to the (public) [ideas repo](https://github.com/faster-cpython/ideas).
-  The `generate_results.py` script is then run on the ideas repo so that all of
-  the derived tables, plots and indices exist, but only for the data in that
-  repo (not the full set in this repo).
 
 "on":
   workflow_call:

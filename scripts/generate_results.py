@@ -10,14 +10,14 @@ from typing import Iterable, List, Optional, TextIO, Tuple
 sys.path.insert(0, str(Path(__file__).parent))
 
 
-from lib import _bases
-from lib import _plot
-from lib import _result
-from lib import _table
-from lib import _util
+from lib.bases import get_bases
+from lib import plot
+from lib.result import load_all_results, Comparison, Result
+from lib import table
+from lib import util
 
 
-def write_markdown_results(filename: Path, compare: _result.Comparison) -> None:
+def write_markdown_results(filename: Path, compare: Comparison) -> None:
     if filename.exists():
         filename.unlink()
         compare._contents = None
@@ -45,8 +45,8 @@ def write_markdown_results(filename: Path, compare: _result.Comparison) -> None:
         fd.write(contents)
 
 
-def write_plot_results(filename: Path, compare: _result.Comparison) -> None:
-    _plot.plot_diff(
+def write_plot_results(filename: Path, compare: Comparison) -> None:
+    plot.plot_diff(
         compare.ref,
         compare.head,
         filename,
@@ -61,9 +61,7 @@ def write_plot_results(filename: Path, compare: _result.Comparison) -> None:
 RESULT_TYPES = {".md": write_markdown_results, ".png": write_plot_results}
 
 
-def save_generated_results(
-    results: Iterable[_result.Result], force: bool = False
-) -> None:
+def save_generated_results(results: Iterable[Result], force: bool = False) -> None:
     """
     Write out the comparison tables and plots for every result.
 
@@ -76,24 +74,24 @@ def save_generated_results(
                 for suffix, func in RESULT_TYPES.items():
                     filename = compare.filename.with_suffix(suffix)
                     if not filename.exists() or force:
-                        _util.status(".")
+                        util.status(".")
                         func(filename, compare)
                     else:
-                        _util.status("/")
+                        util.status("/")
 
         # Remove any outdated comparison files if the bases have changed.
         for filename in result.filename.parent.iterdir():
             match = re.match(r".*-vs-(?P<base>.*)", filename.stem)
             if match is not None:
                 if match.group("base") not in result.bases:
-                    _util.status("x")
+                    util.status("x")
                     filename.unlink()
 
     print()
 
 
 def output_results_index(
-    fd: TextIO, bases: List[str], results: Iterable[_result.Result], filename: Path
+    fd: TextIO, bases: List[str], results: Iterable[Result], filename: Path
 ):
     """
     Outputs a results index table.
@@ -110,7 +108,7 @@ def output_results_index(
         for base in bases:
             if base in result.bases:
                 versus.append(
-                    _table.md_link(
+                    table.md_link(
                         result.bases[base].geometric_mean,
                         result.bases[base].filename.with_suffix(".md"),
                         filename,
@@ -121,7 +119,7 @@ def output_results_index(
 
         rows.append(
             [
-                _table.md_link(result.commit_date, result.filename.parent, filename),
+                table.md_link(result.commit_date, result.filename.parent, filename),
                 result.fork,
                 result.ref[:10],
                 result.version,
@@ -129,12 +127,12 @@ def output_results_index(
             ]
             + versus
         )
-    _table.output_table(fd, head, rows)
+    table.output_table(fd, head, rows)
 
 
 def results_by_platform(
-    results: Iterable[_result.Result],
-) -> Iterable[Tuple[str, str, Iterable[_result.Result]]]:
+    results: Iterable[Result],
+) -> Iterable[Tuple[str, str, Iterable[Result]]]:
     """
     Separate results by platform (system/machine pairs).
     """
@@ -158,7 +156,7 @@ def results_by_platform(
         )
 
 
-def summarize_results(results: Iterable[_result.Result]) -> Iterable[_result.Result]:
+def summarize_results(results: Iterable[Result]) -> Iterable[Result]:
     """
     Create a shorter list of results where only the most recent result for each
     Python version is included. Only results from the main `python` fork are
@@ -179,7 +177,7 @@ def summarize_results(results: Iterable[_result.Result]) -> Iterable[_result.Res
 def generate_index(
     filename: Path,
     bases: List[str],
-    results: Iterable[_result.Result],
+    results: Iterable[Result],
     summarize: bool = False,
 ) -> None:
     """
@@ -192,11 +190,11 @@ def generate_index(
             results = summarize_results(results)
         output_results_index(content, bases, results, filename)
         content.write("\n")
-    _table.replace_section(filename, "table", content.getvalue())
+    table.replace_section(filename, "table", content.getvalue())
 
 
 def generate_master_indices(
-    bases: List[str], results: Iterable[_result.Result], repo_dir: Path
+    bases: List[str], results: Iterable[Result], repo_dir: Path
 ) -> None:
     """
     Generate both indices:
@@ -213,7 +211,7 @@ def generate_directory_index(result_dir: Path) -> None:
     for filename in sorted(list(result_dir.iterdir())):
         if filename.name == "README.md":
             continue
-        results.append(_result.Result.from_filename(filename))
+        results.append(Result.from_filename(filename))
 
     for result in results:
         if result.result_type == "raw results":
@@ -227,11 +225,11 @@ def generate_directory_index(result_dir: Path) -> None:
         entries = [
             ("fork", result.fork),
             ("ref", result.ref),
-            ("commit hash", _table.link_to_hash(result.cpython_hash, result.fork)),
+            ("commit hash", table.link_to_hash(result.cpython_hash, result.fork)),
             ("commit date", result.commit_datetime),
             (
                 "commit merge base",
-                _table.link_to_hash(result.commit_merge_base, result.fork),
+                table.link_to_hash(result.commit_merge_base, result.fork),
             ),
         ]
 
@@ -243,7 +241,7 @@ def generate_directory_index(result_dir: Path) -> None:
             results = sorted(results, key=lambda x: (x.extra, x.suffix))
             fd.write(f"## {system} {machine}\n\n")
             for result in results:
-                link = _table.md_link(result.result_type, result.filename.name)
+                link = table.md_link(result.result_type, result.filename.name)
                 fd.write(f"- {link}\n")
             fd.write("\n")
 
@@ -258,15 +256,15 @@ def generate_directory_indices(results_dir: Path) -> None:
 
         generate_directory_index(path)
 
-        _util.status(".")
+        util.status(".")
 
 
 def main(repo_dir: Path, force: bool = False, bases: Optional[List[str]] = None):
     results_dir = repo_dir / "results"
     if bases is None:
-        bases = _bases.get_bases()
+        bases = get_bases()
     print(f"Comparing to bases {bases}")
-    results = _result.load_all_results(bases, results_dir)
+    results = load_all_results(bases, results_dir)
     print(f"Found {len(results)} results")
     print("Generating comparison tables")
     save_generated_results(results, force=force)

@@ -11,8 +11,8 @@ from typing import Union
 sys.path.insert(0, str(Path(__file__).parent))
 
 
-from lib import _git
-from lib import _result
+from lib import git
+from lib.result import Result
 
 
 BENCHMARK_JSON = Path("benchmark.json")
@@ -65,15 +65,15 @@ def update_metadata(
 
     metadata = content.setdefault("metadata", {})
 
-    metadata["commit_id"] = _git.get_git_hash(cpython)
+    metadata["commit_id"] = git.get_git_hash(cpython)
     metadata["commit_fork"] = fork
     metadata["commit_branch"] = ref
-    metadata["commit_date"] = _git.get_git_commit_date(cpython)
+    metadata["commit_date"] = git.get_git_commit_date(cpython)
     if fork != "python" and ref != "main":
-        merge_base = _git.get_git_merge_base(cpython)
+        merge_base = git.get_git_merge_base(cpython)
         if merge_base is not None:
             metadata["commit_merge_base"] = merge_base
-    metadata["benchmark_hash"] = _git.generate_combined_hash(
+    metadata["benchmark_hash"] = git.generate_combined_hash(
         ["pyperformance", "pyston-benchmarks"]
     )
     metadata["publish"] = publish_bool
@@ -83,7 +83,7 @@ def update_metadata(
 
 
 def copy_to_directory(filename: Path, python: str, fork: str, ref: str) -> None:
-    result = _result.Result.from_scratch(python, fork, ref)
+    result = Result.from_scratch(python, fork, ref)
     result.filename.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(filename, result.filename)
 
@@ -104,13 +104,13 @@ def run_summarize_stats(python: str, fork: str, ref: str, publish: str) -> None:
 
     - fork: {fork}
     - ref: {ref}
-    - commit hash: {_git.get_git_hash('cpython')[:7]}
-    - commit date: {_git.get_git_commit_date('cpython')}
+    - commit hash: {git.get_git_hash('cpython')[:7]}
+    - commit date: {git.get_git_commit_date('cpython')}
 
     """
     )
 
-    result = _result.Result.from_scratch(python, fork, ref, ["pystats"])
+    result = Result.from_scratch(python, fork, ref, ["pystats"])
     result.filename.parent.mkdir(parents=True, exist_ok=True)
 
     with open(

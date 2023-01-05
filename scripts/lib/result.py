@@ -11,7 +11,7 @@ from typing import Any, Dict, Iterable, List, Optional
 from packaging import version as pkg_version
 
 
-from lib import _git
+from lib import git
 
 
 def _clean(string: str) -> str:
@@ -174,10 +174,10 @@ class Result:
             _clean(fork),
             _clean(ref[:20]),
             _clean(_get_platform_value(python, "python_version")),
-            _git.get_git_hash("cpython")[:7],
+            git.get_git_hash("cpython")[:7],
             extra,
             ".json",
-            commit_datetime=_git.get_git_commit_date("cpython"),
+            commit_datetime=git.get_git_commit_date("cpython"),
         )
         return result
 

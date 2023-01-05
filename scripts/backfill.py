@@ -8,9 +8,9 @@ from typing import Iterable, Optional, Sequence
 sys.path.insert(0, str(Path(__file__).parent))
 
 
-from lib import _gh
-from lib import _git
-from lib import _result
+from lib import gh
+from lib import git
+from lib import result as mod_result
 
 
 DEFAULTS = (["v3.11"], ["v3.10"], ["2022-11-20"])
@@ -23,7 +23,7 @@ class Commit:
 
     def __init__(self, cpython: Path, ref: str, source: str):
         self.ref = ref
-        hash, date = _git.get_log("%H %cI", cpython, ref).split()
+        hash, date = git.get_log("%H %cI", cpython, ref).split()
         self.hash = hash
         self.date = datetime.datetime.fromisoformat(date)
         self.source = source
@@ -74,7 +74,7 @@ def get_weekly_since(cpython: Path, start_date: str) -> Iterable[Commit]:
     )
     today = datetime.datetime.now().replace(tzinfo=datetime.timezone.utc)
 
-    commits = _git.get_log(
+    commits = git.get_log(
         "%cI %h", cpython, n=0, extra=[f"--since={start_date}"]
     ).splitlines()
     commits.sort()
@@ -104,11 +104,11 @@ def remove_existing(
     Remove any commits that we already have results for the given machine.
     """
     if results is None:
-        results = _result.load_all_results([], Path("results"))
+        results = mod_result.load_all_results([], Path("results"))
 
     if machine == "all":
         all_commits = set()
-        for submachine in _gh.MACHINES:
+        for submachine in gh.MACHINES:
             if submachine == "all":
                 continue
             all_commits |= set(remove_existing(commits, submachine, results))
@@ -161,7 +161,7 @@ def main(
     if all_with_prefix == [] and latest_with_prefix == [] and weekly_since == []:
         all_with_prefix, latest_with_prefix, weekly_since = DEFAULTS
 
-    tags = _git.get_tags(cpython)
+    tags = git.get_tags(cpython)
 
     commits = get_commits(
         cpython, tags, all_with_prefix, latest_with_prefix, weekly_since
@@ -185,7 +185,7 @@ def main(
 
     if choice.lower() in ("y", "yes"):
         for commit in commits:
-            _gh.benchmark(ref=commit.hash, machine=machine, publish=True)
+            gh.benchmark(ref=commit.hash, machine=machine, publish=True)
 
 
 if __name__ == "__main__":
@@ -218,7 +218,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--machine",
-        choices=_gh.MACHINES,
+        choices=gh.MACHINES,
         default="linux-amd64",
         help="The machine to run on.",
     )

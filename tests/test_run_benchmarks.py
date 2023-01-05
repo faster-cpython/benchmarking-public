@@ -6,9 +6,6 @@ import subprocess
 import sys
 
 
-import pytest
-
-
 from scripts import run_benchmarks
 
 
@@ -152,17 +149,17 @@ def test_run_benchmarks(tmp_path):
     }
 
     # Run an unknown benchmark, expect an error
-    with pytest.raises(subprocess.CalledProcessError):
-        subprocess.check_call(
-            [
-                venv_python,
-                run_benchmarks.__file__,
-                "benchmark",
-                sys.executable,
-                "python",
-                "main",
-                "foo",
-                "false",
-            ],
-            cwd=tmp_path,
-        )
+    returncode = subprocess.call(
+        [
+            venv_python,
+            run_benchmarks.__file__,
+            "benchmark",
+            sys.executable,
+            "python",
+            "main",
+            "foo",
+            "false",
+        ],
+        cwd=tmp_path,
+    )
+    assert returncode == 1

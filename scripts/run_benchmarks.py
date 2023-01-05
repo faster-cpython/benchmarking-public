@@ -22,6 +22,9 @@ def run_benchmarks(python: Union[Path, str], benchmarks: str) -> None:
     if benchmarks.strip() == "":
         benchmarks = "all"
 
+    if BENCHMARK_JSON.is_file():
+        BENCHMARK_JSON.unlink()
+
     subprocess.call(
         [
             sys.executable,

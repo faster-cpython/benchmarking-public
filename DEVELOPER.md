@@ -64,6 +64,9 @@ The `generate_results.py` script is then run on the ideas repo so that all of th
 Since this workflow runs in one repo (benchmarking) and publishes in another (ideas), it needs a token.
 To set this up, create a personal access token with commit rights to the ideas repository, and add it as a repository secret with the name `BENCHMARK_PUBLISH`.
 
+This step also mirrors the private `faster-cpython/benchmarking` repo to the public `faster-cpython/benchmarking-public` repo.
+Likewise, this needs a token with write access to the `benchmarking-public` repo called `BENCHMARK_MIRROR`.
+
 The implementation of this workflow is in `scripts/publish.py`.
 
 ### _weekly.yml

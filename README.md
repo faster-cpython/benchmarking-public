@@ -1,12 +1,12 @@
 # Faster CPython Benchmark Infrastructure
 
-[▶️ START A BENCHMARK RUN](https://github.com/faster-cpython/benchmarking/actions/workflows/benchmark.yml)
+🔒 [▶️ START A BENCHMARK RUN](https://github.com/faster-cpython/benchmarking/actions/workflows/benchmark.yml)
 
 For documentation about how this works, see the [developer docs](DEVELOPER.md).
 
 ## Running benchmarks from the GitHub web UI
 
-Visit the [benchmark action](https://github.com/faster-cpython/benchmarking/actions/workflows/benchmark.yml) and click the "Run Workflow" button.
+Visit the 🔒 [benchmark action](https://github.com/faster-cpython/benchmarking/actions/workflows/benchmark.yml) and click the "Run Workflow" button.
 
 The available parameters are:
 
@@ -21,7 +21,7 @@ The available parameters are:
 - `pystats`: If checked, collect the pystats from running the benchmarks.
 - `publish`: If checked, the results will be published in the public [ideas repo](https://github.com/faster-cpython/ideas) upon successful completion.
 
-To watch the progress of the benchmark, select it from the [benchmark action page](https://github.com/faster-cpython/benchmarking/actions/workflows/benchmark.yml).
+To watch the progress of the benchmark, select it from the 🔒 [benchmark action page](https://github.com/faster-cpython/benchmarking/actions/workflows/benchmark.yml).
 It may be canceled from there as well.
 To show only your benchmark workflows, select your GitHub ID from the "Actor" dropdown.
 

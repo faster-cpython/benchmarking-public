@@ -4,27 +4,27 @@ import subprocess
 import pytest
 
 
-from scripts.lib import _gh
+from scripts.lib import gh
 
 
 def test_benchmark_arguments():
     with pytest.raises(TypeError):
-        _gh.benchmark(fork=1)
+        gh.benchmark(fork=1)
 
     with pytest.raises(TypeError):
-        _gh.benchmark(ref=1)
+        gh.benchmark(ref=1)
 
     with pytest.raises(ValueError):
-        _gh.benchmark(machine="")
+        gh.benchmark(machine="")
 
     with pytest.raises(ValueError):
-        _gh.benchmark(machine="linux-x86_64")
+        gh.benchmark(machine="linux-x86_64")
 
     with pytest.raises(TypeError):
-        _gh.benchmark(benchmark_base=1)
+        gh.benchmark(benchmark_base=1)
 
     with pytest.raises(TypeError):
-        _gh.benchmark(publish=1)
+        gh.benchmark(publish=1)
 
 
 def test_benchmark_cmdline(monkeypatch):
@@ -36,7 +36,7 @@ def test_benchmark_cmdline(monkeypatch):
 
     monkeypatch.setattr(subprocess, "check_call", get_args)
 
-    _gh.benchmark(fork="myfork", benchmark_base=True)
+    gh.benchmark(fork="myfork", benchmark_base=True)
 
     assert args_out == [
         "gh",

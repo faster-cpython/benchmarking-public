@@ -13,7 +13,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent))
 
 
-from lib import _result
+from lib.result import Result
 
 
 def get_tag_for_hash(cpython_repo, hash):
@@ -59,7 +59,7 @@ def convert_files(ideas_repo, cpython_repo, results_dir):
         contents["metadata"]["benchmark_hash"] = benchmark_hash
         contents["metadata"]["publish"] = True
 
-        result = _result.Result(
+        result = Result(
             system,
             machine,
             fork,

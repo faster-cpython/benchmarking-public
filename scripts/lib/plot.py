@@ -10,10 +10,10 @@ import numpy as np
 matplotlib.use("agg")
 
 
-from lib import _result
+from lib import result
 
 
-def get_data(result: _result.Result) -> Dict[str, Any]:
+def get_data(result: result.Result) -> Dict[str, Any]:
     results = {}
 
     for benchmark in result.contents["benchmarks"]:
@@ -71,7 +71,7 @@ def formatter(val, pos):
 
 
 def plot_diff(
-    ref: _result.Result, head: _result.Result, output_filename: Path, title: str
+    ref: result.Result, head: result.Result, output_filename: Path, title: str
 ) -> None:
     ref_data = get_data(ref)
     head_data = get_data(head)

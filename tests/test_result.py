@@ -5,7 +5,7 @@ import shutil
 import sys
 
 
-from scripts.lib import _result
+from scripts.lib import result as mod_result
 
 
 DATA_PATH = Path(__file__).parent / "data"
@@ -20,7 +20,7 @@ def _copy_results(tmp_path):
 def test_load_all_results(tmp_path):
     results_path = _copy_results(tmp_path)
 
-    results = _result.load_all_results(["3.10.4", "3.11.0b3"], results_path)
+    results = mod_result.load_all_results(["3.10.4", "3.11.0b3"], results_path)
 
     assert len(results) == 16
 
@@ -59,7 +59,7 @@ def test_merge_base(tmp_path):
         json.dump(contents, fd)
     # End hack
 
-    results = _result.load_all_results([], results_path)
+    results = mod_result.load_all_results([], results_path)
 
     by_hash = {x.cpython_hash: x for x in results}
 
@@ -78,14 +78,14 @@ def test_from_scratch(monkeypatch):
     def get_git_hash(*args):
         return "b7e4f1d97c6e784d2dee182d2b81541ddcff5751"
 
-    monkeypatch.setattr(_result._git, "get_git_hash", get_git_hash)
+    monkeypatch.setattr(mod_result.git, "get_git_hash", get_git_hash)
 
     def get_git_commit_date(*args):
         return "2022-11-19T20:47:09+00:00"
 
-    monkeypatch.setattr(_result._git, "get_git_commit_date", get_git_commit_date)
+    monkeypatch.setattr(mod_result.git, "get_git_commit_date", get_git_commit_date)
 
-    result = _result.Result.from_scratch(
+    result = mod_result.Result.from_scratch(
         python, "my-fork", "9d38120e335357a3b294277fd5eff0a10e46e043"
     )
 

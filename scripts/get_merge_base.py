@@ -5,7 +5,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent))
 
 
-from lib import _git
+from lib import git
 
 
 def main(need_to_run: bool, cpython: Path = Path("cpython")) -> None:
@@ -13,7 +13,7 @@ def main(need_to_run: bool, cpython: Path = Path("cpython")) -> None:
         print("ref=xxxxxxx")
         print("need_to_run=false")
     else:
-        merge_base = _git.get_git_merge_base(cpython)
+        merge_base = git.get_git_merge_base(cpython)
 
         if merge_base is None:
             print("ref=xxxxxxx")

@@ -4,7 +4,7 @@ import shutil
 import textwrap
 
 
-from scripts.lib import _table
+from scripts.lib import table
 
 
 DATA_PATH = Path(__file__).parent / "data"
@@ -15,7 +15,7 @@ def test_output_table():
     rows = [["a", "b", "c"], ["d", "e", "f"]]
 
     fd = io.StringIO()
-    _table.output_table(fd, head, rows)
+    table.output_table(fd, head, rows)
 
     assert (
         fd.getvalue().strip()
@@ -34,7 +34,7 @@ def test_replace_section(tmp_path):
     readme_path = tmp_path / "README.md"
     shutil.copy(DATA_PATH / "results" / "README.md", readme_path)
 
-    _table.replace_section(readme_path, "table", "THIS IS THE CONTENT")
+    table.replace_section(readme_path, "table", "THIS IS THE CONTENT")
 
     assert (
         readme_path.read_text().strip()
@@ -53,13 +53,13 @@ def test_replace_section(tmp_path):
 
 
 def test_md_link():
-    assert _table.md_link("text", "link") == "[text](link)"
-    assert _table.md_link("text", "relative/link", "relative/other") == "[text](link)"
-    assert _table.md_link("text", "relative/link", "other") == "[text](relative/link)"
+    assert table.md_link("text", "link") == "[text](link)"
+    assert table.md_link("text", "relative/link", "relative/other") == "[text](link)"
+    assert table.md_link("text", "relative/link", "other") == "[text](relative/link)"
 
 
 def test_link_to_hash():
     assert (
-        _table.link_to_hash("MYHASH", "MYFORK")
+        table.link_to_hash("MYHASH", "MYFORK")
         == "[MYHASH](https://github.com/MYFORK/cpython/commit/MYHASH)"
     )

@@ -54,3 +54,25 @@ jobs:
         with:
           add: "['results', 'README.md']"
           cwd: public
+
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          path: private
+          ref: main
+          fetch-depth: 0
+      - uses: actions/checkout@v3
+        with:
+          path: public
+          ref: main
+          repository: faster-cpython/benchmarking-public
+          token: ${{ secrets.BENCHMARK_MIRROR }}
+      - name: Mirror
+        run: |
+          cd public
+          git remote add upstream $PWD/../private
+          git fetch upstream
+          git reset --hard upstream/main
+          git push origin main

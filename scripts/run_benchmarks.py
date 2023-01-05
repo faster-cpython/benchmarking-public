@@ -22,7 +22,7 @@ def run_benchmarks(python: Union[Path, str], benchmarks: str) -> None:
     if benchmarks.strip() == "":
         benchmarks = "all"
 
-    returncode = subprocess.call(
+    subprocess.call(
         [
             sys.executable,
             "-m",
@@ -42,15 +42,14 @@ def run_benchmarks(python: Union[Path, str], benchmarks: str) -> None:
     # pyperformance frequently returns an error if any of the benchmarks failed.
     # We only want to fail if things are worse than that.
 
-    if returncode:
-        if not Path(BENCHMARK_JSON).is_file():
-            print("No benchmark file created.")
-            sys.exit(1)
-        with open(BENCHMARK_JSON) as fd:
-            contents = json.load(fd)
-        if len(contents.get("benchmarks", [])) == 0:
-            print("No benchmarks were run.")
-            sys.exit(1)
+    if not Path(BENCHMARK_JSON).is_file():
+        print("No benchmark file created.")
+        sys.exit(1)
+    with open(BENCHMARK_JSON) as fd:
+        contents = json.load(fd)
+    if len(contents.get("benchmarks", [])) == 0:
+        print("No benchmarks were run.")
+        sys.exit(1)
 
 
 def update_metadata(

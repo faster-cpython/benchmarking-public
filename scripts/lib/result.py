@@ -38,65 +38,64 @@ class Comparison:
         self.ref = ref
         self.head = head
         self.base = base
-        self._contents = None
-        self._geometric_mean = None
+
+    def copy(self):
+        return type(self)(self.ref, self.head, self.base)
 
     @property
+    @functools.cache
     def geometric_mean(self) -> str:
         if self.ref == self.head:
             return ""
 
-        if self._geometric_mean is None:
-            contents = self.contents
-            if contents is None:
-                return ""
+        contents = self.contents
+        if contents is None:
+            return ""
 
-            lines = list(contents.splitlines())
+        lines = list(contents.splitlines())
 
-            if (
-                self.head.benchmark_hash is None
-                or self.ref.benchmark_hash != self.head.benchmark_hash
-            ):
-                suffix = r" \*"
-            else:
-                suffix = ""
+        if (
+            self.head.benchmark_hash is None
+            or self.ref.benchmark_hash != self.head.benchmark_hash
+        ):
+            suffix = r" \*"
+        else:
+            suffix = ""
 
-            for line in lines:
-                # We want to get the *last* geometric mean in the file, in case
-                # it's divided by tags
-                if "Geometric mean" in line:
-                    self._geometric_mean = line.split("|")[3].strip() + suffix
+        geometric_mean = None
+        for line in lines:
+            # We want to get the *last* geometric mean in the file, in case
+            # it's divided by tags
+            if "Geometric mean" in line:
+                geometric_mean = line.split("|")[3].strip() + suffix
 
-            if self._geometric_mean is None:
-                self._geometric_mean = "not sig"
+        if geometric_mean is None:
+            geometric_mean = "not sig"
 
-        return self._geometric_mean
+        return geometric_mean
 
     @property
+    @functools.cache
     def contents(self) -> Optional[str]:
-        if self._contents is None:
-            if self.filename is None:
-                return None
+        if self.filename is None:
+            return None
 
-            if self.filename.with_suffix(".md").is_file():
-                with open(
-                    self.filename.with_suffix(".md"), "r", encoding="utf-8"
-                ) as fd:
-                    self._contents = fd.read()
-            else:
-                self._contents = subprocess.check_output(
-                    [
-                        "pyperf",
-                        "compare_to",
-                        "--table",
-                        "--table-format",
-                        "md",
-                        self.ref.filename,
-                        self.head.filename,
-                    ],
-                    encoding="utf-8",
-                )
-        return self._contents
+        if self.filename.with_suffix(".md").is_file():
+            with open(self.filename.with_suffix(".md"), "r", encoding="utf-8") as fd:
+                return fd.read()
+        else:
+            return subprocess.check_output(
+                [
+                    "pyperf",
+                    "compare_to",
+                    "--table",
+                    "--table-format",
+                    "md",
+                    self.ref.filename,
+                    self.head.filename,
+                ],
+                encoding="utf-8",
+            )
 
     @property
     def filename(self) -> Optional[Path]:

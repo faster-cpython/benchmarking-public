@@ -84,7 +84,7 @@ def test_run_benchmarks(tmp_path):
             "--depth",
             "1",
             "--branch",
-            "fix-manifest-parsing",
+            "benchmarking-test",
         ],
         cwd=tmp_path,
     )

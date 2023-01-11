@@ -20,7 +20,7 @@ from lib import util
 def write_markdown_results(filename: Path, compare: Comparison) -> None:
     if filename.exists():
         filename.unlink()
-        compare._contents = None
+        compare = compare.copy()
 
     contents = compare.contents
     if contents is None:
@@ -200,7 +200,7 @@ def generate_master_indices(
     Generate both indices:
 
     - The summary one in `./README.md`
-    - The full on in `./results/README.md`
+    - The full one in `./results/README.md`
     """
     generate_index(repo_dir / "README.md", bases, results, True)
     generate_index(repo_dir / "results" / "README.md", bases, results, False)

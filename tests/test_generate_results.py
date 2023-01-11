@@ -82,7 +82,13 @@ def test_change_bases(tmp_path):
     repo_path = _copy_repo(tmp_path)
 
     _run_for_bases(["3.10.4", "3.11.0b3"], repo_path)
+    contents = (repo_path / "README.md").read_text()
+    assert "| vs. 3.10.4: | vs. 3.11.0b3: | vs. base: |" in contents
+
     _run_for_bases(["3.10.4", "3.11.0b2"], repo_path, force=True)
+    contents = (repo_path / "README.md").read_text()
+    assert "| vs. 3.10.4: | vs. 3.11.0b2: | vs. base: |" in contents
+    assert "| vs. 3.10.4: | vs. 3.11.0b3: | vs. base: |" not in contents
 
     (
         repo_path

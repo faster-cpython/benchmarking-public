@@ -23,6 +23,16 @@ def _clean(string: str) -> str:
     return string.replace("-", "_")
 
 
+def _clean_for_url(string: str) -> str:
+    """
+    Clean an arbitrary string to be suitable for a filename, being careful to
+    create something that can be re-used as a URL.
+
+    It can't contain dashes, since dashes are used as a delimiter.
+    """
+    return string.replace("-", "%2d")
+
+
 def _get_platform_value(python: str, item: str) -> str:
     """
     Get a value from the platform module of the given Python interpreter.
@@ -170,7 +180,7 @@ class Result:
         result = cls(
             _clean(_get_platform_value(python, "system")),
             _clean(_get_platform_value(python, "machine")),
-            _clean(fork),
+            _clean_for_url(fork),
             _clean(ref[:20]),
             _clean(_get_platform_value(python, "python_version")),
             git.get_git_hash("cpython")[:7],

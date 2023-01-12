@@ -5,6 +5,7 @@ import re
 import sys
 import textwrap
 from typing import Iterable, List, Optional, TextIO, Tuple
+from urllib.parse import unquote
 
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -30,7 +31,7 @@ def write_markdown_results(filename: Path, compare: Comparison) -> None:
         f"""
     # Results vs. {compare.base}
 
-    - fork: {compare.head.fork}
+    - fork: {unquote(compare.head.fork)}
     - ref: {compare.head.ref}
     - machine: {compare.head.system}-{compare.head.machine}
     - commit hash: {compare.head.cpython_hash}
@@ -51,7 +52,7 @@ def write_plot_results(filename: Path, compare: Comparison) -> None:
         compare.head,
         filename,
         (
-            f"{compare.head.fork}-{compare.head.ref}-"
+            f"{unquote(compare.head.fork)}-{compare.head.ref}-"
             f"{compare.head.cpython_hash}"
             f" vs. {compare.ref.version}"
         ),
@@ -120,7 +121,7 @@ def output_results_index(
         rows.append(
             [
                 table.md_link(result.commit_date, result.filename.parent, filename),
-                result.fork,
+                unquote(result.fork),
                 result.ref[:10],
                 result.version,
                 result.cpython_hash,
@@ -223,7 +224,7 @@ def generate_directory_index(result_dir: Path) -> None:
         fd.write("# Results\n\n")
 
         entries = [
-            ("fork", result.fork),
+            ("fork", unquote(result.fork)),
             ("ref", result.ref),
             ("commit hash", table.link_to_hash(result.cpython_hash, result.fork)),
             ("commit date", result.commit_datetime),

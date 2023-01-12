@@ -31,7 +31,7 @@ name: benchmark
         type: boolean
         default: false
       publish:
-        description: 'Publish results to the public repo'
+        description: 'Publish results to the ideas repo'
         type: boolean
         default: false
 

@@ -5,7 +5,7 @@ import re
 import sys
 import textwrap
 from typing import Iterable, List, Optional, TextIO, Tuple
-from urllib.parse import unquote
+from urllib.parse import quote, unquote
 
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -242,7 +242,7 @@ def generate_directory_index(result_dir: Path) -> None:
             results = sorted(results, key=lambda x: (x.extra, x.suffix))
             fd.write(f"## {system} {machine}\n\n")
             for result in results:
-                link = table.md_link(result.result_type, result.filename.name)
+                link = table.md_link(result.result_type, quote(result.filename.name))
                 fd.write(f"- {link}\n")
             fd.write("\n")
 

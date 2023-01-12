@@ -8,9 +8,9 @@
 
 ## linux x86_64
 
-- [raw results](bm-20221221-linux-x86_64-python-3c033a2e6fbde56f904a-3.12.0a3+-3c033a2.json)
-- [table vs. 3.10.4](bm-20221221-linux-x86_64-python-3c033a2e6fbde56f904a-3.12.0a3+-3c033a2-vs-3.10.4.md)
-- [plot vs. 3.10.4](bm-20221221-linux-x86_64-python-3c033a2e6fbde56f904a-3.12.0a3+-3c033a2-vs-3.10.4.png)
-- [table vs. 3.11.0](bm-20221221-linux-x86_64-python-3c033a2e6fbde56f904a-3.12.0a3+-3c033a2-vs-3.11.0.md)
-- [plot vs. 3.11.0](bm-20221221-linux-x86_64-python-3c033a2e6fbde56f904a-3.12.0a3+-3c033a2-vs-3.11.0.png)
+- [raw results](bm-20221221-linux-x86_64-python-3c033a2e6fbde56f904a-3.12.0a3%2B-3c033a2.json)
+- [table vs. 3.10.4](bm-20221221-linux-x86_64-python-3c033a2e6fbde56f904a-3.12.0a3%2B-3c033a2-vs-3.10.4.md)
+- [plot vs. 3.10.4](bm-20221221-linux-x86_64-python-3c033a2e6fbde56f904a-3.12.0a3%2B-3c033a2-vs-3.10.4.png)
+- [table vs. 3.11.0](bm-20221221-linux-x86_64-python-3c033a2e6fbde56f904a-3.12.0a3%2B-3c033a2-vs-3.11.0.md)
+- [plot vs. 3.11.0](bm-20221221-linux-x86_64-python-3c033a2e6fbde56f904a-3.12.0a3%2B-3c033a2-vs-3.11.0.png)
 

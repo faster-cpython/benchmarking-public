@@ -8,21 +8,21 @@
 
 ## linux x86_64
 
-- [raw results](bm-20230108-linux-x86_64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a.json)
-- [table vs. 3.10.4](bm-20230108-linux-x86_64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a-vs-3.10.4.md)
-- [plot vs. 3.10.4](bm-20230108-linux-x86_64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a-vs-3.10.4.png)
-- [table vs. 3.11.0](bm-20230108-linux-x86_64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a-vs-3.11.0.md)
-- [plot vs. 3.11.0](bm-20230108-linux-x86_64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a-vs-3.11.0.png)
-- [table vs. base](bm-20230108-linux-x86_64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a-vs-base.md)
-- [plot vs. base](bm-20230108-linux-x86_64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a-vs-base.png)
+- [raw results](bm-20230108-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a.json)
+- [table vs. 3.10.4](bm-20230108-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.10.4.md)
+- [plot vs. 3.10.4](bm-20230108-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.10.4.png)
+- [table vs. 3.11.0](bm-20230108-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.11.0.md)
+- [plot vs. 3.11.0](bm-20230108-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.11.0.png)
+- [table vs. base](bm-20230108-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-base.md)
+- [plot vs. base](bm-20230108-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-base.png)
 
 ## darwin arm64
 
-- [raw results](bm-20230108-darwin-arm64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a.json)
-- [table vs. 3.10.4](bm-20230108-darwin-arm64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a-vs-3.10.4.md)
-- [plot vs. 3.10.4](bm-20230108-darwin-arm64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a-vs-3.10.4.png)
-- [table vs. 3.11.0](bm-20230108-darwin-arm64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a-vs-3.11.0.md)
-- [plot vs. 3.11.0](bm-20230108-darwin-arm64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a-vs-3.11.0.png)
-- [table vs. base](bm-20230108-darwin-arm64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a-vs-base.md)
-- [plot vs. base](bm-20230108-darwin-arm64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a-vs-base.png)
+- [raw results](bm-20230108-darwin-arm64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a.json)
+- [table vs. 3.10.4](bm-20230108-darwin-arm64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.10.4.md)
+- [plot vs. 3.10.4](bm-20230108-darwin-arm64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.10.4.png)
+- [table vs. 3.11.0](bm-20230108-darwin-arm64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.11.0.md)
+- [plot vs. 3.11.0](bm-20230108-darwin-arm64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.11.0.png)
+- [table vs. base](bm-20230108-darwin-arm64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-base.md)
+- [plot vs. base](bm-20230108-darwin-arm64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-base.png)
 

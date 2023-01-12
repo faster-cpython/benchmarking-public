@@ -8,9 +8,9 @@
 
 ## linux x86_64
 
-- [raw results](bm-20230107-linux-x86_64-python-7116030a25f7dd2140ef-3.12.0a3+-7116030.json)
-- [table vs. 3.10.4](bm-20230107-linux-x86_64-python-7116030a25f7dd2140ef-3.12.0a3+-7116030-vs-3.10.4.md)
-- [plot vs. 3.10.4](bm-20230107-linux-x86_64-python-7116030a25f7dd2140ef-3.12.0a3+-7116030-vs-3.10.4.png)
-- [table vs. 3.11.0](bm-20230107-linux-x86_64-python-7116030a25f7dd2140ef-3.12.0a3+-7116030-vs-3.11.0.md)
-- [plot vs. 3.11.0](bm-20230107-linux-x86_64-python-7116030a25f7dd2140ef-3.12.0a3+-7116030-vs-3.11.0.png)
+- [raw results](bm-20230107-linux-x86_64-python-7116030a25f7dd2140ef-3.12.0a3%2B-7116030.json)
+- [table vs. 3.10.4](bm-20230107-linux-x86_64-python-7116030a25f7dd2140ef-3.12.0a3%2B-7116030-vs-3.10.4.md)
+- [plot vs. 3.10.4](bm-20230107-linux-x86_64-python-7116030a25f7dd2140ef-3.12.0a3%2B-7116030-vs-3.10.4.png)
+- [table vs. 3.11.0](bm-20230107-linux-x86_64-python-7116030a25f7dd2140ef-3.12.0a3%2B-7116030-vs-3.11.0.md)
+- [plot vs. 3.11.0](bm-20230107-linux-x86_64-python-7116030a25f7dd2140ef-3.12.0a3%2B-7116030-vs-3.11.0.png)
 

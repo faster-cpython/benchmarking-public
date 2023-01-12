@@ -8,11 +8,11 @@
 
 ## linux x86_64
 
-- [raw results](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3+-bcd7980.json)
-- [table vs. 3.10.4](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3+-bcd7980-vs-3.10.4.md)
-- [plot vs. 3.10.4](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3+-bcd7980-vs-3.10.4.png)
-- [table vs. 3.11.0](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3+-bcd7980-vs-3.11.0.md)
-- [plot vs. 3.11.0](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3+-bcd7980-vs-3.11.0.png)
-- [table vs. base](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3+-bcd7980-vs-base.md)
-- [plot vs. base](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3+-bcd7980-vs-base.png)
+- [raw results](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3%2B-bcd7980.json)
+- [table vs. 3.10.4](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3%2B-bcd7980-vs-3.10.4.md)
+- [plot vs. 3.10.4](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3%2B-bcd7980-vs-3.10.4.png)
+- [table vs. 3.11.0](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3%2B-bcd7980-vs-3.11.0.md)
+- [plot vs. 3.11.0](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3%2B-bcd7980-vs-3.11.0.png)
+- [table vs. base](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3%2B-bcd7980-vs-base.md)
+- [plot vs. base](bm-20221217-linux-x86_64-brandtbucher-compressed_bytecode-3.12.0a3%2B-bcd7980-vs-base.png)
 

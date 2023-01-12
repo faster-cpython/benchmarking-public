@@ -19,7 +19,7 @@ def _copy_repo(tmp_path):
     return repo_path
 
 
-def _run_for_bases(bases, repo_path, force=False, has_base=[]):
+def _run_for_bases(bases, repo_path, force=False, has_base=[], check_readmes=True):
     results_path = repo_path / "results"
 
     generate_results.main(repo_path, force=force, bases=bases)
@@ -47,11 +47,12 @@ def _run_for_bases(bases, repo_path, force=False, has_base=[]):
         contents = (dirpath / "README.md").read_text()
         assert contents.count("\n- [") == len(list(dirpath.iterdir())) - 1
 
-    contents = (repo_path / "README.md").read_text()
-    assert contents.count("\n|") == 14
+    if check_readmes:
+        contents = (repo_path / "README.md").read_text()
+        assert contents.count("\n|") == 14
 
-    contents = (repo_path / "results" / "README.md").read_text()
-    assert contents.count("\n|") == 18
+        contents = (repo_path / "results" / "README.md").read_text()
+        assert contents.count("\n|") == 18
 
 
 def test_main(tmp_path):
@@ -99,3 +100,32 @@ def test_change_bases(tmp_path):
 
     with pytest.raises(ValueError):
         generate_results.main(repo_path, bases=[])
+
+
+def test_fork_with_hypen(tmp_path):
+    repo_path = _copy_repo(tmp_path)
+
+    # Hack up so one of the results has fork with a hyphen
+    result = (
+        repo_path
+        / "results"
+        / "bm-20221119-3.12.0a3+-b0e1f9c"
+        / "bm-20221119-linux-x86_64-python-main-3.12.0a3+-b0e1f9c.json"
+    )
+    result_new = result.with_name(result.name.replace("python", "with%2dhyphen"))
+
+    result.rename(result_new)
+
+    with open(result_new) as fd:
+        contents = json.load(fd)
+    contents["metadata"]["fork"] = "with-hyphen"
+    with open(result_new, "w") as fd:
+        json.dump(contents, fd)
+    # End hack
+
+    _run_for_bases(["3.10.4", "3.11.0b3"], repo_path, check_readmes=False)
+
+    contents = (repo_path / "results" / "README.md").read_text()
+    assert contents.count("with-hyphen") == 1
+    assert contents.count(" with%2dhyphen ") == 0
+    assert contents.count("with%2dhyphen-main-3.12.0a3+-b0e1f9c-vs-3.11.0b3.md") == 1

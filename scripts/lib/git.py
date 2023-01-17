@@ -49,7 +49,7 @@ def get_git_merge_base(dirname) -> Optional[str]:
     # We need to make sure we have commits from main that are old enough to be
     # the base of this branch, but not so old that we waste a ton of bandwidth
     commit_date = datetime.datetime.fromisoformat(get_git_commit_date(dirname))
-    commit_date = commit_date - datetime.timedelta(90)
+    commit_date = commit_date - datetime.timedelta(365 * 2)
 
     subprocess.check_call(
         ["git", "remote", "add", "upstream", "https://github.com/python/cpython.git"],
@@ -60,7 +60,7 @@ def get_git_merge_base(dirname) -> Optional[str]:
             "git",
             "fetch",
             "upstream",
-            "main",
+            "main"t ,
             "--shallow-since",
             commit_date.isoformat(),
         ],

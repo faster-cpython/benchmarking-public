@@ -60,7 +60,7 @@ def get_git_merge_base(dirname) -> Optional[str]:
             "git",
             "fetch",
             "upstream",
-            "main"t ,
+            "main",
             "--shallow-since",
             commit_date.isoformat(),
         ],

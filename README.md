@@ -46,6 +46,18 @@ $ gh workflow run benchmark.yml -f fork=me -f ref=my_branch
 
 Any of the parameters described above are available at the commandline using the `-f key=value` syntax.
 
+## Costs
+
+We are limited to 2,000 compute minutes per month.
+
+| Action | Minutes |
+| -- | -- |
+| Benchmarks | 7 minutes (most of the time is on self-hosted runners) |
+| pystats | 95 minutes |
+| CI | 15 minutes |
+
+To reduce CI usage, PRs that are only documentation changes should add the `[skip ci]` token to their commit message.
+
 # Results
 
 The following is only a summary of certain key revisions. There is also a [complete list of results](results/README.md).

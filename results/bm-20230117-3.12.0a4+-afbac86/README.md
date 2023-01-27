@@ -9,6 +9,8 @@
 ## linux x86_64
 
 - [raw results](bm-20230117-linux-x86_64-brandtbucher-quicken_in_compiler-3.12.0a4%2B-afbac86.json)
+- [pystats raw data](bm-20230117-linux-x86_64-brandtbucher-quicken_in_compiler-3.12.0a4%2B-afbac86-pystats.json)
+- [pystats table](bm-20230117-linux-x86_64-brandtbucher-quicken_in_compiler-3.12.0a4%2B-afbac86-pystats.md)
 - [table vs. 3.10.4](bm-20230117-linux-x86_64-brandtbucher-quicken_in_compiler-3.12.0a4%2B-afbac86-vs-3.10.4.md)
 - [plot vs. 3.10.4](bm-20230117-linux-x86_64-brandtbucher-quicken_in_compiler-3.12.0a4%2B-afbac86-vs-3.10.4.png)
 - [table vs. 3.11.0](bm-20230117-linux-x86_64-brandtbucher-quicken_in_compiler-3.12.0a4%2B-afbac86-vs-3.11.0.md)

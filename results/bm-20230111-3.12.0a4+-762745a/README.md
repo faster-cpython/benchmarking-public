@@ -23,4 +23,8 @@
 - [plot vs. 3.11.0](bm-20230111-linux-x86_64-iritkatriel-762745a124cbc297cf2f-3.12.0a4%2B-762745a-vs-3.11.0.png)
 - [plot vs. 3.11.0](bm-20230111-linux-x86_64-iritkatriel-reg_base-3.12.0a4%2B-762745a-vs-3.11.0.png)
 - [plot vs. 3.11.0](bm-20230111-linux-x86_64-python-762745a124cbc297cf2f-3.12.0a4%2B-762745a-vs-3.11.0.png)
+- [table vs. base](bm-20230111-linux-x86_64-iritkatriel-762745a124cbc297cf2f-3.12.0a4%2B-762745a-vs-base.md)
+- [table vs. base](bm-20230111-linux-x86_64-iritkatriel-reg_base-3.12.0a4%2B-762745a-vs-base.md)
+- [plot vs. base](bm-20230111-linux-x86_64-iritkatriel-762745a124cbc297cf2f-3.12.0a4%2B-762745a-vs-base.png)
+- [plot vs. base](bm-20230111-linux-x86_64-iritkatriel-reg_base-3.12.0a4%2B-762745a-vs-base.png)
 

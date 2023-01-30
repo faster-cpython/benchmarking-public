@@ -98,6 +98,7 @@ class Comparison:
                 [
                     "pyperf",
                     "compare_to",
+                    "-G",
                     "--table",
                     "--table-format",
                     "md",

@@ -69,9 +69,11 @@ def test_run_benchmarks(tmp_path):
         [
             "git",
             "clone",
-            "https://github.com/pyston/python-macrobenchmarks",
+            "https://github.com/mdboom/python-macrobenchmarks",
             "--depth",
             "1",
+            "--branch",
+            "benchmarking-test",
             "pyston-benchmarks",
         ],
         cwd=tmp_path,

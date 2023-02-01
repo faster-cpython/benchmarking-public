@@ -50,11 +50,11 @@ Any of the parameters described above are available at the commandline using the
 
 We are limited to 2,000 compute minutes per month.
 
+
 | Action | Minutes |
 | -- | -- |
 | Benchmarks | 7 minutes (most of the time is on self-hosted runners) |
-| pystats | 95 minutes |
-| CI | 15 minutes |
+| CI | 10 minutes |
 
 To reduce CI usage, PRs that are only documentation changes should add the `[skip ci]` token to their commit message.
 

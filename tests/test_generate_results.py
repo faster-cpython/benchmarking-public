@@ -49,10 +49,10 @@ def _run_for_bases(bases, repo_path, force=False, has_base=[], check_readmes=Tru
 
     if check_readmes:
         contents = (repo_path / "README.md").read_text()
-        assert contents.count("\n|") == 14
+        assert contents.count("\n|") == 12
 
         contents = (repo_path / "results" / "README.md").read_text()
-        assert contents.count("\n|") == 18
+        assert contents.count("\n|") == 13
 
 
 def test_main(tmp_path):
@@ -102,7 +102,7 @@ def test_change_bases(tmp_path):
         generate_results.main(repo_path, bases=[])
 
 
-def test_fork_with_hypen(tmp_path):
+def test_fork_with_hyphen(tmp_path):
     repo_path = _copy_repo(tmp_path)
 
     # Hack up so one of the results has fork with a hyphen

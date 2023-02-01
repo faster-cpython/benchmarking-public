@@ -18,12 +18,17 @@ from lib.result import Result
 BENCHMARK_JSON = Path("benchmark.json")
 
 
-def run_benchmarks(python: Union[Path, str], benchmarks: str) -> None:
+def run_benchmarks(python: Union[Path, str], benchmarks: str, fast: bool) -> None:
     if benchmarks.strip() == "":
         benchmarks = "all"
 
     if BENCHMARK_JSON.is_file():
         BENCHMARK_JSON.unlink()
+
+    if fast:
+        fast_arg = ["--fast"]
+    else:
+        fast_arg = []
 
     subprocess.call(
         [
@@ -31,6 +36,9 @@ def run_benchmarks(python: Union[Path, str], benchmarks: str) -> None:
             "-m",
             "pyperformance",
             "run",
+        ]
+        + fast_arg
+        + [
             "-o",
             BENCHMARK_JSON,
             "--manifest",
@@ -128,9 +136,15 @@ def run_summarize_stats(python: str, fork: str, ref: str, publish: str) -> None:
 
 
 def main(
-    mode: str, python: str, fork: str, ref: str, benchmarks: str, publish: str
+    mode: str,
+    python: str,
+    fork: str,
+    ref: str,
+    benchmarks: str,
+    publish: str,
+    fast: bool,
 ) -> None:
-    run_benchmarks(python, benchmarks)
+    run_benchmarks(python, benchmarks, fast)
     if mode == "benchmark":
         update_metadata(BENCHMARK_JSON, fork, ref, publish)
         copy_to_directory(BENCHMARK_JSON, python, fork, ref)
@@ -154,6 +168,17 @@ if __name__ == "__main__":
     parser.add_argument("ref", help="The git ref in the fork")
     parser.add_argument("benchmarks", help="The benchmarks to run")
     parser.add_argument("publish", help="Publish results to the public repo")
+    parser.add_argument(
+        "--fast", action="store_true", help="Run fewer iterations of the benchmarks"
+    )
     args = parser.parse_args()
 
-    main(args.mode, args.python, args.fork, args.ref, args.benchmarks, args.publish)
+    main(
+        args.mode,
+        args.python,
+        args.fork,
+        args.ref,
+        args.benchmarks,
+        args.publish,
+        args.fast,
+    )

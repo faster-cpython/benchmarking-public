@@ -6,25 +6,80 @@ import subprocess
 import sys
 
 
+import pytest
+
+
 from scripts import run_benchmarks
 
 
 DATA_PATH = Path(__file__).parent / "data"
 
 
-def test_update_metadata(tmp_path):
-    subprocess.check_call(
-        [
-            "git",
-            "clone",
-            "https://github.com/python/cpython",
-            "--depth",
-            "1",
-            "--branch",
-            "v3.10.4",
-        ],
-        cwd=tmp_path,
-    )
+@pytest.fixture
+def benchmarks_checkout(request):
+    root = request.config.cache.mkdir("benchmarking-checkouts")
+    if not (root / "cpython").is_dir():
+        subprocess.check_call(
+            [
+                "git",
+                "clone",
+                "https://github.com/python/cpython",
+                "--depth",
+                "1",
+                "--branch",
+                "v3.10.4",
+            ],
+            cwd=root,
+        )
+
+    if not (root / "pyston-benchmarks").is_dir():
+        subprocess.check_call(
+            [
+                "git",
+                "clone",
+                "https://github.com/mdboom/python-macrobenchmarks",
+                "--depth",
+                "1",
+                "--branch",
+                "benchmarking-test",
+                "pyston-benchmarks",
+            ],
+            cwd=root,
+        )
+
+    if not (root / "pyperformance").is_dir():
+        subprocess.check_call(
+            [
+                "git",
+                "clone",
+                "https://github.com/mdboom/pyperformance",
+                "--depth",
+                "1",
+                "--branch",
+                "benchmarking-test",
+            ],
+            cwd=root,
+        )
+
+    venv_dir = root / "venv"
+    if not venv_dir.is_dir():
+        venv_python = venv_dir / "bin" / "python"
+
+        subprocess.check_call([sys.executable, "-m", "venv", venv_dir], cwd=root)
+        subprocess.check_call(
+            [venv_python, "-m", "pip", "install", "setuptools", "wheel"], cwd=root
+        )
+        subprocess.check_call(
+            [venv_python, "-m", "pip", "install", root / "pyperformance"], cwd=root
+        )
+
+    return root
+
+
+def test_update_metadata(tmp_path, benchmarks_checkout):
+    for dirname in ["cpython"]:
+        shutil.copytree(benchmarks_checkout / dirname, tmp_path / dirname)
+
     shutil.copy(
         DATA_PATH
         / "results"
@@ -50,57 +105,12 @@ def test_update_metadata(tmp_path):
     assert not metadata.get("publish")
 
 
-def test_run_benchmarks(tmp_path):
-    # This is mainly recreating the first few steps in _benchmark.yml, except
-    # for compiling Python from scratch
-    subprocess.check_call(
-        [
-            "git",
-            "clone",
-            "https://github.com/python/cpython",
-            "--depth",
-            "1",
-            "--branch",
-            "v3.10.4",
-        ],
-        cwd=tmp_path,
-    )
-    subprocess.check_call(
-        [
-            "git",
-            "clone",
-            "https://github.com/mdboom/python-macrobenchmarks",
-            "--depth",
-            "1",
-            "--branch",
-            "benchmarking-test",
-            "pyston-benchmarks",
-        ],
-        cwd=tmp_path,
-    )
-    subprocess.check_call(
-        [
-            "git",
-            "clone",
-            "https://github.com/mdboom/pyperformance",
-            "--depth",
-            "1",
-            "--branch",
-            "benchmarking-test",
-        ],
-        cwd=tmp_path,
-    )
+def test_run_benchmarks(tmp_path, benchmarks_checkout):
+    for dirname in ["cpython", "pyperformance", "pyston-benchmarks", "venv"]:
+        shutil.copytree(benchmarks_checkout / dirname, tmp_path / dirname)
 
     venv_dir = tmp_path / "venv"
     venv_python = venv_dir / "bin" / "python"
-
-    subprocess.check_call([sys.executable, "-m", "venv", venv_dir], cwd=tmp_path)
-    subprocess.check_call(
-        [venv_python, "-m", "pip", "install", "setuptools", "wheel"], cwd=tmp_path
-    )
-    subprocess.check_call(
-        [venv_python, "-m", "pip", "install", tmp_path / "pyperformance"], cwd=tmp_path
-    )
 
     shutil.copy(
         Path(__file__).parents[1] / "benchmarks.manifest",
@@ -118,6 +128,7 @@ def test_run_benchmarks(tmp_path):
             "main",
             "deepcopy",
             "false",
+            "--fast",
         ],
         cwd=tmp_path,
     )

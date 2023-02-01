@@ -47,7 +47,7 @@ env:
 
 jobs:
   collect-stats:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted, cpython-benchmarking-azure
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
@@ -69,10 +69,10 @@ jobs:
           repository: ${{ inputs.fork }}/cpython
           ref: ${{ inputs.ref }}
           path: cpython
-      - name: Install Dependencies
-        run: |
-          cd cpython
-          sudo ./.github/workflows/posix-deps-apt.sh
+      # - name: Install Dependencies
+      #   run: |
+      #     cd cpython
+      #     sudo ./.github/workflows/posix-deps-apt.sh
       - name: Create pystats directory
         run: |
           # If we don't do this, stats are printed to the console

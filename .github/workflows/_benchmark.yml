@@ -66,7 +66,7 @@ jobs:
     # TODO: Disabling Windows entirely for now since we don't have the machine
     if: ${{ false && (inputs.machine == 'windows-amd64' || inputs.machine == 'all') }}
 
-    runs-on: [self-hosted, windows]
+    runs-on: [self-hosted, windows, bare-metal]
 
     steps:
       # Tell git to checkout repos with symlinks (required by pyston
@@ -133,7 +133,7 @@ jobs:
   benchmark-linux:
     if: ${{ inputs.machine == 'linux-amd64' || inputs.machine == 'all' }}
 
-    runs-on: [self-hosted, linux]
+    runs-on: [self-hosted, linux, bare-metal]
 
     steps:
       - uses: actions/checkout@v3
@@ -195,7 +195,7 @@ jobs:
   benchmark-darwin:
     if: ${{ inputs.machine == 'darwin-arm64' || inputs.machine == 'all' }}
 
-    runs-on: [self-hosted, macos]
+    runs-on: [self-hosted, macos, bare-metal]
 
     steps:
       - uses: actions/checkout@v3

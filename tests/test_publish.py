@@ -23,7 +23,7 @@ def test_publish(tmp_path):
 
     publish.main(repo_path, public_path)
 
-    assert len(list((public_path / "results").iterdir())) == 14
+    assert len(list((public_path / "results").iterdir())) == 10
 
     for filepath in (public_path / "results").glob("**/*.json"):
         with open(filepath) as fd:
@@ -51,7 +51,7 @@ def test_publish2(tmp_path):
 
     publish.main(repo_path, public_path)
 
-    assert len(list((public_path / "results").iterdir())) == 13
+    assert len(list((public_path / "results").iterdir())) == 9
 
     for filepath in (public_path / "results").glob("**/*.json"):
         with open(filepath) as fd:

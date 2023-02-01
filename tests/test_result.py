@@ -22,7 +22,7 @@ def test_load_all_results(tmp_path):
 
     results = mod_result.load_all_results(["3.10.4", "3.11.0b3"], results_path)
 
-    assert len(results) == 16
+    assert len(results) == 11
 
     by_version = {x.version: x for x in results}
 

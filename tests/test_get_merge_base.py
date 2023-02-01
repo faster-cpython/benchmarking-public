@@ -1,23 +1,37 @@
+import shutil
 import subprocess
 import textwrap
+
+
+import pytest
 
 
 from scripts import get_merge_base
 
 
-def test_get_merge_base(tmp_path, capsys):
-    subprocess.check_call(
-        [
-            "git",
-            "clone",
-            "https://github.com/mdboom/cpython",
-            "--branch",
-            "fix-pystats",
-            "--depth",
-            "50",
-        ],
-        cwd=tmp_path,
-    )
+@pytest.fixture
+def checkout(request):
+    root = request.config.cache.mkdir("get-merge-base-checkout")
+
+    if not (root / "cpython").is_dir():
+        subprocess.check_call(
+            [
+                "git",
+                "clone",
+                "https://github.com/mdboom/cpython",
+                "--branch",
+                "fix-pystats",
+                "--depth",
+                "50",
+            ],
+            cwd=root,
+        )
+
+    return root
+
+
+def test_get_merge_base(tmp_path, capsys, checkout):
+    shutil.copytree(checkout / "cpython", tmp_path / "cpython")
 
     get_merge_base.main(True, tmp_path / "cpython")
 

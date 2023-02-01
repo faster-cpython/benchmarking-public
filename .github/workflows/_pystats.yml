@@ -76,6 +76,7 @@ jobs:
       - name: Create pystats directory
         run: |
           # If we don't do this, stats are printed to the console
+          rm -rf /tmp/py_stats
           mkdir /tmp/py_stats
       - name: Compile
         run: |

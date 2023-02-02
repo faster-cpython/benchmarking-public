@@ -9,7 +9,9 @@
 ## linux x86_64
 
 - [raw results](bm-20230201-linux-x86_64-brandtbucher-quicken_at_runtime-3.12.0a4%2B-866c937.json)
+- [pystats raw data](bm-20230201-linux-x86_64-brandtbucher-866c937c0be1fb080c38-3.12.0a4%2B-866c937-pystats.json)
 - [pystats raw data](bm-20230201-linux-x86_64-brandtbucher-quicken_at_runtime-3.12.0a4%2B-866c937-pystats.json)
+- [pystats table](bm-20230201-linux-x86_64-brandtbucher-866c937c0be1fb080c38-3.12.0a4%2B-866c937-pystats.md)
 - [pystats table](bm-20230201-linux-x86_64-brandtbucher-quicken_at_runtime-3.12.0a4%2B-866c937-pystats.md)
 - [table vs. 3.10.4](bm-20230201-linux-x86_64-brandtbucher-quicken_at_runtime-3.12.0a4%2B-866c937-vs-3.10.4.md)
 - [plot vs. 3.10.4](bm-20230201-linux-x86_64-brandtbucher-quicken_at_runtime-3.12.0a4%2B-866c937-vs-3.10.4.png)

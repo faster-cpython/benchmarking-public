@@ -28,6 +28,9 @@ env:
       dry_run:
         description: 'Dry run: Do not commit to the repo'
         type: boolean
+      force:
+        description: 'Rerun and replace results if commit already exists'
+        type: boolean
 
   workflow_dispatch:
     inputs:
@@ -60,6 +63,9 @@ env:
       dry_run:
         description: 'Dry run: Do not commit to the repo'
         type: boolean
+      force:
+        description: 'Rerun and replace results if commit already exists'
+        type: boolean
 
 jobs:
   benchmark-windows:
@@ -75,42 +81,53 @@ jobs:
       - name: Enable symlinks for git
         run: |
           git config --global core.symlinks true
-      - uses: actions/checkout@v3
-      - uses: actions/checkout@v3
+      # Install a "base" Python to run the pyperformance orchestration
+      - uses: actions/setup-python@v4
         with:
-          repository: pyston/python-macrobenchmarks
-          path: pyston-benchmarks
-          ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+          python-version: '3.10'
+          cache: pip
       - uses: actions/checkout@v3
-        with:
-          repository: mdboom/pyperformance
-          path: pyperformance
-          ref: fix-manifest-parsing
       - uses: actions/checkout@v3
         with:
           repository: ${{ inputs.fork }}/cpython
           path: cpython
           ref: ${{ inputs.ref }}
           fetch-depth: 50
-      # Install a "base" Python to run the pyperformance orchestration
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-          cache: pip
-      - name: Install pyperformance
+      - name: Should we run?
+        if: ${{ always() }}
+        id: should_run
         run: |
-          python -m pip install setuptools wheel
-          python -m pip install .\pyperformance
+          python scripts/should_run.py ${{ inputs.force }} >> $GITHUB_OUTPUT
+      - uses: actions/checkout@v3
+        with:
+          if: ${{ steps.should_run.outputs.should_run != 'false' }}
+          repository: pyston/python-macrobenchmarks
+          path: pyston-benchmarks
+          ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+      - uses: actions/checkout@v3
+        with:
+          if: ${{ steps.should_run.outputs.should_run != 'false' }}
+          repository: mdboom/pyperformance
+          path: pyperformance
+          ref: fix-manifest-parsing
       - name: Build Python
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           cd cpython
           PCbuild/build.bat ${{ inputs.pgo == true && '--pgo' || '' }} -c Release
           # Copy the build products to a place that libraries can find them.
           Copy-Item -Path "PCBuild/amd64" -Destination "libs" -Recurse
+      - name: Install pyperformance
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
+        run: |
+          python -m pip install setuptools wheel
+          python -m pip install .\pyperformance
       - name: Running pyperformance
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           python scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }}
       - name: Upload artifacts
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         uses: actions/upload-artifact@v3
         with:
           name: benchmark
@@ -118,6 +135,7 @@ jobs:
             benchmark.json
       # Pull again, since another job may have committed results in the meantime
       - name: pull
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           # Another benchmarking task may have created results for the same
           # commit while the above was running. This "magic" incantation means
@@ -125,8 +143,8 @@ jobs:
           # just pulled in in that case.
           git pull -s recursive -X ours --autostash --rebase
       - name: Add to repo
+        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
         uses: EndBug/add-and-commit@v9
-        if: ${{ !inputs.dry_run }}
         with:
           add: results
 
@@ -136,43 +154,55 @@ jobs:
     runs-on: [self-hosted, linux, bare-metal]
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
-          repository: pyston/python-macrobenchmarks
-          path: pyston-benchmarks
-          ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+          python-version: '3.10'
+          cache: pip
       - uses: actions/checkout@v3
-        with:
-          repository: mdboom/pyperformance
-          path: pyperformance
-          ref: fix-manifest-parsing
       - uses: actions/checkout@v3
         with:
           repository: ${{ inputs.fork }}/cpython
           path: cpython
           ref: ${{ inputs.ref }}
           fetch-depth: 50
+      - name: Should we run?
+        if: ${{ always() }}
+        id: should_run
+        run: |
+          python scripts/should_run.py ${{ inputs.force }} >> $GITHUB_OUTPUT
+      - uses: actions/checkout@v3
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
+        with:
+          repository: pyston/python-macrobenchmarks
+          path: pyston-benchmarks
+          ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+      - uses: actions/checkout@v3
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
+        with:
+          repository: mdboom/pyperformance
+          path: pyperformance
+          ref: fix-manifest-parsing
       - name: Build Python
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           cd cpython
           ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }}
           make -j4
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-          cache: pip
       - name: Install pyperformance
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           python -m pip install setuptools wheel
           python -m pip install ./pyperformance
       - name: Tune system
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH `which python` -m pyperf system tune
       - name: Running pyperformance
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }}
       - name: Upload artifacts
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         uses: actions/upload-artifact@v3
         with:
           name: benchmark
@@ -180,6 +210,7 @@ jobs:
             benchmark.json
       # Pull again, since another job may have committed results in the meantime
       - name: pull
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           # Another benchmarking task may have created results for the same
           # commit while the above was running. This "magic" incantation means
@@ -187,8 +218,8 @@ jobs:
           # just pulled in in that case.
           git pull -s recursive -X ours --autostash --rebase
       - name: Add to repo
+        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
         uses: EndBug/add-and-commit@v9
-        if: ${{ !inputs.dry_run }}
         with:
           add: results
 
@@ -201,24 +232,33 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/checkout@v3
         with:
-          repository: pyston/python-macrobenchmarks
-          path: pyston-benchmarks
-          ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
-      - uses: actions/checkout@v3
-        with:
-          repository: mdboom/pyperformance
-          path: pyperformance
-          ref: fix-manifest-parsing
-      - uses: actions/checkout@v3
-        with:
           repository: ${{ inputs.fork }}/cpython
           path: cpython
           ref: ${{ inputs.ref }}
           fetch-depth: 50
-      - name: Setup environment
+      - name: Should we run?
+        if: ${{ always() }}
+        id: should_run
         run: |
-          echo "PKG_CONFIG_PATH=$(brew --prefix openssl@1.1)/lib/pkgconfig" >> $GITHUB_ENV
+          python3 scripts/should_run.py ${{ inputs.force }} >> $GITHUB_OUTPUT
+      - uses: actions/checkout@v3
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
+        with:
+          repository: pyston/python-macrobenchmarks
+          path: pyston-benchmarks
+          ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+      - uses: actions/checkout@v3
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
+        with:
+          repository: mdboom/pyperformance
+          path: pyperformance
+          ref: fix-manifest-parsing
+      - name: Setup environment
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
+        run: |
+          echo "PKG_CONFIG_PATH=$(brew --prefix openssl@1.1)/lib/pkgconfig" >> $GITHUB_OUTPUT
       - name: Build Python
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           cd cpython
           ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }}
@@ -226,14 +266,17 @@ jobs:
       # On macos ARM64, actions/setup-python isn't available, so we rely on a
       # pre-installed homebrew one, used through a venv
       - name: Install pyperformance
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           python3 -m venv venv
           venv/bin/python -m pip install setuptools wheel
           venv/bin/python -m pip install ./pyperformance
       - name: Running pyperformance
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           venv/bin/python scripts/run_benchmarks.py benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }}
       - name: Upload artifacts
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         uses: actions/upload-artifact@v3
         with:
           name: benchmark
@@ -241,6 +284,7 @@ jobs:
             benchmark.json
       # Pull again, since another job may have committed results in the meantime
       - name: pull
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           # Another benchmarking task may have created results for the same
           # commit while the above was running. This "magic" incantation means
@@ -248,7 +292,7 @@ jobs:
           # just pulled in in that case.
           git pull -s recursive -X ours --autostash --rebase
       - name: Add to repo
+        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
         uses: EndBug/add-and-commit@v9
-        if: ${{ !inputs.dry_run }}
         with:
           add: results

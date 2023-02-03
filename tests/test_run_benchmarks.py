@@ -10,9 +10,16 @@ import pytest
 
 
 from scripts import run_benchmarks
+from scripts import should_run
 
 
 DATA_PATH = Path(__file__).parent / "data"
+
+
+def _copy_repo(tmp_path):
+    repo_path = tmp_path / "repo"
+    shutil.copytree(DATA_PATH, tmp_path / "repo")
+    return repo_path
 
 
 @pytest.fixture
@@ -176,3 +183,79 @@ def test_run_benchmarks(tmp_path, benchmarks_checkout):
         cwd=tmp_path,
     )
     assert returncode == 1
+
+
+def test_should_run_exists_noforce(tmp_path, benchmarks_checkout, capsys):
+    repo = _copy_repo(tmp_path)
+    for dirname in ["cpython"]:
+        shutil.copytree(benchmarks_checkout / dirname, tmp_path / dirname)
+
+    should_run.main(False, tmp_path / "cpython", repo / "results")
+
+    captured = capsys.readouterr()
+    assert captured.out.strip() == "should_run=false"
+    assert (repo / "results" / "bm-20220323-3.10.4-9d38120").is_dir()
+
+
+def test_should_run_noexists_noforce(tmp_path, benchmarks_checkout, capsys):
+    repo = _copy_repo(tmp_path)
+    for dirname in ["cpython"]:
+        shutil.copytree(benchmarks_checkout / dirname, tmp_path / dirname)
+    shutil.rmtree(repo / "results" / "bm-20220323-3.10.4-9d38120")
+
+    should_run.main(False, tmp_path / "cpython", repo / "results")
+
+    captured = capsys.readouterr()
+    assert captured.out.strip() == "should_run=true"
+    assert not (repo / "results" / "bm-20220323-3.10.4-9d38120").is_dir()
+
+
+def test_should_run_exists_force(tmp_path, benchmarks_checkout, capsys, monkeypatch):
+    repo = _copy_repo(tmp_path)
+    for dirname in ["cpython"]:
+        shutil.copytree(benchmarks_checkout / dirname, tmp_path / dirname)
+
+    removed_path = None
+
+    def remove_dir(repo, path):
+        nonlocal removed_path
+        removed_path = path
+        shutil.rmtree(repo / path)
+
+    monkeypatch.setattr(should_run.git, "remove_dir", remove_dir)
+
+    should_run.main(True, tmp_path / "cpython", repo / "results")
+
+    captured = capsys.readouterr()
+    assert captured.out.strip() == "should_run=true"
+    assert not (repo / "results" / "bm-20220323-3.10.4-9d38120").is_dir()
+    assert (
+        removed_path.resolve()
+        == (repo / "results" / "bm-20220323-3.10.4-9d38120").resolve()
+    )
+
+
+def test_should_run_noexists_force(tmp_path, benchmarks_checkout, capsys):
+    repo = _copy_repo(tmp_path)
+    for dirname in ["cpython"]:
+        shutil.copytree(benchmarks_checkout / dirname, tmp_path / dirname)
+    shutil.rmtree(repo / "results" / "bm-20220323-3.10.4-9d38120")
+
+    should_run.main(True, tmp_path / "cpython", repo / "results")
+
+    captured = capsys.readouterr()
+    assert captured.out.strip() == "should_run=true"
+    assert not (repo / "results" / "bm-20220323-3.10.4-9d38120").is_dir()
+
+
+def test_should_run_checkout_failed(tmp_path, capsys):
+    repo = _copy_repo(tmp_path)
+    cpython_path = tmp_path / "cpython"
+    cpython_path.mkdir()
+    subprocess.check_call(["git", "init"], cwd=cpython_path)
+
+    with pytest.raises(SystemExit):
+        should_run.main(True, cpython_path, repo / "results")
+
+    captured = capsys.readouterr()
+    assert "The checkout of cpython failed" in captured.out

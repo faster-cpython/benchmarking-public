@@ -68,6 +68,7 @@ jobs:
       benchmarks: ${{ inputs.benchmarks }}
       pgo: true
       publish: ${{ inputs.publish }}
+      force: true
     secrets: inherit
 
   base:
@@ -81,6 +82,7 @@ jobs:
       benchmarks: ${{ inputs.benchmarks }}
       pgo: true
       publish: ${{ inputs.publish }}
+      force: false
     secrets: inherit
 
   pystats-head:
@@ -91,6 +93,7 @@ jobs:
       ref: ${{ inputs.ref }}
       benchmarks: ${{ inputs.benchmarks }}
       publish: ${{ inputs.publish }}
+      force: true
     secrets: inherit
 
   pystats-base:
@@ -102,6 +105,7 @@ jobs:
       ref: ${{ needs.determine_base.outputs.ref }}
       benchmarks: ${{ inputs.benchmarks }}
       publish: ${{ inputs.publish }}
+      force: false
     secrets: inherit
 
   generate:

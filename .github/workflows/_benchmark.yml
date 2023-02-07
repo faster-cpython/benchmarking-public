@@ -2,7 +2,7 @@
 name: _benchmark
 
 env:
-  PYSTON_BENCHMARKS_HASH: 797dfd384464d648e91d23b65453471b8cf68eee
+  PYSTON_BENCHMARKS_HASH: b387f4cc9ad0d33fee812efdbf7fe0808d07a531
 
 "on":
   workflow_call:

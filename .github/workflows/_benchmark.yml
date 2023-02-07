@@ -256,7 +256,7 @@ jobs:
       - name: Setup environment
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          echo "PKG_CONFIG_PATH=$(brew --prefix openssl@1.1)/lib/pkgconfig" >> $GITHUB_OUTPUT
+          echo "PKG_CONFIG_PATH=$(brew --prefix openssl@1.1)/lib/pkgconfig" >> $GITHUB_ENV
       - name: Build Python
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |

@@ -166,13 +166,13 @@ def summarize_results(results: Iterable[Result]) -> Iterable[Result]:
     results = list(results)
     new_results = []
     prev_version = None
-    for result in results[::-1]:
+    for result in results:
         if result.fork != "python":
             continue
         if result.version != prev_version:
             new_results.append(result)
             prev_version = result.version
-    return new_results[::-1]
+    return new_results
 
 
 def generate_index(

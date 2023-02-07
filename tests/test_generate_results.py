@@ -13,6 +13,24 @@ from scripts import generate_results
 DATA_PATH = Path(__file__).parent / "data"
 
 
+def _parse_table(path, table_name="table"):
+    state = "start"
+    rows = []
+    with open(path) as fd:
+        for line in fd.readlines():
+            line = line.strip()
+            if state == "start":
+                if line == f"<!-- START {table_name} -->":
+                    state = "table"
+            elif state == "table":
+                if line == f"<!-- END {table_name} -->":
+                    state = "end"
+                    break
+                elif line.startswith("|"):
+                    rows.append([x.strip() for x in line.split("|")][1:-1])
+    return rows
+
+
 def _copy_repo(tmp_path):
     repo_path = tmp_path / "repo"
     shutil.copytree(DATA_PATH, tmp_path / "repo")
@@ -77,6 +95,43 @@ def test_main(tmp_path):
     # Run twice to make sure there are no side effects of that
     _run_for_bases(["3.10.4", "3.11.0b3"], repo_path, has_base=["b0e1f9c"])
     _run_for_bases(["3.10.4", "3.11.0b3"], repo_path, has_base=["b0e1f9c"])
+
+    rows = _parse_table(repo_path / "README.md")
+    versions = [row[3] for row in rows]
+    assert len(set(versions)) == len(versions)
+    assert versions == [
+        "version",
+        "---",
+        "3.12.0a3+",
+        "3.12.0a2+",
+        "3.12.0a1+",
+        "3.11.0b3",
+        "3.11.0b2",
+        "3.11.0b1",
+        "3.11.0a7",
+        "3.11.0a6",
+        "3.11.0a3",
+        "3.10.4",
+    ]
+
+    rows = _parse_table(repo_path / "results" / "README.md")
+    versions = [row[3] for row in rows]
+    assert len(set(versions)) != len(versions)
+    assert versions == [
+        "version",
+        "---",
+        "3.12.0a3+",
+        "3.12.0a2+",
+        "3.12.0a1+",
+        "3.12.0a1+",
+        "3.11.0b3",
+        "3.11.0b2",
+        "3.11.0b1",
+        "3.11.0a7",
+        "3.11.0a6",
+        "3.11.0a3",
+        "3.10.4",
+    ]
 
 
 def test_change_bases(tmp_path):

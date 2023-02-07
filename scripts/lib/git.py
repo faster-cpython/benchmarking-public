@@ -45,9 +45,9 @@ def get_git_commit_date(dirname) -> str:
     return get_log("%cI", dirname)
 
 
-def remove_dir(repodir, path) -> None:
+def remove(repodir, path) -> None:
     subprocess.check_output(
-        ["git", "rm", "-r", str(path)],
+        ["git", "rm", str(path)],
         cwd=repodir,
     )
 

@@ -40,7 +40,9 @@ def main(
 
     if force:
         if has_result and entry is not None:
-            git.remove_dir(results.parent, entry)
+            for filepath in entry.iterdir():
+                if filepath.suffix != ".json":
+                    git.remove(results.parent, filepath)
         should_run = True
     else:
         should_run = not has_result

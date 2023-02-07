@@ -9,6 +9,7 @@ import sys
 import pytest
 
 
+from scripts import generate_results
 from scripts import run_benchmarks
 from scripts import should_run
 
@@ -215,24 +216,26 @@ def test_should_run_exists_force(tmp_path, benchmarks_checkout, capsys, monkeypa
     for dirname in ["cpython"]:
         shutil.copytree(benchmarks_checkout / dirname, tmp_path / dirname)
 
-    removed_path = None
+    removed_paths = []
 
-    def remove_dir(repo, path):
-        nonlocal removed_path
-        removed_path = path
-        shutil.rmtree(repo / path)
+    def remove(repo, path):
+        nonlocal removed_paths
+        removed_paths.append(path)
+        (repo / path).unlink()
 
-    monkeypatch.setattr(should_run.git, "remove_dir", remove_dir)
+    monkeypatch.setattr(should_run.git, "remove", remove)
 
+    generate_results.main(repo, force=False, bases=["3.11.0b3"])
     should_run.main(True, tmp_path / "cpython", repo / "results")
 
     captured = capsys.readouterr()
-    assert captured.out.strip() == "should_run=true"
-    assert not (repo / "results" / "bm-20220323-3.10.4-9d38120").is_dir()
-    assert (
-        removed_path.resolve()
-        == (repo / "results" / "bm-20220323-3.10.4-9d38120").resolve()
-    )
+    assert captured.out.splitlines()[-1].strip() == "should_run=true"
+    assert (repo / "results" / "bm-20220323-3.10.4-9d38120").is_dir()
+    assert set(x.name for x in removed_paths) == {
+        "bm-20220323-linux-x86_64-python-main-3.10.4-9d38120-vs-3.11.0b3.png",
+        "README.md",
+        "bm-20220323-linux-x86_64-python-main-3.10.4-9d38120-vs-3.11.0b3.md",
+    }
 
 
 def test_should_run_noexists_force(tmp_path, benchmarks_checkout, capsys):

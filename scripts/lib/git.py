@@ -45,6 +45,13 @@ def get_git_commit_date(dirname) -> str:
     return get_log("%cI", dirname)
 
 
+def remove_dir(repodir, path) -> None:
+    subprocess.check_output(
+        ["git", "rm", "-r", str(path)],
+        cwd=repodir,
+    )
+
+
 def get_git_merge_base(dirname) -> Optional[str]:
     # We need to make sure we have commits from main that are old enough to be
     # the base of this branch, but not so old that we waste a ton of bandwidth

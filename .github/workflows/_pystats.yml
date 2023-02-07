@@ -26,6 +26,9 @@ env:
         description: 'Dry run: Do not commit to the repo'
         type: boolean
         default: false
+      force:
+        description: 'Rerun and replace results if commit already exists'
+        type: boolean
 
   workflow_call:
     inputs:
@@ -44,6 +47,9 @@ env:
       dry_run:
         description: 'Dry run: Do not commit to the repo'
         type: boolean
+      force:
+        description: 'Rerun and replace results if commit already exists'
+        type: boolean
 
 jobs:
   collect-stats:
@@ -56,46 +62,57 @@ jobs:
           cache: pip
       - uses: actions/checkout@v3
         with:
+          repository: ${{ inputs.fork }}/cpython
+          ref: ${{ inputs.ref }}
+          path: cpython
+      - name: Should we run?
+        if: ${{ always() }}
+        id: should_run
+        run: |
+          python scripts/should_run.py ${{ inputs.force }} >> $GITHUB_OUTPUT
+      - uses: actions/checkout@v3
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
+        with:
           repository: pyston/python-macrobenchmarks
           path: pyston-benchmarks
           ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
       - uses: actions/checkout@v3
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         with:
           repository: mdboom/pyperformance
           path: pyperformance
           ref: fix-manifest-parsing
-      - uses: actions/checkout@v3
-        with:
-          repository: ${{ inputs.fork }}/cpython
-          ref: ${{ inputs.ref }}
-          path: cpython
-      # - name: Install Dependencies
-      #   run: |
-      #     cd cpython
-      #     sudo ./.github/workflows/posix-deps-apt.sh
       - name: Create pystats directory
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           # If we don't do this, stats are printed to the console
           rm -rf /tmp/py_stats
           mkdir /tmp/py_stats
       - name: Compile
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           cd cpython
           ./configure --enable-pystats --prefix=$PWD/install
           make -j4
           make install
       - name: Install pyperformance into the system python
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           python -m pip install ./pyperformance
       - name: Running pyperformance
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           python scripts/run_benchmarks.py pystats cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }}
-      # Pull again, since another job may have committed results in the meantime
       - name: pull
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          git pull
+          # Another benchmarking task may have created results for the same
+          # commit while the above was running. This "magic" incantation means
+          # that any local results for this commit will override anything we
+          # just pulled in in that case.
+          git pull -s recursive -X ours --autostash --rebase
       - name: Add to repo
+        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
         uses: EndBug/add-and-commit@v9
-        if: ${{ !inputs.dry_run }}
         with:
           add: results

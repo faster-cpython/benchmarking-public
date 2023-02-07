@@ -334,7 +334,8 @@ def load_all_results(bases: List[str], results_dir: Path) -> List[Result]:
         key=lambda x: (
             pkg_version.parse(x.version.replace("+", "0")),
             x.commit_datetime,
-        )
+        ),
+        reverse=True,
     )
 
     return results

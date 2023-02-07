@@ -18,7 +18,7 @@ DATA_PATH = Path(__file__).parent / "data"
 
 def _copy_repo(tmp_path):
     repo_path = tmp_path / "repo"
-    shutil.copytree(DATA_PATH, tmp_path / "repo")
+    shutil.copytree(DATA_PATH, repo_path)
     return repo_path
 
 

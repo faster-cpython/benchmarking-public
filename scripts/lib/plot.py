@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Any, Dict
+from typing import Any, Dict, Optional, Tuple
 
 
 from matplotlib import pyplot as plt
@@ -67,18 +67,20 @@ def formatter(val, pos):
     return f"{val:.02f}x"
 
 
-def calculate_diffs(ref_values, head_values, outlier_rejection=True):
+def calculate_diffs(
+    ref_values, head_values, outlier_rejection=True
+) -> Tuple[Optional[np.ndarray], float]:
     sig, t_score = pyperf._utils.is_significant(ref_values, head_values)
 
     if not sig:
-        return None, 0
+        return None, 0.0
     else:
         if outlier_rejection:
             ref_values = remove_outliers(ref_values)
             head_values = remove_outliers(head_values)
         values = np.outer(ref_values, 1.0 / head_values).flatten()
         values.sort()
-        return values, values.mean()
+        return values, float(values.mean())
 
 
 def plot_diff(

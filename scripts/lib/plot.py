@@ -1,5 +1,6 @@
+import datetime
 from pathlib import Path
-from typing import Any, Dict, Optional, Tuple
+from typing import Any, Dict, Iterable, Optional, Sequence, Tuple
 
 
 from matplotlib import pyplot as plt
@@ -112,3 +113,50 @@ def plot_diff(
 
     plt.savefig(output_filename)
     plt.close()
+
+
+def longitudinal_plot(
+    results: Iterable[result.Result], bases: Sequence[str], output_filename: Path
+):
+    main_results = [
+        r
+        for r in results
+        if r.fork == "python" and r.system == "linux" and r.machine == "x86_64"
+    ]
+
+    base = bases[0]
+    for r in main_results:
+        if r.version == base:
+            ref = r
+            break
+    else:
+        raise ValueError("Can't find base")
+
+    by_version = {}
+    for r in main_results:
+        by_version.setdefault(r.parsed_version.release[0:2], []).append(r)
+    by_version = list(by_version.items())
+    by_version.sort(reverse=True)
+
+    for version, ver_results in by_version:
+        ver_results.sort(key=lambda x: x.commit_datetime)
+        dates = [
+            datetime.datetime.fromisoformat(x.commit_datetime) for x in ver_results
+        ]
+
+        changes = []
+        for r in ver_results:
+            changes.append(result.Comparison(ref, r, base).geometric_mean_float)
+
+        plt.plot(
+            dates, changes, "o-", label=".".join(str(x) for x in version), markersize=2
+        )
+
+    plt.legend()
+    plt.xlabel("Date")
+    plt.ylabel("Speed relative to 3.10.0")
+    plt.title("Performance improvement by major version")
+    plt.gca().yaxis.set_major_formatter(formatter)
+    plt.grid()
+
+    plt.savefig("longitude.png")

@@ -46,6 +46,8 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 
 `*` indicates that the exact same versions of pyperformance was not used.
 
+![Longitudinal speed improvement](longitudinal.png)
+
 ## Documentation
 
 ### Running benchmarks from the GitHub web UI

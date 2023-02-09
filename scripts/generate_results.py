@@ -202,9 +202,14 @@ def generate_master_indices(
 
     - The summary one in `./README.md`
     - The full one in `./RESULTS.md`
+
+    (For the ideas repo, the second file is at `results/README.md`).
     """
     generate_index(repo_dir / "README.md", bases, results, True)
-    generate_index(repo_dir / "RESULTS.md", bases, results, False)
+    results_file = repo_dir / "RESULTS.md"
+    if not results_file.is_file():
+        results_file = repo_dir / "results" / "README.md"
+    generate_index(results_file, bases, results, False)
 
 
 def generate_directory_index(result_dir: Path) -> None:

@@ -5,6 +5,7 @@ Utilities to generate markdown tables.
 
 from pathlib import Path
 from typing import Sequence, TextIO, Union
+from urllib.parse import quote
 
 
 def output_table(
@@ -66,6 +67,8 @@ def md_link(
     """
     if root is not None:
         link = Path(link).resolve().relative_to(Path(root).parent.resolve())
+    if not str(link).startswith("http"):
+        link = "/".join(quote(x) for x in Path(link).parts)
     return f"[{text}]({link})"
 
 

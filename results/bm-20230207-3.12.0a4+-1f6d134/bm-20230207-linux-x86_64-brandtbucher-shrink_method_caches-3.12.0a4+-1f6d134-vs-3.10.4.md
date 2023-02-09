@@ -175,5 +175,5 @@ All benchmarks:
 | Geometric mean          | (ref)                                                  | 1.28x faster                                                                 |
 
 Benchmark hidden because not significant (2): unpickle, bench_mp_pool
-Ignored benchmarks (3) of /home/runner/work/benchmarking/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-linux-x86_64-python-v3.10.4-3.10.4-9d38120.json: flaskblogging, mypy, pylint
-Ignored benchmarks (6) of /home/runner/work/benchmarking/benchmarking/results/bm-20230207-3.12.0a4+-1f6d134/bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4+-1f6d134.json: asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal, mypy2
+Ignored benchmarks (3) of /home/mdboom/Work/builds/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-linux-x86_64-python-v3.10.4-3.10.4-9d38120.json: flaskblogging, mypy, pylint
+Ignored benchmarks (6) of /home/mdboom/Work/builds/benchmarking/results/bm-20230207-3.12.0a4+-1f6d134/bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4+-1f6d134.json: asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal, mypy2

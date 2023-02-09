@@ -101,6 +101,13 @@ We are limited to 2,000 compute minutes per month.
 
 To reduce CI usage, PRs that are only documentation changes should add the `[skip ci]` token to their commit message.
 
+### Analysis changes
+
+This is a changelog of changes that affect the derived data and results:
+
+- 2023-02-09: The plots exclude benchmarks that aren't significant using the same algorithm used by the table results.
+  These benchmarks do not contribute to the overall distribution at the top of the plot.
+
 ### Developer docs
 
 For documentation about how this works, see the [developer docs](DEVELOPER.md).

@@ -168,5 +168,5 @@ All benchmarks:
 | Geometric mean          | (ref)                                                  | 1.02x faster                                                                 |
 
 Benchmark hidden because not significant (10): async_tree_none, sqlalchemy_declarative, tornado_http, crypto_pyaes, deepcopy, xml_etree_iterparse, bench_mp_pool, xml_etree_process, async_tree_cpu_io_mixed, nbody
-Ignored benchmarks (3) of /home/runner/work/benchmarking/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509.json: flaskblogging, mypy, pylint
-Ignored benchmarks (6) of /home/runner/work/benchmarking/benchmarking/results/bm-20230207-3.12.0a4+-1f6d134/bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4+-1f6d134.json: asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal, mypy2
+Ignored benchmarks (3) of /home/mdboom/Work/builds/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509.json: flaskblogging, mypy, pylint
+Ignored benchmarks (6) of /home/mdboom/Work/builds/benchmarking/results/bm-20230207-3.12.0a4+-1f6d134/bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4+-1f6d134.json: asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal, mypy2

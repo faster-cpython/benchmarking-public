@@ -1,10 +1,11 @@
 from pathlib import Path
-from typing import Any, Dict
+from typing import Any, Dict, Optional, Tuple
 
 
 from matplotlib import pyplot as plt
 import matplotlib
 import numpy as np
+import pyperf
 
 
 matplotlib.use("agg")
@@ -37,10 +38,14 @@ def plot_diff_pair(ax, data):
     master_data = []
     all_data = []
 
-    for name, values, mean in data:
-        idx = np.round(np.linspace(0, len(values) - 1, 100)).astype(int)
-        all_data.append(values[idx])
-        master_data.extend(values)
+    for i, (name, values, mean) in enumerate(data):
+        if values is not None:
+            idx = np.round(np.linspace(0, len(values) - 1, 100)).astype(int)
+            all_data.append(values[idx])
+            master_data.extend(values)
+        else:
+            all_data.append([1.0])
+            ax.text(1.01, i + 1, "insignificant")
 
     all_data.append(master_data)
 
@@ -62,13 +67,20 @@ def formatter(val, pos):
     return f"{val:.02f}x"
 
 
-def calculate_diffs(ref_values, head_values, outlier_rejection=True):
-    if outlier_rejection:
-        ref_values = remove_outliers(ref_values)
-        head_values = remove_outliers(head_values)
-    values = np.outer(ref_values, 1.0 / head_values).flatten()
-    values.sort()
-    return values, values.mean()
+def calculate_diffs(
+    ref_values, head_values, outlier_rejection=True
+) -> Tuple[Optional[np.ndarray], float]:
+    sig, t_score = pyperf._utils.is_significant(ref_values, head_values)
+
+    if not sig:
+        return None, 0.0
+    else:
+        if outlier_rejection:
+            ref_values = remove_outliers(ref_values)
+            head_values = remove_outliers(head_values)
+        values = np.outer(ref_values, 1.0 / head_values).flatten()
+        values.sort()
+        return values, float(values.mean())
 
 
 def plot_diff(

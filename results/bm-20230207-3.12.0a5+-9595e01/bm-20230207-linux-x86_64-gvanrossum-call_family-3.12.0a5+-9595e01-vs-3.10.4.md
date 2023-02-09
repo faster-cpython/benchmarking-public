@@ -174,5 +174,5 @@ All benchmarks:
 | Geometric mean          | (ref)                                                  | 1.29x faster                                                      |
 
 Benchmark hidden because not significant (3): generators, bench_mp_pool, unpickle_list
-Ignored benchmarks (3) of /home/runner/work/benchmarking/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-linux-x86_64-python-v3.10.4-3.10.4-9d38120.json: flaskblogging, mypy, pylint
-Ignored benchmarks (5) of /home/runner/work/benchmarking/benchmarking/results/bm-20230207-3.12.0a5+-9595e01/bm-20230207-linux-x86_64-gvanrossum-call_family-3.12.0a5+-9595e01.json: asyncio_tcp, create_gc_cycles, djangocms, gc_traversal, mypy2
+Ignored benchmarks (3) of /home/mdboom/Work/builds/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-linux-x86_64-python-v3.10.4-3.10.4-9d38120.json: flaskblogging, mypy, pylint
+Ignored benchmarks (5) of /home/mdboom/Work/builds/benchmarking/results/bm-20230207-3.12.0a5+-9595e01/bm-20230207-linux-x86_64-gvanrossum-call_family-3.12.0a5+-9595e01.json: asyncio_tcp, create_gc_cycles, djangocms, gc_traversal, mypy2

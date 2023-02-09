@@ -167,5 +167,5 @@ All benchmarks:
 | Geometric mean          | (ref)                                                  | 1.01x faster                                                        |
 
 Benchmark hidden because not significant (8): meteor_contest, scimark_lu, async_tree_none, xml_etree_process, thrift, bench_mp_pool, xml_etree_iterparse, raytrace
-Ignored benchmarks (4) of /home/runner/work/benchmarking/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509.json: flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
-Ignored benchmarks (5) of /home/runner/work/benchmarking/benchmarking/results/bm-20230131-3.12.0a4+-8a6e6a3/bm-20230131-linux-x86_64-iritkatriel-int_freelist-3.12.0a4+-8a6e6a3.json: asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal
+Ignored benchmarks (4) of /home/mdboom/Work/builds/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509.json: flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+Ignored benchmarks (5) of /home/mdboom/Work/builds/benchmarking/results/bm-20230131-3.12.0a4+-8a6e6a3/bm-20230131-linux-x86_64-iritkatriel-int_freelist-3.12.0a4+-8a6e6a3.json: asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal

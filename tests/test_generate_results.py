@@ -180,4 +180,6 @@ def test_fork_with_hyphen(tmp_path):
     print(contents)
     assert contents.count("with-hyphen") == 1
     assert contents.count(" with%2dhyphen ") == 0
-    assert contents.count("with%252dhyphen-main-3.12.0a3%2B-b0e1f9c-vs-3.11.0b3.md") == 1
+    assert (
+        contents.count("with%252dhyphen-main-3.12.0a3%2B-b0e1f9c-vs-3.11.0b3.md") == 1
+    )

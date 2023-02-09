@@ -13,4 +13,6 @@
 - [plot vs. 3.10.4](bm-20230209-linux-x86_64-faster%252dcpython-pep_669_incremental-3.12.0a5%2B-825f42a-vs-3.10.4.png)
 - [table vs. 3.11.0](bm-20230209-linux-x86_64-faster%252dcpython-pep_669_incremental-3.12.0a5%2B-825f42a-vs-3.11.0.md)
 - [plot vs. 3.11.0](bm-20230209-linux-x86_64-faster%252dcpython-pep_669_incremental-3.12.0a5%2B-825f42a-vs-3.11.0.png)
+- [table vs. base](bm-20230209-linux-x86_64-faster%252dcpython-pep_669_incremental-3.12.0a5%2B-825f42a-vs-base.md)
+- [plot vs. base](bm-20230209-linux-x86_64-faster%252dcpython-pep_669_incremental-3.12.0a5%2B-825f42a-vs-base.png)
 

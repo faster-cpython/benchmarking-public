@@ -1,4 +1,5 @@
 import argparse
+import datetime
 import io
 from pathlib import Path
 import re
@@ -157,21 +158,20 @@ def results_by_platform(
         )
 
 
-def summarize_results(results: Iterable[Result]) -> Iterable[Result]:
+def summarize_results(results: Iterable[Result], bases: List[str]) -> Iterable[Result]:
     """
-    Create a shorter list of results where only the most recent result for each
-    Python version is included. Only results from the main `python` fork are
-    included.
+    Create a shorter list of results which includes:
+
+    - The 3 most recent
+    - Any results in the last 3 days
+    - The bases
     """
     results = list(results)
     new_results = []
-    prev_version = None
-    for result in results:
-        if result.fork != "python":
-            continue
-        if result.version != prev_version:
+    earliest = (datetime.date.today() - datetime.timedelta(days=3)).isoformat()
+    for i, result in enumerate(results):
+        if i < 3 or result.commit_date >= earliest or result.version in bases:
             new_results.append(result)
-            prev_version = result.version
     return new_results
 
 
@@ -188,7 +188,7 @@ def generate_index(
     for system, machine, results in results_by_platform(results):
         content.write(f"## {system} {machine}\n")
         if summarize:
-            results = summarize_results(results)
+            results = summarize_results(results, bases)
         output_results_index(content, bases, results, filename)
         content.write("\n")
     table.replace_section(filename, "table", content.getvalue())
@@ -201,10 +201,10 @@ def generate_master_indices(
     Generate both indices:
 
     - The summary one in `./README.md`
-    - The full one in `./results/README.md`
+    - The full one in `./RESULTS.md`
     """
     generate_index(repo_dir / "README.md", bases, results, True)
-    generate_index(repo_dir / "results" / "README.md", bases, results, False)
+    generate_index(repo_dir / "RESULTS.md", bases, results, False)
 
 
 def generate_directory_index(result_dir: Path) -> None:

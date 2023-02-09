@@ -32,7 +32,7 @@ def test_output_table():
 
 def test_replace_section(tmp_path):
     readme_path = tmp_path / "README.md"
-    shutil.copy(DATA_PATH / "results" / "README.md", readme_path)
+    shutil.copy(DATA_PATH / "RESULTS.md", readme_path)
 
     table.replace_section(readme_path, "table", "THIS IS THE CONTENT")
 

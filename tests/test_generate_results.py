@@ -67,9 +67,9 @@ def _run_for_bases(bases, repo_path, force=False, has_base=[], check_readmes=Tru
 
     if check_readmes:
         contents = (repo_path / "README.md").read_text()
-        assert contents.count("\n|") == 12
+        assert contents.count("\n|") == 7
 
-        contents = (repo_path / "results" / "README.md").read_text()
+        contents = (repo_path / "RESULTS.md").read_text()
         assert contents.count("\n|") == 13
 
 
@@ -99,6 +99,7 @@ def test_main(tmp_path):
     rows = _parse_table(repo_path / "README.md")
     versions = [row[3] for row in rows]
     assert len(set(versions)) == len(versions)
+    print(versions)
     assert versions == [
         "version",
         "---",
@@ -106,15 +107,10 @@ def test_main(tmp_path):
         "3.12.0a2+",
         "3.12.0a1+",
         "3.11.0b3",
-        "3.11.0b2",
-        "3.11.0b1",
-        "3.11.0a7",
-        "3.11.0a6",
-        "3.11.0a3",
         "3.10.4",
     ]
 
-    rows = _parse_table(repo_path / "results" / "README.md")
+    rows = _parse_table(repo_path / "RESULTS.md")
     versions = [row[3] for row in rows]
     assert len(set(versions)) != len(versions)
     assert versions == [
@@ -180,7 +176,7 @@ def test_fork_with_hyphen(tmp_path):
 
     _run_for_bases(["3.10.4", "3.11.0b3"], repo_path, check_readmes=False)
 
-    contents = (repo_path / "results" / "README.md").read_text()
+    contents = (repo_path / "RESULTS.md").read_text()
     assert contents.count("with-hyphen") == 1
     assert contents.count(" with%2dhyphen ") == 0
     assert contents.count("with%2dhyphen-main-3.12.0a3+-b0e1f9c-vs-3.11.0b3.md") == 1

@@ -46,7 +46,7 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 
 `*` indicates that the exact same versions of pyperformance was not used.
 
-![Longitudinal speed improvement](longitudinal.png)
+![Longitudinal speed improvement](/assets/images/longitudinal.png)
 
 ## Documentation
 

@@ -1,5 +1,7 @@
+import datetime
 from pathlib import Path
-from typing import Any, Dict, Optional, Tuple
+import re
+from typing import Any, Dict, Iterable, Optional, Sequence, Tuple
 
 
 from matplotlib import pyplot as plt
@@ -109,6 +111,91 @@ def plot_diff(
     axs.xaxis.set_major_formatter(formatter)
     axs.grid()
     axs.set_title(title)
+
+    plt.savefig(output_filename)
+    plt.close()
+
+
+def get_micro_version(version):
+    micro = version.split(".")[-1].replace("+", "")
+    if match := re.match(r"[0-9]+([a-z]+.+)", micro):
+        micro = match.groups()[0]
+    if micro == "a0":
+        return ""
+    return micro
+
+
+def longitudinal_plot(
+    results: Iterable[result.Result], bases: Sequence[str], output_filename: Path
+):
+    main_results = [
+        r
+        for r in results
+        if r.fork == "python" and r.system == "linux" and r.machine == "x86_64"
+    ]
+
+    base = bases[0]
+    for r in main_results:
+        if r.version == base:
+            ref = r
+            break
+    else:
+        raise ValueError("Can't find base")
+
+    by_version = {}
+    for r in main_results:
+        by_version.setdefault(r.parsed_version.release[0:2], []).append(r)
+    by_version = list(by_version.items())
+    by_version.sort(reverse=True)
+
+    fig, axs = plt.subplots(layout="constrained")
+
+    arrow_dir = 1
+    for version, ver_results in by_version:
+        ver_results.sort(key=lambda x: x.commit_datetime)
+        dates = [
+            datetime.datetime.fromisoformat(x.commit_datetime) for x in ver_results
+        ]
+        changes = [
+            result.Comparison(ref, r, base).geometric_mean_float for r in ver_results
+        ]
+
+        annotations = []
+        for r in ver_results:
+            micro = get_micro_version(r.version)
+            if micro not in annotations:
+                annotations.append(micro)
+            else:
+                annotations.append(None)
+
+        axs.plot(
+            dates, changes, "o-", label=".".join(str(x) for x in version), markersize=2
+        )
+        for date, change, annotation in zip(dates, changes, annotations):
+            if annotation is not None:
+                text = axs.annotate(
+                    annotation,
+                    xy=(date, change),
+                    xycoords="data",
+                    xytext=(-3, 15 * arrow_dir),
+                    textcoords="offset points",
+                    rotation=90,
+                    arrowprops=dict(arrowstyle="-", connectionstyle="arc"),
+                )
+                text.set_color("#888")
+                text.set_size(8)
+                text.arrow_patch.set_color("#888")
+
+        arrow_dir *= -1
+
+    axs.legend(loc="upper left")
+    axs.set_xlabel("Date")
+    axs.set_ylabel(f"Speed relative to {base}")
+    axs.set_title("Performance improvement by major version")
+    axs.yaxis.set_major_formatter(formatter)
+    ylim = axs.get_ylim()
+    axs.set_ylim(top=ylim[1] + 0.1)
+    axs.grid()
 
     plt.savefig(output_filename)
     plt.close()

@@ -263,6 +263,7 @@ def generate_directory_indices(results_dir: Path) -> None:
         generate_directory_index(path)
 
         util.status(".")
+    print()
 
 
 def main(repo_dir: Path, force: bool = False, bases: Optional[List[str]] = None):
@@ -277,7 +278,8 @@ def main(repo_dir: Path, force: bool = False, bases: Optional[List[str]] = None)
     print("Generating indices")
     generate_master_indices(bases, results, repo_dir)
     generate_directory_indices(repo_dir / "results")
-    print()
+    print("Generating longitudinal plot")
+    plot.longitudinal_plot(results, bases, Path("longitudinal.png"))
 
 
 if __name__ == "__main__":

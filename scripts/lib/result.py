@@ -85,6 +85,17 @@ class Comparison:
         return geometric_mean
 
     @property
+    def geometric_mean_float(self) -> float:
+        parts = self.geometric_mean.split(" ")
+        if len(parts) == 1:
+            return 1.0
+        (number, direction, *_) = parts
+        number = float(number[:-1])
+        if direction == "slower":
+            number = 1.0 - (number - 1.0)
+        return number
+
+    @property
     @functools.cache
     def contents(self) -> Optional[str]:
         if self.filename is None:
@@ -276,6 +287,11 @@ class Result:
     def benchmark_hash(self) -> str:
         return self.metadata.get("benchmark_hash", None)
 
+    @property
+    @functools.cache
+    def parsed_version(self) -> pkg_version.Version:
+        return pkg_version.parse(self.version.replace("+", "0"))
+
     def match_to_bases(self, bases: List[str], results: Iterable["Result"]) -> None:
         loose_results = [
             ref
@@ -332,7 +348,7 @@ def load_all_results(bases: List[str], results_dir: Path) -> List[Result]:
 
     results.sort(
         key=lambda x: (
-            pkg_version.parse(x.version.replace("+", "0")),
+            x.parsed_version,
             x.commit_datetime,
         ),
         reverse=True,

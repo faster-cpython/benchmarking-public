@@ -37,32 +37,37 @@ def remove_outliers(values, m=2):
 
 
 def plot_diff_pair(ax, data):
-    master_data = []
     all_data = []
+    violins = []
 
     for i, (name, values, mean) in enumerate(data):
         if values is not None:
             idx = np.round(np.linspace(0, len(values) - 1, 100)).astype(int)
-            all_data.append(values[idx])
-            master_data.extend(values)
+            violins.append(values[idx])
+            all_data.extend(values)
         else:
-            all_data.append([1.0])
+            violins.append([1.0])
             ax.text(1.01, i + 1, "insignificant")
 
-    all_data.append(master_data)
+    violins.append(all_data)
 
     violin = ax.violinplot(
-        all_data,
+        violins,
         vert=False,
         showmeans=True,
         showmedians=False,
         widths=1.0,
-        quantiles=[[0.1, 0.9]] * len(all_data),
+        quantiles=[[0.1, 0.9]] * len(violins),
     )
 
     violin["cquantiles"].set_linestyle(":")
 
-    return master_data
+    for i, values in enumerate(violins):
+        if not np.all(values == [1.0]):
+            mean = np.mean(values)
+            ax.text(mean, i+1.2, f"{mean:.04f}", size=6)
+
+    return all_data
 
 
 def formatter(val, pos):

@@ -120,6 +120,8 @@ def get_micro_version(version):
     micro = version.split(".")[-1].replace("+", "")
     if match := re.match(r"[0-9]+([a-z]+.+)", micro):
         micro = match.groups()[0]
+    if micro == "a0":
+        return ""
     return micro
 
 

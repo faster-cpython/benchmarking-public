@@ -1,5 +1,6 @@
 import datetime
 from pathlib import Path
+import re
 from typing import Any, Dict, Iterable, Optional, Sequence, Tuple
 
 
@@ -115,6 +116,13 @@ def plot_diff(
     plt.close()
 
 
+def get_micro_version(version):
+    micro = version.split(".")[-1].replace("+", "")
+    if match := re.match(r"[0-9]+([a-z]+.+)", micro):
+        micro = match.groups()[0]
+    return micro
+
+
 def longitudinal_plot(
     results: Iterable[result.Result], bases: Sequence[str], output_filename: Path
 ):
@@ -138,25 +146,54 @@ def longitudinal_plot(
     by_version = list(by_version.items())
     by_version.sort(reverse=True)
 
+    fig, axs = plt.subplots(layout="constrained")
+
+    arrow_dir = 1
     for version, ver_results in by_version:
         ver_results.sort(key=lambda x: x.commit_datetime)
         dates = [
             datetime.datetime.fromisoformat(x.commit_datetime) for x in ver_results
         ]
+        changes = [
+            result.Comparison(ref, r, base).geometric_mean_float for r in ver_results
+        ]
 
-        changes = []
+        annotations = []
         for r in ver_results:
-            changes.append(result.Comparison(ref, r, base).geometric_mean_float)
+            micro = get_micro_version(r.version)
+            if micro not in annotations:
+                annotations.append(micro)
+            else:
+                annotations.append(None)
 
-        plt.plot(
+        axs.plot(
             dates, changes, "o-", label=".".join(str(x) for x in version), markersize=2
         )
+        for date, change, annotation in zip(dates, changes, annotations):
+            if annotation is not None:
+                text = axs.annotate(
+                    annotation,
+                    xy=(date, change),
+                    xycoords="data",
+                    xytext=(-3, 15 * arrow_dir),
+                    textcoords="offset points",
+                    rotation=90,
+                    arrowprops=dict(arrowstyle="-", connectionstyle="arc"),
+                )
+                text.set_color("#888")
+                text.set_size(8)
+                text.arrow_patch.set_color("#888")
 
-    plt.legend()
-    plt.xlabel("Date")
-    plt.ylabel("Speed relative to 3.10.0")
-    plt.title("Performance improvement by major version")
-    plt.gca().yaxis.set_major_formatter(formatter)
-    plt.grid()
+        arrow_dir *= -1
 
-    plt.savefig("longitude.png")
+    axs.legend(loc="upper left")
+    axs.set_xlabel("Date")
+    axs.set_ylabel(f"Speed relative to {base}")
+    axs.set_title("Performance improvement by major version")
+    axs.yaxis.set_major_formatter(formatter)
+    ylim = axs.get_ylim()
+    axs.set_ylim(top=ylim[1] + 0.1)
+    axs.grid()
+
+    plt.savefig(output_filename)
+    plt.close()

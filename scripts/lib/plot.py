@@ -65,7 +65,7 @@ def plot_diff_pair(ax, data):
     for i, values in enumerate(violins):
         if not np.all(values == [1.0]):
             mean = np.mean(values)
-            ax.text(mean, i + 1.2, f"{mean:.04f}", size=6)
+            ax.text(mean, i + 1.3, f"{mean:.04f}", size=8)
 
     return all_data
 

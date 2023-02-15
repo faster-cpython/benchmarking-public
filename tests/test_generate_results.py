@@ -64,6 +64,10 @@ def _run_for_bases(bases, repo_path, force=False, has_base=[], check_readmes=Tru
         # Make sure all files in the directory have a link
         contents = (dirpath / "README.md").read_text()
         assert contents.count("\n- [") == len(list(dirpath.iterdir())) - 1
+        assert "## linux x86_64" in contents
+        for base in bases:
+            if base not in dirpath.name:
+                assert f"### vs. {base}" in contents
 
     if check_readmes:
         contents = (repo_path / "README.md").read_text()

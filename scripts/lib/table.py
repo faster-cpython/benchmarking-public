@@ -4,7 +4,7 @@ Utilities to generate markdown tables.
 
 
 from pathlib import Path
-from typing import Sequence, TextIO, Union
+from typing import Iterable, Sequence, TextIO, Union
 from urllib.parse import quote
 
 
@@ -80,3 +80,12 @@ def link_to_hash(hash: str, fork: str) -> str:
         hash,
         f"https://github.com/{fork}/cpython/commit/{hash}",
     )
+
+
+def write_md_list(fd: TextIO, entries: Iterable[str]) -> None:
+    """
+    Writes a markdown list.
+    """
+    for val in entries:
+        fd.write(f"- {val}\n")
+    fd.write("\n")

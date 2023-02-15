@@ -16,7 +16,7 @@ from lib.result import Result
 
 
 BENCHMARK_JSON = Path("benchmark.json")
-GITHUB_URL = "https://github.com/faster-cpython/benchmarking/"
+GITHUB_URL = "https://github.com/faster-cpython/benchmarking"
 
 
 def run_benchmarks(python: Union[Path, str], benchmarks: str, fast: bool) -> None:

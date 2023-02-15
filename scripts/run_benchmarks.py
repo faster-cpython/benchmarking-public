@@ -69,8 +69,8 @@ def update_metadata(
     fork: str,
     ref: str,
     publish: str,
-    run_id: Optional[str] = None,
     cpython="cpython",
+    run_id: Optional[str] = None,
 ) -> None:
     publish_bool = publish.lower() == "true"
 

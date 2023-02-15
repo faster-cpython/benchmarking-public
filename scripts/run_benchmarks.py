@@ -5,7 +5,7 @@ import shutil
 import subprocess
 import sys
 import textwrap
-from typing import Union
+from typing import Optional, Union
 
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -16,6 +16,7 @@ from lib.result import Result
 
 
 BENCHMARK_JSON = Path("benchmark.json")
+GITHUB_URL = "https://github.com/faster-cpython/benchmarking/"
 
 
 def run_benchmarks(python: Union[Path, str], benchmarks: str, fast: bool) -> None:
@@ -64,7 +65,12 @@ def run_benchmarks(python: Union[Path, str], benchmarks: str, fast: bool) -> Non
 
 
 def update_metadata(
-    filename: Path, fork: str, ref: str, publish: str, cpython="cpython"
+    filename: Path,
+    fork: str,
+    ref: str,
+    publish: str,
+    run_id: Optional[str] = None,
+    cpython="cpython",
 ) -> None:
     publish_bool = publish.lower() == "true"
 
@@ -85,6 +91,8 @@ def update_metadata(
         ["pyperformance", "pyston-benchmarks"]
     )
     metadata["publish"] = publish_bool
+    if run_id is not None:
+        metadata["github_action_url"] = f"{GITHUB_URL}/actions/runs/{run_id}"
 
     with open(filename, "w") as fd:
         json.dump(content, fd, indent=2)
@@ -143,10 +151,11 @@ def main(
     benchmarks: str,
     publish: str,
     fast: bool,
+    run_id: Optional[str],
 ) -> None:
     run_benchmarks(python, benchmarks, fast)
     if mode == "benchmark":
-        update_metadata(BENCHMARK_JSON, fork, ref, publish)
+        update_metadata(BENCHMARK_JSON, fork, ref, publish, run_id=run_id)
         copy_to_directory(BENCHMARK_JSON, python, fork, ref)
     elif mode == "pystats":
         run_summarize_stats(python, fork, ref, publish)
@@ -171,6 +180,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--fast", action="store_true", help="Run fewer iterations of the benchmarks"
     )
+    parser.add_argument("--run_id", default=None, type=str, help="The github run id")
     args = parser.parse_args()
 
     main(
@@ -181,4 +191,5 @@ if __name__ == "__main__":
         args.benchmarks,
         args.publish,
         args.fast,
+        args.run_id,
     )

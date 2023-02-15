@@ -297,6 +297,10 @@ class Result:
         return self.metadata.get("platform", "missing")
 
     @property
+    def github_action_url(self) -> Optional[str]:
+        return self.metadata.get("github_action", None)
+
+    @property
     @functools.cache
     def parsed_version(self) -> pkg_version.Version:
         return pkg_version.parse(self.version.replace("+", "0"))

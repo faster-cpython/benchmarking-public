@@ -2,17 +2,36 @@
 
 - fork: iritkatriel
 - ref: InitializeHeader
+- version: 3.12.0a3+
 - commit hash: [d501577](https://github.com/iritkatriel/cpython/commit/d501577)
 - commit date: 2023-01-05T13:09:34+00:00
 - commit merge base: [f20c553a458659f247fac1fb829f8172aa32f69a](https://github.com/iritkatriel/cpython/commit/f20c553a458659f247fac1fb829f8172aa32f69a)
 
 ## linux x86_64
 
+- cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
+- platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
 - [raw results](bm-20230105-linux-x86_64-iritkatriel-InitializeHeader-3.12.0a3%2B-d501577.json)
-- [table vs. 3.10.4](bm-20230105-linux-x86_64-iritkatriel-InitializeHeader-3.12.0a3%2B-d501577-vs-3.10.4.md)
-- [plot vs. 3.10.4](bm-20230105-linux-x86_64-iritkatriel-InitializeHeader-3.12.0a3%2B-d501577-vs-3.10.4.png)
-- [table vs. 3.11.0](bm-20230105-linux-x86_64-iritkatriel-InitializeHeader-3.12.0a3%2B-d501577-vs-3.11.0.md)
-- [plot vs. 3.11.0](bm-20230105-linux-x86_64-iritkatriel-InitializeHeader-3.12.0a3%2B-d501577-vs-3.11.0.png)
-- [table vs. base](bm-20230105-linux-x86_64-iritkatriel-InitializeHeader-3.12.0a3%2B-d501577-vs-base.md)
-- [plot vs. base](bm-20230105-linux-x86_64-iritkatriel-InitializeHeader-3.12.0a3%2B-d501577-vs-base.png)
+
+### vs. 3.10.4
+
+- 1.30x faster
+- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+- new benchmarks: djangocms
+- [table](bm-20230105-linux-x86_64-iritkatriel-InitializeHeader-3.12.0a3%2B-d501577-vs-3.10.4.md)
+- [plot](bm-20230105-linux-x86_64-iritkatriel-InitializeHeader-3.12.0a3%2B-d501577-vs-3.10.4.png)
+
+### vs. 3.11.0
+
+- 1.03x faster
+- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+- new benchmarks: djangocms
+- [table](bm-20230105-linux-x86_64-iritkatriel-InitializeHeader-3.12.0a3%2B-d501577-vs-3.11.0.md)
+- [plot](bm-20230105-linux-x86_64-iritkatriel-InitializeHeader-3.12.0a3%2B-d501577-vs-3.11.0.png)
+
+### vs. base
+
+- 1.00x slower
+- [table](bm-20230105-linux-x86_64-iritkatriel-InitializeHeader-3.12.0a3%2B-d501577-vs-base.md)
+- [plot](bm-20230105-linux-x86_64-iritkatriel-InitializeHeader-3.12.0a3%2B-d501577-vs-base.png)
 

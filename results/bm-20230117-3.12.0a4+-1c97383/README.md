@@ -2,17 +2,36 @@
 
 - fork: iritkatriel
 - ref: const_regs2
+- version: 3.12.0a4+
 - commit hash: [1c97383](https://github.com/iritkatriel/cpython/commit/1c97383)
 - commit date: 2023-01-17T07:54:42+00:00
 - commit merge base: [762745a124cbc297cf2fe6f3ec9ca1840bb2e873](https://github.com/iritkatriel/cpython/commit/762745a124cbc297cf2fe6f3ec9ca1840bb2e873)
 
 ## linux x86_64
 
+- cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
+- platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
 - [raw results](bm-20230117-linux-x86_64-iritkatriel-const_regs2-3.12.0a4%2B-1c97383.json)
-- [table vs. 3.10.4](bm-20230117-linux-x86_64-iritkatriel-const_regs2-3.12.0a4%2B-1c97383-vs-3.10.4.md)
-- [plot vs. 3.10.4](bm-20230117-linux-x86_64-iritkatriel-const_regs2-3.12.0a4%2B-1c97383-vs-3.10.4.png)
-- [table vs. 3.11.0](bm-20230117-linux-x86_64-iritkatriel-const_regs2-3.12.0a4%2B-1c97383-vs-3.11.0.md)
-- [plot vs. 3.11.0](bm-20230117-linux-x86_64-iritkatriel-const_regs2-3.12.0a4%2B-1c97383-vs-3.11.0.png)
-- [table vs. base](bm-20230117-linux-x86_64-iritkatriel-const_regs2-3.12.0a4%2B-1c97383-vs-base.md)
-- [plot vs. base](bm-20230117-linux-x86_64-iritkatriel-const_regs2-3.12.0a4%2B-1c97383-vs-base.png)
+
+### vs. 3.10.4
+
+- 1.27x faster \*
+- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+- new benchmarks: asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal
+- [table](bm-20230117-linux-x86_64-iritkatriel-const_regs2-3.12.0a4%2B-1c97383-vs-3.10.4.md)
+- [plot](bm-20230117-linux-x86_64-iritkatriel-const_regs2-3.12.0a4%2B-1c97383-vs-3.10.4.png)
+
+### vs. 3.11.0
+
+- 1.00x faster \*
+- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+- new benchmarks: asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal
+- [table](bm-20230117-linux-x86_64-iritkatriel-const_regs2-3.12.0a4%2B-1c97383-vs-3.11.0.md)
+- [plot](bm-20230117-linux-x86_64-iritkatriel-const_regs2-3.12.0a4%2B-1c97383-vs-3.11.0.png)
+
+### vs. base
+
+- 1.03x slower
+- [table](bm-20230117-linux-x86_64-iritkatriel-const_regs2-3.12.0a4%2B-1c97383-vs-base.md)
+- [plot](bm-20230117-linux-x86_64-iritkatriel-const_regs2-3.12.0a4%2B-1c97383-vs-base.png)
 

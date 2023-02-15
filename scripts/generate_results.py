@@ -5,7 +5,7 @@ from pathlib import Path
 import re
 import sys
 import textwrap
-from typing import Iterable, List, Optional, TextIO, Tuple
+from typing import Dict, Iterable, List, Optional, TextIO, Tuple
 from urllib.parse import unquote
 
 
@@ -17,6 +17,25 @@ from lib import plot
 from lib.result import load_all_results, Comparison, Result
 from lib import table
 from lib import util
+
+
+def _tuple_to_nested_dicts(entries: List[Tuple], d: Optional[Dict] = None) -> Dict:
+    def recurse(entry: Tuple, d: Dict):
+        if len(entry) == 2:
+            d.setdefault(entry[0], [])
+            if entry[1] not in d[entry[0]]:
+                d[entry[0]].append(entry[1])
+        else:
+            recurse(entry[1:], d.setdefault(entry[0], {}))
+
+    assert len(set(len(x) for x in entries)) == 1
+
+    if d is None:
+        d = {}
+
+    for entry in entries:
+        recurse(entry, d)
+    return d
 
 
 def write_markdown_results(filename: Path, compare: Comparison) -> None:
@@ -212,57 +231,117 @@ def generate_master_indices(
     generate_index(results_file, bases, results, False)
 
 
-def generate_directory_index(result_dir: Path) -> None:
-    results = []
-    for filename in sorted(list(result_dir.iterdir())):
-        if filename.name == "README.md":
-            continue
-        results.append(Result.from_filename(filename))
+def find_different_benchmarks(head: Result, ref: Result) -> Tuple[List[str], List[str]]:
+    def get_benchmark_names(contents):
+        for benchmark in contents["benchmarks"]:
+            if "metadata" in benchmark:
+                yield benchmark["metadata"]["name"]
+            else:
+                yield contents["metadata"]["name"]
 
+    head_benchmarks = set(get_benchmark_names(head.contents))
+    base_benchmarks = set(get_benchmark_names(ref.contents))
+    return (
+        sorted(base_benchmarks - head_benchmarks),
+        sorted(head_benchmarks - base_benchmarks),
+    )
+
+
+def get_directory_indices_entries(
+    results: List[Result],
+) -> List[Tuple[Path, Optional[str], Optional[str], str]]:
+    entries = []
+    dirpaths = set()
     for result in results:
-        if result.result_type == "raw results":
-            break
-    else:
-        raise ValueError(f"Couldn't find raw results in {result_dir}")
+        dirpath = result.filename.parent
+        dirpaths.add(dirpath)
+        entries.append((dirpath, None, None, f"fork: {unquote(result.fork)}"))
+        entries.append((dirpath, None, None, f"ref: {result.ref}"))
+        entries.append((dirpath, None, None, f"version: {result.version}"))
+        link = table.link_to_hash(result.cpython_hash, result.fork)
+        entries.append((dirpath, None, None, f"commit hash: {link}"))
+        entries.append((dirpath, None, None, f"commit date: {result.commit_datetime}"))
+        if result.commit_merge_base is not None:
+            link = table.link_to_hash(result.commit_merge_base, result.fork)
+            entries.append((dirpath, None, None, f"commit merge base: {link}"))
 
-    with open(result_dir / "README.md", "w") as fd:
-        fd.write("# Results\n\n")
+        entries.append(
+            (dirpath, result.worker, None, f"cpu model: {result.cpu_model_name}")
+        )
+        entries.append((dirpath, result.worker, None, f"platform: {result.platform}"))
 
-        entries = [
-            ("fork", unquote(result.fork)),
-            ("ref", result.ref),
-            ("commit hash", table.link_to_hash(result.cpython_hash, result.fork)),
-            ("commit date", result.commit_datetime),
-            (
-                "commit merge base",
-                table.link_to_hash(result.commit_merge_base, result.fork),
-            ),
-        ]
+        for base, compare in result.bases.items():
+            entries.append((dirpath, result.worker, base, compare.geometric_mean))
+            missing_benchmarks, new_benchmarks = find_different_benchmarks(
+                result, compare.ref
+            )
+            if len(missing_benchmarks):
+                prefix = base == "base" and "🔴 " or ""
+                entries.append(
+                    (
+                        dirpath,
+                        result.worker,
+                        base,
+                        f"missing benchmarks: {prefix}{', '.join(missing_benchmarks)}",
+                    )
+                )
+            if len(new_benchmarks):
+                entries.append(
+                    (
+                        dirpath,
+                        result.worker,
+                        base,
+                        f"new benchmarks: {', '.join(new_benchmarks)}",
+                    )
+                )
 
-        for key, val in entries:
-            fd.write(f"- {key}: {val}\n")
-        fd.write("\n")
+    for dirpath in dirpaths:
+        for filename in sorted(list(dirpath.iterdir())):
+            if filename.name == "README.md":
+                continue
+            result = Result.from_filename(filename)
+            type, base = result.result_info
+            entries.append(
+                (
+                    dirpath,
+                    result.worker,
+                    base,
+                    table.md_link(type, result.filename.name),
+                )
+            )
 
-        for system, machine, results in results_by_platform(results):
-            results = sorted(results, key=lambda x: (x.extra, x.suffix))
-            fd.write(f"## {system} {machine}\n\n")
-            for result in results:
-                link = table.md_link(result.result_type, result.filename.name)
-                fd.write(f"- {link}\n")
-            fd.write("\n")
+    return entries
 
 
-def generate_directory_indices(results_dir: Path) -> None:
+def generate_directory_indices(results: List[Result]) -> None:
     """
     Generate the indices that go in each results directory.
     """
-    for path in results_dir.iterdir():
-        if not path.is_dir():
-            continue
 
-        generate_directory_index(path)
+    # The data is in a considerably different form than what we need to write
+    # it out. Therefore, this first generates a list of tuples of the form:
+    #    (dirpath, worker, base, entry)
+    # then converts that to a nested dictionary and then writes it out to each
+    # of the README.md files.
 
+    entries = get_directory_indices_entries(results)
+    structure = _tuple_to_nested_dicts(entries)
+
+    for dirpath, dirresults in structure.items():
         util.status(".")
+        with open(dirpath / "README.md", "w") as fd:
+            fd.write("# Results\n\n")
+            table.write_md_list(fd, dirresults[None][None])
+            for worker, data in dirresults.items():
+                if worker is None:
+                    continue
+                fd.write(f"## {worker}\n\n")
+                table.write_md_list(fd, data[None])
+                for base, subdata in data.items():
+                    if base is None:
+                        continue
+                    fd.write(f"### vs. {base}\n\n")
+                    table.write_md_list(fd, subdata)
     print()
 
 
@@ -270,6 +349,8 @@ def main(repo_dir: Path, force: bool = False, bases: Optional[List[str]] = None)
     results_dir = repo_dir / "results"
     if bases is None:
         bases = get_bases()
+    if len(bases) == 0:
+        raise ValueError("Must have at least one base specified")
     print(f"Comparing to bases {bases}")
     results = load_all_results(bases, results_dir)
     print(f"Found {len(results)} results")
@@ -277,9 +358,9 @@ def main(repo_dir: Path, force: bool = False, bases: Optional[List[str]] = None)
     save_generated_results(results, force=force)
     print("Generating indices")
     generate_master_indices(bases, results, repo_dir)
-    generate_directory_indices(repo_dir / "results")
+    generate_directory_indices(results)
     print("Generating longitudinal plot")
-    plot.longitudinal_plot(results, bases, Path("longitudinal.png"))
+    plot.longitudinal_plot(results, bases, repo_dir / "longitudinal.png")
 
 
 if __name__ == "__main__":

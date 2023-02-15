@@ -5,7 +5,7 @@ import functools
 import json
 from pathlib import Path
 import subprocess
-from typing import Any, Dict, Iterable, List, Optional
+from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 
 from packaging import version as pkg_version
@@ -241,22 +241,19 @@ class Result:
 
     @property
     @functools.cache
-    def result_type(self) -> str:
-        """
-        Get a human-readable description of the result type.
-        """
+    def result_info(self) -> Tuple[str, Optional[str]]:
         if self.extra == [] and self.suffix == ".json":
-            return "raw results"
+            return ("raw results", None)
         elif self.extra == ["pystats"]:
             if self.suffix == ".md":
-                return "pystats table"
+                return ("pystats table", None)
             elif self.suffix == ".json":
-                return "pystats raw data"
+                return ("pystats raw", None)
         elif len(self.extra) == 2 and self.extra[0] == "vs":
             if self.suffix == ".md":
-                return f"table vs. {self.extra[1]}"
+                return ("table", self.extra[1])
             elif self.suffix == ".png":
-                return f"plot vs. {self.extra[1]}"
+                return ("plot", self.extra[1])
         raise ValueError("Unknown result type")
 
     @property
@@ -288,6 +285,18 @@ class Result:
         return self.metadata.get("benchmark_hash", None)
 
     @property
+    def worker(self) -> str:
+        return f"{self.system} {self.machine}"
+
+    @property
+    def cpu_model_name(self) -> str:
+        return self.metadata.get("cpu_model_name", "missing")
+
+    @property
+    def platform(self) -> str:
+        return self.metadata.get("platform", "missing")
+
+    @property
     @functools.cache
     def parsed_version(self) -> pkg_version.Version:
         return pkg_version.parse(self.version.replace("+", "0"))
@@ -314,15 +323,11 @@ class Result:
         def find_match(base, func):
             # Try for an exact match (same benchmark_hash) first,
             # then fall back to less exact.
-            for ref in exact_results:
-                if func(ref):
-                    self.bases[base] = Comparison(ref, self, base)
-                    break
-            else:
-                for ref in loose_results:
+            for result_set in [exact_results, loose_results]:
+                for ref in result_set:
                     if func(ref):
                         self.bases[base] = Comparison(ref, self, base)
-                        break
+                        return
 
         for base in bases:
             find_match(base, lambda ref: ref.version == base)
@@ -337,7 +342,7 @@ def load_all_results(bases: List[str], results_dir: Path) -> List[Result]:
 
     for entry in results_dir.glob("**/*.json"):
         result = Result.from_filename(entry)
-        if not result.result_type == "raw results":
+        if result.result_info != ("raw results", None):
             continue
         results.append(Result.from_filename(entry))
     if len(results) == 0:

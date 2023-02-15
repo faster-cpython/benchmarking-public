@@ -22,7 +22,9 @@ from lib import util
 def _tuple_to_nested_dicts(entries: List[Tuple], d: Optional[Dict] = None) -> Dict:
     def recurse(entry: Tuple, d: Dict):
         if len(entry) == 2:
-            d.setdefault(entry[0], []).append(entry[1])
+            d.setdefault(entry[0], [])
+            if entry[1] not in d[entry[0]]:
+                d[entry[0]].append(entry[1])
         else:
             recurse(entry[1:], d.setdefault(entry[0], {}))
 

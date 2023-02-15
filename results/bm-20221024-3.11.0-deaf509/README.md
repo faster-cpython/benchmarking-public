@@ -5,11 +5,7 @@
 - version: 3.11.0
 - commit hash: [deaf509](https://github.com/python/cpython/commit/deaf509)
 - commit date: 2022-10-24T18:35:39+01:00
-- fork: python
 - ref: v3.11.0
-- version: 3.11.0
-- commit hash: [deaf509](https://github.com/python/cpython/commit/deaf509)
-- commit date: 2022-10-24T18:35:39+01:00
 
 ## darwin arm64
 

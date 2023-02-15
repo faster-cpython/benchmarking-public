@@ -5,11 +5,6 @@
 - version: 3.11.0rc2
 - commit hash: [ed7c3ff](https://github.com/python/cpython/commit/ed7c3ff)
 - commit date: 2022-09-11T20:23:30+01:00
-- fork: python
-- ref: ed7c3ff15680c1939fad
-- version: 3.11.0rc2
-- commit hash: [ed7c3ff](https://github.com/python/cpython/commit/ed7c3ff)
-- commit date: 2022-09-11T20:23:30+01:00
 
 ## linux x86_64
 

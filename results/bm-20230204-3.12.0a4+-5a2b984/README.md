@@ -5,11 +5,6 @@
 - version: 3.12.0a4+
 - commit hash: [5a2b984](https://github.com/python/cpython/commit/5a2b984)
 - commit date: 2023-02-04T17:54:44-06:00
-- fork: python
-- ref: main
-- version: 3.12.0a4+
-- commit hash: [5a2b984](https://github.com/python/cpython/commit/5a2b984)
-- commit date: 2023-02-04T17:54:44-06:00
 
 ## linux x86_64
 

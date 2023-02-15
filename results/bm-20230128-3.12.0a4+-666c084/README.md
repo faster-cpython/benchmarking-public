@@ -5,11 +5,6 @@
 - version: 3.12.0a4+
 - commit hash: [666c084](https://github.com/python/cpython/commit/666c084)
 - commit date: 2023-01-28T15:18:04+02:00
-- fork: python
-- ref: main
-- version: 3.12.0a4+
-- commit hash: [666c084](https://github.com/python/cpython/commit/666c084)
-- commit date: 2023-01-28T15:18:04+02:00
 
 ## darwin arm64
 

@@ -6,12 +6,6 @@
 - commit hash: [e69c1f3](https://github.com/gvanrossum/cpython/commit/e69c1f3)
 - commit date: 2023-01-26T16:42:59-08:00
 - commit merge base: [9f2c479eaf7d922746ef2f3c85b5c781757686b1](https://github.com/gvanrossum/cpython/commit/9f2c479eaf7d922746ef2f3c85b5c781757686b1)
-- fork: gvanrossum
-- ref: e69c1f3e7a01d253e05b
-- version: 3.12.0a4+
-- commit hash: [e69c1f3](https://github.com/gvanrossum/cpython/commit/e69c1f3)
-- commit date: 2023-01-26T16:42:59-08:00
-- commit merge base: [9f2c479eaf7d922746ef2f3c85b5c781757686b1](https://github.com/gvanrossum/cpython/commit/9f2c479eaf7d922746ef2f3c85b5c781757686b1)
 
 ## linux x86_64
 

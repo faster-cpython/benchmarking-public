@@ -5,11 +5,6 @@
 - version: 3.12.0a3+
 - commit hash: [951303f](https://github.com/python/cpython/commit/951303f)
 - commit date: 2023-01-07T21:29:53+00:00
-- fork: python
-- ref: main
-- version: 3.12.0a3+
-- commit hash: [951303f](https://github.com/python/cpython/commit/951303f)
-- commit date: 2023-01-07T21:29:53+00:00
 
 ## darwin arm64
 

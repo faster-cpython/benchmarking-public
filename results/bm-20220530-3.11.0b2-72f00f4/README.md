@@ -5,10 +5,7 @@
 - version: 3.11.0b2
 - commit hash: [72f00f4](https://github.com/python/cpython/commit/72f00f4)
 - commit date: 2022-05-30T22:18:15+01:00
-- fork: python
 - ref: main
-- version: 3.11.0b2
-- commit hash: [72f00f4](https://github.com/python/cpython/commit/72f00f4)
 - commit date: 2022-05-30T21:18:15+00:00
 
 ## darwin arm64

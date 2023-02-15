@@ -96,7 +96,12 @@ def test_update_metadata(tmp_path, benchmarks_checkout):
         tmp_path / "benchmarks.json",
     )
     run_benchmarks.update_metadata(
-        tmp_path / "benchmarks.json", "myfork", "myref", "false", tmp_path / "cpython"
+        tmp_path / "benchmarks.json",
+        "myfork",
+        "myref",
+        "false",
+        tmp_path / "cpython",
+        "12345",
     )
 
     with open(tmp_path / "benchmarks.json") as fd:
@@ -111,6 +116,10 @@ def test_update_metadata(tmp_path, benchmarks_checkout):
     assert "commit_merge_base" not in metadata
     assert metadata["benchmark_hash"] == "e3b0c4"
     assert not metadata.get("publish")
+    assert (
+        metadata["github_action_url"]
+        == "https://github.com/faster-cpython/benchmarking/actions/runs/12345"
+    )
 
 
 def test_run_benchmarks(tmp_path, benchmarks_checkout):
@@ -137,6 +146,8 @@ def test_run_benchmarks(tmp_path, benchmarks_checkout):
             "deepcopy",
             "false",
             "--fast",
+            "--run_id",
+            "12345",
         ],
         cwd=tmp_path,
     )
@@ -160,6 +171,10 @@ def test_run_benchmarks(tmp_path, benchmarks_checkout):
     assert "commit_merge_base" not in metadata
     assert metadata["benchmark_hash"] == "9d2e5f"
     assert not metadata.get("publish")
+    assert (
+        metadata["github_action_url"]
+        == "https://github.com/faster-cpython/benchmarking/actions/runs/12345"
+    )
 
     assert len(benchmarks) == 3
     assert all(len(benchmark["runs"]) > 1 for benchmark in benchmarks)
@@ -180,6 +195,8 @@ def test_run_benchmarks(tmp_path, benchmarks_checkout):
             "main",
             "foo",
             "false",
+            "--run_id",
+            "12345",
         ],
         cwd=tmp_path,
     )

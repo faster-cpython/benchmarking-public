@@ -125,7 +125,7 @@ jobs:
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          python scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }}
+          python scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
       - name: Upload artifacts
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         uses: actions/upload-artifact@v3
@@ -200,7 +200,7 @@ jobs:
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }}
+          python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
       - name: Upload artifacts
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         uses: actions/upload-artifact@v3
@@ -274,7 +274,7 @@ jobs:
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          venv/bin/python scripts/run_benchmarks.py benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }}
+          venv/bin/python scripts/run_benchmarks.py benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
       - name: Upload artifacts
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         uses: actions/upload-artifact@v3

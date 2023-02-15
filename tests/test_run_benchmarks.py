@@ -96,7 +96,12 @@ def test_update_metadata(tmp_path, benchmarks_checkout):
         tmp_path / "benchmarks.json",
     )
     run_benchmarks.update_metadata(
-        tmp_path / "benchmarks.json", "myfork", "myref", "false", tmp_path / "cpython", "12345"
+        tmp_path / "benchmarks.json",
+        "myfork",
+        "myref",
+        "false",
+        tmp_path / "cpython",
+        "12345",
     )
 
     with open(tmp_path / "benchmarks.json") as fd:

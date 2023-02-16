@@ -69,10 +69,10 @@ on:
         type: boolean
 
 jobs:
-  benchmark-linux-pyperf:
+  benchmark-linux-x86_64-linux:
     if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == 'all') }}
 
-    runs-on: [self-hosted, linux, bare-metal, hostname-linux-x86_64-linux]
+    runs-on: [self-hosted, linux, bare-metal, linux-x86_64-linux]
 
     steps:
     - uses: actions/setup-python@v4
@@ -144,10 +144,10 @@ jobs:
       with:
         add: results
 
-  benchmark-darwin-CPythons-Mac-mini.local:
+  benchmark-darwin-arm64-darwin:
     if: ${{ (inputs.machine == 'darwin-arm64-darwin' || inputs.machine == 'all') }}
 
-    runs-on: [self-hosted, macos, bare-metal, hostname-darwin-arm64-darwin]
+    runs-on: [self-hosted, macos, bare-metal, darwin-arm64-darwin]
 
     steps:
     - uses: actions/checkout@v3

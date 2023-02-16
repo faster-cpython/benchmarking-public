@@ -140,6 +140,6 @@ Follow the instructions on Github's `Settings -> Actions -> Runners` to add a ne
 Each runner must have the following labels:
   - One of `linux`, `macos` or `windows`.
   - `bare-metal` (to distinguish it from VMs in the cloud).
-  - `hostname:foo`, where `foo` is the hostname of the machine (use `socket.gethostname()` to get the exact value).
+  - `$os-$arch-$nickname`.
 
 In addition, the runner must be added to `runners.ini`.

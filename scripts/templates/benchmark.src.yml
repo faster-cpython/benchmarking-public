@@ -1,37 +1,37 @@
-# Generated file: !!! DO NOT EDIT !!!
 ---
 name: benchmark
 
-on:
+"on":
   workflow_dispatch:
     inputs:
       fork:
-        description: Fork of cpython to benchmark
-        default: python
+        description: 'Fork of cpython to benchmark'
+        default: 'python'
       ref:
-        description: Branch, tag or (full) SHA commit to benchmark
-        default: main
+        description: 'Branch, tag or (full) SHA commit to benchmark'
+        default: 'main'
       machine:
-        description: Machine to run on
-        default: linux-amd64
+        description: 'Machine to run on'
+        default: 'linux-amd64'
         type: choice
         options:
-        - linux-x86_64-linux
-        - darwin-arm64-darwin
-        - all
+          - linux-amd64
+          - windows-amd64
+          - darwin-arm64
+          - all
       benchmarks:
-        description: Benchmarks to run (comma-separated; empty runs all benchmarks)
+        description: 'Benchmarks to run (comma-separated; empty runs all benchmarks)'
         type: string
       benchmark_base:
-        description: Also benchmark the base of this commit
+        description: 'Also benchmark the base of this commit'
         type: boolean
         default: false
       pystats:
-        description: Also collect pystats for this commit
+        description: 'Also collect pystats for this commit'
         type: boolean
         default: false
       publish:
-        description: Publish results to the ideas repo
+        description: 'Publish results to the ideas repo'
         type: boolean
         default: false
 
@@ -45,19 +45,19 @@ jobs:
       ref: ${{ steps.base.outputs.ref }}
       need_to_run: ${{ steps.base.outputs.need_to_run }}
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/checkout@v3
-      if: ${{ inputs.benchmark_base }}
-      with:
-        repository: ${{ inputs.fork }}/cpython
-        path: cpython
-        ref: ${{ inputs.ref }}
-        fetch-depth: 0
-    - name: Determine base
-      id: base
-      run: |
-        python scripts/get_merge_base.py ${{ inputs.benchmark_base }} >> $GITHUB_OUTPUT
-        cat $GITHUB_OUTPUT
+      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        if: ${{ inputs.benchmark_base }}
+        with:
+          repository: ${{ inputs.fork }}/cpython
+          path: cpython
+          ref: ${{ inputs.ref }}
+          fetch-depth: 0
+      - name: Determine base
+        id: base
+        run: |
+          python scripts/get_merge_base.py ${{ inputs.benchmark_base }} >> $GITHUB_OUTPUT
+          cat $GITHUB_OUTPUT
 
   head:
     uses: ./.github/workflows/_benchmark.yml
@@ -99,8 +99,7 @@ jobs:
   pystats-base:
     uses: ./.github/workflows/_pystats.yml
     needs: determine_base
-    if: ${{ inputs.pystats && needs.determine_base.outputs.need_to_run != 'false'
-      }}
+    if: ${{ inputs.pystats && needs.determine_base.outputs.need_to_run != 'false' }}
     with:
       fork: python
       ref: ${{ needs.determine_base.outputs.ref }}

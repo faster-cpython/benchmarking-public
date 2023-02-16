@@ -4,6 +4,7 @@
 import functools
 import json
 from pathlib import Path
+import socket
 import subprocess
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
@@ -12,6 +13,7 @@ from packaging import version as pkg_version
 
 
 from lib import git
+from lib import runners
 
 
 def _clean(string: str) -> str:
@@ -136,7 +138,7 @@ class Result:
 
     def __init__(
         self,
-        system: str,
+        nickname: str,
         machine: str,
         fork: str,
         ref: str,
@@ -146,7 +148,9 @@ class Result:
         suffix: str = ".json",
         commit_datetime: Optional[str] = None,
     ):
-        self.system = system
+        self.nickname = nickname
+        if nickname not in runners.RUNNERS_BY_NICKNAME:
+            raise ValueError(f"Unknown runner {nickname}")
         self.machine = machine
         self.fork = fork
         self.ref = ref
@@ -163,7 +167,7 @@ class Result:
         (
             name,
             date,
-            system,
+            nickname,
             machine,
             fork,
             ref,
@@ -173,7 +177,7 @@ class Result:
         ) = filename.stem.split("-")
         assert name == "bm"
         obj = cls(
-            system=system,
+            nickname=nickname,
             machine=machine,
             fork=fork,
             ref=ref,
@@ -190,7 +194,7 @@ class Result:
         cls, python: str, fork: str, ref: str, extra: List[str] = []
     ) -> "Result":
         result = cls(
-            _clean(_get_platform_value(python, "system")),
+            _clean(runners.get_nickname_for_hostname(socket.gethostname())),
             _clean(_get_platform_value(python, "machine")),
             _clean_for_url(fork),
             _clean(ref[:20]),
@@ -225,7 +229,7 @@ class Result:
                         [
                             "bm",
                             date,
-                            self.system,
+                            self.nickname,
                             self.machine,
                             self.fork,
                             self.ref,
@@ -285,8 +289,16 @@ class Result:
         return self.metadata.get("benchmark_hash", None)
 
     @property
-    def worker(self) -> str:
-        return f"{self.system} {self.machine}"
+    def hostname(self) -> str:
+        return self.metadata.get("hostname", "unknown host")
+
+    @property
+    def system(self) -> str:
+        return runners.get_runner_by_nickname(self.nickname).os
+
+    @property
+    def runner(self) -> str:
+        return f"{self.system} {self.machine} ({self.nickname})"
 
     @property
     def cpu_model_name(self) -> str:

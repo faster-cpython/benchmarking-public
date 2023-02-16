@@ -6,11 +6,17 @@ This repository contains a number of GitHub Actions workflows to run benchmarks 
 
 There is a single user-facing workflow, `benchmark.yml`, that [reuses](https://docs.github.com/en/actions/using-workflows/reusing-workflows) the other workflows, prefixed with `_`.
 
+To get around this, some of the workflow files are generated from "templates" by the `regenerate_workflows.py` script to work around limitations in the Github Actions workflow language.
+("Templates" is probably overstating it -- it's just YAML with some sections repeated and modified.)
+Both the source and generated workflow files need to be committed to the git repo, and CI will confirm that the generated files have been regenerated when the source files change.
+
 ### benchmark.yml
 
 This is the main user entry point.  See the [user documentation](README.md) for information about the parameters it takes.
 
 It kicks off one or two benchmarking runs (depending on the value of `benchmark_base`) (`_benchmark.yml`), then generates the derived results (`_generate.yml`), and publishes public results, if any (`_publish.yml`).
+
+This workflow is generated from `scripts/templates/benchmark.src.yml`.
 
 ### _benchmark.yml
 
@@ -26,6 +32,8 @@ There are additional parameters available to save time during debugging, but the
 - `dry_run`: Don't save the results to the repo
 
 The implementation of this workflow (for everything but the CPython compilation itself) is in `scripts/run_benchmarks.py`.
+
+This workflow is generated from `scripts/templates/_benchmark.src.yml`.
 
 ### _pystats.yml
 
@@ -93,12 +101,12 @@ bm-{date}-{version}-{cpython_hash}
 Within each directory are files, each with the following root name:
 
 ```
-bm-{date}-{system}-{machine}-{fork}-{ref}-{version}-{cpython_hash}
+bm-{date}-{nickname}-{machine}-{fork}-{ref}-{version}-{cpython_hash}
 ```
 
 In addition to the fields defined above, the filenames add:
 
-- `system`: Operating system, as returned by `platform.system()`
+- `nickname`: The unique nickname for the runner. See `runners.ini`.
 - `machine`: CPU architecture, as returned by `platform.machine()`
 - `fork`: the fork of CPython as requested to the benchmark job.
 - `ref`: the branch, tag or SHA specified to run as requested to the benchmark job.
@@ -123,3 +131,15 @@ The following metadata fields are added to the raw results (in addition to those
 - `publish`: `true` if this set of results should be published to the public results repo
 - `benchmark_hash`: a combined hash of the pyperformance and pyston benchmark suites.
   Used to confirm that two sets of benchmarks used the same benchmarking code.
+- `github_actions_url`: the URL to the github action that produced the result. Useful for getting a full log of the run to debug issues.
+
+## Adding new runners
+
+Follow the instructions on Github's `Settings -> Actions -> Runners` to add a new runner.
+
+Each runner must have the following labels:
+  - One of `linux`, `macos` or `windows`.
+  - `bare-metal` (to distinguish it from VMs in the cloud).
+  - `hostname:foo`, where `foo` is the hostname of the machine (use `socket.gethostname()` to get the exact value).
+
+In addition, the runner must be added to `runners.ini`.

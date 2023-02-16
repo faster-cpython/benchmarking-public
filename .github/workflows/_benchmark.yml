@@ -1,3 +1,4 @@
+# Generated file: !!! DO NOT EDIT !!!
 ---
 name: _benchmark
 
@@ -5,298 +6,214 @@ env:
   PYPERFORMANCE_HASH: 433550e95779a2882284cb0fc5486dc3f6fff1c7
   PYSTON_BENCHMARKS_HASH: 1989032bc4a65a023f0ce38108d6c2ed3372912a
 
-"on":
+on:
   workflow_call:
     inputs:
       fork:
-        description: 'Fork of cpython to benchmark'
+        description: Fork of cpython to benchmark
         type: string
       ref:
-        description: 'Branch, tag or (full) SHA commit to benchmark'
+        description: Branch, tag or (full) SHA commit to benchmark
         type: string
       machine:
-        description: 'Machine to run on'
+        description: Machine to run on
         type: string
       benchmarks:
-        description: 'Benchmarks to run (comma-separated; empty runs all benchmarks)'
+        description: Benchmarks to run (comma-separated; empty runs all benchmarks)
         type: string
       pgo:
-        description: 'Build with PGO'
+        description: Build with PGO
         type: boolean
       publish:
-        description: 'Publish results to the public repo'
+        description: Publish results to the public repo
         type: boolean
       dry_run:
         description: 'Dry run: Do not commit to the repo'
         type: boolean
       force:
-        description: 'Rerun and replace results if commit already exists'
+        description: Rerun and replace results if commit already exists
         type: boolean
 
   workflow_dispatch:
     inputs:
       fork:
-        description: 'Fork of cpython to benchmark'
+        description: Fork of cpython to benchmark
         type: string
-        default: 'python'
+        default: python
       ref:
-        description: 'Branch, tag or (full) SHA commit to benchmark'
+        description: Branch, tag or (full) SHA commit to benchmark
         type: string
-        default: 'main'
+        default: main
       machine:
-        description: 'Machine to run on'
-        default: 'linux-amd64'
+        description: Machine to run on
+        default: linux-amd64
         type: choice
         options:
-          - linux-amd64
-          - windows-amd64
-          - darwin-arm64
-          - all
+        - linux-x86_64-linux
+        - darwin-arm64-darwin
+        - all
       benchmarks:
-        description: 'Benchmarks to run (comma-separated; empty runs all benchmarks)'
+        description: Benchmarks to run (comma-separated; empty runs all benchmarks)
         type: string
       pgo:
-        description: 'Build with PGO'
+        description: Build with PGO
         type: boolean
       publish:
-        description: 'Publish results to the public repo'
+        description: Publish results to the public repo
         type: boolean
       dry_run:
         description: 'Dry run: Do not commit to the repo'
         type: boolean
       force:
-        description: 'Rerun and replace results if commit already exists'
+        description: Rerun and replace results if commit already exists
         type: boolean
-      hostname:
-        description: 'Hostname to run on'
-        type: string
 
 jobs:
-  benchmark-windows:
-    # TODO: Disabling Windows entirely for now since we don't have the machine
-    if: ${{ false && (inputs.machine == 'windows-amd64' || inputs.machine == 'all') }}
+  benchmark-linux-pyperf:
+    if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == 'all') }}
 
-    runs-on: [self-hosted, windows, bare-metal]
+    runs-on: [self-hosted, linux, bare-metal, hostname:pyperf]
 
     steps:
-      # Tell git to checkout repos with symlinks (required by pyston
-      # benchmarks).
-      # Requires "Developer Mode" switched on in Windows 10/11
-      - name: Enable symlinks for git
-        run: |
-          git config --global core.symlinks true
-      # Install a "base" Python to run the pyperformance orchestration
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-          cache: pip
-      - uses: actions/checkout@v3
-      - uses: actions/checkout@v3
-        with:
-          repository: ${{ inputs.fork }}/cpython
-          path: cpython
-          ref: ${{ inputs.ref }}
-          fetch-depth: 50
-      - name: Should we run?
-        if: ${{ always() }}
-        id: should_run
-        run: |
-          python scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} >> $GITHUB_OUTPUT
-      - uses: actions/checkout@v3
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        with:
-          repository: pyston/python-macrobenchmarks
-          path: pyston-benchmarks
-          ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
-      - uses: actions/checkout@v3
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        with:
-          repository: python/pyperformance
-          path: pyperformance
-          ref: ${{ env.PYPERFORMANCE_HASH }}
-      - name: Build Python
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          cd cpython
-          PCbuild/build.bat ${{ inputs.pgo == true && '--pgo' || '' }} -c Release
-          # Copy the build products to a place that libraries can find them.
-          Copy-Item -Path "PCBuild/amd64" -Destination "libs" -Recurse
-      - name: Install pyperformance
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          python -m pip install setuptools wheel
-          python -m pip install .\pyperformance
-      - name: Running pyperformance
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          python scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
-      - name: Upload artifacts
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        uses: actions/upload-artifact@v3
-        with:
-          name: benchmark
-          path: |
-            benchmark.json
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        cache: pip
+    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
+      with:
+        repository: ${{ inputs.fork }}/cpython
+        path: cpython
+        ref: ${{ inputs.ref }}
+        fetch-depth: 50
+    - name: Should we run?
+      if: ${{ always() }}
+      id: should_run
+      run: |
+        python scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} >> $GITHUB_OUTPUT
+    - uses: actions/checkout@v3
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      with:
+        repository: pyston/python-macrobenchmarks
+        path: pyston-benchmarks
+        ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+    - uses: actions/checkout@v3
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      with:
+        repository: python/pyperformance
+        path: pyperformance
+        ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+    - name: Build Python
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        cd cpython
+        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }}
+        make -j4
+    - name: Install pyperformance
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        python -m pip install setuptools wheel
+        python -m pip install ./pyperformance
+    - name: Tune system
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH `which python` -m pyperf system tune
+    - name: Running pyperformance
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
+    - name: Upload artifacts
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      uses: actions/upload-artifact@v3
+      with:
+        name: benchmark
+        path: |
+          benchmark.json
       # Pull again, since another job may have committed results in the meantime
-      - name: pull
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          # Another benchmarking task may have created results for the same
-          # commit while the above was running. This "magic" incantation means
-          # that any local results for this commit will override anything we
-          # just pulled in in that case.
-          git pull -s recursive -X ours --autostash --rebase
-      - name: Add to repo
-        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: results
+    - name: pull
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        # Another benchmarking task may have created results for the same
+        # commit while the above was running. This "magic" incantation means
+        # that any local results for this commit will override anything we
+        # just pulled in in that case.
+        git pull -s recursive -X ours --autostash --rebase
+    - name: Add to repo
+      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: results
 
-  benchmark-linux:
-    if: ${{ inputs.machine == 'linux-amd64' || inputs.machine == 'all' }}
+  benchmark-darwin-CPythons-Mac-mini.local:
+    if: ${{ (inputs.machine == 'darwin-arm64-darwin' || inputs.machine == 'all') }}
 
-    runs-on: [self-hosted, linux, bare-metal, ${{ inputs.hostname }}]
-
-    steps:
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-          cache: pip
-      - uses: actions/checkout@v3
-      - uses: actions/checkout@v3
-        with:
-          repository: ${{ inputs.fork }}/cpython
-          path: cpython
-          ref: ${{ inputs.ref }}
-          fetch-depth: 50
-      - name: Should we run?
-        if: ${{ always() }}
-        id: should_run
-        run: |
-          python scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} >> $GITHUB_OUTPUT
-      - uses: actions/checkout@v3
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        with:
-          repository: pyston/python-macrobenchmarks
-          path: pyston-benchmarks
-          ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
-      - uses: actions/checkout@v3
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        with:
-          repository: python/pyperformance
-          path: pyperformance
-          ref: ${{ env.PYPERFORMANCE_HASH }}
-      - name: Build Python
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          cd cpython
-          ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }}
-          make -j4
-      - name: Install pyperformance
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          python -m pip install setuptools wheel
-          python -m pip install ./pyperformance
-      - name: Tune system
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH `which python` -m pyperf system tune
-      - name: Running pyperformance
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
-      - name: Upload artifacts
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        uses: actions/upload-artifact@v3
-        with:
-          name: benchmark
-          path: |
-            benchmark.json
-      # Pull again, since another job may have committed results in the meantime
-      - name: pull
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          # Another benchmarking task may have created results for the same
-          # commit while the above was running. This "magic" incantation means
-          # that any local results for this commit will override anything we
-          # just pulled in in that case.
-          git pull -s recursive -X ours --autostash --rebase
-      - name: Add to repo
-        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: results
-
-  benchmark-darwin:
-    if: ${{ inputs.machine == 'darwin-arm64' || inputs.machine == 'all' }}
-
-    runs-on: [self-hosted, macos, bare-metal]
+    runs-on: [self-hosted, macos, bare-metal, hostname:CPythons-Mac-mini.local]
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/checkout@v3
-        with:
-          repository: ${{ inputs.fork }}/cpython
-          path: cpython
-          ref: ${{ inputs.ref }}
-          fetch-depth: 50
-      - name: Should we run?
-        if: ${{ always() }}
-        id: should_run
-        run: |
-          python3 scripts/should_run.py ${{ inputs.force }} ${{ inputs.force }} ${{ inputs.ref }} >> $GITHUB_OUTPUT
-      - uses: actions/checkout@v3
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        with:
-          repository: pyston/python-macrobenchmarks
-          path: pyston-benchmarks
-          ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
-      - uses: actions/checkout@v3
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        with:
-          repository: python/pyperformance
-          path: pyperformance
-          ref: ${{ env.PYPERFORMANCE_HASH }}
-      - name: Setup environment
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          echo "PKG_CONFIG_PATH=$(brew --prefix openssl@1.1)/lib/pkgconfig" >> $GITHUB_ENV
-      - name: Build Python
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          cd cpython
-          ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }}
-          make -j4
+    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
+      with:
+        repository: ${{ inputs.fork }}/cpython
+        path: cpython
+        ref: ${{ inputs.ref }}
+        fetch-depth: 50
+    - name: Should we run?
+      if: ${{ always() }}
+      id: should_run
+      run: |
+        python3 scripts/should_run.py ${{ inputs.force }} ${{ inputs.force }} ${{ inputs.ref }} >> $GITHUB_OUTPUT
+    - uses: actions/checkout@v3
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      with:
+        repository: pyston/python-macrobenchmarks
+        path: pyston-benchmarks
+        ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+    - uses: actions/checkout@v3
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      with:
+        repository: python/pyperformance
+        path: pyperformance
+        ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+    - name: Setup environment
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        echo "PKG_CONFIG_PATH=$(brew --prefix openssl@1.1)/lib/pkgconfig" >> $GITHUB_ENV
+    - name: Build Python
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        cd cpython
+        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }}
+        make -j4
       # On macos ARM64, actions/setup-python isn't available, so we rely on a
       # pre-installed homebrew one, used through a venv
-      - name: Install pyperformance
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          python3 -m venv venv
-          venv/bin/python -m pip install setuptools wheel
-          venv/bin/python -m pip install ./pyperformance
-      - name: Running pyperformance
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          venv/bin/python scripts/run_benchmarks.py benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
-      - name: Upload artifacts
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        uses: actions/upload-artifact@v3
-        with:
-          name: benchmark
-          path: |
-            benchmark.json
+    - name: Install pyperformance
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        python3 -m venv venv
+        venv/bin/python -m pip install setuptools wheel
+        venv/bin/python -m pip install ./pyperformance
+    - name: Running pyperformance
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        venv/bin/python scripts/run_benchmarks.py benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
+    - name: Upload artifacts
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      uses: actions/upload-artifact@v3
+      with:
+        name: benchmark
+        path: |
+          benchmark.json
       # Pull again, since another job may have committed results in the meantime
-      - name: pull
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        run: |
-          # Another benchmarking task may have created results for the same
-          # commit while the above was running. This "magic" incantation means
-          # that any local results for this commit will override anything we
-          # just pulled in in that case.
-          git pull -s recursive -X ours --autostash --rebase
-      - name: Add to repo
-        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: results
+    - name: pull
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        # Another benchmarking task may have created results for the same
+        # commit while the above was running. This "magic" incantation means
+        # that any local results for this commit will override anything we
+        # just pulled in in that case.
+        git pull -s recursive -X ours --autostash --rebase
+    - name: Add to repo
+      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: results

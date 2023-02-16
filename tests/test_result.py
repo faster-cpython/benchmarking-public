@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 import platform
 import shutil
+import socket
 import sys
 
 
@@ -85,6 +86,11 @@ def test_from_scratch(monkeypatch):
 
     monkeypatch.setattr(mod_result.git, "get_git_commit_date", get_git_commit_date)
 
+    def gethostname(*args):
+        return "pyperf"
+
+    monkeypatch.setattr(socket, "gethostname", gethostname)
+
     result = mod_result.Result.from_scratch(
         python, "my-fork", "9d38120e335357a3b294277fd5eff0a10e46e043"
     )
@@ -94,3 +100,7 @@ def test_from_scratch(monkeypatch):
         f"bm-20221119-{platform.system().lower()}-{platform.machine().lower()}"
         f"-my%2dfork-9d38120e335357a3b294-{platform.python_version()}-b7e4f1d.json"
     )
+
+    assert result.runner == "linux x86_64 (linux)"
+    assert result.system == "linux"
+    assert result.hostname == "pyperf"

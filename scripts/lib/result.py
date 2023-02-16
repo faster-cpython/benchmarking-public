@@ -298,7 +298,7 @@ class Result:
 
     @property
     def github_action_url(self) -> Optional[str]:
-        return self.metadata.get("github_action", None)
+        return self.metadata.get("github_action_url", None)
 
     @property
     @functools.cache

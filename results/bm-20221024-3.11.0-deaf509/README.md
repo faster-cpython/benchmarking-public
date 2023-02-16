@@ -21,6 +21,7 @@
 
 ## linux x86_64
 
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4195028872)
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
 - [raw results](bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509.json)

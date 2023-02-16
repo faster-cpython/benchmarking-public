@@ -103,4 +103,3 @@ def test_from_scratch(monkeypatch):
 
     assert result.runner == "linux x86_64 (linux)"
     assert result.system == "linux"
-    assert result.hostname == "pyperf"

@@ -266,7 +266,7 @@ def get_directory_indices_entries(
             entries.append((dirpath, None, None, f"commit merge base: {link}"))
         if result.github_action_url is not None:
             link = table.md_link("GitHub Action run", result.github_action_url)
-            entries.append((dirpath, result.worker, None, link))
+            entries.append((dirpath, result.runner, None, link))
 
         entries.append(
             (dirpath, result.runner, None, f"cpu model: {result.cpu_model_name}")

@@ -81,7 +81,7 @@ def generate__benchmark(
     dst["jobs"] = {}
     for runner in runners:
         runner_template = copy.deepcopy(src["jobs"][f"benchmark-{runner.os}"])
-        runner_template["runs-on"].append(f"hostname:{runner.hostname}")
+        runner_template["runs-on"].append(f"hostname-{runner.hostname}")
         runner_template[
             "if"
         ] = f"${{{{ (inputs.machine == '{runner.name}' || inputs.machine == 'all') }}}}"

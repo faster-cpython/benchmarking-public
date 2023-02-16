@@ -72,7 +72,7 @@ jobs:
   benchmark-linux-pyperf:
     if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == 'all') }}
 
-    runs-on: [self-hosted, linux, bare-metal, hostname:pyperf]
+    runs-on: [self-hosted, linux, bare-metal, hostname-pyperf]
 
     steps:
     - uses: actions/setup-python@v4
@@ -147,7 +147,7 @@ jobs:
   benchmark-darwin-CPythons-Mac-mini.local:
     if: ${{ (inputs.machine == 'darwin-arm64-darwin' || inputs.machine == 'all') }}
 
-    runs-on: [self-hosted, macos, bare-metal, hostname:CPythons-Mac-mini.local]
+    runs-on: [self-hosted, macos, bare-metal, hostname-CPythons-Mac-mini.local]
 
     steps:
     - uses: actions/checkout@v3

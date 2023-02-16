@@ -15,9 +15,8 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster \*
-- missing benchmarks: flaskblogging, mypy, pylint
-- new benchmarks: asyncio_tcp, create_gc_cycles, djangocms, gc_traversal, mypy2
+- 1.30x faster
+- missing benchmarks: dask, flaskblogging, pylint
 - [table](bm-20230208-linux-x86_64-iritkatriel-object_init-3.12.0a5%2B-1a4b9a9-vs-3.10.4.md)
 - [plot](bm-20230208-linux-x86_64-iritkatriel-object_init-3.12.0a5%2B-1a4b9a9-vs-3.10.4.png)
 

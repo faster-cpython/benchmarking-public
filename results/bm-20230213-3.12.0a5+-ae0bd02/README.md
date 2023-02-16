@@ -15,9 +15,8 @@
 
 ### vs. 3.10.4
 
-- 1.31x faster \*
-- missing benchmarks: flaskblogging, mypy, pylint
-- new benchmarks: asyncio_tcp, create_gc_cycles, djangocms, gc_traversal, mypy2
+- 1.31x faster
+- missing benchmarks: dask, flaskblogging, pylint
 - [table](bm-20230213-linux-x86_64-carljm-inlinecomp2-3.12.0a5%2B-ae0bd02-vs-3.10.4.md)
 - [plot](bm-20230213-linux-x86_64-carljm-inlinecomp2-3.12.0a5%2B-ae0bd02-vs-3.10.4.png)
 

@@ -6,6 +6,18 @@
 - commit hash: [9d38120](https://github.com/python/cpython/commit/9d38120)
 - commit date: 2022-03-23T20:12:04+00:00
 
+## darwin arm64
+
+- cpu model: missing
+- platform: macOS-12.6-arm64-arm-64bit
+- [raw results](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json)
+
+### vs. 3.11.0
+
+- 1.22x slower
+- [table](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.md)
+- [plot](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.png)
+
 ## linux x86_64
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4194274828)
@@ -18,16 +30,4 @@
 - 1.25x slower
 - [table](bm-20220323-linux-x86_64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.md)
 - [plot](bm-20220323-linux-x86_64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.png)
-
-## darwin arm64
-
-- cpu model: missing
-- platform: macOS-12.6-arm64-arm-64bit
-- [raw results](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json)
-
-### vs. 3.11.0
-
-- 1.22x slower
-- [table](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.md)
-- [plot](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.png)
 

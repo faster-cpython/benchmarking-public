@@ -67,6 +67,9 @@ env:
       force:
         description: 'Rerun and replace results if commit already exists'
         type: boolean
+      hostname:
+        description: 'Hostname to run on'
+        type: string
 
 jobs:
   benchmark-windows:
@@ -152,7 +155,7 @@ jobs:
   benchmark-linux:
     if: ${{ inputs.machine == 'linux-amd64' || inputs.machine == 'all' }}
 
-    runs-on: [self-hosted, linux, bare-metal]
+    runs-on: [self-hosted, linux, bare-metal, ${{ inputs.hostname }}]
 
     steps:
       - uses: actions/setup-python@v4

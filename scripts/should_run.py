@@ -67,6 +67,6 @@ if __name__ == "__main__":
     parser.add_argument("ref")
     args = parser.parse_args()
 
-    force = sys.argv[-1] != "false"
+    force = args.force != "false"
 
     main(force, args.fork, args.ref)

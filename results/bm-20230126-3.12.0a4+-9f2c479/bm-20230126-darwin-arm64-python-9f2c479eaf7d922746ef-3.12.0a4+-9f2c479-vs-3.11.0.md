@@ -170,5 +170,5 @@ All benchmarks:
 | Geometric mean          | (ref)                                                               | 1.00x faster                                                           |
 
 Benchmark hidden because not significant (6): hexiom, pickle_dict, telco, float, pathlib, tornado_http
-Ignored benchmarks (6) of /home/mdboom/Work/builds/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
-Ignored benchmarks (4) of /home/mdboom/Work/builds/benchmarking/results/bm-20230126-3.12.0a4+-9f2c479/bm-20230126-darwin-arm64-python-9f2c479eaf7d922746ef-3.12.0a4+-9f2c479.json: asyncio_tcp, create_gc_cycles, dask, gc_traversal
+Ignored benchmarks (6) of /home/runner/work/benchmarking/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+Ignored benchmarks (4) of /home/runner/work/benchmarking/benchmarking/results/bm-20230126-3.12.0a4+-9f2c479/bm-20230126-darwin-arm64-python-9f2c479eaf7d922746ef-3.12.0a4+-9f2c479.json: asyncio_tcp, create_gc_cycles, dask, gc_traversal

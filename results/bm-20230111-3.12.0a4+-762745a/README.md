@@ -18,10 +18,9 @@
 
 ### vs. 3.10.4
 
-- 1.31x faster \*
+- 1.30x faster \*
 - missing benchmarks: aiohttp, flaskblogging, gunicorn, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
 - new benchmarks: mypy
-- 1.30x faster \*
 - [table](bm-20230111-linux-x86_64-iritkatriel-762745a124cbc297cf2f-3.12.0a4%2B-762745a-vs-3.10.4.md)
 - [plot](bm-20230111-linux-x86_64-iritkatriel-762745a124cbc297cf2f-3.12.0a4%2B-762745a-vs-3.10.4.png)
 - [table](bm-20230111-linux-x86_64-python-762745a124cbc297cf2f-3.12.0a4%2B-762745a-vs-3.10.4.md)
@@ -29,9 +28,10 @@
 
 ### vs. 3.11.0
 
+- 1.04x faster \*
+- missing benchmarks: aiohttp, flaskblogging, gunicorn, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+- new benchmarks: mypy
 - 1.03x faster \*
-- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
-- new benchmarks: asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal
 - [table](bm-20230111-linux-x86_64-iritkatriel-762745a124cbc297cf2f-3.12.0a4%2B-762745a-vs-3.11.0.md)
 - [plot](bm-20230111-linux-x86_64-iritkatriel-762745a124cbc297cf2f-3.12.0a4%2B-762745a-vs-3.11.0.png)
 - [table](bm-20230111-linux-x86_64-python-762745a124cbc297cf2f-3.12.0a4%2B-762745a-vs-3.11.0.md)

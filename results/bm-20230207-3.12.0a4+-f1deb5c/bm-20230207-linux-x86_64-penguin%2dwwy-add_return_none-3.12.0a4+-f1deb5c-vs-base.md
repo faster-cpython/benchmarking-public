@@ -150,4 +150,4 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.01x faster                                                             |
 
 Benchmark hidden because not significant (28): html5lib, scimark_sor, scimark_lu, mypy, tornado_http, djangocms, go, unpickle_list, hexiom, sqlglot_normalize, sympy_sum, deepcopy_memo, sympy_integrate, xml_etree_generate, pickle_pure_python, chaos, logging_format, xml_etree_iterparse, bench_mp_pool, asyncio_tcp, xml_etree_parse, sqlalchemy_declarative, coroutines, django_template, async_tree_none, async_tree_cpu_io_mixed, spectral_norm, json_loads
-Ignored benchmarks (1) of /home/mdboom/Work/builds/benchmarking/results/bm-20230206-3.12.0a4+-d3e2dd6/bm-20230206-linux-x86_64-python-d3e2dd6e71bd8e548297-3.12.0a4+-d3e2dd6.json: dask
+Ignored benchmarks (1) of /home/runner/work/benchmarking/benchmarking/results/bm-20230206-3.12.0a4+-d3e2dd6/bm-20230206-linux-x86_64-python-d3e2dd6e71bd8e548297-3.12.0a4+-d3e2dd6.json: dask

@@ -169,4 +169,4 @@ All benchmarks:
 | regex_effbot            | 2.45 ms                                                | 2.71 ms: 1.11x slower                                  |
 | coverage                | 40.8 ms                                                | 54.9 ms: 1.35x slower                                  |
 | Geometric mean          | (ref)                                                  | 1.24x faster                                           |
-Ignored benchmarks (7) of /home/mdboom/Work/builds/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+Ignored benchmarks (7) of /home/runner/work/benchmarking/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http

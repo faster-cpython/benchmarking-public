@@ -15,7 +15,7 @@
 
 ### vs. 3.10.4
 
-- 1.28x faster \*
+- 1.27x faster \*
 - missing benchmarks: aiohttp, flaskblogging, gunicorn, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
 - new benchmarks: mypy
 - [table](bm-20230118-linux-x86_64-iritkatriel-copy_consts-3.12.0a4%2B-f8449d5-vs-3.10.4.md)
@@ -23,9 +23,9 @@
 
 ### vs. 3.11.0
 
-- 1.01x faster \*
-- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
-- new benchmarks: asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal
+- 1.02x faster \*
+- missing benchmarks: aiohttp, flaskblogging, gunicorn, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+- new benchmarks: mypy
 - [table](bm-20230118-linux-x86_64-iritkatriel-copy_consts-3.12.0a4%2B-f8449d5-vs-3.11.0.md)
 - [plot](bm-20230118-linux-x86_64-iritkatriel-copy_consts-3.12.0a4%2B-f8449d5-vs-3.11.0.png)
 

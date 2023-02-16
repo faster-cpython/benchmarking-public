@@ -14,7 +14,7 @@
 
 ### vs. 3.10.4
 
-- 1.05x faster \*
+- 1.06x faster \*
 - missing benchmarks: coverage, dask, mypy2
 - new benchmarks: mypy
 - [table](bm-20220720-linux-x86_64-mdboom-RegCPython-3.10.1-53f2d50-vs-3.10.4.md)
@@ -22,9 +22,9 @@
 
 ### vs. 3.11.0
 
-- 1.20x slower \*
-- missing benchmarks: coverage
-- new benchmarks: asyncio_tcp, create_gc_cycles, djangocms, gc_traversal
+- 1.19x slower \*
+- missing benchmarks: coverage, dask, mypy2
+- new benchmarks: mypy
 - [table](bm-20220720-linux-x86_64-mdboom-RegCPython-3.10.1-53f2d50-vs-3.11.0.md)
 - [plot](bm-20220720-linux-x86_64-mdboom-RegCPython-3.10.1-53f2d50-vs-3.11.0.png)
 

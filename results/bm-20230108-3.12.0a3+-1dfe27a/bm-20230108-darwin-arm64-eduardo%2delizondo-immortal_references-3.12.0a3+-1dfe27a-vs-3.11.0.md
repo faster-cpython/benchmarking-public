@@ -168,5 +168,5 @@ All benchmarks:
 | Geometric mean          | (ref)                                                               | 1.02x faster                                                                      |
 
 Benchmark hidden because not significant (6): regex_effbot, pidigits, json, pickle_list, async_tree_memoization, async_tree_cpu_io_mixed
-Ignored benchmarks (7) of /home/mdboom/Work/builds/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
-Ignored benchmarks (4) of /home/mdboom/Work/builds/benchmarking/results/bm-20230108-3.12.0a3+-1dfe27a/bm-20230108-darwin-arm64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a.json: asyncio_tcp, create_gc_cycles, dask, gc_traversal
+Ignored benchmarks (7) of /home/runner/work/benchmarking/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+Ignored benchmarks (4) of /home/runner/work/benchmarking/benchmarking/results/bm-20230108-3.12.0a3+-1dfe27a/bm-20230108-darwin-arm64-eduardo%2delizondo-immortal_references-3.12.0a3+-1dfe27a.json: asyncio_tcp, create_gc_cycles, dask, gc_traversal

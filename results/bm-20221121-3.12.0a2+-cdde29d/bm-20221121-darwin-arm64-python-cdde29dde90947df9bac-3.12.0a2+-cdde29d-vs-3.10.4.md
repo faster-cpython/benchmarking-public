@@ -171,4 +171,4 @@ All benchmarks:
 | coverage                | 40.8 ms                                                | 57.4 ms: 1.41x slower                                                  |
 | unpack_sequence         | 38.2 ns                                                | 61.5 ns: 1.61x slower                                                  |
 | Geometric mean          | (ref)                                                  | 1.19x faster                                                           |
-Ignored benchmarks (6) of /home/mdboom/Work/builds/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+Ignored benchmarks (6) of /home/runner/work/benchmarking/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative

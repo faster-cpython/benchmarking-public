@@ -170,4 +170,4 @@ All benchmarks:
 | Geometric mean          | (ref)                                                               | 1.02x slower                                                          |
 
 Benchmark hidden because not significant (9): tornado_http, mypy, pylint, genshi_text, chameleon, regex_dna, pidigits, bench_mp_pool, pathlib
-Ignored benchmarks (3) of /home/mdboom/Work/builds/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509.json: aiohttp, flaskblogging, gunicorn
+Ignored benchmarks (3) of /home/runner/work/benchmarking/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509.json: aiohttp, flaskblogging, gunicorn

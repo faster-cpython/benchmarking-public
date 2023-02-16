@@ -164,4 +164,4 @@ All benchmarks:
 | Geometric mean          | (ref)                                                               | 1.01x slower                                                          |
 
 Benchmark hidden because not significant (14): bench_mp_pool, tornado_http, mypy, regex_v8, unpickle, pylint, pickle_list, json, pidigits, regex_dna, pprint_safe_repr, pickle_dict, async_tree_cpu_io_mixed, pathlib
-Ignored benchmarks (2) of /home/mdboom/Work/builds/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509.json: aiohttp, gunicorn
+Ignored benchmarks (2) of /home/runner/work/benchmarking/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509.json: aiohttp, gunicorn

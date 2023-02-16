@@ -14,7 +14,7 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster \*
+- 1.31x faster \*
 - missing benchmarks: async_generators, asyncio_tcp, bench_mp_pool, bench_thread_pool, create_gc_cycles, dask, djangocms, docutils, flaskblogging, gc_traversal, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: mypy
 - [table](bm-20221009-linux-x86_64-python-main-3.12.0a1%2B-2d2e01a-vs-3.10.4.md)
@@ -22,8 +22,9 @@
 
 ### vs. 3.11.0
 
-- 1.02x faster \*
-- missing benchmarks: async_generators, bench_mp_pool, bench_thread_pool, docutils, flaskblogging, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.03x faster \*
+- missing benchmarks: async_generators, asyncio_tcp, bench_mp_pool, bench_thread_pool, create_gc_cycles, dask, djangocms, docutils, flaskblogging, gc_traversal, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: mypy
 - [table](bm-20221009-linux-x86_64-python-main-3.12.0a1%2B-2d2e01a-vs-3.11.0.md)
 - [plot](bm-20221009-linux-x86_64-python-main-3.12.0a1%2B-2d2e01a-vs-3.11.0.png)
 

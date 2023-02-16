@@ -15,7 +15,7 @@
 
 ### vs. 3.10.4
 
-- 1.31x faster \*
+- 1.30x faster \*
 - missing benchmarks: flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: mypy
 - [table](bm-20230129-linux-x86_64-iritkatriel-stdlib_single_arg_ex-3.12.0a4%2B-23ae36b-vs-3.10.4.md)
@@ -23,9 +23,9 @@
 
 ### vs. 3.11.0
 
-- 1.03x faster \*
-- missing benchmarks: flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal
+- 1.04x faster \*
+- missing benchmarks: flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: mypy
 - [table](bm-20230129-linux-x86_64-iritkatriel-stdlib_single_arg_ex-3.12.0a4%2B-23ae36b-vs-3.11.0.md)
 - [plot](bm-20230129-linux-x86_64-iritkatriel-stdlib_single_arg_ex-3.12.0a4%2B-23ae36b-vs-3.11.0.png)
 

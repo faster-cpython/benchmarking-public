@@ -34,15 +34,15 @@
 
 ### vs. 3.10.4
 
-- 1.15x faster \*
+- 1.16x faster \*
 - missing benchmarks: aiohttp, asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal, mypy2
 - [table](bm-20211105-linux-x86_64-python-e2b4e4bab90b69fbd361-3.11.0a2-e2b4e4b-vs-3.10.4.md)
 - [plot](bm-20211105-linux-x86_64-python-e2b4e4bab90b69fbd361-3.11.0a2-e2b4e4b-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.09x slower
-- missing benchmarks: aiohttp, mypy
+- 1.09x slower \*
+- missing benchmarks: aiohttp, asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal, mypy2
 - [table](bm-20211105-linux-x86_64-python-e2b4e4bab90b69fbd361-3.11.0a2-e2b4e4b-vs-3.11.0.md)
 - [plot](bm-20211105-linux-x86_64-python-e2b4e4bab90b69fbd361-3.11.0a2-e2b4e4b-vs-3.11.0.png)
 

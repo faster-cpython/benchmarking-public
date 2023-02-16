@@ -174,4 +174,4 @@ All benchmarks:
 | Geometric mean          | (ref)                                                  | 1.20x faster                                                          |
 
 Benchmark hidden because not significant (3): pickle_list, pickle, bench_mp_pool
-Ignored benchmarks (2) of /home/mdboom/Work/builds/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, gunicorn
+Ignored benchmarks (2) of /home/runner/work/benchmarking/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, gunicorn

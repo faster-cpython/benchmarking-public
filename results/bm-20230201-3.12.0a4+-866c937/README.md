@@ -19,7 +19,7 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster \*
+- 1.29x faster \*
 - missing benchmarks: flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: mypy
 - [table](bm-20230201-linux-x86_64-brandtbucher-quicken_at_runtime-3.12.0a4%2B-866c937-vs-3.10.4.md)
@@ -28,8 +28,8 @@
 ### vs. 3.11.0
 
 - 1.03x faster \*
-- missing benchmarks: flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal
+- missing benchmarks: flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: mypy
 - [table](bm-20230201-linux-x86_64-brandtbucher-quicken_at_runtime-3.12.0a4%2B-866c937-vs-3.11.0.md)
 - [plot](bm-20230201-linux-x86_64-brandtbucher-quicken_at_runtime-3.12.0a4%2B-866c937-vs-3.11.0.png)
 

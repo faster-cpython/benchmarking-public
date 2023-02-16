@@ -24,9 +24,8 @@
 
 ### vs. 3.11.0
 
-- 1.02x faster \*
-- missing benchmarks: flaskblogging, mypy, pylint
-- new benchmarks: asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal, mypy2
+- 1.02x faster
+- missing benchmarks: flaskblogging, pylint
 - [table](bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4%2B-1f6d134-vs-3.11.0.md)
 - [plot](bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4%2B-1f6d134-vs-3.11.0.png)
 

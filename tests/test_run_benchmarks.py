@@ -122,7 +122,7 @@ def test_update_metadata(tmp_path, benchmarks_checkout):
     )
 
 
-def test_run_benchmarks(tmp_path, benchmarks_checkout, monkeypatch):
+def test_run_benchmarks(tmp_path, benchmarks_checkout):
     for dirname in ["cpython", "pyperformance", "pyston-benchmarks", "venv"]:
         shutil.copytree(benchmarks_checkout / dirname, tmp_path / dirname)
 

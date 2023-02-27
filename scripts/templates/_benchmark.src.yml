@@ -100,14 +100,14 @@ jobs:
         run: |
           python scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} >> $GITHUB_OUTPUT
       - uses: actions/checkout@v3
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         with:
-          if: ${{ steps.should_run.outputs.should_run != 'false' }}
           repository: pyston/python-macrobenchmarks
           path: pyston-benchmarks
           ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
       - uses: actions/checkout@v3
+        if: ${{ steps.should_run.outputs.should_run != 'false' }}
         with:
-          if: ${{ steps.should_run.outputs.should_run != 'false' }}
           repository: python/pyperformance
           path: pyperformance
           ref: ${{ env.PYSTON_BENCHMARKS_HASH }}

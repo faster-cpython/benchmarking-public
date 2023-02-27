@@ -2,7 +2,8 @@
 name: _benchmark
 
 env:
-  PYSTON_BENCHMARKS_HASH: b387f4cc9ad0d33fee812efdbf7fe0808d07a531
+  PYPERFORMANCE_HASH: 433550e95779a2882284cb0fc5486dc3f6fff1c7
+  PYSTON_BENCHMARKS_HASH: 1989032bc4a65a023f0ce38108d6c2ed3372912a
 
 "on":
   workflow_call:
@@ -107,9 +108,9 @@ jobs:
       - uses: actions/checkout@v3
         with:
           if: ${{ steps.should_run.outputs.should_run != 'false' }}
-          repository: mdboom/pyperformance
+          repository: python/pyperformance
           path: pyperformance
-          ref: fix-manifest-parsing
+          ref: ${{ env.PYPERFORMANCE_HASH }}
       - name: Build Python
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
@@ -179,9 +180,9 @@ jobs:
       - uses: actions/checkout@v3
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         with:
-          repository: mdboom/pyperformance
+          repository: python/pyperformance
           path: pyperformance
-          ref: fix-manifest-parsing
+          ref: ${{ env.PYPERFORMANCE_HASH }}
       - name: Build Python
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
@@ -250,9 +251,9 @@ jobs:
       - uses: actions/checkout@v3
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         with:
-          repository: mdboom/pyperformance
+          repository: python/pyperformance
           path: pyperformance
-          ref: fix-manifest-parsing
+          ref: ${{ env.PYPERFORMANCE_HASH }}
       - name: Setup environment
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |

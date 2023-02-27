@@ -6,6 +6,7 @@ This repository contains a number of GitHub Actions workflows to run benchmarks 
 
 There is a single user-facing workflow, `benchmark.yml`, that [reuses](https://docs.github.com/en/actions/using-workflows/reusing-workflows) the other workflows, prefixed with `_`.
 
+Unfortunately, it is not possible to select a self-hosted runner based on an input variable.
 To get around this, some of the workflow files are generated from "templates" by the `regenerate_workflows.py` script to work around limitations in the Github Actions workflow language.
 ("Templates" is probably overstating it -- it's just YAML with some sections repeated and modified.)
 Both the source and generated workflow files need to be committed to the git repo, and CI will confirm that the generated files have been regenerated when the source files change.

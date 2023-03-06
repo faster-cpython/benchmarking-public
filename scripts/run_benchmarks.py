@@ -136,11 +136,18 @@ def run_summarize_stats(python: str, fork: str, ref: str, publish: str) -> None:
         fd.write(header)
         fd.write(table)
 
-    update_metadata(Path("pystats.json"), fork, ref, publish)
-    shutil.copy(
-        "pystats.json",
-        result.filename.with_suffix(".json"),
-    )
+    pystats_json = Path("pystats.json")
+    if pystats_json.is_file():
+        update_metadata(pystats_json, fork, ref, publish)
+        shutil.copy(
+            pystats_json,
+            result.filename.with_suffix(".json"),
+        )
+    else:
+        print(
+            "WARNING: No pystats.json file generated. "
+            "This is expected with CPython < 3.12"
+        )
 
 
 def main(

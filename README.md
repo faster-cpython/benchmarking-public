@@ -33,6 +33,9 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 
 ![Longitudinal speed improvement](/longitudinal.png)
 
+Improvement of the geometric mean of all benchmarks vs. 3.10.4, computed with `pyperf compare`.
+The results have a resolution of 0.01.
+
 ## Documentation
 
 ### Running benchmarks from the GitHub web UI

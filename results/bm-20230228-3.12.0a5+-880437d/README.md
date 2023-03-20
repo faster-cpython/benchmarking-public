@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: 880437d4ec65ef35d505
 - version: 3.12.0a5+
 - commit hash: [880437d](https://github.com/python/cpython/commit/880437d)
 - commit date: 2023-02-28T14:16:39-07:00
+- ref: 880437d4ec65ef35d505
 
 ## linux x86_64 (linux)
 

@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: 95fb0e02582b5673eff4
 - version: 3.12.0a4+
 - commit hash: [95fb0e0](https://github.com/python/cpython/commit/95fb0e0)
 - commit date: 2023-02-01T10:08:31-08:00
+- ref: 95fb0e02582b5673eff4
 
 ## linux x86_64 (linux)
 

@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: ea232716d3de1675478d
 - version: 3.12.0a4+
 - commit hash: [ea23271](https://github.com/python/cpython/commit/ea23271)
 - commit date: 2023-01-30T09:56:33-08:00
+- ref: ea232716d3de1675478d
 
 ## linux x86_64 (linux)
 

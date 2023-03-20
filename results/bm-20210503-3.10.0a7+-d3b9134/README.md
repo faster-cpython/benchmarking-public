@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: d3b9134ebb40bdb01ff5
 - version: 3.10.0a7+
 - commit hash: [d3b9134](https://github.com/python/cpython/commit/d3b9134)
 - commit date: 2021-05-03T20:27:47+01:00
+- ref: d3b9134ebb40bdb01ff5
 
 ## linux x86_64 (linux)
 

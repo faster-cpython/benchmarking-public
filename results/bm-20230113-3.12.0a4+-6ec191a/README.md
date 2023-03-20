@@ -1,11 +1,11 @@
 # Results
 
 - fork: faster-cpython
-- ref: faster_gen_close
 - version: 3.12.0a4+
 - commit hash: [6ec191a](https://github.com/faster%2dcpython/cpython/commit/6ec191a)
 - commit date: 2023-01-13T12:56:28+00:00
 - commit merge base: [94fc7706b7bc3d57cdd6d15bf8e8c4499ae53a69](https://github.com/faster%2dcpython/cpython/commit/94fc7706b7bc3d57cdd6d15bf8e8c4499ae53a69)
+- ref: faster_gen_close
 
 ## linux x86_64 (linux)
 

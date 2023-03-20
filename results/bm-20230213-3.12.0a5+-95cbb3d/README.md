@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: 95cbb3d908175ccd8550
 - version: 3.12.0a5+
 - commit hash: [95cbb3d](https://github.com/python/cpython/commit/95cbb3d)
 - commit date: 2023-02-13T13:49:44+00:00
+- ref: 95cbb3d908175ccd8550
 
 ## linux x86_64 (linux)
 

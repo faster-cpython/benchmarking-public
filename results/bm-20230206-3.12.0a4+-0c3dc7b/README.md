@@ -1,11 +1,11 @@
 # Results
 
 - fork: faster-cpython
-- ref: normalize_current_ex
 - version: 3.12.0a4+
 - commit hash: [0c3dc7b](https://github.com/faster%2dcpython/cpython/commit/0c3dc7b)
 - commit date: 2023-02-06T18:30:06+00:00
 - commit merge base: [433fb3ef08c71b97a0d08e522df56e0afaf3747a](https://github.com/faster%2dcpython/cpython/commit/433fb3ef08c71b97a0d08e522df56e0afaf3747a)
+- ref: normalize_current_ex
 
 ## linux x86_64 (linux)
 

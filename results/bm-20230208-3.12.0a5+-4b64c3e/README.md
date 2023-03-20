@@ -1,11 +1,11 @@
 # Results
 
 - fork: brandtbucher
-- ref: shrink_method_caches
 - version: 3.12.0a5+
 - commit hash: [4b64c3e](https://github.com/brandtbucher/cpython/commit/4b64c3e)
 - commit date: 2023-02-08T04:50:24-08:00
 - commit merge base: [f1f3af7b8245e61a2e0abef03b2c6c5902ed7df8](https://github.com/brandtbucher/cpython/commit/f1f3af7b8245e61a2e0abef03b2c6c5902ed7df8)
+- ref: shrink_method_caches
 
 ## linux x86_64 (linux)
 

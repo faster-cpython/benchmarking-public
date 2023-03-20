@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: b45d14b88611fefc6f05
 - version: 3.12.0a6+
 - commit hash: [b45d14b](https://github.com/python/cpython/commit/b45d14b)
 - commit date: 2023-03-09T08:16:30-07:00
+- ref: b45d14b88611fefc6f05
 
 ## linux x86_64 (linux)
 

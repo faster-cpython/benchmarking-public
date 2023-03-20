@@ -1,11 +1,11 @@
 # Results
 
 - fork: brandtbucher
-- ref: shrink_load_global
 - version: 3.12.0a5+
 - commit hash: [9931a35](https://github.com/brandtbucher/cpython/commit/9931a35)
 - commit date: 2023-02-16T15:24:16-08:00
 - commit merge base: [4d8959b73ac194ca9a2f623dcb5c23680f7d8536](https://github.com/brandtbucher/cpython/commit/4d8959b73ac194ca9a2f623dcb5c23680f7d8536)
+- ref: shrink_load_global
 
 ## linux x86_64 (linux)
 

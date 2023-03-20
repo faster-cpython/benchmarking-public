@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: main
 - version: 3.12.0a3+
 - commit hash: [bbf4a66](https://github.com/python/cpython/commit/bbf4a66)
 - commit date: 2022-12-21T23:18:25+05:30
+- ref: main
 
 ## linux x86_64 (linux)
 

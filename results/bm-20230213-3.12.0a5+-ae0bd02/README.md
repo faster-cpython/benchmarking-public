@@ -1,11 +1,11 @@
 # Results
 
 - fork: carljm
-- ref: inlinecomp2
 - version: 3.12.0a5+
 - commit hash: [ae0bd02](https://github.com/carljm/cpython/commit/ae0bd02)
 - commit date: 2023-02-13T06:29:58-08:00
 - commit merge base: [95cbb3d908175ccd855078b3fab7f99e7d0bca88](https://github.com/carljm/cpython/commit/95cbb3d908175ccd855078b3fab7f99e7d0bca88)
+- ref: inlinecomp2
 
 ## linux x86_64 (linux)
 

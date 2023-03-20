@@ -1,11 +1,11 @@
 # Results
 
 - fork: faster-cpython
-- ref: no_small_ints
 - version: 3.12.0a5+
 - commit hash: [5403a06](https://github.com/faster%2dcpython/cpython/commit/5403a06)
 - commit date: 2023-02-25T13:12:58+00:00
 - commit merge base: [1fa38906f0b228e6b0a6baa89ab6316989b0388a](https://github.com/faster%2dcpython/cpython/commit/1fa38906f0b228e6b0a6baa89ab6316989b0388a)
+- ref: no_small_ints
 
 ## linux x86_64 (linux)
 

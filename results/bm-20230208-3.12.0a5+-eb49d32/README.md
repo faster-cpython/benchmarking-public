@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: eb49d32b9af0b3b01a55
 - version: 3.12.0a5+
 - commit hash: [eb49d32](https://github.com/python/cpython/commit/eb49d32)
 - commit date: 2023-02-08T11:13:43+01:00
+- ref: eb49d32b9af0b3b01a55
 
 ## linux x86_64 (linux)
 

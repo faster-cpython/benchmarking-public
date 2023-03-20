@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: v3.11.2
 - version: 3.11.2
 - commit hash: [878ead1](https://github.com/python/cpython/commit/878ead1)
 - commit date: 2023-02-07T13:37:51+00:00
+- ref: v3.11.2
 
 ## linux x86_64 (linux)
 

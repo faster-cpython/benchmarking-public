@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: 702a5bc4637c82dc011e
 - version: 3.12.0a3+
 - commit hash: [702a5bc](https://github.com/python/cpython/commit/702a5bc)
 - commit date: 2022-12-19T10:40:11+02:00
+- ref: 702a5bc4637c82dc011e
 
 ## linux x86_64 (linux)
 

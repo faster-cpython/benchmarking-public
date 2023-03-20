@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: f20c553a458659f247fa
 - version: 3.12.0a3+
 - commit hash: [f20c553](https://github.com/python/cpython/commit/f20c553)
 - commit date: 2023-01-05T12:20:09+00:00
+- ref: f20c553a458659f247fa
 
 ## linux x86_64 (linux)
 

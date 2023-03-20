@@ -281,6 +281,14 @@ class Result:
         return self.commit_datetime[:10]
 
     @property
+    def run_datetime(self) -> str:
+        return self.contents["benchmarks"][0]["runs"][0]["metadata"]["date"]
+
+    @property
+    def run_date(self) -> str:
+        return self.run_datetime[:10]
+
+    @property
     def commit_merge_base(self) -> str:
         return self.metadata.get("commit_merge_base", None)
 

@@ -1,10 +1,10 @@
 # Results
 
 - fork: mdboom
-- ref: RegCPython
 - version: 3.10.1
 - commit hash: [53f2d50](https://github.com/mdboom/cpython/commit/53f2d50)
 - commit date: 2022-07-20T21:48:30+08:00
+- ref: RegCPython
 
 ## linux x86_64 (linux)
 

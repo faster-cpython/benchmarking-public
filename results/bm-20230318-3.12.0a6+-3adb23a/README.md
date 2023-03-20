@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: main
 - version: 3.12.0a6+
 - commit hash: [3adb23a](https://github.com/python/cpython/commit/3adb23a)
 - commit date: 2023-03-18T12:21:48-05:00
+- ref: main
 
 ## linux x86_64 (linux)
 

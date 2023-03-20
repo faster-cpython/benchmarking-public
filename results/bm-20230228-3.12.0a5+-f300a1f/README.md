@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: f300a1fa4c121f7807cb
 - version: 3.12.0a5+
 - commit hash: [f300a1f](https://github.com/python/cpython/commit/f300a1f)
 - commit date: 2023-02-28T13:14:40-07:00
+- ref: f300a1fa4c121f7807cb
 
 ## linux x86_64 (linux)
 

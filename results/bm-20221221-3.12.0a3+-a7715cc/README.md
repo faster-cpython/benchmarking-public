@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: a7715ccfba5b86ab09f8
 - version: 3.12.0a3+
 - commit hash: [a7715cc](https://github.com/python/cpython/commit/a7715cc)
 - commit date: 2022-12-21T15:20:26+05:30
+- ref: a7715ccfba5b86ab09f8
 
 ## linux x86_64 (linux)
 

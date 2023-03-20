@@ -1,11 +1,11 @@
 # Results
 
 - fork: brandtbucher
-- ref: compare_and_not_bran
 - version: 3.12.0a6+
 - commit hash: [d42ac00](https://github.com/brandtbucher/cpython/commit/d42ac00)
 - commit date: 2023-03-16T08:33:53-07:00
 - commit merge base: [84e20c689a8b3b6cebfd50d044c62af5d0e7dec1](https://github.com/brandtbucher/cpython/commit/84e20c689a8b3b6cebfd50d044c62af5d0e7dec1)
+- ref: compare_and_not_bran
 
 ## linux x86_64 (linux)
 

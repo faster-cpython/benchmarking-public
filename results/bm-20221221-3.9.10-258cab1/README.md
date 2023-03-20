@@ -1,10 +1,10 @@
 # Results
 
 - fork: faster_cpython
-- ref: nogil
 - version: 3.9.10
 - commit hash: [258cab1](https://github.com/faster_cpython/cpython/commit/258cab1)
 - commit date: 2022-12-21T19:44:41-08:00
+- ref: nogil
 
 ## linux x86_64 (linux)
 

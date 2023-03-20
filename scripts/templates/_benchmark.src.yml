@@ -70,7 +70,6 @@ env:
 
 jobs:
   benchmark-windows:
-    # TODO: Disabling Windows entirely for now since we don't have the machine
     if: ${{ false && (inputs.machine == 'windows-amd64' || inputs.machine == 'all') }}
 
     runs-on: [self-hosted, windows, bare-metal]

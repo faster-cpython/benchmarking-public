@@ -19,14 +19,14 @@ BENCHMARK_JSON = Path("benchmark.json")
 GITHUB_URL = "https://github.com/faster-cpython/benchmarking"
 
 
-def run_benchmarks(python: Union[Path, str], benchmarks: str, fast: bool) -> None:
+def run_benchmarks(python: Union[Path, str], benchmarks: str, test_mode: bool) -> None:
     if benchmarks.strip() == "":
         benchmarks = "all"
 
     if BENCHMARK_JSON.is_file():
         BENCHMARK_JSON.unlink()
 
-    if fast:
+    if test_mode:
         fast_arg = ["--fast"]
     else:
         fast_arg = []
@@ -157,10 +157,10 @@ def main(
     ref: str,
     benchmarks: str,
     publish: str,
-    fast: bool,
+    test_mode: bool,
     run_id: Optional[str],
 ) -> None:
-    run_benchmarks(python, benchmarks, fast)
+    run_benchmarks(python, benchmarks, test_mode)
     if mode == "benchmark":
         update_metadata(BENCHMARK_JSON, fork, ref, publish, run_id=run_id)
         copy_to_directory(BENCHMARK_JSON, python, fork, ref)
@@ -185,10 +185,20 @@ if __name__ == "__main__":
     parser.add_argument("benchmarks", help="The benchmarks to run")
     parser.add_argument("publish", help="Publish results to the public repo")
     parser.add_argument(
-        "--fast", action="store_true", help="Run fewer iterations of the benchmarks"
+        "--test_mode",
+        action="store_true",
+        help="Run in a special mode for unit testing",
     )
     parser.add_argument("--run_id", default=None, type=str, help="The github run id")
     args = parser.parse_args()
+
+    if args.test_mode:
+        import socket
+
+        def gethostname():
+            return "pyperf"
+
+        socket.gethostname = gethostname
 
     main(
         args.mode,
@@ -197,6 +207,6 @@ if __name__ == "__main__":
         args.ref,
         args.benchmarks,
         args.publish,
-        args.fast,
+        args.test_mode,
         args.run_id,
     )

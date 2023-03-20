@@ -145,7 +145,7 @@ def test_run_benchmarks(tmp_path, benchmarks_checkout):
             "main",
             "deepcopy",
             "false",
-            "--fast",
+            "--test_mode",
             "--run_id",
             "12345",
         ],

@@ -151,30 +151,30 @@ def output_results_index(
     table.output_table(fd, head, rows)
 
 
-def results_by_platform(
-    results: Iterable[Result],
-) -> Iterable[Tuple[str, str, Iterable[Result]]]:
-    """
-    Separate results by platform (system/machine pairs).
-    """
+def sort_runner_names(runner_names: Iterable[str]) -> List[str]:
     # We want linux first, as the most meaningful/reliable one
     order = ["linux", "windows", "darwin"]
 
-    platforms = sorted(
-        set((result.system, result.machine) for result in results),
-        key=lambda x: (order.index(x[0]), x[1]),
-    )
+    def sorter(val):
+        if val is None:
+            return ()
+        return order.index(val.split()[0]), val
 
-    for system, machine in platforms:
-        yield (
-            system,
-            machine,
-            (
-                result
-                for result in results
-                if result.system == system and result.machine == machine
-            ),
-        )
+    return sorted(runner_names, key=sorter)
+
+
+def results_by_runner(
+    results: Iterable[Result],
+) -> Iterable[Tuple[str, Iterable[Result]]]:
+    """
+    Separate results by the runner used.
+    """
+    by_runner = {}
+    for result in results:
+        by_runner.setdefault(result.runner, []).append(result)
+
+    for runner_name in sort_runner_names(by_runner.keys()):
+        yield (runner_name, by_runner[runner_name])
 
 
 def summarize_results(results: Iterable[Result], bases: List[str]) -> Iterable[Result]:
@@ -204,8 +204,8 @@ def generate_index(
     Generate the tables, by each platform.
     """
     content = io.StringIO()
-    for system, machine, results in results_by_platform(results):
-        content.write(f"## {system} {machine}\n")
+    for runner, results in results_by_runner(results):
+        content.write(f"## {runner}\n")
         if summarize:
             results = summarize_results(results, bases)
         output_results_index(content, bases, results, filename)
@@ -266,15 +266,15 @@ def get_directory_indices_entries(
             entries.append((dirpath, None, None, f"commit merge base: {link}"))
         if result.github_action_url is not None:
             link = table.md_link("GitHub Action run", result.github_action_url)
-            entries.append((dirpath, result.worker, None, link))
+            entries.append((dirpath, result.runner, None, link))
 
         entries.append(
-            (dirpath, result.worker, None, f"cpu model: {result.cpu_model_name}")
+            (dirpath, result.runner, None, f"cpu model: {result.cpu_model_name}")
         )
-        entries.append((dirpath, result.worker, None, f"platform: {result.platform}"))
+        entries.append((dirpath, result.runner, None, f"platform: {result.platform}"))
 
         for base, compare in result.bases.items():
-            entries.append((dirpath, result.worker, base, compare.geometric_mean))
+            entries.append((dirpath, result.runner, base, compare.geometric_mean))
             missing_benchmarks, new_benchmarks = find_different_benchmarks(
                 result, compare.ref
             )
@@ -283,7 +283,7 @@ def get_directory_indices_entries(
                 entries.append(
                     (
                         dirpath,
-                        result.worker,
+                        result.runner,
                         base,
                         f"missing benchmarks: {prefix}{', '.join(missing_benchmarks)}",
                     )
@@ -292,7 +292,7 @@ def get_directory_indices_entries(
                 entries.append(
                     (
                         dirpath,
-                        result.worker,
+                        result.runner,
                         base,
                         f"new benchmarks: {', '.join(new_benchmarks)}",
                     )
@@ -307,7 +307,7 @@ def get_directory_indices_entries(
             entries.append(
                 (
                     dirpath,
-                    result.worker,
+                    result.runner,
                     base,
                     table.md_link(type, result.filename.name),
                 )
@@ -323,7 +323,7 @@ def generate_directory_indices(results: List[Result]) -> None:
 
     # The data is in a considerably different form than what we need to write
     # it out. Therefore, this first generates a list of tuples of the form:
-    #    (dirpath, worker, base, entry)
+    #    (dirpath, runner, base, entry)
     # then converts that to a nested dictionary and then writes it out to each
     # of the README.md files.
 
@@ -335,10 +335,11 @@ def generate_directory_indices(results: List[Result]) -> None:
         with open(dirpath / "README.md", "w") as fd:
             fd.write("# Results\n\n")
             table.write_md_list(fd, dirresults[None][None])
-            for worker, data in dirresults.items():
-                if worker is None:
+            for runner in sort_runner_names(dirresults.keys()):
+                if runner is None:
                     continue
-                fd.write(f"## {worker}\n\n")
+                data = dirresults[runner]
+                fd.write(f"## {runner}\n\n")
                 table.write_md_list(fd, data[None])
                 for base, subdata in data.items():
                     if base is None:

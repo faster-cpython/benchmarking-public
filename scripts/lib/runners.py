@@ -32,7 +32,7 @@ def get_runners(path=Path(__file__).parents[2] / "runners.ini") -> List[Runner]:
                 section["os"],
                 section["arch"],
                 section["hostname"],
-                bool(section.get("available", "True")),
+                section.getboolean("available", True),
             )
         )
     return runners

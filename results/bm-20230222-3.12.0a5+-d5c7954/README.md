@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: d5c7954d0c3ff874d2d2
 - version: 3.12.0a5+
 - commit hash: [d5c7954](https://github.com/python/cpython/commit/d5c7954)
 - commit date: 2023-02-22T02:39:00+09:00
+- ref: d5c7954d0c3ff874d2d2
 
 ## linux x86_64 (linux)
 

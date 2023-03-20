@@ -1,11 +1,11 @@
 # Results
 
 - fork: iritkatriel
-- ref: single_arg_exit
 - version: 3.12.0a4+
 - commit hash: [f23eec9](https://github.com/iritkatriel/cpython/commit/f23eec9)
 - commit date: 2023-01-27T18:01:36+00:00
 - commit merge base: [409f5337a3e466a5ef673797575cbd1745d27ca9](https://github.com/iritkatriel/cpython/commit/409f5337a3e466a5ef673797575cbd1745d27ca9)
+- ref: single_arg_exit
 
 ## linux x86_64 (linux)
 

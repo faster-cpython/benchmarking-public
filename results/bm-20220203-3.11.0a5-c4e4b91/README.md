@@ -1,11 +1,10 @@
 # Results
 
 - fork: python
-- ref: main
 - version: 3.11.0a5
 - commit hash: [c4e4b91](https://github.com/python/cpython/commit/c4e4b91)
 - commit date: 2022-02-03T18:37:08+00:00
-- ref: c4e4b91557f18f881f39
+- ref: c4e4b91557f18f881f39, main
 
 ## linux x86_64 (linux)
 

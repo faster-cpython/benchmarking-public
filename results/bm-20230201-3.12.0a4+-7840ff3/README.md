@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: 7840ff3cdbdf64f517c9
 - version: 3.12.0a4+
 - commit hash: [7840ff3](https://github.com/python/cpython/commit/7840ff3)
 - commit date: 2023-02-01T10:56:52-08:00
+- ref: 7840ff3cdbdf64f517c9
 
 ## linux x86_64 (linux)
 

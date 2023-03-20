@@ -1,11 +1,11 @@
 # Results
 
 - fork: faster-cpython
-- ref: pep_669
 - version: 3.12.0a5+
 - commit hash: [d579d2e](https://github.com/faster%2dcpython/cpython/commit/d579d2e)
 - commit date: 2023-02-23T13:14:05+00:00
 - commit merge base: [22b8d77b98a5944e688be0927b8139c49d4a7257](https://github.com/faster%2dcpython/cpython/commit/22b8d77b98a5944e688be0927b8139c49d4a7257)
+- ref: pep_669
 
 ## linux x86_64 (linux)
 

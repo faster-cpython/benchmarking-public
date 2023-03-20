@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: b724ac2fe7fbb5a7a33d
 - version: 3.12.0a4+
 - commit hash: [b724ac2](https://github.com/python/cpython/commit/b724ac2)
 - commit date: 2023-01-23T15:03:26-08:00
+- ref: b724ac2fe7fbb5a7a33d
 
 ## linux x86_64 (linux)
 

@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: 433fb3ef08c71b97a0d0
 - version: 3.12.0a4+
 - commit hash: [433fb3e](https://github.com/python/cpython/commit/433fb3e)
 - commit date: 2023-02-03T14:40:45+00:00
+- ref: 433fb3ef08c71b97a0d0
 
 ## linux x86_64 (linux)
 

@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: ca066bdbed85094a9c4d
 - version: 3.12.0a6+
 - commit hash: [ca066bd](https://github.com/python/cpython/commit/ca066bd)
 - commit date: 2023-03-09T09:50:33-07:00
+- ref: ca066bdbed85094a9c4d
 
 ## linux x86_64 (linux)
 

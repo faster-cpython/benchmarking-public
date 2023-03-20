@@ -189,7 +189,7 @@ def summarize_results(results: Iterable[Result], bases: List[str]) -> Iterable[R
     new_results = []
     earliest = (datetime.date.today() - datetime.timedelta(days=3)).isoformat()
     for i, result in enumerate(results):
-        if i < 3 or result.commit_date >= earliest or result.version in bases:
+        if i < 3 or result.run_date >= earliest or result.version in bases:
             new_results.append(result)
     return new_results
 
@@ -252,11 +252,12 @@ def get_directory_indices_entries(
 ) -> List[Tuple[Path, Optional[str], Optional[str], str]]:
     entries = []
     dirpaths = set()
+    refs = {}
     for result in results:
         dirpath = result.filename.parent
         dirpaths.add(dirpath)
+        refs.setdefault(dirpath, set()).add(result.ref)
         entries.append((dirpath, None, None, f"fork: {unquote(result.fork)}"))
-        entries.append((dirpath, None, None, f"ref: {result.ref}"))
         entries.append((dirpath, None, None, f"version: {result.version}"))
         link = table.link_to_hash(result.cpython_hash, result.fork)
         entries.append((dirpath, None, None, f"commit hash: {link}"))
@@ -299,6 +300,10 @@ def get_directory_indices_entries(
                 )
 
     for dirpath in dirpaths:
+        entries.append(
+            (dirpath, None, None, f"ref: {', '.join(sorted(refs[dirpath]))}")
+        )
+
         for filename in sorted(list(dirpath.iterdir())):
             if filename.name == "README.md":
                 continue

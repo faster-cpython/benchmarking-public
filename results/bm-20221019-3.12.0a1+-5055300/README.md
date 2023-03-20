@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: main
 - version: 3.12.0a1+
 - commit hash: [5055300](https://github.com/python/cpython/commit/5055300)
 - commit date: 2022-10-19T12:00:28+00:00
+- ref: main
 
 ## linux x86_64 (linux)
 

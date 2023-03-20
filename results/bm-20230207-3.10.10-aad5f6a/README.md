@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: v3.10.10
 - version: 3.10.10
 - commit hash: [aad5f6a](https://github.com/python/cpython/commit/aad5f6a)
 - commit date: 2023-02-07T12:05:45+00:00
+- ref: v3.10.10
 
 ## linux x86_64 (linux)
 

@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: main
 - version: 3.12.0a3+
 - commit hash: [432117c](https://github.com/python/cpython/commit/432117c)
 - commit date: 2022-12-16T12:36:13-08:00
+- ref: main
 
 ## darwin arm64 (darwin)
 

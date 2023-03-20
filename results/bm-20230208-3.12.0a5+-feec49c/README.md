@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: feec49c40736fc05626a
 - version: 3.12.0a5+
 - commit hash: [feec49c](https://github.com/python/cpython/commit/feec49c)
 - commit date: 2023-02-08T09:31:12+00:00
+- ref: feec49c40736fc05626a
 
 ## linux x86_64 (linux)
 

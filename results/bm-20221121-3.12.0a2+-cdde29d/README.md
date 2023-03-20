@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: cdde29dde90947df9bac
 - version: 3.12.0a2+
 - commit hash: [cdde29d](https://github.com/python/cpython/commit/cdde29d)
 - commit date: 2022-11-21T10:50:20+01:00
+- ref: cdde29dde90947df9bac
 
 ## linux x86_64 (linux)
 

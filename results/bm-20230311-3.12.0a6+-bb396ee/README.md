@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: main
 - version: 3.12.0a6+
 - commit hash: [bb396ee](https://github.com/python/cpython/commit/bb396ee)
 - commit date: 2023-03-11T11:10:52-08:00
+- ref: main
 
 ## linux x86_64 (linux)
 

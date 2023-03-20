@@ -1,11 +1,11 @@
 # Results
 
 - fork: brandtbucher
-- ref: shrink_load_global
 - version: 3.12.0a5+
 - commit hash: [cf0df30](https://github.com/brandtbucher/cpython/commit/cf0df30)
 - commit date: 2023-02-21T11:24:49-08:00
 - commit merge base: [d5c7954d0c3ff874d2d27d33dcc207bb7356f328](https://github.com/brandtbucher/cpython/commit/d5c7954d0c3ff874d2d27d33dcc207bb7356f328)
+- ref: shrink_load_global
 
 ## linux x86_64 (linux)
 

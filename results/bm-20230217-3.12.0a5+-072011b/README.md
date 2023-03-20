@@ -1,10 +1,10 @@
 # Results
 
 - fork: python
-- ref: 072011b3c38f871cdc3a
 - version: 3.12.0a5+
 - commit hash: [072011b](https://github.com/python/cpython/commit/072011b)
 - commit date: 2023-02-17T14:08:14+00:00
+- ref: 072011b3c38f871cdc3a
 
 ## linux x86_64 (linux)
 

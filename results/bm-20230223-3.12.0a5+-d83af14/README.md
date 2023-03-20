@@ -1,11 +1,11 @@
 # Results
 
 - fork: iritkatriel
-- ref: fetch_restore
 - version: 3.12.0a5+
 - commit hash: [d83af14](https://github.com/iritkatriel/cpython/commit/d83af14)
 - commit date: 2023-02-23T16:42:26+00:00
 - commit merge base: [c3a178398c199038f3a0891d09f0363ec73f3b38](https://github.com/iritkatriel/cpython/commit/c3a178398c199038f3a0891d09f0363ec73f3b38)
+- ref: fetch_restore
 
 ## linux x86_64 (linux)
 

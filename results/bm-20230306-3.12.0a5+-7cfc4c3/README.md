@@ -1,11 +1,11 @@
 # Results
 
 - fork: gvanrossum
-- ref: 7cfc4c355330f651396f
 - version: 3.12.0a5+
 - commit hash: [7cfc4c3](https://github.com/gvanrossum/cpython/commit/7cfc4c3)
 - commit date: 2023-03-06T08:58:15-08:00
 - commit merge base: [cb944d0be869dfb1189265467ec8a986176cc104](https://github.com/gvanrossum/cpython/commit/cb944d0be869dfb1189265467ec8a986176cc104)
+- ref: 7cfc4c355330f651396f
 
 ## linux x86_64 (linux)
 

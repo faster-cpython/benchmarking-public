@@ -219,6 +219,10 @@ jobs:
       with:
         add: results
   benchmark-windows-x86_64-pythonperf1:
+    defaults:
+      run:
+        shell: cmd
+
     if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1' || inputs.machine == 'all')
       }}
 

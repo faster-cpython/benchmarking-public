@@ -6,7 +6,7 @@
 - commit hash: [b45d14b](https://github.com/python/cpython/commit/b45d14b)
 - commit date: 2023-03-09T08:16:30-07:00
 
-## linux x86_64
+## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4385620456)
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz

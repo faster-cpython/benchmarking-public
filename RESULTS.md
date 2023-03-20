@@ -1,7 +1,7 @@
 # Benchmark results
 
 <!-- START table -->
-## linux x86_64
+## linux x86_64 (linux)
 | date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0: | vs. base: |
 | --- | --- | --- | --- | --- | ---: | ---: | ---: |
 | [2023-03-18](results/bm-20230318-3.12.0a6%2B-3adb23a) | python | main | 3.12.0a6+ | 3adb23a | [1.30x faster \*](results/bm-20230318-3.12.0a6%2B-3adb23a/bm-20230318-linux-x86_64-python-main-3.12.0a6%2B-3adb23a-vs-3.10.4.md) | [1.04x faster \*](results/bm-20230318-3.12.0a6%2B-3adb23a/bm-20230318-linux-x86_64-python-main-3.12.0a6%2B-3adb23a-vs-3.11.0.md) |  |
@@ -219,7 +219,7 @@
 | [2021-05-03](results/bm-20210503-3.10.0a7%2B-d3b9134) | python | d3b9134ebb | 3.10.0a7+ | d3b9134 | [1.01x faster \*](results/bm-20210503-3.10.0a7%2B-d3b9134/bm-20210503-linux-x86_64-python-d3b9134ebb40bdb01ff5-3.10.0a7%2B-d3b9134-vs-3.10.4.md) | [1.24x slower \*](results/bm-20210503-3.10.0a7%2B-d3b9134/bm-20210503-linux-x86_64-python-d3b9134ebb40bdb01ff5-3.10.0a7%2B-d3b9134-vs-3.11.0.md) |  |
 | [2022-12-21](results/bm-20221221-3.9.10-258cab1) | faster_cpython | nogil | 3.9.10 | 258cab1 | [1.01x faster \*](results/bm-20221221-3.9.10-258cab1/bm-20221221-linux-x86_64-faster_cpython-nogil-3.9.10-258cab1-vs-3.10.4.md) | [1.25x slower \*](results/bm-20221221-3.9.10-258cab1/bm-20221221-linux-x86_64-faster_cpython-nogil-3.9.10-258cab1-vs-3.11.0.md) |  |
 
-## darwin arm64
+## darwin arm64 (darwin)
 | date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0: | vs. base: |
 | --- | --- | --- | --- | --- | ---: | ---: | ---: |
 | [2023-03-18](results/bm-20230318-3.12.0a6%2B-3adb23a) | python | main | 3.12.0a6+ | 3adb23a | [1.20x faster \*](results/bm-20230318-3.12.0a6%2B-3adb23a/bm-20230318-darwin-arm64-python-main-3.12.0a6%2B-3adb23a-vs-3.10.4.md) | [1.02x slower \*](results/bm-20230318-3.12.0a6%2B-3adb23a/bm-20230318-darwin-arm64-python-main-3.12.0a6%2B-3adb23a-vs-3.11.0.md) |  |

@@ -6,7 +6,7 @@
 - commit hash: [61f2be0](https://github.com/python/cpython/commit/61f2be0)
 - commit date: 2023-02-10T20:46:12+02:00
 
-## linux x86_64
+## linux x86_64 (linux)
 
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31

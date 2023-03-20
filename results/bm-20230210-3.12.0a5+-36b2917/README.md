@@ -7,7 +7,7 @@
 - commit date: 2023-02-10T11:49:34-08:00
 - commit merge base: [61f2be08661949e2f6dfc94143436297e60d47de](https://github.com/carljm/cpython/commit/61f2be08661949e2f6dfc94143436297e60d47de)
 
-## linux x86_64
+## linux x86_64 (linux)
 
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31

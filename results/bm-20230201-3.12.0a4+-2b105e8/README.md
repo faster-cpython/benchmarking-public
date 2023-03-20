@@ -7,7 +7,7 @@
 - commit date: 2023-02-01T15:18:38-08:00
 - commit merge base: [ae9b38f4241a7d62ec4e9b775d4436d762b11fb3](https://github.com/gvanrossum/cpython/commit/ae9b38f4241a7d62ec4e9b775d4436d762b11fb3)
 
-## linux x86_64
+## linux x86_64 (linux)
 
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31

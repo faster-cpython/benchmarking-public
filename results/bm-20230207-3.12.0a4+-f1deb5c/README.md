@@ -7,7 +7,7 @@
 - commit date: 2023-02-07T16:27:04+08:00
 - commit merge base: [d3e2dd6e71bd8e5482973891926d5df19be687eb](https://github.com/penguin%2dwwy/cpython/commit/d3e2dd6e71bd8e5482973891926d5df19be687eb)
 
-## linux x86_64
+## linux x86_64 (linux)
 
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31

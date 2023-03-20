@@ -6,7 +6,7 @@
 - commit hash: [dfb5d27](https://github.com/python/cpython/commit/dfb5d27)
 - commit date: 2022-10-24T05:58:27-07:00
 
-## darwin arm64
+## darwin arm64 (darwin)
 
 - cpu model: missing
 - platform: macOS-12.6-arm64-arm-64bit

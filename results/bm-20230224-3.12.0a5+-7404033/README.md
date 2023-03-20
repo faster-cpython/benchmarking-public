@@ -7,7 +7,7 @@
 - commit date: 2023-02-24T17:00:13+00:00
 - commit merge base: [1fa38906f0b228e6b0a6baa89ab6316989b0388a](https://github.com/faster%2dcpython/cpython/commit/1fa38906f0b228e6b0a6baa89ab6316989b0388a)
 
-## linux x86_64
+## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4264560100)
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz

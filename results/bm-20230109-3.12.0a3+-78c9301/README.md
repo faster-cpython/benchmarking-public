@@ -7,7 +7,7 @@
 - commit date: 2023-01-09T12:55:54+08:00
 - commit merge base: [7116030a25f7dd2140ef3e889f3f5471334d6d0b](https://github.com/Fidget_Spinner/cpython/commit/7116030a25f7dd2140ef3e889f3f5471334d6d0b)
 
-## linux x86_64
+## linux x86_64 (linux)
 
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31

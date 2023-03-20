@@ -6,7 +6,7 @@
 - commit hash: [9f2c479](https://github.com/python/cpython/commit/9f2c479)
 - commit date: 2023-01-26T09:15:05-08:00
 
-## linux x86_64
+## linux x86_64 (linux)
 
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
@@ -28,7 +28,7 @@
 - [table](bm-20230126-linux-x86_64-python-9f2c479eaf7d922746ef-3.12.0a4%2B-9f2c479-vs-3.11.0.md)
 - [plot](bm-20230126-linux-x86_64-python-9f2c479eaf7d922746ef-3.12.0a4%2B-9f2c479-vs-3.11.0.png)
 
-## darwin arm64
+## darwin arm64 (darwin)
 
 - cpu model: missing
 - platform: macOS-12.6-arm64-arm-64bit

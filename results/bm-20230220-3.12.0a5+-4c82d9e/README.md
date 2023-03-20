@@ -7,7 +7,7 @@
 - commit date: 2023-02-20T18:04:43+00:00
 - commit merge base: [d9de0792482d2ded364b0c7d2867b97a5da41b12](https://github.com/iritkatriel/cpython/commit/d9de0792482d2ded364b0c7d2867b97a5da41b12)
 
-## linux x86_64
+## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4226533859)
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz

@@ -6,7 +6,7 @@
 - commit hash: [53f2d50](https://github.com/mdboom/cpython/commit/53f2d50)
 - commit date: 2022-07-20T21:48:30+08:00
 
-## linux x86_64
+## linux x86_64 (linux)
 
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31

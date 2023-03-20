@@ -7,7 +7,7 @@
 - commit date: 2023-02-08T18:26:54+00:00
 - commit merge base: [d9de0792482d2ded364b0c7d2867b97a5da41b12](https://github.com/iritkatriel/cpython/commit/d9de0792482d2ded364b0c7d2867b97a5da41b12)
 
-## linux x86_64
+## linux x86_64 (linux)
 
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31

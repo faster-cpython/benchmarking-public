@@ -6,7 +6,7 @@
 - commit hash: [2b428a1](https://github.com/python/cpython/commit/2b428a1)
 - commit date: 2022-09-26T00:06:11-04:00
 
-## darwin arm64
+## darwin arm64 (darwin)
 
 - cpu model: missing
 - platform: macOS-12.6-arm64-arm-64bit

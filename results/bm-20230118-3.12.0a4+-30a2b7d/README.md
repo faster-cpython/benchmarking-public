@@ -7,7 +7,7 @@
 - commit date: 2023-01-18T04:55:10-08:00
 - commit merge base: [ea232716d3de1675478db3a302629ba43194c967](https://github.com/brandtbucher/cpython/commit/ea232716d3de1675478db3a302629ba43194c967)
 
-## linux x86_64
+## linux x86_64 (linux)
 
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31

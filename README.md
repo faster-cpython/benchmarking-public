@@ -7,19 +7,16 @@
 Here are some recent and important revisions. 👉 [Complete list of results](RESULTS.md).
 
 <!-- START table -->
-## linux x86_64
+## linux x86_64 (linux)
 | date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0: | vs. base: |
 | --- | --- | --- | --- | --- | ---: | ---: | ---: |
 | [2023-03-18](results/bm-20230318-3.12.0a6%2B-3adb23a) | python | main | 3.12.0a6+ | 3adb23a | [1.30x faster \*](results/bm-20230318-3.12.0a6%2B-3adb23a/bm-20230318-linux-x86_64-python-main-3.12.0a6%2B-3adb23a-vs-3.10.4.md) | [1.04x faster \*](results/bm-20230318-3.12.0a6%2B-3adb23a/bm-20230318-linux-x86_64-python-main-3.12.0a6%2B-3adb23a-vs-3.11.0.md) |  |
 | [2023-03-17](results/bm-20230317-3.12.0a6%2B-4f5774f) | python | 4f5774f648 | 3.12.0a6+ | 4f5774f | [1.31x faster \*](results/bm-20230317-3.12.0a6%2B-4f5774f/bm-20230317-linux-x86_64-python-4f5774f648eafd1a7076-3.12.0a6%2B-4f5774f-vs-3.10.4.md) | [1.04x faster \*](results/bm-20230317-3.12.0a6%2B-4f5774f/bm-20230317-linux-x86_64-python-4f5774f648eafd1a7076-3.12.0a6%2B-4f5774f-vs-3.11.0.md) |  |
 | [2023-03-16](results/bm-20230316-3.12.0a6%2B-034e2bf) | brandtbucher | de_epfreez | 3.12.0a6+ | 034e2bf | [1.29x faster \*](results/bm-20230316-3.12.0a6%2B-034e2bf/bm-20230316-linux-x86_64-brandtbucher-de_epfreeze-3.12.0a6%2B-034e2bf-vs-3.10.4.md) | [1.03x faster \*](results/bm-20230316-3.12.0a6%2B-034e2bf/bm-20230316-linux-x86_64-brandtbucher-de_epfreeze-3.12.0a6%2B-034e2bf-vs-3.11.0.md) | [1.01x slower](results/bm-20230316-3.12.0a6%2B-034e2bf/bm-20230316-linux-x86_64-brandtbucher-de_epfreeze-3.12.0a6%2B-034e2bf-vs-base.md) |
-| [2023-03-16](results/bm-20230316-3.12.0a6%2B-84e20c6) | python | 84e20c689a | 3.12.0a6+ | 84e20c6 | [1.31x faster \*](results/bm-20230316-3.12.0a6%2B-84e20c6/bm-20230316-linux-x86_64-python-84e20c689a8b3b6cebfd-3.12.0a6%2B-84e20c6-vs-3.10.4.md) | [1.04x faster \*](results/bm-20230316-3.12.0a6%2B-84e20c6/bm-20230316-linux-x86_64-python-84e20c689a8b3b6cebfd-3.12.0a6%2B-84e20c6-vs-3.11.0.md) |  |
-| [2023-03-16](results/bm-20230316-3.12.0a6%2B-d42ac00) | brandtbucher | compare_an | 3.12.0a6+ | d42ac00 | [1.30x faster \*](results/bm-20230316-3.12.0a6%2B-d42ac00/bm-20230316-linux-x86_64-brandtbucher-compare_and_not_bran-3.12.0a6%2B-d42ac00-vs-3.10.4.md) | [1.04x faster \*](results/bm-20230316-3.12.0a6%2B-d42ac00/bm-20230316-linux-x86_64-brandtbucher-compare_and_not_bran-3.12.0a6%2B-d42ac00-vs-3.11.0.md) | [1.01x slower](results/bm-20230316-3.12.0a6%2B-d42ac00/bm-20230316-linux-x86_64-brandtbucher-compare_and_not_bran-3.12.0a6%2B-d42ac00-vs-base.md) |
-| [2023-03-16](results/bm-20230316-3.12.0a6%2B-76326f3) | faster-cpython | no_deep_fr | 3.12.0a6+ | 76326f3 | [1.30x faster \*](results/bm-20230316-3.12.0a6%2B-76326f3/bm-20230316-linux-x86_64-faster%252dcpython-no_deep_freeze-3.12.0a6%2B-76326f3-vs-3.10.4.md) | [1.03x faster \*](results/bm-20230316-3.12.0a6%2B-76326f3/bm-20230316-linux-x86_64-faster%252dcpython-no_deep_freeze-3.12.0a6%2B-76326f3-vs-3.11.0.md) | [1.01x slower](results/bm-20230316-3.12.0a6%2B-76326f3/bm-20230316-linux-x86_64-faster%252dcpython-no_deep_freeze-3.12.0a6%2B-76326f3-vs-base.md) |
 | [2022-10-24](results/bm-20221024-3.11.0-deaf509) | python | v3.11.0 | 3.11.0 | deaf509 | [1.25x faster](results/bm-20221024-3.11.0-deaf509/bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.md) |  |  |
 | [2022-03-23](results/bm-20220323-3.10.4-9d38120) | python | v3.10.4 | 3.10.4 | 9d38120 |  | [1.25x slower](results/bm-20220323-3.10.4-9d38120/bm-20220323-linux-x86_64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.md) |  |
 
-## darwin arm64
+## darwin arm64 (darwin)
 | date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0: | vs. base: |
 | --- | --- | --- | --- | --- | ---: | ---: | ---: |
 | [2023-03-18](results/bm-20230318-3.12.0a6%2B-3adb23a) | python | main | 3.12.0a6+ | 3adb23a | [1.20x faster \*](results/bm-20230318-3.12.0a6%2B-3adb23a/bm-20230318-darwin-arm64-python-main-3.12.0a6%2B-3adb23a-vs-3.10.4.md) | [1.02x slower \*](results/bm-20230318-3.12.0a6%2B-3adb23a/bm-20230318-darwin-arm64-python-main-3.12.0a6%2B-3adb23a-vs-3.11.0.md) |  |

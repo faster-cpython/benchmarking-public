@@ -219,10 +219,6 @@ jobs:
       with:
         add: results
   benchmark-windows-x86_64-pythonperf1:
-    defaults:
-      run:
-        shell: cmd
-
     if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1' || inputs.machine == 'all')
       }}
 
@@ -235,11 +231,6 @@ jobs:
     - name: Enable symlinks for git
       run: |
         git config --global core.symlinks true
-      # Install a "base" Python to run the pyperformance orchestration
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-        cache: pip
     - uses: actions/checkout@v3
     - uses: actions/checkout@v3
       with:

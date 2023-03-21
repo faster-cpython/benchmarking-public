@@ -51,6 +51,7 @@ on:
         options:
         - linux-x86_64-linux
         - darwin-arm64-darwin
+        - windows-x86_64-pythonperf1
         - all
       benchmarks:
         description: Benchmarks to run (comma-separated; empty runs all benchmarks)
@@ -70,8 +71,6 @@ on:
 
 jobs:
   benchmark-linux-x86_64-linux:
-    if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == 'all') }}
-
     runs-on: [self-hosted, linux, bare-metal, linux-x86_64-linux]
 
     steps:
@@ -131,7 +130,7 @@ jobs:
           benchmark.json
       # Pull again, since another job may have committed results in the meantime
     - name: pull
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
@@ -144,9 +143,8 @@ jobs:
       with:
         add: results
 
+    if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == 'all') }}
   benchmark-darwin-arm64-darwin:
-    if: ${{ (inputs.machine == 'darwin-arm64-darwin' || inputs.machine == 'all') }}
-
     runs-on: [self-hosted, macos, bare-metal, darwin-arm64-darwin]
 
     steps:
@@ -205,7 +203,7 @@ jobs:
           benchmark.json
       # Pull again, since another job may have committed results in the meantime
     - name: pull
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
@@ -217,3 +215,79 @@ jobs:
       uses: EndBug/add-and-commit@v9
       with:
         add: results
+    if: ${{ (inputs.machine == 'darwin-arm64-darwin' || inputs.machine == 'all') }}
+  benchmark-windows-x86_64-pythonperf1:
+    runs-on: [self-hosted, windows, bare-metal, windows-x86_64-pythonperf1]
+
+    steps:
+      # Tell git to checkout repos with symlinks (required by pyston
+      # benchmarks).
+      # Requires "Developer Mode" switched on in Windows 10/11
+    - name: Enable symlinks for git
+      run: |
+        git config --global core.symlinks true
+    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
+      with:
+        repository: ${{ inputs.fork }}/cpython
+        path: cpython
+        ref: ${{ inputs.ref }}
+        fetch-depth: 50
+    - name: Should we run?
+      if: ${{ always() }}
+      id: should_run
+      run: |
+        py scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} >> $GITHUB_OUTPUT
+    - uses: actions/checkout@v3
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      with:
+        repository: pyston/python-macrobenchmarks
+        path: pyston-benchmarks
+        ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+    - uses: actions/checkout@v3
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      with:
+        repository: python/pyperformance
+        path: pyperformance
+        ref: ${{ env.PYPERFORMANCE_HASH }}
+    - name: Build Python
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        cd cpython
+        PCbuild\build.bat ${{ inputs.pgo == true && '--pgo' || '' }} -c Release
+        # Copy the build products to a place that libraries can find them.
+        Copy-Item -Path "PCBuild/amd64" -Destination "libs" -Recurse
+    - name: Install pyperformance
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        py -m venv venv
+        venv\Scripts\python.exe -m pip install setuptools wheel
+        venv\Scripts\python.exe -m pip install .\pyperformance
+    - name: Running pyperformance
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        venv\Scripts\python.exe scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
+    - name: Upload artifacts
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      uses: actions/upload-artifact@v3
+      with:
+        name: benchmark
+        path: |
+          benchmark.json
+      # Pull again, since another job may have committed results in the meantime
+    - name: pull
+      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
+      run: |
+        # Another benchmarking task may have created results for the same
+        # commit while the above was running. This "magic" incantation means
+        # that any local results for this commit will override anything we
+        # just pulled in in that case.
+        git pull -s recursive -X ours --autostash --rebase
+    - name: Add to repo
+      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: results
+
+    if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1' || inputs.machine == 'all')
+      }}

@@ -7,6 +7,13 @@ import subprocess
 from typing import Any, List, Mapping, Optional
 
 
+from . import runners
+
+
+def get_machines():
+    return [x.name for x in runners.get_runners() if x.available] + ["all"]
+
+
 def _get_flags(d: Mapping[str, Any]) -> List[str]:
     flags = []
     for key, val in d.items():
@@ -18,9 +25,6 @@ def _get_flags(d: Mapping[str, Any]) -> List[str]:
             val = str(val)
         flags.extend(["-f", f"{key}={val}"])
     return flags
-
-
-MACHINES = ["linux-amd64", "windows-amd64", "darwin-arm64", "all"]
 
 
 def benchmark(
@@ -36,8 +40,8 @@ def benchmark(
     if not (ref is None or isinstance(ref, str)):
         raise TypeError(f"ref must be a str, got {type(ref)}")
 
-    if not (machine is None or machine in MACHINES):
-        raise ValueError(f"machine must be one of {MACHINES}")
+    if not (machine is None or machine in get_machines()):
+        raise ValueError(f"machine must be one of {get_machines()}")
 
     if not (benchmark_base is None or isinstance(benchmark_base, bool)):
         raise TypeError(f"benchmark_base must be bool, got {type(benchmark_base)}")

@@ -70,9 +70,6 @@ env:
 
 jobs:
   benchmark-windows:
-    # TODO: Disabling Windows entirely for now since we don't have the machine
-    if: ${{ false && (inputs.machine == 'windows-amd64' || inputs.machine == 'all') }}
-
     runs-on: [self-hosted, windows, bare-metal]
 
     steps:
@@ -82,11 +79,6 @@ jobs:
       - name: Enable symlinks for git
         run: |
           git config --global core.symlinks true
-      # Install a "base" Python to run the pyperformance orchestration
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-          cache: pip
       - uses: actions/checkout@v3
       - uses: actions/checkout@v3
         with:
@@ -98,7 +90,7 @@ jobs:
         if: ${{ always() }}
         id: should_run
         run: |
-          python scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} >> $GITHUB_OUTPUT
+          py scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} >> $GITHUB_OUTPUT
       - uses: actions/checkout@v3
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         with:
@@ -115,18 +107,19 @@ jobs:
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           cd cpython
-          PCbuild/build.bat ${{ inputs.pgo == true && '--pgo' || '' }} -c Release
+          PCbuild\build.bat ${{ inputs.pgo == true && '--pgo' || '' }} -c Release
           # Copy the build products to a place that libraries can find them.
           Copy-Item -Path "PCBuild/amd64" -Destination "libs" -Recurse
       - name: Install pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          python -m pip install setuptools wheel
-          python -m pip install .\pyperformance
+          py -m venv venv
+          venv\Scripts\python.exe -m pip install setuptools wheel
+          venv\Scripts\python.exe -m pip install .\pyperformance
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          python scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
+          venv\Scripts\python.exe scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
       - name: Upload artifacts
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         uses: actions/upload-artifact@v3
@@ -136,7 +129,7 @@ jobs:
             benchmark.json
       # Pull again, since another job may have committed results in the meantime
       - name: pull
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
+        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
         run: |
           # Another benchmarking task may have created results for the same
           # commit while the above was running. This "magic" incantation means
@@ -150,8 +143,6 @@ jobs:
           add: results
 
   benchmark-linux:
-    if: ${{ inputs.machine == 'linux-amd64' || inputs.machine == 'all' }}
-
     runs-on: [self-hosted, linux, bare-metal]
 
     steps:
@@ -211,7 +202,7 @@ jobs:
             benchmark.json
       # Pull again, since another job may have committed results in the meantime
       - name: pull
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
+        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
         run: |
           # Another benchmarking task may have created results for the same
           # commit while the above was running. This "magic" incantation means
@@ -225,8 +216,6 @@ jobs:
           add: results
 
   benchmark-darwin:
-    if: ${{ inputs.machine == 'darwin-arm64' || inputs.machine == 'all' }}
-
     runs-on: [self-hosted, macos, bare-metal]
 
     steps:
@@ -285,7 +274,7 @@ jobs:
             benchmark.json
       # Pull again, since another job may have committed results in the meantime
       - name: pull
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
+        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
         run: |
           # Another benchmarking task may have created results for the same
           # commit while the above was running. This "magic" incantation means

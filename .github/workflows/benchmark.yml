@@ -18,6 +18,7 @@ on:
         options:
         - linux-x86_64-linux
         - darwin-arm64-darwin
+        - windows-x86_64-pythonperf1
         - all
       benchmarks:
         description: Benchmarks to run (comma-separated; empty runs all benchmarks)

@@ -70,10 +70,6 @@ env:
 
 jobs:
   benchmark-windows:
-    defaults:
-      run:
-        shell: cmd
-
     if: ${{ false && (inputs.machine == 'windows-amd64' || inputs.machine == 'all') }}
 
     runs-on: [self-hosted, windows, bare-metal]

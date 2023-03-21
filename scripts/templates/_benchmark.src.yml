@@ -70,8 +70,6 @@ env:
 
 jobs:
   benchmark-windows:
-    if: ${{ false && (inputs.machine == 'windows-amd64' || inputs.machine == 'all') }}
-
     runs-on: [self-hosted, windows, bare-metal]
 
     steps:
@@ -145,8 +143,6 @@ jobs:
           add: results
 
   benchmark-linux:
-    if: ${{ inputs.machine == 'linux-amd64' || inputs.machine == 'all' }}
-
     runs-on: [self-hosted, linux, bare-metal]
 
     steps:
@@ -220,8 +216,6 @@ jobs:
           add: results
 
   benchmark-darwin:
-    if: ${{ inputs.machine == 'darwin-arm64' || inputs.machine == 'all' }}
-
     runs-on: [self-hosted, macos, bare-metal]
 
     steps:

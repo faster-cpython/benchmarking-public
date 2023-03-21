@@ -71,8 +71,6 @@ on:
 
 jobs:
   benchmark-linux-x86_64-linux:
-    if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == 'all') }}
-
     runs-on: [self-hosted, linux, bare-metal, linux-x86_64-linux]
 
     steps:
@@ -145,9 +143,8 @@ jobs:
       with:
         add: results
 
+    if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == 'all') }}
   benchmark-darwin-arm64-darwin:
-    if: ${{ (inputs.machine == 'darwin-arm64-darwin' || inputs.machine == 'all') }}
-
     runs-on: [self-hosted, macos, bare-metal, darwin-arm64-darwin]
 
     steps:
@@ -218,10 +215,8 @@ jobs:
       uses: EndBug/add-and-commit@v9
       with:
         add: results
+    if: ${{ (inputs.machine == 'darwin-arm64-darwin' || inputs.machine == 'all') }}
   benchmark-windows-x86_64-pythonperf1:
-    if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1' || inputs.machine == 'all')
-      }}
-
     runs-on: [self-hosted, windows, bare-metal, windows-x86_64-pythonperf1]
 
     steps:
@@ -294,3 +289,5 @@ jobs:
       with:
         add: results
 
+    if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1' || inputs.machine == 'all')
+      }}

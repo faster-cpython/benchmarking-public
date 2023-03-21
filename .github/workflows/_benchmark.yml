@@ -132,7 +132,7 @@ jobs:
           benchmark.json
       # Pull again, since another job may have committed results in the meantime
     - name: pull
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
@@ -206,7 +206,7 @@ jobs:
           benchmark.json
       # Pull again, since another job may have committed results in the meantime
     - name: pull
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
@@ -281,7 +281,7 @@ jobs:
           benchmark.json
       # Pull again, since another job may have committed results in the meantime
     - name: pull
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means

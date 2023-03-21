@@ -108,7 +108,7 @@ def remove_existing(
 
     if machine == "all":
         all_commits = set()
-        for submachine in gh.MACHINES:
+        for submachine in gh.get_machines():
             if submachine == "all":
                 continue
             all_commits |= set(remove_existing(commits, submachine, results))
@@ -189,6 +189,8 @@ def main(
 
 
 if __name__ == "__main__":
+    machines = gh.get_machines()
+
     parser = argparse.ArgumentParser(
         """
         Fire off a set of benchmark jobs based on tags in the cpython
@@ -218,8 +220,8 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--machine",
-        choices=gh.MACHINES,
-        default="linux-amd64",
+        choices=machines,
+        default=machines[0],
         help="The machine to run on.",
     )
     parser.add_argument(

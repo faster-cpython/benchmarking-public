@@ -92,7 +92,7 @@ jobs:
         if: ${{ always() }}
         id: should_run
         run: |
-          python.exe scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} >> $GITHUB_OUTPUT
+          py scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} >> $GITHUB_OUTPUT
       - uses: actions/checkout@v3
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         with:
@@ -115,7 +115,7 @@ jobs:
       - name: Install pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          python.exe -m venv venv
+          py -m venv venv
           venv\Scripts\python.exe -m pip install setuptools wheel
           venv\Scripts\python.exe -m pip install .\pyperformance
       - name: Running pyperformance

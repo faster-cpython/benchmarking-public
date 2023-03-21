@@ -92,7 +92,7 @@ jobs:
         if: ${{ always() }}
         id: should_run
         run: |
-          python scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} >> $GITHUB_OUTPUT
+          python.exe scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} >> $GITHUB_OUTPUT
       - uses: actions/checkout@v3
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         with:
@@ -109,18 +109,19 @@ jobs:
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
           cd cpython
-          PCbuild/build.bat ${{ inputs.pgo == true && '--pgo' || '' }} -c Release
+          PCbuild\build.bat ${{ inputs.pgo == true && '--pgo' || '' }} -c Release
           # Copy the build products to a place that libraries can find them.
           Copy-Item -Path "PCBuild/amd64" -Destination "libs" -Recurse
       - name: Install pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          python -m pip install setuptools wheel
-          python -m pip install .\pyperformance
+          python.exe -m venv venv
+          venv\Scripts\python.exe -m pip install setuptools wheel
+          venv\Scripts\python.exe -m pip install .\pyperformance
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          python scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
+          venv\Scripts\python.exe scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
       - name: Upload artifacts
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         uses: actions/upload-artifact@v3

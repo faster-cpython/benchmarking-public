@@ -147,6 +147,22 @@ def get_commits(
         yield from get_weekly_since(cpython, entry)
 
 
+def deduplicate_commits(cpython: Path, commits: Iterable[Commit]) -> Iterable[Commit]:
+    commits_by_hash = {}
+
+    for commit in commits:
+        commits_by_hash.setdefault(commit.hash, []).append(commit)
+
+    for commit_set in commits_by_hash.values():
+        first_commit = commit_set[0]
+        if len(commit_set) == 1:
+            yield first_commit
+        else:
+            yield Commit(
+                cpython, first_commit.ref, ", ".join(x.source for x in commit_set)
+            )
+
+
 def main(
     cpython: Path,
     all_with_prefix: Optional[Sequence[str]],
@@ -170,6 +186,8 @@ def main(
 
     if not force:
         commits = remove_existing(commits, machine)
+
+    commits = deduplicate_commits(cpython, commits)
 
     commits = sorted(commits, key=lambda x: x.date)
 

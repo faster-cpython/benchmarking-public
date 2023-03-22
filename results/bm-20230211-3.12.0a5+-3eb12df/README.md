@@ -37,8 +37,7 @@
 ### vs. 3.10.4
 
 - 1.24x faster \*
-- missing benchmarks: aiohttp, flaskblogging, gunicorn, mypy, pylint
-- new benchmarks: asyncio_tcp, create_gc_cycles, gc_traversal, mypy2
+- missing benchmarks: aiohttp, comprehensions, dask, flaskblogging, gunicorn, pylint
 - [table](bm-20230211-darwin-arm64-python-main-3.12.0a5%2B-3eb12df-vs-3.10.4.md)
 - [plot](bm-20230211-darwin-arm64-python-main-3.12.0a5%2B-3eb12df-vs-3.10.4.png)
 

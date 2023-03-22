@@ -49,8 +49,9 @@
 
 ### vs. 3.10.4
 
-- 1.23x faster
-- missing benchmarks: coverage
+- 1.25x faster \*
+- missing benchmarks: asyncio_tcp, comprehensions, coverage, create_gc_cycles, dask, gc_traversal, mypy2
+- new benchmarks: mypy
 
 ### vs. 3.11.0
 

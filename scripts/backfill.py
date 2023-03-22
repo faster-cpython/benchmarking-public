@@ -115,13 +115,14 @@ def remove_existing(
         yield from all_commits
         return
 
-    system, machine = machine.split("-")
+    system, machine, nickname = machine.split("-")
 
     for commit in commits:
         for result in results:
             if (
                 result.system == system
                 and match_machine(result.machine, machine)
+                and result.nickname == nickname
                 and commit.hash.startswith(result.cpython_hash)
             ):
                 break

@@ -30,13 +30,32 @@
 
 - cpu model: missing
 - platform: macOS-12.6-arm64-arm-64bit
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4491181000)
+- platform: macOS-13.2.1-arm64-arm-64bit
 - [raw results](bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509.json)
+- [raw results](bm-20221024-darwin-arm64-python-v3.11.0-3.11.0-deaf509.json)
 
 ### vs. 3.10.4
 
 - 1.23x faster \*
 - missing benchmarks: asyncio_tcp, comprehensions, create_gc_cycles, dask, gc_traversal, mypy2
 - new benchmarks: mypy
+- 1.21x faster
 - [table](bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509-vs-3.10.4.md)
 - [plot](bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509-vs-3.10.4.png)
+- [table](bm-20221024-darwin-arm64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.md)
+- [plot](bm-20221024-darwin-arm64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.png)
+
+### vs. 3.11.0
+
+- 1.01x faster \*
+- missing benchmarks: asyncio_tcp, comprehensions, create_gc_cycles, dask, gc_traversal, mypy2
+- new benchmarks: mypy
+- 1.01x slower \*
+- missing benchmarks: mypy
+- new benchmarks: asyncio_tcp, comprehensions, create_gc_cycles, dask, gc_traversal, mypy2
+- [table](bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509-vs-3.11.0.md)
+- [plot](bm-20221024-darwin-arm64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509-vs-3.11.0.png)
+- [table](bm-20221024-darwin-arm64-python-v3.11.0-3.11.0-deaf509-vs-3.11.0.md)
+- [plot](bm-20221024-darwin-arm64-python-v3.11.0-3.11.0-deaf509-vs-3.11.0.png)
 

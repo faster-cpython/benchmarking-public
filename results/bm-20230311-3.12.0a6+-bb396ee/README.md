@@ -40,14 +40,14 @@
 
 ### vs. 3.10.4
 
-- 1.19x faster
+- 1.20x faster
 - missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint
 - [table](bm-20230311-darwin-arm64-python-main-3.12.0a6%2B-bb396ee-vs-3.10.4.md)
 - [plot](bm-20230311-darwin-arm64-python-main-3.12.0a6%2B-bb396ee-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.02x slower
+- 1.01x slower
 - missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint
 - [table](bm-20230311-darwin-arm64-python-main-3.12.0a6%2B-bb396ee-vs-3.11.0.md)
 - [plot](bm-20230311-darwin-arm64-python-main-3.12.0a6%2B-bb396ee-vs-3.11.0.png)

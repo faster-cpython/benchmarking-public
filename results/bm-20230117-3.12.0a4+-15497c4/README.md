@@ -29,9 +29,3 @@
 - [table](bm-20230117-linux-x86_64-iritkatriel-const_regs-3.12.0a4%2B-15497c4-vs-3.11.0.md)
 - [plot](bm-20230117-linux-x86_64-iritkatriel-const_regs-3.12.0a4%2B-15497c4-vs-3.11.0.png)
 
-### vs. base
-
-- 1.02x slower
-- [table](bm-20230117-linux-x86_64-iritkatriel-const_regs-3.12.0a4%2B-15497c4-vs-base.md)
-- [plot](bm-20230117-linux-x86_64-iritkatriel-const_regs-3.12.0a4%2B-15497c4-vs-base.png)
-

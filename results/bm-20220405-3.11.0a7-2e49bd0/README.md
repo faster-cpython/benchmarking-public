@@ -35,7 +35,7 @@
 
 ### vs. 3.10.4
 
-- 1.22x faster \*
+- 1.23x faster \*
 - missing benchmarks: asyncio_tcp, comprehensions, coverage, create_gc_cycles, dask, gc_traversal, mypy2
 - new benchmarks: mypy
 - [table](bm-20220405-darwin-arm64-python-2e49bd06c5ffab7d1540-3.11.0a7-2e49bd0-vs-3.10.4.md)
@@ -43,8 +43,9 @@
 
 ### vs. 3.11.0
 
-- 1.01x slower
-- missing benchmarks: coverage
+- 1.01x faster \*
+- missing benchmarks: asyncio_tcp, comprehensions, coverage, create_gc_cycles, dask, gc_traversal, mypy2
+- new benchmarks: mypy
 - [table](bm-20220405-darwin-arm64-python-2e49bd06c5ffab7d1540-3.11.0a7-2e49bd0-vs-3.11.0.md)
 - [plot](bm-20220405-darwin-arm64-python-2e49bd06c5ffab7d1540-3.11.0a7-2e49bd0-vs-3.11.0.png)
 

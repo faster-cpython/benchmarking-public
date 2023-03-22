@@ -14,7 +14,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from lib.bases import get_bases
 from lib import plot
-from lib.result import load_all_results, Comparison, Result
+from lib.result import load_all_results, remove_duplicate_results, Comparison, Result
 from lib import table
 from lib import util
 
@@ -102,9 +102,12 @@ def save_generated_results(results: Iterable[Result], force: bool = False) -> No
 
         # Remove any outdated comparison files if the bases have changed.
         for filename in result.filename.parent.iterdir():
-            match = re.match(r".*-vs-(?P<base>.*)", filename.stem)
+            match = re.match(r"(?P<root>.*)-vs-(?P<base>.*)", filename.stem)
             if match is not None:
-                if match.group("base") not in result.bases:
+                if (
+                    match.group("base") not in result.bases
+                    or not (filename.parent / (match.group("root") + ".json")).exists()
+                ):
                     util.status("x")
                     filename.unlink()
 
@@ -361,6 +364,7 @@ def main(repo_dir: Path, force: bool = False, bases: Optional[List[str]] = None)
     if len(bases) == 0:
         raise ValueError("Must have at least one base specified")
     print(f"Comparing to bases {bases}")
+    remove_duplicate_results(results_dir)
     results = load_all_results(bases, results_dir)
     print(f"Found {len(results)} results")
     print("Generating comparison tables")

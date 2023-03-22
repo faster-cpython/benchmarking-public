@@ -361,6 +361,23 @@ class Result:
             find_match("base", lambda ref: merge_base.startswith(ref.cpython_hash))
 
 
+def remove_duplicate_results(results_dir: Path) -> None:
+    sifted = {}
+    for entry in results_dir.glob("**/*.json"):
+        result = Result.from_filename(entry)
+        if result.result_info != ("raw results", None):
+            continue
+        result = Result.from_filename(entry)
+        key = (result.nickname, result.cpython_hash, result.result_info)
+        sifted.setdefault(key, []).append(result)
+
+    for result_set in sifted.values():
+        if len(result_set) != 1:
+            result_set.sort(key=lambda x: x.run_datetime)
+            for result in result_set[:-1]:
+                result.filename.unlink()
+
+
 def load_all_results(bases: List[str], results_dir: Path) -> List[Result]:
     results = []
 

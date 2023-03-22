@@ -17,6 +17,8 @@
 - 1.27x faster \*
 - missing benchmarks: asyncio_tcp, coverage, create_gc_cycles, dask, djangocms, gc_traversal, mypy2
 - new benchmarks: mypy
+- [table](bm-20220911-linux-x86_64-python-ed7c3ff15680c1939fad-3.11.0rc2-ed7c3ff-vs-3.10.4.md)
+- [plot](bm-20220911-linux-x86_64-python-ed7c3ff15680c1939fad-3.11.0rc2-ed7c3ff-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
@@ -32,6 +34,12 @@
 - cpu model: missing
 - platform: Windows-10-10.0.22000-SP0
 - [raw results](bm-20220911-pythonperf1-amd64-python-ed7c3ff15680c1939fad-3.11.0rc2-ed7c3ff.json)
+
+### vs. 3.10.4
+
+- 1.11x faster
+- [table](bm-20220911-pythonperf1-amd64-python-ed7c3ff15680c1939fad-3.11.0rc2-ed7c3ff-vs-3.10.4.md)
+- [plot](bm-20220911-pythonperf1-amd64-python-ed7c3ff15680c1939fad-3.11.0rc2-ed7c3ff-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
@@ -50,6 +58,8 @@
 - 1.24x faster \*
 - missing benchmarks: asyncio_tcp, comprehensions, coverage, create_gc_cycles, dask, gc_traversal, mypy2
 - new benchmarks: mypy
+- [table](bm-20220911-darwin-arm64-python-ed7c3ff15680c1939fad-3.11.0rc2-ed7c3ff-vs-3.10.4.md)
+- [plot](bm-20220911-darwin-arm64-python-ed7c3ff15680c1939fad-3.11.0rc2-ed7c3ff-vs-3.10.4.png)
 
 ### vs. 3.11.0
 

@@ -16,6 +16,8 @@
 
 - 1.16x faster \*
 - missing benchmarks: aiohttp, asyncio_tcp, create_gc_cycles, dask, djangocms, gc_traversal, mypy2
+- [table](bm-20211105-linux-x86_64-python-e2b4e4bab90b69fbd361-3.11.0a2-e2b4e4b-vs-3.10.4.md)
+- [plot](bm-20211105-linux-x86_64-python-e2b4e4bab90b69fbd361-3.11.0a2-e2b4e4b-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
@@ -30,6 +32,13 @@
 - cpu model: missing
 - platform: Windows-10-10.0.22000
 - [raw results](bm-20211105-pythonperf1-amd64-python-e2b4e4bab90b69fbd361-3.11.0a2-e2b4e4b.json)
+
+### vs. 3.10.4
+
+- 1.02x faster
+- missing benchmarks: aiohttp, mypy2
+- [table](bm-20211105-pythonperf1-amd64-python-e2b4e4bab90b69fbd361-3.11.0a2-e2b4e4b-vs-3.10.4.md)
+- [plot](bm-20211105-pythonperf1-amd64-python-e2b4e4bab90b69fbd361-3.11.0a2-e2b4e4b-vs-3.10.4.png)
 
 ### vs. 3.11.0
 

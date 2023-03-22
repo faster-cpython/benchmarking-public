@@ -41,7 +41,7 @@
 
 ### vs. 3.11.0
 
-- 1.23x slower
+- 1.21x slower
 - [table](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.md)
 - [plot](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.png)
 

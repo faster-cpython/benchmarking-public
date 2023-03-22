@@ -29,9 +29,3 @@
 - [table](bm-20230118-linux-x86_64-iritkatriel-copy_consts-3.12.0a4%2B-f8449d5-vs-3.11.0.md)
 - [plot](bm-20230118-linux-x86_64-iritkatriel-copy_consts-3.12.0a4%2B-f8449d5-vs-3.11.0.png)
 
-### vs. base
-
-- 1.02x slower
-- [table](bm-20230118-linux-x86_64-iritkatriel-copy_consts-3.12.0a4%2B-f8449d5-vs-base.md)
-- [plot](bm-20230118-linux-x86_64-iritkatriel-copy_consts-3.12.0a4%2B-f8449d5-vs-base.png)
-

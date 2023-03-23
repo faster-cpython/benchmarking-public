@@ -1,7 +1,7 @@
 import datetime
 from pathlib import Path
 import re
-from typing import Any, Dict, Iterable, Optional, Sequence, Tuple
+from typing import Any, Dict, Iterable, Optional, Tuple
 
 
 from matplotlib import pyplot as plt

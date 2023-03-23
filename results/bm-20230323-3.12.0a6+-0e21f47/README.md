@@ -7,6 +7,11 @@
 - commit merge base: [87be8d95228ee95de9045cf2952311d20dc5de45](https://github.com/brandtbucher/cpython/commit/87be8d95228ee95de9045cf2952311d20dc5de45)
 - ref: type_cache
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20230323-azure-x86_64-brandtbucher-type_cache-3.12.0a6%2B-0e21f47-pystats.json)
+- [pystats table](bm-20230323-azure-x86_64-brandtbucher-type_cache-3.12.0a6%2B-0e21f47-pystats.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4501963712)

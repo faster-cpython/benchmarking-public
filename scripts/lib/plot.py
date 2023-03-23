@@ -131,67 +131,84 @@ def get_micro_version(version):
 
 
 def longitudinal_plot(
-    results: Iterable[result.Result], bases: Sequence[str], output_filename: Path
+    results: Iterable[result.Result],
+    output_filename: Path,
+    base="3.10.4",
+    runners=["linux", "darwin", "windows"],
+    styles=["solid", "dotted", "dashed"],
+    versions=[(3, 11), (3, 12)],
 ):
-    main_results = [
-        r
-        for r in results
-        if r.fork == "python" and r.system == "linux" and r.machine == "x86_64"
-    ]
+    _, axs = plt.subplots(layout="constrained")
 
-    base = bases[0]
-    for r in main_results:
-        if r.version == base:
-            ref = r
-            break
-    else:
-        raise ValueError("Can't find base")
+    results = [r for r in results if r.fork == "python"]
 
-    by_version = {}
-    for r in main_results:
-        by_version.setdefault(r.parsed_version.release[0:2], []).append(r)
-    by_version = list(by_version.items())
-    by_version.sort(reverse=True)
+    arrow_dir = -1
+    for runner_i, runner in enumerate(runners):
+        runner_results = [r for r in results if r.system == runner]
 
-    fig, axs = plt.subplots(layout="constrained")
+        for r in runner_results:
+            if r.version == base:
+                ref = r
+                break
+        else:
+            raise ValueError(f"Can't find base for {runner}")
 
-    arrow_dir = 1
-    for version, ver_results in by_version:
-        ver_results.sort(key=lambda x: x.commit_datetime)
-        dates = [
-            datetime.datetime.fromisoformat(x.commit_datetime) for x in ver_results
-        ]
-        changes = [
-            result.Comparison(ref, r, base).geometric_mean_float for r in ver_results
-        ]
+        by_version = {}
+        for r in runner_results:
+            by_version.setdefault(r.parsed_version.release[0:2], []).append(r)
 
-        annotations = []
-        for r in ver_results:
-            micro = get_micro_version(r.version)
-            if micro not in annotations:
-                annotations.append(micro)
-            else:
-                annotations.append(None)
+        for version_i, version in enumerate(versions):
+            ver_results = by_version.get(version, [])
+            if not ver_results:
+                continue
 
-        axs.plot(
-            dates, changes, "o-", label=".".join(str(x) for x in version), markersize=2
-        )
-        for date, change, annotation in zip(dates, changes, annotations):
-            if annotation is not None:
-                text = axs.annotate(
-                    annotation,
-                    xy=(date, change),
-                    xycoords="data",
-                    xytext=(-3, 15 * arrow_dir),
-                    textcoords="offset points",
-                    rotation=90,
-                    arrowprops=dict(arrowstyle="-", connectionstyle="arc"),
-                )
-                text.set_color("#888")
-                text.set_size(8)
-                text.arrow_patch.set_color("#888")
+            version_str = ".".join(str(x) for x in version)
 
-        arrow_dir *= -1
+            ver_results.sort(key=lambda x: x.commit_datetime)
+            dates = [
+                datetime.datetime.fromisoformat(x.commit_datetime) for x in ver_results
+            ]
+            changes = [
+                result.Comparison(ref, r, base).geometric_mean_float
+                for r in ver_results
+            ]
+
+            axs.plot(
+                dates,
+                changes,
+                linestyle=styles[runner_i],
+                label=f"{version_str} {r.system}",
+                markersize=2,
+                color=f"C{version_i}",
+            )
+
+            if runner_i > 0:
+                continue
+
+            annotations = []
+            for r in ver_results:
+                micro = get_micro_version(r.version)
+                if micro not in annotations:
+                    annotations.append(micro)
+                else:
+                    annotations.append(None)
+
+            for date, change, annotation in zip(dates, changes, annotations):
+                if annotation is not None:
+                    text = axs.annotate(
+                        annotation,
+                        xy=(date, change),
+                        xycoords="data",
+                        xytext=(-3, 15 * arrow_dir),
+                        textcoords="offset points",
+                        rotation=90,
+                        arrowprops=dict(arrowstyle="-", connectionstyle="arc"),
+                    )
+                    text.set_color("#888")
+                    text.set_size(8)
+                    text.arrow_patch.set_color("#888")
+
+            arrow_dir *= -1
 
     axs.legend(loc="upper left")
     axs.set_xlabel("Date")
@@ -202,5 +219,5 @@ def longitudinal_plot(
     axs.set_ylim(top=ylim[1] + 0.1)
     axs.grid()
 
-    plt.savefig(output_filename)
+    plt.savefig(output_filename, dpi=150)
     plt.close()

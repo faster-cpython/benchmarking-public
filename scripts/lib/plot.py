@@ -151,7 +151,7 @@ def longitudinal_plot(
                 ref = r
                 break
         else:
-            raise ValueError(f"Can't find base for {runner}")
+            continue
 
         by_version = {}
         for r in runner_results:

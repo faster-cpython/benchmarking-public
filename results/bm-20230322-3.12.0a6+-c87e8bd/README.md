@@ -35,3 +35,10 @@
 - [table](bm-20230322-linux-x86_64-brandtbucher-type_cache-3.12.0a6%2B-c87e8bd-vs-3.11.0.md)
 - [plot](bm-20230322-linux-x86_64-brandtbucher-type_cache-3.12.0a6%2B-c87e8bd-vs-3.11.0.png)
 
+### vs. base
+
+- 1.01x slower
+- missing benchmarks: 🔴 aiohttp, coverage, djangocms, gunicorn, sqlalchemy_declarative, sqlalchemy_imperative
+- [table](bm-20230322-linux-x86_64-brandtbucher-type_cache-3.12.0a6%2B-c87e8bd-vs-base.md)
+- [plot](bm-20230322-linux-x86_64-brandtbucher-type_cache-3.12.0a6%2B-c87e8bd-vs-base.png)
+

@@ -6,6 +6,11 @@
 - commit date: 2023-03-22T18:30:04-06:00
 - ref: 87be8d95228ee95de904
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20230322-azure-x86_64-python-87be8d95228ee95de904-3.12.0a6%2B-87be8d9-pystats.json)
+- [pystats table](bm-20230322-azure-x86_64-python-87be8d95228ee95de904-3.12.0a6%2B-87be8d9-pystats.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4497511965)

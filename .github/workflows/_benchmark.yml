@@ -75,11 +75,11 @@ jobs:
     runs-on: [self-hosted, linux, bare-metal, linux-x86_64-linux]
 
     steps:
+    - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
       with:
         python-version: '3.10'
         cache: pip
-    - uses: actions/checkout@v3
     - uses: actions/checkout@v3
       with:
         repository: ${{ inputs.fork }}/cpython
@@ -296,11 +296,11 @@ jobs:
     runs-on: [self-hosted, linux, bare-metal, linux-x86_64-pythonperf2]
 
     steps:
+    - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
       with:
         python-version: '3.10'
         cache: pip
-    - uses: actions/checkout@v3
     - uses: actions/checkout@v3
       with:
         repository: ${{ inputs.fork }}/cpython

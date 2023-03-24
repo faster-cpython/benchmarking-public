@@ -214,7 +214,9 @@ def longitudinal_plot(
     axs.legend(loc="upper left")
     axs.set_xlabel("Date")
     axs.set_ylabel(f"Speed relative to {base}")
-    axs.set_title("Performance improvement by major version\n(linux2 is same hardware as windows)")
+    axs.set_title(
+        "Performance improvement by major version\n(linux2 is same hardware as windows)"
+    )
     axs.yaxis.set_major_formatter(formatter)
     ylim = axs.get_ylim()
     axs.set_ylim(top=ylim[1] + 0.1)

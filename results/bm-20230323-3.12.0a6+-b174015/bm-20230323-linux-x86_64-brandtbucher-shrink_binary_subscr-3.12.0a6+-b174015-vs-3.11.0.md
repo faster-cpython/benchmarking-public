@@ -173,4 +173,8 @@ All benchmarks:
 | Geometric mean          | (ref)                                                               | 1.03x faster                                                                 |
 
 Benchmark hidden because not significant (13): deepcopy_reduce, sqlalchemy_declarative, crypto_pyaes, pathlib, sqlalchemy_imperative, fannkuch, dulwich_log, bench_mp_pool, chameleon, async_tree_none, django_template, unpickle, djangocms
+<<<<<<< HEAD
 Ignored benchmarks (2) of /home/runner/work/benchmarking/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-linux-x86_64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509.json: flaskblogging, pylint
+=======
+Ignored benchmarks (2) of /home/mdboom/Work/builds/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-linux-x86_64-python-deaf509e8fc6e0363bd6-3.11.0-deaf509.json: flaskblogging, pylint
+>>>>>>> a4b1e308 (BUGFIX: match to the the base commit from the same machine)

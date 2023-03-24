@@ -330,8 +330,7 @@ class Result:
             ref
             for ref in results
             if ref != self
-            and ref.system == self.system
-            and ref.machine == self.machine
+            and ref.nickname == self.nickname
             and ref.fork == "python"
         ]
 

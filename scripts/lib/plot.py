@@ -134,8 +134,9 @@ def longitudinal_plot(
     results: Iterable[result.Result],
     output_filename: Path,
     base="3.10.4",
-    runners=["linux", "darwin", "windows"],
-    styles=["solid", "dotted", "dashed"],
+    runners=["linux", "pythonperf2", "darwin", "pythonperf1"],
+    names=["linux", "linux2", "macos", "windows"],
+    styles=["solid", (0, (3, 1, 1, 1, 1, 1)), "dotted", "dashed"],
     versions=[(3, 11), (3, 12)],
 ):
     _, axs = plt.subplots(layout="constrained")
@@ -144,7 +145,7 @@ def longitudinal_plot(
 
     arrow_dir = -1
     for runner_i, runner in enumerate(runners):
-        runner_results = [r for r in results if r.system == runner]
+        runner_results = [r for r in results if r.nickname == runner]
 
         for r in runner_results:
             if r.version == base:
@@ -177,7 +178,7 @@ def longitudinal_plot(
                 dates,
                 changes,
                 linestyle=styles[runner_i],
-                label=f"{version_str} {r.system}",
+                label=f"{version_str} {names[runner_i]}",
                 markersize=2,
                 color=f"C{version_i}",
             )
@@ -213,7 +214,7 @@ def longitudinal_plot(
     axs.legend(loc="upper left")
     axs.set_xlabel("Date")
     axs.set_ylabel(f"Speed relative to {base}")
-    axs.set_title("Performance improvement by major version")
+    axs.set_title("Performance improvement by major version\n(linux2 is same hardware as windows)")
     axs.yaxis.set_major_formatter(formatter)
     ylim = axs.get_ylim()
     axs.set_ylim(top=ylim[1] + 0.1)

@@ -233,6 +233,11 @@
 | [2021-05-03](results/bm-20210503-3.10.0a7%2B-d3b9134) | python | d3b9134ebb | 3.10.0a7+ | d3b9134 | [1.01x faster \*](results/bm-20210503-3.10.0a7%2B-d3b9134/bm-20210503-linux-x86_64-python-d3b9134ebb40bdb01ff5-3.10.0a7%2B-d3b9134-vs-3.10.4.md) | [1.24x slower \*](results/bm-20210503-3.10.0a7%2B-d3b9134/bm-20210503-linux-x86_64-python-d3b9134ebb40bdb01ff5-3.10.0a7%2B-d3b9134-vs-3.11.0.md) |  |
 | [2022-12-21](results/bm-20221221-3.9.10-258cab1) | faster_cpython | nogil | 3.9.10 | 258cab1 | [1.01x faster \*](results/bm-20221221-3.9.10-258cab1/bm-20221221-linux-x86_64-faster_cpython-nogil-3.9.10-258cab1-vs-3.10.4.md) | [1.25x slower \*](results/bm-20221221-3.9.10-258cab1/bm-20221221-linux-x86_64-faster_cpython-nogil-3.9.10-258cab1-vs-3.11.0.md) |  |
 
+## linux x86_64 (pythonperf2)
+| date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0: | vs. base: |
+| --- | --- | --- | --- | --- | ---: | ---: | ---: |
+| [2021-10-05](results/bm-20211005-3.11.0a1-7c12e48) | python | 7c12e4835e | 3.11.0a1 | 7c12e48 | [1.09x faster](results/bm-20211005-3.11.0a1-7c12e48/bm-20211005-pythonperf2-x86_64-python-7c12e4835ebe52287acd-3.11.0a1-7c12e48-vs-3.10.4.md) | [1.16x slower](results/bm-20211005-3.11.0a1-7c12e48/bm-20211005-pythonperf2-x86_64-python-7c12e4835ebe52287acd-3.11.0a1-7c12e48-vs-3.11.0.md) |  |
+
 ## windows amd64 (pythonperf1)
 | date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0: | vs. base: |
 | --- | --- | --- | --- | --- | ---: | ---: | ---: |

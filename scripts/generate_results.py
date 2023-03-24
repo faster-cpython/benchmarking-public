@@ -105,9 +105,9 @@ def save_generated_results(results: Iterable[Result], force: bool = False) -> No
             match = re.match(r"(?P<root>.*)-vs-(?P<base>.*)", filename.stem)
             if match is not None:
                 if (
-                    match.group("base") not in result.bases
-                    or not (filename.parent / (match.group("root") + ".json")).exists()
-                ):
+                    match.group("root") == result.filename.stem
+                    and match.group("base") not in result.bases
+                ) or not (filename.parent / (match.group("root") + ".json")).exists():
                     util.status("x")
                     filename.unlink()
 

@@ -329,10 +329,7 @@ class Result:
         loose_results = [
             ref
             for ref in results
-            if ref != self
-            and ref.system == self.system
-            and ref.machine == self.machine
-            and ref.fork == "python"
+            if ref != self and ref.nickname == self.nickname and ref.fork == "python"
         ]
 
         if self.benchmark_hash is not None:

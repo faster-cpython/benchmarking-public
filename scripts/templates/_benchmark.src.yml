@@ -188,7 +188,6 @@ jobs:
       - name: Tune system
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          echo $USER
           sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH `which python` -m pyperf system tune
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}

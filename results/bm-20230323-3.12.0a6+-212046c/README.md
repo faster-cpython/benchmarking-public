@@ -21,9 +21,8 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster \*
+- 1.30x faster
 - missing benchmarks: flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: comprehensions
 - [table](bm-20230323-linux-x86_64-brandtbucher-type_cache_fixed-3.12.0a6%2B-212046c-vs-3.10.4.md)
 - [plot](bm-20230323-linux-x86_64-brandtbucher-type_cache_fixed-3.12.0a6%2B-212046c-vs-3.10.4.png)
 

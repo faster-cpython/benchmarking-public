@@ -16,9 +16,8 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster \*
+- 1.30x faster
 - missing benchmarks: flaskblogging, pylint
-- new benchmarks: comprehensions
 - [table](bm-20230322-linux-x86_64-iritkatriel-remove_JUMP_IF_FALSE-3.12.0a6%2B-b2bf829-vs-3.10.4.md)
 - [plot](bm-20230322-linux-x86_64-iritkatriel-remove_JUMP_IF_FALSE-3.12.0a6%2B-b2bf829-vs-3.10.4.png)
 

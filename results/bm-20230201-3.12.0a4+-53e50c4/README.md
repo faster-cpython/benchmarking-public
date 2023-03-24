@@ -18,7 +18,7 @@
 ### vs. 3.10.4
 
 - 1.30x faster \*
-- missing benchmarks: flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: comprehensions, flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: mypy
 - [table](bm-20230201-linux-x86_64-brandtbucher-compare_and_not_bran-3.12.0a4%2B-53e50c4-vs-3.10.4.md)
 - [plot](bm-20230201-linux-x86_64-brandtbucher-compare_and_not_bran-3.12.0a4%2B-53e50c4-vs-3.10.4.png)

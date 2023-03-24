@@ -16,7 +16,7 @@
 ### vs. 3.10.4
 
 - 1.29x faster \*
-- missing benchmarks: flaskblogging, mypy2
+- missing benchmarks: comprehensions, flaskblogging, mypy2
 - new benchmarks: mypy
 - [table](bm-20221014-linux-x86_64-faster%252dcpython-dry_freelists-3.12.0a0-d09385f-vs-3.10.4.md)
 - [plot](bm-20221014-linux-x86_64-faster%252dcpython-dry_freelists-3.12.0a0-d09385f-vs-3.10.4.png)

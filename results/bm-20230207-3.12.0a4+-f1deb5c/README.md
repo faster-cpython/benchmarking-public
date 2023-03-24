@@ -16,7 +16,7 @@
 ### vs. 3.10.4
 
 - 1.31x faster \*
-- missing benchmarks: dask, flaskblogging, mypy2, pylint
+- missing benchmarks: comprehensions, dask, flaskblogging, mypy2, pylint
 - new benchmarks: mypy
 - [table](bm-20230207-linux-x86_64-penguin%252dwwy-add_return_none-3.12.0a4%2B-f1deb5c-vs-3.10.4.md)
 - [plot](bm-20230207-linux-x86_64-penguin%252dwwy-add_return_none-3.12.0a4%2B-f1deb5c-vs-3.10.4.png)

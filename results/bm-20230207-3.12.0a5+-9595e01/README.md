@@ -15,8 +15,8 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster
-- missing benchmarks: dask, flaskblogging, pylint
+- 1.30x faster \*
+- missing benchmarks: comprehensions, dask, flaskblogging, pylint
 - [table](bm-20230207-linux-x86_64-gvanrossum-call_family-3.12.0a5%2B-9595e01-vs-3.10.4.md)
 - [plot](bm-20230207-linux-x86_64-gvanrossum-call_family-3.12.0a5%2B-9595e01-vs-3.10.4.png)
 

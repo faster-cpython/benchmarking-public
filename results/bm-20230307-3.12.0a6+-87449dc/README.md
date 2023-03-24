@@ -18,9 +18,8 @@
 
 ### vs. 3.10.4
 
-- 1.29x faster \*
+- 1.29x faster
 - missing benchmarks: flaskblogging, pylint
-- new benchmarks: comprehensions
 - [table](bm-20230307-linux-x86_64-brandtbucher-shrink_load_global-3.12.0a6%2B-87449dc-vs-3.10.4.md)
 - [plot](bm-20230307-linux-x86_64-brandtbucher-shrink_load_global-3.12.0a6%2B-87449dc-vs-3.10.4.png)
 

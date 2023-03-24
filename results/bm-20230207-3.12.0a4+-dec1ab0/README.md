@@ -14,8 +14,8 @@
 
 ### vs. 3.10.4
 
-- 1.29x faster
-- missing benchmarks: flaskblogging, pylint
+- 1.29x faster \*
+- missing benchmarks: comprehensions, flaskblogging, pylint
 - [table](bm-20230207-linux-x86_64-python-main-3.12.0a4%2B-dec1ab0-vs-3.10.4.md)
 - [plot](bm-20230207-linux-x86_64-python-main-3.12.0a4%2B-dec1ab0-vs-3.10.4.png)
 

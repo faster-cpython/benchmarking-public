@@ -18,8 +18,8 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster
-- missing benchmarks: flaskblogging, pylint
+- 1.30x faster \*
+- missing benchmarks: comprehensions, flaskblogging, pylint
 - [table](bm-20230216-linux-x86_64-brandtbucher-replicate_load_fast-3.12.0a5%2B-7dd73c5-vs-3.10.4.md)
 - [plot](bm-20230216-linux-x86_64-brandtbucher-replicate_load_fast-3.12.0a5%2B-7dd73c5-vs-3.10.4.png)
 

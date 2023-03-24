@@ -17,8 +17,8 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster
-- missing benchmarks: dask, flaskblogging, pylint
+- 1.30x faster \*
+- missing benchmarks: comprehensions, dask, flaskblogging, pylint
 - [table](bm-20230210-linux-x86_64-iritkatriel-int_freelist-3.12.0a5%2B-cfb886d-vs-3.10.4.md)
 - [plot](bm-20230210-linux-x86_64-iritkatriel-int_freelist-3.12.0a5%2B-cfb886d-vs-3.10.4.png)
 

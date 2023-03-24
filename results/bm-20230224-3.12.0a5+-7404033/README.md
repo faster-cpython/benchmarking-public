@@ -16,8 +16,8 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster
-- missing benchmarks: flaskblogging, pylint
+- 1.30x faster \*
+- missing benchmarks: comprehensions, flaskblogging, pylint
 - [table](bm-20230224-linux-x86_64-faster%252dcpython-backedge_counter-3.12.0a5%2B-7404033-vs-3.10.4.md)
 - [plot](bm-20230224-linux-x86_64-faster%252dcpython-backedge_counter-3.12.0a5%2B-7404033-vs-3.10.4.png)
 

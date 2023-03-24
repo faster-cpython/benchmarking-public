@@ -16,7 +16,7 @@
 ### vs. 3.10.4
 
 - 1.29x faster \*
-- missing benchmarks: flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: comprehensions, flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: mypy
 - [table](bm-20230127-linux-x86_64-iritkatriel-single_arg_exit-3.12.0a4%2B-00b5a0c-vs-3.10.4.md)
 - [plot](bm-20230127-linux-x86_64-iritkatriel-single_arg_exit-3.12.0a4%2B-00b5a0c-vs-3.10.4.png)

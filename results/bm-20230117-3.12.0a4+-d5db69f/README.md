@@ -26,7 +26,7 @@
 ### vs. 3.11.0
 
 - 1.03x faster \*
-- missing benchmarks: flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: comprehensions, flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: mypy
 - [table](bm-20230117-linux-x86_64-brandtbucher-load_attr_managed_di-3.12.0a4%2B-d5db69f-vs-3.11.0.md)
 - [plot](bm-20230117-linux-x86_64-brandtbucher-load_attr_managed_di-3.12.0a4%2B-d5db69f-vs-3.11.0.png)

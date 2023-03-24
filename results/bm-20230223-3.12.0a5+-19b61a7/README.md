@@ -23,8 +23,8 @@
 
 ### vs. 3.11.0
 
-- 1.03x faster
-- missing benchmarks: flaskblogging, pylint
+- 1.03x faster \*
+- missing benchmarks: comprehensions, flaskblogging, pylint
 - [table](bm-20230223-linux-x86_64-iritkatriel-fetch_restore-3.12.0a5%2B-19b61a7-vs-3.11.0.md)
 - [plot](bm-20230223-linux-x86_64-iritkatriel-fetch_restore-3.12.0a5%2B-19b61a7-vs-3.11.0.png)
 

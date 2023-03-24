@@ -15,8 +15,7 @@
 
 ### vs. 3.11.0
 
-- 1.25x slower \*
-- new benchmarks: comprehensions
+- 1.25x slower
 - [table](bm-20220323-linux-x86_64-python-9d38120e335357a3b294-3.10.4-9d38120-vs-3.11.0.md)
 - [plot](bm-20220323-linux-x86_64-python-9d38120e335357a3b294-3.10.4-9d38120-vs-3.11.0.png)
 

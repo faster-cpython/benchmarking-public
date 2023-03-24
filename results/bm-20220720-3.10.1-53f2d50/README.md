@@ -23,7 +23,7 @@
 ### vs. 3.11.0
 
 - 1.19x slower \*
-- missing benchmarks: coverage, dask, mypy2
+- missing benchmarks: comprehensions, coverage, dask, mypy2
 - new benchmarks: mypy
 - [table](bm-20220720-linux-x86_64-mdboom-RegCPython-3.10.1-53f2d50-vs-3.11.0.md)
 - [plot](bm-20220720-linux-x86_64-mdboom-RegCPython-3.10.1-53f2d50-vs-3.11.0.png)

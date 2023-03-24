@@ -23,8 +23,8 @@
 
 ### vs. 3.11.0
 
-- 1.05x faster
-- missing benchmarks: flaskblogging, pylint
+- 1.05x faster \*
+- missing benchmarks: comprehensions, flaskblogging, pylint
 - [table](bm-20230220-linux-x86_64-carljm-inlinecomp2-3.12.0a5%2B-9f0fc5b-vs-3.11.0.md)
 - [plot](bm-20230220-linux-x86_64-carljm-inlinecomp2-3.12.0a5%2B-9f0fc5b-vs-3.11.0.png)
 

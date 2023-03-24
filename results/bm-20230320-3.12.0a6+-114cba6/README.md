@@ -25,9 +25,8 @@
 
 ### vs. 3.11.0
 
-- 1.04x faster \*
+- 1.04x faster
 - missing benchmarks: flaskblogging, pylint
-- new benchmarks: comprehensions
 - [table](bm-20230320-linux-x86_64-brandtbucher-add_small_int_new-3.12.0a6%2B-114cba6-vs-3.11.0.md)
 - [plot](bm-20230320-linux-x86_64-brandtbucher-add_small_int_new-3.12.0a6%2B-114cba6-vs-3.11.0.png)
 

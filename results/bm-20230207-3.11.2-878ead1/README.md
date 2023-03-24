@@ -21,7 +21,8 @@
 
 ### vs. 3.11.0
 
-- 1.00x slower
+- 1.00x slower \*
+- missing benchmarks: comprehensions
 - [table](bm-20230207-linux-x86_64-python-v3.11.2-3.11.2-878ead1-vs-3.11.0.md)
 - [plot](bm-20230207-linux-x86_64-python-v3.11.2-3.11.2-878ead1-vs-3.11.0.png)
 

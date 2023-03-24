@@ -22,7 +22,7 @@
 ### vs. 3.11.0
 
 - 1.24x slower \*
-- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: aiohttp, chameleon, comprehensions, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [table](bm-20210503-linux-x86_64-python-d3b9134ebb40bdb01ff5-3.10.0a7%2B-d3b9134-vs-3.11.0.md)
 - [plot](bm-20210503-linux-x86_64-python-d3b9134ebb40bdb01ff5-3.10.0a7%2B-d3b9134-vs-3.11.0.png)
 

@@ -23,7 +23,7 @@
 ### vs. 3.11.0
 
 - 1.04x faster \*
-- missing benchmarks: flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: comprehensions, flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: mypy
 - [table](bm-20230126-linux-x86_64-python-8d18d1ffd52eb3917c45-3.12.0a4%2B-8d18d1f-vs-3.11.0.md)
 - [plot](bm-20230126-linux-x86_64-python-8d18d1ffd52eb3917c45-3.12.0a4%2B-8d18d1f-vs-3.11.0.png)

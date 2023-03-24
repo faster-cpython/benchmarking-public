@@ -23,9 +23,8 @@
 
 ### vs. 3.11.0
 
-- 1.03x faster \*
+- 1.03x faster
 - missing benchmarks: flaskblogging, pylint
-- new benchmarks: comprehensions
 - [table](bm-20230228-linux-x86_64-ericsnowcurrently-isolate_func_state_n-3.12.0a5%2B-27d7df6-vs-3.11.0.md)
 - [plot](bm-20230228-linux-x86_64-ericsnowcurrently-isolate_func_state_n-3.12.0a5%2B-27d7df6-vs-3.11.0.png)
 

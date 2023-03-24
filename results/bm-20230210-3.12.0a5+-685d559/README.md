@@ -22,8 +22,8 @@
 
 ### vs. 3.11.0
 
-- 1.04x faster
-- missing benchmarks: dask, flaskblogging, pylint
+- 1.04x faster \*
+- missing benchmarks: comprehensions, dask, flaskblogging, pylint
 - [table](bm-20230210-linux-x86_64-faster%252dcpython-specialized_send-3.12.0a5%2B-685d559-vs-3.11.0.md)
 - [plot](bm-20230210-linux-x86_64-faster%252dcpython-specialized_send-3.12.0a5%2B-685d559-vs-3.11.0.png)
 

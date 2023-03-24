@@ -23,9 +23,8 @@
 
 ### vs. 3.11.0
 
-- 1.02x slower \*
+- 1.02x slower
 - missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: comprehensions
 - [table](bm-20230129-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a4%2B-a748e80-vs-3.11.0.md)
 - [plot](bm-20230129-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a4%2B-a748e80-vs-3.11.0.png)
 

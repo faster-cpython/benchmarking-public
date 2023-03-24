@@ -23,8 +23,8 @@
 
 ### vs. 3.11.0
 
-- 1.04x faster
-- missing benchmarks: dask, flaskblogging, pylint
+- 1.04x faster \*
+- missing benchmarks: comprehensions, dask, flaskblogging, pylint
 - [table](bm-20230220-linux-x86_64-iritkatriel-int_freelist-3.12.0a5%2B-4c82d9e-vs-3.11.0.md)
 - [plot](bm-20230220-linux-x86_64-iritkatriel-int_freelist-3.12.0a5%2B-4c82d9e-vs-3.11.0.png)
 

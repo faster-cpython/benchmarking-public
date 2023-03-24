@@ -25,9 +25,8 @@
 
 ### vs. 3.11.0
 
-- 1.03x faster \*
+- 1.03x faster
 - missing benchmarks: flaskblogging, pylint
-- new benchmarks: comprehensions
 - [table](bm-20230316-linux-x86_64-brandtbucher-de_epfreeze-3.12.0a6%2B-034e2bf-vs-3.11.0.md)
 - [plot](bm-20230316-linux-x86_64-brandtbucher-de_epfreeze-3.12.0a6%2B-034e2bf-vs-3.11.0.png)
 

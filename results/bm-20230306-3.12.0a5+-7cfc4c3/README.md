@@ -23,9 +23,8 @@
 
 ### vs. 3.11.0
 
-- 1.02x faster \*
+- 1.02x faster
 - missing benchmarks: flaskblogging, pylint
-- new benchmarks: comprehensions
 - [table](bm-20230306-linux-x86_64-gvanrossum-7cfc4c355330f651396f-3.12.0a5%2B-7cfc4c3-vs-3.11.0.md)
 - [plot](bm-20230306-linux-x86_64-gvanrossum-7cfc4c355330f651396f-3.12.0a5%2B-7cfc4c3-vs-3.11.0.png)
 

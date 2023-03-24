@@ -23,9 +23,8 @@
 
 ### vs. 3.11.0
 
-- 1.03x faster \*
+- 1.03x faster
 - missing benchmarks: flaskblogging, pylint
-- new benchmarks: comprehensions
 - [table](bm-20230228-linux-x86_64-ericsnowcurrently-isolate_dict_next_ke-3.12.0a5%2B-145cedf-vs-3.11.0.md)
 - [plot](bm-20230228-linux-x86_64-ericsnowcurrently-isolate_dict_next_ke-3.12.0a5%2B-145cedf-vs-3.11.0.png)
 

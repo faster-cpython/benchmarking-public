@@ -23,9 +23,8 @@
 
 ### vs. 3.11.0
 
-- 1.03x faster \*
+- 1.03x faster
 - missing benchmarks: flaskblogging, pylint
-- new benchmarks: comprehensions
 - [table](bm-20230309-linux-x86_64-faster%252dcpython-specialize_calls_to_-3.12.0a6%2B-b851a2a-vs-3.11.0.md)
 - [plot](bm-20230309-linux-x86_64-faster%252dcpython-specialize_calls_to_-3.12.0a6%2B-b851a2a-vs-3.11.0.png)
 

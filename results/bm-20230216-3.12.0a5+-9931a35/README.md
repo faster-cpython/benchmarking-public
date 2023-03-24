@@ -25,8 +25,8 @@
 
 ### vs. 3.11.0
 
-- 1.04x faster
-- missing benchmarks: flaskblogging, pylint
+- 1.04x faster \*
+- missing benchmarks: comprehensions, flaskblogging, pylint
 - [table](bm-20230216-linux-x86_64-brandtbucher-shrink_load_global-3.12.0a5%2B-9931a35-vs-3.11.0.md)
 - [plot](bm-20230216-linux-x86_64-brandtbucher-shrink_load_global-3.12.0a5%2B-9931a35-vs-3.11.0.png)
 

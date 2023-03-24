@@ -25,8 +25,8 @@
 
 ### vs. 3.11.0
 
-- 1.04x faster
-- missing benchmarks: flaskblogging, pylint
+- 1.04x faster \*
+- missing benchmarks: comprehensions, flaskblogging, pylint
 - [table](bm-20230221-linux-x86_64-brandtbucher-quicken_at_runtime_n-3.12.0a5%2B-cdd2a84-vs-3.11.0.md)
 - [plot](bm-20230221-linux-x86_64-brandtbucher-quicken_at_runtime_n-3.12.0a5%2B-cdd2a84-vs-3.11.0.png)
 

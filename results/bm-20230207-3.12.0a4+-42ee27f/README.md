@@ -26,7 +26,7 @@
 ### vs. 3.11.0
 
 - 1.04x faster \*
-- missing benchmarks: flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: comprehensions, flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: mypy
 - [table](bm-20230207-linux-x86_64-iritkatriel-int_float_freelist-3.12.0a4%2B-42ee27f-vs-3.11.0.md)
 - [plot](bm-20230207-linux-x86_64-iritkatriel-int_float_freelist-3.12.0a4%2B-42ee27f-vs-3.11.0.png)

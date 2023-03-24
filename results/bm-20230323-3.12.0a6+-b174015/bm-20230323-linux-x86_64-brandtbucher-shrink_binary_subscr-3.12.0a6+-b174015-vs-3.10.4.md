@@ -181,8 +181,4 @@ All benchmarks:
 | dask                    | 437 ms                                                              | 512 ms: 1.17x slower                                                         |
 | coverage                | 70.6 ms                                                             | 96.1 ms: 1.36x slower                                                        |
 | Geometric mean          | (ref)                                                               | 1.29x faster                                                                 |
-<<<<<<< HEAD
 Ignored benchmarks (2) of /home/runner/work/benchmarking/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-linux-x86_64-python-9d38120e335357a3b294-3.10.4-9d38120.json: flaskblogging, pylint
-=======
-Ignored benchmarks (2) of /home/mdboom/Work/builds/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-linux-x86_64-python-9d38120e335357a3b294-3.10.4-9d38120.json: flaskblogging, pylint
->>>>>>> a4b1e308 (BUGFIX: match to the the base commit from the same machine)

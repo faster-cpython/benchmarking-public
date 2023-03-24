@@ -373,7 +373,7 @@ def main(repo_dir: Path, force: bool = False, bases: Optional[List[str]] = None)
     generate_master_indices(bases, results, repo_dir)
     generate_directory_indices(results)
     print("Generating longitudinal plot")
-    plot.longitudinal_plot(results, bases, repo_dir / "longitudinal.png")
+    plot.longitudinal_plot(results, repo_dir / "longitudinal.png")
 
 
 if __name__ == "__main__":

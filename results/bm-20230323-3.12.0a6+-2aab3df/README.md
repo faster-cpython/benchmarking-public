@@ -28,3 +28,9 @@
 - [table](bm-20230323-linux-x86_64-faster%252dcpython-perf_perf-3.12.0a6%2B-2aab3df-vs-3.11.0.md)
 - [plot](bm-20230323-linux-x86_64-faster%252dcpython-perf_perf-3.12.0a6%2B-2aab3df-vs-3.11.0.png)
 
+### vs. base
+
+- 1.08x slower
+- [table](bm-20230323-linux-x86_64-faster%252dcpython-perf_perf-3.12.0a6%2B-2aab3df-vs-base.md)
+- [plot](bm-20230323-linux-x86_64-faster%252dcpython-perf_perf-3.12.0a6%2B-2aab3df-vs-base.png)
+

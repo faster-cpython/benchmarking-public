@@ -33,6 +33,12 @@
 - platform: Linux-5.15.0-67-generic-x86_64-with-glibc2.35
 - [raw results](bm-20221206-pythonperf2-x86_64-python-a7a450f84a0874216031-3.11.1-a7a450f.json)
 
+### vs. 3.10.4
+
+- 1.22x faster
+- [table](bm-20221206-pythonperf2-x86_64-python-a7a450f84a0874216031-3.11.1-a7a450f-vs-3.10.4.md)
+- [plot](bm-20221206-pythonperf2-x86_64-python-a7a450f84a0874216031-3.11.1-a7a450f-vs-3.10.4.png)
+
 ### vs. 3.11.0
 
 - 1.00x faster

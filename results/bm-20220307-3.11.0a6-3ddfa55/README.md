@@ -33,6 +33,13 @@
 - platform: Linux-5.15.0-67-generic-x86_64-with-glibc2.35
 - [raw results](bm-20220307-pythonperf2-x86_64-python-3ddfa55df48a67a5972f-3.11.0a6-3ddfa55.json)
 
+### vs. 3.10.4
+
+- 1.14x faster
+- missing benchmarks: mypy2, pylint
+- [table](bm-20220307-pythonperf2-x86_64-python-3ddfa55df48a67a5972f-3.11.0a6-3ddfa55-vs-3.10.4.md)
+- [plot](bm-20220307-pythonperf2-x86_64-python-3ddfa55df48a67a5972f-3.11.0a6-3ddfa55-vs-3.10.4.png)
+
 ### vs. 3.11.0
 
 - 1.07x slower

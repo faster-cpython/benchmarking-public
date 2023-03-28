@@ -34,6 +34,13 @@
 - platform: Linux-5.15.0-67-generic-x86_64-with-glibc2.35
 - [raw results](bm-20220601-pythonperf2-x86_64-python-eb0004c27163ec089201-3.11.0b3-eb0004c.json)
 
+### vs. 3.10.4
+
+- 1.22x faster
+- missing benchmarks: coverage
+- [table](bm-20220601-pythonperf2-x86_64-python-eb0004c27163ec089201-3.11.0b3-eb0004c-vs-3.10.4.md)
+- [plot](bm-20220601-pythonperf2-x86_64-python-eb0004c27163ec089201-3.11.0b3-eb0004c-vs-3.10.4.png)
+
 ### vs. 3.11.0
 
 - 1.00x slower

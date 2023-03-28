@@ -39,6 +39,13 @@
 - platform: Linux-5.15.0-67-generic-x86_64-with-glibc2.35
 - [raw results](bm-20230325-pythonperf2-x86_64-python-main-3.12.0a6%2B-30a306c.json)
 
+### vs. 3.10.4
+
+- 1.26x faster
+- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- [table](bm-20230325-pythonperf2-x86_64-python-main-3.12.0a6%2B-30a306c-vs-3.10.4.md)
+- [plot](bm-20230325-pythonperf2-x86_64-python-main-3.12.0a6%2B-30a306c-vs-3.10.4.png)
+
 ### vs. 3.11.0
 
 - 1.03x faster

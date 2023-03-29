@@ -71,7 +71,7 @@ def plot_diff_pair(ax, data):
 
 
 def formatter(val, pos):
-    return f"{val:.02f}x"
+    return f"{val:.02f}×"
 
 
 def calculate_diffs(
@@ -125,82 +125,71 @@ def get_micro_version(version):
     micro = version.split(".")[-1].replace("+", "")
     if match := re.match(r"[0-9]+([a-z]+.+)", micro):
         micro = match.groups()[0]
-    if micro == "a0":
-        return ""
     return micro
 
 
 def longitudinal_plot(
     results: Iterable[result.Result],
     output_filename: Path,
-    base="3.10.4",
+    bases=["3.10.4", "3.11.0"],
     runners=["linux", "pythonperf2", "darwin", "pythonperf1"],
     names=["linux", "linux2", "macos", "windows"],
-    styles=["solid", (0, (3, 1, 1, 1, 1, 1)), "dotted", "dashed"],
     versions=[(3, 11), (3, 12)],
 ):
-    _, axs = plt.subplots(layout="constrained")
+    fig, axs = plt.subplots(len(versions), 1, figsize=(10, 10), layout="constrained")
 
     results = [r for r in results if r.fork == "python"]
 
-    arrow_dir = -1
-    for runner_i, runner in enumerate(runners):
-        runner_results = [r for r in results if r.nickname == runner]
+    for version, base, ax in zip(versions, bases, axs):
+        version_str = ".".join(str(x) for x in version)
+        ver_results = [r for r in results if r.parsed_version.release[0:2] == version]
 
-        for r in runner_results:
-            if r.version == base:
-                ref = r
-                break
-        else:
-            continue
+        ax.set_title(f"Python {version_str} vs. {base}")
+        ax.yaxis.set_major_formatter(formatter)
+        ax.grid()
 
-        by_version = {}
-        for r in runner_results:
-            by_version.setdefault(r.parsed_version.release[0:2], []).append(r)
+        for runner_i, (runner, name) in enumerate(zip(runners, names)):
+            runner_results = [r for r in ver_results if r.nickname == runner]
 
-        for version_i, version in enumerate(versions):
-            ver_results = by_version.get(version, [])
-            if not ver_results:
+            for r in results:
+                if r.nickname == runner and r.version == base:
+                    ref = r
+                    break
+            else:
                 continue
 
-            version_str = ".".join(str(x) for x in version)
-
-            ver_results.sort(key=lambda x: x.commit_datetime)
+            runner_results.sort(key=lambda x: x.commit_datetime)
             dates = [
-                datetime.datetime.fromisoformat(x.commit_datetime) for x in ver_results
+                datetime.datetime.fromisoformat(x.commit_datetime)
+                for x in runner_results
             ]
             changes = [
                 result.Comparison(ref, r, base).geometric_mean_float
-                for r in ver_results
+                for r in runner_results
             ]
 
-            axs.plot(
+            ax.plot(
                 dates,
                 changes,
-                linestyle=styles[runner_i],
-                label=f"{version_str} {names[runner_i]}",
-                markersize=2,
-                color=f"C{version_i}",
+                "o-",
+                markersize=2.5,
+                label=name,
+                alpha=0.9,
             )
 
             if runner_i > 0:
                 continue
 
-            annotations = []
-            for r in ver_results:
+            annotations = set()
+            for r, date, change in zip(runner_results, dates, changes):
                 micro = get_micro_version(r.version)
-                if micro not in annotations:
-                    annotations.append(micro)
-                else:
-                    annotations.append(None)
-
-            for date, change, annotation in zip(dates, changes, annotations):
-                if annotation is not None:
-                    text = axs.annotate(
-                        annotation,
+                if micro not in annotations and not r.version.endswith("+"):
+                    annotations.add(micro)
+                    text = ax.annotate(
+                        micro,
                         xy=(date, change),
                         xycoords="data",
-                        xytext=(-3, 15 * arrow_dir),
+                        xytext=(-3, 15),
                         textcoords="offset points",
                         rotation=90,
                         arrowprops=dict(arrowstyle="-", connectionstyle="arc"),
@@ -209,18 +198,11 @@ def longitudinal_plot(
                     text.set_size(8)
                     text.arrow_patch.set_color("#888")
 
-            arrow_dir *= -1
+        ylim = ax.get_ylim()
+        ax.set_ylim(top=ylim[1] + 0.1)
+        ax.legend(loc="upper left")
 
-    axs.legend(loc="upper left")
-    axs.set_xlabel("Date")
-    axs.set_ylabel(f"Speed relative to {base}")
-    axs.set_title(
-        "Performance improvement by major version\n(linux2 is same hardware as windows)"
-    )
-    axs.yaxis.set_major_formatter(formatter)
-    ylim = axs.get_ylim()
-    axs.set_ylim(top=ylim[1] + 0.1)
-    axs.grid()
+    fig.suptitle("Performance improvement by major version")
 
     plt.savefig(output_filename, dpi=150)
     plt.close()

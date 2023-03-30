@@ -5,7 +5,7 @@
 - commit hash: [eb0004c](https://github.com/python/cpython/commit/eb0004c)
 - commit date: 2022-06-01T14:07:53+01:00
 - commit date: 2022-06-01T13:07:53+00:00
-- ref: eb0004c27163ec089201, main, v3.11.0b3
+- ref: main, v3.11.0b3
 
 ## linux x86_64 (linux)
 
@@ -29,24 +29,24 @@
 
 ## linux x86_64 (pythonperf2)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4513536117)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4566181119)
 - cpu model: 12th Gen Intel(R) Core(TM) i9-12900
 - platform: Linux-5.15.0-67-generic-x86_64-with-glibc2.35
-- [raw results](bm-20220601-pythonperf2-x86_64-python-eb0004c27163ec089201-3.11.0b3-eb0004c.json)
+- [raw results](bm-20220601-pythonperf2-x86_64-python-v3.11.0b3-3.11.0b3-eb0004c.json)
 
 ### vs. 3.10.4
 
 - 1.22x faster
 - missing benchmarks: coverage
-- [table](bm-20220601-pythonperf2-x86_64-python-eb0004c27163ec089201-3.11.0b3-eb0004c-vs-3.10.4.md)
-- [plot](bm-20220601-pythonperf2-x86_64-python-eb0004c27163ec089201-3.11.0b3-eb0004c-vs-3.10.4.png)
+- [table](bm-20220601-pythonperf2-x86_64-python-v3.11.0b3-3.11.0b3-eb0004c-vs-3.10.4.md)
+- [plot](bm-20220601-pythonperf2-x86_64-python-v3.11.0b3-3.11.0b3-eb0004c-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
 - 1.00x slower
 - missing benchmarks: coverage
-- [table](bm-20220601-pythonperf2-x86_64-python-eb0004c27163ec089201-3.11.0b3-eb0004c-vs-3.11.0.md)
-- [plot](bm-20220601-pythonperf2-x86_64-python-eb0004c27163ec089201-3.11.0b3-eb0004c-vs-3.11.0.png)
+- [table](bm-20220601-pythonperf2-x86_64-python-v3.11.0b3-3.11.0b3-eb0004c-vs-3.11.0.md)
+- [plot](bm-20220601-pythonperf2-x86_64-python-v3.11.0b3-3.11.0b3-eb0004c-vs-3.11.0.png)
 
 ## windows amd64 (pythonperf1)
 

@@ -235,15 +235,8 @@ def generate_master_indices(
 
 
 def find_different_benchmarks(head: Result, ref: Result) -> Tuple[List[str], List[str]]:
-    def get_benchmark_names(contents):
-        for benchmark in contents["benchmarks"]:
-            if "metadata" in benchmark:
-                yield benchmark["metadata"]["name"]
-            else:
-                yield contents["metadata"]["name"]
-
-    head_benchmarks = set(get_benchmark_names(head.contents))
-    base_benchmarks = set(get_benchmark_names(ref.contents))
+    head_benchmarks = head.benchmark_names
+    base_benchmarks = ref.benchmark_names
     return (
         sorted(base_benchmarks - head_benchmarks),
         sorted(head_benchmarks - base_benchmarks),

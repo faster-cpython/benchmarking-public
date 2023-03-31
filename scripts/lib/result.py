@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import socket
 import subprocess
-from typing import Any, Dict, Iterable, List, Optional, Tuple
+from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
 
 
 from packaging import version as pkg_version
@@ -54,8 +54,7 @@ class Comparison:
     def copy(self):
         return type(self)(self.ref, self.head, self.base)
 
-    @property
-    @functools.cache
+    @functools.cached_property
     def geometric_mean(self) -> str:
         if self.ref == self.head:
             return ""
@@ -97,8 +96,7 @@ class Comparison:
             number = 1.0 - (number - 1.0)
         return number
 
-    @property
-    @functools.cache
+    @functools.cached_property
     def contents(self) -> Optional[str]:
         if self.filename is None:
             return None
@@ -243,8 +241,7 @@ class Result:
             )
         return self._filename
 
-    @property
-    @functools.cache
+    @functools.cached_property
     def result_info(self) -> Tuple[str, Optional[str]]:
         if self.extra == [] and self.suffix == ".json":
             return ("raw results", None)
@@ -261,14 +258,50 @@ class Result:
         raise ValueError("Unknown result type")
 
     @property
-    @functools.cache
+    def fast_contents(self) -> Dict[str, Any]:
+        """
+        Gets just a portion of the JSON contents when the whole set isn't needed.
+        """
+        if hasattr(self, "_full_contents"):
+            return self._full_contents
+        if hasattr(self, "_fast_contents"):
+            return self._fast_contents
+
+        try:
+            import ijson
+        except ImportError:
+            return self.contents
+
+        fast_contents = {"metadata": {}, "benchmarks": []}
+        with open(self.filename, "rb") as fd:
+            parser = ijson.parse(fd)
+            for prefix, _, value in parser:
+                if prefix == "benchmarks.item.metadata.name":
+                    fast_contents["benchmarks"].append({"metadata": {"name": value}})
+                elif prefix == "benchmarks.item.runs.item.metadata.date":
+                    if len(fast_contents["benchmarks"]) == 0:
+                        fast_contents["benchmarks"].append({})
+                    if len(fast_contents["benchmarks"]) == 1:
+                        fast_contents["benchmarks"][-1]["runs"] = [
+                            {"metadata": {"date": value}}
+                        ]
+                elif prefix.startswith("metadata."):
+                    fast_contents["metadata"][prefix[9:]] = value
+
+        self._fast_contents = fast_contents
+        return fast_contents
+
+    @property
     def contents(self) -> Dict[str, Any]:
-        with open(self.filename) as fd:
-            return json.load(fd)
+        if hasattr(self, "_full_contents"):
+            return self._full_contents
+        with open(self.filename, "rb") as fd:
+            self._full_contents = json.load(fd)
+        return self._full_contents
 
     @property
     def metadata(self) -> Dict[str, Any]:
-        return self.contents.get("metadata", {})
+        return self.fast_contents.get("metadata", {})
 
     @property
     def commit_datetime(self) -> str:
@@ -282,7 +315,7 @@ class Result:
 
     @property
     def run_datetime(self) -> str:
-        return self.contents["benchmarks"][0]["runs"][0]["metadata"]["date"]
+        return self.fast_contents["benchmarks"][0]["runs"][0]["metadata"]["date"]
 
     @property
     def run_date(self) -> str:
@@ -320,8 +353,18 @@ class Result:
     def github_action_url(self) -> Optional[str]:
         return self.metadata.get("github_action_url", None)
 
-    @property
-    @functools.cache
+    @functools.cached_property
+    def benchmark_names(self) -> Set[str]:
+        contents = self.fast_contents
+        names = set()
+        for benchmark in contents["benchmarks"]:
+            if "metadata" in benchmark:
+                names.add(benchmark["metadata"]["name"])
+            else:
+                names.add(contents["metadata"]["name"])
+        return names
+
+    @functools.cached_property
     def parsed_version(self) -> pkg_version.Version:
         return pkg_version.parse(self.version.replace("+", "0"))
 

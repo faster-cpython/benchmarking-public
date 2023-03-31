@@ -1,6 +1,6 @@
 black==23.1.0
 flake8==6.0.0
-ijson==3.2.0
+ijson==3.2.0.post0
 matplotlib==3.6.3
 pyperf==2.5.0
 pyright==1.1.300

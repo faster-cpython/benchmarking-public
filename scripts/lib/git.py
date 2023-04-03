@@ -98,3 +98,18 @@ def generate_combined_hash(dirs: Iterable) -> str:
             subhash = get_git_hash(dirname)
             hash.update(subhash.encode("ascii"))
     return hash.hexdigest()[:6]
+
+
+def get_commits_between(dirname: Path, ref1: str, ref2: str) -> List[str]:
+    return list(
+        subprocess.check_output(
+            ["git", "rev-list", "--ancestry-path", f"{ref1}..{ref2}"],
+            cwd=dirname,
+            encoding="utf-8",
+        ).splitlines()
+    )
+
+
+def bisect_commits(dirname: Path, ref1: str, ref2: str) -> str:
+    commits = get_commits_between(dirname, ref1, ref2)
+    return commits[len(commits) // 2]

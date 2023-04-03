@@ -13,7 +13,7 @@ from lib import git
 from lib import result as mod_result
 
 
-DEFAULTS = (["v3.11"], ["v3.10"], ["2022-11-20"])
+DEFAULTS = (["v3.11"], ["v3.10"], ["2022-11-20"], [])
 
 
 class Commit:
@@ -91,6 +91,17 @@ def get_weekly_since(cpython: Path, start_date: str) -> Iterable[Commit]:
                 break
 
 
+def get_bisect(cpython: Path, refs: Sequence[str]) -> Iterable[Commit]:
+    if len(refs) != 2:
+        raise ValueError(f"Each --bisect entry must contain 2 refs, got {len(refs)}")
+
+    yield Commit(
+        cpython,
+        git.bisect_commits(cpython, refs[0], refs[1]),
+        f"--bisect {refs[0]} {refs[1]}",
+    )
+
+
 def match_machine(a, b):
     return (
         (a == "amd64" and b == "x86_64") or (a == "x86_64" and b == "amd64") or (a == b)
@@ -136,6 +147,7 @@ def get_commits(
     all_with_prefix: Iterable[str],
     latest_with_prefix: Iterable[str],
     weekly_since: Iterable[str],
+    bisect: Iterable[Sequence[str]],
 ) -> Iterable[Commit]:
     for entry in all_with_prefix:
         yield from get_all_with_prefix(cpython, tags, entry)
@@ -145,6 +157,9 @@ def get_commits(
 
     for entry in weekly_since:
         yield from get_weekly_since(cpython, entry)
+
+    for entry in bisect:
+        yield from get_bisect(cpython, entry)
 
 
 def deduplicate_commits(cpython: Path, commits: Iterable[Commit]) -> Iterable[Commit]:
@@ -168,20 +183,27 @@ def main(
     all_with_prefix: Optional[Sequence[str]],
     latest_with_prefix: Optional[Sequence[str]],
     weekly_since: Optional[Sequence[str]],
+    bisect: Optional[Sequence[Sequence[str]]],
     machine: str,
     force: bool,
 ) -> None:
     all_with_prefix = all_with_prefix or []
     latest_with_prefix = latest_with_prefix or []
     weekly_since = weekly_since or []
+    bisect = bisect or []
 
-    if all_with_prefix == [] and latest_with_prefix == [] and weekly_since == []:
-        all_with_prefix, latest_with_prefix, weekly_since = DEFAULTS
+    if (
+        all_with_prefix == []
+        and latest_with_prefix == []
+        and weekly_since == []
+        and bisect == []
+    ):
+        all_with_prefix, latest_with_prefix, weekly_since, bisect = DEFAULTS
 
     tags = git.get_tags(cpython)
 
     commits = get_commits(
-        cpython, tags, all_with_prefix, latest_with_prefix, weekly_since
+        cpython, tags, all_with_prefix, latest_with_prefix, weekly_since, bisect
     )
 
     if not force:
@@ -222,20 +244,23 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--all-with-prefix",
-        nargs="*",
-        action="extend",
+        action="append",
         help="Add all tags with the given version prefix, e.g. v3.11",
     )
     parser.add_argument(
         "--latest-with-prefix",
-        nargs="*",
-        action="extend",
+        action="append",
         help="Add the latest tag with the given version prefix, e.g. v3.10",
     )
     parser.add_argument(
         "--weekly-since",
-        nargs="?",
         help="Select one commit per week since the given iso date, e.g. 2022-09-01",
+    )
+    parser.add_argument(
+        "--bisect",
+        nargs=2,
+        action="append",
+        help="Select the commit between the two given refs",
     )
     parser.add_argument(
         "--machine",
@@ -257,6 +282,7 @@ if __name__ == "__main__":
         args.all_with_prefix,
         args.latest_with_prefix,
         args.weekly_since,
+        args.bisect,
         args.machine,
         args.force,
     )

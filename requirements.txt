@@ -3,6 +3,6 @@ flake8==6.0.0
 ijson==3.2.0.post0
 matplotlib==3.6.3
 pyperf==2.5.0
-pyright==1.1.300
+pyright==1.1.301
 pytest==7.2.2
 ruamel.yaml==0.17.21

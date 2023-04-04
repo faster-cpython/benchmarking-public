@@ -130,7 +130,7 @@ def remove_existing(
         return
 
     if results is None:
-        results = mod_result.load_all_results([], Path("results"), sorted=False)
+        results = mod_result.load_all_results(None, Path("results"), sorted=False)
 
     for commit in commits:
         commit.runners = []

@@ -369,9 +369,6 @@ class Result:
         return pkg_version.parse(self.version.replace("+", "0"))
 
     def match_to_bases(self, bases: List[str], results: Iterable["Result"]) -> None:
-        if not len(bases):
-            return
-
         loose_results = [
             ref
             for ref in results
@@ -422,7 +419,7 @@ def remove_duplicate_results(results_dir: Path) -> None:
 
 
 def load_all_results(
-    bases: List[str], results_dir: Path, sorted: bool = True
+    bases: Optional[List[str]], results_dir: Path, sorted: bool = True
 ) -> List[Result]:
     results = []
 
@@ -434,8 +431,9 @@ def load_all_results(
     if len(results) == 0:
         raise ValueError("Didn't find any results.  That seems fishy.")
 
-    for result in results:
-        result.match_to_bases(bases, results)
+    if bases is not None:
+        for result in results:
+            result.match_to_bases(bases, results)
 
     if sorted:
         results.sort(

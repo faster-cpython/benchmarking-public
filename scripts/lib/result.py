@@ -418,7 +418,9 @@ def remove_duplicate_results(results_dir: Path) -> None:
                 result.filename.unlink()
 
 
-def load_all_results(bases: List[str], results_dir: Path) -> List[Result]:
+def load_all_results(
+    bases: Optional[List[str]], results_dir: Path, sorted: bool = True
+) -> List[Result]:
     results = []
 
     for entry in results_dir.glob("**/*.json"):
@@ -429,15 +431,17 @@ def load_all_results(bases: List[str], results_dir: Path) -> List[Result]:
     if len(results) == 0:
         raise ValueError("Didn't find any results.  That seems fishy.")
 
-    for result in results:
-        result.match_to_bases(bases, results)
+    if bases is not None:
+        for result in results:
+            result.match_to_bases(bases, results)
 
-    results.sort(
-        key=lambda x: (
-            x.parsed_version,
-            x.commit_datetime,
-        ),
-        reverse=True,
-    )
+    if sorted:
+        results.sort(
+            key=lambda x: (
+                x.parsed_version,
+                x.commit_datetime,
+            ),
+            reverse=True,
+        )
 
     return results

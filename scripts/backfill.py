@@ -2,7 +2,7 @@ import argparse
 import datetime
 from pathlib import Path
 import sys
-from typing import Iterable, Optional, Sequence
+from typing import Iterable, List, Optional, Sequence, TypeAlias
 
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -11,9 +11,13 @@ sys.path.insert(0, str(Path(__file__).parent))
 from lib import gh
 from lib import git
 from lib import result as mod_result
+from lib import runners
 
 
 DEFAULTS = (["v3.11"], ["v3.10"], ["2022-11-20"], [])
+
+
+RunnerType: TypeAlias = runners.Runner
 
 
 class Commit:
@@ -27,6 +31,7 @@ class Commit:
         self.hash = hash
         self.date = datetime.datetime.fromisoformat(date)
         self.source = source
+        self.runners: List[RunnerType] = []
 
 
 def get_all_with_prefix(
@@ -109,35 +114,36 @@ def match_machine(a, b):
 
 
 def remove_existing(
-    commits: Iterable[Commit], machine: str, results=None
+    force: bool,
+    commits: Iterable[Commit],
+    runners: Sequence[RunnerType],
+    results: Optional[Sequence[mod_result.Result]] = None,
 ) -> Iterable[Commit]:
     """
-    Remove any commits that we already have results for the given machine.
+    Remove any runner/commit combinations that we already have results for.
+    If force is True, all runner/commit combinations will be generated.
     """
-    if results is None:
-        results = mod_result.load_all_results([], Path("results"))
-
-    if machine == "all":
-        all_commits = set()
-        for submachine in gh.get_machines():
-            if submachine == "all":
-                continue
-            all_commits |= set(remove_existing(commits, submachine, results))
-        yield from all_commits
+    if force:
+        for commit in commits:
+            commit.runners = list(runners)
+            yield commit
         return
 
-    system, machine, nickname = machine.split("-")
+    if results is None:
+        results = mod_result.load_all_results(None, Path("results"), sorted=False)
 
     for commit in commits:
-        for result in results:
-            if (
-                result.system == system
-                and match_machine(result.machine, machine)
-                and result.nickname == nickname
-                and commit.hash.startswith(result.cpython_hash)
-            ):
-                break
-        else:
+        commit.runners = []
+        for runner in runners:
+            for result in results:
+                if result.nickname == runner.nickname and commit.hash.startswith(
+                    result.cpython_hash
+                ):
+                    break
+            else:
+                commit.runners.append(runner)
+
+        if len(commit.runners):
             yield commit
 
 
@@ -178,14 +184,27 @@ def deduplicate_commits(cpython: Path, commits: Iterable[Commit]) -> Iterable[Co
             )
 
 
+def format_runners(
+    active_runners: Sequence[RunnerType], all_runners: Sequence[RunnerType]
+):
+    result = []
+    for runner in all_runners:
+        if runner in active_runners:
+            result.append("X")
+        else:
+            result.append("-")
+    return "".join(result)
+
+
 def main(
     cpython: Path,
     all_with_prefix: Optional[Sequence[str]],
     latest_with_prefix: Optional[Sequence[str]],
     weekly_since: Optional[Sequence[str]],
     bisect: Optional[Sequence[Sequence[str]]],
-    machine: str,
+    runners: Sequence[RunnerType],
     force: bool,
+    all_runners: Sequence[RunnerType],
 ) -> None:
     all_with_prefix = all_with_prefix or []
     latest_with_prefix = latest_with_prefix or []
@@ -206,31 +225,39 @@ def main(
         cpython, tags, all_with_prefix, latest_with_prefix, weekly_since, bisect
     )
 
-    if not force:
-        commits = remove_existing(commits, machine)
-
     commits = deduplicate_commits(cpython, commits)
+    commits = remove_existing(force, commits, runners)
 
     commits = sorted(commits, key=lambda x: x.date)
 
-    print(f"{'date':10s} {'hash':7s} {'ref':15s} source")
+    print(f"runners: {', '.join(x.nickname for x in runners)}")
+    print()
+    print(f"{'date':10s} {'hash':7s} {'ref':15s} {'#' * len(runners)} source")
+    runs = 0
     for commit in commits:
         print(
             f"{str(commit.date)[:10]} {commit.hash[:7]:7s} "
-            f"{commit.ref[:15]:15s} {commit.source}"
+            f"{commit.ref[:15]:15s} {format_runners(commit.runners, runners)} "
+            f"{commit.source}"
         )
+        runs += len(commit.runners)
 
     print()
-    print(f"Selected {len(commits)} commits.")
+    print(f"Selected {len(commits)} commits, {runs} runs.")
     choice = input("Are you sure you want to run them all? [y/N]")
 
     if choice.lower() in ("y", "yes"):
         for commit in commits:
-            gh.benchmark(ref=commit.hash, machine=machine, publish=True)
+            if len(commit.runners) == len(all_runners):
+                gh.benchmark(ref=commit.hash, machine="all", publish=True)
+            else:
+                for runner in commit.runners:
+                    gh.benchmark(ref=commit.hash, machine=runner.name, publish=True)
 
 
 if __name__ == "__main__":
-    machines = gh.get_machines()
+    all_runners = [x for x in runners.get_runners() if x.available]
+    runners_by_names = {x.nickname: x for x in all_runners}
 
     parser = argparse.ArgumentParser(
         """
@@ -254,6 +281,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--weekly-since",
+        action="append",
         help="Select one commit per week since the given iso date, e.g. 2022-09-01",
     )
     parser.add_argument(
@@ -264,8 +292,8 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--machine",
-        choices=machines,
-        default=machines[0],
+        choices=list(runners_by_names.keys()) + ["all"],
+        default=all_runners[0].nickname,
         help="The machine to run on.",
     )
     parser.add_argument(
@@ -277,12 +305,18 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
+    if args.machine != "all":
+        runners = [runners_by_names[args.machine]]
+    else:
+        runners = all_runners
+
     main(
         args.cpython,
         args.all_with_prefix,
         args.latest_with_prefix,
         args.weekly_since,
         args.bisect,
-        args.machine,
+        runners,
         args.force,
+        all_runners,
     )

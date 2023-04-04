@@ -132,7 +132,7 @@ def collect_perf(python: Union[Path, str], benchmarks: str):
         else:
             if perf_data.exists():
                 output = subprocess.check_output(
-                    ["perf", "report", "--stdio", "-g", "none"], encoding="utf-8"
+                    ["perf", "report", "-v", "--stdio", "-g", "none"], encoding="utf-8"
                 )
                 perf_to_csv(output.splitlines(), Path(f"{benchmark}.perf.csv"))
 

@@ -369,6 +369,9 @@ class Result:
         return pkg_version.parse(self.version.replace("+", "0"))
 
     def match_to_bases(self, bases: List[str], results: Iterable["Result"]) -> None:
+        if not len(bases):
+            return
+
         loose_results = [
             ref
             for ref in results
@@ -418,7 +421,9 @@ def remove_duplicate_results(results_dir: Path) -> None:
                 result.filename.unlink()
 
 
-def load_all_results(bases: List[str], results_dir: Path) -> List[Result]:
+def load_all_results(
+    bases: List[str], results_dir: Path, sorted: bool = True
+) -> List[Result]:
     results = []
 
     for entry in results_dir.glob("**/*.json"):
@@ -432,12 +437,13 @@ def load_all_results(bases: List[str], results_dir: Path) -> List[Result]:
     for result in results:
         result.match_to_bases(bases, results)
 
-    results.sort(
-        key=lambda x: (
-            x.parsed_version,
-            x.commit_datetime,
-        ),
-        reverse=True,
-    )
+    if sorted:
+        results.sort(
+            key=lambda x: (
+                x.parsed_version,
+                x.commit_datetime,
+            ),
+            reverse=True,
+        )
 
     return results

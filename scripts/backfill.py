@@ -281,6 +281,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--weekly-since",
+        action="append",
         help="Select one commit per week since the given iso date, e.g. 2022-09-01",
     )
     parser.add_argument(

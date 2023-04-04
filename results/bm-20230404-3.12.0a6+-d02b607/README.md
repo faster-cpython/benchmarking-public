@@ -7,6 +7,11 @@
 - commit merge base: [2a721258a199e9bcdcee2069719ad9c8f8c0d030](https://github.com/brandtbucher/cpython/commit/2a721258a199e9bcdcee2069719ad9c8f8c0d030)
 - ref: shrink_call_more
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20230404-azure-x86_64-brandtbucher-shrink_call_more-3.12.0a6%2B-d02b607-pystats.json)
+- [pystats table](bm-20230404-azure-x86_64-brandtbucher-shrink_call_more-3.12.0a6%2B-d02b607-pystats.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4611211326)

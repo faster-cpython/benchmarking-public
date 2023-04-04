@@ -204,6 +204,7 @@ def main(
     bisect: Optional[Sequence[Sequence[str]]],
     runners: Sequence[RunnerType],
     force: bool,
+    all_runners: Sequence[RunnerType],
 ) -> None:
     all_with_prefix = all_with_prefix or []
     latest_with_prefix = latest_with_prefix or []
@@ -247,7 +248,7 @@ def main(
 
     if choice.lower() in ("y", "yes"):
         for commit in commits:
-            if len(commit.runners) == len(runners):
+            if len(commit.runners) == len(all_runners):
                 gh.benchmark(ref=commit.hash, machine="all", publish=True)
             else:
                 for runner in commit.runners:
@@ -255,8 +256,8 @@ def main(
 
 
 if __name__ == "__main__":
-    runners = [x for x in runners.get_runners() if x.available]
-    runners_by_names = {x.nickname: x for x in runners}
+    all_runners = [x for x in runners.get_runners() if x.available]
+    runners_by_names = {x.nickname: x for x in all_runners}
 
     parser = argparse.ArgumentParser(
         """
@@ -291,7 +292,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--machine",
         choices=list(runners_by_names.keys()) + ["all"],
-        default=runners[0].nickname,
+        default=all_runners[0].nickname,
         help="The machine to run on.",
     )
     parser.add_argument(
@@ -305,6 +306,8 @@ if __name__ == "__main__":
 
     if args.machine != "all":
         runners = [runners_by_names[args.machine]]
+    else:
+        runners = all_runners
 
     main(
         args.cpython,
@@ -314,4 +317,5 @@ if __name__ == "__main__":
         args.bisect,
         runners,
         args.force,
+        all_runners,
     )

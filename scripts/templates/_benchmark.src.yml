@@ -219,9 +219,7 @@ jobs:
         with:
           name: perf
           path: |
-            perf.data
-            perf.data.tar.bz2
-            profile.perf
+            *.perf.csv
       # Pull again, since another job may have committed results in the meantime
       - name: pull
         if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run && !inputs.perf }}

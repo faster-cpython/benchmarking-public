@@ -1,11 +1,12 @@
 import argparse
+import csv
 import json
 from pathlib import Path
 import shutil
 import subprocess
 import sys
 import textwrap
-from typing import Optional, Union
+from typing import Iterable, List, Optional, Union
 
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -19,8 +20,15 @@ BENCHMARK_JSON = Path("benchmark.json")
 GITHUB_URL = "https://github.com/faster-cpython/benchmarking"
 
 
+class NoBenchmarkError(Exception):
+    pass
+
+
 def run_benchmarks(
-    python: Union[Path, str], benchmarks: str, perf: bool, test_mode: bool
+    python: Union[Path, str],
+    benchmarks: str,
+    command_prefix: List[str] = [],
+    test_mode: bool = False,
 ) -> None:
     if benchmarks.strip() == "":
         benchmarks = "all"
@@ -33,13 +41,8 @@ def run_benchmarks(
     else:
         fast_arg = []
 
-    if perf:
-        prefix = ["perf", "record", "--call-graph=dwarf", "-o", "perf.data", "--"]
-    else:
-        prefix = []
-
     subprocess.call(
-        prefix
+        command_prefix
         + [
             sys.executable,
             "-m",
@@ -63,13 +66,75 @@ def run_benchmarks(
     # We only want to fail if things are worse than that.
 
     if not Path(BENCHMARK_JSON).is_file():
-        print("No benchmark file created.")
-        sys.exit(1)
+        raise NoBenchmarkError("No benchmark file created.")
     with open(BENCHMARK_JSON) as fd:
         contents = json.load(fd)
     if len(contents.get("benchmarks", [])) == 0:
-        print("No benchmarks were run.")
-        sys.exit(1)
+        raise NoBenchmarkError("No benchmarks were run.")
+
+
+def perf_to_csv(lines: Iterable[str], output: Path):
+    rows = []
+    for line in lines:
+        line = line.strip()
+        if line.startswith("#") or line == "":
+            continue
+        children, self, _, shared, _, symbol = line.split(maxsplit=5)
+        children = float(children[:-1])
+        self = float(self[:-1])
+        if children > 0.0 or self > 0.0:
+            rows.append([self, children, shared, symbol])
+
+    rows.sort(key=lambda x: x[0])
+
+    with open(output, "w") as fd:
+        csvwriter = csv.writer(fd)
+        csvwriter.writerow(["self", "children", "shared obj", "symbol"])
+        for row in rows:
+            csvwriter.writerow(row)
+
+
+def collect_perf(python: Union[Path, str], benchmarks: str):
+    if benchmarks.strip() == "":
+        benchmarks = "all"
+
+    output = subprocess.check_output(
+        [
+            sys.executable,
+            "-m",
+            "pyperformance",
+            "list",
+            "--manifest",
+            "benchmarks.manifest",
+            "--benchmarks",
+            benchmarks,
+        ],
+        encoding="utf-8",
+    )
+
+    all_benchmarks = [
+        line[2:].strip() for line in output.splitlines() if line.startswith("- ")
+    ]
+
+    perf_data = Path("perf.data")
+    for benchmark in all_benchmarks:
+        if perf_data.exists():
+            perf_data.unlink()
+
+        try:
+            run_benchmarks(
+                python,
+                benchmark,
+                ["perf", "record", "--call-graph=dwarf", "-o", "perf.data", "--"],
+            )
+        except NoBenchmarkError:
+            pass
+        else:
+            if perf_data.exists():
+                output = subprocess.check_output(
+                    ["perf", "report", "--stdio", "-g", "none"], encoding="utf-8"
+                )
+                perf_to_csv(output.splitlines(), Path(f"{benchmark}.perf.csv"))
 
 
 def update_metadata(
@@ -169,7 +234,10 @@ def main(
     test_mode: bool,
     run_id: Optional[str],
 ) -> None:
-    run_benchmarks(python, benchmarks, perf, test_mode)
+    if perf:
+        collect_perf(python, benchmarks)
+    else:
+        run_benchmarks(python, benchmarks, [], test_mode)
     if mode == "benchmark":
         update_metadata(BENCHMARK_JSON, fork, ref, publish, run_id=run_id)
         copy_to_directory(BENCHMARK_JSON, python, fork, ref)

@@ -32,6 +32,9 @@ env:
       force:
         description: 'Rerun and replace results if commit already exists'
         type: boolean
+      perf:
+        description: 'Collect Linux perf profiling data (Linux only)'
+        type: boolean
 
   workflow_dispatch:
     inputs:
@@ -66,6 +69,9 @@ env:
         type: boolean
       force:
         description: 'Rerun and replace results if commit already exists'
+        type: boolean
+      perf:
+        description: 'Collect Linux perf profiling data (Linux only)'
         type: boolean
 
 jobs:
@@ -119,7 +125,7 @@ jobs:
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          venv\Scripts\python.exe scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
+          venv\Scripts\python.exe scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} false --run_id ${{ github.run_id }}
       - name: Upload artifacts
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         uses: actions/upload-artifact@v3
@@ -183,26 +189,42 @@ jobs:
       - name: Install pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          python -m pip install setuptools wheel
-          python -m pip install ./pyperformance
+          cpython/python -m venv venv
+          venv/bin/python -m pip install setuptools wheel
+          venv/bin/python -m pip install ./pyperformance
       - name: Tune system
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH `which python` -m pyperf system tune
+          sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system tune
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
-      - name: Upload artifacts
-        if: ${{ steps.should_run.outputs.should_run != 'false' }}
+          rm -rf ~/.debug/*
+          venv/bin/python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} ${{ inputs.perf }} --run_id ${{ github.run_id }}
+      - name: Upload benchmark artifacts
+        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
         uses: actions/upload-artifact@v3
         with:
           name: benchmark
           path: |
             benchmark.json
+      - name: Generating perf artifacts
+        if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
+        run: |
+          scripts/perf-archive.sh
+          perf script -F +pid > profile.perf
+      - name: Upload perf artifacts
+        if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: perf
+          path: |
+            perf.data
+            perf.data.tar.bz2
+            profile.perf
       # Pull again, since another job may have committed results in the meantime
       - name: pull
-        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
+        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run && !inputs.perf }}
         run: |
           # Another benchmarking task may have created results for the same
           # commit while the above was running. This "magic" incantation means
@@ -210,7 +232,7 @@ jobs:
           # just pulled in in that case.
           git pull -s recursive -X ours --autostash --rebase
       - name: Add to repo
-        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run }}
+        if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.dry_run && !inputs.perf }}
         uses: EndBug/add-and-commit@v9
         with:
           add: results
@@ -264,7 +286,7 @@ jobs:
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          venv/bin/python scripts/run_benchmarks.py benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} --run_id ${{ github.run_id }}
+          venv/bin/python scripts/run_benchmarks.py benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} false --run_id ${{ github.run_id }}
       - name: Upload artifacts
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         uses: actions/upload-artifact@v3

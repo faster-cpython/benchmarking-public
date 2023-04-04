@@ -32,6 +32,10 @@ on:
         description: Also collect pystats for this commit
         type: boolean
         default: false
+      perf:
+        description: Collect Linux perf profiling data
+        type: boolean
+        default: false
       publish:
         description: Publish results to the ideas repo
         type: boolean
@@ -70,6 +74,7 @@ jobs:
       benchmarks: ${{ inputs.benchmarks }}
       pgo: true
       publish: ${{ inputs.publish }}
+      perf: ${{ inputs.perf }}
       force: true
     secrets: inherit
 
@@ -84,6 +89,7 @@ jobs:
       benchmarks: ${{ inputs.benchmarks }}
       pgo: true
       publish: ${{ inputs.publish }}
+      perf: ${{ inputs.perf }}
       force: false
     secrets: inherit
 

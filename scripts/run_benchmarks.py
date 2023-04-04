@@ -19,7 +19,9 @@ BENCHMARK_JSON = Path("benchmark.json")
 GITHUB_URL = "https://github.com/faster-cpython/benchmarking"
 
 
-def run_benchmarks(python: Union[Path, str], benchmarks: str, test_mode: bool) -> None:
+def run_benchmarks(
+    python: Union[Path, str], benchmarks: str, perf: bool, test_mode: bool
+) -> None:
     if benchmarks.strip() == "":
         benchmarks = "all"
 
@@ -31,8 +33,14 @@ def run_benchmarks(python: Union[Path, str], benchmarks: str, test_mode: bool) -
     else:
         fast_arg = []
 
+    if perf:
+        prefix = ["perf", "record", "--call-graph=dwarf", "-o", "perf.data", "--"]
+    else:
+        prefix = []
+
     subprocess.call(
-        [
+        prefix
+        + [
             sys.executable,
             "-m",
             "pyperformance",
@@ -157,10 +165,11 @@ def main(
     ref: str,
     benchmarks: str,
     publish: str,
+    perf: bool,
     test_mode: bool,
     run_id: Optional[str],
 ) -> None:
-    run_benchmarks(python, benchmarks, test_mode)
+    run_benchmarks(python, benchmarks, perf, test_mode)
     if mode == "benchmark":
         update_metadata(BENCHMARK_JSON, fork, ref, publish, run_id=run_id)
         copy_to_directory(BENCHMARK_JSON, python, fork, ref)
@@ -184,6 +193,7 @@ if __name__ == "__main__":
     parser.add_argument("ref", help="The git ref in the fork")
     parser.add_argument("benchmarks", help="The benchmarks to run")
     parser.add_argument("publish", help="Publish results to the public repo")
+    parser.add_argument("perf", help="Collect Linux perf profiling data")
     parser.add_argument(
         "--test_mode",
         action="store_true",
@@ -207,6 +217,7 @@ if __name__ == "__main__":
         args.ref,
         args.benchmarks,
         args.publish,
+        args.perf.lower() != "false",
         args.test_mode,
         args.run_id,
     )

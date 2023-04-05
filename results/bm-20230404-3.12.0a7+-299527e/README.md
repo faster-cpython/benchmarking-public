@@ -28,3 +28,9 @@
 - [table](bm-20230404-linux-x86_64-ericsnowcurrently-per_interpreter_allo-3.12.0a7%2B-299527e-vs-3.11.0.md)
 - [plot](bm-20230404-linux-x86_64-ericsnowcurrently-per_interpreter_allo-3.12.0a7%2B-299527e-vs-3.11.0.png)
 
+### vs. base
+
+- 1.01x slower
+- [table](bm-20230404-linux-x86_64-ericsnowcurrently-per_interpreter_allo-3.12.0a7%2B-299527e-vs-base.md)
+- [plot](bm-20230404-linux-x86_64-ericsnowcurrently-per_interpreter_allo-3.12.0a7%2B-299527e-vs-base.png)
+

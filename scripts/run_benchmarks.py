@@ -134,7 +134,7 @@ def collect_perf(python: Union[Path, str], benchmarks: str):
                 print(f"size {perf_data.stat().st_size}")
                 with open(perf_data, "rb") as fd:
                     header = fd.read(8)
-                print(f"header {header:r}")
+                print(f"header {repr(header)}")
                 output = subprocess.check_output(
                     ["perf", "report", "-v", "--stdio", "-g", "none"], encoding="utf-8"
                 )

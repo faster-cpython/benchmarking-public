@@ -85,7 +85,7 @@ def perf_to_csv(lines: Iterable[str], output: Path):
         if children > 0.0 or self > 0.0:
             rows.append([self, children, shared, symbol])
 
-    rows.sort(key=lambda x: x[0])
+    rows.sort(key=lambda x: x[0], reverse=True)
 
     with open(output, "w") as fd:
         csvwriter = csv.writer(fd)

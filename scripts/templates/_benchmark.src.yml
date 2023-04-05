@@ -208,11 +208,6 @@ jobs:
           name: benchmark
           path: |
             benchmark.json
-      - name: Generating perf artifacts
-        if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
-        run: |
-          scripts/perf-archive.sh
-          perf script -F +pid > profile.perf
       - name: Upload perf artifacts
         if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
         uses: actions/upload-artifact@v3

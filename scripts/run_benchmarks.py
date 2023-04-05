@@ -135,7 +135,6 @@ def collect_perf(python: Union[Path, str], benchmarks: str):
                     [
                         "perf",
                         "report",
-                        "-v",
                         "--stdio",
                         "-g",
                         "none",

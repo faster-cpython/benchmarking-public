@@ -85,7 +85,6 @@ The available parameters are:
 - `benchmark_base`: If checked, the base of the selected branch will also be benchmarked.
   The base is determined by running `git merge-base upstream/main $ref`.
 - `pystats`: If checked, collect the pystats from running the benchmarks.
-- `perf`: If checked, collect Linux perf profiling data. Benchmark results are not reliable in this mode, and are therefore not saved to the repository. See [collecting Linux perf profiling data](#collecting-linux-perf-profiling-data) for more information.
 - `publish`: If checked, the results will be published in the public [ideas repo](https://github.com/faster-cpython/ideas) upon successful completion.
 
 To watch the progress of the benchmark, select it from the 🔒 [benchmark action page](https://github.com/faster-cpython/benchmarking/actions/workflows/benchmark.yml).
@@ -115,22 +114,8 @@ Any of the parameters described above are available at the commandline using the
 
 ### Collecting Linux perf profiling data
 
-To collect Linux perf sampling profile data for a benchmarking run, check the `perf` checkbox.
-Since the sampling profiler makes the benchmarking timings noisier, they are not saved to the Github repository.
-The perf results are never saved to the Github repository, but are instead available as artifacts on the run.
-Find your run on the [actions page](https://github.com/faster-cpython/benchmarking/actions), and then scroll to the bottom and download the `perf` artifact.
-This artifact is a zip file with the following content:
-
-- `perf.data`: The raw Linux perf results produced by `perf record`.
-- `perf.data.tar.bz2`: The debugging symbols required to use `perf.data` on another machine, as produced by `perf archive`. To use this data, expand it to `~/.debug` (these are the official instructions, but I have been unsuccessful getting this to work):
-
-```
-rm -rf ~/.debug
-tar xvf perf.data.tar.bz2 -C ~/.debug
-```
-
-- `profile.perf`: A self-contained version of the data, produced by `perf script -F +pid`.
-  This file is loadable by the [Firefox profiling UI](https://profiler.firefox.com).  (This works in any browser).
+To collect Linux perf sampling profile data for a benchmarking run, run the `_benchmark` action and check the `perf` checkbox.
+Follow this by a run of the `_generate` action to regenerate the plots.
 
 ### Costs
 

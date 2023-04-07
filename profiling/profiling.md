@@ -54,7 +54,7 @@
 | 1.52% | `python` | `_PyTuple_FromArray` | unknown |
 | 1.35% | `python` | `async_gen_asend_dealloc` | memory |
 | 1.26% | `python` | `async_gen_wrapped_val_dealloc` | memory |
-| 1.25% | `python` | `PyObject_GC_UnTrack` | dynamic |
+| 1.25% | `python` | `PyObject_GC_UnTrack` | gc |
 | 1.23% | `python` | `_PyErr_Restore` | unknown |
 | 1.22% | `python` | `_PyAsyncGenValueWrapperNew` | unknown |
 | 1.21% | `python` | `_PyGen_SetStopIterationValue` | unknown |
@@ -179,7 +179,7 @@
 | 1.10% | `python` | `list_dealloc` | memory |
 | 1.10% | `python` | `PyObject_RichCompare` | dynamic |
 | 1.05% | `python` | `gc_collect_main` | gc |
-| 1.00% | `python` | `_PyObject_Realloc` | dynamic |
+| 1.00% | `python` | `_PyObject_Realloc` | memory |
 
 ## concurrent_imap
 
@@ -206,7 +206,7 @@
 | 45.05% | `python` | `_PyEval_EvalFrameDefault` | interpreter |
 | 5.99% | `python` | `gen_dealloc` | memory |
 | 3.67% | `libc-2.31.so` | `__nss_database_lookup` | libc |
-| 3.29% | `python` | `_PyObject_GC_NewVar` | dynamic |
+| 3.29% | `python` | `_PyObject_GC_NewVar` | gc |
 | 3.20% | `python` | `make_gen` | unknown |
 | 3.19% | `python` | `_PyLong_Subtract` | unknown |
 | 2.69% | `python` | `_PyLong_Add` | unknown |
@@ -216,7 +216,7 @@
 | 1.79% | `python` | `PyObject_CallFinalizerFromDealloc` | memory |
 | 1.40% | `python` | `unicodekeys_lookup_unicode` | lookup |
 | 1.34% | `python` | `gc_collect_main` | gc |
-| 1.23% | `python` | `PyObject_GC_Del` | dynamic |
+| 1.23% | `python` | `PyObject_GC_Del` | gc |
 | 1.10% | `python` | `_Py_MakeCoro` | unknown |
 
 ## coverage
@@ -583,7 +583,7 @@
 | 1.65% | `python` | `PyDict_Next` | unknown |
 | 1.62% | `python` | `convertitem` | unknown |
 | 1.56% | `python` | `vgetargskeywords` | unknown |
-| 1.55% | `python` | `_PyObject_Realloc` | dynamic |
+| 1.55% | `python` | `_PyObject_Realloc` | memory |
 | 1.28% | `python` | `tupledealloc` | unknown |
 | 1.11% | `python` | `_PyUnicodeWriter_PrepareInternal` | unknown |
 | 1.07% | `python` | `initialize_locals` | interpreter |
@@ -1241,7 +1241,7 @@
 | 1.84% | `_pickle.cpython-312-x86_64-linux-gnu.so` | `_Unpickler_MemoPut` | library |
 | 1.81% | `python` | `free_keys_object` | unknown |
 | 1.68% | `python` | `dict_ass_sub` | unknown |
-| 1.40% | `python` | `_PyObject_Realloc` | dynamic |
+| 1.40% | `python` | `_PyObject_Realloc` | memory |
 | 1.26% | `python` | `find_empty_slot` | unknown |
 | 1.23% | `python` | `build_indices_unicode` | unknown |
 | 1.08% | `python` | `PyObject_SetItem` | dynamic |
@@ -1260,11 +1260,11 @@
 | 3.84% | `python` | `_PyEval_EvalFrameDefault` | interpreter |
 | 3.62% | `_pickle.cpython-312-x86_64-linux-gnu.so` | `do_append.isra.0` | library |
 | 3.07% | `python` | `_PyObject_Malloc` | memory |
-| 2.42% | `python` | `_PyObject_Calloc` | dynamic |
+| 2.42% | `python` | `_PyObject_Calloc` | memory |
 | 2.16% | `python` | `PyMem_Calloc` | memory |
 | 1.88% | `python` | `_Py_NewReference` | unknown |
-| 1.65% | `python` | `PyObject_GC_UnTrack` | dynamic |
-| 1.48% | `python` | `_PyObject_Realloc` | dynamic |
+| 1.65% | `python` | `PyObject_GC_UnTrack` | gc |
+| 1.48% | `python` | `_PyObject_Realloc` | memory |
 | 1.47% | `python` | `_PyTrash_begin` | gc |
 | 1.39% | `libc-2.31.so` | `__nss_database_lookup` | libc |
 | 1.34% | `_pickle.cpython-312-x86_64-linux-gnu.so` | `marker.isra.0` | library |
@@ -1518,7 +1518,7 @@
 
 ### gc
 
-6.61% total
+6.71% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |
@@ -1528,6 +1528,8 @@
 | 0.21% | python | list_traverse |
 | 0.15% | python | subtype_traverse |
 | 0.13% | python | dict_traverse |
+| 0.04% | python | _PyObject_GC_NewVar |
+| 0.04% | python | PyObject_GC_UnTrack |
 | 0.03% | python | PyObject_IS_GC |
 | 0.03% | python | _PyDict_MaybeUntrack |
 | 0.02% | python | func_traverse |
@@ -1535,11 +1537,12 @@
 | 0.02% | python | _PyObject_VisitManagedDict |
 | 0.02% | python | _PyTrash_begin |
 | 0.02% | python | type_is_gc |
+| 0.02% | python | PyObject_GC_Del |
 | 0.02% | python | _PyTrash_end |
 
 ### memory
 
-5.21% total
+5.32% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |
@@ -1550,9 +1553,11 @@
 | 0.10% | python | gen_dealloc |
 | 0.09% | python | float_dealloc |
 | 0.08% | python | subtype_dealloc |
+| 0.07% | python | _PyObject_Realloc |
 | 0.06% | python | set_dealloc |
 | 0.05% | python | PyType_GenericAlloc |
 | 0.04% | python | slice_dealloc |
+| 0.03% | python | _PyObject_Calloc |
 | 0.03% | python | PyMem_Calloc |
 | 0.02% | python | PyObject_CallFinalizerFromDealloc |
 | 0.02% | python | dict_dealloc |
@@ -1582,7 +1587,7 @@
 
 ### dynamic
 
-1.36% total
+1.15% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |
@@ -1590,20 +1595,15 @@
 | 0.19% | python | PyObject_Hash |
 | 0.10% | python | PyNumber_AsSsize_t |
 | 0.10% | python | PyObject_RichCompare |
-| 0.07% | python | _PyObject_Realloc |
 | 0.07% | python | _PyObject_GetMethod |
 | 0.07% | python | PyObject_GetAttr |
 | 0.06% | python | PyObject_IsTrue |
 | 0.05% | python | _PyObject_GetInstanceAttribute |
-| 0.04% | python | _PyObject_GC_NewVar |
 | 0.04% | python | PyObject_RichCompareBool |
-| 0.04% | python | PyObject_GC_UnTrack |
 | 0.03% | python | PyObject_GetItem |
 | 0.03% | python | _PyObject_GenericGetAttrWithDict |
-| 0.03% | python | _PyObject_Calloc |
 | 0.02% | python | _PyObject_MakeTpCall |
 | 0.02% | python | PyNumber_TrueDivide |
-| 0.02% | python | PyObject_GC_Del |
 | 0.02% | python | PyNumber_And |
 | 0.02% | python | PyNumber_FloorDivide |
 | 0.01% | python | PyObject_CallOneArg |

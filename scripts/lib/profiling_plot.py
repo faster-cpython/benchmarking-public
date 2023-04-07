@@ -36,6 +36,7 @@ CATEGORIES: Dict[str, List[str]] = {
         ".+MaybeUntrack",
         ".+_traverse",
         "PyObject_IS_GC",
+        "_?PyObject_GC_.+",
         "_PyObject_Visit.+",
         "_PyTrash_.+",
         "gc_collect_main",
@@ -44,7 +45,9 @@ CATEGORIES: Dict[str, List[str]] = {
     ],
     "memory": [
         ".+Alloc",
+        ".+Calloc",
         ".+Dealloc",
+        ".+Realloc",
         ".+_alloc",
         ".+_dealloc",
         "_?PyMem_.+",

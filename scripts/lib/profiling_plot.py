@@ -111,9 +111,7 @@ def generate_results(output_dir: Path = ROOT_DIR, input_dir: Path = RESULTS_DIR)
                     results[stem].setdefault(category, 0.0)
                     results[stem][category] += self_time
 
-                    md.write(
-                        f"| {self_time:.2%} | `{obj}` | `{sym}` | {category} |\n"
-                    )
+                    md.write(f"| {self_time:.2%} | `{obj}` | `{sym}` | {category} |\n")
 
         sorted_categories = sorted(
             [

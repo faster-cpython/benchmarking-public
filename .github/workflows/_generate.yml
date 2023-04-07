@@ -43,5 +43,5 @@ jobs:
         uses: EndBug/add-and-commit@v9
         if: ${{ !inputs.dry_run }}
         with:
-          add: "['results', 'README.md', 'RESULTS.md', 'longitudinal.png']"
+          add: "['results', 'README.md', 'RESULTS.md', 'longitudinal.png', 'profiling/profiling.png', 'profiling/profiling.md']"
           message: Benchmarking results for @${{ github.actor }}

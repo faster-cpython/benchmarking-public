@@ -1,11 +1,12 @@
 import argparse
+import csv
 import json
 from pathlib import Path
 import shutil
 import subprocess
 import sys
 import textwrap
-from typing import Optional, Union
+from typing import Iterable, List, Optional, Union
 
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -15,11 +16,22 @@ from lib import git
 from lib.result import Result
 
 
-BENCHMARK_JSON = Path("benchmark.json")
+REPO_ROOT = Path(__file__).parents[1]
+BENCHMARK_JSON = REPO_ROOT / "benchmark.json"
+PROFILING_RESULTS = REPO_ROOT / "profiling" / "results"
 GITHUB_URL = "https://github.com/faster-cpython/benchmarking"
 
 
-def run_benchmarks(python: Union[Path, str], benchmarks: str, test_mode: bool) -> None:
+class NoBenchmarkError(Exception):
+    pass
+
+
+def run_benchmarks(
+    python: Union[Path, str],
+    benchmarks: str,
+    command_prefix: List[str] = [],
+    test_mode: bool = False,
+) -> None:
     if benchmarks.strip() == "":
         benchmarks = "all"
 
@@ -32,7 +44,8 @@ def run_benchmarks(python: Union[Path, str], benchmarks: str, test_mode: bool) -
         fast_arg = []
 
     subprocess.call(
-        [
+        command_prefix
+        + [
             sys.executable,
             "-m",
             "pyperformance",
@@ -55,13 +68,86 @@ def run_benchmarks(python: Union[Path, str], benchmarks: str, test_mode: bool) -
     # We only want to fail if things are worse than that.
 
     if not Path(BENCHMARK_JSON).is_file():
-        print("No benchmark file created.")
-        sys.exit(1)
+        raise NoBenchmarkError("No benchmark file created.")
     with open(BENCHMARK_JSON) as fd:
         contents = json.load(fd)
     if len(contents.get("benchmarks", [])) == 0:
-        print("No benchmarks were run.")
-        sys.exit(1)
+        raise NoBenchmarkError("No benchmarks were run.")
+
+
+def perf_to_csv(lines: Iterable[str], output: Path):
+    rows = []
+    for line in lines:
+        line = line.strip()
+        if line.startswith("#") or line == "":
+            continue
+        children, self_time, _, shared, _, symbol = line.split(maxsplit=5)
+        children = float(children[:-1])
+        self = float(self_time[:-1])
+        if children > 0.0 or self > 0.0:
+            rows.append([self, children, shared, symbol])
+
+    rows.sort(key=lambda x: x[0], reverse=True)
+
+    with open(output, "w") as fd:
+        csvwriter = csv.writer(fd)
+        csvwriter.writerow(["self", "children", "object", "symbol"])
+        for row in rows:
+            csvwriter.writerow(row)
+
+
+def collect_perf(python: Union[Path, str], benchmarks: str):
+    if benchmarks.strip() == "":
+        benchmarks = "all"
+
+    output = subprocess.check_output(
+        [
+            sys.executable,
+            "-m",
+            "pyperformance",
+            "list",
+            "--manifest",
+            "benchmarks.manifest",
+            "--benchmarks",
+            benchmarks,
+        ],
+        encoding="utf-8",
+    )
+
+    all_benchmarks = [
+        line[2:].strip() for line in output.splitlines() if line.startswith("- ")
+    ]
+
+    perf_data = Path("perf.data")
+    for benchmark in all_benchmarks:
+        if perf_data.exists():
+            perf_data.unlink()
+
+        try:
+            run_benchmarks(
+                python,
+                benchmark,
+                ["perf", "record", "--call-graph=dwarf", "-o", "perf.data", "--"],
+            )
+        except NoBenchmarkError:
+            pass
+        else:
+            if perf_data.exists():
+                output = subprocess.check_output(
+                    [
+                        "perf",
+                        "report",
+                        "--stdio",
+                        "-g",
+                        "none",
+                        "-i",
+                        "perf.data",
+                    ],
+                    encoding="utf-8",
+                )
+                perf_to_csv(
+                    output.splitlines(), PROFILING_RESULTS / f"{benchmark}.perf.csv"
+                )
 
 
 def update_metadata(
@@ -157,10 +243,14 @@ def main(
     ref: str,
     benchmarks: str,
     publish: str,
+    perf: bool,
     test_mode: bool,
     run_id: Optional[str],
 ) -> None:
-    run_benchmarks(python, benchmarks, test_mode)
+    if perf:
+        collect_perf(python, benchmarks)
+    else:
+        run_benchmarks(python, benchmarks, [], test_mode)
     if mode == "benchmark":
         update_metadata(BENCHMARK_JSON, fork, ref, publish, run_id=run_id)
         copy_to_directory(BENCHMARK_JSON, python, fork, ref)
@@ -184,6 +274,7 @@ if __name__ == "__main__":
     parser.add_argument("ref", help="The git ref in the fork")
     parser.add_argument("benchmarks", help="The benchmarks to run")
     parser.add_argument("publish", help="Publish results to the public repo")
+    parser.add_argument("perf", help="Collect Linux perf profiling data")
     parser.add_argument(
         "--test_mode",
         action="store_true",
@@ -207,6 +298,7 @@ if __name__ == "__main__":
         args.ref,
         args.benchmarks,
         args.publish,
+        args.perf.lower() != "false",
         args.test_mode,
         args.run_id,
     )

@@ -128,6 +128,11 @@ $ gh workflow run benchmark.yml -f fork=me -f ref=my_branch
 
 Any of the parameters described above are available at the commandline using the `-f key=value` syntax.
 
+### Collecting Linux perf profiling data
+
+To collect Linux perf sampling profile data for a benchmarking run, run the `_benchmark` action and check the `perf` checkbox.
+Follow this by a run of the `_generate` action to regenerate the plots.
+
 ### Costs
 
 We are limited to 2,000 compute minutes per month.

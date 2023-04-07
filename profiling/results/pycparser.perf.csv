@@ -1,0 +1,1596 @@
+self,children,shared obj,symbol
+33.28,90.29,python,_PyEval_EvalFrameDefault
+12.2,15.03,python,sre_ucs1_match
+4.12,7.7,python,gc_collect_main
+2.4,2.49,libc-2.31.so,pthread_attr_setschedparam
+2.26,4.31,python,_PyObject_Malloc
+2.18,3.53,python,_Py_dict_lookup
+1.9,2.66,python,_PyObject_Free
+1.75,1.78,python,unicodekeys_lookup_unicode
+1.17,1.26,python,visit_decref
+1.15,1.15,python,PySlice_AdjustIndices
+1.11,2.5,python,subtype_traverse
+1.08,1.1,python,visit_reachable
+1.01,1.18,python,_PyFrame_ClearExceptCode
+1.0,1.0,python,initialize_locals
+0.96,0.97,libc-2.31.so,__nss_database_lookup
+0.9,0.95,python,_PyType_Lookup
+0.9,0.91,python,sre_ucs1_count
+0.89,0.89,python,pattern_new_match.isra.0.part.0
+0.84,3.07,python,subtype_dealloc
+0.82,18.78,python,_sre_SRE_Pattern_match
+0.81,1.04,python,list_ass_slice
+0.74,0.8,python,PyObject_IsTrue
+0.6,1.19,python,_PyObject_FreeInstanceAttributes
+0.6,0.67,python,PySlice_New
+0.58,3.62,python,list_dealloc
+0.58,0.69,python,long_neg
+0.53,0.69,python,PyNumber_AsSsize_t
+0.52,1.05,python,_PyObject_GenericGetAttrWithDict
+0.51,1.6,python,_PyEvalFramePushAndInit
+0.49,0.49,python,sre_ucs2_charset.isra.0
+0.47,21.79,python,PyObject_Vectorcall
+0.47,3.23,python,vectorcall_method
+0.47,1.43,python,dict_get
+0.47,1.18,python,PyType_GenericAlloc
+0.46,2.29,python,PyDict_GetItemWithError
+0.45,1.7,python,list_subscript
+0.44,0.44,python,_Py_NewReference
+0.42,0.42,libc-2.31.so,malloc
+0.38,0.38,python,PyObject_GC_UnTrack
+0.35,7.32,python,_PyObject_MakeTpCall
+0.35,0.36,python,slice_dealloc
+0.33,2.6,python,list_ass_subscript
+0.33,0.96,python,_PyObject_InitializeDict
+0.32,0.61,python,_PyEval_SliceIndex
+0.3,0.8,python,PySlice_Unpack
+0.3,0.55,python,_PyObject_GetMethod
+0.3,0.3,python,PySequence_Contains
+0.28,2.17,python,PyObject_GetItem
+0.28,0.44,python,tupledealloc
+0.26,0.26,python,PyList_New.constprop.0
+0.25,0.78,python,PyObject_GenericGetAttr
+0.25,0.25,python,PyObject_ClearWeakRefs
+0.25,0.25,python,PyNumber_Negative
+0.25,0.25,python,_PyThreadState_PopFrame
+0.24,0.98,python,PyObject_GetAttr
+0.24,0.79,python,_PyDict_FromItems
+0.24,0.47,python,insertdict
+0.24,0.24,python,_PyTrash_end
+0.23,0.23,python,PyLong_AsSsize_t
+0.23,0.23,python,_PyTrash_begin
+0.23,0.23,python,PyType_IsSubtype
+0.22,5.77,python,type_call
+0.2,0.34,python,PyLong_FromSsize_t
+0.2,0.27,python,getset_get
+0.19,2.18,python,object_new
+0.19,0.19,python,PyObject_GC_Del
+0.19,0.19,python,list_slice.isra.0
+0.19,0.19,python,PyUnicode_Contains
+0.19,0.19,python,convertitem
+0.19,0.19,python,_Py_CheckFunctionResult
+0.18,3.09,python,_PyObject_Call_Prepend
+0.18,1.2,python,_PyObject_LookupAttr
+0.18,1.12,python,_PyEval_Vector
+0.18,0.2,python,insert_to_emptydict
+0.17,1.13,python,object_isinstance
+0.17,0.37,python,list_traverse
+0.17,0.29,python,_PyObject_GetInstanceAttribute
+0.17,0.18,python,_PyLong_Subtract
+0.17,0.17,python,PyObject_Hash
+0.16,0.28,python,_PyUnicode_FromASCII
+0.16,0.16,python,_Py_Dealloc
+0.15,3.24,python,slot_tp_init
+0.15,0.16,python,_PyThreadState_PushFrame
+0.15,0.15,python,_PyFunction_Vectorcall
+0.15,0.15,python,PyObject_SetItem
+0.14,0.62,python,dict_dealloc
+0.14,0.29,python,vgetargs1_impl
+0.14,0.19,python,_PyBuildSlice_ConsumeRefs
+0.14,0.16,python,_PyObject_Realloc
+0.14,0.15,python,tuple_alloc
+0.14,0.14,python,_PyObject_GC_Link
+0.14,0.14,python,unicode_getitem
+0.13,18.82,python,method_vectorcall_FASTCALL_KEYWORDS_METHOD
+0.13,0.56,python,PyDict_Contains
+0.13,0.13,python,PyObject_DelItem
+0.12,2.53,python,slot_mp_ass_subscript
+0.12,1.42,python,method_vectorcall_VARARGS
+0.12,0.35,python,_PyStack_UnpackDict
+0.12,0.12,python,siphash13
+0.11,0.5,python,free_keys_object
+0.11,0.4,python,_PyObject_GC_New
+0.11,0.36,python,match_getslice_by_index
+0.11,0.32,python,_PyObject_GC_NewVar
+0.11,0.11,python,long_hash
+0.11,0.11,python,_PyThreadState_UncheckedGet
+0.1,0.1,python,PyDict_Next
+0.1,0.1,python,PyObject_Malloc
+0.1,0.1,python,PyErr_Occurred
+0.09,0.26,python,list_iter
+0.09,0.2,python,_PyTuple_FromArray
+0.09,0.16,python,PyObject_IsInstance
+0.09,0.09,python,PyObject_IS_GC
+0.09,0.09,libc-2.31.so,free
+0.09,0.09,python,PyObject_GC_Track
+0.08,0.15,python,_PyObject_LookupSpecial
+0.08,0.08,python,memset@plt
+0.08,0.08,python,PyObject_Free
+0.07,0.27,python,unicode_subscript
+0.07,0.19,python,dict_traverse
+0.07,0.15,python,_PyLong_Add
+0.07,0.14,python,any_find_slice
+0.07,0.07,python,PyObject_Size
+0.07,0.07,python,find_empty_slot
+0.06,0.5,python,match_group
+0.06,0.35,python,PyObject_GetIter
+0.06,0.12,python,PyTuple_New
+0.06,0.06,python,object_dealloc
+0.06,0.06,python,_PyTrash_cond
+0.06,0.06,python,PyMem_Malloc
+0.06,0.06,python,PyDescr_IsData
+0.05,0.34,python,builtin_getattr
+0.05,0.17,python,type_is_gc
+0.05,0.12,python,PyList_New
+0.05,0.05,python,advance
+0.05,0.05,python,listreviter_next
+0.05,0.05,python,listiter_dealloc
+0.05,0.05,python,PyMem_Free
+0.05,0.05,python,PyIndex_Check
+0.05,0.05,[kernel.kallsyms],clear_page_erms
+0.04,0.75,python,slot_sq_length
+0.04,0.51,python,unicode_rfind
+0.04,0.17,python,match_dealloc
+0.04,0.07,python,PyDict_New
+0.04,0.06,python,unicode_dealloc
+0.04,0.06,[kernel.kallsyms],zap_pte_range.isra.0
+0.04,0.05,python,_PyNumber_Index
+0.04,0.04,python,memcpy@plt
+0.04,0.04,python,unicode_count_impl
+0.04,0.04,libc-2.31.so,__libc_realloc
+0.04,0.04,python,PyMem_Realloc
+0.04,0.04,python,object_init
+0.03,0.21,python,r_object
+0.03,0.15,python,dict_vectorcall
+0.03,0.13,python,find_name_in_mro
+0.03,0.12,python,meth_dealloc
+0.03,0.1,python,_PyList_AppendTakeRefListResize (inlined)
+0.03,0.09,python,PyObject_RichCompare
+0.03,0.05,python,PyFunction_NewWithQualName
+0.03,0.04,python,PyUnicode_RichCompare
+0.03,0.03,python,PyBool_FromLong
+0.03,0.03,python,match_getindex.isra.0
+0.03,0.03,[kernel.kallsyms],native_irq_return_iret
+0.03,0.03,python,_PyCode_Quicken
+0.03,0.03,[kernel.kallsyms],sync_regs
+0.02,0.3,python,_PyArg_ParseTuple_SizeT
+0.02,0.14,python,_Py_HashBytes
+0.02,0.13,python,_PyList_FromArraySteal
+0.02,0.1,python,_PyDict_GetItem_KnownHash
+0.02,0.1,python,unicode_count
+0.02,0.08,python,update_one_slot
+0.02,0.08,python,PyUnicode_InternInPlace
+0.02,0.08,python,func_dealloc
+0.02,0.07,python,_PyObject_VisitManagedDict
+0.02,0.04,python,list_concat
+0.02,0.04,python,_PyType_AllocNoTrack
+0.02,0.04,python,_PyObject_Calloc
+0.02,0.04,python,_PyDict_MaybeUntrack
+0.02,0.03,python,list_insert
+0.02,0.03,python,type_traverse
+0.02,0.03,python,_Py_Specialize_LoadAttr
+0.02,0.02,python,_PyMem_RawFree
+0.02,0.02,python,0x00000000000fb668
+0.02,0.02,python,_sre_SRE_Match_end
+0.02,0.02,python,PyUnicode_Substring
+0.02,0.02,python,long_bool
+0.02,0.02,python,_PyPegen_is_memoized
+0.02,0.02,python,_PyMem_RawMalloc
+0.02,0.02,python,0x00000000000fb660
+0.02,0.02,python,PyUnicode_Concat
+0.02,0.02,python,object_get_class
+0.02,0.02,python,memmove@plt
+0.02,0.02,[kernel.kallsyms],rmqueue
+0.02,0.02,python,PyMember_GetOne
+0.02,0.02,python,list_length
+0.02,0.02,[kernel.kallsyms],_raw_spin_lock
+0.02,0.02,python,unicode_repr
+0.02,0.02,python,match_lastindex_get
+0.01,0.41,python,list_extend
+0.01,0.3,python,reversed_new_impl
+0.01,0.19,[kernel.kallsyms],do_user_addr_fault
+0.01,0.16,[kernel.kallsyms],__handle_mm_fault
+0.01,0.14,python,cfunction_vectorcall_NOARGS
+0.01,0.14,python,unicode_hash
+0.01,0.1,python,func_traverse
+0.01,0.09,python,PyObject_RichCompareBool
+0.01,0.08,python,list_sort_impl
+0.01,0.08,python,tuplecontains
+0.01,0.07,python,findchar
+0.01,0.07,[kernel.kallsyms],__alloc_pages_nodemask
+0.01,0.06,python,PyCMethod_New
+0.01,0.06,python,PyCode_Addr2Line
+0.01,0.05,python,list___reversed__
+0.01,0.05,python,allocate_from_new_pool
+0.01,0.04,python,PyObject_GenericSetAttr
+0.01,0.04,python,code_dealloc
+0.01,0.03,python,tupletraverse
+0.01,0.03,python,type_ready
+0.01,0.02,python,PyNumber_Multiply
+0.01,0.02,python,_Py_Specialize_Call
+0.01,0.02,[kernel.kallsyms],copy_user_enhanced_fast_string
+0.01,0.02,python,func_clear
+0.01,0.02,python,_PyTuple_FromArraySteal
+0.01,0.02,python,set_traverse
+0.01,0.02,[kernel.kallsyms],mem_cgroup_try_charge
+0.01,0.02,python,intern_string_constants
+0.01,0.02,python,_PyPegen_expect_token
+0.01,0.02,python,_PyTuple_MaybeUntrack
+0.01,0.01,[kernel.kallsyms],release_pages
+0.01,0.01,python,PyMem_Calloc
+0.01,0.01,python,_PyIO_find_line_ending
+0.01,0.01,[kernel.kallsyms],copy_pte_range.isra.0
+0.01,0.01,python,_PyUnicode_FromUCS1.part.0
+0.01,0.01,python,PyUnicode_FromFormatV
+0.01,0.01,ld-2.31.so,_dl_rtld_di_serinfo
+0.01,0.01,python,PyType_GetModule
+0.01,0.01,python,listreviter_dealloc
+0.01,0.01,python,unicode_ascii_iter_next
+0.01,0.01,python,method_get
+0.01,0.01,[kernel.kallsyms],page_remove_rmap
+0.01,0.01,python,PyDict_SetItem
+0.01,0.01,python,_PyUnicode_Equal
+0.01,0.01,python,list_contains
+0.01,0.01,python,_PyDict_SetItem_Take2
+0.01,0.01,python,list_richcompare
+0.01,0.01,python,PyMember_SetOne
+0.01,0.01,python,unicode_length
+0.01,0.01,python,long_mul
+0.01,0.01,python,_PyFrame_Traverse
+0.01,0.01,python,memcmp@plt
+0.01,0.01,python,specialize_py_call
+0.01,0.01,python,_PyUnicode_FromUCS4.part.0
+0.01,0.01,[kernel.kallsyms],get_mem_cgroup_from_mm
+0.01,0.01,python,ascii_decode
+0.01,0.01,python,_PyTuple_ClearFreeList
+0.01,0.01,[kernel.kallsyms],free_pcppages_bulk
+0.01,0.01,[kernel.kallsyms],find_get_entry
+0.01,0.01,python,tok_get
+0.01,0.01,python,_PyUnicode_IsDecimalDigit
+0.01,0.01,python,dictiter_iternextvalue
+0.01,0.01,python,r_string (inlined)
+0.01,0.01,[kernel.kallsyms],vm_normal_page
+0.01,0.01,python,_PyUnicode_JoinArray.part.0
+0.01,0.01,[kernel.kallsyms],error_entry
+0.01,0.01,[kernel.kallsyms],__count_memcg_events
+0.01,0.01,[kernel.kallsyms],vmacache_find
+0.01,0.01,python,PyObject_SelfIter
+0.01,0.01,python,member_set
+0.01,0.01,libpthread-2.31.so,__errno_location
+0.01,0.01,python,_PyUnicode_XStrip
+0.01,0.01,python,member_get
+0.01,0.01,python,pysiphash
+0.01,0.01,python,descr_traverse
+0.01,0.01,python,PyUnicode_New.part.0
+0.01,0.01,libpthread-2.31.so,__pthread_mutex_lock
+0.01,0.01,python,PyLong_FromString
+0.01,0.01,[kernel.kallsyms],mem_cgroup_throttle_swaprate
+0.0,89.93,python,Py_BytesMain
+0.0,89.93,python,pymain_main (inlined)
+0.0,89.9,libc-2.31.so,__libc_start_main
+0.0,89.88,python,_start
+0.0,89.87,python,Py_RunMain (inlined)
+0.0,89.83,python,PyEval_EvalCode
+0.0,89.83,python,_PyEval_EvalFrame (inlined)
+0.0,89.83,python,_PyEval_Vector (inlined)
+0.0,89.8,python,PyObject_Call
+0.0,89.76,python,do_call_core (inlined)
+0.0,88.76,python,pymain_run_python (inlined)
+0.0,88.01,python,run_mod
+0.0,87.99,python,run_eval_code_obj
+0.0,87.99,python,_PyRun_SimpleFileObject
+0.0,87.99,python,pyrun_file (inlined)
+0.0,87.98,python,_PyRun_AnyFileObject
+0.0,87.98,python,pymain_run_file (inlined)
+0.0,87.98,python,pymain_run_file_obj (inlined)
+0.0,21.66,python,_PyObject_VectorcallTstate (inlined)
+0.0,18.56,python,_sre_SRE_Pattern_match_impl (inlined)
+0.0,14.94,python,sre_match (inlined)
+0.0,6.72,python,Py_INCREF (inlined)
+0.0,6.49,python,_Py_HandlePending
+0.0,6.49,python,_Py_RunGC
+0.0,6.49,python,gc_collect_generations (inlined)
+0.0,6.49,python,gc_collect_with_callback (inlined)
+0.0,5.15,python,deduce_unreachable (inlined)
+0.0,3.05,python,Py_XDECREF (inlined)
+0.0,3.04,python,Py_DECREF (inlined)
+0.0,3.02,python,_PyObject_FastCallDictTstate (inlined)
+0.0,2.76,python,_PyObject_VectorcallTstate (inlined)
+0.0,2.76,python,vectorcall_unbound (inlined)
+0.0,2.27,python,move_unreachable (inlined)
+0.0,2.26,python,pymalloc_alloc (inlined)
+0.0,2.04,python,cfunction_vectorcall_FASTCALL_KEYWORDS
+0.0,2.03,python,traverse_slots (inlined)
+0.0,2.03,python,builtin_exec
+0.0,2.03,python,builtin_exec_impl (inlined)
+0.0,1.88,python,PyMem_RawMalloc (inlined)
+0.0,1.86,python,subtract_refs (inlined)
+0.0,1.86,libc-2.31.so,__libc_malloc (inlined)
+0.0,1.83,python,pymalloc_free (inlined)
+0.0,1.76,[unknown],0xffffffffffffffff
+0.0,1.57,python,_PyEvalFrameClearAndPop (inlined)
+0.0,1.51,python,clear_thread_frame (inlined)
+0.0,1.48,python,data_stack_grow (inlined)
+0.0,1.45,python,_PyGCHead_NEXT (inlined)
+0.0,1.43,python,_PyObject_IS_GC (inlined)
+0.0,1.4,python,_PyObject_VectorcallTstate (inlined)
+0.0,1.34,python,object_vacall
+0.0,1.34,python,PyObject_CallMethodObjArgs
+0.0,1.31,python,PyImport_ImportModuleLevelObject
+0.0,1.31,python,import_find_and_load (inlined)
+0.0,1.3,python,dict_get_impl (inlined)
+0.0,1.29,python,import_name (inlined)
+0.0,1.28,python,address_in_range (inlined)
+0.0,1.28,python,arena_map_is_used (inlined)
+0.0,1.27,python,pattern_new_match (inlined)
+0.0,1.25,python,pattern_new_match (inlined)
+0.0,1.25,python,state_init (inlined)
+0.0,1.16,python,Py_FinalizeEx (inlined)
+0.0,1.15,python,dictkeys_generic_lookup (inlined)
+0.0,1.03,python,state_fini (inlined)
+0.0,1.03,python,update_refs (inlined)
+0.0,1.03,python,gc_reset_refs (inlined)
+0.0,0.94,python,_PyType_AllocNoTrack (inlined)
+0.0,0.92,python,_PyRuntime+0x2ed52b3ab7
+0.0,0.87,python,init_inline_values (inlined)
+0.0,0.86,python,_Py_NewRef (inlined)
+0.0,0.83,python,Py_XDECREF (inlined)
+0.0,0.81,python,Py_DECREF (inlined)
+0.0,0.78,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.78,python,method_vectorcall
+0.0,0.78,python,pymain_run_module
+0.0,0.75,python,_PyObject_GenericGetAttrWithDict (inlined)
+0.0,0.75,python,PyMem_RawFree (inlined)
+0.0,0.74,python,_PyStack_AsDict (inlined)
+0.0,0.7,python,_PyBuildSlice_Consume2 (inlined)
+0.0,0.7,python,list_slice (inlined)
+0.0,0.65,python,Py_DECREF (inlined)
+0.0,0.65,python,gen_iternext
+0.0,0.64,python,_PyEval_EvalFrame (inlined)
+0.0,0.64,python,gen_send_ex2 (inlined)
+0.0,0.64,python,data_stack_dealloc (inlined)
+0.0,0.64,python,handle_resurrected_objects (inlined)
+0.0,0.64,python,clear_slots (inlined)
+0.0,0.62,python,new_values (inlined)
+0.0,0.61,python,Py_XDECREF (inlined)
+0.0,0.61,python,gc_list_size (inlined)
+0.0,0.59,python,sre_ucs1_charset (inlined)
+0.0,0.58,python,PyGC_Collect
+0.0,0.58,python,gc_collect_with_callback (inlined)
+0.0,0.58,python,untrack_tuples (inlined)
+0.0,0.57,python,arena_map_get (inlined)
+0.0,0.57,python,gc_get_refs (inlined)
+0.0,0.55,python,Py_DECREF (inlined)
+0.0,0.55,python,PyDict_SetItem (inlined)
+0.0,0.54,python,finalize_modules
+0.0,0.54,python,list_new_prealloc (inlined)
+0.0,0.54,python,_PyGC_CollectNoFail
+0.0,0.53,python,builtin___import__
+0.0,0.53,python,builtin___import___impl (inlined)
+0.0,0.52,python,gc_alloc (inlined)
+0.0,0.49,python,sre_ucs1_charset (inlined)
+0.0,0.49,python,_PyDict_SetItem_Take2 (inlined)
+0.0,0.46,python,Py_XDECREF (inlined)
+0.0,0.45,python,match_getslice (inlined)
+0.0,0.45,python,Py_DECREF (inlined)
+0.0,0.44,python,untrack_dicts (inlined)
+0.0,0.43,python,dictkeys_decref (inlined)
+0.0,0.43,python,PyList_New (inlined)
+0.0,0.4,python,_PyLong_FromSTwoDigits (inlined)
+0.0,0.39,python,pymalloc_pool_extend (inlined)
+0.0,0.37,python,list_vectorcall
+0.0,0.36,python,lookup_maybe_method (inlined)
+0.0,0.36,python,lookup_method (inlined)
+0.0,0.36,python,list___init___impl (inlined)
+0.0,0.36,python,_PyFrame_PushUnchecked (inlined)
+0.0,0.35,python,memset (inlined)
+0.0,0.34,python,_PyFrame_Initialize (inlined)
+0.0,0.33,python,delete_garbage (inlined)
+0.0,0.32,python,_PyObject_GC_UNTRACK (inlined)
+0.0,0.32,python,_PyFrame_Initialize (inlined)
+0.0,0.32,python,Py_DECREF (inlined)
+0.0,0.31,python,parse_args_finds_unicode (inlined)
+0.0,0.3,python,asciilib_parse_args_finds (inlined)
+0.0,0.29,python,builtin_getattr_impl (inlined)
+0.0,0.28,python,vgetargs1 (inlined)
+0.0,0.28,python,new_reference (inlined)
+0.0,0.26,python,_PyObject_GC_TRACK (inlined)
+0.0,0.26,python,getslice (inlined)
+0.0,0.26,python,_PyVectorcall_FunctionInline (inlined)
+0.0,0.25,python,Py_INCREF (inlined)
+0.0,0.25,python,_Py_NewRef (inlined)
+0.0,0.25,python,_PyStack_UnpackDict_Free (inlined)
+0.0,0.24,python,subtype_clear
+0.0,0.24,[kernel.kallsyms],page_fault
+0.0,0.23,python,memcpy (inlined)
+0.0,0.23,python,Py_SET_REFCNT (inlined)
+0.0,0.23,[kernel.kallsyms],entry_SYSCALL_64_after_hwframe
+0.0,0.23,[kernel.kallsyms],do_syscall_64
+0.0,0.23,python,builtin___build_class__
+0.0,0.22,python,_PyThreadState_HasStackSpace (inlined)
+0.0,0.21,libc-2.31.so,realloc (inlined)
+0.0,0.21,python,DK_UNICODE_ENTRIES (inlined)
+0.0,0.21,python,_DK_ENTRIES (inlined)
+0.0,0.2,python,marshal_loads
+0.0,0.2,python,get_small_int (inlined)
+0.0,0.2,python,read_object
+0.0,0.2,python,marshal_loads_impl (inlined)
+0.0,0.2,python,Py_INCREF (inlined)
+0.0,0.19,python,unicode_eq (inlined)
+0.0,0.19,python,lookup_maybe_method (inlined)
+0.0,0.19,python,lookup_method (inlined)
+0.0,0.19,[kernel.kallsyms],__do_page_fault
+0.0,0.19,python,Py_INCREF (inlined)
+0.0,0.19,python,_Py_NewRef (inlined)
+0.0,0.19,[kernel.kallsyms],do_page_fault
+0.0,0.18,python,Py_DECREF (inlined)
+0.0,0.18,python,_PyGCHead_SET_PREV (inlined)
+0.0,0.18,python,_PyGCHead_SET_PREV (inlined)
+0.0,0.17,python,list_resize (inlined)
+0.0,0.17,python,_PyLong_New (inlined)
+0.0,0.17,python,dictkeys_get_index (inlined)
+0.0,0.17,python,insert_to_usedpool (inlined)
+0.0,0.17,[kernel.kallsyms],handle_mm_fault
+0.0,0.17,python,_PyLong_CompactValue (inlined)
+0.0,0.17,python,_PyDictKeys_StringLookup (inlined)
+0.0,0.16,python,_DK_ENTRIES (inlined)
+0.0,0.16,python,_PyList_AppendTakeRef (inlined)
+0.0,0.16,python,Py_XDECREF (inlined)
+0.0,0.16,python,_PyObject_CallFunctionVa
+0.0,0.15,python,_PyLong_FromMedium (inlined)
+0.0,0.15,python,wrap_next
+0.0,0.14,python,PyObject_CallOneArg
+0.0,0.14,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.14,python,maybe_freelist_pop (inlined)
+0.0,0.14,python,_PyFrame_SetStackPointer (inlined)
+0.0,0.14,python,_PyFrame_StackPush (inlined)
+0.0,0.14,python,Py_DECREF (inlined)
+0.0,0.14,python,PyUnicode_DATA (inlined)
+0.0,0.14,python,memcpy (inlined)
+0.0,0.14,python,_PyUnicode_COMPACT_DATA (inlined)
+0.0,0.14,python,_PyObject_GC_TRACK (inlined)
+0.0,0.13,python,move_legacy_finalizers (inlined)
+0.0,0.13,python,bounded_lru_cache_wrapper
+0.0,0.13,python,_PyGCHead_SET_PREV (inlined)
+0.0,0.13,python,_PyNumber_Index (inlined)
+0.0,0.13,python,_PyVectorcall_FunctionInline (inlined)
+0.0,0.13,python,DK_ENTRIES (inlined)
+0.0,0.13,python,_Py_EnterRecursivePy (inlined)
+0.0,0.13,python,clear_unreachable_mask (inlined)
+0.0,0.13,python,Py_INCREF (inlined)
+0.0,0.13,python,_Py_NewRef (inlined)
+0.0,0.12,python,_PyGCHead_SET_NEXT (inlined)
+0.0,0.12,python,Py_XDECREF (inlined)
+0.0,0.12,python,PyObject_TypeCheck (inlined)
+0.0,0.12,python,_PyLong_FromSTwoDigits (inlined)
+0.0,0.12,python,Py_DECREF (inlined)
+0.0,0.12,[kernel.kallsyms],do_anonymous_page
+0.0,0.12,python,finalize_garbage (inlined)
+0.0,0.12,python,_PyObject_GC_TRACK (inlined)
+0.0,0.12,python,Py_DECREF (inlined)
+0.0,0.12,python,type_new
+0.0,0.12,python,_PyDictValues_AddToInsertionOrder (inlined)
+0.0,0.12,python,list_item (inlined)
+0.0,0.11,python,match_getindex (inlined)
+0.0,0.11,python,Py_DECREF (inlined)
+0.0,0.11,python,new_keys_object (inlined)
+0.0,0.11,python,type_new_impl (inlined)
+0.0,0.11,python,handle_weakrefs (inlined)
+0.0,0.11,python,data_start+0x4820e8803f
+0.0,0.11,python,_Py_DECREF_NO_DEALLOC (inlined)
+0.0,0.11,python,_PyIndex_Check (inlined)
+0.0,0.11,python,dictkeys_get_index (inlined)
+0.0,0.11,python,Py_DECREF (inlined)
+0.0,0.11,python,PyObject_VectorcallDict
+0.0,0.11,python,_PyObject_FastCallDictTstate (inlined)
+0.0,0.11,python,_PyType_PreHeaderSize (inlined)
+0.0,0.11,python,get_small_int (inlined)
+0.0,0.11,python,_PyGCHead_SET_NEXT (inlined)
+0.0,0.11,python,convertsimple (inlined)
+0.0,0.11,python,_PyLong_FromMedium (inlined)
+0.0,0.11,python,_PyLong_FromSTwoDigits (inlined)
+0.0,0.11,python,gc_clear_collecting (inlined)
+0.0,0.1,python,object_recursive_isinstance (inlined)
+0.0,0.1,python,gc_list_move (inlined)
+0.0,0.1,python,PyObject_TypeCheck (inlined)
+0.0,0.1,python,descr_check (inlined)
+0.0,0.1,python,dict_new_presized (inlined)
+0.0,0.1,python,_PyObject_GC_UNTRACK (inlined)
+0.0,0.1,python,get_latin1_char (inlined)
+0.0,0.1,python,unicode_char (inlined)
+0.0,0.1,python,Py_DECREF (inlined)
+0.0,0.1,python,PyUnicode_New (inlined)
+0.0,0.1,python,Py_INCREF (inlined)
+0.0,0.1,python,_Py_NewRef (inlined)
+0.0,0.1,python,_Py_LeaveRecursiveCallPy (inlined)
+0.0,0.1,python,gc_isenabled
+0.0,0.09,python,_PyPegen_run_parser_from_string
+0.0,0.09,python,slot_tp_new
+0.0,0.09,python,Py_INCREF (inlined)
+0.0,0.09,python,_Py_NewRef (inlined)
+0.0,0.09,python,pymalloc_realloc (inlined)
+0.0,0.09,python,_PyPegen_parse
+0.0,0.09,python,_PyPegen_run_parser
+0.0,0.09,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.09,python,vectorcall_method (inlined)
+0.0,0.09,python,vectorcall_unbound (inlined)
+0.0,0.09,python,memset (inlined)
+0.0,0.09,python,memset (inlined)
+0.0,0.09,python,_PyDict_Next (inlined)
+0.0,0.09,python,_keywords.22890+0xffffffd623f0002f
+0.0,0.09,python,gc_list_clear_collecting (inlined)
+0.0,0.09,libc-2.31.so,cfree (inlined)
+0.0,0.09,python,Py_XINCREF (inlined)
+0.0,0.09,python,_Py_XNewRef (inlined)
+0.0,0.09,python,_PyFrame_GetStackPointer (inlined)
+0.0,0.09,python,PyDict_SetItem (inlined)
+0.0,0.09,python,Py_CompileStringObject
+0.0,0.09,python,builtin_compile
+0.0,0.09,python,builtin_compile_impl (inlined)
+0.0,0.08,python,list_resize (inlined)
+0.0,0.08,python,_PyDict_SetItem_Take2 (inlined)
+0.0,0.08,python,Py_INCREF (inlined)
+0.0,0.08,python,_PyLong_CompactValue (inlined)
+0.0,0.08,python,_PyType_PreHeaderSize (inlined)
+0.0,0.08,python,PyRun_StringFlags
+0.0,0.08,[kernel.kallsyms],alloc_pages_vma
+0.0,0.08,python,do_richcompare (inlined)
+0.0,0.08,python,expression_rule
+0.0,0.07,python,PyObject_SetAttr
+0.0,0.07,python,_PyUnicode_InternInPlace (inlined)
+0.0,0.07,python,PyObject_Str
+0.0,0.07,python,fixup_slot_dispatchers (inlined)
+0.0,0.07,python,PyDict_SetDefault
+0.0,0.07,python,_PyObject_IS_GC (inlined)
+0.0,0.07,[kernel.kallsyms],get_page_from_freelist
+0.0,0.07,python,_loop1_3_rule (inlined)
+0.0,0.07,python,file_rule (inlined)
+0.0,0.07,python,statement_rule (inlined)
+0.0,0.07,python,statements_rule
+0.0,0.07,python,findchar (inlined)
+0.0,0.07,python,PyObject_CallFunction
+0.0,0.07,python,list_sort
+0.0,0.07,python,PyList_SET_ITEM (inlined)
+0.0,0.06,python,ucs1lib_rfind_char (inlined)
+0.0,0.06,python,builtin_next
+0.0,0.06,python,builtin_next_impl (inlined)
+0.0,0.06,python,cfunction_vectorcall_FASTCALL
+0.0,0.06,python,_PyGCHead_SET_NEXT (inlined)
+0.0,0.06,python,parse_args_finds_unicode (inlined)
+0.0,0.06,python,Py_InitializeFromConfig
+0.0,0.06,python,pymain_init
+0.0,0.06,[unknown],0x0000000000000285
+0.0,0.06,python,_PyObject_CallNoArgs (inlined)
+0.0,0.06,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.06,python,_PyObject_GC_TRACK (inlined)
+0.0,0.06,python,_io_open
+0.0,0.06,python,_io_open_impl (inlined)
+0.0,0.06,python,bitwise_or_raw (inlined)
+0.0,0.06,python,bitwise_or_rule
+0.0,0.06,python,comparison_rule (inlined)
+0.0,0.06,python,conjunction_rule
+0.0,0.06,python,disjunction_rule
+0.0,0.06,python,inversion_rule
+0.0,0.06,python,bitwise_and_rule
+0.0,0.06,[unknown],0x0000000000000001
+0.0,0.06,python,bitwise_xor_rule
+0.0,0.06,python,memmove (inlined)
+0.0,0.06,python,PyLong_FromLong (inlined)
+0.0,0.06,python,get_small_int (inlined)
+0.0,0.06,python,PyTraceBack_Here
+0.0,0.06,python,slot_tp_iternext
+0.0,0.06,python,bitwise_xor_raw (inlined)
+0.0,0.06,python,sum_rule
+0.0,0.06,python,shift_expr_rule
+0.0,0.06,python,bitwise_and_raw (inlined)
+0.0,0.06,python,shift_expr_raw (inlined)
+0.0,0.06,python,sum_raw (inlined)
+0.0,0.06,[kernel.kallsyms],unmap_page_range
+0.0,0.06,[kernel.kallsyms],unmap_single_vma
+0.0,0.06,[kernel.kallsyms],unmap_vmas
+0.0,0.06,python,_PyTraceBack_FromFrame
+0.0,0.06,python,new_dict (inlined)
+0.0,0.06,python,asciilib_find_char (inlined)
+0.0,0.06,python,asciilib_parse_args_finds (inlined)
+0.0,0.06,python,term_rule
+0.0,0.06,python,_PyHeapType_GET_MEMBERS (inlined)
+0.0,0.06,python,cfunction_vectorcall_O
+0.0,0.06,python,term_raw (inlined)
+0.0,0.06,python,get_latin1_char (inlined)
+0.0,0.05,python,_PyCode_New
+0.0,0.05,python,_PyCode_CheckLineNumber (inlined)
+0.0,0.05,python,Py_INCREF (inlined)
+0.0,0.05,python,_Py_NewRef (inlined)
+0.0,0.05,python,primary_rule
+0.0,0.05,python,await_primary_rule
+0.0,0.05,python,factor_rule
+0.0,0.05,python,power_rule (inlined)
+0.0,0.05,[unknown],0x0000000000000002
+0.0,0.05,python,memcpy (inlined)
+0.0,0.05,python,Py_INCREF (inlined)
+0.0,0.05,python,primary_raw (inlined)
+0.0,0.05,python,method_vectorcall_FASTCALL_KEYWORDS
+0.0,0.05,python,_PyDict_NotifyEvent (inlined)
+0.0,0.05,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.05,python,_PyThreadState_GET (inlined)
+0.0,0.05,python,_PyLineTable_NextAddressRange (inlined)
+0.0,0.05,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.05,python,slot_mp_subscript
+0.0,0.05,python,vectorcall_method (inlined)
+0.0,0.05,python,vectorcall_unbound (inlined)
+0.0,0.05,python,_PyObject_Init (inlined)
+0.0,0.05,python,simple_stmt_rule
+0.0,0.05,python,simple_stmts_rule
+0.0,0.05,python,PyObject_CallMethod
+0.0,0.05,python,Py_INCREF (inlined)
+0.0,0.05,python,_PyInterpreterState_GET (inlined)
+0.0,0.05,python,get_type_cache (inlined)
+0.0,0.05,python,_PyObject_CallNoArgs (inlined)
+0.0,0.05,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.05,python,_bufferedreader_read_all (inlined)
+0.0,0.05,python,_io_FileIO_readall_impl (inlined)
+0.0,0.05,python,_io__Buffered_read_impl (inlined)
+0.0,0.05,python,list___reversed___impl (inlined)
+0.0,0.05,python,PyImport_Import
+0.0,0.05,python,PyTuple_GET_SIZE (inlined)
+0.0,0.05,python,Py_SIZE (inlined)
+0.0,0.05,python,_io__Buffered_read
+0.0,0.05,python,_PyGCHead_SET_PREV (inlined)
+0.0,0.05,[kernel.kallsyms],exit_mmap
+0.0,0.05,[kernel.kallsyms],mmput
+0.0,0.05,libpthread-2.31.so,__libc_read (inlined)
+0.0,0.05,python,_Py_read
+0.0,0.05,python,read (inlined)
+0.0,0.05,python,callmethod (inlined)
+0.0,0.05,python,_PyObject_CallFunction_SizeT
+0.0,0.05,python,_PyIndex_Check (inlined)
+0.0,0.05,python,PyTuple_GET_SIZE (inlined)
+0.0,0.05,python,Py_SIZE (inlined)
+0.0,0.05,python,_PyLong_CompactValue (inlined)
+0.0,0.05,python,os_stat
+0.0,0.05,python,_PyType_HasFeature (inlined)
+0.0,0.05,python,method_vectorcall_FASTCALL
+0.0,0.05,[stack],0x00007ffc13890eaf
+0.0,0.05,python,_PyType_PreHeaderSize (inlined)
+0.0,0.05,python,posix_do_stat (inlined)
+0.0,0.05,python,Py_INCREF (inlined)
+0.0,0.05,python,_Py_NewRef (inlined)
+0.0,0.05,python,_PyGCHead_SET_PREV (inlined)
+0.0,0.05,python,shared_keys_usable_size (inlined)
+0.0,0.04,python,_PyGCHead_PREV (inlined)
+0.0,0.04,python,os_stat_impl (inlined)
+0.0,0.04,[kernel.kallsyms],ksys_read
+0.0,0.04,python,maybe_freelist_push (inlined)
+0.0,0.04,python,PyObject_VectorcallMethod
+0.0,0.04,python,dict_new (inlined)
+0.0,0.04,python,init_interp_main
+0.0,0.04,python,pyinit_main
+0.0,0.04,python,_PyObject_GenericSetAttrWithDict (inlined)
+0.0,0.04,python,named_expression_rule
+0.0,0.04,[kernel.kallsyms],__x64_sys_read
+0.0,0.04,python,_PyAST_Compile
+0.0,0.04,anon,0x00007f2e921cba7f
+0.0,0.04,python,getstring (inlined)
+0.0,0.04,python,address_in_range (inlined)
+0.0,0.04,python,arena_map_is_used (inlined)
+0.0,0.04,[kernel.kallsyms],vfs_read
+0.0,0.04,python,assignment_rule
+0.0,0.04,python,Py_DECREF (inlined)
+0.0,0.04,python,_PyGCHead_SET_NEXT (inlined)
+0.0,0.04,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.04,python,new_keys_object
+0.0,0.04,python,atom_rule
+0.0,0.04,python,cfunction_call
+0.0,0.04,python,type_clear
+0.0,0.04,python,Py_DECREF (inlined)
+0.0,0.04,python,excess_args (inlined)
+0.0,0.04,[stack],0x00007ffd64d3598f
+0.0,0.04,python,Py_INCREF (inlined)
+0.0,0.04,python,_Py_NewRef (inlined)
+0.0,0.04,python,_PyObject_GET_WEAKREFS_LISTPTR (inlined)
+0.0,0.04,python,_PyObject_GC_MAY_BE_TRACKED (inlined)
+0.0,0.04,python,module_getattro
+0.0,0.04,python,PyObject_TypeCheck (inlined)
+0.0,0.04,python,method_vectorcall_O
+0.0,0.04,python,builtin_eval
+0.0,0.04,python,builtin_eval_impl (inlined)
+0.0,0.04,python,PyImport_ImportModule
+0.0,0.04,python,_PyLong_CompactValue (inlined)
+0.0,0.04,[kernel.kallsyms],__vfs_read
+0.0,0.04,python,_PyIndex_Check (inlined)
+0.0,0.04,python,_PyType_Lookup (inlined)
+0.0,0.04,python,compiler_mod (inlined)
+0.0,0.04,python,PyDict_Clear (inlined)
+0.0,0.04,python,dict_tp_clear
+0.0,0.04,python,cfunction_call
+0.0,0.04,python,target_with_star_atom_rule
+0.0,0.04,python,_loop1_14_rule (inlined)
+0.0,0.04,python,_tmp_224_rule (inlined)
+0.0,0.04,python,star_target_rule
+0.0,0.04,python,star_targets_rule
+0.0,0.04,[stack],0x00007ffe227fb9cf
+0.0,0.04,python,data_stack_grow
+0.0,0.04,python,Py_DECREF (inlined)
+0.0,0.04,[kernel.kallsyms],new_sync_read
+0.0,0.04,python,PyModule_ExecDef
+0.0,0.04,python,_PyObject_GC_MAY_BE_TRACKED (inlined)
+0.0,0.04,python,_Py_LeaveRecursiveCallTstate (inlined)
+0.0,0.04,[kernel.kallsyms],__do_munmap
+0.0,0.04,python,_tmp_110_rule (inlined)
+0.0,0.04,python,_tmp_91_rule (inlined)
+0.0,0.04,python,tuple_rule (inlined)
+0.0,0.04,python,DK_UNICODE_ENTRIES (inlined)
+0.0,0.04,python,compound_stmt_rule
+0.0,0.03,[kernel.kallsyms],generic_file_read_iter
+0.0,0.03,[stack],0x00007fff6598f99f
+0.0,0.03,python,_PyObject_GC_TRACK (inlined)
+0.0,0.03,[kernel.kallsyms],ext4_file_read_iter
+0.0,0.03,python,_PyInterpreterState_GET (inlined)
+0.0,0.03,python,t_primary_raw (inlined)
+0.0,0.03,python,t_primary_rule
+0.0,0.03,python,insert_to_freepool (inlined)
+0.0,0.03,[unknown],0x00030000fffffffe
+0.0,0.03,python,PyUnicode_New (inlined)
+0.0,0.03,python,_gather_82_rule (inlined)
+0.0,0.03,python,star_named_expressions_rule
+0.0,0.03,python,PyIter_Check (inlined)
+0.0,0.03,python,compiler_codegen
+0.0,0.03,python,_PyEval_EvalFrame (inlined)
+0.0,0.03,python,_io__IOBase_readlines
+0.0,0.03,python,_io__IOBase_readlines_impl (inlined)
+0.0,0.03,python,PyFile_OpenCodeObject
+0.0,0.03,python,_io_open_code
+0.0,0.03,python,_io_open_code_impl (inlined)
+0.0,0.03,[stack],0x00007ffe5e10805f
+0.0,0.03,python,_PyUnicode_FromUCS1 (inlined)
+0.0,0.03,python,Py_INCREF (inlined)
+0.0,0.03,python,_Py_NewRef (inlined)
+0.0,0.03,python,Py_SIZE (inlined)
+0.0,0.03,python,slot_tp_str
+0.0,0.03,python,getstring (inlined)
+0.0,0.03,[kernel.kallsyms],generic_file_buffered_read
+0.0,0.03,python,_io_FileIO___init__
+0.0,0.03,python,_io_FileIO___init___impl (inlined)
+0.0,0.03,python,_imp_create_dynamic
+0.0,0.03,python,_imp_create_dynamic_impl (inlined)
+0.0,0.03,python,gc_decref (inlined)
+0.0,0.03,python,slot_tp_descr_get
+0.0,0.03,python,_loop0_83_rule (inlined)
+0.0,0.03,python,_PyObject_CallNoArgs (inlined)
+0.0,0.03,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.03,python,_PyGCHead_SET_PREV (inlined)
+0.0,0.03,python,tp_new_wrapper
+0.0,0.03,python,block_rule
+0.0,0.03,python,function_def_rule (inlined)
+0.0,0.03,python,star_named_expression_rule
+0.0,0.03,libc-2.31.so,__xstat64 (inlined)
+0.0,0.03,python,stat64 (inlined)
+0.0,0.03,python,PyObject_Dir
+0.0,0.03,python,_dir_object (inlined)
+0.0,0.03,python,Py_DECREF (inlined)
+0.0,0.03,python,Py_XDECREF (inlined)
+0.0,0.03,[kernel.kallsyms],__x64_sys_exit_group
+0.0,0.03,[kernel.kallsyms],do_exit
+0.0,0.03,[kernel.kallsyms],do_group_exit
+0.0,0.03,python,star_named_expression_rule (inlined)
+0.0,0.03,python,_tmp_92_rule (inlined)
+0.0,0.03,python,list_rule (inlined)
+0.0,0.03,python,init_code (inlined)
+0.0,0.03,[stack],0x00007ffc1392106f
+0.0,0.03,anon,0x00007f2bec078a8f
+0.0,0.03,[kernel.kallsyms],unmap_region
+0.0,0.03,python,Py_INCREF (inlined)
+0.0,0.03,python,_Py_NewRef (inlined)
+0.0,0.03,anon,0x00007f30ed1eaa7f
+0.0,0.03,anon,0x00007fda6c353a7f
+0.0,0.03,[kernel.kallsyms],__x64_sys_newstat
+0.0,0.03,python,function_def_raw_rule
+0.0,0.03,[kernel.kallsyms],mem_cgroup_try_charge_delay
+0.0,0.03,python,_PyObject_Init (inlined)
+0.0,0.03,python,PyVectorcall_Function (inlined)
+0.0,0.03,python,_PyVectorcall_FunctionInline (inlined)
+0.0,0.03,anon,0x00007fb536970a7f
+0.0,0.03,python,finalize_interp_clear
+0.0,0.03,[kernel.kallsyms],__do_sys_newstat
+0.0,0.03,[kernel.kallsyms],__vm_munmap
+0.0,0.03,[kernel.kallsyms],__x64_sys_munmap
+0.0,0.03,libc-2.31.so,__munmap (inlined)
+0.0,0.03,python,PyErr_Format
+0.0,0.03,[stack],0x00007fff6871f01f
+0.0,0.03,[stack],0x00007ffc8977d4cf
+0.0,0.03,python,Py_INCREF (inlined)
+0.0,0.03,python,_Py_NewRef (inlined)
+0.0,0.03,[stack],0x00007ffc4aacb4cf
+0.0,0.03,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.03,python,_PyThreadState_GET (inlined)
+0.0,0.03,anon,0x00007f860378fa7f
+0.0,0.03,python,_PyThreadState_HasStackSpace (inlined)
+0.0,0.03,anon,0x00007fe780b67a7f
+0.0,0.03,python,sre_category (inlined)
+0.0,0.03,anon,0x00007f88790afa7f
+0.0,0.03,python,Py_SET_SIZE (inlined)
+0.0,0.03,python,gc_set_refs (inlined)
+0.0,0.03,python,Py_XDECREF (inlined)
+0.0,0.03,anon,0x00007f0a86428a7f
+0.0,0.03,python,eval_rule (inlined)
+0.0,0.03,python,expressions_rule
+0.0,0.03,python,_PyErr_FormatV (inlined)
+0.0,0.03,python,_imp_exec_builtin
+0.0,0.03,python,_PyTrash_get_state (inlined)
+0.0,0.03,[kernel.kallsyms],vfs_statx
+0.0,0.03,python,_PyImport_LoadDynamicModuleWithSpec
+0.0,0.03,python,_gather_111_rule (inlined)
+0.0,0.03,python,_loop0_112_rule (inlined)
+0.0,0.03,python,_tmp_93_rule (inlined)
+0.0,0.03,python,dict_rule (inlined)
+0.0,0.03,python,double_starred_kvpair_rule (inlined)
+0.0,0.03,python,double_starred_kvpairs_rule (inlined)
+0.0,0.03,python,kvpair_rule
+0.0,0.02,anon,0x00007f2beb761cff
+0.0,0.02,python,lambdef_rule
+0.0,0.02,anon,0x00007f9a0e52fa7f
+0.0,0.02,python,builtin_hasattr
+0.0,0.02,python,builtin_hasattr_impl (inlined)
+0.0,0.02,[unknown],0x00000000000000fe
+0.0,0.02,python,_PyType_HasFeature (inlined)
+0.0,0.02,python,method_enter_call (inlined)
+0.0,0.02,python,current_fast_get (inlined)
+0.0,0.02,anon,0x00007fe803f9ba7f
+0.0,0.02,python,gc_list_append (inlined)
+0.0,0.02,anon,0x00007fdae176ea7f
+0.0,0.02,[kernel.kallsyms],copy_page_to_iter
+0.0,0.02,python,match_clear (inlined)
+0.0,0.02,python,dict_merge
+0.0,0.02,python,_PyObject_GC_IS_TRACKED (inlined)
+0.0,0.02,[unknown],0x000000000000001e
+0.0,0.02,python,data_start+0xffffffd623f0145f
+0.0,0.02,python,data_start+0xffffff710e29901f
+0.0,0.02,anon,0x00007f30ec9338ff
+0.0,0.02,python,_Py_EnterRecursiveCallTstate (inlined)
+0.0,0.02,python,method_check_args (inlined)
+0.0,0.02,python,_PyGCHead_SET_NEXT (inlined)
+0.0,0.02,python,Py_INCREF (inlined)
+0.0,0.02,python,_Py_NewRef (inlined)
+0.0,0.02,python,_Py_EnterRecursiveCallTstate (inlined)
+0.0,0.02,anon,0x00007fd1f5d7ea7f
+0.0,0.02,python,PyTuple_GET_SIZE (inlined)
+0.0,0.02,python,os_listdir
+0.0,0.02,python,os_listdir_impl (inlined)
+0.0,0.02,anon,0x00007f6746d15a7f
+0.0,0.02,python,_posix_listdir (inlined)
+0.0,0.02,python,arena_map_get (inlined)
+0.0,0.02,python,_Py_LeaveRecursiveCall (inlined)
+0.0,0.02,python,stringio_iternext
+0.0,0.02,python,_stringio_readline (inlined)
+0.0,0.02,python,compiler_body
+0.0,0.02,python,compiler_visit_stmt
+0.0,0.02,[unknown],0x00000000ffffffff
+0.0,0.02,python,_PyObject_VAR_SIZE (inlined)
+0.0,0.02,python,Py_INCREF (inlined)
+0.0,0.02,python,_Py_NewRef (inlined)
+0.0,0.02,python,PyType_Ready (inlined)
+0.0,0.02,python,data_start+0xffffff80a3d0119f
+0.0,0.02,[unknown],0xfffffffffffffffe
+0.0,0.02,python,_PyImport_FindSharedFuncptr
+0.0,0.02,python,free_values (inlined)
+0.0,0.02,python,has_legacy_finalizer (inlined)
+0.0,0.02,python,dictresize
+0.0,0.02,python,class_def_raw_rule
+0.0,0.02,python,class_def_rule (inlined)
+0.0,0.02,python,_PyObject_GC_TRACK (inlined)
+0.0,0.02,python,unicode_compare_eq (inlined)
+0.0,0.02,anon,0x00007fdae0eb7a3f
+0.0,0.02,python,_PyType_HasFeature (inlined)
+0.0,0.02,python,_PyObject_VAR_SIZE (inlined)
+0.0,0.02,anon,0x00007f10af82fa7f
+0.0,0.02,anon,0x00007f8297dc9a7f
+0.0,0.02,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.02,python,_PyThreadState_GET (inlined)
+0.0,0.02,python,method_enter_call (inlined)
+0.0,0.02,anon,0x00007fcd5f3f4a7f
+0.0,0.02,python,dictkeys_set_index (inlined)
+0.0,0.02,python,_PyObject_GC_UNTRACK (inlined)
+0.0,0.02,python,_PyGCHead_SET_PREV (inlined)
+0.0,0.02,python,slot_tp_iter
+0.0,0.02,python,_PyTrash_clear_state (inlined)
+0.0,0.02,python,_Py_CheckFunctionResult (inlined)
+0.0,0.02,python,pymalloc_alloc (inlined)
+0.0,0.02,python,_PyErr_Occurred (inlined)
+0.0,0.02,python,PyDict_DelItem
+0.0,0.02,python,_PyDict_DelItem_KnownHash (inlined)
+0.0,0.02,python,assemble
+0.0,0.02,python,assemble_code_unit (inlined)
+0.0,0.02,ld-2.31.so,_dl_find_dso_for_object
+0.0,0.02,libc-2.31.so,_dl_catch_error
+0.0,0.02,libc-2.31.so,_dl_catch_exception
+0.0,0.02,libdl-2.31.so,dlerror
+0.0,0.02,libdl-2.31.so,dlopen
+0.0,0.02,python,partial_call
+0.0,0.02,python,partial_vectorcall
+0.0,0.02,python,Py_DECREF (inlined)
+0.0,0.02,python,map_next
+0.0,0.02,python,_PyObject_GC_MAY_BE_TRACKED (inlined)
+0.0,0.02,python,PySequence_Tuple
+0.0,0.02,python,init_import_site (inlined)
+0.0,0.02,_posixsubprocess.cpython-312-x86_64-linux-gnu.so,subprocess_fork_exec
+0.0,0.02,python,PyUnicode_GET_LENGTH (inlined)
+0.0,0.02,python,_Py_slot_tp_getattr_hook
+0.0,0.02,[kernel.kallsyms],__x64_sys_openat
+0.0,0.02,[kernel.kallsyms],do_sys_open
+0.0,0.02,[kernel.kallsyms],__do_execve_file.isra.0
+0.0,0.02,[kernel.kallsyms],__x64_sys_execve
+0.0,0.02,[kernel.kallsyms],flush_old_exec
+0.0,0.02,[kernel.kallsyms],load_elf_binary
+0.0,0.02,[kernel.kallsyms],search_binary_handler
+0.0,0.02,python,call_unbound_noarg (inlined)
+0.0,0.02,python,unpack_iterable (inlined)
+0.0,0.02,anon,0x00007f3080a49cbf
+0.0,0.02,anon,0x00007f829752f73f
+0.0,0.02,python,_PyErr_Occurred (inlined)
+0.0,0.02,python,list_new_prealloc (inlined)
+0.0,0.02,python,Py_INCREF (inlined)
+0.0,0.02,python,_Py_NewRef (inlined)
+0.0,0.02,[kernel.kallsyms],user_path_at_empty
+0.0,0.02,python,_PyErr_Occurred (inlined)
+0.0,0.02,anon,0x00007f3a61ee2a7f
+0.0,0.02,python,PyUnicode_DATA (inlined)
+0.0,0.02,python,method_check_args (inlined)
+0.0,0.02,python,pyinit_config (inlined)
+0.0,0.02,python,pyinit_core (inlined)
+0.0,0.02,[unknown],0xfffffffffffffffd
+0.0,0.02,python,pycore_interp_init
+0.0,0.02,python,_PyVectorcall_NARGS (inlined)
+0.0,0.02,python,PyBytes_FromStringAndSize
+0.0,0.02,python,_PyUnicode_JoinArray (inlined)
+0.0,0.02,[unknown],0x00000000000000ff
+0.0,0.02,anon,0x00007f3081360a7f
+0.0,0.02,python,_Py_LeaveRecursiveCallTstate (inlined)
+0.0,0.02,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.02,python,builtin_sorted
+0.0,0.02,python,_PyModule_ClearDict
+0.0,0.02,python,infinite_lru_cache_wrapper
+0.0,0.02,_posixsubprocess.cpython-312-x86_64-linux-gnu.so,do_fork_exec
+0.0,0.02,libc-2.31.so,__libc_fork (inlined)
+0.0,0.02,python,memcpy (inlined)
+0.0,0.02,python,_PyPegen_fill_token
+0.0,0.02,[kernel.kallsyms],__x64_sys_clone
+0.0,0.02,[kernel.kallsyms],_do_fork
+0.0,0.02,[kernel.kallsyms],copy_process
+0.0,0.02,[kernel.kallsyms],dup_mm
+0.0,0.02,python,astmodule_exec
+0.0,0.02,python,get_ast_state
+0.0,0.02,python,init_types (inlined)
+0.0,0.02,python,slot_tp_setattro
+0.0,0.02,python,list_resize (inlined)
+0.0,0.02,python,unicode_decode_utf8
+0.0,0.02,anon,0x00007f5ab489b77f
+0.0,0.02,python,tuple_get_empty (inlined)
+0.0,0.02,anon,0x00007f674647b77f
+0.0,0.02,[stack],0x00007fff170496bf
+0.0,0.02,anon,0x00007f5ab5135a7f
+0.0,0.02,[unknown],0x0000000000000445
+0.0,0.02,python,type_ready_fill_dict (inlined)
+0.0,0.02,python,Py_INCREF (inlined)
+0.0,0.02,python,_Py_NewRef (inlined)
+0.0,0.02,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.02,python,_PyThreadState_GET (inlined)
+0.0,0.02,[unknown],0x0000000000000006
+0.0,0.02,python,_PyBytes_FromSize (inlined)
+0.0,0.02,python,PyIter_Next (inlined)
+0.0,0.02,python,compiler_function
+0.0,0.02,[kernel.kallsyms],link_path_walk.part.0
+0.0,0.02,[kernel.kallsyms],path_lookupat.isra.0
+0.0,0.02,python,finalize_modules_clear_weaklist (inlined)
+0.0,0.02,python,PyList_Sort
+0.0,0.02,libpthread-2.31.so,__libc_open64 (inlined)
+0.0,0.02,[kernel.kallsyms],dup_mmap
+0.0,0.02,python,_PyErr_Occurred (inlined)
+0.0,0.02,python,insertion_resize (inlined)
+0.0,0.02,python,make_type
+0.0,0.02,python,method_dealloc
+0.0,0.02,python,PyObject_Repr (inlined)
+0.0,0.02,[kernel.kallsyms],copy_page_range
+0.0,0.02,python,chain_next
+0.0,0.02,python,_PyPegen_name_token
+0.0,0.02,python,_PyErr_SetObject (inlined)
+0.0,0.02,python,PyUnicode_Join (inlined)
+0.0,0.02,python,unicode_join
+0.0,0.02,python,_tmp_116_rule (inlined)
+0.0,0.02,python,_io_TextIOWrapper_read
+0.0,0.02,python,_io_TextIOWrapper_read_impl (inlined)
+0.0,0.02,python,memcpy (inlined)
+0.0,0.02,anon,0x00007f8602e81ebf
+0.0,0.02,python,PyUnicode_READ (inlined)
+0.0,0.02,python,Py_INCREF (inlined)
+0.0,0.02,python,_Py_NewRef (inlined)
+0.0,0.02,python,_Py_EnterRecursiveCallTstate (inlined)
+0.0,0.02,python,_Py_MakeRecCheck (inlined)
+0.0,0.02,python,method_vectorcall_NOARGS
+0.0,0.02,python,_PyObject_Init (inlined)
+0.0,0.02,python,Py_XDECREF (inlined)
+0.0,0.02,python,Py_INCREF (inlined)
+0.0,0.02,python,data_start+0xffffffb3fe7e203f
+0.0,0.02,python,_PyIndex_Check (inlined)
+0.0,0.02,python,list_insert_impl (inlined)
+0.0,0.02,python,_PyObject_Init (inlined)
+0.0,0.02,anon,0x00007f70e3e1aa7f
+0.0,0.02,python,Py_INCREF (inlined)
+0.0,0.01,[kernel.kallsyms],filename_lookup
+0.0,0.01,[unknown],0x000000000000006d
+0.0,0.01,python,PyOS_FSPath
+0.0,0.01,python,_PyObject_CallNoArgs (inlined)
+0.0,0.01,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.01,python,compiler_visit_expr1
+0.0,0.01,python,Py_XINCREF (inlined)
+0.0,0.01,python,vectorcall_method (inlined)
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,python,open64 (inlined)
+0.0,0.01,[unknown],0x0000000000000003
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,python,PyUnicode_New (inlined)
+0.0,0.01,python,_PyErr_Occurred (inlined)
+0.0,0.01,python,get_line_delta (inlined)
+0.0,0.01,python,call_attribute (inlined)
+0.0,0.01,[kernel.kallsyms],do_filp_open
+0.0,0.01,[kernel.kallsyms],path_openat
+0.0,0.01,python,interpreter_clear
+0.0,0.01,python,_PyErr_CreateException
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,python,Py_XDECREF (inlined)
+0.0,0.01,python,_PyInterpreterState_GET (inlined)
+0.0,0.01,python,_PyPegen_name_from_token (inlined)
+0.0,0.01,python,_PyPegen_new_identifier
+0.0,0.01,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.01,python,vectorcall_unbound (inlined)
+0.0,0.01,[kernel.kallsyms],pagevec_lru_move_fn
+0.0,0.01,ld-2.31.so,_dl_catch_error
+0.0,0.01,anon,0x00007fb53697092f
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,anon,0x00007f2e918bdc3f
+0.0,0.01,python,_Py_CheckFunctionResult (inlined)
+0.0,0.01,[unknown],0x000000000000000f
+0.0,0.01,python,_PyGCHead_PREV (inlined)
+0.0,0.01,python,PyObject_TypeCheck (inlined)
+0.0,0.01,python,memcpy (inlined)
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,python,ins1 (inlined)
+0.0,0.01,python,_PyInterpreterState_GET (inlined)
+0.0,0.01,[heap],0x000055fcb3ba2d0f
+0.0,0.01,python,PyUnicode_DATA (inlined)
+0.0,0.01,python,_PyLong_CompactValue (inlined)
+0.0,0.01,python,Py_SET_SIZE (inlined)
+0.0,0.01,python,_PyObject_CallNoArgs (inlined)
+0.0,0.01,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.01,python,object___dir__
+0.0,0.01,python,object___dir___impl (inlined)
+0.0,0.01,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.01,python,vectorcall_unbound (inlined)
+0.0,0.01,python,_Py_LeaveRecursiveCallTstate (inlined)
+0.0,0.01,python,_PyEval_BuiltinsFromGlobals
+0.0,0.01,python3.8,_PyEval_EvalFrameDefault
+0.0,0.01,python3.8,_PyEval_EvalCodeWithName
+0.0,0.01,python,args_rule
+0.0,0.01,python,arguments_rule
+0.0,0.01,python,finalize_interp_types (inlined)
+0.0,0.01,python3.8,PyObject_RichCompareBool
+0.0,0.01,python,_PyObject_GC_TRACK (inlined)
+0.0,0.01,python,import_ensure_initialized (inlined)
+0.0,0.01,python,lambda_parameters_rule (inlined)
+0.0,0.01,python,lambda_params_rule (inlined)
+0.0,0.01,python,compiler_class
+0.0,0.01,python,_PyErr_SetObject (inlined)
+0.0,0.01,python,PyList_Append
+0.0,0.01,python,if_stmt_rule
+0.0,0.01,python,call_unbound_noarg (inlined)
+0.0,0.01,[kernel.kallsyms],free_pages_and_swap_cache
+0.0,0.01,[kernel.kallsyms],tlb_finish_mmu
+0.0,0.01,[kernel.kallsyms],tlb_flush_mmu
+0.0,0.01,python,PyUnicode_InternFromString
+0.0,0.01,python3.8,_PyFunction_Vectorcall
+0.0,0.01,python3.8,PyEval_EvalCode
+0.0,0.01,python,_PyCodec_Lookup
+0.0,0.01,[kernel.kallsyms],__lru_cache_add
+0.0,0.01,[heap],0x00005604797b5c6f
+0.0,0.01,[kernel.kallsyms],do_wp_page
+0.0,0.01,python,BaseException_clear
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,[heap],0x000055d51d5fdb9f
+0.0,0.01,[heap],0x000055fa58ebdb9f
+0.0,0.01,python,Py_INCREF (inlined)
+0.0,0.01,python,_Py_NewRef (inlined)
+0.0,0.01,anon,0x00007f3a615c603f
+0.0,0.01,[heap],0x000055a8c55acc6f
+0.0,0.01,python,star_expression_rule
+0.0,0.01,python,star_expressions_rule
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,anon,0x00007f2bec07893f
+0.0,0.01,python,Py_SIZE (inlined)
+0.0,0.01,python,Py_XDECREF (inlined)
+0.0,0.01,python,memset (inlined)
+0.0,0.01,[stack],0x00007ffd8d04e4cf
+0.0,0.01,python,Py_IS_TYPE (inlined)
+0.0,0.01,python,merge_class_dict
+0.0,0.01,anon,0x00007f9a0e52f92f
+0.0,0.01,[unknown],0x0000000000000007
+0.0,0.01,[heap],0x00005652b93b7c6f
+0.0,0.01,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.01,python,_PyThreadState_GET (inlined)
+0.0,0.01,python,sre_ucs1_at (inlined)
+0.0,0.01,[unknown],0xffffffffffffffff
+0.0,0.01,python,_PyObject_Init (inlined)
+0.0,0.01,python,Py_INCREF (inlined)
+0.0,0.01,python,_Py_NewRef (inlined)
+0.0,0.01,python3.8,PyImport_ImportModuleLevelObject
+0.0,0.01,python3.8,PyObject_CallFunction
+0.0,0.01,python3.8,_PyObject_CallMethodIdObjArgs
+0.0,0.01,python,binarysort (inlined)
+0.0,0.01,python,PyType_CheckExact (inlined)
+0.0,0.01,python,Py_IS_TYPE (inlined)
+0.0,0.01,python,unsafe_latin_compare
+0.0,0.01,python,_Py_EnsureFuncTstateNotNULL (inlined)
+0.0,0.01,[heap],0x000055d78274ec6f
+0.0,0.01,python,_gather_117_rule (inlined)
+0.0,0.01,python,_loop0_118_rule (inlined)
+0.0,0.01,python,Py_IS_TYPE (inlined)
+0.0,0.01,python,ucs1lib_find_max_char (inlined)
+0.0,0.01,python,_PyUnicode_FromUCS4 (inlined)
+0.0,0.01,[heap],0x000055921b703c6f
+0.0,0.01,python,_PyList_AppendTakeRef (inlined)
+0.0,0.01,python,vectorcall_maybe (inlined)
+0.0,0.01,[kernel.kallsyms],__x64_sys_mmap
+0.0,0.01,[kernel.kallsyms],ksys_mmap_pgoff
+0.0,0.01,[kernel.kallsyms],do_mmap
+0.0,0.01,[kernel.kallsyms],vm_mmap_pgoff
+0.0,0.01,python,_PyObject_GC_MAY_BE_TRACKED (inlined)
+0.0,0.01,python,long_new
+0.0,0.01,python,_PyInterpreterState_GET (inlined)
+0.0,0.01,python,get_list_state (inlined)
+0.0,0.01,python,_PyUnicode_InitEncodings
+0.0,0.01,python,config_get_codec_name
+0.0,0.01,python,init_fs_encoding (inlined)
+0.0,0.01,python,lambda_param_no_default_rule (inlined)
+0.0,0.01,python,min_max
+0.0,0.01,python,frame_dealloc
+0.0,0.01,python,_PyCodecRegistry_Init
+0.0,0.01,[stack],0x00007ffe5e107ea7
+0.0,0.01,[kernel.kallsyms],walk_component
+0.0,0.01,python,slot_nb_bool
+0.0,0.01,python,PyNumber_Add
+0.0,0.01,python,_tmp_235_rule (inlined)
+0.0,0.01,anon,0x00007fdae176eb0f
+0.0,0.01,python,_PyGCHead_PREV (inlined)
+0.0,0.01,python,_PyStaticCode_Init
+0.0,0.01,python,_Py_Deepfreeze_Init
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,python,Py_XDECREF (inlined)
+0.0,0.01,python,_PyTypes_Fini
+0.0,0.01,python,type_cache_clear (inlined)
+0.0,0.01,python,PyObject_CallMethodNoArgs (inlined)
+0.0,0.01,python,_imp_exec_dynamic
+0.0,0.01,python,_imp_exec_dynamic_impl (inlined)
+0.0,0.01,python,exec_builtin_or_dynamic (inlined)
+0.0,0.01,python,type_new_set_names (inlined)
+0.0,0.01,python3.8,PyVectorcall_Call
+0.0,0.01,python3.8,_PyBuiltin_Init
+0.0,0.01,python,maybe_freelist_clear (inlined)
+0.0,0.01,[kernel.kallsyms],lru_cache_add_active_or_unevictable
+0.0,0.01,[kernel.kallsyms],free_unref_page_commit
+0.0,0.01,[kernel.kallsyms],free_unref_page_list
+0.0,0.01,[stack],0x00007ffc6d701c27
+0.0,0.01,python,PyUnicode_IS_COMPACT_ASCII (inlined)
+0.0,0.01,[heap],0x00005652b9591b9f
+0.0,0.01,[heap],0x000055b603febc6f
+0.0,0.01,python,_PyUnicode_COMPACT_DATA (inlined)
+0.0,0.01,anon,0x00007f3a61ee2bbf
+0.0,0.01,python,unicode_iter
+0.0,0.01,python,PyObject_TypeCheck (inlined)
+0.0,0.01,python,Py_IS_TYPE (inlined)
+0.0,0.01,python,descr_check (inlined)
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,anon,0x00007fcd5f5261ff
+0.0,0.01,[heap],0x000055fcb3b3ac6f
+0.0,0.01,[stack],0x00007ffe5e107ecf
+0.0,0.01,anon,0x00007f860378f92f
+0.0,0.01,python,_PyGCHead_SET_NEXT (inlined)
+0.0,0.01,[heap],0x00005614408b2d0f
+0.0,0.01,[heap],0x000055c37f6bcc6f
+0.0,0.01,[heap],0x0000556b664bfe6f
+0.0,0.01,python,excess_args (inlined)
+0.0,0.01,python,_PyGCHead_SET_PREV (inlined)
+0.0,0.01,[kernel.kallsyms],pagecache_get_page
+0.0,0.01,python,builtin_any
+0.0,0.01,python,_PyGCHead_SET_NEXT (inlined)
+0.0,0.01,[heap],0x000055610d57ac6f
+0.0,0.01,anon,0x00007f8297dc992f
+0.0,0.01,python,_Py_EnterRecursiveCallTstate (inlined)
+0.0,0.01,python,_Py_MakeRecCheck (inlined)
+0.0,0.01,python,unicode_get_hash (inlined)
+0.0,0.01,python,_PyIndex_Check (inlined)
+0.0,0.01,python,_Py_AS_GC (inlined)
+0.0,0.01,[heap],0x000055b3b4cacc6f
+0.0,0.01,python,PyList_GET_SIZE (inlined)
+0.0,0.01,python,_PyUnicode_COMPACT_DATA (inlined)
+0.0,0.01,python,compiler_visit_expr (inlined)
+0.0,0.01,[stack],0x00007ffc13890cf7
+0.0,0.01,anon,0x00007fd1f5d7eb0f
+0.0,0.01,anon,0x00007f70e3e1a92f
+0.0,0.01,python,_PyInterpreterState_GET (inlined)
+0.0,0.01,python,_PyLong_CompactValue (inlined)
+0.0,0.01,python,ucs1lib_count (inlined)
+0.0,0.01,python,ucs1lib_fastsearch (inlined)
+0.0,0.01,[unknown],0x0000000000000013
+0.0,0.01,python,PyUnicode_DATA (inlined)
+0.0,0.01,python,_PyUnicode_COMPACT_DATA (inlined)
+0.0,0.01,python,PyObject_CallMethodNoArgs (inlined)
+0.0,0.01,python,buffered_close
+0.0,0.01,python,iobase_exit
+0.0,0.01,python,_PyObject_InitVar (inlined)
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,python,binary_op1 (inlined)
+0.0,0.01,[kernel.kallsyms],lookup_fast
+0.0,0.01,python,_pystat_fromstructstat
+0.0,0.01,python,iter_iternext
+0.0,0.01,python,_PyDict_NotifyEvent (inlined)
+0.0,0.01,python,bool_vectorcall
+0.0,0.01,python,unicode_compare_eq (inlined)
+0.0,0.01,python,resolve_slotdups (inlined)
+0.0,0.01,[kernel.kallsyms],mmap_region
+0.0,0.01,python,Py_XDECREF (inlined)
+0.0,0.01,anon,0x00007f0a8655a1ff
+0.0,0.01,python,_PyImport_GetModuleAttr (inlined)
+0.0,0.01,python,_PyImport_GetModuleAttrString
+0.0,0.01,python,dict_update_arg
+0.0,0.01,python,_PyDict_NotifyEvent (inlined)
+0.0,0.01,python,tb_dealloc
+0.0,0.01,python,take_gil
+0.0,0.01,python,PyEval_RestoreThread
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,python,clear_freelists (inlined)
+0.0,0.01,python,PyObject_CallMethodOneArg (inlined)
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,python,_PyTokenizer_Get
+0.0,0.01,python,binary_op1 (inlined)
+0.0,0.01,python,for_stmt_rule (inlined)
+0.0,0.01,python,Py_XDECREF (inlined)
+0.0,0.01,python,_PyGCHead_SET_NEXT (inlined)
+0.0,0.01,[kernel.kallsyms],ext4_readdir
+0.0,0.01,[kernel.kallsyms],__x64_sys_getdents64
+0.0,0.01,[kernel.kallsyms],ksys_getdents64
+0.0,0.01,libc-2.31.so,getdents64
+0.0,0.01,libc-2.31.so,readdir (inlined)
+0.0,0.01,python,unicode_get_hash (inlined)
+0.0,0.01,python,_Py_type_getattro
+0.0,0.01,python,_Py_type_getattro_impl (inlined)
+0.0,0.01,python,merge_at
+0.0,0.01,[unknown],0x0000000000000005
+0.0,0.01,python,memset (inlined)
+0.0,0.01,[kernel.kallsyms],find_vma
+0.0,0.01,python,Py_IS_TYPE (inlined)
+0.0,0.01,python,clear_gen_frame (inlined)
+0.0,0.01,python,PyObject_CallMethodNoArgs (inlined)
+0.0,0.01,python,compiler_lambda (inlined)
+0.0,0.01,python,init_sys_streams (inlined)
+0.0,0.01,[kernel.kallsyms],exit_to_usermode_loop
+0.0,0.01,python,fill_time (inlined)
+0.0,0.01,python,method_vectorcall_VARARGS_KEYWORDS
+0.0,0.01,python,_PyInterpreterState_GET (inlined)
+0.0,0.01,[heap],0x000055b3b4e86b9f
+0.0,0.01,anon,0x00007f6746d15bbf
+0.0,0.01,python,Py_IS_TYPE (inlined)
+0.0,0.01,[heap],0x000055fcb3d14b9f
+0.0,0.01,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.01,python,_PyThreadState_GET (inlined)
+0.0,0.01,[heap],0x00005579023e0b9f
+0.0,0.01,anon,0x00007fcd5f3f492f
+0.0,0.01,anon,0x00007f10af82f92f
+0.0,0.01,[heap],0x00005566cc27fc6f
+0.0,0.01,python,ucs1lib_count_char (inlined)
+0.0,0.01,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.01,python,_PyThreadState_GET (inlined)
+0.0,0.01,[heap],0x00005647e1017b9f
+0.0,0.01,anon,0x00007f5ab5135b0f
+0.0,0.01,anon,0x00007f5ab52661ff
+0.0,0.01,[stack],0x00007ffcde0500df
+0.0,0.01,python,PyType_Check (inlined)
+0.0,0.01,python,_Py_CheckFunctionResult (inlined)
+0.0,0.01,python,_PyUnicode_ToDecimalDigit (inlined)
+0.0,0.01,python,gettyperecord (inlined)
+0.0,0.01,[heap],0x00005647e0e3dc6f
+0.0,0.01,anon,0x00007f30ed1eab0f
+0.0,0.01,python,_PyGCHead_SET_NEXT (inlined)
+0.0,0.01,python,_sre_SRE_Match_end_impl (inlined)
+0.0,0.01,[heap],0x000055f03ad61c6f
+0.0,0.01,python,Py_INCREF (inlined)
+0.0,0.01,python,_Py_NewRef (inlined)
+0.0,0.01,[heap],0x000055fa58ce3c6f
+0.0,0.01,python,ensure_unicode (inlined)
+0.0,0.01,[stack],0x00007fff17049507
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,anon,0x00007f860378fbb7
+0.0,0.01,python,compiler_visit_expr (inlined)
+0.0,0.01,anon,0x00007f30ed1eabbf
+0.0,0.01,[heap],0x0000559542411c6f
+0.0,0.01,[stack],0x00007ffc13920eb7
+0.0,0.01,anon,0x00007fdae176e92f
+0.0,0.01,anon,0x00007f308136092f
+0.0,0.01,python,Py_SET_SIZE (inlined)
+0.0,0.01,python,_Py_LeaveRecursiveCallTstate (inlined)
+0.0,0.01,[stack],0x00007ffcea90cf77
+0.0,0.01,[unknown],0x0000000000000004
+0.0,0.01,[stack],0x00007ffc14af6caf
+0.0,0.01,[stack],0x00007ffe227fb817
+0.0,0.01,python,Py_IS_TYPE (inlined)
+0.0,0.01,python,_PyGCHead_SET_PREV (inlined)
+0.0,0.01,python,_PyImport_InitCore
+0.0,0.01,python,init_importlib (inlined)
+0.0,0.01,anon,0x00007f70e3f4a1ff
+0.0,0.01,anon,0x00007fe803f9bbbf
+0.0,0.01,[heap],0x000055fa58d3bf7f
+0.0,0.01,[stack],0x00007ffcde04fdef
+0.0,0.01,anon,0x00007f5ab5135bbf
+0.0,0.01,python,slot_sq_item
+0.0,0.01,python,0x0000559541bc5660
+0.0,0.01,python,Py_INCREF (inlined)
+0.0,0.01,python,_Py_NewRef (inlined)
+0.0,0.01,python,PyLong_FromUnicodeObject
+0.0,0.01,python,_Py_NewRef (inlined)
+0.0,0.01,[kernel.kallsyms],ext4_dx_readdir
+0.0,0.01,[kernel.kallsyms],iterate_dir
+0.0,0.01,[heap],0x00005652b941fd0f
+0.0,0.01,python,_PyGCHead_SET_NEXT (inlined)
+0.0,0.01,python,slot_tp_call
+0.0,0.01,anon,0x00007fe803a9a14f
+0.0,0.01,python,_PyGCHead_SET_NEXT (inlined)
+0.0,0.01,python,sre_category (inlined)
+0.0,0.01,python,Py_XDECREF (inlined)
+0.0,0.01,python,BaseException_dealloc
+0.0,0.01,python,_loop1_98_rule (inlined)
+0.0,0.01,python,lambda_slash_no_default_rule
+0.0,0.01,anon,0x00007f0a86428b0f
+0.0,0.01,python,_Py_type_getattro_impl
+0.0,0.01,python3.8,PyMember_GetOne
+0.0,0.01,python,_Py_EnterRecursiveCallTstate (inlined)
+0.0,0.01,python,_Py_MakeRecCheck (inlined)
+0.0,0.01,python,PyModule_FromDefAndSpec2
+0.0,0.01,python,_io_FileIO_close
+0.0,0.01,python,_PyObject_Malloc (inlined)
+0.0,0.01,python,PyNumber_And
+0.0,0.01,python,binary_op (inlined)
+0.0,0.01,python,binary_op1 (inlined)
+0.0,0.01,python,slot_nb_and
+0.0,0.01,python,_PyModuleSpec_IsInitializing (inlined)
+0.0,0.01,[kernel.kallsyms],____fput
+0.0,0.01,python,PyUnicode_CHECK_INTERNED (inlined)
+0.0,0.01,python,add_operators (inlined)
+0.0,0.01,anon,0x00007f10af82fbbf
+0.0,0.01,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.01,python,_PyThreadState_GET (inlined)
+0.0,0.01,python,dict_subscript
+0.0,0.01,python,memcpy (inlined)
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,python,Py_XDECREF (inlined)
+0.0,0.01,python,type_dealloc
+0.0,0.01,[unknown],0x0000000000000008
+0.0,0.01,[kernel.kallsyms],ext4_htree_fill_tree
+0.0,0.01,[kernel.kallsyms],htree_dirblock_to_tree
+0.0,0.01,python,PyObject_GetAttrString
+0.0,0.01,python,PyEval_SaveThread
+0.0,0.01,[kernel.kallsyms],do_fault
+0.0,0.01,python,PyNumber_InPlaceAdd
+0.0,0.01,python,_PyObject_VectorcallTstate (inlined)
+0.0,0.01,python,binary_iop1 (inlined)
+0.0,0.01,python,slot_nb_inplace_add
+0.0,0.01,python,vectorcall_method (inlined)
+0.0,0.01,python,vectorcall_unbound (inlined)
+0.0,0.01,python,memcpy (inlined)
+0.0,0.01,python,_io_StringIO___init__
+0.0,0.01,python,_io_StringIO___init___impl (inlined)
+0.0,0.01,python,cfunction_vectorcall_FASTCALL_KEYWORDS_METHOD
+0.0,0.01,python,unicode_fromformat_arg (inlined)
+0.0,0.01,python,PyUnicode_FromString (inlined)
+0.0,0.01,python,_PyPegen_update_memo
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,python,Py_XDECREF (inlined)
+0.0,0.01,python,Py_XDECREF (inlined)
+0.0,0.01,python,insertion_resize (inlined)
+0.0,0.01,python,_PyArena_Malloc
+0.0,0.01,anon,0x00007fda6c35392f
+0.0,0.01,python,lambda_param_rule (inlined)
+0.0,0.01,[kernel.kallsyms],do_last
+0.0,0.01,python,PyObject_CallFunctionObjArgs
+0.0,0.01,python,_PyLong_AsInt
+0.0,0.01,python,textiowrapper_iternext
+0.0,0.01,python,set_attribute_error_context (inlined)
+0.0,0.01,python,PyLong_FromLong
+0.0,0.01,python,PyLong_AsLongAndOverflow (inlined)
+0.0,0.01,python,PyObject_LengthHint
+0.0,0.01,python,bytearray_subscript
+0.0,0.01,python,_add_methods_to_object
+0.0,0.01,python,PyType_FromMetaclass
+0.0,0.01,python,PyObject_SetAttrString
+0.0,0.01,python,_PyList_AppendTakeRef (inlined)
+0.0,0.01,python,_PyList_AppendTakeRefListResize (inlined)
+0.0,0.01,python,list_append
+0.0,0.01,python,ucs4lib_find_max_char (inlined)
+0.0,0.01,python,_Py_TrueStruct+0xffffffb95ae2701f
+0.0,0.01,[kernel.kallsyms],__pagevec_lru_add_fn
+0.0,0.01,[kernel.kallsyms],__fput
+0.0,0.01,[kernel.kallsyms],task_work_run
+0.0,0.01,python3.8,Py_RunMain
+0.0,0.01,python3.8,_PyObject_MakeTpCall
+0.0,0.01,python,all_name_chars (inlined)
+0.0,0.01,[heap],0x000055f03ae9247f
+0.0,0.01,anon,0x00007f8297dc9aff
+0.0,0.01,python,_PyObject_GC_IS_TRACKED (inlined)
+0.0,0.01,[heap],0x000056144084ac6f
+0.0,0.01,anon,0x00007f3a6162b97f
+0.0,0.01,anon,0x00007fcd5f3f4b0f
+0.0,0.01,anon,0x00007fe80391a0ff
+0.0,0.01,[heap],0x000055a8c5614d0f
+0.0,0.01,anon,0x00007f9a0e52fba7
+0.0,0.01,python,_PyLong_BothAreCompact (inlined)
+0.0,0.01,anon,0x00007f70e376c04f
+0.0,0.01,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.01,python,_PyThreadState_GET (inlined)
+0.0,0.01,[stack],0x00007ffc6d701aef
+0.0,0.01,python,_Py_MakeRecCheck (inlined)
+0.0,0.01,[heap],0x00005647e105ace4
+0.0,0.01,python,_PyLong_SetSignAndDigitCount (inlined)
+0.0,0.01,anon,0x00007fda6c353b0f
+0.0,0.01,anon,0x00007f6746d15bd7
+0.0,0.01,anon,0x00007fd1f5d7e92f
+0.0,0.01,anon,0x00007fcd5ecba8ff
+0.0,0.01,[heap],0x00005566cc2e7d0f
+0.0,0.01,anon,0x00007fe803f9bb2f
+0.0,0.01,anon,0x00007fd1f5d7eba7
+0.0,0.01,python,_PyErr_Occurred (inlined)
+0.0,0.01,[stack],0x00007ffc14af6f9f
+0.0,0.01,anon,0x00007f0a86428a9f
+0.0,0.01,anon,0x00007f82974054df
+0.0,0.01,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.01,python,_PyThreadState_GET (inlined)
+0.0,0.01,anon,0x00007fe780b6792f
+0.0,0.01,[heap],0x000055610d68c4cf
+0.0,0.01,[stack],0x00007fff5a4a02d7
+0.0,0.01,python,Py_IS_TYPE (inlined)
+0.0,0.01,anon,0x00007fe803f9baff
+0.0,0.01,anon,0x00007f9a0e6621ff
+0.0,0.01,anon,0x00007f6746d15b0f
+0.0,0.01,[stack],0x00007ffc39602277
+0.0,0.01,python,data_start+0xffffffb7b34721df
+0.0,0.01,[stack],0x00007ffc13890bbf
+0.0,0.01,python,_PyInterpreterState_GET (inlined)
+0.0,0.01,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.01,python,_PyThreadState_GET (inlined)
+0.0,0.01,anon,0x00007f2e921cbb0f
+0.0,0.01,anon,0x00007f88791e21bf
+0.0,0.01,anon,0x00007f6746d1592f
+0.0,0.01,anon,0x00007fcd5f3f4bb7
+0.0,0.01,anon,0x00007f3080cda0ff
+0.0,0.01,anon,0x00007fe803f3494f
+0.0,0.01,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.01,python,_PyThreadState_GET (inlined)
+0.0,0.01,anon,0x00007f3a61ee292f
+0.0,0.01,[heap],0x0000559542479d0f
+0.0,0.01,anon,0x00007f8297dc9b0f
+0.0,0.01,python,PyDict_MergeFromSeq2
+0.0,0.01,python,PyUnicode_DATA (inlined)
+0.0,0.01,python,_PyInterpreterState_GET (inlined)
+0.0,0.01,anon,0x00007fda6c353bbf
+0.0,0.01,python,Py_INCREF (inlined)
+0.0,0.01,anon,0x00007fcd5f3f4be7
+0.0,0.01,python,PyUnicode_DATA (inlined)
+0.0,0.01,python,_PyUnicode_COMPACT_DATA (inlined)
+0.0,0.01,python,PyUnicode_READ (inlined)
+0.0,0.01,anon,0x00007fdae174faff
+0.0,0.01,[stack],0x00007fff6871ee67
+0.0,0.01,python,PyObject_CallMethodOneArg (inlined)
+0.0,0.01,anon,0x00007f5ab513592f
+0.0,0.01,[heap],0x000055d51d53557f
+0.0,0.01,python,_PyInterpreterState_GET (inlined)
+0.0,0.01,python,get_gc_state (inlined)
+0.0,0.01,python,_PyModule_GetState (inlined)
+0.0,0.01,python,get_sre_module_state (inlined)
+0.0,0.01,anon,0x00007f9a0e52fb0f
+0.0,0.01,anon,0x00007fe803f9bb0f
+0.0,0.01,anon,0x00007f30ed1eabb7
+0.0,0.01,python,PyUnicode_GET_LENGTH (inlined)
+0.0,0.01,python,_Py_AS_GC (inlined)
+0.0,0.01,anon,0x00007fb5362ea0ff
+0.0,0.01,python,drop_gil
+0.0,0.01,[heap],0x000055df46adbc6f
+0.0,0.01,python,PyIter_Next
+0.0,0.01,python,_PyInterpreterState_GET (inlined)
+0.0,0.01,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.01,python,_PyThreadState_GET (inlined)
+0.0,0.01,anon,0x00007fe803f9bb87
+0.0,0.01,python,_PyObject_GC_TRACK (inlined)
+0.0,0.01,python,_PyObject_GC_TRACK (inlined)
+0.0,0.01,python,Py_INCREF (inlined)
+0.0,0.01,python,_Py_NewRef (inlined)
+0.0,0.01,python,ensure_unicode (inlined)
+0.0,0.01,[unknown],0x000000000004311c
+0.0,0.01,anon,0x00007fda6c337aaf
+0.0,0.01,python,Py_XINCREF (inlined)
+0.0,0.01,anon,0x00007f86031fc1df
+0.0,0.01,anon,0x00007f8878b1c2cf
+0.0,0.01,python,_PyRuntimeState_GetThreadState (inlined)
+0.0,0.01,python,_PyThreadState_GET (inlined)
+0.0,0.01,[stack],0x00007ffe5e107d6f
+0.0,0.01,python,dictkeys_incref (inlined)
+0.0,0.01,python,PySequence_List (inlined)
+0.0,0.01,python,descr_new (inlined)
+0.0,0.01,anon,0x00007f2e9170b00f
+0.0,0.01,python,PyNumber_Long
+0.0,0.01,python,sequence_repeat (inlined)
+0.0,0.01,python,Py_SIZE (inlined)
+0.0,0.01,python,unicode_encode_utf8
+0.0,0.01,python,PyObject_TypeCheck (inlined)
+0.0,0.01,libc-2.31.so,__libc_start_main
+0.0,0.01,libpthread-2.31.so,__libc_close (inlined)
+0.0,0.01,python,_io_FileIO_close_impl (inlined)
+0.0,0.01,python,internal_close (inlined)
+0.0,0.01,python,BaseException_new
+0.0,0.01,python,PyDict_SetItemString
+0.0,0.01,python,PyUnicode_New (inlined)
+0.0,0.01,python,vgetargskeywords
+0.0,0.01,[stack],0x00007ffc13920d7f
+0.0,0.01,[unknown],0x0000000000000009
+0.0,0.01,python,_PyArena_AddPyObject
+0.0,0.01,python,_PyIncrementalNewlineDecoder_decode
+0.0,0.01,libc-2.31.so,__libc_start_main
+0.0,0.01,python3.8,Py_BytesMain
+0.0,0.01,python3.8,_start
+0.0,0.01,libpthread-2.31.so,__GI___pthread_mutex_lock (inlined)
+0.0,0.01,python,_textiowrapper_readline
+0.0,0.01,[stack],0x00007ffc4aacb33f
+0.0,0.01,python,PyUnicode_InternInPlace (inlined)
+0.0,0.01,python,_PyUnicode_InternInPlace (inlined)
+0.0,0.01,python,genexp_rule
+0.0,0.01,python,va_build_stack
+0.0,0.01,python,sre_search
+0.0,0.01,python,sre_ucs1_search (inlined)
+0.0,0.01,python,PyMethod_New
+0.0,0.01,python,PyDescr_NewGetSet
+0.0,0.01,python,type_add_getset (inlined)
+0.0,0.01,python,split
+0.0,0.01,python,asciilib_split (inlined)
+0.0,0.01,python,asciilib_split_char (inlined)
+0.0,0.01,python,unicode_split
+0.0,0.01,python,unicode_split_impl (inlined)
+0.0,0.01,[kernel.kallsyms],wp_page_copy
+0.0,0.01,python,_io_TextIOWrapper___init__
+0.0,0.01,python,_io_TextIOWrapper___init___impl (inlined)
+0.0,0.01,python,makecode (inlined)
+0.0,0.01,python,AttributeError_dealloc
+0.0,0.01,[kernel.kallsyms],apic_timer_interrupt
+0.0,0.01,[kernel.kallsyms],smp_apic_timer_interrupt
+0.0,0.01,python,super_vectorcall
+0.0,0.01,python,tuplehash
+0.0,0.01,[heap],0x000055921b79830f
+0.0,0.01,[kernel.kallsyms],kmem_cache_alloc
+0.0,0.01,python,compiler_visit_expr (inlined)
+0.0,0.01,python,meth_traverse
+0.0,0.01,python,PyByteArray_FromStringAndSize
+0.0,0.01,python,long_from_string_base (inlined)
+0.0,0.01,python,specialize_dict_access (inlined)
+0.0,0.01,python,write_str
+0.0,0.01,python,r_ref (inlined)
+0.0,0.01,python,_PyObject_GenericSetAttrWithDict
+0.0,0.01,python,type_setattro
+0.0,0.01,python,Py_DECREF (inlined)
+0.0,0.01,python,PyUnicode_New (inlined)
+0.0,0.01,python,PyList_SET_ITEM (inlined)
+0.0,0.01,python,PyCFunction_GET_CLASS (inlined)
+0.0,0.01,python,analyze_descriptor
+0.0,0.01,python,PyUnicode_READ (inlined)

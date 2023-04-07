@@ -70,6 +70,7 @@ jobs:
       benchmarks: ${{ inputs.benchmarks }}
       pgo: true
       publish: ${{ inputs.publish }}
+      perf: false
       force: true
     secrets: inherit
 
@@ -84,6 +85,7 @@ jobs:
       benchmarks: ${{ inputs.benchmarks }}
       pgo: true
       publish: ${{ inputs.publish }}
+      perf: false
       force: false
     secrets: inherit
 

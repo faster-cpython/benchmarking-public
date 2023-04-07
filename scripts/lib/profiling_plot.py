@@ -24,7 +24,7 @@ CATEGORIES: Dict[str, List[str]] = {
         "_PyEval_EvalFrameDefault",
         "_PyFrame_ClearExceptCode",
         "_PyThreadState_PopFrame",
-        "_PyEvalFramePushAndInit" "_PyEvalFramePushAndInit",
+        "_PyEvalFramePushAndInit",
         "initialize_locals",
     ],
     "lookup": [

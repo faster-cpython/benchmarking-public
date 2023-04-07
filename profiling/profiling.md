@@ -195,7 +195,7 @@
 | 1.32% | `python` | `_PyObject_Malloc` | memory |
 | 1.31% | `python` | `initialize_locals` | interpreter |
 | 1.21% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
-| 1.14% | `python` | `_PyEvalFramePushAndInit` | unknown |
+| 1.14% | `python` | `_PyEvalFramePushAndInit` | interpreter |
 | 1.08% | `python` | `_Py_dict_lookup` | lookup |
 | 1.03% | `python` | `visit_decref` | gc |
 
@@ -460,7 +460,7 @@
 | 1.42% | `python` | `gen_dealloc` | memory |
 | 1.38% | `python` | `visit_decref` | gc |
 | 1.24% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
-| 1.18% | `python` | `_PyEvalFramePushAndInit` | unknown |
+| 1.18% | `python` | `_PyEvalFramePushAndInit` | interpreter |
 
 ## genshi
 
@@ -625,7 +625,7 @@
 | 1.71% | `libc-2.31.so` | `__nss_database_lookup` | libc |
 | 1.62% | `python` | `_PyObject_Malloc (inlined)` | memory |
 | 1.56% | `python` | `_PyObject_Free` | memory |
-| 1.30% | `python` | `_PyEvalFramePushAndInit` | unknown |
+| 1.30% | `python` | `_PyEvalFramePushAndInit` | interpreter |
 | 1.18% | `python` | `unicodekeys_lookup_unicode` | lookup |
 | 1.17% | `python` | `PyObject_GenericGetAttr` | dynamic |
 
@@ -936,7 +936,7 @@
 | 1.52% | `python` | `subtype_dealloc` | memory |
 | 1.39% | `python` | `float_dealloc` | memory |
 | 1.36% | `python` | `_PyObject_Malloc` | memory |
-| 1.21% | `python` | `_PyEvalFramePushAndInit` | unknown |
+| 1.21% | `python` | `_PyEvalFramePushAndInit` | interpreter |
 | 1.19% | `python` | `PyType_GenericAlloc` | memory |
 | 1.16% | `python` | `_PyType_Lookup` | lookup |
 | 1.10% | `libc-2.31.so` | `__nss_database_lookup` | libc |
@@ -1318,18 +1318,19 @@
 
 ### interpreter
 
-29.82% total
+29.88% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |
 | 28.44% | python | _PyEval_EvalFrameDefault |
 | 0.98% | python | _PyFrame_ClearExceptCode |
 | 0.38% | python | initialize_locals |
+| 0.07% | python | _PyEvalFramePushAndInit |
 | 0.01% | python | _PyThreadState_PopFrame |
 
 ### unknown
 
-8.66% total
+8.59% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |
@@ -1371,7 +1372,6 @@
 | 0.07% | python | set_add_entry |
 | 0.07% | python | ascii_decode |
 | 0.07% | python | long_richcompare |
-| 0.07% | python | _PyEvalFramePushAndInit |
 | 0.06% | python | unicode_decode_utf8 |
 | 0.06% | python | _PyStaticCode_Fini |
 | 0.06% | python | convertitem |

@@ -16,7 +16,9 @@ from lib import git
 from lib.result import Result
 
 
-BENCHMARK_JSON = Path("benchmark.json")
+REPO_ROOT = Path(__file__).parents[1]
+BENCHMARK_JSON = REPO_ROOT / "benchmark.json"
+PROFILING_RESULTS = REPO_ROOT / "profiling" / "results"
 GITHUB_URL = "https://github.com/faster-cpython/benchmarking"
 
 
@@ -79,9 +81,9 @@ def perf_to_csv(lines: Iterable[str], output: Path):
         line = line.strip()
         if line.startswith("#") or line == "":
             continue
-        children, self, _, shared, _, symbol = line.split(maxsplit=5)
+        children, self_time, _, shared, _, symbol = line.split(maxsplit=5)
         children = float(children[:-1])
-        self = float(self[:-1])
+        self = float(self_time[:-1])
         if children > 0.0 or self > 0.0:
             rows.append([self, children, shared, symbol])
 
@@ -89,7 +91,7 @@ def perf_to_csv(lines: Iterable[str], output: Path):
 
     with open(output, "w") as fd:
         csvwriter = csv.writer(fd)
-        csvwriter.writerow(["self", "children", "shared obj", "symbol"])
+        csvwriter.writerow(["self", "children", "object", "symbol"])
         for row in rows:
             csvwriter.writerow(row)
 
@@ -143,7 +145,9 @@ def collect_perf(python: Union[Path, str], benchmarks: str):
                     ],
                     encoding="utf-8",
                 )
-                perf_to_csv(output.splitlines(), Path(f"{benchmark}.perf.csv"))
+                perf_to_csv(
+                    output.splitlines(), PROFILING_RESULTS / f"{benchmark}.perf.csv"
+                )
 
 
 def update_metadata(

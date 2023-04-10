@@ -23,13 +23,19 @@ CATEGORIES: Dict[str, List[str]] = {
     "interpreter": [
         "_PyEvalFramePushAndInit",
         "_PyEval_EvalFrameDefault",
+        "_PyEval_MakeFrameVector",
+        "_PyEval_Vector",
         "_PyFrame_ClearExceptCode",
+        "_PyFrame_New_NoTrack",
         "_PyThreadState_PopFrame",
         "initialize_locals",
     ],
     "lookup": [
         "_PyType_Lookup",
         "_Py_dict_lookup",
+        "lookdict_split",
+        "lookdict_unicode",
+        "lookdict_unicode_nodummy",
         "unicodekeys_lookup_unicode",
     ],
     "gc": [

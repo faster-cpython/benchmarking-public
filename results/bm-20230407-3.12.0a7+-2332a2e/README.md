@@ -28,3 +28,9 @@
 - [table](bm-20230407-pythonperf1-amd64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-3.11.0.md)
 - [plot](bm-20230407-pythonperf1-amd64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-3.11.0.png)
 
+### vs. base
+
+- 1.02x slower
+- [table](bm-20230407-pythonperf1-amd64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-base.md)
+- [plot](bm-20230407-pythonperf1-amd64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-base.png)
+

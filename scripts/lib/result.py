@@ -418,6 +418,21 @@ def remove_duplicate_results(results_dir: Path) -> None:
                 result.filename.unlink()
 
 
+def has_result(results_dir: Path, commit_hash: str, machine: str) -> Optional[Result]:
+    if machine == "all":
+        nickname = None
+    else:
+        _, _, nickname = machine.split("-")
+
+    for result in load_all_results([], results_dir, False):
+        if commit_hash.startswith(result.cpython_hash) and (
+            nickname is None or result.nickname == nickname
+        ):
+            return result
+
+    return None
+
+
 def load_all_results(
     bases: Optional[List[str]], results_dir: Path, sorted: bool = True
 ) -> List[Result]:

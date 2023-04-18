@@ -369,7 +369,7 @@ def main(repo_dir: Path, force: bool = False, bases: Optional[List[str]] = None)
     print("Generating longitudinal plot")
     plot.longitudinal_plot(results, repo_dir / "longitudinal.png")
     print("Generating profiling plot")
-    profiling_plot.generate_results()
+    profiling_plot.generate_results(repo_dir, repo_dir / "profiling" / "results")
 
 
 if __name__ == "__main__":

@@ -96,7 +96,7 @@ jobs:
       if: ${{ always() }}
       id: should_run
       run: |
-        python scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.mahine }} >> $GITHUB_OUTPUT
+        python scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
     - uses: actions/checkout@v3
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:
@@ -332,7 +332,7 @@ jobs:
       if: ${{ always() }}
       id: should_run
       run: |
-        python scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.mahine }} >> $GITHUB_OUTPUT
+        python scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
     - uses: actions/checkout@v3
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:

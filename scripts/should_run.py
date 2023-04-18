@@ -12,14 +12,16 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 
 from lib import git
+from lib.result import has_result
 
 
 def main(
     force: bool,
     fork: str,
     ref: str,
+    machine: str,
     cpython: Path = Path("cpython"),
-    results: Path = Path("results"),
+    results_dir: Path = Path("results"),
 ) -> None:
     try:
         commit_hash = git.get_git_hash(cpython)
@@ -33,23 +35,16 @@ def main(
         # Fail the rest of the workflow
         sys.exit(1)
 
-    entry = None
-    for entry in results.iterdir():
-        parts = entry.name.split("-")
-        if commit_hash.startswith(parts[-1]):
-            has_result = True
-            break
-    else:
-        has_result = False
+    found_result = has_result(results_dir, commit_hash, machine)
 
     if force:
-        if has_result and entry is not None:
-            for filepath in entry.iterdir():
+        if found_result is not None:
+            for filepath in found_result.filename.parent.iterdir():
                 if filepath.suffix != ".json":
-                    git.remove(results.parent, filepath)
+                    git.remove(results_dir.parent, filepath)
         should_run = True
     else:
-        should_run = not has_result
+        should_run = machine == "all" or found_result is None
 
     print(f"should_run={str(should_run).lower()}")
 
@@ -65,8 +60,9 @@ if __name__ == "__main__":
     )
     parser.add_argument("fork")
     parser.add_argument("ref")
+    parser.add_argument("machine")
     args = parser.parse_args()
 
     force = args.force != "false"
 
-    main(force, args.fork, args.ref)
+    main(force, args.fork, args.ref, args.machine)

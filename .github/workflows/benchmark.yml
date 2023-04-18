@@ -58,7 +58,7 @@ jobs:
     - name: Determine base
       id: base
       run: |
-        python scripts/get_merge_base.py ${{ inputs.benchmark_base }} >> $GITHUB_OUTPUT
+        python scripts/get_merge_base.py ${{ inputs.benchmark_base }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
         cat $GITHUB_OUTPUT
 
   head:

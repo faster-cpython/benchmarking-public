@@ -210,11 +210,56 @@ def test_should_run_exists_noforce(tmp_path, benchmarks_checkout, capsys):
     for dirname in ["cpython"]:
         shutil.copytree(benchmarks_checkout / dirname, tmp_path / dirname)
 
-    should_run.main(False, "python", "main", tmp_path / "cpython", repo / "results")
+    should_run.main(
+        False,
+        "python",
+        "main",
+        "linux-x86_64-linux",
+        tmp_path / "cpython",
+        repo / "results",
+    )
 
     captured = capsys.readouterr()
     assert captured.out.strip() == "should_run=false"
     assert (repo / "results" / "bm-20220323-3.10.4-9d38120").is_dir()
+
+
+def test_should_run_diff_machine_noforce(tmp_path, benchmarks_checkout, capsys):
+    repo = _copy_repo(tmp_path)
+    for dirname in ["cpython"]:
+        shutil.copytree(benchmarks_checkout / dirname, tmp_path / dirname)
+
+    should_run.main(
+        False,
+        "python",
+        "main",
+        "darwin-x86_64-darwin",
+        tmp_path / "cpython",
+        repo / "results",
+    )
+
+    captured = capsys.readouterr()
+    assert captured.out.strip() == "should_run=true"
+    assert len(list((repo / "results" / "bm-20220323-3.10.4-9d38120").iterdir())) == 1
+
+
+def test_should_run_all_noforce(tmp_path, benchmarks_checkout, capsys):
+    repo = _copy_repo(tmp_path)
+    for dirname in ["cpython"]:
+        shutil.copytree(benchmarks_checkout / dirname, tmp_path / dirname)
+
+    should_run.main(
+        False,
+        "python",
+        "main",
+        "all",
+        tmp_path / "cpython",
+        repo / "results",
+    )
+
+    captured = capsys.readouterr()
+    assert captured.out.strip() == "should_run=true"
+    assert len(list((repo / "results" / "bm-20220323-3.10.4-9d38120").iterdir())) == 1
 
 
 def test_should_run_noexists_noforce(tmp_path, benchmarks_checkout, capsys):
@@ -223,7 +268,14 @@ def test_should_run_noexists_noforce(tmp_path, benchmarks_checkout, capsys):
         shutil.copytree(benchmarks_checkout / dirname, tmp_path / dirname)
     shutil.rmtree(repo / "results" / "bm-20220323-3.10.4-9d38120")
 
-    should_run.main(False, "python", "main", tmp_path / "cpython", repo / "results")
+    should_run.main(
+        False,
+        "python",
+        "main",
+        "linux-x86_64-linux",
+        tmp_path / "cpython",
+        repo / "results",
+    )
 
     captured = capsys.readouterr()
     assert captured.out.strip() == "should_run=true"
@@ -245,7 +297,14 @@ def test_should_run_exists_force(tmp_path, benchmarks_checkout, capsys, monkeypa
     monkeypatch.setattr(should_run.git, "remove", remove)
 
     generate_results.main(repo, force=False, bases=["3.11.0b3"])
-    should_run.main(True, "python", "main", tmp_path / "cpython", repo / "results")
+    should_run.main(
+        True,
+        "python",
+        "main",
+        "linux-x86_64-linux",
+        tmp_path / "cpython",
+        repo / "results",
+    )
 
     captured = capsys.readouterr()
     assert captured.out.splitlines()[-1].strip() == "should_run=true"
@@ -263,7 +322,14 @@ def test_should_run_noexists_force(tmp_path, benchmarks_checkout, capsys):
         shutil.copytree(benchmarks_checkout / dirname, tmp_path / dirname)
     shutil.rmtree(repo / "results" / "bm-20220323-3.10.4-9d38120")
 
-    should_run.main(True, "python", "main", tmp_path / "cpython", repo / "results")
+    should_run.main(
+        True,
+        "python",
+        "main",
+        "linux-x86_64-linux",
+        tmp_path / "cpython",
+        repo / "results",
+    )
 
     captured = capsys.readouterr()
     assert captured.out.strip() == "should_run=true"
@@ -277,7 +343,9 @@ def test_should_run_checkout_failed(tmp_path, capsys):
     subprocess.check_call(["git", "init"], cwd=cpython_path)
 
     with pytest.raises(SystemExit):
-        should_run.main(True, "python", "main", cpython_path, repo / "results")
+        should_run.main(
+            True, "python", "main", "linux-x86_64-linux", cpython_path, repo / "results"
+        )
 
     captured = capsys.readouterr()
     assert "The checkout of cpython failed" in captured.out

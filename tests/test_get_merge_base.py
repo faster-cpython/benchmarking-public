@@ -33,7 +33,7 @@ def checkout(request):
 def test_get_merge_base(tmp_path, capsys, checkout):
     shutil.copytree(checkout / "cpython", tmp_path / "cpython")
 
-    get_merge_base.main(True, tmp_path / "cpython")
+    get_merge_base.main(True, "linux-x86_64-linux", tmp_path / "cpython")
 
     captured = capsys.readouterr()
 
@@ -49,7 +49,7 @@ def test_get_merge_base(tmp_path, capsys, checkout):
 
 
 def test_hard_coded(capsys):
-    get_merge_base.main(False)
+    get_merge_base.main(False, "linux-x86_64-linux")
 
     captured = capsys.readouterr()
 

@@ -92,6 +92,10 @@ def generate_results(output_dir: Path = ROOT_DIR, input_dir: Path = RESULTS_DIR)
     results = {}
     categories = {}
 
+    if not input_dir.exists() or len(list(input_dir.glob("*.csv"))) == 0:
+        print("No profiling data. Skipping.")
+        return
+
     with open(output_dir / "profiling.md", "w") as md:
         for csv_path in sorted(input_dir.glob("*.csv")):
             stem = csv_path.stem.split(".", 1)[0]

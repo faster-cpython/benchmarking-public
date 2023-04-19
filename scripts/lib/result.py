@@ -362,7 +362,7 @@ class Result:
         return names
 
     @functools.cached_property
-    def parsed_version(self) -> pkg_version.Version:
+    def parsed_version(self):
         from packaging import version as pkg_version
 
         return pkg_version.parse(self.version.replace("+", "0"))

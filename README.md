@@ -77,7 +77,6 @@ The available parameters are:
 - `benchmark_base`: If checked, the base of the selected branch will also be benchmarked.
   The base is determined by running `git merge-base upstream/main $ref`.
 - `pystats`: If checked, collect the pystats from running the benchmarks.
-- `publish`: If checked, the results will be published in the public [ideas repo](https://github.com/faster-cpython/ideas) upon successful completion.
 
 To watch the progress of the benchmark, select it from the 🔒 [benchmark action page](https://github.com/faster-cpython/benchmarking/actions/workflows/benchmark.yml).
 It may be canceled from there as well.

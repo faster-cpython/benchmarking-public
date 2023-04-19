@@ -99,7 +99,6 @@ def test_update_metadata(tmp_path, benchmarks_checkout):
         tmp_path / "benchmarks.json",
         "myfork",
         "myref",
-        "false",
         tmp_path / "cpython",
         "12345",
     )
@@ -115,7 +114,6 @@ def test_update_metadata(tmp_path, benchmarks_checkout):
     assert metadata["commit_date"] == "2022-03-23T20:12:04+00:00"
     assert "commit_merge_base" not in metadata
     assert metadata["benchmark_hash"] == "e3b0c4"
-    assert not metadata.get("publish")
     assert (
         metadata["github_action_url"]
         == "https://github.com/faster-cpython/benchmarking/actions/runs/12345"
@@ -145,7 +143,6 @@ def test_run_benchmarks(tmp_path, benchmarks_checkout):
             "main",
             "deepcopy",
             "false",
-            "false",
             "--test_mode",
             "--run_id",
             "12345",
@@ -171,7 +168,6 @@ def test_run_benchmarks(tmp_path, benchmarks_checkout):
     assert metadata["commit_date"] == "2022-03-23T20:12:04+00:00"
     assert "commit_merge_base" not in metadata
     assert metadata["benchmark_hash"] == "9d2e5f"
-    assert not metadata.get("publish")
     assert (
         metadata["github_action_url"]
         == "https://github.com/faster-cpython/benchmarking/actions/runs/12345"
@@ -195,7 +191,6 @@ def test_run_benchmarks(tmp_path, benchmarks_checkout):
             "python",
             "main",
             "foo",
-            "false",
             "false",
             "--run_id",
             "12345",

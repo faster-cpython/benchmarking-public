@@ -19,10 +19,6 @@ env:
       benchmarks:
         description: 'Benchmarks to run (comma-separated; empty runs all benchmarks)'
         type: string
-      publish:
-        description: 'Publish results to the public repo'
-        type: boolean
-        default: false
       dry_run:
         description: 'Dry run: Do not commit to the repo'
         type: boolean
@@ -42,9 +38,6 @@ env:
       benchmarks:
         description: 'Benchmarks to run (comma-separated; empty runs all benchmarks)'
         type: string
-      publish:
-        description: 'Publish results to the public repo'
-        type: boolean
       dry_run:
         description: 'Dry run: Do not commit to the repo'
         type: boolean
@@ -103,7 +96,7 @@ jobs:
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          python scripts/run_benchmarks.py pystats cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} false
+          python scripts/run_benchmarks.py pystats cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} false
       - name: pull
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |

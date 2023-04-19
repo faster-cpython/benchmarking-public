@@ -24,9 +24,6 @@ on:
       pgo:
         description: Build with PGO
         type: boolean
-      publish:
-        description: Publish results to the public repo
-        type: boolean
       dry_run:
         description: 'Dry run: Do not commit to the repo'
         type: boolean
@@ -62,9 +59,6 @@ on:
         type: string
       pgo:
         description: Build with PGO
-        type: boolean
-      publish:
-        description: Publish results to the public repo
         type: boolean
       dry_run:
         description: 'Dry run: Do not commit to the repo'
@@ -133,7 +127,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         rm -rf ~/.debug/*
-        venv/bin/python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} ${{ inputs.perf }} --run_id ${{ github.run_id }}
+        venv/bin/python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.perf }} --run_id ${{ github.run_id }}
     - name: Upload benchmark artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       uses: actions/upload-artifact@v3
@@ -215,7 +209,7 @@ jobs:
     - name: Running pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        venv/bin/python scripts/run_benchmarks.py benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} false --run_id ${{ github.run_id }}
+        venv/bin/python scripts/run_benchmarks.py benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} false --run_id ${{ github.run_id }}
     - name: Upload artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: actions/upload-artifact@v3
@@ -288,7 +282,7 @@ jobs:
     - name: Running pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        venv\Scripts\python.exe scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} false --run_id ${{ github.run_id }}
+        venv\Scripts\python.exe scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} false --run_id ${{ github.run_id }}
     - name: Upload artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: actions/upload-artifact@v3
@@ -369,7 +363,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         rm -rf ~/.debug/*
-        venv/bin/python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.publish }} ${{ inputs.perf }} --run_id ${{ github.run_id }}
+        venv/bin/python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.perf }} --run_id ${{ github.run_id }}
     - name: Upload benchmark artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       uses: actions/upload-artifact@v3

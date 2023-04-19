@@ -9,9 +9,6 @@ import subprocess
 from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
 
 
-from packaging import version as pkg_version
-
-
 from lib import git
 from lib import runners
 
@@ -365,7 +362,9 @@ class Result:
         return names
 
     @functools.cached_property
-    def parsed_version(self) -> pkg_version.Version:
+    def parsed_version(self):
+        from packaging import version as pkg_version
+
         return pkg_version.parse(self.version.replace("+", "0"))
 
     def match_to_bases(self, bases: List[str], results: Iterable["Result"]) -> None:

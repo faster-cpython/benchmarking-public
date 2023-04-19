@@ -8,7 +8,7 @@
 
 ## linux x86_64 (linux)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4546446954)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4747478381)
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
 - [raw results](bm-20230110-linux-x86_64-python-3d5d3f7af6498effbc60-3.12.0a4-3d5d3f7.json)

@@ -32,7 +32,6 @@ def benchmark(
     ref: Optional[str] = None,
     machine: Optional[str] = None,
     benchmark_base: Optional[bool] = None,
-    publish: Optional[bool] = None,
 ) -> None:
     if not (fork is None or isinstance(fork, str)):
         raise TypeError(f"fork must be a str, got {type(fork)}")
@@ -46,16 +45,12 @@ def benchmark(
     if not (benchmark_base is None or isinstance(benchmark_base, bool)):
         raise TypeError(f"benchmark_base must be bool, got {type(benchmark_base)}")
 
-    if not (publish is None or isinstance(publish, bool)):
-        raise TypeError(f"publish must be bool, got {type(publish)}")
-
     flags = _get_flags(
         {
             "fork": fork,
             "ref": ref,
             "machine": machine,
             "benchmark_base": benchmark_base,
-            "publish": publish,
         }
     )
 

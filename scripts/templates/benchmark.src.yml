@@ -30,10 +30,6 @@ name: benchmark
         description: 'Also collect pystats for this commit'
         type: boolean
         default: false
-      publish:
-        description: 'Publish results to the ideas repo'
-        type: boolean
-        default: false
 
 jobs:
   # Determine the base commit of the selected commit. The output is passed to
@@ -67,7 +63,6 @@ jobs:
       machine: ${{ inputs.machine }}
       benchmarks: ${{ inputs.benchmarks }}
       pgo: true
-      publish: ${{ inputs.publish }}
       perf: false
       force: true
     secrets: inherit
@@ -82,7 +77,6 @@ jobs:
       machine: ${{ inputs.machine }}
       benchmarks: ${{ inputs.benchmarks }}
       pgo: true
-      publish: ${{ inputs.publish }}
       perf: false
       force: false
     secrets: inherit
@@ -94,7 +88,6 @@ jobs:
       fork: ${{ inputs.fork }}
       ref: ${{ inputs.ref }}
       benchmarks: ${{ inputs.benchmarks }}
-      publish: ${{ inputs.publish }}
       force: true
     secrets: inherit
 
@@ -106,7 +99,6 @@ jobs:
       fork: python
       ref: ${{ needs.determine_base.outputs.ref }}
       benchmarks: ${{ inputs.benchmarks }}
-      publish: ${{ inputs.publish }}
       force: false
     secrets: inherit
 

@@ -23,9 +23,6 @@ def test_benchmark_arguments():
     with pytest.raises(TypeError):
         gh.benchmark(benchmark_base=1)
 
-    with pytest.raises(TypeError):
-        gh.benchmark(publish=1)
-
 
 def test_benchmark_cmdline(monkeypatch):
     args_out = None

@@ -154,12 +154,9 @@ def update_metadata(
     filename: Path,
     fork: str,
     ref: str,
-    publish: str,
     cpython="cpython",
     run_id: Optional[str] = None,
 ) -> None:
-    publish_bool = publish.lower() == "true"
-
     with open(filename) as fd:
         content = json.load(fd)
 
@@ -176,7 +173,6 @@ def update_metadata(
     metadata["benchmark_hash"] = git.generate_combined_hash(
         ["pyperformance", "pyston-benchmarks"]
     )
-    metadata["publish"] = publish_bool
     if run_id is not None:
         metadata["github_action_url"] = f"{GITHUB_URL}/actions/runs/{run_id}"
 
@@ -190,7 +186,7 @@ def copy_to_directory(filename: Path, python: str, fork: str, ref: str) -> None:
     shutil.copyfile(filename, result.filename)
 
 
-def run_summarize_stats(python: str, fork: str, ref: str, publish: str) -> None:
+def run_summarize_stats(python: str, fork: str, ref: str) -> None:
     summarize_stats_path = (
         Path(python).parent / "Tools" / "scripts" / "summarize_stats.py"
     )
@@ -224,7 +220,7 @@ def run_summarize_stats(python: str, fork: str, ref: str, publish: str) -> None:
 
     pystats_json = Path("pystats.json")
     if pystats_json.is_file():
-        update_metadata(pystats_json, fork, ref, publish)
+        update_metadata(pystats_json, fork, ref)
         shutil.copy(
             pystats_json,
             result.filename.with_suffix(".json"),
@@ -242,7 +238,6 @@ def main(
     fork: str,
     ref: str,
     benchmarks: str,
-    publish: str,
     perf: bool,
     test_mode: bool,
     run_id: Optional[str],
@@ -252,10 +247,10 @@ def main(
     else:
         run_benchmarks(python, benchmarks, [], test_mode)
     if mode == "benchmark":
-        update_metadata(BENCHMARK_JSON, fork, ref, publish, run_id=run_id)
+        update_metadata(BENCHMARK_JSON, fork, ref, run_id=run_id)
         copy_to_directory(BENCHMARK_JSON, python, fork, ref)
     elif mode == "pystats":
-        run_summarize_stats(python, fork, ref, publish)
+        run_summarize_stats(python, fork, ref)
 
 
 if __name__ == "__main__":
@@ -273,7 +268,6 @@ if __name__ == "__main__":
     parser.add_argument("fork", help="The fork of CPython")
     parser.add_argument("ref", help="The git ref in the fork")
     parser.add_argument("benchmarks", help="The benchmarks to run")
-    parser.add_argument("publish", help="Publish results to the public repo")
     parser.add_argument("perf", help="Collect Linux perf profiling data")
     parser.add_argument(
         "--test_mode",
@@ -297,7 +291,6 @@ if __name__ == "__main__":
         args.fork,
         args.ref,
         args.benchmarks,
-        args.publish,
         args.perf.lower() != "false",
         args.test_mode,
         args.run_id,

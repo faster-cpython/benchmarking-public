@@ -249,10 +249,10 @@ def main(
     if choice.lower() in ("y", "yes"):
         for commit in commits:
             if len(commit.runners) == len(all_runners):
-                gh.benchmark(ref=commit.hash, machine="all", publish=True)
+                gh.benchmark(ref=commit.hash, machine="all")
             else:
                 for runner in commit.runners:
-                    gh.benchmark(ref=commit.hash, machine=runner.name, publish=True)
+                    gh.benchmark(ref=commit.hash, machine=runner.name)
 
 
 if __name__ == "__main__":

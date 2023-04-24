@@ -67,16 +67,8 @@ The implementation of this workflow is in `scripts/generate_results.py`.
 
 ### _publish.yml
 
-This workflow copies any `.json` files with a metadata key `publish` set to `true` to the (public) [ideas repo](https://github.com/faster-cpython/ideas).
-The `generate_results.py` script is then run on the ideas repo so that all of the derived tables, plots and indices exist, but only for the data in that repo (not the full set in this repo).
-
-Since this workflow runs in one repo (benchmarking) and publishes in another (ideas), it needs a token.
-To set this up, create a personal access token with contents write access to the ideas repository, and add it as a repository secret with the name `BENCHMARK_PUBLISH`.
-
-This step also mirrors the private `faster-cpython/benchmarking` repo to the public `faster-cpython/benchmarking-public` repo.
-Likewise, this needs a token with contents write access and workflow write access to the `benchmarking-public` repo called `BENCHMARK_MIRROR`.
-
-The implementation of this workflow is in `scripts/publish.py`.
+This step mirrors the private `faster-cpython/benchmarking` repo to the public `faster-cpython/benchmarking-public` repo.
+This needs a token with contents write access and workflow write access to the `benchmarking-public` repo called `BENCHMARK_MIRROR`.
 
 ### _weekly.yml
 
@@ -129,7 +121,6 @@ The following metadata fields are added to the raw results (in addition to those
 - `commit_branch`: the branch, tag or SHA requested
 - `commit_date`: the commit date of the revision being benchmarked (in ISO format)
 - `commit_merge_base`: the commit where the branch diverged from `upstream/main`
-- `publish`: `true` if this set of results should be published to the public results repo
 - `benchmark_hash`: a combined hash of the pyperformance and pyston benchmark suites.
   Used to confirm that two sets of benchmarks used the same benchmarking code.
 - `github_actions_url`: the URL to the github action that produced the result. Useful for getting a full log of the run to debug issues.

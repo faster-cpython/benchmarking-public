@@ -84,7 +84,11 @@ class Comparison:
 
     @property
     def geometric_mean_float(self) -> float:
-        parts = self.geometric_mean.split(" ")
+        geometric_mean = self.geometric_mean
+        if geometric_mean == "not sig":
+            breakpoint()
+            return 1.0
+        parts = geometric_mean.split(" ")
         if len(parts) == 1:
             return 1.0
         (number, direction, *_) = parts

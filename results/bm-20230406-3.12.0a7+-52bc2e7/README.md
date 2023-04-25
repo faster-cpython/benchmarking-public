@@ -48,3 +48,24 @@
 - [table](bm-20230406-pythonperf1-amd64-python-52bc2e7b9d451821513a-3.12.0a7%2B-52bc2e7-vs-3.11.0.md)
 - [plot](bm-20230406-pythonperf1-amd64-python-52bc2e7b9d451821513a-3.12.0a7%2B-52bc2e7-vs-3.11.0.png)
 
+## darwin arm64 (darwin)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4801195541)
+- cpu model: missing
+- platform: macOS-13.2.1-arm64-arm-64bit
+- [raw results](bm-20230406-darwin-arm64-python-52bc2e7b9d451821513a-3.12.0a7%2B-52bc2e7.json)
+
+### vs. 3.10.4
+
+- 1.20x faster
+- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint
+- [table](bm-20230406-darwin-arm64-python-52bc2e7b9d451821513a-3.12.0a7%2B-52bc2e7-vs-3.10.4.md)
+- [plot](bm-20230406-darwin-arm64-python-52bc2e7b9d451821513a-3.12.0a7%2B-52bc2e7-vs-3.10.4.png)
+
+### vs. 3.11.0
+
+- 1.01x slower
+- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint
+- [table](bm-20230406-darwin-arm64-python-52bc2e7b9d451821513a-3.12.0a7%2B-52bc2e7-vs-3.11.0.md)
+- [plot](bm-20230406-darwin-arm64-python-52bc2e7b9d451821513a-3.12.0a7%2B-52bc2e7-vs-3.11.0.png)
+

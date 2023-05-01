@@ -14,7 +14,6 @@ jobs:
       machine: all
       benchmarks: all
       pgo: true
-      publish: true
     secrets: inherit
 
   pystats:
@@ -23,7 +22,6 @@ jobs:
       fork: python
       ref: main
       benchmarks: all
-      publish: true
 
   generate:
     uses: ./.github/workflows/_generate.yml

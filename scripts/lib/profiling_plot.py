@@ -67,7 +67,7 @@ CATEGORIES: Dict[str, List[str]] = {
     ],
     "dynamic": [
         "PyType_IsSubtype",
-        "_?PyMapping_+",
+        "_?PyMapping_.+",
         "_?PyNumber_.+",
         "_?PyObject_.+",
         "_?PySequence_.+",

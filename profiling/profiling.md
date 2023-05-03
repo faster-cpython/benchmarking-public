@@ -121,6 +121,7 @@
 | 0.53% | `python` | `_PyEvalFramePushAndInit` | interpreter |
 | 0.52% | `python` | `PyObject_GenericGetAttr` | dynamic |
 | 0.51% | `python` | `subtype_dealloc` | memory |
+| 0.50% | `python` | `_PyEval_Vector` | interpreter |
 
 ## async_tree_cpu_io_mixed
 
@@ -167,6 +168,7 @@
 | 0.60% | `python` | `_Py_dict_lookup` | lookup |
 | 0.60% | `python` | `_PyType_Lookup` | lookup |
 | 0.58% | `python` | `unicodekeys_lookup_unicode` | lookup |
+| 0.50% | `_heapq.cpython-312-x86_64-linux-gnu.so` | `siftup` | library |
 
 ## async_tree_memoization
 
@@ -440,6 +442,7 @@
 | 0.66% | `python` | `PyNumber_Remainder` | dynamic |
 | 0.64% | `python` | `PyNumber_Rshift` | dynamic |
 | 0.57% | `python` | `list_dealloc` | memory |
+| 0.50% | `python` | `range_iter` | unknown |
 
 ## dask
 
@@ -536,6 +539,7 @@
 | 0.60% | `python` | `PyType_IsSubtype` | dynamic |
 | 0.60% | `python` | `PyObject_GC_UnTrack` | gc |
 | 0.53% | `python` | `r_object` | unknown |
+| 0.50% | `python` | `tuple_alloc` | memory |
 
 ## djangocms
 
@@ -596,6 +600,7 @@
 | 0.61% | `python` | `list_traverse` | gc |
 | 0.61% | `libc-2.31.so` | `pthread_attr_setschedparam` | libc |
 | 0.51% | `python` | `PyObject_GC_UnTrack` | gc |
+| 0.50% | `python` | `PyUnicode_Format` | str |
 
 ## dulwich_log
 
@@ -756,6 +761,7 @@
 | 0.55% | `python` | `long_richcompare` | int |
 | 0.52% | `python` | `tupledealloc` | tuple |
 | 0.51% | `python` | `PyObject_RichCompareBool` | dynamic |
+| 0.50% | `python` | `long_mul` | int |
 
 ## genshi
 
@@ -786,6 +792,7 @@
 | 0.54% | `python` | `dict_dealloc` | memory |
 | 0.51% | `python` | `long_to_decimal_string_internal` | int |
 | 0.51% | `python` | `PyObject_GC_UnTrack` | gc |
+| 0.50% | `libc-2.31.so` | `pthread_attr_setschedparam` | libc |
 
 ## go
 
@@ -915,6 +922,8 @@
 | 0.56% | `python` | `unicode_dealloc` | memory |
 | 0.55% | `python` | `sre_ucs1_match` | library |
 | 0.52% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
+| 0.50% | `python` | `sre_ucs1_count` | library |
+| 0.50% | `libc-2.31.so` | `malloc` | libc |
 
 ## json_dumps
 
@@ -1038,6 +1047,7 @@
 | 0.73% | `python` | `deque_clear.part.0` | unknown |
 | 0.71% | `python` | `PyLong_FromLong` | int |
 | 0.52% | `python` | `PyThread_get_thread_ident` | unknown |
+| 0.50% | `[kernel.kallsyms]` | `native_irq_return_iret` | kernel |
 
 ## mdp
 
@@ -1119,6 +1129,8 @@
 | 0.60% | `python` | `PyDict_GetItemWithError` | dict |
 | 0.58% | `python` | `tupledealloc` | tuple |
 | 0.56% | `python` | `_PyObject_GetMethod` | dynamic |
+| 0.50% | `python` | `_PyObject_GC_New` | gc |
+| 0.50% | `python` | `insertdict` | dict |
 
 ## nbody
 
@@ -1173,6 +1185,8 @@
 | 0.52% | `python` | `PySequence_Tuple` | dynamic |
 | 0.52% | `python` | `PyObject_GC_Del` | gc |
 | 0.51% | `python` | `func_clear` | unknown |
+| 0.50% | `python` | `range_iter` | unknown |
+| 0.50% | `python` | `_PyObject_GC_Link` | gc |
 
 ## pathlib
 
@@ -1361,6 +1375,7 @@
 | 0.60% | `python` | `initialize_locals` | interpreter |
 | 0.53% | `python` | `PyObject_IsSubclass` | dynamic |
 | 0.51% | `python` | `_PyObject_Realloc` | memory |
+| 0.50% | `python` | `PyUnicode_New.part.0` | str |
 
 ## pycparser
 
@@ -1556,6 +1571,8 @@
 | 0.56% | `python` | `_Py_dict_lookup` | lookup |
 | 0.53% | `python` | `_PyLong_Add` | int |
 | 0.52% | `python` | `sre_search` | library |
+| 0.50% | `python` | `PyNumber_AsSsize_t` | dynamic |
+| 0.50% | `python` | `_Py_NewReference` | memory |
 
 ## regex_dna
 
@@ -1756,6 +1773,7 @@
 | 0.56% | `python` | `sre_ucs1_match` | library |
 | 0.54% | `python` | `_PyObject_GC_New` | gc |
 | 0.54% | `python` | `tuple_alloc` | memory |
+| 0.50% | `python` | `insertdict` | dict |
 
 ## sqlglot
 
@@ -1790,6 +1808,7 @@
 | 0.53% | `python` | `PyObject_GC_UnTrack` | gc |
 | 0.52% | `python` | `object_isinstance` | unknown |
 | 0.52% | `python` | `PyObject_GC_Del` | gc |
+| 0.50% | `python` | `_PyObject_GetInstanceAttribute` | dynamic |
 
 ## sqlite_synth
 
@@ -1825,6 +1844,7 @@
 | 0.59% | `python` | `_Py_NewReference` | memory |
 | 0.55% | `python` | `list_dealloc` | memory |
 | 0.51% | `libsqlite3.so.0.8.6` | `sqlite3_step` | library |
+| 0.50% | `libsqlite3.so.0.8.6` | `sqlite3_str_value` | library |
 
 ## sympy
 
@@ -1858,6 +1878,7 @@
 | 0.55% | `python` | `advance` | interpreter |
 | 0.54% | `python` | `PyObject_GC_Del` | gc |
 | 0.53% | `python` | `_PyCode_Quicken` | interpreter |
+| 0.50% | `python` | `visit_reachable` | gc |
 
 ## telco
 
@@ -1902,6 +1923,7 @@
 | 0.55% | `python` | `_PyTuple_FromArray` | tuple |
 | 0.54% | `python` | `_Py_dict_lookup` | lookup |
 | 0.52% | `python` | `PyCMethod_New` | unknown |
+| 0.50% | `python` | `PyNumber_Multiply` | dynamic |
 
 ## thrift
 
@@ -1980,6 +2002,7 @@
 | 0.72% | `python` | `_PyObject_Free` | memory |
 | 0.72% | `libc-2.31.so` | `__nss_database_lookup` | libc |
 | 0.52% | `python` | `visit_reachable` | gc |
+| 0.50% | `python` | `_PyObject_Malloc` | memory |
 
 ## unpickle
 
@@ -2017,6 +2040,7 @@
 | 0.62% | `libc-2.31.so` | `pthread_attr_setschedparam` | libc |
 | 0.60% | `python` | `_Py_Dealloc` | memory |
 | 0.54% | `python` | `dictresize` | unknown |
+| 0.50% | `python` | `unicode_hash` | str |
 
 ## unpickle_list
 
@@ -2132,6 +2156,7 @@
 | 0.55% | `python` | `unicode_decode_utf8` | str |
 | 0.52% | `python` | `_PyTrash_end` | gc |
 | 0.52% | `python` | `_Py_NewReference` | memory |
+| 0.50% | `pyexpat.cpython-312-x86_64-linux-gnu.so` | `storeAtts` | library |
 
 
 ## Categories
@@ -2353,7 +2378,7 @@
 
 ### unknown
 
-7.69% total
+7.68% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |

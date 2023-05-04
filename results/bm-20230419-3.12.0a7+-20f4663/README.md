@@ -28,3 +28,9 @@
 - [table](bm-20230419-linux-x86_64-gaogaotiantian-pep669_cprofile-3.12.0a7%2B-20f4663-vs-3.11.0.md)
 - [plot](bm-20230419-linux-x86_64-gaogaotiantian-pep669_cprofile-3.12.0a7%2B-20f4663-vs-3.11.0.png)
 
+### vs. base
+
+- 1.00x faster
+- [table](bm-20230419-linux-x86_64-gaogaotiantian-pep669_cprofile-3.12.0a7%2B-20f4663-vs-base.md)
+- [plot](bm-20230419-linux-x86_64-gaogaotiantian-pep669_cprofile-3.12.0a7%2B-20f4663-vs-base.png)
+

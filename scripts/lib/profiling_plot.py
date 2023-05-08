@@ -64,6 +64,7 @@ CATEGORIES: Dict[str, List[str]] = {
         "_Py_NewReference",
         "_PyObject_Free",
         "_PyObject_Malloc",
+        ".+[Nn]ew.*",
     ],
     "dynamic": [
         "PyType_IsSubtype",

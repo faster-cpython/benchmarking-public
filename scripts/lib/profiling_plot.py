@@ -59,7 +59,7 @@ CATEGORIES: Dict[str, List[str]] = {
         ".+Dealloc",
         ".+Realloc",
         ".+_alloc",
-        ".+_dealloc",
+        ".+dealloc",
         "_?PyMem_.+",
         "_Py_NewReference",
         "_PyObject_Free",

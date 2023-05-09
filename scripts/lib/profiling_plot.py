@@ -21,6 +21,7 @@ RESULTS_DIR = ROOT_DIR / "results"
 # These are matched in-order.
 CATEGORIES: Dict[str, List[str]] = {
     "interpreter": [
+        "_PyCode_Quicken",
         "_PyEvalFramePushAndInit",
         "_PyEval_EvalFrameDefault",
         "_PyEval_MakeFrameVector",
@@ -28,11 +29,14 @@ CATEGORIES: Dict[str, List[str]] = {
         "_PyFrame_ClearExceptCode",
         "_PyFrame_New_NoTrack",
         "_PyThreadState_PopFrame",
+        "advance",
         "initialize_locals",
     ],
     "lookup": [
         "_PyType_Lookup",
         "_Py_dict_lookup",
+        "_Py_type_getattro",
+        "find_name_in_mro",
         "lookdict_split",
         "lookdict_unicode",
         "lookdict_unicode_nodummy",
@@ -55,17 +59,59 @@ CATEGORIES: Dict[str, List[str]] = {
         ".+Dealloc",
         ".+Realloc",
         ".+_alloc",
-        ".+_dealloc",
+        ".+dealloc",
         "_?PyMem_.+",
+        "_Py_NewReference",
         "_PyObject_Free",
         "_PyObject_Malloc",
+        ".+[Nn]ew.*",
     ],
     "dynamic": [
+        "PyType_IsSubtype",
+        "_?PyMapping_.+",
         "_?PyNumber_.+",
         "_?PyObject_.+",
+        "_?PySequence_.+",
         "type_.+",
     ],
     "library": ["_?sre_.+", "pattern_.+"],
+    "int": [
+        "_?PyLong_.+",
+        "k_.+",
+        "l_.+",
+        "long_.+",
+        "x_.+",
+    ],
+    "tuple": [
+        "_?PyTuple_.+",
+        "tuple.+",
+    ],
+    "dict": [
+        "_?PyDict_.+",
+        "build_indices_unicode",
+        "dict_.+",
+        "find_empty_slot",
+        "free_keys_object",
+        "insert_to_emptydict",
+        "insertdict",
+    ],
+    "list": ["_?PyList_.+", "list_.+", "listiter_.+"],
+    "float": ["_?PyFloat_.+", "float_.+"],
+    "set": ["set_.+", "setiter_.+"],
+    "str": [
+        "_?PyUnicode.+",
+        "_copy_characters.+",
+        "ascii_decode",
+        "replace",
+        "resize_compact",
+        "siphash13",
+        "unicode_.+",
+    ],
+    "slice": [
+        "_?PySlice_.+",
+        "_PyBuildSlice_ConsumeRefs",
+        "_PyEval_SliceIndex",
+    ],
 }
 
 
@@ -112,8 +158,13 @@ def generate_results(output_dir: Path = ROOT_DIR, input_dir: Path = RESULTS_DIR)
 
                 for row in csvreader:
                     self_time, _, obj, sym = row
+
+                    # python3.8 is the "parent" python orchestrating pyperformance
+                    if obj == "python3.8":
+                        continue
+
                     self_time = float(self_time) / 100.0
-                    if self_time < 0.01:
+                    if self_time <= 0.0:
                         break
 
                     category = category_for_obj_sym(obj, sym)
@@ -124,7 +175,10 @@ def generate_results(output_dir: Path = ROOT_DIR, input_dir: Path = RESULTS_DIR)
                     results[stem].setdefault(category, 0.0)
                     results[stem][category] += self_time
 
-                    md.write(f"| {self_time:.2%} | `{obj}` | `{sym}` | {category} |\n")
+                    if self_time >= 0.005:
+                        md.write(
+                            f"| {self_time:.2%} | `{obj}` | `{sym}` | {category} |\n"
+                        )
 
         sorted_categories = sorted(
             [
@@ -144,6 +198,8 @@ def generate_results(output_dir: Path = ROOT_DIR, input_dir: Path = RESULTS_DIR)
             for (obj, sym), self_time in sorted(
                 matches.items(), key=lambda x: x[1], reverse=True
             ):
+                if self_time < 0.005:
+                    break
                 md.write(f"| {self_time / len(results):.2%} | {obj} | {sym} |\n")
 
     fig, ax = plt.subplots(figsize=(8, len(results) * 0.3), layout="constrained")
@@ -151,18 +207,27 @@ def generate_results(output_dir: Path = ROOT_DIR, input_dir: Path = RESULTS_DIR)
     bottom = np.zeros(len(results))
     names = list(results.keys())[::-1]
 
-    for val, category in sorted_categories:
+    hatches = ["", "//", "\\\\"]
+    for i, (val, category) in enumerate(sorted_categories):
         if category == "unknown":
             continue
         values = np.array([results[name].get(category, 0.0) for name in names])
-        ax.barh(names, values, 0.5, label=f"{category} {val:.2%}", left=bottom)
+        ax.barh(
+            names,
+            values,
+            0.5,
+            label=f"{category} {val:.2%}",
+            left=bottom,
+            hatch=hatches[i // 10],
+            color=f"C{i%10}",
+        )
         bottom += values
 
     values = 1.0 - bottom
     ax.barh(names, values, 0.5, label="(other functions)", left=bottom, color="#ddd")
 
     ax.set_xlabel("percentage time")
-    ax.legend()
+    ax.legend(bbox_to_anchor=(1.05, 1.0), loc="upper left")
     ax.set_xlim([0, 1])
 
     fig.savefig(output_dir / "profiling.png")

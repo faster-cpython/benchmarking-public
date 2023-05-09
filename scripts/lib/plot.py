@@ -1,6 +1,8 @@
+import argparse
 import datetime
 from pathlib import Path
 import re
+import sys
 from typing import Any, Dict, Iterable, Optional, Tuple
 
 
@@ -13,7 +15,11 @@ import pyperf
 matplotlib.use("agg")
 
 
-from lib import result
+try:
+    from lib import result
+except ImportError:
+    sys.path.insert(0, str(Path(__file__).parents[1]))
+    from lib import result
 
 
 def get_data(result: result.Result) -> Dict[str, Any]:
@@ -206,3 +212,19 @@ def longitudinal_plot(
 
     plt.savefig(output_filename, dpi=150)
     plt.close()
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser("Compare two benchmark .json files")
+    parser.add_argument("ref", help="The reference .json file")
+    parser.add_argument("head", help="The head .json file")
+    parser.add_argument("output", help="Output filename")
+    parser.add_argument("title", help="Title of plot")
+    args = parser.parse_args()
+
+    plot_diff(
+        result.Result.from_filename(Path(args.ref)),
+        result.Result.from_filename(Path(args.head)),
+        Path(args.output),
+        args.title,
+    )

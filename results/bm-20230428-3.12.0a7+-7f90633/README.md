@@ -21,8 +21,8 @@
 
 ### vs. 3.10.4
 
-- 1.24x faster
-- missing benchmarks: aiohttp, chameleon, django_template, djangocms, flaskblogging, gunicorn, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum
+- 1.24x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, chameleon, django_template, djangocms, flaskblogging, gunicorn, pylint, richards_super, sympy_expand, sympy_integrate, sympy_str, sympy_sum, tomli_loads, typing_runtime_protocols
 - [table](bm-20230428-linux-x86_64-brandtbucher-immortal_interpreter-3.12.0a7%2B-7f90633-vs-3.10.4.md)
 - [plot](bm-20230428-linux-x86_64-brandtbucher-immortal_interpreter-3.12.0a7%2B-7f90633-vs-3.10.4.png)
 

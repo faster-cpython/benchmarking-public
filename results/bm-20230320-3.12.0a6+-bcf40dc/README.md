@@ -16,8 +16,8 @@
 
 ### vs. 3.10.4
 
-- 1.31x faster
-- missing benchmarks: flaskblogging, pylint, tornado_http
+- 1.31x faster \*
+- missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, tomli_loads, tornado_http, typing_runtime_protocols
 - [table](bm-20230320-linux-x86_64-itamaro-eager_tasks_factory-3.12.0a6%2B-bcf40dc-vs-3.10.4.md)
 - [plot](bm-20230320-linux-x86_64-itamaro-eager_tasks_factory-3.12.0a6%2B-bcf40dc-vs-3.10.4.png)
 

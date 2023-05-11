@@ -16,7 +16,7 @@
 ### vs. 3.10.4
 
 - 1.31x faster \*
-- missing benchmarks: comprehensions, dask, flaskblogging, pylint
+- missing benchmarks: asyncio_tcp_ssl, comprehensions, dask, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230210-linux-x86_64-faster%252dcpython-specialized_send-3.12.0a5%2B-685d559-vs-3.10.4.md)
 - [plot](bm-20230210-linux-x86_64-faster%252dcpython-specialized_send-3.12.0a5%2B-685d559-vs-3.10.4.png)
 

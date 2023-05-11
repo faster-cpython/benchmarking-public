@@ -19,7 +19,7 @@
 ### vs. 3.10.4
 
 - 1.31x faster \*
-- missing benchmarks: comprehensions, flaskblogging, pylint
+- missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230221-linux-x86_64-brandtbucher-shrink_load_global-3.12.0a5%2B-cf0df30-vs-3.10.4.md)
 - [plot](bm-20230221-linux-x86_64-brandtbucher-shrink_load_global-3.12.0a5%2B-cf0df30-vs-3.10.4.png)
 

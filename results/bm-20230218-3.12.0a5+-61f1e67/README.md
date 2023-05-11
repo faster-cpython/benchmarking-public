@@ -18,7 +18,7 @@
 ### vs. 3.10.4
 
 - 1.30x faster \*
-- missing benchmarks: comprehensions, flaskblogging, pylint
+- missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230218-linux-x86_64-python-main-3.12.0a5%2B-61f1e67-vs-3.10.4.md)
 - [plot](bm-20230218-linux-x86_64-python-main-3.12.0a5%2B-61f1e67-vs-3.10.4.png)
 
@@ -39,7 +39,7 @@
 ### vs. 3.10.4
 
 - 1.22x faster \*
-- missing benchmarks: aiohttp, comprehensions, flaskblogging, gunicorn, pylint
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230218-darwin-arm64-python-main-3.12.0a5%2B-61f1e67-vs-3.10.4.md)
 - [plot](bm-20230218-darwin-arm64-python-main-3.12.0a5%2B-61f1e67-vs-3.10.4.png)
 

@@ -15,8 +15,8 @@
 
 ### vs. 3.10.4
 
-- 1.24x faster
-- missing benchmarks: aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+- 1.24x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, richards_super, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift, tomli_loads, typing_runtime_protocols
 - [table](bm-20230503-linux-x86_64-python-e95dd40aff35775efce4-3.12.0a7%2B-e95dd40-vs-3.10.4.md)
 - [plot](bm-20230503-linux-x86_64-python-e95dd40aff35775efce4-3.12.0a7%2B-e95dd40-vs-3.10.4.png)
 
@@ -36,8 +36,8 @@
 
 ### vs. 3.10.4
 
-- 1.26x faster
-- missing benchmarks: aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+- 1.26x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift, tomli_loads, typing_runtime_protocols
 - [table](bm-20230503-pythonperf2-x86_64-python-e95dd40aff35775efce4-3.12.0a7%2B-e95dd40-vs-3.10.4.md)
 - [plot](bm-20230503-pythonperf2-x86_64-python-e95dd40aff35775efce4-3.12.0a7%2B-e95dd40-vs-3.10.4.png)
 
@@ -57,8 +57,8 @@
 
 ### vs. 3.10.4
 
-- 1.17x faster
-- missing benchmarks: aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+- 1.17x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift, tomli_loads, typing_runtime_protocols
 - [table](bm-20230503-pythonperf1-amd64-python-e95dd40aff35775efce4-3.12.0a7%2B-e95dd40-vs-3.10.4.md)
 - [plot](bm-20230503-pythonperf1-amd64-python-e95dd40aff35775efce4-3.12.0a7%2B-e95dd40-vs-3.10.4.png)
 
@@ -78,8 +78,8 @@
 
 ### vs. 3.10.4
 
-- 1.15x faster
-- missing benchmarks: aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+- 1.15x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, richards_super, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift, tomli_loads, typing_runtime_protocols
 - [table](bm-20230503-darwin-arm64-python-e95dd40aff35775efce4-3.12.0a7%2B-e95dd40-vs-3.10.4.md)
 - [plot](bm-20230503-darwin-arm64-python-e95dd40aff35775efce4-3.12.0a7%2B-e95dd40-vs-3.10.4.png)
 

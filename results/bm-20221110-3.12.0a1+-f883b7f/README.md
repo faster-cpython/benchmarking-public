@@ -15,8 +15,8 @@
 
 ### vs. 3.10.4
 
-- 1.14x faster
-- missing benchmarks: aiohttp, flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.14x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20221110-pythonperf1-amd64-python-f883b7f8ee3209b52863-3.12.0a1%2B-f883b7f-vs-3.10.4.md)
 - [plot](bm-20221110-pythonperf1-amd64-python-f883b7f8ee3209b52863-3.12.0a1%2B-f883b7f-vs-3.10.4.png)
 

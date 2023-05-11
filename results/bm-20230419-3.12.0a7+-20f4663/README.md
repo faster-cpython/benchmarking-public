@@ -16,8 +16,8 @@
 
 ### vs. 3.10.4
 
-- 1.31x faster
-- missing benchmarks: flaskblogging
+- 1.31x faster \*
+- missing benchmarks: asyncio_tcp_ssl, flaskblogging, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230419-linux-x86_64-gaogaotiantian-pep669_cprofile-3.12.0a7%2B-20f4663-vs-3.10.4.md)
 - [plot](bm-20230419-linux-x86_64-gaogaotiantian-pep669_cprofile-3.12.0a7%2B-20f4663-vs-3.10.4.png)
 

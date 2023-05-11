@@ -15,8 +15,8 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster
-- missing benchmarks: flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.30x faster \*
+- missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20221110-linux-x86_64-python-2e343fc465ed0206340c-3.12.0a1%2B-2e343fc-vs-3.10.4.md)
 - [plot](bm-20221110-linux-x86_64-python-2e343fc465ed0206340c-3.12.0a1%2B-2e343fc-vs-3.10.4.png)
 
@@ -36,8 +36,8 @@
 
 ### vs. 3.10.4
 
-- 1.25x faster
-- missing benchmarks: flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.25x faster \*
+- missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20221110-pythonperf2-x86_64-python-2e343fc465ed0206340c-3.12.0a1%2B-2e343fc-vs-3.10.4.md)
 - [plot](bm-20221110-pythonperf2-x86_64-python-2e343fc465ed0206340c-3.12.0a1%2B-2e343fc-vs-3.10.4.png)
 
@@ -57,8 +57,8 @@
 
 ### vs. 3.10.4
 
-- 1.15x faster
-- missing benchmarks: aiohttp, flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.15x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20221110-pythonperf1-amd64-python-2e343fc465ed0206340c-3.12.0a1%2B-2e343fc-vs-3.10.4.md)
 - [plot](bm-20221110-pythonperf1-amd64-python-2e343fc465ed0206340c-3.12.0a1%2B-2e343fc-vs-3.10.4.png)
 
@@ -78,8 +78,8 @@
 
 ### vs. 3.10.4
 
-- 1.20x faster
-- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.20x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20221110-darwin-arm64-python-2e343fc465ed0206340c-3.12.0a1%2B-2e343fc-vs-3.10.4.md)
 - [plot](bm-20221110-darwin-arm64-python-2e343fc465ed0206340c-3.12.0a1%2B-2e343fc-vs-3.10.4.png)
 

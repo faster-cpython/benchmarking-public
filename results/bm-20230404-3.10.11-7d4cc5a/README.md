@@ -15,7 +15,8 @@
 
 ### vs. 3.10.4
 
-- 1.00x faster
+- 1.00x faster \*
+- missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-linux-x86_64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.md)
 - [plot](bm-20230404-linux-x86_64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.png)
 
@@ -35,7 +36,8 @@
 
 ### vs. 3.10.4
 
-- 1.00x faster
+- 1.00x faster \*
+- missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-pythonperf2-x86_64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.md)
 - [plot](bm-20230404-pythonperf2-x86_64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.png)
 
@@ -55,7 +57,8 @@
 
 ### vs. 3.10.4
 
-- 1.01x slower
+- 1.01x slower \*
+- missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-pythonperf1-amd64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.md)
 - [plot](bm-20230404-pythonperf1-amd64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.png)
 
@@ -75,7 +78,8 @@
 
 ### vs. 3.10.4
 
-- 1.01x slower
+- 1.01x slower \*
+- missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-darwin-arm64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.md)
 - [plot](bm-20230404-darwin-arm64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.png)
 

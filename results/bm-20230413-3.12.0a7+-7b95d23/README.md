@@ -15,8 +15,8 @@
 
 ### vs. 3.10.4
 
-- 1.31x faster
-- missing benchmarks: flaskblogging
+- 1.31x faster \*
+- missing benchmarks: asyncio_tcp_ssl, flaskblogging, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230413-linux-x86_64-python-7b95d23591f605fc05d4-3.12.0a7%2B-7b95d23-vs-3.10.4.md)
 - [plot](bm-20230413-linux-x86_64-python-7b95d23591f605fc05d4-3.12.0a7%2B-7b95d23-vs-3.10.4.png)
 

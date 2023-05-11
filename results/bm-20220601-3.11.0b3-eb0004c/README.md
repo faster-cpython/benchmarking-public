@@ -15,8 +15,8 @@
 
 ### vs. 3.10.4
 
-- 1.26x faster
-- missing benchmarks: coverage
+- 1.26x faster \*
+- missing benchmarks: asyncio_tcp_ssl, coverage, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20220601-linux-x86_64-python-v3.11.0b3-3.11.0b3-eb0004c-vs-3.10.4.md)
 - [plot](bm-20220601-linux-x86_64-python-v3.11.0b3-3.11.0b3-eb0004c-vs-3.10.4.png)
 
@@ -36,8 +36,8 @@
 
 ### vs. 3.10.4
 
-- 1.22x faster
-- missing benchmarks: coverage
+- 1.22x faster \*
+- missing benchmarks: asyncio_tcp_ssl, coverage, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20220601-pythonperf2-x86_64-python-v3.11.0b3-3.11.0b3-eb0004c-vs-3.10.4.md)
 - [plot](bm-20220601-pythonperf2-x86_64-python-v3.11.0b3-3.11.0b3-eb0004c-vs-3.10.4.png)
 
@@ -57,7 +57,8 @@
 
 ### vs. 3.10.4
 
-- 1.05x faster
+- 1.05x faster \*
+- missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20220601-pythonperf1-amd64-python-v3.11.0b3-3.11.0b3-eb0004c-vs-3.10.4.md)
 - [plot](bm-20220601-pythonperf1-amd64-python-v3.11.0b3-3.11.0b3-eb0004c-vs-3.10.4.png)
 
@@ -77,8 +78,8 @@
 
 ### vs. 3.10.4
 
-- 1.20x faster
-- missing benchmarks: coverage
+- 1.20x faster \*
+- missing benchmarks: asyncio_tcp_ssl, coverage, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20220601-darwin-arm64-python-v3.11.0b3-3.11.0b3-eb0004c-vs-3.10.4.md)
 - [plot](bm-20220601-darwin-arm64-python-v3.11.0b3-3.11.0b3-eb0004c-vs-3.10.4.png)
 

@@ -16,8 +16,8 @@
 
 ### vs. 3.10.4
 
-- 1.23x faster
-- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.23x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230129-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a4%2B-a748e80-vs-3.10.4.md)
 - [plot](bm-20230129-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a4%2B-a748e80-vs-3.10.4.png)
 

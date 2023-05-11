@@ -15,7 +15,7 @@
 ### vs. 3.10.4
 
 - 1.30x faster \*
-- missing benchmarks: comprehensions, flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230126-linux-x86_64-python-9f2c479eaf7d922746ef-3.12.0a4%2B-9f2c479-vs-3.10.4.md)
 - [plot](bm-20230126-linux-x86_64-python-9f2c479eaf7d922746ef-3.12.0a4%2B-9f2c479-vs-3.10.4.png)
@@ -37,7 +37,7 @@
 ### vs. 3.10.4
 
 - 1.23x faster \*
-- missing benchmarks: aiohttp, comprehensions, flaskblogging, gunicorn, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230126-darwin-arm64-python-9f2c479eaf7d922746ef-3.12.0a4%2B-9f2c479-vs-3.10.4.md)
 - [plot](bm-20230126-darwin-arm64-python-9f2c479eaf7d922746ef-3.12.0a4%2B-9f2c479-vs-3.10.4.png)

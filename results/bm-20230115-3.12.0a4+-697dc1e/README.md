@@ -16,7 +16,7 @@
 ### vs. 3.10.4
 
 - 1.30x faster \*
-- missing benchmarks: comprehensions, flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230115-linux-x86_64-brandtbucher-quicken_in_compiler-3.12.0a4%2B-697dc1e-vs-3.10.4.md)
 - [plot](bm-20230115-linux-x86_64-brandtbucher-quicken_in_compiler-3.12.0a4%2B-697dc1e-vs-3.10.4.png)

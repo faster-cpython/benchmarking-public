@@ -16,7 +16,7 @@
 ### vs. 3.10.4
 
 - 1.30x faster \*
-- missing benchmarks: comprehensions, flaskblogging, pylint
+- missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230217-linux-x86_64-python-3c0a31cbfd1258bd9615-3.12.0a5%2B-3c0a31c-vs-3.10.4.md)
 - [plot](bm-20230217-linux-x86_64-python-3c0a31cbfd1258bd9615-3.12.0a5%2B-3c0a31c-vs-3.10.4.png)
 

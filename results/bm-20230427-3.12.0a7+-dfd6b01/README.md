@@ -21,8 +21,8 @@
 
 ### vs. 3.10.4
 
-- 1.23x faster
-- missing benchmarks: aiohttp, flaskblogging, gunicorn
+- 1.23x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230427-linux-x86_64-Fidget%252dSpinner-call_function_ex_inl-3.12.0a7%2B-dfd6b01-vs-3.10.4.md)
 - [plot](bm-20230427-linux-x86_64-Fidget%252dSpinner-call_function_ex_inl-3.12.0a7%2B-dfd6b01-vs-3.10.4.png)
 

@@ -15,8 +15,7 @@
 
 ### vs. 3.10.4
 
-- 1.25x faster \*
-- new benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
+- 1.25x faster
 - [table](bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.md)
 - [plot](bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.png)
 
@@ -29,8 +28,7 @@
 
 ### vs. 3.10.4
 
-- 1.21x faster \*
-- new benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
+- 1.21x faster
 - [table](bm-20221024-pythonperf2-x86_64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.md)
 - [plot](bm-20221024-pythonperf2-x86_64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.png)
 
@@ -43,8 +41,7 @@
 
 ### vs. 3.10.4
 
-- 1.11x faster \*
-- new benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
+- 1.11x faster
 - [table](bm-20221024-pythonperf1-amd64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.md)
 - [plot](bm-20221024-pythonperf1-amd64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.png)
 
@@ -57,9 +54,8 @@
 
 ### vs. 3.10.4
 
-- 1.21x faster \*
+- 1.21x faster
 - missing benchmarks: dask
-- new benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20221024-darwin-arm64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.md)
 - [plot](bm-20221024-darwin-arm64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.png)
 

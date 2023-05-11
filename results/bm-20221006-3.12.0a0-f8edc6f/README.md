@@ -15,7 +15,7 @@
 ### vs. 3.10.4
 
 - 1.28x faster \*
-- missing benchmarks: comprehensions, flaskblogging, mypy2
+- missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, mypy2, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20221006-linux-x86_64-python-f8edc6ff531bb9885818-3.12.0a0-f8edc6f-vs-3.10.4.md)
 - [plot](bm-20221006-linux-x86_64-python-f8edc6ff531bb9885818-3.12.0a0-f8edc6f-vs-3.10.4.png)

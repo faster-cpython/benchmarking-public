@@ -17,7 +17,7 @@
 ### vs. 3.10.4
 
 - 1.27x faster \*
-- missing benchmarks: aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift, tomli_loads, typing_runtime_protocols
 - [table](bm-20230510-pythonperf2-x86_64-faster%252dcpython-instrument_all_possi-3.12.0a7%2B-5418580-vs-3.10.4.md)
 - [plot](bm-20230510-pythonperf2-x86_64-faster%252dcpython-instrument_all_possi-3.12.0a7%2B-5418580-vs-3.10.4.png)
 

@@ -15,7 +15,7 @@
 ### vs. 3.10.4
 
 - 1.32x faster \*
-- missing benchmarks: asyncio_tcp, comprehensions, create_gc_cycles, dask, djangocms, flaskblogging, gc_traversal, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: asyncio_tcp, asyncio_tcp_ssl, comprehensions, create_gc_cycles, dask, djangocms, flaskblogging, gc_traversal, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20221128-linux-x86_64-python-594de165bf2f21d6b28e-3.12.0a2%2B-594de16-vs-3.10.4.md)
 - [plot](bm-20221128-linux-x86_64-python-594de165bf2f21d6b28e-3.12.0a2%2B-594de16-vs-3.10.4.png)
@@ -37,8 +37,8 @@
 
 ### vs. 3.10.4
 
-- 1.24x faster
-- missing benchmarks: flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.24x faster \*
+- missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20221128-pythonperf2-x86_64-python-594de165bf2f21d6b28e-3.12.0a2%2B-594de16-vs-3.10.4.md)
 - [plot](bm-20221128-pythonperf2-x86_64-python-594de165bf2f21d6b28e-3.12.0a2%2B-594de16-vs-3.10.4.png)
 
@@ -58,8 +58,8 @@
 
 ### vs. 3.10.4
 
-- 1.21x faster
-- missing benchmarks: aiohttp, flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.21x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20221128-pythonperf1-amd64-python-594de165bf2f21d6b28e-3.12.0a2%2B-594de16-vs-3.10.4.md)
 - [plot](bm-20221128-pythonperf1-amd64-python-594de165bf2f21d6b28e-3.12.0a2%2B-594de16-vs-3.10.4.png)
 
@@ -79,8 +79,8 @@
 
 ### vs. 3.10.4
 
-- 1.18x faster
-- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.18x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20221128-darwin-arm64-python-594de165bf2f21d6b28e-3.12.0a2%2B-594de16-vs-3.10.4.md)
 - [plot](bm-20221128-darwin-arm64-python-594de165bf2f21d6b28e-3.12.0a2%2B-594de16-vs-3.10.4.png)
 

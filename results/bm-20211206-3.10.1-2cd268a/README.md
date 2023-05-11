@@ -21,7 +21,8 @@
 
 ### vs. 3.11.0
 
-- 1.12x slower
+- 1.12x slower \*
+- missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20211206-pythonperf1-amd64-python-2cd268a3a9340346dd86-3.10.1-2cd268a-vs-3.11.0.md)
 - [plot](bm-20211206-pythonperf1-amd64-python-2cd268a3a9340346dd86-3.10.1-2cd268a-vs-3.11.0.png)
 

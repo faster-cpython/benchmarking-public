@@ -27,8 +27,8 @@
 
 ### vs. 3.11.0
 
-- 1.02x slower
-- missing benchmarks: aiohttp, chameleon, django_template, djangocms, flaskblogging, gunicorn, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum
+- 1.02x slower \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, chameleon, django_template, djangocms, flaskblogging, gunicorn, pylint, richards_super, sympy_expand, sympy_integrate, sympy_str, sympy_sum, tomli_loads, typing_runtime_protocols
 - [table](bm-20230429-linux-x86_64-python-738c226786997262b765-3.12.0a7%2B-738c226-vs-3.11.0.md)
 - [plot](bm-20230429-linux-x86_64-python-738c226786997262b765-3.12.0a7%2B-738c226-vs-3.11.0.png)
 

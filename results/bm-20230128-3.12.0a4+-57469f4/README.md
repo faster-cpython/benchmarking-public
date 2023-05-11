@@ -24,7 +24,7 @@
 ### vs. 3.11.0
 
 - 1.03x faster \*
-- missing benchmarks: comprehensions, flaskblogging, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230128-linux-x86_64-brandtbucher-quicken_at_runtime-3.12.0a4%2B-57469f4-vs-3.11.0.md)
 - [plot](bm-20230128-linux-x86_64-brandtbucher-quicken_at_runtime-3.12.0a4%2B-57469f4-vs-3.11.0.png)

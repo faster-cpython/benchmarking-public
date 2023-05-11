@@ -23,7 +23,7 @@
 ### vs. 3.11.0
 
 - 1.00x faster \*
-- missing benchmarks: asyncio_tcp, comprehensions, coverage, create_gc_cycles, dask, djangocms, gc_traversal, mypy2
+- missing benchmarks: asyncio_tcp, asyncio_tcp_ssl, comprehensions, coverage, create_gc_cycles, dask, djangocms, gc_traversal, mypy2, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20220805-linux-x86_64-python-41cb07120b7792eac641-3.11.0rc1-41cb071-vs-3.11.0.md)
 - [plot](bm-20220805-linux-x86_64-python-41cb07120b7792eac641-3.11.0rc1-41cb071-vs-3.11.0.png)
@@ -44,8 +44,8 @@
 
 ### vs. 3.11.0
 
-- 1.01x faster
-- missing benchmarks: coverage
+- 1.01x faster \*
+- missing benchmarks: asyncio_tcp_ssl, coverage, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20220805-pythonperf2-x86_64-python-41cb07120b7792eac641-3.11.0rc1-41cb071-vs-3.11.0.md)
 - [plot](bm-20220805-pythonperf2-x86_64-python-41cb07120b7792eac641-3.11.0rc1-41cb071-vs-3.11.0.png)
 
@@ -64,7 +64,8 @@
 
 ### vs. 3.11.0
 
-- 1.01x faster
+- 1.01x faster \*
+- missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20220805-pythonperf1-amd64-python-41cb07120b7792eac641-3.11.0rc1-41cb071-vs-3.11.0.md)
 - [plot](bm-20220805-pythonperf1-amd64-python-41cb07120b7792eac641-3.11.0rc1-41cb071-vs-3.11.0.png)
 
@@ -84,8 +85,9 @@
 
 ### vs. 3.11.0
 
-- 1.01x faster
-- missing benchmarks: coverage
+- 1.01x faster \*
+- missing benchmarks: asyncio_tcp_ssl, coverage, richards_super, tomli_loads, typing_runtime_protocols
+- new benchmarks: dask
 - [table](bm-20220805-darwin-arm64-python-41cb07120b7792eac641-3.11.0rc1-41cb071-vs-3.11.0.md)
 - [plot](bm-20220805-darwin-arm64-python-41cb07120b7792eac641-3.11.0rc1-41cb071-vs-3.11.0.png)
 

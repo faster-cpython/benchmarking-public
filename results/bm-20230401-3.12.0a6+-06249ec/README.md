@@ -27,8 +27,8 @@
 
 ### vs. 3.11.0
 
-- 1.03x faster
-- missing benchmarks: flaskblogging, pylint
+- 1.03x faster \*
+- missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230401-linux-x86_64-python-main-3.12.0a6%2B-06249ec-vs-3.11.0.md)
 - [plot](bm-20230401-linux-x86_64-python-main-3.12.0a6%2B-06249ec-vs-3.11.0.png)
 
@@ -48,8 +48,8 @@
 
 ### vs. 3.11.0
 
-- 1.02x faster
-- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.02x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230401-pythonperf2-x86_64-python-main-3.12.0a6%2B-06249ec-vs-3.11.0.md)
 - [plot](bm-20230401-pythonperf2-x86_64-python-main-3.12.0a6%2B-06249ec-vs-3.11.0.png)
 
@@ -69,8 +69,8 @@
 
 ### vs. 3.11.0
 
-- 1.07x faster
-- missing benchmarks: aiohttp, flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.07x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230401-pythonperf1-amd64-python-main-3.12.0a6%2B-06249ec-vs-3.11.0.md)
 - [plot](bm-20230401-pythonperf1-amd64-python-main-3.12.0a6%2B-06249ec-vs-3.11.0.png)
 
@@ -90,8 +90,9 @@
 
 ### vs. 3.11.0
 
-- 1.01x slower
-- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint
+- 1.01x slower \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, pylint, richards_super, tomli_loads, typing_runtime_protocols
+- new benchmarks: dask
 - [table](bm-20230401-darwin-arm64-python-main-3.12.0a6%2B-06249ec-vs-3.11.0.md)
 - [plot](bm-20230401-darwin-arm64-python-main-3.12.0a6%2B-06249ec-vs-3.11.0.png)
 

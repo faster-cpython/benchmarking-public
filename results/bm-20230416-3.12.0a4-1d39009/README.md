@@ -23,8 +23,8 @@
 
 ### vs. 3.11.0
 
-- 1.05x slower
-- missing benchmarks: aiohttp, dask, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+- 1.05x slower \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, dask, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - [table](bm-20230416-linux-x86_64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-3.11.0.md)
 - [plot](bm-20230416-linux-x86_64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-3.11.0.png)
 
@@ -51,8 +51,8 @@
 
 ### vs. 3.11.0
 
-- 1.05x slower
-- missing benchmarks: aiohttp, dask, flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+- 1.05x slower \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, dask, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - [table](bm-20230416-pythonperf1-amd64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-3.11.0.md)
 - [plot](bm-20230416-pythonperf1-amd64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-3.11.0.png)
 

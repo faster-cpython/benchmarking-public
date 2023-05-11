@@ -23,7 +23,7 @@
 ### vs. 3.11.0
 
 - 1.04x faster \*
-- missing benchmarks: comprehensions, dask, flaskblogging, pylint
+- missing benchmarks: asyncio_tcp_ssl, comprehensions, dask, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230208-linux-x86_64-iritkatriel-object_init-3.12.0a5%2B-96e2742-vs-3.11.0.md)
 - [plot](bm-20230208-linux-x86_64-iritkatriel-object_init-3.12.0a5%2B-96e2742-vs-3.11.0.png)
 

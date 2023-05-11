@@ -26,7 +26,7 @@
 ### vs. 3.11.0
 
 - 1.04x faster \*
-- missing benchmarks: comprehensions, flaskblogging, pylint
+- missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230222-linux-x86_64-brandtbucher-compare_and_not_bran-3.12.0a5%2B-39ace64-vs-3.11.0.md)
 - [plot](bm-20230222-linux-x86_64-brandtbucher-compare_and_not_bran-3.12.0a5%2B-39ace64-vs-3.11.0.png)
 

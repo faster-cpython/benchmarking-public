@@ -23,8 +23,8 @@
 
 ### vs. 3.11.0
 
-- 1.04x faster
-- missing benchmarks: flaskblogging, pylint
+- 1.04x faster \*
+- missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230327-linux-x86_64-ericsnowcurrently-isolate_interned_dic-3.12.0a6%2B-e53ac85-vs-3.11.0.md)
 - [plot](bm-20230327-linux-x86_64-ericsnowcurrently-isolate_interned_dic-3.12.0a6%2B-e53ac85-vs-3.11.0.png)
 

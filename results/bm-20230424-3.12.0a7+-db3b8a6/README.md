@@ -23,8 +23,8 @@
 
 ### vs. 3.11.0
 
-- 1.01x slower
-- missing benchmarks: aiohttp, flaskblogging, gunicorn
+- 1.01x slower \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230424-linux-x86_64-itamaro-defer_task_name_form-3.12.0a7%2B-db3b8a6-vs-3.11.0.md)
 - [plot](bm-20230424-linux-x86_64-itamaro-defer_task_name_form-3.12.0a7%2B-db3b8a6-vs-3.11.0.png)
 

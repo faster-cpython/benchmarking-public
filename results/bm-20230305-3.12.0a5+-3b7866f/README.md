@@ -23,8 +23,8 @@
 
 ### vs. 3.11.0
 
-- 1.01x faster
-- missing benchmarks: flaskblogging, pylint
+- 1.01x faster \*
+- missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230305-linux-x86_64-gvanrossum-tagged_ptrs-3.12.0a5%2B-3b7866f-vs-3.11.0.md)
 - [plot](bm-20230305-linux-x86_64-gvanrossum-tagged_ptrs-3.12.0a5%2B-3b7866f-vs-3.11.0.png)
 

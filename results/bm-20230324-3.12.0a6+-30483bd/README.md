@@ -28,8 +28,8 @@
 
 ### vs. 3.11.0
 
-- 1.03x faster
-- missing benchmarks: aiohttp, coverage, djangocms, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.03x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, coverage, djangocms, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230324-linux-x86_64-brandtbucher-type_cache-3.12.0a6%2B-30483bd-vs-3.11.0.md)
 - [plot](bm-20230324-linux-x86_64-brandtbucher-type_cache-3.12.0a6%2B-30483bd-vs-3.11.0.png)
 

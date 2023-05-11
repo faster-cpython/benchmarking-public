@@ -24,7 +24,7 @@
 ### vs. 3.11.0
 
 - 1.03x slower \*
-- missing benchmarks: aiohttp, comprehensions, flaskblogging, gunicorn, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230108-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.11.0.md)
 - [plot](bm-20230108-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.11.0.png)
@@ -52,8 +52,8 @@
 ### vs. 3.11.0
 
 - 1.03x faster \*
-- missing benchmarks: aiohttp, comprehensions, flaskblogging, gunicorn, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
-- new benchmarks: mypy
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
+- new benchmarks: dask, mypy
 - [table](bm-20230108-darwin-arm64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.11.0.md)
 - [plot](bm-20230108-darwin-arm64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.11.0.png)
 

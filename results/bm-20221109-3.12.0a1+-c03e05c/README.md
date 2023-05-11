@@ -22,8 +22,8 @@
 
 ### vs. 3.11.0
 
-- 1.01x slower
-- missing benchmarks: aiohttp, flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.01x slower \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20221109-pythonperf1-amd64-python-c03e05c2e72f3ea5e797-3.12.0a1%2B-c03e05c-vs-3.11.0.md)
 - [plot](bm-20221109-pythonperf1-amd64-python-c03e05c2e72f3ea5e797-3.12.0a1%2B-c03e05c-vs-3.11.0.png)
 

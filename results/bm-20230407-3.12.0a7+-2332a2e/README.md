@@ -23,8 +23,8 @@
 
 ### vs. 3.11.0
 
-- 1.06x faster
-- missing benchmarks: aiohttp, flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.06x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230407-pythonperf1-amd64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-3.11.0.md)
 - [plot](bm-20230407-pythonperf1-amd64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-3.11.0.png)
 
@@ -50,8 +50,9 @@
 
 ### vs. 3.11.0
 
-- 1.04x slower
-- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint
+- 1.04x slower \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, pylint, richards_super, tomli_loads, typing_runtime_protocols
+- new benchmarks: dask
 - [table](bm-20230407-darwin-arm64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-3.11.0.md)
 - [plot](bm-20230407-darwin-arm64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-3.11.0.png)
 

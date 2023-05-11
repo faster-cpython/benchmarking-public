@@ -21,7 +21,8 @@
 
 ### vs. 3.11.0
 
-- 1.00x slower
+- 1.00x slower \*
+- missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-linux-x86_64-python-f3909b8bc83675b7ab09-3.11.3-f3909b8-vs-3.11.0.md)
 - [plot](bm-20230404-linux-x86_64-python-f3909b8bc83675b7ab09-3.11.3-f3909b8-vs-3.11.0.png)
 
@@ -40,7 +41,8 @@
 
 ### vs. 3.11.0
 
-- 1.01x faster
+- 1.01x faster \*
+- missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-pythonperf2-x86_64-python-f3909b8bc83675b7ab09-3.11.3-f3909b8-vs-3.11.0.md)
 - [plot](bm-20230404-pythonperf2-x86_64-python-f3909b8bc83675b7ab09-3.11.3-f3909b8-vs-3.11.0.png)
 
@@ -59,7 +61,8 @@
 
 ### vs. 3.11.0
 
-- 1.00x faster
+- 1.00x faster \*
+- missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-pythonperf1-amd64-python-f3909b8bc83675b7ab09-3.11.3-f3909b8-vs-3.11.0.md)
 - [plot](bm-20230404-pythonperf1-amd64-python-f3909b8bc83675b7ab09-3.11.3-f3909b8-vs-3.11.0.png)
 
@@ -78,7 +81,9 @@
 
 ### vs. 3.11.0
 
-- 1.00x faster
+- 1.00x faster \*
+- missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
+- new benchmarks: dask
 - [table](bm-20230404-darwin-arm64-python-f3909b8bc83675b7ab09-3.11.3-f3909b8-vs-3.11.0.md)
 - [plot](bm-20230404-darwin-arm64-python-f3909b8bc83675b7ab09-3.11.3-f3909b8-vs-3.11.0.png)
 

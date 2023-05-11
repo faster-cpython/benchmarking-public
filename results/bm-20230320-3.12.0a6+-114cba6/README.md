@@ -25,8 +25,8 @@
 
 ### vs. 3.11.0
 
-- 1.04x faster
-- missing benchmarks: flaskblogging, pylint
+- 1.04x faster \*
+- missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230320-linux-x86_64-brandtbucher-add_small_int_new-3.12.0a6%2B-114cba6-vs-3.11.0.md)
 - [plot](bm-20230320-linux-x86_64-brandtbucher-add_small_int_new-3.12.0a6%2B-114cba6-vs-3.11.0.png)
 

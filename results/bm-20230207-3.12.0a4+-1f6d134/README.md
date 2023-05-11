@@ -25,7 +25,7 @@
 ### vs. 3.11.0
 
 - 1.02x faster \*
-- missing benchmarks: comprehensions, flaskblogging, pylint
+- missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4%2B-1f6d134-vs-3.11.0.md)
 - [plot](bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4%2B-1f6d134-vs-3.11.0.png)
 

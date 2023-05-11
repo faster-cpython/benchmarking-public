@@ -22,8 +22,8 @@
 
 ### vs. 3.11.0
 
-- 1.05x faster
-- missing benchmarks: flaskblogging
+- 1.05x faster \*
+- missing benchmarks: asyncio_tcp_ssl, flaskblogging, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230422-linux-x86_64-python-916de04fd18385300963-3.12.0a7%2B-916de04-vs-3.11.0.md)
 - [plot](bm-20230422-linux-x86_64-python-916de04fd18385300963-3.12.0a7%2B-916de04-vs-3.11.0.png)
 
@@ -43,8 +43,8 @@
 
 ### vs. 3.11.0
 
-- 1.05x faster
-- missing benchmarks: aiohttp, flaskblogging, gunicorn, sqlalchemy_declarative, sqlalchemy_imperative
+- 1.05x faster \*
+- missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230422-pythonperf2-x86_64-python-916de04fd18385300963-3.12.0a7%2B-916de04-vs-3.11.0.md)
 - [plot](bm-20230422-pythonperf2-x86_64-python-916de04fd18385300963-3.12.0a7%2B-916de04-vs-3.11.0.png)
 

@@ -25,7 +25,7 @@
 ### vs. 3.11.0
 
 - 1.03x faster \*
-- missing benchmarks: comprehensions, dask, flaskblogging, pylint
+- missing benchmarks: asyncio_tcp_ssl, comprehensions, dask, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230209-linux-x86_64-iritkatriel-int_freelist-3.12.0a5%2B-827b81b-vs-3.11.0.md)
 - [plot](bm-20230209-linux-x86_64-iritkatriel-int_freelist-3.12.0a5%2B-827b81b-vs-3.11.0.png)
 

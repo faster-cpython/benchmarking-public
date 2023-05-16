@@ -28,3 +28,30 @@
 - [table](bm-20230323-linux-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.11.0.md)
 - [plot](bm-20230323-linux-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.11.0.png)
 
+## linux x86_64 (pythonperf2)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4991986140)
+- cpu model: 12th Gen Intel(R) Core(TM) i9-12900
+- platform: Linux-5.15.0-67-generic-x86_64-with-glibc2.35
+- [raw results](bm-20230323-pythonperf2-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171.json)
+
+### vs. 3.10.4
+
+- 1.25x faster
+- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- [table](bm-20230323-pythonperf2-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.10.4.md)
+- [plot](bm-20230323-pythonperf2-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.10.4.png)
+
+### vs. 3.11.0
+
+- 1.04x faster
+- missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+- [table](bm-20230323-pythonperf2-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.11.0.md)
+- [plot](bm-20230323-pythonperf2-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.11.0.png)
+
+### vs. base
+
+- 1.01x slower
+- [table](bm-20230323-pythonperf2-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-base.md)
+- [plot](bm-20230323-pythonperf2-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-base.png)
+

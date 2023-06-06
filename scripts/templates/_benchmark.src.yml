@@ -115,7 +115,7 @@ jobs:
         run: |
           py -m venv venv
           venv\Scripts\python.exe -m pip install setuptools wheel
-          venv\Scripts\python.exe -m pip install .\pyperformance
+          venv\Scripts\python.exe -m pip install --no-binary :all: .\pyperformance
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
@@ -185,7 +185,7 @@ jobs:
         run: |
           cpython/python -m venv venv
           venv/bin/python -m pip install setuptools wheel
-          venv/bin/python -m pip install ./pyperformance
+          venv/bin/python -m pip install --no-binary :all: ./pyperformance
       - name: Tune system
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
@@ -273,7 +273,7 @@ jobs:
         run: |
           python3 -m venv venv
           venv/bin/python -m pip install setuptools wheel
-          venv/bin/python -m pip install ./pyperformance
+          venv/bin/python -m pip install --no-binary :all: ./pyperformance
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |

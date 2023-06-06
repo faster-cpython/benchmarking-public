@@ -6,6 +6,27 @@
 - commit date: 2023-04-27T14:06:49-07:00
 - ref: nogil_d595911
 
+## linux x86_64 (linux)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5191112544)
+- cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
+- platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
+- [raw results](bm-20230427-linux-x86_64-mdboom-nogil_d595911-3.12.0a4-d595911.json)
+
+### vs. 3.10.4
+
+- 1.21x faster
+- missing benchmarks: aiohttp, coverage, dask, django_template, djangocms, docutils, dulwich_log, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, thrift, tornado_http
+- [table](bm-20230427-linux-x86_64-mdboom-nogil_d595911-3.12.0a4-d595911-vs-3.10.4.md)
+- [plot](bm-20230427-linux-x86_64-mdboom-nogil_d595911-3.12.0a4-d595911-vs-3.10.4.png)
+
+### vs. 3.11.0
+
+- 1.03x slower
+- missing benchmarks: aiohttp, coverage, dask, django_template, djangocms, docutils, dulwich_log, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, thrift, tornado_http
+- [table](bm-20230427-linux-x86_64-mdboom-nogil_d595911-3.12.0a4-d595911-vs-3.11.0.md)
+- [plot](bm-20230427-linux-x86_64-mdboom-nogil_d595911-3.12.0a4-d595911-vs-3.11.0.png)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5190752460)

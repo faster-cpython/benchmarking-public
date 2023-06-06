@@ -188,6 +188,7 @@ jobs:
           venv/bin/python -m pip install ./pyperformance
       - name: Tune system
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
+        continue-on-error: true
         run: |
           sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system tune
       - name: Tune for perf

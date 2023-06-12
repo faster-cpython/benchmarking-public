@@ -48,6 +48,25 @@
 - [table](bm-20230606-pythonperf2-x86_64-python-v3.11.4-3.11.4-d2340ef-vs-3.11.0.md)
 - [plot](bm-20230606-pythonperf2-x86_64-python-v3.11.4-3.11.4-d2340ef-vs-3.11.0.png)
 
+## windows amd64 (pythonperf1)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5204077606)
+- cpu model: missing
+- platform: Windows-10-10.0.22621-SP0
+- [raw results](bm-20230606-pythonperf1-amd64-python-v3.11.4-3.11.4-d2340ef.json)
+
+### vs. 3.10.4
+
+- 1.08x faster
+- [table](bm-20230606-pythonperf1-amd64-python-v3.11.4-3.11.4-d2340ef-vs-3.10.4.md)
+- [plot](bm-20230606-pythonperf1-amd64-python-v3.11.4-3.11.4-d2340ef-vs-3.10.4.png)
+
+### vs. 3.11.0
+
+- 1.04x slower
+- [table](bm-20230606-pythonperf1-amd64-python-v3.11.4-3.11.4-d2340ef-vs-3.11.0.md)
+- [plot](bm-20230606-pythonperf1-amd64-python-v3.11.4-3.11.4-d2340ef-vs-3.11.0.png)
+
 ## darwin arm64 (darwin)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5204077606)

@@ -48,6 +48,27 @@
 - [table](bm-20230522-pythonperf2-x86_64-python-v3.12.0b1-3.12.0b1-5612078-vs-3.11.0.md)
 - [plot](bm-20230522-pythonperf2-x86_64-python-v3.12.0b1-3.12.0b1-5612078-vs-3.11.0.png)
 
+## windows amd64 (pythonperf1)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5243805159)
+- cpu model: missing
+- platform: Windows-11-10.0.22621-SP0
+- [raw results](bm-20230522-pythonperf1-amd64-python-v3.12.0b1-3.12.0b1-5612078.json)
+
+### vs. 3.10.4
+
+- 1.15x faster
+- missing benchmarks: chameleon, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+- [table](bm-20230522-pythonperf1-amd64-python-v3.12.0b1-3.12.0b1-5612078-vs-3.10.4.md)
+- [plot](bm-20230522-pythonperf1-amd64-python-v3.12.0b1-3.12.0b1-5612078-vs-3.10.4.png)
+
+### vs. 3.11.0
+
+- 1.03x faster
+- missing benchmarks: chameleon, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+- [table](bm-20230522-pythonperf1-amd64-python-v3.12.0b1-3.12.0b1-5612078-vs-3.11.0.md)
+- [plot](bm-20230522-pythonperf1-amd64-python-v3.12.0b1-3.12.0b1-5612078-vs-3.11.0.png)
+
 ## darwin arm64 (darwin)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5243805159)

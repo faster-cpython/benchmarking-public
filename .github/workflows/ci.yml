@@ -43,7 +43,7 @@ jobs:
         with:
           path: |
             .pytest_cache
-          key: pytest_cache_${{ matrix.python_version }}_3
+          key: pytest_cache_${{ matrix.python_version }}_4
       - name: Run tests
         run: |
           python -m pytest tests

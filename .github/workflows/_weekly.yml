@@ -16,6 +16,16 @@ jobs:
       pgo: true
     secrets: inherit
 
+  weekly-3.12:
+    uses: ./.github/workflows/_benchmark.yml
+    with:
+      fork: python
+      ref: 3.12
+      machine: all
+      benchmarks: all
+      pgo: true
+    secrets: inherit
+
   pystats:
     uses: ./.github/workflows/_pystats.yml
     with:

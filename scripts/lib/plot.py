@@ -137,12 +137,14 @@ def get_micro_version(version):
 def longitudinal_plot(
     results: Iterable[result.Result],
     output_filename: Path,
-    bases=["3.10.4", "3.11.0"],
+    bases=["3.10.4", "3.11.0", "3.12.0b1"],
     runners=["linux", "pythonperf2", "darwin", "pythonperf1"],
     names=["linux", "linux2", "macos", "windows"],
-    versions=[(3, 11), (3, 12)],
+    versions=[(3, 11), (3, 12), (3, 13)],
 ):
-    fig, axs = plt.subplots(len(versions), 1, figsize=(10, 10), layout="constrained")
+    fig, axs = plt.subplots(
+        len(versions), 1, figsize=(10, 5 * len(versions)), layout="constrained"
+    )
 
     results = [r for r in results if r.fork == "python"]
 

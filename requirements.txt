@@ -2,7 +2,7 @@ black==23.3.0
 flake8==6.0.0
 ijson==3.2.1
 matplotlib==3.6.3
-pyperf==2.6.0
+pyperf==2.6.1
 pyright==1.1.313
 pytest==7.3.2
 ruamel.yaml==0.17.31

@@ -16,7 +16,7 @@ jobs:
       pgo: true
     secrets: inherit
 
-  weekly-3.12:
+  weekly-312:
     uses: ./.github/workflows/_benchmark.yml
     with:
       fork: python

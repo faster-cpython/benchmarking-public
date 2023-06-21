@@ -86,11 +86,15 @@ jobs:
         path: cpython
         ref: ${{ inputs.ref }}
         fetch-depth: 50
+    - name: Install dependencies
+      run: |
+        python -m venv venv
+        venv/bin/python -m pip install -r requirements.txt
     - name: Should we run?
       if: ${{ always() }}
       id: should_run
       run: |
-        python scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
+        venv/bin/python -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
     - uses: actions/checkout@v3
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:
@@ -112,8 +116,6 @@ jobs:
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        cpython/python -m venv venv
-        venv/bin/python -m pip install setuptools wheel
         venv/bin/python -m pip install --no-binary :all: ./pyperformance
     - name: Tune system
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
@@ -127,7 +129,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         rm -rf ~/.debug/*
-        venv/bin/python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.perf }} --run_id ${{ github.run_id }}
+        venv/bin/python -m scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.perf }} --run_id ${{ github.run_id }}
     - name: Upload benchmark artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       uses: actions/upload-artifact@v3
@@ -171,11 +173,15 @@ jobs:
         path: cpython
         ref: ${{ inputs.ref }}
         fetch-depth: 50
+    - name: Install dependencies
+      run: |
+        python3 -m venv venv
+        venv/bin/python -m pip install requirements.txt
     - name: Should we run?
       if: ${{ always() }}
       id: should_run
       run: |
-        python3 scripts/should_run.py ${{ inputs.force }} ${{ inputs.force }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
+        venv/bin/python -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.force }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
     - uses: actions/checkout@v3
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:
@@ -203,13 +209,11 @@ jobs:
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        python3 -m venv venv
-        venv/bin/python -m pip install setuptools wheel
         venv/bin/python -m pip install --no-binary :all: ./pyperformance
     - name: Running pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        venv/bin/python scripts/run_benchmarks.py benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} false --run_id ${{ github.run_id }}
+        venv/bin/python -m bench_runner.scripts.run_benchmarks benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} false --run_id ${{ github.run_id }}
     - name: Upload artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: actions/upload-artifact@v3
@@ -249,11 +253,15 @@ jobs:
         path: cpython
         ref: ${{ inputs.ref }}
         fetch-depth: 50
+    - name: Install dependencies
+      run: |
+        py -m venv venv
+        venv\Scripts\python.exe -m pip install -r requirements.txt
     - name: Should we run?
       if: ${{ always() }}
       id: should_run
       run: |
-        py scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
+        venv\Scripts\python.exe -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
     - uses: actions/checkout@v3
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:
@@ -276,13 +284,11 @@ jobs:
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        py -m venv venv
-        venv\Scripts\python.exe -m pip install setuptools wheel
         venv\Scripts\python.exe -m pip install --no-binary :all: .\pyperformance
     - name: Running pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        venv\Scripts\python.exe scripts/run_benchmarks.py benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} false --run_id ${{ github.run_id }}
+        venv\Scripts\python.exe -m bench_runner.scripts.run_benchmarks benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} false --run_id ${{ github.run_id }}
     - name: Upload artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: actions/upload-artifact@v3
@@ -322,11 +328,15 @@ jobs:
         path: cpython
         ref: ${{ inputs.ref }}
         fetch-depth: 50
+    - name: Install dependencies
+      run: |
+        python -m venv venv
+        venv/bin/python -m pip install -r requirements.txt
     - name: Should we run?
       if: ${{ always() }}
       id: should_run
       run: |
-        python scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
+        venv/bin/python -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
     - uses: actions/checkout@v3
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:
@@ -348,8 +358,6 @@ jobs:
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        cpython/python -m venv venv
-        venv/bin/python -m pip install setuptools wheel
         venv/bin/python -m pip install --no-binary :all: ./pyperformance
     - name: Tune system
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
@@ -363,7 +371,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         rm -rf ~/.debug/*
-        venv/bin/python scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.perf }} --run_id ${{ github.run_id }}
+        venv/bin/python -m scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.perf }} --run_id ${{ github.run_id }}
     - name: Upload benchmark artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       uses: actions/upload-artifact@v3

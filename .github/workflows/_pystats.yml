@@ -92,11 +92,12 @@ jobs:
       - name: Install pyperformance into the system python
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
+          python -m pip install -r requirements.txt
           python -m pip install ./pyperformance
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          python scripts/run_benchmarks.py pystats cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} false
+          python -m bench_runner.scripts.run_benchmarks pystats cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} false
       - name: pull
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |

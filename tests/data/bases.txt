@@ -1,4 +1,0 @@
-# This is a comment
-base2
-# This is another comment
-base4

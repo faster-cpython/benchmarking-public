@@ -59,11 +59,14 @@ jobs:
           repository: ${{ inputs.fork }}/cpython
           ref: ${{ inputs.ref }}
           path: cpython
+      - name: Install dependencies
+        run: |
+          python -m pip install -r requirements.txt
       - name: Should we run?
         if: ${{ always() }}
         id: should_run
         run: |
-          python scripts/should_run.py ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} all >> $GITHUB_OUTPUT
+          python -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} all >> $GITHUB_OUTPUT
       - uses: actions/checkout@v3
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         with:
@@ -92,7 +95,6 @@ jobs:
       - name: Install pyperformance into the system python
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         run: |
-          python -m pip install -r requirements.txt
           python -m pip install ./pyperformance
       - name: Running pyperformance
         if: ${{ steps.should_run.outputs.should_run != 'false' }}

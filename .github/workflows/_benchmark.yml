@@ -129,7 +129,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         rm -rf ~/.debug/*
-        venv/bin/python -m scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.perf }} --run_id ${{ github.run_id }}
+        venv/bin/python -m bench_runner.scripts.run_benchmarks benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.perf }} --run_id ${{ github.run_id }}
     - name: Upload benchmark artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       uses: actions/upload-artifact@v3
@@ -176,7 +176,7 @@ jobs:
     - name: Install dependencies
       run: |
         python3 -m venv venv
-        venv/bin/python -m pip install requirements.txt
+        venv/bin/python -m pip install -r requirements.txt
     - name: Should we run?
       if: ${{ always() }}
       id: should_run
@@ -371,7 +371,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         rm -rf ~/.debug/*
-        venv/bin/python -m scripts/run_benchmarks.py benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.perf }} --run_id ${{ github.run_id }}
+        venv/bin/python -m bench_runner.scripts.run_benchmarks benchmark cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.perf }} --run_id ${{ github.run_id }}
     - name: Upload benchmark artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       uses: actions/upload-artifact@v3

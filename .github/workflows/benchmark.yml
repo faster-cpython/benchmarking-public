@@ -43,11 +43,11 @@ jobs:
       ref: ${{ steps.base.outputs.ref }}
       need_to_run: ${{ steps.base.outputs.need_to_run }}
     steps:
+    - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
       with:
         python-version: '3.11'
         cache: pip
-    - uses: actions/checkout@v3
     - uses: actions/checkout@v3
       if: ${{ inputs.benchmark_base }}
       with:

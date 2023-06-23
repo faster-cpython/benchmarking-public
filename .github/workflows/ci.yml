@@ -1,0 +1,23 @@
+---
+name: ci
+
+"on":
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          cache: pip
+      - name: Install dependencies
+        run: |
+          python -m pip -r requirements.txt
+      - name: Run sanity check
+        run: |
+          python -m bench_runner.scripts.install --check

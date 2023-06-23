@@ -4,19 +4,12 @@ name: _publish
 "on":
   workflow_call:
     inputs:
-      force:
-        type: boolean
-        default: false
       dry_run:
         type: boolean
         default: false
 
   workflow_dispatch:
     inputs:
-      force:
-        description: "Regenerate all of the derived data, even if it already exists"
-        type: boolean
-        default: false
       dry_run:
         description: "Dry run: Do not commit to the repo"
         type: boolean
@@ -35,7 +28,7 @@ jobs:
         with:
           path: public
           ref: main
-          repository: faster-cpython/benchmarking-public
+          repository: ${{ github.action_repository }}-public
           token: ${{ secrets.BENCHMARK_MIRROR }}
       - name: Mirror
         run: |

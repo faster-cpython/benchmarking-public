@@ -44,6 +44,10 @@ jobs:
       need_to_run: ${{ steps.base.outputs.need_to_run }}
     steps:
     - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: pip
     - uses: actions/checkout@v3
       if: ${{ inputs.benchmark_base }}
       with:
@@ -51,10 +55,13 @@ jobs:
         path: cpython
         ref: ${{ inputs.ref }}
         fetch-depth: 0
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
     - name: Determine base
       id: base
       run: |
-        python scripts/get_merge_base.py ${{ inputs.benchmark_base }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
+        python -m bench_runner.scripts.get_merge_base ${{ inputs.benchmark_base }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
         cat $GITHUB_OUTPUT
 
   head:

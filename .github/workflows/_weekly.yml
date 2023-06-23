@@ -16,6 +16,8 @@ jobs:
       pgo: true
     secrets: inherit
 
+  # TODO: Make weekly branches configurable
+
   weekly-312:
     uses: ./.github/workflows/_benchmark.yml
     with:

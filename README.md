@@ -1,6 +1,6 @@
 # Faster CPython Benchmark Infrastructure
 
-🔒 [▶️ START A BENCHMARK RUN](https://github.com/faster-cpython/benchmarking/actions/workflows/benchmark.yml)
+🔒 [▶️ START A BENCHMARK RUN](../../actions/workflows/benchmark.yml)
 
 ## Results
 
@@ -66,7 +66,7 @@ The results have a resolution of 0.01 (1%).
 
 ### Running benchmarks from the GitHub web UI
 
-Visit the 🔒 [benchmark action](https://github.com/faster-cpython/benchmarking/actions/workflows/benchmark.yml) and click the "Run Workflow" button.
+Visit the 🔒 [benchmark action](../../actions/workflows/benchmark.yml) and click the "Run Workflow" button.
 
 The available parameters are:
 
@@ -80,11 +80,11 @@ The available parameters are:
   The base is determined by running `git merge-base upstream/main $ref`.
 - `pystats`: If checked, collect the pystats from running the benchmarks.
 
-To watch the progress of the benchmark, select it from the 🔒 [benchmark action page](https://github.com/faster-cpython/benchmarking/actions/workflows/benchmark.yml).
+To watch the progress of the benchmark, select it from the 🔒 [benchmark action page](../../actions/workflows/benchmark.yml).
 It may be canceled from there as well.
 To show only your benchmark workflows, select your GitHub ID from the "Actor" dropdown.
 
-When the benchmarking is complete, the results are published to this repository and will appear in the [master table](results/README.md).
+When the benchmarking is complete, the results are published to this repository and will appear in the [master table](RESULTS.md).
 Each set of benchmarks will have:
 
 - The raw `.json` results from pyperformance.

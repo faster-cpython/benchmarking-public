@@ -47,6 +47,7 @@ env:
 
 jobs:
   collect-stats:
+    # TODO: Replace "azure" with "cloud"
     runs-on: [self-hosted, linux, azure]
     steps:
       - uses: actions/checkout@v3

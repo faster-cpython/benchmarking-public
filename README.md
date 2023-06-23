@@ -131,5 +131,5 @@ This is a changelog of changes that affect the derived data and results:
 
 ### Developer docs
 
-For documentation about how this works, see the [developer docs](DEVELOPER.md).
+For documentation about how this works, see the [bench_runner project](https://github.com/faster-cpython/bench_runner).
 

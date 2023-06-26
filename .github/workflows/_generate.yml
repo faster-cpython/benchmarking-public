@@ -27,6 +27,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          # We need to explicitly specify "main" because it might be more recent
+          # than when the entire workflow was kicked off.
+          ref: main
       - uses: actions/setup-python@v4
         with:
           python-version: '3.11'

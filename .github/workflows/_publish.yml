@@ -28,7 +28,7 @@ jobs:
         with:
           path: public
           ref: main
-          repository: ${{ github.action_repository }}-public
+          repository: ${{ github.repository }}-public
           token: ${{ secrets.BENCHMARK_MIRROR }}
       - name: Mirror
         run: |

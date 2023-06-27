@@ -6,6 +6,10 @@
 - commit date: 2022-10-24T18:35:39+01:00
 - ref: v3.11.0
 
+## linux x86_64 (azure)
+
+- [pystats table](bm-20221024-azure-x86_64-python-v3.11.0-3.11.0-deaf509-pystats.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4950475325)

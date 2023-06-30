@@ -67,7 +67,7 @@ jobs:
         if: ${{ always() }}
         id: should_run
         run: |
-          python -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} all >> $GITHUB_OUTPUT
+          python -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} true all >> $GITHUB_OUTPUT
       - uses: actions/checkout@v3
         if: ${{ steps.should_run.outputs.should_run != 'false' }}
         with:

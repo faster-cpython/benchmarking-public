@@ -6,6 +6,27 @@
 - commit date: 2023-07-01T23:16:14+00:00
 - ref: 3.12
 
+## linux x86_64 (linux)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5433854694)
+- cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
+- platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
+- [raw results](bm-20230701-linux-x86_64-python-3.12-3.12.0b3%2B-730c873.json)
+
+### vs. 3.10.4
+
+- 1.28x faster
+- missing benchmarks: aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+- [table](bm-20230701-linux-x86_64-python-3.12-3.12.0b3%2B-730c873-vs-3.10.4.md)
+- [plot](bm-20230701-linux-x86_64-python-3.12-3.12.0b3%2B-730c873-vs-3.10.4.png)
+
+### vs. 3.11.0
+
+- 1.03x faster
+- missing benchmarks: aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+- [table](bm-20230701-linux-x86_64-python-3.12-3.12.0b3%2B-730c873-vs-3.11.0.md)
+- [plot](bm-20230701-linux-x86_64-python-3.12-3.12.0b3%2B-730c873-vs-3.11.0.png)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5433854694)

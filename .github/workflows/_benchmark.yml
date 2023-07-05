@@ -94,7 +94,7 @@ jobs:
       if: ${{ always() }}
       id: should_run
       run: |
-        venv/bin/python -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
+        venv/bin/python -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} false >> $GITHUB_OUTPUT
     - uses: actions/checkout@v3
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:
@@ -181,7 +181,7 @@ jobs:
       if: ${{ always() }}
       id: should_run
       run: |
-        venv/bin/python -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.force }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
+        venv/bin/python -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.force }} ${{ inputs.ref }} ${{ inputs.machine }} false >> $GITHUB_OUTPUT
     - uses: actions/checkout@v3
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:
@@ -261,7 +261,7 @@ jobs:
       if: ${{ always() }}
       id: should_run
       run: |
-        venv\Scripts\python.exe -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
+        venv\Scripts\python.exe -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} false >> $GITHUB_OUTPUT
     - uses: actions/checkout@v3
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:
@@ -336,7 +336,7 @@ jobs:
       if: ${{ always() }}
       id: should_run
       run: |
-        venv/bin/python -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} >> $GITHUB_OUTPUT
+        venv/bin/python -m bench_runner.scripts.should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} false >> $GITHUB_OUTPUT
     - uses: actions/checkout@v3
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:

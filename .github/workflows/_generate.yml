@@ -31,6 +31,10 @@ jobs:
           # We need to explicitly specify "main" because it might be more recent
           # than when the entire workflow was kicked off.
           ref: main
+      - uses: actions/checkout@v3
+        with:
+          repository: python/cpython
+          path: cpython
       - uses: actions/setup-python@v4
         with:
           python-version: '3.11'

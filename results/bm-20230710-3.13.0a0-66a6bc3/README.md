@@ -28,6 +28,12 @@
 - [table](bm-20230710-pythonperf2-x86_64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-3.11.0.md)
 - [plot](bm-20230710-pythonperf2-x86_64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-3.11.0.png)
 
+### vs. base
+
+- 1.00x faster
+- [table](bm-20230710-pythonperf2-x86_64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-base.md)
+- [plot](bm-20230710-pythonperf2-x86_64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-base.png)
+
 ## windows amd64 (pythonperf1)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5517797991)

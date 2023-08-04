@@ -33,3 +33,9 @@
 - [table](bm-20230804-pythonperf2-x86_64-faster%252dcpython-gc_scan_roots-3.13.0a0-3994224-vs-3.11.0.md)
 - [plot](bm-20230804-pythonperf2-x86_64-faster%252dcpython-gc_scan_roots-3.13.0a0-3994224-vs-3.11.0.png)
 
+### vs. base
+
+- 1.00x slower
+- [table](bm-20230804-pythonperf2-x86_64-faster%252dcpython-gc_scan_roots-3.13.0a0-3994224-vs-base.md)
+- [plot](bm-20230804-pythonperf2-x86_64-faster%252dcpython-gc_scan_roots-3.13.0a0-3994224-vs-base.png)
+

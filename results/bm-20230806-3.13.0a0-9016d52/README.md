@@ -7,6 +7,33 @@
 - commit merge base: [9564e31cbc95a723f2414537231bc4611b56644f](https://github.com/brandtbucher/cpython/commit/9564e31cbc95a723f2414537231bc4611b56644f)
 - ref: uops_enabled
 
+## linux x86_64 (linux)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5786875946)
+- cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
+- platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
+- [raw results](bm-20230806-linux-x86_64-brandtbucher-uops_enabled-3.13.0a0-9016d52.json)
+
+### vs. 3.10.4
+
+- 1.24x faster
+- missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+- [table](bm-20230806-linux-x86_64-brandtbucher-uops_enabled-3.13.0a0-9016d52-vs-3.10.4.md)
+- [plot](bm-20230806-linux-x86_64-brandtbucher-uops_enabled-3.13.0a0-9016d52-vs-3.10.4.png)
+
+### vs. 3.11.0
+
+- 1.00x slower
+- missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+- [table](bm-20230806-linux-x86_64-brandtbucher-uops_enabled-3.13.0a0-9016d52-vs-3.11.0.md)
+- [plot](bm-20230806-linux-x86_64-brandtbucher-uops_enabled-3.13.0a0-9016d52-vs-3.11.0.png)
+
+### vs. base
+
+- 1.05x slower
+- [table](bm-20230806-linux-x86_64-brandtbucher-uops_enabled-3.13.0a0-9016d52-vs-base.md)
+- [plot](bm-20230806-linux-x86_64-brandtbucher-uops_enabled-3.13.0a0-9016d52-vs-base.png)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5786875946)

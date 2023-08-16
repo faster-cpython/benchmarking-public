@@ -28,3 +28,9 @@
 - [table](bm-20230805-linux-x86_64-faster%252dcpython-tweak_ints_monitorin-3.13.0a0-0ccd3bb-vs-3.11.0.md)
 - [plot](bm-20230805-linux-x86_64-faster%252dcpython-tweak_ints_monitorin-3.13.0a0-0ccd3bb-vs-3.11.0.png)
 
+### vs. base
+
+- 1.00x slower
+- [table](bm-20230805-linux-x86_64-faster%252dcpython-tweak_ints_monitorin-3.13.0a0-0ccd3bb-vs-base.md)
+- [plot](bm-20230805-linux-x86_64-faster%252dcpython-tweak_ints_monitorin-3.13.0a0-0ccd3bb-vs-base.png)
+

@@ -7,6 +7,8 @@
 - commit hash: d2340ef
 - commit date: 2023-06-06
 - overall geometric mean: 1.08x faster
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.05x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -184,3 +186,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                       | 1.08x faster                                                |
 
 Benchmark hidden because not significant (4): bench_thread_pool, flaskblogging, pathlib, typing_runtime_protocols
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.06x
+- 95% likely to have a speedup of 1.05x
+- 99% likely to have a speedup of 1.05x

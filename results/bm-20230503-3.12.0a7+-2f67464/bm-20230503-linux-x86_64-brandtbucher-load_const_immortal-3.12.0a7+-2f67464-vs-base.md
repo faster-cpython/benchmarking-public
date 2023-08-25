@@ -7,6 +7,8 @@
 - commit hash: 2f67464
 - commit date: 2023-05-03
 - overall geometric mean: 1.00x faster
+- HPT reliability: 99.93%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -134,3 +136,11 @@ All benchmarks:
 | Geometric mean         | (ref)                                                                  | 1.00x faster                                                                |
 
 Benchmark hidden because not significant (28): json, sqlite_synth, dask, pyflate, sqlalchemy_declarative, pickle_list, xml_etree_iterparse, go, deepcopy, async_tree_cpu_io_mixed, regex_compile, spectral_norm, sqlglot_transpile, async_tree_none, json_dumps, scimark_sparse_mat_mult, 2to3, bench_mp_pool, json_loads, dulwich_log, regex_effbot, comprehensions, async_tree_memoization, pickle_pure_python, logging_format, coverage, sqlalchemy_imperative, async_tree_io
+
+
+# HPT report
+
+- Reliability score: 99.93% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

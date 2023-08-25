@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.24x faster
+- Geometric mean: 1.24x faster (HPT: reliability of 100.00%, 1.14x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230715-linux-x86_64-gvanrossum-simple_calls_with_xu-3.13.0a0-db6241c-vs-3.10.4.md)
 - [plot](bm-20230715-linux-x86_64-gvanrossum-simple_calls_with_xu-3.13.0a0-db6241c-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.00x slower
+- Geometric mean: 1.00x slower (HPT: reliability of 99.76%, 1.00x slower at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230715-linux-x86_64-gvanrossum-simple_calls_with_xu-3.13.0a0-db6241c-vs-3.11.0.md)
 - [plot](bm-20230715-linux-x86_64-gvanrossum-simple_calls_with_xu-3.13.0a0-db6241c-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.04x slower
+- Geometric mean: 1.04x slower (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
 - [table](bm-20230715-linux-x86_64-gvanrossum-simple_calls_with_xu-3.13.0a0-db6241c-vs-base.md)
 - [plot](bm-20230715-linux-x86_64-gvanrossum-simple_calls_with_xu-3.13.0a0-db6241c-vs-base.png)
 

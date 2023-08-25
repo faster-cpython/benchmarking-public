@@ -7,6 +7,8 @@
 - commit hash: 0fd3163
 - commit date: 2023-05-31
 - overall geometric mean: 1.04x faster \*
+- HPT reliability: 99.54%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -167,4 +169,12 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                 | 1.04x faster                                                    |
 
 Benchmark hidden because not significant (11): spectral_norm, scimark_sparse_mat_mult, regex_compile, unpickle_list, sympy_sum, generators, bench_mp_pool, sympy_expand, json_dumps, coverage, richards
-Ignored benchmarks (4) of /home/runner/work/benchmarking/benchmarking/results/bm-20230531-3.12.0a4-0fd3163/bm-20230531-linux-x86_64-mdboom-match_nogil_gc-3.12.0a4-0fd3163.json: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
+Ignored benchmarks (4) of results/bm-20230531-3.12.0a4-0fd3163/bm-20230531-linux-x86_64-mdboom-match_nogil_gc-3.12.0a4-0fd3163.json: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
+
+
+# HPT report
+
+- Reliability score: 99.54% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

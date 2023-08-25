@@ -7,6 +7,8 @@
 - commit hash: cf0df30
 - commit date: 2023-02-21
 - overall geometric mean: 1.00x slower
+- HPT reliability: 58.12%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -148,3 +150,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x slower                                                               |
 
 Benchmark hidden because not significant (33): async_tree_none, logging_silent, async_tree_cpu_io_mixed, sqlite_synth, dask, sympy_str, sympy_expand, mypy2, sympy_sum, sympy_integrate, deltablue, json_loads, asyncio_tcp, nqueens, pprint_safe_repr, async_generators, bench_mp_pool, 2to3, logging_simple, bench_thread_pool, pyflate, html5lib, unpickle_pure_python, dulwich_log, tornado_http, sqlglot_normalize, thrift, xml_etree_parse, meteor_contest, float, scimark_fft, sqlalchemy_imperative, djangocms
+
+
+# HPT report
+
+- Reliability score: 58.12% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

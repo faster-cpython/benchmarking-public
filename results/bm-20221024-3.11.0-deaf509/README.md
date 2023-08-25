@@ -19,7 +19,7 @@
 
 ### vs. 3.10.4
 
-- 1.25x faster
+- Geometric mean: 1.24x faster (HPT: reliability of 100.00%, 1.19x faster at 99th %ile)
 - [table](bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.md)
 - [plot](bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.png)
 
@@ -32,7 +32,7 @@
 
 ### vs. 3.10.4
 
-- 1.21x faster
+- Geometric mean: 1.21x faster (HPT: reliability of 100.00%, 1.15x faster at 99th %ile)
 - [table](bm-20221024-pythonperf2-x86_64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.md)
 - [plot](bm-20221024-pythonperf2-x86_64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.png)
 
@@ -45,7 +45,7 @@
 
 ### vs. 3.10.4
 
-- 1.11x faster
+- Geometric mean: 1.12x faster (HPT: reliability of 100.00%, 1.08x faster at 99th %ile)
 - [table](bm-20221024-pythonperf1-amd64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.md)
 - [plot](bm-20221024-pythonperf1-amd64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.png)
 
@@ -58,7 +58,7 @@
 
 ### vs. 3.10.4
 
-- 1.21x faster
+- Geometric mean: 1.21x faster (HPT: reliability of 100.00%, 1.16x faster at 99th %ile)
 - missing benchmarks: dask
 - [table](bm-20221024-darwin-arm64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.md)
 - [plot](bm-20221024-darwin-arm64-python-v3.11.0-3.11.0-deaf509-vs-3.10.4.png)

@@ -17,21 +17,21 @@
 
 ### vs. 3.10.4
 
-- 1.28x faster \*
+- Geometric mean: 1.29x faster \* (HPT: reliability of 100.00%, 1.25x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4%2B-1f6d134-vs-3.10.4.md)
 - [plot](bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4%2B-1f6d134-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.02x faster \*
+- Geometric mean: 1.03x faster \* (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4%2B-1f6d134-vs-3.11.0.md)
 - [plot](bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4%2B-1f6d134-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.01x slower
+- Geometric mean: 1.01x slower (HPT: reliability of 92.27%, 1.00x slower at 99th %ile)
 - [table](bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4%2B-1f6d134-vs-base.md)
 - [plot](bm-20230207-linux-x86_64-brandtbucher-shrink_method_caches-3.12.0a4%2B-1f6d134-vs-base.png)
 

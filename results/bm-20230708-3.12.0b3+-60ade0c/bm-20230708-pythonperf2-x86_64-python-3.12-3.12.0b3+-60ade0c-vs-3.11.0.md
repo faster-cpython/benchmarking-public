@@ -7,6 +7,8 @@
 - commit hash: 60ade0c
 - commit date: 2023-07-08
 - overall geometric mean: 1.07x faster
+- HPT reliability: 99.89%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -166,3 +168,11 @@ All benchmarks:
 
 Benchmark hidden because not significant (3): tornado_http, spectral_norm, pprint_pformat
 Ignored benchmarks (16) of results/bm-20221024-3.11.0-deaf509/bm-20221024-pythonperf2-x86_64-python-v3.11.0-3.11.0-deaf509.json: aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+
+
+# HPT report
+
+- Reliability score: 99.89% likely to be faster
+- 90% likely to have a speedup of 1.01x
+- 95% likely to have a speedup of 1.01x
+- 99% likely to have a speedup of 1.00x

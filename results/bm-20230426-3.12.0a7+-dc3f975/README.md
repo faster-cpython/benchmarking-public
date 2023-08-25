@@ -15,14 +15,14 @@
 
 ### vs. 3.10.4
 
-- 1.23x faster \*
+- Geometric mean: 1.23x faster \* (HPT: reliability of 100.00%, 1.17x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230426-linux-x86_64-python-dc3f97549a8fe4f7fea8-3.12.0a7%2B-dc3f975-vs-3.10.4.md)
 - [plot](bm-20230426-linux-x86_64-python-dc3f97549a8fe4f7fea8-3.12.0a7%2B-dc3f975-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.02x slower \*
+- Geometric mean: 1.01x slower \* (HPT: reliability of 99.91%, 1.00x slower at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230426-linux-x86_64-python-dc3f97549a8fe4f7fea8-3.12.0a7%2B-dc3f975-vs-3.11.0.md)
 - [plot](bm-20230426-linux-x86_64-python-dc3f97549a8fe4f7fea8-3.12.0a7%2B-dc3f975-vs-3.11.0.png)

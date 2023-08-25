@@ -7,6 +7,8 @@
 - commit hash: a4921c7
 - commit date: 2023-07-16
 - overall geometric mean: 1.02x faster
+- HPT reliability: 75.38%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -163,3 +165,11 @@ All benchmarks:
 
 Benchmark hidden because not significant (4): pycparser, sqlglot_optimize, logging_format, tomli_loads
 Ignored benchmarks (16) of results/bm-20221024-3.11.0-deaf509/bm-20221024-pythonperf1-amd64-python-v3.11.0-3.11.0-deaf509.json: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+
+
+# HPT report
+
+- Reliability score: 75.38% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

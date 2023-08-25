@@ -15,7 +15,7 @@
 
 ### vs. 3.10.4
 
-- 1.22x faster \*
+- Geometric mean: 1.23x faster \* (HPT: reliability of 100.00%, 1.17x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230108-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.10.4.md)
@@ -23,7 +23,7 @@
 
 ### vs. 3.11.0
 
-- 1.03x slower \*
+- Geometric mean: 1.02x slower \* (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230108-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.11.0.md)
@@ -31,7 +31,7 @@
 
 ### vs. base
 
-- 1.06x slower
+- Geometric mean: 1.06x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
 - [table](bm-20230108-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-base.md)
 - [plot](bm-20230108-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-base.png)
 
@@ -43,7 +43,7 @@
 
 ### vs. 3.10.4
 
-- 1.25x faster \*
+- Geometric mean: 1.25x faster \* (HPT: reliability of 100.00%, 1.20x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230108-darwin-arm64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.10.4.md)
@@ -51,7 +51,7 @@
 
 ### vs. 3.11.0
 
-- 1.03x faster \*
+- Geometric mean: 1.04x faster \* (HPT: reliability of 99.99%, 1.00x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - new benchmarks: dask, mypy
 - [table](bm-20230108-darwin-arm64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-3.11.0.md)
@@ -59,7 +59,7 @@
 
 ### vs. base
 
-- 1.02x faster \*
+- Geometric mean: 1.03x faster \* (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - missing benchmarks: 🔴 comprehensions, mypy2
 - new benchmarks: mypy
 - [table](bm-20230108-darwin-arm64-eduardo%252delizondo-immortal_references-3.12.0a3%2B-1dfe27a-vs-base.md)

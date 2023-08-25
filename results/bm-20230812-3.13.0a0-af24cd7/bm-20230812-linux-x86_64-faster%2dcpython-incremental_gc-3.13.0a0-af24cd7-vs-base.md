@@ -7,6 +7,8 @@
 - commit hash: af24cd7
 - commit date: 2023-08-12
 - overall geometric mean: 1.02x faster
+- HPT reliability: 75.46%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -145,3 +147,11 @@ All benchmarks:
 
 Benchmark hidden because not significant (15): spectral_norm, logging_format, scimark_sor, xml_etree_generate, pprint_safe_repr, bench_mp_pool, deepcopy, bench_thread_pool, typing_runtime_protocols, raytrace, logging_simple, go, asyncio_tcp, json, unpickle
 Ignored benchmarks (3) of results/bm-20230807-3.13.0a0-2ac103c/bm-20230807-linux-x86_64-python-2ac103c346ffe9d0e4c1-3.13.0a0-2ac103c.json: docutils, pycparser, tomli_loads
+
+
+# HPT report
+
+- Reliability score: 75.46% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

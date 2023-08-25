@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.29x faster
+- Geometric mean: 1.29x faster (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230805-linux-x86_64-faster%252dcpython-tweak_ints_monitorin-3.13.0a0-0ccd3bb-vs-3.10.4.md)
 - [plot](bm-20230805-linux-x86_64-faster%252dcpython-tweak_ints_monitorin-3.13.0a0-0ccd3bb-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster
+- Geometric mean: 1.04x faster (HPT: reliability of 64.34%, 1.00x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230805-linux-x86_64-faster%252dcpython-tweak_ints_monitorin-3.13.0a0-0ccd3bb-vs-3.11.0.md)
 - [plot](bm-20230805-linux-x86_64-faster%252dcpython-tweak_ints_monitorin-3.13.0a0-0ccd3bb-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x slower
+- Geometric mean: 1.00x slower (HPT: reliability of 88.93%, 1.00x slower at 99th %ile)
 - [table](bm-20230805-linux-x86_64-faster%252dcpython-tweak_ints_monitorin-3.13.0a0-0ccd3bb-vs-base.md)
 - [plot](bm-20230805-linux-x86_64-faster%252dcpython-tweak_ints_monitorin-3.13.0a0-0ccd3bb-vs-base.png)
 

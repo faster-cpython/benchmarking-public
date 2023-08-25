@@ -7,6 +7,8 @@
 - commit hash: ab2df81
 - commit date: 2023-08-10
 - overall geometric mean: 1.00x slower
+- HPT reliability: 99.30%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -125,3 +127,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                 | 1.00x slower                                                                    |
 
 Benchmark hidden because not significant (33): logging_format, json_dumps, meteor_contest, dulwich_log, xml_etree_parse, richards_super, create_gc_cycles, tomli_loads, float, comprehensions, xml_etree_process, raytrace, tornado_http, dask, xml_etree_iterparse, sqlglot_parse, docutils, bench_mp_pool, telco, pyflate, bench_thread_pool, pprint_safe_repr, async_tree_cpu_io_mixed, richards, crypto_pyaes, sqlglot_transpile, unpickle, json, async_tree_none, pycparser, mypy2, async_generators, async_tree_memoization
+
+
+# HPT report
+
+- Reliability score: 99.30% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

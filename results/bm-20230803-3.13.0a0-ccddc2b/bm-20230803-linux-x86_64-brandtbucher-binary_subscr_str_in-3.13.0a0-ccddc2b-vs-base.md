@@ -7,6 +7,8 @@
 - commit hash: ccddc2b
 - commit date: 2023-08-03
 - overall geometric mean: 1.01x slower
+- HPT reliability: 99.97%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -146,3 +148,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                 | 1.01x slower                                                                |
 
 Benchmark hidden because not significant (20): sqlglot_transpile, float, typing_runtime_protocols, raytrace, deepcopy, unpickle, pathlib, bench_mp_pool, mypy2, bench_thread_pool, asyncio_tcp, xml_etree_iterparse, async_tree_cpu_io_mixed, tornado_http, async_generators, logging_simple, async_tree_memoization, xml_etree_parse, dask, json
+
+
+# HPT report
+
+- Reliability score: 99.97% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

@@ -7,6 +7,8 @@
 - commit hash: 121fbad
 - commit date: 2023-06-21
 - overall geometric mean: 1.01x slower
+- HPT reliability: 99.45%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -148,3 +150,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                 | 1.01x slower                                                    |
 
 Benchmark hidden because not significant (15): unpickle, xml_etree_parse, sqlite_synth, async_tree_cpu_io_mixed, async_tree_none, async_tree_memoization, create_gc_cycles, scimark_monte_carlo, logging_simple, pickle_pure_python, pathlib, bench_mp_pool, raytrace, dulwich_log, xml_etree_generate
+
+
+# HPT report
+
+- Reliability score: 99.45% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

@@ -20,14 +20,14 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster
+- Geometric mean: 1.30x faster (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230625-linux-x86_64-python-main-3.13.0a0-bef1c87-vs-3.10.4.md)
 - [plot](bm-20230625-linux-x86_64-python-main-3.13.0a0-bef1c87-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.05x faster
+- Geometric mean: 1.05x faster (HPT: reliability of 95.66%, 1.00x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230625-linux-x86_64-python-main-3.13.0a0-bef1c87-vs-3.11.0.md)
 - [plot](bm-20230625-linux-x86_64-python-main-3.13.0a0-bef1c87-vs-3.11.0.png)
@@ -41,14 +41,14 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster
+- Geometric mean: 1.30x faster (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230625-pythonperf2-x86_64-python-main-3.13.0a0-bef1c87-vs-3.10.4.md)
 - [plot](bm-20230625-pythonperf2-x86_64-python-main-3.13.0a0-bef1c87-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.07x faster
+- Geometric mean: 1.07x faster (HPT: reliability of 99.45%, 1.00x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230625-pythonperf2-x86_64-python-main-3.13.0a0-bef1c87-vs-3.11.0.md)
 - [plot](bm-20230625-pythonperf2-x86_64-python-main-3.13.0a0-bef1c87-vs-3.11.0.png)
@@ -62,14 +62,14 @@
 
 ### vs. 3.10.4
 
-- 1.16x faster
+- Geometric mean: 1.16x faster (HPT: reliability of 100.00%, 1.09x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230625-pythonperf1-amd64-python-main-3.13.0a0-bef1c87-vs-3.10.4.md)
 - [plot](bm-20230625-pythonperf1-amd64-python-main-3.13.0a0-bef1c87-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.03x faster
+- Geometric mean: 1.03x faster (HPT: reliability of 53.47%, 1.00x slower at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230625-pythonperf1-amd64-python-main-3.13.0a0-bef1c87-vs-3.11.0.md)
 - [plot](bm-20230625-pythonperf1-amd64-python-main-3.13.0a0-bef1c87-vs-3.11.0.png)
@@ -83,14 +83,14 @@
 
 ### vs. 3.10.4
 
-- 1.22x faster
+- Geometric mean: 1.22x faster (HPT: reliability of 100.00%, 1.15x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230625-darwin-arm64-python-main-3.13.0a0-bef1c87-vs-3.10.4.md)
 - [plot](bm-20230625-darwin-arm64-python-main-3.13.0a0-bef1c87-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.01x faster
+- Geometric mean: 1.01x faster (HPT: reliability of 86.93%, 1.00x slower at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230625-darwin-arm64-python-main-3.13.0a0-bef1c87-vs-3.11.0.md)
 - [plot](bm-20230625-darwin-arm64-python-main-3.13.0a0-bef1c87-vs-3.11.0.png)

@@ -7,6 +7,8 @@
 - commit hash: 1bbc515
 - commit date: 2023-07-12
 - overall geometric mean: 1.00x faster
+- HPT reliability: 61.37%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -133,3 +135,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                      | 1.00x faster                                                                      |
 
 Benchmark hidden because not significant (28): asyncio_tcp_ssl, async_tree_none, deepcopy_memo, dask, create_gc_cycles, async_tree_cpu_io_mixed, bench_mp_pool, pathlib, pidigits, richards, dulwich_log, sqlglot_transpile, pprint_pformat, async_tree_memoization, xml_etree_generate, richards_super, pyflate, json_loads, tornado_http, comprehensions, pickle_pure_python, json_dumps, asyncio_tcp, python_startup, gc_traversal, async_tree_io, bench_thread_pool, python_startup_no_site
+
+
+# HPT report
+
+- Reliability score: 61.37% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

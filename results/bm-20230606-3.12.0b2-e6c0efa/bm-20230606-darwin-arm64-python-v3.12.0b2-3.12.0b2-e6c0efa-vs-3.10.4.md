@@ -7,6 +7,8 @@
 - commit hash: e6c0efa
 - commit date: 2023-06-06
 - overall geometric mean: 1.22x faster
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.14x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -168,4 +170,12 @@ All benchmarks:
 | Geometric mean           | (ref)                                                  | 1.22x faster                                               |
 
 Benchmark hidden because not significant (3): mdp, pickle_dict, pidigits
-Ignored benchmarks (14) of /home/runner/work/benchmarking/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+Ignored benchmarks (14) of results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.18x
+- 95% likely to have a speedup of 1.17x
+- 99% likely to have a speedup of 1.14x

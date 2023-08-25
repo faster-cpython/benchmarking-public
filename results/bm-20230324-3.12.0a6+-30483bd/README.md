@@ -21,21 +21,21 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster \*
+- Geometric mean: 1.30x faster \* (HPT: reliability of 100.00%, 1.25x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, coverage, djangocms, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230324-linux-x86_64-brandtbucher-type_cache-3.12.0a6%2B-30483bd-vs-3.10.4.md)
 - [plot](bm-20230324-linux-x86_64-brandtbucher-type_cache-3.12.0a6%2B-30483bd-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.03x faster \*
+- Geometric mean: 1.03x faster \* (HPT: reliability of 99.98%, 1.00x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, coverage, djangocms, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230324-linux-x86_64-brandtbucher-type_cache-3.12.0a6%2B-30483bd-vs-3.11.0.md)
 - [plot](bm-20230324-linux-x86_64-brandtbucher-type_cache-3.12.0a6%2B-30483bd-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x slower
+- Geometric mean: 1.00x slower (HPT: reliability of 99.96%, 1.00x slower at 99th %ile)
 - missing benchmarks: 🔴 aiohttp, coverage, djangocms, gunicorn, sqlalchemy_declarative, sqlalchemy_imperative
 - [table](bm-20230324-linux-x86_64-brandtbucher-type_cache-3.12.0a6%2B-30483bd-vs-base.md)
 - [plot](bm-20230324-linux-x86_64-brandtbucher-type_cache-3.12.0a6%2B-30483bd-vs-base.png)

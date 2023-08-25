@@ -7,6 +7,8 @@
 - commit hash: ba16621
 - commit date: 2022-12-17
 - overall geometric mean: 1.00x faster
+- HPT reliability: 97.49%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -146,3 +148,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x faster                                                             |
 
 Benchmark hidden because not significant (25): unpickle, meteor_contest, logging_silent, async_tree_cpu_io_mixed, async_tree_none, xml_etree_iterparse, sqlglot_transpile, nbody, sqlite_synth, html5lib, raytrace, xml_etree_process, regex_effbot, regex_compile, sqlglot_parse, deltablue, bench_mp_pool, scimark_monte_carlo, dulwich_log, bench_thread_pool, float, 2to3, sympy_integrate, spectral_norm, mypy
+
+
+# HPT report
+
+- Reliability score: 97.49% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

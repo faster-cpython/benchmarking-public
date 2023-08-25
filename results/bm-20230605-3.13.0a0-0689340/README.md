@@ -15,14 +15,14 @@
 
 ### vs. 3.10.4
 
-- 1.29x faster
+- Geometric mean: 1.29x faster (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230605-linux-x86_64-python-06893403668961fdbd5d-3.13.0a0-0689340-vs-3.10.4.md)
 - [plot](bm-20230605-linux-x86_64-python-06893403668961fdbd5d-3.13.0a0-0689340-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster
+- Geometric mean: 1.04x faster (HPT: reliability of 69.20%, 1.00x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230605-linux-x86_64-python-06893403668961fdbd5d-3.13.0a0-0689340-vs-3.11.0.md)
 - [plot](bm-20230605-linux-x86_64-python-06893403668961fdbd5d-3.13.0a0-0689340-vs-3.11.0.png)
@@ -36,14 +36,14 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster
+- Geometric mean: 1.30x faster (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230605-pythonperf2-x86_64-python-06893403668961fdbd5d-3.13.0a0-0689340-vs-3.10.4.md)
 - [plot](bm-20230605-pythonperf2-x86_64-python-06893403668961fdbd5d-3.13.0a0-0689340-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.07x faster
+- Geometric mean: 1.07x faster (HPT: reliability of 99.72%, 1.01x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230605-pythonperf2-x86_64-python-06893403668961fdbd5d-3.13.0a0-0689340-vs-3.11.0.md)
 - [plot](bm-20230605-pythonperf2-x86_64-python-06893403668961fdbd5d-3.13.0a0-0689340-vs-3.11.0.png)

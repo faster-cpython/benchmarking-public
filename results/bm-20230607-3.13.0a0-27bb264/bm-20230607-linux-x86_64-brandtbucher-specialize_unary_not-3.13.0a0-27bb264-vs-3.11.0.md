@@ -7,6 +7,8 @@
 - commit hash: 27bb264
 - commit date: 2023-06-07
 - overall geometric mean: 1.01x faster
+- HPT reliability: 98.22%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -156,4 +158,12 @@ All benchmarks:
 | Geometric mean           | (ref)                                                  | 1.01x faster                                                                |
 
 Benchmark hidden because not significant (11): sqlglot_transpile, regex_v8, deltablue, bench_mp_pool, go, logging_silent, meteor_contest, pathlib, xml_etree_iterparse, raytrace, async_tree_cpu_io_mixed
-Ignored benchmarks (18) of /home/runner/work/benchmarking/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509.json: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+Ignored benchmarks (18) of results/bm-20221024-3.11.0-deaf509/bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509.json: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+
+
+# HPT report
+
+- Reliability score: 98.22% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

@@ -14,7 +14,7 @@
 
 ### vs. 3.10.4
 
-- 1.29x faster \*
+- Geometric mean: 1.30x faster \* (HPT: reliability of 100.00%, 1.26x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, mypy2, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230206-linux-x86_64-python-d3e2dd6e71bd8e548297-3.12.0a4%2B-d3e2dd6-vs-3.10.4.md)
@@ -22,7 +22,7 @@
 
 ### vs. 3.11.0
 
-- 1.03x faster \*
+- Geometric mean: 1.04x faster \* (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, mypy2, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230206-linux-x86_64-python-d3e2dd6e71bd8e548297-3.12.0a4%2B-d3e2dd6-vs-3.11.0.md)

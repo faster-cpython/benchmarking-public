@@ -7,6 +7,8 @@
 - commit hash: b201b6d
 - commit date: 2023-03-24
 - overall geometric mean: 1.01x slower
+- HPT reliability: 96.99%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -153,3 +155,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.01x slower                                                                 |
 
 Benchmark hidden because not significant (28): scimark_lu, sqlalchemy_declarative, logging_silent, scimark_fft, xml_etree_parse, async_tree_cpu_io_mixed, pycparser, async_tree_memoization, coverage, async_tree_none, regex_dna, thrift, asyncio_tcp, bench_mp_pool, regex_v8, docutils, async_tree_io, regex_effbot, html5lib, unpickle_pure_python, mypy2, xml_etree_iterparse, scimark_monte_carlo, djangocms, tornado_http, django_template, json, dask
+
+
+# HPT report
+
+- Reliability score: 96.99% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

@@ -25,21 +25,21 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster
+- Geometric mean: 1.30x faster (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230803-linux-x86_64-brandtbucher-immortal_increfs-3.13.0a0-8abbc6a-vs-3.10.4.md)
 - [plot](bm-20230803-linux-x86_64-brandtbucher-immortal_increfs-3.13.0a0-8abbc6a-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster
+- Geometric mean: 1.04x faster (HPT: reliability of 84.60%, 1.00x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230803-linux-x86_64-brandtbucher-immortal_increfs-3.13.0a0-8abbc6a-vs-3.11.0.md)
 - [plot](bm-20230803-linux-x86_64-brandtbucher-immortal_increfs-3.13.0a0-8abbc6a-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x faster
+- Geometric mean: 1.00x faster (HPT: reliability of 52.30%, 1.00x slower at 99th %ile)
 - [table](bm-20230803-linux-x86_64-brandtbucher-immortal_increfs-3.13.0a0-8abbc6a-vs-base.md)
 - [plot](bm-20230803-linux-x86_64-brandtbucher-immortal_increfs-3.13.0a0-8abbc6a-vs-base.png)
 

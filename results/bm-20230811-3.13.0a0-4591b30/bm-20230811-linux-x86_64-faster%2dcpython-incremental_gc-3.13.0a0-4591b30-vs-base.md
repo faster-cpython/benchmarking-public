@@ -7,6 +7,8 @@
 - commit hash: 4591b30
 - commit date: 2023-08-11
 - overall geometric mean: 1.03x slower
+- HPT reliability: 72.84%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -146,3 +148,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                 | 1.03x slower                                                              |
 
 Benchmark hidden because not significant (18): unpickle_list, json, scimark_sor, scimark_monte_carlo, logging_format, regex_compile, comprehensions, deepcopy, pprint_pformat, pickle, bench_thread_pool, dulwich_log, dask, async_generators, bench_mp_pool, tomli_loads, xml_etree_process, sqlite_synth
+
+
+# HPT report
+
+- Reliability score: 72.84% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

@@ -25,21 +25,21 @@
 
 ### vs. 3.10.4
 
-- 1.26x faster
+- Geometric mean: 1.26x faster (HPT: reliability of 100.00%, 1.17x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230717-linux-x86_64-brandtbucher-justin-3.13.0a0-ba47232-vs-3.10.4.md)
 - [plot](bm-20230717-linux-x86_64-brandtbucher-justin-3.13.0a0-ba47232-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.01x faster
+- Geometric mean: 1.01x faster (HPT: reliability of 98.09%, 1.00x slower at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230717-linux-x86_64-brandtbucher-justin-3.13.0a0-ba47232-vs-3.11.0.md)
 - [plot](bm-20230717-linux-x86_64-brandtbucher-justin-3.13.0a0-ba47232-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.01x slower
+- Geometric mean: 1.01x slower (HPT: reliability of 88.75%, 1.00x slower at 99th %ile)
 - [table](bm-20230717-linux-x86_64-brandtbucher-justin-3.13.0a0-ba47232-vs-base.md)
 - [plot](bm-20230717-linux-x86_64-brandtbucher-justin-3.13.0a0-ba47232-vs-base.png)
 
@@ -52,21 +52,21 @@
 
 ### vs. 3.10.4
 
-- 1.16x faster
+- Geometric mean: 1.16x faster (HPT: reliability of 100.00%, 1.08x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230717-pythonperf1-amd64-brandtbucher-justin-3.13.0a0-ba47232-vs-3.10.4.md)
 - [plot](bm-20230717-pythonperf1-amd64-brandtbucher-justin-3.13.0a0-ba47232-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster
+- Geometric mean: 1.04x faster (HPT: reliability of 98.99%, 1.00x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230717-pythonperf1-amd64-brandtbucher-justin-3.13.0a0-ba47232-vs-3.11.0.md)
 - [plot](bm-20230717-pythonperf1-amd64-brandtbucher-justin-3.13.0a0-ba47232-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.03x slower
+- Geometric mean: 1.03x slower (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
 - [table](bm-20230717-pythonperf1-amd64-brandtbucher-justin-3.13.0a0-ba47232-vs-base.md)
 - [plot](bm-20230717-pythonperf1-amd64-brandtbucher-justin-3.13.0a0-ba47232-vs-base.png)
 
@@ -79,14 +79,14 @@
 
 ### vs. 3.10.4
 
-- 1.21x faster
+- Geometric mean: 1.21x faster (HPT: reliability of 100.00%, 1.13x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230717-darwin-arm64-brandtbucher-justin-3.13.0a0-ba47232-vs-3.10.4.md)
 - [plot](bm-20230717-darwin-arm64-brandtbucher-justin-3.13.0a0-ba47232-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.00x faster
+- Geometric mean: 1.00x faster (HPT: reliability of 98.36%, 1.00x slower at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - new benchmarks: dask
 - [table](bm-20230717-darwin-arm64-brandtbucher-justin-3.13.0a0-ba47232-vs-3.11.0.md)
@@ -94,7 +94,7 @@
 
 ### vs. base
 
-- 1.02x slower
+- Geometric mean: 1.02x slower (HPT: reliability of 98.01%, 1.00x slower at 99th %ile)
 - [table](bm-20230717-darwin-arm64-brandtbucher-justin-3.13.0a0-ba47232-vs-base.md)
 - [plot](bm-20230717-darwin-arm64-brandtbucher-justin-3.13.0a0-ba47232-vs-base.png)
 

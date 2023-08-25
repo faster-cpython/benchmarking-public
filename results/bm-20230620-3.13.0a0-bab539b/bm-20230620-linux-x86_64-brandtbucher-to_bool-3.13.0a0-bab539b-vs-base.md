@@ -7,6 +7,8 @@
 - commit hash: bab539b
 - commit date: 2023-06-20
 - overall geometric mean: 1.00x slower
+- HPT reliability: 76.25%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -141,3 +143,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                 | 1.00x slower                                                   |
 
 Benchmark hidden because not significant (21): async_tree_cpu_io_mixed, pathlib, logging_format, async_tree_none, json, telco, xml_etree_parse, docutils, asyncio_tcp_ssl, mdp, typing_runtime_protocols, bench_mp_pool, async_tree_memoization, sqlglot_optimize, crypto_pyaes, sqlite_synth, deltablue, xml_etree_iterparse, hexiom, tornado_http, regex_compile
+
+
+# HPT report
+
+- Reliability score: 76.25% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

@@ -20,14 +20,14 @@
 
 ### vs. 3.10.4
 
-- 1.31x faster \*
+- Geometric mean: 1.31x faster \* (HPT: reliability of 100.00%, 1.26x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, flaskblogging, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230415-linux-x86_64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.10.4.md)
 - [plot](bm-20230415-linux-x86_64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.05x faster \*
+- Geometric mean: 1.06x faster \* (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, flaskblogging, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230415-linux-x86_64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.11.0.md)
 - [plot](bm-20230415-linux-x86_64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.11.0.png)
@@ -41,14 +41,14 @@
 
 ### vs. 3.10.4
 
-- 1.27x faster \*
+- Geometric mean: 1.26x faster \* (HPT: reliability of 100.00%, 1.21x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230415-pythonperf2-x86_64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.10.4.md)
 - [plot](bm-20230415-pythonperf2-x86_64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster \*
+- Geometric mean: 1.04x faster \* (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230415-pythonperf2-x86_64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.11.0.md)
 - [plot](bm-20230415-pythonperf2-x86_64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.11.0.png)
@@ -62,14 +62,14 @@
 
 ### vs. 3.10.4
 
-- 1.20x faster \*
+- Geometric mean: 1.22x faster \* (HPT: reliability of 100.00%, 1.18x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230415-pythonperf1-amd64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.10.4.md)
 - [plot](bm-20230415-pythonperf1-amd64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.09x faster \*
+- Geometric mean: 1.09x faster \* (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230415-pythonperf1-amd64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.11.0.md)
 - [plot](bm-20230415-pythonperf1-amd64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.11.0.png)
@@ -83,14 +83,14 @@
 
 ### vs. 3.10.4
 
-- 1.26x faster \*
+- Geometric mean: 1.26x faster \* (HPT: reliability of 100.00%, 1.22x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230415-darwin-arm64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.10.4.md)
 - [plot](bm-20230415-darwin-arm64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster \*
+- Geometric mean: 1.04x faster \* (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: dask
 - [table](bm-20230415-darwin-arm64-python-main-3.12.0a7%2B-4fe1c4b-vs-3.11.0.md)

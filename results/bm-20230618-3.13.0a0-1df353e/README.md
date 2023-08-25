@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.29x faster
+- Geometric mean: 1.29x faster (HPT: reliability of 100.00%, 1.22x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230618-pythonperf2-x86_64-faster%252dcpython-specialize_calls_to_-3.13.0a0-1df353e-vs-3.10.4.md)
 - [plot](bm-20230618-pythonperf2-x86_64-faster%252dcpython-specialize_calls_to_-3.13.0a0-1df353e-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.06x faster
+- Geometric mean: 1.06x faster (HPT: reliability of 99.82%, 1.01x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230618-pythonperf2-x86_64-faster%252dcpython-specialize_calls_to_-3.13.0a0-1df353e-vs-3.11.0.md)
 - [plot](bm-20230618-pythonperf2-x86_64-faster%252dcpython-specialize_calls_to_-3.13.0a0-1df353e-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x slower
+- Geometric mean: 1.00x slower (HPT: reliability of 84.37%, 1.00x slower at 99th %ile)
 - [table](bm-20230618-pythonperf2-x86_64-faster%252dcpython-specialize_calls_to_-3.13.0a0-1df353e-vs-base.md)
 - [plot](bm-20230618-pythonperf2-x86_64-faster%252dcpython-specialize_calls_to_-3.13.0a0-1df353e-vs-base.png)
 

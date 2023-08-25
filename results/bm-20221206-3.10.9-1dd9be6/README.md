@@ -14,7 +14,7 @@
 
 ### vs. 3.10.4
 
-- 1.00x faster \*
+- Geometric mean: 1.01x faster \* (HPT: reliability of 98.41%, 1.00x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp, asyncio_tcp_ssl, comprehensions, create_gc_cycles, dask, djangocms, gc_traversal, mypy2, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20221206-linux-x86_64-python-1dd9be6584413fbfa823-3.10.9-1dd9be6-vs-3.10.4.md)
@@ -22,7 +22,7 @@
 
 ### vs. 3.11.0
 
-- 1.26x slower \*
+- Geometric mean: 1.25x slower \* (HPT: reliability of 100.00%, 1.19x slower at 99th %ile)
 - missing benchmarks: asyncio_tcp, asyncio_tcp_ssl, comprehensions, create_gc_cycles, dask, djangocms, gc_traversal, mypy2, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20221206-linux-x86_64-python-1dd9be6584413fbfa823-3.10.9-1dd9be6-vs-3.11.0.md)
@@ -36,7 +36,7 @@
 
 ### vs. 3.10.4
 
-- 1.01x faster \*
+- Geometric mean: 1.01x faster \* (HPT: reliability of 99.96%, 1.00x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp, asyncio_tcp_ssl, comprehensions, create_gc_cycles, dask, gc_traversal, mypy2, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20221206-darwin-arm64-python-1dd9be6584413fbfa823-3.10.9-1dd9be6-vs-3.10.4.md)
@@ -44,7 +44,7 @@
 
 ### vs. 3.11.0
 
-- 1.20x slower \*
+- Geometric mean: 1.20x slower \* (HPT: reliability of 100.00%, 1.16x slower at 99th %ile)
 - missing benchmarks: asyncio_tcp, asyncio_tcp_ssl, comprehensions, create_gc_cycles, gc_traversal, mypy2, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20221206-darwin-arm64-python-1dd9be6584413fbfa823-3.10.9-1dd9be6-vs-3.11.0.md)

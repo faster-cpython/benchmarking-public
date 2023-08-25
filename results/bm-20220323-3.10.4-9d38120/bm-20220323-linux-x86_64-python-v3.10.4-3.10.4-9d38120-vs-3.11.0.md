@@ -7,6 +7,8 @@
 - commit hash: 9d38120
 - commit date: 2022-03-23
 - overall geometric mean: 1.24x slower
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.19x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -187,3 +189,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                  | 1.24x slower                                           |
 
 Benchmark hidden because not significant (3): telco, bench_mp_pool, mypy2
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be slow
+- 90% likely to have a slowdown of 1.22x
+- 95% likely to have a slowdown of 1.21x
+- 99% likely to have a slowdown of 1.19x

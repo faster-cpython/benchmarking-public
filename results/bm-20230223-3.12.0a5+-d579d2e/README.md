@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.31x faster \*
+- Geometric mean: 1.32x faster \* (HPT: reliability of 100.00%, 1.27x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230223-linux-x86_64-faster%252dcpython-pep_669-3.12.0a5%2B-d579d2e-vs-3.10.4.md)
 - [plot](bm-20230223-linux-x86_64-faster%252dcpython-pep_669-3.12.0a5%2B-d579d2e-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.05x faster \*
+- Geometric mean: 1.05x faster \* (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230223-linux-x86_64-faster%252dcpython-pep_669-3.12.0a5%2B-d579d2e-vs-3.11.0.md)
 - [plot](bm-20230223-linux-x86_64-faster%252dcpython-pep_669-3.12.0a5%2B-d579d2e-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.01x faster
+- Geometric mean: 1.01x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - [table](bm-20230223-linux-x86_64-faster%252dcpython-pep_669-3.12.0a5%2B-d579d2e-vs-base.md)
 - [plot](bm-20230223-linux-x86_64-faster%252dcpython-pep_669-3.12.0a5%2B-d579d2e-vs-base.png)
 

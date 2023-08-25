@@ -7,6 +7,8 @@
 - commit hash: a748e80
 - commit date: 2023-01-29
 - overall geometric mean: 1.05x slower \*
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.03x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -175,5 +177,13 @@ All benchmarks:
 | Geometric mean          | (ref)                                                  | 1.05x slower                                                                      |
 
 Benchmark hidden because not significant (3): unpickle, nqueens, bench_mp_pool
-Ignored benchmarks (3) of /home/runner/work/benchmarking/benchmarking/results/bm-20230128-3.12.0a4+-666c084/bm-20230128-linux-x86_64-python-main-3.12.0a4+-666c084.json: aiohttp, gunicorn, mypy
-Ignored benchmarks (2) of /home/runner/work/benchmarking/benchmarking/results/bm-20230129-3.12.0a4+-a748e80/bm-20230129-linux-x86_64-eduardo%2delizondo-immortal_references-3.12.0a4+-a748e80.json: comprehensions, mypy2
+Ignored benchmarks (3) of results/bm-20230128-3.12.0a4+-666c084/bm-20230128-linux-x86_64-python-main-3.12.0a4+-666c084.json: aiohttp, gunicorn, mypy
+Ignored benchmarks (2) of results/bm-20230129-3.12.0a4+-a748e80/bm-20230129-linux-x86_64-eduardo%2delizondo-immortal_references-3.12.0a4+-a748e80.json: comprehensions, mypy2
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be slow
+- 90% likely to have a slowdown of 1.04x
+- 95% likely to have a slowdown of 1.04x
+- 99% likely to have a slowdown of 1.03x

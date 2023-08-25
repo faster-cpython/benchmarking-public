@@ -20,14 +20,14 @@
 
 ### vs. 3.10.4
 
-- 1.27x faster
+- Geometric mean: 1.27x faster (HPT: reliability of 100.00%, 1.20x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230528-linux-x86_64-python-main-3.13.0a0-3a5be87-vs-3.10.4.md)
 - [plot](bm-20230528-linux-x86_64-python-main-3.13.0a0-3a5be87-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.02x faster
+- Geometric mean: 1.02x faster (HPT: reliability of 95.49%, 1.00x slower at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230528-linux-x86_64-python-main-3.13.0a0-3a5be87-vs-3.11.0.md)
 - [plot](bm-20230528-linux-x86_64-python-main-3.13.0a0-3a5be87-vs-3.11.0.png)
@@ -41,14 +41,14 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster
+- Geometric mean: 1.30x faster (HPT: reliability of 100.00%, 1.25x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230528-pythonperf2-x86_64-python-main-3.13.0a0-3a5be87-vs-3.10.4.md)
 - [plot](bm-20230528-pythonperf2-x86_64-python-main-3.13.0a0-3a5be87-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.07x faster
+- Geometric mean: 1.07x faster (HPT: reliability of 99.99%, 1.02x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230528-pythonperf2-x86_64-python-main-3.13.0a0-3a5be87-vs-3.11.0.md)
 - [plot](bm-20230528-pythonperf2-x86_64-python-main-3.13.0a0-3a5be87-vs-3.11.0.png)
@@ -62,14 +62,14 @@
 
 ### vs. 3.10.4
 
-- 1.20x faster
+- Geometric mean: 1.20x faster (HPT: reliability of 100.00%, 1.13x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230528-pythonperf1-amd64-python-main-3.13.0a0-3a5be87-vs-3.10.4.md)
 - [plot](bm-20230528-pythonperf1-amd64-python-main-3.13.0a0-3a5be87-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.07x faster
+- Geometric mean: 1.07x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230528-pythonperf1-amd64-python-main-3.13.0a0-3a5be87-vs-3.11.0.md)
 - [plot](bm-20230528-pythonperf1-amd64-python-main-3.13.0a0-3a5be87-vs-3.11.0.png)
@@ -83,14 +83,14 @@
 
 ### vs. 3.10.4
 
-- 1.19x faster
+- Geometric mean: 1.19x faster (HPT: reliability of 100.00%, 1.13x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230528-darwin-arm64-python-main-3.13.0a0-3a5be87-vs-3.10.4.md)
 - [plot](bm-20230528-darwin-arm64-python-main-3.13.0a0-3a5be87-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.02x slower
+- Geometric mean: 1.02x slower (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230528-darwin-arm64-python-main-3.13.0a0-3a5be87-vs-3.11.0.md)
 - [plot](bm-20230528-darwin-arm64-python-main-3.13.0a0-3a5be87-vs-3.11.0.png)

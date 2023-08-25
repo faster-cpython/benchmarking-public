@@ -7,6 +7,8 @@
 - commit hash: 6baddd9
 - commit date: 2023-06-18
 - overall geometric mean: 1.02x faster
+- HPT reliability: 79.53%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -168,5 +170,13 @@ All benchmarks:
 | Geometric mean           | (ref)                                                  | 1.02x faster                                                           |
 
 Benchmark hidden because not significant (1): tornado_http
-Ignored benchmarks (14) of /home/runner/work/benchmarking/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-darwin-arm64-python-v3.11.0-3.11.0-deaf509.json: aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
-Ignored benchmarks (1) of /home/runner/work/benchmarking/benchmarking/results/bm-20230618-3.12.0b2+-6baddd9/bm-20230618-darwin-arm64-python-6baddd9fb25e03040c1c-3.12.0b2+-6baddd9.json: dask
+Ignored benchmarks (14) of results/bm-20221024-3.11.0-deaf509/bm-20221024-darwin-arm64-python-v3.11.0-3.11.0-deaf509.json: aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+Ignored benchmarks (1) of results/bm-20230618-3.12.0b2+-6baddd9/bm-20230618-darwin-arm64-python-6baddd9fb25e03040c1c-3.12.0b2+-6baddd9.json: dask
+
+
+# HPT report
+
+- Reliability score: 79.53% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

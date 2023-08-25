@@ -7,6 +7,8 @@
 - commit hash: d2340ef
 - commit date: 2023-06-06
 - overall geometric mean: 1.00x slower
+- HPT reliability: 72.12%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -157,4 +159,12 @@ All benchmarks:
 | Geometric mean           | (ref)                                                  | 1.00x slower                                           |
 
 Benchmark hidden because not significant (32): meteor_contest, pylint, sqlite_synth, async_tree_none, html5lib, scimark_lu, scimark_sor, nqueens, float, sqlalchemy_imperative, deepcopy, crypto_pyaes, async_tree_io, async_tree_cpu_io_mixed, sympy_str, create_gc_cycles, bench_mp_pool, go, asyncio_tcp, deepcopy_reduce, dask, pycparser, xml_etree_process, genshi_xml, json_dumps, sqlalchemy_declarative, tornado_http, xml_etree_iterparse, telco, xml_etree_parse, unpack_sequence, djangocms
-Ignored benchmarks (1) of /home/runner/work/benchmarking/benchmarking/results/bm-20221024-3.11.0-deaf509/bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509.json: coverage
+Ignored benchmarks (1) of results/bm-20221024-3.11.0-deaf509/bm-20221024-linux-x86_64-python-v3.11.0-3.11.0-deaf509.json: coverage
+
+
+# HPT report
+
+- Reliability score: 72.12% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

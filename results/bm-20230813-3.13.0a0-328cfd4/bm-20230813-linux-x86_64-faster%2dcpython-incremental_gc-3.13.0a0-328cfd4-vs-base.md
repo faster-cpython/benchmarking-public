@@ -7,6 +7,8 @@
 - commit hash: 328cfd4
 - commit date: 2023-08-13
 - overall geometric mean: 1.02x faster
+- HPT reliability: 55.06%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -138,3 +140,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                 | 1.02x faster                                                              |
 
 Benchmark hidden because not significant (23): regex_effbot, typing_runtime_protocols, sqlglot_parse, xml_etree_process, xml_etree_parse, pickle_pure_python, dulwich_log, deltablue, json_loads, asyncio_tcp_ssl, bench_mp_pool, deepcopy, pyflate, regex_compile, sqlglot_transpile, json_dumps, pprint_safe_repr, crypto_pyaes, json, pathlib, scimark_monte_carlo, comprehensions, unpickle
+
+
+# HPT report
+
+- Reliability score: 55.06% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

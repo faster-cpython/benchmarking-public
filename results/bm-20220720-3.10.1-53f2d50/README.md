@@ -14,7 +14,7 @@
 
 ### vs. 3.10.4
 
-- 1.06x faster \*
+- Geometric mean: 1.06x faster \* (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, coverage, dask, mypy2, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20220720-linux-x86_64-mdboom-RegCPython-3.10.1-53f2d50-vs-3.10.4.md)
@@ -22,7 +22,7 @@
 
 ### vs. 3.11.0
 
-- 1.19x slower \*
+- Geometric mean: 1.18x slower \* (HPT: reliability of 100.00%, 1.13x slower at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, coverage, dask, mypy2, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20220720-linux-x86_64-mdboom-RegCPython-3.10.1-53f2d50-vs-3.11.0.md)

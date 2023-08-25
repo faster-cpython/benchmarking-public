@@ -7,6 +7,8 @@
 - commit hash: 4ccb873
 - commit date: 2023-07-12
 - overall geometric mean: 1.00x faster
+- HPT reliability: 99.90%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -137,3 +139,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                 | 1.00x faster                                                           |
 
 Benchmark hidden because not significant (23): coverage, nbody, async_tree_memoization, xml_etree_iterparse, mypy2, pickle_pure_python, xml_etree_parse, tornado_http, async_tree_none, logging_silent, deltablue, asyncio_tcp_ssl, async_tree_io, float, pprint_pformat, pidigits, pathlib, bench_mp_pool, scimark_sparse_mat_mult, richards_super, pycparser, json, async_tree_cpu_io_mixed
+
+
+# HPT report
+
+- Reliability score: 99.90% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

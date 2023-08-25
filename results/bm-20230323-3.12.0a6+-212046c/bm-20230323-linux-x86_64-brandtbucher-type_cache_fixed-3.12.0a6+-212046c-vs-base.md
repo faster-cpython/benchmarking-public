@@ -7,6 +7,8 @@
 - commit hash: 212046c
 - commit date: 2023-03-23
 - overall geometric mean: 1.00x faster
+- HPT reliability: 63.70%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -155,4 +157,12 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x faster                                                             |
 
 Benchmark hidden because not significant (24): nbody, richards, nqueens, comprehensions, create_gc_cycles, json_dumps, unpickle_pure_python, pickle_pure_python, sqlglot_transpile, async_tree_none, crypto_pyaes, bench_mp_pool, xml_etree_iterparse, sympy_integrate, aiohttp, sqlglot_parse, logging_simple, logging_silent, chameleon, async_tree_io, djangocms, html5lib, async_tree_cpu_io_mixed, unpickle
-Ignored benchmarks (2) of /home/runner/work/benchmarking/benchmarking/results/bm-20230322-3.12.0a6+-87be8d9/bm-20230322-linux-x86_64-python-87be8d95228ee95de904-3.12.0a6+-87be8d9.json: sqlalchemy_declarative, sqlalchemy_imperative
+Ignored benchmarks (2) of results/bm-20230322-3.12.0a6+-87be8d9/bm-20230322-linux-x86_64-python-87be8d95228ee95de904-3.12.0a6+-87be8d9.json: sqlalchemy_declarative, sqlalchemy_imperative
+
+
+# HPT report
+
+- Reliability score: 63.70% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

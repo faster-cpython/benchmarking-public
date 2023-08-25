@@ -7,6 +7,8 @@
 - commit hash: ec1dac5
 - commit date: 2023-07-07
 - overall geometric mean: 1.00x faster
+- HPT reliability: 99.20%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -134,3 +136,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                 | 1.00x faster                                                          |
 
 Benchmark hidden because not significant (27): async_tree_cpu_io_mixed, pathlib, sqlglot_transpile, async_tree_none, async_tree_memoization, pprint_safe_repr, xml_etree_iterparse, dask, pycparser, tornado_http, docutils, go, scimark_monte_carlo, bench_mp_pool, hexiom, scimark_sor, sqlglot_parse, float, create_gc_cycles, sqlglot_normalize, meteor_contest, pprint_pformat, pyflate, xml_etree_parse, deepcopy_reduce, deltablue, unpickle
+
+
+# HPT report
+
+- Reliability score: 99.20% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

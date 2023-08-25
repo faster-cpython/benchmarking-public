@@ -7,6 +7,8 @@
 - commit hash: d2340ef
 - commit date: 2023-06-06
 - overall geometric mean: 1.25x faster
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.21x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -185,4 +187,12 @@ All benchmarks:
 | Geometric mean           | (ref)                                                  | 1.25x faster                                           |
 
 Benchmark hidden because not significant (3): xml_etree_parse, bench_mp_pool, unpickle_list
-Ignored benchmarks (1) of /home/runner/work/benchmarking/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: coverage
+Ignored benchmarks (1) of results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: coverage
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.23x
+- 95% likely to have a speedup of 1.23x
+- 99% likely to have a speedup of 1.21x

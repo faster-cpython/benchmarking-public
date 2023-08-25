@@ -7,6 +7,8 @@
 - commit hash: 6cde1a4
 - commit date: 2023-06-02
 - overall geometric mean: 1.01x slower
+- HPT reliability: 99.92%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -144,3 +146,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                       | 1.01x slower                                                                          |
 
 Benchmark hidden because not significant (19): create_gc_cycles, pickle, sqlglot_transpile, pickle_pure_python, scimark_lu, async_tree_cpu_io_mixed, asyncio_tcp, asyncio_tcp_ssl, mdp, pathlib, float, unpickle_pure_python, scimark_fft, sqlglot_parse, sqlglot_optimize, deltablue, async_generators, xml_etree_iterparse, bench_thread_pool
+
+
+# HPT report
+
+- Reliability score: 99.92% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

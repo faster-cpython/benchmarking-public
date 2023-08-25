@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.27x faster \*
+- Geometric mean: 1.27x faster \* (HPT: reliability of 100.00%, 1.21x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift, tomli_loads, typing_runtime_protocols
 - [table](bm-20230510-pythonperf2-x86_64-faster%252dcpython-instrument_all_possi-3.12.0a7%2B-5418580-vs-3.10.4.md)
 - [plot](bm-20230510-pythonperf2-x86_64-faster%252dcpython-instrument_all_possi-3.12.0a7%2B-5418580-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster \*
+- Geometric mean: 1.04x faster \* (HPT: reliability of 99.84%, 1.00x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift, tomli_loads, typing_runtime_protocols
 - [table](bm-20230510-pythonperf2-x86_64-faster%252dcpython-instrument_all_possi-3.12.0a7%2B-5418580-vs-3.11.0.md)
 - [plot](bm-20230510-pythonperf2-x86_64-faster%252dcpython-instrument_all_possi-3.12.0a7%2B-5418580-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.01x faster
+- Geometric mean: 1.01x faster (HPT: reliability of 99.92%, 1.00x faster at 99th %ile)
 - [table](bm-20230510-pythonperf2-x86_64-faster%252dcpython-instrument_all_possi-3.12.0a7%2B-5418580-vs-base.md)
 - [plot](bm-20230510-pythonperf2-x86_64-faster%252dcpython-instrument_all_possi-3.12.0a7%2B-5418580-vs-base.png)
 

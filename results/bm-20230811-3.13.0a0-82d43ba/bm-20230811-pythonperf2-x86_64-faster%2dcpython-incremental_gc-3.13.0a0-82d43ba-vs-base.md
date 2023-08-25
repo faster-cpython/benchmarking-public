@@ -7,6 +7,8 @@
 - commit hash: 82d43ba
 - commit date: 2023-08-11
 - overall geometric mean: 1.03x slower
+- HPT reliability: 88.84%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -152,3 +154,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                       | 1.03x slower                                                                    |
 
 Benchmark hidden because not significant (13): typing_runtime_protocols, raytrace, mako, asyncio_tcp, scimark_fft, pidigits, telco, xml_etree_process, logging_silent, logging_format, dask, logging_simple, bench_thread_pool
+
+
+# HPT report
+
+- Reliability score: 88.84% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

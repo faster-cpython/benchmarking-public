@@ -7,6 +7,8 @@
 - commit hash: b2495de
 - commit date: 2023-08-05
 - overall geometric mean: 1.01x slower
+- HPT reliability: 91.48%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -143,3 +145,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                 | 1.01x slower                                                              |
 
 Benchmark hidden because not significant (20): richards, tomli_loads, tornado_http, scimark_sor, logging_format, json_dumps, scimark_lu, pycparser, coverage, async_tree_memoization, nqueens, bench_mp_pool, sqlglot_optimize, async_tree_none, deltablue, xml_etree_iterparse, sqlglot_transpile, async_tree_cpu_io_mixed, xml_etree_parse, unpickle
+
+
+# HPT report
+
+- Reliability score: 91.48% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

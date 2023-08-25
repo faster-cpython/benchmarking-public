@@ -15,14 +15,14 @@
 
 ### vs. 3.10.4
 
-- 1.21x faster
+- Geometric mean: 1.21x faster (HPT: reliability of 100.00%, 1.15x faster at 99th %ile)
 - missing benchmarks: aiohttp, coverage, dask, django_template, djangocms, docutils, dulwich_log, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, thrift, tornado_http
 - [table](bm-20230427-linux-x86_64-mdboom-nogil_d595911-3.12.0a4-d595911-vs-3.10.4.md)
 - [plot](bm-20230427-linux-x86_64-mdboom-nogil_d595911-3.12.0a4-d595911-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.03x slower
+- Geometric mean: 1.03x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
 - missing benchmarks: aiohttp, coverage, dask, django_template, djangocms, docutils, dulwich_log, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, thrift, tornado_http
 - [table](bm-20230427-linux-x86_64-mdboom-nogil_d595911-3.12.0a4-d595911-vs-3.11.0.md)
 - [plot](bm-20230427-linux-x86_64-mdboom-nogil_d595911-3.12.0a4-d595911-vs-3.11.0.png)
@@ -36,14 +36,14 @@
 
 ### vs. 3.10.4
 
-- 1.18x faster
+- Geometric mean: 1.18x faster (HPT: reliability of 100.00%, 1.13x faster at 99th %ile)
 - missing benchmarks: aiohttp, dask, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
 - [table](bm-20230427-pythonperf2-x86_64-mdboom-nogil_d595911-3.12.0a4-d595911-vs-3.10.4.md)
 - [plot](bm-20230427-pythonperf2-x86_64-mdboom-nogil_d595911-3.12.0a4-d595911-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.02x slower
+- Geometric mean: 1.02x slower (HPT: reliability of 99.90%, 1.01x slower at 99th %ile)
 - missing benchmarks: aiohttp, dask, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
 - [table](bm-20230427-pythonperf2-x86_64-mdboom-nogil_d595911-3.12.0a4-d595911-vs-3.11.0.md)
 - [plot](bm-20230427-pythonperf2-x86_64-mdboom-nogil_d595911-3.12.0a4-d595911-vs-3.11.0.png)

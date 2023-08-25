@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.17x faster
+- Geometric mean: 1.17x faster (HPT: reliability of 100.00%, 1.10x faster at 99th %ile)
 - missing benchmarks: chameleon, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230516-pythonperf1-amd64-adr26-condvar-3.12.0a7%2B-4f0355f-vs-3.10.4.md)
 - [plot](bm-20230516-pythonperf1-amd64-adr26-condvar-3.12.0a7%2B-4f0355f-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.05x faster
+- Geometric mean: 1.05x faster (HPT: reliability of 99.26%, 1.00x faster at 99th %ile)
 - missing benchmarks: chameleon, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230516-pythonperf1-amd64-adr26-condvar-3.12.0a7%2B-4f0355f-vs-3.11.0.md)
 - [plot](bm-20230516-pythonperf1-amd64-adr26-condvar-3.12.0a7%2B-4f0355f-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.01x faster
+- Geometric mean: 1.01x faster (HPT: reliability of 99.83%, 1.00x faster at 99th %ile)
 - [table](bm-20230516-pythonperf1-amd64-adr26-condvar-3.12.0a7%2B-4f0355f-vs-base.md)
 - [plot](bm-20230516-pythonperf1-amd64-adr26-condvar-3.12.0a7%2B-4f0355f-vs-base.png)
 

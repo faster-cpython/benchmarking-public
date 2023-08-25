@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.31x faster
+- Geometric mean: 1.31x faster (HPT: reliability of 100.00%, 1.22x faster at 99th %ile)
 - missing benchmarks: flaskblogging
 - [table](bm-20230607-linux-x86_64-mdboom-match_nogil_immortal-3.12.0a7%2B-82b39b9-vs-3.10.4.md)
 - [plot](bm-20230607-linux-x86_64-mdboom-match_nogil_immortal-3.12.0a7%2B-82b39b9-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.05x faster
+- Geometric mean: 1.05x faster (HPT: reliability of 74.41%, 1.00x slower at 99th %ile)
 - missing benchmarks: flaskblogging
 - [table](bm-20230607-linux-x86_64-mdboom-match_nogil_immortal-3.12.0a7%2B-82b39b9-vs-3.11.0.md)
 - [plot](bm-20230607-linux-x86_64-mdboom-match_nogil_immortal-3.12.0a7%2B-82b39b9-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.04x faster \*
+- Geometric mean: 1.04x faster \* (HPT: reliability of 94.17%, 1.00x faster at 99th %ile)
 - new benchmarks: aiohttp, asyncio_tcp_ssl, gunicorn, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230607-linux-x86_64-mdboom-match_nogil_immortal-3.12.0a7%2B-82b39b9-vs-base.md)
 - [plot](bm-20230607-linux-x86_64-mdboom-match_nogil_immortal-3.12.0a7%2B-82b39b9-vs-base.png)

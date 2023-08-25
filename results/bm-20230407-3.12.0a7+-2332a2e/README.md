@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.17x faster \*
+- Geometric mean: 1.18x faster \* (HPT: reliability of 100.00%, 1.12x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230407-pythonperf1-amd64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-3.10.4.md)
 - [plot](bm-20230407-pythonperf1-amd64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.06x faster \*
+- Geometric mean: 1.06x faster \* (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230407-pythonperf1-amd64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-3.11.0.md)
 - [plot](bm-20230407-pythonperf1-amd64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.02x slower
+- Geometric mean: 1.02x slower (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
 - [table](bm-20230407-pythonperf1-amd64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-base.md)
 - [plot](bm-20230407-pythonperf1-amd64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-base.png)
 
@@ -43,14 +43,14 @@
 
 ### vs. 3.10.4
 
-- 1.17x faster \*
+- Geometric mean: 1.17x faster \* (HPT: reliability of 100.00%, 1.11x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230407-darwin-arm64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-3.10.4.md)
 - [plot](bm-20230407-darwin-arm64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x slower \*
+- Geometric mean: 1.03x slower \* (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: dask
 - [table](bm-20230407-darwin-arm64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-3.11.0.md)
@@ -58,7 +58,7 @@
 
 ### vs. base
 
-- 1.03x slower
+- Geometric mean: 1.03x slower (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
 - [table](bm-20230407-darwin-arm64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-base.md)
 - [plot](bm-20230407-darwin-arm64-ericsnowcurrently-tstate_current_as_th-3.12.0a7%2B-2332a2e-vs-base.png)
 

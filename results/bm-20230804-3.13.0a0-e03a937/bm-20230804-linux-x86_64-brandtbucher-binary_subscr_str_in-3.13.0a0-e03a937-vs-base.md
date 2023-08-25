@@ -7,6 +7,8 @@
 - commit hash: e03a937
 - commit date: 2023-08-04
 - overall geometric mean: 1.00x slower
+- HPT reliability: 99.98%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -142,3 +144,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                 | 1.00x slower                                                                |
 
 Benchmark hidden because not significant (21): async_tree_cpu_io_mixed, json_loads, fannkuch, asyncio_tcp, pickle_pure_python, regex_compile, bench_mp_pool, asyncio_tcp_ssl, mako, richards_super, richards, chaos, mypy2, xml_etree_iterparse, nbody, tornado_http, deltablue, xml_etree_parse, async_generators, async_tree_memoization, unpickle
+
+
+# HPT report
+
+- Reliability score: 99.98% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

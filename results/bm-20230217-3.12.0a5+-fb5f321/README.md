@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster \*
+- Geometric mean: 1.30x faster \* (HPT: reliability of 100.00%, 1.25x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230217-linux-x86_64-faster%252dcpython-restrict_for_iter_sp-3.12.0a5%2B-fb5f321-vs-3.10.4.md)
 - [plot](bm-20230217-linux-x86_64-faster%252dcpython-restrict_for_iter_sp-3.12.0a5%2B-fb5f321-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster \*
+- Geometric mean: 1.04x faster \* (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230217-linux-x86_64-faster%252dcpython-restrict_for_iter_sp-3.12.0a5%2B-fb5f321-vs-3.11.0.md)
 - [plot](bm-20230217-linux-x86_64-faster%252dcpython-restrict_for_iter_sp-3.12.0a5%2B-fb5f321-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x slower
+- Geometric mean: 1.00x slower (HPT: reliability of 79.11%, 1.00x faster at 99th %ile)
 - [table](bm-20230217-linux-x86_64-faster%252dcpython-restrict_for_iter_sp-3.12.0a5%2B-fb5f321-vs-base.md)
 - [plot](bm-20230217-linux-x86_64-faster%252dcpython-restrict_for_iter_sp-3.12.0a5%2B-fb5f321-vs-base.png)
 

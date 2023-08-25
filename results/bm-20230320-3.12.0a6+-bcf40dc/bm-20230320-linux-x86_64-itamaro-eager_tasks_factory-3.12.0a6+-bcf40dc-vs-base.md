@@ -7,6 +7,8 @@
 - commit hash: bcf40dc
 - commit date: 2023-03-20
 - overall geometric mean: 1.00x slower
+- HPT reliability: 98.25%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -147,4 +149,12 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x slower                                                           |
 
 Benchmark hidden because not significant (34): scimark_lu, async_tree_cpu_io_mixed, unpickle, async_tree_none, pickle, xml_etree_process, sqlglot_transpile, pycparser, nbody, regex_dna, dask, dulwich_log, pprint_pformat, html5lib, sqlalchemy_declarative, scimark_monte_carlo, mypy2, json_loads, docutils, bench_mp_pool, django_template, unpickle_pure_python, asyncio_tcp, crypto_pyaes, richards, deepcopy_memo, chaos, pprint_safe_repr, sqlalchemy_imperative, async_generators, coroutines, raytrace, djangocms, json
-Ignored benchmarks (1) of /home/runner/work/benchmarking/benchmarking/results/bm-20230320-3.12.0a6+-094cf39/bm-20230320-linux-x86_64-python-094cf392f49d3c16fe79-3.12.0a6+-094cf39.json: tornado_http
+Ignored benchmarks (1) of results/bm-20230320-3.12.0a6+-094cf39/bm-20230320-linux-x86_64-python-094cf392f49d3c16fe79-3.12.0a6+-094cf39.json: tornado_http
+
+
+# HPT report
+
+- Reliability score: 98.25% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

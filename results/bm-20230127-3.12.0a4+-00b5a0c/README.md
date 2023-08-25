@@ -15,7 +15,7 @@
 
 ### vs. 3.10.4
 
-- 1.29x faster \*
+- Geometric mean: 1.29x faster \* (HPT: reliability of 100.00%, 1.25x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230127-linux-x86_64-iritkatriel-single_arg_exit-3.12.0a4%2B-00b5a0c-vs-3.10.4.md)
@@ -23,7 +23,7 @@
 
 ### vs. 3.11.0
 
-- 1.02x faster \*
+- Geometric mean: 1.03x faster \* (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230127-linux-x86_64-iritkatriel-single_arg_exit-3.12.0a4%2B-00b5a0c-vs-3.11.0.md)
@@ -31,7 +31,7 @@
 
 ### vs. base
 
-- 1.01x slower
+- Geometric mean: 1.01x slower (HPT: reliability of 99.94%, 1.00x slower at 99th %ile)
 - [table](bm-20230127-linux-x86_64-iritkatriel-single_arg_exit-3.12.0a4%2B-00b5a0c-vs-base.md)
 - [plot](bm-20230127-linux-x86_64-iritkatriel-single_arg_exit-3.12.0a4%2B-00b5a0c-vs-base.png)
 

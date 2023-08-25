@@ -7,6 +7,8 @@
 - commit hash: cfb886d
 - commit date: 2023-02-10
 - overall geometric mean: 1.00x slower
+- HPT reliability: 70.72%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -145,3 +147,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x slower                                                        |
 
 Benchmark hidden because not significant (36): html5lib, async_tree_cpu_io_mixed, pprint_safe_repr, sqlglot_transpile, sympy_sum, hexiom, thrift, chaos, sympy_expand, sqlite_synth, async_tree_io, sqlalchemy_declarative, deepcopy, aiohttp, sqlglot_optimize, xml_etree_parse, bench_mp_pool, bench_thread_pool, sqlglot_parse, mypy2, pprint_pformat, deepcopy_memo, async_generators, logging_silent, scimark_monte_carlo, scimark_lu, unpickle, tornado_http, async_tree_none, go, json_dumps, djangocms, spectral_norm, nbody, async_tree_memoization, sqlalchemy_imperative
+
+
+# HPT report
+
+- Reliability score: 70.72% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

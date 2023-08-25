@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.28x faster \*
+- Geometric mean: 1.28x faster \* (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-linux-x86_64-ericsnowcurrently-per_interpreter_allo-3.12.0a7%2B-299527e-vs-3.10.4.md)
 - [plot](bm-20230404-linux-x86_64-ericsnowcurrently-per_interpreter_allo-3.12.0a7%2B-299527e-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.02x faster \*
+- Geometric mean: 1.03x faster \* (HPT: reliability of 99.99%, 1.00x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-linux-x86_64-ericsnowcurrently-per_interpreter_allo-3.12.0a7%2B-299527e-vs-3.11.0.md)
 - [plot](bm-20230404-linux-x86_64-ericsnowcurrently-per_interpreter_allo-3.12.0a7%2B-299527e-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.01x slower
+- Geometric mean: 1.01x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
 - [table](bm-20230404-linux-x86_64-ericsnowcurrently-per_interpreter_allo-3.12.0a7%2B-299527e-vs-base.md)
 - [plot](bm-20230404-linux-x86_64-ericsnowcurrently-per_interpreter_allo-3.12.0a7%2B-299527e-vs-base.png)
 

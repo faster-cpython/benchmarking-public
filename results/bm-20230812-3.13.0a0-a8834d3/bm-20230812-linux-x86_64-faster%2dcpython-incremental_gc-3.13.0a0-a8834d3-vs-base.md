@@ -7,6 +7,8 @@
 - commit hash: a8834d3
 - commit date: 2023-08-12
 - overall geometric mean: 1.04x faster
+- HPT reliability: 99.97%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -144,3 +146,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                 | 1.04x faster                                                              |
 
 Benchmark hidden because not significant (19): pickle_pure_python, nqueens, logging_format, deepcopy, bench_mp_pool, pidigits, hexiom, spectral_norm, meteor_contest, logging_simple, comprehensions, scimark_fft, typing_runtime_protocols, unpickle_pure_python, bench_thread_pool, pickle_list, json_loads, unpickle_list, json
+
+
+# HPT report
+
+- Reliability score: 99.97% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

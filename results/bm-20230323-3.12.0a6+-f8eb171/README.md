@@ -16,14 +16,14 @@
 
 ### vs. 3.10.4
 
-- 1.29x faster \*
+- Geometric mean: 1.29x faster \* (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230323-linux-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.10.4.md)
 - [plot](bm-20230323-linux-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.03x faster \*
+- Geometric mean: 1.04x faster \* (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230323-linux-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.11.0.md)
 - [plot](bm-20230323-linux-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.11.0.png)
@@ -37,21 +37,21 @@
 
 ### vs. 3.10.4
 
-- 1.25x faster
+- Geometric mean: 1.25x faster (HPT: reliability of 100.00%, 1.20x faster at 99th %ile)
 - missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
 - [table](bm-20230323-pythonperf2-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.10.4.md)
 - [plot](bm-20230323-pythonperf2-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster
+- Geometric mean: 1.04x faster (HPT: reliability of 99.99%, 1.01x faster at 99th %ile)
 - missing benchmarks: aiohttp, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative
 - [table](bm-20230323-pythonperf2-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.11.0.md)
 - [plot](bm-20230323-pythonperf2-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.01x slower
+- Geometric mean: 1.01x slower (HPT: reliability of 99.84%, 1.00x slower at 99th %ile)
 - [table](bm-20230323-pythonperf2-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-base.md)
 - [plot](bm-20230323-pythonperf2-x86_64-faster%252dcpython-no_local_eval_breake-3.12.0a6%2B-f8eb171-vs-base.png)
 

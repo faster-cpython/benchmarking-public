@@ -7,6 +7,8 @@
 - commit hash: d579d2e
 - commit date: 2023-02-23
 - overall geometric mean: 1.01x faster
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -167,3 +169,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.01x faster                                                        |
 
 Benchmark hidden because not significant (15): djangocms, sqlalchemy_declarative, unpack_sequence, xml_etree_parse, json_loads, pickle, bench_mp_pool, meteor_contest, xml_etree_iterparse, regex_effbot, fannkuch, float, async_tree_cpu_io_mixed, async_tree_memoization, async_tree_none
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

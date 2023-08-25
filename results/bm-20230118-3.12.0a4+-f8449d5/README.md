@@ -15,7 +15,7 @@
 
 ### vs. 3.10.4
 
-- 1.27x faster \*
+- Geometric mean: 1.28x faster \* (HPT: reliability of 100.00%, 1.22x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230118-linux-x86_64-iritkatriel-copy_consts-3.12.0a4%2B-f8449d5-vs-3.10.4.md)
@@ -23,7 +23,7 @@
 
 ### vs. 3.11.0
 
-- 1.02x faster \*
+- Geometric mean: 1.02x faster \* (HPT: reliability of 99.99%, 1.00x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230118-linux-x86_64-iritkatriel-copy_consts-3.12.0a4%2B-f8449d5-vs-3.11.0.md)

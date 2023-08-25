@@ -7,6 +7,8 @@
 - commit hash: 83ffca9
 - commit date: 2023-08-05
 - overall geometric mean: 1.00x faster
+- HPT reliability: 81.08%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -133,3 +135,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                       | 1.00x faster                                                                          |
 
 Benchmark hidden because not significant (28): bench_thread_pool, logging_format, raytrace, nbody, asyncio_tcp, crypto_pyaes, async_tree_cpu_io_mixed, mypy2, asyncio_tcp_ssl, pyflate, xml_etree_iterparse, float, generators, async_tree_io, bench_mp_pool, deepcopy, async_tree_none, chaos, logging_silent, dask, logging_simple, sqlglot_normalize, async_tree_memoization, tomli_loads, mako, xml_etree_parse, create_gc_cycles, pickle_pure_python
+
+
+# HPT report
+
+- Reliability score: 81.08% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

@@ -7,6 +7,8 @@
 - commit hash: 969caba
 - commit date: 2023-02-28
 - overall geometric mean: 1.00x slower
+- HPT reliability: 80.14%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -150,3 +152,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x slower                                                                      |
 
 Benchmark hidden because not significant (32): scimark_lu, thrift, html5lib, sqlite_synth, xml_etree_generate, deepcopy_memo, xml_etree_parse, chaos, regex_dna, aiohttp, async_generators, scimark_sor, logging_format, dask, tornado_http, pathlib, dulwich_log, unpickle_pure_python, bench_mp_pool, generators, mypy2, comprehensions, sympy_sum, xml_etree_process, gunicorn, djangocms, async_tree_none, unpack_sequence, sqlalchemy_imperative, meteor_contest, async_tree_memoization, async_tree_cpu_io_mixed
+
+
+# HPT report
+
+- Reliability score: 80.14% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

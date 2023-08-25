@@ -7,6 +7,8 @@
 - commit hash: 3d240a8
 - commit date: 2023-03-13
 - overall geometric mean: 1.00x slower
+- HPT reliability: 87.71%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -154,3 +156,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                        | 1.00x slower                                                         |
 
 Benchmark hidden because not significant (23): logging_format, pickle_dict, create_gc_cycles, async_tree_cpu_io_mixed, xml_etree_parse, pickle_list, deltablue, 2to3, python_startup, asyncio_tcp_ssl, python_startup_no_site, pidigits, chameleon, comprehensions, async_tree_none, async_tree_io, dulwich_log, async_tree_memoization, unpickle_list, generators, dask, bench_thread_pool, bench_mp_pool
+
+
+# HPT report
+
+- Reliability score: 87.71% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

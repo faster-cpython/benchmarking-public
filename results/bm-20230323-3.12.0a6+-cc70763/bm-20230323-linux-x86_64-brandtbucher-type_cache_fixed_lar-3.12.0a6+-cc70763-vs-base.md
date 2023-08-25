@@ -7,6 +7,8 @@
 - commit hash: cc70763
 - commit date: 2023-03-23
 - overall geometric mean: 1.00x faster
+- HPT reliability: 97.40%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -147,4 +149,12 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x faster                                                                 |
 
 Benchmark hidden because not significant (32): async_tree_none, async_tree_cpu_io_mixed, telco, sqlglot_transpile, json_dumps, logging_format, create_gc_cycles, richards, scimark_monte_carlo, pprint_pformat, sqlglot_parse, unpickle, bench_mp_pool, json_loads, raytrace, mypy2, scimark_sor, gc_traversal, bench_thread_pool, sqlglot_optimize, tornado_http, logging_simple, gunicorn, logging_silent, pprint_safe_repr, nqueens, html5lib, dask, djangocms, json, async_tree_memoization, scimark_lu
-Ignored benchmarks (3) of /home/runner/work/benchmarking/benchmarking/results/bm-20230322-3.12.0a6+-87be8d9/bm-20230322-linux-x86_64-python-87be8d95228ee95de904-3.12.0a6+-87be8d9.json: aiohttp, sqlalchemy_declarative, sqlalchemy_imperative
+Ignored benchmarks (3) of results/bm-20230322-3.12.0a6+-87be8d9/bm-20230322-linux-x86_64-python-87be8d95228ee95de904-3.12.0a6+-87be8d9.json: aiohttp, sqlalchemy_declarative, sqlalchemy_imperative
+
+
+# HPT report
+
+- Reliability score: 97.40% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.23x faster \*
+- Geometric mean: 1.24x faster \* (HPT: reliability of 100.00%, 1.18x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230129-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a4%2B-a748e80-vs-3.10.4.md)
 - [plot](bm-20230129-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a4%2B-a748e80-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.02x slower \*
+- Geometric mean: 1.01x slower \* (HPT: reliability of 99.99%, 1.01x slower at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230129-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a4%2B-a748e80-vs-3.11.0.md)
 - [plot](bm-20230129-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a4%2B-a748e80-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.05x slower \*
+- Geometric mean: 1.05x slower \* (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
 - missing benchmarks: 🔴 aiohttp, gunicorn, mypy
 - new benchmarks: comprehensions, mypy2
 - [table](bm-20230129-linux-x86_64-eduardo%252delizondo-immortal_references-3.12.0a4%2B-a748e80-vs-base.md)

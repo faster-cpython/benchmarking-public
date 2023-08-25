@@ -7,6 +7,8 @@
 - commit hash: 3d240a8
 - commit date: 2023-03-13
 - overall geometric mean: 1.27x faster
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.20x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -182,3 +184,11 @@ All benchmarks:
 
 Benchmark hidden because not significant (1): comprehensions
 Ignored benchmarks (7) of results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf2-x86_64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, flaskblogging, gunicorn, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.23x
+- 95% likely to have a speedup of 1.22x
+- 99% likely to have a speedup of 1.20x

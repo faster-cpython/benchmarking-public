@@ -7,6 +7,8 @@
 - commit hash: db3b8a6
 - commit date: 2023-04-24
 - overall geometric mean: 1.00x slower
+- HPT reliability: 78.45%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -150,3 +152,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x slower                                                            |
 
 Benchmark hidden because not significant (31): djangocms, tornado_http, sqlalchemy_imperative, genshi_xml, json_loads, sympy_str, sqlalchemy_declarative, json, mypy2, chaos, dask, xml_etree_iterparse, pylint, logging_format, html5lib, bench_mp_pool, asyncio_tcp, sqlglot_transpile, deltablue, coverage, spectral_norm, sqlglot_parse, sqlglot_normalize, async_generators, django_template, deepcopy, deepcopy_reduce, scimark_fft, pprint_safe_repr, xml_etree_parse, sympy_expand
+
+
+# HPT report
+
+- Reliability score: 78.45% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

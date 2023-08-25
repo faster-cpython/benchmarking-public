@@ -7,6 +7,8 @@
 - commit hash: df06ef8
 - commit date: 2023-01-13
 - overall geometric mean: 1.00x slower
+- HPT reliability: 99.54%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -152,3 +154,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x slower                                                                     |
 
 Benchmark hidden because not significant (27): thrift, deepcopy_reduce, unpickle, async_tree_none, genshi_xml, unpickle_pure_python, scimark_monte_carlo, sympy_str, sympy_integrate, bench_mp_pool, bench_thread_pool, fannkuch, scimark_fft, coroutines, tornado_http, mypy, sympy_sum, telco, dask, sqlglot_parse, scimark_sor, pickle_pure_python, xml_etree_parse, json, meteor_contest, html5lib, scimark_lu
+
+
+# HPT report
+
+- Reliability score: 99.54% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

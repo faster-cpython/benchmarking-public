@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.27x faster
+- Geometric mean: 1.27x faster (HPT: reliability of 100.00%, 1.20x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230530-linux-x86_64-gvanrossum-split_ops-3.13.0a0-3259d6e-vs-3.10.4.md)
 - [plot](bm-20230530-linux-x86_64-gvanrossum-split_ops-3.13.0a0-3259d6e-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.02x faster
+- Geometric mean: 1.02x faster (HPT: reliability of 97.96%, 1.00x slower at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230530-linux-x86_64-gvanrossum-split_ops-3.13.0a0-3259d6e-vs-3.11.0.md)
 - [plot](bm-20230530-linux-x86_64-gvanrossum-split_ops-3.13.0a0-3259d6e-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.01x slower
+- Geometric mean: 1.01x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
 - [table](bm-20230530-linux-x86_64-gvanrossum-split_ops-3.13.0a0-3259d6e-vs-base.md)
 - [plot](bm-20230530-linux-x86_64-gvanrossum-split_ops-3.13.0a0-3259d6e-vs-base.png)
 

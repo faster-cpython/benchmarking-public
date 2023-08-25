@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.31x faster \*
+- Geometric mean: 1.31x faster \* (HPT: reliability of 100.00%, 1.26x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, flaskblogging, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230419-linux-x86_64-gaogaotiantian-pep669_cprofile-3.12.0a7%2B-20f4663-vs-3.10.4.md)
 - [plot](bm-20230419-linux-x86_64-gaogaotiantian-pep669_cprofile-3.12.0a7%2B-20f4663-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.05x faster \*
+- Geometric mean: 1.06x faster \* (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, flaskblogging, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230419-linux-x86_64-gaogaotiantian-pep669_cprofile-3.12.0a7%2B-20f4663-vs-3.11.0.md)
 - [plot](bm-20230419-linux-x86_64-gaogaotiantian-pep669_cprofile-3.12.0a7%2B-20f4663-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x faster
+- Geometric mean: 1.00x faster (HPT: reliability of 93.83%, 1.00x faster at 99th %ile)
 - [table](bm-20230419-linux-x86_64-gaogaotiantian-pep669_cprofile-3.12.0a7%2B-20f4663-vs-base.md)
 - [plot](bm-20230419-linux-x86_64-gaogaotiantian-pep669_cprofile-3.12.0a7%2B-20f4663-vs-base.png)
 

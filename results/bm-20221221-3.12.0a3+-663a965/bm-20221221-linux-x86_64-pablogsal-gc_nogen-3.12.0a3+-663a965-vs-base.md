@@ -7,6 +7,8 @@
 - commit hash: 663a965
 - commit date: 2022-12-21
 - overall geometric mean: 1.05x faster
+- HPT reliability: 94.94%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -155,3 +157,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.05x faster                                                  |
 
 Benchmark hidden because not significant (16): json, scimark_lu, sympy_str, pickle_pure_python, deepcopy_memo, bench_mp_pool, bench_thread_pool, pickle, genshi_text, json_loads, nbody, unpickle_pure_python, sympy_expand, meteor_contest, regex_compile, unpickle
+
+
+# HPT report
+
+- Reliability score: 94.94% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

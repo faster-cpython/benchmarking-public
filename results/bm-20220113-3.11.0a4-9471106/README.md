@@ -14,14 +14,14 @@
 
 ### vs. 3.10.4
 
-- 1.24x faster \*
+- Geometric mean: 1.23x faster \* (HPT: reliability of 100.00%, 1.16x faster at 99th %ile)
 - missing benchmarks: aiohttp, async_generators, async_tree_cpu_io_mixed, async_tree_io, async_tree_memoization, async_tree_none, asyncio_tcp, asyncio_tcp_ssl, bench_mp_pool, bench_thread_pool, comprehensions, coroutines, coverage, create_gc_cycles, dask, deepcopy, deepcopy_memo, deepcopy_reduce, djangocms, docutils, flaskblogging, gc_traversal, generators, genshi_text, genshi_xml, gunicorn, mdp, mypy2, pprint_pformat, pprint_safe_repr, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tomli_loads, typing_runtime_protocols
 - [table](bm-20220113-linux-x86_64-python-main-3.11.0a4-9471106-vs-3.10.4.md)
 - [plot](bm-20220113-linux-x86_64-python-main-3.11.0a4-9471106-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x slower \*
+- Geometric mean: 1.03x slower \* (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
 - missing benchmarks: aiohttp, async_generators, async_tree_cpu_io_mixed, async_tree_io, async_tree_memoization, async_tree_none, asyncio_tcp, asyncio_tcp_ssl, bench_mp_pool, bench_thread_pool, comprehensions, coroutines, coverage, create_gc_cycles, dask, deepcopy, deepcopy_memo, deepcopy_reduce, djangocms, docutils, flaskblogging, gc_traversal, generators, genshi_text, genshi_xml, gunicorn, mdp, mypy2, pprint_pformat, pprint_safe_repr, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tomli_loads, typing_runtime_protocols
 - [table](bm-20220113-linux-x86_64-python-main-3.11.0a4-9471106-vs-3.11.0.md)
 - [plot](bm-20220113-linux-x86_64-python-main-3.11.0a4-9471106-vs-3.11.0.png)
@@ -35,14 +35,14 @@
 
 ### vs. 3.10.4
 
-- 1.15x faster \*
+- Geometric mean: 1.15x faster \* (HPT: reliability of 100.00%, 1.10x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, mypy2, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20220113-pythonperf2-x86_64-python-9471106fd5b47418ffd2-3.11.0a4-9471106-vs-3.10.4.md)
 - [plot](bm-20220113-pythonperf2-x86_64-python-9471106fd5b47418ffd2-3.11.0a4-9471106-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.06x slower \*
+- Geometric mean: 1.05x slower \* (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, mypy2, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20220113-pythonperf2-x86_64-python-9471106fd5b47418ffd2-3.11.0a4-9471106-vs-3.11.0.md)
 - [plot](bm-20220113-pythonperf2-x86_64-python-9471106fd5b47418ffd2-3.11.0a4-9471106-vs-3.11.0.png)
@@ -56,14 +56,14 @@
 
 ### vs. 3.10.4
 
-- 1.16x faster \*
+- Geometric mean: 1.16x faster \* (HPT: reliability of 100.00%, 1.11x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, gunicorn, mypy2, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20220113-darwin-arm64-python-9471106fd5b47418ffd2-3.11.0a4-9471106-vs-3.10.4.md)
 - [plot](bm-20220113-darwin-arm64-python-9471106fd5b47418ffd2-3.11.0a4-9471106-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x slower \*
+- Geometric mean: 1.04x slower \* (HPT: reliability of 100.00%, 1.02x slower at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, gunicorn, mypy2, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: dask
 - [table](bm-20220113-darwin-arm64-python-9471106fd5b47418ffd2-3.11.0a4-9471106-vs-3.11.0.md)

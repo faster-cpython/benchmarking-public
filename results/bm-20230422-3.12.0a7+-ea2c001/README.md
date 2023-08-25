@@ -15,14 +15,14 @@
 
 ### vs. 3.10.4
 
-- 1.24x faster \*
+- Geometric mean: 1.24x faster \* (HPT: reliability of 100.00%, 1.18x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230422-linux-x86_64-python-ea2c0016502472aa8baa-3.12.0a7%2B-ea2c001-vs-3.10.4.md)
 - [plot](bm-20230422-linux-x86_64-python-ea2c0016502472aa8baa-3.12.0a7%2B-ea2c001-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.01x slower \*
+- Geometric mean: 1.00x slower \* (HPT: reliability of 99.39%, 1.00x slower at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230422-linux-x86_64-python-ea2c0016502472aa8baa-3.12.0a7%2B-ea2c001-vs-3.11.0.md)
 - [plot](bm-20230422-linux-x86_64-python-ea2c0016502472aa8baa-3.12.0a7%2B-ea2c001-vs-3.11.0.png)
@@ -36,14 +36,14 @@
 
 ### vs. 3.10.4
 
-- 1.26x faster \*
+- Geometric mean: 1.26x faster \* (HPT: reliability of 100.00%, 1.19x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230422-pythonperf2-x86_64-python-ea2c0016502472aa8baa-3.12.0a7%2B-ea2c001-vs-3.10.4.md)
 - [plot](bm-20230422-pythonperf2-x86_64-python-ea2c0016502472aa8baa-3.12.0a7%2B-ea2c001-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster \*
+- Geometric mean: 1.04x faster \* (HPT: reliability of 99.96%, 1.01x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, gunicorn, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230422-pythonperf2-x86_64-python-ea2c0016502472aa8baa-3.12.0a7%2B-ea2c001-vs-3.11.0.md)
 - [plot](bm-20230422-pythonperf2-x86_64-python-ea2c0016502472aa8baa-3.12.0a7%2B-ea2c001-vs-3.11.0.png)

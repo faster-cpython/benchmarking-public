@@ -17,14 +17,14 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster \*
+- Geometric mean: 1.30x faster \* (HPT: reliability of 100.00%, 1.25x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230218-linux-x86_64-python-main-3.12.0a5%2B-61f1e67-vs-3.10.4.md)
 - [plot](bm-20230218-linux-x86_64-python-main-3.12.0a5%2B-61f1e67-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster \*
+- Geometric mean: 1.05x faster \* (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230218-linux-x86_64-python-main-3.12.0a5%2B-61f1e67-vs-3.11.0.md)
 - [plot](bm-20230218-linux-x86_64-python-main-3.12.0a5%2B-61f1e67-vs-3.11.0.png)
@@ -38,14 +38,14 @@
 
 ### vs. 3.10.4
 
-- 1.22x faster \*
+- Geometric mean: 1.22x faster \* (HPT: reliability of 100.00%, 1.19x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230218-darwin-arm64-python-main-3.12.0a5%2B-61f1e67-vs-3.10.4.md)
 - [plot](bm-20230218-darwin-arm64-python-main-3.12.0a5%2B-61f1e67-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.01x faster \*
+- Geometric mean: 1.01x faster \* (HPT: reliability of 83.13%, 1.00x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: dask
 - [table](bm-20230218-darwin-arm64-python-main-3.12.0a5%2B-61f1e67-vs-3.11.0.md)

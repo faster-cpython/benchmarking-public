@@ -18,21 +18,21 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster \*
+- Geometric mean: 1.31x faster \* (HPT: reliability of 100.00%, 1.26x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230221-linux-x86_64-brandtbucher-quicken_at_runtime_n-3.12.0a5%2B-cdd2a84-vs-3.10.4.md)
 - [plot](bm-20230221-linux-x86_64-brandtbucher-quicken_at_runtime_n-3.12.0a5%2B-cdd2a84-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster \*
+- Geometric mean: 1.05x faster \* (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230221-linux-x86_64-brandtbucher-quicken_at_runtime_n-3.12.0a5%2B-cdd2a84-vs-3.11.0.md)
 - [plot](bm-20230221-linux-x86_64-brandtbucher-quicken_at_runtime_n-3.12.0a5%2B-cdd2a84-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x slower
+- Geometric mean: 1.00x slower (HPT: reliability of 95.20%, 1.00x slower at 99th %ile)
 - [table](bm-20230221-linux-x86_64-brandtbucher-quicken_at_runtime_n-3.12.0a5%2B-cdd2a84-vs-base.md)
 - [plot](bm-20230221-linux-x86_64-brandtbucher-quicken_at_runtime_n-3.12.0a5%2B-cdd2a84-vs-base.png)
 

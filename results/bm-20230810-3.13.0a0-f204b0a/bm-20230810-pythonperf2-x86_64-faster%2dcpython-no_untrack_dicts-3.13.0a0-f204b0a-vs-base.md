@@ -7,6 +7,8 @@
 - commit hash: f204b0a
 - commit date: 2023-08-10
 - overall geometric mean: 1.00x faster
+- HPT reliability: 96.99%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -147,3 +149,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                       | 1.00x faster                                                                      |
 
 Benchmark hidden because not significant (17): bench_thread_pool, mypy2, tornado_http, unpickle_pure_python, float, sqlite_synth, deltablue, chaos, asyncio_tcp, deepcopy_memo, json_dumps, raytrace, telco, mako, deepcopy, xml_etree_iterparse, bench_mp_pool
+
+
+# HPT report
+
+- Reliability score: 96.99% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

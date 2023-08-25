@@ -7,6 +7,8 @@
 - commit hash: d595911
 - commit date: 2023-04-27
 - overall geometric mean: 1.18x faster
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.13x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -178,4 +180,12 @@ All benchmarks:
 | coverage                 | 64.0 ms                                                      | 97.6 ms: 1.53x slower                                                |
 | bench_thread_pool        | 1.14 ms                                                      | 2.03 ms: 1.78x slower                                                |
 | Geometric mean           | (ref)                                                        | 1.18x faster                                                         |
-Ignored benchmarks (8) of /home/runner/work/benchmarking/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf2-x86_64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, dask, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+Ignored benchmarks (8) of results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf2-x86_64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, dask, flaskblogging, gunicorn, pylint, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.16x
+- 95% likely to have a speedup of 1.15x
+- 99% likely to have a speedup of 1.13x

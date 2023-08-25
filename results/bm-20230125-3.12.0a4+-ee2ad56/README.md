@@ -15,7 +15,7 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster \*
+- Geometric mean: 1.30x faster \* (HPT: reliability of 100.00%, 1.26x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230125-linux-x86_64-carljm-inlinecomp-3.12.0a4%2B-ee2ad56-vs-3.10.4.md)
@@ -23,7 +23,7 @@
 
 ### vs. 3.11.0
 
-- 1.03x faster \*
+- Geometric mean: 1.04x faster \* (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, flaskblogging, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230125-linux-x86_64-carljm-inlinecomp-3.12.0a4%2B-ee2ad56-vs-3.11.0.md)
@@ -31,7 +31,7 @@
 
 ### vs. base
 
-- 1.00x faster
+- Geometric mean: 1.00x faster (HPT: reliability of 88.40%, 1.00x faster at 99th %ile)
 - [table](bm-20230125-linux-x86_64-carljm-inlinecomp-3.12.0a4%2B-ee2ad56-vs-base.md)
 - [plot](bm-20230125-linux-x86_64-carljm-inlinecomp-3.12.0a4%2B-ee2ad56-vs-base.png)
 

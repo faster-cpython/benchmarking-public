@@ -18,21 +18,21 @@
 
 ### vs. 3.10.4
 
-- 1.28x faster \*
+- Geometric mean: 1.29x faster \* (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230309-linux-x86_64-brandtbucher-compare_and_not_bran-3.12.0a5%2B-fd42c63-vs-3.10.4.md)
 - [plot](bm-20230309-linux-x86_64-brandtbucher-compare_and_not_bran-3.12.0a5%2B-fd42c63-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.02x faster \*
+- Geometric mean: 1.03x faster \* (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230309-linux-x86_64-brandtbucher-compare_and_not_bran-3.12.0a5%2B-fd42c63-vs-3.11.0.md)
 - [plot](bm-20230309-linux-x86_64-brandtbucher-compare_and_not_bran-3.12.0a5%2B-fd42c63-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x slower
+- Geometric mean: 1.00x slower (HPT: reliability of 57.99%, 1.00x slower at 99th %ile)
 - [table](bm-20230309-linux-x86_64-brandtbucher-compare_and_not_bran-3.12.0a5%2B-fd42c63-vs-base.md)
 - [plot](bm-20230309-linux-x86_64-brandtbucher-compare_and_not_bran-3.12.0a5%2B-fd42c63-vs-base.png)
 

@@ -7,6 +7,8 @@
 - commit hash: f190abf
 - commit date: 2023-05-12
 - overall geometric mean: 1.01x faster
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -152,3 +154,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                       | 1.01x faster                                                                |
 
 Benchmark hidden because not significant (18): docutils, pickle_list, sqlglot_normalize, aiohttp, pidigits, mypy2, async_tree_io, deltablue, tornado_http, generators, telco, sqlite_synth, comprehensions, crypto_pyaes, scimark_lu, deepcopy_reduce, create_gc_cycles, pycparser
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

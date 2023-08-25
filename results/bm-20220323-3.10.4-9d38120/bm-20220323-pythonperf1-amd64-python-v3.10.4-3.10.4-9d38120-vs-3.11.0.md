@@ -7,6 +7,8 @@
 - commit hash: 9d38120
 - commit date: 2022-03-23
 - overall geometric mean: 1.12x slower
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.08x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -184,3 +186,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                       | 1.12x slower                                                |
 
 Benchmark hidden because not significant (4): asyncio_tcp_ssl, flaskblogging, comprehensions, asyncio_tcp
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be slow
+- 90% likely to have a slowdown of 1.10x
+- 95% likely to have a slowdown of 1.09x
+- 99% likely to have a slowdown of 1.08x

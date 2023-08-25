@@ -7,6 +7,8 @@
 - commit hash: dbda923
 - commit date: 2023-06-15
 - overall geometric mean: 1.01x slower
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -150,3 +152,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                 | 1.01x slower                                                          |
 
 Benchmark hidden because not significant (15): async_tree_io, pyflate, create_gc_cycles, scimark_fft, bench_mp_pool, asyncio_tcp, xml_etree_parse, async_tree_none, asyncio_tcp_ssl, pickle, pprint_safe_repr, fannkuch, async_tree_cpu_io_mixed, deltablue, sqlite_synth
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

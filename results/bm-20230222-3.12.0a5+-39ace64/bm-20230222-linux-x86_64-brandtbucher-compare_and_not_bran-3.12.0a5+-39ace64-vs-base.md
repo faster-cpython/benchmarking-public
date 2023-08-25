@@ -7,6 +7,8 @@
 - commit hash: 39ace64
 - commit date: 2023-02-22
 - overall geometric mean: 1.00x slower
+- HPT reliability: 99.87%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -151,3 +153,11 @@ All benchmarks:
 | Geometric mean         | (ref)                                                                  | 1.00x slower                                                                 |
 
 Benchmark hidden because not significant (32): unpickle, spectral_norm, scimark_lu, pycparser, crypto_pyaes, genshi_text, nbody, coroutines, sqlglot_optimize, deepcopy_memo, asyncio_tcp, scimark_fft, aiohttp, dulwich_log, bench_mp_pool, mypy2, deepcopy_reduce, deltablue, pprint_pformat, tornado_http, async_tree_none, sqlalchemy_declarative, pickle_list, unpickle_pure_python, async_tree_cpu_io_mixed, thrift, unpack_sequence, dask, djangocms, scimark_sparse_mat_mult, sqlalchemy_imperative, html5lib
+
+
+# HPT report
+
+- Reliability score: 99.87% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

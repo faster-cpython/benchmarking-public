@@ -7,6 +7,8 @@
 - commit hash: fed9a7f
 - commit date: 2023-08-11
 - overall geometric mean: 1.01x slower
+- HPT reliability: 58.33%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -143,3 +145,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                 | 1.01x slower                                                              |
 
 Benchmark hidden because not significant (20): scimark_fft, logging_format, json_dumps, sqlglot_normalize, unpickle_pure_python, go, asyncio_tcp_ssl, regex_compile, bench_mp_pool, asyncio_tcp, hexiom, regex_dna, pprint_pformat, logging_simple, deltablue, sqlglot_optimize, typing_runtime_protocols, unpickle, dask, unpickle_list
+
+
+# HPT report
+
+- Reliability score: 58.33% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

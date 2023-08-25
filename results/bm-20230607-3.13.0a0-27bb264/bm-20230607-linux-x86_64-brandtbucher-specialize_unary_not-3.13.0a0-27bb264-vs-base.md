@@ -7,6 +7,8 @@
 - commit hash: 27bb264
 - commit date: 2023-06-07
 - overall geometric mean: 1.02x slower
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -151,3 +153,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                 | 1.02x slower                                                                |
 
 Benchmark hidden because not significant (12): json_loads, bench_mp_pool, scimark_fft, mako, scimark_lu, unpickle, coverage, coroutines, spectral_norm, json, raytrace, async_tree_cpu_io_mixed
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be slow
+- 90% likely to have a slowdown of 1.01x
+- 95% likely to have a slowdown of 1.01x
+- 99% likely to have a slowdown of 1.00x

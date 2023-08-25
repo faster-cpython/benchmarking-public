@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.26x faster
+- Geometric mean: 1.26x faster (HPT: reliability of 100.00%, 1.20x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230810-pythonperf2-x86_64-faster%252dcpython-no_untrack_dicts-3.13.0a0-f204b0a-vs-3.10.4.md)
 - [plot](bm-20230810-pythonperf2-x86_64-faster%252dcpython-no_untrack_dicts-3.13.0a0-f204b0a-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster
+- Geometric mean: 1.04x faster (HPT: reliability of 88.21%, 1.00x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230810-pythonperf2-x86_64-faster%252dcpython-no_untrack_dicts-3.13.0a0-f204b0a-vs-3.11.0.md)
 - [plot](bm-20230810-pythonperf2-x86_64-faster%252dcpython-no_untrack_dicts-3.13.0a0-f204b0a-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x faster
+- Geometric mean: 1.00x faster (HPT: reliability of 96.99%, 1.00x faster at 99th %ile)
 - [table](bm-20230810-pythonperf2-x86_64-faster%252dcpython-no_untrack_dicts-3.13.0a0-f204b0a-vs-base.md)
 - [plot](bm-20230810-pythonperf2-x86_64-faster%252dcpython-no_untrack_dicts-3.13.0a0-f204b0a-vs-base.png)
 

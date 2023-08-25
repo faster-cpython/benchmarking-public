@@ -21,21 +21,21 @@
 
 ### vs. 3.10.4
 
-- 1.24x faster \*
+- Geometric mean: 1.24x faster \* (HPT: reliability of 100.00%, 1.19x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, chameleon, django_template, djangocms, flaskblogging, gunicorn, pylint, richards_super, sympy_expand, sympy_integrate, sympy_str, sympy_sum, tomli_loads, typing_runtime_protocols
 - [table](bm-20230428-linux-x86_64-brandtbucher-immortal_interpreter-3.12.0a7%2B-7f90633-vs-3.10.4.md)
 - [plot](bm-20230428-linux-x86_64-brandtbucher-immortal_interpreter-3.12.0a7%2B-7f90633-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.01x slower \*
+- Geometric mean: 1.01x slower \* (HPT: reliability of 99.44%, 1.00x slower at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, chameleon, django_template, djangocms, flaskblogging, gunicorn, pylint, richards_super, sympy_expand, sympy_integrate, sympy_str, sympy_sum, tomli_loads, typing_runtime_protocols
 - [table](bm-20230428-linux-x86_64-brandtbucher-immortal_interpreter-3.12.0a7%2B-7f90633-vs-3.11.0.md)
 - [plot](bm-20230428-linux-x86_64-brandtbucher-immortal_interpreter-3.12.0a7%2B-7f90633-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x faster
+- Geometric mean: 1.00x faster (HPT: reliability of 99.97%, 1.00x faster at 99th %ile)
 - [table](bm-20230428-linux-x86_64-brandtbucher-immortal_interpreter-3.12.0a7%2B-7f90633-vs-base.md)
 - [plot](bm-20230428-linux-x86_64-brandtbucher-immortal_interpreter-3.12.0a7%2B-7f90633-vs-base.png)
 

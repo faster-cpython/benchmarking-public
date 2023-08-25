@@ -15,7 +15,7 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster \*
+- Geometric mean: 1.30x faster \* (HPT: reliability of 100.00%, 1.25x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230113-linux-x86_64-faster%252dcpython-faster_gen_close-3.12.0a4%2B-6ec191a-vs-3.10.4.md)
@@ -23,7 +23,7 @@
 
 ### vs. 3.11.0
 
-- 1.03x faster \*
+- Geometric mean: 1.04x faster \* (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, comprehensions, flaskblogging, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230113-linux-x86_64-faster%252dcpython-faster_gen_close-3.12.0a4%2B-6ec191a-vs-3.11.0.md)
@@ -31,7 +31,7 @@
 
 ### vs. base
 
-- 1.00x slower
+- Geometric mean: 1.00x slower (HPT: reliability of 82.54%, 1.00x slower at 99th %ile)
 - [table](bm-20230113-linux-x86_64-faster%252dcpython-faster_gen_close-3.12.0a4%2B-6ec191a-vs-base.md)
 - [plot](bm-20230113-linux-x86_64-faster%252dcpython-faster_gen_close-3.12.0a4%2B-6ec191a-vs-base.png)
 

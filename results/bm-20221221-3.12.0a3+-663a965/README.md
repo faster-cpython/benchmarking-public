@@ -15,7 +15,7 @@
 
 ### vs. 3.10.4
 
-- 1.37x faster \*
+- Geometric mean: 1.38x faster \* (HPT: reliability of 100.00%, 1.30x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, comprehensions, create_gc_cycles, dask, djangocms, flaskblogging, gc_traversal, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20221221-linux-x86_64-pablogsal-gc_nogen-3.12.0a3%2B-663a965-vs-3.10.4.md)
@@ -23,7 +23,7 @@
 
 ### vs. 3.11.0
 
-- 1.08x faster \*
+- Geometric mean: 1.09x faster \* (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, comprehensions, create_gc_cycles, dask, djangocms, flaskblogging, gc_traversal, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20221221-linux-x86_64-pablogsal-gc_nogen-3.12.0a3%2B-663a965-vs-3.11.0.md)
@@ -31,7 +31,7 @@
 
 ### vs. base
 
-- 1.05x faster
+- Geometric mean: 1.05x faster (HPT: reliability of 94.94%, 1.00x faster at 99th %ile)
 - [table](bm-20221221-linux-x86_64-pablogsal-gc_nogen-3.12.0a3%2B-663a965-vs-base.md)
 - [plot](bm-20221221-linux-x86_64-pablogsal-gc_nogen-3.12.0a3%2B-663a965-vs-base.png)
 

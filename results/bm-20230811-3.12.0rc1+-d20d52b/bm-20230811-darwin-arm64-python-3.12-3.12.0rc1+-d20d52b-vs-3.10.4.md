@@ -7,6 +7,8 @@
 - commit hash: d20d52b
 - commit date: 2023-08-11
 - overall geometric mean: 1.24x faster
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.16x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -169,3 +171,11 @@ All benchmarks:
 
 Benchmark hidden because not significant (1): gc_traversal
 Ignored benchmarks (14) of results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.21x
+- 95% likely to have a speedup of 1.21x
+- 99% likely to have a speedup of 1.16x

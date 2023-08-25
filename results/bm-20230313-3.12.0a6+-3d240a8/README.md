@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.27x faster
+- Geometric mean: 1.27x faster (HPT: reliability of 100.00%, 1.20x faster at 99th %ile)
 - missing benchmarks: aiohttp, flaskblogging, gunicorn, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
 - [table](bm-20230313-pythonperf2-x86_64-illia%252dv-gh_102509-3.12.0a6%2B-3d240a8-vs-3.10.4.md)
 - [plot](bm-20230313-pythonperf2-x86_64-illia%252dv-gh_102509-3.12.0a6%2B-3d240a8-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster
+- Geometric mean: 1.04x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - missing benchmarks: aiohttp, flaskblogging, gunicorn, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative
 - [table](bm-20230313-pythonperf2-x86_64-illia%252dv-gh_102509-3.12.0a6%2B-3d240a8-vs-3.11.0.md)
 - [plot](bm-20230313-pythonperf2-x86_64-illia%252dv-gh_102509-3.12.0a6%2B-3d240a8-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x slower
+- Geometric mean: 1.00x slower (HPT: reliability of 87.71%, 1.00x slower at 99th %ile)
 - [table](bm-20230313-pythonperf2-x86_64-illia%252dv-gh_102509-3.12.0a6%2B-3d240a8-vs-base.md)
 - [plot](bm-20230313-pythonperf2-x86_64-illia%252dv-gh_102509-3.12.0a6%2B-3d240a8-vs-base.png)
 

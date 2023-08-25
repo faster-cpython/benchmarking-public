@@ -7,6 +7,8 @@
 - commit hash: ee40b3e
 - commit date: 2023-08-12
 - overall geometric mean: 1.01x slower
+- HPT reliability: 99.07%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -162,3 +164,11 @@ All benchmarks:
 Benchmark hidden because not significant (5): async_tree_memoization, tornado_http, nqueens, scimark_monte_carlo, pycparser
 Ignored benchmarks (17) of results/bm-20221024-3.11.0-deaf509/bm-20221024-darwin-arm64-python-v3.11.0-3.11.0-deaf509.json: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 Ignored benchmarks (1) of results/bm-20230812-3.13.0a0-ee40b3e/bm-20230812-darwin-arm64-python-main-3.13.0a0-ee40b3e.json: dask
+
+
+# HPT report
+
+- Reliability score: 99.07% likely to be slow
+- 90% likely to have a slowdown of 1.01x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

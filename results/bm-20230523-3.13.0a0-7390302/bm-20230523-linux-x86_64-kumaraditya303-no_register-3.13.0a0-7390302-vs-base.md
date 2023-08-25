@@ -7,6 +7,8 @@
 - commit hash: 7390302
 - commit date: 2023-05-23
 - overall geometric mean: 1.01x faster
+- HPT reliability: 99.99%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -138,5 +140,13 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                 | 1.01x faster                                                         |
 
 Benchmark hidden because not significant (24): unpickle, richards, telco, sqlglot_transpile, xml_etree_iterparse, unpickle_list, async_generators, sqlglot_parse, float, logging_format, typing_runtime_protocols, raytrace, sqlglot_optimize, pickle_pure_python, hexiom, chaos, bench_mp_pool, mypy2, bench_thread_pool, json_dumps, unpickle_pure_python, scimark_sparse_mat_mult, tomli_loads, scimark_lu
-Ignored benchmarks (1) of /home/runner/work/benchmarking/benchmarking/results/bm-20230522-3.13.0a0-5ecd8c8/bm-20230522-linux-x86_64-python-5ecd8c85f934e13a5ff9-3.13.0a0-5ecd8c8.json: dask
-Ignored benchmarks (4) of /home/runner/work/benchmarking/benchmarking/results/bm-20230523-3.13.0a0-7390302/bm-20230523-linux-x86_64-kumaraditya303-no_register-3.13.0a0-7390302.json: djangocms, genshi_text, genshi_xml, html5lib
+Ignored benchmarks (1) of results/bm-20230522-3.13.0a0-5ecd8c8/bm-20230522-linux-x86_64-python-5ecd8c85f934e13a5ff9-3.13.0a0-5ecd8c8.json: dask
+Ignored benchmarks (4) of results/bm-20230523-3.13.0a0-7390302/bm-20230523-linux-x86_64-kumaraditya303-no_register-3.13.0a0-7390302.json: djangocms, genshi_text, genshi_xml, html5lib
+
+
+# HPT report
+
+- Reliability score: 99.99% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

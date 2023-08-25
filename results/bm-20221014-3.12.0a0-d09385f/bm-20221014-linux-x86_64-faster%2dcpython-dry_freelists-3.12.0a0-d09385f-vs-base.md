@@ -7,6 +7,8 @@
 - commit hash: d09385f
 - commit date: 2022-10-14
 - overall geometric mean: 1.00x faster
+- HPT reliability: 92.43%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -154,3 +156,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                 | 1.00x faster                                                             |
 
 Benchmark hidden because not significant (28): unpickle, async_tree_none, nbody, mypy, sqlglot_transpile, html5lib, djangocms, xml_etree_generate, logging_simple, thrift, logging_format, pylint, docutils, unpack_sequence, gunicorn, bench_mp_pool, logging_silent, json, deepcopy_reduce, chaos, create_gc_cycles, dask, coroutines, xml_etree_iterparse, async_tree_memoization, meteor_contest, deepcopy_memo, unpickle_list
+
+
+# HPT report
+
+- Reliability score: 92.43% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

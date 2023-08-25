@@ -7,6 +7,8 @@
 - commit hash: a47c13c
 - commit date: 2023-08-19
 - overall geometric mean: 1.01x slower
+- HPT reliability: 99.24%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -163,3 +165,11 @@ All benchmarks:
 Benchmark hidden because not significant (5): async_tree_memoization, pickle_dict, scimark_monte_carlo, tornado_http, pycparser
 Ignored benchmarks (17) of results/bm-20221024-3.11.0-deaf509/bm-20221024-darwin-arm64-python-v3.11.0-3.11.0-deaf509.json: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 Ignored benchmarks (1) of results/bm-20230819-3.13.0a0-a47c13c/bm-20230819-darwin-arm64-python-main-3.13.0a0-a47c13c.json: dask
+
+
+# HPT report
+
+- Reliability score: 99.24% likely to be slow
+- 90% likely to have a slowdown of 1.01x
+- 95% likely to have a slowdown of 1.01x
+- 99% likely to have a slowdown of 1.00x

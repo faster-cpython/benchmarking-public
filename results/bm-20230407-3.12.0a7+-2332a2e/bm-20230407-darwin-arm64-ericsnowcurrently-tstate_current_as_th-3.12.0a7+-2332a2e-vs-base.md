@@ -7,6 +7,8 @@
 - commit hash: 2332a2e
 - commit date: 2023-04-07
 - overall geometric mean: 1.03x slower
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.01x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -174,3 +176,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.03x slower                                                                      |
 
 Benchmark hidden because not significant (9): asyncio_tcp, pickle_pure_python, regex_dna, crypto_pyaes, pidigits, json_loads, async_tree_memoization, mypy2, tornado_http
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be slow
+- 90% likely to have a slowdown of 1.02x
+- 95% likely to have a slowdown of 1.02x
+- 99% likely to have a slowdown of 1.01x

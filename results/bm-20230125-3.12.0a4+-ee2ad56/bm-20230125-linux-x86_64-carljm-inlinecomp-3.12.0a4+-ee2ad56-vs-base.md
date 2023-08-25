@@ -7,6 +7,8 @@
 - commit hash: ee2ad56
 - commit date: 2023-01-25
 - overall geometric mean: 1.00x faster
+- HPT reliability: 88.40%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -146,3 +148,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x faster                                                 |
 
 Benchmark hidden because not significant (33): djangocms, async_tree_none, sqlite_synth, sqlglot_transpile, coverage, nbody, mypy, hexiom, pprint_pformat, genshi_xml, chameleon, deepcopy, django_template, sympy_str, nqueens, aiohttp, deltablue, xml_etree_generate, bench_mp_pool, async_tree_io, dulwich_log, unpickle_list, sqlglot_parse, genshi_text, xml_etree_parse, pprint_safe_repr, async_tree_cpu_io_mixed, meteor_contest, crypto_pyaes, dask, scimark_lu, html5lib, scimark_sor
+
+
+# HPT report
+
+- Reliability score: 88.40% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

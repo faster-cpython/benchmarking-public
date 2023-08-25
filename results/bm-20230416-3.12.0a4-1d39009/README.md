@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.19x faster \*
+- Geometric mean: 1.19x faster \* (HPT: reliability of 100.00%, 1.12x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, dask, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - [table](bm-20230416-linux-x86_64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-3.10.4.md)
 - [plot](bm-20230416-linux-x86_64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.05x slower \*
+- Geometric mean: 1.05x slower \* (HPT: reliability of 100.00%, 1.05x slower at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, dask, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - [table](bm-20230416-linux-x86_64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-3.11.0.md)
 - [plot](bm-20230416-linux-x86_64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.10x slower
+- Geometric mean: 1.10x slower (HPT: reliability of 100.00%, 1.08x slower at 99th %ile)
 - missing benchmarks: 🔴 dask
 - [table](bm-20230416-linux-x86_64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-base.md)
 - [plot](bm-20230416-linux-x86_64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-base.png)
@@ -44,21 +44,21 @@
 
 ### vs. 3.10.4
 
-- 1.06x faster \*
+- Geometric mean: 1.07x faster \* (HPT: reliability of 99.88%, 1.00x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, dask, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - [table](bm-20230416-pythonperf1-amd64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-3.10.4.md)
 - [plot](bm-20230416-pythonperf1-amd64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.05x slower \*
+- Geometric mean: 1.05x slower \* (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, dask, flaskblogging, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - [table](bm-20230416-pythonperf1-amd64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-3.11.0.md)
 - [plot](bm-20230416-pythonperf1-amd64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.17x slower
+- Geometric mean: 1.17x slower (HPT: reliability of 100.00%, 1.14x slower at 99th %ile)
 - missing benchmarks: 🔴 dask
 - [table](bm-20230416-pythonperf1-amd64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-base.md)
 - [plot](bm-20230416-pythonperf1-amd64-faster%252dcpython-nogil_latest-3.12.0a4-1d39009-vs-base.png)

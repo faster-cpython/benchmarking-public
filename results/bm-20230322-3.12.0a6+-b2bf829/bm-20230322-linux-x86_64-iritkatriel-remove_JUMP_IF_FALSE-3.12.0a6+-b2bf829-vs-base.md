@@ -7,6 +7,8 @@
 - commit hash: b2bf829
 - commit date: 2023-03-22
 - overall geometric mean: 1.00x slower
+- HPT reliability: 97.36%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -150,3 +152,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x slower                                                                |
 
 Benchmark hidden because not significant (31): json, float, djangocms, go, sqlalchemy_imperative, xml_etree_generate, sqlite_synth, scimark_sor, unpickle_pure_python, aiohttp, mypy2, create_gc_cycles, pathlib, sympy_sum, bench_mp_pool, docutils, async_tree_io, telco, gunicorn, coroutines, xml_etree_process, async_tree_none, sqlglot_normalize, pickle_pure_python, tornado_http, django_template, dask, html5lib, scimark_lu, chameleon, async_tree_cpu_io_mixed
+
+
+# HPT report
+
+- Reliability score: 97.36% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

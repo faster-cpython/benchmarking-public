@@ -15,7 +15,7 @@
 
 ### vs. 3.10.4
 
-- 1.29x faster \*
+- Geometric mean: 1.30x faster \* (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, comprehensions, create_gc_cycles, dask, flaskblogging, gc_traversal, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20221222-linux-x86_64-brandtbucher-scan_small_dicts-3.12.0a3%2B-9e5a8e4-vs-3.10.4.md)
@@ -23,7 +23,7 @@
 
 ### vs. 3.11.0
 
-- 1.02x faster \*
+- Geometric mean: 1.03x faster \* (HPT: reliability of 99.83%, 1.00x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, comprehensions, create_gc_cycles, dask, flaskblogging, gc_traversal, gunicorn, mypy2, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, tornado_http, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20221222-linux-x86_64-brandtbucher-scan_small_dicts-3.12.0a3%2B-9e5a8e4-vs-3.11.0.md)
@@ -31,7 +31,7 @@
 
 ### vs. base
 
-- 1.01x slower
+- Geometric mean: 1.01x slower (HPT: reliability of 96.95%, 1.00x slower at 99th %ile)
 - [table](bm-20221222-linux-x86_64-brandtbucher-scan_small_dicts-3.12.0a3%2B-9e5a8e4-vs-base.md)
 - [plot](bm-20221222-linux-x86_64-brandtbucher-scan_small_dicts-3.12.0a3%2B-9e5a8e4-vs-base.png)
 

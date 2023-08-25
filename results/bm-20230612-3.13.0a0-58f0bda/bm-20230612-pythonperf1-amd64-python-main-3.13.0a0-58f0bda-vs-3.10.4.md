@@ -7,6 +7,8 @@
 - commit hash: 58f0bda
 - commit date: 2023-06-12
 - overall geometric mean: 1.13x faster
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.05x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -162,4 +164,12 @@ All benchmarks:
 | gc_traversal             | 1.34 ms                                                     | 1.55 ms: 1.16x slower                                      |
 | coverage                 | 40.0 ms                                                     | 54.7 ms: 1.37x slower                                      |
 | Geometric mean           | (ref)                                                       | 1.13x faster                                               |
-Ignored benchmarks (17) of /home/runner/work/benchmarking/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf1-amd64-python-v3.10.4-3.10.4-9d38120.json: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+Ignored benchmarks (17) of results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf1-amd64-python-v3.10.4-3.10.4-9d38120.json: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.07x
+- 95% likely to have a speedup of 1.07x
+- 99% likely to have a speedup of 1.05x

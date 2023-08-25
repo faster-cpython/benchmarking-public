@@ -7,6 +7,8 @@
 - commit hash: db6241c
 - commit date: 2023-07-15
 - overall geometric mean: 1.04x slower
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.01x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -156,3 +158,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                 | 1.04x slower                                                              |
 
 Benchmark hidden because not significant (9): unpickle, xml_etree_parse, bench_mp_pool, async_tree_io, coverage, create_gc_cycles, richards_super, async_tree_cpu_io_mixed, coroutines
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be slow
+- 90% likely to have a slowdown of 1.02x
+- 95% likely to have a slowdown of 1.02x
+- 99% likely to have a slowdown of 1.01x

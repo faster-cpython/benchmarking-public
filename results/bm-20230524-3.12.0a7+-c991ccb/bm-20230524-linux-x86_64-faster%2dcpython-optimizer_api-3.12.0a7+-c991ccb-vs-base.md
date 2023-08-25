@@ -7,6 +7,8 @@
 - commit hash: c991ccb
 - commit date: 2023-05-24
 - overall geometric mean: 1.01x slower
+- HPT reliability: 87.77%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -142,3 +144,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.01x slower                                                              |
 
 Benchmark hidden because not significant (26): async_tree_memoization, sqlalchemy_imperative, xml_etree_parse, async_tree_cpu_io_mixed, mdp, chaos, typing_runtime_protocols, pickle_pure_python, json, bench_thread_pool, sqlglot_optimize, dask, mypy2, sqlglot_transpile, bench_mp_pool, docutils, deepcopy, richards_super, async_tree_io, sqlglot_normalize, dulwich_log, xml_etree_process, xml_etree_iterparse, sqlite_synth, scimark_lu, async_generators
+
+
+# HPT report
+
+- Reliability score: 87.77% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

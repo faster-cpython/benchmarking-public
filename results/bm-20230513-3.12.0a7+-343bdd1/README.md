@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.27x faster
+- Geometric mean: 1.27x faster (HPT: reliability of 100.00%, 1.20x faster at 99th %ile)
 - missing benchmarks: aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230513-linux-x86_64-corona10-gh_104426-3.12.0a7%2B-343bdd1-vs-3.10.4.md)
 - [plot](bm-20230513-linux-x86_64-corona10-gh_104426-3.12.0a7%2B-343bdd1-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.02x faster
+- Geometric mean: 1.02x faster (HPT: reliability of 97.29%, 1.00x slower at 99th %ile)
 - missing benchmarks: aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230513-linux-x86_64-corona10-gh_104426-3.12.0a7%2B-343bdd1-vs-3.11.0.md)
 - [plot](bm-20230513-linux-x86_64-corona10-gh_104426-3.12.0a7%2B-343bdd1-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.01x slower
+- Geometric mean: 1.01x slower (HPT: reliability of 99.83%, 1.00x slower at 99th %ile)
 - [table](bm-20230513-linux-x86_64-corona10-gh_104426-3.12.0a7%2B-343bdd1-vs-base.md)
 - [plot](bm-20230513-linux-x86_64-corona10-gh_104426-3.12.0a7%2B-343bdd1-vs-base.png)
 

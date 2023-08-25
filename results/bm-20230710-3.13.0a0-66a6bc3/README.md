@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.26x faster
+- Geometric mean: 1.26x faster (HPT: reliability of 100.00%, 1.20x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230710-pythonperf2-x86_64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-3.10.4.md)
 - [plot](bm-20230710-pythonperf2-x86_64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster
+- Geometric mean: 1.04x faster (HPT: reliability of 72.53%, 1.00x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230710-pythonperf2-x86_64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-3.11.0.md)
 - [plot](bm-20230710-pythonperf2-x86_64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x faster
+- Geometric mean: 1.00x faster (HPT: reliability of 56.70%, 1.00x faster at 99th %ile)
 - [table](bm-20230710-pythonperf2-x86_64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-base.md)
 - [plot](bm-20230710-pythonperf2-x86_64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-base.png)
 
@@ -43,21 +43,21 @@
 
 ### vs. 3.10.4
 
-- 1.13x faster
+- Geometric mean: 1.13x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230710-pythonperf1-amd64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-3.10.4.md)
 - [plot](bm-20230710-pythonperf1-amd64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.01x faster
+- Geometric mean: 1.01x faster (HPT: reliability of 78.47%, 1.00x slower at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230710-pythonperf1-amd64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-3.11.0.md)
 - [plot](bm-20230710-pythonperf1-amd64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x slower
+- Geometric mean: 1.00x slower (HPT: reliability of 51.01%, 1.00x slower at 99th %ile)
 - [table](bm-20230710-pythonperf1-amd64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-base.md)
 - [plot](bm-20230710-pythonperf1-amd64-faster%252dcpython-micro_op_jump_if_non-3.13.0a0-66a6bc3-vs-base.png)
 

@@ -7,6 +7,8 @@
 - commit hash: 9d38120
 - commit date: 2022-03-23
 - overall geometric mean: 1.21x slower
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.16x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -186,4 +188,12 @@ All benchmarks:
 | logging_silent           | 68.1 ns                                                | 119 ns: 1.75x slower                                   |
 | deltablue                | 2.81 ms                                                | 5.15 ms: 1.83x slower                                  |
 | Geometric mean           | (ref)                                                  | 1.21x slower                                           |
-Ignored benchmarks (1) of /home/runner/work/benchmarking/benchmarking/results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: dask
+Ignored benchmarks (1) of results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: dask
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be slow
+- 90% likely to have a slowdown of 1.19x
+- 95% likely to have a slowdown of 1.18x
+- 99% likely to have a slowdown of 1.16x

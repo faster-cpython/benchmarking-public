@@ -7,6 +7,8 @@
 - commit hash: 5609e30
 - commit date: 2023-02-03
 - overall geometric mean: 1.00x slower
+- HPT reliability: 63.92%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -152,3 +154,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x slower                                                        |
 
 Benchmark hidden because not significant (27): html5lib, json, logging_silent, logging_format, mypy, thrift, hexiom, sympy_sum, asyncio_tcp, deltablue, raytrace, scimark_sor, sqlglot_parse, sqlglot_normalize, bench_mp_pool, async_generators, scimark_fft, 2to3, xml_etree_process, unpickle_pure_python, djangocms, telco, json_dumps, meteor_contest, async_tree_cpu_io_mixed, async_tree_none, async_tree_memoization
+
+
+# HPT report
+
+- Reliability score: 63.92% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

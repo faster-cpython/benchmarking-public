@@ -7,6 +7,8 @@
 - commit hash: fbb272a
 - commit date: 2023-04-11
 - overall geometric mean: 1.00x faster
+- HPT reliability: 99.98%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -157,3 +159,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x faster                                                                      |
 
 Benchmark hidden because not significant (23): async_tree_cpu_io_mixed, scimark_lu, tornado_http, sqlalchemy_declarative, mypy2, deltablue, async_tree_none, pickle_pure_python, xml_etree_iterparse, logging_simple, docutils, float, xml_etree_process, bench_mp_pool, json_dumps, sqlglot_transpile, djangocms, unpickle_pure_python, sqlalchemy_imperative, deepcopy_memo, logging_silent, scimark_monte_carlo, html5lib
+
+
+# HPT report
+
+- Reliability score: 99.98% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

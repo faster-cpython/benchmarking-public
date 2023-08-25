@@ -15,7 +15,7 @@
 
 ### vs. 3.11.0
 
-- 1.24x slower
+- Geometric mean: 1.24x slower (HPT: reliability of 100.00%, 1.19x slower at 99th %ile)
 - [table](bm-20220323-linux-x86_64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.md)
 - [plot](bm-20220323-linux-x86_64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.png)
 
@@ -28,7 +28,7 @@
 
 ### vs. 3.11.0
 
-- 1.21x slower
+- Geometric mean: 1.21x slower (HPT: reliability of 100.00%, 1.15x slower at 99th %ile)
 - [table](bm-20220323-pythonperf2-x86_64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.md)
 - [plot](bm-20220323-pythonperf2-x86_64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.png)
 
@@ -41,7 +41,7 @@
 
 ### vs. 3.11.0
 
-- 1.12x slower
+- Geometric mean: 1.12x slower (HPT: reliability of 100.00%, 1.08x slower at 99th %ile)
 - [table](bm-20220323-pythonperf1-amd64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.md)
 - [plot](bm-20220323-pythonperf1-amd64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.png)
 
@@ -54,7 +54,7 @@
 
 ### vs. 3.11.0
 
-- 1.21x slower
+- Geometric mean: 1.21x slower (HPT: reliability of 100.00%, 1.16x slower at 99th %ile)
 - new benchmarks: dask
 - [table](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.md)
 - [plot](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120-vs-3.11.0.png)

@@ -14,7 +14,7 @@
 
 ### vs. 3.10.4
 
-- 1.18x faster \*
+- Geometric mean: 1.19x faster \* (HPT: reliability of 100.00%, 1.15x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, comprehensions, create_gc_cycles, dask, flaskblogging, gc_traversal, gunicorn, mypy2, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20221106-darwin-arm64-python-728e42fcf51cbb2108ca-3.12.0a1%2B-728e42f-vs-3.10.4.md)
@@ -22,7 +22,7 @@
 
 ### vs. 3.11.0
 
-- 1.03x slower \*
+- Geometric mean: 1.03x slower \* (HPT: reliability of 99.99%, 1.00x slower at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, comprehensions, create_gc_cycles, flaskblogging, gc_traversal, gunicorn, mypy2, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20221106-darwin-arm64-python-728e42fcf51cbb2108ca-3.12.0a1%2B-728e42f-vs-3.11.0.md)

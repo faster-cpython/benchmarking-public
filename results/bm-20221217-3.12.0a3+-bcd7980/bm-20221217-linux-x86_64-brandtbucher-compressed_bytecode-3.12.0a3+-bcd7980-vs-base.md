@@ -7,6 +7,8 @@
 - commit hash: bcd7980
 - commit date: 2022-12-17
 - overall geometric mean: 1.00x faster
+- HPT reliability: 57.78%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -143,3 +145,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x faster                                                                |
 
 Benchmark hidden because not significant (28): async_tree_none, sqlite_synth, thrift, sqlglot_transpile, regex_compile, hexiom, scimark_lu, deltablue, pickle_pure_python, sympy_expand, html5lib, pickle_dict, raytrace, bench_mp_pool, mypy, docutils, async_generators, scimark_monte_carlo, async_tree_cpu_io_mixed, unpickle_pure_python, nqueens, sympy_str, richards, pprint_safe_repr, float, xml_etree_process, unpickle, coverage
+
+
+# HPT report
+
+- Reliability score: 57.78% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.18x faster \*
+- Geometric mean: 1.19x faster \* (HPT: reliability of 100.00%, 1.15x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230420-pythonperf1-amd64-eduardo%252delizondo-immortal_references-3.12.0a7%2B-9423c61-vs-3.10.4.md)
 - [plot](bm-20230420-pythonperf1-amd64-eduardo%252delizondo-immortal_references-3.12.0a7%2B-9423c61-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.07x faster \*
+- Geometric mean: 1.07x faster \* (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, flaskblogging, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, tomli_loads, typing_runtime_protocols
 - [table](bm-20230420-pythonperf1-amd64-eduardo%252delizondo-immortal_references-3.12.0a7%2B-9423c61-vs-3.11.0.md)
 - [plot](bm-20230420-pythonperf1-amd64-eduardo%252delizondo-immortal_references-3.12.0a7%2B-9423c61-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.02x slower
+- Geometric mean: 1.02x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
 - [table](bm-20230420-pythonperf1-amd64-eduardo%252delizondo-immortal_references-3.12.0a7%2B-9423c61-vs-base.md)
 - [plot](bm-20230420-pythonperf1-amd64-eduardo%252delizondo-immortal_references-3.12.0a7%2B-9423c61-vs-base.png)
 

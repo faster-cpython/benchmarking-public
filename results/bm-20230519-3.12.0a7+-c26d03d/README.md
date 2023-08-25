@@ -15,14 +15,14 @@
 
 ### vs. 3.10.4
 
-- 1.27x faster
+- Geometric mean: 1.27x faster (HPT: reliability of 100.00%, 1.21x faster at 99th %ile)
 - missing benchmarks: aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230519-linux-x86_64-python-c26d03d5d6da94367c7f-3.12.0a7%2B-c26d03d-vs-3.10.4.md)
 - [plot](bm-20230519-linux-x86_64-python-c26d03d5d6da94367c7f-3.12.0a7%2B-c26d03d-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.02x faster
+- Geometric mean: 1.02x faster (HPT: reliability of 89.53%, 1.00x slower at 99th %ile)
 - missing benchmarks: aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230519-linux-x86_64-python-c26d03d5d6da94367c7f-3.12.0a7%2B-c26d03d-vs-3.11.0.md)
 - [plot](bm-20230519-linux-x86_64-python-c26d03d5d6da94367c7f-3.12.0a7%2B-c26d03d-vs-3.11.0.png)

@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.20x faster
+- Geometric mean: 1.20x faster (HPT: reliability of 100.00%, 1.13x faster at 99th %ile)
 - missing benchmarks: chameleon, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230512-pythonperf1-amd64-faster%252dcpython-no_predict-3.12.0a7%2B-f190abf-vs-3.10.4.md)
 - [plot](bm-20230512-pythonperf1-amd64-faster%252dcpython-no_predict-3.12.0a7%2B-f190abf-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.07x faster
+- Geometric mean: 1.07x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
 - missing benchmarks: chameleon, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230512-pythonperf1-amd64-faster%252dcpython-no_predict-3.12.0a7%2B-f190abf-vs-3.11.0.md)
 - [plot](bm-20230512-pythonperf1-amd64-faster%252dcpython-no_predict-3.12.0a7%2B-f190abf-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.01x faster
+- Geometric mean: 1.01x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - [table](bm-20230512-pythonperf1-amd64-faster%252dcpython-no_predict-3.12.0a7%2B-f190abf-vs-base.md)
 - [plot](bm-20230512-pythonperf1-amd64-faster%252dcpython-no_predict-3.12.0a7%2B-f190abf-vs-base.png)
 

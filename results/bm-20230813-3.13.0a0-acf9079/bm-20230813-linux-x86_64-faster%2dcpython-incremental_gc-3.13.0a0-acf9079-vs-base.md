@@ -7,6 +7,8 @@
 - commit hash: acf9079
 - commit date: 2023-08-13
 - overall geometric mean: 1.03x faster
+- HPT reliability: 95.66%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -147,3 +149,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                 | 1.03x faster                                                              |
 
 Benchmark hidden because not significant (16): spectral_norm, bench_thread_pool, chaos, xml_etree_generate, sqlglot_parse, dulwich_log, asyncio_tcp_ssl, bench_mp_pool, json_loads, sqlglot_transpile, pickle_pure_python, xml_etree_parse, sqlglot_optimize, fannkuch, asyncio_tcp, scimark_sor
+
+
+# HPT report
+
+- Reliability score: 95.66% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

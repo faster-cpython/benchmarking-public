@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.27x faster \*
+- Geometric mean: 1.27x faster \* (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, chameleon, django_template, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, tomli_loads, typing_runtime_protocols
 - [table](bm-20230502-pythonperf2-x86_64-JelleZijlstra-tvobject-3.12.0a7%2B-827b9e5-vs-3.10.4.md)
 - [plot](bm-20230502-pythonperf2-x86_64-JelleZijlstra-tvobject-3.12.0a7%2B-827b9e5-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster \*
+- Geometric mean: 1.04x faster \* (HPT: reliability of 99.79%, 1.00x faster at 99th %ile)
 - missing benchmarks: aiohttp, asyncio_tcp_ssl, chameleon, django_template, flaskblogging, gunicorn, pylint, richards_super, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, tomli_loads, typing_runtime_protocols
 - [table](bm-20230502-pythonperf2-x86_64-JelleZijlstra-tvobject-3.12.0a7%2B-827b9e5-vs-3.11.0.md)
 - [plot](bm-20230502-pythonperf2-x86_64-JelleZijlstra-tvobject-3.12.0a7%2B-827b9e5-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.01x faster
+- Geometric mean: 1.01x faster (HPT: reliability of 99.95%, 1.00x faster at 99th %ile)
 - [table](bm-20230502-pythonperf2-x86_64-JelleZijlstra-tvobject-3.12.0a7%2B-827b9e5-vs-base.md)
 - [plot](bm-20230502-pythonperf2-x86_64-JelleZijlstra-tvobject-3.12.0a7%2B-827b9e5-vs-base.png)
 

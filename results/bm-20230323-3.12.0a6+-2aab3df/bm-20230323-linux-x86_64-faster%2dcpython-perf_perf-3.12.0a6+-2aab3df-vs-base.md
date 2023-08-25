@@ -7,6 +7,8 @@
 - commit hash: 2aab3df
 - commit date: 2023-03-23
 - overall geometric mean: 1.08x slower
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.05x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -180,3 +182,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.08x slower                                                          |
 
 Benchmark hidden because not significant (4): sqlite_synth, bench_mp_pool, telco, nbody
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be slow
+- 90% likely to have a slowdown of 1.06x
+- 95% likely to have a slowdown of 1.06x
+- 99% likely to have a slowdown of 1.05x

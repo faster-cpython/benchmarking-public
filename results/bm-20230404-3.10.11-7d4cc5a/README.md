@@ -15,14 +15,14 @@
 
 ### vs. 3.10.4
 
-- 1.00x faster \*
+- Geometric mean: 1.00x faster \* (HPT: reliability of 99.70%, 1.00x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-linux-x86_64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.md)
 - [plot](bm-20230404-linux-x86_64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.25x slower \*
+- Geometric mean: 1.24x slower \* (HPT: reliability of 100.00%, 1.19x slower at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-linux-x86_64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.11.0.md)
 - [plot](bm-20230404-linux-x86_64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.11.0.png)
@@ -36,14 +36,14 @@
 
 ### vs. 3.10.4
 
-- 1.00x faster \*
+- Geometric mean: 1.00x slower \* (HPT: reliability of 74.20%, 1.00x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-pythonperf2-x86_64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.md)
 - [plot](bm-20230404-pythonperf2-x86_64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.21x slower \*
+- Geometric mean: 1.21x slower \* (HPT: reliability of 100.00%, 1.14x slower at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-pythonperf2-x86_64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.11.0.md)
 - [plot](bm-20230404-pythonperf2-x86_64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.11.0.png)
@@ -57,14 +57,14 @@
 
 ### vs. 3.10.4
 
-- 1.01x slower \*
+- Geometric mean: 1.00x slower \* (HPT: reliability of 87.38%, 1.00x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-pythonperf1-amd64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.md)
 - [plot](bm-20230404-pythonperf1-amd64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.12x slower \*
+- Geometric mean: 1.12x slower \* (HPT: reliability of 100.00%, 1.08x slower at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-pythonperf1-amd64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.11.0.md)
 - [plot](bm-20230404-pythonperf1-amd64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.11.0.png)
@@ -78,14 +78,14 @@
 
 ### vs. 3.10.4
 
-- 1.01x slower \*
+- Geometric mean: 1.00x slower \* (HPT: reliability of 87.12%, 1.00x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230404-darwin-arm64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.md)
 - [plot](bm-20230404-darwin-arm64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.21x slower \*
+- Geometric mean: 1.22x slower \* (HPT: reliability of 100.00%, 1.17x slower at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: dask
 - [table](bm-20230404-darwin-arm64-python-7d4cc5aa854fdea4d01a-3.10.11-7d4cc5a-vs-3.11.0.md)

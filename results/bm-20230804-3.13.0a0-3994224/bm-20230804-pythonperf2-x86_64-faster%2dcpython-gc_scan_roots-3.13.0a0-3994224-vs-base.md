@@ -7,6 +7,8 @@
 - commit hash: 3994224
 - commit date: 2023-08-04
 - overall geometric mean: 1.00x slower
+- HPT reliability: 70.49%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -142,3 +144,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                       | 1.00x slower                                                                   |
 
 Benchmark hidden because not significant (21): richards, chaos, pycparser, xml_etree_process, pathlib, generators, typing_runtime_protocols, unpack_sequence, pickle, dask, fannkuch, sqlglot_transpile, comprehensions, mako, logging_format, tomli_loads, richards_super, scimark_sparse_mat_mult, deltablue, bench_mp_pool, tornado_http
+
+
+# HPT report
+
+- Reliability score: 70.49% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

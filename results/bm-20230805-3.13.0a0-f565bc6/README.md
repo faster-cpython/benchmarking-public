@@ -25,21 +25,21 @@
 
 ### vs. 3.10.4
 
-- 1.30x faster
+- Geometric mean: 1.30x faster (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230805-linux-x86_64-brandtbucher-calls-3.13.0a0-f565bc6-vs-3.10.4.md)
 - [plot](bm-20230805-linux-x86_64-brandtbucher-calls-3.13.0a0-f565bc6-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x faster
+- Geometric mean: 1.04x faster (HPT: reliability of 80.95%, 1.00x faster at 99th %ile)
 - missing benchmarks: 2to3, aiohttp, chameleon, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
 - [table](bm-20230805-linux-x86_64-brandtbucher-calls-3.13.0a0-f565bc6-vs-3.11.0.md)
 - [plot](bm-20230805-linux-x86_64-brandtbucher-calls-3.13.0a0-f565bc6-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x slower
+- Geometric mean: 1.00x slower (HPT: reliability of 67.56%, 1.00x faster at 99th %ile)
 - [table](bm-20230805-linux-x86_64-brandtbucher-calls-3.13.0a0-f565bc6-vs-base.md)
 - [plot](bm-20230805-linux-x86_64-brandtbucher-calls-3.13.0a0-f565bc6-vs-base.png)
 

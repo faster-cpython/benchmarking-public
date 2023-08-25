@@ -7,6 +7,8 @@
 - commit hash: fb5f321
 - commit date: 2023-02-17
 - overall geometric mean: 1.00x slower
+- HPT reliability: 79.11%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -148,3 +150,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x slower                                                                     |
 
 Benchmark hidden because not significant (33): djangocms, meteor_contest, html5lib, unpack_sequence, django_template, tornado_http, docutils, pyflate, dask, sympy_str, mypy2, unpickle_pure_python, sympy_expand, thrift, bench_mp_pool, raytrace, sqlglot_normalize, xml_etree_process, dulwich_log, bench_thread_pool, genshi_xml, sqlglot_transpile, pprint_pformat, logging_simple, sympy_sum, async_tree_none, coverage, float, json, sqlalchemy_imperative, scimark_lu, async_tree_cpu_io_mixed, nbody
+
+
+# HPT report
+
+- Reliability score: 79.11% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

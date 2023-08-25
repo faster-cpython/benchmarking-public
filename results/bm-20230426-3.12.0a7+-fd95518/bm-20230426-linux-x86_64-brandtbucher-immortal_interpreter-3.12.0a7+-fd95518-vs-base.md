@@ -7,6 +7,8 @@
 - commit hash: fd95518
 - commit date: 2023-04-26
 - overall geometric mean: 1.00x faster
+- HPT reliability: 83.71%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -146,3 +148,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x faster                                                                 |
 
 Benchmark hidden because not significant (34): djangocms, async_tree_memoization, raytrace, sympy_str, sympy_expand, sqlglot_parse, pprint_safe_repr, logging_simple, sqlglot_transpile, dask, sqlalchemy_declarative, xml_etree_iterparse, bench_thread_pool, dulwich_log, async_tree_io, chaos, deltablue, bench_mp_pool, pylint, pathlib, richards, sqlglot_optimize, django_template, sympy_integrate, sqlglot_normalize, genshi_xml, async_tree_none, unpickle_list, xml_etree_process, sqlite_synth, async_tree_cpu_io_mixed, genshi_text, html5lib, tornado_http
+
+
+# HPT report
+
+- Reliability score: 83.71% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

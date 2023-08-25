@@ -7,6 +7,8 @@
 - commit hash: 1eec620
 - commit date: 2023-07-04
 - overall geometric mean: 1.00x faster
+- HPT reliability: 55.97%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -147,3 +149,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                       | 1.00x faster                                                                          |
 
 Benchmark hidden because not significant (19): scimark_lu, async_tree_cpu_io_mixed, bench_thread_pool, pycparser, xml_etree_iterparse, pathlib, python_startup_no_site, pickle, asyncio_tcp_ssl, async_tree_io, docutils, spectral_norm, chaos, unpickle_pure_python, async_tree_none, logging_simple, async_tree_memoization, create_gc_cycles, deltablue
+
+
+# HPT report
+
+- Reliability score: 55.97% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

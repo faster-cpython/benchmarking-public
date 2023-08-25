@@ -7,6 +7,8 @@
 - commit hash: 1d39009
 - commit date: 2023-04-16
 - overall geometric mean: 1.10x slower
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.08x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -176,4 +178,12 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                 | 1.10x slower                                                            |
 
 Benchmark hidden because not significant (2): regex_v8, pickle_dict
-Ignored benchmarks (1) of /home/runner/work/benchmarking/benchmarking/results/bm-20230110-3.12.0a4-3d5d3f7/bm-20230110-linux-x86_64-python-3d5d3f7af6498effbc60-3.12.0a4-3d5d3f7.json: dask
+Ignored benchmarks (1) of results/bm-20230110-3.12.0a4-3d5d3f7/bm-20230110-linux-x86_64-python-3d5d3f7af6498effbc60-3.12.0a4-3d5d3f7.json: dask
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be slow
+- 90% likely to have a slowdown of 1.09x
+- 95% likely to have a slowdown of 1.09x
+- 99% likely to have a slowdown of 1.08x

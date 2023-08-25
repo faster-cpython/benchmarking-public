@@ -16,21 +16,21 @@
 
 ### vs. 3.10.4
 
-- 1.29x faster \*
+- Geometric mean: 1.29x faster \* (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230228-linux-x86_64-ericsnowcurrently-isolate_dict_global_-3.12.0a5%2B-f707a1b-vs-3.10.4.md)
 - [plot](bm-20230228-linux-x86_64-ericsnowcurrently-isolate_dict_global_-3.12.0a5%2B-f707a1b-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.03x faster \*
+- Geometric mean: 1.04x faster \* (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, flaskblogging, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - [table](bm-20230228-linux-x86_64-ericsnowcurrently-isolate_dict_global_-3.12.0a5%2B-f707a1b-vs-3.11.0.md)
 - [plot](bm-20230228-linux-x86_64-ericsnowcurrently-isolate_dict_global_-3.12.0a5%2B-f707a1b-vs-3.11.0.png)
 
 ### vs. base
 
-- 1.00x faster
+- Geometric mean: 1.00x faster (HPT: reliability of 67.25%, 1.00x faster at 99th %ile)
 - [table](bm-20230228-linux-x86_64-ericsnowcurrently-isolate_dict_global_-3.12.0a5%2B-f707a1b-vs-base.md)
 - [plot](bm-20230228-linux-x86_64-ericsnowcurrently-isolate_dict_global_-3.12.0a5%2B-f707a1b-vs-base.png)
 

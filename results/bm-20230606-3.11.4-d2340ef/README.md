@@ -15,14 +15,14 @@
 
 ### vs. 3.10.4
 
-- 1.25x faster
+- Geometric mean: 1.25x faster (HPT: reliability of 100.00%, 1.19x faster at 99th %ile)
 - missing benchmarks: coverage
 - [table](bm-20230606-linux-x86_64-python-v3.11.4-3.11.4-d2340ef-vs-3.10.4.md)
 - [plot](bm-20230606-linux-x86_64-python-v3.11.4-3.11.4-d2340ef-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.00x slower
+- Geometric mean: 1.00x slower (HPT: reliability of 72.12%, 1.00x faster at 99th %ile)
 - missing benchmarks: coverage
 - [table](bm-20230606-linux-x86_64-python-v3.11.4-3.11.4-d2340ef-vs-3.11.0.md)
 - [plot](bm-20230606-linux-x86_64-python-v3.11.4-3.11.4-d2340ef-vs-3.11.0.png)
@@ -36,14 +36,14 @@
 
 ### vs. 3.10.4
 
-- 1.21x faster
+- Geometric mean: 1.21x faster (HPT: reliability of 100.00%, 1.15x faster at 99th %ile)
 - missing benchmarks: coverage
 - [table](bm-20230606-pythonperf2-x86_64-python-v3.11.4-3.11.4-d2340ef-vs-3.10.4.md)
 - [plot](bm-20230606-pythonperf2-x86_64-python-v3.11.4-3.11.4-d2340ef-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.00x faster
+- Geometric mean: 1.00x faster (HPT: reliability of 91.35%, 1.00x faster at 99th %ile)
 - missing benchmarks: coverage
 - [table](bm-20230606-pythonperf2-x86_64-python-v3.11.4-3.11.4-d2340ef-vs-3.11.0.md)
 - [plot](bm-20230606-pythonperf2-x86_64-python-v3.11.4-3.11.4-d2340ef-vs-3.11.0.png)
@@ -57,13 +57,13 @@
 
 ### vs. 3.10.4
 
-- 1.08x faster
+- Geometric mean: 1.08x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
 - [table](bm-20230606-pythonperf1-amd64-python-v3.11.4-3.11.4-d2340ef-vs-3.10.4.md)
 - [plot](bm-20230606-pythonperf1-amd64-python-v3.11.4-3.11.4-d2340ef-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.04x slower
+- Geometric mean: 1.04x slower (HPT: reliability of 100.00%, 1.02x slower at 99th %ile)
 - [table](bm-20230606-pythonperf1-amd64-python-v3.11.4-3.11.4-d2340ef-vs-3.11.0.md)
 - [plot](bm-20230606-pythonperf1-amd64-python-v3.11.4-3.11.4-d2340ef-vs-3.11.0.png)
 
@@ -76,14 +76,14 @@
 
 ### vs. 3.10.4
 
-- 1.25x faster
+- Geometric mean: 1.25x faster (HPT: reliability of 100.00%, 1.21x faster at 99th %ile)
 - missing benchmarks: coverage
 - [table](bm-20230606-darwin-arm64-python-v3.11.4-3.11.4-d2340ef-vs-3.10.4.md)
 - [plot](bm-20230606-darwin-arm64-python-v3.11.4-3.11.4-d2340ef-vs-3.10.4.png)
 
 ### vs. 3.11.0
 
-- 1.02x faster
+- Geometric mean: 1.02x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - missing benchmarks: coverage
 - new benchmarks: dask
 - [table](bm-20230606-darwin-arm64-python-v3.11.4-3.11.4-d2340ef-vs-3.11.0.md)

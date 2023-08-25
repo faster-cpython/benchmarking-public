@@ -7,6 +7,8 @@
 - commit hash: ba47232
 - commit date: 2023-07-17
 - overall geometric mean: 1.02x slower
+- HPT reliability: 98.01%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -146,3 +148,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                 | 1.02x slower                                                  |
 
 Benchmark hidden because not significant (18): asyncio_tcp, async_tree_memoization, async_tree_cpu_io_mixed, mdp, json_loads, pickle_dict, meteor_contest, xml_etree_iterparse, pickle, mypy2, pidigits, regex_dna, deepcopy, async_tree_io, pickle_list, xml_etree_parse, pathlib, tornado_http
+
+
+# HPT report
+
+- Reliability score: 98.01% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

@@ -15,7 +15,7 @@
 
 ### vs. 3.10.4
 
-- 1.31x faster \*
+- Geometric mean: 1.31x faster \* (HPT: reliability of 100.00%, 1.27x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, dask, flaskblogging, mypy2, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230207-linux-x86_64-penguin%252dwwy-add_return_none-3.12.0a4%2B-f1deb5c-vs-3.10.4.md)
@@ -23,7 +23,7 @@
 
 ### vs. 3.11.0
 
-- 1.04x faster \*
+- Geometric mean: 1.05x faster \* (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
 - missing benchmarks: asyncio_tcp_ssl, comprehensions, dask, flaskblogging, mypy2, pylint, richards_super, tomli_loads, typing_runtime_protocols
 - new benchmarks: mypy
 - [table](bm-20230207-linux-x86_64-penguin%252dwwy-add_return_none-3.12.0a4%2B-f1deb5c-vs-3.11.0.md)
@@ -31,7 +31,7 @@
 
 ### vs. base
 
-- 1.01x faster
+- Geometric mean: 1.01x faster (HPT: reliability of 99.55%, 1.00x faster at 99th %ile)
 - missing benchmarks: 🔴 dask
 - [table](bm-20230207-linux-x86_64-penguin%252dwwy-add_return_none-3.12.0a4%2B-f1deb5c-vs-base.md)
 - [plot](bm-20230207-linux-x86_64-penguin%252dwwy-add_return_none-3.12.0a4%2B-f1deb5c-vs-base.png)

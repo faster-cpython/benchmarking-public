@@ -7,6 +7,8 @@
 - commit hash: bef1c87
 - commit date: 2023-06-25
 - overall geometric mean: 1.22x faster
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.15x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -163,3 +165,11 @@ All benchmarks:
 | async_generators         | 233 ms                                                 | 313 ms: 1.34x slower                                  |
 | Geometric mean           | (ref)                                                  | 1.22x faster                                          |
 Ignored benchmarks (18) of results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: 2to3, aiohttp, chameleon, dask, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, sympy_expand, sympy_integrate, sympy_str, sympy_sum, thrift
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.19x
+- 95% likely to have a speedup of 1.17x
+- 99% likely to have a speedup of 1.15x

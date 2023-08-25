@@ -7,6 +7,8 @@
 - commit hash: ed869aa
 - commit date: 2023-03-23
 - overall geometric mean: 1.02x slower
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.01x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -162,3 +164,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                       | 1.02x slower                                                                |
 
 Benchmark hidden because not significant (14): thrift, json, sympy_expand, python_startup, genshi_xml, create_gc_cycles, pickle_dict, asyncio_tcp, async_tree_none, python_startup_no_site, tornado_http, dask, async_tree_memoization, pickle_list
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be slow
+- 90% likely to have a slowdown of 1.01x
+- 95% likely to have a slowdown of 1.01x
+- 99% likely to have a slowdown of 1.01x

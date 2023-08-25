@@ -7,6 +7,8 @@
 - commit hash: cdd2a84
 - commit date: 2023-02-21
 - overall geometric mean: 1.00x slower
+- HPT reliability: 95.20%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -145,3 +147,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.00x slower                                                                 |
 
 Benchmark hidden because not significant (36): gunicorn, async_tree_cpu_io_mixed, pycparser, richards, sympy_expand, pyflate, deepcopy_reduce, bench_mp_pool, sqlglot_normalize, pickle_pure_python, sympy_sum, regex_dna, django_template, create_gc_cycles, async_tree_none, deepcopy, async_generators, coverage, mypy2, genshi_text, sqlglot_optimize, deepcopy_memo, pprint_safe_repr, async_tree_io, logging_format, tornado_http, unpickle_list, dask, spectral_norm, xml_etree_iterparse, html5lib, sqlalchemy_imperative, scimark_lu, xml_etree_parse, logging_silent, djangocms
+
+
+# HPT report
+
+- Reliability score: 95.20% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

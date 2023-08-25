@@ -7,6 +7,8 @@
 - commit hash: c87e8bd
 - commit date: 2023-03-22
 - overall geometric mean: 1.01x slower
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -155,4 +157,12 @@ All benchmarks:
 | Geometric mean         | (ref)                                                                  | 1.01x slower                                                       |
 
 Benchmark hidden because not significant (24): regex_compile, sympy_sum, deepcopy_memo, fannkuch, bench_mp_pool, logging_simple, xml_etree_generate, genshi_xml, logging_silent, deepcopy, sympy_integrate, scimark_lu, scimark_sparse_mat_mult, async_tree_io, telco, genshi_text, go, sqlite_synth, generators, sqlglot_transpile, async_tree_cpu_io_mixed, async_tree_none, unpickle, html5lib
-Ignored benchmarks (6) of /home/runner/work/benchmarking/benchmarking/results/bm-20230322-3.12.0a6+-87be8d9/bm-20230322-linux-x86_64-python-87be8d95228ee95de904-3.12.0a6+-87be8d9.json: aiohttp, coverage, djangocms, gunicorn, sqlalchemy_declarative, sqlalchemy_imperative
+Ignored benchmarks (6) of results/bm-20230322-3.12.0a6+-87be8d9/bm-20230322-linux-x86_64-python-87be8d95228ee95de904-3.12.0a6+-87be8d9.json: aiohttp, coverage, djangocms, gunicorn, sqlalchemy_declarative, sqlalchemy_imperative
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

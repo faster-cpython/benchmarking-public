@@ -7,6 +7,8 @@
 - commit hash: afbac86
 - commit date: 2023-01-17
 - overall geometric mean: 1.00x slower
+- HPT reliability: 97.23%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -140,3 +142,11 @@ All benchmarks:
 | Geometric mean         | (ref)                                                                  | 1.00x slower                                                                |
 
 Benchmark hidden because not significant (35): scimark_sparse_mat_mult, html5lib, djangocms, chameleon, sqlite_synth, deltablue, json_loads, bench_mp_pool, regex_effbot, async_tree_none, hexiom, sympy_str, pickle_list, sympy_sum, pprint_safe_repr, async_generators, dulwich_log, regex_compile, tornado_http, sqlglot_transpile, gunicorn, deepcopy, async_tree_cpu_io_mixed, mypy, dask, sqlglot_parse, pickle, xml_etree_process, scimark_lu, raytrace, deepcopy_memo, scimark_sor, unpickle, xml_etree_iterparse, json
+
+
+# HPT report
+
+- Reliability score: 97.23% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

@@ -7,6 +7,8 @@
 - commit hash: 1d32835
 - commit date: 2023-08-05
 - overall geometric mean: 1.01x faster
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.00x faster
 
 Benchmarks with tag 'apps':
 ===========================
@@ -143,3 +145,11 @@ All benchmarks:
 | Geometric mean           | (ref)                                                                 | 1.01x faster                                                         |
 
 Benchmark hidden because not significant (19): json, dask, sqlglot_transpile, json_dumps, tornado_http, pickle_list, pyflate, mypy2, dulwich_log, generators, meteor_contest, xml_etree_generate, create_gc_cycles, bench_mp_pool, xml_etree_iterparse, deepcopy_memo, xml_etree_parse, sqlite_synth, pickle_pure_python
+
+
+# HPT report
+
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x

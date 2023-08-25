@@ -7,6 +7,8 @@
 - commit hash: 34ba834
 - commit date: 2023-01-18
 - overall geometric mean: 1.01x slower
+- HPT reliability: 95.60%
+- HPT 99th percentile: 1.00x slower
 
 Benchmarks with tag 'apps':
 ===========================
@@ -156,3 +158,11 @@ All benchmarks:
 | Geometric mean          | (ref)                                                                  | 1.01x slower                                                               |
 
 Benchmark hidden because not significant (23): pickle_list, async_tree_io, scimark_fft, xml_etree_parse, sympy_expand, async_tree_cpu_io_mixed, async_tree_none, meteor_contest, create_gc_cycles, sympy_str, bench_mp_pool, sqlglot_optimize, async_tree_memoization, deepcopy_memo, sympy_sum, deepcopy, chaos, mypy, unpickle_list, pathlib, djangocms, json, telco
+
+
+# HPT report
+
+- Reliability score: 95.60% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x

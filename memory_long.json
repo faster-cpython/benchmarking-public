@@ -371,5 +371,9 @@
   "bm-20231002-3.12.0-0fb18b0/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240313-3.13.0a5+-61733a2-JIT/bm-20240313-linux-x86_64-python-61733a2fb9dc36d2246d-3.13.0a5+-61733a2.json,3.12.0": 1.17,
   "bm-20231002-3.12.0-0fb18b0/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240313-3.13.0a5+-8c094c3-JIT/bm-20240313-linux-x86_64-python-8c094c3095feb4de2efe-3.13.0a5+-8c094c3.json,3.12.0": 1.17,
   "bm-20231002-3.12.0-0fb18b0/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240314-3.13.0a5+-2a54c4b-JIT/bm-20240314-linux-x86_64-python-2a54c4b25e05e30c50b9-3.13.0a5+-2a54c4b.json,3.12.0": 1.17,
-  "bm-20231002-3.12.0-0fb18b0/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240314-3.13.0a5+-61e54bf-JIT/bm-20240314-linux-x86_64-python-61e54bfcee9f08a8e09a-3.13.0a5+-61e54bf.json,3.12.0": 1.17
+  "bm-20231002-3.12.0-0fb18b0/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240314-3.13.0a5+-61e54bf-JIT/bm-20240314-linux-x86_64-python-61e54bfcee9f08a8e09a-3.13.0a5+-61e54bf.json,3.12.0": 1.17,
+  "bm-20231002-3.12.0-0fb18b0/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240316-3.13.0a5+-5e0a070-JIT/bm-20240316-linux-x86_64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json,3.12.0": 1.16,
+  "bm-20231002-3.12.0-0fb18b0/bm-20231002-pythonperf2-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240316-3.13.0a5+-5e0a070-JIT/bm-20240316-pythonperf2-x86_64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json,3.12.0": 1.11,
+  "bm-20231002-3.12.0-0fb18b0/bm-20231002-pythonperf1-amd64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240316-3.13.0a5+-5e0a070-JIT/bm-20240316-pythonperf1-amd64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json,3.12.0": null,
+  "bm-20231002-3.12.0-0fb18b0/bm-20231002-pythonperf1_win32-x86-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240316-3.13.0a5+-5e0a070-JIT/bm-20240316-pythonperf1_win32-x86-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json,3.12.0": null
 }

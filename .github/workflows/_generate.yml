@@ -32,8 +32,6 @@ jobs:
     - name: Checkout benchmarking
       uses: actions/checkout@v4
       with:
-          # We need to explicitly specify "main" because it might be more recent
-          # than when the entire workflow was kicked off.
         ref: main
     - name: Checkout CPython
       uses: actions/checkout@v4
@@ -50,6 +48,8 @@ jobs:
     - name: Regenerate derived data
       run: python -m bench_runner generate_results ${{ inputs.force == true && '--force'
         || '' }}
+      env:
+        GH_TOKEN: ${{ github.token }}
     - name: Add to repo
       uses: EndBug/add-and-commit@v9
       if: ${{ !inputs.dry_run }}

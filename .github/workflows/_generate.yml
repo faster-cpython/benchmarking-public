@@ -55,6 +55,6 @@ jobs:
       if: ${{ !inputs.dry_run }}
       with:
         add: "['results', 'README.md', 'RESULTS.md', 'longitudinal.png', 'longitudinal.json',
-          'profiling/profiling.png', 'profiling/profiling.md', 'configs.png', 'configs.json',
-          'memory_long.png', 'memory_long.json', 'memory_configs.png', 'memory_configs.json']"
+          'configs.png', 'configs.json', 'memory_long.png', 'memory_long.json', 'memory_configs.png',
+          'memory_configs.json']"
         message: Benchmarking results for @${{ github.actor }}

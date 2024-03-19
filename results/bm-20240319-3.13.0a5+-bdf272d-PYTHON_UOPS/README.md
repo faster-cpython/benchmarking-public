@@ -9,6 +9,15 @@
 - commit merge base: [0f278012e88fa9607d85bc6c7265fd394f0ac163](https://github.com/faster%2dcpython/cpython/commit/0f278012e88fa9607d85bc6c7265fd394f0ac163)
 - ref: exponential_backoff_
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20240319-azure-x86_64-faster%252dcpython-exponential_backoff_-3.13.0a5%2B-bdf272d-pystats.json)
+- [pystats table](bm-20240319-azure-x86_64-faster%252dcpython-exponential_backoff_-3.13.0a5%2B-bdf272d-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20240319-azure-x86_64-faster%252dcpython-exponential_backoff_-3.13.0a5%2B-bdf272d-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/8344623756)

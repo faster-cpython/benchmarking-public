@@ -75,3 +75,69 @@
 - [📄table](bm-20240313-pythonperf2-x86_64-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.12.0.md)
 - [📈time plot](bm-20240313-pythonperf2-x86_64-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.12.0.png)
 
+## windows amd64 (pythonperf1)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/8334054485)
+- cpu model: missing
+- platform: Windows-11-10.0.22631-SP0
+- [raw results](bm-20240313-pythonperf1-amd64-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.20x faster (HPT: reliability of 100.00%, 1.18x faster at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: dask, flaskblogging, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
+- [📄table](bm-20240313-pythonperf1-amd64-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.10.4.md)
+- [📈time plot](bm-20240313-pythonperf1-amd64-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.10.4.png)
+
+### vs. 3.11.0
+
+- Geometric mean: 1.07x faster (HPT: reliability of 100.00%, 1.06x faster at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: dask, flaskblogging, sqlalchemy_declarative, sqlalchemy_imperative
+- [📄table](bm-20240313-pythonperf1-amd64-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.11.0.md)
+- [📈time plot](bm-20240313-pythonperf1-amd64-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.11.0.png)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.04x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: dask, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: genshi_text, genshi_xml, html5lib, pylint, thrift
+- [📄table](bm-20240313-pythonperf1-amd64-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.12.0.md)
+- [📈time plot](bm-20240313-pythonperf1-amd64-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.12.0.png)
+
+## windows x86 (pythonperf1_win32)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/8334054485)
+- cpu model: missing
+- platform: Windows-11-10.0.22631-SP0
+- [raw results](bm-20240313-pythonperf1_win32-x86-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.06x faster (HPT: reliability of 99.99%, 1.03x faster at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: aiohttp, dask, dulwich_log, flaskblogging, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
+- [📄table](bm-20240313-pythonperf1_win32-x86-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.10.4.md)
+- [📈time plot](bm-20240313-pythonperf1_win32-x86-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.10.4.png)
+
+### vs. 3.11.0
+
+- Geometric mean: 1.17x faster (HPT: reliability of 100.00%, 1.16x faster at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: aiohttp, dask, dulwich_log, flaskblogging, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- [📄table](bm-20240313-pythonperf1_win32-x86-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.11.0.md)
+- [📈time plot](bm-20240313-pythonperf1_win32-x86-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.11.0.png)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.10x faster (HPT: reliability of 100.00%, 1.08x faster at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: aiohttp, dask, dulwich_log, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: genshi_text, genshi_xml, html5lib, pylint, thrift
+- [📄table](bm-20240313-pythonperf1_win32-x86-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.12.0.md)
+- [📈time plot](bm-20240313-pythonperf1_win32-x86-python-8c094c3095feb4de2efe-3.13.0a5%2B-8c094c3-vs-3.12.0.png)
+

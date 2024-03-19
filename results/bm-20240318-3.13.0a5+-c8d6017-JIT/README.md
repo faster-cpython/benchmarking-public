@@ -124,6 +124,13 @@
 - [📄table](bm-20240318-pythonperf1-amd64-brandtbucher-justin_mprotect_cost-3.13.0a5%2B-c8d6017-vs-3.12.0.md)
 - [📈time plot](bm-20240318-pythonperf1-amd64-brandtbucher-justin_mprotect_cost-3.13.0a5%2B-c8d6017-vs-3.12.0.png)
 
+### vs. base
+
+- Geometric mean: 1.00x faster (HPT: reliability of 70.80%, 1.00x slower at 99th %ile)
+- Memory usage: unknown
+- [📄table](bm-20240318-pythonperf1-amd64-brandtbucher-justin_mprotect_cost-3.13.0a5%2B-c8d6017-vs-base.md)
+- [📈time plot](bm-20240318-pythonperf1-amd64-brandtbucher-justin_mprotect_cost-3.13.0a5%2B-c8d6017-vs-base.png)
+
 ## windows x86 (pythonperf1_win32)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/8334054485)
@@ -156,4 +163,11 @@
 - new benchmarks: genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240318-pythonperf1_win32-x86-brandtbucher-justin_mprotect_cost-3.13.0a5%2B-c8d6017-vs-3.12.0.md)
 - [📈time plot](bm-20240318-pythonperf1_win32-x86-brandtbucher-justin_mprotect_cost-3.13.0a5%2B-c8d6017-vs-3.12.0.png)
+
+### vs. base
+
+- Geometric mean: 1.00x faster (HPT: reliability of 61.67%, 1.00x faster at 99th %ile)
+- Memory usage: unknown
+- [📄table](bm-20240318-pythonperf1_win32-x86-brandtbucher-justin_mprotect_cost-3.13.0a5%2B-c8d6017-vs-base.md)
+- [📈time plot](bm-20240318-pythonperf1_win32-x86-brandtbucher-justin_mprotect_cost-3.13.0a5%2B-c8d6017-vs-base.png)
 

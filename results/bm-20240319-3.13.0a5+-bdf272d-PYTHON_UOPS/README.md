@@ -42,3 +42,11 @@
 - [📄table](bm-20240319-linux-x86_64-faster%252dcpython-exponential_backoff_-3.13.0a5%2B-bdf272d-vs-3.12.0.md)
 - [📈time plot](bm-20240319-linux-x86_64-faster%252dcpython-exponential_backoff_-3.13.0a5%2B-bdf272d-vs-3.12.0.png)
 
+### vs. base
+
+- Geometric mean: 1.00x faster (HPT: reliability of 96.09%, 1.00x faster at 99th %ile)
+- Memory usage: 1.02x
+- [🧠memory plot](bm-20240319-linux-x86_64-faster%252dcpython-exponential_backoff_-3.13.0a5%2B-bdf272d-vs-base-mem.png)
+- [📄table](bm-20240319-linux-x86_64-faster%252dcpython-exponential_backoff_-3.13.0a5%2B-bdf272d-vs-base.md)
+- [📈time plot](bm-20240319-linux-x86_64-faster%252dcpython-exponential_backoff_-3.13.0a5%2B-bdf272d-vs-base.png)
+

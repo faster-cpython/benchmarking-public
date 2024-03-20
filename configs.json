@@ -127,5 +127,6 @@
   "bm-20240316-3.13.0a5+-5e0a070\/bm-20240316-pythonperf2-x86_64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json,bm-20240316-3.13.0a5+-5e0a070-PYTHON_UOPS\/bm-20240316-pythonperf2-x86_64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json": 0.96,
   "bm-20240316-3.13.0a5+-5e0a070\/bm-20240316-pythonperf1-amd64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json,bm-20240316-3.13.0a5+-5e0a070-PYTHON_UOPS\/bm-20240316-pythonperf1-amd64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json": 0.97,
   "bm-20240316-3.13.0a5+-5e0a070\/bm-20240316-pythonperf1_win32-x86-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json,bm-20240316-3.13.0a5+-5e0a070-PYTHON_UOPS\/bm-20240316-pythonperf1_win32-x86-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json": 0.96,
-  "bm-20240316-3.13.0a5+-5e0a070\/bm-20240316-darwin-arm64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json,bm-20240316-3.13.0a5+-5e0a070-PYTHON_UOPS\/bm-20240316-darwin-arm64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json": 0.97
+  "bm-20240316-3.13.0a5+-5e0a070\/bm-20240316-darwin-arm64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json,bm-20240316-3.13.0a5+-5e0a070-PYTHON_UOPS\/bm-20240316-darwin-arm64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json": 0.97,
+  "bm-20240316-3.13.0a5+-5e0a070\/bm-20240316-darwin-arm64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json,bm-20240316-3.13.0a5+-5e0a070-JIT\/bm-20240316-darwin-arm64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json": 1.0
 }

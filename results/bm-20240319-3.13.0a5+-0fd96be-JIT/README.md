@@ -42,3 +42,11 @@
 - [📄table](bm-20240319-linux-x86_64-gvanrossum-func_version_cache-3.13.0a5%2B-0fd96be-vs-3.12.0.md)
 - [📈time plot](bm-20240319-linux-x86_64-gvanrossum-func_version_cache-3.13.0a5%2B-0fd96be-vs-3.12.0.png)
 
+### vs. base
+
+- Geometric mean: 1.00x faster (HPT: reliability of 80.68%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20240319-linux-x86_64-gvanrossum-func_version_cache-3.13.0a5%2B-0fd96be-vs-base-mem.png)
+- [📄table](bm-20240319-linux-x86_64-gvanrossum-func_version_cache-3.13.0a5%2B-0fd96be-vs-base.md)
+- [📈time plot](bm-20240319-linux-x86_64-gvanrossum-func_version_cache-3.13.0a5%2B-0fd96be-vs-base.png)
+

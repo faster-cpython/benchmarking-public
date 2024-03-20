@@ -380,5 +380,6 @@
   "bm-20231002-3.12.0-0fb18b0\/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240318-3.13.0a5+-4159644-JIT\/bm-20240318-linux-x86_64-python-415964417771946dcb7a-3.13.0a5+-4159644.json,3.12.0": 1.17,
   "bm-20231002-3.12.0-0fb18b0\/bm-20231002-pythonperf1-amd64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240313-3.13.0a5+-8c094c3-JIT\/bm-20240313-pythonperf1-amd64-python-8c094c3095feb4de2efe-3.13.0a5+-8c094c3.json,3.12.0": null,
   "bm-20231002-3.12.0-0fb18b0\/bm-20231002-pythonperf1_win32-x86-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240313-3.13.0a5+-8c094c3-JIT\/bm-20240313-pythonperf1_win32-x86-python-8c094c3095feb4de2efe-3.13.0a5+-8c094c3.json,3.12.0": null,
-  "bm-20231002-3.12.0-0fb18b0\/bm-20231002-pythonperf2-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240319-3.13.0a5+-332ac46-JIT\/bm-20240319-pythonperf2-x86_64-python-main-3.13.0a5+-332ac46.json,3.12.0": null
+  "bm-20231002-3.12.0-0fb18b0\/bm-20231002-pythonperf2-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240319-3.13.0a5+-332ac46-JIT\/bm-20240319-pythonperf2-x86_64-python-main-3.13.0a5+-332ac46.json,3.12.0": null,
+  "bm-20231002-3.12.0-0fb18b0\/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240319-3.13.0a5+-025ef7a-JIT\/bm-20240319-linux-x86_64-python-025ef7a5f7b424fba871-3.13.0a5+-025ef7a.json,3.12.0": 1.06
 }

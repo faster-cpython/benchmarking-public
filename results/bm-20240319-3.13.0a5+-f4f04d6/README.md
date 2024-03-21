@@ -42,3 +42,11 @@
 - [📄table](bm-20240319-linux-x86_64-faster%252dcpython-incremental_gc_3-3.13.0a5%2B-f4f04d6-vs-3.12.0.md)
 - [📈time plot](bm-20240319-linux-x86_64-faster%252dcpython-incremental_gc_3-3.13.0a5%2B-f4f04d6-vs-3.12.0.png)
 
+### vs. base
+
+- Geometric mean: 1.24x slower (HPT: reliability of 99.79%, 1.00x slower at 99th %ile)
+- Memory usage: 0.99x
+- [🧠memory plot](bm-20240319-linux-x86_64-faster%252dcpython-incremental_gc_3-3.13.0a5%2B-f4f04d6-vs-base-mem.png)
+- [📄table](bm-20240319-linux-x86_64-faster%252dcpython-incremental_gc_3-3.13.0a5%2B-f4f04d6-vs-base.md)
+- [📈time plot](bm-20240319-linux-x86_64-faster%252dcpython-incremental_gc_3-3.13.0a5%2B-f4f04d6-vs-base.png)
+

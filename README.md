@@ -61,7 +61,7 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 
 `*` indicates that the exact same versions of pyperformance was not used.
 
-For the results above, the "faster/slower" result is a geometric mean of each of the benchmarks. The "reliability (rel)" number is the likelihood that the change is faster or slower based on the [Heirarchical Performance Testing (HPT)](#hpt) method.  For more details, visit each individual result's README.md.
+For the results above, the "faster/slower" result is a geometric mean of each of the benchmarks. The "reliability (rel)" number is the likelihood that the change is faster or slower based on the [Hierarchical Performance Testing (HPT)](#hpt) method.  For more details, visit each individual result's README.md.
 
 ## Longitudinal results
 
@@ -242,7 +242,7 @@ pystats](https://github.com/faster-cpython/bench_runner/blob/main/bench_runner/t
 
 ### HPT
 
-Heirarchical performance testing (HPT) is a method introduced in this paper:
+Hierarchical performance testing (HPT) is a method introduced in this paper:
 
 > T. Chen, Y. Chen, Q. Guo, O. Temam, Y. Wu and W. Hu,
 "Statistical performance comparisons of computers,"

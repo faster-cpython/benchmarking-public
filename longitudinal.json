@@ -384,5 +384,10 @@
   "bm-20231002-3.12.0-0fb18b0\/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240319-3.13.0a5+-025ef7a-JIT\/bm-20240319-linux-x86_64-python-025ef7a5f7b424fba871-3.13.0a5+-025ef7a.json,3.12.0": 1.0,
   "bm-20231002-3.12.0-0fb18b0\/bm-20231002-darwin-arm64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240316-3.13.0a5+-5e0a070-JIT\/bm-20240316-darwin-arm64-python-5e0a070dfe33530756fa-3.13.0a5+-5e0a070.json,3.12.0": 1.0,
   "bm-20231002-3.12.0-0fb18b0\/bm-20231002-darwin-arm64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240313-3.13.0a5+-8c094c3-JIT\/bm-20240313-darwin-arm64-python-8c094c3095feb4de2efe-3.13.0a5+-8c094c3.json,3.12.0": 1.0,
-  "bm-20231002-3.12.0-0fb18b0\/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240319-3.13.0a5+-0f27801-JIT\/bm-20240319-linux-x86_64-python-0f278012e88fa9607d85-3.13.0a5+-0f27801.json,3.12.0": 1.0
+  "bm-20231002-3.12.0-0fb18b0\/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240319-3.13.0a5+-0f27801-JIT\/bm-20240319-linux-x86_64-python-0f278012e88fa9607d85-3.13.0a5+-0f27801.json,3.12.0": 1.0,
+  "bm-20231002-3.12.0-0fb18b0\/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240320-3.13.0a5+-dcaf33a-JIT\/bm-20240320-linux-x86_64-python-dcaf33a41d5d220523d7-3.13.0a5+-dcaf33a.json,3.12.0": 0.99,
+  "bm-20231002-3.12.0-0fb18b0\/bm-20231002-pythonperf2-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240320-3.13.0a5+-dcaf33a-JIT\/bm-20240320-pythonperf2-x86_64-python-dcaf33a41d5d220523d7-3.13.0a5+-dcaf33a.json,3.12.0": 0.96,
+  "bm-20231002-3.12.0-0fb18b0\/bm-20231002-darwin-arm64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240320-3.13.0a5+-dcaf33a-JIT\/bm-20240320-darwin-arm64-python-dcaf33a41d5d220523d7-3.13.0a5+-dcaf33a.json,3.12.0": 1.0,
+  "bm-20231002-3.12.0-0fb18b0\/bm-20231002-pythonperf1-amd64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240320-3.13.0a5+-dcaf33a-JIT\/bm-20240320-pythonperf1-amd64-python-dcaf33a41d5d220523d7-3.13.0a5+-dcaf33a.json,3.12.0": 1.0,
+  "bm-20231002-3.12.0-0fb18b0\/bm-20231002-pythonperf1_win32-x86-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240320-3.13.0a5+-dcaf33a-JIT\/bm-20240320-pythonperf1_win32-x86-python-dcaf33a41d5d220523d7-3.13.0a5+-dcaf33a.json,3.12.0": 1.0
 }

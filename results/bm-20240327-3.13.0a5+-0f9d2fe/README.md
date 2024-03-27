@@ -42,3 +42,11 @@
 - [📄table](bm-20240327-linux-x86_64-brandtbucher-revert_90a1b28-3.13.0a5%2B-0f9d2fe-vs-3.12.0.md)
 - [📈time plot](bm-20240327-linux-x86_64-brandtbucher-revert_90a1b28-3.13.0a5%2B-0f9d2fe-vs-3.12.0.png)
 
+### vs. base
+
+- Geometric mean: 1.01x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20240327-linux-x86_64-brandtbucher-revert_90a1b28-3.13.0a5%2B-0f9d2fe-vs-base-mem.png)
+- [📄table](bm-20240327-linux-x86_64-brandtbucher-revert_90a1b28-3.13.0a5%2B-0f9d2fe-vs-base.md)
+- [📈time plot](bm-20240327-linux-x86_64-brandtbucher-revert_90a1b28-3.13.0a5%2B-0f9d2fe-vs-base.png)
+

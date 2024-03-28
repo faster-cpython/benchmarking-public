@@ -398,5 +398,6 @@
   "bm-20231002-3.12.0-0fb18b0\/bm-20231002-darwin-arm64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240323-3.13.0a5+-d610d82-JIT\/bm-20240323-darwin-arm64-python-d610d821fd210dce63a1-3.13.0a5+-d610d82.json,3.12.0": 1.45,
   "bm-20231002-3.12.0-0fb18b0\/bm-20231002-pythonperf1-amd64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240323-3.13.0a5+-d610d82-JIT\/bm-20240323-pythonperf1-amd64-python-d610d821fd210dce63a1-3.13.0a5+-d610d82.json,3.12.0": null,
   "bm-20231002-3.12.0-0fb18b0\/bm-20231002-pythonperf1_win32-x86-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240323-3.13.0a5+-d610d82-JIT\/bm-20240323-pythonperf1_win32-x86-python-d610d821fd210dce63a1-3.13.0a5+-d610d82.json,3.12.0": null,
-  "bm-20231002-3.12.0-0fb18b0\/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240326-3.13.0a5+-48c0b05-JIT\/bm-20240326-linux-x86_64-python-48c0b05cf0dd2db275bd-3.13.0a5+-48c0b05.json,3.12.0": 1.03
+  "bm-20231002-3.12.0-0fb18b0\/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240326-3.13.0a5+-48c0b05-JIT\/bm-20240326-linux-x86_64-python-48c0b05cf0dd2db275bd-3.13.0a5+-48c0b05.json,3.12.0": 1.03,
+  "bm-20231002-3.12.0-0fb18b0\/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json,bm-20240328-3.13.0a5+-6c8ac8a-JIT\/bm-20240328-linux-x86_64-python-6c8ac8a32fd6de196052-3.13.0a5+-6c8ac8a.json,3.12.0": 1.03
 }

@@ -109,21 +109,21 @@
 
 ## windows amd64 (pythonperf1)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/9021430016)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/9768323837)
 - cpu model: missing
 - platform: Windows-11-10.0.22631-SP0
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/9768323837)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/9021430016)
 - [raw results](bm-20240508-pythonperf1-amd64-python-2268289a47c6e3c9a220-3.13.0b1-2268289.json)
 - [raw results](bm-20240508-pythonperf1-amd64-python-v3.13.0b1-3.13.0b1-2268289.json)
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.23x faster (HPT: reliability of 100.00%, 1.18x faster at 99th %ile)
-- Memory usage: unknown
-- missing benchmarks: sqlalchemy_declarative, sqlalchemy_imperative, unpack_sequence
-- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
 - Geometric mean: 1.25x faster (HPT: reliability of 100.00%, 1.20x faster at 99th %ile)
+- Memory usage: unknown
 - missing benchmarks: aiohttp, dask, flaskblogging, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
+- Geometric mean: 1.23x faster (HPT: reliability of 100.00%, 1.18x faster at 99th %ile)
+- missing benchmarks: sqlalchemy_declarative, sqlalchemy_imperative, unpack_sequence
 - [📄table](bm-20240508-pythonperf1-amd64-python-2268289a47c6e3c9a220-3.13.0b1-2268289-vs-3.10.4.md)
 - [📈time plot](bm-20240508-pythonperf1-amd64-python-2268289a47c6e3c9a220-3.13.0b1-2268289-vs-3.10.4.svg)
 - [📄table](bm-20240508-pythonperf1-amd64-python-v3.13.0b1-3.13.0b1-2268289-vs-3.10.4.md)
@@ -131,13 +131,13 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.07x faster (HPT: reliability of 100.00%, 1.04x faster at 99th %ile)
-- Memory usage: unknown
-- missing benchmarks: sqlalchemy_declarative, sqlalchemy_imperative, unpack_sequence
-- new benchmarks: flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
 - Geometric mean: 1.08x faster (HPT: reliability of 100.00%, 1.04x faster at 99th %ile)
+- Memory usage: unknown
 - missing benchmarks: aiohttp, dask, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: genshi_text, genshi_xml, html5lib, pylint, thrift
+- Geometric mean: 1.07x faster (HPT: reliability of 100.00%, 1.04x faster at 99th %ile)
+- missing benchmarks: sqlalchemy_declarative, sqlalchemy_imperative, unpack_sequence
+- new benchmarks: flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240508-pythonperf1-amd64-python-2268289a47c6e3c9a220-3.13.0b1-2268289-vs-3.12.0.md)
 - [📈time plot](bm-20240508-pythonperf1-amd64-python-2268289a47c6e3c9a220-3.13.0b1-2268289-vs-3.12.0.svg)
 - [📄table](bm-20240508-pythonperf1-amd64-python-v3.13.0b1-3.13.0b1-2268289-vs-3.12.0.md)
@@ -145,11 +145,11 @@
 
 ### vs. 3.13.0b2
 
-- Geometric mean: 1.00x slower (HPT: reliability of 99.54%, 1.00x slower at 99th %ile)
-- Memory usage: unknown
-- new benchmarks: dask
 - Geometric mean: 1.01x slower (HPT: reliability of 99.98%, 1.00x slower at 99th %ile)
+- Memory usage: unknown
 - missing benchmarks: aiohttp, flaskblogging, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
+- Geometric mean: 1.00x slower (HPT: reliability of 99.54%, 1.00x slower at 99th %ile)
+- new benchmarks: dask
 - [📄table](bm-20240508-pythonperf1-amd64-python-2268289a47c6e3c9a220-3.13.0b1-2268289-vs-3.13.0b2.md)
 - [📈time plot](bm-20240508-pythonperf1-amd64-python-2268289a47c6e3c9a220-3.13.0b1-2268289-vs-3.13.0b2.svg)
 - [📄table](bm-20240508-pythonperf1-amd64-python-v3.13.0b1-3.13.0b1-2268289-vs-3.13.0b2.md)

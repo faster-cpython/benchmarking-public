@@ -1,0 +1,58 @@
+# Generated file: !!! DO NOT EDIT !!!
+---
+env:
+  PYPERFORMANCE_HASH: ebb37f3583e26ea22cee34126b3b8a815112370b
+  PYSTON_BENCHMARKS_HASH: 004743ccbd9e54598c543d7eb71fd3b8e10d5750
+name: _generate
+on:
+  workflow_call:
+    inputs:
+      force:
+        type: boolean
+        default: false
+      dry_run:
+        type: boolean
+        default: false
+
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Regenerate all of the derived data, even if it already exists
+        type: boolean
+        default: false
+      dry_run:
+        description: 'Dry run: Do not commit to the repo'
+        type: boolean
+        default: false
+
+jobs:
+  generate-results:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout benchmarking
+      uses: actions/checkout@v4
+      with:
+        ref: main
+    - name: Checkout CPython
+      uses: actions/checkout@v4
+      with:
+        repository: python/cpython
+        path: cpython
+    - name: Setup system Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: pip
+    - name: Install dependencies from PyPI
+      run: python -m pip install -r requirements.txt
+    - name: Regenerate derived data
+      run: python -m bench_runner generate_results ${{ inputs.force == true && '--force'
+        || '' }}
+    - name: Add to repo
+      uses: EndBug/add-and-commit@v9
+      if: ${{ !inputs.dry_run }}
+      with:
+        add: "['results', 'README.md', 'RESULTS.md', 'longitudinal.svg', 'longitudinal.json',
+          'configs.svg', 'configs.json', 'memory_long.svg', 'memory_long.json', 'memory_configs.svg',
+          'memory_configs.json']"
+        message: Benchmarking results for @${{ github.actor }}

@@ -1,0 +1,1 @@
+git+https://github.com/faster-cpython/bench_runner@v0.26.1#egg=bench_runner

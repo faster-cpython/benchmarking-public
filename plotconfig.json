@@ -1,0 +1,21 @@
+{
+  "bases": ["3.10.4", "3.12.0", "3.13.0b2", "3.13.0b2"],
+  "versions": [
+    [3, 11],
+    [3, 13],
+    [3, 14],
+    [3, 14]
+  ],
+  "runners": [
+    "linux",
+    "pythonperf2",
+    "arminc",
+    "darwin",
+    "pythonperf1",
+    "pythonperf1_win32"
+  ],
+  "names": ["linux", "linux2", "linux-aarch64", "macos", "win64", "win32"],
+  "colors": ["C0", "C0", "C4", "C2", "C3", "C3"],
+  "styles": ["-", ":", "--", "-", "-", ":"],
+  "markers": ["s", "s", "s", "^", ".", "."]
+}

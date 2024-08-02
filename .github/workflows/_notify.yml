@@ -1,0 +1,58 @@
+# Generated file: !!! DO NOT EDIT !!!
+---
+env:
+  PYPERFORMANCE_HASH: ebb37f3583e26ea22cee34126b3b8a815112370b
+  PYSTON_BENCHMARKS_HASH: 004743ccbd9e54598c543d7eb71fd3b8e10d5750
+name: _notify
+on:
+  workflow_call:
+    inputs:
+      fork:
+        type: string
+      ref:
+        type: string
+      head:
+        type: string
+      date:
+        type: string
+      version:
+        type: string
+
+      tier2:
+        description: tier 2 interpreter
+        type: boolean
+        default: false
+      jit:
+        description: JIT
+        type: boolean
+        default: false
+      nogil:
+        description: free threading
+        type: boolean
+        default: false
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: technote-space/workflow-conclusion-action@v3
+    - name: Checkout benchmarking
+      uses: actions/checkout@v4
+    - name: Setup system Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: pip
+    - name: Install dependencies from PyPI
+      run: |
+        pip install -r requirements.txt
+    - name: Send notifications
+      if: env.WORKFLOW_CONCLUSION == 'success'
+      run: python -m bench_runner notify --fork ${{ inputs.fork }} --ref ${{ inputs.ref
+        }} --head ${{ inputs.head }} --date ${{ inputs.date }} --version ${{ inputs.version
+        }} --flags ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit ==
+        true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }}
+      env:
+        GH_TOKEN: ${{ github.token }}
+    env:
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }}

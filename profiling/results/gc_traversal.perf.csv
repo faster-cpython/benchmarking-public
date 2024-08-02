@@ -1,0 +1,2808 @@
+self,children,object,symbol
+0.27986291784595996,0.0,python,visit_reachable
+0.2180585770222007,0.0,python,visit_decref
+0.15479251618514558,0.0,python,list_traverse
+0.08216630698620687,0.0,python,gc_collect_region.isra.0
+0.05983872673236482,0.0,python,deduce_unreachable
+0.01990281231421124,0.0,python,dict_traverse
+0.014956317143345272,0.0,python,_PyEval_EvalFrameDefault
+0.00908349722247942,0.0,python,func_traverse
+0.006329769582849166,0.0,python,set_traverse
+0.005838672899269624,0.0,python,subtype_traverse
+0.005678037533074524,0.0,python,PyLong_FromLong
+0.005425649802590556,0.0,python,type_new
+0.0048056875034622375,0.0,python,long_dealloc
+0.004215510147122088,0.0,python,tupletraverse
+0.0036206739477841784,0.0,libc-2.31.so,__nss_database_lookup
+0.0034771280747353207,0.0,python,list_dealloc
+0.0033488352059207554,0.0,python,type_traverse
+0.0031009469771792883,0.0,python,_PyCode_New
+0.0022946990553436644,0.0,python,dict_setdefault_ref_lock_held
+0.002246351981511801,0.0,python,r_object
+0.0022247193796128637,0.0,python,meth_traverse
+0.0016564019028880274,0.0,python,PyUnicode_FromKindAndData
+0.0015925855464514055,0.0,libc-2.31.so,pthread_attr_setschedparam
+0.0015236933937323456,0.0,python,_PyEval_FrameClearAndPop
+0.0014112941434579675,0.0,python,siphash13
+0.0013842736761515055,0.0,python,tupledealloc
+0.0011068442813571104,0.0,python,insertdict
+0.0010647789362707508,0.0,python,descr_traverse
+0.0010644024670087024,0.0,python,executor_traverse
+0.001057301803663642,0.0,python,PyDict_GetItemRef
+0.0010022361846821566,0.0,python,_Py_hashtable_get
+0.000946209914058769,0.0,python,gc_traverse
+0.0009255168836356686,0.0,python,find_name_in_mro
+0.0008964644192104151,0.0,python,unicode_dealloc
+0.0008622753980240642,0.0,python,code_dealloc
+0.0007702323547786164,0.0,python,type_ready
+0.0007555419246058033,0.0,python,dictresize
+0.0006862336912015326,0.0,python,module_traverse
+0.0006793500869738293,0.0,python,list_repeat
+0.0006628008936395208,0.0,ld-2.31.so,_dl_rtld_di_serinfo
+0.0006572045458488712,0.0,libpython3.11.so.1.0,_PyEval_EvalFrameDefault
+0.0006043458801792631,0.0,python,PyDict_SetItem
+0.0005211892291613174,0.0,python,PyBytes_FromStringAndSize
+0.0005176443741985984,0.0,python,_PyDict_LoadGlobal
+0.0004996326123054204,0.0,python,uop_optimize
+0.0004972349386021957,0.0,[kernel.kallsyms],copy_user_enhanced_fast_string
+0.00048435887235222035,0.0,[kernel.kallsyms],clear_page_erms
+0.0004830185136449854,0.0,python,_PyObject_GC_NewVar
+0.00047565039856336226,0.0,[kernel.kallsyms],native_irq_return_iret
+0.00045142532661181787,0.0,[kernel.kallsyms],smp_call_function_single
+0.00044510782128817677,0.0,python,_PyEvalFramePushAndInit
+0.0004395822344253384,0.0,python,dict_dealloc
+0.00043765034513221397,0.0,libc-2.31.so,malloc
+0.0004052275915638816,0.0,python,_Py_dict_lookup
+0.0004040871959133985,0.0,[kernel.kallsyms],__d_lookup_rcu
+0.00038904908077936815,0.0,python,_PyUnicode_JoinArray
+0.0003780034985792219,0.0,python,PyObject_GC_Del
+0.00036126140335489916,0.0,libmagic.so.1.0.0,0x000000000000f936
+0.00034162259938493906,0.0,python,subtype_dealloc
+0.00032848907036598106,0.0,python,PyObject_SetAttr
+0.00032522927987116694,0.0,python,PyFunction_NewWithQualName
+0.00032397891372472787,0.0,[kernel.kallsyms],sync_regs
+0.0003215853159795387,0.0,python,_PyPegen_fill_token
+0.0003153379515788246,0.0,python,intern_common
+0.00031460672470724955,0.0,python,PyTuple_New
+0.0003114592928753531,0.0,python,PyType_GenericAlloc
+0.0003107613625623782,0.0,python,_Py_Dealloc
+0.0003061441632260115,0.0,python,_PyObject_Malloc
+0.000300189923356698,0.0,[kernel.kallsyms],rmqueue
+0.0002979470442062482,0.0,python,PyObject_GenericGetAttr
+0.00029497212299261626,0.0,[kernel.kallsyms],cpuacct_account_field
+0.0002933282489313831,0.0,python,object_dealloc
+0.00028647243010775303,0.0,libmagic.so.1.0.0,0x000000000000f932
+0.00028567695235965165,0.0,python,PyObject_GetOptionalAttr
+0.00028273497177589,0.0,[kernel.kallsyms],free_pcppages_bulk
+0.00027586685618872175,0.0,python,PyList_New
+0.00027586582284724794,0.0,python,func_dealloc
+0.00027392059196753964,0.0,python,abc_data_traverse
+0.000271826961770622,0.0,python,tuplegetter_traverse
+0.00026736339734826514,0.0,python,_PyObject_GC_New
+0.0002669864917864834,0.0,[kernel.kallsyms],zap_pte_range.isra.0
+0.00026538889994170446,0.0,python,_PyObject_ClearFreeLists
+0.0002599257383854554,0.0,python,sm_traverse
+0.0002502489662277893,0.0,python,_Py_type_getattro
+0.00024621580001084114,0.0,python,_PyObject_MakeTpCall
+0.00024581667760737277,0.0,python,list_resize
+0.00024225512843906586,0.0,python,property_traverse
+0.00024043996080619283,0.0,python,PyUnicode_New
+0.00023545067816825547,0.0,python,insert_to_emptydict
+0.0002346896221728035,0.0,python,intern_constants
+0.00023174292266297814,0.0,python,cell_traverse
+0.00022677023089648121,0.0,python,cm_traverse
+0.00022543155998032017,0.0,[JIT],29207                            [.] 0x00007fa55f67c210
+0.0002209896957289131,0.0,python,_Py_module_getattro
+0.0002163215985841759,0.0,python3.8,_PyEval_EvalFrameDefault
+0.00021248442280009139,0.0,python,_PyCfg_OptimizeCodeUnit.constprop.0
+0.00021165094104889812,0.0,python,dictkeys_decref.part.0
+0.00021149697316930226,0.0,python,object_new
+0.00020139858620875473,0.0,python,sre_ucs1_match
+0.00019962933338203413,0.0,python,unicode_decode_utf8
+0.00019802131626994176,0.0,python,optimize_uops
+0.00019084958199462788,0.0,python,PyObject_GetIter
+0.00018875122139007464,0.0,[kernel.kallsyms],mem_cgroup_throttle_swaprate
+0.0001847743148755888,0.0,[JIT],29147                            [.] 0x00007f7db8979210
+0.00018360327490962163,0.0,ld-2.31.so,_dl_catch_error
+0.00018296441728423216,0.0,python,meth_dealloc
+0.00017975954314796444,0.0,python,_Py_VaBuildStack.constprop.0
+0.00017939449804998752,0.0,[kernel.kallsyms],release_pages
+0.00017874596145946015,0.0,python,visit_add_to_container
+0.00017579122484928306,0.0,python,method_get
+0.0001736449172003456,0.0,python,_PyTuple_FromStackRefSteal
+0.0001704144161955277,0.0,python,path_converter
+0.0001698379609135837,0.0,[kernel.kallsyms],__handle_mm_fault
+0.00016902623674119982,0.0,python,PyList_Append
+0.00016657360075314102,0.0,python,_PyPegen_name_token
+0.00016638084812356196,0.0,[kernel.kallsyms],account_user_time
+0.0001652535529466522,0.0,[JIT],29174                            [.] 0x00007f5a124c6210
+0.00016339434200385154,0.0,[kernel.kallsyms],_raw_spin_lock
+0.00016266891332610171,0.0,python,PyObject_GetAttr
+0.00015980823375318407,0.0,python,PyDict_Copy
+0.0001593013453155705,0.0,python,PyMapping_GetOptionalItem
+0.00015865949099990703,0.0,python,_PyObject_GetMethod
+0.00015848065403550846,0.0,python,object_isinstance
+0.00015761436943330807,0.0,python,_sre_SRE_Pattern_match
+0.0001571664273859887,0.0,libc-2.31.so,__nss_database_lookup
+0.0001569899096991202,0.0,[JIT],29162                            [.] 0x00007f2b23fc7210
+0.00015679452778956892,0.0,[JIT],29147                            [.] 0x00007f7db897922c
+0.0001559700820354854,0.0,python,_PyType_AllocNoTrack
+0.0001547359163870411,0.0,[JIT],29195                            [.] 0x00007fc47a6c9210
+0.00015320636433752575,0.0,python,BaseException_vectorcall
+0.00015145649240422482,0.0,libpthread-2.31.so,__pthread_mutex_lock
+0.00015144979864778902,0.0,python,_PyDictKeys_StringLookup
+0.00014854841690237566,0.0,libpthread-2.31.so,pthread_mutex_unlock
+0.00014743546220880784,0.0,[kvm],pvclock_gtod_notify
+0.00014741991616041314,0.0,python,PyMem_Calloc
+0.0001471691012215786,0.0,python,PyMem_Free
+0.00014274875343597037,0.0,[kernel.kallsyms],page_remove_rmap
+0.00014182237428628268,0.0,[kernel.kallsyms],vsnprintf
+0.0001411012167532912,0.0,python,PyObject_Vectorcall
+0.0001404372604116604,0.0,[kernel.kallsyms],perf_iterate_ctx
+0.00013770516296279897,0.0,python,list_iter
+0.00013606900451790352,0.0,python3.8,PyOS_strtoul
+0.00013606418225769245,0.0,python,allocate_from_new_pool
+0.00013502582333696088,0.0,[kernel.kallsyms],find_vma
+0.0001346319824565808,0.0,python,PyObject_IsTrue
+0.00013203985685113123,0.0,python,_PyObject_GenericGetAttrWithDict
+0.0001319519080101391,0.0,python,getset_get
+0.00013168259625892357,0.0,python,_stringio_readline.cold
+0.00013148359765421402,0.0,[JIT],29186                            [.] 0x00007f5fa2634210
+0.00013102076400810003,0.0,python,unicode_from_format
+0.00013086844947486224,0.0,python,unicodekeys_lookup_unicode
+0.000130368840353853,0.0,python,_PyLong_Add
+0.0001302254929282934,0.0,python,vectorcall_method
+0.00012988993250703549,0.0,python,_PySuper_Lookup
+0.00012954921685998054,0.0,python,_PyUnicode_FromUCS4
+0.00012837682206852548,0.0,[kernel.kallsyms],show_cpuinfo
+0.00012729332908853282,0.0,python,hashtable_unicode_hash
+0.000126435276773407,0.0,[kernel.kallsyms],ktime_get_update_offsets_now
+0.0001263719329410632,0.0,[kernel.kallsyms],task_tick_fair
+0.00012618050069225623,0.0,python3.8,_Py_convert_optional_to_ssize_t
+0.00012616186610101208,0.0,libc-2.31.so,__nss_database_lookup
+0.0001243251131129086,0.0,libc-2.31.so,free
+0.0001240386364116561,0.0,python,_PyAssemble_MakeCodeObject
+0.0001237326640012646,0.0,python,slot_tp_init
+0.00012334100461955142,0.0,python,_PyFunction_Vectorcall
+0.0001232317459810552,0.0,[kernel.kallsyms],link_path_walk.part.0
+0.00012320904691334747,0.0,[JIT],29150                            [.] 0x00007f15a398c210
+0.00012298337661704198,0.0,[JIT],29198                            [.] 0x00007fa4ded901f7
+0.00012210928454592845,0.0,[kernel.kallsyms],try_charge
+0.00012100776549800398,0.0,[JIT],29177                            [.] 0x00007f89e8a2e210
+0.00012094647686703585,0.0,[kernel.kallsyms],memset_erms
+0.00012036688711595466,0.0,[kernel.kallsyms],filemap_map_pages
+0.00011946815559147701,0.0,[JIT],29201                            [.] 0x00007f4b8b15f210
+0.00011900725084944746,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e210
+0.00011879600140748741,0.0,python,_PyCode_Validate
+0.00011827927326272892,0.0,python,PyUnicode_FromString
+0.00011823449513219769,0.0,[JIT],29183                            [.] 0x00007f312124b210
+0.00011812000089690091,0.0,python,set_contains_lock_held
+0.00011765706391663953,0.0,[kernel.kallsyms],get_mem_cgroup_from_mm
+0.00011624419908265983,0.0,[JIT],29177                            [.] 0x00007f89e8a2e22c
+0.00011609025416620784,0.0,python,PyUnicode_Contains
+0.00011608119520595421,0.0,[JIT],29159                            [.] 0x00007f252e029210
+0.00011607754406608012,0.0,[JIT],29147                            [.] 0x00007f7db89790d5
+0.00011594996083878191,0.0,python,_PyFrame_MakeAndSetFrameObject
+0.00011590228935212404,0.0,[kernel.kallsyms],interrupt_entry
+0.00011565211738131762,0.0,python,sre_ucs1_count
+0.0001154273196844789,0.0,libpython3.11.so.1.0,type_new
+0.00011535516948646395,0.0,python,finalize_interp_clear
+0.00011520357829225783,0.0,[kernel.kallsyms],copy_user_enhanced_fast_string
+0.00011518001810665525,0.0,python,_Py_type_getattro_impl
+0.00011502406391511532,0.0,python,cfunction_vectorcall_NOARGS
+0.00011467115483866954,0.0,python,tupleiter_dealloc
+0.00011443718336585789,0.0,python,hashtable_unicode_compare
+0.00011425392599626584,0.0,python,tuple_iter
+0.00011264915816902996,0.0,python,_PyModule_ClearDict
+0.00011243922910784199,0.0,python,_PyObject_Free
+0.00011216911364659127,0.0,python,PyUnicode_FromWideChar
+0.00011207654921368286,0.0,libpython3.11.so.1.0,visit_decref
+0.00011186191270800316,0.0,[kernel.kallsyms],__pagevec_lru_add_fn
+0.00011084775694090232,0.0,python,_PyUnicode_FromASCII
+0.00011070342210015664,0.0,libc-2.31.so,__gconv_get_alias_db
+0.00011025690376775673,0.0,python,PyDict_Contains
+0.000109934811230374,0.0,libpython3.11.so.1.0,PyObject_Malloc
+0.00010961608279356706,0.0,python,_PyJIT_Compile
+0.00010930236032212209,0.0,[kernel.kallsyms],_cond_resched
+0.00010925434438830629,0.0,python,PyUnicode_Concat
+0.00010887733549237717,0.0,python,x_add
+0.0001087538741494022,0.0,python3.8,_PyDict_GetItemIdWithError
+0.00010752851486662904,0.0,python,cfunction_vectorcall_FASTCALL_KEYWORDS
+0.00010643669774698635,0.0,python,list_sort_impl
+0.00010547604610508437,0.0,python,_list_extend
+0.00010529011352923236,0.0,[kernel.kallsyms],update_curr
+0.0001052276652594992,0.0,[kernel.kallsyms],syscall_return_via_sysret
+0.00010515825915717578,0.0,[kernel.kallsyms],__vma_adjust
+0.00010413782297022864,0.0,python,PyTuple_Pack
+0.0001040741691354427,0.0,[JIT],29150                            [.] 0x00007f15a398c22c
+0.00010371740225082809,0.0,python,PyDict_GetItemWithError
+0.00010356420363655162,0.0,[JIT],29189                            [.] 0x00007fcc3ff08210
+0.00010251468462790304,0.0,[JIT],29147                            [.] 0x00007f7db897919b
+0.00010202573040564582,0.0,[JIT],29165                            [.] 0x00007f1beec04210
+0.00010179704045592247,0.0,[kernel.kallsyms],find_get_entry
+0.00010146241004199099,0.0,[kernel.kallsyms],__alloc_pages_nodemask
+0.00010042998709394778,0.0,[kernel.kallsyms],__virt_addr_valid
+9.933291141436065e-05,0.0,python,PyUnicode_Substring
+9.829054542502513e-05,0.0,libpython3.11.so.1.0,PyObject_Free
+9.70653813289748e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90210
+9.687027497714987e-05,0.0,python3.8,_PyObject_GC_New
+9.660244434871344e-05,0.0,python,make_new_set
+9.652262446064854e-05,0.0,[kernel.kallsyms],vmacache_find
+9.623216365393594e-05,0.0,libpython3.11.so.1.0,visit_reachable
+9.514214914108641e-05,0.0,libpython3.11.so.1.0,PyDict_SetDefault
+9.496795073174798e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c210
+9.48855130452828e-05,0.0,python,type_call
+9.481952845139484e-05,0.0,libpython3.11.so.1.0,r_object
+9.455840306096617e-05,0.0,python,as_ucs4
+9.427409637680863e-05,0.0,python,PyImport_ImportModuleLevelObject
+9.403177780120308e-05,0.0,python,_PyObject_LookupSpecialMethod
+9.332630409546946e-05,0.0,python,PyTraceBack_Here
+9.327522258194808e-05,0.0,python,PyObject_CallFunction
+9.269918063659359e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b210
+9.252472963267268e-05,0.0,python,expression_rule
+9.22491259800389e-05,0.0,[kernel.kallsyms],handle_mm_fault
+9.210868339217787e-05,0.0,python,dict_get
+9.206558157114857e-05,0.0,python,PyMem_Malloc
+9.206306710689566e-05,0.0,python,listiter_dealloc
+9.061326605601364e-05,0.0,python,long_to_decimal_string_internal
+8.975012740452237e-05,0.0,python,_PyLong_New
+8.972262903974742e-05,0.0,[kernel.kallsyms],__update_load_avg_cfs_rq
+8.882533271176117e-05,0.0,python,dictiter_iternextitem
+8.851766102872387e-05,0.0,[kernel.kallsyms],ext4_htree_store_dirent
+8.85175576945765e-05,0.0,python,classmethod_get
+8.803325350895138e-05,0.0,python,update_slot
+8.800947517348211e-05,0.0,python,PyObject_Free
+8.751278237174334e-05,0.0,[JIT],29168                            [.] 0x00007f12415c8210
+8.734982442132546e-05,0.0,python,frame_dealloc
+8.69101950320842e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff0822c
+8.569847585676517e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c22c
+8.551568923162229e-05,0.0,[kernel.kallsyms],do_anonymous_page
+8.541481214063577e-05,0.0,[kernel.kallsyms],perf_event_mmap
+8.518853332101795e-05,0.0,[kernel.kallsyms],vma_interval_tree_insert
+8.44728524978376e-05,0.0,[kernel.kallsyms],mem_cgroup_try_charge
+8.439472040084657e-05,0.0,[JIT],29156                            [.] 0x00007f979c040210
+8.43821021532943e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f1f7
+8.429039883828071e-05,0.0,[kernel.kallsyms],__acct_update_integrals
+8.42630612155128e-05,0.0,[kernel.kallsyms],timekeeping_advance
+8.422716982165623e-05,0.0,[kernel.kallsyms],__cgroup_account_cputime_field
+8.414042654571688e-05,0.0,python,ucs4lib_utf8_encoder
+8.401564482196984e-05,0.0,python,code_hash
+8.269653850437938e-05,0.0,python,PyDict_New
+8.208599443537198e-05,0.0,python,tp_new_wrapper
+8.110110519512348e-05,0.0,python,emit__EXIT_TRACE
+8.080052912353959e-05,0.0,python,PyObject_VectorcallMethod
+8.058019775818207e-05,0.0,libpython3.11.so.1.0,_PyDict_GetItem_KnownHash
+8.045615085503862e-05,0.0,python,_PyObject_LookupSpecial
+8.004569614007424e-05,0.0,python,unicode_encode_utf8
+8.003275640850791e-05,0.0,python,PyEval_RestoreThread
+7.964601113958123e-05,0.0,python,PyEval_SaveThread
+7.953131023598968e-05,0.0,python,range_vectorcall
+7.928885388152095e-05,0.0,python,method_vectorcall_NOARGS
+7.909109528657994e-05,0.0,[kernel.kallsyms],update_cfs_group
+7.839628796117032e-05,0.0,[JIT],29183                            [.] 0x00007f312124b22c
+7.795789858169762e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c1f7
+7.773190680137805e-05,0.0,python,mro_implementation_unlocked
+7.742544068339353e-05,0.0,[kernel.kallsyms],generic_file_buffered_read
+7.733636664835216e-05,0.0,[kernel.kallsyms],memcg_kmem_get_cache
+7.726064568146666e-05,0.0,[kernel.kallsyms],memcpy_erms
+7.717771428740843e-05,0.0,python,builtin___import__
+7.704086543156182e-05,0.0,[JIT],29180                            [.] 0x00007f84957a621a
+7.658102847572185e-05,0.0,python,long_and
+7.589764531438364e-05,0.0,[kernel.kallsyms],rmqueue
+7.588545188499284e-05,0.0,[kernel.kallsyms],xas_load
+7.580948980509677e-05,0.0,[kernel.kallsyms],get_page_from_freelist
+7.561069786868197e-05,0.0,python,_io_open
+7.559167290399216e-05,0.0,python,unicode_subscript
+7.531742407684625e-05,0.0,python,dict_merge
+7.513631376120531e-05,0.0,python,unicode_startswith
+7.419251706689817e-05,0.0,[kernel.kallsyms],kmem_cache_free
+7.394914218667494e-05,0.0,[kernel.kallsyms],__mod_memcg_state
+7.38424898650071e-05,0.0,[JIT],29183                            [.] 0x00007f312124b0ff
+7.384010169804542e-05,0.0,[JIT],29147                            [.] 0x00007f7db897911f
+7.382444083393143e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c922c
+7.379695395072841e-05,0.0,python,bitwise_xor_rule
+7.375720474870298e-05,0.0,python,buffered_traverse
+7.371591701603881e-05,0.0,[kernel.kallsyms],rcu_sched_clock_irq
+7.352726330763914e-05,0.0,python,_PyType_LookupRef
+7.342646658765614e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979246
+7.323101578867327e-05,0.0,[kernel.kallsyms],__mod_node_page_state
+7.306101963466162e-05,0.0,[kernel.kallsyms],__count_memcg_events
+7.299960470640224e-05,0.0,[kernel.kallsyms],generic_permission
+7.244693924149945e-05,0.0,[kernel.kallsyms],rb_next
+7.214061090237809e-05,0.0,python,weakref_dealloc
+7.144063686959948e-05,0.0,python,slot_tp_new
+7.143358718443379e-05,0.0,libc-2.31.so,wcsrtombs
+7.089203588116029e-05,0.0,python,_add_methods_to_object
+7.041860474415391e-05,0.0,[kernel.kallsyms],entry_SYSCALL_64
+7.029118225886273e-05,0.0,python,object_vacall
+7.024638116518763e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc711f
+7.023315439432301e-05,0.0,libpython3.11.so.1.0,gc_collect_main
+7.014139367144979e-05,0.0,libpython3.11.so.1.0,deduce_unreachable
+6.998991729296298e-05,0.0,python,_PyStack_UnpackDict
+6.966834142631713e-05,0.0,[kernel.kallsyms],filldir64
+6.942684952389061e-05,0.0,libc-2.31.so,__libc_realloc
+6.860382748472655e-05,0.0,python,atom_rule
+6.850365076962783e-05,0.0,python,_PyCfg_OptimizedCfgToInstructionSequence
+6.845258073767837e-05,0.0,python,tb_dealloc
+6.788094771594541e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c921a
+6.770634745158941e-05,0.0,[kernel.kallsyms],prep_new_page
+6.770482040252257e-05,0.0,[kernel.kallsyms],do_user_addr_fault
+6.753651203958479e-05,0.0,python,_PyCompile_ConstCacheMergeOne
+6.695033186621516e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c215
+6.694262773144939e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c611f
+6.693111171480252e-05,0.0,python,_PyObject_Call
+6.662381892363895e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a22c
+6.652937151293385e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c22c
+6.567010215118335e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979155
+6.516781782391415e-05,0.0,python,PyDict_GetItemStringRef
+6.474863711428216e-05,0.0,[kernel.kallsyms],walk_component
+6.461768978640812e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f16b
+6.449733994942648e-05,0.0,[JIT],29168                            [.] 0x00007f12415c822c
+6.432719453497973e-05,0.0,python,_PyUnicode_ToDecimalDigit
+6.354214205419177e-05,0.0,python,_PySet_Contains
+6.338497081602714e-05,0.0,python,long_mul
+6.332192550455356e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a210
+6.33104554141944e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e22c
+6.330463425722534e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c253
+6.329808976122462e-05,0.0,[JIT],29183                            [.] 0x00007f312124b1f7
+6.329642493329462e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b1f7
+6.327038472815492e-05,0.0,[JIT],29156                            [.] 0x00007f979c04022c
+6.322142730544076e-05,0.0,python,namespace_traverse
+6.320047343666653e-05,0.0,[kernel.kallsyms],hrtimer_active
+6.314752042692036e-05,0.0,python,_PyType_FromMetaclass_impl
+6.310862086121784e-05,0.0,[kernel.kallsyms],__update_load_avg_se
+6.309258110523012e-05,0.0,libpython3.11.so.1.0,_Py_HashBytes
+6.30829710295238e-05,0.0,python,PySys_Audit
+6.297837390923161e-05,0.0,python,update_slots_callback
+6.297833946451582e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b22c
+6.285040030848774e-05,0.0,python,_PyDict_FromItems
+6.225055706452012e-05,0.0,python,make_executor_from_uops
+6.178338338421618e-05,0.0,python,_stringio_readline
+6.170930428211681e-05,0.0,python,sequence_repeat
+6.159183631968988e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c90d5
+6.154214407637214e-05,0.0,libmagic.so.1.0.0,0x000000000000a680
+6.146003935549296e-05,0.0,[kernel.kallsyms],copy_page
+6.131103151497133e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc722c
+6.130185773899839e-05,0.0,python,cm_descr_get
+6.109144645178932e-05,0.0,libc-2.31.so,clock_gettime
+6.107251333967495e-05,0.0,python,func_descr_get
+6.083663592592274e-05,0.0,python,setiter_dealloc
+6.075550713865769e-05,0.0,python,find_frozen
+6.0667650150241024e-05,0.0,[kernel.kallsyms],inode_permission
+6.062926725527541e-05,0.0,[JIT],29165                            [.] 0x00007f1beec0422c
+6.042351748627036e-05,0.0,[JIT],29159                            [.] 0x00007f252e02922c
+6.0076923274386684e-05,0.0,[kernel.kallsyms],unmap_page_range
+5.9466379205379286e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded9022c
+5.9262374635307764e-05,0.0,python,memset@plt
+5.903722100973918e-05,0.0,python,Py_XDECREF.lto_priv.7
+5.8873516757145765e-05,0.0,[kernel.kallsyms],__rb_insert_augmented
+5.865111870884064e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791ab
+5.835769565656982e-05,0.0,python,set_dealloc
+5.734271321628994e-05,0.0,python,PyDict_DelItem
+5.734220802712497e-05,0.0,python,_PyDict_Next
+5.7311529266925114e-05,0.0,[kernel.kallsyms],set_root
+5.678207954046697e-05,0.0,[JIT],29159                            [.] 0x00007f252e02916b
+5.6651970367343915e-05,0.0,python,BaseException_dealloc
+5.660336887335963e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c11f
+5.659946513890306e-05,0.0,[JIT],29159                            [.] 0x00007f252e029244
+5.6414474051949414e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f164
+5.6280782628383856e-05,0.0,python,unicode_hash
+5.592468167494124e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e253
+5.5878824276648486e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979253
+5.580914261659873e-05,0.0,python,vgetargs1_impl
+5.5596894277880685e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff08246
+5.5217267583551274e-05,0.0,python,_weakref__remove_dead_weakref
+5.5169504244317965e-05,0.0,[kernel.kallsyms],security_inode_getattr
+5.5028958322309545e-05,0.0,[kernel.kallsyms],lookup_fast
+5.478039377157348e-05,0.0,[JIT],29147                            [.] 0x00007f7db897921a
+5.454884491043928e-05,0.0,[kernel.kallsyms],str2hashbuf_signed
+5.427317236837392e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634170
+5.420809481866853e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a1f7
+5.4167863390622e-05,0.0,python,PyObject_IsInstance
+5.379576860747939e-05,0.0,[kernel.kallsyms],prepend_name
+5.372356100160479e-05,0.0,python,get_or_create_weakref
+5.353679027100183e-05,0.0,[JIT],29156                            [.] 0x00007f979c0401f7
+5.29550075396818e-05,0.0,python,unicode_rstrip
+5.275845450979355e-05,0.0,[JIT],29159                            [.] 0x00007f252e02921a
+5.2755871156109055e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff0815a
+5.2751048895898e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c9123
+5.274688108528702e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e1f7
+5.2742552532668996e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979136
+5.273127762903267e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979236
+5.272808575203583e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c1f7
+5.2727752786449826e-05,0.0,[JIT],29168                            [.] 0x00007f12415c80d5
+5.272753463658314e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a21a
+5.27124134063499e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791cd
+5.271051894698127e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791f7
+5.2691666205870425e-05,0.0,[kernel.kallsyms],__hrtimer_run_queues
+5.268779691612965e-05,0.0,python,iomodule_traverse
+5.267540830001601e-05,0.0,[kernel.kallsyms],_raw_spin_lock_irqsave
+5.266701527093439e-05,0.0,libcrypto.so.1.1,EVP_DecodeUpdate
+5.2657634826666686e-05,0.0,[kernel.kallsyms],irq_enter
+5.261333892215656e-05,0.0,python,range_iter
+5.2593269134421024e-05,0.0,python3.8,PyUnicode_CompareWithASCIIString
+5.25840264690165e-05,0.0,python,reversed_new_impl
+5.257911235623e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e170
+5.2574244169731216e-05,0.0,libpython3.11.so.1.0,PyDict_SetItem
+5.2573853796285556e-05,0.0,resource.cpython-314-x86_64-linux-gnu.so,resourcemodule_traverse
+5.25669992978427e-05,0.0,python,tuplehash
+5.256510483847407e-05,0.0,python,_PyCfg_FromInstructionSequence
+5.256253296636151e-05,0.0,python3.8,PyDict_SetDefault
+5.252826047414722e-05,0.0,python,_PyRecursiveMutex_Lock
+5.250627326389919e-05,0.0,python,unicode_split
+5.250061284893716e-05,0.0,python,slot_mp_subscript
+5.248861460626918e-05,0.0,libc-2.31.so,calloc
+5.242714227015015e-05,0.0,python,bytes_richcompare
+5.239585498663794e-05,0.0,libc-2.31.so,__wcsncasecmp_l
+5.221281576691258e-05,0.0,python,_io__Buffered_read
+5.183783910921526e-05,0.0,[JIT],29183                            [.] 0x00007f312124b253
+5.1711645152120705e-05,0.0,python,bytes_decode
+5.148892561980151e-05,0.0,python,PySequence_Tuple
+5.148072777744271e-05,0.0,python,get_type_attr_as_size
+5.137003394245512e-05,0.0,[kernel.kallsyms],get_task_policy.part.0
+5.1164559731176413e-05,0.0,python,os_listdir
+5.096771966198989e-05,0.0,python,term_raw
+5.092735045508019e-05,0.0,python,list_ass_slice_lock_held
+5.0681805557762e-05,0.0,libpython3.11.so.1.0,tupledealloc
+5.067786737858964e-05,0.0,libpython3.11.so.1.0,PyCode_Addr2Line
+5.067768367343874e-05,0.0,[kernel.kallsyms],__lru_cache_add
+5.05312936313174e-05,0.0,python,PyObject_CallOneArg
+5.05082845611675e-05,0.0,python,_validate_inner
+5.0458041202397075e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b1cd
+5.0383893210866126e-05,0.0,python,Py_XDECREF.lto_priv.1
+5.03300331569374e-05,0.0,python,ucs4lib_find_max_char
+5.025573590497135e-05,0.0,libc-2.31.so,pthread_mutex_unlock
+5.004701240883615e-05,0.0,[kernel.kallsyms],lru_cache_add_active_or_unevictable
+4.9206033191171867e-05,0.0,[kernel.kallsyms],unmapped_area_topdown
+4.89693979936722e-05,0.0,python,do_mktuple
+4.8701108102358526e-05,0.0,[JIT],29165                            [.] 0x00007f1beec0411f
+4.8642138748920474e-05,0.0,[kernel.kallsyms],fpregs_assert_state_consistent
+4.8153448602817685e-05,0.0,[kernel.kallsyms],mem_cgroup_page_lruvec
+4.805251410397151e-05,0.0,[JIT],29156                            [.] 0x00007f979c040200
+4.802482055247374e-05,0.0,[kernel.kallsyms],down_read_trylock
+4.7833882011259785e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f19b
+4.770361209612969e-05,0.0,python,_Py_SourceAsString
+4.7688950128773694e-05,0.0,python,primary_raw
+4.766402363611131e-05,0.0,python,PyObject_Hash
+4.7636559716052155e-05,0.0,[kernel.kallsyms],kmem_cache_alloc
+4.7533696313121556e-05,0.0,python,unicode_decode_utf8_impl
+4.7316476453757353e-05,0.0,[JIT],29159                            [.] 0x00007f252e0291df
+4.71687889940078e-05,0.0,[kernel.kallsyms],native_write_msr
+4.696192551252544e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff0821a
+4.668559852086001e-05,0.0,python,do_string_format
+4.655156265013651e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f136
+4.6538990328871975e-05,0.0,libc-2.31.so,_dl_addr
+4.630587997395515e-05,0.0,python,long_richcompare
+4.627533899261846e-05,0.0,python,symtable_add_def_helper
+4.622029633678084e-05,0.0,[kernel.kallsyms],native_sched_clock
+4.617639080571637e-05,0.0,[kernel.kallsyms],format_decode
+4.608605379776259e-05,0.0,[kernel.kallsyms],__ext4fs_dirhash
+4.5889764844028756e-05,0.0,python,_pystat_fromstructstat
+4.5860349056741313e-05,0.0,python,va_build_value
+4.5826099527670886e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04155
+4.581981910782458e-05,0.0,[kernel.kallsyms],error_entry
+4.57027415188433e-05,0.0,[kernel.kallsyms],update_load_avg
+4.567240720580138e-05,0.0,python,_PyUnicodeWriter_PrepareInternal
+4.5646401445377466e-05,0.0,libpython3.11.so.1.0,_PyObject_GC_New
+4.559568734215786e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded901d8
+4.558477984882333e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7145
+4.553003571385592e-05,0.0,python,PyObject_Str
+4.550655589925685e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6155
+4.536705480029416e-05,0.0,libpython3.11.so.1.0,_PyEval_Vector
+4.526629252502696e-05,0.0,libc-2.31.so,getenv
+4.5125907345025576e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e11f
+4.500308897007875e-05,0.0,python,BaseException_new
+4.476822193465647e-05,0.0,python,unicode_rfind
+4.457425225845272e-05,0.0,python,_PyGC_Collect
+4.4527361518686165e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26341f7
+4.446939106200611e-05,0.0,[JIT],29180                            [.] 0x00007f84957a61f7
+4.4411018750308474e-05,0.0,[kernel.kallsyms],native_flush_tlb_one_user
+4.422980510052015e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c9164
+4.407659500467175e-05,0.0,python,method_vectorcall_O
+4.3834391244785505e-05,0.0,python,k_mul
+4.381579109825715e-05,0.0,[kernel.kallsyms],widen_string
+4.3800049863139626e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c110
+4.3740804951975224e-05,0.0,[kernel.kallsyms],entry_SYSCALL_64_after_hwframe
+4.366709326017766e-05,0.0,[kernel.kallsyms],do_anonymous_page
+4.3604036467132134e-05,0.0,python,PyNumber_Multiply
+4.351465242964864e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979170
+4.337593207757726e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e22f
+4.321726823506159e-05,0.0,python,_PyBytes_Resize
+4.284641346168754e-05,0.0,python,ScandirIterator_iternext
+4.2841200828030826e-05,0.0,libpython3.11.so.1.0,PyType_Ready
+4.278429815754037e-05,0.0,python,PyThread_get_thread_ident_ex
+4.26612042248672e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f110
+4.2601810053267696e-05,0.0,[JIT],29168                            [.] 0x00007f12415c8145
+4.2598342618544505e-05,0.0,python,list_clear_impl.constprop.0
+4.259680408790574e-05,0.0,python,member_get
+4.258159100509705e-05,0.0,[kernel.kallsyms],__srcu_read_lock
+4.254919000910753e-05,0.0,python,structseq_dealloc
+4.233105162398884e-05,0.0,python,patch_x86_64_32rx
+4.2268086683518764e-05,0.0,python,add_subclass
+4.226407961491482e-05,0.0,[kernel.kallsyms],__slab_free
+4.2223733371148984e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e213
+4.2212630691091625e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e236
+4.221023104255803e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c1b4
+4.220489211161007e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6210
+4.2202492463076476e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc71f7
+4.219531648061955e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c61f7
+4.219528203590375e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c9110
+4.219163089602967e-05,0.0,[JIT],29159                            [.] 0x00007f252e0291f7
+4.2190609036127805e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7110
+4.217940302192306e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c236
+4.2179299687775685e-05,0.0,[JIT],29168                            [.] 0x00007f12415c8253
+4.2178714127607196e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f11f
+4.216017138893849e-05,0.0,libpython3.11.so.1.0,PyUnicode_FromKindAndData
+4.215170947042528e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc71ab
+4.2148333888277544e-05,0.0,python,PySequence_Size
+4.214275384431904e-05,0.0,python,capsule_traverse
+4.2141571242410134e-05,0.0,_bz2.cpython-314-x86_64-linux-gnu.so,_bz2_traverse
+4.2138746775715087e-05,0.0,python,pattern_traverse
+4.2138367883841366e-05,0.0,libc-2.31.so,execve
+4.212035329748149e-05,0.0,[kernel.kallsyms],cpuacct_charge
+4.2116254376302094e-05,0.0,python,type_clear
+4.211011173531896e-05,0.0,python,range_dealloc
+4.2109583583010136e-05,0.0,[kernel.kallsyms],notifier_call_chain
+4.210485317537453e-05,0.0,[kernel.kallsyms],__mod_lruvec_state
+4.209502494980152e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a213
+4.2082429665393116e-05,0.0,libpython3.11.so.1.0,PyDict_GetItemWithError
+4.207157957991824e-05,0.0,libpython3.11.so.1.0,_PyPegen_is_memoized
+4.2070454385868994e-05,0.0,[kernel.kallsyms],alloc_pages_vma
+4.20671706562967e-05,0.0,python3.8,_PyDict_LoadGlobal
+4.20637721110051e-05,0.0,python3.8,_PyObject_New
+4.205299091496181e-05,0.0,python,inversion_rule
+4.203722671670043e-05,0.0,python,PyMem_Realloc
+4.2036664119675806e-05,0.0,[kernel.kallsyms],vm_area_dup
+4.203496484703001e-05,0.0,python,_loop1_43_rule
+4.203412669227904e-05,0.0,python,_PyUnicodeWriter_WriteStr
+4.20287188718995e-05,0.0,[kernel.kallsyms],string_nocheck
+4.20224040073374e-05,0.0,python,list_pop
+4.1993275259348236e-05,0.0,python,emit__GUARD_IS_FALSE_POP
+4.1981621463838185e-05,0.0,python,PyObject_RichCompare
+4.197861329199224e-05,0.0,[JIT],29180                            [.] 0x00007f84957a61c3
+4.1970553228496617e-05,0.0,python,_PyBuildSlice_Consume2
+4.1959990182320024e-05,0.0,[kernel.kallsyms],__vma_link_rb
+4.184453149498102e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a11f
+4.172629426723471e-05,0.0,[kernel.kallsyms],prepare_exit_to_usermode
+4.170275704477598e-05,0.0,python3.8,PySet_Contains
+4.162867794267662e-05,0.0,python,named_expression_rule
+4.162820719822745e-05,0.0,python,PyNumber_InPlaceAdd
+4.1620950844767e-05,0.0,[kernel.kallsyms],uncharge_page
+4.1521244874117454e-05,0.0,python,conv_confname
+4.1521244874117454e-05,0.0,python,mbuf_alloc
+4.149263279686519e-05,0.0,libc-2.31.so,__errno_location
+4.124494084559588e-05,0.0,[kernel.kallsyms],do_sys_open
+4.1184088514361135e-05,0.0,python,uop_optimize.cold
+4.107814805015301e-05,0.0,[kernel.kallsyms],aa_file_perm
+4.092692426624868e-05,0.0,ld-2.31.so,_dl_find_dso_for_object
+4.086617526916131e-05,0.0,python,PySlice_Unpack
+4.073995834892289e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f21a
+4.064297351082101e-05,0.0,python,cell_dealloc
+4.057449741582402e-05,0.0,python,dictiter_dealloc
+4.051101580461705e-05,0.0,[kernel.kallsyms],__lru_cache_add
+4.0477914432739726e-05,0.0,[kernel.kallsyms],mem_cgroup_try_charge
+4.030503640417337e-05,0.0,[kernel.kallsyms],kick_process
+4.002334751841612e-05,0.0,[kernel.kallsyms],down_write_killable
+3.993453755952918e-05,0.0,python,PyModule_AddObjectRef
+3.9913124427877705e-05,0.0,python,hashtable_hash_str
+3.9507836420282326e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a164
+3.9452047462269176e-05,0.0,python,PyArg_UnpackTuple
+3.9331605772712096e-05,0.0,ld-2.31.so,_dl_catch_error
+3.9325692763167585e-05,0.0,[kernel.kallsyms],unmap_page_range
+3.9008112483553765e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e22f
+3.898333525132648e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6213
+3.8982347836140405e-05,0.0,[kernel.kallsyms],do_syscall_64
+3.8960601738902934e-05,0.0,python,set_len
+3.8926179986253535e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f0d5
+3.868289695860577e-05,0.0,[kernel.kallsyms],user_path_at_empty
+3.857918391935227e-05,0.0,libpython3.11.so.1.0,_PyDict_LoadGlobal
+3.850704520290926e-05,0.0,[kernel.kallsyms],ext4_getattr
+3.809676271152386e-05,0.0,[kernel.kallsyms],strcmp
+3.798233736565866e-05,0.0,python,listiter_next
+3.786100011349095e-05,0.0,[kernel.kallsyms],__do_munmap
+3.7210040911286136e-05,0.0,python,type_dealloc_common
+3.71982837816287e-05,0.0,python,descr_dealloc
+3.717803028874227e-05,0.0,python,_Py_bytes_lower
+3.7177674360012405e-05,0.0,[kernel.kallsyms],kmem_cache_free
+3.712860212157895e-05,0.0,[JIT],29165                            [.] 0x00007f1beec0421a
+3.698872213074253e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c0ec
+3.695958190118144e-05,0.0,libc-2.31.so,pthread_mutex_lock
+3.693792765651941e-05,0.0,[JIT],29180                            [.] 0x00007f84957a61e5
+3.6819782281348546e-05,0.0,ld-2.31.so,_dl_debug_state
+3.664382719150466e-05,0.0,[kernel.kallsyms],get_vma_policy.part.0
+3.643426554061849e-05,0.0,python,list_append
+3.63298521254772e-05,0.0,[kernel.kallsyms],path_init
+3.6253580043139e-05,0.0,[kernel.kallsyms],kfree
+3.616919048944552e-05,0.0,[kernel.kallsyms],rb_insert_color
+3.60386909428768e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c246
+3.575031978225566e-05,0.0,python,unicode_find
+3.573310890593097e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6149
+3.572517513972659e-05,0.0,[kernel.kallsyms],__alloc_pages_nodemask
+3.571973287463125e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c91a5
+3.559305669151559e-05,0.0,[JIT],29183                            [.] 0x00007f312124b11f
+3.548213322508937e-05,0.0,[kernel.kallsyms],up_read
+3.5403266307494746e-05,0.0,libpython3.11.so.1.0,_PyFrame_Clear
+3.537515941940745e-05,0.0,python,unicode_length
+3.536574453042396e-05,0.0,[JIT],29156                            [.] 0x00007f979c040213
+3.529731436171469e-05,0.0,libc-2.31.so,setlinebuf
+3.525780627269983e-05,0.0,libpython3.11.so.1.0,_PyFrame_Push
+3.5249780653919994e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26341e5
+3.520116767836378e-05,0.0,python,assign_version_tag
+3.4828533261340405e-05,0.0,[JIT],29168                            [.] 0x00007f12415c81eb
+3.475379970964097e-05,0.0,python,shift_expr_rule
+3.4633656540954095e-05,0.0,python,PyUnicode_RPartition
+3.4420834123639496e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c181
+3.435026838255104e-05,0.0,python,method_vectorcall_FASTCALL
+3.371358077425657e-05,0.0,[kernel.kallsyms],__mod_node_page_state
+3.3564917380892875e-05,0.0,[kernel.kallsyms],alloc_set_pte
+3.336389801952343e-05,0.0,python,PyErr_Format
+3.3333988524642955e-05,0.0,libc-2.31.so,pthread_attr_setschedparam
+3.323828962259736e-05,0.0,[kernel.kallsyms],clear_page_erms
+3.282674415829953e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04181
+3.243023955323143e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e18b
+3.240880345843609e-05,0.0,libpython3.11.so.1.0,dict_dealloc
+3.235217634567198e-05,0.0,libmagic.so.1.0.0,0x000000000001829a
+3.22797161452149e-05,0.0,[kernel.kallsyms],release_pages
+3.204174908537122e-05,0.0,libc-2.31.so,malloc
+3.2025732292527356e-05,0.0,[kernel.kallsyms],vma_interval_tree_remove
+3.1800980521976364e-05,0.0,libpython3.11.so.1.0,set_contains
+3.1799660141204286e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b1a5
+3.174075967719782e-05,0.0,libmagic.so.1.0.0,0x0000000000010c60
+3.172260731197478e-05,0.0,python,setitem_take2_lock_held
+3.16741206337098e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff081f7
+3.166682983553356e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e0ff
+3.166655427780722e-05,0.0,[JIT],29147                            [.] 0x00007f7db897918b
+3.1666232793793145e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26341fb
+3.166585390191942e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c21a
+3.1663706847968305e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90197
+3.166310980622789e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e123
+3.16625242460594e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c244
+3.166232905933658e-05,0.0,[JIT],29156                            [.] 0x00007f979c040197
+3.166143349672595e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c621a
+3.166112349428381e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979123
+3.166028533953284e-05,0.0,[JIT],29147                            [.] 0x00007f7db897922f
+3.1659894966087184e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c123
+3.165948162949767e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c22f
+3.165913718233974e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7244
+3.1658930514044975e-05,0.0,[JIT],29165                            [.] 0x00007f1beec041f7
+3.1657150870395656e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979110
+3.165711642567986e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a0d5
+3.165552048718144e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e21a
+3.1653844177679505e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b149
+3.165358010152509e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e0d5
+3.1652707502058324e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b0d5
+3.165222527603722e-05,0.0,[JIT],29168                            [.] 0x00007f12415c81f7
+3.16519611998828e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6164
+3.165160527115294e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26340d5
+3.1651433047573975e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff08236
+3.165005525894225e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791e5
+3.164936636462638e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc722f
+3.164895302803686e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c19b
+3.164849376515962e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7253
+3.164843635729996e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04246
+3.164810339171396e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b1df
+3.16475637578332e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791bc
+3.164749486840161e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff08123
+3.1646691158366435e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c1cd
+3.164627782177692e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded9015a
+3.1644877070001327e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f0ff
+3.164387817324332e-05,0.0,[JIT],29183                            [.] 0x00007f312124b1da
+3.1642741497622146e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634200
+3.164267260819056e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c622c
+3.164248890303966e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c1ab
+3.164240853203614e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979181
+3.1641490006281655e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b1fb
+3.1641260374843035e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634129
+3.164115704069565e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791b8
+3.1640399256948204e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6253
+3.16375173823935e-05,0.0,[JIT],29159                            [.] 0x00007f252e0290d5
+3.163735664038646e-05,0.0,[JIT],29159                            [.] 0x00007f252e029110
+3.163720737995136e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e0ff
+3.163631181734073e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c61ab
+3.163471587884231e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b246
+3.162877990615394e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979129
+3.1626885446785315e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c1b8
+3.162531247143076e-05,0.0,[kernel.kallsyms],perf_event_task_tick
+3.162096095566887e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791c3
+3.161877945700197e-05,0.0,[kernel.kallsyms],read_tsc
+3.161751648408955e-05,0.0,[kernel.kallsyms],rb_erase
+3.1616402771612236e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04149
+3.161574832201216e-05,0.0,[kernel.kallsyms],account_entity_enqueue
+3.161308459732415e-05,0.0,python,_signal_module_traverse
+3.161042087263614e-05,0.0,[kernel.kallsyms],reweight_entity
+3.160828530025696e-05,0.0,python,textiowrapper_traverse
+3.160664343547081e-05,0.0,[kernel.kallsyms],tick_sched_timer
+3.160554120456543e-05,0.0,_decimal.cpython-314-x86_64-linux-gnu.so,signaldict_traverse
+3.1600431905056095e-05,0.0,[kernel.kallsyms],ktime_get
+3.158957033800929e-05,0.0,python,type_dealloc
+3.158751513663362e-05,0.0,[kernel.kallsyms],update_min_vruntime
+3.158359992060512e-05,0.0,dpkg-query,0x000000000000f340
+3.158257806070326e-05,0.0,[kernel.kallsyms],perf_iterate_sb
+3.158165953494877e-05,0.0,libpython3.11.so.1.0,_PyCode_Quicken
+3.1572508722119696e-05,0.0,libpython3.11.so.1.0,_PyType_Lookup
+3.156490792150132e-05,0.0,python,deque_popleft_impl
+3.156296753584496e-05,0.0,python,_abcmodule_traverse
+3.15595460274095e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a137
+3.155920158025157e-05,0.0,python,pattern_subx
+3.15588456515217e-05,0.0,python3.8,_PyObject_GetMethod
+3.155827157292515e-05,0.0,python,PyDict_Next
+3.1553472275857955e-05,0.0,python3.8,_PyObject_LookupSpecial
+3.155311634712809e-05,0.0,python3.8,PyType_Ready
+3.15525652316754e-05,0.0,python,PyObject_LengthHint
+3.1552335600236774e-05,0.0,python,_PyUnicode_Equal
+3.155178448478408e-05,0.0,python,list_subscript
+3.155098077474891e-05,0.0,python,PyType_GenericNew
+3.1549005944376765e-05,0.0,python,translate_jump_labels_to_targets
+3.154797260290297e-05,0.0,python,PyUnicode_DecodeFSDefault
+3.154163477519701e-05,0.0,python,PyMapping_Check
+3.1539969947267e-05,0.0,python,_PyLexer_update_fstring_expr
+3.153767363288078e-05,0.0,python,PySet_Add
+3.153546917107001e-05,0.0,[kernel.kallsyms],pagevec_lru_move_fn
+3.153271359380655e-05,0.0,python,_io__Buffered_close
+3.1523551299405544e-05,0.0,python3.8,PyObject_RichCompareBool
+3.152132387445092e-05,0.0,python,compiler_addop_load_const
+3.152038238555257e-05,0.0,python,compiler_nameop
+3.1518143479026e-05,0.0,python,_Py_MakeCoro
+3.151018674967776e-05,0.0,python,r_ref.isra.0
+3.1505927086491334e-05,0.0,[kernel.kallsyms],errseq_sample
+3.149915295905199e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c1eb
+3.1471585704845454e-05,0.0,python,ascii_upper_or_lower
+3.142910388870044e-05,0.0,python,new_keys_object.constprop.0
+3.141327080100747e-05,0.0,libmagic.so.1.0.0,0x000000000000f941
+3.1379101642940564e-05,0.0,[kernel.kallsyms],zap_pte_range.isra.0
+3.1367287105423474e-05,0.0,python,long_hash
+3.1249440251122814e-05,0.0,libc-2.31.so,lseek64
+3.124183945050444e-05,0.0,python,_io_FileIO_tell
+3.118943755621096e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26341df
+3.1186900128814193e-05,0.0,[JIT],29180                            [.] 0x00007f84957a61b8
+3.1166933675226034e-05,0.0,python,memcpy@plt
+3.11609747393938e-05,0.0,python,_PyMem_RawMalloc
+3.1160148066214766e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a236
+3.1138895676570325e-05,0.0,python,_PyLong_FromBytes
+3.112609372386716e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a1d8
+3.112146665037894e-05,0.0,[kernel.kallsyms],page_remove_rmap
+3.111708068990126e-05,0.0,[kernel.kallsyms],vfs_getattr_nosec
+3.109462273520406e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e18b
+3.0999371614463776e-05,0.0,python,_PyTuple_FromArray
+3.0989876354476763e-05,0.0,python,_PyLong_FromByteArray
+3.08764958316573e-05,0.0,[kernel.kallsyms],mem_cgroup_try_charge
+3.081650461831738e-05,0.0,[kernel.kallsyms],down_write
+3.075393005129296e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c236
+3.0687141747369836e-05,0.0,[vdso],__vdso_clock_gettime
+3.0657186326201634e-05,0.0,[kernel.kallsyms],mmap_region
+3.0482677914421068e-05,0.0,[kernel.kallsyms],mem_cgroup_commit_charge
+3.0385739002606916e-05,0.0,[JIT],29156                            [.] 0x00007f979c040236
+3.0014183853345062e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c170
+2.992097645240851e-05,0.0,[kernel.kallsyms],vma_merge
+2.991304268620413e-05,0.0,[JIT],29183                            [.] 0x00007f312124b1e5
+2.9835978375402685e-05,0.0,[JIT],29180                            [.] 0x00007f84957a622c
+2.9599239843755637e-05,0.0,[kernel.kallsyms],try_to_wake_up
+2.95532791113155e-05,0.0,python,_PyRecursiveMutex_Unlock
+2.9551556875525838e-05,0.0,python,ucs4lib_utf8_decode
+2.949722607714794e-05,0.0,python,_PyUnicode_IsTitlecase
+2.949689311156194e-05,0.0,python,unicode_isupper
+2.9487386370003002e-05,0.0,[kernel.kallsyms],__vma_link_file
+2.9484114122002644e-05,0.0,[kernel.kallsyms],exit_to_usermode_loop
+2.944824569128993e-05,0.0,[JIT],29156                            [.] 0x00007f979c04017d
+2.9381457387366807e-05,0.0,python,lookup_maybe_method
+2.9245687799281724e-05,0.0,[kernel.kallsyms],page_mapping
+2.9242599256432263e-05,0.0,python,dictiter_iternextkey
+2.923802959080369e-05,0.0,python,method_dealloc
+2.92182353607945e-05,0.0,python,_Py_uop_abstractcontext_fini
+2.9105027061553997e-05,0.0,libpthread-2.31.so,pthread_cond_signal@@GLIBC_2.3.2
+2.910433816723813e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6236
+2.8741658273079005e-05,0.0,[JIT],29168                            [.] 0x00007f12415c8244
+2.8541637808467567e-05,0.0,[kernel.kallsyms],mem_cgroup_charge_statistics
+2.8356899316096406e-05,0.0,python,PyLong_FromUnsignedLong
+2.8310812286365027e-05,0.0,python,_PyEval_Vector
+2.8202793657637378e-05,0.0,[JIT],29183                            [.] 0x00007f312124b19b
+2.8170415624791717e-05,0.0,[kernel.kallsyms],free_pages_and_swap_cache
+2.8071674106184382e-05,0.0,[kernel.kallsyms],up_read
+2.8071295214310655e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff081d1
+2.7908084669310277e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f1fb
+2.7826508100739916e-05,0.0,python,PyObject_SelfIter
+2.7484747630639228e-05,0.0,python,_io_FileIO___init__
+2.7375454547427226e-05,0.0,[JIT],29183                            [.] 0x00007f312124b1a5
+2.725862955302843e-05,0.0,[JIT],29183                            [.] 0x00007f312124b1c3
+2.7205883211577026e-05,0.0,python,unicode_repr
+2.7064476171673777e-05,0.0,[kernel.kallsyms],__x86_indirect_thunk_rax
+2.6686365044839275e-05,0.0,python,_PyUnicode_ScanIdentifier
+2.6679154617666553e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff08253
+2.666537673134925e-05,0.0,python,PyUnicode_FSConverter
+2.6635467236468772e-05,0.0,python,_imp_is_builtin
+2.6627453099260874e-05,0.0,python,sm_descr_get
+2.6378348914644048e-05,0.0,python,set_merge_lock_held.part.0
+2.6349220166654884e-05,0.0,python,specialize_py_call
+2.6333662636688264e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6176
+2.628192667356679e-05,0.0,python,_PyPegen_join_sequences
+2.6109852355035616e-05,0.0,[JIT],29159                            [.] 0x00007f252e029253
+2.6105489357701803e-05,0.0,python,builtin_getattr
+2.6061526418777676e-05,0.0,python,lock_acquire_parse_args
+2.5958973018289223e-05,0.0,[kernel.kallsyms],unmap_single_vma
+2.584988660337198e-05,0.0,[kernel.kallsyms],mem_cgroup_update_lru_size
+2.5833938699959704e-05,0.0,[kernel.kallsyms],page_counter_try_charge
+2.582491418442187e-05,0.0,python,unicode_encode
+2.5807427750370825e-05,0.0,python,list_richcompare
+2.576440630034505e-05,0.0,[kernel.kallsyms],fsnotify
+2.5567371044435693e-05,0.0,[kernel.kallsyms],filemap_map_pages
+2.55629047129545e-05,0.0,[JIT],29156                            [.] 0x00007f979c04018f
+2.5531628911014223e-05,0.0,python,PyDict_SetItemString
+2.5528368144585797e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c60ff
+2.538658221280882e-05,0.0,ld-2.31.so,_dl_rtld_di_serinfo
+2.537692621081478e-05,0.0,libpython3.11.so.1.0,PyObject_GC_UnTrack
+2.516390860677735e-05,0.0,[JIT],29183                            [.] 0x00007f312124b187
+2.5114445994898236e-05,0.0,python,gen_iternext
+2.5046980278231178e-05,0.0,[kernel.kallsyms],free_unref_page_prepare.part.0
+2.496438184975895e-05,0.0,libpython3.11.so.1.0,method_vectorcall_NOARGS
+2.494238315793899e-05,0.0,[kernel.kallsyms],copy_user_enhanced_fast_string
+2.488312676520266e-05,0.0,libpython3.11.so.1.0,code_dealloc
+2.4846913887332017e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f22f
+2.4844560165086142e-05,0.0,python,os_confstr_impl.isra.0
+2.4838096040088942e-05,0.0,[kernel.kallsyms],__find_get_block
+2.4823939261897913e-05,0.0,python,vgetargskeywords.constprop.0
+2.479938017953732e-05,0.0,python,PyNumber_And
+2.4744681970857633e-05,0.0,[JIT],29159                            [.] 0x00007f252e029213
+2.4728619251726043e-05,0.0,python,PyLong_FromSsize_t
+2.4711993935569833e-05,0.0,python,_PyPegen_Parser_Free
+2.4710007623625752e-05,0.0,python,PyLong_AsSsize_t
+2.4698181604536737e-05,0.0,python,wrapperdescr_call
+2.467327807501821e-05,0.0,[kernel.kallsyms],__alloc_fd
+2.4600898245564648e-05,0.0,libpython3.11.so.1.0,PyDict_DelItem
+2.4510274198312592e-05,0.0,[JIT],29183                            [.] 0x00007f312124b110
+2.4507977883926376e-05,0.0,libpython3.11.so.1.0,_PyDict_SetItem_Take2
+2.4453624122404617e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc71b4
+2.4437607329560754e-05,0.0,python,unicode_replace
+2.435928004584689e-05,0.0,python,builtin_min
+2.3913795054920777e-05,0.0,libc-2.31.so,_dl_addr
+2.383239070992938e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04253
+2.378310032162923e-05,0.0,python,unicode_lstrip
+2.3754488244376966e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e123
+2.3642164026175158e-05,0.0,[kernel.kallsyms],free_unref_page_commit
+2.3631474682707317e-05,0.0,[JIT],29183                            [.] 0x00007f312124b244
+2.3593149195601355e-05,0.0,python,unicode_strip
+2.3531895009349015e-05,0.0,libpython3.11.so.1.0,tupletraverse
+2.347713939280967e-05,0.0,python,_Py_GetConfig
+2.3437459080215838e-05,0.0,[JIT],29168                            [.] 0x00007f12415c821a
+2.3285087139118402e-05,0.0,python,unsafe_latin_compare
+2.306367650599935e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6164
+2.3056948304847734e-05,0.0,[kernel.kallsyms],module_put
+2.2977392492937244e-05,0.0,python,clear_lock_held
+2.2859867122650656e-05,0.0,python,builtin___build_class__
+2.2802195186840814e-05,0.0,[JIT],29159                            [.] 0x00007f252e0291ab
+2.2739792843395364e-05,0.0,[kernel.kallsyms],__kmalloc
+2.2608627365654646e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7149
+2.2487956044658936e-05,0.0,libpython3.11.so.1.0,func_dealloc
+2.2376975170373065e-05,0.0,libc-2.31.so,__nss_database_lookup
+2.232190955139158e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff08110
+2.2270047290978867e-05,0.0,[JIT],29159                            [.] 0x00007f252e0290ec
+2.2060290453369867e-05,0.0,libc-2.31.so,pthread_self
+2.198464985748788e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e1b3
+2.1944981026465977e-05,0.0,[kernel.kallsyms],common_perm
+2.186651596388894e-05,0.0,python,PyLong_FromUnsignedLongLong
+2.179002573168405e-05,0.0,[kernel.kallsyms],page_fault
+2.1629226316789198e-05,0.0,python,framelocalsproxy_getitem
+2.1420537265369792e-05,0.0,libpthread-2.31.so,sem_destroy@@GLIBC_2.2.5
+2.139216630112808e-05,0.0,python,astfold_stmt
+2.131661755782154e-05,0.0,libpython3.11.so.1.0,type_is_gc
+2.1316560149961883e-05,0.0,python,lock_dealloc
+2.111657413006624e-05,0.0,[JIT],29156                            [.] 0x00007f979c040123
+2.1116562648494306e-05,0.0,[JIT],29156                            [.] 0x00007f979c04018b
+2.111619523819251e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff081b8
+2.111578190160299e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e0ec
+2.1114955228423953e-05,0.0,[JIT],29168                            [.] 0x00007f12415c8213
+2.111470263384147e-05,0.0,[JIT],29180                            [.] 0x00007f84957a616b
+2.1114323741967745e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e1b8
+2.1113818552802775e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791b3
+2.111354299507643e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e145
+2.1113187066346567e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634244
+2.1113175584774635e-05,0.0,[JIT],29168                            [.] 0x00007f12415c817d
+2.111300336119567e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c11f
+2.1112968916479876e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b164
+2.111290002704829e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b155
+2.1112739285041253e-05,0.0,[JIT],29183                            [.] 0x00007f312124b155
+2.111269335875353e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e136
+2.1112658914037736e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c155
+2.1112555579890355e-05,0.0,[JIT],29156                            [.] 0x00007f979c0401d8
+2.1112440764171045e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff081b3
+2.1112429282599116e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c164
+2.1112027427581528e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c110
+2.1111809277714837e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90170
+2.1111441867413042e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a1e5
+2.1111154828114764e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90145
+2.1111085938683177e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b197
+2.1111062975539315e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e1cd
+2.11109826045358e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6145
+2.111081038095683e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7123
+2.1110718528381382e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c0ff
+2.1110511860086623e-05,0.0,[JIT],29168                            [.] 0x00007f12415c81ab
+2.1110316673363794e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6110
+2.1110282228648004e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a0ec
+2.1110224820788345e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b244
+2.1109995189349725e-05,0.0,[JIT],29168                            [.] 0x00007f12415c818b
+2.1109731113195308e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff080ff
+2.110962777904793e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c0d5
+2.1109558889616343e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04145
+2.1108215545700407e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6181
+2.1108077766837232e-05,0.0,[JIT],29159                            [.] 0x00007f252e02922f
+2.110804332212144e-05,0.0,[JIT],29159                            [.] 0x00007f252e0290ff
+2.110804332212144e-05,0.0,[JIT],29183                            [.] 0x00007f312124b136
+2.1107985914261784e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a0ff
+2.1107894061686335e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c918b
+2.1107687393391576e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e21a
+2.110741183566523e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c22f
+2.1107228130514333e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634164
+2.11072166489424e-05,0.0,[JIT],29183                            [.] 0x00007f312124b1b4
+2.110696405435992e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c136
+2.110687220178447e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c18f
+2.1106493309910744e-05,0.0,[JIT],29159                            [.] 0x00007f252e029137
+2.1106493309910744e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f253
+2.11063670126195e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c253
+2.1106275160044053e-05,0.0,[JIT],29168                            [.] 0x00007f12415c8181
+2.1105988120745775e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979215
+2.1105792934022948e-05,0.0,[JIT],29156                            [.] 0x00007f979c0400d5
+2.1105551821012396e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6244
+2.1105425523721154e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634236
+2.110496626084391e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634213
+2.1104931816128117e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c181
+2.110477107412108e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b1c3
+2.1103886993082388e-05,0.0,[JIT],29147                            [.] 0x00007f7db897916b
+2.1103714769503423e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791f3
+2.1103645880071835e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7213
+2.1103565509068316e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c1b3
+2.1103404767061283e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6213
+2.1103255506626176e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e236
+2.1102612538598035e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f244
+2.110222216515238e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791a5
+2.1102164757292725e-05,0.0,[JIT],29183                            [.] 0x00007f312124b1d1
+2.1102141794148863e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791ef
+2.1102038460001482e-05,0.0,[JIT],29186                            [.] 0x00007f5fa263411f
+2.1101958088997966e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff08244
+2.1101785865418998e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791df
+2.110169401284355e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e1a5
+2.110169401284355e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6155
+2.110103956324348e-05,0.0,[JIT],29159                            [.] 0x00007f252e029123
+2.1100982155383824e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c145
+2.1100350668927613e-05,0.0,python,list_new_prealloc
+2.1099948813910024e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6110
+2.1099753627187198e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f22c
+2.109944362474506e-05,0.0,[JIT],29180                            [.] 0x00007f84957a61b3
+2.1099409180029265e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c622f
+2.1099282882738022e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c149
+2.1098685840997604e-05,0.0,[JIT],29165                            [.] 0x00007f1beec040ec
+2.109818065183264e-05,0.0,[JIT],29156                            [.] 0x00007f979c0401a5
+2.1098042872969464e-05,0.0,[JIT],29180                            [.] 0x00007f84957a61d8
+2.1097962501965948e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c91fe
+2.1097939538822086e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c9253
+2.109777879681505e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c18b
+2.1097216199790426e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a1b3
+2.1097101384071116e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90181
+2.109704397621146e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded900ff
+2.109696360520794e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7136
+2.1096665084337734e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc70d5
+2.109629767403594e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f170
+2.1095310258849865e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c18f
+2.1094896922260348e-05,0.0,[JIT],29159                            [.] 0x00007f252e02911f
+2.1094770624969106e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c1f7
+2.109396691493393e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b11f
+2.1093197649614546e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f1d8
+2.109302542603558e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7164
+2.1092508755298683e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c1b3
+2.109239393957937e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded9019b
+2.1092336531719715e-05,0.0,[JIT],29156                            [.] 0x00007f979c0401df
+2.1091900231986333e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff0811f
+2.10917394899793e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e15a
+2.109099318780378e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6236
+2.1090832445796742e-05,0.0,[JIT],29156                            [.] 0x00007f979c040244
+2.109038466449143e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6136
+2.109025836720019e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979137
+2.1088834652280733e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e1ef
+2.1088501686694732e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6253
+2.1088099831677144e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c1b8
+2.108773242137535e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c244
+2.1087709458231488e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e1f3
+2.108711241649107e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff08181
+2.1086457966891e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e1fb
+2.1086423522175207e-05,0.0,[JIT],29186                            [.] 0x00007f5fa263422c
+2.108623981702431e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26341ef
+2.1085987222441825e-05,0.0,libcrypto.so.1.1,NETSCAPE_SPKI_print
+2.1085654256855824e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26341ab
+2.1084517581234646e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6181
+2.1083782760631057e-05,0.0,[JIT],29165                            [.] 0x00007f1beec041ef
+2.1083771279059125e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff0817d
+2.108242793514319e-05,0.0,[JIT],29165                            [.] 0x00007f1beec0422f
+2.1082347564139672e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90200
+2.1080900886076355e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c911f
+2.108086644136056e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26340ec
+2.1080039768181523e-05,0.0,[kernel.kallsyms],timerqueue_del
+2.1079844581458694e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f236
+2.1079017908279656e-05,0.0,[kernel.kallsyms],hrtimer_interrupt
+2.1078971981991933e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6123
+2.1076354183591645e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded901f3
+2.1076342702019712e-05,0.0,python,sre_traverse
+2.1075722697135436e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded9017d
+2.1074264537500187e-05,0.0,[kernel.kallsyms],timekeeping_update
+2.1074207129640532e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e1b8
+2.1073587124756253e-05,0.0,python,PyModule_GetState
+2.1072978601443906e-05,0.0,[kernel.kallsyms],__calc_delta
+2.1072553783282456e-05,0.0,_socket.cpython-314-x86_64-linux-gnu.so,socket_traverse
+2.1072450449135075e-05,0.0,libcrypto.so.1.1,ASN1_item_i2d
+2.1072381559703488e-05,0.0,resource.cpython-314-x86_64-linux-gnu.so,0x00000000000022b4
+2.1070980807927897e-05,0.0,[kernel.kallsyms],__hrtimer_get_next_event
+2.106963746401196e-05,0.0,python,itertoolsmodule_traverse
+2.106930449842596e-05,0.0,[kernel.kallsyms],scheduler_tick
+2.106889116183644e-05,0.0,[kernel.kallsyms],tick_do_update_jiffies64
+2.1068718938257474e-05,0.0,binascii.cpython-314-x86_64-linux-gnu.so,binascii_traverse
+2.1068294120096024e-05,0.0,python,executor_is_gc
+2.1067501891632776e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90236
+2.1066124103001047e-05,0.0,zlib.cpython-314-x86_64-linux-gnu.so,0x0000000000003544
+2.1065894471562427e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff081df
+2.1064493719786832e-05,0.0,python,specialize_dict_access.isra.0
+2.1062404073695378e-05,0.0,libcrypto.so.1.1,ASN1_tag2bit
+2.105992405415826e-05,0.0,python,collections_traverse
+2.1057248847898317e-05,0.0,libcrypto.so.1.1,X509_NAME_ENTRY_new
+2.1056755140305283e-05,0.0,[kernel.kallsyms],account_process_tick
+2.1054757346789274e-05,0.0,[kernel.kallsyms],xas_load
+2.105433252862782e-05,0.0,python,PyObject_SetItem
+2.105272510855747e-05,0.0,[kernel.kallsyms],raise_softirq
+2.1052564366550435e-05,0.0,python3.8,PyObject_SetAttr
+2.105177213808719e-05,0.0,[kernel.kallsyms],mark_page_accessed
+2.104962508413608e-05,0.0,[kernel.kallsyms],anon_vma_interval_tree_insert
+2.1048350629651726e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a110
+2.1047156546170894e-05,0.0,python,_Py_uop_frame_new
+2.1045043936935574e-05,0.0,libpython3.11.so.1.0,PyTuple_New
+2.1042391693819496e-05,0.0,python,resolve_name
+2.104211613609315e-05,0.0,python,new_module_notrack
+2.104023315829645e-05,0.0,libpython3.11.so.1.0,unicode_fromformat_write_str
+2.1038005733341818e-05,0.0,[kernel.kallsyms],update_process_times
+2.1037420173173336e-05,0.0,python3.8,PyDict_ClearFreeList
+2.1036076829257396e-05,0.0,python,_Py_uop_sym_new_const
+2.10353764533696e-05,0.0,python,slot_tp_call
+2.1034859782632702e-05,0.0,libpython3.11.so.1.0,PyObject_Realloc
+2.1034480890758975e-05,0.0,libpython3.11.so.1.0,PyObject_Vectorcall
+2.1034297185608078e-05,0.0,python,compiler_exit_scope
+2.103420533303263e-05,0.0,[kernel.kallsyms],__inc_numa_state
+2.1033068657411452e-05,0.0,python,_sre_compile
+2.103302273112373e-05,0.0,libpython3.11.so.1.0,PyNumber_AsSsize_t
+2.1032724210253522e-05,0.0,libpython3.11.so.1.0,PyObject_IS_GC
+2.1032701247109657e-05,0.0,python,_PyPegen_insert_memo
+2.103228791052014e-05,0.0,[kernel.kallsyms],can_vma_merge_before.part.0
+2.1032012352793794e-05,0.0,libpython3.11.so.1.0,sum_rule
+2.1031931981790274e-05,0.0,python,supercheck
+2.1031817166070964e-05,0.0,libpthread-2.31.so,pthread_mutex_unlock
+2.103155308991655e-05,0.0,libpython3.11.so.1.0,_PyPegen_update_memo
+2.103133494004986e-05,0.0,python,rlock_new
+2.1030450859011167e-05,0.0,python3.8,PyFrame_BlockSetup
+2.1030359006435718e-05,0.0,python3.8,PyMember_GetOne
+2.103017530128482e-05,0.0,[JIT],29145                            [.] 0x00007fc761f361e8
+2.1029406035965438e-05,0.0,python,rlock_release
+2.1029371591249644e-05,0.0,python,tuplelength
+2.1029153441382953e-05,0.0,[kernel.kallsyms],lapic_next_deadline
+2.1028969736232056e-05,0.0,libpython3.11.so.1.0,_PyTuple_MaybeUntrack
+2.1028866402084675e-05,0.0,python,dict_subscript
+2.102867121536185e-05,0.0,python3.8,_PyTuple_Resize
+2.1028211952484605e-05,0.0,python,tok_nextc
+2.102817750776881e-05,0.0,libpython3.11.so.1.0,PyObject_GetItem
+2.1027580466028394e-05,0.0,python3.8,PyUnicode_FSConverter
+2.102733935301784e-05,0.0,libpython3.11.so.1.0,_PyCode_New
+2.102712120315115e-05,0.0,[kernel.kallsyms],rcu_qs
+2.10266963849897e-05,0.0,python3.8,PyGrammar_AddAccelerators
+2.102531859635797e-05,0.0,python,bytearray_find
+2.1024319699599964e-05,0.0,python,new_dict
+2.1024296736456103e-05,0.0,python,PyObject_GetItem
+2.1024239328596448e-05,0.0,python,PyUnicode_Format
+2.102374562100341e-05,0.0,libcrypto.so.1.1,ENGINE_set_RSA
+2.1023596360568308e-05,0.0,python,unicode_ascii_iter_next
+2.1023263394982307e-05,0.0,python,method_vectorcall_VARARGS_KEYWORDS
+2.1023251913410374e-05,0.0,[kernel.kallsyms],expand_files
+2.1023160060834926e-05,0.0,python,slot_mp_ass_subscript
+2.102256301909451e-05,0.0,python,bytearray_ass_subscript
+2.1021759309059334e-05,0.0,[kernel.kallsyms],__fsnotify_parent
+2.1021644493340024e-05,0.0,python,_PyUnicodeWriter_Finish
+2.102161004862423e-05,0.0,python,_io_TextIOWrapper___init__
+2.1021437825045262e-05,0.0,python,PyUnicode_FindChar
+2.1020898191164503e-05,0.0,python,emit__DEOPT
+2.1020817820160983e-05,0.0,[kernel.kallsyms],__x64_sys_openat
+2.102077189387326e-05,0.0,python,PyUnicode_DecodeUTF8
+2.102065707815395e-05,0.0,[kernel.kallsyms],__ext4_check_dir_entry
+2.1020634115010086e-05,0.0,[kernel.kallsyms],mem_cgroup_try_charge
+2.1020519299290776e-05,0.0,python,make_dict_from_instance_attributes
+2.1020278186280223e-05,0.0,python,type_qualname
+2.101833780062387e-05,0.0,[kernel.kallsyms],perf_event_mmap_output
+2.101694853042021e-05,0.0,python,setiter_iternext
+2.101673038055352e-05,0.0,[kernel.kallsyms],page_add_new_anon_rmap
+2.1016397414967515e-05,0.0,python,method_vectorcall_FASTCALL_KEYWORDS_METHOD
+2.101537555506565e-05,0.0,python,super_init_impl
+2.1015145923627028e-05,0.0,python,PyLong_AsLong
+2.1014525918742748e-05,0.0,python,PyObject_GC_Track
+2.101418147158482e-05,0.0,python3.8,PyNumber_InPlaceAdd
+2.1014078137437437e-05,0.0,python,fill_time
+2.1013423687837364e-05,0.0,python,tupleitem
+2.1012378864791635e-05,0.0,python,dictbytype
+2.1010989594587977e-05,0.0,python,oserror_init
+2.1010335144987904e-05,0.0,ld-2.31.so,0x00000000000076f0
+2.100934772980183e-05,0.0,python,simple_stmt_rule
+2.100912957993514e-05,0.0,python,term_rule
+2.1008934393212312e-05,0.0,python,PyCapsule_GetPointer
+2.100709734170334e-05,0.0,[kernel.kallsyms],getname_flags
+2.100703993384368e-05,0.0,[kernel.kallsyms],native_irq_return_iret
+2.1005030658755743e-05,0.0,python,PyUnicode_EncodeFSDefault
+2.1004973250896088e-05,0.0,python,emit__IS_OP
+2.0999657283091995e-05,0.0,libc-2.31.so,ioctl
+2.099493835702832e-05,0.0,[kernel.kallsyms],kthread_blkcg
+2.0983835676970957e-05,0.0,python,_Py_CheckFunctionResult
+2.0978221188296657e-05,0.0,python,bytes_concat
+2.0976671176085962e-05,0.0,[kernel.kallsyms],vmacache_update
+2.0967968144562197e-05,0.0,python,object_issubclass
+2.096777295783937e-05,0.0,python,update_symbols
+2.0966946284660333e-05,0.0,python,unicode_eq.lto_priv.1
+2.0961446611705342e-05,0.0,[kernel.kallsyms],change_protection_range
+2.0957956213838293e-05,0.0,[kernel.kallsyms],change_pte_range
+2.0957049169655736e-05,0.0,python,_PyUnicode_ExactDealloc
+2.0952812469613165e-05,0.0,python,PyThread_allocate_lock
+2.0952628764462268e-05,0.0,[kernel.kallsyms],strlen
+2.0919699616163915e-05,0.0,python,primary_rule
+2.0891856804231033e-05,0.0,[kernel.kallsyms],__x64_sys_close
+2.0888814187669295e-05,0.0,dpkg-query,0x00000000000166db
+2.0883613035584515e-05,0.0,python,PyArg_ParseTupleAndKeywords
+2.0829110013627653e-05,0.0,python,sum_rule
+2.0728761074949965e-05,0.0,[kernel.kallsyms],security_mmap_file
+2.064489967356532e-05,0.0,python,PyNumber_Add
+2.062512840669999e-05,0.0,[kernel.kallsyms],ktime_get_coarse_real_ts64
+2.0451044813080873e-05,0.0,[kernel.kallsyms],generic_fillattr
+2.042255903311985e-05,0.0,python,PyLong_FromUnicodeObject
+2.0408884480949925e-05,0.0,python,specialize_attr_loadclassattr.constprop.0
+2.0348158447006416e-05,0.0,dpkg-query,0x000000000000747f
+2.030491884711395e-05,0.0,[kernel.kallsyms],kmem_cache_alloc_trace
+2.029983251074848e-05,0.0,python,solid_base
+2.0216028517223485e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e1ef
+2.020559176833813e-05,0.0,[kernel.kallsyms],ext4_dx_readdir
+2.0166451089625058e-05,0.0,[kernel.kallsyms],cpumask_any_but
+2.0120593691332306e-05,0.0,python,PyArg_ParseTuple
+1.997308993673365e-05,0.0,python,star_named_expressions_rule
+1.996409986591161e-05,0.0,python,analyze_block
+1.9952342736254177e-05,0.0,python,cfunction_call
+1.9951676805082175e-05,0.0,python,strlen@plt
+1.9885979250492506e-05,0.0,[kernel.kallsyms],cp_new_stat
+1.9815792401277782e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b15a
+1.979335740972444e-05,0.0,python,emit__SET_IP
+1.968060837336118e-05,0.0,[kernel.kallsyms],security_vm_enough_memory_mm
+1.960802187561286e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc721a
+1.957565532433913e-05,0.0,[kernel.kallsyms],strncpy_from_user
+1.9422651896785486e-05,0.0,python,_PyObject_SetAttributeErrorContext
+1.9319019228535508e-05,0.0,libc-2.31.so,wcstombs
+1.9302784285824953e-05,0.0,libpython3.11.so.1.0,dict_get
+1.9169862127578778e-05,0.0,python,strings_rule
+1.9048088575677688e-05,0.0,python,gc_list_merge
+1.9018247970228796e-05,0.0,python,_PyUnicode_IsLowercase
+1.900177191450769e-05,0.0,python,tuplecontains
+1.8999533007981128e-05,0.0,python,tupleiter_next
+1.899704150687208e-05,0.0,python,PyObject_RichCompareBool
+1.8970496112567412e-05,0.0,python,portable_lseek
+1.8969979441830514e-05,0.0,[kernel.kallsyms],generic_file_open
+1.8942527003343287e-05,0.0,python,PyObject_VectorcallDict
+1.893121765499117e-05,0.0,[kernel.kallsyms],security_inode_permission
+1.8907806729823688e-05,0.0,python,emit__ERROR_POP_N
+1.886828715923689e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90233
+1.886015820630968e-05,0.0,python,r_long
+1.8802245157489287e-05,0.0,python,_PyFrame_ClearExceptCode
+1.8801039592436522e-05,0.0,[kernel.kallsyms],rcu_all_qs
+1.87878817110035e-05,0.0,python,PyFloat_FromDouble
+1.8727259011207368e-05,0.0,python,memcmp@plt
+1.871784412222388e-05,0.0,python,slice_dealloc
+1.8698417302516482e-05,0.0,[kernel.kallsyms],up_write
+1.86971313664602e-05,0.0,python,float_dealloc
+1.8639447949078427e-05,0.0,python,intern_static.isra.0.part.0
+1.8585392708426876e-05,0.0,python,_tmp_281_rule
+1.8406188333726496e-05,0.0,[kernel.kallsyms],trailing_symlink
+1.8261222006524614e-05,0.0,libpython3.11.so.1.0,PyObject_GetAttr
+1.8224148010759136e-05,0.0,[kernel.kallsyms],atime_needs_update
+1.8117897544108873e-05,0.0,[kernel.kallsyms],__lookup_mnt
+1.8010475957121638e-05,0.0,python3.8,PyModule_GetState
+1.792714270804582e-05,0.0,[kernel.kallsyms],__fput
+1.787910381108616e-05,0.0,[kernel.kallsyms],vma_wants_writenotify
+1.785802364502069e-05,0.0,[kernel.kallsyms],new_sync_read
+1.7823280408357224e-05,0.0,[kernel.kallsyms],rcu_segcblist_enqueue
+1.7818607408581272e-05,0.0,python,_Py_hashtable_destroy
+1.7649805338050455e-05,0.0,python,dictview_dealloc
+1.7552763092088922e-05,0.0,libpython3.11.so.1.0,dict_traverse
+1.751247425618274e-05,0.0,python3.8,PySlice_Unpack
+1.747236912542746e-05,0.0,python,_Py_set_inheritable
+1.7310915260932536e-05,0.0,[kernel.kallsyms],percpu_counter_add_batch
+1.7304749656805544e-05,0.0,python3.8,PyObject_Free
+1.7298733313113655e-05,0.0,libc-2.31.so,pthread_attr_setschedparam
+1.727475979092155e-05,0.0,libc-2.31.so,pthread_cond_signal
+1.721498672744832e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979197
+1.7122491183971497e-05,0.0,python,PyMember_SetOne
+1.708362606298477e-05,0.0,[JIT],29180                            [.] 0x00007f84957a60ff
+1.7072753014366033e-05,0.0,[kernel.kallsyms],account_entity_dequeue
+1.706518665846345e-05,0.0,[kernel.kallsyms],filp_close
+1.7056472145367756e-05,0.0,python,unicode_endswith
+1.694770721446458e-05,0.0,python,frozenset_vectorcall
+1.6893766789532344e-05,0.0,python,PyList_SetSlice
+1.6868725481150647e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e155
+1.6833718168332765e-05,0.0,[kernel.kallsyms],do_dentry_open
+1.673188810687597e-05,0.0,python,_Py_Finalize.constprop.0
+1.668228771613368e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded901ef
+1.6597037044545373e-05,0.0,python,strchr@plt
+1.6593064420657216e-05,0.0,[kernel.kallsyms],___slab_alloc
+1.6429038684049733e-05,0.0,python,_io_FileIO_isatty
+1.6376372713601844e-05,0.0,python,delitem_common
+1.6179107826253865e-05,0.0,python,unicode_join
+1.617312592727777e-05,0.0,python,convert_global_to_const
+1.6160668421732543e-05,0.0,[kernel.kallsyms],lockref_get_not_dead
+1.6157189505437423e-05,0.0,[kernel.kallsyms],memchr
+1.6137337867568577e-05,0.0,python,star_expressions_rule
+1.6136671936396575e-05,0.0,python,arguments_rule
+1.612722260269729e-05,0.0,python,mbuf_release
+1.611010357894804e-05,0.0,python,0x0000000000082730
+1.6101917218161178e-05,0.0,python,gen_dealloc
+1.6093225668209346e-05,0.0,python,_extensions_cache_get
+1.5982003680912922e-05,0.0,python,_PyInstructionSequence_Addop
+1.592570953373481e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e1d8
+1.591800539896905e-05,0.0,python,OSError_new
+1.5907074942490658e-05,0.0,[kernel.kallsyms],acct_collect
+1.5898440800398484e-05,0.0,libc-2.31.so,setlocale
+1.5876545442725903e-05,0.0,python,keys_lock_held
+1.584603890610501e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded9021a
+1.5784428791122804e-05,0.0,[kernel.kallsyms],ext4_file_getattr
+1.576492160041189e-05,0.0,[kernel.kallsyms],__check_heap_object
+1.568313836354677e-05,0.0,python,framelocalsproxy_getkeyindex
+1.56775353564444e-05,0.0,python,resize_compact
+1.5613915966374256e-05,0.0,python,clear_weakref_lock_held
+1.560856555385437e-05,0.0,python,method_vectorcall_VARARGS
+1.5597072500351354e-05,0.0,python,pthread_cond_signal@plt
+1.5574901584952427e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c195
+1.5574637508798013e-05,0.0,libpython3.11.so.1.0,_PyDict_MaybeUntrack
+1.551719520442679e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979149
+1.5423838543055137e-05,0.0,[JIT],29180                            [.] 0x00007f84957a622f
+1.5410370659179974e-05,0.0,[kernel.kallsyms],vm_mmap_pgoff
+1.5316462882355628e-05,0.0,python,_PyUnicode_AsUTF8NoNUL
+1.5287322652794532e-05,0.0,python,_PyErr_SetObject
+1.526128244765483e-05,0.0,python,PyErr_Occurred
+1.5258400573100128e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e1a9
+1.5243750087316062e-05,0.0,[kernel.kallsyms],vfs_statx
+1.512576545415223e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a22f
+1.510356009403751e-05,0.0,python,range_subscript
+1.5057254914439443e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a123
+1.505044634228431e-05,0.0,[kernel.kallsyms],__fget_light
+1.4853445531090746e-05,0.0,[kernel.kallsyms],lockref_put_return
+1.473446200116891e-05,0.0,[kernel.kallsyms],vma_interval_tree_insert
+1.4683036040489578e-05,0.0,[kernel.kallsyms],do_last
+1.4663609220782181e-05,0.0,[JIT],29132                            [.] 0x00007f0341873070
+1.4644480921944992e-05,0.0,python,enum_next
+1.4623572979458487e-05,0.0,python,os_fspath
+1.4603744304733502e-05,0.0,python,_PyLong_Subtract
+1.4523889971952802e-05,0.0,python,PyLong_AsInt
+1.4491316752384314e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90213
+1.4478641096972395e-05,0.0,[kernel.kallsyms],rmqueue
+1.4474840696663207e-05,0.0,python,slot_sq_length
+1.4473439944887614e-05,0.0,python,type_setattro
+1.4446400842989908e-05,0.0,python,_PyObject_VectorcallTstate.lto_priv.1
+1.4417306539716537e-05,0.0,python,dictiter_len
+1.4407811279729529e-05,0.0,python,_Py_NewReference
+1.438708704239392e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b253
+1.4360863132103322e-05,0.0,python,weakref_vectorcall
+1.4312330527550623e-05,0.0,libpython3.11.so.1.0,set_traverse
+1.4210764542248242e-05,0.0,[kernel.kallsyms],kmalloc_slab
+1.4205965245181047e-05,0.0,python,PyImport_Import
+1.4197342584660802e-05,0.0,python,list___reversed__
+1.4186607314905238e-05,0.0,python,set_table_resize
+1.4183989516504952e-05,0.0,python,method_vectorcall
+1.4107981510321166e-05,0.0,binascii.cpython-314-x86_64-linux-gnu.so,__do_global_dtors_aux
+1.4073777907538462e-05,0.0,[kernel.kallsyms],__legitimize_mnt
+1.3931877160042178e-05,0.0,python,PyUnicode_RichCompare
+1.3927801202006643e-05,0.0,[kernel.kallsyms],swapgs_restore_regs_and_return_to_usermode
+1.3879796749762775e-05,0.0,libpython3.11.so.1.0,_PyEval_SliceIndex
+1.385594952486191e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b0ff
+1.3826430403427089e-05,0.0,[kernel.kallsyms],__radix_tree_lookup
+1.3801056129459391e-05,0.0,python,import_star
+1.3792973102819908e-05,0.0,python,__errno_location@plt
+1.358503035357602e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff081da
+1.3443209977083254e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c9145
+1.3411222317683249e-05,0.0,[kernel.kallsyms],find_next_bit
+1.3395779603435939e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b1ef
+1.3383356542606505e-05,0.0,python,iobase_enter
+1.3270274540657245e-05,0.0,python,tuplesubscript
+1.3161980354203248e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff081c3
+1.2717792780905348e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e164
+1.2682601762936571e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c9155
+1.245008844976016e-05,0.0,python,PyWrapper_New
+1.2447918432665186e-05,0.0,python,best_base
+1.2219974785117346e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04110
+1.2217931065313615e-05,0.0,[JIT],29186                            [.] 0x00007f5fa263417d
+1.218161485329559e-05,0.0,[JIT],29183                            [.] 0x00007f312124b17b
+1.2088901159952077e-05,0.0,libpython3.11.so.1.0,0x00000000000fd1f4
+1.1861543072572723e-05,0.0,libpython3.11.so.1.0,PyObject_GenericGetAttr
+1.1855285615870282e-05,0.0,python,_io_FileIO_readall_impl.isra.0
+1.1836444356331371e-05,0.0,[JIT],29159                            [.] 0x00007f252e029145
+1.1807040050615862e-05,0.0,[kernel.kallsyms],__follow_mount_rcu.isra.0
+1.1517532214373543e-05,0.0,libpython3.11.so.1.0,subtype_traverse
+1.1465107356936208e-05,0.0,dpkg-query,0x000000000000cba0
+1.1260035000675092e-05,0.0,python,insert_weakref
+1.1200732681651035e-05,0.0,[kernel.kallsyms],native_irq_return_iret
+1.1055146349564872e-05,0.0,python,store_instance_attr_lock_held
+1.0992755487691355e-05,0.0,[kernel.kallsyms],mem_cgroup_from_task
+1.0800531010421123e-05,0.0,libpython3.11.so.1.0,type_traverse
+1.0692248305539057e-05,0.0,[kernel.kallsyms],xas_start
+1.0637010462978606e-05,0.0,[kernel.kallsyms],native_flush_tlb_one_user
+1.0594402349542347e-05,0.0,libpython3.11.so.1.0,path_converter
+1.0563574328907383e-05,0.0,libpython3.11.so.1.0,PyObject_SetAttr
+1.0559567260303434e-05,0.0,[JIT],29165                            [.] 0x00007f1beec0412e
+1.0559337628864813e-05,0.0,[JIT],29156                            [.] 0x00007f979c040215
+1.0558740587124396e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979213
+1.0558717623980533e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff0818f
+1.0558648734548948e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff08197
+1.0558510955685775e-05,0.0,[JIT],29180                            [.] 0x00007f84957a619b
+1.055845354782612e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04244
+1.0558442066254187e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c91f3
+1.0558396139966463e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded901ab
+1.0558304287391014e-05,0.0,[JIT],29177                            [.] 0x00007f89e892b171
+1.055824687953136e-05,0.0,[kernel.kallsyms],tick_program_event
+1.0557959840233083e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979145
+1.0557902432373428e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a136
+1.055783354294184e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26341c9
+1.0557810579797979e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e1d8
+1.0557799098226047e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04164
+1.0557776135082185e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6187
+1.0557741690366392e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6197
+1.0557649837790943e-05,0.0,[JIT],29159                            [.] 0x00007f252e029136
+1.0557535022071633e-05,0.0,[JIT],29156                            [.] 0x00007f979c040181
+1.0557466132640046e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a18b
+1.0557385761636528e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e1f7
+1.0557385761636528e-05,0.0,[JIT],29165                            [.] 0x00007f1beec041a5
+1.0557351316920736e-05,0.0,[JIT],29168                            [.] 0x00007f12415c81d8
+1.0557351316920736e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b1a3
+1.0557351316920736e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c138
+1.0557328353776873e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff08137
+1.0557305390633011e-05,0.0,[JIT],29156                            [.] 0x00007f979c0401ab
+1.0557156130197906e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7170
+1.0557156130197906e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c91ab
+1.0557133167054045e-05,0.0,[JIT],29159                            [.] 0x00007f252e02919f
+1.0557064277622457e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b145
+1.0557006869762802e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b123
+1.0556995388190872e-05,0.0,[JIT],29147                            [.] 0x00007f7db89790ff
+1.0556995388190872e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c90ec
+1.0556972425047009e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6170
+1.0556903535615423e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c155
+1.055686909089963e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c917d
+1.0556788719896111e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b170
+1.055676575675225e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c123
+1.0556742793608387e-05,0.0,[JIT],29159                            [.] 0x00007f252e029149
+1.0556742793608387e-05,0.0,[JIT],29168                            [.] 0x00007f12415c8197
+1.0556582051601353e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c1e5
+1.055657057002942e-05,0.0,[JIT],29165                            [.] 0x00007f1beec041df
+1.0556536125313628e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded900d5
+1.0556513162169765e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c1cd
+1.0556513162169765e-05,0.0,[JIT],29180                            [.] 0x00007f84957a60d5
+1.0556478717453972e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc71b3
+1.0556467235882041e-05,0.0,[JIT],29165                            [.] 0x00007f1beec041f3
+1.055645575431011e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c60ec
+1.055645575431011e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff08176
+1.055645575431011e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff081e5
+1.055645575431011e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded9018b
+1.0556432791166247e-05,0.0,[JIT],29156                            [.] 0x00007f979c04019b
+1.0556432791166247e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c61fe
+1.0556363901734662e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c74a6
+1.0556306493875007e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b129
+1.0556260567587283e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04170
+1.0556191678155695e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e18f
+1.0556191678155695e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90164
+1.0556180196583765e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c136
+1.0556157233439901e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded9018f
+1.055614575186797e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90155
+1.0556076862436385e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc71ef
+1.0556007973004798e-05,0.0,[JIT],29147                            [.] 0x00007f7db897917d
+1.0555985009860937e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b17b
+1.0555973528289004e-05,0.0,[JIT],29165                            [.] 0x00007f1beec0440c
+1.055592760200128e-05,0.0,[JIT],29168                            [.] 0x00007f12415c815a
+1.0555893157285488e-05,0.0,[JIT],29156                            [.] 0x00007f979c0401da
+1.0555893157285488e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26341fe
+1.0555755378422315e-05,0.0,[JIT],29168                            [.] 0x00007f12415c81e5
+1.0555755378422315e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff0623e
+1.0555743896850383e-05,0.0,[JIT],29147                            [.] 0x00007f7db89790ec
+1.0555697970562658e-05,0.0,[JIT],29156                            [.] 0x00007f979c04016b
+1.0555675007418797e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6145
+1.0555640562703003e-05,0.0,[JIT],29156                            [.] 0x00007f979c040137
+1.0555640562703003e-05,0.0,[JIT],29183                            [.] 0x00007f312124b129
+1.0555640562703003e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c9149
+1.0555537228555624e-05,0.0,[JIT],29156                            [.] 0x00007f979c0401fe
+1.05554913022679e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c244
+1.0555479820695967e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e110
+1.0555456857552106e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e1c3
+1.0555445375980175e-05,0.0,[JIT],29180                            [.] 0x00007f84957a61fb
+1.0555422412836312e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6170
+1.0555353523404727e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded901e5
+1.0555261670829278e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc71df
+1.055516981825383e-05,0.0,[JIT],29183                            [.] 0x00007f312124b170
+1.0555112410394173e-05,0.0,[JIT],29168                            [.] 0x00007f12415c8155
+1.055507796567838e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04123
+1.0555020557818724e-05,0.0,[JIT],29171                            [.] 0x00007f9da238a36a
+1.0554997594674863e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979200
+1.0554997594674863e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e136
+1.0554813889523965e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c215
+1.0554802407952035e-05,0.0,[JIT],29159                            [.] 0x00007f252e0291fb
+1.0554802407952035e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c1f3
+1.0554779444808172e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c213
+1.0554745000092378e-05,0.0,[JIT],29183                            [.] 0x00007f312124b145
+1.0554745000092378e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b213
+1.0554733518520447e-05,0.0,[JIT],29168                            [.] 0x00007f12415c822f
+1.0554618702801137e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979132
+1.0554618702801137e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e0ec
+1.0554595739657274e-05,0.0,[JIT],29183                            [.] 0x00007f312124b151
+1.055456129494148e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c91f7
+1.0554492405509895e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c181
+1.0554492405509895e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b233
+1.055444647922217e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff08215
+1.0554251292499343e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c1ab
+1.0554251292499343e-05,0.0,[JIT],29156                            [.] 0x00007f979c0400ec
+1.0554216847783549e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a246
+1.0554170921495825e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6137
+1.0554033142632652e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e181
+1.055392980848527e-05,0.0,[JIT],29183                            [.] 0x00007f312124b197
+1.055392980848527e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c919b
+1.055391832691334e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c233
+1.0553872400625616e-05,0.0,[JIT],29183                            [.] 0x00007f312124b164
+1.0553872400625616e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c91b8
+1.0553849437481754e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c912e
+1.0553849437481754e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f1b8
+1.0553849437481754e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c144
+1.0553792029622098e-05,0.0,dpkg-query,0x00000000000126b7
+1.0553780548050167e-05,0.0,[JIT],29183                            [.] 0x00007f312124b1fb
+1.0553711658618581e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c9215
+1.0553677213902788e-05,0.0,[JIT],29159                            [.] 0x00007f252e029129
+1.0553665732330857e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634181
+1.0553654250758925e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791b4
+1.0553654250758925e-05,0.0,[JIT],29159                            [.] 0x00007f252e02917d
+1.0553562398183476e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded9022f
+1.0553504990323821e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e164
+1.055348202717996e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04136
+1.0553413137748372e-05,0.0,dpkg-query,0x000000000000f360
+1.0553413137748372e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04138
+1.0553378693032579e-05,0.0,[JIT],29180                            [.] 0x00007f84957a60ec
+1.0553344248316787e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6197
+1.0553298322029062e-05,0.0,[JIT],29168                            [.] 0x00007f12415c811f
+1.0553240914169406e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c1af
+1.055317202473782e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f15a
+1.0553114616878165e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e176
+1.0553091653734302e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e1b4
+1.0553080172162371e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979244
+1.0553080172162371e-05,0.0,[JIT],29183                            [.] 0x00007f312124b215
+1.055306869059044e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e1a5
+1.0553011282730784e-05,0.0,[JIT],29156                            [.] 0x00007f979c040170
+1.0552816096007956e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c9244
+1.0552758688148301e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc70ec
+1.0552724243432507e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979151
+1.0552678317144783e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c1da
+1.0552620909285128e-05,0.0,[JIT],29195                            [.] 0x00007fc47a5c60da
+1.0552574982997404e-05,0.0,[JIT],29183                            [.] 0x00007f312124b181
+1.055254053828161e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c91df
+1.055254053828161e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b200
+1.0552448685706161e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26341d8
+1.0552414240990368e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c61c9
+1.0552414240990368e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff0818b
+1.0552161646407885e-05,0.0,dpkg-query,0x0000000000012314
+1.0552138683264022e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c7466
+1.0552023867544712e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b215
+1.055201238597278e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc71fb
+1.0551966459685055e-05,0.0,[JIT],29147                            [.] 0x00007f7db89791d8
+1.0551966459685055e-05,0.0,[JIT],29165                            [.] 0x00007f1beec041b3
+1.0551954978113125e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c922f
+1.0551863125537676e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded9016b
+1.0551851643965745e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc718f
+1.0551851643965745e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e15a
+1.0551805717678021e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff08145
+1.0551782754534158e-05,0.0,[JIT],29183                            [.] 0x00007f312124b1f3
+1.0551759791390297e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc71d8
+1.0551759791390297e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f1d1
+1.0551713865102572e-05,0.0,dpkg-query,0x000000000000f3c6
+1.0551702383530642e-05,0.0,[JIT],29147                            [.] 0x00007f7db897723e
+1.0551679420386779e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c1c3
+1.0551667938814848e-05,0.0,[JIT],29186                            [.] 0x00007f5fa263422f
+1.0551656457242917e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e0d5
+1.0551644975670985e-05,0.0,[JIT],29159                            [.] 0x00007f252e02919b
+1.0551633494099054e-05,0.0,[JIT],29156                            [.] 0x00007f979c040253
+1.0551633494099054e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c164
+1.0551564604667469e-05,0.0,[JIT],29183                            [.] 0x00007f312124b18b
+1.0551564604667469e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c1bc
+1.0551530159951675e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c1fb
+1.0551507196807812e-05,0.0,[JIT],29159                            [.] 0x00007f252e029164
+1.055148423366395e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c17d
+1.055148423366395e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a244
+1.0551403862660433e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26341a5
+1.0551369417944639e-05,0.0,[JIT],29168                            [.] 0x00007f12415c8170
+1.0551323491656915e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634176
+1.0551243120653398e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634137
+1.0551220157509535e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b245
+1.0551197194365674e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c61eb
+1.0551197194365674e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c91c3
+1.0551128304934087e-05,0.0,[JIT],29183                            [.] 0x00007f312124b1fe
+1.0551070897074432e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90149
+1.055095608135512e-05,0.0,[JIT],29168                            [.] 0x00007f12415c818f
+1.055094459978319e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f181
+1.055085274720774e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7155
+1.055084126563581e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634149
+1.0550818302491947e-05,0.0,[JIT],29147                            [.] 0x00007f7db897736a
+1.0550806820920016e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c170
+1.0550680523628774e-05,0.0,[JIT],29186                            [.] 0x00007f5fa263418f
+1.0550623115769119e-05,0.0,[JIT],29168                            [.] 0x00007f12415c8164
+1.0550623115769119e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6129
+1.0550508300049807e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04197
+1.0550496818477877e-05,0.0,[JIT],29180                            [.] 0x00007f84957a61ef
+1.0550473855334015e-05,0.0,[JIT],29159                            [.] 0x00007f252e029155
+1.0550278668611186e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c9136
+1.0550163852891876e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c19b
+1.0550117926604151e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634246
+1.0550049037172564e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e11f
+1.0549957184597115e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6123
+1.0549922739881323e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634136
+1.0549911258309391e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b1d8
+1.0549807924162012e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a155
+1.0549796442590081e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c1a5
+1.0549612737439184e-05,0.0,dpkg-query,0x0000000000010775
+1.054958977429532e-05,0.0,[JIT],29147                            [.] 0x00007f7db8979164
+1.054958977429532e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c1fb
+1.054957829272339e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a1c3
+1.0549520884863735e-05,0.0,[JIT],29180                            [.] 0x00007f84957a61f3
+1.0549497921719872e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded901cd
+1.0549451995432148e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f155
+1.0549371624428631e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f0e1
+1.0549325698140905e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c91ef
+1.0549302734997044e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f149
+1.0549302734997044e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b181
+1.0549291253425113e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c616b
+1.054925680870932e-05,0.0,dpkg-query,0x000000000000db14
+1.054925680870932e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f1b3
+1.0549073103558422e-05,0.0,[JIT],29183                            [.] 0x00007f312124b200
+1.054905014041456e-05,0.0,[JIT],29147                            [.] 0x00007f7db897915a
+1.0548969769411043e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7200
+1.054893532469525e-05,0.0,[JIT],29156                            [.] 0x00007f979c0401b8
+1.054883199054787e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c9200
+1.0548763101116283e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a19b
+1.0548717174828558e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e253
+1.0548659766968903e-05,0.0,[JIT],29186                            [.] 0x00007f5fa263421a
+1.0548579395965385e-05,0.0,[JIT],29165                            [.] 0x00007f1beec040d5
+1.0548430135530282e-05,0.0,[JIT],29159                            [.] 0x00007f252e029233
+1.0548349764526764e-05,0.0,[JIT],29183                            [.] 0x00007f312124b1bc
+1.054830383823904e-05,0.0,[JIT],29159                            [.] 0x00007f252e02918f
+1.0548074206800418e-05,0.0,dpkg-query,0x000000000000ec34
+1.054777568593021e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a149
+1.0547511609775795e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c1df
+1.0547500128203863e-05,0.0,[JIT],29183                            [.] 0x00007f312124b1d8
+1.0547488646631932e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7181
+1.0547431238772277e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff081ab
+1.0547316423052966e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c233
+1.0547201607333656e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f1a5
+1.0547109754758207e-05,0.0,[JIT],29165                            [.] 0x00007f1beec0418b
+1.0547075310042413e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634253
+1.0547052346898552e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e1e5
+1.0546983457466965e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c18b
+1.0546914568035379e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c253
+1.0546524194589721e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c467d
+1.0546397897298479e-05,0.0,[JIT],29159                            [.] 0x00007f252e02918b
+1.0546214192147582e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f1e5
+1.0546133821144064e-05,0.0,dpkg-query,0x0000000000011360
+1.0546053450140547e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc715a
+1.054597307913703e-05,0.0,[JIT],29156                            [.] 0x00007f979c0401ef
+1.0545892708133511e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c21a
+1.0545743447698408e-05,0.0,[kernel.kallsyms],mem_cgroup_throttle_swaprate
+1.0545410482112407e-05,0.0,[JIT],29180                            [.] 0x00007f84957a6137
+1.0545399000540474e-05,0.0,[kernel.kallsyms],__do_sys_newstat
+1.0545203813817646e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c200
+1.0545054553382543e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b0ec
+1.0544514919501781e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c4192
+1.0544411585354402e-05,0.0,[JIT],29171                            [.] 0x00007f9da238a560
+1.054438862221054e-05,0.0,libcrypto.so.1.1,memcmp@plt
+1.0544319732778954e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc71d1
+1.0544308251207021e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c0d5
+1.0544308251207021e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90244
+1.054429676963509e-05,0.0,[JIT],29180                            [.] 0x00007f84957a61ab
+1.0544239361775436e-05,0.0,[kernel.kallsyms],free_pcppages_bulk
+1.0544216398631573e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c91cd
+1.054418195391578e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c60d5
+1.0544032693480675e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c1e5
+1.0543952322477159e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c21a
+1.0543940840905227e-05,0.0,[kernel.kallsyms],tick_sched_handle
+1.0543929359333296e-05,0.0,libpython3.11.so.1.0,_PyLong_Add
+1.0543803062042054e-05,0.0,libcrypto.so.1.1,ASN1_item_i2d_fp
+1.054375713575433e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c11f
+1.0543619356891156e-05,0.0,libcrypto.so.1.1,OPENSSL_sk_insert
+1.0543596393747295e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc71b8
+1.0543596393747295e-05,0.0,libpthread-2.31.so,__pthread_rwlock_wrlock
+1.0543481578027983e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7236
+1.0543355280736743e-05,0.0,[JIT],29171                            [.] 0x00007f9da238a640
+1.0542494162841911e-05,0.0,libcrypto.so.1.1,BN_GENCB_get_arg
+1.054227601297522e-05,0.0,[kernel.kallsyms],kthread_blkcg
+1.0542057863108529e-05,0.0,libpython3.11.so.1.0,_PyFrame_FastToLocalsWithError
+1.0542011936820805e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c200
+1.054196601053308e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c236
+1.054185119481377e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c246
+1.054174786066639e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f246
+1.0541736379094459e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f12e
+1.0541575637087424e-05,0.0,dpkg-query,0x000000000000f34a
+1.0541495266083906e-05,0.0,libcrypto.so.1.1,BN_free
+1.0541185263641767e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c129
+1.0541150818925973e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c916b
+1.054102452163473e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a1fe
+1.0540829334911903e-05,0.0,[JIT],29168                            [.] 0x00007f12415c81fe
+1.054070303762066e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e137
+1.0540611185045212e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c619b
+1.054057674032942e-05,0.0,[JIT],29159                            [.] 0x00007f252df239cd
+1.0540565258757487e-05,0.0,libpython3.11.so.1.0,dictiter_iternextitem
+1.0540484887753971e-05,0.0,dpkg-query,0x0000000000010aa6
+1.0540393035178523e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26340ff
+1.054026673788728e-05,0.0,[JIT],29189                            [.] 0x00007fcc3fe02722
+1.0540220811599556e-05,0.0,python,gc_collect
+1.0540186366883762e-05,0.0,libcrypto.so.1.1,OPENSSL_sk_value
+1.0540094514308314e-05,0.0,[JIT],29153                            [.] 0x00007fcfc7f7e1fb
+1.053994525387321e-05,0.0,[JIT],29183                            [.] 0x00007f3121245857
+1.0539692659290725e-05,0.0,libcrypto.so.1.1,OBJ_nid2obj
+1.0539600806715277e-05,0.0,python,do_gc_callback.isra.0
+1.0539313767417e-05,0.0,[JIT],29150                            [.] 0x00007f15a398c0a3
+1.053930228584507e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f123
+1.0539256359557345e-05,0.0,libpython3.11.so.1.0,PyUnicode_Substring
+1.0539233396413482e-05,0.0,[JIT],29174                            [.] 0x00007f5a124c6245
+1.0539198951697688e-05,0.0,python3.8,PyUnicode_RPartition
+1.0539084135978378e-05,0.0,[kernel.kallsyms],hrtimer_update_next_event
+1.0539049691262585e-05,0.0,dpkg-query,0x000000000000ec2a
+1.0539026728118723e-05,0.0,array.cpython-314-x86_64-linux-gnu.so,array_traverse
+1.0538739688820445e-05,0.0,python3.8,PyUnicode_InternInPlace
+1.0538716725676584e-05,0.0,dpkg-query,0x0000000000016992
+1.053868228096079e-05,0.0,python,thread_module_traverse
+1.0538647836244996e-05,0.0,_socket.cpython-314-x86_64-linux-gnu.so,0x0000000000004f84
+1.0538510057381823e-05,0.0,[JIT],29168                            [.] 0x00007f12415c8137
+1.0538349315374789e-05,0.0,python,_posix_traverse
+1.0538211536511616e-05,0.0,dpkg-query,0x000000000000f143
+1.0538188573367753e-05,0.0,zlib.cpython-314-x86_64-linux-gnu.so,0x0000000000003540
+1.053815412865196e-05,0.0,[kernel.kallsyms],tick_sched_do_timer
+1.0538131165508098e-05,0.0,_socket.cpython-314-x86_64-linux-gnu.so,0x0000000000004f80
+1.0538085239220374e-05,0.0,[kernel.kallsyms],update_vsyscall
+1.0538073757648443e-05,0.0,[JIT],29168                            [.] 0x00007f12415c8129
+1.053806227607651e-05,0.0,[JIT],29156                            [.] 0x00007f979c04015a
+1.0538027831360719e-05,0.0,[kernel.kallsyms],page_remove_rmap
+1.0538004868216856e-05,0.0,python,time_module_traverse
+1.0537844126209821e-05,0.0,[JIT],29207                            [.] 0x00007fa55f67c200
+1.0537798199922097e-05,0.0,[JIT],29156                            [.] 0x00007f979c0400ff
+1.0537798199922097e-05,0.0,[kernel.kallsyms],do_timer
+1.0537786718350165e-05,0.0,[JIT],29165                            [.] 0x00007f1beec04129
+1.0537775236778234e-05,0.0,[JIT],29168                            [.] 0x00007f12415c81c3
+1.053762597634313e-05,0.0,[JIT],29168                            [.] 0x00007f12415c8149
+1.0537545605339612e-05,0.0,[kernel.kallsyms],__lock_text_start
+1.0537545605339612e-05,0.0,python,_PyInterpreterState_New
+1.0537534123767682e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e137
+1.0537361900188715e-05,0.0,python,PyThreadHandleObject_traverse
+1.0537086342462369e-05,0.0,[JIT],29165                            [.] 0x00007f1beec0419b
+1.0537063379318508e-05,0.0,libcrypto.so.1.1,OBJ_bsearch_ex_
+1.0537051897746575e-05,0.0,python,_PyType_FromMetaclass_impl.cold
+1.0537040416174645e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2634123
+1.0537040416174645e-05,0.0,python,0x0000000000082740
+1.0537017453030783e-05,0.0,python,PyTime_AsSecondsDouble
+1.0536971526743059e-05,0.0,_datetime.cpython-314-x86_64-linux-gnu.so,module_traverse
+1.0536891155739541e-05,0.0,_lzma.cpython-314-x86_64-linux-gnu.so,0x0000000000003610
+1.0536787821592162e-05,0.0,[JIT],29156                            [.] 0x00007f979c040246
+1.0536581153297402e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f215
+1.0536581153297402e-05,0.0,[kernel.kallsyms],ntp_tick_length
+1.0536558190153538e-05,0.0,[JIT],29147                            [.] 0x00007f7db89774e0
+1.0536385966574574e-05,0.0,python,count_traverse
+1.0536282632427193e-05,0.0,_struct.cpython-314-x86_64-linux-gnu.so,_structmodule_traverse
+1.0536259669283331e-05,0.0,_decimal.cpython-314-x86_64-linux-gnu.so,decimal_traverse
+1.0536121890420158e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc719b
+1.0536110408848228e-05,0.0,[JIT],29168                            [.] 0x00007f12415c81fb
+1.0536087445704365e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded900ec
+1.0535984111556985e-05,0.0,libpython3.11.so.1.0,listiter_dealloc
+1.0535811887978019e-05,0.0,[kernel.kallsyms],x86_pmu_disable
+1.0535639664399052e-05,0.0,[JIT],29156                            [.] 0x00007f979c0401f3
+1.0535570774967466e-05,0.0,dpkg-query,0x000000000001232b
+1.0535559293395536e-05,0.0,[kernel.kallsyms],psi_task_change
+1.0535547811823603e-05,0.0,dpkg-query,0x0000000000007485
+1.0535524848679742e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2c110
+1.0535432996104293e-05,0.0,[kernel.kallsyms],__accumulate_pelt_segments
+1.0535203364665672e-05,0.0,python,wrapper_traverse
+1.0535122993662154e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c1bc
+1.0535031141086705e-05,0.0,_random.cpython-314-x86_64-linux-gnu.so,_random_traverse
+1.0535031141086705e-05,0.0,libcrypto.so.1.1,BN_lshift
+1.0535019659514774e-05,0.0,dpkg-query,0x000000000000f18b
+1.0534927806939326e-05,0.0,libc-2.31.so,__gconv_get_alias_db
+1.0534881880651601e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc7137
+1.0534847435935808e-05,0.0,[kernel.kallsyms],apic_timer_interrupt
+1.053476706493229e-05,0.0,[JIT],29204                            [.] 0x00007f12b537b110
+1.0534755583360359e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f1a3
+1.0534721138644565e-05,0.0,[JIT],29159                            [.] 0x00007f252e0291cd
+1.0534721138644565e-05,0.0,python,rlock_traverse
+1.0534606322925255e-05,0.0,[JIT],29204                            [.] 0x00007f12b5379435
+1.0534560396637531e-05,0.0,binascii.cpython-314-x86_64-linux-gnu.so,0x00000000000022e4
+1.0534537433493668e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6c9129
+1.0534525951921737e-05,0.0,[JIT],29171                            [.] 0x00007f9da238c246
+1.0534468544062082e-05,0.0,[JIT],29180                            [.] 0x00007f84957a618f
+1.0534468544062082e-05,0.0,_lzma.cpython-314-x86_64-linux-gnu.so,lzma_traverse
+1.0534376691486634e-05,0.0,[kernel.kallsyms],trigger_load_balance
+1.05340322443287e-05,0.0,[JIT],29159                            [.] 0x00007f252e0275cb
+1.0533951873325182e-05,0.0,[JIT],29162                            [.] 0x00007f2b23fc413f
+1.0533860020749734e-05,0.0,[JIT],29147                            [.] 0x00007f7db897919f
+1.0533745205030424e-05,0.0,[JIT],29128                            [.] 0x00007f82b62bf13d
+1.0533435202588284e-05,0.0,[JIT],29165                            [.] 0x00007f1beec0416b
+1.0533377794728629e-05,0.0,libpython3.11.so.1.0,builtin_min
+1.0533354831584766e-05,0.0,python,PyObject_IS_GC
+1.0533320386868972e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a215
+1.0533308905297042e-05,0.0,zlib.cpython-314-x86_64-linux-gnu.so,zlib_traverse
+1.0533228534293524e-05,0.0,[JIT],29168                            [.] 0x00007f12414c25f7
+1.0533113718574214e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff0822f
+1.0533102237002283e-05,0.0,python,data_stack_grow
+1.053297593971104e-05,0.0,dpkg-query,0x0000000000007474
+1.053296445813911e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff08129
+1.053244778740221e-05,0.0,[JIT],29198                            [.] 0x00007fa4dec8a5fb
+1.053244778740221e-05,0.0,libpython3.11.so.1.0,_PyAST_arguments
+1.0532424824258349e-05,0.0,[JIT],29168                            [.] 0x00007f12415c81ef
+1.0532137784960072e-05,0.0,libcrypto.so.1.1,EVP_desx_cbc
+1.0532034450812691e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded9011f
+1.0531896671949518e-05,0.0,[JIT],29165                            [.] 0x00007f1beec022ef
+1.0531839264089863e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b15f0ec
+1.0531735929942484e-05,0.0,[JIT],29177                            [.] 0x00007f89e8a2e18f
+1.0531735929942484e-05,0.0,[JIT],29192                            [.] 0x00007f44de838606
+1.053170148522669e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded901fb
+1.0531529261647724e-05,0.0,[JIT],29132                            [.] 0x00007f0341ab85b5
+1.0531414445928414e-05,0.0,dpkg-query,0x0000000000019370
+1.0531402964356481e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff081b4
+1.053117333291786e-05,0.0,python,interpreter_clear
+1.0531001109338895e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90215
+1.053075999632834e-05,0.0,[JIT],29132                            [.] 0x00007f03412202e9
+1.0530725551612549e-05,0.0,python,operator_traverse
+1.0530495920173927e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a16b
+1.0530185917731787e-05,0.0,[JIT],29127                            [.] 0x00007f299fce90f5
+1.0530139991444063e-05,0.0,[JIT],29128                            [.] 0x00007f82b640402d
+1.0529921841577372e-05,0.0,[kernel.kallsyms],__mod_zone_page_state
+1.0529887396861578e-05,0.0,[JIT],29180                            [.] 0x00007f8495a13fbb
+1.0529497023415922e-05,0.0,libcrypto.so.1.1,BN_is_prime_fasttest
+1.0529221465689576e-05,0.0,python,PyByteArray_FromStringAndSize
+1.0529198502545713e-05,0.0,libpython3.11.so.1.0,0x00000000000fa024
+1.0528681831808815e-05,0.0,python,args_rule
+1.0528670350236883e-05,0.0,[JIT],29132                            [.] 0x00007f0341876132
+1.0528635905521091e-05,0.0,[JIT],29132                            [.] 0x00007f0340046514
+1.0528635905521091e-05,0.0,python,uop_dealloc
+1.0528612942377228e-05,0.0,[JIT],29128                            [.] 0x00007f82b640e1cd
+1.0528337384650882e-05,0.0,libcrypto.so.1.1,ASN1_item_ex_free
+1.0528199605787709e-05,0.0,libpython3.11.so.1.0,set_difference
+1.0528119234784191e-05,0.0,[JIT],29136                            [.] 0x00007fd76e1d72a6
+1.052810775321226e-05,0.0,[kernel.kallsyms],smp_apic_timer_interrupt
+1.0527912566489432e-05,0.0,python,_io_StringIO_closed_get
+1.0527705898194672e-05,0.0,python,iomodule_clear
+1.0527591082475362e-05,0.0,python,_PyInterpreterState_GetAllocatedBlocks
+1.0527556637759568e-05,0.0,libpython3.11.so.1.0,PyUnicode_FromFormatV
+1.0527453303612189e-05,0.0,libpython3.11.so.1.0,PyList_New
+1.0527430340468326e-05,0.0,python3.8,PyList_AsTuple
+1.0527062930166531e-05,0.0,[JIT],29186                            [.] 0x00007f5fa26cb3c4
+1.0527017003878807e-05,0.0,python,partial_traverse
+1.0527005522306876e-05,0.0,[JIT],29136                            [.] 0x00007fd76e0ad335
+1.0526948114447221e-05,0.0,[kernel.kallsyms],__pagevec_lru_add_fn
+1.052684478029984e-05,0.0,[JIT],29145                            [.] 0x00007fc76312e3e2
+1.0526661075148943e-05,0.0,[JIT],29128                            [.] 0x00007f82b80e6611
+1.0526626630433151e-05,0.0,python,builtin_sorted
+1.0526557741001564e-05,0.0,[kernel.kallsyms],free_unref_page_list
+1.05262018122717e-05,0.0,python,lru_cache_make_key
+1.0526109959696251e-05,0.0,libpython3.11.so.1.0,slot_tp_setattro
+1.0526075514980459e-05,0.0,[JIT],29128                            [.] 0x00007f82b75db0da
+1.0526029588692735e-05,0.0,python,copy_values
+1.0525960699261147e-05,0.0,libpython3.11.so.1.0,getset_get
+1.0525937736117286e-05,0.0,[kernel.kallsyms],calc_global_load
+1.0525926254545354e-05,0.0,python3.8,_PyObject_SetAttrId
+1.052577699411025e-05,0.0,[JIT],29127                            [.] 0x00007f299fce98ae
+1.0525754030966389e-05,0.0,[JIT],29128                            [.] 0x00007f82b6e1f221
+1.0525685141534801e-05,0.0,libpython3.11.so.1.0,range_subscript
+1.0525294768089144e-05,0.0,[JIT],29132                            [.] 0x00007f033fdf0001
+1.0525191433941764e-05,0.0,_datetime.cpython-314-x86_64-linux-gnu.so,microseconds_to_delta_ex
+1.0525179952369834e-05,0.0,libpython3.11.so.1.0,gen_iternext
+1.0525088099794385e-05,0.0,[JIT],29171                            [.] 0x00007f9da273f0e5
+1.0524984765647006e-05,0.0,libpython3.11.so.1.0,PyFunction_New
+1.0524973284075073e-05,0.0,python3.8,PyDict_SetItem
+1.0524582910629418e-05,0.0,[JIT],29128                            [.] 0x00007f82b6aca8be
+1.0524468094910106e-05,0.0,python3.8,PyList_ClearFreeList
+1.0524364760762727e-05,0.0,[JIT],29136                            [.] 0x00007fd76c8fe070
+1.0524204018755692e-05,0.0,libpython3.11.so.1.0,0x00000000000fc080
+1.052419253718376e-05,0.0,[JIT],29127                            [.] 0x00007f299fcb95c6
+1.052375623745038e-05,0.0,libpython3.11.so.1.0,vgetargs1_impl
+1.0523710311162655e-05,0.0,python3.8,PyMemoryView_FromObject
+1.0523584013871413e-05,0.0,libcrypto.so.1.1,OPENSSL_LH_free
+1.0523572532299482e-05,0.0,libpython3.11.so.1.0,PyType_GenericNew
+1.0523538087583689e-05,0.0,libcrypto.so.1.1,BIO_s_log
+1.0523526606011758e-05,0.0,[JIT],29136                            [.] 0x00007fd76df78d96
+1.0523526606011758e-05,0.0,[JIT],29147                            [.] 0x00007f7db8d3116b
+1.0523526606011758e-05,0.0,libpython3.11.so.1.0,_PyErr_NormalizeException
+1.0523515124439826e-05,0.0,python,builtin_max
+1.0523411790292446e-05,0.0,libpython3.11.so.1.0,meth_dealloc
+1.052323956671348e-05,0.0,[JIT],29132                            [.] 0x00007f03413f428f
+1.0523193640425755e-05,0.0,libpython3.11.so.1.0,_PyObject_Free
+1.0523170677281894e-05,0.0,libpython3.11.so.1.0,_Py_dict_lookup
+1.052312475099417e-05,0.0,[kernel.kallsyms],vfs_read
+1.0522998453702927e-05,0.0,python3.8,PyLong_FromLong
+1.0522929564271342e-05,0.0,python,PyObject_SetAttrString
+1.052282623012396e-05,0.0,libpython3.11.so.1.0,long_sub
+1.0522791785408169e-05,0.0,[kernel.kallsyms],flush_tlb_func_common.constprop.0
+1.052269993283272e-05,0.0,[JIT],29145                            [.] 0x00007fc761f37005
+1.0522355485674787e-05,0.0,[kernel.kallsyms],perf_output_copy
+1.0522332522530924e-05,0.0,python3.8,PyBuffer_ToContiguous
+1.0522206225239683e-05,0.0,python3.8,PyObject_AsFileDescriptor
+1.052207992794844e-05,0.0,libpython3.11.so.1.0,slice_dealloc
+1.0521965112229129e-05,0.0,libpython3.11.so.1.0,PyUnicode_FromString
+1.0521838814937888e-05,0.0,libc-2.31.so,strerror
+1.0521804370222095e-05,0.0,[JIT],29198                            [.] 0x00007fa4ded90246
+1.052175844393437e-05,0.0,[JIT],29127                            [.] 0x00007f299fcf3473
+1.052174696236244e-05,0.0,[JIT],29168                            [.] 0x00007f12415ef046
+1.052174696236244e-05,0.0,[kernel.kallsyms],__fd_install
+1.0521701036074715e-05,0.0,python,bytearray_subscript
+1.0521643628215059e-05,0.0,[kernel.kallsyms],chacha_permute
+1.0521632146643128e-05,0.0,libpython3.11.so.1.0,listiter_next
+1.0521597701927334e-05,0.0,[JIT],29127                            [.] 0x00007f299fcf018e
+1.052154029406768e-05,0.0,python3.8,PyDict_GetItem
+1.052144844149223e-05,0.0,python3.8,PyFunction_NewWithQualName
+1.0521413996776437e-05,0.0,[JIT],29145                            [.] 0x00007fc761f3779f
+1.0521322144200988e-05,0.0,[kernel.kallsyms],handle_mm_fault
+1.0521264736341333e-05,0.0,python,iter_dealloc
+1.0521138439050091e-05,0.0,python,disjunction_rule
+1.05211039943343e-05,0.0,[JIT],29136                            [.] 0x00007fd76c9271d3
+1.0520885844467608e-05,0.0,[JIT],29136                            [.] 0x00007fd76c918104
+1.0520862881323745e-05,0.0,python,sre_search
+1.0520828436607951e-05,0.0,[JIT],29132                            [.] 0x00007f0341abf038
+1.0520667694600917e-05,0.0,[JIT],29128                            [.] 0x00007f82b80f75df
+1.0520656213028987e-05,0.0,[JIT],29145                            [.] 0x00007fc761f3725c
+1.0520644731457054e-05,0.0,[JIT],29128                            [.] 0x00007f82b7d4796d
+1.0520518434165814e-05,0.0,python,tuple_new
+1.0520449544734226e-05,0.0,python,emit__CHECK_FUNCTION_VERSION
+1.0520426581590365e-05,0.0,python,PyUnicode_FromFormatV
+1.0520415100018433e-05,0.0,libpython3.11.so.1.0,_PyUnicode_JoinArray
+1.0520415100018433e-05,0.0,libpython3.11.so.1.0,_Py_Specialize_CompareOp
+1.0520403618446502e-05,0.0,[JIT],29132                            [.] 0x00007f03402c522e
+1.052038065530264e-05,0.0,libpython3.11.so.1.0,PyMem_Malloc
+1.0520208431723674e-05,0.0,python,PyException_GetTraceback
+1.0520116579148225e-05,0.0,[JIT],29127                            [.] 0x00007f299fcf0911
+1.0520116579148225e-05,0.0,libc-2.31.so,__mprotect
+1.0519944355569259e-05,0.0,libpython3.11.so.1.0,find_signature
+1.0519921392425397e-05,0.0,python,_io_TextIOWrapper_closed_get_impl
+1.0519886947709604e-05,0.0,[JIT],29128                            [.] 0x00007f82b7e94915
+1.051986398456574e-05,0.0,[kernel.kallsyms],ksys_ioctl
+1.0519818058278016e-05,0.0,libpython3.11.so.1.0,unicode_subscript
+1.0519795095134155e-05,0.0,[JIT],29136                            [.] 0x00007fd76c919d9b
+1.0519760650418361e-05,0.0,[JIT],29195                            [.] 0x00007fc47a6f849c
+1.0519726205702568e-05,0.0,[kernel.kallsyms],__sched_text_start
+1.0519691760986776e-05,0.0,python,StopIteration_init
+1.0519634353127119e-05,0.0,[JIT],29136                            [.] 0x00007fd76c9194a1
+1.0519508055835878e-05,0.0,[JIT],29127                            [.] 0x00007f299fcf3932
+1.0519485092692015e-05,0.0,[JIT],29128                            [.] 0x00007f82b64174b2
+1.0519485092692015e-05,0.0,[JIT],29128                            [.] 0x00007f82b7ea60ce
+1.0519485092692015e-05,0.0,libc-2.31.so,strncmp
+1.0519450647976222e-05,0.0,ld-2.31.so,_dl_exception_free
+1.0519289905969187e-05,0.0,python3.8,PyLong_AsLong
+1.0519278424397255e-05,0.0,[JIT],29136                            [.] 0x00007fd76c927418
+1.051920953496567e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b62300e
+1.051920953496567e-05,0.0,python,emit__GUARD_NOT_EXHAUSTED_LIST
+1.0519163608677945e-05,0.0,[JIT],29145                            [.] 0x00007fc761f361ae
+1.0519152127106014e-05,0.0,[JIT],29136                            [.] 0x00007fd76e1d4223
+1.0519129163962151e-05,0.0,[JIT],29136                            [.] 0x00007fd76e1e5d96
+1.051911768239022e-05,0.0,[kernel.kallsyms],clear_page_erms
+1.051910620081829e-05,0.0,python,_Py_RestoreSignals
+1.0519083237674427e-05,0.0,libc-2.31.so,__nss_database_lookup
+1.0518933977239323e-05,0.0,[JIT],29204                            [.] 0x00007f12b5857521
+1.051889953252353e-05,0.0,[JIT],29128                            [.] 0x00007f82b641c1e8
+1.051889953252353e-05,0.0,[kernel.kallsyms],__cgroup_bpf_check_dev_permission
+1.0518830643091944e-05,0.0,[JIT],29128                            [.] 0x00007f82b79fa489
+1.0518807679948081e-05,0.0,libpython3.11.so.1.0,PyMem_Realloc
+1.0518773235232287e-05,0.0,[JIT],29145                            [.] 0x00007fc761f37e5d
+1.0518773235232287e-05,0.0,libc-2.31.so,__sigsetjmp
+1.0518738790516495e-05,0.0,[JIT],29147                            [.] 0x00007f7db8a5410b
+1.0518715827372632e-05,0.0,[kernel.kallsyms],get_cpu_idle_time_us
+1.0518601011653322e-05,0.0,[kernel.kallsyms],sync_regs
+1.0518555085365598e-05,0.0,python,_PyUnicode_IsUppercase
+1.0518543603793666e-05,0.0,[JIT],29145                            [.] 0x00007fc7638164a9
+1.0518451751218217e-05,0.0,[kernel.kallsyms],__do_sys_newfstat
+1.0518440269646286e-05,0.0,[kernel.kallsyms],complete_walk
+1.0518440269646286e-05,0.0,python,PySequence_Fast
+1.0518428788074356e-05,0.0,[kernel.kallsyms],vma_interval_tree_remove
+1.0518382861786631e-05,0.0,libpython3.11.so.1.0,PyUnicode_Format
+1.0518302490783113e-05,0.0,python,emit__START_EXECUTOR
+1.0518245082923458e-05,0.0,python,PyByteArray_Resize
+1.0518210638207665e-05,0.0,[JIT],29145                            [.] 0x00007fc7636e1258
+1.0518199156635734e-05,0.0,libpython3.11.so.1.0,range_iter
+1.0518187675063803e-05,0.0,[JIT],29136                            [.] 0x00007fd76e1e5c51
+1.051815323034801e-05,0.0,python,PySet_Contains
+1.0518084340916422e-05,0.0,python3.8,_Py_fstat_noraise
+1.0518061377772561e-05,0.0,[JIT],29132                            [.] 0x00007f033fdd6191
+1.0518026933056767e-05,0.0,python3.8,PyUnicode_RichCompare
+1.0517981006769043e-05,0.0,python,wrap_setattr
+1.0517969525197112e-05,0.0,libpython3.11.so.1.0,PyErr_Restore
+1.05178547094778e-05,0.0,[JIT],29128                            [.] 0x00007f82b6418418
+1.0517762856902352e-05,0.0,[JIT],29136                            [.] 0x00007fd76d83647b
+1.0517762856902352e-05,0.0,[kernel.kallsyms],__mod_lruvec_state
+1.0517728412186558e-05,0.0,[JIT],29127                            [.] 0x00007f299fdfb1d7
+1.0517705449042697e-05,0.0,python,internal_close.isra.0
+1.0517682485898834e-05,0.0,[JIT],29136                            [.] 0x00007fd76e1e8c84
+1.0517602114895318e-05,0.0,[JIT],29128                            [.] 0x00007f82b7e8802d
+1.0517567670179524e-05,0.0,[JIT],29132                            [.] 0x00007f033fdee248
+1.0517544707035661e-05,0.0,libpthread-2.31.so,__pthread_mutex_lock
+1.0517498780747937e-05,0.0,python3.8,_PyEval_EvalCodeWithName
+1.0517498780747937e-05,0.0,[JIT],29132                            [.] 0x00007f033fdf0645
+1.0517475817604075e-05,0.0,libpython3.11.so.1.0,unicode_startswith
+1.0517475817604075e-05,0.0,ld-2.31.so,_dl_catch_error
+1.0517464336032145e-05,0.0,python,unicode_rpartition
+1.0517452854460212e-05,0.0,[JIT],29128                            [.] 0x00007f82b7e8ae50
+1.0517441372888282e-05,0.0,python,builtin_ord
+1.051741840974442e-05,0.0,ld-2.31.so,_dl_debug_state
+1.0517383965028627e-05,0.0,[JIT],29136                            [.] 0x00007fd76db1b269
+1.0517326557168972e-05,0.0,[JIT],29128                            [.] 0x00007f82b7eac5fe
+1.051731507559704e-05,0.0,python,iter_iternext
+1.0517292112453178e-05,0.0,libpython3.11.so.1.0,_PyPegen_insert_memo
+1.0517234704593523e-05,0.0,python,list_remove
+1.051721174144966e-05,0.0,libc-2.31.so,wcsrtombs
+1.051721174144966e-05,0.0,python,set_version_unlocked
+1.0517177296733866e-05,0.0,libpython3.11.so.1.0,PyNumber_Subtract
+1.0517119888874211e-05,0.0,[kernel.kallsyms],blkcg_maybe_throttle_current
+1.051709692573035e-05,0.0,[JIT],29136                            [.] 0x00007fd76df943bd
+1.0517005073154902e-05,0.0,libpython3.11.so.1.0,unicode_hash
+1.0516924702151384e-05,0.0,[kernel.kallsyms],page_remove_rmap
+1.051690173900752e-05,0.0,[JIT],29132                            [.] 0x00007f0341ac67b0
+1.051690173900752e-05,0.0,libpython3.11.so.1.0,PySet_Add
+1.0516844331147866e-05,0.0,python,label_exception_targets
+1.0516844331147866e-05,0.0,[kernel.kallsyms],strncpy_from_user
+1.0516718033856623e-05,0.0,libc-2.31.so,__xstat
+1.0516706552284693e-05,0.0,python,_Py_union_type_or
+1.0516649144425038e-05,0.0,python,PyModule_FromDefAndSpec2
+1.0516626181281175e-05,0.0,[JIT],29204                            [.] 0x00007f12b5498425
+1.0516591736565383e-05,0.0,[kernel.kallsyms],mntput
+1.0516534328705726e-05,0.0,python3.8,PyDict_Copy
+1.0516499883989934e-05,0.0,python,_PyUnicode_ToLowercase
+1.0516476920846071e-05,0.0,libpython3.11.so.1.0,PyObject_Size
+1.0516408031414485e-05,0.0,[JIT],29127                            [.] 0x00007f299fcd86b1
+1.0516350623554829e-05,0.0,[kernel.kallsyms],sched_clock_cpu
+1.0516350623554829e-05,0.0,python,AttributeError_dealloc
+1.0516316178839037e-05,0.0,[JIT],29127                            [.] 0x00007f299ff3f2e0
+1.0516304697267104e-05,0.0,python,build_indices_generic
+1.0516304697267104e-05,0.0,python,super_getattro
+1.0516293215695174e-05,0.0,python,_Py_normpath_and_size
+1.0516270252551312e-05,0.0,[kernel.kallsyms],should_fail_alloc_page
+1.0516212844691656e-05,0.0,python,ucs2lib_utf8_encoder
+1.0516201363119725e-05,0.0,[JIT],29132                            [.] 0x00007f033fdee0e8
+1.0516178399975864e-05,0.0,[kernel.kallsyms],policy_nodemask
+1.051614395526007e-05,0.0,python,slot_nb_and
+1.0516120992116207e-05,0.0,[JIT],29128                            [.] 0x00007f82b62c83ac
+1.0516120992116207e-05,0.0,python,long_div
+1.0516109510544276e-05,0.0,[JIT],29192                            [.] 0x00007f44debf051d
+1.0516075065828483e-05,0.0,[kernel.kallsyms],do_wp_page
+1.0516017657968828e-05,0.0,[kernel.kallsyms],filename_lookup
+1.0516017657968828e-05,0.0,[JIT],29132                            [.] 0x00007f033fde71a9
+1.0515983213253034e-05,0.0,dpkg-query,0x0000000000018927
+1.0515983213253034e-05,0.0,[JIT],29136                            [.] 0x00007fd76db30399
+1.051593728696531e-05,0.0,python,compound_stmt_rule
+1.0515914323821448e-05,0.0,[JIT],29132                            [.] 0x00007f033fdea2eb
+1.0515868397533724e-05,0.0,[kernel.kallsyms],mem_cgroup_throttle_swaprate
+1.0515868397533724e-05,0.0,[JIT],29128                            [.] 0x00007f82b7e82a8c
+1.051583395281793e-05,0.0,[JIT],29127                            [.] 0x00007f299f40d3a1
+1.0515810989674067e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2a13eab
+1.0515696173954757e-05,0.0,[JIT],29128                            [.] 0x00007f82b7a2823e
+1.0515684692382827e-05,0.0,[kernel.kallsyms],__check_object_size
+1.0515558395091584e-05,0.0,libpython3.11.so.1.0,_PyObject_MakeTpCall
+1.0515455060944205e-05,0.0,[JIT],29136                            [.] 0x00007fd76df75042
+1.0515443579372273e-05,0.0,python,new_values
+1.0515432097800342e-05,0.0,libpython3.11.so.1.0,dictresize
+1.0515397653084548e-05,0.0,[JIT],29145                            [.] 0x00007fc761f3c69c
+1.0515386171512618e-05,0.0,python,unicode_iter
+1.05153058005091e-05,0.0,libpython3.11.so.1.0,long_mul
+1.0515294318937169e-05,0.0,[JIT],29145                            [.] 0x00007fc7637fe101
+1.0515294318937169e-05,0.0,libssl.so.1.1,SSL_add_dir_cert_subjects_to_stack
+1.0515248392649445e-05,0.0,[JIT],29132                            [.] 0x00007f033fdee0d5
+1.0515213947933651e-05,0.0,[JIT],29136                            [.] 0x00007fd76e0a1a7b
+1.0515156540073996e-05,0.0,[JIT],29136                            [.] 0x00007fd76df924fa
+1.0515133576930135e-05,0.0,[JIT],29128                            [.] 0x00007f82b69b141a
+1.0515099132214341e-05,0.0,libpython3.11.so.1.0,_Py_NewReference
+1.0515053205926617e-05,0.0,python,PyErr_Clear
+1.0515041724354686e-05,0.0,[JIT],29128                            [.] 0x00007f82b62ab7d8
+1.0514972834923099e-05,0.0,[JIT],29128                            [.] 0x00007f82b6c05457
+1.0514961353351168e-05,0.0,[kernel.kallsyms],down_write_killable
+1.051489246391958e-05,0.0,libpython3.11.so.1.0,PyObject_Call
+1.051488098234765e-05,0.0,[JIT],29132                            [.] 0x00007f033fde62c5
+1.0514812092916064e-05,0.0,[JIT],29186                            [.] 0x00007f5fa2a0dc1a
+1.0514800611344132e-05,0.0,[kernel.kallsyms],__call_rcu
+1.051477764820027e-05,0.0,python3.8,PyException_SetContext
+1.051476616662834e-05,0.0,[JIT],29136                            [.] 0x00007fd76cf0d168
+1.051476616662834e-05,0.0,[kernel.kallsyms],task_work_add
+1.0514720240340616e-05,0.0,[JIT],29198                            [.] 0x00007fa4dedb430a
+1.0514674314052891e-05,0.0,[JIT],29136                            [.] 0x00007fd76dc8e0ce
+1.0514674314052891e-05,0.0,[JIT],29145                            [.] 0x00007fc7636ca614
+1.0514651350909028e-05,0.0,[JIT],29127                            [.] 0x00007f299f8617dd
+1.0514616906193235e-05,0.0,[JIT],29136                            [.] 0x00007fd76c9182db
+1.0514593943049373e-05,0.0,libpython3.11.so.1.0,_loop1_43_rule
+1.051457097990551e-05,0.0,[JIT],29132                            [.] 0x00007f033fca9241
+1.0514433201042337e-05,0.0,python,PyCell_Set
+1.0514410237898476e-05,0.0,[JIT],29145                            [.] 0x00007fc7636ca070
+1.0514375793182682e-05,0.0,[kernel.kallsyms],copy_pte_range.isra.0
+1.0514375793182682e-05,0.0,[JIT],29186                            [.] 0x00007f5fa265c3f3
+1.0514295422179164e-05,0.0,[JIT],29147                            [.] 0x00007f7db89a0000
+1.0514283940607234e-05,0.0,[JIT],29145                            [.] 0x00007fc761f3d302
+1.051426097746337e-05,0.0,[JIT],29136                            [.] 0x00007fd76df9220c
+1.0514226532747579e-05,0.0,[JIT],29192                            [.] 0x00007f44deaa5000
+1.0514157643315991e-05,0.0,python,PySlice_New
+1.0514123198600198e-05,0.0,[JIT],29127                            [.] 0x00007f29a0869000
+1.0514054309168612e-05,0.0,python,_PyNumber_Index
+1.0514054309168612e-05,0.0,python,map_next
+1.0514019864452818e-05,0.0,python,_PyDictKeys_GetVersionForCurrentState
+1.0513985419737025e-05,0.0,[kernel.kallsyms],apparmor_file_permission
+1.0513973938165094e-05,0.0,[JIT],29159                            [.] 0x00007f252e426109
+1.0513973938165094e-05,0.0,python,unicode_char
+1.0513962456593163e-05,0.0,python,set_update_internal
+1.05139394934493e-05,0.0,[JIT],29145                            [.] 0x00007fc761f3c147
+1.0513882085589645e-05,0.0,[JIT],29132                            [.] 0x00007f0341ad1226
+1.0513859122445784e-05,0.0,[JIT],29132                            [.] 0x00007f03402c53a5
+1.0513859122445784e-05,0.0,python,wrapper_dealloc
+1.0513698380438748e-05,0.0,[JIT],29136                            [.] 0x00007fd76ca40328
+1.0513698380438748e-05,0.0,[JIT],29192                            [.] 0x00007f44de854000
+1.0513675417294887e-05,0.0,python,thread_get_ident
+1.0513663935722954e-05,0.0,libpython3.11.so.1.0,0x00000000000fcfc0
+1.0513640972579093e-05,0.0,python,PyNumber_Index
+1.0513629491007162e-05,0.0,[JIT],29145                            [.] 0x00007fc7632b3280
+1.0513583564719438e-05,0.0,python,_PyRecursiveMutex_IsLockedByCurrentThread
+1.0513560601575575e-05,0.0,python3.8,_PyArg_Parse_SizeT
+1.0513549120003644e-05,0.0,[JIT],29136                            [.] 0x00007fd76dae8780
+1.0513537638431714e-05,0.0,[JIT],29132                            [.] 0x00007f033fcd0125
+1.051350319371592e-05,0.0,python3.8,PyObject_GetAttr
+1.0513457267428196e-05,0.0,[kernel.kallsyms],psi_task_change
+1.0513445785856265e-05,0.0,[JIT],29132                            [.] 0x00007f0341ae213d
+1.0513353933280816e-05,0.0,[JIT],29145                            [.] 0x00007fc76381ca08
+1.0513342451708884e-05,0.0,libpython3.11.so.1.0,PyUnicode_InternInPlace
+1.051329652542116e-05,0.0,[JIT],29136                            [.] 0x00007fd76cced000
+1.051329652542116e-05,0.0,python,PyEval_EvalCode
+1.0513262080705368e-05,0.0,python,_io_TextIOWrapper_flush
+1.0513124301842195e-05,0.0,[JIT],29128                            [.] 0x00007f82b64182de
+1.0513101338698332e-05,0.0,[JIT],29128                            [.] 0x00007f82b80f728f
+1.0513089857126401e-05,0.0,python,open64@plt
+1.051307837555447e-05,0.0,[JIT],29174                            [.] 0x00007f5a127311ce
+1.0513009486122883e-05,0.0,python,ensure_unicode
+1.051298652297902e-05,0.0,python3.8,PyObject_IsTrue
+1.051298652297902e-05,0.0,libpython3.11.so.1.0,_PyTuple_FromArray
+1.051297504140709e-05,0.0,python,starunpack_helper
+1.0512963559835159e-05,0.0,python,PyUnicode_AsUTF8
+1.0512952078263228e-05,0.0,libpython3.11.so.1.0,0x00000000000fc694
+1.0512929115119365e-05,0.0,python,_PyAST_Tuple
+1.0512929115119365e-05,0.0,python,_PyEval_GetBuiltins
+1.0512906151975504e-05,0.0,libpython3.11.so.1.0,PySequence_GetItem
+1.051288318883164e-05,0.0,libpython3.11.so.1.0,compiler_new_block.isra.0
+1.051286022568778e-05,0.0,[JIT],29207                            [.] 0x00007fa55f6ab141
+1.0512848744115847e-05,0.0,[JIT],29127                            [.] 0x00007f299fdfc429
+1.0512825780971986e-05,0.0,python3.8,PyLong_AsLongAndOverflow
+1.0512779854684262e-05,0.0,python3.8,0x0000000000026544
+1.0512745409968468e-05,0.0,[JIT],29128                            [.] 0x00007f82b7d4c15f
+1.0512733928396537e-05,0.0,[JIT],29127                            [.] 0x00007f299fcf0470
+1.0512722446824607e-05,0.0,python,dictitems_iter
+1.0512710965252674e-05,0.0,[JIT],29127                            [.] 0x00007f299ff3d165
+1.051266503896495e-05,0.0,libpython3.11.so.1.0,slot_sq_length
+1.0512642075821089e-05,0.0,[JIT],29132                            [.] 0x00007f03413f0f92
+1.051253874167371e-05,0.0,libpython3.11.so.1.0,_PyObject_LookupAttr
+1.0512515778529846e-05,0.0,python,make_new_set_basetype
+1.0512481333814053e-05,0.0,[kernel.kallsyms],dget_parent
+1.051244688909826e-05,0.0,[kernel.kallsyms],mem_cgroup_commit_charge
+1.0512435407526328e-05,0.0,[JIT],29136                            [.] 0x00007fd76c914409
+1.0512400962810536e-05,0.0,[kernel.kallsyms],__ext4fs_dirhash
+1.0512389481238604e-05,0.0,[JIT],29132                            [.] 0x00007f0341862088
+1.0512389481238604e-05,0.0,[JIT],29136                            [.] 0x00007fd76e0ac000
+1.0512355036522812e-05,0.0,[kernel.kallsyms],kstat_irqs
+1.0512355036522812e-05,0.0,python,_PyToken_TwoChars
+1.0512309110235088e-05,0.0,[JIT],29159                            [.] 0x00007f252e03d00e
+1.0512274665519294e-05,0.0,python,PyFile_OpenCodeObject
+1.0512251702375431e-05,0.0,python,call_unbound_noarg
+1.05122402208035e-05,0.0,[JIT],29136                            [.] 0x00007fd76c9344ef
+1.051222873923157e-05,0.0,libpython3.11.so.1.0,PyMem_Free
+1.0512182812943845e-05,0.0,[JIT],29128                            [.] 0x00007f82b6404330
+1.0512171331371915e-05,0.0,[JIT],29132                            [.] 0x00007f0341abfa08
+1.051212540508419e-05,0.0,libpython3.11.so.1.0,_PyTime_Add
+1.051212540508419e-05,0.0,python,tuple_rule
+1.0512102441940327e-05,0.0,[JIT],29128                            [.] 0x00007f82b6adc2b3
+1.0512079478796466e-05,0.0,python,compiler_check_debug_args
+1.0512067997224534e-05,0.0,[JIT],29136                            [.] 0x00007fd76c91e270
+1.0512056515652603e-05,0.0,[JIT],29145                            [.] 0x00007fc761f3c141
+1.0511999107792948e-05,0.0,[JIT],29127                            [.] 0x00007f299fdf63e6
+1.0511999107792948e-05,0.0,python,PyErr_SetString
+1.0511964663077154e-05,0.0,[JIT],29189                            [.] 0x00007fcc3ff1c17f
+1.0511964663077154e-05,0.0,python,make_cfg_traversal_stack
+1.0511953181505224e-05,0.0,[JIT],29159                            [.] 0x00007f252e2cf224
+1.0511941699933293e-05,0.0,[JIT],29145                            [.] 0x00007fc76241a43f
+1.0511838365785912e-05,0.0,_hashlib.cpython-314-x86_64-linux-gnu.so,0x0000000000004634
+1.0511838365785912e-05,0.0,libpython3.11.so.1.0,PyUnicode_New
+1.0511826884213981e-05,0.0,[JIT],29132                            [.] 0x00007f033fdef283
+1.051180392107012e-05,0.0,[JIT],29145                            [.] 0x00007fc7638031bb
+1.0511792439498188e-05,0.0,[kernel.kallsyms],clear_page_erms
+1.0511780957926257e-05,0.0,[JIT],29132                            [.] 0x00007f034110b028
+1.0511757994782396e-05,0.0,[JIT],29136                            [.] 0x00007fd76da91317
+1.0511723550066602e-05,0.0,[JIT],29132                            [.] 0x00007f034185c8ff
+1.0511677623778878e-05,0.0,python,getstring
+1.0511620215919223e-05,0.0,libc-2.31.so,__ctype_b_loc
+1.0511562808059566e-05,0.0,[kernel.kallsyms],unlock_page_memcg
+1.0511516881771842e-05,0.0,[kernel.kallsyms],vfs_open
+1.051149391862798e-05,0.0,python,lru_cache_tp_traverse
+1.0511459473912187e-05,0.0,python3.8,PySequence_Tuple
+1.0511436510768325e-05,0.0,libpython3.11.so.1.0,_PyEval_BuiltinsFromGlobals
+1.0511425029196393e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b28d070
+1.0511425029196393e-05,0.0,libz.so.1.2.11,inflateBackEnd
+1.0511413547624462e-05,0.0,python,_PyDict_SetItem_Take2
+1.0511356139764807e-05,0.0,python,remove_unreachable
+1.0511333176620944e-05,0.0,[JIT],29136                            [.] 0x00007fd76c919c11
+1.0511321695049014e-05,0.0,libpython3.11.so.1.0,dict_ass_sub
+1.051128725033322e-05,0.0,[kernel.kallsyms],down_read
+1.051128725033322e-05,0.0,[kernel.kallsyms],vma_adjust_trans_huge
+1.051128725033322e-05,0.0,python,_PyConfig_Copy
+1.051128725033322e-05,0.0,python,_Py_SetImmortal
+1.051128725033322e-05,0.0,python,mult
+1.051127576876129e-05,0.0,python,unicode_lower
+1.0511264287189359e-05,0.0,[JIT],29132                            [.] 0x00007f0341abfcb3
+1.0511241324045496e-05,0.0,[kernel.kallsyms],__fsnotify_parent
+1.0511195397757771e-05,0.0,[JIT],29145                            [.] 0x00007fc763800488
+1.0511195397757771e-05,0.0,python,list_extend
+1.051117243461391e-05,0.0,python,pthread_mutex_unlock@plt
+1.0511160953041978e-05,0.0,[kernel.kallsyms],copy_page_to_iter
+1.0511149471470047e-05,0.0,[JIT],29132                            [.] 0x00007f033fde9180
+1.0511069100466529e-05,0.0,[kernel.kallsyms],mem_cgroup_try_charge_delay
+1.0511057618894598e-05,0.0,python,bytes_subscript
+1.0511000211034943e-05,0.0,ld-2.31.so,0x000000000000a4f7
+1.0511000211034943e-05,0.0,python,PyUnicode_FromObject
+1.0510908358459495e-05,0.0,[JIT],29132                            [.] 0x00007f033fca5556
+1.0510896876887564e-05,0.0,python,PyThread_acquire_lock
+1.0510885395315632e-05,0.0,[JIT],29136                            [.] 0x00007fd76db1e734
+1.0510839469027907e-05,0.0,[JIT],29127                            [.] 0x00007f299f8710e5
+1.0510839469027907e-05,0.0,[JIT],29159                            [.] 0x00007f252e2cf426
+1.0510839469027907e-05,0.0,[JIT],29183                            [.] 0x00007f31215b6b20
+1.0510827987455977e-05,0.0,python,pop_lock_held
+1.0510816505884046e-05,0.0,[JIT],29128                            [.] 0x00007f82b68f33de
+1.0510816505884046e-05,0.0,[JIT],29136                            [.] 0x00007fd76df802b2
+1.0510805024312115e-05,0.0,[JIT],29132                            [.] 0x00007f033fde9046
+1.0510770579596322e-05,0.0,libpython3.11.so.1.0,PyBytes_FromStringAndSize
+1.0510736134880528e-05,0.0,libz.so.1.2.11,inflate
+1.0510701690164734e-05,0.0,python,read@plt
+1.0510701690164734e-05,0.0,python,recurse_down_subclasses.constprop.0
+1.051065576387701e-05,0.0,_psutil_linux.abi3.so,_init
+1.0510621319161218e-05,0.0,[JIT],29127                            [.] 0x00007f299f851514
+1.0510609837589286e-05,0.0,python,builtin_setattr
+1.0510563911301561e-05,0.0,[JIT],29177                            [.] 0x00007f89e8de93ad
+1.0510563911301561e-05,0.0,python,buffered_dealloc
+1.0510563911301561e-05,0.0,python,capsule_dealloc
+1.051055242972963e-05,0.0,python,_PyCfgBuilder_Free
+1.05105409481577e-05,0.0,[kernel.kallsyms],memset_erms
+1.05105409481577e-05,0.0,python,emit__CALL_BUILTIN_O
+1.051052946658577e-05,0.0,[JIT],29132                            [.] 0x00007f033fdf002d
+1.0510517985013837e-05,0.0,python,memrchr@plt
+1.0510506503441906e-05,0.0,[JIT],29147                            [.] 0x00007f7db8be64f7
+1.0510472058726113e-05,0.0,[JIT],29145                            [.] 0x00007fc7636d200e
+1.051043761401032e-05,0.0,python,compiler_make_closure
+1.0510414650866458e-05,0.0,[JIT],29128                            [.] 0x00007f82b80f7734
+1.0510403169294527e-05,0.0,python,PyBuffer_Release
+1.0510311316719078e-05,0.0,python,_Py_uop_sym_new_null
+1.0510299835147148e-05,0.0,python,ucs1lib_rfind_char
+1.0510288353575215e-05,0.0,[kernel.kallsyms],__do_page_fault
+1.051023094571556e-05,0.0,libpython3.11.so.1.0,0x00000000000f97a4
+1.051021946414363e-05,0.0,[JIT],29132                            [.] 0x00007f033fcc731d
+1.0510185019427836e-05,0.0,[kernel.kallsyms],ext4_inode_block_valid
+1.0510139093140112e-05,0.0,libpython3.11.so.1.0,unicode_isalnum
+1.0510139093140112e-05,0.0,python,_PyST_GetSymbol
+1.0510104648424318e-05,0.0,libpython3.11.so.1.0,unicode_isupper
+1.0510070203708526e-05,0.0,python,pytime_divide
+1.0510047240564663e-05,0.0,[JIT],29128                            [.] 0x00007f82b62c9216
+1.0510047240564663e-05,0.0,libc-2.31.so,__close
+1.0510047240564663e-05,0.0,python,_PySys_Audit
+1.0510024277420802e-05,0.0,[kernel.kallsyms],do_mprotect_pkey
+1.0510024277420802e-05,0.0,python,_Py_fstat_noraise
+1.0510001314276939e-05,0.0,libcrypto.so.1.1,COMP_CTX_get_type
+1.0509966869561145e-05,0.0,python3.8,PyCode_Addr2Line
+1.050992094327342e-05,0.0,[kernel.kallsyms],in_group_p
+1.050990946170149e-05,0.0,python,_PyAST_GetDocString
+1.0509852053841835e-05,0.0,[JIT],29132                            [.] 0x00007f03405d31e7
+1.0509771682838317e-05,0.0,[JIT],29145                            [.] 0x00007fc763806641
+1.0509748719694454e-05,0.0,libpython3.11.so.1.0,0x00000000000fbb10
+1.050970279340673e-05,0.0,[JIT],29136                            [.] 0x00007fd76c91421a
+1.0509645385547075e-05,0.0,python,PyIndex_Check
+1.050959945925935e-05,0.0,[JIT],29136                            [.] 0x00007fd76db25083
+1.050959945925935e-05,0.0,libpython3.11.so.1.0,_PyArg_ParseTuple_SizeT
+1.050958797768742e-05,0.0,[JIT],29128                            [.] 0x00007f82b7a1b282
+1.050958797768742e-05,0.0,[JIT],29145                            [.] 0x00007fc7635b885c
+1.050958797768742e-05,0.0,[kernel.kallsyms],vma_link
+1.0509553532971626e-05,0.0,libpython3.11.so.1.0,builtin_setattr
+1.0509542051399695e-05,0.0,[JIT],29132                            [.] 0x00007f0341866321
+1.0509450198824247e-05,0.0,libcrypto.so.1.1,OPENSSL_LH_doall_arg
+1.0509392790964592e-05,0.0,python3.8,_PyUnicode_EqualToASCIIId
+1.0509392790964592e-05,0.0,[JIT],29128                            [.] 0x00007f82b7a1a00e
+1.0509243530529486e-05,0.0,[JIT],29165                            [.] 0x00007f1beefd97d8
+1.0509197604241762e-05,0.0,[kernel.kallsyms],kmem_cache_free
+1.0509140196382107e-05,0.0,[JIT],29132                            [.] 0x00007f03404a2213
+1.0509105751666313e-05,0.0,[JIT],29128                            [.] 0x00007f82b7e8a1f5
+1.0509094270094383e-05,0.0,libpython3.11.so.1.0,PyDict_Contains
+1.0509082788522452e-05,0.0,python3.8,_PyObject_GetAttrId
+1.0509082788522452e-05,0.0,[kernel.kallsyms],vma_gap_callbacks_rotate
+1.0509013899090865e-05,0.0,[JIT],29132                            [.] 0x00007f0341883094
+1.0509013899090865e-05,0.0,[kernel.kallsyms],legitimize_path.isra.0
+1.0509002417518934e-05,0.0,[JIT],29132                            [.] 0x00007f0341854151
+1.050896797280314e-05,0.0,[JIT],29128                            [.] 0x00007f82b641d31d
+1.050885315708383e-05,0.0,[JIT],29128                            [.] 0x00007f82b80f73f6
+1.0508749822936451e-05,0.0,python,_imp_find_frozen
+1.0508738341364519e-05,0.0,python,_PyManagedBuffer_FromObject
+1.0508726859792588e-05,0.0,[JIT],29132                            [.] 0x00007f03405d4101
+1.0508692415076795e-05,0.0,python,bytes_replace
+1.050863500721714e-05,0.0,dpkg-query,0x0000000000013f15
+1.050863500721714e-05,0.0,python,PyNumber_Check
+1.0508612044073278e-05,0.0,python,PyList_AsTuple
+1.0508589080929415e-05,0.0,python3.8,_PyObject_GenericSetAttrWithDict
+1.0508554636213622e-05,0.0,[JIT],29128                            [.] 0x00007f82b641c201
+1.0508554636213622e-05,0.0,[JIT],29132                            [.] 0x00007f03413f1010
+1.050853167306976e-05,0.0,[JIT],29132                            [.] 0x00007f033fdee1d5
+1.050853167306976e-05,0.0,python,builtin_exec
+1.0508474265210105e-05,0.0,[JIT],29132                            [.] 0x00007f034157c000
+1.0508439820494312e-05,0.0,[JIT],29136                            [.] 0x00007fd76c9181e8
+1.0508393894206587e-05,0.0,python,unicode_fromformat_write_str
+1.0508267596915345e-05,0.0,python,dict_new
+1.0508198707483758e-05,0.0,[JIT],29127                            [.] 0x00007f299fe03070
+1.0508187225911827e-05,0.0,[JIT],29128                            [.] 0x00007f82b62d9351
+1.0508187225911827e-05,0.0,[JIT],29128                            [.] 0x00007f82b68f35b1
+1.0508164262767966e-05,0.0,ld-2.31.so,0x000000000000a4ad
+1.0508152781196033e-05,0.0,[JIT],29132                            [.] 0x00007f03413e048d
+1.0508129818052172e-05,0.0,[JIT],29145                            [.] 0x00007fc7634120e1
+1.0508129818052172e-05,0.0,python,tok_underflow_string.lto_priv.1
+1.0508106854908309e-05,0.0,[JIT],29127                            [.] 0x00007f299fe0c000
+1.0508037965476723e-05,0.0,[kernel.kallsyms],__vma_rb_erase
+1.0507946112901275e-05,0.0,[JIT],29132                            [.] 0x00007f0341996921
+1.0507923149757412e-05,0.0,[JIT],29146                            [.] 0x00007f027e1e18e3
+1.050788870504162e-05,0.0,[JIT],29145                            [.] 0x00007fc76313e7bb
+1.0507877223469687e-05,0.0,[JIT],29132                            [.] 0x00007f0341abfde2
+1.0507808334038102e-05,0.0,[JIT],29145                            [.] 0x00007fc762ce81cc
+1.0507773889322308e-05,0.0,[JIT],29132                            [.] 0x00007f0341866009
+1.0507762407750377e-05,0.0,[JIT],29127                            [.] 0x00007f299fe0b167
+1.0507739444606514e-05,0.0,[kernel.kallsyms],__page_set_anon_rmap
+1.0507624628887204e-05,0.0,[JIT],29162                            [.] 0x00007f2b2433224c
+1.0507613147315274e-05,0.0,[JIT],29132                            [.] 0x00007f0340fb01cb
+1.050759018417141e-05,0.0,[JIT],29145                            [.] 0x00007fc76312a10d
+1.0507544257883686e-05,0.0,[JIT],29159                            [.] 0x00007f252e5c53c5
+1.0507509813167893e-05,0.0,[JIT],29128                            [.] 0x00007f82b6ae20ce
+1.05074753684521e-05,0.0,python,emit__BUILD_STRING
+1.0507429442164376e-05,0.0,[JIT],29132                            [.] 0x00007f0341abd143
+1.050737203430472e-05,0.0,libpthread-2.31.so,sem_trywait@@GLIBC_2.2.5
+1.0507349071160858e-05,0.0,[kernel.kallsyms],do_vfs_ioctl
+1.050726870015734e-05,0.0,[JIT],29132                            [.] 0x00007f0341ac9c95
+1.050725721858541e-05,0.0,[JIT],29132                            [.] 0x00007f0340fa156a
+1.050725721858541e-05,0.0,python,PyErr_SetRaisedException
+1.0507245737013479e-05,0.0,[JIT],29207                            [.] 0x00007fa55fa55e50
+1.0507245737013479e-05,0.0,python,bytearray___init__
+1.0507222773869616e-05,0.0,python,forbidden_name
+1.0507199810725755e-05,0.0,python3.8,PyObject_Malloc
+1.050715388443803e-05,0.0,[JIT],29162                            [.] 0x00007f2b24332a7b
+1.0507142402866098e-05,0.0,[kernel.kallsyms],fput_many
+1.0507027587146788e-05,0.0,ld-2.31.so,0x000000000000a507
+1.0507016105574857e-05,0.0,[JIT],29136                            [.] 0x00007fd76c919b26
+1.0506993142430994e-05,0.0,[JIT],29132                            [.] 0x00007f03413df772
+1.0506970179287133e-05,0.0,python,PyObject_Size
+1.0506901289855546e-05,0.0,libpython3.11.so.1.0,va_build_stack
+1.0506786474136236e-05,0.0,[JIT],29145                            [.] 0x00007fc7638004a8
+1.0506786474136236e-05,0.0,python,emit__STORE_FAST_5
+1.0506683139988855e-05,0.0,[kernel.kallsyms],_raw_spin_lock_irq
+1.0506602768985337e-05,0.0,[JIT],29132                            [.] 0x00007f03418604bf
+1.0506568324269545e-05,0.0,python,_PyObject_Realloc
+1.0506556842697612e-05,0.0,python,_PyTokenizer_tok_new
+1.050652239798182e-05,0.0,python,unicode_vectorcall
+1.0506464990122164e-05,0.0,[kernel.kallsyms],alloc_empty_file
+1.050641906383444e-05,0.0,[JIT],29128                            [.] 0x00007f82b62c2017
+1.0506407582262509e-05,0.0,[JIT],29136                            [.] 0x00007fd76e1e534e
+1.0506154987680026e-05,0.0,[JIT],29128                            [.] 0x00007f82b64177f6
+1.0506132024536163e-05,0.0,python,PyNumber_InPlaceOr
+1.0506109061392301e-05,0.0,[kernel.kallsyms],filldir64
+1.0506097579820369e-05,0.0,python,OSError_dealloc
+1.0505982764101059e-05,0.0,[JIT],29128                            [.] 0x00007f82b7e9b02d
+1.0505959800957196e-05,0.0,[kernel.kallsyms],prepend
+1.0505867948381747e-05,0.0,[JIT],29128                            [.] 0x00007f82b80ed9a6
+1.0505867948381747e-05,0.0,libc-2.31.so,confstr
+1.0505856466809817e-05,0.0,python3.8,PyTuple_New
+1.0505844985237886e-05,0.0,[JIT],29128                            [.] 0x00007f82b7a0d6d1
+1.0505810540522092e-05,0.0,python,AttributeError_init
+1.0505707206374713e-05,0.0,[kernel.kallsyms],get_unused_fd_flags
+1.0505615353799264e-05,0.0,[JIT],29128                            [.] 0x00007f82b6417dbc
+1.050556942751154e-05,0.0,python,sys_intern
+1.0505534982795746e-05,0.0,[kernel.kallsyms],set_root
+1.0505512019651885e-05,0.0,[kernel.kallsyms],fsnotify
+1.0505477574936091e-05,0.0,[JIT],29128                            [.] 0x00007f82b67df094
+1.0505443130220298e-05,0.0,[kernel.kallsyms],vm_area_alloc
+1.0505431648648367e-05,0.0,[JIT],29128                            [.] 0x00007f82b80ed361
+1.0505420167076436e-05,0.0,python,_PyFile_Flush
+1.0505374240788712e-05,0.0,[JIT],29128                            [.] 0x00007f82b7e94aaa
+1.0505374240788712e-05,0.0,python,lambda_param_no_default_rule
+1.0505328314500988e-05,0.0,[JIT],29128                            [.] 0x00007f82b641e581
+1.0505121646206228e-05,0.0,python,astfold_expr
+1.0505110164634297e-05,0.0,python,emit__LOAD_ATTR_SLOT_0
+1.0504972385771124e-05,0.0,[JIT],29128                            [.] 0x00007f82b811016e
+1.0504914977911467e-05,0.0,[JIT],29128                            [.] 0x00007f82b784b34b
+1.0504903496339537e-05,0.0,[JIT],29128                            [.] 0x00007f82b641c015
+1.0504846088479882e-05,0.0,[JIT],29132                            [.] 0x00007f033fdf22a0
+1.0504823125336019e-05,0.0,[JIT],29145                            [.] 0x00007fc761f3c4be
+1.0504777199048294e-05,0.0,python,_abc__abc_init
+1.0504765717476364e-05,0.0,python,_Py_slot_tp_getattr_hook
+1.0504742754332502e-05,0.0,python,dict_add_o
+1.0504214602023672e-05,0.0,python,PyMem_RawFree
+1.0504180157307878e-05,0.0,[JIT],29128                            [.] 0x00007f82b80fac86
+1.0504042378444705e-05,0.0,[kernel.kallsyms],ret_from_intr
+1.0504030896872774e-05,0.0,[JIT],29128                            [.] 0x00007f82b7eb1a60
+1.0504030896872774e-05,0.0,[kernel.kallsyms],release_pages
+1.0503939044297326e-05,0.0,python,bitwise_or_rule
+1.0503778302290291e-05,0.0,[JIT],29145                            [.] 0x00007fc7637fdb3e
+1.0503778302290291e-05,0.0,[JIT],29186                            [.] 0x00007f5fa3493716
+1.0503594597139394e-05,0.0,[JIT],29128                            [.] 0x00007f82b62ee4f0
+1.050345681827622e-05,0.0,python,func_get_qualname
+1.0503445336704289e-05,0.0,select.cpython-314-x86_64-linux-gnu.so,PyInit_select
+1.050336496570077e-05,0.0,ld-2.31.so,0x0000000000002d13
+1.0503284594697254e-05,0.0,[kernel.kallsyms],nd_jump_root
+1.0503215705265667e-05,0.0,python,_PyParser_ASTFromString
+1.0503123852690218e-05,0.0,python,slot_tp_setattro
+1.0503100889546357e-05,0.0,[kernel.kallsyms],copy_user_enhanced_fast_string
+1.0502963110683184e-05,0.0,python,tuple_subtype_new
+1.050291718439546e-05,0.0,[kernel.kallsyms],irq_work_tick
+1.0502848294963872e-05,0.0,[kernel.kallsyms],__split_vma
+1.0502825331820011e-05,0.0,[kernel.kallsyms],ext4_filemap_fault
+1.0502813850248079e-05,0.0,[JIT],29128                            [.] 0x00007f82b69b8339
+1.0502572737237526e-05,0.0,[kernel.kallsyms],mark_page_accessed
+1.0502549774093665e-05,0.0,python,binary_op1
+1.0502526810949802e-05,0.0,[JIT],29145                            [.] 0x00007fc7636bfa87
+1.0502457921518216e-05,0.0,_psutil_linux.abi3.so,PyModule_AddIntConstant@plt
+1.0502389032086629e-05,0.0,python,Py_GETENV
+1.0502366068942768e-05,0.0,[JIT],29145                            [.] 0x00007fc761f3c69e
+1.0502216808507662e-05,0.0,python,remove_redundant_nops_and_jumps
+1.0502124955932214e-05,0.0,python,strings_rule.cold
+1.0502067548072559e-05,0.0,python,compiler_add_const.isra.0
+1.0502056066500628e-05,0.0,python,PyStructSequence_New
+1.0502033103356765e-05,0.0,[JIT],29128                            [.] 0x00007f82b784c503
+1.0501895324493592e-05,0.0,[JIT],29132                            [.] 0x00007f0340fa80a1
+1.0501539395763728e-05,0.0,[JIT],29189                            [.] 0x00007fcc4038e2f3
+1.0501459024760212e-05,0.0,[JIT],29132                            [.] 0x00007f034186618a
+1.0501413098472487e-05,0.0,[JIT],29207                            [.] 0x00007fa55f8e9ffe
+1.0501275319609315e-05,0.0,[JIT],29132                            [.] 0x00007f0341abe4cf
+1.0501263838037382e-05,0.0,[kernel.kallsyms],process_measurement
+1.050124087489352e-05,0.0,python,weakref___init__
+1.0501149022318072e-05,0.0,python,_PyMem_RawFree
+1.0500896427735588e-05,0.0,dpkg-query,0x000000000000f33c
+1.0500770130444347e-05,0.0,[JIT],29128                            [.] 0x00007f82b641d270
+1.0500724204156623e-05,0.0,[kernel.kallsyms],find_next_zero_bit
+1.050070124101276e-05,0.0,python,_validate_charset
+1.0500666796296966e-05,0.0,[JIT],29156                            [.] 0x00007f979c0d7177
+1.050058642529345e-05,0.0,[JIT],29128                            [.] 0x00007f82b7a281bc
+1.0500494572718001e-05,0.0,[kernel.kallsyms],current_umask
+1.0500460128002207e-05,0.0,python,slot_tp_richcompare
+1.0500345312282896e-05,0.0,python,basicblock_next_instr
+1.0500253459707447e-05,0.0,ld-2.31.so,0x000000000000a50e
+1.0499886049405652e-05,0.0,python,compiler_unwind_fblock_stack
+1.0499794196830204e-05,0.0,python,_PyUnicodeWriter_Init
+1.0499162710373994e-05,0.0,select.cpython-314-x86_64-linux-gnu.so,_select_traverse
+1.0498726410640613e-05,0.0,[JIT],29146                            [.] 0x00007f027e29a17c
+1.0498714929068681e-05,0.0,[JIT],29128                            [.] 0x00007f82b68f357a
+1.0498083442612473e-05,0.0,python,PyNumber_Long
+1.0497716032310678e-05,0.0,[JIT],29195                            [.] 0x00007fc47b528364
+1.0497474919300124e-05,0.0,[JIT],29171                            [.] 0x00007f9da276b9d6
+1.0497348622008884e-05,0.0,[kernel.kallsyms],native_set_pte_at
+1.0496717135552674e-05,0.0,python,call_attribute
+1.0496533430401776e-05,0.0,[JIT],29128                            [.] 0x00007f82b68ef049
+1.0496510467257913e-05,0.0,python,_PyType_CalculateMetaclass
+1.0495924907089428e-05,0.0,[kernel.kallsyms],do_page_fault
+1.0495683794078875e-05,0.0,[JIT],29145                            [.] 0x00007fc7638031e9
+1.0495075270766528e-05,0.0,libc-2.31.so,isatty
+1.0493973039861143e-05,0.0,libc-2.31.so,open
+1.0493973039861143e-05,0.0,python,emit__STORE_FAST_4
+1.0493858224141833e-05,0.0,python,_PyDict_Pop_KnownHash
+1.0491757096478444e-05,0.0,[kernel.kallsyms],flush_tlb_batched_pending
+1.0491332278316995e-05,0.0,dpkg-query,0x000000000001698b
+1.0491251907313477e-05,0.0,[JIT],29128                            [.] 0x00007f82b641c1a0
+1.0490184121123885e-05,0.0,[JIT],29180                            [.] 0x00007f8495c26bf0
+1.0489885600253677e-05,0.0,[JIT],29128                            [.] 0x00007f82b63000ce
+1.0489724858246641e-05,0.0,[kernel.kallsyms],vma_interval_tree_insert
+1.0488404477474567e-05,0.0,[kernel.kallsyms],xattr_resolve_name
+1.0488243735467532e-05,0.0,python,_loop1_104_rule
+1.0488037067172772e-05,0.0,[JIT],29145                            [.] 0x00007fc761f230f6
+1.0487841880449944e-05,0.0,_datetime.cpython-314-x86_64-linux-gnu.so,ymd_to_ord
+1.0487451507004286e-05,0.0,python,clear_slots
+1.0486406683958559e-05,0.0,[JIT],29198                            [.] 0x00007fa4df2109f6
+1.0484627040309241e-05,0.0,[kernel.kallsyms],apparmor_file_alloc_security
+1.0483616661979304e-05,0.0,ld-2.31.so,0x000000000000760e
+1.0483605180407373e-05,0.0,[kernel.kallsyms],strncpy_from_user
+1.0483547772547718e-05,0.0,python,pattern_hash
+1.0483341104252958e-05,0.0,python,PyFloat_FromString
+1.0482870359803784e-05,0.0,[JIT],29145                            [.] 0x00007fc7635b83aa
+1.0482652209937093e-05,0.0,python,_buffered_init
+1.0482147020772125e-05,0.0,[JIT],29192                            [.] 0x00007f44debeda75
+1.0480619971705292e-05,0.0,[JIT],29204                            [.] 0x00007f12b5a17050
+1.0479506259227976e-05,0.0,python,fileio_traverse
+1.0479460332940251e-05,0.0,[JIT],29146                            [.] 0x00007f027e1f3001
+1.0479024033206871e-05,0.0,python,unicode_isidentifier
+1.0478668104477007e-05,0.0,python,emit__CHECK_VALIDITY_AND_SET_IP
+1.0478438473038385e-05,0.0,[kernel.kallsyms],activate_task
+1.047350139710802e-05,0.0,[JIT],29128                            [.] 0x00007f82b641d147
+1.0470573596265591e-05,0.0,[JIT],29128                            [.] 0x00007f82b641d437
+1.0470010999240968e-05,0.0,python,_PyPegen_seq_insert_in_front
+1.0468954694623309e-05,0.0,python,memmove@plt
+1.0468920249907515e-05,0.0,dpkg-query,0x00000000000169aa
+1.0468288763451305e-05,0.0,python,_PyEval_BuiltinsFromGlobals
+1.0467818019002131e-05,0.0,python,_Py_asdl_generic_seq_new
+1.0462754645780523e-05,0.0,[kernel.kallsyms],security_task_getsecid
+1.0462467606482246e-05,0.0,python,PyModule_AddIntConstant
+1.0461744267450588e-05,0.0,dpkg-query,0x000000000001891d
+1.0460837223268032e-05,0.0,[JIT],29128                            [.] 0x00007f82b7d068d8
+1.0457392751688705e-05,0.0,python,_io_open.cold
+1.0456302002355252e-05,0.0,python,_PyTokenizer_translate_newlines.constprop.0
+1.045511940044635e-05,0.0,python,_PyTuple_Resize
+1.0454774953288418e-05,0.0,[kernel.kallsyms],ksys_read
+1.0454005687969036e-05,0.0,[JIT],29132                            [.] 0x00007f03405d2070
+1.0453684203954965e-05,0.0,python,map_vectorcall
+1.0453224941077722e-05,0.0,python,dict_ass_sub
+1.0451261592277506e-05,0.0,dpkg-query,0x0000000000018544
+1.0451031960838885e-05,0.0,python,_PyImport_GetModuleAttr
+1.0446370442634863e-05,0.0,[kernel.kallsyms],nsec_to_clock_t
+1.0445291174873342e-05,0.0,python,chain_next
+1.0444728577848718e-05,0.0,python,type_init
+1.044378708895037e-05,0.0,[JIT],29132                            [.] 0x00007f034153b29b
+1.0440319654227182e-05,0.0,python,new_compiler
+1.0438425194858552e-05,0.0,[kernel.kallsyms],__alloc_file
+1.0428929934871545e-05,0.0,[JIT],29201                            [.] 0x00007f4b8b62e070
+1.0425738057874703e-05,0.0,_psutil_posix.abi3.so,psutil_getpagesize_pywrapper
+1.0423097296330553e-05,0.0,dpkg-query,0x0000000000007478
+1.0418791706856397e-05,0.0,[kernel.kallsyms],__x64_sys_newstat
+1.0416793913340388e-05,0.0,python,emit__GUARD_NOT_EXHAUSTED_TUPLE
+1.0415817979726245e-05,0.0,dpkg-query,0x000000000000ec03
+1.040381973705826e-05,0.0,[kernel.kallsyms],apparmor_inode_getattr
+1.0388698506825022e-05,0.0,[JIT],29150                            [.] 0x00007f15a3b6719b
+1.0373359126725091e-05,0.0,[kernel.kallsyms],alloc_pages_current
+1.0367078706878787e-05,0.0,python,_PyFrame_PushUnchecked.isra.0
+1.0363484974864359e-05,0.0,dpkg-query,0x000000000000f347
+1.0359891242849929e-05,0.0,[JIT],29171                            [.] 0x00007f9da25f9323
+1.0354058604308937e-05,0.0,[JIT],29128                            [.] 0x00007f82b68f31ee
+1.0348168557908291e-05,0.0,[JIT],29132                            [.] 0x00007f033fde7397
+1.0331635094327527e-05,0.0,[kernel.kallsyms],prepare_exit_to_usermode
+1.0321979092333484e-05,0.0,[JIT],29128                            [.] 0x00007f82b68f32e0
+1.0288269197143818e-05,0.0,[JIT],29128                            [.] 0x00007f82b642010a
+1.0287821415838505e-05,0.0,[JIT],29192                            [.] 0x00007f44de83a1fb
+1.027147165740864e-05,0.0,[JIT],29198                            [.] 0x00007fa4deffe409
+1.0247980361237639e-05,0.0,dpkg-query,0x000000000000f8ce
+1.0194866609484438e-05,0.0,dpkg-query,0x0000000000018914
+1.0155990006925784e-05,0.0,[kernel.kallsyms],fget
+1.01133359672018e-05,0.0,python,functools_copy_attr
+1.0060692959897775e-05,0.0,dpkg-query,0x00000000000122ae
+9.99899099234012e-06,0.0,[kernel.kallsyms],unlock_page
+9.989909068942633e-06,0.0,[kernel.kallsyms],may_expand_vm
+9.976888966372783e-06,0.0,dpkg-query,0x000000000000f93a
+9.964638129122314e-06,0.0,libc-2.31.so,_dl_mcount_wrapper_check
+9.954591753682615e-06,0.0,[JIT],29145                            [.] 0x00007fc763803563
+9.944924270116641e-06,0.0,[JIT],29171                            [.] 0x00007f9da275d000
+9.932317504136309e-06,0.0,[kernel.kallsyms],vma_do_get_file
+9.900008360722235e-06,0.0,[kernel.kallsyms],dnotify_flush
+9.884244162460855e-06,0.0,[kernel.kallsyms],native_irq_return_iret
+9.797592739096952e-06,0.0,python,PyIter_Next
+9.683064059084377e-06,0.0,python,hashtable_rehash
+9.655003097284803e-06,0.0,[JIT],29153                            [.] 0x00007fcfc835a2aa
+9.581337331774959e-06,0.0,python,type_modified_unlocked
+9.529532479221902e-06,0.0,[kernel.kallsyms],alloc_pipe_info
+9.381362793451246e-06,0.0,[kernel.kallsyms],page_add_file_rmap
+9.290268001750015e-06,0.0,[JIT],29192                            [.] 0x00007f44debf2070
+9.223318955819855e-06,0.0,[JIT],29192                            [.] 0x00007f44de838079
+9.195510588602766e-06,0.0,[kernel.kallsyms],rw_verify_area
+9.172788557751148e-06,0.0,[JIT],29195                            [.] 0x00007fc47b5282e0
+9.08913382466126e-06,0.0,libpython3.11.so.1.0,free_keys_object
+8.890594482828932e-06,0.0,[JIT],29204                            [.] 0x00007f12b58fae94
+8.828513623397553e-06,0.0,libpython3.11.so.1.0,subtype_dealloc
+8.817617611634953e-06,0.0,libpython3.11.so.1.0,unicode_dealloc
+8.762023840344638e-06,0.0,libpython3.11.so.1.0,PyInterpreterState_New
+8.704007457376864e-06,0.0,[kernel.kallsyms],__mmdrop
+8.701550400983611e-06,0.0,[JIT],29192                            [.] 0x00007f44de83a197
+8.55491924585172e-06,0.0,python,getenv@plt
+8.519877488318046e-06,0.0,[JIT],29195                            [.] 0x00007fc47aaa5574
+8.517500802928312e-06,0.0,python,list_extend_dict
+8.511530385524148e-06,0.0,[JIT],29150                            [.] 0x00007f15a3d3f141
+8.511254827797802e-06,0.0,[JIT],29174                            [.] 0x00007f5a128a6592
+8.508085913944823e-06,0.0,[JIT],29174                            [.] 0x00007f5a128a235c
+8.507018127755231e-06,0.0,python,partial_call
+8.503550693032043e-06,0.0,[JIT],29132                            [.] 0x00007f033fe0f31d
+8.503252172161836e-06,0.0,[JIT],29183                            [.] 0x00007f31217150ec
+8.497304717901533e-06,0.0,python,property_descr_get
+8.495766187262769e-06,0.0,[JIT],29198                            [.] 0x00007fa4df20f5c3
+8.492620236553651e-06,0.0,python,PyDictProxy_New
+8.486994266307418e-06,0.0,[JIT],29162                            [.] 0x00007f2b244a0599
+8.486603892861762e-06,0.0,python,init_flags
+8.484870175500168e-06,0.0,python,tuplerichcompare
+8.48446832048258e-06,0.0,[JIT],29132                            [.] 0x00007f033fde728b
+8.48320534757016e-06,0.0,[JIT],29146                            [.] 0x00007f027e2a038b
+8.48160940907174e-06,0.0,python,merge_at
+8.476362330699234e-06,0.0,[JIT],29159                            [.] 0x00007f252e408bd5
+8.463686675287315e-06,0.0,[kernel.kallsyms],mem_cgroup_handle_over_high
+8.45961071725178e-06,0.0,[JIT],29165                            [.] 0x00007f1bef0847e5
+8.458829970360465e-06,0.0,[JIT],29162                            [.] 0x00007f2b244a3709
+8.446360983243307e-06,0.0,python,PySequence_Contains
+8.444765044744887e-06,0.0,python,merge_from_seq2_lock_held
+8.436796833824713e-06,0.0,[JIT],29128                            [.] 0x00007f82b7a1b02d
+8.413087387787022e-06,0.0,[JIT],29128                            [.] 0x00007f82b6415168
+8.40089395839621e-06,0.0,[kernel.kallsyms],vfs_statx_fd
+8.389492757468642e-06,0.0,python,mbuf_dealloc
+8.342475720410848e-06,0.0,python,_PyOptimizer_Optimize
+8.340156442880768e-06,0.0,[kernel.kallsyms],page_add_file_rmap
+8.316619220422042e-06,0.0,python,_PyIOBase_check_readable
+8.304804682904955e-06,0.0,python,property_init
+8.272219981764536e-06,0.0,[JIT],29177                            [.] 0x00007f89e8e012be
+8.228452229563238e-06,0.0,[JIT],29177                            [.] 0x00007f89e8e037cc
+8.227453332805234e-06,0.0,python,split
+8.222929593464386e-06,0.0,[kernel.kallsyms],sync_mm_rss
+8.213468778193171e-06,0.0,[JIT],29168                            [.] 0x00007f12419a473a
+8.209783193603293e-06,0.0,[JIT],29207                            [.] 0x00007fa55fa43000
+8.184248177628559e-06,0.0,python,list_ass_subscript
+8.125370676765953e-06,0.0,libc-2.31.so,_IO_default_xsputn
+8.051946024266663e-06,0.0,[kernel.kallsyms],common_file_perm
+8.024298399056608e-06,0.0,[JIT],29195                            [.] 0x00007fc47ac653c1
+7.995560024513102e-06,0.0,python,PyModule_NewObject
+7.943433687945975e-06,0.0,[unknown],0000000000000000
+7.939966253222787e-06,0.0,[kernel.kallsyms],prepare_exit_to_usermode
+7.900664832502682e-06,0.0,python,_PyObject_ComputedDictPointer
+7.8457484739563e-06,0.0,libpython3.11.so.1.0,PyObject_GC_Del
+7.839651759260893e-06,0.0,python,descr_setcheck.isra.0
+7.79846736074409e-06,0.0,python,float___trunc___impl
+7.793748434680415e-06,0.0,math.cpython-314-x86_64-linux-gnu.so,math_log
+7.76778860054423e-06,0.0,python,PyModule_SetDocString
+7.720897860777677e-06,0.0,[kernel.kallsyms],hugepage_vma_check
+7.656153276658287e-06,0.0,[kernel.kallsyms],sync_regs
+7.626645636795398e-06,0.0,[JIT],29174                            [.] 0x00007f5a13325503
+7.619469654338469e-06,0.0,[kernel.kallsyms],nmi_restore
+7.6025802620278424e-06,0.0,ld-2.31.so,0x00000000000077c0
+7.600203576638108e-06,0.0,python,_in_weak_set.isra.0
+7.598182819978237e-06,0.0,[kernel.kallsyms],__x64_sys_read
+7.556366935005224e-06,0.0,python,r_float_bin
+7.521118509176792e-06,0.0,python,emit__BINARY_SUBSCR_DICT
+7.43298596303378e-06,0.0,[JIT],29168                            [.] 0x00007f1242427a2c
+7.4303452014896306e-06,0.0,libc-2.31.so,bsearch
+7.37586514267663e-06,0.0,python,cell_clear
+7.371226587616472e-06,0.0,[JIT],29189                            [.] 0x00007fcc402e43c9
+7.365520246366723e-06,0.0,[kernel.kallsyms],restore_nameidata
+7.355749428653369e-06,0.0,[kernel.kallsyms],page_counter_cancel
+7.255767900277477e-06,0.0,[JIT],29201                            [.] 0x00007f4b8b6e50d7
+7.137059928081985e-06,0.0,libpython3.11.so.1.0,_Py_dg_dtoa
+7.064438985617871e-06,0.0,[kernel.kallsyms],free_pcp_prepare
+7.016778980531935e-06,0.0,python,_PyObject_CallMethod
+7.016296754510829e-06,0.0,[JIT],29128                            [.] 0x00007f82b64155d7
+6.919265990121227e-06,0.0,[kernel.kallsyms],__handle_mm_fault
+6.847724315418634e-06,0.0,[kernel.kallsyms],sync_regs
+6.785677900703048e-06,0.0,python3.8,_PyUnicode_FromId
+6.7465831482777025e-06,0.0,python3.8,_PyDict_Next
+6.6850074780112916e-06,0.0,python,PyObject_CallFinalizerFromDealloc
+6.681838564158312e-06,0.0,[JIT],29128                            [.] 0x00007f82b810a4a5
+6.631870763114228e-06,0.0,python,PyException_SetCause
+6.606863899448325e-06,0.0,python,_PyEval_CheckExceptTypeValid
+6.490383352207463e-06,0.0,[JIT],29192                            [.] 0x00007f44decb9f19
+6.481886988978461e-06,0.0,[kernel.kallsyms],apparmor_file_open
+6.327356512357982e-06,0.0,python,emit__STORE_FAST_3
+6.293038093855968e-06,0.0,[kernel.kallsyms],lru_add_drain_cpu
+6.22577904548367e-06,0.0,[JIT],29192                            [.] 0x00007f44dedd6000
+6.216306748640524e-06,0.0,python,_io_TextIOWrapper_read
+6.175466797281654e-06,0.0,[kernel.kallsyms],may_open.isra.0
+6.07662194452694e-06,0.0,python,enumerate_vectorcall
+6.034220499385441e-06,0.0,python,PyThread_acquire_lock_timed
+6.020408168352345e-06,0.0,[kernel.kallsyms],do_mmap
+6.020408168352345e-06,0.0,[kernel.kallsyms],wp_page_copy
+6.020408168352345e-06,0.0,ld-2.31.so,0x0000000000008430
+5.973356686578757e-06,0.0,python,PyBytes_AsStringAndSize
+5.872410706160655e-06,0.0,[JIT],29128                            [.] 0x00007f82b7fb3070
+5.85595761358341e-06,0.0,[kernel.kallsyms],put_cpu_partial
+5.7954382479346585e-06,0.0,python,mbuf_add_view
+5.753978291691509e-06,0.0,[JIT],29146                            [.] 0x00007f027dca216e
+5.693286702463792e-06,0.0,[kernel.kallsyms],__x64_sys_sigaltstack
+5.684583670940029e-06,0.0,python,_PyPathConfig_ComputeSysPath0
+5.6667987160187776e-06,0.0,python,PyType_IsSubtype
+5.665880190264291e-06,0.0,[JIT],29150                            [.] 0x00007f15a3f28046
+5.663480541730694e-06,0.0,[JIT],29207                            [.] 0x00007fa55fc18015
+5.662826092130622e-06,0.0,python,pthread_mutex_lock@plt
+5.662114234670895e-06,0.0,python,PyObject_HasAttrWithError
+5.661080893197097e-06,0.0,libm-2.31.so,fmaf32x
+5.660656075035647e-06,0.0,[kernel.kallsyms],security_file_free
+5.660139404298748e-06,0.0,[kernel.kallsyms],ext4_htree_fill_tree
+5.65286008769444e-06,0.0,[JIT],29128                            [.] 0x00007f82b641d1c6
+5.65074747845912e-06,0.0,python,PyObject_Format
+5.64545447379889e-06,0.0,[JIT],29128                            [.] 0x00007f82b641d66c
+5.640620732015903e-06,0.0,[kernel.kallsyms],__anon_vma_prepare
+5.638887014654309e-06,0.0,python,_Py_Executors_InvalidateDependency
+5.6374518181629236e-06,0.0,[kernel.kallsyms],kernel_poison_pages
+5.634420683173117e-06,0.0,python,PyObject_GC_UnTrack
+5.628484710484746e-06,0.0,[JIT],29128                            [.] 0x00007f82b641822f
+5.6246613470316945e-06,0.0,[JIT],29128                            [.] 0x00007f82b6417015
+5.613627556405921e-06,0.0,[kernel.kallsyms],path_lookupat.isra.0
+5.608667517331692e-06,0.0,[kernel.kallsyms],security_file_alloc
+5.6054756403348504e-06,0.0,python,emit__ITER_NEXT_TUPLE
+5.603340067955669e-06,0.0,python,PyErr_GivenExceptionMatches
+5.599264109920134e-06,0.0,python,object_richcompare
+5.590584041540233e-06,0.0,python,init_slice.constprop.0
+5.572799086618982e-06,0.0,python,remove_importlib_frames
+5.567712750253511e-06,0.0,[JIT],29128                            [.] 0x00007f82b641c1fa
+5.561914556428313e-06,0.0,python,compiler_augassign
+5.541201800664635e-06,0.0,python,zip_dealloc
+5.527871695652644e-06,0.0,[JIT],29128                            [.] 0x00007f82b6417a14
+5.5231183248731754e-06,0.0,[kernel.kallsyms],ext4_llseek
+5.5227623961433115e-06,0.0,python,encode_current_locale
+5.52062682376413e-06,0.0,[kernel.kallsyms],ext4_da_reserve_space
+5.508961546682147e-06,0.0,python,_PyCfg_ToInstructionSequence
+5.498811837095068e-06,0.0,libc-2.31.so,0x0000000000022560
+5.48000502227195e-06,0.0,libc-2.31.so,realpath
+5.4538844461287305e-06,0.0,python,PyObject_CheckBuffer
+5.412390045169788e-06,0.0,[kernel.kallsyms],rb_next_postorder
+5.383479447047315e-06,0.0,[kernel.kallsyms],unlink_anon_vmas
+5.370746383775741e-06,0.0,libpython3.11.so.1.0,_PyTrash_end
+5.3196993149701356e-06,0.0,[JIT],29150                            [.] 0x00007f15a3d702a5
+5.312626666660587e-06,0.0,python,iomodule_exec
+5.305381794772072e-06,0.0,[kernel.kallsyms],__mutex_init
+5.269019656466325e-06,0.0,python,list_contains
+5.264220359399131e-06,0.0,python,strcmp@plt
+5.231107505949881e-06,0.0,[JIT],29192                            [.] 0x00007f44de83a18f
+5.221772987969909e-06,0.0,libpython3.11.so.1.0,PyDict_Next
+5.208867701119368e-06,0.0,[JIT],29128                            [.] 0x00007f82b64143da
+5.152389848790359e-06,0.0,[JIT],29128                            [.] 0x00007f82b6431174
+5.090527139225672e-06,0.0,libc-2.31.so,readlink
+5.088517864137731e-06,0.0,python,find_signature
+5.025162550222002e-06,0.0,[JIT],29128                            [.] 0x00007f82b642c6cc
+5.007515374163924e-06,0.0,python,read_object
+4.996504546682013e-06,0.0,[kernel.kallsyms],__x64_sys_rt_sigaction
+4.9226435944493404e-06,0.0,python,list_item
+4.914353899515097e-06,0.0,python,PyObject_GetAttrString
+4.90570827585099e-06,0.0,libpthread-2.31.so,sem_post@@GLIBC_2.2.5
+4.853145639550481e-06,0.0,python,_io_FileIO_readinto
+4.8447870551846506e-06,0.0,python,fileio_new
+4.811674201735401e-06,0.0,[kernel.kallsyms],touch_atime
+4.809573074072012e-06,0.0,libpython3.11.so.1.0,_PyStaticUnicode_Dealloc
+4.807391575405106e-06,0.0,python,genexp_rule
+4.725172038806603e-06,0.0,python,posixmodule_exec
+4.6737920044149964e-06,0.0,python,method_vectorcall_FASTCALL_KEYWORDS
+4.6222397464444225e-06,0.0,[JIT],29128                            [.] 0x00007f82b6417c6d
+4.6087603809973284e-06,0.0,python,intern_static.isra.0
+4.580228674748582e-06,0.0,python,cfunction_vectorcall_FASTCALL
+4.578598291534367e-06,0.0,python,PyUnicode_DecodeASCII
+4.541535777340823e-06,0.0,libpython3.11.so.1.0,_PyStaticCode_Dealloc
+4.541512814196961e-06,0.0,[kernel.kallsyms],__unlock_page_memcg
+4.537322040442116e-06,0.0,[kernel.kallsyms],mmap_region
+4.524933424328474e-06,0.0,python,symtable_exit_block.isra.0
+4.507607732284466e-06,0.0,python,__fxstat64@plt
+4.501660278024164e-06,0.0,[JIT],29128                            [.] 0x00007f82b810e1a5
+4.4879168364226545e-06,0.0,[JIT],29165                            [.] 0x00007f1beefe0c65
+4.484300141264363e-06,0.0,python,emit__CALL_METHOD_DESCRIPTOR_FAST
+4.444137602649426e-06,0.0,ld-2.31.so,0x00000000000039e5
+4.438017924810158e-06,0.0,[kernel.kallsyms],up_write
+4.437535698789052e-06,0.0,libpython3.11.so.1.0,0x00000000000fb674
+4.432610104430616e-06,0.0,[JIT],29128                            [.] 0x00007f82b7b46070
+4.431898246970889e-06,0.0,python,t_primary_raw
+4.427925623082734e-06,0.0,python,create_builtin
+4.394743880201897e-06,0.0,ld-2.31.so,_dl_rtld_di_serinfo
+4.39360720458072e-06,0.0,[kernel.kallsyms],alloc_perf_context
+4.375604099792778e-06,0.0,python,_imp_create_builtin
+4.339253443058961e-06,0.0,[kernel.kallsyms],__do_fault
+4.307242820515095e-06,0.0,[kernel.kallsyms],security_file_mprotect
+4.265162859387667e-06,0.0,libpython3.11.so.1.0,list_dealloc
+4.263716181324351e-06,0.0,python,_copy_characters
+4.262062834966274e-06,0.0,libc-2.31.so,tzset
+4.258606881815018e-06,0.0,python,PySys_GetObject
+4.256494272579698e-06,0.0,[kernel.kallsyms],fpregs_assert_state_consistent
+4.240833408465697e-06,0.0,[JIT],29146                            [.] 0x00007f027dcf65cf
+4.239444138262036e-06,0.0,[JIT],29177                            [.] 0x00007f89e8fcc065
+4.21007427726232e-06,0.0,python3.8,Py_UniversalNewlineFgets
+4.207904260167345e-06,0.0,[kernel.kallsyms],do_fault
+4.200521609415657e-06,0.0,libc-2.31.so,_IO_file_seekoff
+4.181531089441641e-06,0.0,libc-2.31.so,_dl_addr
+4.1688439524577925e-06,0.0,[kernel.kallsyms],refcount_dec_and_lock_irqsave
+4.13633962232089e-06,0.0,dpkg-query,0x000000000000cbda
+4.116200945153765e-06,0.0,[kernel.kallsyms],zap_pte_range.isra.0
+4.095809673404158e-06,0.0,libc-2.31.so,0x00000000000225a4
+4.094776331930361e-06,0.0,[kernel.kallsyms],free_unref_page_prepare.part.0
+4.086440710708392e-06,0.0,libpython3.11.so.1.0,0x00000000000f9074
+4.071193183183911e-06,0.0,python3.8,_Py_wreadlink
+4.06896575822928e-06,0.0,libc-2.31.so,abort
+4.068942795085418e-06,0.0,libpython3.11.so.1.0,0x00000000000fc850
+4.06166347848111e-06,0.0,python,unicode_decode_locale
+4.044280378577447e-06,0.0,[JIT],29128                            [.] 0x00007f82b7a26236
+4.03616290722217e-06,0.0,libc-2.31.so,ftello
+4.034911415881681e-06,0.0,python,set_iter
+4.034176595278091e-06,0.0,libpython3.11.so.1.0,func_traverse
+4.017241276679741e-06,0.0,python,convertenviron
+4.016529419220013e-06,0.0,libpython3.11.so.1.0,_PyObject_DictPointer
+3.988973646585409e-06,0.0,libpython3.11.so.1.0,set_add_entry
+3.981579514261789e-06,0.0,libpython3.11.so.1.0,_PyAST_Fini
+3.97936357087909e-06,0.0,[JIT],29128                            [.] 0x00007f82b7ba7070
+3.971716843972987e-06,0.0,[kernel.kallsyms],free_unref_page_commit
+3.971716843972987e-06,0.0,[kernel.kallsyms],uprobe_mmap
+3.971716843972987e-06,0.0,ld-2.31.so,0x0000000000002fa6
+3.971716843972987e-06,0.0,ld-2.31.so,0x000000000000381a
+3.9399014081519494e-06,0.0,python,PyBytes_FromString
+3.917753455896886e-06,0.0,_json.cpython-314-x86_64-linux-gnu.so,_match_number_unicode.isra.0
+3.91293119568583e-06,0.0,[kernel.kallsyms],PageHuge
+3.905766694800833e-06,0.0,[kernel.kallsyms],security_file_ioctl
+3.899084419936941e-06,0.0,ld-2.31.so,_dl_rtld_di_serinfo
+3.897890336456108e-06,0.0,ld-2.31.so,_dl_catch_error
+3.863457102234783e-06,0.0,python,long_pow
+3.829666836041599e-06,0.0,python,_PyType_GetDict
+3.826601256335999e-06,0.0,libc-2.31.so,_dl_addr
+3.8086440778357813e-06,0.0,python,memory_dealloc
+3.807266289204051e-06,0.0,[kernel.kallsyms],pmd_devmap_trans_unstable
+3.789205776556454e-06,0.0,python,module_init_dict
+3.770697482603544e-06,0.0,libpython3.11.so.1.0,gen_dealloc
+3.7655078120906937e-06,0.0,libpython3.11.so.1.0,PyBool_FromLong
+3.756150330966859e-06,0.0,python,_PyErr_SetKeyError
+3.7528206751068443e-06,0.0,python,cfunction_vectorcall_O
+3.745001724621775e-06,0.0,[JIT],29132                            [.] 0x00007f034048f682
+3.729271971076188e-06,0.0,[JIT],29128                            [.] 0x00007f82b64230ce
+3.7113836820075573e-06,0.0,[kernel.kallsyms],alloc_slab_page
+3.7081688418668534e-06,0.0,libc-2.31.so,read
+3.7076866158457475e-06,0.0,[kernel.kallsyms],htree_dirblock_to_tree
+3.7010502672695802e-06,0.0,[JIT],29150                            [.] 0x00007f15a3d61015
+3.6977550561253588e-06,0.0,[JIT],29150                            [.] 0x00007f15a3d5f015
+3.692037233303678e-06,0.0,python,type_vectorcall
+3.6846775456958526e-06,0.0,python,_PyWeakref_GetWeakrefCount
+3.6749641358421545e-06,0.0,[JIT],29128                            [.] 0x00007f82b68f3268
+3.673264863196354e-06,0.0,[kernel.kallsyms],swake_up_one
+3.6720248534277965e-06,0.0,libpython3.11.so.1.0,_PyUnicode_ExactDealloc
+3.60891065252262e-06,0.0,[kernel.kallsyms],copy_page
+3.5893575355239815e-06,0.0,libpython3.11.so.1.0,_PyTime_FromSeconds
+3.5759929857961983e-06,0.0,libpython3.11.so.1.0,os_waitpid
+3.5126721165962624e-06,0.0,libpython3.11.so.1.0,_PyObject_GetInstanceAttribute
+3.4915230610992033e-06,0.0,libpython3.11.so.1.0,_PyObject_VisitInstanceAttributes
+3.4906160169166474e-06,0.0,[kernel.kallsyms],handle_mm_fault
+3.4666654578684033e-06,0.0,[kernel.kallsyms],mem_cgroup_try_charge_delay
+3.457227605741051e-06,0.0,[kernel.kallsyms],error_entry
+3.449110134385774e-06,0.0,[kernel.kallsyms],security_prepare_creds
+3.448846058231359e-06,0.0,libpython3.11.so.1.0,0x00000000000fa3a0
+3.446469372841624e-06,0.0,[kernel.kallsyms],do_wp_page
+3.4408778473111857e-06,0.0,libpython3.11.so.1.0,0x00000000000f9080
+3.4234373395478666e-06,0.0,python,oserror_parse_args.isra.0
+3.421313248740616e-06,0.0,python,check_end
+3.4124724383536804e-06,0.0,python3.8,_Py_Constant
+3.411611320458849e-06,0.0,[kernel.kallsyms],filemap_map_pages
+3.4069842469706214e-06,0.0,libpython3.11.so.1.0,list_traverse
+3.3947908175798086e-06,0.0,[kernel.kallsyms],down_read_trylock
+3.392678208344489e-06,0.0,python3.8,_PyDict_DelItem_KnownHash
+3.39120856713731e-06,0.0,[kernel.kallsyms],page_cpupid_xchg_last
+3.3792792139009126e-06,0.0,python3.8,PyUnicode_New
+3.3103438560266758e-06,0.0,[kernel.kallsyms],unshare_files
+3.2857044026625664e-06,0.0,libpython3.11.so.1.0,PyObject_IsTrue
+3.285359955504634e-06,0.0,[kernel.kallsyms],propagate_protected_usage
+3.2211090789782803e-06,0.0,python,PyUnicode_AsUTF8AndSize
+3.1943914610946446e-06,0.0,python,float_as_integer_ratio
+3.146984050591193e-06,0.0,[JIT],29146                            [.] 0x00007f027dcf6bfe
+3.0859939404932673e-06,0.0,python,tuplegetter_descr_get
+3.072617909193553e-06,0.0,[kernel.kallsyms],wake_up_bit
+3.0691045481826406e-06,0.0,[kernel.kallsyms],account_kernel_stack
+3.062720794188957e-06,0.0,[JIT],29146                            [.] 0x00007f027dceb4a6
+2.972636380817661e-06,0.0,[kernel.kallsyms],inherit_task_group.isra.0.part.0
+2.9347586750170105e-06,0.0,[kernel.kallsyms],__intel_pmu_disable_all
+2.864032191921525e-06,0.0,[kernel.kallsyms],alloc_inode
+2.8564773175908706e-06,0.0,[JIT],29146                            [.] 0x00007f027dce73ad
+2.8226066803941684e-06,0.0,[kernel.kallsyms],recalc_sigpending_tsk
+2.8010672514514525e-06,0.0,python,emit__TIER2_RESUME_CHECK
+2.772455174199188e-06,0.0,[kernel.kallsyms],__free_pages_ok
+2.7710544224235953e-06,0.0,[kernel.kallsyms],kprobe_flush_task
+2.7675525429846144e-06,0.0,_json.cpython-314-x86_64-linux-gnu.so,_parse_object_unicode
+2.5732499011948564e-06,0.0,[kernel.kallsyms],acpi_os_read_memory
+1.907548360630526e-06,0.0,python,sigemptyset@plt
+1.7200772541397635e-06,0.0,[kernel.kallsyms],free_one_page
+1.5934125525960296e-06,0.0,[kernel.kallsyms],ghes_notify_nmi
+1.4958306727537348e-06,0.0,[kernel.kallsyms],put_task_stack
+1.4070321954387205e-06,0.0,[kernel.kallsyms],__perf_event_task_sched_in
+1.3476380238392159e-06,0.0,[kernel.kallsyms],__intel_pmu_enable_all.constprop.0
+1.3400831495085616e-06,0.0,[kernel.kallsyms],ghes_copy_tofrom_phys
+1.3315408599918343e-06,0.0,[kernel.kallsyms],end_repeat_nmi
+1.299897647749763e-06,0.0,[kernel.kallsyms],remove_entity_load_avg
+1.2153932783369745e-06,0.0,libpython3.11.so.1.0,0x00000000000fbb84
+1.1959205323418536e-06,0.0,[kernel.kallsyms],sched_clock
+1.1791344741786068e-06,0.0,[kernel.kallsyms],perf_pmu_enable.part.0
+1.1577443056709948e-06,0.0,[kernel.kallsyms],memcpy_fromio
+1.1478701538102612e-06,0.0,[kernel.kallsyms],x86_pmu_enable
+1.0577053694354477e-06,0.0,[kernel.kallsyms],fill_pmd
+1.0052690304261808e-06,0.0,[kernel.kallsyms],_copy_from_user
+9.235087567049218e-07,0.0,libc-2.31.so,sigemptyset
+9.079282635944389e-07,0.0,[kernel.kallsyms],switch_fpu_return
+8.371214094954353e-07,0.0,[kernel.kallsyms],nmi_cpu_backtrace
+8.036755904601836e-07,0.0,[kernel.kallsyms],apei_check_gar
+7.946166302065573e-07,0.0,[kernel.kallsyms],apei_read
+7.164041622120037e-07,0.0,[kernel.kallsyms],intel_bts_enable_local
+6.645304202273598e-07,0.0,[kernel.kallsyms],finish_task_switch
+5.975124848656145e-07,0.0,[kernel.kallsyms],pgd_free
+2.9204526363908783e-07,0.0,[kernel.kallsyms],intel_pmu_handle_irq
+1.5722864602428324e-07,0.0,[kernel.kallsyms],nmi_cpu_backtrace_handler
+1.545993660520647e-07,0.0,[kernel.kallsyms],ghes_copy_tofrom_phys
+9.149664671881942e-08,0.0,[kernel.kallsyms],ghes_copy_tofrom_phys
+8.599697376382953e-08,0.0,[kernel.kallsyms],perf_event_nmi_handler
+5.9382690027573606e-08,0.0,[kernel.kallsyms],perf_sample_event_took
+5.307930703740773e-08,0.0,[kernel.kallsyms],nmi_handle
+2.196424710416634e-08,0.0,[kernel.kallsyms],native_sched_clock
+1.748643405104304e-08,0.0,[kernel.kallsyms],native_write_msr
+1.4616041068271694e-08,0.0,[kernel.kallsyms],native_write_msr
+2.996690274013285e-09,0.0,[kernel.kallsyms],intel_bts_enable_local
+2.3077959581481623e-09,0.0,[kernel.kallsyms],__intel_pmu_enable_all.constprop.0
+1.1481571931085384e-11,0.0,[unknown],0000000000000000

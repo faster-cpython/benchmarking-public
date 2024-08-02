@@ -1,0 +1,14 @@
+# Benchmarks where the mean execution count is < 5
+aiohttp
+deepcopy_reduce
+djangocms
+flaskblogging
+gunicorn
+logging_silent
+pickle
+pickle_dict
+pickle_list
+sqlite_synth
+unpack_sequence
+unpickle
+unpickle_list

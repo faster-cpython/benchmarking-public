@@ -1,0 +1,3246 @@
+## Execution counts
+
+<details>
+<summary> Execution counts for Tier 1 instructions. </summary>
+
+
+The "miss ratio" column shows the percentage of times the instruction
+executed that it deoptimized. When this happens, the base unspecialized
+instruction is not counted.
+
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="right">Base Count</th>
+<th align="right">Head Count</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">TO_BOOL_INT</td>
+<td align="right">4,474,860</td>
+<td align="right">6,380</td>
+<td align="right">-99.9%</td>
+</tr>
+<tr>
+<td align="left">JUMP_BACKWARD</td>
+<td align="right">14,136,320</td>
+<td align="right">39,000</td>
+<td align="right">-99.7%</td>
+</tr>
+<tr>
+<td align="left">BINARY_SLICE</td>
+<td align="right">1,792,000</td>
+<td align="right">15,500</td>
+<td align="right">-99.1%</td>
+</tr>
+<tr>
+<td align="left">BINARY_SUBSCR</td>
+<td align="right">702,520</td>
+<td align="right">6,300</td>
+<td align="right">-99.1%</td>
+</tr>
+<tr>
+<td align="left">EXTENDED_ARG</td>
+<td align="right">10,260,480</td>
+<td align="right">342,820</td>
+<td align="right">-96.7%</td>
+</tr>
+<tr>
+<td align="left">COMPARE_OP_STR</td>
+<td align="right">1,617,700</td>
+<td align="right">59,300</td>
+<td align="right">-96.3%</td>
+</tr>
+<tr>
+<td align="left">BINARY_SUBSCR_STR_INT</td>
+<td align="right">14,146,500</td>
+<td align="right">622,980</td>
+<td align="right">-95.6%</td>
+</tr>
+<tr>
+<td align="left">SWAP</td>
+<td align="right">15,319,040</td>
+<td align="right">1,104,840</td>
+<td align="right">-92.8%</td>
+</tr>
+<tr>
+<td align="left">FOR_ITER_RANGE</td>
+<td align="right">5,180</td>
+<td align="right">380</td>
+<td align="right">-92.7%</td>
+</tr>
+<tr>
+<td align="left">JUMP_BACKWARD_NO_INTERRUPT</td>
+<td align="right">35,840</td>
+<td align="right">2,800</td>
+<td align="right">-92.2%</td>
+</tr>
+<tr>
+<td align="left">STORE_FAST_LOAD_FAST</td>
+<td align="right">174,080</td>
+<td align="right">15,960</td>
+<td align="right">-90.8%</td>
+</tr>
+<tr>
+<td align="left">CONTAINS_OP</td>
+<td align="right">47,020</td>
+<td align="right">6,180</td>
+<td align="right">-86.9%</td>
+</tr>
+<tr>
+<td align="left">COPY</td>
+<td align="right">16,174,080</td>
+<td align="right">2,383,360</td>
+<td align="right">-85.3%</td>
+</tr>
+<tr>
+<td align="left">BINARY_OP_ADD_INT</td>
+<td align="right">16,337,760</td>
+<td align="right">2,487,520</td>
+<td align="right">-84.8%</td>
+</tr>
+<tr>
+<td align="left">COMPARE_OP_INT</td>
+<td align="right">17,013,480</td>
+<td align="right">2,697,420</td>
+<td align="right">-84.1%</td>
+</tr>
+<tr>
+<td align="left">FOR_ITER_GEN</td>
+<td align="right">102,340</td>
+<td align="right">16,900</td>
+<td align="right">-83.5%</td>
+</tr>
+<tr>
+<td align="left">STORE_ATTR_SLOT</td>
+<td align="right">49,106,980</td>
+<td align="right">8,609,780</td>
+<td align="right">-82.5%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL_STR</td>
+<td align="right">11,642,700</td>
+<td align="right">2,192,140</td>
+<td align="right">-81.2%</td>
+</tr>
+<tr>
+<td align="left">SEND_GEN</td>
+<td align="right">40,940</td>
+<td align="right">7,900</td>
+<td align="right">-80.7%</td>
+</tr>
+<tr>
+<td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
+<td align="right">11,498,980</td>
+<td align="right">2,497,380</td>
+<td align="right">-78.3%</td>
+</tr>
+<tr>
+<td align="left">FOR_ITER_TUPLE</td>
+<td align="right">926,660</td>
+<td align="right">201,540</td>
+<td align="right">-78.3%</td>
+</tr>
+<tr>
+<td align="left">BINARY_OP_SUBTRACT_INT</td>
+<td align="right">8,785,780</td>
+<td align="right">1,960,560</td>
+<td align="right">-77.7%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_NONE</td>
+<td align="right">778,240</td>
+<td align="right">177,960</td>
+<td align="right">-77.1%</td>
+</tr>
+<tr>
+<td align="left">FOR_ITER</td>
+<td align="right">8,488,420</td>
+<td align="right">2,107,520</td>
+<td align="right">-75.2%</td>
+</tr>
+<tr>
+<td align="left">FOR_ITER_LIST</td>
+<td align="right">675,540</td>
+<td align="right">167,960</td>
+<td align="right">-75.1%</td>
+</tr>
+<tr>
+<td align="left">CALL_PY_GENERAL</td>
+<td align="right">10,950,880</td>
+<td align="right">2,883,860</td>
+<td align="right">-73.7%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_SLOT</td>
+<td align="right">147,500,440</td>
+<td align="right">40,309,300</td>
+<td align="right">-72.7%</td>
+</tr>
+<tr>
+<td align="left">BUILD_LIST</td>
+<td align="right">962,640</td>
+<td align="right">276,540</td>
+<td align="right">-71.3%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL</td>
+<td align="right">101,320</td>
+<td align="right">29,900</td>
+<td align="right">-70.5%</td>
+</tr>
+<tr>
+<td align="left">UNPACK_SEQUENCE_TWO_TUPLE</td>
+<td align="right">5,043,060</td>
+<td align="right">1,752,260</td>
+<td align="right">-65.3%</td>
+</tr>
+<tr>
+<td align="left">STORE_FAST_STORE_FAST</td>
+<td align="right">5,150,720</td>
+<td align="right">1,798,760</td>
+<td align="right">-65.1%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST</td>
+<td align="right">304,394,560</td>
+<td align="right">108,651,460</td>
+<td align="right">-64.3%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_NONDESCRIPTOR_NO_DICT</td>
+<td align="right">12,676,380</td>
+<td align="right">4,537,040</td>
+<td align="right">-64.2%</td>
+</tr>
+<tr>
+<td align="left">BUILD_TUPLE</td>
+<td align="right">1,838,080</td>
+<td align="right">658,840</td>
+<td align="right">-64.2%</td>
+</tr>
+<tr>
+<td align="left">CONTAINS_OP_DICT</td>
+<td align="right">8,081,500</td>
+<td align="right">3,092,500</td>
+<td align="right">-61.7%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_PROPERTY</td>
+<td align="right">2,298,580</td>
+<td align="right">950,900</td>
+<td align="right">-58.6%</td>
+</tr>
+<tr>
+<td align="left">NOP</td>
+<td align="right">5,790,800</td>
+<td align="right">2,479,660</td>
+<td align="right">-57.2%</td>
+</tr>
+<tr>
+<td align="left">POP_TOP</td>
+<td align="right">13,153,480</td>
+<td align="right">5,836,120</td>
+<td align="right">-55.6%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">29,762,560</td>
+<td align="right">13,435,460</td>
+<td align="right">-54.9%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_FALSE</td>
+<td align="right">67,041,280</td>
+<td align="right">31,373,840</td>
+<td align="right">-53.2%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL_BOOL</td>
+<td align="right">20,124,360</td>
+<td align="right">9,583,380</td>
+<td align="right">-52.4%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
+<td align="right">43,063,940</td>
+<td align="right">21,695,840</td>
+<td align="right">-49.6%</td>
+</tr>
+<tr>
+<td align="left">CALL_ISINSTANCE</td>
+<td align="right">6,921,740</td>
+<td align="right">3,578,360</td>
+<td align="right">-48.3%</td>
+</tr>
+<tr>
+<td align="left">CALL_METHOD_DESCRIPTOR_NOARGS</td>
+<td align="right">3,916,520</td>
+<td align="right">2,055,780</td>
+<td align="right">-47.5%</td>
+</tr>
+<tr>
+<td align="left">CALL_LIST_APPEND</td>
+<td align="right">1,530,760</td>
+<td align="right">807,920</td>
+<td align="right">-47.2%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_NONDESCRIPTOR_WITH_VALUES</td>
+<td align="right">3,080,940</td>
+<td align="right">1,643,280</td>
+<td align="right">-46.7%</td>
+</tr>
+<tr>
+<td align="left">COMPARE_OP</td>
+<td align="right">11,720,240</td>
+<td align="right">6,413,220</td>
+<td align="right">-45.3%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST</td>
+<td align="right">27,893,840</td>
+<td align="right">15,789,200</td>
+<td align="right">-43.4%</td>
+</tr>
+<tr>
+<td align="left">UNPACK_SEQUENCE_TUPLE</td>
+<td align="right">143,300</td>
+<td align="right">82,140</td>
+<td align="right">-42.7%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_NOT_NONE</td>
+<td align="right">1,024,000</td>
+<td align="right">604,060</td>
+<td align="right">-41.0%</td>
+</tr>
+<tr>
+<td align="left">STORE_FAST</td>
+<td align="right">31,785,080</td>
+<td align="right">19,227,580</td>
+<td align="right">-39.5%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL_ALWAYS_TRUE</td>
+<td align="right">14,636,600</td>
+<td align="right">9,207,640</td>
+<td align="right">-37.1%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR</td>
+<td align="right">13,247,500</td>
+<td align="right">8,459,500</td>
+<td align="right">-36.1%</td>
+</tr>
+<tr>
+<td align="left">BINARY_SUBSCR_DICT</td>
+<td align="right">1,075,040</td>
+<td align="right">711,380</td>
+<td align="right">-33.8%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL_MODULE</td>
+<td align="right">21,055,440</td>
+<td align="right">14,097,060</td>
+<td align="right">-33.0%</td>
+</tr>
+<tr>
+<td align="left">GET_ITER</td>
+<td align="right">3,681,360</td>
+<td align="right">2,477,560</td>
+<td align="right">-32.7%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL_BUILTIN</td>
+<td align="right">18,958,200</td>
+<td align="right">13,068,520</td>
+<td align="right">-31.1%</td>
+</tr>
+<tr>
+<td align="left">RETURN_CONST</td>
+<td align="right">22,466,560</td>
+<td align="right">15,521,720</td>
+<td align="right">-30.9%</td>
+</tr>
+<tr>
+<td align="left">RESUME_CHECK</td>
+<td align="right">44,494,560</td>
+<td align="right">30,843,820</td>
+<td align="right">-30.7%</td>
+</tr>
+<tr>
+<td align="left">BINARY_OP_INPLACE_ADD_UNICODE</td>
+<td align="right">788,440</td>
+<td align="right">557,520</td>
+<td align="right">-29.3%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST_LOAD_FAST</td>
+<td align="right">19,840,000</td>
+<td align="right">14,029,620</td>
+<td align="right">-29.3%</td>
+</tr>
+<tr>
+<td align="left">JUMP_FORWARD</td>
+<td align="right">1,909,760</td>
+<td align="right">1,441,400</td>
+<td align="right">-24.5%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_METHOD_WITH_VALUES</td>
+<td align="right">4,143,200</td>
+<td align="right">3,170,520</td>
+<td align="right">-23.5%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL_NONE</td>
+<td align="right">13,037,400</td>
+<td align="right">10,525,280</td>
+<td align="right">-19.3%</td>
+</tr>
+<tr>
+<td align="left">CALL_METHOD_DESCRIPTOR_O</td>
+<td align="right">296,820</td>
+<td align="right">246,060</td>
+<td align="right">-17.1%</td>
+</tr>
+<tr>
+<td align="left">CALL_PY_EXACT_ARGS</td>
+<td align="right">23,302,880</td>
+<td align="right">20,552,020</td>
+<td align="right">-11.8%</td>
+</tr>
+<tr>
+<td align="left">BINARY_SUBSCR_LIST_INT</td>
+<td align="right">2,176,160</td>
+<td align="right">1,990,760</td>
+<td align="right">-8.5%</td>
+</tr>
+<tr>
+<td align="left">CALL_TYPE_1</td>
+<td align="right">793,540</td>
+<td align="right">728,800</td>
+<td align="right">-8.2%</td>
+</tr>
+<tr>
+<td align="left">CONTAINS_OP_SET</td>
+<td align="right">1,600,100</td>
+<td align="right">1,471,620</td>
+<td align="right">-8.0%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL_LIST</td>
+<td align="right">61,060</td>
+<td align="right">57,020</td>
+<td align="right">-6.6%</td>
+</tr>
+<tr>
+<td align="left">BUILD_MAP</td>
+<td align="right">686,080</td>
+<td align="right">647,260</td>
+<td align="right">-5.7%</td>
+</tr>
+<tr>
+<td align="left">RETURN_VALUE</td>
+<td align="right">21,529,760</td>
+<td align="right">20,378,940</td>
+<td align="right">-5.3%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_CLASS_WITH_METACLASS_CHECK</td>
+<td align="right">66,460</td>
+<td align="right">62,940</td>
+<td align="right">-5.3%</td>
+</tr>
+<tr>
+<td align="left">CALL_LEN</td>
+<td align="right">788,300</td>
+<td align="right">753,020</td>
+<td align="right">-4.5%</td>
+</tr>
+<tr>
+<td align="left">CALL_NON_PY_GENERAL</td>
+<td align="right">737,220</td>
+<td align="right">705,660</td>
+<td align="right">-4.3%</td>
+</tr>
+<tr>
+<td align="left">PUSH_NULL</td>
+<td align="right">3,087,600</td>
+<td align="right">2,980,320</td>
+<td align="right">-3.5%</td>
+</tr>
+<tr>
+<td align="left">IS_OP</td>
+<td align="right">419,840</td>
+<td align="right">405,360</td>
+<td align="right">-3.4%</td>
+</tr>
+<tr>
+<td align="left">LOAD_DEREF</td>
+<td align="right">2,785,520</td>
+<td align="right">2,705,680</td>
+<td align="right">-2.9%</td>
+</tr>
+<tr>
+<td align="left">STORE_SUBSCR_DICT</td>
+<td align="right">230,280</td>
+<td align="right">224,220</td>
+<td align="right">-2.6%</td>
+</tr>
+<tr>
+<td align="left">MAKE_CELL</td>
+<td align="right">875,520</td>
+<td align="right">854,400</td>
+<td align="right">-2.4%</td>
+</tr>
+<tr>
+<td align="left">CALL_KW_PY</td>
+<td align="right">639,280</td>
+<td align="right">626,320</td>
+<td align="right">-2.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_BOUND_METHOD_EXACT_ARGS</td>
+<td align="right">1,150,920</td>
+<td align="right">1,128,520</td>
+<td align="right">-1.9%</td>
+</tr>
+<tr>
+<td align="left">CALL_BUILTIN_FAST</td>
+<td align="right">1,602,440</td>
+<td align="right">1,577,640</td>
+<td align="right">-1.5%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_MODULE</td>
+<td align="right">1,888,500</td>
+<td align="right">1,868,740</td>
+<td align="right">-1.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_BUILTIN_O</td>
+<td align="right">4,449,140</td>
+<td align="right">4,417,440</td>
+<td align="right">-0.7%</td>
+</tr>
+<tr>
+<td align="left">DICT_MERGE</td>
+<td align="right">563,200</td>
+<td align="right">559,680</td>
+<td align="right">-0.6%</td>
+</tr>
+<tr>
+<td align="left">FORMAT_SIMPLE</td>
+<td align="right">1,735,680</td>
+<td align="right">1,728,640</td>
+<td align="right">-0.4%</td>
+</tr>
+<tr>
+<td align="left">BUILD_STRING</td>
+<td align="right">1,172,480</td>
+<td align="right">1,168,960</td>
+<td align="right">-0.3%</td>
+</tr>
+<tr>
+<td align="left">INTERPRETER_EXIT</td>
+<td align="right">6,246,780</td>
+<td align="right">6,246,780</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
+<td align="right">3,502,680</td>
+<td align="right">3,502,680</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_BUILTIN_FAST_WITH_KEYWORDS</td>
+<td align="right">706,540</td>
+<td align="right">706,540</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_FUNCTION_EX</td>
+<td align="right">578,720</td>
+<td align="right">578,720</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">YIELD_VALUE</td>
+<td align="right">501,760</td>
+<td align="right">501,760</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_KW_NON_PY</td>
+<td align="right">327,540</td>
+<td align="right">327,540</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">RETURN_GENERATOR</td>
+<td align="right">250,880</td>
+<td align="right">250,880</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">MAKE_FUNCTION</td>
+<td align="right">240,640</td>
+<td align="right">240,640</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">LIST_APPEND</td>
+<td align="right">148,480</td>
+<td align="right">148,480</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">STORE_DEREF</td>
+<td align="right">87,040</td>
+<td align="right">87,040</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">COPY_FREE_VARS</td>
+<td align="right">82,000</td>
+<td align="right">82,000</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_METHOD_DESCRIPTOR_FAST_WITH_KEYWORDS</td>
+<td align="right">61,400</td>
+<td align="right">61,400</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">CHECK_EXC_MATCH</td>
+<td align="right">56,320</td>
+<td align="right">56,320</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">POP_EXCEPT</td>
+<td align="right">56,320</td>
+<td align="right">56,320</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">PUSH_EXC_INFO</td>
+<td align="right">56,320</td>
+<td align="right">56,320</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST_AND_CLEAR</td>
+<td align="right">40,960</td>
+<td align="right">40,960</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">SET_FUNCTION_ATTRIBUTE</td>
+<td align="right">40,960</td>
+<td align="right">40,960</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_STR_1</td>
+<td align="right">35,800</td>
+<td align="right">35,800</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">UNARY_NOT</td>
+<td align="right">30,720</td>
+<td align="right">30,720</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST_CHECK</td>
+<td align="right">30,720</td>
+<td align="right">30,720</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_BUILTIN_CLASS</td>
+<td align="right">30,720</td>
+<td align="right">30,720</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">LIST_EXTEND</td>
+<td align="right">25,680</td>
+<td align="right">25,680</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">CALL</td>
+<td align="right">17,560</td>
+<td align="right">17,560</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_INTRINSIC_1</td>
+<td align="right">15,440</td>
+<td align="right">15,440</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">END_FOR</td>
+<td align="right">15,360</td>
+<td align="right">15,360</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_BOUND_METHOD_GENERAL</td>
+<td align="right">14,200</td>
+<td align="right">14,200</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">DICT_UPDATE</td>
+<td align="right">10,240</td>
+<td align="right">10,240</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">BINARY_SUBSCR_GETITEM</td>
+<td align="right">10,220</td>
+<td align="right">10,220</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL</td>
+<td align="right">9,040</td>
+<td align="right">9,040</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">END_SEND</td>
+<td align="right">5,120</td>
+<td align="right">5,120</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">GET_YIELD_FROM_ITER</td>
+<td align="right">5,120</td>
+<td align="right">5,120</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">IMPORT_NAME</td>
+<td align="right">5,120</td>
+<td align="right">5,120</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">MAP_ADD</td>
+<td align="right">5,120</td>
+<td align="right">5,120</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">BINARY_OP_ADD_FLOAT</td>
+<td align="right">5,100</td>
+<td align="right">5,100</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">BINARY_OP_SUBTRACT_FLOAT</td>
+<td align="right">5,100</td>
+<td align="right">5,100</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">RESUME</td>
+<td align="right">3,520</td>
+<td align="right">3,520</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">STORE_ATTR</td>
+<td align="right">2,140</td>
+<td align="right">2,140</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_KW</td>
+<td align="right">1,720</td>
+<td align="right">1,720</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">BINARY_OP</td>
+<td align="right">760</td>
+<td align="right">760</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">UNPACK_SEQUENCE</td>
+<td align="right">400</td>
+<td align="right">400</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">STORE_SUBSCR</td>
+<td align="right">240</td>
+<td align="right">240</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">SEND</td>
+<td align="right">40</td>
+<td align="right">40</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">ENTER_EXECUTOR</td>
+<td align="right"></td>
+<td align="right">5,825,240</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+## Pair counts
+
+<details>
+<summary> Pair counts for top 100 opcode pairs </summary>
+
+
+Pairs of specialized operations that deoptimize and are then followed by
+the corresponding unspecialized instruction are not counted as pairs.
+
+Not included in comparative output.
+
+
+</details>
+
+## Predecessor/Successor Pairs
+
+<details>
+<summary> Top 5 predecessors and successors of each Tier 1 opcode. </summary>
+
+
+This does not include the unspecialized instructions that occur after a
+specialized instruction deoptimizes.
+
+Not included in comparative output.
+
+
+</details>
+
+## Specialization stats
+
+<details>
+<summary> Specialization stats by family </summary>
+
+### BINARY_OP
+
+<details>
+<summary> specialization stats for BINARY_OP family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">380</td>
+<td align="right">0.0%</td>
+<td align="right">380</td>
+<td align="right">0.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">
+hit
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that complete.
+</details>
+</td>
+<td align="right">25,922,120</td>
+<td align="right">100.0%</td>
+<td align="right">25,922,120</td>
+<td align="right">100.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">
+miss
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that deopt.
+</details>
+</td>
+<td align="right">60</td>
+<td align="right">0.0%</td>
+<td align="right">60</td>
+<td align="right">0.0%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Success</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Success</td>
+<td align="right">380</td>
+<td align="right">100.0%</td>
+<td align="right">380</td>
+<td align="right">100.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Failure</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### BINARY_SLICE
+
+<details>
+<summary> specialization stats for BINARY_SLICE family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">1,792,000</td>
+<td align="right">100.0%</td>
+<td align="right">15,500</td>
+<td align="right">100.0%</td>
+<td align="right">-99.1%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### BINARY_SUBSCR
+
+<details>
+<summary> specialization stats for BINARY_SUBSCR family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">701,800</td>
+<td align="right">3.9%</td>
+<td align="right">5,800</td>
+<td align="right">0.0%</td>
+<td align="right">-99.2%</td>
+</tr>
+<tr>
+<td align="left">
+hit
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that complete.
+</details>
+</td>
+<td align="right">17,392,280</td>
+<td align="right">96.0%</td>
+<td align="right">17,392,280</td>
+<td align="right">99.9%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">
+miss
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that deopt.
+</details>
+</td>
+<td align="right">15,640</td>
+<td align="right">0.1%</td>
+<td align="right">15,640</td>
+<td align="right">0.1%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Success</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Failure</td>
+<td align="right">360</td>
+<td align="right">36.0%</td>
+<td align="right">140</td>
+<td align="right">17.9%</td>
+<td align="right">-61.1%</td>
+</tr>
+<tr>
+<td align="left">Success</td>
+<td align="right">640</td>
+<td align="right">64.0%</td>
+<td align="right">640</td>
+<td align="right">82.1%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Failure kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">out of range</td>
+<td align="right">360</td>
+<td align="right">100.0%</td>
+<td align="right">140</td>
+<td align="right">100.0%</td>
+<td align="right">-61.1%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### CALL
+
+<details>
+<summary> specialization stats for CALL family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+miss
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that deopt.
+</details>
+</td>
+<td align="right">1,629,620</td>
+<td align="right">2.8%</td>
+<td align="right">1,629,180</td>
+<td align="right">2.8%</td>
+<td align="right">-0.0%</td>
+</tr>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">8,780</td>
+<td align="right">0.0%</td>
+<td align="right">8,780</td>
+<td align="right">0.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">
+hit
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that complete.
+</details>
+</td>
+<td align="right">56,608,220</td>
+<td align="right">97.2%</td>
+<td align="right">56,608,220</td>
+<td align="right">97.2%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Success</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Success</td>
+<td align="right">40,340</td>
+<td align="right">100.0%</td>
+<td align="right">40,320</td>
+<td align="right">100.0%</td>
+<td align="right">-0.0%</td>
+</tr>
+<tr>
+<td align="left">Failure</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Failure kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">init not inline values</td>
+<td align="right">20</td>
+<td align="right">20 / 0 !!</td>
+<td align="right">20</td>
+<td align="right">20 / 0 !!</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### CALL_KW
+
+<details>
+<summary> specialization stats for CALL_KW family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">860</td>
+<td align="right">50.0%</td>
+<td align="right">860</td>
+<td align="right">50.0%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### COMPARE_OP
+
+<details>
+<summary> specialization stats for COMPARE_OP family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">11,715,060</td>
+<td align="right">38.6%</td>
+<td align="right">6,409,500</td>
+<td align="right">25.6%</td>
+<td align="right">-45.3%</td>
+</tr>
+<tr>
+<td align="left">
+hit
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that complete.
+</details>
+</td>
+<td align="right">18,631,180</td>
+<td align="right">61.4%</td>
+<td align="right">18,631,180</td>
+<td align="right">74.4%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Success</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Failure</td>
+<td align="right">4,680</td>
+<td align="right">90.3%</td>
+<td align="right">3,220</td>
+<td align="right">86.6%</td>
+<td align="right">-31.2%</td>
+</tr>
+<tr>
+<td align="left">Success</td>
+<td align="right">500</td>
+<td align="right">9.7%</td>
+<td align="right">500</td>
+<td align="right">13.4%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Failure kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">different types</td>
+<td align="right">340</td>
+<td align="right">7.3%</td>
+<td align="right">160</td>
+<td align="right">5.0%</td>
+<td align="right">-52.9%</td>
+</tr>
+<tr>
+<td align="left">baseobject</td>
+<td align="right">4,340</td>
+<td align="right">92.7%</td>
+<td align="right">3,060</td>
+<td align="right">95.0%</td>
+<td align="right">-29.5%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### CONTAINS_OP
+
+<details>
+<summary> specialization stats for CONTAINS_OP family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">46,380</td>
+<td align="right">0.5%</td>
+<td align="right">5,660</td>
+<td align="right">0.1%</td>
+<td align="right">-87.8%</td>
+</tr>
+<tr>
+<td align="left">
+miss
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that deopt.
+</details>
+</td>
+<td align="right">813,820</td>
+<td align="right">8.4%</td>
+<td align="right">813,800</td>
+<td align="right">8.4%</td>
+<td align="right">-0.0%</td>
+</tr>
+<tr>
+<td align="left">
+hit
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that complete.
+</details>
+</td>
+<td align="right">8,867,780</td>
+<td align="right">91.2%</td>
+<td align="right">8,867,800</td>
+<td align="right">91.5%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Success</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Failure</td>
+<td align="right">340</td>
+<td align="right">2.1%</td>
+<td align="right">220</td>
+<td align="right">1.4%</td>
+<td align="right">-35.3%</td>
+</tr>
+<tr>
+<td align="left">Success</td>
+<td align="right">15,640</td>
+<td align="right">97.9%</td>
+<td align="right">15,640</td>
+<td align="right">98.6%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Failure kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">list</td>
+<td align="right">200</td>
+<td align="right">58.8%</td>
+<td align="right">120</td>
+<td align="right">54.5%</td>
+<td align="right">-40.0%</td>
+</tr>
+<tr>
+<td align="left">tuple</td>
+<td align="right">140</td>
+<td align="right">41.2%</td>
+<td align="right">100</td>
+<td align="right">45.5%</td>
+<td align="right">-28.6%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### FOR_ITER
+
+<details>
+<summary> specialization stats for FOR_ITER family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">8,484,280</td>
+<td align="right">83.2%</td>
+<td align="right">2,105,140</td>
+<td align="right">81.6%</td>
+<td align="right">-75.2%</td>
+</tr>
+<tr>
+<td align="left">
+hit
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that complete.
+</details>
+</td>
+<td align="right">1,709,720</td>
+<td align="right">16.8%</td>
+<td align="right">472,220</td>
+<td align="right">18.3%</td>
+<td align="right">-72.4%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Success</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Failure</td>
+<td align="right">3,700</td>
+<td align="right">89.4%</td>
+<td align="right">1,940</td>
+<td align="right">81.5%</td>
+<td align="right">-47.6%</td>
+</tr>
+<tr>
+<td align="left">Success</td>
+<td align="right">440</td>
+<td align="right">10.6%</td>
+<td align="right">440</td>
+<td align="right">18.5%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Failure kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">dict items</td>
+<td align="right">1,820</td>
+<td align="right">49.2%</td>
+<td align="right">860</td>
+<td align="right">44.3%</td>
+<td align="right">-52.7%</td>
+</tr>
+<tr>
+<td align="left">enumerate</td>
+<td align="right">540</td>
+<td align="right">14.6%</td>
+<td align="right">280</td>
+<td align="right">14.4%</td>
+<td align="right">-48.1%</td>
+</tr>
+<tr>
+<td align="left">ascii string</td>
+<td align="right">640</td>
+<td align="right">17.3%</td>
+<td align="right">360</td>
+<td align="right">18.6%</td>
+<td align="right">-43.8%</td>
+</tr>
+<tr>
+<td align="left">dict keys</td>
+<td align="right">700</td>
+<td align="right">18.9%</td>
+<td align="right">440</td>
+<td align="right">22.7%</td>
+<td align="right">-37.1%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### LOAD_ATTR
+
+<details>
+<summary> specialization stats for LOAD_ATTR family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+miss
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that deopt.
+</details>
+</td>
+<td align="right">5,910,180</td>
+<td align="right">2.6%</td>
+<td align="right">3,032,280</td>
+<td align="right">1.4%</td>
+<td align="right">-48.7%</td>
+</tr>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">13,212,000</td>
+<td align="right">5.7%</td>
+<td align="right">8,425,540</td>
+<td align="right">3.8%</td>
+<td align="right">-36.2%</td>
+</tr>
+<tr>
+<td align="left">
+hit
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that complete.
+</details>
+</td>
+<td align="right">212,310,940</td>
+<td align="right">91.7%</td>
+<td align="right">212,974,640</td>
+<td align="right">94.9%</td>
+<td align="right">0.3%</td>
+</tr>
+<tr>
+<td align="left">
+deopt
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that deopt.
+</details>
+</td>
+<td align="right">633,420</td>
+<td align="right">0.3%</td>
+<td align="right">633,420</td>
+<td align="right">0.3%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Success</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Success</td>
+<td align="right">124,120</td>
+<td align="right">84.5%</td>
+<td align="right">69,820</td>
+<td align="right">76.6%</td>
+<td align="right">-43.7%</td>
+</tr>
+<tr>
+<td align="left">Failure</td>
+<td align="right">22,820</td>
+<td align="right">15.5%</td>
+<td align="right">21,280</td>
+<td align="right">23.4%</td>
+<td align="right">-6.7%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Failure kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">class method obj</td>
+<td align="right">740</td>
+<td align="right">3.2%</td>
+<td align="right">620</td>
+<td align="right">2.9%</td>
+<td align="right">-16.2%</td>
+</tr>
+<tr>
+<td align="left">mutable class</td>
+<td align="right">18,420</td>
+<td align="right">80.7%</td>
+<td align="right">17,040</td>
+<td align="right">80.1%</td>
+<td align="right">-7.5%</td>
+</tr>
+<tr>
+<td align="left">method</td>
+<td align="right">3,240</td>
+<td align="right">14.2%</td>
+<td align="right">3,240</td>
+<td align="right">15.2%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">overridden</td>
+<td align="right">140</td>
+<td align="right">0.6%</td>
+<td align="right">140</td>
+<td align="right">0.7%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">expected error</td>
+<td align="right">140</td>
+<td align="right">0.6%</td>
+<td align="right">140</td>
+<td align="right">0.7%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### LOAD_GLOBAL
+
+<details>
+<summary> specialization stats for LOAD_GLOBAL family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+hit
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that complete.
+</details>
+</td>
+<td align="right">40,009,400</td>
+<td align="right">100.0%</td>
+<td align="right">27,161,340</td>
+<td align="right">100.0%</td>
+<td align="right">-32.1%</td>
+</tr>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">4,520</td>
+<td align="right">0.0%</td>
+<td align="right">4,520</td>
+<td align="right">0.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">
+miss
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that deopt.
+</details>
+</td>
+<td align="right">4,240</td>
+<td align="right">0.0%</td>
+<td align="right">4,240</td>
+<td align="right">0.0%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Success</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Success</td>
+<td align="right">4,600</td>
+<td align="right">100.0%</td>
+<td align="right">4,600</td>
+<td align="right">100.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Failure</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### SEND
+
+<details>
+<summary> specialization stats for SEND family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">20</td>
+<td align="right">0.0%</td>
+<td align="right">20</td>
+<td align="right">0.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">
+hit
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that complete.
+</details>
+</td>
+<td align="right">40,940</td>
+<td align="right">99.9%</td>
+<td align="right">40,940</td>
+<td align="right">99.9%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Success</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Success</td>
+<td align="right">20</td>
+<td align="right">100.0%</td>
+<td align="right">20</td>
+<td align="right">100.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Failure</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### STORE_ATTR
+
+<details>
+<summary> specialization stats for STORE_ATTR family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+miss
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that deopt.
+</details>
+</td>
+<td align="right">3,360,200</td>
+<td align="right">6.8%</td>
+<td align="right">2,134,920</td>
+<td align="right">4.4%</td>
+<td align="right">-36.5%</td>
+</tr>
+<tr>
+<td align="left">
+hit
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that complete.
+</details>
+</td>
+<td align="right">45,746,780</td>
+<td align="right">93.2%</td>
+<td align="right">46,139,000</td>
+<td align="right">95.6%</td>
+<td align="right">0.9%</td>
+</tr>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">900</td>
+<td align="right">0.0%</td>
+<td align="right">900</td>
+<td align="right">0.0%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Success</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Success</td>
+<td align="right">64,640</td>
+<td align="right">100.0%</td>
+<td align="right">41,500</td>
+<td align="right">100.0%</td>
+<td align="right">-35.8%</td>
+</tr>
+<tr>
+<td align="left">Failure</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### STORE_SUBSCR
+
+<details>
+<summary> specialization stats for STORE_SUBSCR family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">120</td>
+<td align="right">0.1%</td>
+<td align="right">120</td>
+<td align="right">0.1%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">
+hit
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that complete.
+</details>
+</td>
+<td align="right">230,280</td>
+<td align="right">99.9%</td>
+<td align="right">230,280</td>
+<td align="right">99.9%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Success</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Success</td>
+<td align="right">120</td>
+<td align="right">100.0%</td>
+<td align="right">120</td>
+<td align="right">100.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Failure</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### TO_BOOL
+
+<details>
+<summary> specialization stats for TO_BOOL family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">96,460</td>
+<td align="right">0.2%</td>
+<td align="right">25,100</td>
+<td align="right">0.1%</td>
+<td align="right">-74.0%</td>
+</tr>
+<tr>
+<td align="left">
+miss
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that deopt.
+</details>
+</td>
+<td align="right">5,268,640</td>
+<td align="right">10.2%</td>
+<td align="right">1,875,160</td>
+<td align="right">3.8%</td>
+<td align="right">-64.4%</td>
+</tr>
+<tr>
+<td align="left">
+hit
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that complete.
+</details>
+</td>
+<td align="right">46,385,460</td>
+<td align="right">89.6%</td>
+<td align="right">47,162,260</td>
+<td align="right">96.1%</td>
+<td align="right">1.7%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Success</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Success</td>
+<td align="right">103,400</td>
+<td align="right">99.5%</td>
+<td align="right">39,460</td>
+<td align="right">98.9%</td>
+<td align="right">-61.8%</td>
+</tr>
+<tr>
+<td align="left">Failure</td>
+<td align="right">500</td>
+<td align="right">0.5%</td>
+<td align="right">440</td>
+<td align="right">1.1%</td>
+<td align="right">-12.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Failure kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">sequence</td>
+<td align="right">220</td>
+<td align="right">44.0%</td>
+<td align="right">160</td>
+<td align="right">36.4%</td>
+<td align="right">-27.3%</td>
+</tr>
+<tr>
+<td align="left">other</td>
+<td align="right">140</td>
+<td align="right">28.0%</td>
+<td align="right">140</td>
+<td align="right">31.8%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">dict</td>
+<td align="right">140</td>
+<td align="right">28.0%</td>
+<td align="right">140</td>
+<td align="right">31.8%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### UNPACK_SEQUENCE
+
+<details>
+<summary> specialization stats for UNPACK_SEQUENCE family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Kind</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+deferred
+<details>
+<summary>ⓘ</summary>
+
+Lists the number of "deferred" (i.e. not specialized) instructions executed.
+</details>
+</td>
+<td align="right">200</td>
+<td align="right">0.0%</td>
+<td align="right">200</td>
+<td align="right">0.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">
+hit
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions that complete.
+</details>
+</td>
+<td align="right">5,186,360</td>
+<td align="right">100.0%</td>
+<td align="right">5,186,360</td>
+<td align="right">100.0%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Success</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Success</td>
+<td align="right">200</td>
+<td align="right">100.0%</td>
+<td align="right">200</td>
+<td align="right">100.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Failure</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+
+</details>
+
+## Specialization effectiveness
+
+<details>
+<summary> specialization effectiveness </summary>
+
+
+All entries are execution counts. Should add up to the total number of
+Tier 1 instructions executed.
+
+<table>
+<thead>
+<tr>
+<th align="left">Instructions</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+Specialized hits
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions, e.g. `LOAD_ATTR_MODULE` that complete.
+</details>
+</td>
+<td align="right">547,376,380</td>
+<td align="right">44.3%</td>
+<td align="right">228,286,920</td>
+<td align="right">42.4%</td>
+<td align="right">-58.3%</td>
+</tr>
+<tr>
+<td align="left">
+Basic
+<details>
+<summary>ⓘ</summary>
+
+Instructions that are not and cannot be specialized, e.g. `LOAD_FAST`.
+</details>
+</td>
+<td align="right">634,967,820</td>
+<td align="right">51.4%</td>
+<td align="right">283,462,380</td>
+<td align="right">52.7%</td>
+<td align="right">-55.4%</td>
+</tr>
+<tr>
+<td align="left">
+Not specialized
+<details>
+<summary>ⓘ</summary>
+
+Instructions that could be specialized but aren't, e.g. `LOAD_ATTR`, `BINARY_SLICE`.
+</details>
+</td>
+<td align="right">36,130,920</td>
+<td align="right">2.9%</td>
+<td align="right">17,070,020</td>
+<td align="right">3.2%</td>
+<td align="right">-52.8%</td>
+</tr>
+<tr>
+<td align="left">
+Specialized misses
+<details>
+<summary>ⓘ</summary>
+
+Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
+</details>
+</td>
+<td align="right">17,002,700</td>
+<td align="right">1.4%</td>
+<td align="right">9,505,600</td>
+<td align="right">1.8%</td>
+<td align="right">-44.1%</td>
+</tr>
+</tbody>
+</table>
+
+### Deferred by instruction
+
+<details>
+<summary> Breakdown of deferred (not specialized) instruction counts by family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">BINARY_SUBSCR</td>
+<td align="right">701,800</td>
+<td align="right">1.9%</td>
+<td align="right">5,800</td>
+<td align="right">0.0%</td>
+<td align="right">-99.2%</td>
+</tr>
+<tr>
+<td align="left">BINARY_SLICE</td>
+<td align="right">1,792,000</td>
+<td align="right">5.0%</td>
+<td align="right">15,500</td>
+<td align="right">0.1%</td>
+<td align="right">-99.1%</td>
+</tr>
+<tr>
+<td align="left">CONTAINS_OP</td>
+<td align="right">46,380</td>
+<td align="right">0.1%</td>
+<td align="right">5,660</td>
+<td align="right">0.0%</td>
+<td align="right">-87.8%</td>
+</tr>
+<tr>
+<td align="left">FOR_ITER</td>
+<td align="right">8,484,280</td>
+<td align="right">23.5%</td>
+<td align="right">2,105,140</td>
+<td align="right">12.4%</td>
+<td align="right">-75.2%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL</td>
+<td align="right">96,460</td>
+<td align="right">0.3%</td>
+<td align="right">25,100</td>
+<td align="right">0.1%</td>
+<td align="right">-74.0%</td>
+</tr>
+<tr>
+<td align="left">COMPARE_OP</td>
+<td align="right">11,715,060</td>
+<td align="right">32.5%</td>
+<td align="right">6,409,500</td>
+<td align="right">37.7%</td>
+<td align="right">-45.3%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR</td>
+<td align="right">13,212,000</td>
+<td align="right">36.6%</td>
+<td align="right">8,425,540</td>
+<td align="right">49.5%</td>
+<td align="right">-36.2%</td>
+</tr>
+<tr>
+<td align="left">CALL</td>
+<td align="right">8,780</td>
+<td align="right">0.0%</td>
+<td align="right">8,780</td>
+<td align="right">0.1%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL</td>
+<td align="right">4,520</td>
+<td align="right">0.0%</td>
+<td align="right">4,520</td>
+<td align="right">0.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">STORE_ATTR</td>
+<td align="right">900</td>
+<td align="right">0.0%</td>
+<td align="right">900</td>
+<td align="right">0.0%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### Misses by instruction
+
+<details>
+<summary> Breakdown of misses (specialized deopts) instruction counts by family </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">TO_BOOL_ALWAYS_TRUE</td>
+<td align="right">2,313,720</td>
+<td align="right">13.6%</td>
+<td align="right">567,420</td>
+<td align="right">6.0%</td>
+<td align="right">-75.5%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_NONDESCRIPTOR_WITH_VALUES</td>
+<td align="right">1,853,380</td>
+<td align="right">10.9%</td>
+<td align="right">664,480</td>
+<td align="right">7.0%</td>
+<td align="right">-64.1%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL_NONE</td>
+<td align="right">2,075,280</td>
+<td align="right">12.2%</td>
+<td align="right">820,140</td>
+<td align="right">8.6%</td>
+<td align="right">-60.5%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_SLOT</td>
+<td align="right">3,319,140</td>
+<td align="right">19.5%</td>
+<td align="right">1,630,140</td>
+<td align="right">17.1%</td>
+<td align="right">-50.9%</td>
+</tr>
+<tr>
+<td align="left">STORE_ATTR_SLOT</td>
+<td align="right">3,360,200</td>
+<td align="right">19.8%</td>
+<td align="right">2,134,920</td>
+<td align="right">22.5%</td>
+<td align="right">-36.5%</td>
+</tr>
+<tr>
+<td align="left">CALL_PY_EXACT_ARGS</td>
+<td align="right">813,500</td>
+<td align="right">4.8%</td>
+<td align="right">813,500</td>
+<td align="right">8.6%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_BOUND_METHOD_EXACT_ARGS</td>
+<td align="right">799,000</td>
+<td align="right">4.7%</td>
+<td align="right">799,000</td>
+<td align="right">8.4%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_METHOD_WITH_VALUES</td>
+<td align="right">706,480</td>
+<td align="right">4.2%</td>
+<td align="right">706,480</td>
+<td align="right">7.4%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL_STR</td>
+<td align="right">524,540</td>
+<td align="right">3.1%</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">CONTAINS_OP_SET</td>
+<td align="right">407,040</td>
+<td align="right">2.4%</td>
+<td align="right">407,040</td>
+<td align="right">4.3%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">CONTAINS_OP_DICT</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right">406,760</td>
+<td align="right">4.3%</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+
+</details>
+
+## Call stats
+
+<details>
+<summary> Inlined calls and frame stats </summary>
+
+
+This shows what fraction of calls to Python functions are inlined (i.e.
+not having a call at the C level) and for those that are not, where the
+call comes from.  The various categories overlap.
+
+Also includes the count of frame objects created.
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Calls to PyEval_EvalDefault</td>
+<td align="right">6,246,780</td>
+<td align="right">14.0%</td>
+<td align="right">6,246,780</td>
+<td align="right">14.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Calls to Python functions inlined</td>
+<td align="right">38,502,180</td>
+<td align="right">86.0%</td>
+<td align="right">38,502,180</td>
+<td align="right">86.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Calls via PyEval_EvalFrame (total)</td>
+<td align="right">6,246,780</td>
+<td align="right">14.0%</td>
+<td align="right">6,246,780</td>
+<td align="right">14.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Calls via PyEval_EvalFrame (vector)</td>
+<td align="right">5,637,440</td>
+<td align="right">12.6%</td>
+<td align="right">5,637,440</td>
+<td align="right">12.6%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Calls via PyEval_EvalFrame (generator)</td>
+<td align="right">609,340</td>
+<td align="right">1.4%</td>
+<td align="right">609,340</td>
+<td align="right">1.4%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Calls via PyEval_EvalFrame (legacy)</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Calls via PyEval_EvalFrame (function vectorcall)</td>
+<td align="right">5,637,440</td>
+<td align="right">12.6%</td>
+<td align="right">5,637,440</td>
+<td align="right">12.6%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Calls via PyEval_EvalFrame (build class)</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Calls via PyEval_EvalFrame (slot)</td>
+<td align="right">563,220</td>
+<td align="right">1.3%</td>
+<td align="right">563,220</td>
+<td align="right">1.3%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Calls via PyEval_EvalFrame (function ex)</td>
+<td align="right">15,520</td>
+<td align="right">0.0%</td>
+<td align="right">15,520</td>
+<td align="right">0.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Calls via PyEval_EvalFrame (api)</td>
+<td align="right">3,440,940</td>
+<td align="right">7.7%</td>
+<td align="right">3,440,940</td>
+<td align="right">7.7%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Calls via PyEval_EvalFrame (method)</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Frame objects created</td>
+<td align="right">56,320</td>
+<td align="right">0.1%</td>
+<td align="right">56,320</td>
+<td align="right">0.1%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Frames pushed</td>
+<td align="right">43,996,320</td>
+<td align="right">98.3%</td>
+<td align="right">43,996,320</td>
+<td align="right">98.3%</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+## Object stats
+
+<details>
+<summary> Allocations, frees and dict materializatons </summary>
+
+
+Below, "allocations" means "allocations that are not from a freelist".
+Total allocations = "Allocations from freelist" + "Allocations".
+
+"Inline values" is the number of values arrays inlined into objects.
+
+The cache hit/miss numbers are for the MRO cache, split into dunder and
+other names.
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="right">Base Count</th>
+<th align="right">Base Ratio</th>
+<th align="right">Head Count</th>
+<th align="right">Head Ratio</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Decrefs</td>
+<td align="right">82,175,243</td>
+<td align="right">11.5%</td>
+<td align="right">423,386,853</td>
+<td align="right">56.1%</td>
+<td align="right">415.2%</td>
+</tr>
+<tr>
+<td align="left">Increfs</td>
+<td align="right">92,823,480</td>
+<td align="right">13.8%</td>
+<td align="right">435,511,037</td>
+<td align="right">61.3%</td>
+<td align="right">369.2%</td>
+</tr>
+<tr>
+<td align="left">Interpreter increfs</td>
+<td align="right">577,556,320</td>
+<td align="right">86.2%</td>
+<td align="right">275,436,700</td>
+<td align="right">38.7%</td>
+<td align="right">-52.3%</td>
+</tr>
+<tr>
+<td align="left">Interpreter decrefs</td>
+<td align="right">632,034,420</td>
+<td align="right">88.5%</td>
+<td align="right">331,388,560</td>
+<td align="right">43.9%</td>
+<td align="right">-47.6%</td>
+</tr>
+<tr>
+<td align="left">Method cache dunder misses</td>
+<td align="right">130,789</td>
+<td align="right"></td>
+<td align="right">77,969</td>
+<td align="right"></td>
+<td align="right">-40.4%</td>
+</tr>
+<tr>
+<td align="left">Method cache collisions</td>
+<td align="right">1,456,501</td>
+<td align="right"></td>
+<td align="right">1,104,804</td>
+<td align="right"></td>
+<td align="right">-24.1%</td>
+</tr>
+<tr>
+<td align="left">Method cache misses</td>
+<td align="right">1,329,802</td>
+<td align="right"></td>
+<td align="right">1,030,366</td>
+<td align="right"></td>
+<td align="right">-22.5%</td>
+</tr>
+<tr>
+<td align="left">Allocations to 4 kbytes</td>
+<td align="right">35,840</td>
+<td align="right">0.1%</td>
+<td align="right">37,840</td>
+<td align="right">0.1%</td>
+<td align="right">5.6%</td>
+</tr>
+<tr>
+<td align="left">Method cache hits</td>
+<td align="right">34,198,918</td>
+<td align="right"></td>
+<td align="right">33,336,094</td>
+<td align="right"></td>
+<td align="right">-2.5%</td>
+</tr>
+<tr>
+<td align="left">Method cache dunder hits</td>
+<td align="right">14,754,991</td>
+<td align="right"></td>
+<td align="right">14,813,691</td>
+<td align="right"></td>
+<td align="right">0.4%</td>
+</tr>
+<tr>
+<td align="left">Allocations</td>
+<td align="right">37,073,580</td>
+<td align="right">76.9%</td>
+<td align="right">37,076,740</td>
+<td align="right">76.9%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Allocations from freelist</td>
+<td align="right">11,138,640</td>
+<td align="right">23.1%</td>
+<td align="right">11,139,260</td>
+<td align="right">23.1%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Frees to freelist</td>
+<td align="right">11,137,260</td>
+<td align="right"></td>
+<td align="right">11,137,840</td>
+<td align="right"></td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Frees</td>
+<td align="right">36,619,070</td>
+<td align="right"></td>
+<td align="right">36,617,826</td>
+<td align="right"></td>
+<td align="right">-0.0%</td>
+</tr>
+<tr>
+<td align="left">Allocations to 512 bytes</td>
+<td align="right">37,037,740</td>
+<td align="right">76.8%</td>
+<td align="right">37,038,780</td>
+<td align="right">76.8%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Allocations over 4 kbytes</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">120</td>
+<td align="right">0.0%</td>
+<td align="right">120 / 0 !!</td>
+</tr>
+<tr>
+<td align="left">Inline values</td>
+<td align="right">855,040</td>
+<td align="right"></td>
+<td align="right">855,040</td>
+<td align="right"></td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">Materialize dict (on request)</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Materialize dict (new key)</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Materialize dict (too big)</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">Materialize dict (str subclass)</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right">0</td>
+<td align="right">0.0%</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+## GC stats
+
+<details>
+<summary> GC collections and effectiveness </summary>
+
+
+Collected/visits gives some measure of efficiency.
+
+<table>
+<thead>
+<tr>
+<th align="right">Generation</th>
+<th align="right">Base Collections</th>
+<th align="right">Base Objects collected</th>
+<th align="right">Base Object visits</th>
+<th align="right">Head Collections</th>
+<th align="right">Head Objects collected</th>
+<th align="right">Head Object visits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td align="right">800</td>
+<td align="right">1,100,100</td>
+<td align="right">15,252,960</td>
+<td align="right">800</td>
+<td align="right">1,099,860</td>
+<td align="right">15,220,040</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+## Optimization (Tier 2) stats
+
+<details>
+<summary> statistics about the Tier 2 optimizer </summary>
+
+
+</details>
+
+## Rare events
+
+<details>
+<summary> Counts of rare/unlikely events </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Event</th>
+<th align="right">Base Count</th>
+<th align="right">Head Count</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+set class
+<details>
+<summary>ⓘ</summary>
+
+Setting an object's class, `obj.__class__ = ...`
+</details>
+</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">
+set bases
+<details>
+<summary>ⓘ</summary>
+
+Setting the bases of a class, `cls.__bases__ = ...`
+</details>
+</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">
+set eval frame func
+<details>
+<summary>ⓘ</summary>
+
+Setting the PEP 523 frame eval function `_PyInterpreterState_SetFrameEvalFunc()`
+</details>
+</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">
+builtin dict
+<details>
+<summary>ⓘ</summary>
+
+Modifying the builtins, `__builtins__.__dict__[var] = ...`
+</details>
+</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">
+func modification
+<details>
+<summary>ⓘ</summary>
+
+Modifying a function, e.g. `func.__defaults__ = ...`, etc.
+</details>
+</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">
+watched dict modification
+<details>
+<summary>ⓘ</summary>
+
+A watched dict has been modified
+</details>
+</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">
+watched globals modification
+<details>
+<summary>ⓘ</summary>
+
+A watched `globals()` dict has been modified
+</details>
+</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+## Meta stats
+
+<details>
+<summary> Meta statistics </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="right">Base Count</th>
+<th align="right">Head Count</th>
+<th align="right">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Number of data files</td>
+<td align="right">20</td>
+<td align="right">20</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+---
+Stats gathered on: 2024-09-22

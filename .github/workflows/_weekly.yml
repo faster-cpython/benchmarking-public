@@ -1,0 +1,105 @@
+# Generated file: !!! DO NOT EDIT !!!
+---
+env:
+  PYPERFORMANCE_HASH: ebb37f3583e26ea22cee34126b3b8a815112370b
+  PYSTON_BENCHMARKS_HASH: 004743ccbd9e54598c543d7eb71fd3b8e10d5750
+name: _weekly
+on:
+  schedule:
+  - cron: 0 0 * * 0
+  workflow_dispatch: {}
+jobs:
+  # Determine the base commit of the selected commit. The output is passed to
+  # the `base` job below. If the data already exists for this commit, it will be
+  # skipped.
+  determine_head:
+    runs-on: ubuntu-latest
+    outputs:
+      commit: ${{ steps.head.outputs.commit }}
+    steps:
+    - name: Checkout CPython
+      uses: actions/checkout@v4
+      with:
+        repository: python/cpython
+        path: cpython
+        ref: main
+    - name: Determine head commit
+      id: head
+      run: |
+        cd cpython
+        git log -n 1 --format="commit=%H" >> $GITHUB_OUTPUT
+
+  weekly:
+    uses: ./.github/workflows/_benchmark.yml
+    needs: determine_head
+    with:
+      fork: python
+      ref: ${{ needs.determine_head.outputs.commit }}
+      machine: all
+      benchmarks: all
+      pgo: true
+      tier2: false
+    secrets: inherit
+
+  weekly-jit:
+    uses: ./.github/workflows/_benchmark.yml
+    needs: determine_head
+    with:
+      fork: python
+      ref: ${{ needs.determine_head.outputs.commit }}
+      machine: all
+      benchmarks: all
+      pgo: true
+      tier2: false
+      jit: true
+    secrets: inherit
+
+  weekly-nogil:
+    uses: ./.github/workflows/_benchmark.yml
+    needs: determine_head
+    with:
+      fork: python
+      ref: ${{ needs.determine_head.outputs.commit }}
+      machine: all
+      benchmarks: all
+      pgo: true
+      tier2: false
+      jit: false
+      nogil: true
+    secrets: inherit
+
+  pystats:
+    uses: ./.github/workflows/_pystats.yml
+    needs: determine_head
+    with:
+      fork: python
+      ref: ${{ needs.determine_head.outputs.commit }}
+      benchmarks: all
+      individual: true
+      tier2: false
+    secrets: inherit
+
+  pystats-tier2:
+    uses: ./.github/workflows/_pystats.yml
+    needs: determine_head
+    with:
+      fork: python
+      ref: ${{ needs.determine_head.outputs.commit }}
+      benchmarks: all
+      individual: true
+      tier2: true
+    secrets: inherit
+
+  generate:
+    uses: ./.github/workflows/_generate.yml
+    if: ${{ always() }}
+    with:
+      force: false
+    needs: [weekly, weekly-jit, weekly-nogil, pystats, pystats-tier2]
+    secrets: inherit
+
+  publish:
+    uses: ./.github/workflows/_publish.yml
+    if: ${{ always() }}
+    needs: [generate]
+    secrets: inherit

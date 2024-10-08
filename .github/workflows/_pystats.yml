@@ -1,0 +1,153 @@
+# Generated file: !!! DO NOT EDIT !!!
+---
+env:
+  PYPERFORMANCE_HASH: ebb37f3583e26ea22cee34126b3b8a815112370b
+  PYSTON_BENCHMARKS_HASH: 004743ccbd9e54598c543d7eb71fd3b8e10d5750
+name: _pystats
+on:
+  workflow_dispatch:
+    inputs:
+      fork:
+        description: Fork of cpython to benchmark
+        type: string
+        default: python
+      ref:
+        description: Branch, tag or (full) SHA commit to benchmark
+        type: string
+        default: main
+      benchmarks:
+        description: Benchmarks to run (comma-separated; empty runs all benchmarks)
+        type: string
+      force:
+        description: Rerun and replace results if commit already exists
+        type: boolean
+      individual:
+        description: Collect pystats for each individual benchmark
+        type: boolean
+
+      tier2:
+        description: tier 2 interpreter
+        type: boolean
+        default: false
+      jit:
+        description: JIT
+        type: boolean
+        default: false
+      nogil:
+        description: free threading
+        type: boolean
+        default: false
+  workflow_call:
+    inputs:
+      fork:
+        description: Fork of cpython to benchmark
+        type: string
+      ref:
+        description: Branch, tag or (full) SHA commit to benchmark
+        type: string
+      benchmarks:
+        description: Benchmarks to run (comma-separated; empty runs all benchmarks)
+        type: string
+      dry_run:
+        description: 'Dry run: Do not commit to the repo'
+        type: boolean
+      force:
+        description: Rerun and replace results if commit already exists
+        type: boolean
+      individual:
+        description: Collect pystats for each individual benchmark
+        type: boolean
+
+      tier2:
+        description: tier 2 interpreter
+        type: boolean
+        default: false
+      jit:
+        description: JIT
+        type: boolean
+        default: false
+      nogil:
+        description: free threading
+        type: boolean
+        default: false
+jobs:
+  collect-stats:
+    runs-on: [self-hosted, linux, cloud]
+    steps:
+    - name: Checkout benchmarking
+      uses: actions/checkout@v4
+    - name: git gc
+      run: |
+        git gc
+    - name: Setup system Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Checkout CPython
+      uses: actions/checkout@v4
+      with:
+        repository: ${{ inputs.fork }}/cpython
+        ref: ${{ inputs.ref }}
+        path: cpython
+        fetch-depth: 50
+    - name: Install dependencies from PyPI
+      run: |
+        rm -rf venv
+        python -m venv venv
+        venv/bin/python -m pip install -r requirements.txt
+    - name: Should we run?
+      if: ${{ always() }}
+      id: should_run
+      run: |
+        venv/bin/python -m bench_runner should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} all true ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }} >> $GITHUB_OUTPUT
+    - name: Checkout python-macrobenchmarks
+      uses: actions/checkout@v4
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      with:
+        repository: pyston/python-macrobenchmarks
+        path: pyston-benchmarks
+        ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+    - name: Checkout pyperformance
+      uses: actions/checkout@v4
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      with:
+        repository: mdboom/pyperformance
+        path: pyperformance
+        ref: ${{ env.PYPERFORMANCE_HASH }}
+    - name: Create pystats directory
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        # If we don't do this, stats are printed to the console
+        rm -rf /tmp/py_stats
+        mkdir /tmp/py_stats
+    - name: Build Python
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        cd cpython
+        ./configure --enable-pystats --prefix=$PWD/install ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }}
+        make -j4
+        make install
+    - name: Install pyperformance into the system python
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        venv/bin/python -m pip install --no-binary :all: ./pyperformance
+    - name: Running pyperformance
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        venv/bin/python -m bench_runner run_benchmarks pystats cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }} --run_id ${{ github.run_id }} ${{ inputs.individual == true && '--individual' || '' }}
+    - name: Pull benchmarking
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        # Another benchmarking task may have created results for the same
+        # commit while the above was running. This "magic" incantation means
+        # that any local results for this commit will override anything we
+        # just pulled in in that case.
+        git pull -s recursive -X ours --autostash --rebase
+    - name: Add data to repo
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: results
+    env:
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }}

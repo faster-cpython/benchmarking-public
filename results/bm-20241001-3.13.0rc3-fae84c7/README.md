@@ -173,3 +173,36 @@
 - [📄table](bm-20241001-pythonperf1_win32-x86-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0b2.md)
 - [📈time plot](bm-20241001-pythonperf1_win32-x86-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0b2.svg)
 
+## darwin arm64 (darwin)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11257187178)
+- cpu model: missing
+- platform: macOS-15.0.1-arm64-arm-64bit-Mach-O
+- [raw results](bm-20241001-darwin-arm64-python-v3.13.0rc3-3.13.0rc3-fae84c7.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.16x faster (HPT: reliability of 100.00%, 1.10x faster at 99th %ile)
+- Memory usage: 0.67x
+- missing benchmarks: sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
+- [📄table](bm-20241001-darwin-arm64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.10.4.md)
+- [📈time plot](bm-20241001-darwin-arm64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.10.4.svg)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.01x slower (HPT: reliability of 92.40%, 1.00x slower at 99th %ile)
+- Memory usage: 0.54x
+- missing benchmarks: sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, bpe_tokeniser, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
+- [📄table](bm-20241001-darwin-arm64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.12.0.md)
+- [📈time plot](bm-20241001-darwin-arm64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.12.0.svg)
+
+### vs. 3.13.0b2
+
+- Geometric mean: 1.08x slower (HPT: reliability of 100.00%, 1.05x slower at 99th %ile)
+- Memory usage: 0.45x
+- new benchmarks: unpack_sequence
+- [📄table](bm-20241001-darwin-arm64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0b2.md)
+- [📈time plot](bm-20241001-darwin-arm64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0b2.svg)
+

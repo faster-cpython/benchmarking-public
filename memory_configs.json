@@ -349,5 +349,6 @@
   "bm-20240215-3.13.0a4-9d34f60-PYTHON_UOPS/bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60.json,bm-20240215-3.13.0a4-9d34f60-NOGIL/bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60.json": 1.07,
   "bm-20231122-3.13.0a2-9c4347e-PYTHON_UOPS/bm-20231122-linux-x86_64-python-v3.13.0a2-3.13.0a2-9c4347e.json,bm-20231122-3.13.0a2-9c4347e-NOGIL/bm-20231122-linux-x86_64-python-v3.13.0a2-3.13.0a2-9c4347e.json": 0.6,
   "bm-20241005-3.14.0a0-16cd6cc/bm-20241005-darwin-arm64-python-16cd6cc86b3ba20074ae-3.14.0a0-16cd6cc.json,bm-20241005-3.14.0a0-16cd6cc-NOGIL/bm-20241005-darwin-arm64-python-16cd6cc86b3ba20074ae-3.14.0a0-16cd6cc.json": 1.1,
-  "bm-20240215-3.13.0a4-9d34f60-PYTHON_UOPS/bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60.json,bm-20240215-3.13.0a4-9d34f60-JIT/bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60.json": 0.99
+  "bm-20240215-3.13.0a4-9d34f60-PYTHON_UOPS/bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60.json,bm-20240215-3.13.0a4-9d34f60-JIT/bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60.json": 0.99,
+  "bm-20241005-3.14.0a0-16cd6cc/bm-20241005-darwin-arm64-python-16cd6cc86b3ba20074ae-3.14.0a0-16cd6cc.json,bm-20241005-3.14.0a0-16cd6cc-JIT/bm-20241005-darwin-arm64-python-16cd6cc86b3ba20074ae-3.14.0a0-16cd6cc.json": 1.07
 }

@@ -673,15 +673,15 @@
 <use x="222.65625" xlink:href="#l"/>
 </g>
 <g stroke="#1f77b4" stroke-opacity=".9">
-<path d="m71.4 488h69.7l97.4-5.44 50.5-5.44h45.7l98.3-16.3v-5.44h49.1l74.4-5.44 23.2 5.44h64.5l42.1 5.44" clip-path="url(#r)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
+<path d="m71.4 488h69.7l97.4-5.44 50.5-5.44h45.7l98.3-21.7v5.44l49.1-5.44 74.4-5.44 23.2 5.44h64.5l42.1 5.44" clip-path="url(#r)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
 <g clip-path="url(#r)" fill="#1f77b4" fill-opacity=".9">
 <use x="71.388926" y="487.568648" xlink:href="#a"/>
 <use x="141.100209" y="487.568648" xlink:href="#a"/>
 <use x="238.510997" y="482.132969" xlink:href="#a"/>
 <use x="289.023387" y="476.69729" xlink:href="#a"/>
 <use x="334.693138" y="476.69729" xlink:href="#a"/>
-<use x="432.991912" y="460.390254" xlink:href="#a"/>
 <use x="432.991912" y="454.954575" xlink:href="#a"/>
+<use x="432.991912" y="460.390254" xlink:href="#a"/>
 <use x="482.057562" y="454.954575" xlink:href="#a"/>
 <use x="556.436727" y="449.518896" xlink:href="#a"/>
 <use x="579.65886" y="454.954575" xlink:href="#a"/>
@@ -723,12 +723,12 @@
 </g>
 </g>
 <g stroke="#2ca02c" stroke-opacity=".9">
-<path d="m141 439h97.4l194-27.2v283l49.1-288h74.4l23.2 234h64.5" clip-path="url(#r)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
+<path d="m141 439h97.4l194 255v-283l49.1-5.44h74.4l23.2 234h64.5" clip-path="url(#r)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
 <g clip-path="url(#r)" fill="#2ca02c" fill-opacity=".9">
 <use x="141.100209" y="438.647539" xlink:href="#c"/>
 <use x="238.510997" y="438.647539" xlink:href="#c"/>
-<use x="432.991912" y="411.469145" xlink:href="#c"/>
 <use x="432.991912" y="694.124441" xlink:href="#c"/>
+<use x="432.991912" y="411.469145" xlink:href="#c"/>
 <use x="482.057562" y="406.033466" xlink:href="#c"/>
 <use x="556.436727" y="406.033466" xlink:href="#c"/>
 <use x="579.65886" y="639.767654" xlink:href="#c"/>
@@ -764,8 +764,8 @@
 <use xlink:href="#m"/>
 <use x="61.279297" xlink:href="#u"/>
 </g>
-<path d="m433 451-0.348 7.35" fill="none" stroke="#888" stroke-linecap="round"/>
-<g transform="translate(436 447) rotate(-90) scale(.08 -.08)" fill="#888">
+<path d="m433 446-0.348 7.35" fill="none" stroke="#888" stroke-linecap="round"/>
+<g transform="translate(436 442) rotate(-90) scale(.08 -.08)" fill="#888">
 <use xlink:href="#ad"/>
 <use x="63.476562" xlink:href="#f"/>
 </g>

@@ -809,7 +809,7 @@
 </g>
 </g>
 <g stroke="#2ca02c" stroke-opacity=".9">
-<path d="m140 629h95.8 49.7 44.9l96.6-23.8v0l48.2-7.92h73.1l22.8 7.92h63.4l41.4 23.8" clip-path="url(#p)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
+<path d="m140 629h95.8 49.7 44.9l96.6-23.8v0l48.2-7.92h73.1l22.8 7.92h63.4l41.4 23.8h10.5" clip-path="url(#p)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
 <g clip-path="url(#p)" fill="#2ca02c" fill-opacity=".9">
 <use x="139.913744" y="629.303972" xlink:href="#e"/>
 <use x="235.666629" y="629.303972" xlink:href="#e"/>
@@ -822,6 +822,7 @@
 <use x="571.008257" y="605.536466" xlink:href="#e"/>
 <use x="634.440685" y="605.536466" xlink:href="#e"/>
 <use x="675.791526" y="629.303972" xlink:href="#e"/>
+<use x="686.256387" y="629.303972" xlink:href="#e"/>
 </g>
 </g>
 <g stroke="#d62728" stroke-opacity=".9">

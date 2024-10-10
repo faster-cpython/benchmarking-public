@@ -42,3 +42,11 @@
 - [📄table](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-3.13.0b2.md)
 - [📈time plot](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-3.13.0b2.svg)
 
+### vs. base
+
+- Geometric mean: 1.02x slower (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-base-mem.svg)
+- [📄table](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-base.md)
+- [📈time plot](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-base.svg)
+

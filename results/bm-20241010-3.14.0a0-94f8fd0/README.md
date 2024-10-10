@@ -76,6 +76,13 @@
 - [📄table](bm-20241010-pythonperf1-amd64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-3.13.0b2.md)
 - [📈time plot](bm-20241010-pythonperf1-amd64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-3.13.0b2.svg)
 
+### vs. base
+
+- Geometric mean: 1.02x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: unknown
+- [📄table](bm-20241010-pythonperf1-amd64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-base.md)
+- [📈time plot](bm-20241010-pythonperf1-amd64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-base.svg)
+
 ## darwin arm64 (darwin)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11273317937)

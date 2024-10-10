@@ -107,6 +107,72 @@
 - [📄table](bm-20241007-pythonperf2-x86_64-python-v3.13.0-3.13.0-60403a5-vs-3.13.0b2.md)
 - [📈time plot](bm-20241007-pythonperf2-x86_64-python-v3.13.0-3.13.0-60403a5-vs-3.13.0b2.svg)
 
+## windows amd64 (pythonperf1)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11257188871)
+- cpu model: missing
+- platform: Windows-11-10.0.22631-SP0
+- [raw results](bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.22x faster (HPT: reliability of 100.00%, 1.18x faster at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: dask, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
+- [📄table](bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.md)
+- [📈time plot](bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.svg)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.07x faster (HPT: reliability of 100.00%, 1.04x faster at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: dask, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
+- [📄table](bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.md)
+- [📈time plot](bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.svg)
+
+### vs. 3.13.0b2
+
+- Geometric mean: 1.01x slower (HPT: reliability of 98.62%, 1.00x slower at 99th %ile)
+- Memory usage: unknown
+- new benchmarks: unpack_sequence
+- [📄table](bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5-vs-3.13.0b2.md)
+- [📈time plot](bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5-vs-3.13.0b2.svg)
+
+## windows x86 (pythonperf1_win32)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11257188871)
+- cpu model: missing
+- platform: Windows-11-10.0.22631-SP0
+- [raw results](bm-20241007-pythonperf1_win32-x86-python-v3.13.0-3.13.0-60403a5.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.09x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: aiohttp, dask, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
+- [📄table](bm-20241007-pythonperf1_win32-x86-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.md)
+- [📈time plot](bm-20241007-pythonperf1_win32-x86-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.svg)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.13x faster (HPT: reliability of 100.00%, 1.13x faster at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: aiohttp, dask, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
+- [📄table](bm-20241007-pythonperf1_win32-x86-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.md)
+- [📈time plot](bm-20241007-pythonperf1_win32-x86-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.svg)
+
+### vs. 3.13.0b2
+
+- Geometric mean: 1.06x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
+- Memory usage: unknown
+- new benchmarks: dulwich_log, unpack_sequence
+- [📄table](bm-20241007-pythonperf1_win32-x86-python-v3.13.0-3.13.0-60403a5-vs-3.13.0b2.md)
+- [📈time plot](bm-20241007-pythonperf1_win32-x86-python-v3.13.0-3.13.0-60403a5-vs-3.13.0b2.svg)
+
 ## darwin arm64 (darwin)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11257188871)

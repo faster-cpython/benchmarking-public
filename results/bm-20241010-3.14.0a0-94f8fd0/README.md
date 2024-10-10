@@ -76,3 +76,11 @@
 - [📄table](bm-20241010-darwin-arm64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-3.13.0b2.md)
 - [📈time plot](bm-20241010-darwin-arm64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-3.13.0b2.svg)
 
+### vs. base
+
+- Geometric mean: 1.00x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20241010-darwin-arm64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-base-mem.svg)
+- [📄table](bm-20241010-darwin-arm64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-base.md)
+- [📈time plot](bm-20241010-darwin-arm64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-base.svg)
+

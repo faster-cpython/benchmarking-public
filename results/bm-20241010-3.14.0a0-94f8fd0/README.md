@@ -42,6 +42,40 @@
 - [📄table](bm-20241010-pythonperf2-x86_64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-3.13.0b2.md)
 - [📈time plot](bm-20241010-pythonperf2-x86_64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-3.13.0b2.svg)
 
+## windows amd64 (pythonperf1)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11273331780)
+- cpu model: missing
+- platform: Windows-11-10.0.22631-SP0
+- [raw results](bm-20241010-pythonperf1-amd64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.15x faster (HPT: reliability of 100.00%, 1.07x faster at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
+- [📄table](bm-20241010-pythonperf1-amd64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-3.10.4.md)
+- [📈time plot](bm-20241010-pythonperf1-amd64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-3.10.4.svg)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.02x slower (HPT: reliability of 99.56%, 1.00x slower at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: aiohttp, chameleon, dask, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: genshi_text, genshi_xml, html5lib, pylint, thrift
+- [📄table](bm-20241010-pythonperf1-amd64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-3.12.0.md)
+- [📈time plot](bm-20241010-pythonperf1-amd64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-3.12.0.svg)
+
+### vs. 3.13.0b2
+
+- Geometric mean: 1.07x slower (HPT: reliability of 100.00%, 1.08x slower at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: aiohttp, chameleon, flaskblogging, mypy2
+- new benchmarks: unpack_sequence
+- [📄table](bm-20241010-pythonperf1-amd64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-3.13.0b2.md)
+- [📈time plot](bm-20241010-pythonperf1-amd64-faster%252dcpython-more_robust_immortal-3.14.0a0-94f8fd0-vs-3.13.0b2.svg)
+
 ## darwin arm64 (darwin)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11273317937)

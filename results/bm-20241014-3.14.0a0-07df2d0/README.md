@@ -42,6 +42,14 @@
 - [📄table](bm-20241014-linux-x86_64-faster%252dcpython-fix_decref_and_reuse-3.14.0a0-07df2d0-vs-3.13.0b2.md)
 - [📈time plot](bm-20241014-linux-x86_64-faster%252dcpython-fix_decref_and_reuse-3.14.0a0-07df2d0-vs-3.13.0b2.svg)
 
+### vs. base
+
+- Geometric mean: 1.01x slower (HPT: reliability of 99.91%, 1.00x slower at 99th %ile)
+- Memory usage: 1.01x
+- [🧠memory plot](bm-20241014-linux-x86_64-faster%252dcpython-fix_decref_and_reuse-3.14.0a0-07df2d0-vs-base-mem.svg)
+- [📄table](bm-20241014-linux-x86_64-faster%252dcpython-fix_decref_and_reuse-3.14.0a0-07df2d0-vs-base.md)
+- [📈time plot](bm-20241014-linux-x86_64-faster%252dcpython-fix_decref_and_reuse-3.14.0a0-07df2d0-vs-base.svg)
+
 ## windows amd64 (pythonperf1)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11325548685)

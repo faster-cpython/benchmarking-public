@@ -8,6 +8,15 @@
 - commit merge base: [3fea1d000ef0a74062fd3fe218ad94618b08d9f2](https://github.com/brandtbucher/cpython/commit/3fea1d000ef0a74062fd3fe218ad94618b08d9f2)
 - ref: reset_counters
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20241014-azure-x86_64-brandtbucher-reset_counters-3.14.0a0-ebcfcaf-pystats.json)
+- [pystats table](bm-20241014-azure-x86_64-brandtbucher-reset_counters-3.14.0a0-ebcfcaf-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20241014-azure-x86_64-brandtbucher-reset_counters-3.14.0a0-ebcfcaf-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11353478967)
@@ -41,4 +50,12 @@
 - new benchmarks: unpack_sequence
 - [📄table](bm-20241014-linux-x86_64-brandtbucher-reset_counters-3.14.0a0-ebcfcaf-vs-3.13.0b2.md)
 - [📈time plot](bm-20241014-linux-x86_64-brandtbucher-reset_counters-3.14.0a0-ebcfcaf-vs-3.13.0b2.svg)
+
+### vs. base
+
+- Geometric mean: 1.00x faster (HPT: reliability of 99.10%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20241014-linux-x86_64-brandtbucher-reset_counters-3.14.0a0-ebcfcaf-vs-base-mem.svg)
+- [📄table](bm-20241014-linux-x86_64-brandtbucher-reset_counters-3.14.0a0-ebcfcaf-vs-base.md)
+- [📈time plot](bm-20241014-linux-x86_64-brandtbucher-reset_counters-3.14.0a0-ebcfcaf-vs-base.svg)
 

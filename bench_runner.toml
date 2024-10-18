@@ -10,6 +10,10 @@ notification_issue = 182
 excluded_benchmarks = [
     # Benchmarks where the mean execution count < 5
     "aiohttp",
+    "asyncio_tcp",
+    "asyncio_tcp_ssl",
+    "bench_mp_pool",
+    "bench_thread_pool",
     "deepcopy_reduce",
     "djangocms",
     "flaskblogging",

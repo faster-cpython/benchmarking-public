@@ -88,6 +88,7 @@
 
 - Geometric mean: 1.01x slower (HPT: reliability of 95.23%, 1.00x slower at 99th %ile)
 - Memory usage: 1.02x
+- missing benchmarks: 🔴 sphinx
 - [🧠memory plot](bm-20241007-linux-x86_64-nick%252darm-codecache-3.14.0a0-aa18ec3-vs-base-mem.svg)
 - [📄table](bm-20241007-linux-x86_64-nick%252darm-codecache-3.14.0a0-aa18ec3-vs-base.md)
 - [📈time plot](bm-20241007-linux-x86_64-nick%252darm-codecache-3.14.0a0-aa18ec3-vs-base.svg)
@@ -130,6 +131,7 @@
 
 - Geometric mean: 1.01x slower (HPT: reliability of 80.95%, 1.00x faster at 99th %ile)
 - Memory usage: 1.02x
+- missing benchmarks: 🔴 sphinx
 - [🧠memory plot](bm-20241007-pythonperf2-x86_64-nick%252darm-codecache-3.14.0a0-aa18ec3-vs-base-mem.svg)
 - [📄table](bm-20241007-pythonperf2-x86_64-nick%252darm-codecache-3.14.0a0-aa18ec3-vs-base.md)
 - [📈time plot](bm-20241007-pythonperf2-x86_64-nick%252darm-codecache-3.14.0a0-aa18ec3-vs-base.svg)
@@ -172,6 +174,7 @@
 
 - Geometric mean: 1.03x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - Memory usage: 0.98x
+- missing benchmarks: 🔴 sphinx
 - [🧠memory plot](bm-20241007-darwin-arm64-nick%252darm-codecache-3.14.0a0-aa18ec3-vs-base-mem.svg)
 - [📄table](bm-20241007-darwin-arm64-nick%252darm-codecache-3.14.0a0-aa18ec3-vs-base.md)
 - [📈time plot](bm-20241007-darwin-arm64-nick%252darm-codecache-3.14.0a0-aa18ec3-vs-base.svg)

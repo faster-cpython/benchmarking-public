@@ -88,6 +88,7 @@
 
 - Geometric mean: 1.01x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
+- missing benchmarks: 🔴 sphinx
 - [🧠memory plot](bm-20241007-linux-x86_64-nick%252darm-codecache_rwx-3.14.0a0-0442576-vs-base-mem.svg)
 - [📄table](bm-20241007-linux-x86_64-nick%252darm-codecache_rwx-3.14.0a0-0442576-vs-base.md)
 - [📈time plot](bm-20241007-linux-x86_64-nick%252darm-codecache_rwx-3.14.0a0-0442576-vs-base.svg)
@@ -130,6 +131,7 @@
 
 - Geometric mean: 1.00x slower (HPT: reliability of 54.37%, 1.00x slower at 99th %ile)
 - Memory usage: 1.01x
+- missing benchmarks: 🔴 sphinx
 - [🧠memory plot](bm-20241007-pythonperf2-x86_64-nick%252darm-codecache_rwx-3.14.0a0-0442576-vs-base-mem.svg)
 - [📄table](bm-20241007-pythonperf2-x86_64-nick%252darm-codecache_rwx-3.14.0a0-0442576-vs-base.md)
 - [📈time plot](bm-20241007-pythonperf2-x86_64-nick%252darm-codecache_rwx-3.14.0a0-0442576-vs-base.svg)
@@ -172,6 +174,7 @@
 
 - Geometric mean: 1.03x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
+- missing benchmarks: 🔴 sphinx
 - [🧠memory plot](bm-20241007-darwin-arm64-nick%252darm-codecache_rwx-3.14.0a0-0442576-vs-base-mem.svg)
 - [📄table](bm-20241007-darwin-arm64-nick%252darm-codecache_rwx-3.14.0a0-0442576-vs-base.md)
 - [📈time plot](bm-20241007-darwin-arm64-nick%252darm-codecache_rwx-3.14.0a0-0442576-vs-base.svg)

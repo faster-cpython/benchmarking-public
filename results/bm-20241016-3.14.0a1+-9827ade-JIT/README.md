@@ -50,6 +50,15 @@
 - [📄table](bm-20241016-arminc-aarch64-savannahostrowski-remove_ghccc-3.14.0a1%2B-9827ade-vs-base.md)
 - [📈time plot](bm-20241016-arminc-aarch64-savannahostrowski-remove_ghccc-3.14.0a1%2B-9827ade-vs-base.svg)
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20241016-azure-x86_64-savannahostrowski-remove_ghccc-3.14.0a1%2B-9827ade-pystats.json)
+- [pystats table](bm-20241016-azure-x86_64-savannahostrowski-remove_ghccc-3.14.0a1%2B-9827ade-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20241016-azure-x86_64-savannahostrowski-remove_ghccc-3.14.0a1%2B-9827ade-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11373872551)

@@ -1586,7 +1586,7 @@
 </g>
 </g>
 <g stroke="#1f77b4" stroke-opacity=".9">
-<path d="m71.4 1168 30.6-3.6h43 29.3 12.4 27.9 7.67 0.214 7.72 42.5l42.6-3.6 42.9-3.6h42.8l41.8 3.6h29.4 13.2 35.3 27.4l23.6 7.2h30.9 8.11l46-3.6 23-43.2h6.74" clip-path="url(#o)" fill="none" stroke-dasharray="1.5,2.475" stroke-width="1.5"/>
+<path d="m71.4 1168 30.6-3.6h43 29.3 12.4 27.9 7.67 0.214 7.72 42.5l42.6-3.6 42.9-3.6h42.8l41.8 3.6h29.4 13.2 35.3 27.4l23.6 7.2h30.9 8.11l46-3.6 17.9-43.2h5.1 6.74" clip-path="url(#o)" fill="none" stroke-dasharray="1.5,2.475" stroke-width="1.5"/>
 <g clip-path="url(#o)" fill="#1f77b4" fill-opacity=".9">
 <use x="71.388926" y="1168.242032" xlink:href="#a"/>
 <use x="102.016738" y="1164.640895" xlink:href="#a"/>
@@ -1610,12 +1610,13 @@
 <use x="602.425071" y="1168.242032" xlink:href="#a"/>
 <use x="610.533827" y="1168.242032" xlink:href="#a"/>
 <use x="656.492966" y="1164.640895" xlink:href="#a"/>
+<use x="674.424523" y="1121.427248" xlink:href="#a"/>
 <use x="679.521095" y="1121.427248" xlink:href="#a"/>
 <use x="686.256387" y="1121.427248" xlink:href="#a"/>
 </g>
 </g>
 <g stroke="#9467bd" stroke-opacity=".9">
-<path d="m71.4 1161h30.6 43l29.3-3.6 12.4 3.6 27.9-3.6h7.67 0.214 7.72 42.5l42.6-3.6h42.9 42.8l41.8 3.6h17.4 25.2 35.3 27.4l23.6 10.8h30.9 8.11l46-3.6 23-46.8h6.74" clip-path="url(#o)" fill="none" stroke-dasharray="5.55,2.4" stroke-width="1.5"/>
+<path d="m71.4 1161h30.6 43l29.3-3.6 12.4 3.6 27.9-3.6h7.67 0.214 7.72 42.5l42.6-3.6h42.9 42.8l41.8 3.6h17.4 25.2 35.3 27.4l23.6 10.8h30.9 8.11l46-3.6 17.9-46.8h5.1 6.74" clip-path="url(#o)" fill="none" stroke-dasharray="5.55,2.4" stroke-width="1.5"/>
 <g clip-path="url(#o)" fill="#9467bd" fill-opacity=".9">
 <use x="71.388926" y="1161.039757" xlink:href="#e"/>
 <use x="102.016738" y="1161.039757" xlink:href="#e"/>
@@ -1639,6 +1640,7 @@
 <use x="602.425071" y="1168.242032" xlink:href="#e"/>
 <use x="610.533827" y="1168.242032" xlink:href="#e"/>
 <use x="656.492966" y="1164.640895" xlink:href="#e"/>
+<use x="674.424523" y="1117.826111" xlink:href="#e"/>
 <use x="679.521095" y="1117.826111" xlink:href="#e"/>
 <use x="686.256387" y="1117.826111" xlink:href="#e"/>
 </g>

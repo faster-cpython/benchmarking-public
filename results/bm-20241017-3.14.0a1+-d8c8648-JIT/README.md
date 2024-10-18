@@ -185,7 +185,7 @@
 
 ## darwin arm64 (darwin)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11394692387)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11407873273)
 - cpu model: missing
 - platform: macOS-15.0.1-arm64-arm-64bit-Mach-O
 - [raw results](bm-20241017-darwin-arm64-python-d8c864816121547338ef-3.14.0a1%2B-d8c8648.json)

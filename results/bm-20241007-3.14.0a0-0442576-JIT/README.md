@@ -46,6 +46,7 @@
 
 - Geometric mean: 1.01x faster (HPT: reliability of 99.44%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
+- missing benchmarks: 🔴 sphinx
 - [🧠memory plot](bm-20241007-arminc-aarch64-nick%252darm-codecache_rwx-3.14.0a0-0442576-vs-base-mem.svg)
 - [📄table](bm-20241007-arminc-aarch64-nick%252darm-codecache_rwx-3.14.0a0-0442576-vs-base.md)
 - [📈time plot](bm-20241007-arminc-aarch64-nick%252darm-codecache_rwx-3.14.0a0-0442576-vs-base.svg)

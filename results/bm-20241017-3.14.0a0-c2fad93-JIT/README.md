@@ -46,7 +46,6 @@
 
 - Geometric mean: 1.01x slower (HPT: reliability of 63.31%, 1.00x slower at 99th %ile)
 - Memory usage: 1.15x
-- new benchmarks: sphinx
 - [🧠memory plot](bm-20241017-arminc-aarch64-nick%252darm-codecache-3.14.0a0-c2fad93-vs-base-mem.svg)
 - [📄table](bm-20241017-arminc-aarch64-nick%252darm-codecache-3.14.0a0-c2fad93-vs-base.md)
 - [📈time plot](bm-20241017-arminc-aarch64-nick%252darm-codecache-3.14.0a0-c2fad93-vs-base.svg)
@@ -55,6 +54,10 @@
 
 - [pystats raw](bm-20241017-azure-x86_64-nick%252darm-codecache-3.14.0a0-c2fad93-pystats.json)
 - [pystats table](bm-20241017-azure-x86_64-nick%252darm-codecache-3.14.0a0-c2fad93-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20241017-azure-x86_64-nick%252darm-codecache-3.14.0a0-c2fad93-pystats-vs-base.md)
 
 ## linux x86_64 (linux)
 

@@ -151,7 +151,7 @@
 
 ## windows x86 (pythonperf1_win32)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11394692387)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11407873273)
 - cpu model: missing
 - platform: Windows-11-10.0.22631-SP0
 - [raw results](bm-20241017-pythonperf1_win32-x86-python-d8c864816121547338ef-3.14.0a1%2B-d8c8648.json)

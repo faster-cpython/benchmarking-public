@@ -694,7 +694,7 @@
 </g>
 </g>
 <g stroke="#2ca02c" stroke-opacity=".9">
-<path d="m338 466 92.3 78.2h17l16.5-15.6 14.1 15.6 0.0847-62.6 3.06 62.6h16.8l16.8-15.6 17-23.5 16.9 15.6 16.5 15.6 16.9-31.3 14-54.7 20.2 109 15.4 7.82 18.2 54.7 7.1-70.4" clip-path="url(#f)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
+<path d="m338 466 92.3 78.2h17l16.5-15.6 14.1 15.6 0.0847-62.6 3.06 62.6h16.8l16.8-15.6 17-23.5 16.9 15.6 16.5 15.6 16.9-31.3 14-54.7 20.2 109 15.4 7.82 18.2 54.7 7.1-70.4 9.87 7.82" clip-path="url(#f)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
 <g clip-path="url(#f)" fill="#2ca02c" fill-opacity=".9">
 <use x="338.31369" y="465.724339" xlink:href="#e"/>
 <use x="430.606228" y="543.923437" xlink:href="#e"/>
@@ -714,6 +714,7 @@
 <use x="631.88468" y="567.383167" xlink:href="#e"/>
 <use x="650.075975" y="622.122536" xlink:href="#e"/>
 <use x="657.173546" y="551.743347" xlink:href="#e"/>
+<use x="667.04251" y="559.563257" xlink:href="#e"/>
 </g>
 </g>
 <path d="m40.6 700v-313" fill="none" stroke="#000" stroke-linecap="square" stroke-width=".8"/>

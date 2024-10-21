@@ -216,3 +216,45 @@
 - [📄table](bm-20241019-pythonperf1_win32-x86-python-8f5e39d5c885318e3128-3.14.0a1%2B-8f5e39d-vs-base.md)
 - [📈time plot](bm-20241019-pythonperf1_win32-x86-python-8f5e39d5c885318e3128-3.14.0a1%2B-8f5e39d-vs-base.svg)
 
+## darwin arm64 (darwin)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11421710436)
+- cpu model: missing
+- platform: macOS-15.0.1-arm64-arm-64bit-Mach-O
+- [raw results](bm-20241019-darwin-arm64-python-8f5e39d5c885318e3128-3.14.0a1%2B-8f5e39d.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.20x faster (HPT: reliability of 100.00%, 1.14x faster at 99th %ile)
+- Memory usage: 1.43x
+- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, sphinx
+- [📄table](bm-20241019-darwin-arm64-python-8f5e39d5c885318e3128-3.14.0a1%2B-8f5e39d-vs-3.10.4.md)
+- [📈time plot](bm-20241019-darwin-arm64-python-8f5e39d5c885318e3128-3.14.0a1%2B-8f5e39d-vs-3.10.4.svg)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.02x faster (HPT: reliability of 98.88%, 1.00x faster at 99th %ile)
+- Memory usage: 1.27x
+- missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- new benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, sphinx, thrift
+- [📄table](bm-20241019-darwin-arm64-python-8f5e39d5c885318e3128-3.14.0a1%2B-8f5e39d-vs-3.12.0.md)
+- [📈time plot](bm-20241019-darwin-arm64-python-8f5e39d5c885318e3128-3.14.0a1%2B-8f5e39d-vs-3.12.0.svg)
+
+### vs. 3.13.0b2
+
+- Geometric mean: 1.04x slower (HPT: reliability of 99.90%, 1.01x slower at 99th %ile)
+- Memory usage: 1.20x
+- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
+- new benchmarks: sphinx, unpack_sequence
+- [📄table](bm-20241019-darwin-arm64-python-8f5e39d5c885318e3128-3.14.0a1%2B-8f5e39d-vs-3.13.0b2.md)
+- [📈time plot](bm-20241019-darwin-arm64-python-8f5e39d5c885318e3128-3.14.0a1%2B-8f5e39d-vs-3.13.0b2.svg)
+
+### vs. base
+
+- Geometric mean: 1.05x slower (HPT: reliability of 99.86%, 1.00x slower at 99th %ile)
+- Memory usage: 1.08x
+- [🧠memory plot](bm-20241019-darwin-arm64-python-8f5e39d5c885318e3128-3.14.0a1%2B-8f5e39d-vs-base-mem.svg)
+- [📄table](bm-20241019-darwin-arm64-python-8f5e39d5c885318e3128-3.14.0a1%2B-8f5e39d-vs-base.md)
+- [📈time plot](bm-20241019-darwin-arm64-python-8f5e39d5c885318e3128-3.14.0a1%2B-8f5e39d-vs-base.svg)
+

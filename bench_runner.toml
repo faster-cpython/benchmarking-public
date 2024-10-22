@@ -1,6 +1,6 @@
 [bases]
 # List the base versions you want to compare every benchmark run to
-versions = ["3.10.4", "3.12.0", "3.13.0b2"]
+versions = ["3.10.4", "3.12.0", "3.13.0"]
 
 [notify]
 notification_issue = 182

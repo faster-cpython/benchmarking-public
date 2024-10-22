@@ -6,8 +6,8 @@
 - commit hash: 76aa43c
 - commit date: 2024-09-11
 - overall geometric mean: 1.00x slower
-- HPT reliability: 62.66%
-- HPT 99th percentile: 1.00x slower
+- HPT reliability: 52.49%
+- HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
 Benchmarks with tag 'apps':
@@ -147,10 +147,10 @@ Benchmark hidden because not significant (44): json, pickle_list, asyncio_tcp, d
 
 # HPT report
 
-- Reliability score: 62.66% likely to be slow
-- 90% likely to have a slowdown of 1.00x
-- 95% likely to have a slowdown of 1.00x
-- 99% likely to have a slowdown of 1.00x
+- Reliability score: 52.49% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x
 
 # Memory
 - memory change: unknown

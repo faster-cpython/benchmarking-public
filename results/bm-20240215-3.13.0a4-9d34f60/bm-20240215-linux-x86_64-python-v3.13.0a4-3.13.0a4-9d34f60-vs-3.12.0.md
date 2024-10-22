@@ -6,7 +6,7 @@
 - commit hash: 9d34f60
 - commit date: 2024-02-15
 - overall geometric mean: 1.03x faster
-- HPT reliability: 99.61%
+- HPT reliability: 99.78%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -196,7 +196,7 @@ Ignored benchmarks (7) of results/bm-20240215-3.13.0a4-9d34f60/bm-20240215-linux
 
 # HPT report
 
-- Reliability score: 99.61% likely to be faster
+- Reliability score: 99.78% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

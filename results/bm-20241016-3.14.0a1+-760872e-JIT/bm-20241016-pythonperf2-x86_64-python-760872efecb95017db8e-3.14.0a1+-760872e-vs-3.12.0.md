@@ -6,7 +6,7 @@
 - commit hash: 760872e
 - commit date: 2024-10-16
 - overall geometric mean: 1.09x slower
-- HPT reliability: 74.95%
+- HPT reliability: 69.69%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.10x
 
@@ -196,7 +196,7 @@ Ignored benchmarks (7) of results/bm-20241016-3.14.0a1+-760872e-JIT/bm-20241016-
 
 # HPT report
 
-- Reliability score: 74.95% likely to be slow
+- Reliability score: 69.69% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

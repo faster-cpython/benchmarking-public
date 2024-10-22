@@ -6,7 +6,7 @@
 - commit hash: eb895df
 - commit date: 2024-07-16
 - overall geometric mean: 1.08x faster
-- HPT reliability: 99.99%
+- HPT reliability: 100.00%
 - HPT 99th percentile: 1.02x faster
 - Memory change: 1.04x
 
@@ -186,9 +186,9 @@ Ignored benchmarks (6) of results/bm-20240716-3.14.0a0-eb895df-JIT/bm-20240716-l
 
 # HPT report
 
-- Reliability score: 99.99% likely to be faster
-- 90% likely to have a speedup of 1.04x
-- 95% likely to have a speedup of 1.03x
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.05x
+- 95% likely to have a speedup of 1.04x
 - 99% likely to have a speedup of 1.02x
 
 # Memory

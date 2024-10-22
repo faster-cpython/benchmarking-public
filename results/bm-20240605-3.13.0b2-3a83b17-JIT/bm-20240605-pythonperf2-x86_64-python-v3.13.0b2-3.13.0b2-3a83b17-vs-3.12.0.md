@@ -6,8 +6,8 @@
 - commit hash: 3a83b17
 - commit date: 2024-06-05
 - overall geometric mean: 1.01x slower
-- HPT reliability: 57.55%
-- HPT 99th percentile: 1.00x slower
+- HPT reliability: 55.34%
+- HPT 99th percentile: 1.00x faster
 - Memory change: 1.02x
 
 Benchmarks with tag 'apps':
@@ -197,10 +197,10 @@ Ignored benchmarks (7) of results/bm-20240605-3.13.0b2-3a83b17-JIT/bm-20240605-p
 
 # HPT report
 
-- Reliability score: 57.55% likely to be slow
-- 90% likely to have a slowdown of 1.00x
-- 95% likely to have a slowdown of 1.00x
-- 99% likely to have a slowdown of 1.00x
+- Reliability score: 55.34% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x
 
 # Memory
 - memory change: 1.02x

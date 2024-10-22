@@ -6,9 +6,9 @@
 - commit hash: 4b27f3a
 - commit date: 2024-08-13
 - overall geometric mean: 1.00x faster
-- HPT reliability: 97.74%
+- HPT reliability: 98.08%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 1.02x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -171,10 +171,10 @@ Benchmark hidden because not significant (27): pylint, scimark_lu, unpickle_pure
 
 # HPT report
 
-- Reliability score: 97.74% likely to be faster
+- Reliability score: 98.08% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 1.02x
+- memory change: 1.00x

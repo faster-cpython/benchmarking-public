@@ -7,8 +7,8 @@
 - commit date: 2024-08-15
 - overall geometric mean: 1.29x faster
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.18x faster
-- Memory change: 0.87x
+- HPT 99th percentile: 1.17x faster
+- Memory change: 0.80x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -187,9 +187,9 @@ Ignored benchmarks (13) of results/bm-20240815-3.14.0a0-e913d2c/bm-20240815-darw
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.22x
+- 90% likely to have a speedup of 1.21x
 - 95% likely to have a speedup of 1.20x
-- 99% likely to have a speedup of 1.18x
+- 99% likely to have a speedup of 1.17x
 
 # Memory
-- memory change: 0.87x
+- memory change: 0.80x

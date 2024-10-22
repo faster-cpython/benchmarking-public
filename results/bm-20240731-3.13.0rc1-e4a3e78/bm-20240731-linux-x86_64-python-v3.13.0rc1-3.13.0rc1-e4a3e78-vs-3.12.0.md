@@ -189,7 +189,7 @@ Ignored benchmarks (6) of results/bm-20240731-3.13.0rc1-e4a3e78/bm-20240731-linu
 
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.03x
-- 95% likely to have a speedup of 1.02x
+- 95% likely to have a speedup of 1.03x
 - 99% likely to have a speedup of 1.02x
 
 # Memory

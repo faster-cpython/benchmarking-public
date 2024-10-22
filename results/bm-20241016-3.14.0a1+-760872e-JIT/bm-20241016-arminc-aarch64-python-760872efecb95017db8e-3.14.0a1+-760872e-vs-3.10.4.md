@@ -6,8 +6,8 @@
 - commit hash: 760872e
 - commit date: 2024-10-16
 - overall geometric mean: 1.10x faster
-- HPT reliability: 100.00%
-- HPT 99th percentile: 1.05x faster
+- HPT reliability: 99.99%
+- HPT 99th percentile: 1.04x faster
 - Memory change: 1.37x
 
 Benchmarks with tag 'apps':
@@ -195,10 +195,10 @@ Ignored benchmarks (7) of results/bm-20241016-3.14.0a1+-760872e-JIT/bm-20241016-
 
 # HPT report
 
-- Reliability score: 100.00% likely to be faster
+- Reliability score: 99.99% likely to be faster
 - 90% likely to have a speedup of 1.07x
 - 95% likely to have a speedup of 1.06x
-- 99% likely to have a speedup of 1.05x
+- 99% likely to have a speedup of 1.04x
 
 # Memory
 - memory change: 1.37x

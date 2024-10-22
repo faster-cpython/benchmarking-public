@@ -6,9 +6,9 @@
 - commit hash: e5d0e67
 - commit date: 2024-09-17
 - overall geometric mean: 1.01x faster
-- HPT reliability: 74.19%
+- HPT reliability: 69.34%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.99x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -194,10 +194,10 @@ Ignored benchmarks (6) of results/bm-20240917-3.14.0a0-e5d0e67-JIT/bm-20240917-p
 
 # HPT report
 
-- Reliability score: 74.19% likely to be faster
+- Reliability score: 69.34% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.99x
+- memory change: 1.00x

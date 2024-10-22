@@ -6,9 +6,9 @@
 - commit hash: 52caaef
 - commit date: 2024-08-24
 - overall geometric mean: 1.19x faster
-- HPT reliability: 100.00%
-- HPT 99th percentile: 1.05x faster
-- Memory change: 1.25x
+- HPT reliability: 99.99%
+- HPT 99th percentile: 1.04x faster
+- Memory change: 1.26x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -185,10 +185,10 @@ Ignored benchmarks (5) of results/bm-20240824-3.14.0a0-52caaef-JIT/bm-20240824-a
 
 # HPT report
 
-- Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.08x
-- 95% likely to have a speedup of 1.07x
-- 99% likely to have a speedup of 1.05x
+- Reliability score: 99.99% likely to be faster
+- 90% likely to have a speedup of 1.07x
+- 95% likely to have a speedup of 1.06x
+- 99% likely to have a speedup of 1.04x
 
 # Memory
-- memory change: 1.25x
+- memory change: 1.26x

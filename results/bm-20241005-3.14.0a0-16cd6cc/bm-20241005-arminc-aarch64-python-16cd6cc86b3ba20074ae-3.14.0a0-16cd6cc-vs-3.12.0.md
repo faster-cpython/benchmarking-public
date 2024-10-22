@@ -6,9 +6,9 @@
 - commit hash: 16cd6cc
 - commit date: 2024-10-05
 - overall geometric mean: 1.04x slower
-- HPT reliability: 96.17%
+- HPT reliability: 97.69%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.91x
+- Memory change: 0.92x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -187,10 +187,10 @@ Ignored benchmarks (2) of results/bm-20241005-3.14.0a0-16cd6cc/bm-20241005-armin
 
 # HPT report
 
-- Reliability score: 96.17% likely to be faster
+- Reliability score: 97.69% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.91x
+- memory change: 0.92x

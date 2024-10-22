@@ -204,7 +204,7 @@ Ignored benchmarks (4) of results/bm-20240117-3.13.0a3-f009305/bm-20240117-armin
 
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.25x
-- 95% likely to have a speedup of 1.24x
+- 95% likely to have a speedup of 1.23x
 - 99% likely to have a speedup of 1.22x
 
 # Memory

@@ -6,7 +6,7 @@
 - commit hash: 43a18d0
 - commit date: 2024-07-19
 - overall geometric mean: 1.00x faster
-- HPT reliability: 97.65%
+- HPT reliability: 98.70%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -181,8 +181,8 @@ Ignored benchmarks (5) of results/bm-20240719-3.14.0a0-43a18d0/bm-20240719-pytho
 
 # HPT report
 
-- Reliability score: 97.65% likely to be slow
-- 90% likely to have a slowdown of 1.00x
+- Reliability score: 98.70% likely to be slow
+- 90% likely to have a slowdown of 1.01x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 

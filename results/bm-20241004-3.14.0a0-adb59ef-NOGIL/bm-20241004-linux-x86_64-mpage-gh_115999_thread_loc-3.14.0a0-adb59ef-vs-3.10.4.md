@@ -6,9 +6,9 @@
 - commit hash: adb59ef
 - commit date: 2024-10-04
 - overall geometric mean: 1.05x slower
-- HPT reliability: 96.15%
+- HPT reliability: 97.64%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 1.30x
+- Memory change: 1.31x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -198,10 +198,10 @@ Ignored benchmarks (5) of results/bm-20241004-3.14.0a0-adb59ef-NOGIL/bm-20241004
 
 # HPT report
 
-- Reliability score: 96.15% likely to be slow
+- Reliability score: 97.64% likely to be slow
 - 90% likely to have a slowdown of 1.01x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 1.30x
+- memory change: 1.31x

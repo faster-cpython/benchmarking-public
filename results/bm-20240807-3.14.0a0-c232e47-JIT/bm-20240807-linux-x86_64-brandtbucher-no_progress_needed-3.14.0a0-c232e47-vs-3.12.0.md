@@ -6,8 +6,8 @@
 - commit hash: c232e47
 - commit date: 2024-08-07
 - overall geometric mean: 1.03x faster
-- HPT reliability: 99.45%
-- HPT 99th percentile: 1.00x faster
+- HPT reliability: 99.78%
+- HPT 99th percentile: 1.01x faster
 - Memory change: 1.06x
 
 Benchmarks with tag 'apps':
@@ -185,10 +185,10 @@ Ignored benchmarks (6) of results/bm-20240807-3.14.0a0-c232e47-JIT/bm-20240807-l
 
 # HPT report
 
-- Reliability score: 99.45% likely to be faster
-- 90% likely to have a speedup of 1.02x
-- 95% likely to have a speedup of 1.01x
-- 99% likely to have a speedup of 1.00x
+- Reliability score: 99.78% likely to be faster
+- 90% likely to have a speedup of 1.03x
+- 95% likely to have a speedup of 1.02x
+- 99% likely to have a speedup of 1.01x
 
 # Memory
 - memory change: 1.06x

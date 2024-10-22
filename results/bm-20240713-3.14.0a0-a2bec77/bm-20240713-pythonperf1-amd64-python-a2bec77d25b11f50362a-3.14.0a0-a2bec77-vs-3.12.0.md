@@ -6,7 +6,7 @@
 - commit hash: a2bec77
 - commit date: 2024-07-13
 - overall geometric mean: 1.01x faster
-- HPT reliability: 92.49%
+- HPT reliability: 97.80%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -183,7 +183,7 @@ Ignored benchmarks (5) of results/bm-20240713-3.14.0a0-a2bec77/bm-20240713-pytho
 
 # HPT report
 
-- Reliability score: 92.49% likely to be slow
+- Reliability score: 97.80% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

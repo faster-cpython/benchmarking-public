@@ -6,9 +6,9 @@
 - commit hash: 07df2d0
 - commit date: 2024-10-14
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.91%
+- HPT reliability: 99.92%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 1.01x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -174,10 +174,10 @@ Benchmark hidden because not significant (21): xml_etree_parse, bpe_tokeniser, t
 
 # HPT report
 
-- Reliability score: 99.91% likely to be slow
+- Reliability score: 99.92% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 1.01x
+- memory change: 1.00x

@@ -6,9 +6,9 @@
 - commit hash: b523cd2
 - commit date: 2024-07-30
 - overall geometric mean: 1.07x faster
-- HPT reliability: 98.70%
+- HPT reliability: 99.50%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 1.07x
+- Memory change: 1.06x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -184,10 +184,10 @@ Ignored benchmarks (6) of results/bm-20240730-3.14.0a0-b523cd2-JIT/bm-20240730-l
 
 # HPT report
 
-- Reliability score: 98.70% likely to be faster
-- 90% likely to have a speedup of 1.01x
-- 95% likely to have a speedup of 1.00x
+- Reliability score: 99.50% likely to be faster
+- 90% likely to have a speedup of 1.02x
+- 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 1.07x
+- memory change: 1.06x

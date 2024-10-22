@@ -22,8 +22,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.23x faster (HPT: reliability of 100.00%, 1.08x faster at 99th %ile)
-- Memory usage: 1.13x
+- Geometric mean: 1.23x faster (HPT: reliability of 100.00%, 1.07x faster at 99th %ile)
+- Memory usage: 1.14x
 - missing benchmarks: aiohttp, chameleon, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240802-linux-x86_64-python-main-3.14.0a0-d57f8a9-vs-3.10.4.md)
@@ -31,18 +31,23 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.07x slower (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
+- Geometric mean: 1.07x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
 - Memory usage: 0.99x
 - missing benchmarks: aiohttp, chameleon, dulwich_log, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240802-linux-x86_64-python-main-3.14.0a0-d57f8a9-vs-3.12.0.md)
 - [📈time plot](bm-20240802-linux-x86_64-python-main-3.14.0a0-d57f8a9-vs-3.12.0.svg)
 
+### vs. 3.13.0
+
+- Geometric mean: 1.14x slower (HPT: reliability of 100.00%, 1.10x slower at 99th %ile)
+- Memory usage: 1.02x
+- missing benchmarks: aiohttp, chameleon, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20240802-linux-x86_64-python-main-3.14.0a0-d57f8a9-vs-3.13.0.md)
+- [📈time plot](bm-20240802-linux-x86_64-python-main-3.14.0a0-d57f8a9-vs-3.13.0.svg)
+
 ### vs. 3.13.0b2
 
-- Geometric mean: 1.10x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
-- Memory usage: 1.02x
-- missing benchmarks: aiohttp, chameleon, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
 - [📄table](bm-20240802-linux-x86_64-python-main-3.14.0a0-d57f8a9-vs-3.13.0b2.md)
 - [📈time plot](bm-20240802-linux-x86_64-python-main-3.14.0a0-d57f8a9-vs-3.13.0b2.svg)
 

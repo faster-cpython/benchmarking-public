@@ -6,7 +6,7 @@
 - commit hash: 363374c
 - commit date: 2024-08-10
 - overall geometric mean: 1.02x slower
-- HPT reliability: 99.94%
+- HPT reliability: 99.96%
 - HPT 99th percentile: 1.01x slower
 - Memory change: unknown
 
@@ -184,8 +184,8 @@ Ignored benchmarks (5) of results/bm-20240810-3.14.0a0-363374c/bm-20240810-pytho
 
 # HPT report
 
-- Reliability score: 99.94% likely to be slow
-- 90% likely to have a slowdown of 1.02x
+- Reliability score: 99.96% likely to be slow
+- 90% likely to have a slowdown of 1.03x
 - 95% likely to have a slowdown of 1.02x
 - 99% likely to have a slowdown of 1.01x
 

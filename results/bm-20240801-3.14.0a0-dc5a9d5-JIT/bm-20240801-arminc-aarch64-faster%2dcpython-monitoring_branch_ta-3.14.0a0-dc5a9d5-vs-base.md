@@ -6,7 +6,7 @@
 - commit hash: dc5a9d5
 - commit date: 2024-08-01
 - overall geometric mean: 1.00x slower
-- HPT reliability: 76.67%
+- HPT reliability: 67.06%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -109,7 +109,7 @@ Benchmark hidden because not significant (62): json, logging_format, xml_etree_p
 
 # HPT report
 
-- Reliability score: 76.67% likely to be slow
+- Reliability score: 67.06% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

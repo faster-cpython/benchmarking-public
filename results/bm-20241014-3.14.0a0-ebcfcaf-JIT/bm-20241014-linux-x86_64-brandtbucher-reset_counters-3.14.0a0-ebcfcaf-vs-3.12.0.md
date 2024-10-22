@@ -6,8 +6,8 @@
 - commit hash: ebcfcaf
 - commit date: 2024-10-14
 - overall geometric mean: 1.03x faster
-- HPT reliability: 99.66%
-- HPT 99th percentile: 1.00x faster
+- HPT reliability: 99.95%
+- HPT 99th percentile: 1.01x faster
 - Memory change: 1.03x
 
 Benchmarks with tag 'apps':
@@ -173,10 +173,10 @@ Ignored benchmarks (6) of results/bm-20241014-3.14.0a0-ebcfcaf-JIT/bm-20241014-l
 
 # HPT report
 
-- Reliability score: 99.66% likely to be faster
-- 90% likely to have a speedup of 1.01x
+- Reliability score: 99.95% likely to be faster
+- 90% likely to have a speedup of 1.02x
 - 95% likely to have a speedup of 1.01x
-- 99% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.01x
 
 # Memory
 - memory change: 1.03x

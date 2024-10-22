@@ -3143,17 +3143,17 @@ other names.
 <tr>
 <td align="left">Interpreter increfs</td>
 <td align="right">1,787,786,280</td>
-<td align="right">36.3%</td>
+<td align="right">1,787,786,280 / 0 !!</td>
 <td align="right">1,788,068,420</td>
-<td align="right">36.3%</td>
+<td align="right">1,788,068,420 / 0 !!</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">Interpreter decrefs</td>
 <td align="right">2,194,899,960</td>
-<td align="right">41.9%</td>
+<td align="right">2,194,899,960 / 0 !!</td>
 <td align="right">2,195,181,680</td>
-<td align="right">41.9%</td>
+<td align="right">2,195,181,680 / 0 !!</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -3167,17 +3167,17 @@ other names.
 <tr>
 <td align="left">Increfs</td>
 <td align="right">3,142,304,604</td>
-<td align="right">63.7%</td>
+<td align="right">3,142,304,604 / 0 !!</td>
 <td align="right">3,142,084,386</td>
-<td align="right">63.7%</td>
+<td align="right">3,142,084,386 / 0 !!</td>
 <td align="right">-0.0%</td>
 </tr>
 <tr>
 <td align="left">Decrefs</td>
 <td align="right">3,048,749,855</td>
-<td align="right">58.1%</td>
+<td align="right">3,048,749,855 / 0 !!</td>
 <td align="right">3,048,536,934</td>
-<td align="right">58.1%</td>
+<td align="right">3,048,536,934 / 0 !!</td>
 <td align="right">-0.0%</td>
 </tr>
 <tr>
@@ -5030,4 +5030,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2024-09-22
+Stats gathered on: 2024-10-21

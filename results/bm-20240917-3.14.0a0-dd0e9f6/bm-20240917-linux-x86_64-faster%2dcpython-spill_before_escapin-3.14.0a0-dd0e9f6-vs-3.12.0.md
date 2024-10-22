@@ -197,7 +197,7 @@ Ignored benchmarks (6) of results/bm-20240917-3.14.0a0-dd0e9f6/bm-20240917-linux
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.04x
+- 90% likely to have a speedup of 1.05x
 - 95% likely to have a speedup of 1.04x
 - 99% likely to have a speedup of 1.04x
 

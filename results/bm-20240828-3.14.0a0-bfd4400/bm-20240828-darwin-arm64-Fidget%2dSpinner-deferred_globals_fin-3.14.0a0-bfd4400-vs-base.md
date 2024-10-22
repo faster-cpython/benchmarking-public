@@ -8,7 +8,7 @@
 - overall geometric mean: 1.01x faster
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.99x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -167,4 +167,4 @@ Benchmark hidden because not significant (36): tornado_http, async_tree_cpu_io_m
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.99x
+- memory change: 1.00x

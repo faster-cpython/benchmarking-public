@@ -6,7 +6,7 @@
 - commit hash: e29039d
 - commit date: 2024-09-07
 - overall geometric mean: 1.00x faster
-- HPT reliability: 98.90%
+- HPT reliability: 99.70%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -153,7 +153,7 @@ Ignored benchmarks (7) of results/bm-20240907-3.14.0a0-e29039d-JIT/bm-20240907-l
 
 # HPT report
 
-- Reliability score: 98.90% likely to be faster
+- Reliability score: 99.70% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

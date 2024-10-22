@@ -8,7 +8,7 @@
 - overall geometric mean: 1.04x slower
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 0.96x
+- Memory change: 0.95x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -202,9 +202,9 @@ Benchmark hidden because not significant (13): richards, comprehensions, nbody, 
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.00x
+- 90% likely to have a slowdown of 1.01x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 0.96x
+- memory change: 0.95x

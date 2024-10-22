@@ -6,7 +6,7 @@
 - commit hash: 5e4c3d3
 - commit date: 2024-08-16
 - overall geometric mean: 1.03x faster
-- HPT reliability: 81.01%
+- HPT reliability: 72.12%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -185,7 +185,7 @@ Ignored benchmarks (6) of results/bm-20240816-3.14.0a0-5e4c3d3/bm-20240816-pytho
 
 # HPT report
 
-- Reliability score: 81.01% likely to be faster
+- Reliability score: 72.12% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

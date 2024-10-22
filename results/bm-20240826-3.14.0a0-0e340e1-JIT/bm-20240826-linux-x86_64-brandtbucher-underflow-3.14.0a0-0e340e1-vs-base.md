@@ -6,7 +6,7 @@
 - commit hash: 0e340e1
 - commit date: 2024-08-26
 - overall geometric mean: 1.02x slower
-- HPT reliability: 98.57%
+- HPT reliability: 98.48%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.02x
 
@@ -168,7 +168,7 @@ Benchmark hidden because not significant (24): typing_runtime_protocols, pprint_
 
 # HPT report
 
-- Reliability score: 98.57% likely to be slow
+- Reliability score: 98.48% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

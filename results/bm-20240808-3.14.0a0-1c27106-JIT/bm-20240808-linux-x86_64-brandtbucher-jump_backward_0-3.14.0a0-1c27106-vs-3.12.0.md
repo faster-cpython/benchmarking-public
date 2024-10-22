@@ -6,7 +6,7 @@
 - commit hash: 1c27106
 - commit date: 2024-08-08
 - overall geometric mean: 1.05x faster
-- HPT reliability: 96.67%
+- HPT reliability: 98.77%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.08x
 
@@ -184,9 +184,9 @@ Ignored benchmarks (6) of results/bm-20240808-3.14.0a0-1c27106-JIT/bm-20240808-l
 
 # HPT report
 
-- Reliability score: 96.67% likely to be faster
-- 90% likely to have a speedup of 1.01x
-- 95% likely to have a speedup of 1.00x
+- Reliability score: 98.77% likely to be faster
+- 90% likely to have a speedup of 1.02x
+- 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x
 
 # Memory

@@ -7,8 +7,8 @@
 - commit date: 2024-09-20
 - overall geometric mean: 1.40x slower
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.22x slower
-- Memory change: 1.08x
+- HPT 99th percentile: 1.23x slower
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -227,9 +227,9 @@ Benchmark hidden because not significant (2): sqlite_synth, async_tree_cpu_io_mi
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.26x
-- 95% likely to have a slowdown of 1.24x
-- 99% likely to have a slowdown of 1.22x
+- 90% likely to have a slowdown of 1.27x
+- 95% likely to have a slowdown of 1.26x
+- 99% likely to have a slowdown of 1.23x
 
 # Memory
-- memory change: 1.08x
+- memory change: 1.00x

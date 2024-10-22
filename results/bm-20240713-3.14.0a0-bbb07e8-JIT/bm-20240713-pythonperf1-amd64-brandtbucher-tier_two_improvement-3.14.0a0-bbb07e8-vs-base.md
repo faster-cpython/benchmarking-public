@@ -6,7 +6,7 @@
 - commit hash: bbb07e8
 - commit date: 2024-07-13
 - overall geometric mean: 1.00x faster
-- HPT reliability: 59.61%
+- HPT reliability: 74.13%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -152,7 +152,7 @@ Benchmark hidden because not significant (32): regex_v8, regex_dna, async_tree_i
 
 # HPT report
 
-- Reliability score: 59.61% likely to be faster
+- Reliability score: 74.13% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

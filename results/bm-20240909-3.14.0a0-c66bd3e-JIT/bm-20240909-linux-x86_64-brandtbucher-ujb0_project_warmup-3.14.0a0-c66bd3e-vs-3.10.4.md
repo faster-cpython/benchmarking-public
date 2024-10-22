@@ -199,7 +199,7 @@ Ignored benchmarks (5) of results/bm-20240909-3.14.0a0-c66bd3e-JIT/bm-20240909-l
 
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.25x
-- 95% likely to have a speedup of 1.22x
+- 95% likely to have a speedup of 1.23x
 - 99% likely to have a speedup of 1.19x
 
 # Memory

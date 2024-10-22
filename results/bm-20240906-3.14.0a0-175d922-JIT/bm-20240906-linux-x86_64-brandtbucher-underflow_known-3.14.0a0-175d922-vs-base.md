@@ -6,7 +6,7 @@
 - commit hash: 175d922
 - commit date: 2024-09-06
 - overall geometric mean: 1.00x slower
-- HPT reliability: 98.91%
+- HPT reliability: 97.27%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.01x
 
@@ -158,7 +158,7 @@ Ignored benchmarks (7) of results/bm-20240906-3.14.0a0-175d922-JIT/bm-20240906-l
 
 # HPT report
 
-- Reliability score: 98.91% likely to be slow
+- Reliability score: 97.27% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

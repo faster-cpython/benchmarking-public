@@ -6,7 +6,7 @@
 - commit hash: 15b187e
 - commit date: 2024-08-29
 - overall geometric mean: 1.01x slower
-- HPT reliability: 98.30%
+- HPT reliability: 98.54%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -184,7 +184,7 @@ Ignored benchmarks (5) of results/bm-20240829-3.14.0a0-15b187e/bm-20240829-pytho
 
 # HPT report
 
-- Reliability score: 98.30% likely to be slow
+- Reliability score: 98.54% likely to be slow
 - 90% likely to have a slowdown of 1.01x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

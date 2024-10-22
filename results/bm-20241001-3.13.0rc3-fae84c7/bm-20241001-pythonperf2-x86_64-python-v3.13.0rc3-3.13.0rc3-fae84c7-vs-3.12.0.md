@@ -6,9 +6,9 @@
 - commit hash: fae84c7
 - commit date: 2024-10-01
 - overall geometric mean: 1.01x slower
-- HPT reliability: 69.55%
+- HPT reliability: 58.48%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 0.92x
+- Memory change: 0.93x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -201,10 +201,10 @@ Ignored benchmarks (7) of results/bm-20241001-3.13.0rc3-fae84c7/bm-20241001-pyth
 
 # HPT report
 
-- Reliability score: 69.55% likely to be slow
+- Reliability score: 58.48% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 0.92x
+- memory change: 0.93x

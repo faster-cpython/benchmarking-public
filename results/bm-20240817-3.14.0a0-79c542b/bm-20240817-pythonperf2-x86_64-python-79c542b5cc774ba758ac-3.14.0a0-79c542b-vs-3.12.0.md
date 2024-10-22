@@ -6,7 +6,7 @@
 - commit hash: 79c542b
 - commit date: 2024-08-17
 - overall geometric mean: 1.03x faster
-- HPT reliability: 84.93%
+- HPT reliability: 76.22%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -185,7 +185,7 @@ Ignored benchmarks (6) of results/bm-20240817-3.14.0a0-79c542b/bm-20240817-pytho
 
 # HPT report
 
-- Reliability score: 84.93% likely to be faster
+- Reliability score: 76.22% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

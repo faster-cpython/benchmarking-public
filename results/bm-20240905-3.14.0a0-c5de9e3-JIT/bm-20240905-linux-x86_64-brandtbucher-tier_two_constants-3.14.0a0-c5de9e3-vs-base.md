@@ -6,7 +6,7 @@
 - commit hash: c5de9e3
 - commit date: 2024-09-05
 - overall geometric mean: 1.00x slower
-- HPT reliability: 87.20%
+- HPT reliability: 92.39%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -156,7 +156,7 @@ Benchmark hidden because not significant (39): deepcopy_reduce, async_tree_none_
 
 # HPT report
 
-- Reliability score: 87.20% likely to be faster
+- Reliability score: 92.39% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

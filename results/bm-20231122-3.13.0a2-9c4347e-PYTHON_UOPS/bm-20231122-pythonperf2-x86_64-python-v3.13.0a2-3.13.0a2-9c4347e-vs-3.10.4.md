@@ -192,7 +192,7 @@ Ignored benchmarks (4) of results/bm-20231122-3.13.0a2-9c4347e-PYTHON_UOPS/bm-20
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.14x
+- 90% likely to have a speedup of 1.13x
 - 95% likely to have a speedup of 1.13x
 - 99% likely to have a speedup of 1.12x
 

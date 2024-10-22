@@ -145,7 +145,7 @@ Benchmark hidden because not significant (50): async_tree_none_tg, xml_etree_pro
 
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.01x
-- 95% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x
 
 # Memory

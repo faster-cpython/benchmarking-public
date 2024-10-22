@@ -6,7 +6,7 @@
 - commit hash: 1e7db3e
 - commit date: 2024-07-29
 - overall geometric mean: 1.06x faster
-- HPT reliability: 96.03%
+- HPT reliability: 98.03%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.07x
 
@@ -184,7 +184,7 @@ Ignored benchmarks (6) of results/bm-20240729-3.14.0a0-1e7db3e-JIT/bm-20240729-l
 
 # HPT report
 
-- Reliability score: 96.03% likely to be faster
+- Reliability score: 98.03% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

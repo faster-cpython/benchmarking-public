@@ -6,9 +6,9 @@
 - commit hash: 9c4347e
 - commit date: 2023-11-22
 - overall geometric mean: 1.01x slower
-- HPT reliability: 91.24%
+- HPT reliability: 94.85%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 0.87x
+- Memory change: 0.88x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -191,10 +191,10 @@ Ignored benchmarks (6) of results/bm-20231122-3.13.0a2-9c4347e/bm-20231122-pytho
 
 # HPT report
 
-- Reliability score: 91.24% likely to be slow
+- Reliability score: 94.85% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 0.87x
+- memory change: 0.88x

@@ -6,7 +6,7 @@
 - commit hash: b523cd2
 - commit date: 2024-07-30
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.59%
+- HPT reliability: 99.23%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.02x
 
@@ -179,7 +179,7 @@ Benchmark hidden because not significant (16): deepcopy_reduce, coroutines, go, 
 
 # HPT report
 
-- Reliability score: 99.59% likely to be slow
+- Reliability score: 99.23% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

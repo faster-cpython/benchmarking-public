@@ -33,19 +33,24 @@
 - [📄table](bm-20240726-linux-x86_64-encukou-intern_%C5%ABnus-3.14.0a0-a5da0a6-vs-3.12.0.md)
 - [📈time plot](bm-20240726-linux-x86_64-encukou-intern_%C5%ABnus-3.14.0a0-a5da0a6-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.05x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
+- Geometric mean: 1.02x faster (HPT: reliability of 81.26%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
-- missing benchmarks: aiohttp, chameleon, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
-- [📄table](bm-20240726-linux-x86_64-encukou-intern_%C5%ABnus-3.14.0a0-a5da0a6-vs-3.13.0b2.md)
-- [📈time plot](bm-20240726-linux-x86_64-encukou-intern_%C5%ABnus-3.14.0a0-a5da0a6-vs-3.13.0b2.svg)
+- missing benchmarks: aiohttp, chameleon, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20240726-linux-x86_64-encukou-intern_%C5%ABnus-3.14.0a0-a5da0a6-vs-3.13.0.md)
+- [📈time plot](bm-20240726-linux-x86_64-encukou-intern_%C5%ABnus-3.14.0a0-a5da0a6-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x faster (HPT: reliability of 62.41%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.00x faster (HPT: reliability of 66.25%, 1.00x slower at 99th %ile)
 - Memory usage: 1.01x
 - [🧠memory plot](bm-20240726-linux-x86_64-encukou-intern_%C5%ABnus-3.14.0a0-a5da0a6-vs-base-mem.svg)
 - [📄table](bm-20240726-linux-x86_64-encukou-intern_%C5%ABnus-3.14.0a0-a5da0a6-vs-base.md)
 - [📈time plot](bm-20240726-linux-x86_64-encukou-intern_%C5%ABnus-3.14.0a0-a5da0a6-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240726-linux-x86_64-encukou-intern_%C5%ABnus-3.14.0a0-a5da0a6-vs-3.13.0b2.md)
+- [📈time plot](bm-20240726-linux-x86_64-encukou-intern_%C5%ABnus-3.14.0a0-a5da0a6-vs-3.13.0b2.svg)
 

@@ -6,9 +6,9 @@
 - commit hash: 7f9fe5a
 - commit date: 2024-09-26
 - overall geometric mean: 1.00x slower
-- HPT reliability: 80.11%
+- HPT reliability: 84.34%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 1.01x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -159,10 +159,10 @@ Benchmark hidden because not significant (51): pathlib, xml_etree_iterparse, del
 
 # HPT report
 
-- Reliability score: 80.11% likely to be slow
+- Reliability score: 84.34% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 1.01x
+- memory change: 1.00x

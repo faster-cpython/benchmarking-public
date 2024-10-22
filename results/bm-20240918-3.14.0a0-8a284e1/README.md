@@ -23,7 +23,7 @@
 ### vs. 3.10.4
 
 - Geometric mean: 1.29x faster (HPT: reliability of 100.00%, 1.20x faster at 99th %ile)
-- Memory usage: 0.81x
+- Memory usage: 0.87x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240918-darwin-arm64-python-8a284e189673582e2627-3.14.0a0-8a284e1-vs-3.10.4.md)
@@ -32,18 +32,22 @@
 ### vs. 3.12.0
 
 - Geometric mean: 1.09x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
-- Memory usage: 0.72x
+- Memory usage: 0.79x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240918-darwin-arm64-python-8a284e189673582e2627-3.14.0a0-8a284e1-vs-3.12.0.md)
 - [📈time plot](bm-20240918-darwin-arm64-python-8a284e189673582e2627-3.14.0a0-8a284e1-vs-3.12.0.svg)
 
+### vs. 3.13.0
+
+- Geometric mean: 1.09x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
+- Memory usage: 0.99x
+- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
+- [📄table](bm-20240918-darwin-arm64-python-8a284e189673582e2627-3.14.0a0-8a284e1-vs-3.13.0.md)
+- [📈time plot](bm-20240918-darwin-arm64-python-8a284e189673582e2627-3.14.0a0-8a284e1-vs-3.13.0.svg)
+
 ### vs. 3.13.0b2
 
-- Geometric mean: 1.01x faster (HPT: reliability of 88.55%, 1.00x faster at 99th %ile)
-- Memory usage: 0.57x
-- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
 - [📄table](bm-20240918-darwin-arm64-python-8a284e189673582e2627-3.14.0a0-8a284e1-vs-3.13.0b2.md)
 - [📈time plot](bm-20240918-darwin-arm64-python-8a284e189673582e2627-3.14.0a0-8a284e1-vs-3.13.0b2.svg)
 

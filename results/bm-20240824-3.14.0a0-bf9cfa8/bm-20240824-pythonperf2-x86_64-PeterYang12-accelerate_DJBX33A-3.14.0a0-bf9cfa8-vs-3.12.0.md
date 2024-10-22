@@ -6,7 +6,7 @@
 - commit hash: bf9cfa8
 - commit date: 2024-08-24
 - overall geometric mean: 1.02x faster
-- HPT reliability: 79.57%
+- HPT reliability: 68.43%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -185,7 +185,7 @@ Ignored benchmarks (6) of results/bm-20240824-3.14.0a0-bf9cfa8/bm-20240824-pytho
 
 # HPT report
 
-- Reliability score: 79.57% likely to be faster
+- Reliability score: 68.43% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

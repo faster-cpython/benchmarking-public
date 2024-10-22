@@ -6,8 +6,8 @@
 - commit hash: 8cbca05
 - commit date: 2024-09-10
 - overall geometric mean: 1.18x faster
-- HPT reliability: 100.00%
-- HPT 99th percentile: 1.05x faster
+- HPT reliability: 99.99%
+- HPT 99th percentile: 1.04x faster
 - Memory change: 1.24x
 
 Benchmarks with tag 'apps':
@@ -197,10 +197,10 @@ Ignored benchmarks (6) of results/bm-20240910-3.14.0a0-8cbca05-JIT/bm-20240910-a
 
 # HPT report
 
-- Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.10x
-- 95% likely to have a speedup of 1.07x
-- 99% likely to have a speedup of 1.05x
+- Reliability score: 99.99% likely to be faster
+- 90% likely to have a speedup of 1.07x
+- 95% likely to have a speedup of 1.05x
+- 99% likely to have a speedup of 1.04x
 
 # Memory
 - memory change: 1.24x

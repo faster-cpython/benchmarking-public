@@ -6,7 +6,7 @@
 - commit hash: 9d28e99
 - commit date: 2024-09-27
 - overall geometric mean: 1.04x faster
-- HPT reliability: 99.99%
+- HPT reliability: 99.98%
 - HPT 99th percentile: 1.01x faster
 - Memory change: 0.96x
 
@@ -194,9 +194,9 @@ Ignored benchmarks (6) of results/bm-20240927-3.14.0a0-9d28e99/bm-20240927-linux
 
 # HPT report
 
-- Reliability score: 99.99% likely to be faster
+- Reliability score: 99.98% likely to be faster
 - 90% likely to have a speedup of 1.02x
-- 95% likely to have a speedup of 1.01x
+- 95% likely to have a speedup of 1.02x
 - 99% likely to have a speedup of 1.01x
 
 # Memory

@@ -6,9 +6,9 @@
 - commit hash: 401fff7
 - commit date: 2024-09-14
 - overall geometric mean: 1.02x faster
-- HPT reliability: 91.64%
+- HPT reliability: 93.84%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.56x
+- Memory change: 0.49x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -199,10 +199,10 @@ Ignored benchmarks (14) of results/bm-20240914-3.14.0a0-401fff7-JIT/bm-20240914-
 
 # HPT report
 
-- Reliability score: 91.64% likely to be faster
+- Reliability score: 93.84% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.56x
+- memory change: 0.49x

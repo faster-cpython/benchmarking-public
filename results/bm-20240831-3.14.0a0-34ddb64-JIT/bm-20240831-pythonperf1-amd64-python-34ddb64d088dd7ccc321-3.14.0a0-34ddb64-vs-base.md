@@ -6,7 +6,7 @@
 - commit hash: 34ddb64
 - commit date: 2024-08-31
 - overall geometric mean: 1.03x faster
-- HPT reliability: 60.11%
+- HPT reliability: 65.37%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -180,7 +180,7 @@ Benchmark hidden because not significant (13): asyncio_tcp_ssl, regex_v8, async_
 
 # HPT report
 
-- Reliability score: 60.11% likely to be faster
+- Reliability score: 65.37% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

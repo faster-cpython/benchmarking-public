@@ -42,19 +42,24 @@
 - [📄table](bm-20240816-linux-x86_64-faster%252dcpython-specialize_shadowed_-3.14.0a0-b0f4953-vs-3.12.0.md)
 - [📈time plot](bm-20240816-linux-x86_64-faster%252dcpython-specialize_shadowed_-3.14.0a0-b0f4953-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.05x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
+- Geometric mean: 1.01x faster (HPT: reliability of 91.12%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
-- missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
-- [📄table](bm-20240816-linux-x86_64-faster%252dcpython-specialize_shadowed_-3.14.0a0-b0f4953-vs-3.13.0b2.md)
-- [📈time plot](bm-20240816-linux-x86_64-faster%252dcpython-specialize_shadowed_-3.14.0a0-b0f4953-vs-3.13.0b2.svg)
+- missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20240816-linux-x86_64-faster%252dcpython-specialize_shadowed_-3.14.0a0-b0f4953-vs-3.13.0.md)
+- [📈time plot](bm-20240816-linux-x86_64-faster%252dcpython-specialize_shadowed_-3.14.0a0-b0f4953-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x faster (HPT: reliability of 95.60%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.00x faster (HPT: reliability of 97.61%, 1.00x faster at 99th %ile)
 - Memory usage: 0.99x
 - [🧠memory plot](bm-20240816-linux-x86_64-faster%252dcpython-specialize_shadowed_-3.14.0a0-b0f4953-vs-base-mem.svg)
 - [📄table](bm-20240816-linux-x86_64-faster%252dcpython-specialize_shadowed_-3.14.0a0-b0f4953-vs-base.md)
 - [📈time plot](bm-20240816-linux-x86_64-faster%252dcpython-specialize_shadowed_-3.14.0a0-b0f4953-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240816-linux-x86_64-faster%252dcpython-specialize_shadowed_-3.14.0a0-b0f4953-vs-3.13.0b2.md)
+- [📈time plot](bm-20240816-linux-x86_64-faster%252dcpython-specialize_shadowed_-3.14.0a0-b0f4953-vs-3.13.0b2.svg)
 

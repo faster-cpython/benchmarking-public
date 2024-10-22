@@ -6,9 +6,9 @@
 - commit hash: 342e654
 - commit date: 2024-09-20
 - overall geometric mean: 1.04x faster
-- HPT reliability: 98.29%
+- HPT reliability: 98.71%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.63x
+- Memory change: 0.55x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -197,10 +197,10 @@ Ignored benchmarks (14) of results/bm-20240920-3.14.0a0-342e654-JIT/bm-20240920-
 
 # HPT report
 
-- Reliability score: 98.29% likely to be faster
-- 90% likely to have a speedup of 1.00x
+- Reliability score: 98.71% likely to be faster
+- 90% likely to have a speedup of 1.01x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.63x
+- memory change: 0.55x

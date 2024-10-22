@@ -6,7 +6,7 @@
 - commit hash: e256a75
 - commit date: 2024-09-24
 - overall geometric mean: 1.00x slower
-- HPT reliability: 91.47%
+- HPT reliability: 96.28%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -197,7 +197,7 @@ Ignored benchmarks (5) of results/bm-20240924-3.14.0a0-e256a75/bm-20240924-pytho
 
 # HPT report
 
-- Reliability score: 91.47% likely to be slow
+- Reliability score: 96.28% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

@@ -6,9 +6,9 @@
 - commit hash: e4a3e78
 - commit date: 2024-07-31
 - overall geometric mean: 1.00x slower
-- HPT reliability: 74.66%
+- HPT reliability: 81.76%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 0.93x
+- Memory change: 0.94x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -186,10 +186,10 @@ Ignored benchmarks (6) of results/bm-20240731-3.13.0rc1-e4a3e78/bm-20240731-pyth
 
 # HPT report
 
-- Reliability score: 74.66% likely to be slow
+- Reliability score: 81.76% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 0.93x
+- memory change: 0.94x

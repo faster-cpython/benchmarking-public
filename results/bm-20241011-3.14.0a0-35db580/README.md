@@ -33,14 +33,13 @@
 - [📄table](bm-20241011-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a0-35db580-vs-3.12.0.md)
 - [📈time plot](bm-20241011-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a0-35db580-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.02x faster (HPT: reliability of 99.99%, 1.00x faster at 99th %ile)
-- Memory usage: 1.00x
+- Geometric mean: 1.02x slower (HPT: reliability of 99.67%, 1.00x slower at 99th %ile)
+- Memory usage: 1.01x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20241011-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a0-35db580-vs-3.13.0b2.md)
-- [📈time plot](bm-20241011-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a0-35db580-vs-3.13.0b2.svg)
+- [📄table](bm-20241011-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a0-35db580-vs-3.13.0.md)
+- [📈time plot](bm-20241011-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a0-35db580-vs-3.13.0.svg)
 
 ### vs. base
 
@@ -49,4 +48,9 @@
 - [🧠memory plot](bm-20241011-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a0-35db580-vs-base-mem.svg)
 - [📄table](bm-20241011-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a0-35db580-vs-base.md)
 - [📈time plot](bm-20241011-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a0-35db580-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241011-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a0-35db580-vs-3.13.0b2.md)
+- [📈time plot](bm-20241011-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a0-35db580-vs-3.13.0b2.svg)
 

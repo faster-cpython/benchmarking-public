@@ -8,7 +8,7 @@
 - overall geometric mean: 1.05x slower
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 1.13x
+- Memory change: 1.01x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -194,4 +194,4 @@ Benchmark hidden because not significant (21): bpe_tokeniser, asyncio_tcp_ssl, a
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 1.13x
+- memory change: 1.01x

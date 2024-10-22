@@ -17,7 +17,7 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.22x faster (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
+- Geometric mean: 1.22x faster (HPT: reliability of 100.00%, 1.22x faster at 99th %ile)
 - Memory usage: 1.14x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, unpack_sequence
@@ -26,29 +26,34 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.04x slower (HPT: reliability of 98.13%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.04x slower (HPT: reliability of 99.15%, 1.00x faster at 99th %ile)
 - Memory usage: 0.92x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, unpack_sequence
 - [📄table](bm-20241007-arminc-aarch64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.12.0.md)
 - [📈time plot](bm-20241007-arminc-aarch64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.05x slower (HPT: reliability of 99.91%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.05x slower (HPT: reliability of 99.41%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20241007-arminc-aarch64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.md)
-- [📈time plot](bm-20241007-arminc-aarch64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.svg)
+- new benchmarks: dulwich_log
+- [📄table](bm-20241007-arminc-aarch64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0.md)
+- [📈time plot](bm-20241007-arminc-aarch64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x faster (HPT: reliability of 71.70%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.00x faster (HPT: reliability of 66.73%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20241007-arminc-aarch64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-base-mem.svg)
 - [📄table](bm-20241007-arminc-aarch64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-base.md)
 - [📈time plot](bm-20241007-arminc-aarch64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241007-arminc-aarch64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.md)
+- [📈time plot](bm-20241007-arminc-aarch64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.svg)
 
 ## linux x86_64 (azure)
 
@@ -68,8 +73,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.39x faster (HPT: reliability of 100.00%, 1.30x faster at 99th %ile)
-- Memory usage: 1.11x
+- Geometric mean: 1.39x faster (HPT: reliability of 100.00%, 1.31x faster at 99th %ile)
+- Memory usage: 1.12x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20241007-linux-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.10.4.md)
@@ -84,22 +89,26 @@
 - [📄table](bm-20241007-linux-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.12.0.md)
 - [📈time plot](bm-20241007-linux-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.04x faster (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
-- Memory usage: 1.00x
+- Geometric mean: 1.01x faster (HPT: reliability of 98.96%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20241007-linux-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.md)
-- [📈time plot](bm-20241007-linux-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.svg)
+- [📄table](bm-20241007-linux-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0.md)
+- [📈time plot](bm-20241007-linux-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.01x slower (HPT: reliability of 95.94%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.01x slower (HPT: reliability of 96.56%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20241007-linux-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-base-mem.svg)
 - [📄table](bm-20241007-linux-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-base.md)
 - [📈time plot](bm-20241007-linux-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241007-linux-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.md)
+- [📈time plot](bm-20241007-linux-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.svg)
 
 ## linux x86_64 (pythonperf2)
 
@@ -110,7 +119,7 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.25x faster (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
+- Geometric mean: 1.25x faster (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
 - Memory usage: 1.12x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
@@ -119,29 +128,33 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.04x slower (HPT: reliability of 97.82%, 1.00x faster at 99th %ile)
-- Memory usage: 0.92x
+- Geometric mean: 1.04x slower (HPT: reliability of 98.38%, 1.00x faster at 99th %ile)
+- Memory usage: 0.93x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20241007-pythonperf2-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.12.0.md)
 - [📈time plot](bm-20241007-pythonperf2-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
 - Geometric mean: 1.03x slower (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
-- Memory usage: 1.00x
+- Memory usage: 1.01x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20241007-pythonperf2-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.md)
-- [📈time plot](bm-20241007-pythonperf2-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.svg)
+- [📄table](bm-20241007-pythonperf2-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0.md)
+- [📈time plot](bm-20241007-pythonperf2-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x faster (HPT: reliability of 97.96%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.00x faster (HPT: reliability of 99.55%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20241007-pythonperf2-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-base-mem.svg)
 - [📄table](bm-20241007-pythonperf2-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-base.md)
 - [📈time plot](bm-20241007-pythonperf2-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241007-pythonperf2-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.md)
+- [📈time plot](bm-20241007-pythonperf2-x86_64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.svg)
 
 ## windows amd64 (pythonperf1)
 
@@ -152,7 +165,7 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.17x faster (HPT: reliability of 100.00%, 1.09x faster at 99th %ile)
+- Geometric mean: 1.17x faster (HPT: reliability of 100.00%, 1.08x faster at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
@@ -161,21 +174,20 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.01x slower (HPT: reliability of 99.55%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.01x slower (HPT: reliability of 99.62%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, dask, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20241007-pythonperf1-amd64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.12.0.md)
 - [📈time plot](bm-20241007-pythonperf1-amd64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.05x slower (HPT: reliability of 100.00%, 1.07x slower at 99th %ile)
+- Geometric mean: 1.04x slower (HPT: reliability of 100.00%, 1.05x slower at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, flaskblogging, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20241007-pythonperf1-amd64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.md)
-- [📈time plot](bm-20241007-pythonperf1-amd64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.svg)
+- [📄table](bm-20241007-pythonperf1-amd64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0.md)
+- [📈time plot](bm-20241007-pythonperf1-amd64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0.svg)
 
 ### vs. base
 
@@ -183,6 +195,11 @@
 - Memory usage: unknown
 - [📄table](bm-20241007-pythonperf1-amd64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-base.md)
 - [📈time plot](bm-20241007-pythonperf1-amd64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241007-pythonperf1-amd64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.md)
+- [📈time plot](bm-20241007-pythonperf1-amd64-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.svg)
 
 ## windows x86 (pythonperf1_win32)
 
@@ -193,7 +210,7 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.09x faster (HPT: reliability of 99.72%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.09x faster (HPT: reliability of 99.87%, 1.01x faster at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
@@ -202,26 +219,30 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.10x faster (HPT: reliability of 100.00%, 1.06x faster at 99th %ile)
+- Geometric mean: 1.10x faster (HPT: reliability of 100.00%, 1.08x faster at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, dask, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20241007-pythonperf1_win32-x86-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.12.0.md)
 - [📈time plot](bm-20241007-pythonperf1_win32-x86-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.05x slower (HPT: reliability of 100.00%, 1.05x slower at 99th %ile)
+- Geometric mean: 1.01x faster (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: chameleon, flaskblogging
-- new benchmarks: dulwich_log, unpack_sequence
-- [📄table](bm-20241007-pythonperf1_win32-x86-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.md)
-- [📈time plot](bm-20241007-pythonperf1_win32-x86-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.svg)
+- [📄table](bm-20241007-pythonperf1_win32-x86-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0.md)
+- [📈time plot](bm-20241007-pythonperf1_win32-x86-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.01x slower (HPT: reliability of 99.51%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.01x slower (HPT: reliability of 98.77%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
 - [📄table](bm-20241007-pythonperf1_win32-x86-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-base.md)
 - [📈time plot](bm-20241007-pythonperf1_win32-x86-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241007-pythonperf1_win32-x86-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.md)
+- [📈time plot](bm-20241007-pythonperf1_win32-x86-mdboom-marshal_slice-3.14.0a0-0e19ac7-vs-3.13.0b2.svg)
 

@@ -6,7 +6,7 @@
 - commit hash: fae84c7
 - commit date: 2024-10-01
 - overall geometric mean: 1.01x faster
-- HPT reliability: 94.39%
+- HPT reliability: 95.92%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.92x
 
@@ -191,7 +191,7 @@ Ignored benchmarks (3) of results/bm-20241001-3.13.0rc3-fae84c7/bm-20241001-armi
 
 # HPT report
 
-- Reliability score: 94.39% likely to be faster
+- Reliability score: 95.92% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

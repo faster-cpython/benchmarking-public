@@ -6,8 +6,8 @@
 - commit hash: cfb0a0a
 - commit date: 2024-07-24
 - overall geometric mean: 1.00x slower
-- HPT reliability: 59.62%
-- HPT 99th percentile: 1.00x slower
+- HPT reliability: 53.75%
+- HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
 Benchmarks with tag 'apps':
@@ -153,10 +153,10 @@ Benchmark hidden because not significant (37): async_tree_none, pprint_safe_repr
 
 # HPT report
 
-- Reliability score: 59.62% likely to be slow
-- 90% likely to have a slowdown of 1.00x
-- 95% likely to have a slowdown of 1.00x
-- 99% likely to have a slowdown of 1.00x
+- Reliability score: 53.75% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x
 
 # Memory
 - memory change: 1.00x

@@ -6,7 +6,7 @@
 - commit hash: 7aca84e
 - commit date: 2024-08-02
 - overall geometric mean: 1.00x slower
-- HPT reliability: 75.51%
+- HPT reliability: 86.27%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -121,7 +121,7 @@ Benchmark hidden because not significant (63): json_dumps, regex_effbot, xml_etr
 
 # HPT report
 
-- Reliability score: 75.51% likely to be faster
+- Reliability score: 86.27% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

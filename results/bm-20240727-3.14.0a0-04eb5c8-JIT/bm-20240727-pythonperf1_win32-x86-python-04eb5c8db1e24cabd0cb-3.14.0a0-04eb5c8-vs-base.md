@@ -6,7 +6,7 @@
 - commit hash: 04eb5c8
 - commit date: 2024-07-27
 - overall geometric mean: 1.03x faster
-- HPT reliability: 50.43%
+- HPT reliability: 59.41%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -189,7 +189,7 @@ Benchmark hidden because not significant (6): dulwich_log, python_startup, async
 
 # HPT report
 
-- Reliability score: 50.43% likely to be faster
+- Reliability score: 59.41% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

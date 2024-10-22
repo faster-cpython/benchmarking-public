@@ -1,4 +1,3 @@
-
 # Results vs. 3.12.0
 
 - fork: python
@@ -186,7 +185,6 @@ All benchmarks:
 Benchmark hidden because not significant (11): async_tree_cpu_io_mixed, dask, async_tree_memoization, async_tree_none_tg, xml_etree_parse, bench_mp_pool, asyncio_websockets, deepcopy_memo, async_tree_cpu_io_mixed_tg, sympy_str, mypy2
 Ignored benchmarks (5) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json: aiohttp, django_template, gunicorn, sqlalchemy_declarative, sqlalchemy_imperative
 
-
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
@@ -194,7 +192,5 @@ Ignored benchmarks (5) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-linux-x
 - 95% likely to have a slowdown of 1.01x
 - 99% likely to have a slowdown of 1.00x
 
-
 # Memory
-
 - memory change: 0.93x

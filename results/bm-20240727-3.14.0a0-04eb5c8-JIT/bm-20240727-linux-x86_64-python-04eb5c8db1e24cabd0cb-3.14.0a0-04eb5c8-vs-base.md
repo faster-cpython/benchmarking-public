@@ -6,7 +6,7 @@
 - commit hash: 04eb5c8
 - commit date: 2024-07-27
 - overall geometric mean: 1.00x faster
-- HPT reliability: 82.65%
+- HPT reliability: 72.05%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.06x
 
@@ -182,7 +182,7 @@ Benchmark hidden because not significant (13): deepcopy_memo, json, logging_form
 
 # HPT report
 
-- Reliability score: 82.65% likely to be slow
+- Reliability score: 72.05% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

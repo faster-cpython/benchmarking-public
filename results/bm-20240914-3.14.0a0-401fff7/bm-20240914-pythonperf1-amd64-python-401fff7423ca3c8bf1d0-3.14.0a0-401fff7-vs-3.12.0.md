@@ -6,7 +6,7 @@
 - commit hash: 401fff7
 - commit date: 2024-09-14
 - overall geometric mean: 1.01x slower
-- HPT reliability: 97.51%
+- HPT reliability: 99.19%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -195,9 +195,9 @@ Ignored benchmarks (5) of results/bm-20240914-3.14.0a0-401fff7/bm-20240914-pytho
 
 # HPT report
 
-- Reliability score: 97.51% likely to be slow
-- 90% likely to have a slowdown of 1.00x
-- 95% likely to have a slowdown of 1.00x
+- Reliability score: 99.19% likely to be slow
+- 90% likely to have a slowdown of 1.01x
+- 95% likely to have a slowdown of 1.01x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory

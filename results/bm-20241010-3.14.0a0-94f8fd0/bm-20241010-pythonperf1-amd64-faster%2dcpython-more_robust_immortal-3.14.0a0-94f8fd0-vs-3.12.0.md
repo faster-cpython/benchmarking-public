@@ -6,7 +6,7 @@
 - commit hash: 94f8fd0
 - commit date: 2024-10-10
 - overall geometric mean: 1.02x slower
-- HPT reliability: 99.56%
+- HPT reliability: 99.36%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -195,7 +195,7 @@ Ignored benchmarks (5) of results/bm-20241010-3.14.0a0-94f8fd0/bm-20241010-pytho
 
 # HPT report
 
-- Reliability score: 99.56% likely to be slow
+- Reliability score: 99.36% likely to be slow
 - 90% likely to have a slowdown of 1.02x
 - 95% likely to have a slowdown of 1.01x
 - 99% likely to have a slowdown of 1.00x

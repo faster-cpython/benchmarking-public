@@ -6,7 +6,7 @@
 - commit hash: 60b7e71
 - commit date: 2024-07-27
 - overall geometric mean: 1.00x faster
-- HPT reliability: 58.44%
+- HPT reliability: 52.67%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -134,7 +134,7 @@ Benchmark hidden because not significant (42): regex_v8, asyncio_tcp, pyflate, p
 
 # HPT report
 
-- Reliability score: 58.44% likely to be faster
+- Reliability score: 52.67% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

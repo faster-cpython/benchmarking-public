@@ -6,7 +6,7 @@
 - commit hash: 76aa43c
 - commit date: 2024-09-11
 - overall geometric mean: 1.00x slower
-- HPT reliability: 86.81%
+- HPT reliability: 83.01%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -173,7 +173,7 @@ Benchmark hidden because not significant (31): bench_mp_pool, tornado_http, xml_
 
 # HPT report
 
-- Reliability score: 86.81% likely to be slow
+- Reliability score: 83.01% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

@@ -5,10 +5,10 @@
 - machine: linux-x86_64
 - commit hash: 9d34f60
 - commit date: 2024-02-15
-- overall geometric mean: 1.04x slower \*
+- overall geometric mean: 1.04x slower
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.01x slower
-- Memory change: 0.91x
+- Memory change: 0.92x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -185,15 +185,12 @@ All benchmarks:
 Benchmark hidden because not significant (12): sqlite_synth, gc_traversal, asyncio_websockets, unpickle_list, deepcopy_memo, scimark_lu, xml_etree_iterparse, async_tree_memoization, async_tree_cpu_io_mixed, bench_thread_pool, bench_mp_pool, mypy2
 Ignored benchmarks (5) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-pythonperf2-x86_64-python-v3.12.0-3.12.0-0fb18b0.json: aiohttp, django_template, gunicorn, sqlalchemy_declarative, sqlalchemy_imperative
 
-
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
 - 90% likely to have a slowdown of 1.02x
-- 95% likely to have a slowdown of 1.01x
+- 95% likely to have a slowdown of 1.02x
 - 99% likely to have a slowdown of 1.01x
 
-
 # Memory
-
-- memory change: 0.91x
+- memory change: 0.92x

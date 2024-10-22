@@ -6,7 +6,7 @@
 - commit hash: bfd4400
 - commit date: 2024-08-28
 - overall geometric mean: 1.03x faster
-- HPT reliability: 91.94%
+- HPT reliability: 86.96%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -182,7 +182,7 @@ Ignored benchmarks (6) of results/bm-20240828-3.14.0a0-bfd4400/bm-20240828-pytho
 
 # HPT report
 
-- Reliability score: 91.94% likely to be faster
+- Reliability score: 86.96% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

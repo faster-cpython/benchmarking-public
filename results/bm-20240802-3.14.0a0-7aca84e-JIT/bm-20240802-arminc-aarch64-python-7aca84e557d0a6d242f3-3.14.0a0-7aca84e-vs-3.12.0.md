@@ -6,7 +6,7 @@
 - commit hash: 7aca84e
 - commit date: 2024-08-02
 - overall geometric mean: 1.06x slower
-- HPT reliability: 100.00%
+- HPT reliability: 99.99%
 - HPT 99th percentile: 1.02x slower
 - Memory change: 1.01x
 
@@ -192,9 +192,9 @@ Ignored benchmarks (1) of results/bm-20240802-3.14.0a0-7aca84e-JIT/bm-20240802-a
 
 # HPT report
 
-- Reliability score: 100.00% likely to be slow
+- Reliability score: 99.99% likely to be slow
 - 90% likely to have a slowdown of 1.03x
-- 95% likely to have a slowdown of 1.03x
+- 95% likely to have a slowdown of 1.02x
 - 99% likely to have a slowdown of 1.02x
 
 # Memory

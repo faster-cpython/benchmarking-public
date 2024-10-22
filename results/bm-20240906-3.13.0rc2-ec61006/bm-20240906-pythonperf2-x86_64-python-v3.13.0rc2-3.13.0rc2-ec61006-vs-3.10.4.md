@@ -206,8 +206,8 @@ Ignored benchmarks (5) of results/bm-20240906-3.13.0rc2-ec61006/bm-20240906-pyth
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.24x
-- 95% likely to have a speedup of 1.23x
+- 90% likely to have a speedup of 1.23x
+- 95% likely to have a speedup of 1.22x
 - 99% likely to have a speedup of 1.20x
 
 # Memory

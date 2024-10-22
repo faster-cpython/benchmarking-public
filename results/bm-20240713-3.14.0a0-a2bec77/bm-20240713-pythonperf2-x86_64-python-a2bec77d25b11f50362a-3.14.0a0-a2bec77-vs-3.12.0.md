@@ -6,8 +6,8 @@
 - commit hash: a2bec77
 - commit date: 2024-07-13
 - overall geometric mean: 1.02x faster
-- HPT reliability: 55.60%
-- HPT 99th percentile: 1.00x faster
+- HPT reliability: 54.86%
+- HPT 99th percentile: 1.00x slower
 - Memory change: 0.94x
 
 Benchmarks with tag 'apps':
@@ -185,10 +185,10 @@ Ignored benchmarks (6) of results/bm-20240713-3.14.0a0-a2bec77/bm-20240713-pytho
 
 # HPT report
 
-- Reliability score: 55.60% likely to be faster
-- 90% likely to have a speedup of 1.00x
-- 95% likely to have a speedup of 1.00x
-- 99% likely to have a speedup of 1.00x
+- Reliability score: 54.86% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x
 
 # Memory
 - memory change: 0.94x

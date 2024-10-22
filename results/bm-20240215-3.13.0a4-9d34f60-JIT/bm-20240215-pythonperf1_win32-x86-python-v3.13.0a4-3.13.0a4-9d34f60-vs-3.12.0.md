@@ -5,9 +5,9 @@
 - machine: windows-x86
 - commit hash: 9d34f60
 - commit date: 2024-02-15
-- overall geometric mean: 1.10x faster \*
+- overall geometric mean: 1.10x faster
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.07x faster
+- HPT 99th percentile: 1.08x faster
 - Memory change: unknown
 
 Benchmarks with tag 'apps':
@@ -189,15 +189,12 @@ All benchmarks:
 Benchmark hidden because not significant (4): create_gc_cycles, pickle_list, pickle_dict, json_loads
 Ignored benchmarks (6) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-pythonperf1_win32-x86-python-v3.12.0-3.12.0-0fb18b0.json: aiohttp, django_template, dulwich_log, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 
-
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.09x
-- 95% likely to have a speedup of 1.08x
-- 99% likely to have a speedup of 1.07x
-
+- 95% likely to have a speedup of 1.09x
+- 99% likely to have a speedup of 1.08x
 
 # Memory
-
 - memory change: unknown

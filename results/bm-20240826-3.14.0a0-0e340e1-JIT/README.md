@@ -35,26 +35,31 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.07x faster (HPT: reliability of 99.47%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.07x faster (HPT: reliability of 99.80%, 1.01x faster at 99th %ile)
 - Memory usage: 1.08x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240826-linux-x86_64-brandtbucher-underflow-3.14.0a0-0e340e1-vs-3.12.0.md)
 - [📈time plot](bm-20240826-linux-x86_64-brandtbucher-underflow-3.14.0a0-0e340e1-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.03x faster (HPT: reliability of 98.87%, 1.00x faster at 99th %ile)
-- Memory usage: 1.10x
-- missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
-- [📄table](bm-20240826-linux-x86_64-brandtbucher-underflow-3.14.0a0-0e340e1-vs-3.13.0b2.md)
-- [📈time plot](bm-20240826-linux-x86_64-brandtbucher-underflow-3.14.0a0-0e340e1-vs-3.13.0b2.svg)
+- Geometric mean: 1.00x slower (HPT: reliability of 51.45%, 1.00x faster at 99th %ile)
+- Memory usage: 1.11x
+- missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20240826-linux-x86_64-brandtbucher-underflow-3.14.0a0-0e340e1-vs-3.13.0.md)
+- [📈time plot](bm-20240826-linux-x86_64-brandtbucher-underflow-3.14.0a0-0e340e1-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.02x slower (HPT: reliability of 98.57%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.02x slower (HPT: reliability of 98.48%, 1.00x slower at 99th %ile)
 - Memory usage: 1.02x
 - [🧠memory plot](bm-20240826-linux-x86_64-brandtbucher-underflow-3.14.0a0-0e340e1-vs-base-mem.svg)
 - [📄table](bm-20240826-linux-x86_64-brandtbucher-underflow-3.14.0a0-0e340e1-vs-base.md)
 - [📈time plot](bm-20240826-linux-x86_64-brandtbucher-underflow-3.14.0a0-0e340e1-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240826-linux-x86_64-brandtbucher-underflow-3.14.0a0-0e340e1-vs-3.13.0b2.md)
+- [📈time plot](bm-20240826-linux-x86_64-brandtbucher-underflow-3.14.0a0-0e340e1-vs-3.13.0b2.svg)
 

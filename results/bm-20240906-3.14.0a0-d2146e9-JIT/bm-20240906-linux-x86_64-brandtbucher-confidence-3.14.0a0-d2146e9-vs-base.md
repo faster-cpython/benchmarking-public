@@ -6,7 +6,7 @@
 - commit hash: d2146e9
 - commit date: 2024-09-06
 - overall geometric mean: 1.00x faster
-- HPT reliability: 73.69%
+- HPT reliability: 71.90%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -154,7 +154,7 @@ Ignored benchmarks (7) of results/bm-20240906-3.14.0a0-d2146e9-JIT/bm-20240906-l
 
 # HPT report
 
-- Reliability score: 73.69% likely to be slow
+- Reliability score: 71.90% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

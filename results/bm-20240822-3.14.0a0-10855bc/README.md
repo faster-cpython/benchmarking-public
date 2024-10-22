@@ -22,7 +22,7 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.35x faster (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
+- Geometric mean: 1.35x faster (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
 - Memory usage: 1.13x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
@@ -31,18 +31,23 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.03x faster (HPT: reliability of 74.89%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.03x faster (HPT: reliability of 64.17%, 1.00x faster at 99th %ile)
 - Memory usage: 0.93x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240822-pythonperf2-x86_64-faster%252dcpython-fix_not_specialized_-3.14.0a0-10855bc-vs-3.12.0.md)
 - [📈time plot](bm-20240822-pythonperf2-x86_64-faster%252dcpython-fix_not_specialized_-3.14.0a0-10855bc-vs-3.12.0.svg)
 
+### vs. 3.13.0
+
+- Geometric mean: 1.02x faster (HPT: reliability of 99.86%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
+- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20240822-pythonperf2-x86_64-faster%252dcpython-fix_not_specialized_-3.14.0a0-10855bc-vs-3.13.0.md)
+- [📈time plot](bm-20240822-pythonperf2-x86_64-faster%252dcpython-fix_not_specialized_-3.14.0a0-10855bc-vs-3.13.0.svg)
+
 ### vs. 3.13.0b2
 
-- Geometric mean: 1.03x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
-- Memory usage: 1.01x
-- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
 - [📄table](bm-20240822-pythonperf2-x86_64-faster%252dcpython-fix_not_specialized_-3.14.0a0-10855bc-vs-3.13.0b2.md)
 - [📈time plot](bm-20240822-pythonperf2-x86_64-faster%252dcpython-fix_not_specialized_-3.14.0a0-10855bc-vs-3.13.0b2.svg)
 

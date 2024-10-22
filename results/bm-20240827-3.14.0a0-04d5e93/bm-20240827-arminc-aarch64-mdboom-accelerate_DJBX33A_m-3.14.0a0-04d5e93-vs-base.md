@@ -6,7 +6,7 @@
 - commit hash: 04d5e93
 - commit date: 2024-08-27
 - overall geometric mean: 1.00x faster
-- HPT reliability: 99.17%
+- HPT reliability: 99.70%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -126,7 +126,7 @@ Benchmark hidden because not significant (54): html5lib, sqlglot_parse, django_t
 
 # HPT report
 
-- Reliability score: 99.17% likely to be faster
+- Reliability score: 99.70% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

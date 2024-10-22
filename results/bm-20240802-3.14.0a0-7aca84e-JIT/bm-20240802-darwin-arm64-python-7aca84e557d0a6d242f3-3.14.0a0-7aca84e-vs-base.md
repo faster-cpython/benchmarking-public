@@ -6,7 +6,7 @@
 - commit hash: 7aca84e
 - commit date: 2024-08-02
 - overall geometric mean: 1.00x slower
-- HPT reliability: 60.57%
+- HPT reliability: 65.70%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -145,7 +145,7 @@ Benchmark hidden because not significant (48): bench_mp_pool, asyncio_tcp_ssl, p
 
 # HPT report
 
-- Reliability score: 60.57% likely to be slow
+- Reliability score: 65.70% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

@@ -6,7 +6,7 @@
 - commit hash: d467f6c
 - commit date: 2024-09-04
 - overall geometric mean: 1.04x faster
-- HPT reliability: 93.85%
+- HPT reliability: 97.57%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.18x
 
@@ -185,8 +185,8 @@ Ignored benchmarks (6) of results/bm-20240904-3.14.0a0-d467f6c-JIT/bm-20240904-l
 
 # HPT report
 
-- Reliability score: 93.85% likely to be faster
-- 90% likely to have a speedup of 1.00x
+- Reliability score: 97.57% likely to be faster
+- 90% likely to have a speedup of 1.01x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 

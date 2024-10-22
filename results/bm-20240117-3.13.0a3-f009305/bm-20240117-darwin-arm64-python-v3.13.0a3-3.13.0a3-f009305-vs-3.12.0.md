@@ -6,7 +6,7 @@
 - commit hash: f009305
 - commit date: 2024-01-17
 - overall geometric mean: 1.01x slower
-- HPT reliability: 86.25%
+- HPT reliability: 85.97%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.01x
 
@@ -197,7 +197,7 @@ Ignored benchmarks (14) of results/bm-20240117-3.13.0a3-f009305/bm-20240117-darw
 
 # HPT report
 
-- Reliability score: 86.25% likely to be slow
+- Reliability score: 85.97% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

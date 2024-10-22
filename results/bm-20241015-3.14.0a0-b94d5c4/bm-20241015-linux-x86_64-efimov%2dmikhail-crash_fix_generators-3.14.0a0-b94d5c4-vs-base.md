@@ -6,7 +6,7 @@
 - commit hash: b94d5c4
 - commit date: 2024-10-15
 - overall geometric mean: 1.00x faster
-- HPT reliability: 60.72%
+- HPT reliability: 77.67%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -167,7 +167,7 @@ Benchmark hidden because not significant (26): tomli_loads, asyncio_websockets, 
 
 # HPT report
 
-- Reliability score: 60.72% likely to be faster
+- Reliability score: 77.67% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

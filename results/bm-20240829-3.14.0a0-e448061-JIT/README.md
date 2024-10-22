@@ -26,8 +26,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.34x faster (HPT: reliability of 100.00%, 1.18x faster at 99th %ile)
-- Memory usage: 1.28x
+- Geometric mean: 1.34x faster (HPT: reliability of 100.00%, 1.17x faster at 99th %ile)
+- Memory usage: 1.29x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240829-linux-x86_64-brandtbucher-underflow_jump_backw-3.14.0a0-e448061-vs-3.10.4.md)
@@ -35,26 +35,31 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.02x faster (HPT: reliability of 85.26%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.02x faster (HPT: reliability of 92.06%, 1.00x faster at 99th %ile)
 - Memory usage: 1.11x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240829-linux-x86_64-brandtbucher-underflow_jump_backw-3.14.0a0-e448061-vs-3.12.0.md)
 - [📈time plot](bm-20240829-linux-x86_64-brandtbucher-underflow_jump_backw-3.14.0a0-e448061-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.02x slower (HPT: reliability of 63.73%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.05x slower (HPT: reliability of 99.48%, 1.00x slower at 99th %ile)
 - Memory usage: 1.15x
-- missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
-- [📄table](bm-20240829-linux-x86_64-brandtbucher-underflow_jump_backw-3.14.0a0-e448061-vs-3.13.0b2.md)
-- [📈time plot](bm-20240829-linux-x86_64-brandtbucher-underflow_jump_backw-3.14.0a0-e448061-vs-3.13.0b2.svg)
+- missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20240829-linux-x86_64-brandtbucher-underflow_jump_backw-3.14.0a0-e448061-vs-3.13.0.md)
+- [📈time plot](bm-20240829-linux-x86_64-brandtbucher-underflow_jump_backw-3.14.0a0-e448061-vs-3.13.0.svg)
 
 ### vs. base
 
 - Geometric mean: 1.07x slower (HPT: reliability of 100.00%, 1.02x slower at 99th %ile)
-- Memory usage: 1.06x
+- Memory usage: 1.05x
 - [🧠memory plot](bm-20240829-linux-x86_64-brandtbucher-underflow_jump_backw-3.14.0a0-e448061-vs-base-mem.svg)
 - [📄table](bm-20240829-linux-x86_64-brandtbucher-underflow_jump_backw-3.14.0a0-e448061-vs-base.md)
 - [📈time plot](bm-20240829-linux-x86_64-brandtbucher-underflow_jump_backw-3.14.0a0-e448061-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240829-linux-x86_64-brandtbucher-underflow_jump_backw-3.14.0a0-e448061-vs-3.13.0b2.md)
+- [📈time plot](bm-20240829-linux-x86_64-brandtbucher-underflow_jump_backw-3.14.0a0-e448061-vs-3.13.0b2.svg)
 

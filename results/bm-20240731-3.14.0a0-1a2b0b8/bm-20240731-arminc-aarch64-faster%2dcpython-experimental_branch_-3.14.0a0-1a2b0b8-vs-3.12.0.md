@@ -6,7 +6,7 @@
 - commit hash: 1a2b0b8
 - commit date: 2024-07-31
 - overall geometric mean: 1.03x faster
-- HPT reliability: 90.67%
+- HPT reliability: 91.20%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -184,7 +184,7 @@ Ignored benchmarks (1) of results/bm-20240731-3.14.0a0-1a2b0b8/bm-20240731-armin
 
 # HPT report
 
-- Reliability score: 90.67% likely to be faster
+- Reliability score: 91.20% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

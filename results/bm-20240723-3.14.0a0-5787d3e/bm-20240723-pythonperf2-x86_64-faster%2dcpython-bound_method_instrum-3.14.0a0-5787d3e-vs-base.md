@@ -6,7 +6,7 @@
 - commit hash: 5787d3e
 - commit date: 2024-07-23
 - overall geometric mean: 1.00x slower
-- HPT reliability: 98.85%
+- HPT reliability: 99.11%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -166,7 +166,7 @@ Benchmark hidden because not significant (30): json_loads, logging_simple, thrif
 
 # HPT report
 
-- Reliability score: 98.85% likely to be slow
+- Reliability score: 99.11% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

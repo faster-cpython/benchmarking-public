@@ -6,7 +6,7 @@
 - commit hash: 9c4347e
 - commit date: 2023-11-22
 - overall geometric mean: 1.04x faster
-- HPT reliability: 92.39%
+- HPT reliability: 94.43%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -188,7 +188,7 @@ Ignored benchmarks (4) of results/bm-20231122-3.13.0a2-9c4347e-PYTHON_UOPS/bm-20
 
 # HPT report
 
-- Reliability score: 92.39% likely to be faster
+- Reliability score: 94.43% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

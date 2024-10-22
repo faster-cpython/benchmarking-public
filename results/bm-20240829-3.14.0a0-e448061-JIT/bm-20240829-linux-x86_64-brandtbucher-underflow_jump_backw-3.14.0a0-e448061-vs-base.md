@@ -8,7 +8,7 @@
 - overall geometric mean: 1.07x slower
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.02x slower
-- Memory change: 1.06x
+- Memory change: 1.05x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -197,4 +197,4 @@ Benchmark hidden because not significant (8): pathlib, json_dumps, float, telco,
 - 99% likely to have a slowdown of 1.02x
 
 # Memory
-- memory change: 1.06x
+- memory change: 1.05x

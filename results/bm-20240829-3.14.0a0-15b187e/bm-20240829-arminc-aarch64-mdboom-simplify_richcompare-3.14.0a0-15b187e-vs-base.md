@@ -6,7 +6,7 @@
 - commit hash: 15b187e
 - commit date: 2024-08-29
 - overall geometric mean: 1.00x faster
-- HPT reliability: 76.54%
+- HPT reliability: 66.52%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -115,7 +115,7 @@ Benchmark hidden because not significant (61): genshi_xml, tornado_http, sqlglot
 
 # HPT report
 
-- Reliability score: 76.54% likely to be faster
+- Reliability score: 66.52% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

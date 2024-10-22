@@ -6,7 +6,7 @@
 - commit hash: a4c1908
 - commit date: 2024-07-13
 - overall geometric mean: 1.09x faster
-- HPT reliability: 99.99%
+- HPT reliability: 100.00%
 - HPT 99th percentile: 1.02x faster
 - Memory change: 1.04x
 
@@ -185,8 +185,8 @@ Ignored benchmarks (6) of results/bm-20240713-3.14.0a0-a4c1908-JIT/bm-20240713-l
 
 # HPT report
 
-- Reliability score: 99.99% likely to be faster
-- 90% likely to have a speedup of 1.03x
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.04x
 - 95% likely to have a speedup of 1.03x
 - 99% likely to have a speedup of 1.02x
 

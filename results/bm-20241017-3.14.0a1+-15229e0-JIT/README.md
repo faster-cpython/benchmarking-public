@@ -17,7 +17,7 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.09x faster (HPT: reliability of 99.98%, 1.04x faster at 99th %ile)
+- Geometric mean: 1.09x faster (HPT: reliability of 99.96%, 1.03x faster at 99th %ile)
 - Memory usage: 1.37x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, sphinx, unpack_sequence
@@ -26,29 +26,34 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.16x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
+- Geometric mean: 1.16x slower (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
 - Memory usage: 1.10x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, sphinx, unpack_sequence
 - [📄table](bm-20241017-arminc-aarch64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.12.0.md)
 - [📈time plot](bm-20241017-arminc-aarch64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.17x slower (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
+- Geometric mean: 1.18x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
 - Memory usage: 1.20x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
-- new benchmarks: sphinx, unpack_sequence
-- [📄table](bm-20241017-arminc-aarch64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.md)
-- [📈time plot](bm-20241017-arminc-aarch64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.svg)
+- new benchmarks: dulwich_log, sphinx
+- [📄table](bm-20241017-arminc-aarch64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0.md)
+- [📈time plot](bm-20241017-arminc-aarch64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x slower (HPT: reliability of 77.64%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.00x faster (HPT: reliability of 78.29%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20241017-arminc-aarch64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base-mem.svg)
 - [📄table](bm-20241017-arminc-aarch64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base.md)
 - [📈time plot](bm-20241017-arminc-aarch64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241017-arminc-aarch64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.md)
+- [📈time plot](bm-20241017-arminc-aarch64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.svg)
 
 ## linux x86_64 (azure)
 
@@ -69,7 +74,7 @@
 ### vs. 3.10.4
 
 - Geometric mean: 1.33x faster (HPT: reliability of 100.00%, 1.25x faster at 99th %ile)
-- Memory usage: 1.33x
+- Memory usage: 1.32x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, sphinx
 - [📄table](bm-20241017-linux-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.10.4.md)
@@ -77,29 +82,34 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.04x faster (HPT: reliability of 99.76%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.04x faster (HPT: reliability of 99.97%, 1.02x faster at 99th %ile)
 - Memory usage: 1.15x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, sphinx, thrift
 - [📄table](bm-20241017-linux-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.12.0.md)
 - [📈time plot](bm-20241017-linux-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.01x faster (HPT: reliability of 99.03%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.03x slower (HPT: reliability of 55.50%, 1.00x slower at 99th %ile)
 - Memory usage: 1.19x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
-- new benchmarks: sphinx, unpack_sequence
-- [📄table](bm-20241017-linux-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.md)
-- [📈time plot](bm-20241017-linux-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.svg)
+- new benchmarks: sphinx
+- [📄table](bm-20241017-linux-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0.md)
+- [📈time plot](bm-20241017-linux-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x faster (HPT: reliability of 76.46%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.00x faster (HPT: reliability of 50.44%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20241017-linux-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base-mem.svg)
 - [📄table](bm-20241017-linux-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base.md)
 - [📈time plot](bm-20241017-linux-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241017-linux-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.md)
+- [📈time plot](bm-20241017-linux-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.svg)
 
 ## linux x86_64 (pythonperf2)
 
@@ -111,7 +121,7 @@
 ### vs. 3.10.4
 
 - Geometric mean: 1.18x faster (HPT: reliability of 100.00%, 1.16x faster at 99th %ile)
-- Memory usage: 1.35x
+- Memory usage: 1.34x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, sphinx
 - [📄table](bm-20241017-pythonperf2-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.10.4.md)
@@ -119,29 +129,34 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.08x slower (HPT: reliability of 51.58%, 1.00x slower at 99th %ile)
-- Memory usage: 1.09x
+- Geometric mean: 1.08x slower (HPT: reliability of 53.27%, 1.00x faster at 99th %ile)
+- Memory usage: 1.10x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, sphinx, thrift
 - [📄table](bm-20241017-pythonperf2-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.12.0.md)
 - [📈time plot](bm-20241017-pythonperf2-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.08x slower (HPT: reliability of 56.24%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.08x slower (HPT: reliability of 59.69%, 1.00x faster at 99th %ile)
 - Memory usage: 1.19x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
-- new benchmarks: sphinx, unpack_sequence
-- [📄table](bm-20241017-pythonperf2-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.md)
-- [📈time plot](bm-20241017-pythonperf2-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.svg)
+- new benchmarks: sphinx
+- [📄table](bm-20241017-pythonperf2-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0.md)
+- [📈time plot](bm-20241017-pythonperf2-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x slower (HPT: reliability of 99.99%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.00x faster (HPT: reliability of 99.96%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20241017-pythonperf2-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base-mem.svg)
 - [📄table](bm-20241017-pythonperf2-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base.md)
 - [📈time plot](bm-20241017-pythonperf2-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241017-pythonperf2-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.md)
+- [📈time plot](bm-20241017-pythonperf2-x86_64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.svg)
 
 ## windows amd64 (pythonperf1)
 
@@ -161,28 +176,33 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.00x faster (HPT: reliability of 65.70%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.00x faster (HPT: reliability of 73.47%, 1.00x faster at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, dask, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: genshi_text, genshi_xml, html5lib, pylint, sphinx, thrift
 - [📄table](bm-20241017-pythonperf1-amd64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.12.0.md)
 - [📈time plot](bm-20241017-pythonperf1-amd64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.05x slower (HPT: reliability of 99.94%, 1.03x slower at 99th %ile)
+- Geometric mean: 1.04x slower (HPT: reliability of 99.92%, 1.01x slower at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, flaskblogging, mypy2
-- new benchmarks: sphinx, unpack_sequence
-- [📄table](bm-20241017-pythonperf1-amd64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.md)
-- [📈time plot](bm-20241017-pythonperf1-amd64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.svg)
+- new benchmarks: sphinx
+- [📄table](bm-20241017-pythonperf1-amd64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0.md)
+- [📈time plot](bm-20241017-pythonperf1-amd64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x slower (HPT: reliability of 94.69%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.00x slower (HPT: reliability of 95.73%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
 - [📄table](bm-20241017-pythonperf1-amd64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base.md)
 - [📈time plot](bm-20241017-pythonperf1-amd64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241017-pythonperf1-amd64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.md)
+- [📈time plot](bm-20241017-pythonperf1-amd64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.svg)
 
 ## windows x86 (pythonperf1_win32)
 
@@ -193,7 +213,7 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.16x faster (HPT: reliability of 100.00%, 1.07x faster at 99th %ile)
+- Geometric mean: 1.16x faster (HPT: reliability of 100.00%, 1.10x faster at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, sphinx
@@ -202,28 +222,33 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.18x faster (HPT: reliability of 100.00%, 1.08x faster at 99th %ile)
+- Geometric mean: 1.18x faster (HPT: reliability of 100.00%, 1.12x faster at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, dask, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: genshi_text, genshi_xml, html5lib, pylint, sphinx, thrift
 - [📄table](bm-20241017-pythonperf1_win32-x86-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.12.0.md)
 - [📈time plot](bm-20241017-pythonperf1_win32-x86-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.01x faster (HPT: reliability of 98.52%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.07x faster (HPT: reliability of 84.93%, 1.00x faster at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: chameleon, flaskblogging
-- new benchmarks: dulwich_log, sphinx, unpack_sequence
-- [📄table](bm-20241017-pythonperf1_win32-x86-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.md)
-- [📈time plot](bm-20241017-pythonperf1_win32-x86-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.svg)
+- new benchmarks: sphinx
+- [📄table](bm-20241017-pythonperf1_win32-x86-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0.md)
+- [📈time plot](bm-20241017-pythonperf1_win32-x86-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x faster (HPT: reliability of 52.91%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.01x faster (HPT: reliability of 93.59%, 1.00x faster at 99th %ile)
 - Memory usage: unknown
 - [📄table](bm-20241017-pythonperf1_win32-x86-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base.md)
 - [📈time plot](bm-20241017-pythonperf1_win32-x86-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241017-pythonperf1_win32-x86-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.md)
+- [📈time plot](bm-20241017-pythonperf1_win32-x86-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.svg)
 
 ## darwin arm64 (darwin)
 
@@ -243,27 +268,32 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.02x faster (HPT: reliability of 94.64%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.02x faster (HPT: reliability of 96.45%, 1.00x faster at 99th %ile)
 - Memory usage: 1.26x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, sphinx, thrift
 - [📄table](bm-20241017-darwin-arm64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.12.0.md)
 - [📈time plot](bm-20241017-darwin-arm64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.05x slower (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
-- Memory usage: 1.19x
+- Geometric mean: 1.01x faster (HPT: reliability of 98.31%, 1.00x faster at 99th %ile)
+- Memory usage: 6.41x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
-- new benchmarks: sphinx, unpack_sequence
-- [📄table](bm-20241017-darwin-arm64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.md)
-- [📈time plot](bm-20241017-darwin-arm64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.svg)
+- new benchmarks: sphinx
+- [📄table](bm-20241017-darwin-arm64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0.md)
+- [📈time plot](bm-20241017-darwin-arm64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x slower (HPT: reliability of 99.57%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.00x slower (HPT: reliability of 96.15%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20241017-darwin-arm64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base-mem.svg)
 - [📄table](bm-20241017-darwin-arm64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base.md)
 - [📈time plot](bm-20241017-darwin-arm64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241017-darwin-arm64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.md)
+- [📈time plot](bm-20241017-darwin-arm64-brandtbucher-justin_unlikely-3.14.0a1%2B-15229e0-vs-3.13.0b2.svg)
 

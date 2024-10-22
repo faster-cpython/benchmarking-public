@@ -5,9 +5,9 @@
 - machine: windows-amd64
 - commit hash: 9d34f60
 - commit date: 2024-02-15
-- overall geometric mean: 1.23x faster \*
+- overall geometric mean: 1.23x faster
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.17x faster
+- HPT 99th percentile: 1.16x faster
 - Memory change: unknown
 
 Benchmarks with tag 'apps':
@@ -188,15 +188,12 @@ Benchmark hidden because not significant (2): json, python_startup
 Ignored benchmarks (10) of results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf1-amd64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, thrift
 Ignored benchmarks (4) of results/bm-20240215-3.13.0a4-9d34f60-JIT/bm-20240215-pythonperf1-amd64-python-v3.13.0a4-3.13.0a4-9d34f60.json: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
 
-
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.19x
 - 95% likely to have a speedup of 1.18x
-- 99% likely to have a speedup of 1.17x
-
+- 99% likely to have a speedup of 1.16x
 
 # Memory
-
 - memory change: unknown

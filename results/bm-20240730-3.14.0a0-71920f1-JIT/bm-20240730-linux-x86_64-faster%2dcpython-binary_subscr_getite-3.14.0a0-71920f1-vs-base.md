@@ -6,9 +6,9 @@
 - commit hash: 71920f1
 - commit date: 2024-07-30
 - overall geometric mean: 1.00x faster
-- HPT reliability: 93.66%
+- HPT reliability: 89.00%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 1.01x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -145,10 +145,10 @@ Benchmark hidden because not significant (43): async_tree_memoization, async_tre
 
 # HPT report
 
-- Reliability score: 93.66% likely to be slow
+- Reliability score: 89.00% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 1.01x
+- memory change: 1.00x

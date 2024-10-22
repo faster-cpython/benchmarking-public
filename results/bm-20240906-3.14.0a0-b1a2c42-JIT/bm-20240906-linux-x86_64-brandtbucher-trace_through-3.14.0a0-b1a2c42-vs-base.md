@@ -6,9 +6,9 @@
 - commit hash: b1a2c42
 - commit date: 2024-09-06
 - overall geometric mean: 1.00x slower
-- HPT reliability: 81.25%
+- HPT reliability: 81.50%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 1.01x
+- Memory change: 1.02x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -161,10 +161,10 @@ Ignored benchmarks (7) of results/bm-20240906-3.14.0a0-b1a2c42-JIT/bm-20240906-l
 
 # HPT report
 
-- Reliability score: 81.25% likely to be slow
+- Reliability score: 81.50% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 1.01x
+- memory change: 1.02x

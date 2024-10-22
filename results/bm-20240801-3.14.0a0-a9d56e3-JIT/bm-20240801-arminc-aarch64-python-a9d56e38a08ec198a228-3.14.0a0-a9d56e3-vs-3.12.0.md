@@ -196,7 +196,7 @@ Ignored benchmarks (1) of results/bm-20240801-3.14.0a0-a9d56e3-JIT/bm-20240801-a
 
 - Reliability score: 100.00% likely to be slow
 - 90% likely to have a slowdown of 1.04x
-- 95% likely to have a slowdown of 1.04x
+- 95% likely to have a slowdown of 1.03x
 - 99% likely to have a slowdown of 1.03x
 
 # Memory

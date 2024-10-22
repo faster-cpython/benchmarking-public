@@ -6,7 +6,7 @@
 - commit hash: 9827ade
 - commit date: 2024-10-16
 - overall geometric mean: 1.00x faster
-- HPT reliability: 78.79%
+- HPT reliability: 88.14%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -185,7 +185,7 @@ Benchmark hidden because not significant (30): pylint, unpickle_list, docutils, 
 
 # HPT report
 
-- Reliability score: 78.79% likely to be slow
+- Reliability score: 88.14% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

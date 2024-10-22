@@ -6,7 +6,7 @@
 - commit hash: 124d124
 - commit date: 2024-09-12
 - overall geometric mean: 1.01x slower
-- HPT reliability: 84.53%
+- HPT reliability: 88.14%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.02x
 
@@ -172,7 +172,7 @@ Benchmark hidden because not significant (32): async_tree_none, async_tree_cpu_i
 
 # HPT report
 
-- Reliability score: 84.53% likely to be slow
+- Reliability score: 88.14% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

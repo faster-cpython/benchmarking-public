@@ -6,9 +6,9 @@
 - commit hash: 9c4347e
 - commit date: 2023-11-22
 - overall geometric mean: 1.01x faster
-- HPT reliability: 90.29%
+- HPT reliability: 88.46%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.87x
+- Memory change: 0.88x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -203,10 +203,10 @@ Ignored benchmarks (1) of results/bm-20231122-3.13.0a2-9c4347e/bm-20231122-armin
 
 # HPT report
 
-- Reliability score: 90.29% likely to be faster
+- Reliability score: 88.46% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.87x
+- memory change: 0.88x

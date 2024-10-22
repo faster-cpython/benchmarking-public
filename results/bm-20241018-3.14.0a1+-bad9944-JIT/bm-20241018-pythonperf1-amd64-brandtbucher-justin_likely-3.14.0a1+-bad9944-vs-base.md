@@ -6,7 +6,7 @@
 - commit hash: bad9944
 - commit date: 2024-10-18
 - overall geometric mean: 1.00x slower
-- HPT reliability: 99.23%
+- HPT reliability: 99.00%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -169,7 +169,7 @@ Benchmark hidden because not significant (32): html5lib, asyncio_tcp, async_tree
 
 # HPT report
 
-- Reliability score: 99.23% likely to be slow
+- Reliability score: 99.00% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

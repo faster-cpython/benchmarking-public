@@ -7,7 +7,7 @@
 - commit date: 2024-08-17
 - overall geometric mean: 1.62x slower
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.41x slower
+- HPT 99th percentile: 1.44x slower
 - Memory change: 1.15x
 
 Benchmarks with tag 'apps':
@@ -199,9 +199,9 @@ Benchmark hidden because not significant (2): pidigits, regex_dna
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.49x
-- 95% likely to have a slowdown of 1.47x
-- 99% likely to have a slowdown of 1.41x
+- 90% likely to have a slowdown of 1.53x
+- 95% likely to have a slowdown of 1.50x
+- 99% likely to have a slowdown of 1.44x
 
 # Memory
 - memory change: 1.15x

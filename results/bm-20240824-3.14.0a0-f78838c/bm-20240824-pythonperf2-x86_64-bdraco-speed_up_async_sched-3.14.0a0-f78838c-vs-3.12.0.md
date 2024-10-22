@@ -6,7 +6,7 @@
 - commit hash: f78838c
 - commit date: 2024-08-24
 - overall geometric mean: 1.02x faster
-- HPT reliability: 90.35%
+- HPT reliability: 83.83%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -182,7 +182,7 @@ Ignored benchmarks (6) of results/bm-20240824-3.14.0a0-f78838c/bm-20240824-pytho
 
 # HPT report
 
-- Reliability score: 90.35% likely to be faster
+- Reliability score: 83.83% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

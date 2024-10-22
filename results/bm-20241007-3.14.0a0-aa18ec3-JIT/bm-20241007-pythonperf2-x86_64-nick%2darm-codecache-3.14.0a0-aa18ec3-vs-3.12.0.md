@@ -6,9 +6,9 @@
 - commit hash: aa18ec3
 - commit date: 2024-10-07
 - overall geometric mean: 1.07x slower
-- HPT reliability: 63.62%
+- HPT reliability: 62.41%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.99x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -197,10 +197,10 @@ Ignored benchmarks (6) of results/bm-20241007-3.14.0a0-aa18ec3-JIT/bm-20241007-p
 
 # HPT report
 
-- Reliability score: 63.62% likely to be faster
+- Reliability score: 62.41% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.99x
+- memory change: 1.00x

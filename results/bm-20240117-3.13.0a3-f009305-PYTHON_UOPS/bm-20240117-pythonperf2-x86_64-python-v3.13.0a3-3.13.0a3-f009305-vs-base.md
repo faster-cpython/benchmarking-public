@@ -197,7 +197,7 @@ Ignored benchmarks (2) of results/bm-20240117-3.13.0a3-f009305-PYTHON_UOPS/bm-20
 
 - Reliability score: 100.00% likely to be slow
 - 90% likely to have a slowdown of 1.04x
-- 95% likely to have a slowdown of 1.03x
+- 95% likely to have a slowdown of 1.04x
 - 99% likely to have a slowdown of 1.03x
 
 # Memory

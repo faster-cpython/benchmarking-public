@@ -6,7 +6,7 @@
 - commit hash: 9315688
 - commit date: 2024-07-03
 - overall geometric mean: 1.00x slower
-- HPT reliability: 98.32%
+- HPT reliability: 99.10%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -182,7 +182,7 @@ Ignored benchmarks (5) of results/bm-20240703-3.14.0a0-9315688/bm-20240703-pytho
 
 # HPT report
 
-- Reliability score: 98.32% likely to be slow
+- Reliability score: 99.10% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

@@ -6,7 +6,7 @@
 - commit hash: bad9944
 - commit date: 2024-10-18
 - overall geometric mean: 1.09x slower
-- HPT reliability: 67.41%
+- HPT reliability: 64.84%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.10x
 
@@ -186,7 +186,7 @@ Ignored benchmarks (7) of results/bm-20241018-3.14.0a1+-bad9944-JIT/bm-20241018-
 
 # HPT report
 
-- Reliability score: 67.41% likely to be slow
+- Reliability score: 64.84% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

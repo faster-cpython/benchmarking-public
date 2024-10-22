@@ -6,7 +6,7 @@
 - commit hash: 04d5e93
 - commit date: 2024-08-27
 - overall geometric mean: 1.04x faster
-- HPT reliability: 99.77%
+- HPT reliability: 99.92%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.92x
 
@@ -188,9 +188,9 @@ Ignored benchmarks (1) of results/bm-20240827-3.14.0a0-04d5e93/bm-20240827-armin
 
 # HPT report
 
-- Reliability score: 99.77% likely to be faster
+- Reliability score: 99.92% likely to be faster
 - 90% likely to have a speedup of 1.01x
-- 95% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x
 
 # Memory

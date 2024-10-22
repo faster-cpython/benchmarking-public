@@ -17,8 +17,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.05x slower (HPT: reliability of 96.15%, 1.00x slower at 99th %ile)
-- Memory usage: 1.30x
+- Geometric mean: 1.05x slower (HPT: reliability of 97.64%, 1.00x slower at 99th %ile)
+- Memory usage: 1.31x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20241004-linux-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-adb59ef-vs-3.10.4.md)
@@ -26,27 +26,31 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.33x slower (HPT: reliability of 100.00%, 1.18x slower at 99th %ile)
+- Geometric mean: 1.33x slower (HPT: reliability of 100.00%, 1.19x slower at 99th %ile)
 - Memory usage: 1.14x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20241004-linux-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-adb59ef-vs-3.12.0.md)
 - [📈time plot](bm-20241004-linux-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-adb59ef-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.36x slower (HPT: reliability of 100.00%, 1.21x slower at 99th %ile)
-- Memory usage: 1.17x
+- Geometric mean: 1.42x slower (HPT: reliability of 100.00%, 1.27x slower at 99th %ile)
+- Memory usage: 1.18x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20241004-linux-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-adb59ef-vs-3.13.0b2.md)
-- [📈time plot](bm-20241004-linux-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-adb59ef-vs-3.13.0b2.svg)
+- [📄table](bm-20241004-linux-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-adb59ef-vs-3.13.0.md)
+- [📈time plot](bm-20241004-linux-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-adb59ef-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.01x faster (HPT: reliability of 95.87%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.01x faster (HPT: reliability of 99.08%, 1.00x faster at 99th %ile)
 - Memory usage: 1.02x
 - [🧠memory plot](bm-20241004-linux-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-adb59ef-vs-base-mem.svg)
 - [📄table](bm-20241004-linux-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-adb59ef-vs-base.md)
 - [📈time plot](bm-20241004-linux-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-adb59ef-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241004-linux-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-adb59ef-vs-3.13.0b2.md)
+- [📈time plot](bm-20241004-linux-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-adb59ef-vs-3.13.0b2.svg)
 

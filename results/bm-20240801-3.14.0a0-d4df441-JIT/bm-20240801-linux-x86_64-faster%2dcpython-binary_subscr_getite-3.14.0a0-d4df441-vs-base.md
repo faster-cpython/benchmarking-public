@@ -6,7 +6,7 @@
 - commit hash: d4df441
 - commit date: 2024-08-01
 - overall geometric mean: 1.00x faster
-- HPT reliability: 79.50%
+- HPT reliability: 69.44%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -159,7 +159,7 @@ Benchmark hidden because not significant (35): pprint_safe_repr, pylint, async_t
 
 # HPT report
 
-- Reliability score: 79.50% likely to be slow
+- Reliability score: 69.44% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

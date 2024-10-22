@@ -6,7 +6,7 @@
 - commit hash: 363374c
 - commit date: 2024-08-10
 - overall geometric mean: 1.07x faster
-- HPT reliability: 99.93%
+- HPT reliability: 99.97%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -178,7 +178,7 @@ Benchmark hidden because not significant (15): pycparser, async_tree_none, async
 
 # HPT report
 
-- Reliability score: 99.93% likely to be faster
+- Reliability score: 99.97% likely to be faster
 - 90% likely to have a speedup of 1.01x
 - 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x

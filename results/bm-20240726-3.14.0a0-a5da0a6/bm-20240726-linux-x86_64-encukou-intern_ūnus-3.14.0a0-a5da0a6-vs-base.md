@@ -6,7 +6,7 @@
 - commit hash: a5da0a6
 - commit date: 2024-07-26
 - overall geometric mean: 1.00x faster
-- HPT reliability: 62.41%
+- HPT reliability: 66.25%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.01x
 
@@ -155,7 +155,7 @@ Benchmark hidden because not significant (36): json, sympy_expand, sympy_str, sy
 
 # HPT report
 
-- Reliability score: 62.41% likely to be slow
+- Reliability score: 66.25% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

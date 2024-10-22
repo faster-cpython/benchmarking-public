@@ -6,7 +6,7 @@
 - commit hash: 4dc2c65
 - commit date: 2024-08-12
 - overall geometric mean: 1.07x faster
-- HPT reliability: 99.04%
+- HPT reliability: 99.62%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.07x
 
@@ -183,8 +183,8 @@ Ignored benchmarks (6) of results/bm-20240812-3.14.0a0-4dc2c65-JIT/bm-20240812-l
 
 # HPT report
 
-- Reliability score: 99.04% likely to be faster
-- 90% likely to have a speedup of 1.01x
+- Reliability score: 99.62% likely to be faster
+- 90% likely to have a speedup of 1.02x
 - 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x
 

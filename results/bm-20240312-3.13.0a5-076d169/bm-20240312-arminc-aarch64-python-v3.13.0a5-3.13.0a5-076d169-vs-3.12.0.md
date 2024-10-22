@@ -6,9 +6,9 @@
 - commit hash: 076d169
 - commit date: 2024-03-12
 - overall geometric mean: 1.01x faster
-- HPT reliability: 89.83%
+- HPT reliability: 91.08%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.89x
+- Memory change: 0.90x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -187,10 +187,10 @@ Ignored benchmarks (1) of results/bm-20240312-3.13.0a5-076d169/bm-20240312-armin
 
 # HPT report
 
-- Reliability score: 89.83% likely to be faster
+- Reliability score: 91.08% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.89x
+- memory change: 0.90x

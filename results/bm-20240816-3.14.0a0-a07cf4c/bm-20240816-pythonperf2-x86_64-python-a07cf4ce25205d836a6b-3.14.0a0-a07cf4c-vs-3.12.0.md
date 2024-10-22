@@ -6,7 +6,7 @@
 - commit hash: a07cf4c
 - commit date: 2024-08-16
 - overall geometric mean: 1.03x faster
-- HPT reliability: 87.81%
+- HPT reliability: 81.22%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -179,7 +179,7 @@ Ignored benchmarks (6) of results/bm-20240816-3.14.0a0-a07cf4c/bm-20240816-pytho
 
 # HPT report
 
-- Reliability score: 87.81% likely to be faster
+- Reliability score: 81.22% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

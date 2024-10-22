@@ -6,9 +6,9 @@
 - commit hash: f4bc84d
 - commit date: 2024-07-17
 - overall geometric mean: 1.02x faster
-- HPT reliability: 63.99%
+- HPT reliability: 51.29%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.94x
+- Memory change: 0.93x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -186,10 +186,10 @@ Ignored benchmarks (6) of results/bm-20240717-3.14.0a0-f4bc84d/bm-20240717-pytho
 
 # HPT report
 
-- Reliability score: 63.99% likely to be faster
+- Reliability score: 51.29% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.94x
+- memory change: 0.93x

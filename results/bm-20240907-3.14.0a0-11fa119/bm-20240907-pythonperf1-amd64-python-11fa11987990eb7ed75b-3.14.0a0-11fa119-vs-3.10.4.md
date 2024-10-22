@@ -198,7 +198,7 @@ Ignored benchmarks (4) of results/bm-20240907-3.14.0a0-11fa119/bm-20240907-pytho
 
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.10x
-- 95% likely to have a speedup of 1.10x
+- 95% likely to have a speedup of 1.09x
 - 99% likely to have a speedup of 1.08x
 
 # Memory

@@ -6,7 +6,7 @@
 - commit hash: b9e10d1
 - commit date: 2024-08-19
 - overall geometric mean: 1.03x faster
-- HPT reliability: 84.03%
+- HPT reliability: 75.59%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -183,7 +183,7 @@ Ignored benchmarks (6) of results/bm-20240819-3.14.0a0-b9e10d1/bm-20240819-pytho
 
 # HPT report
 
-- Reliability score: 84.03% likely to be faster
+- Reliability score: 75.59% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

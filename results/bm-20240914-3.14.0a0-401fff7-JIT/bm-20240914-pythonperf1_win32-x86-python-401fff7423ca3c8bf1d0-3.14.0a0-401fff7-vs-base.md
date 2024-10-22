@@ -6,7 +6,7 @@
 - commit hash: 401fff7
 - commit date: 2024-09-14
 - overall geometric mean: 1.08x faster
-- HPT reliability: 98.55%
+- HPT reliability: 96.59%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -193,7 +193,7 @@ Benchmark hidden because not significant (11): pickle, chaos, asyncio_tcp_ssl, c
 
 # HPT report
 
-- Reliability score: 98.55% likely to be faster
+- Reliability score: 96.59% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

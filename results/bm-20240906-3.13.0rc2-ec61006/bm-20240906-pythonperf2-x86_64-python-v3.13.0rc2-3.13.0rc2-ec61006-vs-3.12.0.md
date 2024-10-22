@@ -6,9 +6,9 @@
 - commit hash: ec61006
 - commit date: 2024-09-06
 - overall geometric mean: 1.00x slower
-- HPT reliability: 84.78%
+- HPT reliability: 87.61%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 0.93x
+- Memory change: 0.94x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -199,10 +199,10 @@ Ignored benchmarks (7) of results/bm-20240906-3.13.0rc2-ec61006/bm-20240906-pyth
 
 # HPT report
 
-- Reliability score: 84.78% likely to be slow
+- Reliability score: 87.61% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 0.93x
+- memory change: 0.94x

@@ -6,9 +6,9 @@
 - commit hash: 9d34f60
 - commit date: 2024-02-15
 - overall geometric mean: 1.01x faster
-- HPT reliability: 94.81%
+- HPT reliability: 95.52%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.88x
+- Memory change: 0.89x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -195,10 +195,10 @@ Ignored benchmarks (1) of results/bm-20240215-3.13.0a4-9d34f60/bm-20240215-armin
 
 # HPT report
 
-- Reliability score: 94.81% likely to be faster
+- Reliability score: 95.52% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.88x
+- memory change: 0.89x

@@ -6,9 +6,9 @@
 - commit hash: e666b14
 - commit date: 2024-09-08
 - overall geometric mean: 1.04x faster
-- HPT reliability: 99.48%
+- HPT reliability: 99.79%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 1.09x
+- Memory change: 1.10x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -198,10 +198,10 @@ Ignored benchmarks (6) of results/bm-20240908-3.14.0a0-e666b14-JIT/bm-20240908-l
 
 # HPT report
 
-- Reliability score: 99.48% likely to be faster
-- 90% likely to have a speedup of 1.02x
-- 95% likely to have a speedup of 1.01x
+- Reliability score: 99.79% likely to be faster
+- 90% likely to have a speedup of 1.03x
+- 95% likely to have a speedup of 1.02x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 1.09x
+- memory change: 1.10x

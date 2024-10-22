@@ -6,9 +6,9 @@
 - commit hash: 60b7e71
 - commit date: 2024-07-27
 - overall geometric mean: 1.00x slower
-- HPT reliability: 96.66%
+- HPT reliability: 98.30%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 1.01x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -164,10 +164,10 @@ Benchmark hidden because not significant (42): bench_mp_pool, asyncio_tcp_ssl, a
 
 # HPT report
 
-- Reliability score: 96.66% likely to be slow
+- Reliability score: 98.30% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 1.01x
+- memory change: 1.00x

@@ -6,7 +6,7 @@
 - commit hash: a6bc1a0
 - commit date: 2024-09-04
 - overall geometric mean: 1.00x slower
-- HPT reliability: 96.77%
+- HPT reliability: 96.85%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.01x
 
@@ -168,7 +168,7 @@ Benchmark hidden because not significant (31): django_template, json, comprehens
 
 # HPT report
 
-- Reliability score: 96.77% likely to be slow
+- Reliability score: 96.85% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

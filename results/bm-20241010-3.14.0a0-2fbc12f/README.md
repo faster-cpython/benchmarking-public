@@ -33,14 +33,13 @@
 - [📄table](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-3.12.0.md)
 - [📈time plot](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.02x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
+- Geometric mean: 1.01x slower (HPT: reliability of 98.03%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-3.13.0b2.md)
-- [📈time plot](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-3.13.0b2.svg)
+- [📄table](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-3.13.0.md)
+- [📈time plot](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-3.13.0.svg)
 
 ### vs. base
 
@@ -49,4 +48,9 @@
 - [🧠memory plot](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-base-mem.svg)
 - [📄table](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-base.md)
 - [📈time plot](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-3.13.0b2.md)
+- [📈time plot](bm-20241010-linux-x86_64-faster%252dcpython-refactor_refcnt_mort-3.14.0a0-2fbc12f-vs-3.13.0b2.svg)
 

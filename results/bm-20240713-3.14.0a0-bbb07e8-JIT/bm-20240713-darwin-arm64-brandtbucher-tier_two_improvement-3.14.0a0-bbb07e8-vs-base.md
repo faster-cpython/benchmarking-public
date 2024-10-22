@@ -6,7 +6,7 @@
 - commit hash: bbb07e8
 - commit date: 2024-07-13
 - overall geometric mean: 1.00x slower
-- HPT reliability: 87.96%
+- HPT reliability: 79.55%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -160,7 +160,7 @@ Benchmark hidden because not significant (41): bench_thread_pool, pylint, deepco
 
 # HPT report
 
-- Reliability score: 87.96% likely to be slow
+- Reliability score: 79.55% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

@@ -6,7 +6,7 @@
 - commit hash: 567c38b
 - commit date: 2024-07-18
 - overall geometric mean: 1.01x faster
-- HPT reliability: 85.55%
+- HPT reliability: 87.35%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -192,7 +192,7 @@ Ignored benchmarks (1) of results/bm-20240718-3.13.0b4-567c38b/bm-20240718-armin
 
 # HPT report
 
-- Reliability score: 85.55% likely to be faster
+- Reliability score: 87.35% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

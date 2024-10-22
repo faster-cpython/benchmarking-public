@@ -6,7 +6,7 @@
 - commit hash: eb895df
 - commit date: 2024-07-16
 - overall geometric mean: 1.00x slower
-- HPT reliability: 77.11%
+- HPT reliability: 77.38%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -145,7 +145,7 @@ Benchmark hidden because not significant (37): deepcopy, chaos, telco, scimark_m
 
 # HPT report
 
-- Reliability score: 77.11% likely to be slow
+- Reliability score: 77.38% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

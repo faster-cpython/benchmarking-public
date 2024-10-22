@@ -6,7 +6,7 @@
 - commit hash: 14c70a7
 - commit date: 2024-09-19
 - overall geometric mean: 1.06x faster
-- HPT reliability: 99.89%
+- HPT reliability: 99.95%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.01x
 
@@ -196,8 +196,8 @@ Ignored benchmarks (6) of results/bm-20240919-3.14.0a0-14c70a7-JIT/bm-20240919-l
 
 # HPT report
 
-- Reliability score: 99.89% likely to be faster
-- 90% likely to have a speedup of 1.01x
+- Reliability score: 99.95% likely to be faster
+- 90% likely to have a speedup of 1.02x
 - 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x
 

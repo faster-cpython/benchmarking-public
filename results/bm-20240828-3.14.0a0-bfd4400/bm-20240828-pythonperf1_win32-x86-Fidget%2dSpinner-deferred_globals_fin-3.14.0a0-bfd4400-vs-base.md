@@ -6,7 +6,7 @@
 - commit hash: bfd4400
 - commit date: 2024-08-28
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.95%
+- HPT reliability: 99.94%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -160,7 +160,7 @@ Benchmark hidden because not significant (30): pyflate, asyncio_tcp, async_tree_
 
 # HPT report
 
-- Reliability score: 99.95% likely to be slow
+- Reliability score: 99.94% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

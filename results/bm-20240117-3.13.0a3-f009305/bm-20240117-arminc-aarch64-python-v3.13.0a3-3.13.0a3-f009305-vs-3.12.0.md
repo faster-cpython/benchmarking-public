@@ -6,9 +6,9 @@
 - commit hash: f009305
 - commit date: 2024-01-17
 - overall geometric mean: 1.01x faster
-- HPT reliability: 58.16%
+- HPT reliability: 58.59%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.88x
+- Memory change: 0.89x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -193,10 +193,10 @@ Ignored benchmarks (1) of results/bm-20240117-3.13.0a3-f009305/bm-20240117-armin
 
 # HPT report
 
-- Reliability score: 58.16% likely to be faster
+- Reliability score: 58.59% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.88x
+- memory change: 0.89x

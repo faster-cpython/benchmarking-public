@@ -6,7 +6,7 @@
 - commit hash: 3d7e23f
 - commit date: 2024-08-05
 - overall geometric mean: 1.00x slower
-- HPT reliability: 74.45%
+- HPT reliability: 82.44%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -161,7 +161,7 @@ Benchmark hidden because not significant (31): xml_etree_parse, regex_compile, a
 
 # HPT report
 
-- Reliability score: 74.45% likely to be slow
+- Reliability score: 82.44% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

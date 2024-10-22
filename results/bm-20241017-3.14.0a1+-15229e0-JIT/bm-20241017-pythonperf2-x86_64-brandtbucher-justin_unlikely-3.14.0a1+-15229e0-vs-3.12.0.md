@@ -6,9 +6,9 @@
 - commit hash: 15229e0
 - commit date: 2024-10-17
 - overall geometric mean: 1.08x slower
-- HPT reliability: 51.58%
-- HPT 99th percentile: 1.00x slower
-- Memory change: 1.09x
+- HPT reliability: 53.27%
+- HPT 99th percentile: 1.00x faster
+- Memory change: 1.10x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -197,10 +197,10 @@ Ignored benchmarks (7) of results/bm-20241017-3.14.0a1+-15229e0-JIT/bm-20241017-
 
 # HPT report
 
-- Reliability score: 51.58% likely to be slow
-- 90% likely to have a slowdown of 1.00x
-- 95% likely to have a slowdown of 1.00x
-- 99% likely to have a slowdown of 1.00x
+- Reliability score: 53.27% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 1.09x
+- memory change: 1.10x

@@ -8,7 +8,7 @@
 - overall geometric mean: 1.01x slower
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 0.98x
+- Memory change: 0.97x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -184,4 +184,4 @@ Benchmark hidden because not significant (27): scimark_monte_carlo, async_tree_c
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 0.98x
+- memory change: 0.97x

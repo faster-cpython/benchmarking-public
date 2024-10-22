@@ -1,4 +1,3 @@
-
 # Results vs. 3.12.0
 
 - fork: python
@@ -191,15 +190,12 @@ All benchmarks:
 Benchmark hidden because not significant (4): pickle_dict, python_startup, json_loads, asyncio_tcp
 Ignored benchmarks (7) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-pythonperf1_win32-x86-python-v3.12.0-3.12.0-0fb18b0.json: aiohttp, dask, django_template, dulwich_log, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 
-
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.11x
-- 95% likely to have a slowdown of 1.10x
+- 90% likely to have a slowdown of 1.12x
+- 95% likely to have a slowdown of 1.11x
 - 99% likely to have a slowdown of 1.10x
 
-
 # Memory
-
 - memory change: unknown

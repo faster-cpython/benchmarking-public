@@ -6,8 +6,8 @@
 - commit hash: f2327f4
 - commit date: 2024-09-18
 - overall geometric mean: 1.05x faster
-- HPT reliability: 99.98%
-- HPT 99th percentile: 1.01x faster
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.03x faster
 - Memory change: 1.05x
 
 Benchmarks with tag 'apps':
@@ -197,10 +197,10 @@ Ignored benchmarks (6) of results/bm-20240918-3.14.0a0-f2327f4-JIT/bm-20240918-l
 
 # HPT report
 
-- Reliability score: 99.98% likely to be faster
-- 90% likely to have a speedup of 1.04x
-- 95% likely to have a speedup of 1.03x
-- 99% likely to have a speedup of 1.01x
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.05x
+- 95% likely to have a speedup of 1.04x
+- 99% likely to have a speedup of 1.03x
 
 # Memory
 - memory change: 1.05x

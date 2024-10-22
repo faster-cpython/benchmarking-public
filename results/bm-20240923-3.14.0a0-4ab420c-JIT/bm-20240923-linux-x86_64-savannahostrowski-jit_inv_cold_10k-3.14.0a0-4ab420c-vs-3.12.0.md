@@ -6,8 +6,8 @@
 - commit hash: 4ab420c
 - commit date: 2024-09-23
 - overall geometric mean: 1.05x faster
-- HPT reliability: 99.85%
-- HPT 99th percentile: 1.00x faster
+- HPT reliability: 99.94%
+- HPT 99th percentile: 1.01x faster
 - Memory change: 1.01x
 
 Benchmarks with tag 'apps':
@@ -195,10 +195,10 @@ Ignored benchmarks (6) of results/bm-20240923-3.14.0a0-4ab420c-JIT/bm-20240923-l
 
 # HPT report
 
-- Reliability score: 99.85% likely to be faster
+- Reliability score: 99.94% likely to be faster
 - 90% likely to have a speedup of 1.02x
-- 95% likely to have a speedup of 1.01x
-- 99% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.02x
+- 99% likely to have a speedup of 1.01x
 
 # Memory
 - memory change: 1.01x

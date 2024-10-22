@@ -6,7 +6,7 @@
 - commit hash: 1b65c46
 - commit date: 2024-08-01
 - overall geometric mean: 1.00x faster
-- HPT reliability: 67.52%
+- HPT reliability: 63.82%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -159,7 +159,7 @@ Benchmark hidden because not significant (30): asyncio_tcp, bench_thread_pool, j
 
 # HPT report
 
-- Reliability score: 67.52% likely to be slow
+- Reliability score: 63.82% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

@@ -6,7 +6,7 @@
 - commit hash: ebcfcaf
 - commit date: 2024-10-14
 - overall geometric mean: 1.00x faster
-- HPT reliability: 99.10%
+- HPT reliability: 99.13%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -162,7 +162,7 @@ Benchmark hidden because not significant (30): pylint, thrift, deepcopy, genshi_
 
 # HPT report
 
-- Reliability score: 99.10% likely to be faster
+- Reliability score: 99.13% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

@@ -4349,9 +4349,9 @@ other names.
 <tr>
 <td align="left">Interpreter increfs</td>
 <td align="right">41,463,178,143</td>
-<td align="right">29.7%</td>
+<td align="right">41,463,178,143 / 0 !!</td>
 <td align="right">42,209,053,791</td>
-<td align="right">30.1%</td>
+<td align="right">42,209,053,791 / 0 !!</td>
 <td align="right">1.8%</td>
 </tr>
 <tr>
@@ -4365,17 +4365,17 @@ other names.
 <tr>
 <td align="left">Interpreter decrefs</td>
 <td align="right">56,723,699,450</td>
-<td align="right">34.9%</td>
+<td align="right">56,723,699,450 / 0 !!</td>
 <td align="right">57,090,983,838</td>
-<td align="right">35.1%</td>
+<td align="right">57,090,983,838 / 0 !!</td>
 <td align="right">0.6%</td>
 </tr>
 <tr>
 <td align="left">Increfs</td>
 <td align="right">98,041,458,383</td>
-<td align="right">70.3%</td>
+<td align="right">98,041,458,383 / 0 !!</td>
 <td align="right">97,791,565,871</td>
-<td align="right">69.9%</td>
+<td align="right">97,791,565,871 / 0 !!</td>
 <td align="right">-0.3%</td>
 </tr>
 <tr>
@@ -4389,9 +4389,9 @@ other names.
 <tr>
 <td align="left">Decrefs</td>
 <td align="right">105,618,021,547</td>
-<td align="right">65.1%</td>
+<td align="right">105,618,021,547 / 0 !!</td>
 <td align="right">105,747,952,611</td>
-<td align="right">64.9%</td>
+<td align="right">105,747,952,611 / 0 !!</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -6654,4 +6654,4 @@ Modifying a function, e.g. `func.__defaults__ = ...`, etc.
 </details>
 
 ---
-Stats gathered on: 2024-09-13
+Stats gathered on: 2024-10-21

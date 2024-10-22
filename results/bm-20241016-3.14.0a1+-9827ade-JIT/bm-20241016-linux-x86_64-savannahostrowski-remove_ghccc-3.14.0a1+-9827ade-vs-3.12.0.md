@@ -6,7 +6,7 @@
 - commit hash: 9827ade
 - commit date: 2024-10-16
 - overall geometric mean: 1.03x faster
-- HPT reliability: 99.97%
+- HPT reliability: 100.00%
 - HPT 99th percentile: 1.01x faster
 - Memory change: 1.15x
 
@@ -198,9 +198,9 @@ Ignored benchmarks (7) of results/bm-20241016-3.14.0a1+-9827ade-JIT/bm-20241016-
 
 # HPT report
 
-- Reliability score: 99.97% likely to be faster
-- 90% likely to have a speedup of 1.02x
-- 95% likely to have a speedup of 1.01x
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.03x
+- 95% likely to have a speedup of 1.02x
 - 99% likely to have a speedup of 1.01x
 
 # Memory

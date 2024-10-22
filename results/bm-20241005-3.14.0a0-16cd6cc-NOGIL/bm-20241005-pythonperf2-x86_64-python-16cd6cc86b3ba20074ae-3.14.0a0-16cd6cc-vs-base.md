@@ -210,8 +210,8 @@ All benchmarks:
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.31x
-- 95% likely to have a slowdown of 1.30x
+- 90% likely to have a slowdown of 1.33x
+- 95% likely to have a slowdown of 1.32x
 - 99% likely to have a slowdown of 1.30x
 
 # Memory

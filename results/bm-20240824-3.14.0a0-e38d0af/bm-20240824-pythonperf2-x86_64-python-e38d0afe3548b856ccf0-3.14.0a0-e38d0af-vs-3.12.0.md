@@ -6,7 +6,7 @@
 - commit hash: e38d0af
 - commit date: 2024-08-24
 - overall geometric mean: 1.02x faster
-- HPT reliability: 95.15%
+- HPT reliability: 91.12%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -181,7 +181,7 @@ Ignored benchmarks (6) of results/bm-20240824-3.14.0a0-e38d0af/bm-20240824-pytho
 
 # HPT report
 
-- Reliability score: 95.15% likely to be faster
+- Reliability score: 91.12% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

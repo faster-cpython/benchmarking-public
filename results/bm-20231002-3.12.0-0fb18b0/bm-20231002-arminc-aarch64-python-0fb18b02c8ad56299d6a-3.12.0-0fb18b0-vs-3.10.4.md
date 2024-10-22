@@ -7,7 +7,7 @@
 - commit date: 2023-10-02
 - overall geometric mean: 1.28x faster
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.22x faster
+- HPT 99th percentile: 1.21x faster
 - Memory change: 1.25x
 
 Benchmarks with tag 'apps':
@@ -208,7 +208,7 @@ Ignored benchmarks (4) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-arminc-
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.24x
 - 95% likely to have a speedup of 1.23x
-- 99% likely to have a speedup of 1.22x
+- 99% likely to have a speedup of 1.21x
 
 # Memory
 - memory change: 1.25x

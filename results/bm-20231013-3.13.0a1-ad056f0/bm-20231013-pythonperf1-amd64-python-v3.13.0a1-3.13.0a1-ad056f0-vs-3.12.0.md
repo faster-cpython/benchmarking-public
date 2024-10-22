@@ -1,4 +1,3 @@
-
 # Results vs. 3.12.0
 
 - fork: python
@@ -6,8 +5,8 @@
 - machine: windows-amd64
 - commit hash: ad056f0
 - commit date: 2023-10-13
-- overall geometric mean: 1.01x faster \*
-- HPT reliability: 99.92%
+- overall geometric mean: 1.01x faster
+- HPT reliability: 99.62%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -179,15 +178,12 @@ All benchmarks:
 Benchmark hidden because not significant (17): json, async_tree_io, tornado_http, sympy_sum, scimark_lu, hexiom, sympy_str, pickle_dict, meteor_contest, async_tree_none_tg, richards_super, python_startup_no_site, chameleon, async_tree_io_tg, comprehensions, async_tree_memoization, nbody
 Ignored benchmarks (6) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-pythonperf1-amd64-python-v3.12.0-3.12.0-0fb18b0.json: aiohttp, dask, django_template, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 
-
 # HPT report
 
-- Reliability score: 99.92% likely to be faster
+- Reliability score: 99.62% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
-
 # Memory
-
 - memory change: unknown

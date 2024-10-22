@@ -6,7 +6,7 @@
 - commit hash: e4a3e78
 - commit date: 2024-07-31
 - overall geometric mean: 1.02x faster
-- HPT reliability: 93.36%
+- HPT reliability: 94.82%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -184,7 +184,7 @@ Ignored benchmarks (5) of results/bm-20240731-3.13.0rc1-e4a3e78/bm-20240731-pyth
 
 # HPT report
 
-- Reliability score: 93.36% likely to be faster
+- Reliability score: 94.82% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

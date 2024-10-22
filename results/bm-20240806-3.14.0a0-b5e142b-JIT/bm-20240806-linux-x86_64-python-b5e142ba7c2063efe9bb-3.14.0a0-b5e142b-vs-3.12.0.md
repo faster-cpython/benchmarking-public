@@ -6,7 +6,7 @@
 - commit hash: b5e142b
 - commit date: 2024-08-06
 - overall geometric mean: 1.08x faster
-- HPT reliability: 99.97%
+- HPT reliability: 99.99%
 - HPT 99th percentile: 1.02x faster
 - Memory change: 1.05x
 
@@ -183,9 +183,9 @@ Ignored benchmarks (6) of results/bm-20240806-3.14.0a0-b5e142b-JIT/bm-20240806-l
 
 # HPT report
 
-- Reliability score: 99.97% likely to be faster
-- 90% likely to have a speedup of 1.04x
-- 95% likely to have a speedup of 1.03x
+- Reliability score: 99.99% likely to be faster
+- 90% likely to have a speedup of 1.05x
+- 95% likely to have a speedup of 1.04x
 - 99% likely to have a speedup of 1.02x
 
 # Memory

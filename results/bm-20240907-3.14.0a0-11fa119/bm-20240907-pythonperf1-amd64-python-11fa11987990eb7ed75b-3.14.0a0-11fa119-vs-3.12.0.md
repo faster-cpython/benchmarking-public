@@ -6,7 +6,7 @@
 - commit hash: 11fa119
 - commit date: 2024-09-07
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.15%
+- HPT reliability: 99.39%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -192,7 +192,7 @@ Ignored benchmarks (5) of results/bm-20240907-3.14.0a0-11fa119/bm-20240907-pytho
 
 # HPT report
 
-- Reliability score: 99.15% likely to be slow
+- Reliability score: 99.39% likely to be slow
 - 90% likely to have a slowdown of 1.01x
 - 95% likely to have a slowdown of 1.01x
 - 99% likely to have a slowdown of 1.00x

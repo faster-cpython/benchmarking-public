@@ -6,7 +6,7 @@
 - commit hash: 54dd77f
 - commit date: 2024-09-24
 - overall geometric mean: 1.03x faster
-- HPT reliability: 59.93%
+- HPT reliability: 63.79%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -195,7 +195,7 @@ Ignored benchmarks (5) of results/bm-20240924-3.14.0a0-54dd77f-JIT/bm-20240924-p
 
 # HPT report
 
-- Reliability score: 59.93% likely to be faster
+- Reliability score: 63.79% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

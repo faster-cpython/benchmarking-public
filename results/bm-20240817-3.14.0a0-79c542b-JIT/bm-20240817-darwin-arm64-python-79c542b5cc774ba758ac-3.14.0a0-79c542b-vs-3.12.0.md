@@ -6,9 +6,9 @@
 - commit hash: 79c542b
 - commit date: 2024-08-17
 - overall geometric mean: 1.05x faster
-- HPT reliability: 92.77%
+- HPT reliability: 94.42%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.60x
+- Memory change: 0.67x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -184,10 +184,10 @@ Ignored benchmarks (14) of results/bm-20240817-3.14.0a0-79c542b-JIT/bm-20240817-
 
 # HPT report
 
-- Reliability score: 92.77% likely to be faster
+- Reliability score: 94.42% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.60x
+- memory change: 0.67x

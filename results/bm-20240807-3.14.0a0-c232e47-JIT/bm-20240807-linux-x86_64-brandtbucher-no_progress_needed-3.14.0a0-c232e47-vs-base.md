@@ -6,7 +6,7 @@
 - commit hash: c232e47
 - commit date: 2024-08-07
 - overall geometric mean: 1.05x slower
-- HPT reliability: 99.87%
+- HPT reliability: 99.77%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.02x
 
@@ -172,7 +172,7 @@ Benchmark hidden because not significant (23): coverage, json_dumps, generators,
 
 # HPT report
 
-- Reliability score: 99.87% likely to be slow
+- Reliability score: 99.77% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

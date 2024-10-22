@@ -17,8 +17,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.32x faster (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
-- Memory usage: 1.13x
+- Geometric mean: 1.32x faster (HPT: reliability of 100.00%, 1.22x faster at 99th %ile)
+- Memory usage: 1.14x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, unpack_sequence
 - [📄table](bm-20240924-arminc-aarch64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.10.4.md)
@@ -26,19 +26,24 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.03x faster (HPT: reliability of 95.18%, 1.00x faster at 99th %ile)
-- Memory usage: 0.91x
+- Geometric mean: 1.03x faster (HPT: reliability of 96.57%, 1.00x faster at 99th %ile)
+- Memory usage: 0.92x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, unpack_sequence
 - [📄table](bm-20240924-arminc-aarch64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.12.0.md)
 - [📈time plot](bm-20240924-arminc-aarch64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.03x faster (HPT: reliability of 99.98%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.02x faster (HPT: reliability of 99.28%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
+- new benchmarks: dulwich_log
+- [📄table](bm-20240924-arminc-aarch64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0.md)
+- [📈time plot](bm-20240924-arminc-aarch64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0.svg)
+
+### vs. 3.13.0b2
+
 - [📄table](bm-20240924-arminc-aarch64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0b2.md)
 - [📈time plot](bm-20240924-arminc-aarch64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0b2.svg)
 
@@ -67,12 +72,16 @@
 - [📄table](bm-20240924-linux-x86_64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.12.0.md)
 - [📈time plot](bm-20240924-linux-x86_64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.12.0.svg)
 
+### vs. 3.13.0
+
+- Geometric mean: 1.02x faster (HPT: reliability of 99.97%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
+- missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
+- [📄table](bm-20240924-linux-x86_64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0.md)
+- [📈time plot](bm-20240924-linux-x86_64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0.svg)
+
 ### vs. 3.13.0b2
 
-- Geometric mean: 1.06x faster (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
-- Memory usage: 1.00x
-- missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
 - [📄table](bm-20240924-linux-x86_64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0b2.md)
 - [📈time plot](bm-20240924-linux-x86_64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0b2.svg)
 
@@ -86,7 +95,7 @@
 ### vs. 3.10.4
 
 - Geometric mean: 1.32x faster (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
-- Memory usage: 1.12x
+- Memory usage: 1.13x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240924-pythonperf2-x86_64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.10.4.md)
@@ -94,19 +103,23 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.02x faster (HPT: reliability of 94.85%, 1.00x faster at 99th %ile)
-- Memory usage: 0.92x
+- Geometric mean: 1.02x faster (HPT: reliability of 91.73%, 1.00x faster at 99th %ile)
+- Memory usage: 0.93x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240924-pythonperf2-x86_64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.12.0.md)
 - [📈time plot](bm-20240924-pythonperf2-x86_64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.12.0.svg)
 
+### vs. 3.13.0
+
+- Geometric mean: 1.02x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
+- Memory usage: 1.01x
+- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
+- [📄table](bm-20240924-pythonperf2-x86_64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0.md)
+- [📈time plot](bm-20240924-pythonperf2-x86_64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0.svg)
+
 ### vs. 3.13.0b2
 
-- Geometric mean: 1.03x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
-- Memory usage: 1.00x
-- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
 - [📄table](bm-20240924-pythonperf2-x86_64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0b2.md)
 - [📈time plot](bm-20240924-pythonperf2-x86_64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0b2.svg)
 
@@ -128,19 +141,23 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.00x slower (HPT: reliability of 91.47%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.00x slower (HPT: reliability of 96.28%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, dask, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240924-pythonperf1-amd64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.12.0.md)
 - [📈time plot](bm-20240924-pythonperf1-amd64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.05x slower (HPT: reliability of 100.00%, 1.05x slower at 99th %ile)
+- Geometric mean: 1.04x slower (HPT: reliability of 100.00%, 1.05x slower at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, flaskblogging, mypy2
-- new benchmarks: unpack_sequence
+- [📄table](bm-20240924-pythonperf1-amd64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0.md)
+- [📈time plot](bm-20240924-pythonperf1-amd64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0.svg)
+
+### vs. 3.13.0b2
+
 - [📄table](bm-20240924-pythonperf1-amd64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0b2.md)
 - [📈time plot](bm-20240924-pythonperf1-amd64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0b2.svg)
 
@@ -162,19 +179,23 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.13x faster (HPT: reliability of 100.00%, 1.08x faster at 99th %ile)
+- Geometric mean: 1.13x faster (HPT: reliability of 100.00%, 1.09x faster at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, dask, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240924-pythonperf1_win32-x86-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.12.0.md)
 - [📈time plot](bm-20240924-pythonperf1_win32-x86-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.03x slower (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
+- Geometric mean: 1.02x faster (HPT: reliability of 99.52%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: chameleon, flaskblogging
-- new benchmarks: dulwich_log, unpack_sequence
+- [📄table](bm-20240924-pythonperf1_win32-x86-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0.md)
+- [📈time plot](bm-20240924-pythonperf1_win32-x86-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0.svg)
+
+### vs. 3.13.0b2
+
 - [📄table](bm-20240924-pythonperf1_win32-x86-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0b2.md)
 - [📈time plot](bm-20240924-pythonperf1_win32-x86-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0b2.svg)
 
@@ -187,8 +208,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.29x faster (HPT: reliability of 100.00%, 1.21x faster at 99th %ile)
-- Memory usage: 0.75x
+- Geometric mean: 1.29x faster (HPT: reliability of 100.00%, 1.20x faster at 99th %ile)
+- Memory usage: 0.74x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240924-darwin-arm64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.10.4.md)
@@ -197,18 +218,22 @@
 ### vs. 3.12.0
 
 - Geometric mean: 1.09x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
-- Memory usage: 0.60x
+- Memory usage: 0.58x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240924-darwin-arm64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.12.0.md)
 - [📈time plot](bm-20240924-darwin-arm64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.12.0.svg)
 
+### vs. 3.13.0
+
+- Geometric mean: 1.09x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
+- Memory usage: 0.99x
+- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
+- [📄table](bm-20240924-darwin-arm64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0.md)
+- [📈time plot](bm-20240924-darwin-arm64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0.svg)
+
 ### vs. 3.13.0b2
 
-- Geometric mean: 1.01x faster (HPT: reliability of 71.92%, 1.00x faster at 99th %ile)
-- Memory usage: 0.50x
-- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
 - [📄table](bm-20240924-darwin-arm64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0b2.md)
 - [📈time plot](bm-20240924-darwin-arm64-python-e256a7590a0149feadfe-3.14.0a0-e256a75-vs-3.13.0b2.svg)
 

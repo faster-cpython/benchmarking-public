@@ -6,7 +6,7 @@
 - commit hash: 8b9b14d
 - commit date: 2024-09-03
 - overall geometric mean: 1.03x faster
-- HPT reliability: 90.03%
+- HPT reliability: 95.53%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.18x
 
@@ -184,7 +184,7 @@ Ignored benchmarks (6) of results/bm-20240903-3.14.0a0-8b9b14d-JIT/bm-20240903-l
 
 # HPT report
 
-- Reliability score: 90.03% likely to be faster
+- Reliability score: 95.53% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

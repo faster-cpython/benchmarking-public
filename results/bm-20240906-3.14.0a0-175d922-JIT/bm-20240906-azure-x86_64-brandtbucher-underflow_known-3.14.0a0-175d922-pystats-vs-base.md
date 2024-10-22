@@ -4365,33 +4365,33 @@ other names.
 <tr>
 <td align="left">Interpreter increfs</td>
 <td align="right">40,821,313,781</td>
-<td align="right">29.7%</td>
+<td align="right">40,821,313,781 / 0 !!</td>
 <td align="right">38,046,875,869</td>
-<td align="right">27.3%</td>
+<td align="right">38,046,875,869 / 0 !!</td>
 <td align="right">-6.8%</td>
 </tr>
 <tr>
 <td align="left">Increfs</td>
 <td align="right">96,713,808,318</td>
-<td align="right">70.3%</td>
+<td align="right">96,713,808,318 / 0 !!</td>
 <td align="right">101,573,981,990</td>
-<td align="right">72.7%</td>
+<td align="right">101,573,981,990 / 0 !!</td>
 <td align="right">5.0%</td>
 </tr>
 <tr>
 <td align="left">Decrefs</td>
 <td align="right">103,749,341,977</td>
-<td align="right">64.9%</td>
+<td align="right">103,749,341,977 / 0 !!</td>
 <td align="right">108,162,258,476</td>
-<td align="right">66.6%</td>
+<td align="right">108,162,258,476 / 0 !!</td>
 <td align="right">4.3%</td>
 </tr>
 <tr>
 <td align="left">Interpreter decrefs</td>
 <td align="right">56,161,456,906</td>
-<td align="right">35.1%</td>
+<td align="right">56,161,456,906 / 0 !!</td>
 <td align="right">54,298,119,004</td>
-<td align="right">33.4%</td>
+<td align="right">54,298,119,004 / 0 !!</td>
 <td align="right">-3.3%</td>
 </tr>
 <tr>
@@ -6660,4 +6660,4 @@ Modifying a function, e.g. `func.__defaults__ = ...`, etc.
 </details>
 
 ---
-Stats gathered on: 2024-09-06
+Stats gathered on: 2024-10-21

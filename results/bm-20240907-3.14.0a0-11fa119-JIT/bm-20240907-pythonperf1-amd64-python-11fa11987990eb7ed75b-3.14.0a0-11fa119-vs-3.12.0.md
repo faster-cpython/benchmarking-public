@@ -6,7 +6,7 @@
 - commit hash: 11fa119
 - commit date: 2024-09-07
 - overall geometric mean: 1.04x faster
-- HPT reliability: 92.99%
+- HPT reliability: 93.96%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -195,7 +195,7 @@ Ignored benchmarks (5) of results/bm-20240907-3.14.0a0-11fa119-JIT/bm-20240907-p
 
 # HPT report
 
-- Reliability score: 92.99% likely to be faster
+- Reliability score: 93.96% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

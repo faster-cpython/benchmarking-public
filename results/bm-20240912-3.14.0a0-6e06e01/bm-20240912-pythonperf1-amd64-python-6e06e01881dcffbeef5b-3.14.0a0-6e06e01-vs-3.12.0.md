@@ -6,7 +6,7 @@
 - commit hash: 6e06e01
 - commit date: 2024-09-12
 - overall geometric mean: 1.00x faster
-- HPT reliability: 87.05%
+- HPT reliability: 93.96%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -192,7 +192,7 @@ Ignored benchmarks (5) of results/bm-20240912-3.14.0a0-6e06e01/bm-20240912-pytho
 
 # HPT report
 
-- Reliability score: 87.05% likely to be slow
+- Reliability score: 93.96% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

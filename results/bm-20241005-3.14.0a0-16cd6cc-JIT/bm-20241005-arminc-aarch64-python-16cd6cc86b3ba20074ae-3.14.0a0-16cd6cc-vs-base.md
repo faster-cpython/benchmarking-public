@@ -7,7 +7,7 @@
 - commit date: 2024-10-05
 - overall geometric mean: 1.11x slower
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.03x slower
+- HPT 99th percentile: 1.04x slower
 - Memory change: 1.06x
 
 Benchmarks with tag 'apps':
@@ -185,8 +185,8 @@ Benchmark hidden because not significant (22): deepcopy_memo, async_tree_io, xml
 
 - Reliability score: 100.00% likely to be slow
 - 90% likely to have a slowdown of 1.05x
-- 95% likely to have a slowdown of 1.04x
-- 99% likely to have a slowdown of 1.03x
+- 95% likely to have a slowdown of 1.05x
+- 99% likely to have a slowdown of 1.04x
 
 # Memory
 - memory change: 1.06x

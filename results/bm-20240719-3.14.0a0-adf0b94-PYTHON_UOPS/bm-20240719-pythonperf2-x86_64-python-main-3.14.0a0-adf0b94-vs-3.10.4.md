@@ -6,9 +6,9 @@
 - commit hash: adf0b94
 - commit date: 2024-07-19
 - overall geometric mean: 1.14x faster
-- HPT reliability: 100.00%
-- HPT 99th percentile: 1.02x faster
-- Memory change: 1.14x
+- HPT reliability: 99.99%
+- HPT 99th percentile: 1.01x faster
+- Memory change: 1.15x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -187,10 +187,10 @@ Ignored benchmarks (5) of results/bm-20240719-3.14.0a0-adf0b94-PYTHON_UOPS/bm-20
 
 # HPT report
 
-- Reliability score: 100.00% likely to be faster
+- Reliability score: 99.99% likely to be faster
 - 90% likely to have a speedup of 1.04x
-- 95% likely to have a speedup of 1.04x
-- 99% likely to have a speedup of 1.02x
+- 95% likely to have a speedup of 1.02x
+- 99% likely to have a speedup of 1.01x
 
 # Memory
-- memory change: 1.14x
+- memory change: 1.15x

@@ -6,9 +6,9 @@
 - commit hash: 363fca1
 - commit date: 2024-07-13
 - overall geometric mean: 1.02x faster
-- HPT reliability: 98.26%
+- HPT reliability: 99.34%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 1.07x
+- Memory change: 1.06x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -182,10 +182,10 @@ Ignored benchmarks (6) of results/bm-20240713-3.14.0a0-363fca1-JIT/bm-20240713-l
 
 # HPT report
 
-- Reliability score: 98.26% likely to be faster
+- Reliability score: 99.34% likely to be faster
 - 90% likely to have a speedup of 1.01x
-- 95% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 1.07x
+- memory change: 1.06x

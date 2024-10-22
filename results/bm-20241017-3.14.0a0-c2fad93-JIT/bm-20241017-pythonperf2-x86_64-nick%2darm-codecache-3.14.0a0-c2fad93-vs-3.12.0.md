@@ -6,7 +6,7 @@
 - commit hash: c2fad93
 - commit date: 2024-10-17
 - overall geometric mean: 1.08x slower
-- HPT reliability: 74.06%
+- HPT reliability: 73.57%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.10x
 
@@ -197,7 +197,7 @@ Ignored benchmarks (7) of results/bm-20241017-3.14.0a0-c2fad93-JIT/bm-20241017-p
 
 # HPT report
 
-- Reliability score: 74.06% likely to be slow
+- Reliability score: 73.57% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

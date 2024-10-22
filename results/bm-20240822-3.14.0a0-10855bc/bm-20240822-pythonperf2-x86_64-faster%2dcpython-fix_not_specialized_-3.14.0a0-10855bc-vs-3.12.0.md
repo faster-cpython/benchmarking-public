@@ -6,7 +6,7 @@
 - commit hash: 10855bc
 - commit date: 2024-08-22
 - overall geometric mean: 1.03x faster
-- HPT reliability: 74.89%
+- HPT reliability: 64.17%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -184,7 +184,7 @@ Ignored benchmarks (6) of results/bm-20240822-3.14.0a0-10855bc/bm-20240822-pytho
 
 # HPT report
 
-- Reliability score: 74.89% likely to be faster
+- Reliability score: 64.17% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

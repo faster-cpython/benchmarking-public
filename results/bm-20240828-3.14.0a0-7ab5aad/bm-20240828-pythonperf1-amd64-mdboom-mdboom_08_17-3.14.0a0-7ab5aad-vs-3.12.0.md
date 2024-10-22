@@ -6,8 +6,8 @@
 - commit hash: 7ab5aad
 - commit date: 2024-08-28
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.45%
-- HPT 99th percentile: 1.00x slower
+- HPT reliability: 99.71%
+- HPT 99th percentile: 1.01x slower
 - Memory change: unknown
 
 Benchmarks with tag 'apps':
@@ -186,10 +186,10 @@ Ignored benchmarks (5) of results/bm-20240828-3.14.0a0-7ab5aad/bm-20240828-pytho
 
 # HPT report
 
-- Reliability score: 99.45% likely to be slow
+- Reliability score: 99.71% likely to be slow
 - 90% likely to have a slowdown of 1.02x
-- 95% likely to have a slowdown of 1.01x
-- 99% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.02x
+- 99% likely to have a slowdown of 1.01x
 
 # Memory
 - memory change: unknown

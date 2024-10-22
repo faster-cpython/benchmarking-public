@@ -204,8 +204,8 @@ Ignored benchmarks (4) of results/bm-20240215-3.13.0a4-9d34f60-NOGIL/bm-20240215
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.21x
-- 95% likely to have a speedup of 1.20x
+- 90% likely to have a speedup of 1.22x
+- 95% likely to have a speedup of 1.21x
 - 99% likely to have a speedup of 1.17x
 
 # Memory

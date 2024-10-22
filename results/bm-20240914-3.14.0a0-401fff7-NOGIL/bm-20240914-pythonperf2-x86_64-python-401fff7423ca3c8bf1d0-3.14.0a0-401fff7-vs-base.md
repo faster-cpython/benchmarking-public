@@ -7,8 +7,8 @@
 - commit date: 2024-09-14
 - overall geometric mean: 1.43x slower
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.31x slower
-- Memory change: 1.16x
+- HPT 99th percentile: 1.32x slower
+- Memory change: 1.15x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -211,9 +211,9 @@ Benchmark hidden because not significant (1): bench_mp_pool
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.33x
-- 95% likely to have a slowdown of 1.32x
-- 99% likely to have a slowdown of 1.31x
+- 90% likely to have a slowdown of 1.35x
+- 95% likely to have a slowdown of 1.33x
+- 99% likely to have a slowdown of 1.32x
 
 # Memory
-- memory change: 1.16x
+- memory change: 1.15x

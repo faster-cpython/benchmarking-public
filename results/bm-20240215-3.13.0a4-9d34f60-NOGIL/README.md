@@ -26,27 +26,32 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.06x slower (HPT: reliability of 98.89%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.06x slower (HPT: reliability of 95.66%, 1.00x slower at 99th %ile)
 - Memory usage: 1.04x
 - missing benchmarks: dask, sqlalchemy_declarative, sqlalchemy_imperative, unpack_sequence
 - new benchmarks: flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.12.0.md)
 - [📈time plot](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.12x slower (HPT: reliability of 100.00%, 1.02x slower at 99th %ile)
+- Geometric mean: 1.15x slower (HPT: reliability of 100.00%, 1.06x slower at 99th %ile)
 - Memory usage: 1.07x
-- missing benchmarks: bpe_tokeniser, dask, djangocms
-- [📄table](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.13.0b2.md)
-- [📈time plot](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.13.0b2.svg)
+- missing benchmarks: bpe_tokeniser, dask, djangocms, unpack_sequence
+- [📄table](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.13.0.md)
+- [📈time plot](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.12x slower (HPT: reliability of 100.00%, 1.02x slower at 99th %ile)
-- Memory usage: 1.11x
+- Geometric mean: 1.12x slower (HPT: reliability of 99.99%, 1.02x slower at 99th %ile)
+- Memory usage: 1.12x
 - missing benchmarks: 🔴 djangocms
 - [🧠memory plot](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-base-mem.svg)
 - [📄table](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-base.md)
 - [📈time plot](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.13.0b2.md)
+- [📈time plot](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.13.0b2.svg)
 

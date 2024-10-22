@@ -5,9 +5,9 @@
 - machine: windows-amd64
 - commit hash: 9d34f60
 - commit date: 2024-02-15
-- overall geometric mean: 1.04x faster \*
+- overall geometric mean: 1.04x faster
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.02x faster
+- HPT 99th percentile: 1.01x faster
 - Memory change: unknown
 
 Benchmarks with tag 'apps':
@@ -192,15 +192,12 @@ All benchmarks:
 Benchmark hidden because not significant (7): asyncio_tcp, async_tree_io, json, 2to3, unpickle_list, regex_v8, async_tree_memoization
 Ignored benchmarks (4) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-pythonperf1-amd64-python-v3.12.0-3.12.0-0fb18b0.json: aiohttp, django_template, sqlalchemy_declarative, sqlalchemy_imperative
 
-
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.03x
-- 95% likely to have a speedup of 1.03x
-- 99% likely to have a speedup of 1.02x
-
+- 95% likely to have a speedup of 1.02x
+- 99% likely to have a speedup of 1.01x
 
 # Memory
-
 - memory change: unknown

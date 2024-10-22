@@ -5,8 +5,8 @@
 - machine: linux-x86_64
 - commit hash: 9d34f60
 - commit date: 2024-02-15
-- overall geometric mean: 1.01x faster \*
-- HPT reliability: 72.82%
+- overall geometric mean: 1.01x faster
+- HPT reliability: 72.88%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 0.97x
 
@@ -191,15 +191,12 @@ All benchmarks:
 Benchmark hidden because not significant (8): pickle_list, pprint_safe_repr, bench_mp_pool, asyncio_websockets, async_generators, async_tree_cpu_io_mixed_tg, sympy_expand, mypy2
 Ignored benchmarks (5) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json: aiohttp, django_template, gunicorn, sqlalchemy_declarative, sqlalchemy_imperative
 
-
 # HPT report
 
-- Reliability score: 72.82% likely to be slow
+- Reliability score: 72.88% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
-
 # Memory
-
 - memory change: 0.97x

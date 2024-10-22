@@ -6,7 +6,7 @@
 - commit hash: 9827ade
 - commit date: 2024-10-16
 - overall geometric mean: 1.00x slower
-- HPT reliability: 77.11%
+- HPT reliability: 82.97%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -176,7 +176,7 @@ Benchmark hidden because not significant (31): deepcopy_reduce, sphinx, xml_etre
 
 # HPT report
 
-- Reliability score: 77.11% likely to be slow
+- Reliability score: 82.97% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

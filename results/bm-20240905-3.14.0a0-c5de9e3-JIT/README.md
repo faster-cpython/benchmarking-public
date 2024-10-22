@@ -27,7 +27,7 @@
 ### vs. 3.10.4
 
 - Geometric mean: 1.43x faster (HPT: reliability of 100.00%, 1.27x faster at 99th %ile)
-- Memory usage: 1.21x
+- Memory usage: 1.22x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240905-linux-x86_64-brandtbucher-tier_two_constants-3.14.0a0-c5de9e3-vs-3.10.4.md)
@@ -35,26 +35,31 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.08x faster (HPT: reliability of 99.99%, 1.02x faster at 99th %ile)
+- Geometric mean: 1.08x faster (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
 - Memory usage: 1.06x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240905-linux-x86_64-brandtbucher-tier_two_constants-3.14.0a0-c5de9e3-vs-3.12.0.md)
 - [📈time plot](bm-20240905-linux-x86_64-brandtbucher-tier_two_constants-3.14.0a0-c5de9e3-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.05x faster (HPT: reliability of 99.89%, 1.01x faster at 99th %ile)
+- Geometric mean: 1.01x faster (HPT: reliability of 87.04%, 1.00x faster at 99th %ile)
 - Memory usage: 1.09x
-- missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
-- [📄table](bm-20240905-linux-x86_64-brandtbucher-tier_two_constants-3.14.0a0-c5de9e3-vs-3.13.0b2.md)
-- [📈time plot](bm-20240905-linux-x86_64-brandtbucher-tier_two_constants-3.14.0a0-c5de9e3-vs-3.13.0b2.svg)
+- missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20240905-linux-x86_64-brandtbucher-tier_two_constants-3.14.0a0-c5de9e3-vs-3.13.0.md)
+- [📈time plot](bm-20240905-linux-x86_64-brandtbucher-tier_two_constants-3.14.0a0-c5de9e3-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x slower (HPT: reliability of 87.20%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.00x slower (HPT: reliability of 92.39%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20240905-linux-x86_64-brandtbucher-tier_two_constants-3.14.0a0-c5de9e3-vs-base-mem.svg)
 - [📄table](bm-20240905-linux-x86_64-brandtbucher-tier_two_constants-3.14.0a0-c5de9e3-vs-base.md)
 - [📈time plot](bm-20240905-linux-x86_64-brandtbucher-tier_two_constants-3.14.0a0-c5de9e3-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240905-linux-x86_64-brandtbucher-tier_two_constants-3.14.0a0-c5de9e3-vs-3.13.0b2.md)
+- [📈time plot](bm-20240905-linux-x86_64-brandtbucher-tier_two_constants-3.14.0a0-c5de9e3-vs-3.13.0b2.svg)
 

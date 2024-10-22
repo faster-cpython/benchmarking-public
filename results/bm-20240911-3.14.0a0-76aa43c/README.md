@@ -17,7 +17,7 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.32x faster (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
+- Geometric mean: 1.32x faster (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
 - Memory usage: 1.14x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, unpack_sequence
@@ -26,21 +26,21 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.04x faster (HPT: reliability of 99.88%, 1.00x faster at 99th %ile)
-- Memory usage: 0.91x
+- Geometric mean: 1.04x faster (HPT: reliability of 99.92%, 1.00x faster at 99th %ile)
+- Memory usage: 0.93x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, unpack_sequence
 - [📄table](bm-20240911-arminc-aarch64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.12.0.md)
 - [📈time plot](bm-20240911-arminc-aarch64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.03x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
-- Memory usage: 1.00x
+- Geometric mean: 1.02x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20240911-arminc-aarch64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.md)
-- [📈time plot](bm-20240911-arminc-aarch64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.svg)
+- new benchmarks: dulwich_log
+- [📄table](bm-20240911-arminc-aarch64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0.md)
+- [📈time plot](bm-20240911-arminc-aarch64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0.svg)
 
 ### vs. base
 
@@ -49,6 +49,11 @@
 - [🧠memory plot](bm-20240911-arminc-aarch64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base-mem.svg)
 - [📄table](bm-20240911-arminc-aarch64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base.md)
 - [📈time plot](bm-20240911-arminc-aarch64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240911-arminc-aarch64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.md)
+- [📈time plot](bm-20240911-arminc-aarch64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.svg)
 
 ## linux x86_64 (linux)
 
@@ -59,8 +64,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.40x faster (HPT: reliability of 100.00%, 1.30x faster at 99th %ile)
-- Memory usage: 1.11x
+- Geometric mean: 1.40x faster (HPT: reliability of 100.00%, 1.31x faster at 99th %ile)
+- Memory usage: 1.12x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240911-linux-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.10.4.md)
@@ -75,22 +80,26 @@
 - [📄table](bm-20240911-linux-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.12.0.md)
 - [📈time plot](bm-20240911-linux-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.05x faster (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
-- Memory usage: 1.00x
+- Geometric mean: 1.01x faster (HPT: reliability of 98.62%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20240911-linux-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.md)
-- [📈time plot](bm-20240911-linux-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.svg)
+- [📄table](bm-20240911-linux-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0.md)
+- [📈time plot](bm-20240911-linux-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x slower (HPT: reliability of 89.44%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.00x slower (HPT: reliability of 91.59%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20240911-linux-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base-mem.svg)
 - [📄table](bm-20240911-linux-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base.md)
 - [📈time plot](bm-20240911-linux-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240911-linux-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.md)
+- [📈time plot](bm-20240911-linux-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.svg)
 
 ## linux x86_64 (pythonperf2)
 
@@ -101,8 +110,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.33x faster (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
-- Memory usage: 1.12x
+- Geometric mean: 1.33x faster (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
+- Memory usage: 1.13x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240911-pythonperf2-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.10.4.md)
@@ -110,29 +119,33 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.03x faster (HPT: reliability of 95.45%, 1.00x faster at 99th %ile)
-- Memory usage: 0.92x
+- Geometric mean: 1.03x faster (HPT: reliability of 92.81%, 1.00x faster at 99th %ile)
+- Memory usage: 0.93x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240911-pythonperf2-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.12.0.md)
 - [📈time plot](bm-20240911-pythonperf2-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
 - Geometric mean: 1.03x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
-- Memory usage: 1.00x
+- Memory usage: 1.01x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20240911-pythonperf2-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.md)
-- [📈time plot](bm-20240911-pythonperf2-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.svg)
+- [📄table](bm-20240911-pythonperf2-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0.md)
+- [📈time plot](bm-20240911-pythonperf2-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x slower (HPT: reliability of 86.81%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.00x slower (HPT: reliability of 83.01%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20240911-pythonperf2-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base-mem.svg)
 - [📄table](bm-20240911-pythonperf2-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base.md)
 - [📈time plot](bm-20240911-pythonperf2-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240911-pythonperf2-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.md)
+- [📈time plot](bm-20240911-pythonperf2-x86_64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.svg)
 
 ## windows amd64 (pythonperf1)
 
@@ -152,28 +165,32 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.01x faster (HPT: reliability of 71.82%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.01x faster (HPT: reliability of 83.46%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, dask, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240911-pythonperf1-amd64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.12.0.md)
 - [📈time plot](bm-20240911-pythonperf1-amd64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.04x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
+- Geometric mean: 1.03x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, flaskblogging, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20240911-pythonperf1-amd64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.md)
-- [📈time plot](bm-20240911-pythonperf1-amd64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.svg)
+- [📄table](bm-20240911-pythonperf1-amd64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0.md)
+- [📈time plot](bm-20240911-pythonperf1-amd64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x slower (HPT: reliability of 62.66%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.00x slower (HPT: reliability of 52.49%, 1.00x faster at 99th %ile)
 - Memory usage: unknown
 - [📄table](bm-20240911-pythonperf1-amd64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base.md)
 - [📈time plot](bm-20240911-pythonperf1-amd64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240911-pythonperf1-amd64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.md)
+- [📈time plot](bm-20240911-pythonperf1-amd64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.svg)
 
 ## windows x86 (pythonperf1_win32)
 
@@ -193,28 +210,32 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.13x faster (HPT: reliability of 100.00%, 1.09x faster at 99th %ile)
+- Geometric mean: 1.13x faster (HPT: reliability of 100.00%, 1.10x faster at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, dask, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240911-pythonperf1_win32-x86-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.12.0.md)
 - [📈time plot](bm-20240911-pythonperf1_win32-x86-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.02x slower (HPT: reliability of 100.00%, 1.02x slower at 99th %ile)
+- Geometric mean: 1.03x faster (HPT: reliability of 94.84%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: chameleon, flaskblogging
-- new benchmarks: dulwich_log, unpack_sequence
-- [📄table](bm-20240911-pythonperf1_win32-x86-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.md)
-- [📈time plot](bm-20240911-pythonperf1_win32-x86-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.svg)
+- [📄table](bm-20240911-pythonperf1_win32-x86-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0.md)
+- [📈time plot](bm-20240911-pythonperf1_win32-x86-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.01x faster (HPT: reliability of 95.72%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.01x faster (HPT: reliability of 93.67%, 1.00x faster at 99th %ile)
 - Memory usage: unknown
 - [📄table](bm-20240911-pythonperf1_win32-x86-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base.md)
 - [📈time plot](bm-20240911-pythonperf1_win32-x86-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240911-pythonperf1_win32-x86-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.md)
+- [📈time plot](bm-20240911-pythonperf1_win32-x86-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.svg)
 
 ## darwin arm64 (darwin)
 
@@ -225,8 +246,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.28x faster (HPT: reliability of 100.00%, 1.21x faster at 99th %ile)
-- Memory usage: 1.06x
+- Geometric mean: 1.28x faster (HPT: reliability of 100.00%, 1.20x faster at 99th %ile)
+- Memory usage: 1.23x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240911-darwin-arm64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.10.4.md)
@@ -235,26 +256,30 @@
 ### vs. 3.12.0
 
 - Geometric mean: 1.08x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
-- Memory usage: 0.94x
+- Memory usage: 1.12x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240911-darwin-arm64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.12.0.md)
 - [📈time plot](bm-20240911-darwin-arm64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.01x faster (HPT: reliability of 75.51%, 1.00x slower at 99th %ile)
-- Memory usage: 0.72x
+- Geometric mean: 1.08x faster (HPT: reliability of 100.00%, 1.04x faster at 99th %ile)
+- Memory usage: 0.99x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20240911-darwin-arm64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.md)
-- [📈time plot](bm-20240911-darwin-arm64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.svg)
+- [📄table](bm-20240911-darwin-arm64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0.md)
+- [📈time plot](bm-20240911-darwin-arm64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x faster (HPT: reliability of 99.31%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.00x faster (HPT: reliability of 99.75%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20240911-darwin-arm64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base-mem.svg)
 - [📄table](bm-20240911-darwin-arm64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base.md)
 - [📈time plot](bm-20240911-darwin-arm64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240911-darwin-arm64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.md)
+- [📈time plot](bm-20240911-darwin-arm64-mdboom-unicode_check_exact-3.14.0a0-76aa43c-vs-3.13.0b2.svg)
 

@@ -6,7 +6,7 @@
 - commit hash: d19b26c
 - commit date: 2024-07-14
 - overall geometric mean: 1.02x faster
-- HPT reliability: 89.74%
+- HPT reliability: 89.37%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -182,7 +182,7 @@ Ignored benchmarks (6) of results/bm-20240714-3.14.0a0-d19b26c-JIT/bm-20240714-p
 
 # HPT report
 
-- Reliability score: 89.74% likely to be faster
+- Reliability score: 89.37% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

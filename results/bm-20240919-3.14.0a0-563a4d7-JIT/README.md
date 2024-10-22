@@ -26,8 +26,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.37x faster (HPT: reliability of 100.00%, 1.25x faster at 99th %ile)
-- Memory usage: 1.19x
+- Geometric mean: 1.37x faster (HPT: reliability of 100.00%, 1.26x faster at 99th %ile)
+- Memory usage: 1.20x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240919-linux-x86_64-savannahostrowski-jit_inv_mem_1m-3.14.0a0-563a4d7-vs-3.10.4.md)
@@ -35,27 +35,31 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.06x faster (HPT: reliability of 99.93%, 1.01x faster at 99th %ile)
-- Memory usage: 1.03x
+- Geometric mean: 1.06x faster (HPT: reliability of 99.95%, 1.01x faster at 99th %ile)
+- Memory usage: 1.04x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240919-linux-x86_64-savannahostrowski-jit_inv_mem_1m-3.14.0a0-563a4d7-vs-3.12.0.md)
 - [📈time plot](bm-20240919-linux-x86_64-savannahostrowski-jit_inv_mem_1m-3.14.0a0-563a4d7-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.04x faster (HPT: reliability of 99.98%, 1.01x faster at 99th %ile)
-- Memory usage: 1.06x
+- Geometric mean: 1.01x slower (HPT: reliability of 67.06%, 1.00x faster at 99th %ile)
+- Memory usage: 1.07x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20240919-linux-x86_64-savannahostrowski-jit_inv_mem_1m-3.14.0a0-563a4d7-vs-3.13.0b2.md)
-- [📈time plot](bm-20240919-linux-x86_64-savannahostrowski-jit_inv_mem_1m-3.14.0a0-563a4d7-vs-3.13.0b2.svg)
+- [📄table](bm-20240919-linux-x86_64-savannahostrowski-jit_inv_mem_1m-3.14.0a0-563a4d7-vs-3.13.0.md)
+- [📈time plot](bm-20240919-linux-x86_64-savannahostrowski-jit_inv_mem_1m-3.14.0a0-563a4d7-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.01x slower (HPT: reliability of 99.23%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.01x slower (HPT: reliability of 99.71%, 1.00x slower at 99th %ile)
 - Memory usage: 0.98x
 - [🧠memory plot](bm-20240919-linux-x86_64-savannahostrowski-jit_inv_mem_1m-3.14.0a0-563a4d7-vs-base-mem.svg)
 - [📄table](bm-20240919-linux-x86_64-savannahostrowski-jit_inv_mem_1m-3.14.0a0-563a4d7-vs-base.md)
 - [📈time plot](bm-20240919-linux-x86_64-savannahostrowski-jit_inv_mem_1m-3.14.0a0-563a4d7-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240919-linux-x86_64-savannahostrowski-jit_inv_mem_1m-3.14.0a0-563a4d7-vs-3.13.0b2.md)
+- [📈time plot](bm-20240919-linux-x86_64-savannahostrowski-jit_inv_mem_1m-3.14.0a0-563a4d7-vs-3.13.0b2.svg)
 

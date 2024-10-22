@@ -191,7 +191,7 @@ Ignored benchmarks (4) of results/bm-20240731-3.13.0rc1-e4a3e78/bm-20240731-pyth
 
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.16x
-- 95% likely to have a speedup of 1.16x
+- 95% likely to have a speedup of 1.15x
 - 99% likely to have a speedup of 1.14x
 
 # Memory

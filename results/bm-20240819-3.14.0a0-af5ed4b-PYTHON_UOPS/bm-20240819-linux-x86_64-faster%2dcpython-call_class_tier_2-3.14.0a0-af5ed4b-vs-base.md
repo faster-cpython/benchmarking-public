@@ -7,7 +7,7 @@
 - commit date: 2024-08-19
 - overall geometric mean: 1.13x faster
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.05x faster
+- HPT 99th percentile: 1.06x faster
 - Memory change: 1.00x
 
 Benchmarks with tag 'apps':
@@ -189,9 +189,9 @@ Benchmark hidden because not significant (9): pylint, async_tree_memoization_tg,
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.07x
+- 90% likely to have a speedup of 1.08x
 - 95% likely to have a speedup of 1.07x
-- 99% likely to have a speedup of 1.05x
+- 99% likely to have a speedup of 1.06x
 
 # Memory
 - memory change: 1.00x

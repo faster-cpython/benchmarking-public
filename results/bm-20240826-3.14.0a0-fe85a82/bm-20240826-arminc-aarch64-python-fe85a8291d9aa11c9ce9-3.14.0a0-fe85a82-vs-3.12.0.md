@@ -6,7 +6,7 @@
 - commit hash: fe85a82
 - commit date: 2024-08-26
 - overall geometric mean: 1.03x faster
-- HPT reliability: 96.42%
+- HPT reliability: 96.59%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -181,7 +181,7 @@ Ignored benchmarks (1) of results/bm-20240826-3.14.0a0-fe85a82/bm-20240826-armin
 
 # HPT report
 
-- Reliability score: 96.42% likely to be faster
+- Reliability score: 96.59% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

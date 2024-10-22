@@ -6,9 +6,9 @@
 - commit hash: 76aa43c
 - commit date: 2024-09-11
 - overall geometric mean: 1.04x faster
-- HPT reliability: 99.88%
+- HPT reliability: 99.92%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.91x
+- Memory change: 0.93x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -194,10 +194,10 @@ Ignored benchmarks (2) of results/bm-20240911-3.14.0a0-76aa43c/bm-20240911-armin
 
 # HPT report
 
-- Reliability score: 99.88% likely to be faster
+- Reliability score: 99.92% likely to be faster
 - 90% likely to have a speedup of 1.01x
 - 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.91x
+- memory change: 0.93x

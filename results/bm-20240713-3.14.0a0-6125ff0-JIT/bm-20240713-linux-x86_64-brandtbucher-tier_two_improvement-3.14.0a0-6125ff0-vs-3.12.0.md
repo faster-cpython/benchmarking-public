@@ -6,8 +6,8 @@
 - commit hash: 6125ff0
 - commit date: 2024-07-13
 - overall geometric mean: 1.07x faster
-- HPT reliability: 99.83%
-- HPT 99th percentile: 1.00x faster
+- HPT reliability: 99.94%
+- HPT 99th percentile: 1.01x faster
 - Memory change: 1.04x
 
 Benchmarks with tag 'apps':
@@ -186,10 +186,10 @@ Ignored benchmarks (6) of results/bm-20240713-3.14.0a0-6125ff0-JIT/bm-20240713-l
 
 # HPT report
 
-- Reliability score: 99.83% likely to be faster
+- Reliability score: 99.94% likely to be faster
 - 90% likely to have a speedup of 1.02x
-- 95% likely to have a speedup of 1.01x
-- 99% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.02x
+- 99% likely to have a speedup of 1.01x
 
 # Memory
 - memory change: 1.04x

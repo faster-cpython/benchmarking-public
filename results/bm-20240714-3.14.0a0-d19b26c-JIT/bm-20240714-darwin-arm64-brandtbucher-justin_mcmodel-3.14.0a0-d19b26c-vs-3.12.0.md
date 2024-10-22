@@ -6,9 +6,9 @@
 - commit hash: d19b26c
 - commit date: 2024-07-14
 - overall geometric mean: 1.06x faster
-- HPT reliability: 99.99%
-- HPT 99th percentile: 1.00x faster
-- Memory change: 1.17x
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.01x faster
+- Memory change: 1.18x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -182,10 +182,10 @@ Ignored benchmarks (14) of results/bm-20240714-3.14.0a0-d19b26c-JIT/bm-20240714-
 
 # HPT report
 
-- Reliability score: 99.99% likely to be faster
+- Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.02x
 - 95% likely to have a speedup of 1.01x
-- 99% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.01x
 
 # Memory
-- memory change: 1.17x
+- memory change: 1.18x

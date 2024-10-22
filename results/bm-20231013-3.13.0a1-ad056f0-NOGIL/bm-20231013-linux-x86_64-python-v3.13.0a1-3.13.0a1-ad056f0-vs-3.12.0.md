@@ -6,7 +6,7 @@
 - commit hash: ad056f0
 - commit date: 2023-10-13
 - overall geometric mean: 1.02x slower
-- HPT reliability: 65.71%
+- HPT reliability: 71.64%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.55x
 
@@ -196,7 +196,7 @@ Ignored benchmarks (6) of results/bm-20231013-3.13.0a1-ad056f0-NOGIL/bm-20231013
 
 # HPT report
 
-- Reliability score: 65.71% likely to be faster
+- Reliability score: 71.64% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

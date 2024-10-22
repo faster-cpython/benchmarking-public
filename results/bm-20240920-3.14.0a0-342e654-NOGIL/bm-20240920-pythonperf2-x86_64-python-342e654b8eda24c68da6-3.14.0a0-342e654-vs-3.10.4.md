@@ -6,8 +6,8 @@
 - commit hash: 342e654
 - commit date: 2024-09-20
 - overall geometric mean: 1.09x slower
-- HPT reliability: 99.98%
-- HPT 99th percentile: 1.05x slower
+- HPT reliability: 99.99%
+- HPT 99th percentile: 1.07x slower
 - Memory change: 1.30x
 
 Benchmarks with tag 'apps':
@@ -198,10 +198,10 @@ Ignored benchmarks (5) of results/bm-20240920-3.14.0a0-342e654-NOGIL/bm-20240920
 
 # HPT report
 
-- Reliability score: 99.98% likely to be slow
-- 90% likely to have a slowdown of 1.08x
-- 95% likely to have a slowdown of 1.07x
-- 99% likely to have a slowdown of 1.05x
+- Reliability score: 99.99% likely to be slow
+- 90% likely to have a slowdown of 1.09x
+- 95% likely to have a slowdown of 1.08x
+- 99% likely to have a slowdown of 1.07x
 
 # Memory
 - memory change: 1.30x

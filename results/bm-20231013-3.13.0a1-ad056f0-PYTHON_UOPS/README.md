@@ -17,7 +17,7 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.19x slower (HPT: reliability of 100.00%, 1.10x slower at 99th %ile)
+- Geometric mean: 1.19x slower (HPT: reliability of 100.00%, 1.11x slower at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, dask, django_template, dulwich_log, flaskblogging, genshi_text, genshi_xml, html5lib, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative, thrift
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
@@ -32,12 +32,16 @@
 - [📄table](bm-20231013-pythonperf1_win32-x86-python-ad056f03aee8000a1564-3.13.0a1-ad056f0-vs-3.12.0.md)
 - [📈time plot](bm-20231013-pythonperf1_win32-x86-python-ad056f03aee8000a1564-3.13.0a1-ad056f0-vs-3.12.0.svg)
 
+### vs. 3.13.0
+
+- Geometric mean: 1.33x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: django_template, dulwich_log, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
+- [📄table](bm-20231013-pythonperf1_win32-x86-python-ad056f03aee8000a1564-3.13.0a1-ad056f0-vs-3.13.0.md)
+- [📈time plot](bm-20231013-pythonperf1_win32-x86-python-ad056f03aee8000a1564-3.13.0a1-ad056f0-vs-3.13.0.svg)
+
 ### vs. 3.13.0b2
 
-- Geometric mean: 1.40x slower (HPT: reliability of 100.00%, 1.32x slower at 99th %ile)
-- Memory usage: unknown
-- missing benchmarks: django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
-- new benchmarks: unpack_sequence
 - [📄table](bm-20231013-pythonperf1_win32-x86-python-ad056f03aee8000a1564-3.13.0a1-ad056f0-vs-3.13.0b2.md)
 - [📈time plot](bm-20231013-pythonperf1_win32-x86-python-ad056f03aee8000a1564-3.13.0a1-ad056f0-vs-3.13.0b2.svg)
 

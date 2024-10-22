@@ -6,7 +6,7 @@
 - commit hash: 8cdaca8
 - commit date: 2024-10-15
 - overall geometric mean: 1.04x slower
-- HPT reliability: 99.96%
+- HPT reliability: 99.93%
 - HPT 99th percentile: 1.02x slower
 - Memory change: unknown
 
@@ -197,7 +197,7 @@ Ignored benchmarks (6) of results/bm-20241015-3.14.0a1-8cdaca8/bm-20241015-pytho
 
 # HPT report
 
-- Reliability score: 99.96% likely to be slow
+- Reliability score: 99.93% likely to be slow
 - 90% likely to have a slowdown of 1.03x
 - 95% likely to have a slowdown of 1.02x
 - 99% likely to have a slowdown of 1.02x

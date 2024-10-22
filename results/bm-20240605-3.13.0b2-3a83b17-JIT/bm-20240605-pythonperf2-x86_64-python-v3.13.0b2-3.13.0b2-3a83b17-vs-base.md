@@ -6,7 +6,7 @@
 - commit hash: 3a83b17
 - commit date: 2024-06-05
 - overall geometric mean: 1.02x slower
-- HPT reliability: 97.97%
+- HPT reliability: 95.53%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.09x
 
@@ -200,7 +200,7 @@ Ignored benchmarks (1) of results/bm-20240605-3.13.0b2-3a83b17/bm-20240605-pytho
 
 # HPT report
 
-- Reliability score: 97.97% likely to be slow
+- Reliability score: 95.53% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

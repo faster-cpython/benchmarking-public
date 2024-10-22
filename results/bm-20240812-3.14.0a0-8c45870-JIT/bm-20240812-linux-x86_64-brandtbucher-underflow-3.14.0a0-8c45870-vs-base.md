@@ -6,7 +6,7 @@
 - commit hash: 8c45870
 - commit date: 2024-08-12
 - overall geometric mean: 1.01x slower
-- HPT reliability: 95.83%
+- HPT reliability: 93.30%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.02x
 
@@ -166,7 +166,7 @@ Benchmark hidden because not significant (24): scimark_lu, pprint_pformat, crypt
 
 # HPT report
 
-- Reliability score: 95.83% likely to be slow
+- Reliability score: 93.30% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

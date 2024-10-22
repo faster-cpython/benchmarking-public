@@ -1,4 +1,3 @@
-
 # Results vs. 3.12.0
 
 - fork: python
@@ -198,7 +197,6 @@ Benchmark hidden because not significant (1): unpickle_list
 Ignored benchmarks (4) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-pythonperf2-x86_64-python-v3.12.0-3.12.0-0fb18b0.json: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
 Ignored benchmarks (6) of results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf2-x86_64-python-v3.10.4-3.10.4-9d38120.json: flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
 
-
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
@@ -206,7 +204,5 @@ Ignored benchmarks (6) of results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonp
 - 95% likely to have a slowdown of 1.24x
 - 99% likely to have a slowdown of 1.22x
 
-
 # Memory
-
 - memory change: 0.84x

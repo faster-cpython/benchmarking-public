@@ -6,7 +6,7 @@
 - commit hash: b0f5f3a
 - commit date: 2024-09-23
 - overall geometric mean: 1.01x slower
-- HPT reliability: 95.43%
+- HPT reliability: 97.95%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -196,7 +196,7 @@ Ignored benchmarks (5) of results/bm-20240923-3.14.0a0-b0f5f3a/bm-20240923-pytho
 
 # HPT report
 
-- Reliability score: 95.43% likely to be slow
+- Reliability score: 97.95% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

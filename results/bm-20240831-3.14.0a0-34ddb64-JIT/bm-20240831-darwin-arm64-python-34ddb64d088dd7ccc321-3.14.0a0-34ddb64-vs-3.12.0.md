@@ -6,9 +6,9 @@
 - commit hash: 34ddb64
 - commit date: 2024-08-31
 - overall geometric mean: 1.04x faster
-- HPT reliability: 92.64%
+- HPT reliability: 94.48%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.90x
+- Memory change: 0.85x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -185,10 +185,10 @@ Ignored benchmarks (14) of results/bm-20240831-3.14.0a0-34ddb64-JIT/bm-20240831-
 
 # HPT report
 
-- Reliability score: 92.64% likely to be faster
+- Reliability score: 94.48% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.90x
+- memory change: 0.85x

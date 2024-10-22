@@ -6,7 +6,7 @@
 - commit hash: dc5a9d5
 - commit date: 2024-08-01
 - overall geometric mean: 1.08x faster
-- HPT reliability: 99.99%
+- HPT reliability: 100.00%
 - HPT 99th percentile: 1.02x faster
 - Memory change: 1.05x
 
@@ -185,8 +185,8 @@ Ignored benchmarks (6) of results/bm-20240801-3.14.0a0-dc5a9d5-JIT/bm-20240801-l
 
 # HPT report
 
-- Reliability score: 99.99% likely to be faster
-- 90% likely to have a speedup of 1.03x
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.04x
 - 95% likely to have a speedup of 1.03x
 - 99% likely to have a speedup of 1.02x
 

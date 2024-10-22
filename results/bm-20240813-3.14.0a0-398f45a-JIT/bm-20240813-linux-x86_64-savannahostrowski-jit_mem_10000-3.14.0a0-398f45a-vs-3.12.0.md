@@ -6,7 +6,7 @@
 - commit hash: 398f45a
 - commit date: 2024-08-13
 - overall geometric mean: 1.07x faster
-- HPT reliability: 99.55%
+- HPT reliability: 99.84%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.02x
 
@@ -184,8 +184,8 @@ Ignored benchmarks (6) of results/bm-20240813-3.14.0a0-398f45a-JIT/bm-20240813-l
 
 # HPT report
 
-- Reliability score: 99.55% likely to be faster
-- 90% likely to have a speedup of 1.01x
+- Reliability score: 99.84% likely to be faster
+- 90% likely to have a speedup of 1.02x
 - 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x
 

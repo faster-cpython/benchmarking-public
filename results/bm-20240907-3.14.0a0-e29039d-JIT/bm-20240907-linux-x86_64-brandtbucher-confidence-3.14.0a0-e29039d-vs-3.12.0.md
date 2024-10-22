@@ -6,8 +6,8 @@
 - commit hash: e29039d
 - commit date: 2024-09-07
 - overall geometric mean: 1.07x faster
-- HPT reliability: 99.99%
-- HPT 99th percentile: 1.01x faster
+- HPT reliability: 100.00%
+- HPT 99th percentile: 1.02x faster
 - Memory change: 1.06x
 
 Benchmarks with tag 'apps':
@@ -195,10 +195,10 @@ Ignored benchmarks (6) of results/bm-20240907-3.14.0a0-e29039d-JIT/bm-20240907-l
 
 # HPT report
 
-- Reliability score: 99.99% likely to be faster
-- 90% likely to have a speedup of 1.04x
-- 95% likely to have a speedup of 1.03x
-- 99% likely to have a speedup of 1.01x
+- Reliability score: 100.00% likely to be faster
+- 90% likely to have a speedup of 1.06x
+- 95% likely to have a speedup of 1.05x
+- 99% likely to have a speedup of 1.02x
 
 # Memory
 - memory change: 1.06x

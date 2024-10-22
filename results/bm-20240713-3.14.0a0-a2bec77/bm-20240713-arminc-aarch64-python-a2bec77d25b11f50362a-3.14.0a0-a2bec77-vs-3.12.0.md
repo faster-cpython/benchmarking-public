@@ -6,9 +6,9 @@
 - commit hash: a2bec77
 - commit date: 2024-07-13
 - overall geometric mean: 1.02x faster
-- HPT reliability: 65.21%
+- HPT reliability: 76.36%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.93x
+- Memory change: 0.94x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -185,10 +185,10 @@ Ignored benchmarks (1) of results/bm-20240713-3.14.0a0-a2bec77/bm-20240713-armin
 
 # HPT report
 
-- Reliability score: 65.21% likely to be faster
+- Reliability score: 76.36% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.93x
+- memory change: 0.94x

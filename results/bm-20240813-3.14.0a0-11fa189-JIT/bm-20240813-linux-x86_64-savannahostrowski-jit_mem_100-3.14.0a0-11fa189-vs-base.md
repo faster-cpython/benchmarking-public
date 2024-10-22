@@ -6,7 +6,7 @@
 - commit hash: 11fa189
 - commit date: 2024-08-13
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.31%
+- HPT reliability: 99.36%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 0.97x
 
@@ -168,7 +168,7 @@ Benchmark hidden because not significant (26): deepcopy_reduce, django_template,
 
 # HPT report
 
-- Reliability score: 99.31% likely to be slow
+- Reliability score: 99.36% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

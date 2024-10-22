@@ -188,7 +188,7 @@ Benchmark hidden because not significant (17): create_gc_cycles, async_tree_io_t
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.04x
+- 90% likely to have a slowdown of 1.05x
 - 95% likely to have a slowdown of 1.04x
 - 99% likely to have a slowdown of 1.03x
 

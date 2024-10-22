@@ -177,7 +177,7 @@ Benchmark hidden because not significant (18): pprint_safe_repr, comprehensions,
 
 - Reliability score: 100.00% likely to be slow
 - 90% likely to have a slowdown of 1.01x
-- 95% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.01x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory

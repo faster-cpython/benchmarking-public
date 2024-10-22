@@ -6,7 +6,7 @@
 - commit hash: 342e654
 - commit date: 2024-09-20
 - overall geometric mean: 1.04x faster
-- HPT reliability: 96.97%
+- HPT reliability: 95.67%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -196,7 +196,7 @@ Ignored benchmarks (5) of results/bm-20240920-3.14.0a0-342e654-JIT/bm-20240920-p
 
 # HPT report
 
-- Reliability score: 96.97% likely to be faster
+- Reliability score: 95.67% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

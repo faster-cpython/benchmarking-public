@@ -8,7 +8,7 @@
 - overall geometric mean: 1.00x slower
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 1.47x
+- Memory change: 1.54x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -174,4 +174,4 @@ Benchmark hidden because not significant (35): async_tree_memoization_tg, pylint
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 1.47x
+- memory change: 1.54x

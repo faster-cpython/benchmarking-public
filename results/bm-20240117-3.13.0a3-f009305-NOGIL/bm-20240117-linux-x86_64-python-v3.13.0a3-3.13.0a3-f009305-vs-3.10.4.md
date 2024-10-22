@@ -8,7 +8,7 @@
 - overall geometric mean: 1.15x faster
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.16x faster
-- Memory change: 1.19x
+- Memory change: 1.20x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -209,4 +209,4 @@ Ignored benchmarks (4) of results/bm-20240117-3.13.0a3-f009305-NOGIL/bm-20240117
 - 99% likely to have a speedup of 1.16x
 
 # Memory
-- memory change: 1.19x
+- memory change: 1.20x

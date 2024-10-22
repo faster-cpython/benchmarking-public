@@ -38,11 +38,16 @@
 - [📄table](bm-20240815-linux-x86_64-python-b106cf8d978b32b04a43-3.14.0a0-b106cf8-vs-3.12.0.md)
 - [📈time plot](bm-20240815-linux-x86_64-python-b106cf8d978b32b04a43-3.14.0a0-b106cf8-vs-3.12.0.svg)
 
+### vs. 3.13.0
+
+- Geometric mean: 1.02x faster (HPT: reliability of 98.96%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
+- missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20240815-linux-x86_64-python-b106cf8d978b32b04a43-3.14.0a0-b106cf8-vs-3.13.0.md)
+- [📈time plot](bm-20240815-linux-x86_64-python-b106cf8d978b32b04a43-3.14.0a0-b106cf8-vs-3.13.0.svg)
+
 ### vs. 3.13.0b2
 
-- Geometric mean: 1.05x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
-- Memory usage: 1.01x
-- missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
 - [📄table](bm-20240815-linux-x86_64-python-b106cf8d978b32b04a43-3.14.0a0-b106cf8-vs-3.13.0b2.md)
 - [📈time plot](bm-20240815-linux-x86_64-python-b106cf8d978b32b04a43-3.14.0a0-b106cf8-vs-3.13.0b2.svg)
 

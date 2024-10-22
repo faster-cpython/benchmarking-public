@@ -6,7 +6,7 @@
 - commit hash: 8278d07
 - commit date: 2024-10-12
 - overall geometric mean: 1.00x slower
-- HPT reliability: 98.08%
+- HPT reliability: 98.56%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -116,7 +116,7 @@ Benchmark hidden because not significant (71): html5lib, deepcopy_reduce, async_
 
 # HPT report
 
-- Reliability score: 98.08% likely to be faster
+- Reliability score: 98.56% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

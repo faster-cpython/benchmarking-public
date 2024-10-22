@@ -5,10 +5,10 @@
 - machine: darwin-arm64
 - commit hash: 9d34f60
 - commit date: 2024-02-15
-- overall geometric mean: 1.01x slower \*
-- HPT reliability: 83.43%
+- overall geometric mean: 1.01x slower
+- HPT reliability: 87.52%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 1.13x
+- Memory change: 1.14x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -191,15 +191,12 @@ All benchmarks:
 Benchmark hidden because not significant (9): async_tree_cpu_io_mixed_tg, float, async_tree_memoization_tg, sympy_expand, bench_thread_pool, asyncio_websockets, dulwich_log, tornado_http, unpickle
 Ignored benchmarks (5) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-darwin-arm64-python-v3.12.0-3.12.0-0fb18b0.json: aiohttp, django_template, gunicorn, sqlalchemy_declarative, sqlalchemy_imperative
 
-
 # HPT report
 
-- Reliability score: 83.43% likely to be slow
+- Reliability score: 87.52% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
-
 # Memory
-
-- memory change: 1.13x
+- memory change: 1.14x

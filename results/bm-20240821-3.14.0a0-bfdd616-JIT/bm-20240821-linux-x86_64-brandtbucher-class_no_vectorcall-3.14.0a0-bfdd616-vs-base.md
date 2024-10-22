@@ -6,7 +6,7 @@
 - commit hash: bfdd616
 - commit date: 2024-08-21
 - overall geometric mean: 1.00x slower
-- HPT reliability: 95.67%
+- HPT reliability: 98.28%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -144,7 +144,7 @@ Benchmark hidden because not significant (45): scimark_sparse_mat_mult, pycparse
 
 # HPT report
 
-- Reliability score: 95.67% likely to be slow
+- Reliability score: 98.28% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

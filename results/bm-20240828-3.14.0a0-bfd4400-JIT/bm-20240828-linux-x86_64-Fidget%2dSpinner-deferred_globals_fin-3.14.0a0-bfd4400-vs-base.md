@@ -6,7 +6,7 @@
 - commit hash: bfd4400
 - commit date: 2024-08-28
 - overall geometric mean: 1.00x faster
-- HPT reliability: 80.49%
+- HPT reliability: 87.65%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -147,7 +147,7 @@ Benchmark hidden because not significant (40): pprint_safe_repr, async_tree_cpu_
 
 # HPT report
 
-- Reliability score: 80.49% likely to be faster
+- Reliability score: 87.65% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

@@ -6,7 +6,7 @@
 - commit hash: 0e19ac7
 - commit date: 2024-10-07
 - overall geometric mean: 1.04x slower
-- HPT reliability: 98.13%
+- HPT reliability: 99.15%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.92x
 
@@ -192,7 +192,7 @@ Ignored benchmarks (2) of results/bm-20241007-3.14.0a0-0e19ac7/bm-20241007-armin
 
 # HPT report
 
-- Reliability score: 98.13% likely to be faster
+- Reliability score: 99.15% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

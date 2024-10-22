@@ -6,9 +6,9 @@
 - commit hash: a6f1035
 - commit date: 2024-09-21
 - overall geometric mean: 1.00x slower
-- HPT reliability: 99.91%
+- HPT reliability: 99.93%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 1.02x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -175,10 +175,10 @@ Benchmark hidden because not significant (38): tornado_http, async_tree_cpu_io_m
 
 # HPT report
 
-- Reliability score: 99.91% likely to be slow
+- Reliability score: 99.93% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 1.02x
+- memory change: 1.00x

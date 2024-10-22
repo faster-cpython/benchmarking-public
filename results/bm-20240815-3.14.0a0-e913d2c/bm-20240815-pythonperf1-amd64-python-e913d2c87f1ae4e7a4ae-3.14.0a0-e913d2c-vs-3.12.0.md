@@ -6,7 +6,7 @@
 - commit hash: e913d2c
 - commit date: 2024-08-15
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.67%
+- HPT reliability: 99.83%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -183,8 +183,8 @@ Ignored benchmarks (5) of results/bm-20240815-3.14.0a0-e913d2c/bm-20240815-pytho
 
 # HPT report
 
-- Reliability score: 99.67% likely to be slow
-- 90% likely to have a slowdown of 1.01x
+- Reliability score: 99.83% likely to be slow
+- 90% likely to have a slowdown of 1.02x
 - 95% likely to have a slowdown of 1.01x
 - 99% likely to have a slowdown of 1.00x
 

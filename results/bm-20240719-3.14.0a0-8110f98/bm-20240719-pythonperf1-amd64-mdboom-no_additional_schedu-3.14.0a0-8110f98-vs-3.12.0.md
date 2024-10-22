@@ -6,7 +6,7 @@
 - commit hash: 8110f98
 - commit date: 2024-07-19
 - overall geometric mean: 1.02x faster
-- HPT reliability: 69.44%
+- HPT reliability: 76.41%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -177,7 +177,7 @@ Ignored benchmarks (5) of results/bm-20240719-3.14.0a0-8110f98/bm-20240719-pytho
 
 # HPT report
 
-- Reliability score: 69.44% likely to be slow
+- Reliability score: 76.41% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

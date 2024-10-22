@@ -6,7 +6,7 @@
 - commit hash: 8278d07
 - commit date: 2024-10-12
 - overall geometric mean: 1.01x slower
-- HPT reliability: 96.61%
+- HPT reliability: 94.79%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -153,7 +153,7 @@ Benchmark hidden because not significant (41): pylint, tornado_http, python_star
 
 # HPT report
 
-- Reliability score: 96.61% likely to be slow
+- Reliability score: 94.79% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

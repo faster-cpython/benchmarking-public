@@ -17,8 +17,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.42x faster (HPT: reliability of 100.00%, 1.30x faster at 99th %ile)
-- Memory usage: 1.11x
+- Geometric mean: 1.42x faster (HPT: reliability of 100.00%, 1.31x faster at 99th %ile)
+- Memory usage: 1.12x
 - missing benchmarks: aiohttp, chameleon, djangocms, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240714-linux-x86_64-nohlson-enable_fortify_sourc-3.14.0a0-7a595e7-vs-3.10.4.md)
@@ -33,13 +33,13 @@
 - [📄table](bm-20240714-linux-x86_64-nohlson-enable_fortify_sourc-3.14.0a0-7a595e7-vs-3.12.0.md)
 - [📈time plot](bm-20240714-linux-x86_64-nohlson-enable_fortify_sourc-3.14.0a0-7a595e7-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.05x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
-- Memory usage: 1.00x
-- missing benchmarks: aiohttp, chameleon, djangocms, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
-- [📄table](bm-20240714-linux-x86_64-nohlson-enable_fortify_sourc-3.14.0a0-7a595e7-vs-3.13.0b2.md)
-- [📈time plot](bm-20240714-linux-x86_64-nohlson-enable_fortify_sourc-3.14.0a0-7a595e7-vs-3.13.0b2.svg)
+- Geometric mean: 1.01x faster (HPT: reliability of 61.46%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
+- missing benchmarks: aiohttp, chameleon, djangocms, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20240714-linux-x86_64-nohlson-enable_fortify_sourc-3.14.0a0-7a595e7-vs-3.13.0.md)
+- [📈time plot](bm-20240714-linux-x86_64-nohlson-enable_fortify_sourc-3.14.0a0-7a595e7-vs-3.13.0.svg)
 
 ### vs. base
 
@@ -48,4 +48,9 @@
 - [🧠memory plot](bm-20240714-linux-x86_64-nohlson-enable_fortify_sourc-3.14.0a0-7a595e7-vs-base-mem.svg)
 - [📄table](bm-20240714-linux-x86_64-nohlson-enable_fortify_sourc-3.14.0a0-7a595e7-vs-base.md)
 - [📈time plot](bm-20240714-linux-x86_64-nohlson-enable_fortify_sourc-3.14.0a0-7a595e7-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240714-linux-x86_64-nohlson-enable_fortify_sourc-3.14.0a0-7a595e7-vs-3.13.0b2.md)
+- [📈time plot](bm-20240714-linux-x86_64-nohlson-enable_fortify_sourc-3.14.0a0-7a595e7-vs-3.13.0b2.svg)
 

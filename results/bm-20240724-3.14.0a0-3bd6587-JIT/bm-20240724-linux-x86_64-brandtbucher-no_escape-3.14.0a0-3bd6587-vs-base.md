@@ -6,7 +6,7 @@
 - commit hash: 3bd6587
 - commit date: 2024-07-24
 - overall geometric mean: 1.00x faster
-- HPT reliability: 90.23%
+- HPT reliability: 94.96%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -156,7 +156,7 @@ Benchmark hidden because not significant (39): unpickle_pure_python, genshi_text
 
 # HPT report
 
-- Reliability score: 90.23% likely to be faster
+- Reliability score: 94.96% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

@@ -6,7 +6,7 @@
 - commit hash: 55bff1c
 - commit date: 2024-08-28
 - overall geometric mean: 1.00x slower
-- HPT reliability: 58.87%
+- HPT reliability: 68.32%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -159,7 +159,7 @@ Benchmark hidden because not significant (34): pylint, async_tree_none, typing_r
 
 # HPT report
 
-- Reliability score: 58.87% likely to be slow
+- Reliability score: 68.32% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

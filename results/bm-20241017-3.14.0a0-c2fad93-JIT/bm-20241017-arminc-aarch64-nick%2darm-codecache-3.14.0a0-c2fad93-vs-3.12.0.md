@@ -204,7 +204,7 @@ Ignored benchmarks (3) of results/bm-20241017-3.14.0a0-c2fad93-JIT/bm-20241017-a
 
 - Reliability score: 100.00% likely to be slow
 - 90% likely to have a slowdown of 1.04x
-- 95% likely to have a slowdown of 1.04x
+- 95% likely to have a slowdown of 1.03x
 - 99% likely to have a slowdown of 1.02x
 
 # Memory

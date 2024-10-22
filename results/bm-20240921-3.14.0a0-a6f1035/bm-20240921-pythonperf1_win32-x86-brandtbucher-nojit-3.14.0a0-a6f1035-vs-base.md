@@ -6,7 +6,7 @@
 - commit hash: a6f1035
 - commit date: 2024-09-21
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.97%
+- HPT reliability: 99.87%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -182,7 +182,7 @@ Benchmark hidden because not significant (22): genshi_text, sympy_integrate, pyl
 
 # HPT report
 
-- Reliability score: 99.97% likely to be slow
+- Reliability score: 99.87% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

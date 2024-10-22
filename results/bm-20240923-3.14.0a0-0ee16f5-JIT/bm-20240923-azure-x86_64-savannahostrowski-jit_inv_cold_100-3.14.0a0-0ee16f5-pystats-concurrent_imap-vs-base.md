@@ -4926,4 +4926,4 @@ Modifying a function, e.g. `func.__defaults__ = ...`, etc.
 </details>
 
 ---
-Stats gathered on: 2024-09-23
+Stats gathered on: 2024-10-21

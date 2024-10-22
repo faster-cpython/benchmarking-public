@@ -6,7 +6,7 @@
 - commit hash: 16cd6cc
 - commit date: 2024-10-05
 - overall geometric mean: 1.11x faster
-- HPT reliability: 99.97%
+- HPT reliability: 99.95%
 - HPT 99th percentile: 1.03x faster
 - Memory change: 1.21x
 
@@ -194,7 +194,7 @@ Ignored benchmarks (6) of results/bm-20241005-3.14.0a0-16cd6cc-JIT/bm-20241005-a
 
 # HPT report
 
-- Reliability score: 99.97% likely to be faster
+- Reliability score: 99.95% likely to be faster
 - 90% likely to have a speedup of 1.07x
 - 95% likely to have a speedup of 1.06x
 - 99% likely to have a speedup of 1.03x

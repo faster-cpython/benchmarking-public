@@ -6,9 +6,9 @@
 - commit hash: c2fad93
 - commit date: 2024-10-17
 - overall geometric mean: 1.04x faster
-- HPT reliability: 99.85%
-- HPT 99th percentile: 1.01x faster
-- Memory change: 1.16x
+- HPT reliability: 99.97%
+- HPT 99th percentile: 1.02x faster
+- Memory change: 1.15x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -197,10 +197,10 @@ Ignored benchmarks (7) of results/bm-20241017-3.14.0a0-c2fad93-JIT/bm-20241017-l
 
 # HPT report
 
-- Reliability score: 99.85% likely to be faster
-- 90% likely to have a speedup of 1.03x
-- 95% likely to have a speedup of 1.02x
-- 99% likely to have a speedup of 1.01x
+- Reliability score: 99.97% likely to be faster
+- 90% likely to have a speedup of 1.04x
+- 95% likely to have a speedup of 1.03x
+- 99% likely to have a speedup of 1.02x
 
 # Memory
-- memory change: 1.16x
+- memory change: 1.15x

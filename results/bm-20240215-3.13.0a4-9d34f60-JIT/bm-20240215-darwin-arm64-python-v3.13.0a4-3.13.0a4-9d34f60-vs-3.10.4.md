@@ -5,7 +5,7 @@
 - machine: darwin-arm64
 - commit hash: 9d34f60
 - commit date: 2024-02-15
-- overall geometric mean: 1.18x faster \*
+- overall geometric mean: 1.18x faster
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.10x faster
 - Memory change: 1.26x
@@ -188,15 +188,12 @@ Benchmark hidden because not significant (3): mypy2, asyncio_websockets, pidigit
 Ignored benchmarks (11) of results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, thrift
 Ignored benchmarks (4) of results/bm-20240215-3.13.0a4-9d34f60-JIT/bm-20240215-darwin-arm64-python-v3.13.0a4-3.13.0a4-9d34f60.json: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
 
-
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.15x
+- 90% likely to have a speedup of 1.14x
 - 95% likely to have a speedup of 1.13x
 - 99% likely to have a speedup of 1.10x
 
-
 # Memory
-
 - memory change: 1.26x

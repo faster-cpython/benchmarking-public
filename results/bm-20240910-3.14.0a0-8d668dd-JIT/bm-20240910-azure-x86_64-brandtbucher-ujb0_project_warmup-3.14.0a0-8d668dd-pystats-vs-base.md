@@ -4329,9 +4329,9 @@ other names.
 <tr>
 <td align="left">Interpreter increfs</td>
 <td align="right">41,210,052,013</td>
-<td align="right">29.9%</td>
+<td align="right">41,210,052,013 / 0 !!</td>
 <td align="right">15,352,444,248</td>
-<td align="right">10.6%</td>
+<td align="right">15,352,444,248 / 0 !!</td>
 <td align="right">-62.7%</td>
 </tr>
 <tr>
@@ -4345,25 +4345,25 @@ other names.
 <tr>
 <td align="left">Increfs</td>
 <td align="right">96,509,508,823</td>
-<td align="right">70.1%</td>
+<td align="right">96,509,508,823 / 0 !!</td>
 <td align="right">129,448,827,668</td>
-<td align="right">89.4%</td>
+<td align="right">129,448,827,668 / 0 !!</td>
 <td align="right">34.1%</td>
 </tr>
 <tr>
 <td align="left">Interpreter decrefs</td>
 <td align="right">56,365,676,905</td>
-<td align="right">35.2%</td>
+<td align="right">56,365,676,905 / 0 !!</td>
 <td align="right">37,866,282,889</td>
-<td align="right">22.5%</td>
+<td align="right">37,866,282,889 / 0 !!</td>
 <td align="right">-32.8%</td>
 </tr>
 <tr>
 <td align="left">Decrefs</td>
 <td align="right">103,859,174,619</td>
-<td align="right">64.8%</td>
+<td align="right">103,859,174,619 / 0 !!</td>
 <td align="right">130,075,874,573</td>
-<td align="right">77.5%</td>
+<td align="right">130,075,874,573 / 0 !!</td>
 <td align="right">25.2%</td>
 </tr>
 <tr>
@@ -6724,4 +6724,4 @@ Modifying the builtins, `__builtins__.__dict__[var] = ...`
 </details>
 
 ---
-Stats gathered on: 2024-09-10
+Stats gathered on: 2024-10-21

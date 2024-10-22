@@ -31,28 +31,32 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.01x faster (HPT: reliability of 87.88%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.01x faster (HPT: reliability of 81.51%, 1.00x faster at 99th %ile)
 - Memory usage: 0.97x
 - missing benchmarks: dask, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, djangocms, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.12.0.md)
 - [📈time plot](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.02x slower (HPT: reliability of 94.96%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.05x slower (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
 - Memory usage: 1.00x
 - missing benchmarks: dask
-- new benchmarks: unpack_sequence
-- [📄table](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.13.0b2.md)
-- [📈time plot](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.13.0b2.svg)
+- [📄table](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.13.0.md)
+- [📈time plot](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.02x slower (HPT: reliability of 77.45%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.02x slower (HPT: reliability of 87.04%, 1.00x slower at 99th %ile)
 - Memory usage: 1.04x
 - new benchmarks: bpe_tokeniser, unpack_sequence
 - [🧠memory plot](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-base-mem.svg)
 - [📄table](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-base.md)
 - [📈time plot](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.13.0b2.md)
+- [📈time plot](bm-20240215-linux-x86_64-python-v3.13.0a4-3.13.0a4-9d34f60-vs-3.13.0b2.svg)
 

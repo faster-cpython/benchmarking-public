@@ -6,7 +6,7 @@
 - commit hash: 71920f1
 - commit date: 2024-07-30
 - overall geometric mean: 1.08x faster
-- HPT reliability: 99.96%
+- HPT reliability: 99.99%
 - HPT 99th percentile: 1.02x faster
 - Memory change: 1.05x
 
@@ -184,9 +184,9 @@ Ignored benchmarks (6) of results/bm-20240730-3.14.0a0-71920f1-JIT/bm-20240730-l
 
 # HPT report
 
-- Reliability score: 99.96% likely to be faster
-- 90% likely to have a speedup of 1.04x
-- 95% likely to have a speedup of 1.03x
+- Reliability score: 99.99% likely to be faster
+- 90% likely to have a speedup of 1.05x
+- 95% likely to have a speedup of 1.04x
 - 99% likely to have a speedup of 1.02x
 
 # Memory

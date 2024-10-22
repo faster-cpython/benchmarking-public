@@ -6,7 +6,7 @@
 - commit hash: bbb07e8
 - commit date: 2024-07-13
 - overall geometric mean: 1.00x faster
-- HPT reliability: 97.08%
+- HPT reliability: 96.47%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -156,7 +156,7 @@ Benchmark hidden because not significant (31): nqueens, async_tree_io_tg, pylint
 
 # HPT report
 
-- Reliability score: 97.08% likely to be faster
+- Reliability score: 96.47% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

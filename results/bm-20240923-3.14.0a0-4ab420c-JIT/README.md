@@ -35,21 +35,20 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.05x faster (HPT: reliability of 99.85%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.05x faster (HPT: reliability of 99.94%, 1.01x faster at 99th %ile)
 - Memory usage: 1.01x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240923-linux-x86_64-savannahostrowski-jit_inv_cold_10k-3.14.0a0-4ab420c-vs-3.12.0.md)
 - [📈time plot](bm-20240923-linux-x86_64-savannahostrowski-jit_inv_cold_10k-3.14.0a0-4ab420c-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.03x faster (HPT: reliability of 99.59%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.02x slower (HPT: reliability of 88.31%, 1.00x slower at 99th %ile)
 - Memory usage: 1.05x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20240923-linux-x86_64-savannahostrowski-jit_inv_cold_10k-3.14.0a0-4ab420c-vs-3.13.0b2.md)
-- [📈time plot](bm-20240923-linux-x86_64-savannahostrowski-jit_inv_cold_10k-3.14.0a0-4ab420c-vs-3.13.0b2.svg)
+- [📄table](bm-20240923-linux-x86_64-savannahostrowski-jit_inv_cold_10k-3.14.0a0-4ab420c-vs-3.13.0.md)
+- [📈time plot](bm-20240923-linux-x86_64-savannahostrowski-jit_inv_cold_10k-3.14.0a0-4ab420c-vs-3.13.0.svg)
 
 ### vs. base
 
@@ -58,4 +57,9 @@
 - [🧠memory plot](bm-20240923-linux-x86_64-savannahostrowski-jit_inv_cold_10k-3.14.0a0-4ab420c-vs-base-mem.svg)
 - [📄table](bm-20240923-linux-x86_64-savannahostrowski-jit_inv_cold_10k-3.14.0a0-4ab420c-vs-base.md)
 - [📈time plot](bm-20240923-linux-x86_64-savannahostrowski-jit_inv_cold_10k-3.14.0a0-4ab420c-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240923-linux-x86_64-savannahostrowski-jit_inv_cold_10k-3.14.0a0-4ab420c-vs-3.13.0b2.md)
+- [📈time plot](bm-20240923-linux-x86_64-savannahostrowski-jit_inv_cold_10k-3.14.0a0-4ab420c-vs-3.13.0b2.svg)
 

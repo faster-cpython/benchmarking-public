@@ -6,7 +6,7 @@
 - commit hash: b3aa1b5
 - commit date: 2024-10-11
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.84%
+- HPT reliability: 99.77%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -195,9 +195,9 @@ Ignored benchmarks (5) of results/bm-20241011-3.14.0a0-b3aa1b5/bm-20241011-pytho
 
 # HPT report
 
-- Reliability score: 99.84% likely to be slow
+- Reliability score: 99.77% likely to be slow
 - 90% likely to have a slowdown of 1.02x
-- 95% likely to have a slowdown of 1.01x
+- 95% likely to have a slowdown of 1.02x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory

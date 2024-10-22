@@ -6,7 +6,7 @@
 - commit hash: 076d169
 - commit date: 2024-03-12
 - overall geometric mean: 1.03x faster
-- HPT reliability: 99.91%
+- HPT reliability: 99.94%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.94x
 
@@ -193,7 +193,7 @@ Ignored benchmarks (7) of results/bm-20240312-3.13.0a5-076d169/bm-20240312-linux
 
 # HPT report
 
-- Reliability score: 99.91% likely to be faster
+- Reliability score: 99.94% likely to be faster
 - 90% likely to have a speedup of 1.01x
 - 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x

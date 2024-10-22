@@ -6,9 +6,9 @@
 - commit hash: 1ba3555
 - commit date: 2024-09-30
 - overall geometric mean: 1.00x slower
-- HPT reliability: 64.12%
+- HPT reliability: 56.82%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 0.92x
+- Memory change: 0.93x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -200,10 +200,10 @@ Ignored benchmarks (7) of results/bm-20240930-3.13.0rc2+-1ba3555/bm-20240930-pyt
 
 # HPT report
 
-- Reliability score: 64.12% likely to be slow
+- Reliability score: 56.82% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 0.92x
+- memory change: 0.93x

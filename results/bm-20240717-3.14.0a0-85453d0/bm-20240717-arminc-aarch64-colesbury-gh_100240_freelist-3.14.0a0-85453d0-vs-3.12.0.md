@@ -6,7 +6,7 @@
 - commit hash: 85453d0
 - commit date: 2024-07-17
 - overall geometric mean: 1.03x faster
-- HPT reliability: 97.27%
+- HPT reliability: 94.99%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -183,7 +183,7 @@ Ignored benchmarks (1) of results/bm-20240717-3.14.0a0-85453d0/bm-20240717-armin
 
 # HPT report
 
-- Reliability score: 97.27% likely to be faster
+- Reliability score: 94.99% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

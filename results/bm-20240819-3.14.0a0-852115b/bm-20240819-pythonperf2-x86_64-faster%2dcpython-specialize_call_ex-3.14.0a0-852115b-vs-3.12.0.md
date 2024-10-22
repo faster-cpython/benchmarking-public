@@ -6,7 +6,7 @@
 - commit hash: 852115b
 - commit date: 2024-08-19
 - overall geometric mean: 1.03x faster
-- HPT reliability: 67.69%
+- HPT reliability: 57.35%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -185,7 +185,7 @@ Ignored benchmarks (6) of results/bm-20240819-3.14.0a0-852115b/bm-20240819-pytho
 
 # HPT report
 
-- Reliability score: 67.69% likely to be faster
+- Reliability score: 57.35% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

@@ -18,7 +18,7 @@
 ### vs. 3.10.4
 
 - Geometric mean: 1.24x faster (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
-- Memory usage: 0.64x
+- Memory usage: 0.65x
 - missing benchmarks: djangocms, sqlalchemy_declarative, sqlalchemy_imperative, unpack_sequence
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
 - [📄table](bm-20231013-linux-x86_64-python-v3.13.0a1-3.13.0a1-ad056f0-vs-3.10.4.md)
@@ -26,28 +26,33 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.02x slower (HPT: reliability of 65.71%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.02x slower (HPT: reliability of 71.64%, 1.00x faster at 99th %ile)
 - Memory usage: 0.55x
 - missing benchmarks: sqlalchemy_declarative, sqlalchemy_imperative, unpack_sequence
 - new benchmarks: flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20231013-linux-x86_64-python-v3.13.0a1-3.13.0a1-ad056f0-vs-3.12.0.md)
 - [📈time plot](bm-20231013-linux-x86_64-python-v3.13.0a1-3.13.0a1-ad056f0-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.08x slower (HPT: reliability of 89.53%, 1.00x slower at 99th %ile)
-- Memory usage: 0.56x
-- missing benchmarks: bpe_tokeniser, djangocms
-- [📄table](bm-20231013-linux-x86_64-python-v3.13.0a1-3.13.0a1-ad056f0-vs-3.13.0b2.md)
-- [📈time plot](bm-20231013-linux-x86_64-python-v3.13.0a1-3.13.0a1-ad056f0-vs-3.13.0b2.svg)
+- Geometric mean: 1.11x slower (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
+- Memory usage: 0.57x
+- missing benchmarks: bpe_tokeniser, djangocms, unpack_sequence
+- [📄table](bm-20231013-linux-x86_64-python-v3.13.0a1-3.13.0a1-ad056f0-vs-3.13.0.md)
+- [📈time plot](bm-20231013-linux-x86_64-python-v3.13.0a1-3.13.0a1-ad056f0-vs-3.13.0.svg)
 
 ### vs. base
 
 - Geometric mean: 1.04x slower (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
-- Memory usage: 0.58x
+- Memory usage: 0.59x
 - missing benchmarks: 🔴 unpack_sequence
 - new benchmarks: aiohttp, dask, django_template, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, mypy2, pylint, thrift
 - [🧠memory plot](bm-20231013-linux-x86_64-python-v3.13.0a1-3.13.0a1-ad056f0-vs-base-mem.svg)
 - [📄table](bm-20231013-linux-x86_64-python-v3.13.0a1-3.13.0a1-ad056f0-vs-base.md)
 - [📈time plot](bm-20231013-linux-x86_64-python-v3.13.0a1-3.13.0a1-ad056f0-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20231013-linux-x86_64-python-v3.13.0a1-3.13.0a1-ad056f0-vs-3.13.0b2.md)
+- [📈time plot](bm-20231013-linux-x86_64-python-v3.13.0a1-3.13.0a1-ad056f0-vs-3.13.0b2.svg)
 

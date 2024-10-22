@@ -6,9 +6,9 @@
 - commit hash: f9222b1
 - commit date: 2024-08-26
 - overall geometric mean: 1.07x faster
-- HPT reliability: 98.58%
+- HPT reliability: 99.41%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 1.08x
+- Memory change: 1.07x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -184,10 +184,10 @@ Ignored benchmarks (6) of results/bm-20240826-3.14.0a0-f9222b1-JIT/bm-20240826-l
 
 # HPT report
 
-- Reliability score: 98.58% likely to be faster
-- 90% likely to have a speedup of 1.01x
-- 95% likely to have a speedup of 1.01x
+- Reliability score: 99.41% likely to be faster
+- 90% likely to have a speedup of 1.02x
+- 95% likely to have a speedup of 1.02x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 1.08x
+- memory change: 1.07x

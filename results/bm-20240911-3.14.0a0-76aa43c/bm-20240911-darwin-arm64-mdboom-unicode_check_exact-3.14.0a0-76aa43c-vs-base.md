@@ -6,7 +6,7 @@
 - commit hash: 76aa43c
 - commit date: 2024-09-11
 - overall geometric mean: 1.00x faster
-- HPT reliability: 99.31%
+- HPT reliability: 99.75%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -163,7 +163,7 @@ Benchmark hidden because not significant (49): tornado_http, pycparser, async_tr
 
 # HPT report
 
-- Reliability score: 99.31% likely to be faster
+- Reliability score: 99.75% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

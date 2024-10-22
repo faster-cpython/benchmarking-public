@@ -6,7 +6,7 @@
 - commit hash: dc5a9d5
 - commit date: 2024-08-01
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.32%
+- HPT reliability: 98.28%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -178,7 +178,7 @@ Benchmark hidden because not significant (17): json, tornado_http, async_tree_me
 
 # HPT report
 
-- Reliability score: 99.32% likely to be slow
+- Reliability score: 98.28% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

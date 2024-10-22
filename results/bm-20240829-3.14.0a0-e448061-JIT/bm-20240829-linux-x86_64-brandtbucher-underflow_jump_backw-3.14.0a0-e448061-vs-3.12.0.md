@@ -6,7 +6,7 @@
 - commit hash: e448061
 - commit date: 2024-08-29
 - overall geometric mean: 1.02x faster
-- HPT reliability: 85.26%
+- HPT reliability: 92.06%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.11x
 
@@ -184,7 +184,7 @@ Ignored benchmarks (6) of results/bm-20240829-3.14.0a0-e448061-JIT/bm-20240829-l
 
 # HPT report
 
-- Reliability score: 85.26% likely to be faster
+- Reliability score: 92.06% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

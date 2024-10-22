@@ -6,7 +6,7 @@
 - commit hash: f009305
 - commit date: 2024-01-17
 - overall geometric mean: 1.02x faster
-- HPT reliability: 99.11%
+- HPT reliability: 99.52%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -194,7 +194,7 @@ Ignored benchmarks (7) of results/bm-20240117-3.13.0a3-f009305/bm-20240117-linux
 
 # HPT report
 
-- Reliability score: 99.11% likely to be faster
+- Reliability score: 99.52% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

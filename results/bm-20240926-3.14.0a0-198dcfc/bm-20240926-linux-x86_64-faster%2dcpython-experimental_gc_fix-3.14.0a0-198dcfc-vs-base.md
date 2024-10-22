@@ -6,9 +6,9 @@
 - commit hash: 198dcfc
 - commit date: 2024-09-26
 - overall geometric mean: 1.03x slower
-- HPT reliability: 95.51%
+- HPT reliability: 97.59%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 0.97x
+- Memory change: 0.96x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -193,10 +193,10 @@ Benchmark hidden because not significant (19): deepcopy_reduce, pprint_safe_repr
 
 # HPT report
 
-- Reliability score: 95.51% likely to be slow
+- Reliability score: 97.59% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 0.97x
+- memory change: 0.96x

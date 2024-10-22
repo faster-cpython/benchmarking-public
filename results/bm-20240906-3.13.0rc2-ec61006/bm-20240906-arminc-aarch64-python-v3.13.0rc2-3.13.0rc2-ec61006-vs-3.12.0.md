@@ -6,9 +6,9 @@
 - commit hash: ec61006
 - commit date: 2024-09-06
 - overall geometric mean: 1.01x faster
-- HPT reliability: 70.57%
+- HPT reliability: 89.13%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.92x
+- Memory change: 0.93x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -204,10 +204,10 @@ Ignored benchmarks (3) of results/bm-20240906-3.13.0rc2-ec61006/bm-20240906-armi
 
 # HPT report
 
-- Reliability score: 70.57% likely to be faster
+- Reliability score: 89.13% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.92x
+- memory change: 0.93x

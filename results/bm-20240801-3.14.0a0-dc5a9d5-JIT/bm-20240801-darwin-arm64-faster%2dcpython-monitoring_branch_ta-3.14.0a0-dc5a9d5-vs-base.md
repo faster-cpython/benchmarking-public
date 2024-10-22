@@ -8,7 +8,7 @@
 - overall geometric mean: 1.01x faster
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 1.01x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -195,4 +195,4 @@ Benchmark hidden because not significant (25): async_tree_eager_io, async_tree_e
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 1.01x
+- memory change: 1.00x

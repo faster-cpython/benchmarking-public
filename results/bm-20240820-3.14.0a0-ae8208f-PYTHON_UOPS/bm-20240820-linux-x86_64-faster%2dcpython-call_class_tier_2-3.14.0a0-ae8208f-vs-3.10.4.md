@@ -8,7 +8,7 @@
 - overall geometric mean: 1.22x faster
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.07x faster
-- Memory change: 1.13x
+- Memory change: 1.14x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -188,4 +188,4 @@ Ignored benchmarks (5) of results/bm-20240820-3.14.0a0-ae8208f-PYTHON_UOPS/bm-20
 - 99% likely to have a speedup of 1.07x
 
 # Memory
-- memory change: 1.13x
+- memory change: 1.14x

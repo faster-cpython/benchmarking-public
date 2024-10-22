@@ -6,9 +6,9 @@
 - commit hash: db6f5e1
 - commit date: 2024-08-13
 - overall geometric mean: 1.05x slower
-- HPT reliability: 99.83%
-- HPT 99th percentile: 1.01x slower
-- Memory change: 1.28x
+- HPT reliability: 99.96%
+- HPT 99th percentile: 1.03x slower
+- Memory change: 1.29x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -184,10 +184,10 @@ Ignored benchmarks (5) of results/bm-20240813-3.14.0a0-db6f5e1-NOGIL/bm-20240813
 
 # HPT report
 
-- Reliability score: 99.83% likely to be slow
-- 90% likely to have a slowdown of 1.04x
-- 95% likely to have a slowdown of 1.03x
-- 99% likely to have a slowdown of 1.01x
+- Reliability score: 99.96% likely to be slow
+- 90% likely to have a slowdown of 1.05x
+- 95% likely to have a slowdown of 1.04x
+- 99% likely to have a slowdown of 1.03x
 
 # Memory
-- memory change: 1.28x
+- memory change: 1.29x

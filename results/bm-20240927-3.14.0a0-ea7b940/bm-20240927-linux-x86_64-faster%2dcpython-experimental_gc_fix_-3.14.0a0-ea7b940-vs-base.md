@@ -6,7 +6,7 @@
 - commit hash: ea7b940
 - commit date: 2024-09-27
 - overall geometric mean: 1.00x faster
-- HPT reliability: 97.16%
+- HPT reliability: 93.81%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 0.96x
 
@@ -193,7 +193,7 @@ Benchmark hidden because not significant (20): scimark_lu, scimark_sparse_mat_mu
 
 # HPT report
 
-- Reliability score: 97.16% likely to be slow
+- Reliability score: 93.81% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

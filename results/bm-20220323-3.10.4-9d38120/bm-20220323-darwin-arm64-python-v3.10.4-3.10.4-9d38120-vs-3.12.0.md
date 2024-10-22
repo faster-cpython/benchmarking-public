@@ -1,4 +1,3 @@
-
 # Results vs. 3.12.0
 
 - fork: python
@@ -9,7 +8,7 @@
 - overall geometric mean: 1.19x slower
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.13x slower
-- Memory change: 0.93x
+- Memory change: 0.91x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -195,7 +194,6 @@ Benchmark hidden because not significant (3): json, asyncio_websockets, pathlib
 Ignored benchmarks (4) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-darwin-arm64-python-v3.12.0-3.12.0-0fb18b0.json: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
 Ignored benchmarks (6) of results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json: flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
 
-
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
@@ -203,7 +201,5 @@ Ignored benchmarks (6) of results/bm-20220323-3.10.4-9d38120/bm-20220323-darwin-
 - 95% likely to have a slowdown of 1.15x
 - 99% likely to have a slowdown of 1.13x
 
-
 # Memory
-
-- memory change: 0.93x
+- memory change: 0.91x

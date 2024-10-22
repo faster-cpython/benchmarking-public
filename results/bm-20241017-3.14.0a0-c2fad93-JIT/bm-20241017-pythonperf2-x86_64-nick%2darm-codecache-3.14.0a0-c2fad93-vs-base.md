@@ -6,7 +6,7 @@
 - commit hash: c2fad93
 - commit date: 2024-10-17
 - overall geometric mean: 1.00x faster
-- HPT reliability: 98.98%
+- HPT reliability: 99.15%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.02x
 
@@ -168,7 +168,7 @@ Benchmark hidden because not significant (33): async_tree_none_tg, pylint, async
 
 # HPT report
 
-- Reliability score: 98.98% likely to be faster
+- Reliability score: 99.15% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

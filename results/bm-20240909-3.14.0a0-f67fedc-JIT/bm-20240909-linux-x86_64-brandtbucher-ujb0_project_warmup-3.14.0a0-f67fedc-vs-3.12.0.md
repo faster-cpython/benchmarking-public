@@ -6,9 +6,9 @@
 - commit hash: f67fedc
 - commit date: 2024-09-09
 - overall geometric mean: 1.02x faster
-- HPT reliability: 78.89%
+- HPT reliability: 88.31%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 1.12x
+- Memory change: 1.13x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -196,10 +196,10 @@ Ignored benchmarks (6) of results/bm-20240909-3.14.0a0-f67fedc-JIT/bm-20240909-l
 
 # HPT report
 
-- Reliability score: 78.89% likely to be faster
+- Reliability score: 88.31% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 1.12x
+- memory change: 1.13x

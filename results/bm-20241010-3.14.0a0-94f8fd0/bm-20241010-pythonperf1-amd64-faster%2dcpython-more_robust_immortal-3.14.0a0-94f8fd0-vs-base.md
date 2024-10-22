@@ -7,7 +7,7 @@
 - commit date: 2024-10-10
 - overall geometric mean: 1.02x faster
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.00x faster
+- HPT 99th percentile: 1.01x faster
 - Memory change: unknown
 
 Benchmarks with tag 'apps':
@@ -170,7 +170,7 @@ Benchmark hidden because not significant (31): async_tree_none_tg, async_tree_io
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.01x
 - 95% likely to have a speedup of 1.01x
-- 99% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.01x
 
 # Memory
 - memory change: unknown

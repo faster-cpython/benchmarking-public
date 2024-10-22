@@ -6,8 +6,8 @@
 - commit hash: 04eb5c8
 - commit date: 2024-07-27
 - overall geometric mean: 1.05x slower
-- HPT reliability: 99.99%
-- HPT 99th percentile: 1.02x slower
+- HPT reliability: 99.98%
+- HPT 99th percentile: 1.01x slower
 - Memory change: 1.00x
 
 Benchmarks with tag 'apps':
@@ -194,10 +194,10 @@ Ignored benchmarks (1) of results/bm-20240727-3.14.0a0-04eb5c8-JIT/bm-20240727-a
 
 # HPT report
 
-- Reliability score: 99.99% likely to be slow
+- Reliability score: 99.98% likely to be slow
 - 90% likely to have a slowdown of 1.03x
 - 95% likely to have a slowdown of 1.02x
-- 99% likely to have a slowdown of 1.02x
+- 99% likely to have a slowdown of 1.01x
 
 # Memory
 - memory change: 1.00x

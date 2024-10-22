@@ -185,7 +185,7 @@ Ignored benchmarks (6) of results/bm-20240904-3.14.0a0-2fa7b0e/bm-20240904-linux
 
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.04x
-- 95% likely to have a speedup of 1.03x
+- 95% likely to have a speedup of 1.04x
 - 99% likely to have a speedup of 1.03x
 
 # Memory

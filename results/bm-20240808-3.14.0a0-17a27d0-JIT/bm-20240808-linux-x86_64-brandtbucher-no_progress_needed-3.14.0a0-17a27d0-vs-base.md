@@ -6,7 +6,7 @@
 - commit hash: 17a27d0
 - commit date: 2024-08-08
 - overall geometric mean: 1.01x faster
-- HPT reliability: 75.88%
+- HPT reliability: 76.06%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -164,7 +164,7 @@ Benchmark hidden because not significant (28): async_tree_cpu_io_mixed_tg, scima
 
 # HPT report
 
-- Reliability score: 75.88% likely to be faster
+- Reliability score: 76.06% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

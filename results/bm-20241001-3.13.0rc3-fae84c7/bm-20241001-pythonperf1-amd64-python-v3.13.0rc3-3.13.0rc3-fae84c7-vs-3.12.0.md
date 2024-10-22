@@ -201,7 +201,7 @@ Ignored benchmarks (6) of results/bm-20241001-3.13.0rc3-fae84c7/bm-20241001-pyth
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.03x
+- 90% likely to have a speedup of 1.04x
 - 95% likely to have a speedup of 1.03x
 - 99% likely to have a speedup of 1.02x
 

@@ -7,8 +7,8 @@
 - commit date: 2023-11-22
 - overall geometric mean: 1.21x slower
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.07x slower
-- Memory change: 0.61x
+- HPT 99th percentile: 1.08x slower
+- Memory change: 0.62x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -213,7 +213,7 @@ Ignored benchmarks (1) of results/bm-20231122-3.13.0a2-9c4347e/bm-20231122-linux
 - Reliability score: 100.00% likely to be slow
 - 90% likely to have a slowdown of 1.08x
 - 95% likely to have a slowdown of 1.08x
-- 99% likely to have a slowdown of 1.07x
+- 99% likely to have a slowdown of 1.08x
 
 # Memory
-- memory change: 0.61x
+- memory change: 0.62x

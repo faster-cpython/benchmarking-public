@@ -6,7 +6,7 @@
 - commit hash: 04eb5c8
 - commit date: 2024-07-27
 - overall geometric mean: 1.02x faster
-- HPT reliability: 74.59%
+- HPT reliability: 80.11%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -186,7 +186,7 @@ Ignored benchmarks (5) of results/bm-20240727-3.14.0a0-04eb5c8-JIT/bm-20240727-p
 
 # HPT report
 
-- Reliability score: 74.59% likely to be faster
+- Reliability score: 80.11% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

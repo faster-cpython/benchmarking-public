@@ -6,9 +6,9 @@
 - commit hash: a6f1035
 - commit date: 2024-09-21
 - overall geometric mean: 1.03x faster
-- HPT reliability: 97.08%
+- HPT reliability: 98.04%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.92x
+- Memory change: 0.94x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -194,10 +194,10 @@ Ignored benchmarks (2) of results/bm-20240921-3.14.0a0-a6f1035/bm-20240921-armin
 
 # HPT report
 
-- Reliability score: 97.08% likely to be faster
+- Reliability score: 98.04% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.92x
+- memory change: 0.94x

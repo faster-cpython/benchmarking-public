@@ -192,8 +192,8 @@ Ignored benchmarks (1) of results/bm-20240831-3.14.0a0-34ddb64-JIT/bm-20240831-a
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.05x
-- 95% likely to have a slowdown of 1.04x
+- 90% likely to have a slowdown of 1.04x
+- 95% likely to have a slowdown of 1.03x
 - 99% likely to have a slowdown of 1.02x
 
 # Memory

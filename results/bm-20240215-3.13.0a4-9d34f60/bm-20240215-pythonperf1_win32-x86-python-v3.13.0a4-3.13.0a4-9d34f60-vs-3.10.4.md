@@ -198,8 +198,8 @@ Ignored benchmarks (4) of results/bm-20240215-3.13.0a4-9d34f60/bm-20240215-pytho
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.16x
-- 95% likely to have a speedup of 1.15x
+- 90% likely to have a speedup of 1.17x
+- 95% likely to have a speedup of 1.16x
 - 99% likely to have a speedup of 1.15x
 
 # Memory

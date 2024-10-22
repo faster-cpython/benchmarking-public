@@ -6,7 +6,7 @@
 - commit hash: 0e19ac7
 - commit date: 2024-10-07
 - overall geometric mean: 1.00x faster
-- HPT reliability: 71.70%
+- HPT reliability: 66.73%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -132,7 +132,7 @@ Benchmark hidden because not significant (61): bench_mp_pool, sqlglot_optimize, 
 
 # HPT report
 
-- Reliability score: 71.70% likely to be faster
+- Reliability score: 66.73% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

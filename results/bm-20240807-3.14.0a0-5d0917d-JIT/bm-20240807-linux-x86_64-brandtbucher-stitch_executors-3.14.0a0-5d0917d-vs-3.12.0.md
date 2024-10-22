@@ -6,8 +6,8 @@
 - commit hash: 5d0917d
 - commit date: 2024-08-07
 - overall geometric mean: 1.08x faster
-- HPT reliability: 99.97%
-- HPT 99th percentile: 1.01x faster
+- HPT reliability: 99.99%
+- HPT 99th percentile: 1.02x faster
 - Memory change: 1.04x
 
 Benchmarks with tag 'apps':
@@ -184,10 +184,10 @@ Ignored benchmarks (6) of results/bm-20240807-3.14.0a0-5d0917d-JIT/bm-20240807-l
 
 # HPT report
 
-- Reliability score: 99.97% likely to be faster
-- 90% likely to have a speedup of 1.04x
-- 95% likely to have a speedup of 1.03x
-- 99% likely to have a speedup of 1.01x
+- Reliability score: 99.99% likely to be faster
+- 90% likely to have a speedup of 1.05x
+- 95% likely to have a speedup of 1.04x
+- 99% likely to have a speedup of 1.02x
 
 # Memory
 - memory change: 1.04x

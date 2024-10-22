@@ -6,7 +6,7 @@
 - commit hash: 15229e0
 - commit date: 2024-10-17
 - overall geometric mean: 1.00x faster
-- HPT reliability: 65.70%
+- HPT reliability: 73.47%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -196,7 +196,7 @@ Ignored benchmarks (6) of results/bm-20241017-3.14.0a1+-15229e0-JIT/bm-20241017-
 
 # HPT report
 
-- Reliability score: 65.70% likely to be faster
+- Reliability score: 73.47% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

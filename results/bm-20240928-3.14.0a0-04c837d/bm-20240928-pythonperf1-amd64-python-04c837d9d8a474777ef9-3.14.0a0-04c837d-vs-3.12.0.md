@@ -6,7 +6,7 @@
 - commit hash: 04c837d
 - commit date: 2024-09-28
 - overall geometric mean: 1.03x slower
-- HPT reliability: 99.93%
+- HPT reliability: 99.94%
 - HPT 99th percentile: 1.01x slower
 - Memory change: unknown
 
@@ -196,7 +196,7 @@ Ignored benchmarks (5) of results/bm-20240928-3.14.0a0-04c837d/bm-20240928-pytho
 
 # HPT report
 
-- Reliability score: 99.93% likely to be slow
+- Reliability score: 99.94% likely to be slow
 - 90% likely to have a slowdown of 1.02x
 - 95% likely to have a slowdown of 1.02x
 - 99% likely to have a slowdown of 1.01x

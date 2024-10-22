@@ -6,9 +6,9 @@
 - commit hash: 3a83b17
 - commit date: 2024-06-05
 - overall geometric mean: 1.00x slower
-- HPT reliability: 70.35%
+- HPT reliability: 69.20%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 0.93x
+- Memory change: 0.94x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -196,10 +196,10 @@ Ignored benchmarks (7) of results/bm-20240605-3.13.0b2-3a83b17/bm-20240605-pytho
 
 # HPT report
 
-- Reliability score: 70.35% likely to be slow
+- Reliability score: 69.20% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 0.93x
+- memory change: 0.94x

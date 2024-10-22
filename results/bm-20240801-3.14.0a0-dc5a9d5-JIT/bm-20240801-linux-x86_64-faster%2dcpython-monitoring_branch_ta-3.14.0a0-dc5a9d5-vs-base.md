@@ -6,7 +6,7 @@
 - commit hash: dc5a9d5
 - commit date: 2024-08-01
 - overall geometric mean: 1.00x faster
-- HPT reliability: 96.49%
+- HPT reliability: 96.92%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -142,7 +142,7 @@ Benchmark hidden because not significant (44): async_tree_memoization_tg, async_
 
 # HPT report
 
-- Reliability score: 96.49% likely to be faster
+- Reliability score: 96.92% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

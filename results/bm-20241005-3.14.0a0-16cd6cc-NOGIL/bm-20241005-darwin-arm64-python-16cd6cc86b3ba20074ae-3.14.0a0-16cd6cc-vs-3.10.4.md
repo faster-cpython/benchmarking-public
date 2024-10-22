@@ -7,8 +7,8 @@
 - commit date: 2024-10-05
 - overall geometric mean: 1.12x slower
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.09x slower
-- Memory change: 0.65x
+- HPT 99th percentile: 1.10x slower
+- Memory change: 0.60x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -199,8 +199,8 @@ Ignored benchmarks (13) of results/bm-20241005-3.14.0a0-16cd6cc-NOGIL/bm-2024100
 
 - Reliability score: 100.00% likely to be slow
 - 90% likely to have a slowdown of 1.14x
-- 95% likely to have a slowdown of 1.12x
-- 99% likely to have a slowdown of 1.09x
+- 95% likely to have a slowdown of 1.13x
+- 99% likely to have a slowdown of 1.10x
 
 # Memory
-- memory change: 0.65x
+- memory change: 0.60x

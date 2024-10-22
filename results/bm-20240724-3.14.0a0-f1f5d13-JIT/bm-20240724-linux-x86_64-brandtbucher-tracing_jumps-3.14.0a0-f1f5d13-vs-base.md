@@ -6,7 +6,7 @@
 - commit hash: f1f5d13
 - commit date: 2024-07-24
 - overall geometric mean: 1.00x slower
-- HPT reliability: 60.72%
+- HPT reliability: 52.01%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.01x
 
@@ -165,7 +165,7 @@ Benchmark hidden because not significant (28): dask, async_tree_io_tg, unpickle_
 
 # HPT report
 
-- Reliability score: 60.72% likely to be slow
+- Reliability score: 52.01% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

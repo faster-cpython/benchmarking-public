@@ -6,7 +6,7 @@
 - commit hash: 7f9fe5a
 - commit date: 2024-09-26
 - overall geometric mean: 1.00x faster
-- HPT reliability: 97.25%
+- HPT reliability: 99.60%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -156,7 +156,7 @@ Benchmark hidden because not significant (40): pickle_list, logging_silent, asyn
 
 # HPT report
 
-- Reliability score: 97.25% likely to be faster
+- Reliability score: 99.60% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

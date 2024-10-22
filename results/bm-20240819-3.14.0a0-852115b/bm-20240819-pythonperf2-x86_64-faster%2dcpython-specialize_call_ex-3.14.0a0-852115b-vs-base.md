@@ -6,7 +6,7 @@
 - commit hash: 852115b
 - commit date: 2024-08-19
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.94%
+- HPT reliability: 99.92%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -159,7 +159,7 @@ Benchmark hidden because not significant (31): async_tree_io, tomli_loads, async
 
 # HPT report
 
-- Reliability score: 99.94% likely to be slow
+- Reliability score: 99.92% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

@@ -6,8 +6,8 @@
 - commit hash: bfd4400
 - commit date: 2024-08-28
 - overall geometric mean: 1.00x faster
-- HPT reliability: 54.38%
-- HPT 99th percentile: 1.00x faster
+- HPT reliability: 54.34%
+- HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
 Benchmarks with tag 'apps':
@@ -149,10 +149,10 @@ Benchmark hidden because not significant (37): async_tree_io_tg, async_tree_io, 
 
 # HPT report
 
-- Reliability score: 54.38% likely to be faster
-- 90% likely to have a speedup of 1.00x
-- 95% likely to have a speedup of 1.00x
-- 99% likely to have a speedup of 1.00x
+- Reliability score: 54.34% likely to be slow
+- 90% likely to have a slowdown of 1.00x
+- 95% likely to have a slowdown of 1.00x
+- 99% likely to have a slowdown of 1.00x
 
 # Memory
 - memory change: 1.00x

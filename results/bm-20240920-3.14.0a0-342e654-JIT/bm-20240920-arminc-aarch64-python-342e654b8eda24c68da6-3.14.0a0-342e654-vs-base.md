@@ -186,7 +186,7 @@ Benchmark hidden because not significant (19): async_tree_io_tg, xml_etree_iterp
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.04x
+- 90% likely to have a slowdown of 1.05x
 - 95% likely to have a slowdown of 1.04x
 - 99% likely to have a slowdown of 1.03x
 

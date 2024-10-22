@@ -1,4 +1,3 @@
-
 # Results vs. 3.10.4
 
 - fork: python
@@ -189,7 +188,6 @@ Benchmark hidden because not significant (3): logging_simple, python_startup, un
 Ignored benchmarks (10) of results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf1-amd64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, django_template, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, sqlalchemy_declarative, sqlalchemy_imperative, thrift
 Ignored benchmarks (4) of results/bm-20240117-3.13.0a3-f009305-PYTHON_UOPS/bm-20240117-pythonperf1-amd64-python-v3.13.0a3-3.13.0a3-f009305.json: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
 
-
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
@@ -197,7 +195,5 @@ Ignored benchmarks (4) of results/bm-20240117-3.13.0a3-f009305-PYTHON_UOPS/bm-20
 - 95% likely to have a speedup of 1.13x
 - 99% likely to have a speedup of 1.12x
 
-
 # Memory
-
 - memory change: unknown

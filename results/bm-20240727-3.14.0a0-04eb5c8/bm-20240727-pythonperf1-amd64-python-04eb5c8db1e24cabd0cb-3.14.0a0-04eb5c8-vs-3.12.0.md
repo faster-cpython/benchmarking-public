@@ -6,7 +6,7 @@
 - commit hash: 04eb5c8
 - commit date: 2024-07-27
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.91%
+- HPT reliability: 99.93%
 - HPT 99th percentile: 1.01x slower
 - Memory change: unknown
 
@@ -185,7 +185,7 @@ Ignored benchmarks (5) of results/bm-20240727-3.14.0a0-04eb5c8/bm-20240727-pytho
 
 # HPT report
 
-- Reliability score: 99.91% likely to be slow
+- Reliability score: 99.93% likely to be slow
 - 90% likely to have a slowdown of 1.02x
 - 95% likely to have a slowdown of 1.02x
 - 99% likely to have a slowdown of 1.01x

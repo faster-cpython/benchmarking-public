@@ -6,7 +6,7 @@
 - commit hash: bbb07e8
 - commit date: 2024-07-13
 - overall geometric mean: 1.00x slower
-- HPT reliability: 99.27%
+- HPT reliability: 99.83%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -128,7 +128,7 @@ Benchmark hidden because not significant (53): pylint, xml_etree_iterparse, rege
 
 # HPT report
 
-- Reliability score: 99.27% likely to be slow
+- Reliability score: 99.83% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

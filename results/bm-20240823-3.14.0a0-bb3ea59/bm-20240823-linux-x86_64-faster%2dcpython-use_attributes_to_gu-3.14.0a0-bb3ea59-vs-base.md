@@ -6,7 +6,7 @@
 - commit hash: bb3ea59
 - commit date: 2024-08-23
 - overall geometric mean: 1.00x faster
-- HPT reliability: 99.98%
+- HPT reliability: 99.99%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -159,7 +159,7 @@ Benchmark hidden because not significant (36): nbody, json, pylint, sympy_expand
 
 # HPT report
 
-- Reliability score: 99.98% likely to be slow
+- Reliability score: 99.99% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

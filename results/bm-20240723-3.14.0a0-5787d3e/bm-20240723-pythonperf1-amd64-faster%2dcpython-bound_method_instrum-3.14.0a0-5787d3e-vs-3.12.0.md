@@ -6,7 +6,7 @@
 - commit hash: 5787d3e
 - commit date: 2024-07-23
 - overall geometric mean: 1.00x slower
-- HPT reliability: 97.88%
+- HPT reliability: 98.85%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -183,8 +183,8 @@ Ignored benchmarks (5) of results/bm-20240723-3.14.0a0-5787d3e/bm-20240723-pytho
 
 # HPT report
 
-- Reliability score: 97.88% likely to be slow
-- 90% likely to have a slowdown of 1.00x
+- Reliability score: 98.85% likely to be slow
+- 90% likely to have a slowdown of 1.01x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 

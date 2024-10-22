@@ -36,27 +36,31 @@
 ### vs. 3.12.0
 
 - Geometric mean: 1.06x faster (HPT: reliability of 99.96%, 1.01x faster at 99th %ile)
-- Memory usage: 1.06x
+- Memory usage: 1.07x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240906-linux-x86_64-brandtbucher-trace_through-3.14.0a0-b1a2c42-vs-3.12.0.md)
 - [📈time plot](bm-20240906-linux-x86_64-brandtbucher-trace_through-3.14.0a0-b1a2c42-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.04x faster (HPT: reliability of 99.98%, 1.01x faster at 99th %ile)
-- Memory usage: 1.09x
+- Geometric mean: 1.00x slower (HPT: reliability of 78.64%, 1.00x faster at 99th %ile)
+- Memory usage: 1.11x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20240906-linux-x86_64-brandtbucher-trace_through-3.14.0a0-b1a2c42-vs-3.13.0b2.md)
-- [📈time plot](bm-20240906-linux-x86_64-brandtbucher-trace_through-3.14.0a0-b1a2c42-vs-3.13.0b2.svg)
+- [📄table](bm-20240906-linux-x86_64-brandtbucher-trace_through-3.14.0a0-b1a2c42-vs-3.13.0.md)
+- [📈time plot](bm-20240906-linux-x86_64-brandtbucher-trace_through-3.14.0a0-b1a2c42-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x slower (HPT: reliability of 81.25%, 1.00x slower at 99th %ile)
-- Memory usage: 1.01x
+- Geometric mean: 1.00x slower (HPT: reliability of 81.50%, 1.00x slower at 99th %ile)
+- Memory usage: 1.02x
 - new benchmarks: pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - [🧠memory plot](bm-20240906-linux-x86_64-brandtbucher-trace_through-3.14.0a0-b1a2c42-vs-base-mem.svg)
 - [📄table](bm-20240906-linux-x86_64-brandtbucher-trace_through-3.14.0a0-b1a2c42-vs-base.md)
 - [📈time plot](bm-20240906-linux-x86_64-brandtbucher-trace_through-3.14.0a0-b1a2c42-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240906-linux-x86_64-brandtbucher-trace_through-3.14.0a0-b1a2c42-vs-3.13.0b2.md)
+- [📈time plot](bm-20240906-linux-x86_64-brandtbucher-trace_through-3.14.0a0-b1a2c42-vs-3.13.0b2.svg)
 

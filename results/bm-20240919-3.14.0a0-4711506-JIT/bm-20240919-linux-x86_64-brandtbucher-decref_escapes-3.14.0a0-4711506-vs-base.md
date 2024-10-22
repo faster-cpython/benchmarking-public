@@ -6,7 +6,7 @@
 - commit hash: 4711506
 - commit date: 2024-09-19
 - overall geometric mean: 1.00x slower
-- HPT reliability: 98.98%
+- HPT reliability: 97.57%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -164,7 +164,7 @@ Benchmark hidden because not significant (37): async_tree_cpu_io_mixed, async_tr
 
 # HPT report
 
-- Reliability score: 98.98% likely to be slow
+- Reliability score: 97.57% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

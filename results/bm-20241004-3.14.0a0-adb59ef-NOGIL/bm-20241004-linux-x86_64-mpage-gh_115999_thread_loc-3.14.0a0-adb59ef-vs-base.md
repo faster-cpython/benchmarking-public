@@ -6,7 +6,7 @@
 - commit hash: adb59ef
 - commit date: 2024-10-04
 - overall geometric mean: 1.01x faster
-- HPT reliability: 95.87%
+- HPT reliability: 99.08%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.02x
 
@@ -185,7 +185,7 @@ Benchmark hidden because not significant (22): sqlglot_normalize, xml_etree_iter
 
 # HPT report
 
-- Reliability score: 95.87% likely to be faster
+- Reliability score: 99.08% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

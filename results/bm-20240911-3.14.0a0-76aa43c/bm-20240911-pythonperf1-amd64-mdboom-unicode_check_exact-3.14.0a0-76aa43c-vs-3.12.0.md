@@ -6,7 +6,7 @@
 - commit hash: 76aa43c
 - commit date: 2024-09-11
 - overall geometric mean: 1.01x faster
-- HPT reliability: 71.82%
+- HPT reliability: 83.46%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -195,7 +195,7 @@ Ignored benchmarks (5) of results/bm-20240911-3.14.0a0-76aa43c/bm-20240911-pytho
 
 # HPT report
 
-- Reliability score: 71.82% likely to be slow
+- Reliability score: 83.46% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

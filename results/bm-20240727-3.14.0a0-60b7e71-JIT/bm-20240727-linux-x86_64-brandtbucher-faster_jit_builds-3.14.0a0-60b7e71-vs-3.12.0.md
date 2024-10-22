@@ -6,7 +6,7 @@
 - commit hash: 60b7e71
 - commit date: 2024-07-27
 - overall geometric mean: 1.08x faster
-- HPT reliability: 99.98%
+- HPT reliability: 99.99%
 - HPT 99th percentile: 1.01x faster
 - Memory change: 1.05x
 
@@ -183,9 +183,9 @@ Ignored benchmarks (6) of results/bm-20240727-3.14.0a0-60b7e71-JIT/bm-20240727-l
 
 # HPT report
 
-- Reliability score: 99.98% likely to be faster
-- 90% likely to have a speedup of 1.02x
-- 95% likely to have a speedup of 1.02x
+- Reliability score: 99.99% likely to be faster
+- 90% likely to have a speedup of 1.04x
+- 95% likely to have a speedup of 1.03x
 - 99% likely to have a speedup of 1.01x
 
 # Memory

@@ -6,9 +6,9 @@
 - commit hash: 8d668dd
 - commit date: 2024-09-10
 - overall geometric mean: 1.03x faster
-- HPT reliability: 81.58%
+- HPT reliability: 89.56%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 1.12x
+- Memory change: 1.13x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -195,10 +195,10 @@ Ignored benchmarks (6) of results/bm-20240910-3.14.0a0-8d668dd-JIT/bm-20240910-l
 
 # HPT report
 
-- Reliability score: 81.58% likely to be faster
+- Reliability score: 89.56% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 1.12x
+- memory change: 1.13x

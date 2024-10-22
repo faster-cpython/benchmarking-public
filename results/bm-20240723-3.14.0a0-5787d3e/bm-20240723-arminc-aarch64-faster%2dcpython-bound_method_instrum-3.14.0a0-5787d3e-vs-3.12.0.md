@@ -6,7 +6,7 @@
 - commit hash: 5787d3e
 - commit date: 2024-07-23
 - overall geometric mean: 1.04x faster
-- HPT reliability: 94.45%
+- HPT reliability: 97.04%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.92x
 
@@ -185,7 +185,7 @@ Ignored benchmarks (1) of results/bm-20240723-3.14.0a0-5787d3e/bm-20240723-armin
 
 # HPT report
 
-- Reliability score: 94.45% likely to be faster
+- Reliability score: 97.04% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

@@ -26,18 +26,23 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.03x faster (HPT: reliability of 51.15%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.03x faster (HPT: reliability of 56.78%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240719-pythonperf1-amd64-python-d66b06107b0104af513f-3.14.0a0-d66b061-vs-3.12.0.md)
 - [📈time plot](bm-20240719-pythonperf1-amd64-python-d66b06107b0104af513f-3.14.0a0-d66b061-vs-3.12.0.svg)
 
+### vs. 3.13.0
+
+- Geometric mean: 1.01x slower (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
+- Memory usage: unknown
+- missing benchmarks: aiohttp, chameleon, dulwich_log, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20240719-pythonperf1-amd64-python-d66b06107b0104af513f-3.14.0a0-d66b061-vs-3.13.0.md)
+- [📈time plot](bm-20240719-pythonperf1-amd64-python-d66b06107b0104af513f-3.14.0a0-d66b061-vs-3.13.0.svg)
+
 ### vs. 3.13.0b2
 
-- Geometric mean: 1.02x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
-- Memory usage: unknown
-- missing benchmarks: aiohttp, chameleon, dulwich_log, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
 - [📄table](bm-20240719-pythonperf1-amd64-python-d66b06107b0104af513f-3.14.0a0-d66b061-vs-3.13.0b2.md)
 - [📈time plot](bm-20240719-pythonperf1-amd64-python-d66b06107b0104af513f-3.14.0a0-d66b061-vs-3.13.0b2.svg)
 

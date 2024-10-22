@@ -33,12 +33,17 @@
 - [📄table](bm-20241018-linux-x86_64-python-6d93690954daae9e9a36-3.14.0a1%2B-6d93690-vs-3.12.0.md)
 - [📈time plot](bm-20241018-linux-x86_64-python-6d93690954daae9e9a36-3.14.0a1%2B-6d93690-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.02x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
+- Geometric mean: 1.01x slower (HPT: reliability of 82.89%, 1.00x faster at 99th %ile)
 - Memory usage: 1.13x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
-- new benchmarks: sphinx, unpack_sequence
+- new benchmarks: sphinx
+- [📄table](bm-20241018-linux-x86_64-python-6d93690954daae9e9a36-3.14.0a1%2B-6d93690-vs-3.13.0.md)
+- [📈time plot](bm-20241018-linux-x86_64-python-6d93690954daae9e9a36-3.14.0a1%2B-6d93690-vs-3.13.0.svg)
+
+### vs. 3.13.0b2
+
 - [📄table](bm-20241018-linux-x86_64-python-6d93690954daae9e9a36-3.14.0a1%2B-6d93690-vs-3.13.0b2.md)
 - [📈time plot](bm-20241018-linux-x86_64-python-6d93690954daae9e9a36-3.14.0a1%2B-6d93690-vs-3.13.0b2.svg)
 

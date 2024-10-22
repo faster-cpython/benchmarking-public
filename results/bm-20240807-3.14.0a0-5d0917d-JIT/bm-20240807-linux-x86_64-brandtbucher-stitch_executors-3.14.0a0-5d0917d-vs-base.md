@@ -6,7 +6,7 @@
 - commit hash: 5d0917d
 - commit date: 2024-08-07
 - overall geometric mean: 1.00x slower
-- HPT reliability: 62.29%
+- HPT reliability: 60.56%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 0.99x
 
@@ -166,7 +166,7 @@ Benchmark hidden because not significant (28): chaos, pprint_safe_repr, async_tr
 
 # HPT report
 
-- Reliability score: 62.29% likely to be slow
+- Reliability score: 60.56% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

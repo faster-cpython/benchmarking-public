@@ -1,4 +1,3 @@
-
 # Results vs. 3.10.4
 
 - fork: python
@@ -8,7 +7,7 @@
 - commit date: 2023-10-13
 - overall geometric mean: 1.19x slower
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.10x slower
+- HPT 99th percentile: 1.11x slower
 - Memory change: unknown
 
 Benchmarks with tag 'apps':
@@ -187,15 +186,12 @@ Benchmark hidden because not significant (1): unpickle_list
 Ignored benchmarks (13) of results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf1_win32-x86-python-v3.10.4-3.10.4-9d38120.json: aiohttp, dask, django_template, dulwich_log, flaskblogging, genshi_text, genshi_xml, html5lib, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative, thrift
 Ignored benchmarks (4) of results/bm-20231013-3.13.0a1-ad056f0-PYTHON_UOPS/bm-20231013-pythonperf1_win32-x86-python-ad056f03aee8000a1564-3.13.0a1-ad056f0.json: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
 
-
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.13x
-- 95% likely to have a slowdown of 1.12x
-- 99% likely to have a slowdown of 1.10x
-
+- 90% likely to have a slowdown of 1.15x
+- 95% likely to have a slowdown of 1.13x
+- 99% likely to have a slowdown of 1.11x
 
 # Memory
-
 - memory change: unknown

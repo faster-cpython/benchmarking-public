@@ -6,7 +6,7 @@
 - commit hash: c4c7097
 - commit date: 2024-07-20
 - overall geometric mean: 1.05x faster
-- HPT reliability: 98.52%
+- HPT reliability: 98.18%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -187,7 +187,7 @@ Benchmark hidden because not significant (10): pycparser, asyncio_tcp, html5lib,
 
 # HPT report
 
-- Reliability score: 98.52% likely to be faster
+- Reliability score: 98.18% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

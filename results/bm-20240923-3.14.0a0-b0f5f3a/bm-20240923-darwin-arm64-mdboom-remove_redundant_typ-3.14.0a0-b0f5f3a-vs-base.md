@@ -6,9 +6,9 @@
 - commit hash: b0f5f3a
 - commit date: 2024-09-23
 - overall geometric mean: 1.00x slower
-- HPT reliability: 99.95%
+- HPT reliability: 99.98%
 - HPT 99th percentile: 1.00x slower
-- Memory change: unknown
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -160,10 +160,10 @@ Benchmark hidden because not significant (49): asyncio_tcp, pylint, async_tree_i
 
 # HPT report
 
-- Reliability score: 99.95% likely to be slow
+- Reliability score: 99.98% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: unknown
+- memory change: 1.00x

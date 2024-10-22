@@ -7,7 +7,7 @@
 - commit date: 2024-10-05
 - overall geometric mean: 1.23x faster
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.23x faster
+- HPT 99th percentile: 1.22x faster
 - Memory change: 1.14x
 
 Benchmarks with tag 'apps':
@@ -199,7 +199,7 @@ Ignored benchmarks (6) of results/bm-20241005-3.14.0a0-16cd6cc/bm-20241005-armin
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.26x
 - 95% likely to have a speedup of 1.25x
-- 99% likely to have a speedup of 1.23x
+- 99% likely to have a speedup of 1.22x
 
 # Memory
 - memory change: 1.14x

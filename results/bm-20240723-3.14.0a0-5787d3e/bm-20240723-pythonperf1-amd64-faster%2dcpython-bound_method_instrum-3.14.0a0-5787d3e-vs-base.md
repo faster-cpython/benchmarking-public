@@ -7,7 +7,7 @@
 - commit date: 2024-07-23
 - overall geometric mean: 1.04x slower
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.01x slower
+- HPT 99th percentile: 1.02x slower
 - Memory change: unknown
 
 Benchmarks with tag 'apps':
@@ -177,7 +177,7 @@ Benchmark hidden because not significant (15): python_startup_no_site, python_st
 - Reliability score: 100.00% likely to be slow
 - 90% likely to have a slowdown of 1.02x
 - 95% likely to have a slowdown of 1.02x
-- 99% likely to have a slowdown of 1.01x
+- 99% likely to have a slowdown of 1.02x
 
 # Memory
 - memory change: unknown

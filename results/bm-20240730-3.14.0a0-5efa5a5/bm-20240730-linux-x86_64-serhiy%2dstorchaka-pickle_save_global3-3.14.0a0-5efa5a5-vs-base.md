@@ -6,9 +6,9 @@
 - commit hash: 5efa5a5
 - commit date: 2024-07-30
 - overall geometric mean: 1.01x slower
-- HPT reliability: 100.00%
+- HPT reliability: 99.99%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 1.00x
+- Memory change: 0.99x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -172,10 +172,10 @@ Ignored benchmarks (1) of results/bm-20240730-3.14.0a0-d1a1bca/bm-20240730-linux
 
 # HPT report
 
-- Reliability score: 100.00% likely to be slow
+- Reliability score: 99.99% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 1.00x
+- memory change: 0.99x

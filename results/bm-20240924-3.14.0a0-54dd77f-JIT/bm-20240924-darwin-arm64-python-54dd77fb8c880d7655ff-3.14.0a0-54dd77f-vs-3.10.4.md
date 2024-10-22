@@ -8,7 +8,7 @@
 - overall geometric mean: 1.21x faster
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.13x faster
-- Memory change: 0.73x
+- Memory change: 0.81x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -199,9 +199,9 @@ Ignored benchmarks (13) of results/bm-20240924-3.14.0a0-54dd77f-JIT/bm-20240924-
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.18x
+- 90% likely to have a speedup of 1.17x
 - 95% likely to have a speedup of 1.15x
 - 99% likely to have a speedup of 1.13x
 
 # Memory
-- memory change: 0.73x
+- memory change: 0.81x

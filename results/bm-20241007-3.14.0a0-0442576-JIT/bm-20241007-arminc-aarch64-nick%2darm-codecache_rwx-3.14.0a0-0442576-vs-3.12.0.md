@@ -204,7 +204,7 @@ Ignored benchmarks (2) of results/bm-20241007-3.14.0a0-0442576-JIT/bm-20241007-a
 
 - Reliability score: 100.00% likely to be slow
 - 90% likely to have a slowdown of 1.04x
-- 95% likely to have a slowdown of 1.04x
+- 95% likely to have a slowdown of 1.03x
 - 99% likely to have a slowdown of 1.02x
 
 # Memory

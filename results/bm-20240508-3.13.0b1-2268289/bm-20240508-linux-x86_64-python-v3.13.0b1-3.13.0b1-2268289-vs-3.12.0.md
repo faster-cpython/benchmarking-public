@@ -6,7 +6,7 @@
 - commit hash: 2268289
 - commit date: 2024-05-08
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.57%
+- HPT reliability: 99.88%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.98x
 
@@ -201,9 +201,9 @@ Ignored benchmarks (7) of results/bm-20240508-3.13.0b1-2268289/bm-20240508-linux
 
 # HPT report
 
-- Reliability score: 99.57% likely to be faster
+- Reliability score: 99.88% likely to be faster
 - 90% likely to have a speedup of 1.01x
-- 95% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x
 
 # Memory

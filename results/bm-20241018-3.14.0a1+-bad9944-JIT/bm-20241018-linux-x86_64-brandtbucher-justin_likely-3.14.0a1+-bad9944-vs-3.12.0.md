@@ -6,8 +6,8 @@
 - commit hash: bad9944
 - commit date: 2024-10-18
 - overall geometric mean: 1.03x faster
-- HPT reliability: 99.77%
-- HPT 99th percentile: 1.00x faster
+- HPT reliability: 99.97%
+- HPT 99th percentile: 1.01x faster
 - Memory change: 1.15x
 
 Benchmarks with tag 'apps':
@@ -196,10 +196,10 @@ Ignored benchmarks (7) of results/bm-20241018-3.14.0a1+-bad9944-JIT/bm-20241018-
 
 # HPT report
 
-- Reliability score: 99.77% likely to be faster
-- 90% likely to have a speedup of 1.01x
-- 95% likely to have a speedup of 1.01x
-- 99% likely to have a speedup of 1.00x
+- Reliability score: 99.97% likely to be faster
+- 90% likely to have a speedup of 1.02x
+- 95% likely to have a speedup of 1.02x
+- 99% likely to have a speedup of 1.01x
 
 # Memory
 - memory change: 1.15x

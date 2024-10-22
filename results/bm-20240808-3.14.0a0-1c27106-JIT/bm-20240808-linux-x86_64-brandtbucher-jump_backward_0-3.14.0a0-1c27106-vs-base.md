@@ -8,7 +8,7 @@
 - overall geometric mean: 1.03x slower
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.01x slower
-- Memory change: 1.04x
+- Memory change: 1.03x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -188,4 +188,4 @@ Benchmark hidden because not significant (15): fannkuch, xml_etree_parse, bench_
 - 99% likely to have a slowdown of 1.01x
 
 # Memory
-- memory change: 1.04x
+- memory change: 1.03x

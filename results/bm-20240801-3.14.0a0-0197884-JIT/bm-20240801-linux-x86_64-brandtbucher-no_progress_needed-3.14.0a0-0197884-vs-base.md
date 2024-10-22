@@ -6,7 +6,7 @@
 - commit hash: 0197884
 - commit date: 2024-08-01
 - overall geometric mean: 1.00x slower
-- HPT reliability: 88.38%
+- HPT reliability: 84.33%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.02x
 
@@ -162,7 +162,7 @@ Benchmark hidden because not significant (28): xml_etree_parse, telco, generator
 
 # HPT report
 
-- Reliability score: 88.38% likely to be slow
+- Reliability score: 84.33% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

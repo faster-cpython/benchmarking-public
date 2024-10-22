@@ -6,7 +6,7 @@
 - commit hash: 7aca84e
 - commit date: 2024-08-02
 - overall geometric mean: 1.09x faster
-- HPT reliability: 98.45%
+- HPT reliability: 99.64%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -185,9 +185,9 @@ Ignored benchmarks (4) of results/bm-20240802-3.14.0a0-7aca84e/bm-20240802-pytho
 
 # HPT report
 
-- Reliability score: 98.45% likely to be faster
-- 90% likely to have a speedup of 1.01x
-- 95% likely to have a speedup of 1.00x
+- Reliability score: 99.64% likely to be faster
+- 90% likely to have a speedup of 1.02x
+- 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x
 
 # Memory

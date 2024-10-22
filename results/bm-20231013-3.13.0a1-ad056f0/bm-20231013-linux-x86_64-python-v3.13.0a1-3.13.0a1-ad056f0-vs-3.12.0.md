@@ -1,4 +1,3 @@
-
 # Results vs. 3.12.0
 
 - fork: python
@@ -6,8 +5,8 @@
 - machine: linux-x86_64
 - commit hash: ad056f0
 - commit date: 2023-10-13
-- overall geometric mean: 1.02x faster \*
-- HPT reliability: 99.98%
+- overall geometric mean: 1.02x faster
+- HPT reliability: 99.94%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.91x
 
@@ -190,15 +189,12 @@ All benchmarks:
 Benchmark hidden because not significant (7): create_gc_cycles, bench_mp_pool, asyncio_websockets, pathlib, regex_dna, pickle_list, pickle
 Ignored benchmarks (7) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0.json: aiohttp, dask, django_template, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 
-
 # HPT report
 
-- Reliability score: 99.98% likely to be faster
+- Reliability score: 99.94% likely to be faster
 - 90% likely to have a speedup of 1.01x
 - 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x
 
-
 # Memory
-
 - memory change: 0.91x

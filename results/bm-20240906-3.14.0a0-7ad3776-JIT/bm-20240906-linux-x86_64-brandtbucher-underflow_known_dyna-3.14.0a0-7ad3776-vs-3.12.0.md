@@ -6,9 +6,9 @@
 - commit hash: 7ad3776
 - commit date: 2024-09-06
 - overall geometric mean: 1.05x faster
-- HPT reliability: 99.11%
+- HPT reliability: 99.74%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 1.07x
+- Memory change: 1.08x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -191,10 +191,10 @@ Ignored benchmarks (6) of results/bm-20240906-3.14.0a0-7ad3776-JIT/bm-20240906-l
 
 # HPT report
 
-- Reliability score: 99.11% likely to be faster
-- 90% likely to have a speedup of 1.01x
-- 95% likely to have a speedup of 1.01x
+- Reliability score: 99.74% likely to be faster
+- 90% likely to have a speedup of 1.03x
+- 95% likely to have a speedup of 1.02x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 1.07x
+- memory change: 1.08x

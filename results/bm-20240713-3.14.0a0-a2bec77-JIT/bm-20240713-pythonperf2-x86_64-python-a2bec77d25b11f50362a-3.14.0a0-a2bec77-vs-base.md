@@ -6,7 +6,7 @@
 - commit hash: a2bec77
 - commit date: 2024-07-13
 - overall geometric mean: 1.01x slower
-- HPT reliability: 96.97%
+- HPT reliability: 94.78%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.06x
 
@@ -182,7 +182,7 @@ Benchmark hidden because not significant (12): bench_mp_pool, pycparser, regex_e
 
 # HPT report
 
-- Reliability score: 96.97% likely to be slow
+- Reliability score: 94.78% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

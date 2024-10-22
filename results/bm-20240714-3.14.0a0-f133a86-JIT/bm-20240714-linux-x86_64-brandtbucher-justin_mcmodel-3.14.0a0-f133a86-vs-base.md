@@ -6,7 +6,7 @@
 - commit hash: f133a86
 - commit date: 2024-07-14
 - overall geometric mean: 1.00x faster
-- HPT reliability: 99.60%
+- HPT reliability: 99.28%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.99x
 
@@ -151,7 +151,7 @@ Benchmark hidden because not significant (32): deepcopy, async_tree_memoization_
 
 # HPT report
 
-- Reliability score: 99.60% likely to be faster
+- Reliability score: 99.28% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

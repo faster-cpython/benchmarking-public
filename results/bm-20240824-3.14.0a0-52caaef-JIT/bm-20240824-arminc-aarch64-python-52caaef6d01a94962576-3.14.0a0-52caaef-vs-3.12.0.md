@@ -6,7 +6,7 @@
 - commit hash: 52caaef
 - commit date: 2024-08-24
 - overall geometric mean: 1.08x slower
-- HPT reliability: 100.00%
+- HPT reliability: 99.99%
 - HPT 99th percentile: 1.02x slower
 - Memory change: 1.01x
 
@@ -192,9 +192,9 @@ Ignored benchmarks (1) of results/bm-20240824-3.14.0a0-52caaef-JIT/bm-20240824-a
 
 # HPT report
 
-- Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.05x
-- 95% likely to have a slowdown of 1.04x
+- Reliability score: 99.99% likely to be slow
+- 90% likely to have a slowdown of 1.04x
+- 95% likely to have a slowdown of 1.03x
 - 99% likely to have a slowdown of 1.02x
 
 # Memory

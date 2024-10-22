@@ -6,7 +6,7 @@
 - commit hash: cc98bb5
 - commit date: 2024-07-31
 - overall geometric mean: 1.11x faster
-- HPT reliability: 99.98%
+- HPT reliability: 99.96%
 - HPT 99th percentile: 1.01x faster
 - Memory change: unknown
 
@@ -182,9 +182,9 @@ Ignored benchmarks (4) of results/bm-20240731-3.14.0a0-cc98bb5/bm-20240731-pytho
 
 # HPT report
 
-- Reliability score: 99.98% likely to be faster
-- 90% likely to have a speedup of 1.03x
-- 95% likely to have a speedup of 1.02x
+- Reliability score: 99.96% likely to be faster
+- 90% likely to have a speedup of 1.04x
+- 95% likely to have a speedup of 1.03x
 - 99% likely to have a speedup of 1.01x
 
 # Memory

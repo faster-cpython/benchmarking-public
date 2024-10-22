@@ -177,7 +177,7 @@ Benchmark hidden because not significant (20): deepcopy_memo, logging_format, ch
 
 - Reliability score: 100.00% likely to be slow
 - 90% likely to have a slowdown of 1.01x
-- 95% likely to have a slowdown of 1.01x
+- 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory

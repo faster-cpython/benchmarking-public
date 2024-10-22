@@ -6,7 +6,7 @@
 - commit hash: 6b9055c
 - commit date: 2024-08-14
 - overall geometric mean: 1.00x slower
-- HPT reliability: 63.57%
+- HPT reliability: 68.00%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 1.00x
 
@@ -176,7 +176,7 @@ Benchmark hidden because not significant (22): bench_mp_pool, create_gc_cycles, 
 
 # HPT report
 
-- Reliability score: 63.57% likely to be slow
+- Reliability score: 68.00% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

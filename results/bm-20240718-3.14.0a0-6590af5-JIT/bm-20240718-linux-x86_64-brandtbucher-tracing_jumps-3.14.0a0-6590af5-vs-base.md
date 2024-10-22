@@ -6,7 +6,7 @@
 - commit hash: 6590af5
 - commit date: 2024-07-18
 - overall geometric mean: 1.00x faster
-- HPT reliability: 99.04%
+- HPT reliability: 98.33%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.01x
 
@@ -154,7 +154,7 @@ Benchmark hidden because not significant (33): async_tree_memoization, crypto_py
 
 # HPT report
 
-- Reliability score: 99.04% likely to be faster
+- Reliability score: 98.33% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

@@ -8,7 +8,7 @@
 - overall geometric mean: 1.06x slower
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.01x slower
-- Memory change: 1.15x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -198,9 +198,9 @@ Benchmark hidden because not significant (20): async_tree_io_tg, pickle, unpickl
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.01x
+- 90% likely to have a slowdown of 1.02x
 - 95% likely to have a slowdown of 1.01x
 - 99% likely to have a slowdown of 1.01x
 
 # Memory
-- memory change: 1.15x
+- memory change: 1.00x

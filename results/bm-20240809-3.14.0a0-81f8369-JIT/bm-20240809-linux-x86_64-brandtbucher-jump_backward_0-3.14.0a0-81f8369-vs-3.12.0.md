@@ -6,7 +6,7 @@
 - commit hash: 81f8369
 - commit date: 2024-08-09
 - overall geometric mean: 1.06x faster
-- HPT reliability: 98.07%
+- HPT reliability: 99.32%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.10x
 
@@ -181,9 +181,9 @@ Ignored benchmarks (6) of results/bm-20240809-3.14.0a0-81f8369-JIT/bm-20240809-l
 
 # HPT report
 
-- Reliability score: 98.07% likely to be faster
-- 90% likely to have a speedup of 1.01x
-- 95% likely to have a speedup of 1.00x
+- Reliability score: 99.32% likely to be faster
+- 90% likely to have a speedup of 1.02x
+- 95% likely to have a speedup of 1.01x
 - 99% likely to have a speedup of 1.00x
 
 # Memory

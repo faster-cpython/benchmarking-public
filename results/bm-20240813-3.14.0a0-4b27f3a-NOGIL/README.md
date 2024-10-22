@@ -17,8 +17,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.21x slower (HPT: reliability of 100.00%, 1.16x slower at 99th %ile)
-- Memory usage: 1.32x
+- Geometric mean: 1.21x slower (HPT: reliability of 100.00%, 1.17x slower at 99th %ile)
+- Memory usage: 1.33x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpickle, unpickle_list
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240813-arminc-aarch64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.10.4.md)
@@ -26,20 +26,20 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.55x slower (HPT: reliability of 100.00%, 1.34x slower at 99th %ile)
+- Geometric mean: 1.55x slower (HPT: reliability of 100.00%, 1.37x slower at 99th %ile)
 - Memory usage: 1.07x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpickle, unpickle_list
 - new benchmarks: bpe_tokeniser
 - [📄table](bm-20240813-arminc-aarch64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.12.0.md)
 - [📈time plot](bm-20240813-arminc-aarch64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.56x slower (HPT: reliability of 100.00%, 1.34x slower at 99th %ile)
+- Geometric mean: 1.58x slower (HPT: reliability of 100.00%, 1.39x slower at 99th %ile)
 - Memory usage: 1.16x
-- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
-- [📄table](bm-20240813-arminc-aarch64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0b2.md)
-- [📈time plot](bm-20240813-arminc-aarch64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0b2.svg)
+- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20240813-arminc-aarch64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0.md)
+- [📈time plot](bm-20240813-arminc-aarch64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0.svg)
 
 ### vs. base
 
@@ -48,6 +48,11 @@
 - [🧠memory plot](bm-20240813-arminc-aarch64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-base-mem.svg)
 - [📄table](bm-20240813-arminc-aarch64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-base.md)
 - [📈time plot](bm-20240813-arminc-aarch64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240813-arminc-aarch64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0b2.md)
+- [📈time plot](bm-20240813-arminc-aarch64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0b2.svg)
 
 ## linux x86_64 (linux)
 
@@ -58,8 +63,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.05x slower (HPT: reliability of 99.91%, 1.01x slower at 99th %ile)
-- Memory usage: 1.28x
+- Geometric mean: 1.05x slower (HPT: reliability of 99.98%, 1.02x slower at 99th %ile)
+- Memory usage: 1.29x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240813-linux-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.10.4.md)
@@ -67,28 +72,33 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.36x slower (HPT: reliability of 100.00%, 1.20x slower at 99th %ile)
-- Memory usage: 1.14x
+- Geometric mean: 1.36x slower (HPT: reliability of 100.00%, 1.21x slower at 99th %ile)
+- Memory usage: 1.13x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240813-linux-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.12.0.md)
 - [📈time plot](bm-20240813-linux-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.41x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
+- Geometric mean: 1.45x slower (HPT: reliability of 100.00%, 1.30x slower at 99th %ile)
 - Memory usage: 1.16x
-- missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
-- [📄table](bm-20240813-linux-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0b2.md)
-- [📈time plot](bm-20240813-linux-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0b2.svg)
+- missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20240813-linux-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0.md)
+- [📈time plot](bm-20240813-linux-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0.svg)
 
 ### vs. base
 
-- Geometric mean: 1.00x faster (HPT: reliability of 97.74%, 1.00x faster at 99th %ile)
-- Memory usage: 1.02x
+- Geometric mean: 1.00x faster (HPT: reliability of 98.08%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
 - [🧠memory plot](bm-20240813-linux-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-base-mem.svg)
 - [📄table](bm-20240813-linux-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-base.md)
 - [📈time plot](bm-20240813-linux-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240813-linux-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0b2.md)
+- [📈time plot](bm-20240813-linux-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0b2.svg)
 
 ## linux x86_64 (pythonperf2)
 
@@ -99,7 +109,7 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.10x slower (HPT: reliability of 99.99%, 1.04x slower at 99th %ile)
+- Geometric mean: 1.10x slower (HPT: reliability of 100.00%, 1.07x slower at 99th %ile)
 - Memory usage: 1.31x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
@@ -108,20 +118,20 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.43x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
-- Memory usage: 1.09x
+- Geometric mean: 1.43x slower (HPT: reliability of 100.00%, 1.26x slower at 99th %ile)
+- Memory usage: 1.08x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240813-pythonperf2-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.12.0.md)
 - [📈time plot](bm-20240813-pythonperf2-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.43x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
-- Memory usage: 1.16x
-- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
-- [📄table](bm-20240813-pythonperf2-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0b2.md)
-- [📈time plot](bm-20240813-pythonperf2-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0b2.svg)
+- Geometric mean: 1.43x slower (HPT: reliability of 100.00%, 1.30x slower at 99th %ile)
+- Memory usage: 1.17x
+- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20240813-pythonperf2-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0.md)
+- [📈time plot](bm-20240813-pythonperf2-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0.svg)
 
 ### vs. base
 
@@ -130,4 +140,9 @@
 - [🧠memory plot](bm-20240813-pythonperf2-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-base-mem.svg)
 - [📄table](bm-20240813-pythonperf2-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-base.md)
 - [📈time plot](bm-20240813-pythonperf2-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240813-pythonperf2-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0b2.md)
+- [📈time plot](bm-20240813-pythonperf2-x86_64-colesbury-gh_117376_pydecref_m-3.14.0a0-4b27f3a-vs-3.13.0b2.svg)
 

@@ -1,4 +1,3 @@
-
 # Results vs. 3.12.0
 
 - fork: python
@@ -6,10 +5,10 @@
 - machine: linux-x86_64
 - commit hash: ad056f0
 - commit date: 2023-10-13
-- overall geometric mean: 1.03x slower \*
+- overall geometric mean: 1.03x slower
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.01x slower
-- Memory change: 0.86x
+- Memory change: 0.87x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -189,7 +188,6 @@ All benchmarks:
 Benchmark hidden because not significant (9): bench_mp_pool, create_gc_cycles, nbody, json_loads, json, tornado_http, asyncio_websockets, pickle_list, bench_thread_pool
 Ignored benchmarks (7) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-pythonperf2-x86_64-python-v3.12.0-3.12.0-0fb18b0.json: aiohttp, dask, django_template, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 
-
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
@@ -197,7 +195,5 @@ Ignored benchmarks (7) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-pythonp
 - 95% likely to have a slowdown of 1.02x
 - 99% likely to have a slowdown of 1.01x
 
-
 # Memory
-
-- memory change: 0.86x
+- memory change: 0.87x

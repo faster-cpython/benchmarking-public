@@ -6,7 +6,7 @@
 - commit hash: 7c404a8
 - commit date: 2024-07-26
 - overall geometric mean: 1.00x slower
-- HPT reliability: 74.17%
+- HPT reliability: 73.81%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.01x
 
@@ -157,7 +157,7 @@ Benchmark hidden because not significant (34): deepcopy_reduce, unpickle_pure_py
 
 # HPT report
 
-- Reliability score: 74.17% likely to be faster
+- Reliability score: 73.81% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

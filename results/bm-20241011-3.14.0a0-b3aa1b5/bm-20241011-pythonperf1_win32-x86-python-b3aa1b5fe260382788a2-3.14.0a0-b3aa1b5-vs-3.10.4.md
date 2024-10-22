@@ -7,7 +7,7 @@
 - commit date: 2024-10-11
 - overall geometric mean: 1.12x faster
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.03x faster
+- HPT 99th percentile: 1.04x faster
 - Memory change: unknown
 
 Benchmarks with tag 'apps':
@@ -195,9 +195,9 @@ Ignored benchmarks (4) of results/bm-20241011-3.14.0a0-b3aa1b5/bm-20241011-pytho
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.04x
+- 90% likely to have a speedup of 1.05x
 - 95% likely to have a speedup of 1.04x
-- 99% likely to have a speedup of 1.03x
+- 99% likely to have a speedup of 1.04x
 
 # Memory
 - memory change: unknown

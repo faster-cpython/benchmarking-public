@@ -6,7 +6,7 @@
 - commit hash: 9d34f60
 - commit date: 2024-02-15
 - overall geometric mean: 1.01x faster
-- HPT reliability: 87.88%
+- HPT reliability: 81.51%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.97x
 
@@ -190,7 +190,7 @@ Ignored benchmarks (8) of results/bm-20240215-3.13.0a4-9d34f60-PYTHON_UOPS/bm-20
 
 # HPT report
 
-- Reliability score: 87.88% likely to be faster
+- Reliability score: 81.51% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

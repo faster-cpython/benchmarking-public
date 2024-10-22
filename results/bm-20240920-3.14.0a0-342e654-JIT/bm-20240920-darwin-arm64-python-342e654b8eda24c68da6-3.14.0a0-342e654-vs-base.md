@@ -8,7 +8,7 @@
 - overall geometric mean: 1.05x slower
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 1.22x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -202,4 +202,4 @@ Benchmark hidden because not significant (22): xml_etree_parse, pidigits, loggin
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 1.22x
+- memory change: 1.00x

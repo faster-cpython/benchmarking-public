@@ -6,9 +6,9 @@
 - commit hash: 54dd77f
 - commit date: 2024-09-24
 - overall geometric mean: 1.03x faster
-- HPT reliability: 97.98%
+- HPT reliability: 98.61%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.66x
+- Memory change: 0.74x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -197,10 +197,10 @@ Ignored benchmarks (14) of results/bm-20240924-3.14.0a0-54dd77f-JIT/bm-20240924-
 
 # HPT report
 
-- Reliability score: 97.98% likely to be faster
-- 90% likely to have a speedup of 1.00x
+- Reliability score: 98.61% likely to be faster
+- 90% likely to have a speedup of 1.01x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.66x
+- memory change: 0.74x

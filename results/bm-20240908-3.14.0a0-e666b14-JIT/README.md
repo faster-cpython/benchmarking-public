@@ -26,7 +26,7 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.35x faster (HPT: reliability of 100.00%, 1.22x faster at 99th %ile)
+- Geometric mean: 1.35x faster (HPT: reliability of 100.00%, 1.21x faster at 99th %ile)
 - Memory usage: 1.26x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
@@ -35,21 +35,20 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.04x faster (HPT: reliability of 99.48%, 1.00x faster at 99th %ile)
-- Memory usage: 1.09x
+- Geometric mean: 1.04x faster (HPT: reliability of 99.79%, 1.00x faster at 99th %ile)
+- Memory usage: 1.10x
 - missing benchmarks: aiohttp, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240908-linux-x86_64-brandtbucher-underflow_known_dyna-3.14.0a0-e666b14-vs-3.12.0.md)
 - [📈time plot](bm-20240908-linux-x86_64-brandtbucher-underflow_known_dyna-3.14.0a0-e666b14-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.02x faster (HPT: reliability of 98.20%, 1.00x faster at 99th %ile)
-- Memory usage: 1.12x
+- Geometric mean: 1.02x slower (HPT: reliability of 68.02%, 1.00x slower at 99th %ile)
+- Memory usage: 1.13x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20240908-linux-x86_64-brandtbucher-underflow_known_dyna-3.14.0a0-e666b14-vs-3.13.0b2.md)
-- [📈time plot](bm-20240908-linux-x86_64-brandtbucher-underflow_known_dyna-3.14.0a0-e666b14-vs-3.13.0b2.svg)
+- [📄table](bm-20240908-linux-x86_64-brandtbucher-underflow_known_dyna-3.14.0a0-e666b14-vs-3.13.0.md)
+- [📈time plot](bm-20240908-linux-x86_64-brandtbucher-underflow_known_dyna-3.14.0a0-e666b14-vs-3.13.0.svg)
 
 ### vs. base
 
@@ -59,4 +58,9 @@
 - [🧠memory plot](bm-20240908-linux-x86_64-brandtbucher-underflow_known_dyna-3.14.0a0-e666b14-vs-base-mem.svg)
 - [📄table](bm-20240908-linux-x86_64-brandtbucher-underflow_known_dyna-3.14.0a0-e666b14-vs-base.md)
 - [📈time plot](bm-20240908-linux-x86_64-brandtbucher-underflow_known_dyna-3.14.0a0-e666b14-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240908-linux-x86_64-brandtbucher-underflow_known_dyna-3.14.0a0-e666b14-vs-3.13.0b2.md)
+- [📈time plot](bm-20240908-linux-x86_64-brandtbucher-underflow_known_dyna-3.14.0a0-e666b14-vs-3.13.0b2.svg)
 

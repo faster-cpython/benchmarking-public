@@ -6,9 +6,9 @@
 - commit hash: 16cd6cc
 - commit date: 2024-10-05
 - overall geometric mean: 1.06x slower
-- HPT reliability: 66.98%
+- HPT reliability: 65.58%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 0.97x
+- Memory change: 0.98x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -197,10 +197,10 @@ Ignored benchmarks (6) of results/bm-20241005-3.14.0a0-16cd6cc-JIT/bm-20241005-p
 
 # HPT report
 
-- Reliability score: 66.98% likely to be slow
+- Reliability score: 65.58% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 0.97x
+- memory change: 0.98x

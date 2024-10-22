@@ -1,4 +1,3 @@
-
 # Results vs. 3.10.4
 
 - fork: python
@@ -6,10 +5,10 @@
 - machine: linux-x86_64
 - commit hash: ad056f0
 - commit date: 2023-10-13
-- overall geometric mean: 1.34x faster \*
+- overall geometric mean: 1.34x faster
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.26x faster
-- Memory change: 1.05x
+- HPT 99th percentile: 1.27x faster
+- Memory change: 1.04x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -188,15 +187,12 @@ Benchmark hidden because not significant (2): bench_mp_pool, regex_effbot
 Ignored benchmarks (14) of results/bm-20220323-3.10.4-9d38120/bm-20220323-linux-x86_64-python-v3.10.4-3.10.4-9d38120.json: aiohttp, dask, django_template, djangocms, flaskblogging, genshi_text, genshi_xml, gunicorn, html5lib, mypy2, pylint, sqlalchemy_declarative, sqlalchemy_imperative, thrift
 Ignored benchmarks (4) of results/bm-20231013-3.13.0a1-ad056f0/bm-20231013-linux-x86_64-python-v3.13.0a1-3.13.0a1-ad056f0.json: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
 
-
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.29x
+- 90% likely to have a speedup of 1.30x
 - 95% likely to have a speedup of 1.29x
-- 99% likely to have a speedup of 1.26x
-
+- 99% likely to have a speedup of 1.27x
 
 # Memory
-
-- memory change: 1.05x
+- memory change: 1.04x

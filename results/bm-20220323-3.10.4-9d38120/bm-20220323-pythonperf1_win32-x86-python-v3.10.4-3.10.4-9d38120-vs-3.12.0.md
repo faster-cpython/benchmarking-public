@@ -1,4 +1,3 @@
-
 # Results vs. 3.12.0
 
 - fork: python
@@ -7,7 +6,7 @@
 - commit hash: 9d38120
 - commit date: 2022-03-23
 - overall geometric mean: 1.01x faster
-- HPT reliability: 97.16%
+- HPT reliability: 96.37%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -191,15 +190,12 @@ Benchmark hidden because not significant (6): pyflate, sympy_sum, dulwich_log, p
 Ignored benchmarks (4) of results/bm-20231002-3.12.0-0fb18b0/bm-20231002-pythonperf1_win32-x86-python-v3.12.0-3.12.0-0fb18b0.json: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
 Ignored benchmarks (6) of results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf1_win32-x86-python-v3.10.4-3.10.4-9d38120.json: flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
 
-
 # HPT report
 
-- Reliability score: 97.16% likely to be faster
-- 90% likely to have a speedup of 1.01x
+- Reliability score: 96.37% likely to be faster
+- 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
-
 # Memory
-
 - memory change: unknown

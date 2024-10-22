@@ -6,9 +6,9 @@
 - commit hash: 60403a5
 - commit date: 2024-10-07
 - overall geometric mean: 1.00x slower
-- HPT reliability: 56.10%
+- HPT reliability: 63.18%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.92x
+- Memory change: 0.93x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -197,10 +197,10 @@ Ignored benchmarks (7) of results/bm-20241007-3.13.0-60403a5/bm-20241007-pythonp
 
 # HPT report
 
-- Reliability score: 56.10% likely to be faster
+- Reliability score: 63.18% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.92x
+- memory change: 0.93x

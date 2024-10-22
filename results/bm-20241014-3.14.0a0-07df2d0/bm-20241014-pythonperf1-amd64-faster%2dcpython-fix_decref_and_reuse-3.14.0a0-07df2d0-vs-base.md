@@ -6,7 +6,7 @@
 - commit hash: 07df2d0
 - commit date: 2024-10-14
 - overall geometric mean: 1.00x faster
-- HPT reliability: 93.57%
+- HPT reliability: 96.75%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -154,7 +154,7 @@ Benchmark hidden because not significant (33): bench_thread_pool, json, json_loa
 
 # HPT report
 
-- Reliability score: 93.57% likely to be faster
+- Reliability score: 96.75% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

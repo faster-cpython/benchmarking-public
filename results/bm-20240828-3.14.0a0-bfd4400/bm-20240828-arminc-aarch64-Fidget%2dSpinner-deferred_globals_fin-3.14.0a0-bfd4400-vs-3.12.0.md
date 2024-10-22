@@ -6,9 +6,9 @@
 - commit hash: bfd4400
 - commit date: 2024-08-28
 - overall geometric mean: 1.04x faster
-- HPT reliability: 99.55%
+- HPT reliability: 99.11%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.93x
+- Memory change: 0.94x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -177,10 +177,10 @@ Ignored benchmarks (1) of results/bm-20240828-3.14.0a0-bfd4400/bm-20240828-armin
 
 # HPT report
 
-- Reliability score: 99.55% likely to be faster
+- Reliability score: 99.11% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.93x
+- memory change: 0.94x

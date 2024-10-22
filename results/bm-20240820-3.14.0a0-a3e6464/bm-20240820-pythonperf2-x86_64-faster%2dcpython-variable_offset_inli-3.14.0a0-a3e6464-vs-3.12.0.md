@@ -6,7 +6,7 @@
 - commit hash: a3e6464
 - commit date: 2024-08-20
 - overall geometric mean: 1.02x faster
-- HPT reliability: 76.94%
+- HPT reliability: 65.49%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -176,7 +176,7 @@ Ignored benchmarks (6) of results/bm-20240820-3.14.0a0-a3e6464/bm-20240820-pytho
 
 # HPT report
 
-- Reliability score: 76.94% likely to be faster
+- Reliability score: 65.49% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

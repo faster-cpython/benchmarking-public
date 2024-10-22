@@ -6,7 +6,7 @@
 - commit hash: 2fa7b0e
 - commit date: 2024-09-04
 - overall geometric mean: 1.01x slower
-- HPT reliability: 99.71%
+- HPT reliability: 99.78%
 - HPT 99th percentile: 1.00x slower
 - Memory change: unknown
 
@@ -184,7 +184,7 @@ Ignored benchmarks (5) of results/bm-20240904-3.14.0a0-2fa7b0e/bm-20240904-pytho
 
 # HPT report
 
-- Reliability score: 99.71% likely to be slow
+- Reliability score: 99.78% likely to be slow
 - 90% likely to have a slowdown of 1.01x
 - 95% likely to have a slowdown of 1.01x
 - 99% likely to have a slowdown of 1.00x

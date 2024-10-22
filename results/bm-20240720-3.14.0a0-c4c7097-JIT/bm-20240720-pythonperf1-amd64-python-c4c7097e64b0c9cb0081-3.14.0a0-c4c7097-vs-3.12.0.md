@@ -6,7 +6,7 @@
 - commit hash: c4c7097
 - commit date: 2024-07-20
 - overall geometric mean: 1.08x faster
-- HPT reliability: 95.48%
+- HPT reliability: 96.21%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -183,7 +183,7 @@ Ignored benchmarks (5) of results/bm-20240720-3.14.0a0-c4c7097-JIT/bm-20240720-p
 
 # HPT report
 
-- Reliability score: 95.48% likely to be faster
+- Reliability score: 96.21% likely to be faster
 - 90% likely to have a speedup of 1.01x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

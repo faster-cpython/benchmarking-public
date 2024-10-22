@@ -7,7 +7,7 @@
 - commit date: 2024-09-07
 - overall geometric mean: 1.12x slower
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.03x slower
+- HPT 99th percentile: 1.04x slower
 - Memory change: 1.09x
 
 Benchmarks with tag 'apps':
@@ -187,7 +187,7 @@ Benchmark hidden because not significant (20): async_tree_cpu_io_mixed_tg, unpic
 - Reliability score: 100.00% likely to be slow
 - 90% likely to have a slowdown of 1.05x
 - 95% likely to have a slowdown of 1.04x
-- 99% likely to have a slowdown of 1.03x
+- 99% likely to have a slowdown of 1.04x
 
 # Memory
 - memory change: 1.09x

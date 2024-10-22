@@ -6,7 +6,7 @@
 - commit hash: 8cdaca8
 - commit date: 2024-10-15
 - overall geometric mean: 1.05x slower
-- HPT reliability: 99.66%
+- HPT reliability: 99.86%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.04x
 
@@ -195,7 +195,7 @@ Ignored benchmarks (3) of results/bm-20241015-3.14.0a1-8cdaca8/bm-20241015-armin
 
 # HPT report
 
-- Reliability score: 99.66% likely to be faster
+- Reliability score: 99.86% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

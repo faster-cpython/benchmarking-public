@@ -6,7 +6,7 @@
 - commit hash: 8278d07
 - commit date: 2024-10-12
 - overall geometric mean: 1.00x faster
-- HPT reliability: 99.77%
+- HPT reliability: 99.80%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.00x
 
@@ -171,7 +171,7 @@ Benchmark hidden because not significant (33): async_tree_none, async_tree_none_
 
 # HPT report
 
-- Reliability score: 99.77% likely to be faster
+- Reliability score: 99.80% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

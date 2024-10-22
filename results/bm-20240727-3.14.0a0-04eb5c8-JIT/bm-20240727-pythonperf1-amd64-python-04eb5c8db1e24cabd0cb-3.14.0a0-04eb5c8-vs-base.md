@@ -6,7 +6,7 @@
 - commit hash: 04eb5c8
 - commit date: 2024-07-27
 - overall geometric mean: 1.03x faster
-- HPT reliability: 73.45%
+- HPT reliability: 86.69%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -183,7 +183,7 @@ Benchmark hidden because not significant (9): asyncio_tcp_ssl, async_tree_io_tg,
 
 # HPT report
 
-- Reliability score: 73.45% likely to be faster
+- Reliability score: 86.69% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

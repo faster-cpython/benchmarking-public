@@ -6,7 +6,7 @@
 - commit hash: 567c38b
 - commit date: 2024-07-18
 - overall geometric mean: 1.00x faster
-- HPT reliability: 64.93%
+- HPT reliability: 75.63%
 - HPT 99th percentile: 1.00x slower
 - Memory change: 0.94x
 
@@ -186,7 +186,7 @@ Ignored benchmarks (6) of results/bm-20240718-3.13.0b4-567c38b/bm-20240718-pytho
 
 # HPT report
 
-- Reliability score: 64.93% likely to be slow
+- Reliability score: 75.63% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x

@@ -6,7 +6,7 @@
 - commit hash: bbb07e8
 - commit date: 2024-07-13
 - overall geometric mean: 1.05x slower
-- HPT reliability: 100.00%
+- HPT reliability: 99.99%
 - HPT 99th percentile: 1.02x slower
 - Memory change: 1.00x
 
@@ -190,7 +190,7 @@ Ignored benchmarks (1) of results/bm-20240713-3.14.0a0-bbb07e8-JIT/bm-20240713-a
 
 # HPT report
 
-- Reliability score: 100.00% likely to be slow
+- Reliability score: 99.99% likely to be slow
 - 90% likely to have a slowdown of 1.03x
 - 95% likely to have a slowdown of 1.03x
 - 99% likely to have a slowdown of 1.02x

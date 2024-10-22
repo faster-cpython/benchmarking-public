@@ -6,9 +6,9 @@
 - commit hash: e256a75
 - commit date: 2024-09-24
 - overall geometric mean: 1.03x faster
-- HPT reliability: 97.59%
+- HPT reliability: 98.42%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.60x
+- Memory change: 0.64x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -196,10 +196,10 @@ Ignored benchmarks (14) of results/bm-20240924-3.14.0a0-e256a75-JIT/bm-20240924-
 
 # HPT report
 
-- Reliability score: 97.59% likely to be faster
+- Reliability score: 98.42% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.60x
+- memory change: 0.64x

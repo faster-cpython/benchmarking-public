@@ -22,8 +22,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.33x faster (HPT: reliability of 100.00%, 1.23x faster at 99th %ile)
-- Memory usage: 1.20x
+- Geometric mean: 1.33x faster (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
+- Memory usage: 1.21x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_io, async_tree_memoization, async_tree_none, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser
 - [📄table](bm-20241014-linux-x86_64-python-3fea1d000ef0a74062fd-3.14.0a0-3fea1d0-vs-3.10.4.md)
@@ -31,19 +31,23 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.03x faster (HPT: reliability of 95.65%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.03x faster (HPT: reliability of 97.81%, 1.00x faster at 99th %ile)
 - Memory usage: 1.03x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20241014-linux-x86_64-python-3fea1d000ef0a74062fd-3.14.0a0-3fea1d0-vs-3.12.0.md)
 - [📈time plot](bm-20241014-linux-x86_64-python-3fea1d000ef0a74062fd-3.14.0a0-3fea1d0-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.02x faster (HPT: reliability of 99.08%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.02x slower (HPT: reliability of 59.21%, 1.00x slower at 99th %ile)
 - Memory usage: 1.07x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, djangocms, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
+- [📄table](bm-20241014-linux-x86_64-python-3fea1d000ef0a74062fd-3.14.0a0-3fea1d0-vs-3.13.0.md)
+- [📈time plot](bm-20241014-linux-x86_64-python-3fea1d000ef0a74062fd-3.14.0a0-3fea1d0-vs-3.13.0.svg)
+
+### vs. 3.13.0b2
+
 - [📄table](bm-20241014-linux-x86_64-python-3fea1d000ef0a74062fd-3.14.0a0-3fea1d0-vs-3.13.0b2.md)
 - [📈time plot](bm-20241014-linux-x86_64-python-3fea1d000ef0a74062fd-3.14.0a0-3fea1d0-vs-3.13.0b2.svg)
 

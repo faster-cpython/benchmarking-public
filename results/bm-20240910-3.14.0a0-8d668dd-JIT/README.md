@@ -26,8 +26,8 @@
 
 ### vs. 3.10.4
 
-- Geometric mean: 1.32x faster (HPT: reliability of 100.00%, 1.20x faster at 99th %ile)
-- Memory usage: 1.30x
+- Geometric mean: 1.32x faster (HPT: reliability of 100.00%, 1.19x faster at 99th %ile)
+- Memory usage: 1.31x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
 - [📄table](bm-20240910-linux-x86_64-brandtbucher-ujb0_project_warmup-3.14.0a0-8d668dd-vs-3.10.4.md)
@@ -35,21 +35,20 @@
 
 ### vs. 3.12.0
 
-- Geometric mean: 1.03x faster (HPT: reliability of 81.58%, 1.00x faster at 99th %ile)
-- Memory usage: 1.12x
+- Geometric mean: 1.03x faster (HPT: reliability of 89.56%, 1.00x faster at 99th %ile)
+- Memory usage: 1.13x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
 - [📄table](bm-20240910-linux-x86_64-brandtbucher-ujb0_project_warmup-3.14.0a0-8d668dd-vs-3.12.0.md)
 - [📈time plot](bm-20240910-linux-x86_64-brandtbucher-ujb0_project_warmup-3.14.0a0-8d668dd-vs-3.12.0.svg)
 
-### vs. 3.13.0b2
+### vs. 3.13.0
 
-- Geometric mean: 1.00x faster (HPT: reliability of 67.47%, 1.00x faster at 99th %ile)
-- Memory usage: 1.16x
+- Geometric mean: 1.04x slower (HPT: reliability of 98.73%, 1.00x slower at 99th %ile)
+- Memory usage: 1.17x
 - missing benchmarks: aiohttp, chameleon, dask, djangocms, dulwich_log, flaskblogging, gunicorn, mypy2
-- new benchmarks: unpack_sequence
-- [📄table](bm-20240910-linux-x86_64-brandtbucher-ujb0_project_warmup-3.14.0a0-8d668dd-vs-3.13.0b2.md)
-- [📈time plot](bm-20240910-linux-x86_64-brandtbucher-ujb0_project_warmup-3.14.0a0-8d668dd-vs-3.13.0b2.svg)
+- [📄table](bm-20240910-linux-x86_64-brandtbucher-ujb0_project_warmup-3.14.0a0-8d668dd-vs-3.13.0.md)
+- [📈time plot](bm-20240910-linux-x86_64-brandtbucher-ujb0_project_warmup-3.14.0a0-8d668dd-vs-3.13.0.svg)
 
 ### vs. base
 
@@ -59,4 +58,9 @@
 - [🧠memory plot](bm-20240910-linux-x86_64-brandtbucher-ujb0_project_warmup-3.14.0a0-8d668dd-vs-base-mem.svg)
 - [📄table](bm-20240910-linux-x86_64-brandtbucher-ujb0_project_warmup-3.14.0a0-8d668dd-vs-base.md)
 - [📈time plot](bm-20240910-linux-x86_64-brandtbucher-ujb0_project_warmup-3.14.0a0-8d668dd-vs-base.svg)
+
+### vs. 3.13.0b2
+
+- [📄table](bm-20240910-linux-x86_64-brandtbucher-ujb0_project_warmup-3.14.0a0-8d668dd-vs-3.13.0b2.md)
+- [📈time plot](bm-20240910-linux-x86_64-brandtbucher-ujb0_project_warmup-3.14.0a0-8d668dd-vs-3.13.0b2.svg)
 

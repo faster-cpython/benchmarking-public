@@ -200,7 +200,7 @@ Ignored benchmarks (13) of results/bm-20240912-3.14.0a0-6e06e01/bm-20240912-darw
 
 - Reliability score: 100.00% likely to be faster
 - 90% likely to have a speedup of 1.23x
-- 95% likely to have a speedup of 1.22x
+- 95% likely to have a speedup of 1.21x
 - 99% likely to have a speedup of 1.20x
 
 # Memory

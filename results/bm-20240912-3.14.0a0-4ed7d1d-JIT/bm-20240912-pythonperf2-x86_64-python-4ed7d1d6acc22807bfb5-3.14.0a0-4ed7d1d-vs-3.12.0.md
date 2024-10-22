@@ -6,9 +6,9 @@
 - commit hash: 4ed7d1d
 - commit date: 2024-09-12
 - overall geometric mean: 1.01x faster
-- HPT reliability: 59.23%
+- HPT reliability: 52.88%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.99x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -192,10 +192,10 @@ Ignored benchmarks (6) of results/bm-20240912-3.14.0a0-4ed7d1d-JIT/bm-20240912-p
 
 # HPT report
 
-- Reliability score: 59.23% likely to be faster
+- Reliability score: 52.88% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.99x
+- memory change: 1.00x

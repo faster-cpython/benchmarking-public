@@ -6,9 +6,9 @@
 - commit hash: 0e19ac7
 - commit date: 2024-10-07
 - overall geometric mean: 1.04x slower
-- HPT reliability: 97.82%
+- HPT reliability: 98.38%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.92x
+- Memory change: 0.93x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -197,10 +197,10 @@ Ignored benchmarks (6) of results/bm-20241007-3.14.0a0-0e19ac7/bm-20241007-pytho
 
 # HPT report
 
-- Reliability score: 97.82% likely to be faster
-- 90% likely to have a speedup of 1.00x
+- Reliability score: 98.38% likely to be faster
+- 90% likely to have a speedup of 1.01x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.92x
+- memory change: 0.93x

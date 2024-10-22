@@ -6,7 +6,7 @@
 - commit hash: 799510c
 - commit date: 2024-07-10
 - overall geometric mean: 1.02x faster
-- HPT reliability: 98.34%
+- HPT reliability: 99.37%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.06x
 
@@ -187,8 +187,8 @@ Ignored benchmarks (6) of results/bm-20240710-3.14.0a0-799510c-JIT/bm-20240710-l
 
 # HPT report
 
-- Reliability score: 98.34% likely to be faster
-- 90% likely to have a speedup of 1.00x
+- Reliability score: 99.37% likely to be faster
+- 90% likely to have a speedup of 1.01x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 

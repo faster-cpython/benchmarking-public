@@ -6,7 +6,7 @@
 - commit hash: 3a83b17
 - commit date: 2024-06-05
 - overall geometric mean: 1.04x faster
-- HPT reliability: 97.25%
+- HPT reliability: 99.26%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 1.07x
 
@@ -199,8 +199,8 @@ Ignored benchmarks (8) of results/bm-20240605-3.13.0b2-3a83b17-JIT/bm-20240605-l
 
 # HPT report
 
-- Reliability score: 97.25% likely to be faster
-- 90% likely to have a speedup of 1.00x
+- Reliability score: 99.26% likely to be faster
+- 90% likely to have a speedup of 1.01x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 

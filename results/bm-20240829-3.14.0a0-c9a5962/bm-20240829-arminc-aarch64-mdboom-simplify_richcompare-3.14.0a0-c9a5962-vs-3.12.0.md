@@ -6,7 +6,7 @@
 - commit hash: c9a5962
 - commit date: 2024-08-29
 - overall geometric mean: 1.04x faster
-- HPT reliability: 99.06%
+- HPT reliability: 99.27%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -178,8 +178,8 @@ Ignored benchmarks (1) of results/bm-20240829-3.14.0a0-c9a5962/bm-20240829-armin
 
 # HPT report
 
-- Reliability score: 99.06% likely to be faster
-- 90% likely to have a speedup of 1.00x
+- Reliability score: 99.27% likely to be faster
+- 90% likely to have a speedup of 1.01x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 

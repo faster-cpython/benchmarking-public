@@ -6,7 +6,7 @@
 - commit hash: 34ddb64
 - commit date: 2024-08-31
 - overall geometric mean: 1.03x faster
-- HPT reliability: 99.33%
+- HPT reliability: 98.52%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.93x
 
@@ -183,7 +183,7 @@ Ignored benchmarks (6) of results/bm-20240831-3.14.0a0-34ddb64/bm-20240831-pytho
 
 # HPT report
 
-- Reliability score: 99.33% likely to be faster
+- Reliability score: 98.52% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

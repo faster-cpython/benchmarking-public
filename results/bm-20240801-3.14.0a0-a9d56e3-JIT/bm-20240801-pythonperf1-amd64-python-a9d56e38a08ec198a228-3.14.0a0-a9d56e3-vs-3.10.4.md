@@ -187,8 +187,8 @@ Ignored benchmarks (4) of results/bm-20240801-3.14.0a0-a9d56e3-JIT/bm-20240801-p
 # HPT report
 
 - Reliability score: 100.00% likely to be faster
-- 90% likely to have a speedup of 1.16x
-- 95% likely to have a speedup of 1.15x
+- 90% likely to have a speedup of 1.15x
+- 95% likely to have a speedup of 1.14x
 - 99% likely to have a speedup of 1.12x
 
 # Memory

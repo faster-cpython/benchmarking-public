@@ -6,7 +6,7 @@
 - commit hash: 1b65c46
 - commit date: 2024-08-01
 - overall geometric mean: 1.05x faster
-- HPT reliability: 83.22%
+- HPT reliability: 85.51%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -184,7 +184,7 @@ Ignored benchmarks (5) of results/bm-20240801-3.14.0a0-1b65c46-JIT/bm-20240801-p
 
 # HPT report
 
-- Reliability score: 83.22% likely to be faster
+- Reliability score: 85.51% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

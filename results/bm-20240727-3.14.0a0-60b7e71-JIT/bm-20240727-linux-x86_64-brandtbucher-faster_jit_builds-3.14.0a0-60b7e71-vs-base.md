@@ -8,7 +8,7 @@
 - overall geometric mean: 1.01x slower
 - HPT reliability: 100.00%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 1.04x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -163,4 +163,4 @@ Benchmark hidden because not significant (36): deepcopy_memo, logging_simple, lo
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 1.04x
+- memory change: 1.00x

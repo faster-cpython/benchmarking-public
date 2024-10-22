@@ -183,7 +183,7 @@ Benchmark hidden because not significant (13): xml_etree_parse, coverage, bench_
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.01x
+- 90% likely to have a slowdown of 1.02x
 - 95% likely to have a slowdown of 1.01x
 - 99% likely to have a slowdown of 1.01x
 

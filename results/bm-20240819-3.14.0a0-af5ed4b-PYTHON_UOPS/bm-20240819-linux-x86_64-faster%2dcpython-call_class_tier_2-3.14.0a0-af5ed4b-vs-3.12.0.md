@@ -7,7 +7,7 @@
 - commit date: 2024-08-19
 - overall geometric mean: 1.07x slower
 - HPT reliability: 100.00%
-- HPT 99th percentile: 1.03x slower
+- HPT 99th percentile: 1.04x slower
 - Memory change: 0.99x
 
 Benchmarks with tag 'apps':
@@ -183,9 +183,9 @@ Ignored benchmarks (6) of results/bm-20240819-3.14.0a0-af5ed4b-PYTHON_UOPS/bm-20
 # HPT report
 
 - Reliability score: 100.00% likely to be slow
-- 90% likely to have a slowdown of 1.05x
-- 95% likely to have a slowdown of 1.04x
-- 99% likely to have a slowdown of 1.03x
+- 90% likely to have a slowdown of 1.06x
+- 95% likely to have a slowdown of 1.05x
+- 99% likely to have a slowdown of 1.04x
 
 # Memory
 - memory change: 0.99x

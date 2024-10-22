@@ -6,9 +6,9 @@
 - commit hash: c8db0e8
 - commit date: 2024-10-03
 - overall geometric mean: 1.04x slower
-- HPT reliability: 89.52%
+- HPT reliability: 94.84%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 0.91x
+- Memory change: 0.93x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -191,10 +191,10 @@ Ignored benchmarks (2) of results/bm-20241003-3.14.0a0-c8db0e8/bm-20241003-armin
 
 # HPT report
 
-- Reliability score: 89.52% likely to be faster
+- Reliability score: 94.84% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 0.91x
+- memory change: 0.93x

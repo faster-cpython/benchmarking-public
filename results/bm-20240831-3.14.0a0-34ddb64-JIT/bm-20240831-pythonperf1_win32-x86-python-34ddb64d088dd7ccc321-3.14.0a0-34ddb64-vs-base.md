@@ -6,7 +6,7 @@
 - commit hash: 34ddb64
 - commit date: 2024-08-31
 - overall geometric mean: 1.07x faster
-- HPT reliability: 99.82%
+- HPT reliability: 99.74%
 - HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
@@ -182,7 +182,7 @@ Benchmark hidden because not significant (10): bench_thread_pool, async_tree_io,
 
 # HPT report
 
-- Reliability score: 99.82% likely to be faster
+- Reliability score: 99.74% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

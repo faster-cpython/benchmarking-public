@@ -6,7 +6,7 @@
 - commit hash: 9c4347e
 - commit date: 2023-11-22
 - overall geometric mean: 1.01x faster
-- HPT reliability: 83.33%
+- HPT reliability: 87.52%
 - HPT 99th percentile: 1.00x faster
 - Memory change: 0.92x
 
@@ -197,7 +197,7 @@ Ignored benchmarks (7) of results/bm-20231122-3.13.0a2-9c4347e/bm-20231122-linux
 
 # HPT report
 
-- Reliability score: 83.33% likely to be faster
+- Reliability score: 87.52% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x

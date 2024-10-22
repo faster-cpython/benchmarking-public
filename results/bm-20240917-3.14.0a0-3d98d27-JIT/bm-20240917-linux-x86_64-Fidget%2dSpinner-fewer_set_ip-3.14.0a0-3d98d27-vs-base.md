@@ -6,9 +6,9 @@
 - commit hash: 3d98d27
 - commit date: 2024-09-17
 - overall geometric mean: 1.00x faster
-- HPT reliability: 59.73%
+- HPT reliability: 63.60%
 - HPT 99th percentile: 1.00x faster
-- Memory change: 1.01x
+- Memory change: 1.00x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -169,10 +169,10 @@ Benchmark hidden because not significant (35): unpickle, pylint, async_tree_memo
 
 # HPT report
 
-- Reliability score: 59.73% likely to be faster
+- Reliability score: 63.60% likely to be faster
 - 90% likely to have a speedup of 1.00x
 - 95% likely to have a speedup of 1.00x
 - 99% likely to have a speedup of 1.00x
 
 # Memory
-- memory change: 1.01x
+- memory change: 1.00x

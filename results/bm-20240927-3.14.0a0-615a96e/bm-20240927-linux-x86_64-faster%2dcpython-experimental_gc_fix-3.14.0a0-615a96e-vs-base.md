@@ -6,9 +6,9 @@
 - commit hash: 615a96e
 - commit date: 2024-09-27
 - overall geometric mean: 1.00x faster
-- HPT reliability: 87.03%
+- HPT reliability: 76.50%
 - HPT 99th percentile: 1.00x slower
-- Memory change: 0.96x
+- Memory change: 0.95x
 
 Benchmarks with tag 'apps':
 ===========================
@@ -193,10 +193,10 @@ Benchmark hidden because not significant (19): scimark_sparse_mat_mult, unpickle
 
 # HPT report
 
-- Reliability score: 87.03% likely to be slow
+- Reliability score: 76.50% likely to be slow
 - 90% likely to have a slowdown of 1.00x
 - 95% likely to have a slowdown of 1.00x
 - 99% likely to have a slowdown of 1.00x
 
 # Memory
-- memory change: 0.96x
+- memory change: 0.95x

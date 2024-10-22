@@ -6,8 +6,8 @@
 - commit hash: 5e9e506
 - commit date: 2024-10-04
 - overall geometric mean: 1.01x faster
-- HPT reliability: 51.52%
-- HPT 99th percentile: 1.00x slower
+- HPT reliability: 55.75%
+- HPT 99th percentile: 1.00x faster
 - Memory change: unknown
 
 Benchmarks with tag 'apps':
@@ -195,10 +195,10 @@ Ignored benchmarks (6) of results/bm-20241004-3.14.0a0-5e9e506-JIT/bm-20241004-p
 
 # HPT report
 
-- Reliability score: 51.52% likely to be slow
-- 90% likely to have a slowdown of 1.00x
-- 95% likely to have a slowdown of 1.00x
-- 99% likely to have a slowdown of 1.00x
+- Reliability score: 55.75% likely to be faster
+- 90% likely to have a speedup of 1.00x
+- 95% likely to have a speedup of 1.00x
+- 99% likely to have a speedup of 1.00x
 
 # Memory
 - memory change: unknown

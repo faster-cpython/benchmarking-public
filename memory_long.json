@@ -846,5 +846,7 @@
   "bm-20240605-3.13.0b2-3a83b17-JIT/bm-20240605-arminc-aarch64-python-v3.13.0b2-3.13.0b2-3a83b17.json,bm-20241021-3.14.0a1+-ded105a-JIT/bm-20241021-arminc-aarch64-python-ded105a62b9d78717f8d-3.14.0a1+-ded105a.json,3.13.0b2": 1.1,
   "bm-20240605-3.13.0b2-3a83b17-JIT/bm-20240605-pythonperf1-amd64-python-v3.13.0b2-3.13.0b2-3a83b17.json,bm-20241021-3.14.0a1+-ded105a-JIT/bm-20241021-pythonperf1-amd64-python-ded105a62b9d78717f8d-3.14.0a1+-ded105a.json,3.13.0b2": null,
   "bm-20240605-3.13.0b2-3a83b17/bm-20240605-pythonperf1_win32-x86-python-v3.13.0b2-3.13.0b2-3a83b17.json,bm-20241021-3.14.0a1+-ded105a-JIT/bm-20241021-pythonperf1_win32-x86-python-ded105a62b9d78717f8d-3.14.0a1+-ded105a.json,3.13.0b2": null,
-  "bm-20240605-3.13.0b2-3a83b17-JIT/bm-20240605-linux-x86_64-python-v3.13.0b2-3.13.0b2-3a83b17.json,bm-20241022-3.14.0a1+-34653bb-JIT/bm-20241022-linux-x86_64-python-34653bba644aa5481613-3.14.0a1+-34653bb.json,3.13.0b2": 1.09
+  "bm-20240605-3.13.0b2-3a83b17-JIT/bm-20240605-linux-x86_64-python-v3.13.0b2-3.13.0b2-3a83b17.json,bm-20241022-3.14.0a1+-34653bb-JIT/bm-20241022-linux-x86_64-python-34653bba644aa5481613-3.14.0a1+-34653bb.json,3.13.0b2": 1.09,
+  "bm-20240605-3.13.0b2-3a83b17-JIT/bm-20240605-linux-x86_64-python-v3.13.0b2-3.13.0b2-3a83b17.json,bm-20241022-3.14.0a1+-759a54d/bm-20241022-linux-x86_64-python-759a54d28ffe7eac8c23-3.14.0a1+-759a54d.json,3.13.0b2": 1.03,
+  "bm-20240605-3.13.0b2-3a83b17-JIT/bm-20240605-pythonperf2-x86_64-python-v3.13.0b2-3.13.0b2-3a83b17.json,bm-20241022-3.14.0a1+-759a54d-JIT/bm-20241022-pythonperf2-x86_64-python-759a54d28ffe7eac8c23-3.14.0a1+-759a54d.json,3.13.0b2": 1.09
 }

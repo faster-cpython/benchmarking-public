@@ -10,11 +10,11 @@
 
 ## linux x86_64 (linux)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5246839304)
-- cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
-- platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/10941608962)
+- cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-193-generic-x86_64-with-glibc2.31
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5246839304)
+- platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
 - [raw results](bm-20230522-linux-x86_64-python-5612078f68e9688fbf3b-3.12.0b1-5612078.json)
 - [raw results](bm-20230522-linux-x86_64-python-v3.12.0b1-3.12.0b1-5612078.json)
 

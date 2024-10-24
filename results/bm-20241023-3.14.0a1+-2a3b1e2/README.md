@@ -55,6 +55,7 @@
 
 - Geometric mean: 1.00x faster (HPT: reliability of 60.79%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
+- missing benchmarks: 🔴 sqlalchemy_declarative, sqlalchemy_imperative
 - [🧠memory plot](bm-20241023-linux-x86_64-faster%252dcpython-load_const_return_re-3.14.0a1%2B-2a3b1e2-vs-base-mem.svg)
 - [📄table](bm-20241023-linux-x86_64-faster%252dcpython-load_const_return_re-3.14.0a1%2B-2a3b1e2-vs-base.md)
 - [📈time plot](bm-20241023-linux-x86_64-faster%252dcpython-load_const_return_re-3.14.0a1%2B-2a3b1e2-vs-base.svg)

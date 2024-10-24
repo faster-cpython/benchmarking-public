@@ -52,6 +52,10 @@
 - [pystats raw](bm-20241016-azure-x86_64-python-760872efecb95017db8e-3.14.0a1%2B-760872e-pystats.json)
 - [pystats table](bm-20241016-azure-x86_64-python-760872efecb95017db8e-3.14.0a1%2B-760872e-pystats.md)
 
+### vs. base
+
+- [pystats diff](bm-20241016-azure-x86_64-python-760872efecb95017db8e-3.14.0a1%2B-760872e-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11373872551)
@@ -85,6 +89,15 @@
 - new benchmarks: sphinx
 - [📄table](bm-20241016-linux-x86_64-python-760872efecb95017db8e-3.14.0a1%2B-760872e-vs-3.13.0.md)
 - [📈time plot](bm-20241016-linux-x86_64-python-760872efecb95017db8e-3.14.0a1%2B-760872e-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.02x slower (HPT: reliability of 61.29%, 1.00x slower at 99th %ile)
+- Memory usage: 1.06x
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- [🧠memory plot](bm-20241016-linux-x86_64-python-760872efecb95017db8e-3.14.0a1%2B-760872e-vs-base-mem.svg)
+- [📄table](bm-20241016-linux-x86_64-python-760872efecb95017db8e-3.14.0a1%2B-760872e-vs-base.md)
+- [📈time plot](bm-20241016-linux-x86_64-python-760872efecb95017db8e-3.14.0a1%2B-760872e-vs-base.svg)
 
 ### vs. 3.13.0b2
 

@@ -541,7 +541,7 @@
 <use x="222.65625" xlink:href="#l"/>
 </g>
 <g stroke="#1f77b4" stroke-opacity=".9">
-<path d="m274 630 181-70.4 62.2 15.6h11.5 11.1l4.22-7.82 5.27 7.82 0.0571-7.82h2.06 11.3l8-7.82h3.35 11.4 11.4 11.1 8.17 3.19 9.42l13.6 15.6h7.98 2.43 12.3 4.78 6.65" clip-path="url(#e)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
+<path d="m274 630 181-70.4 62.2 15.6h11.5 11.1l4.22-7.82 5.27 7.82 0.0571-7.82h2.06 11.3l8-7.82h3.35 11.4 11.4 11.1 8.17 3.19 9.42l13.6 15.6h7.98 2.43 12.3 4.78 1.36 5.29" clip-path="url(#e)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
 <g clip-path="url(#e)" fill="#1f77b4" fill-opacity=".9">
 <use x="274.437493" y="629.942446" xlink:href="#a"/>
 <use x="454.946892" y="559.563257" xlink:href="#a"/>
@@ -566,6 +566,7 @@
 <use x="652.797774" y="575.203077" xlink:href="#a"/>
 <use x="665.057718" y="575.203077" xlink:href="#a"/>
 <use x="669.841095" y="575.203077" xlink:href="#a"/>
+<use x="671.200643" y="575.203077" xlink:href="#a"/>
 <use x="676.49224" y="575.203077" xlink:href="#a"/>
 </g>
 </g>

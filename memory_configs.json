@@ -176,5 +176,6 @@
   "bm-20240727-3.14.0a0-04eb5c8/bm-20240727-pythonperf1_win32-x86-python-04eb5c8db1e24cabd0cb-3.14.0a0-04eb5c8.json,bm-20240727-3.14.0a0-04eb5c8-JIT/bm-20240727-pythonperf1_win32-x86-python-04eb5c8db1e24cabd0cb-3.14.0a0-04eb5c8.json": null,
   "bm-20240720-3.14.0a0-c4c7097/bm-20240720-pythonperf1_win32-x86-python-c4c7097e64b0c9cb0081-3.14.0a0-c4c7097.json,bm-20240720-3.14.0a0-c4c7097-JIT/bm-20240720-pythonperf1_win32-x86-python-c4c7097e64b0c9cb0081-3.14.0a0-c4c7097.json": null,
   "bm-20240713-3.14.0a0-a2bec77/bm-20240713-pythonperf1_win32-x86-python-a2bec77d25b11f50362a-3.14.0a0-a2bec77.json,bm-20240713-3.14.0a0-a2bec77-JIT/bm-20240713-pythonperf1_win32-x86-python-a2bec77d25b11f50362a-3.14.0a0-a2bec77.json": null,
-  "bm-20240215-3.13.0a4-9d34f60/bm-20240215-pythonperf1_win32-x86-python-v3.13.0a4-3.13.0a4-9d34f60.json,bm-20240215-3.13.0a4-9d34f60-JIT/bm-20240215-pythonperf1_win32-x86-python-v3.13.0a4-3.13.0a4-9d34f60.json": null
+  "bm-20240215-3.13.0a4-9d34f60/bm-20240215-pythonperf1_win32-x86-python-v3.13.0a4-3.13.0a4-9d34f60.json,bm-20240215-3.13.0a4-9d34f60-JIT/bm-20240215-pythonperf1_win32-x86-python-v3.13.0a4-3.13.0a4-9d34f60.json": null,
+  "bm-20241016-3.14.0a1+-760872e/bm-20241016-linux-x86_64-python-760872efecb95017db8e-3.14.0a1+-760872e.json,bm-20241016-3.14.0a1+-760872e-JIT/bm-20241016-linux-x86_64-python-760872efecb95017db8e-3.14.0a1+-760872e.json": 1.06
 }

@@ -55,6 +55,8 @@
 
 - Geometric mean: 1.009x slower (HPT: reliability of 99.98%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
+- missing benchmarks: 🔴 connected_components, djangocms, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [🧠memory plot](bm-20241004-linux-x86_64-faster%252dcpython-load_fast_can_be_def-3.14.0a0-cb9433d-vs-base-mem.svg)
 - [📄table](bm-20241004-linux-x86_64-faster%252dcpython-load_fast_can_be_def-3.14.0a0-cb9433d-vs-base.md)
 - [📈time plot](bm-20241004-linux-x86_64-faster%252dcpython-load_fast_can_be_def-3.14.0a0-cb9433d-vs-base.svg)

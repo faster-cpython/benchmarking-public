@@ -42,3 +42,11 @@
 - [📄table](bm-20241202-linux-x86_64-faster%252dcpython-faster_marking-3.14.0a2%2B-07f228b-vs-3.13.0.md)
 - [📈time plot](bm-20241202-linux-x86_64-faster%252dcpython-faster_marking-3.14.0a2%2B-07f228b-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.010x slower (HPT: reliability of 99.96%, 1.00x slower at 99th %ile)
+- Memory usage: 0.98x
+- [🧠memory plot](bm-20241202-linux-x86_64-faster%252dcpython-faster_marking-3.14.0a2%2B-07f228b-vs-base-mem.svg)
+- [📄table](bm-20241202-linux-x86_64-faster%252dcpython-faster_marking-3.14.0a2%2B-07f228b-vs-base.md)
+- [📈time plot](bm-20241202-linux-x86_64-faster%252dcpython-faster_marking-3.14.0a2%2B-07f228b-vs-base.svg)
+

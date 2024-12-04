@@ -37,8 +37,8 @@
 
 - Geometric mean: 1.376x slower (HPT: reliability of 100.00%, 1.39x slower at 99th %ile)
 - Memory usage: 1.21x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: dulwich_log, many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http
+- new benchmarks: dulwich_log
 - [📄table](bm-20241116-arminc-aarch64-python-ed81971e6b26c34445f0-3.14.0a1%2B-ed81971-vs-3.13.0.md)
 - [📈time plot](bm-20241116-arminc-aarch64-python-ed81971e6b26c34445f0-3.14.0a1%2B-ed81971-vs-3.13.0.svg)
 
@@ -80,8 +80,7 @@
 
 - Geometric mean: 1.296x slower (HPT: reliability of 100.00%, 1.28x slower at 99th %ile)
 - Memory usage: 1.20x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http
 - [📄table](bm-20241116-linux-x86_64-python-ed81971e6b26c34445f0-3.14.0a1%2B-ed81971-vs-3.13.0.md)
 - [📈time plot](bm-20241116-linux-x86_64-python-ed81971e6b26c34445f0-3.14.0a1%2B-ed81971-vs-3.13.0.svg)
 
@@ -123,8 +122,7 @@
 
 - Geometric mean: 1.297x slower (HPT: reliability of 100.00%, 1.26x slower at 99th %ile)
 - Memory usage: 1.22x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http
 - [📄table](bm-20241116-pythonperf2-x86_64-python-ed81971e6b26c34445f0-3.14.0a1%2B-ed81971-vs-3.13.0.md)
 - [📈time plot](bm-20241116-pythonperf2-x86_64-python-ed81971e6b26c34445f0-3.14.0a1%2B-ed81971-vs-3.13.0.svg)
 
@@ -165,8 +163,7 @@
 
 - Geometric mean: 1.210x slower (HPT: reliability of 100.00%, 1.14x slower at 99th %ile)
 - Memory usage: 1.15x
-- missing benchmarks: chameleon, dask, gevent_hub, mypy2, tornado_http
-- new benchmarks: many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, dask, djangocms, gevent_hub, gunicorn, tornado_http
 - [📄table](bm-20241116-darwin-arm64-python-ed81971e6b26c34445f0-3.14.0a1%2B-ed81971-vs-3.13.0.md)
 - [📈time plot](bm-20241116-darwin-arm64-python-ed81971e6b26c34445f0-3.14.0a1%2B-ed81971-vs-3.13.0.svg)
 

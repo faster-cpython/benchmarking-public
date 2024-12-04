@@ -37,8 +37,8 @@
 
 - Geometric mean: 1.019x faster (HPT: reliability of 96.70%, 1.00x faster at 99th %ile)
 - Memory usage: 1.02x
-- missing benchmarks: chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: chameleon, connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20241018-linux-x86_64-python-6d93690954daae9e9a36-3.14.0a1%2B-6d93690-vs-3.13.0.md)
 - [📈time plot](bm-20241018-linux-x86_64-python-6d93690954daae9e9a36-3.14.0a1%2B-6d93690-vs-3.13.0.svg)
 

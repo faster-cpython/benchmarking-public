@@ -46,7 +46,7 @@
 
 - Geometric mean: 1.016x faster (HPT: reliability of 93.35%, 1.00x faster at 99th %ile)
 - Memory usage: 1.02x
-- missing benchmarks: chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path
+- missing benchmarks: chameleon, connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sqlite_synth, subparsers
 - [📄table](bm-20241025-linux-x86_64-faster%252dcpython-split_load_const-3.14.0a1%2B-f934559-vs-3.13.0.md)
 - [📈time plot](bm-20241025-linux-x86_64-faster%252dcpython-split_load_const-3.14.0a1%2B-f934559-vs-3.13.0.svg)
 

@@ -37,7 +37,7 @@
 
 - Geometric mean: 1.507x slower (HPT: reliability of 100.00%, 2.01x slower at 99th %ile)
 - Memory usage: 1.01x
-- missing benchmarks: chameleon, gevent_hub, mypy2
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, many_optionals, sqlite_synth, subparsers
 - [📄table](bm-20241029-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a1%2B-7e6deef-vs-3.13.0.md)
 - [📈time plot](bm-20241029-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a1%2B-7e6deef-vs-3.13.0.svg)
 

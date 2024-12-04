@@ -37,8 +37,8 @@
 
 - Geometric mean: 1.374x slower (HPT: reliability of 100.00%, 1.38x slower at 99th %ile)
 - Memory usage: 1.18x
-- missing benchmarks: chameleon, gevent_hub, mypy2
-- new benchmarks: dulwich_log, sqlite_synth
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, many_optionals, subparsers
+- new benchmarks: dulwich_log
 - [📄table](bm-20241102-arminc-aarch64-python-7d7d56d8b1147a6b85e1-3.14.0a1%2B-7d7d56d-vs-3.13.0.md)
 - [📈time plot](bm-20241102-arminc-aarch64-python-7d7d56d8b1147a6b85e1-3.14.0a1%2B-7d7d56d-vs-3.13.0.svg)
 
@@ -79,8 +79,7 @@
 
 - Geometric mean: 1.305x slower (HPT: reliability of 100.00%, 1.30x slower at 99th %ile)
 - Memory usage: 1.17x
-- missing benchmarks: chameleon, gevent_hub, mypy2
-- new benchmarks: sqlite_synth
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, many_optionals, subparsers
 - [📄table](bm-20241102-linux-x86_64-python-7d7d56d8b1147a6b85e1-3.14.0a1%2B-7d7d56d-vs-3.13.0.md)
 - [📈time plot](bm-20241102-linux-x86_64-python-7d7d56d8b1147a6b85e1-3.14.0a1%2B-7d7d56d-vs-3.13.0.svg)
 
@@ -121,8 +120,7 @@
 
 - Geometric mean: 1.294x slower (HPT: reliability of 100.00%, 1.28x slower at 99th %ile)
 - Memory usage: 1.18x
-- missing benchmarks: chameleon, gevent_hub, mypy2
-- new benchmarks: sqlite_synth
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, many_optionals, subparsers
 - [📄table](bm-20241102-pythonperf2-x86_64-python-7d7d56d8b1147a6b85e1-3.14.0a1%2B-7d7d56d-vs-3.13.0.md)
 - [📈time plot](bm-20241102-pythonperf2-x86_64-python-7d7d56d8b1147a6b85e1-3.14.0a1%2B-7d7d56d-vs-3.13.0.svg)
 
@@ -163,8 +161,7 @@
 
 - Geometric mean: 1.211x slower (HPT: reliability of 100.00%, 1.15x slower at 99th %ile)
 - Memory usage: 1.11x
-- missing benchmarks: chameleon, dask, gevent_hub, mypy2
-- new benchmarks: sqlite_synth
+- missing benchmarks: chameleon, dask, djangocms, gevent_hub, gunicorn, many_optionals, subparsers
 - [📄table](bm-20241102-darwin-arm64-python-7d7d56d8b1147a6b85e1-3.14.0a1%2B-7d7d56d-vs-3.13.0.md)
 - [📈time plot](bm-20241102-darwin-arm64-python-7d7d56d8b1147a6b85e1-3.14.0a1%2B-7d7d56d-vs-3.13.0.svg)
 

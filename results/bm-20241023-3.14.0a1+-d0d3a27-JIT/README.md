@@ -46,7 +46,7 @@
 
 - Geometric mean: 1.043x slower (HPT: reliability of 98.16%, 1.00x slower at 99th %ile)
 - Memory usage: 1.11x
-- missing benchmarks: chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: chameleon, connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - [📄table](bm-20241023-linux-x86_64-brandtbucher-jump_backward_0-3.14.0a1%2B-d0d3a27-vs-3.13.0.md)
 - [📈time plot](bm-20241023-linux-x86_64-brandtbucher-jump_backward_0-3.14.0a1%2B-d0d3a27-vs-3.13.0.svg)
 

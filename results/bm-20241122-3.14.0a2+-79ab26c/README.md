@@ -46,8 +46,7 @@
 
 - Geometric mean: 1.042x faster (HPT: reliability of 99.98%, 1.00x faster at 99th %ile)
 - Memory usage: 1.02x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: djangocms, many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, gevent_hub, gunicorn, tornado_http
 - [📄table](bm-20241122-linux-x86_64-faster%252dcpython-mark_first_2-3.14.0a2%2B-79ab26c-vs-3.13.0.md)
 - [📈time plot](bm-20241122-linux-x86_64-faster%252dcpython-mark_first_2-3.14.0a2%2B-79ab26c-vs-3.13.0.svg)
 
@@ -88,8 +87,7 @@
 
 - Geometric mean: 1.027x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - Memory usage: 1.02x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: djangocms, many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, gevent_hub, gunicorn, tornado_http
 - [📄table](bm-20241122-pythonperf2-x86_64-faster%252dcpython-mark_first_2-3.14.0a2%2B-79ab26c-vs-3.13.0.md)
 - [📈time plot](bm-20241122-pythonperf2-x86_64-faster%252dcpython-mark_first_2-3.14.0a2%2B-79ab26c-vs-3.13.0.svg)
 

@@ -42,7 +42,7 @@
 
 - Geometric mean: 1.030x faster (HPT: reliability of 81.14%, 1.00x faster at 99th %ile)
 - Memory usage: 0.99x
-- missing benchmarks: chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: chameleon, connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - new benchmarks: asyncio_tcp, asyncio_tcp_ssl
 - [📄table](bm-20240903-linux-x86_64-python-cfbc841ef3c27b3e65d1-3.14.0a0-cfbc841-vs-3.13.0.md)
 - [📈time plot](bm-20240903-linux-x86_64-python-cfbc841ef3c27b3e65d1-3.14.0a0-cfbc841-vs-3.13.0.svg)

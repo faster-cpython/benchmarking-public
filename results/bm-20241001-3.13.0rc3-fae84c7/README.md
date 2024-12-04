@@ -36,8 +36,8 @@
 
 - Geometric mean: 1.014x faster (HPT: reliability of 99.44%, 1.00x faster at 99th %ile)
 - Memory usage: 0.90x
-- missing benchmarks: connected_components, gevent_hub, k_core, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
+- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20241001-arminc-aarch64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0.md)
 - [📈time plot](bm-20241001-arminc-aarch64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0.svg)
 
@@ -70,8 +70,8 @@
 
 - Geometric mean: 1.018x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - Memory usage: 0.91x
-- missing benchmarks: connected_components, gevent_hub, k_core, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, djangocms, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: connected_components, gevent_hub, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
+- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20241001-linux-x86_64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0.md)
 - [📈time plot](bm-20241001-linux-x86_64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0.svg)
 
@@ -104,8 +104,8 @@
 
 - Geometric mean: 1.009x faster (HPT: reliability of 60.94%, 1.00x slower at 99th %ile)
 - Memory usage: 0.90x
-- missing benchmarks: connected_components, gevent_hub, k_core, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
+- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20241001-pythonperf2-x86_64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0.md)
 - [📈time plot](bm-20241001-pythonperf2-x86_64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0.svg)
 
@@ -138,8 +138,8 @@
 
 - Geometric mean: 1.023x faster (HPT: reliability of 98.78%, 1.00x faster at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, gevent_hub, k_core, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, flaskblogging, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
+- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20241001-pythonperf1-amd64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0.md)
 - [📈time plot](bm-20241001-pythonperf1-amd64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0.svg)
 
@@ -172,8 +172,8 @@
 
 - Geometric mean: 1.033x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, gevent_hub, k_core, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, flaskblogging, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, flaskblogging, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20241001-pythonperf1_win32-x86-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0.md)
 - [📈time plot](bm-20241001-pythonperf1_win32-x86-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0.svg)
 
@@ -206,8 +206,8 @@
 
 - Geometric mean: 1.025x faster (HPT: reliability of 60.25%, 1.00x slower at 99th %ile)
 - Memory usage: 0.33x
-- missing benchmarks: connected_components, gevent_hub, k_core, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
+- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20241001-darwin-arm64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0.md)
 - [📈time plot](bm-20241001-darwin-arm64-python-v3.13.0rc3-3.13.0rc3-fae84c7-vs-3.13.0.svg)
 

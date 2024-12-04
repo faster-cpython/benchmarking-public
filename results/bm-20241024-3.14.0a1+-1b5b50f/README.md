@@ -46,7 +46,7 @@
 
 - Geometric mean: 1.017x faster (HPT: reliability of 95.52%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
-- missing benchmarks: chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path
+- missing benchmarks: chameleon, connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sqlite_synth, subparsers
 - [📄table](bm-20241024-linux-x86_64-faster%252dcpython-load_int-3.14.0a1%2B-1b5b50f-vs-3.13.0.md)
 - [📈time plot](bm-20241024-linux-x86_64-faster%252dcpython-load_int-3.14.0a1%2B-1b5b50f-vs-3.13.0.svg)
 

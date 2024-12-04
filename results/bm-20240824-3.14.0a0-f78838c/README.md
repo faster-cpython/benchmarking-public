@@ -37,7 +37,7 @@
 
 - Geometric mean: 1.023x faster (HPT: reliability of 98.50%, 1.00x faster at 99th %ile)
 - Memory usage: 0.91x
-- missing benchmarks: chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: chameleon, connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - new benchmarks: asyncio_tcp, asyncio_tcp_ssl
 - [📄table](bm-20240824-arminc-aarch64-bdraco-speed_up_async_sched-3.14.0a0-f78838c-vs-3.13.0.md)
 - [📈time plot](bm-20240824-arminc-aarch64-bdraco-speed_up_async_sched-3.14.0a0-f78838c-vs-3.13.0.svg)
@@ -79,7 +79,7 @@
 
 - Geometric mean: 1.034x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - Memory usage: 0.92x
-- missing benchmarks: chameleon, connected_components, dulwich_log, gevent_hub, k_core, mypy2, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: chameleon, connected_components, djangocms, dulwich_log, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - new benchmarks: asyncio_tcp, asyncio_tcp_ssl
 - [📄table](bm-20240824-linux-x86_64-bdraco-speed_up_async_sched-3.14.0a0-f78838c-vs-3.13.0.md)
 - [📈time plot](bm-20240824-linux-x86_64-bdraco-speed_up_async_sched-3.14.0a0-f78838c-vs-3.13.0.svg)
@@ -121,7 +121,7 @@
 
 - Geometric mean: 1.032x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - Memory usage: 0.91x
-- missing benchmarks: chameleon, connected_components, dulwich_log, gevent_hub, k_core, mypy2, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: chameleon, connected_components, djangocms, dulwich_log, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - new benchmarks: asyncio_tcp, asyncio_tcp_ssl
 - [📄table](bm-20240824-pythonperf2-x86_64-bdraco-speed_up_async_sched-3.14.0a0-f78838c-vs-3.13.0.md)
 - [📈time plot](bm-20240824-pythonperf2-x86_64-bdraco-speed_up_async_sched-3.14.0a0-f78838c-vs-3.13.0.svg)
@@ -163,7 +163,7 @@
 
 - Geometric mean: 1.091x faster (HPT: reliability of 100.00%, 1.04x faster at 99th %ile)
 - Memory usage: 0.63x
-- missing benchmarks: chameleon, connected_components, dask, gevent_hub, k_core, mypy2, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: chameleon, connected_components, dask, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - new benchmarks: asyncio_tcp, asyncio_tcp_ssl
 - [📄table](bm-20240824-darwin-arm64-bdraco-speed_up_async_sched-3.14.0a0-f78838c-vs-3.13.0.md)
 - [📈time plot](bm-20240824-darwin-arm64-bdraco-speed_up_async_sched-3.14.0a0-f78838c-vs-3.13.0.svg)

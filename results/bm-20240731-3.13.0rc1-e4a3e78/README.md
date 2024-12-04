@@ -36,8 +36,8 @@
 
 - Geometric mean: 1.011x faster (HPT: reliability of 64.28%, 1.00x slower at 99th %ile)
 - Memory usage: 0.91x
-- missing benchmarks: connected_components, gevent_hub, k_core, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, dask
+- missing benchmarks: connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, dask, mypy2
 - [📄table](bm-20240731-arminc-aarch64-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.13.0.md)
 - [📈time plot](bm-20240731-arminc-aarch64-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.13.0.svg)
 
@@ -70,8 +70,8 @@
 
 - Geometric mean: 1.012x faster (HPT: reliability of 64.36%, 1.00x faster at 99th %ile)
 - Memory usage: 0.92x
-- missing benchmarks: connected_components, gevent_hub, k_core, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, dask
+- missing benchmarks: connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, dask, mypy2
 - [📄table](bm-20240731-linux-x86_64-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.13.0.md)
 - [📈time plot](bm-20240731-linux-x86_64-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.13.0.svg)
 
@@ -104,8 +104,8 @@
 
 - Geometric mean: 1.013x faster (HPT: reliability of 77.64%, 1.00x faster at 99th %ile)
 - Memory usage: 0.91x
-- missing benchmarks: connected_components, gevent_hub, k_core, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, dask
+- missing benchmarks: connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, dask, mypy2
 - [📄table](bm-20240731-pythonperf2-x86_64-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.13.0.md)
 - [📈time plot](bm-20240731-pythonperf2-x86_64-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.13.0.svg)
 
@@ -138,8 +138,8 @@
 
 - Geometric mean: 1.012x slower (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, gevent_hub, k_core, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: asyncio_tcp, asyncio_tcp_ssl
+- missing benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, mypy2
 - [📄table](bm-20240731-pythonperf1-amd64-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.13.0.md)
 - [📈time plot](bm-20240731-pythonperf1-amd64-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.13.0.svg)
 
@@ -172,7 +172,7 @@
 
 - Geometric mean: 1.034x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, gevent_hub, k_core, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - new benchmarks: asyncio_tcp, asyncio_tcp_ssl
 - [📄table](bm-20240731-pythonperf1_win32-x86-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.13.0.md)
 - [📈time plot](bm-20240731-pythonperf1_win32-x86-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.13.0.svg)
@@ -206,8 +206,8 @@
 
 - Geometric mean: 1.098x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
 - Memory usage: 0.38x
-- missing benchmarks: connected_components, gevent_hub, k_core, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: asyncio_tcp, asyncio_tcp_ssl
+- missing benchmarks: connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, mypy2
 - [📄table](bm-20240731-darwin-arm64-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.13.0.md)
 - [📈time plot](bm-20240731-darwin-arm64-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.13.0.svg)
 

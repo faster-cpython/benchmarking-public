@@ -37,8 +37,8 @@
 
 - Geometric mean: 1.030x faster (HPT: reliability of 99.98%, 1.00x faster at 99th %ile)
 - Memory usage: 0.91x
-- missing benchmarks: async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20241015-linux-x86_64-efimov%252dmikhail-crash_fix_generators-3.14.0a0-b94d5c4-vs-3.13.0.md)
 - [📈time plot](bm-20241015-linux-x86_64-efimov%252dmikhail-crash_fix_generators-3.14.0a0-b94d5c4-vs-3.13.0.svg)
 

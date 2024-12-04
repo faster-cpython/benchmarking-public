@@ -37,7 +37,7 @@
 
 - Geometric mean: 1.097x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
 - Memory usage: 1.08x
-- missing benchmarks: chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: chameleon, connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - new benchmarks: dulwich_log
 - [📄table](bm-20241021-arminc-aarch64-python-ded105a62b9d78717f8d-3.14.0a1%2B-ded105a-vs-3.13.0.md)
 - [📈time plot](bm-20241021-arminc-aarch64-python-ded105a62b9d78717f8d-3.14.0a1%2B-ded105a-vs-3.13.0.svg)
@@ -71,7 +71,7 @@
 
 - Geometric mean: 1.004x faster (HPT: reliability of 60.45%, 1.00x slower at 99th %ile)
 - Memory usage: 1.07x
-- missing benchmarks: chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: chameleon, connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - [📄table](bm-20241021-linux-x86_64-python-ded105a62b9d78717f8d-3.14.0a1%2B-ded105a-vs-3.13.0.md)
 - [📈time plot](bm-20241021-linux-x86_64-python-ded105a62b9d78717f8d-3.14.0a1%2B-ded105a-vs-3.13.0.svg)
 
@@ -104,7 +104,7 @@
 
 - Geometric mean: 1.007x slower (HPT: reliability of 53.40%, 1.00x faster at 99th %ile)
 - Memory usage: 1.07x
-- missing benchmarks: chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: chameleon, connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - [📄table](bm-20241021-pythonperf2-x86_64-python-ded105a62b9d78717f8d-3.14.0a1%2B-ded105a-vs-3.13.0.md)
 - [📈time plot](bm-20241021-pythonperf2-x86_64-python-ded105a62b9d78717f8d-3.14.0a1%2B-ded105a-vs-3.13.0.svg)
 
@@ -137,7 +137,7 @@
 
 - Geometric mean: 1.011x slower (HPT: reliability of 99.84%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: asyncio_websockets, bpe_tokeniser, chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: asyncio_websockets, bpe_tokeniser, chameleon, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - [📄table](bm-20241021-pythonperf1-amd64-python-ded105a62b9d78717f8d-3.14.0a1%2B-ded105a-vs-3.13.0.md)
 - [📈time plot](bm-20241021-pythonperf1-amd64-python-ded105a62b9d78717f8d-3.14.0a1%2B-ded105a-vs-3.13.0.svg)
 
@@ -170,7 +170,7 @@
 
 - Geometric mean: 1.061x faster (HPT: reliability of 54.52%, 1.00x faster at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: asyncio_websockets, bpe_tokeniser, chameleon, connected_components, gevent_hub, k_core, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: asyncio_websockets, bpe_tokeniser, chameleon, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - [📄table](bm-20241021-pythonperf1_win32-x86-python-ded105a62b9d78717f8d-3.14.0a1%2B-ded105a-vs-3.13.0.md)
 - [📈time plot](bm-20241021-pythonperf1_win32-x86-python-ded105a62b9d78717f8d-3.14.0a1%2B-ded105a-vs-3.13.0.svg)
 
@@ -203,7 +203,7 @@
 
 - Geometric mean: 1.040x faster (HPT: reliability of 99.75%, 1.00x faster at 99th %ile)
 - Memory usage: 1.10x
-- missing benchmarks: chameleon, connected_components, dask, gevent_hub, k_core, mypy2, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: chameleon, connected_components, dask, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - [📄table](bm-20241021-darwin-arm64-python-ded105a62b9d78717f8d-3.14.0a1%2B-ded105a-vs-3.13.0.md)
 - [📈time plot](bm-20241021-darwin-arm64-python-ded105a62b9d78717f8d-3.14.0a1%2B-ded105a-vs-3.13.0.svg)
 

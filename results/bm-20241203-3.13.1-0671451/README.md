@@ -36,8 +36,6 @@
 
 - Geometric mean: 1.015x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
-- missing benchmarks: mypy2
-- new benchmarks: djangocms, gunicorn, many_optionals, sqlite_synth, subparsers
 - [📄table](bm-20241203-arminc-aarch64-python-v3.13.1-3.13.1-0671451-vs-3.13.0.md)
 - [📈time plot](bm-20241203-arminc-aarch64-python-v3.13.1-3.13.1-0671451-vs-3.13.0.svg)
 
@@ -70,8 +68,6 @@
 
 - Geometric mean: 1.003x faster (HPT: reliability of 86.90%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
-- missing benchmarks: mypy2
-- new benchmarks: djangocms, gunicorn, many_optionals, sqlite_synth, subparsers
 - [📄table](bm-20241203-linux-x86_64-python-v3.13.1-3.13.1-0671451-vs-3.13.0.md)
 - [📈time plot](bm-20241203-linux-x86_64-python-v3.13.1-3.13.1-0671451-vs-3.13.0.svg)
 
@@ -104,8 +100,6 @@
 
 - Geometric mean: 1.008x slower (HPT: reliability of 96.18%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
-- missing benchmarks: mypy2
-- new benchmarks: djangocms, gunicorn, many_optionals, sqlite_synth, subparsers
 - [📄table](bm-20241203-pythonperf2-x86_64-python-v3.13.1-3.13.1-0671451-vs-3.13.0.md)
 - [📈time plot](bm-20241203-pythonperf2-x86_64-python-v3.13.1-3.13.1-0671451-vs-3.13.0.svg)
 
@@ -138,8 +132,6 @@
 
 - Geometric mean: 1.004x faster (HPT: reliability of 97.63%, 1.00x faster at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: mypy2
-- new benchmarks: djangocms, many_optionals, sqlite_synth, subparsers
 - [📄table](bm-20241203-pythonperf1-amd64-python-v3.13.1-3.13.1-0671451-vs-3.13.0.md)
 - [📈time plot](bm-20241203-pythonperf1-amd64-python-v3.13.1-3.13.1-0671451-vs-3.13.0.svg)
 
@@ -172,7 +164,6 @@
 
 - Geometric mean: 1.012x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - Memory usage: unknown
-- new benchmarks: djangocms, many_optionals, sqlite_synth, subparsers
 - [📄table](bm-20241203-pythonperf1_win32-x86-python-v3.13.1-3.13.1-0671451-vs-3.13.0.md)
 - [📈time plot](bm-20241203-pythonperf1_win32-x86-python-v3.13.1-3.13.1-0671451-vs-3.13.0.svg)
 
@@ -205,8 +196,7 @@
 
 - Geometric mean: 1.002x slower (HPT: reliability of 98.22%, 1.00x slower at 99th %ile)
 - Memory usage: 1.01x
-- missing benchmarks: mypy2
-- new benchmarks: djangocms, flaskblogging, gunicorn, many_optionals, sqlite_synth, subparsers
+- new benchmarks: flaskblogging
 - [📄table](bm-20241203-darwin-arm64-python-v3.13.1-3.13.1-0671451-vs-3.13.0.md)
 - [📈time plot](bm-20241203-darwin-arm64-python-v3.13.1-3.13.1-0671451-vs-3.13.0.svg)
 

@@ -37,8 +37,8 @@
 
 - Geometric mean: 1.090x slower (HPT: reliability of 100.00%, 1.06x slower at 99th %ile)
 - Memory usage: 1.03x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: djangocms, dulwich_log, many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, gevent_hub, gunicorn, tornado_http
+- new benchmarks: dulwich_log
 - [📄table](bm-20241120-arminc-aarch64-brandtbucher-justin_frame_pointer-3.14.0a1%2B-68190be-vs-3.13.0.md)
 - [📈time plot](bm-20241120-arminc-aarch64-brandtbucher-justin_frame_pointer-3.14.0a1%2B-68190be-vs-3.13.0.svg)
 

@@ -37,7 +37,7 @@
 
 - Geometric mean: 1.095x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
 - Memory usage: 1.08x
-- missing benchmarks: chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path
+- missing benchmarks: chameleon, connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sqlite_synth, subparsers
 - new benchmarks: dulwich_log
 - [📄table](bm-20241022-arminc-aarch64-python-34653bba644aa5481613-3.14.0a1%2B-34653bb-vs-3.13.0.md)
 - [📈time plot](bm-20241022-arminc-aarch64-python-34653bba644aa5481613-3.14.0a1%2B-34653bb-vs-3.13.0.svg)
@@ -76,7 +76,7 @@
 
 - Geometric mean: 1.003x faster (HPT: reliability of 67.32%, 1.00x slower at 99th %ile)
 - Memory usage: 1.07x
-- missing benchmarks: chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path
+- missing benchmarks: chameleon, connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sqlite_synth, subparsers
 - [📄table](bm-20241022-linux-x86_64-python-34653bba644aa5481613-3.14.0a1%2B-34653bb-vs-3.13.0.md)
 - [📈time plot](bm-20241022-linux-x86_64-python-34653bba644aa5481613-3.14.0a1%2B-34653bb-vs-3.13.0.svg)
 
@@ -109,7 +109,7 @@
 
 - Geometric mean: 1.011x slower (HPT: reliability of 67.16%, 1.00x slower at 99th %ile)
 - Memory usage: 1.07x
-- missing benchmarks: chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path
+- missing benchmarks: chameleon, connected_components, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sqlite_synth, subparsers
 - [📄table](bm-20241022-pythonperf2-x86_64-python-34653bba644aa5481613-3.14.0a1%2B-34653bb-vs-3.13.0.md)
 - [📈time plot](bm-20241022-pythonperf2-x86_64-python-34653bba644aa5481613-3.14.0a1%2B-34653bb-vs-3.13.0.svg)
 
@@ -142,7 +142,7 @@
 
 - Geometric mean: 1.005x slower (HPT: reliability of 99.32%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: asyncio_websockets, bpe_tokeniser, chameleon, connected_components, gevent_hub, k_core, mypy2, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: asyncio_websockets, bpe_tokeniser, chameleon, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - [📄table](bm-20241022-pythonperf1-amd64-python-34653bba644aa5481613-3.14.0a1%2B-34653bb-vs-3.13.0.md)
 - [📈time plot](bm-20241022-pythonperf1-amd64-python-34653bba644aa5481613-3.14.0a1%2B-34653bb-vs-3.13.0.svg)
 
@@ -175,7 +175,7 @@
 
 - Geometric mean: 1.066x faster (HPT: reliability of 53.62%, 1.00x faster at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: asyncio_websockets, bpe_tokeniser, chameleon, connected_components, gevent_hub, k_core, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: asyncio_websockets, bpe_tokeniser, chameleon, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - [📄table](bm-20241022-pythonperf1_win32-x86-python-34653bba644aa5481613-3.14.0a1%2B-34653bb-vs-3.13.0.md)
 - [📈time plot](bm-20241022-pythonperf1_win32-x86-python-34653bba644aa5481613-3.14.0a1%2B-34653bb-vs-3.13.0.svg)
 
@@ -208,7 +208,7 @@
 
 - Geometric mean: 1.037x faster (HPT: reliability of 99.67%, 1.00x faster at 99th %ile)
 - Memory usage: 1.09x
-- missing benchmarks: chameleon, connected_components, dask, gevent_hub, k_core, mypy2, shortest_path
+- missing benchmarks: chameleon, connected_components, dask, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sqlite_synth, subparsers
 - [📄table](bm-20241022-darwin-arm64-python-34653bba644aa5481613-3.14.0a1%2B-34653bb-vs-3.13.0.md)
 - [📈time plot](bm-20241022-darwin-arm64-python-34653bba644aa5481613-3.14.0a1%2B-34653bb-vs-3.13.0.svg)
 

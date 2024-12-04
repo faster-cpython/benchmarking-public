@@ -46,8 +46,7 @@
 
 - Geometric mean: 1.005x slower (HPT: reliability of 99.86%, 1.00x slower at 99th %ile)
 - Memory usage: 1.02x
-- missing benchmarks: chameleon, gevent_hub, mypy2
-- new benchmarks: sqlite_synth
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, many_optionals, subparsers
 - [📄table](bm-20241029-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a1%2B-f03f745-vs-3.13.0.md)
 - [📈time plot](bm-20241029-linux-x86_64-faster%252dcpython-use_stackrefs-3.14.0a1%2B-f03f745-vs-3.13.0.svg)
 
@@ -85,8 +84,7 @@
 
 - Geometric mean: 1.114x slower (HPT: reliability of 100.00%, 1.12x slower at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: chameleon, gevent_hub, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: sqlite_synth
+- missing benchmarks: chameleon, djangocms, gevent_hub, many_optionals, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
 - [📄table](bm-20241029-pythonperf1-amd64-faster%252dcpython-use_stackrefs-3.14.0a1%2B-f03f745-vs-3.13.0.md)
 - [📈time plot](bm-20241029-pythonperf1-amd64-faster%252dcpython-use_stackrefs-3.14.0a1%2B-f03f745-vs-3.13.0.svg)
 
@@ -126,8 +124,7 @@
 
 - Geometric mean: 1.020x faster (HPT: reliability of 98.50%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
-- missing benchmarks: chameleon, dask, gevent_hub, mypy2
-- new benchmarks: sqlite_synth
+- missing benchmarks: chameleon, dask, djangocms, gevent_hub, gunicorn, many_optionals, subparsers
 - [📄table](bm-20241029-darwin-arm64-faster%252dcpython-use_stackrefs-3.14.0a1%2B-f03f745-vs-3.13.0.md)
 - [📈time plot](bm-20241029-darwin-arm64-faster%252dcpython-use_stackrefs-3.14.0a1%2B-f03f745-vs-3.13.0.svg)
 

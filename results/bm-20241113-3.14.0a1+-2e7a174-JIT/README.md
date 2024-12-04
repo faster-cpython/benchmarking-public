@@ -37,8 +37,7 @@
 
 - Geometric mean: 1.011x slower (HPT: reliability of 73.10%, 1.00x slower at 99th %ile)
 - Memory usage: 1.04x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: sqlite_synth
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, many_optionals, subparsers, tornado_http
 - [📄table](bm-20241113-pythonperf2-x86_64-brandtbucher-jump_backoff-3.14.0a1%2B-2e7a174-vs-3.13.0.md)
 - [📈time plot](bm-20241113-pythonperf2-x86_64-brandtbucher-jump_backoff-3.14.0a1%2B-2e7a174-vs-3.13.0.svg)
 
@@ -79,8 +78,7 @@
 
 - Geometric mean: 1.055x slower (HPT: reliability of 100.00%, 1.07x slower at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: chameleon, gevent_hub, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
-- new benchmarks: sqlite_synth
+- missing benchmarks: chameleon, djangocms, gevent_hub, many_optionals, sqlalchemy_declarative, sqlalchemy_imperative, subparsers, tornado_http
 - [📄table](bm-20241113-pythonperf1_win32-x86-brandtbucher-jump_backoff-3.14.0a1%2B-2e7a174-vs-3.13.0.md)
 - [📈time plot](bm-20241113-pythonperf1_win32-x86-brandtbucher-jump_backoff-3.14.0a1%2B-2e7a174-vs-3.13.0.svg)
 

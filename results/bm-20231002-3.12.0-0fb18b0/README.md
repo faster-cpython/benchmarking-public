@@ -27,8 +27,8 @@
 
 - Geometric mean: 1.006x slower (HPT: reliability of 95.45%, 1.00x slower at 99th %ile)
 - Memory usage: 0.99x
-- missing benchmarks: bpe_tokeniser, connected_components, gevent_hub, k_core, shortest_path, sphinx
-- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, dulwich_log, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
+- missing benchmarks: bpe_tokeniser, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, subparsers
+- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, dulwich_log, mypy2, pickle, pickle_dict, pickle_list, unpickle, unpickle_list
 - [📄table](bm-20231002-arminc-aarch64-python-0fb18b02c8ad56299d6a-3.12.0-0fb18b0-vs-3.13.0.md)
 - [📈time plot](bm-20231002-arminc-aarch64-python-0fb18b02c8ad56299d6a-3.12.0-0fb18b0-vs-3.13.0.svg)
 
@@ -52,8 +52,8 @@
 
 - Geometric mean: 1.047x slower (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
 - Memory usage: 0.94x
-- missing benchmarks: bpe_tokeniser, connected_components, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, pylint, shortest_path, sphinx, thrift
-- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: bpe_tokeniser, connected_components, djangocms, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, many_optionals, pylint, shortest_path, sphinx, subparsers, thrift
+- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0-vs-3.13.0.md)
 - [📈time plot](bm-20231002-linux-x86_64-python-v3.12.0-3.12.0-0fb18b0-vs-3.13.0.svg)
 
@@ -77,8 +77,8 @@
 
 - Geometric mean: 1.010x faster (HPT: reliability of 57.24%, 1.00x slower at 99th %ile)
 - Memory usage: 0.98x
-- missing benchmarks: bpe_tokeniser, connected_components, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, pylint, shortest_path, sphinx, thrift
-- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: bpe_tokeniser, connected_components, djangocms, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, many_optionals, pylint, shortest_path, sphinx, subparsers, thrift
+- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20231002-pythonperf2-x86_64-python-v3.12.0-3.12.0-0fb18b0-vs-3.13.0.md)
 - [📈time plot](bm-20231002-pythonperf2-x86_64-python-v3.12.0-3.12.0-0fb18b0-vs-3.13.0.svg)
 
@@ -102,8 +102,8 @@
 
 - Geometric mean: 1.039x slower (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, pylint, shortest_path, sphinx, thrift
-- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, djangocms, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, many_optionals, pylint, shortest_path, sphinx, subparsers, thrift
+- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20231002-pythonperf1-amd64-python-v3.12.0-3.12.0-0fb18b0-vs-3.13.0.md)
 - [📈time plot](bm-20231002-pythonperf1-amd64-python-v3.12.0-3.12.0-0fb18b0-vs-3.13.0.svg)
 
@@ -127,8 +127,8 @@
 
 - Geometric mean: 1.123x slower (HPT: reliability of 100.00%, 1.13x slower at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, pylint, shortest_path, sphinx, thrift
-- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, djangocms, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, many_optionals, pylint, shortest_path, sphinx, subparsers, thrift
+- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20231002-pythonperf1_win32-x86-python-v3.12.0-3.12.0-0fb18b0-vs-3.13.0.md)
 - [📈time plot](bm-20231002-pythonperf1_win32-x86-python-v3.12.0-3.12.0-0fb18b0-vs-3.13.0.svg)
 
@@ -152,8 +152,8 @@
 
 - Geometric mean: 1.037x faster (HPT: reliability of 87.37%, 1.00x faster at 99th %ile)
 - Memory usage: 0.88x
-- missing benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, bpe_tokeniser, connected_components, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, pylint, shortest_path, sphinx, thrift
-- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, bpe_tokeniser, connected_components, djangocms, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, many_optionals, pylint, shortest_path, sphinx, subparsers, thrift
+- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20231002-darwin-arm64-python-v3.12.0-3.12.0-0fb18b0-vs-3.13.0.md)
 - [📈time plot](bm-20231002-darwin-arm64-python-v3.12.0-3.12.0-0fb18b0-vs-3.13.0.svg)
 

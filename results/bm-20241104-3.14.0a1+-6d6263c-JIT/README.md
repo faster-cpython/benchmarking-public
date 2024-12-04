@@ -37,8 +37,7 @@
 
 - Geometric mean: 1.006x slower (HPT: reliability of 84.99%, 1.00x slower at 99th %ile)
 - Memory usage: 1.07x
-- missing benchmarks: chameleon, gevent_hub, mypy2
-- new benchmarks: sqlite_synth
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, many_optionals, subparsers
 - [📄table](bm-20241104-linux-x86_64-Fidget%252dSpinner-eliminate_func_guard-3.14.0a1%2B-6d6263c-vs-3.13.0.md)
 - [📈time plot](bm-20241104-linux-x86_64-Fidget%252dSpinner-eliminate_func_guard-3.14.0a1%2B-6d6263c-vs-3.13.0.svg)
 

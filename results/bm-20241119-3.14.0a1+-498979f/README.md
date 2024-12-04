@@ -37,8 +37,7 @@
 
 - Geometric mean: 1.014x faster (HPT: reliability of 89.05%, 1.00x faster at 99th %ile)
 - Memory usage: 1.02x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: djangocms, many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, gevent_hub, gunicorn, tornado_http
 - [📄table](bm-20241119-linux-x86_64-faster%252dcpython-eager_dict_tracking-3.14.0a1%2B-498979f-vs-3.13.0.md)
 - [📈time plot](bm-20241119-linux-x86_64-faster%252dcpython-eager_dict_tracking-3.14.0a1%2B-498979f-vs-3.13.0.svg)
 

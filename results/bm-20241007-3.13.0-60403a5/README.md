@@ -9,7 +9,7 @@
 
 ## linux aarch64 (arminc)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11560177153)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12166812176)
 - cpu model: missing
 - platform: Linux-5.15.0-101-generic-aarch64-with-glibc2.35
 - [raw results](bm-20241007-arminc-aarch64-python-v3.13.0-3.13.0-60403a5.json)
@@ -18,8 +18,8 @@
 
 - Geometric mean: 1.297x faster (HPT: reliability of 100.00%, 1.22x faster at 99th %ile)
 - Memory usage: 1.26x
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, dulwich_log, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
-- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, gevent_hub, k_core, shortest_path, sphinx
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, dulwich_log, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, unpickle, unpickle_list
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, subparsers
 - [📄table](bm-20241007-arminc-aarch64-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.md)
 - [📈time plot](bm-20241007-arminc-aarch64-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.svg)
 
@@ -27,14 +27,14 @@
 
 - Geometric mean: 1.010x faster (HPT: reliability of 95.45%, 1.00x faster at 99th %ile)
 - Memory usage: 1.02x
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, dulwich_log, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpickle, unpickle_list
-- new benchmarks: bpe_tokeniser, connected_components, gevent_hub, k_core, shortest_path, sphinx
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, dulwich_log, mypy2, pickle, pickle_dict, pickle_list, unpickle, unpickle_list
+- new benchmarks: bpe_tokeniser, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, subparsers
 - [📄table](bm-20241007-arminc-aarch64-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.md)
 - [📈time plot](bm-20241007-arminc-aarch64-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.svg)
 
 ## linux x86_64 (linux)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11560177153)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12166812176)
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-196-generic-x86_64-with-glibc2.31
 - [raw results](bm-20241007-linux-x86_64-python-v3.13.0-3.13.0-60403a5.json)
@@ -43,8 +43,8 @@
 
 - Geometric mean: 1.384x faster (HPT: reliability of 100.00%, 1.29x faster at 99th %ile)
 - Memory usage: 1.23x
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, djangocms, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, gevent_hub, k_core, shortest_path, sphinx
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, gevent_hub, k_core, many_optionals, shortest_path, sphinx, subparsers
 - [📄table](bm-20241007-linux-x86_64-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.md)
 - [📈time plot](bm-20241007-linux-x86_64-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.svg)
 
@@ -52,24 +52,24 @@
 
 - Geometric mean: 1.052x faster (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
 - Memory usage: 1.07x
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: bpe_tokeniser, connected_components, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, pylint, shortest_path, sphinx, thrift
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: bpe_tokeniser, connected_components, djangocms, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, many_optionals, pylint, shortest_path, sphinx, subparsers, thrift
 - [📄table](bm-20241007-linux-x86_64-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.md)
 - [📈time plot](bm-20241007-linux-x86_64-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.svg)
 
 ## linux x86_64 (pythonperf2)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11560177153)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12166812176)
 - cpu model: 12th Gen Intel(R) Core(TM) i9-12900
-- platform: Linux-5.15.0-105-generic-x86_64-with-glibc2.35
+- platform: Linux-5.15.0-125-generic-x86_64-with-glibc2.35
 - [raw results](bm-20241007-pythonperf2-x86_64-python-v3.13.0-3.13.0-60403a5.json)
 
 ### vs. 3.10.4
 
 - Geometric mean: 1.290x faster (HPT: reliability of 100.00%, 1.21x faster at 99th %ile)
 - Memory usage: 1.25x
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, gevent_hub, k_core, shortest_path, sphinx
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, subparsers
 - [📄table](bm-20241007-pythonperf2-x86_64-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.md)
 - [📈time plot](bm-20241007-pythonperf2-x86_64-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.svg)
 
@@ -77,14 +77,14 @@
 
 - Geometric mean: 1.007x slower (HPT: reliability of 57.24%, 1.00x faster at 99th %ile)
 - Memory usage: 1.03x
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: bpe_tokeniser, connected_components, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, pylint, shortest_path, sphinx, thrift
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: bpe_tokeniser, connected_components, djangocms, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, many_optionals, pylint, shortest_path, sphinx, subparsers, thrift
 - [📄table](bm-20241007-pythonperf2-x86_64-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.md)
 - [📈time plot](bm-20241007-pythonperf2-x86_64-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.svg)
 
 ## windows amd64 (pythonperf1)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11560177153)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12166812176)
 - cpu model: missing
 - platform: Windows-11-10.0.22631-SP0
 - [raw results](bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5.json)
@@ -93,8 +93,8 @@
 
 - Geometric mean: 1.205x faster (HPT: reliability of 100.00%, 1.18x faster at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, flaskblogging, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, asyncio_websockets, bpe_tokeniser, connected_components, gevent_hub, k_core, shortest_path, sphinx
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, asyncio_websockets, bpe_tokeniser, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, subparsers
 - [📄table](bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.md)
 - [📈time plot](bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.svg)
 
@@ -102,14 +102,14 @@
 
 - Geometric mean: 1.046x faster (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, pylint, shortest_path, sphinx, thrift
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, djangocms, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, many_optionals, pylint, shortest_path, sphinx, subparsers, thrift
 - [📄table](bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.md)
 - [📈time plot](bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.svg)
 
 ## windows x86 (pythonperf1_win32)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11560177153)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12166812176)
 - cpu model: missing
 - platform: Windows-11-10.0.22631-SP0
 - [raw results](bm-20241007-pythonperf1_win32-x86-python-v3.13.0-3.13.0-60403a5.json)
@@ -118,8 +118,8 @@
 
 - Geometric mean: 1.102x faster (HPT: reliability of 100.00%, 1.07x faster at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, asyncio_websockets, bpe_tokeniser, connected_components, gevent_hub, k_core, shortest_path, sphinx
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, asyncio_websockets, bpe_tokeniser, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, subparsers
 - [📄table](bm-20241007-pythonperf1_win32-x86-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.md)
 - [📈time plot](bm-20241007-pythonperf1_win32-x86-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.svg)
 
@@ -127,24 +127,24 @@
 
 - Geometric mean: 1.141x faster (HPT: reliability of 100.00%, 1.13x faster at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, mypy2, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, pylint, shortest_path, sphinx, thrift
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, dask, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: asyncio_websockets, bpe_tokeniser, connected_components, djangocms, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, many_optionals, pylint, shortest_path, sphinx, subparsers, thrift
 - [📄table](bm-20241007-pythonperf1_win32-x86-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.md)
 - [📈time plot](bm-20241007-pythonperf1_win32-x86-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.svg)
 
 ## darwin arm64 (darwin)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/11560177153)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12166812176)
 - cpu model: missing
-- platform: macOS-15.0.1-arm64-arm-64bit-Mach-O
+- platform: macOS-15.1-arm64-arm-64bit-Mach-O
 - [raw results](bm-20241007-darwin-arm64-python-v3.13.0-3.13.0-60403a5.json)
 
 ### vs. 3.10.4
 
 - Geometric mean: 1.160x faster (HPT: reliability of 100.00%, 1.09x faster at 99th %ile)
 - Memory usage: 1.29x
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, gevent_hub, k_core, shortest_path, sphinx
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, subparsers
 - [📄table](bm-20241007-darwin-arm64-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.md)
 - [📈time plot](bm-20241007-darwin-arm64-python-v3.13.0-3.13.0-60403a5-vs-3.10.4.svg)
 
@@ -152,8 +152,8 @@
 
 - Geometric mean: 1.034x slower (HPT: reliability of 87.37%, 1.00x slower at 99th %ile)
 - Memory usage: 1.15x
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, gunicorn, pickle, pickle_dict, pickle_list, sqlite_synth, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, bpe_tokeniser, connected_components, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, pylint, shortest_path, sphinx, thrift
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, bpe_tokeniser, connected_components, djangocms, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, many_optionals, pylint, shortest_path, sphinx, subparsers, thrift
 - [📄table](bm-20241007-darwin-arm64-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.md)
 - [📈time plot](bm-20241007-darwin-arm64-python-v3.13.0-3.13.0-60403a5-vs-3.12.0.svg)
 

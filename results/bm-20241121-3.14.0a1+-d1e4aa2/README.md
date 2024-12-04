@@ -37,8 +37,8 @@
 
 - Geometric mean: 1.004x slower (HPT: reliability of 52.16%, 1.00x slower at 99th %ile)
 - Memory usage: 1.02x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: djangocms, dulwich_log, many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, gevent_hub, gunicorn, tornado_http
+- new benchmarks: dulwich_log
 - [📄table](bm-20241121-arminc-aarch64-eendebakpt-int_freelist-3.14.0a1%2B-d1e4aa2-vs-3.13.0.md)
 - [📈time plot](bm-20241121-arminc-aarch64-eendebakpt-int_freelist-3.14.0a1%2B-d1e4aa2-vs-3.13.0.svg)
 
@@ -79,8 +79,7 @@
 
 - Geometric mean: 1.011x faster (HPT: reliability of 96.29%, 1.00x faster at 99th %ile)
 - Memory usage: 1.02x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: djangocms, many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, gevent_hub, gunicorn, tornado_http
 - [📄table](bm-20241121-linux-x86_64-eendebakpt-int_freelist-3.14.0a1%2B-d1e4aa2-vs-3.13.0.md)
 - [📈time plot](bm-20241121-linux-x86_64-eendebakpt-int_freelist-3.14.0a1%2B-d1e4aa2-vs-3.13.0.svg)
 
@@ -121,8 +120,7 @@
 
 - Geometric mean: 1.010x faster (HPT: reliability of 99.14%, 1.00x faster at 99th %ile)
 - Memory usage: 1.02x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: djangocms, many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, gevent_hub, gunicorn, tornado_http
 - [📄table](bm-20241121-pythonperf2-x86_64-eendebakpt-int_freelist-3.14.0a1%2B-d1e4aa2-vs-3.13.0.md)
 - [📈time plot](bm-20241121-pythonperf2-x86_64-eendebakpt-int_freelist-3.14.0a1%2B-d1e4aa2-vs-3.13.0.svg)
 
@@ -163,8 +161,7 @@
 
 - Geometric mean: 1.038x slower (HPT: reliability of 100.00%, 1.05x slower at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: chameleon, gevent_hub, mypy2, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
-- new benchmarks: many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, djangocms, gevent_hub, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
 - [📄table](bm-20241121-pythonperf1-amd64-eendebakpt-int_freelist-3.14.0a1%2B-d1e4aa2-vs-3.13.0.md)
 - [📈time plot](bm-20241121-pythonperf1-amd64-eendebakpt-int_freelist-3.14.0a1%2B-d1e4aa2-vs-3.13.0.svg)
 
@@ -204,8 +201,7 @@
 
 - Geometric mean: 1.023x faster (HPT: reliability of 94.70%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: chameleon, gevent_hub, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
-- new benchmarks: many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, djangocms, gevent_hub, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
 - [📄table](bm-20241121-pythonperf1_win32-x86-eendebakpt-int_freelist-3.14.0a1%2B-d1e4aa2-vs-3.13.0.md)
 - [📈time plot](bm-20241121-pythonperf1_win32-x86-eendebakpt-int_freelist-3.14.0a1%2B-d1e4aa2-vs-3.13.0.svg)
 
@@ -245,8 +241,7 @@
 
 - Geometric mean: 1.049x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
 - Memory usage: 1.02x
-- missing benchmarks: chameleon, dask, gevent_hub, mypy2, tornado_http
-- new benchmarks: many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, dask, djangocms, gevent_hub, gunicorn, tornado_http
 - [📄table](bm-20241121-darwin-arm64-eendebakpt-int_freelist-3.14.0a1%2B-d1e4aa2-vs-3.13.0.md)
 - [📈time plot](bm-20241121-darwin-arm64-eendebakpt-int_freelist-3.14.0a1%2B-d1e4aa2-vs-3.13.0.svg)
 

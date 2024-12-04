@@ -37,7 +37,7 @@
 
 - Geometric mean: 1.042x faster (HPT: reliability of 99.56%, 1.00x faster at 99th %ile)
 - Memory usage: 1.09x
-- missing benchmarks: chameleon, connected_components, dask, gevent_hub, k_core, mypy2, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative
+- missing benchmarks: chameleon, connected_components, dask, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
 - [📄table](bm-20241018-darwin-arm64-diegorusso-pthread-3.14.0a1%2B-f74cd79-vs-3.13.0.md)
 - [📈time plot](bm-20241018-darwin-arm64-diegorusso-pthread-3.14.0a1%2B-f74cd79-vs-3.13.0.svg)
 

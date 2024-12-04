@@ -42,8 +42,7 @@
 
 - Geometric mean: 1.005x slower (HPT: reliability of 85.49%, 1.00x slower at 99th %ile)
 - Memory usage: 1.07x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: djangocms, many_optionals, sqlite_synth, subparsers
+- missing benchmarks: chameleon, gevent_hub, gunicorn, tornado_http
 - [📄table](bm-20241116-linux-x86_64-python-2313f8421080ceb3343c-3.14.0a1%2B-2313f84-vs-3.13.0.md)
 - [📈time plot](bm-20241116-linux-x86_64-python-2313f8421080ceb3343c-3.14.0a1%2B-2313f84-vs-3.13.0.svg)
 

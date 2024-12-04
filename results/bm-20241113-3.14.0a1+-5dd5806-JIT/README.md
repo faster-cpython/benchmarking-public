@@ -37,8 +37,8 @@
 
 - Geometric mean: 1.078x slower (HPT: reliability of 100.00%, 1.02x slower at 99th %ile)
 - Memory usage: 1.03x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: dulwich_log, sqlite_synth
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, many_optionals, subparsers, tornado_http
+- new benchmarks: dulwich_log
 - [📄table](bm-20241113-arminc-aarch64-brandtbucher-jump_backoff-3.14.0a1%2B-5dd5806-vs-3.13.0.md)
 - [📈time plot](bm-20241113-arminc-aarch64-brandtbucher-jump_backoff-3.14.0a1%2B-5dd5806-vs-3.13.0.svg)
 
@@ -88,8 +88,7 @@
 
 - Geometric mean: 1.004x faster (HPT: reliability of 79.05%, 1.00x slower at 99th %ile)
 - Memory usage: 1.04x
-- missing benchmarks: chameleon, gevent_hub, mypy2, tornado_http
-- new benchmarks: sqlite_synth
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, many_optionals, subparsers, tornado_http
 - [📄table](bm-20241113-linux-x86_64-brandtbucher-jump_backoff-3.14.0a1%2B-5dd5806-vs-3.13.0.md)
 - [📈time plot](bm-20241113-linux-x86_64-brandtbucher-jump_backoff-3.14.0a1%2B-5dd5806-vs-3.13.0.svg)
 
@@ -130,8 +129,7 @@
 
 - Geometric mean: 1.007x faster (HPT: reliability of 92.90%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: chameleon, gevent_hub, mypy2, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
-- new benchmarks: sqlite_synth
+- missing benchmarks: chameleon, djangocms, gevent_hub, many_optionals, sqlalchemy_declarative, sqlalchemy_imperative, subparsers, tornado_http
 - [📄table](bm-20241113-pythonperf1-amd64-brandtbucher-jump_backoff-3.14.0a1%2B-5dd5806-vs-3.13.0.md)
 - [📈time plot](bm-20241113-pythonperf1-amd64-brandtbucher-jump_backoff-3.14.0a1%2B-5dd5806-vs-3.13.0.svg)
 
@@ -171,8 +169,7 @@
 
 - Geometric mean: 1.030x faster (HPT: reliability of 98.75%, 1.00x faster at 99th %ile)
 - Memory usage: 1.05x
-- missing benchmarks: chameleon, dask, gevent_hub, mypy2, tornado_http
-- new benchmarks: sqlite_synth
+- missing benchmarks: chameleon, dask, djangocms, gevent_hub, gunicorn, many_optionals, subparsers, tornado_http
 - [📄table](bm-20241113-darwin-arm64-brandtbucher-jump_backoff-3.14.0a1%2B-5dd5806-vs-3.13.0.md)
 - [📈time plot](bm-20241113-darwin-arm64-brandtbucher-jump_backoff-3.14.0a1%2B-5dd5806-vs-3.13.0.svg)
 

@@ -8,6 +8,15 @@
 - commit merge base: [94b8f8b40943bf38cf5c454773a3fb8f4ff71e01](https://github.com/brandtbucher/cpython/commit/94b8f8b40943bf38cf5c454773a3fb8f4ff71e01)
 - ref: justin_cold_19
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20241205-azure-x86_64-brandtbucher-justin_cold_19-3.14.0a2%2B-b477ad2-pystats.json)
+- [pystats table](bm-20241205-azure-x86_64-brandtbucher-justin_cold_19-3.14.0a2%2B-b477ad2-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20241205-azure-x86_64-brandtbucher-justin_cold_19-3.14.0a2%2B-b477ad2-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12190123931)

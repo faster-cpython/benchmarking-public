@@ -1,10 +1,11 @@
 # Results
 
-- fork: python
+- fork: python/97a6a418167f1c8bbb01
 - version: 3.12.0b4
 - config: 
 - commit hash: [97a6a41](https://github.com/python/cpython/commit/97a6a41)
 - commit date: 2023-07-11T14:23:30+02:00
+- fork: python/v3.12.0b4
 - ref: 97a6a418167f1c8bbb01, v3.12.0b4
 
 ## linux x86_64 (linux)

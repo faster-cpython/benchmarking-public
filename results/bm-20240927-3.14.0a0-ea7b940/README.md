@@ -1,11 +1,11 @@
 # Results
 
-- fork: faster-cpython
+- fork: faster-cpython/experimental_gc_fix_
 - version: 3.14.0a0
 - config: 
 - commit hash: [ea7b940](https://github.com/faster%2dcpython/cpython/commit/ea7b940)
 - commit date: 2024-09-27T16:06:49-07:00
-- commit merge base: [2c472d36b776636fb00881a717f69e43672588b1](https://github.com/faster%2dcpython/cpython/commit/2c472d36b776636fb00881a717f69e43672588b1)
+- commit merge base: [2c472d36b776636fb00881a717f69e43672588b1](https://github.com/python/cpython/commit/2c472d36b776636fb00881a717f69e43672588b1)
 - ref: experimental_gc_fix_
 
 ## linux x86_64 (azure)

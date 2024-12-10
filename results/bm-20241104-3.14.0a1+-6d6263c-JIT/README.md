@@ -1,11 +1,11 @@
 # Results
 
-- fork: Fidget-Spinner
+- fork: Fidget-Spinner/eliminate_func_guard
 - version: 3.14.0a1+
 - config: JIT
 - commit hash: [6d6263c](https://github.com/Fidget%2dSpinner/cpython/commit/6d6263c)
 - commit date: 2024-11-04T12:01:37+08:00
-- commit merge base: [9441993f272f42e4a97d90616ec629a11c06aa3a](https://github.com/Fidget%2dSpinner/cpython/commit/9441993f272f42e4a97d90616ec629a11c06aa3a)
+- commit merge base: [9441993f272f42e4a97d90616ec629a11c06aa3a](https://github.com/python/cpython/commit/9441993f272f42e4a97d90616ec629a11c06aa3a)
 - ref: eliminate_func_guard
 
 ## linux x86_64 (linux)

@@ -1,11 +1,11 @@
 # Results
 
-- fork: brandtbucher
+- fork: brandtbucher/reset_counters
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [ebcfcaf](https://github.com/brandtbucher/cpython/commit/ebcfcaf)
 - commit date: 2024-10-14T17:42:31-07:00
-- commit merge base: [3fea1d000ef0a74062fd3fe218ad94618b08d9f2](https://github.com/brandtbucher/cpython/commit/3fea1d000ef0a74062fd3fe218ad94618b08d9f2)
+- commit merge base: [3fea1d000ef0a74062fd3fe218ad94618b08d9f2](https://github.com/python/cpython/commit/3fea1d000ef0a74062fd3fe218ad94618b08d9f2)
 - ref: reset_counters
 
 ## linux x86_64 (azure)

@@ -1,11 +1,11 @@
 # Results
 
-- fork: faster-cpython
+- fork: faster-cpython/load_fast_can_be_def
 - version: 3.14.0a0
 - config: 
 - commit hash: [cb9433d](https://github.com/faster%2dcpython/cpython/commit/cb9433d)
 - commit date: 2024-10-04T14:17:43+01:00
-- commit merge base: [1f9025a4e7819bb4f7799784710f0f3750a9ca31](https://github.com/faster%2dcpython/cpython/commit/1f9025a4e7819bb4f7799784710f0f3750a9ca31)
+- commit merge base: [1f9025a4e7819bb4f7799784710f0f3750a9ca31](https://github.com/python/cpython/commit/1f9025a4e7819bb4f7799784710f0f3750a9ca31)
 - ref: load_fast_can_be_def
 
 ## linux x86_64 (azure)

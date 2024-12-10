@@ -1,11 +1,11 @@
 # Results
 
-- fork: brandtbucher
+- fork: brandtbucher/warmup_2048
 - version: 3.14.0a1+
 - config: JIT
 - commit hash: [f863657](https://github.com/brandtbucher/cpython/commit/f863657)
 - commit date: 2024-11-12T09:41:44-08:00
-- commit merge base: [09d6f5dc7824c74672add512619e978844ff8051](https://github.com/brandtbucher/cpython/commit/09d6f5dc7824c74672add512619e978844ff8051)
+- commit merge base: [09d6f5dc7824c74672add512619e978844ff8051](https://github.com/python/cpython/commit/09d6f5dc7824c74672add512619e978844ff8051)
 - ref: warmup_2048
 
 ## linux x86_64 (azure)

@@ -1,11 +1,11 @@
 # Results
 
-- fork: faster-cpython
+- fork: faster-cpython/load_const_return_re
 - version: 3.14.0a1+
 - config: 
 - commit hash: [2a3b1e2](https://github.com/faster%2dcpython/cpython/commit/2a3b1e2)
 - commit date: 2024-10-23T10:59:34+01:00
-- commit merge base: [759a54d28ffe7eac8c23917f5d3dfad8309856be](https://github.com/faster%2dcpython/cpython/commit/759a54d28ffe7eac8c23917f5d3dfad8309856be)
+- commit merge base: [759a54d28ffe7eac8c23917f5d3dfad8309856be](https://github.com/python/cpython/commit/759a54d28ffe7eac8c23917f5d3dfad8309856be)
 - ref: load_const_return_re
 
 ## linux x86_64 (azure)

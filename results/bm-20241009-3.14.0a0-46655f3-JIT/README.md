@@ -1,11 +1,11 @@
 # Results
 
-- fork: mdboom
+- fork: mdboom/disable_interpreter_
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [46655f3](https://github.com/mdboom/cpython/commit/46655f3)
 - commit date: 2024-10-09T17:24:15-04:00
-- commit merge base: [cbfd39247983309a9ef0ae6da6c61cc71665b967](https://github.com/mdboom/cpython/commit/cbfd39247983309a9ef0ae6da6c61cc71665b967)
+- commit merge base: [cbfd39247983309a9ef0ae6da6c61cc71665b967](https://github.com/python/cpython/commit/cbfd39247983309a9ef0ae6da6c61cc71665b967)
 - ref: disable_interpreter_
 
 ## windows x86 (pythonperf1_win32)

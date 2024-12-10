@@ -1,11 +1,11 @@
 # Results
 
-- fork: savannahostrowski
+- fork: savannahostrowski/jit_inv_mem_1m
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [062c54f](https://github.com/savannahostrowski/cpython/commit/062c54f)
 - commit date: 2024-09-23T10:22:03-07:00
-- commit merge base: [33eeccf6d4f16e483b4c8a180bad718545aeaeaf](https://github.com/savannahostrowski/cpython/commit/33eeccf6d4f16e483b4c8a180bad718545aeaeaf)
+- commit merge base: [33eeccf6d4f16e483b4c8a180bad718545aeaeaf](https://github.com/python/cpython/commit/33eeccf6d4f16e483b4c8a180bad718545aeaeaf)
 - ref: jit_inv_mem_1m
 
 ## linux x86_64 (azure)

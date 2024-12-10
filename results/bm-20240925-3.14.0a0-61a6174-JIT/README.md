@@ -1,11 +1,11 @@
 # Results
 
-- fork: savannahostrowski
+- fork: savannahostrowski/jit_invalidate_500k
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [61a6174](https://github.com/savannahostrowski/cpython/commit/61a6174)
 - commit date: 2024-09-25T08:54:22-07:00
-- commit merge base: [54dd77fb8c880d7655fffab934978e277b4275fe](https://github.com/savannahostrowski/cpython/commit/54dd77fb8c880d7655fffab934978e277b4275fe)
+- commit merge base: [54dd77fb8c880d7655fffab934978e277b4275fe](https://github.com/python/cpython/commit/54dd77fb8c880d7655fffab934978e277b4275fe)
 - ref: jit_invalidate_500k
 
 ## linux x86_64 (linux)

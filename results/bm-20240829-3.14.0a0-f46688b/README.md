@@ -1,11 +1,11 @@
 # Results
 
-- fork: mdboom
+- fork: mdboom/mimalloc
 - version: 3.14.0a0
 - config: 
 - commit hash: [f46688b](https://github.com/mdboom/cpython/commit/f46688b)
 - commit date: 2024-08-29T11:54:12-04:00
-- commit merge base: [58ce131037ecb34d506a613f21993cde2056f628](https://github.com/mdboom/cpython/commit/58ce131037ecb34d506a613f21993cde2056f628)
+- commit merge base: [58ce131037ecb34d506a613f21993cde2056f628](https://github.com/python/cpython/commit/58ce131037ecb34d506a613f21993cde2056f628)
 - ref: mimalloc
 
 ## linux x86_64 (linux)

@@ -1,11 +1,11 @@
 # Results
 
-- fork: efimov-mikhail
+- fork: efimov-mikhail/crash_fix_generators
 - version: 3.14.0a0
 - config: 
 - commit hash: [b94d5c4](https://github.com/efimov%2dmikhail/cpython/commit/b94d5c4)
 - commit date: 2024-10-15T18:13:36+03:00
-- commit merge base: [703227dd021491ceb9343f69fa48f4b6a05adbb3](https://github.com/efimov%2dmikhail/cpython/commit/703227dd021491ceb9343f69fa48f4b6a05adbb3)
+- commit merge base: [703227dd021491ceb9343f69fa48f4b6a05adbb3](https://github.com/python/cpython/commit/703227dd021491ceb9343f69fa48f4b6a05adbb3)
 - ref: crash_fix_generators
 
 ## linux x86_64 (linux)

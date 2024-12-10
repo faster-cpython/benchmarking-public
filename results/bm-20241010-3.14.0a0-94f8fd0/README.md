@@ -1,11 +1,11 @@
 # Results
 
-- fork: faster-cpython
+- fork: faster-cpython/more_robust_immortal
 - version: 3.14.0a0
 - config: 
 - commit hash: [94f8fd0](https://github.com/faster%2dcpython/cpython/commit/94f8fd0)
 - commit date: 2024-10-10T12:05:05+01:00
-- commit merge base: [99400930ac1d4e5e10a5ae30f8202d8bc2661e39](https://github.com/faster%2dcpython/cpython/commit/99400930ac1d4e5e10a5ae30f8202d8bc2661e39)
+- commit merge base: [99400930ac1d4e5e10a5ae30f8202d8bc2661e39](https://github.com/python/cpython/commit/99400930ac1d4e5e10a5ae30f8202d8bc2661e39)
 - ref: more_robust_immortal
 
 ## linux x86_64 (pythonperf2)

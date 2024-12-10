@@ -1,11 +1,11 @@
 # Results
 
-- fork: brandtbucher
+- fork: brandtbucher/deopt_tracing_32
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [a7a7e7f](https://github.com/brandtbucher/cpython/commit/a7a7e7f)
 - commit date: 2024-09-13T10:57:24-07:00
-- commit merge base: [6e06e01881dcffbeef5baac0c112ffb14cfa0b27](https://github.com/brandtbucher/cpython/commit/6e06e01881dcffbeef5baac0c112ffb14cfa0b27)
+- commit merge base: [6e06e01881dcffbeef5baac0c112ffb14cfa0b27](https://github.com/python/cpython/commit/6e06e01881dcffbeef5baac0c112ffb14cfa0b27)
 - ref: deopt_tracing_32
 
 ## linux x86_64 (azure)

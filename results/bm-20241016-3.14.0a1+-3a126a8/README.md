@@ -1,11 +1,11 @@
 # Results
 
-- fork: colesbury
+- fork: colesbury/gh_125610_STORE_ATTR
 - version: 3.14.0a1+
 - config: 
 - commit hash: [3a126a8](https://github.com/colesbury/cpython/commit/3a126a8)
 - commit date: 2024-10-16T19:41:13+00:00
-- commit merge base: [760872efecb95017db8e38a8eda614bf23d2a22c](https://github.com/colesbury/cpython/commit/760872efecb95017db8e38a8eda614bf23d2a22c)
+- commit merge base: [760872efecb95017db8e38a8eda614bf23d2a22c](https://github.com/python/cpython/commit/760872efecb95017db8e38a8eda614bf23d2a22c)
 - ref: gh_125610_STORE_ATTR
 
 ## linux x86_64 (azure)

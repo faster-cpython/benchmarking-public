@@ -1,6 +1,6 @@
 # Results
 
-- fork: faster_cpython
+- fork: faster_cpython/nogil
 - version: 3.9.10
 - config: 
 - commit hash: [258cab1](https://github.com/faster_cpython/cpython/commit/258cab1)

@@ -1,11 +1,11 @@
 # Results
 
-- fork: mdboom
+- fork: mdboom/simplify_richcompare
 - version: 3.14.0a0
 - config: 
 - commit hash: [2fa7b0e](https://github.com/mdboom/cpython/commit/2fa7b0e)
 - commit date: 2024-09-04T08:47:49-04:00
-- commit merge base: [58ce131037ecb34d506a613f21993cde2056f628](https://github.com/mdboom/cpython/commit/58ce131037ecb34d506a613f21993cde2056f628)
+- commit merge base: [58ce131037ecb34d506a613f21993cde2056f628](https://github.com/python/cpython/commit/58ce131037ecb34d506a613f21993cde2056f628)
 - ref: simplify_richcompare
 
 ## linux aarch64 (arminc)

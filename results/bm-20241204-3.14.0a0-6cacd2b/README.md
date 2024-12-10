@@ -1,6 +1,6 @@
 # Results
 
-- fork: iritkatriel
+- fork: iritkatriel/cmq_mdboom
 - version: 3.14.0a0
 - config: 
 - commit hash: [6cacd2b](https://github.com/iritkatriel/cpython/commit/6cacd2b)

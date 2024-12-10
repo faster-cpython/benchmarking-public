@@ -1,11 +1,11 @@
 # Results
 
-- fork: faster-cpython
+- fork: faster-cpython/use_stackrefs
 - version: 3.14.0a2+
 - config: 
 - commit hash: [f5dec96](https://github.com/faster%2dcpython/cpython/commit/f5dec96)
 - commit date: 2024-12-06T18:20:25+00:00
-- commit merge base: [023b7d2141467017abc27de864f3f44677768cb3](https://github.com/faster%2dcpython/cpython/commit/023b7d2141467017abc27de864f3f44677768cb3)
+- commit merge base: [023b7d2141467017abc27de864f3f44677768cb3](https://github.com/python/cpython/commit/023b7d2141467017abc27de864f3f44677768cb3)
 - ref: use_stackrefs
 
 ## linux x86_64 (azure)

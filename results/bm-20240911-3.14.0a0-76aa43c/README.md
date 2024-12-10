@@ -1,11 +1,11 @@
 # Results
 
-- fork: mdboom
+- fork: mdboom/unicode_check_exact
 - version: 3.14.0a0
 - config: 
 - commit hash: [76aa43c](https://github.com/mdboom/cpython/commit/76aa43c)
 - commit date: 2024-09-11T11:40:13-04:00
-- commit merge base: [5436d8b9c397c48d9b0d5f9d4ad5e1d5a5d500f6](https://github.com/mdboom/cpython/commit/5436d8b9c397c48d9b0d5f9d4ad5e1d5a5d500f6)
+- commit merge base: [5436d8b9c397c48d9b0d5f9d4ad5e1d5a5d500f6](https://github.com/python/cpython/commit/5436d8b9c397c48d9b0d5f9d4ad5e1d5a5d500f6)
 - ref: unicode_check_exact
 
 ## linux aarch64 (arminc)

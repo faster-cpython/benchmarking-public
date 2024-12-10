@@ -1,11 +1,11 @@
 # Results
 
-- fork: faster-cpython
+- fork: faster-cpython/immortal_ref_count_s
 - version: 3.14.0a0
 - config: 
 - commit hash: [e179c31](https://github.com/faster%2dcpython/cpython/commit/e179c31)
 - commit date: 2024-09-20T17:00:09+01:00
-- commit merge base: [baa3550bc3a119f41cc4eaed5373f9d695208e8e](https://github.com/faster%2dcpython/cpython/commit/baa3550bc3a119f41cc4eaed5373f9d695208e8e)
+- commit merge base: [baa3550bc3a119f41cc4eaed5373f9d695208e8e](https://github.com/python/cpython/commit/baa3550bc3a119f41cc4eaed5373f9d695208e8e)
 - ref: immortal_ref_count_s
 
 ## linux x86_64 (azure)

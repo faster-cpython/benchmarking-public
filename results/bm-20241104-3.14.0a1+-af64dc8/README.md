@@ -1,11 +1,11 @@
 # Results
 
-- fork: faster-cpython
+- fork: faster-cpython/gc_visit_by_type_sta
 - version: 3.14.0a1+
 - config: 
 - commit hash: [af64dc8](https://github.com/faster%2dcpython/cpython/commit/af64dc8)
 - commit date: 2024-11-04T14:38:23+00:00
-- commit merge base: [bfc1d2504c183a9464e65c290e48516d176ea41f](https://github.com/faster%2dcpython/cpython/commit/bfc1d2504c183a9464e65c290e48516d176ea41f)
+- commit merge base: [bfc1d2504c183a9464e65c290e48516d176ea41f](https://github.com/python/cpython/commit/bfc1d2504c183a9464e65c290e48516d176ea41f)
 - ref: gc_visit_by_type_sta
 
 ## linux x86_64 (azure)

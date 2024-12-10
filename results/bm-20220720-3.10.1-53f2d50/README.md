@@ -1,6 +1,6 @@
 # Results
 
-- fork: mdboom
+- fork: mdboom/RegCPython
 - version: 3.10.1
 - config: 
 - commit hash: [53f2d50](https://github.com/mdboom/cpython/commit/53f2d50)

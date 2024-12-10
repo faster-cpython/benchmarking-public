@@ -1,11 +1,11 @@
 # Results
 
-- fork: brandtbucher
+- fork: brandtbucher/jb0_invalidate
 - version: 3.14.0a1+
 - config: JIT
 - commit hash: [69e9a0e](https://github.com/brandtbucher/cpython/commit/69e9a0e)
 - commit date: 2024-10-24T16:27:46-07:00
-- commit merge base: [34653bba644aa5481613f398153757d7357e39ea](https://github.com/brandtbucher/cpython/commit/34653bba644aa5481613f398153757d7357e39ea)
+- commit merge base: [34653bba644aa5481613f398153757d7357e39ea](https://github.com/python/cpython/commit/34653bba644aa5481613f398153757d7357e39ea)
 - ref: jb0_invalidate
 
 ## linux x86_64 (azure)

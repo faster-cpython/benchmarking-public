@@ -1,11 +1,11 @@
 # Results
 
-- fork: brandtbucher
+- fork: brandtbucher/tier_two_immortals
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [8ef2e8f](https://github.com/brandtbucher/cpython/commit/8ef2e8f)
 - commit date: 2024-10-03T17:05:23-07:00
-- commit merge base: [6f4d64b048133c60d40705fb5ef776f78c7dd710](https://github.com/brandtbucher/cpython/commit/6f4d64b048133c60d40705fb5ef776f78c7dd710)
+- commit merge base: [6f4d64b048133c60d40705fb5ef776f78c7dd710](https://github.com/python/cpython/commit/6f4d64b048133c60d40705fb5ef776f78c7dd710)
 - ref: tier_two_immortals
 
 ## linux x86_64 (azure)

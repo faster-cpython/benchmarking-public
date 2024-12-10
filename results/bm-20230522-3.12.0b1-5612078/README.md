@@ -1,11 +1,12 @@
 # Results
 
-- fork: python
+- fork: python/5612078f68e9688fbf3b
 - version: 3.12.0b1
 - config: 
 - commit hash: [5612078](https://github.com/python/cpython/commit/5612078)
 - commit date: 2023-05-22T14:07:36+02:00
 - commit merge base: [5360cb3d5608ab375de6cd8c0b408459f3fa953a](https://github.com/python/cpython/commit/5360cb3d5608ab375de6cd8c0b408459f3fa953a)
+- fork: python/v3.12.0b1
 - ref: 5612078f68e9688fbf3b, v3.12.0b1
 
 ## linux x86_64 (linux)

@@ -1,11 +1,11 @@
 # Results
 
-- fork: savannahostrowski
+- fork: savannahostrowski/jit_inv_cold_10k
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [4ab420c](https://github.com/savannahostrowski/cpython/commit/4ab420c)
 - commit date: 2024-09-23T10:24:23-07:00
-- commit merge base: [33eeccf6d4f16e483b4c8a180bad718545aeaeaf](https://github.com/savannahostrowski/cpython/commit/33eeccf6d4f16e483b4c8a180bad718545aeaeaf)
+- commit merge base: [33eeccf6d4f16e483b4c8a180bad718545aeaeaf](https://github.com/python/cpython/commit/33eeccf6d4f16e483b4c8a180bad718545aeaeaf)
 - ref: jit_inv_cold_10k
 
 ## linux x86_64 (azure)

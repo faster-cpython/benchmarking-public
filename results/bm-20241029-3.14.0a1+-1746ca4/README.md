@@ -1,11 +1,11 @@
 # Results
 
-- fork: faster-cpython
+- fork: faster-cpython/more_untracking
 - version: 3.14.0a1+
 - config: 
 - commit hash: [1746ca4](https://github.com/faster%2dcpython/cpython/commit/1746ca4)
 - commit date: 2024-10-29T15:38:43+00:00
-- commit merge base: [faa3272fb8d63d481a136cc0467a0cba6ed7b264](https://github.com/faster%2dcpython/cpython/commit/faa3272fb8d63d481a136cc0467a0cba6ed7b264)
+- commit merge base: [faa3272fb8d63d481a136cc0467a0cba6ed7b264](https://github.com/python/cpython/commit/faa3272fb8d63d481a136cc0467a0cba6ed7b264)
 - ref: more_untracking
 
 ## linux x86_64 (azure)

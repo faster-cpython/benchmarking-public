@@ -1,11 +1,11 @@
 # Results
 
-- fork: mdboom
+- fork: mdboom/remove_redundant_typ
 - version: 3.14.0a0
 - config: 
 - commit hash: [b0f5f3a](https://github.com/mdboom/cpython/commit/b0f5f3a)
 - commit date: 2024-09-23T20:53:22-04:00
-- commit merge base: [e256a7590a0149feadfef161ed000991376dc0e8](https://github.com/mdboom/cpython/commit/e256a7590a0149feadfef161ed000991376dc0e8)
+- commit merge base: [e256a7590a0149feadfef161ed000991376dc0e8](https://github.com/python/cpython/commit/e256a7590a0149feadfef161ed000991376dc0e8)
 - ref: remove_redundant_typ
 
 ## linux aarch64 (arminc)

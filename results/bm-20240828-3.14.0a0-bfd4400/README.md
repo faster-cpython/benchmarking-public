@@ -1,11 +1,11 @@
 # Results
 
-- fork: Fidget-Spinner
+- fork: Fidget-Spinner/deferred_globals_fin
 - version: 3.14.0a0
 - config: 
 - commit hash: [bfd4400](https://github.com/Fidget%2dSpinner/cpython/commit/bfd4400)
 - commit date: 2024-08-28T20:30:12+08:00
-- commit merge base: [e913d2c87f1ae4e7a4aef5ba78368ef31d060767](https://github.com/Fidget%2dSpinner/cpython/commit/e913d2c87f1ae4e7a4aef5ba78368ef31d060767)
+- commit merge base: [e913d2c87f1ae4e7a4aef5ba78368ef31d060767](https://github.com/python/cpython/commit/e913d2c87f1ae4e7a4aef5ba78368ef31d060767)
 - ref: deferred_globals_fin
 
 ## linux aarch64 (arminc)

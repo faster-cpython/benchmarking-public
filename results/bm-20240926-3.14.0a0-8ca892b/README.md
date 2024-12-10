@@ -1,11 +1,11 @@
 # Results
 
-- fork: mdboom
+- fork: mdboom/cmq_mdboom
 - version: 3.14.0a0
 - config: 
 - commit hash: [8ca892b](https://github.com/mdboom/cpython/commit/8ca892b)
 - commit date: 2024-09-26T13:36:04-04:00
-- commit merge base: [b4d0d7de0f6d938128bf525e119c18af5632b804](https://github.com/mdboom/cpython/commit/b4d0d7de0f6d938128bf525e119c18af5632b804)
+- commit merge base: [b4d0d7de0f6d938128bf525e119c18af5632b804](https://github.com/python/cpython/commit/b4d0d7de0f6d938128bf525e119c18af5632b804)
 - ref: cmq_mdboom
 
 ## linux x86_64 (azure)

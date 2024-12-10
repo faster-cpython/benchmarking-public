@@ -1,11 +1,11 @@
 # Results
 
-- fork: mdboom
+- fork: mdboom/mdboom_08_17
 - version: 3.14.0a0
 - config: 
 - commit hash: [7ab5aad](https://github.com/mdboom/cpython/commit/7ab5aad)
 - commit date: 2024-08-28T09:55:09-04:00
-- commit merge base: [79c542b5cc774ba758acc2b2e3b6556934190e34](https://github.com/mdboom/cpython/commit/79c542b5cc774ba758acc2b2e3b6556934190e34)
+- commit merge base: [79c542b5cc774ba758acc2b2e3b6556934190e34](https://github.com/python/cpython/commit/79c542b5cc774ba758acc2b2e3b6556934190e34)
 - ref: mdboom_08_17
 
 ## windows amd64 (pythonperf1)

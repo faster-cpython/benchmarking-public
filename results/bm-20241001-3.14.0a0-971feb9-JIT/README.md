@@ -1,11 +1,11 @@
 # Results
 
-- fork: brandtbucher
+- fork: brandtbucher/justin_compact_exits
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [971feb9](https://github.com/brandtbucher/cpython/commit/971feb9)
 - commit date: 2024-10-01T22:14:56-07:00
-- commit merge base: [6f4d64b048133c60d40705fb5ef776f78c7dd710](https://github.com/brandtbucher/cpython/commit/6f4d64b048133c60d40705fb5ef776f78c7dd710)
+- commit merge base: [6f4d64b048133c60d40705fb5ef776f78c7dd710](https://github.com/python/cpython/commit/6f4d64b048133c60d40705fb5ef776f78c7dd710)
 - ref: justin_compact_exits
 
 ## linux x86_64 (azure)

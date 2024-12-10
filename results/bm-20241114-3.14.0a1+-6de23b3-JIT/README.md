@@ -1,11 +1,11 @@
 # Results
 
-- fork: brandtbucher
+- fork: brandtbucher/6de23b358e9e3dd796a2
 - version: 3.14.0a1+
 - config: JIT
 - commit hash: [6de23b3](https://github.com/brandtbucher/cpython/commit/6de23b3)
 - commit date: 2024-11-14T08:35:17-08:00
-- commit merge base: [09d6f5dc7824c74672add512619e978844ff8051](https://github.com/brandtbucher/cpython/commit/09d6f5dc7824c74672add512619e978844ff8051)
+- commit merge base: [09d6f5dc7824c74672add512619e978844ff8051](https://github.com/python/cpython/commit/09d6f5dc7824c74672add512619e978844ff8051)
 - ref: 6de23b358e9e3dd796a2
 
 ## linux x86_64 (linux)

@@ -1,11 +1,11 @@
 # Results
 
-- fork: Fidget-Spinner
+- fork: Fidget-Spinner/partial_evaluator_un
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [aaab6a6](https://github.com/Fidget%2dSpinner/cpython/commit/aaab6a6)
 - commit date: 2024-09-20T03:24:44+08:00
-- commit merge base: [401fff7423ca3c8bf1d02e594edfd1412616a559](https://github.com/Fidget%2dSpinner/cpython/commit/401fff7423ca3c8bf1d02e594edfd1412616a559)
+- commit merge base: [401fff7423ca3c8bf1d02e594edfd1412616a559](https://github.com/python/cpython/commit/401fff7423ca3c8bf1d02e594edfd1412616a559)
 - ref: partial_evaluator_un
 
 ## linux x86_64 (azure)

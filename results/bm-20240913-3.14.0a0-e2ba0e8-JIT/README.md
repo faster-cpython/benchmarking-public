@@ -1,11 +1,11 @@
 # Results
 
-- fork: brandtbucher
+- fork: brandtbucher/tier_two_constants_p
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [e2ba0e8](https://github.com/brandtbucher/cpython/commit/e2ba0e8)
 - commit date: 2024-09-13T11:51:33-07:00
-- commit merge base: [6e06e01881dcffbeef5baac0c112ffb14cfa0b27](https://github.com/brandtbucher/cpython/commit/6e06e01881dcffbeef5baac0c112ffb14cfa0b27)
+- commit merge base: [6e06e01881dcffbeef5baac0c112ffb14cfa0b27](https://github.com/python/cpython/commit/6e06e01881dcffbeef5baac0c112ffb14cfa0b27)
 - ref: tier_two_constants_p
 
 ## linux x86_64 (azure)

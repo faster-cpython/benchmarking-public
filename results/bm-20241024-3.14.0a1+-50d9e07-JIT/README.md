@@ -1,11 +1,11 @@
 # Results
 
-- fork: brandtbucher
+- fork: brandtbucher/jb0_backoff
 - version: 3.14.0a1+
 - config: JIT
 - commit hash: [50d9e07](https://github.com/brandtbucher/cpython/commit/50d9e07)
 - commit date: 2024-10-24T16:24:01-07:00
-- commit merge base: [34653bba644aa5481613f398153757d7357e39ea](https://github.com/brandtbucher/cpython/commit/34653bba644aa5481613f398153757d7357e39ea)
+- commit merge base: [34653bba644aa5481613f398153757d7357e39ea](https://github.com/python/cpython/commit/34653bba644aa5481613f398153757d7357e39ea)
 - ref: jb0_backoff
 
 ## linux x86_64 (azure)

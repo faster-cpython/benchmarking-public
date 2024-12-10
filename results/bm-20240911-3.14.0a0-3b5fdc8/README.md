@@ -1,11 +1,11 @@
 # Results
 
-- fork: mdboom
+- fork: mdboom/pysequence_tuple
 - version: 3.14.0a0
 - config: 
 - commit hash: [3b5fdc8](https://github.com/mdboom/cpython/commit/3b5fdc8)
 - commit date: 2024-09-11T11:49:04-04:00
-- commit merge base: [5436d8b9c397c48d9b0d5f9d4ad5e1d5a5d500f6](https://github.com/mdboom/cpython/commit/5436d8b9c397c48d9b0d5f9d4ad5e1d5a5d500f6)
+- commit merge base: [5436d8b9c397c48d9b0d5f9d4ad5e1d5a5d500f6](https://github.com/python/cpython/commit/5436d8b9c397c48d9b0d5f9d4ad5e1d5a5d500f6)
 - ref: pysequence_tuple
 
 ## linux aarch64 (arminc)

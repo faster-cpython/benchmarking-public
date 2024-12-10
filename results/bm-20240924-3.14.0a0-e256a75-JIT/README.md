@@ -1,11 +1,11 @@
 # Results
 
-- fork: brandtbucher
+- fork: brandtbucher/main
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [e256a75](https://github.com/brandtbucher/cpython/commit/e256a75)
 - commit date: 2024-09-24T02:47:05+03:00
-- commit merge base: [38a887dc3ec52c4a7222279bf4b3ca2431b86de9](https://github.com/brandtbucher/cpython/commit/38a887dc3ec52c4a7222279bf4b3ca2431b86de9)
+- commit merge base: [38a887dc3ec52c4a7222279bf4b3ca2431b86de9](https://github.com/python/cpython/commit/38a887dc3ec52c4a7222279bf4b3ca2431b86de9)
 - ref: main
 
 ## linux aarch64 (arminc)

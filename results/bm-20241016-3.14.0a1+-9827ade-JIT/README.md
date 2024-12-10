@@ -1,11 +1,11 @@
 # Results
 
-- fork: savannahostrowski
+- fork: savannahostrowski/remove_ghccc
 - version: 3.14.0a1+
 - config: JIT
 - commit hash: [9827ade](https://github.com/savannahostrowski/cpython/commit/9827ade)
 - commit date: 2024-10-16T09:10:58-07:00
-- commit merge base: [760872efecb95017db8e38a8eda614bf23d2a22c](https://github.com/savannahostrowski/cpython/commit/760872efecb95017db8e38a8eda614bf23d2a22c)
+- commit merge base: [760872efecb95017db8e38a8eda614bf23d2a22c](https://github.com/python/cpython/commit/760872efecb95017db8e38a8eda614bf23d2a22c)
 - ref: remove_ghccc
 
 ## linux aarch64 (arminc)

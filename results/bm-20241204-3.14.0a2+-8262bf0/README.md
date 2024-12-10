@@ -1,11 +1,11 @@
 # Results
 
-- fork: faster-cpython
+- fork: faster-cpython/faster_marking
 - version: 3.14.0a2+
 - config: 
 - commit hash: [8262bf0](https://github.com/faster%2dcpython/cpython/commit/8262bf0)
 - commit date: 2024-12-04T11:47:04+00:00
-- commit merge base: [7c2bd9b2266665ff4010b6c6c175bab18e08e4f8](https://github.com/faster%2dcpython/cpython/commit/7c2bd9b2266665ff4010b6c6c175bab18e08e4f8)
+- commit merge base: [7c2bd9b2266665ff4010b6c6c175bab18e08e4f8](https://github.com/python/cpython/commit/7c2bd9b2266665ff4010b6c6c175bab18e08e4f8)
 - ref: faster_marking
 
 ## linux x86_64 (linux)

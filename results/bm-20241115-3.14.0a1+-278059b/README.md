@@ -1,11 +1,11 @@
 # Results
 
-- fork: faster-cpython
+- fork: faster-cpython/mark_first_gc
 - version: 3.14.0a1+
 - config: 
 - commit hash: [278059b](https://github.com/faster%2dcpython/cpython/commit/278059b)
 - commit date: 2024-11-15T18:27:13+00:00
-- commit merge base: [c0f045f7fd3bb7ccf9828f4bfad55347d097fd41](https://github.com/faster%2dcpython/cpython/commit/c0f045f7fd3bb7ccf9828f4bfad55347d097fd41)
+- commit merge base: [c0f045f7fd3bb7ccf9828f4bfad55347d097fd41](https://github.com/python/cpython/commit/c0f045f7fd3bb7ccf9828f4bfad55347d097fd41)
 - ref: mark_first_gc
 
 ## linux x86_64 (linux)

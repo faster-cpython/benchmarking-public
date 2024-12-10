@@ -1,6 +1,6 @@
 # Results
 
-- fork: python
+- fork: python/main
 - version: 3.14.0a0
 - config: 
 - commit hash: [d343f97](https://github.com/python/cpython/commit/d343f97)

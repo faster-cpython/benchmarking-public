@@ -1,11 +1,11 @@
 # Results
 
-- fork: brandtbucher
+- fork: brandtbucher/justin_no_externs
 - version: 3.14.0a1+
 - config: JIT
 - commit hash: [5791853](https://github.com/brandtbucher/cpython/commit/5791853)
 - commit date: 2024-10-25T11:14:20-07:00
-- commit merge base: [34653bba644aa5481613f398153757d7357e39ea](https://github.com/brandtbucher/cpython/commit/34653bba644aa5481613f398153757d7357e39ea)
+- commit merge base: [34653bba644aa5481613f398153757d7357e39ea](https://github.com/python/cpython/commit/34653bba644aa5481613f398153757d7357e39ea)
 - ref: justin_no_externs
 
 ## linux aarch64 (arminc)

@@ -1,11 +1,11 @@
 # Results
 
-- fork: faster-cpython
+- fork: faster-cpython/split_load_const
 - version: 3.14.0a1+
 - config: 
 - commit hash: [f934559](https://github.com/faster%2dcpython/cpython/commit/f934559)
 - commit date: 2024-10-25T10:54:29+01:00
-- commit merge base: [759a54d28ffe7eac8c23917f5d3dfad8309856be](https://github.com/faster%2dcpython/cpython/commit/759a54d28ffe7eac8c23917f5d3dfad8309856be)
+- commit merge base: [759a54d28ffe7eac8c23917f5d3dfad8309856be](https://github.com/python/cpython/commit/759a54d28ffe7eac8c23917f5d3dfad8309856be)
 - ref: split_load_const
 
 ## linux x86_64 (azure)

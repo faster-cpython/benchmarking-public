@@ -1,11 +1,11 @@
 # Results
 
-- fork: 1st1
+- fork: 1st1/stack
 - version: 3.14.0a1+
 - config: 
 - commit hash: [c3c685a](https://github.com/1st1/cpython/commit/c3c685a)
 - commit date: 2024-11-23T14:11:58+05:30
-- commit merge base: [d00878b06a05ea04790813dba70b09cc1d11bf45](https://github.com/1st1/cpython/commit/d00878b06a05ea04790813dba70b09cc1d11bf45)
+- commit merge base: [d00878b06a05ea04790813dba70b09cc1d11bf45](https://github.com/python/cpython/commit/d00878b06a05ea04790813dba70b09cc1d11bf45)
 - ref: stack
 
 ## linux x86_64 (linux)

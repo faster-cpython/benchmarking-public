@@ -1,11 +1,11 @@
 # Results
 
-- fork: brandtbucher
+- fork: brandtbucher/jump_backoff
 - version: 3.14.0a1+
 - config: JIT
 - commit hash: [2e7a174](https://github.com/brandtbucher/cpython/commit/2e7a174)
 - commit date: 2024-11-13T17:25:49-08:00
-- commit merge base: [c695e37a3f95c225ee08d1e882d23fa200b5ec34](https://github.com/brandtbucher/cpython/commit/c695e37a3f95c225ee08d1e882d23fa200b5ec34)
+- commit merge base: [c695e37a3f95c225ee08d1e882d23fa200b5ec34](https://github.com/python/cpython/commit/c695e37a3f95c225ee08d1e882d23fa200b5ec34)
 - ref: jump_backoff
 
 ## linux x86_64 (pythonperf2)

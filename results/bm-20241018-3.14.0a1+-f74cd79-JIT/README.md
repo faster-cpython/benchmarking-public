@@ -1,11 +1,11 @@
 # Results
 
-- fork: diegorusso
+- fork: diegorusso/pthread
 - version: 3.14.0a1+
 - config: JIT
 - commit hash: [f74cd79](https://github.com/diegorusso/cpython/commit/f74cd79)
 - commit date: 2024-10-18T17:44:23+01:00
-- commit merge base: [37986e830ba25d2c382988b06bbe27410596346c](https://github.com/diegorusso/cpython/commit/37986e830ba25d2c382988b06bbe27410596346c)
+- commit merge base: [37986e830ba25d2c382988b06bbe27410596346c](https://github.com/python/cpython/commit/37986e830ba25d2c382988b06bbe27410596346c)
 - ref: pthread
 
 ## darwin arm64 (darwin)

@@ -1,11 +1,11 @@
 # Results
 
-- fork: Fidget-Spinner
+- fork: Fidget-Spinner/fewer_set_ip
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [3d98d27](https://github.com/Fidget%2dSpinner/cpython/commit/3d98d27)
 - commit date: 2024-09-17T01:36:16+08:00
-- commit merge base: [401fff7423ca3c8bf1d02e594edfd1412616a559](https://github.com/Fidget%2dSpinner/cpython/commit/401fff7423ca3c8bf1d02e594edfd1412616a559)
+- commit merge base: [401fff7423ca3c8bf1d02e594edfd1412616a559](https://github.com/python/cpython/commit/401fff7423ca3c8bf1d02e594edfd1412616a559)
 - ref: fewer_set_ip
 
 ## linux x86_64 (azure)

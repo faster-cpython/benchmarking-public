@@ -1,6 +1,6 @@
 # Results
 
-- fork: mdboom
+- fork: mdboom/nogil_d595911
 - version: 3.12.0a4
 - config: 
 - commit hash: [d595911](https://github.com/mdboom/cpython/commit/d595911)

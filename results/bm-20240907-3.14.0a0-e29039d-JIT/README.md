@@ -1,11 +1,11 @@
 # Results
 
-- fork: brandtbucher
+- fork: brandtbucher/confidence
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [e29039d](https://github.com/brandtbucher/cpython/commit/e29039d)
 - commit date: 2024-09-07T13:38:27-07:00
-- commit merge base: [cfbc841ef3c27b3e65d1223bf8fedf1f652137bc](https://github.com/brandtbucher/cpython/commit/cfbc841ef3c27b3e65d1223bf8fedf1f652137bc)
+- commit merge base: [cfbc841ef3c27b3e65d1223bf8fedf1f652137bc](https://github.com/python/cpython/commit/cfbc841ef3c27b3e65d1223bf8fedf1f652137bc)
 - ref: confidence
 
 ## linux x86_64 (azure)

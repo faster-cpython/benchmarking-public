@@ -1,11 +1,11 @@
 # Results
 
-- fork: savannahostrowski
+- fork: savannahostrowski/jit_llvm_19
 - version: 3.14.0a0
 - config: JIT
 - commit hash: [7f9fe5a](https://github.com/savannahostrowski/cpython/commit/7f9fe5a)
 - commit date: 2024-09-26T14:48:23-07:00
-- commit merge base: [54dd77fb8c880d7655fffab934978e277b4275fe](https://github.com/savannahostrowski/cpython/commit/54dd77fb8c880d7655fffab934978e277b4275fe)
+- commit merge base: [54dd77fb8c880d7655fffab934978e277b4275fe](https://github.com/python/cpython/commit/54dd77fb8c880d7655fffab934978e277b4275fe)
 - ref: jit_llvm_19
 
 ## linux aarch64 (arminc)

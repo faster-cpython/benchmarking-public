@@ -54,6 +54,7 @@
 
 - Geometric mean: 1.004x slower (HPT: reliability of 99.90%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
+- missing benchmarks: 🔴 mypy2
 - [🧠memory plot](bm-20241204-linux-x86_64-brandtbucher-justin_cold_16-3.14.0a2%2B-189256b-vs-base-mem.svg)
 - [📄table](bm-20241204-linux-x86_64-brandtbucher-justin_cold_16-3.14.0a2%2B-189256b-vs-base.md)
 - [📈time plot](bm-20241204-linux-x86_64-brandtbucher-justin_cold_16-3.14.0a2%2B-189256b-vs-base.svg)

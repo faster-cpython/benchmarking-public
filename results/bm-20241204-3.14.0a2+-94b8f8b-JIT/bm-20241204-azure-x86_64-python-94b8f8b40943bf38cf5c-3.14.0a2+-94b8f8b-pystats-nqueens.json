@@ -243,7 +243,7 @@
   "opcode[YIELD_VALUE].execution_count": 84292320,
   "opcode[YIELD_VALUE].pair_count[INTERPRETER_EXIT]": 79453920,
   "opcode[YIELD_VALUE].pair_count[STORE_DEREF]": 4838400,
-  "opcode[RESUME].specialization.miss": 60,
+  "opcode[RESUME].specialization.miss": 40,
   "opcode[BINARY_OP_ADD_INT].execution_count": 4838880,
   "opcode[BINARY_OP_ADD_INT].pair_count[BINARY_SLICE]": 120,
   "opcode[BINARY_OP_ADD_INT].pair_count[LOAD_FAST]": 120,
@@ -345,7 +345,7 @@
   "opcode[LOAD_GLOBAL_MODULE].pair_count[LOAD_FAST]": 240,
   "opcode[LOAD_GLOBAL_MODULE].pair_count[LOAD_FAST_LOAD_FAST]": 60,
   "opcode[LOAD_GLOBAL_MODULE].pair_count[LOAD_ATTR_MODULE]": 120,
-  "opcode[RESUME_CHECK].specialization.miss": 60,
+  "opcode[RESUME_CHECK].specialization.miss": 40,
   "opcode[RESUME_CHECK].execution_count": 89385140,
   "opcode[RESUME_CHECK].pair_count[POP_TOP]": 79454060,
   "opcode[RESUME_CHECK].pair_count[LOAD_FAST]": 9930540,
@@ -949,7 +949,7 @@
     "commit_branch": "94b8f8b40943bf38cf5c454773a3fb8f4ff71e01",
     "commit_date": "2024-12-04T15:01:28-08:00",
     "commit_merge_base": "7c5a6f67c726608a05a640e76fc62cfbae986a03",
-    "benchmark_hash": "212362",
+    "benchmark_hash": "5214a1",
     "github_actor": "brandtbucher"
   }
 }

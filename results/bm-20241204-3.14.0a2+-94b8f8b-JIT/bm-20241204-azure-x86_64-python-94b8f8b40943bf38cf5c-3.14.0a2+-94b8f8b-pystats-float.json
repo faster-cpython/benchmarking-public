@@ -362,7 +362,7 @@
   "Object materialize dict (str subclass)": 0,
   "Object method cache hits": 199,
   "Object method cache misses": 21,
-  "Object method cache collisions": 39,
+  "Object method cache collisions": 35,
   "Object method cache dunder hits": 11999980,
   "Object method cache dunder misses": 20,
   "GC[0] collections": 0,
@@ -371,7 +371,7 @@
   "GC[0] objects reachable from roots": 0,
   "GC[0] objects not reachable from roots": 0,
   "GC[1] collections": 5900,
-  "GC[1] object visits": 135327280,
+  "GC[1] object visits": 135327304,
   "GC[1] objects collected": 160,
   "GC[1] objects reachable from roots": 4958980,
   "GC[1] objects not reachable from roots": 11516980,
@@ -893,7 +893,7 @@
     "commit_branch": "94b8f8b40943bf38cf5c454773a3fb8f4ff71e01",
     "commit_date": "2024-12-04T15:01:28-08:00",
     "commit_merge_base": "7c5a6f67c726608a05a640e76fc62cfbae986a03",
-    "benchmark_hash": "212362",
+    "benchmark_hash": "5214a1",
     "github_actor": "brandtbucher"
   }
 }

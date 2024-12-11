@@ -87,6 +87,7 @@
 
 - Geometric mean: 1.011x faster (HPT: reliability of 95.32%, 1.00x faster at 99th %ile)
 - Memory usage: 1.02x
+- missing benchmarks: 🔴 mypy2
 - [🧠memory plot](bm-20241207-linux-x86_64-python-79b7cab50a3292a1c014-3.14.0a2%2B-79b7cab-vs-base-mem.svg)
 - [📄table](bm-20241207-linux-x86_64-python-79b7cab50a3292a1c014-3.14.0a2%2B-79b7cab-vs-base.md)
 - [📈time plot](bm-20241207-linux-x86_64-python-79b7cab50a3292a1c014-3.14.0a2%2B-79b7cab-vs-base.svg)

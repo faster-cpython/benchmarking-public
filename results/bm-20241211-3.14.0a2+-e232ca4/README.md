@@ -42,3 +42,11 @@
 - [📄table](bm-20241211-linux-x86_64-eendebakpt-small_int_immortal_v-3.14.0a2%2B-e232ca4-vs-3.13.0.md)
 - [📈time plot](bm-20241211-linux-x86_64-eendebakpt-small_int_immortal_v-3.14.0a2%2B-e232ca4-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.003x slower (HPT: reliability of 99.25%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20241211-linux-x86_64-eendebakpt-small_int_immortal_v-3.14.0a2%2B-e232ca4-vs-base-mem.svg)
+- [📄table](bm-20241211-linux-x86_64-eendebakpt-small_int_immortal_v-3.14.0a2%2B-e232ca4-vs-base.md)
+- [📈time plot](bm-20241211-linux-x86_64-eendebakpt-small_int_immortal_v-3.14.0a2%2B-e232ca4-vs-base.svg)
+

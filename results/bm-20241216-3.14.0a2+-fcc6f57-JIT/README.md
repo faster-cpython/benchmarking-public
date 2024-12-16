@@ -89,6 +89,14 @@
 - [📄table](bm-20241216-linux-x86_64-Fidget%252dSpinner-trace_function_entry-3.14.0a2%2B-fcc6f57-vs-3.13.0.md)
 - [📈time plot](bm-20241216-linux-x86_64-Fidget%252dSpinner-trace_function_entry-3.14.0a2%2B-fcc6f57-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.008x faster (HPT: reliability of 99.82%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20241216-linux-x86_64-Fidget%252dSpinner-trace_function_entry-3.14.0a2%2B-fcc6f57-vs-base-mem.svg)
+- [📄table](bm-20241216-linux-x86_64-Fidget%252dSpinner-trace_function_entry-3.14.0a2%2B-fcc6f57-vs-base.md)
+- [📈time plot](bm-20241216-linux-x86_64-Fidget%252dSpinner-trace_function_entry-3.14.0a2%2B-fcc6f57-vs-base.svg)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12356877260)
@@ -205,6 +213,13 @@
 - new benchmarks: mypy2
 - [📄table](bm-20241216-pythonperf1_win32-x86-Fidget%252dSpinner-trace_function_entry-3.14.0a2%2B-fcc6f57-vs-3.13.0.md)
 - [📈time plot](bm-20241216-pythonperf1_win32-x86-Fidget%252dSpinner-trace_function_entry-3.14.0a2%2B-fcc6f57-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.032x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: unknown
+- [📄table](bm-20241216-pythonperf1_win32-x86-Fidget%252dSpinner-trace_function_entry-3.14.0a2%2B-fcc6f57-vs-base.md)
+- [📈time plot](bm-20241216-pythonperf1_win32-x86-Fidget%252dSpinner-trace_function_entry-3.14.0a2%2B-fcc6f57-vs-base.svg)
 
 ## darwin arm64 (darwin)
 

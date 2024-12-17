@@ -238,7 +238,7 @@
 <use x="159.033203" xlink:href="#b"/>
 <use x="222.65625" xlink:href="#m"/>
 </g>
-<path d="m-1 110 14.5-32.2 56.8 22.9 51.3-18.3 336-9.17 13.4 4.59 13.7-4.59h11.3 16.3 12.5l14.7-4.59 13.7 4.59h13.7 13.3l14.1-18.3 13.7 4.59 13.6-4.59 13.4 4.59h13.6 13.5" clip-path="url(#f)" fill="none" stroke="#1f77b4" stroke-linecap="square" stroke-opacity=".9" stroke-width="1.5"/>
+<path d="m-1 110 14.5-32.2 56.8 22.9 51.3-18.3 336-9.17 13.4 4.59 13.7-4.59h11.3 16.3 12.5l14.7-4.59 13.7 4.59h13.7 13.3l14.1-18.3 13.7 4.59 13.6-4.59 13.4 4.59h13.6 11 2.44" clip-path="url(#f)" fill="none" stroke="#1f77b4" stroke-linecap="square" stroke-opacity=".9" stroke-width="1.5"/>
 <defs>
 <path id="a" d="m-2.5 2.5h5v-5h-5z" stroke="#1f77b4" stroke-opacity=".9"/>
 </defs>
@@ -262,6 +262,7 @@
 <use x="621.757187" y="54.53707" xlink:href="#a"/>
 <use x="635.184896" y="59.123528" xlink:href="#a"/>
 <use x="648.803082" y="59.123528" xlink:href="#a"/>
+<use x="659.829341" y="59.123528" xlink:href="#a"/>
 <use x="662.269429" y="59.123528" xlink:href="#a"/>
 </g>
 <g stroke="#1f77b4" stroke-opacity=".9">

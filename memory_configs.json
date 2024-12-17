@@ -142,5 +142,6 @@
   "bm-20241214-3.14.0a2+-0ac40ac/bm-20241214-pythonperf2-x86_64-python-0ac40acec045c4ce780c-3.14.0a2+-0ac40ac.json,bm-20241214-3.14.0a2+-0ac40ac-JIT/bm-20241214-pythonperf2-x86_64-python-0ac40acec045c4ce780c-3.14.0a2+-0ac40ac.json": 1.02,
   "bm-20241214-3.14.0a2+-0ac40ac/bm-20241214-arminc-aarch64-python-0ac40acec045c4ce780c-3.14.0a2+-0ac40ac.json,bm-20241214-3.14.0a2+-0ac40ac-JIT/bm-20241214-arminc-aarch64-python-0ac40acec045c4ce780c-3.14.0a2+-0ac40ac.json": 1.02,
   "bm-20241214-3.14.0a2+-0ac40ac/bm-20241214-pythonperf1-amd64-python-0ac40acec045c4ce780c-3.14.0a2+-0ac40ac.json,bm-20241214-3.14.0a2+-0ac40ac-JIT/bm-20241214-pythonperf1-amd64-python-0ac40acec045c4ce780c-3.14.0a2+-0ac40ac.json": null,
-  "bm-20241214-3.14.0a2+-0ac40ac/bm-20241214-pythonperf1_win32-x86-python-0ac40acec045c4ce780c-3.14.0a2+-0ac40ac.json,bm-20241214-3.14.0a2+-0ac40ac-JIT/bm-20241214-pythonperf1_win32-x86-python-0ac40acec045c4ce780c-3.14.0a2+-0ac40ac.json": null
+  "bm-20241214-3.14.0a2+-0ac40ac/bm-20241214-pythonperf1_win32-x86-python-0ac40acec045c4ce780c-3.14.0a2+-0ac40ac.json,bm-20241214-3.14.0a2+-0ac40ac-JIT/bm-20241214-pythonperf1_win32-x86-python-0ac40acec045c4ce780c-3.14.0a2+-0ac40ac.json": null,
+  "bm-20241213-3.14.0a2+-11ff328/bm-20241213-linux-x86_64-python-11ff3286b7e821bf439b-3.14.0a2+-11ff328.json,bm-20241213-3.14.0a2+-11ff328-NOGIL/bm-20241213-linux-x86_64-python-11ff3286b7e821bf439b-3.14.0a2+-11ff328.json": 1.18
 }

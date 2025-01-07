@@ -2,7 +2,7 @@
 ---
 env:
   PYPERFORMANCE_HASH: 9164273e5504c410a5be08d8753c91be708fdd9a
-  PYSTON_BENCHMARKS_HASH: d2aac54ec18e808afbf8e592302c3819f2e5785a
+  PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
 name: _weekly
 on:
   schedule:
@@ -37,7 +37,7 @@ jobs:
       fork: python
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: all
-      benchmarks: all
+      benchmarks: all_and_excluded
       pgo: true
       tier2: false
     secrets: inherit
@@ -49,7 +49,7 @@ jobs:
       fork: python
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: all
-      benchmarks: all
+      benchmarks: all_and_excluded
       pgo: true
       tier2: false
       jit: true
@@ -62,7 +62,7 @@ jobs:
       fork: python
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: all
-      benchmarks: all
+      benchmarks: all_and_excluded
       pgo: true
       tier2: false
       jit: false

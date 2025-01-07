@@ -724,14 +724,14 @@
 </g>
 </g>
 <g stroke="#9467bd" stroke-opacity=".9">
-<path d="m130 680 82.6-14.4h42.8l38.7-14.4 83.3-57.6v14.4h41.6 63l19.7 14.4 54.7-14.4h35.7l9.02-130h84.8" clip-path="url(#p)" fill="none" stroke-dasharray="5.55,2.4" stroke-width="1.5"/>
+<path d="m130 680 82.6-14.4h42.8l38.7-14.4 83.3-43.2v-14.4l41.6 14.4h63l19.7 14.4 54.7-14.4h35.7l9.02-130h84.8" clip-path="url(#p)" fill="none" stroke-dasharray="5.55,2.4" stroke-width="1.5"/>
 <g clip-path="url(#p)" fill="#9467bd" fill-opacity=".9">
 <use x="130.466918" y="679.719892" xlink:href="#d"/>
 <use x="213.019317" y="665.315344" xlink:href="#d"/>
 <use x="255.826886" y="665.315344" xlink:href="#d"/>
 <use x="294.53048" y="650.910795" xlink:href="#d"/>
-<use x="377.835418" y="593.2926" xlink:href="#d"/>
 <use x="377.835418" y="607.697149" xlink:href="#d"/>
+<use x="377.835418" y="593.2926" xlink:href="#d"/>
 <use x="419.416923" y="607.697149" xlink:href="#d"/>
 <use x="482.45079" y="607.697149" xlink:href="#d"/>
 <use x="502.130774" y="622.101697" xlink:href="#d"/>

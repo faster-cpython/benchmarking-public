@@ -42,6 +42,14 @@
 - [📄table](bm-20250107-arminc-aarch64-kumaraditya303-fast_state-3.14.0a3%2B-7de6e22-vs-3.13.0.md)
 - [📈time plot](bm-20250107-arminc-aarch64-kumaraditya303-fast_state-3.14.0a3%2B-7de6e22-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.002x faster (HPT: reliability of 99.94%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250107-arminc-aarch64-kumaraditya303-fast_state-3.14.0a3%2B-7de6e22-vs-base-mem.svg)
+- [📄table](bm-20250107-arminc-aarch64-kumaraditya303-fast_state-3.14.0a3%2B-7de6e22-vs-base.md)
+- [📈time plot](bm-20250107-arminc-aarch64-kumaraditya303-fast_state-3.14.0a3%2B-7de6e22-vs-base.svg)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12654396756)

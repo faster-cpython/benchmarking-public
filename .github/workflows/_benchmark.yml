@@ -381,7 +381,7 @@ jobs:
         PCbuild\build.bat ($env:BUILD_FLAGS -split ' ') ${{ inputs.pgo == true && '--pgo' || '' }} ${{ inputs.jit == true && '--experimental-jit' || '' }} ${{ inputs.tier2 == true && '--experimental-jit-interpreter' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} -c Release
         # Copy the build products to a place that libraries can find them.
         Copy-Item -Path $env:BUILD_DEST -Destination "libs" -Recurse
-        $env:BUILD_DEST\python.exe -VV
+        $env:BUILD_DEST/python.exe -VV
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
@@ -486,7 +486,7 @@ jobs:
         PCbuild\build.bat ($env:BUILD_FLAGS -split ' ') ${{ inputs.pgo == true && '--pgo' || '' }} ${{ inputs.jit == true && '--experimental-jit' || '' }} ${{ inputs.tier2 == true && '--experimental-jit-interpreter' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} -c Release
         # Copy the build products to a place that libraries can find them.
         Copy-Item -Path $env:BUILD_DEST -Destination "libs" -Recurse
-        $env:BUILD_DEST\python.exe -VV
+        $env:BUILD_DEST/python.exe -VV
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |

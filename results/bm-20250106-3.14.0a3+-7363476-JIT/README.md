@@ -42,10 +42,22 @@
 - [📄table](bm-20250106-arminc-aarch64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-3.13.0.md)
 - [📈time plot](bm-20250106-arminc-aarch64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.057x slower (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
+- Memory usage: 1.02x
+- [🧠memory plot](bm-20250106-arminc-aarch64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base-mem.svg)
+- [📄table](bm-20250106-arminc-aarch64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.md)
+- [📈time plot](bm-20250106-arminc-aarch64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.svg)
+
 ## linux x86_64 (azure)
 
 - [pystats raw](bm-20250106-azure-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-pystats.json)
 - [pystats table](bm-20250106-azure-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20250106-azure-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-pystats-vs-base.md)
 
 ## linux x86_64 (linux)
 
@@ -81,6 +93,14 @@
 - [📄table](bm-20250106-linux-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-3.13.0.md)
 - [📈time plot](bm-20250106-linux-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.000x slower (HPT: reliability of 87.68%, 1.00x slower at 99th %ile)
+- Memory usage: 1.02x
+- [🧠memory plot](bm-20250106-linux-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base-mem.svg)
+- [📄table](bm-20250106-linux-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.md)
+- [📈time plot](bm-20250106-linux-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.svg)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12660451851)
@@ -114,6 +134,14 @@
 - new benchmarks: mypy2
 - [📄table](bm-20250106-pythonperf2-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-3.13.0.md)
 - [📈time plot](bm-20250106-pythonperf2-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.023x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
+- Memory usage: 1.02x
+- [🧠memory plot](bm-20250106-pythonperf2-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base-mem.svg)
+- [📄table](bm-20250106-pythonperf2-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.md)
+- [📈time plot](bm-20250106-pythonperf2-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.svg)
 
 ## windows amd64 (pythonperf1)
 
@@ -149,6 +177,13 @@
 - [📄table](bm-20250106-pythonperf1-amd64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-3.13.0.md)
 - [📈time plot](bm-20250106-pythonperf1-amd64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.051x faster (HPT: reliability of 99.98%, 1.00x faster at 99th %ile)
+- Memory usage: unknown
+- [📄table](bm-20250106-pythonperf1-amd64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.md)
+- [📈time plot](bm-20250106-pythonperf1-amd64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.svg)
+
 ## windows x86 (pythonperf1_win32)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12660451851)
@@ -183,6 +218,13 @@
 - [📄table](bm-20250106-pythonperf1_win32-x86-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-3.13.0.md)
 - [📈time plot](bm-20250106-pythonperf1_win32-x86-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.079x slower (HPT: reliability of 100.00%, 1.07x slower at 99th %ile)
+- Memory usage: unknown
+- [📄table](bm-20250106-pythonperf1_win32-x86-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.md)
+- [📈time plot](bm-20250106-pythonperf1_win32-x86-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.svg)
+
 ## darwin arm64 (darwin)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12660451851)
@@ -216,4 +258,12 @@
 - new benchmarks: mypy2
 - [📄table](bm-20250106-darwin-arm64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-3.13.0.md)
 - [📈time plot](bm-20250106-darwin-arm64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.030x slower (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
+- Memory usage: 1.02x
+- [🧠memory plot](bm-20250106-darwin-arm64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base-mem.svg)
+- [📄table](bm-20250106-darwin-arm64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.md)
+- [📈time plot](bm-20250106-darwin-arm64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.svg)
 

@@ -5,8 +5,8 @@
 - config: 
 - commit hash: [9471106](https://github.com/python/cpython/commit/9471106)
 - commit date: 2022-01-13T19:38:15+00:00
-- commit merge base: [1a4d1c1c9b08e75e88aeac90901920938f649832](https://github.com/python/cpython/commit/1a4d1c1c9b08e75e88aeac90901920938f649832)
 - fork: python/main
+- commit merge base: [1a4d1c1c9b08e75e88aeac90901920938f649832](https://github.com/python/cpython/commit/1a4d1c1c9b08e75e88aeac90901920938f649832)
 - ref: 9471106fd5b47418ffd2, main
 
 ## linux x86_64 (linux)

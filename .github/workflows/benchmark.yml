@@ -2,11 +2,11 @@
 ---
 env:
   PYPERFORMANCE_HASH: 9164273e5504c410a5be08d8753c91be708fdd9a
-  PYSTON_BENCHMARKS_HASH: d2aac54ec18e808afbf8e592302c3819f2e5785a
+  PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
 name: benchmark
 run-name: benchmarking ${{ inputs.fork }}/${{ inputs.ref }} ${{ inputs.tier2 == true
   && 'T2' || '' }} ${{ inputs.jit == true && 'JIT' || '' }} ${{ inputs.nogil == true
-  && 'NOGIL' || '' }}
+  && 'NOGIL' || '' }} ${{ inputs.clang == true && 'CLANG' || '' }}
 on:
   workflow_dispatch:
     inputs:
@@ -52,6 +52,10 @@ on:
         description: free threading
         type: boolean
         default: false
+      clang:
+        description: build with latest clang
+        type: boolean
+        default: false
 jobs:
   # Determine the base commit of the selected commit. The output is passed to
   # the `base` job below. If the data already exists for this commit, it will be
@@ -88,12 +92,13 @@ jobs:
     - name: Determine base
       id: base
       run: |
-        python -m bench_runner get_merge_base ${{ inputs.benchmark_base }} ${{ inputs.machine }} ${{ inputs.pystats }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }} >> $GITHUB_OUTPUT
+        python -m bench_runner get_merge_base ${{ inputs.benchmark_base }} ${{ inputs.machine }} ${{ inputs.pystats }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} >> $GITHUB_OUTPUT
         cat $GITHUB_OUTPUT
 
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }}
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
+        == true && 'clang' || '' }}
   head:
     uses: ./.github/workflows/_benchmark.yml
     with:
@@ -107,6 +112,7 @@ jobs:
       tier2: ${{ inputs.tier2 }}
       jit: ${{ inputs.jit }}
       nogil: ${{ inputs.nogil }}
+      clang: ${{ inputs.clang }}
     secrets: inherit
 
   base:
@@ -124,6 +130,7 @@ jobs:
       tier2: ${{ inputs.tier2 }}
       jit: ${{ inputs.jit }}
       nogil: ${{ inputs.nogil }}
+      clang: ${{ inputs.clang }}
     secrets: inherit
 
   pystats-head:
@@ -138,6 +145,7 @@ jobs:
       tier2: ${{ inputs.tier2 }}
       jit: ${{ inputs.jit }}
       nogil: ${{ inputs.nogil }}
+      clang: ${{ inputs.clang }}
     secrets: inherit
 
   pystats-base:
@@ -154,6 +162,7 @@ jobs:
       tier2: ${{ inputs.tier2 }}
       jit: ${{ inputs.jit }}
       nogil: ${{ inputs.nogil }}
+      clang: ${{ inputs.clang }}
     secrets: inherit
 
   generate:
@@ -183,4 +192,5 @@ jobs:
       tier2: ${{ inputs.tier2 }}
       jit: ${{ inputs.jit }}
       nogil: ${{ inputs.nogil }}
+      clang: ${{ inputs.clang }}
     secrets: inherit

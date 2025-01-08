@@ -2,7 +2,7 @@
 ---
 env:
   PYPERFORMANCE_HASH: 9164273e5504c410a5be08d8753c91be708fdd9a
-  PYSTON_BENCHMARKS_HASH: d2aac54ec18e808afbf8e592302c3819f2e5785a
+  PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
 name: _notify
 on:
   workflow_call:
@@ -30,6 +30,10 @@ on:
         description: free threading
         type: boolean
         default: false
+      clang:
+        description: build with latest clang
+        type: boolean
+        default: false
 jobs:
   notify:
     runs-on: ubuntu-latest
@@ -52,9 +56,11 @@ jobs:
       run: python -m bench_runner notify --fork ${{ inputs.fork }} --ref ${{ inputs.ref
         }} --head ${{ inputs.head }} --date ${{ inputs.date }} --version ${{ inputs.version
         }} --flags ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit ==
-        true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }}
+        true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
+        == true && 'clang' || '' }}
       env:
         GH_TOKEN: ${{ github.token }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }}
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
+        == true && 'clang' || '' }}

@@ -41,6 +41,14 @@
 - [📄table](bm-20250107-linux-x86_64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-3.13.0.md)
 - [📈time plot](bm-20250107-linux-x86_64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.074x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250107-linux-x86_64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base-mem.svg)
+- [📄table](bm-20250107-linux-x86_64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base.md)
+- [📈time plot](bm-20250107-linux-x86_64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-base.svg)
+
 ## darwin arm64 (darwin)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12677795342)

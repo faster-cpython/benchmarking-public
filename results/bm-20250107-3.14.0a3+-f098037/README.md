@@ -139,6 +139,7 @@
 
 - Geometric mean: 1.002x faster (HPT: reliability of 93.17%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
+- new benchmarks: mypy2
 - [🧠memory plot](bm-20250107-pythonperf2-x86_64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base-mem.svg)
 - [📄table](bm-20250107-pythonperf2-x86_64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base.md)
 - [📈time plot](bm-20250107-pythonperf2-x86_64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base.svg)
@@ -181,6 +182,7 @@
 
 - Geometric mean: 1.010x faster (HPT: reliability of 99.56%, 1.00x faster at 99th %ile)
 - Memory usage: unknown
+- new benchmarks: mypy2
 - [📄table](bm-20250107-pythonperf1-amd64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base.md)
 - [📈time plot](bm-20250107-pythonperf1-amd64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base.svg)
 
@@ -222,6 +224,7 @@
 
 - Geometric mean: 1.002x slower (HPT: reliability of 99.97%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
+- new benchmarks: mypy2
 - [📄table](bm-20250107-pythonperf1_win32-x86-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base.md)
 - [📈time plot](bm-20250107-pythonperf1_win32-x86-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base.svg)
 
@@ -263,6 +266,7 @@
 
 - Geometric mean: 1.001x faster (HPT: reliability of 85.04%, 1.00x slower at 99th %ile)
 - Memory usage: 1.01x
+- new benchmarks: mypy2
 - [🧠memory plot](bm-20250107-darwin-arm64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base-mem.svg)
 - [📄table](bm-20250107-darwin-arm64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base.md)
 - [📈time plot](bm-20250107-darwin-arm64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base.svg)

@@ -139,6 +139,7 @@
 
 - Geometric mean: 1.023x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
 - Memory usage: 1.02x
+- new benchmarks: mypy2
 - [🧠memory plot](bm-20250106-pythonperf2-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base-mem.svg)
 - [📄table](bm-20250106-pythonperf2-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.md)
 - [📈time plot](bm-20250106-pythonperf2-x86_64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.svg)
@@ -181,6 +182,7 @@
 
 - Geometric mean: 1.051x faster (HPT: reliability of 99.98%, 1.00x faster at 99th %ile)
 - Memory usage: unknown
+- new benchmarks: mypy2
 - [📄table](bm-20250106-pythonperf1-amd64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.md)
 - [📈time plot](bm-20250106-pythonperf1-amd64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.svg)
 
@@ -222,6 +224,7 @@
 
 - Geometric mean: 1.079x slower (HPT: reliability of 100.00%, 1.07x slower at 99th %ile)
 - Memory usage: unknown
+- new benchmarks: mypy2
 - [📄table](bm-20250106-pythonperf1_win32-x86-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.md)
 - [📈time plot](bm-20250106-pythonperf1_win32-x86-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.svg)
 
@@ -263,6 +266,7 @@
 
 - Geometric mean: 1.030x slower (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
 - Memory usage: 1.02x
+- new benchmarks: mypy2
 - [🧠memory plot](bm-20250106-darwin-arm64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base-mem.svg)
 - [📄table](bm-20250106-darwin-arm64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.md)
 - [📈time plot](bm-20250106-darwin-arm64-python-7363476b6405e3d288a6-3.14.0a3%2B-7363476-vs-base.svg)

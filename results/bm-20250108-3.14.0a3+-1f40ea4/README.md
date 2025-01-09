@@ -46,7 +46,6 @@
 
 - Geometric mean: 1.000x faster (HPT: reliability of 59.99%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
-- missing benchmarks: 🔴 mypy2
 - [🧠memory plot](bm-20250108-arminc-aarch64-brandtbucher-jit_off-3.14.0a3%2B-1f40ea4-vs-base-mem.svg)
 - [📄table](bm-20250108-arminc-aarch64-brandtbucher-jit_off-3.14.0a3%2B-1f40ea4-vs-base.md)
 - [📈time plot](bm-20250108-arminc-aarch64-brandtbucher-jit_off-3.14.0a3%2B-1f40ea4-vs-base.svg)
@@ -97,7 +96,6 @@
 
 - Geometric mean: 1.003x slower (HPT: reliability of 89.22%, 1.00x slower at 99th %ile)
 - Memory usage: 1.01x
-- missing benchmarks: 🔴 mypy2
 - [🧠memory plot](bm-20250108-linux-x86_64-brandtbucher-jit_off-3.14.0a3%2B-1f40ea4-vs-base-mem.svg)
 - [📄table](bm-20250108-linux-x86_64-brandtbucher-jit_off-3.14.0a3%2B-1f40ea4-vs-base.md)
 - [📈time plot](bm-20250108-linux-x86_64-brandtbucher-jit_off-3.14.0a3%2B-1f40ea4-vs-base.svg)

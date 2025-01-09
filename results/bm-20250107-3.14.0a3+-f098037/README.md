@@ -46,6 +46,7 @@
 
 - Geometric mean: 1.001x faster (HPT: reliability of 82.75%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
+- new benchmarks: mypy2
 - [🧠memory plot](bm-20250107-arminc-aarch64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base-mem.svg)
 - [📄table](bm-20250107-arminc-aarch64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base.md)
 - [📈time plot](bm-20250107-arminc-aarch64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base.svg)
@@ -97,6 +98,7 @@
 
 - Geometric mean: 1.001x faster (HPT: reliability of 93.52%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
+- new benchmarks: mypy2
 - [🧠memory plot](bm-20250107-linux-x86_64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base-mem.svg)
 - [📄table](bm-20250107-linux-x86_64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base.md)
 - [📈time plot](bm-20250107-linux-x86_64-brandtbucher-nojit-3.14.0a3%2B-f098037-vs-base.svg)

@@ -8,6 +8,40 @@
 - commit merge base: [2228e92da31ca7344a163498f848973a1b356597](https://github.com/python/cpython/commit/2228e92da31ca7344a163498f848973a1b356597)
 - ref: tail_call
 
+## linux aarch64 (arminc)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12679934038)
+- cpu model: missing
+- platform: Linux-5.15.0-101-generic-aarch64-with-glibc2.35
+- [raw results](bm-20250107-arminc-aarch64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.363x faster (HPT: reliability of 100.00%, 1.24x faster at 99th %ile)
+- Memory usage: 1.35x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpickle, unpickle_list
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
+- [📄table](bm-20250107-arminc-aarch64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-3.10.4.md)
+- [📈time plot](bm-20250107-arminc-aarch64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-3.10.4.svg)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.069x faster (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
+- Memory usage: 1.08x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, gunicorn, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpickle, unpickle_list
+- new benchmarks: bpe_tokeniser, connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
+- [📄table](bm-20250107-arminc-aarch64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-3.12.0.md)
+- [📈time plot](bm-20250107-arminc-aarch64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-3.12.0.svg)
+
+### vs. 3.13.0
+
+- Geometric mean: 1.066x faster (HPT: reliability of 100.00%, 1.04x faster at 99th %ile)
+- Memory usage: 1.06x
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http
+- new benchmarks: dulwich_log
+- [📄table](bm-20250107-arminc-aarch64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-3.13.0.md)
+- [📈time plot](bm-20250107-arminc-aarch64-Fidget%252dSpinner-tail_call-3.14.0a3%2B-f1d3190-vs-3.13.0.svg)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12677798960)

@@ -184,9 +184,12 @@ jobs:
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
-        # that any local results for this commit will override anything we
-        # just pulled in in that case.
-        git pull -s recursive -X ours --autostash --rebase
+        # that any local results for this commit will override anything that
+        # happened in the meantime.
+        # https://stackoverflow.com/questions/43770520/how-to-specify-default-merge-strategy-on-git-stash-pop
+        git stash
+        git pull -s recursive --rebase
+        git cherry-pick -n -m1 -Xtheirs stash
     - name: Adding data to repo
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       uses: EndBug/add-and-commit@v9
@@ -294,9 +297,12 @@ jobs:
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
-        # that any local results for this commit will override anything we
-        # just pulled in in that case.
-        git pull -s recursive -X ours --autostash --rebase
+        # that any local results for this commit will override anything that
+        # happened in the meantime.
+        # https://stackoverflow.com/questions/43770520/how-to-specify-default-merge-strategy-on-git-stash-pop
+        git stash
+        git pull -s recursive --rebase
+        git cherry-pick -n -m1 -Xtheirs stash
     - name: Add data to repo
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: EndBug/add-and-commit@v9
@@ -395,9 +401,12 @@ jobs:
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
-        # that any local results for this commit will override anything we
-        # just pulled in in that case.
-        git pull -s recursive -X ours --autostash --rebase
+        # that any local results for this commit will override anything that
+        # happened in the meantime.
+        # https://stackoverflow.com/questions/43770520/how-to-specify-default-merge-strategy-on-git-stash-pop
+        git stash
+        git pull -s recursive --rebase
+        git cherry-pick -n -m1 -Xtheirs stash
     - name: Add data to repo
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: EndBug/add-and-commit@v9
@@ -499,9 +508,12 @@ jobs:
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
-        # that any local results for this commit will override anything we
-        # just pulled in in that case.
-        git pull -s recursive -X ours --autostash --rebase
+        # that any local results for this commit will override anything that
+        # happened in the meantime.
+        # https://stackoverflow.com/questions/43770520/how-to-specify-default-merge-strategy-on-git-stash-pop
+        git stash
+        git pull -s recursive --rebase
+        git cherry-pick -n -m1 -Xtheirs stash
     - name: Add data to repo
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: EndBug/add-and-commit@v9
@@ -612,9 +624,12 @@ jobs:
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
-        # that any local results for this commit will override anything we
-        # just pulled in in that case.
-        git pull -s recursive -X ours --autostash --rebase
+        # that any local results for this commit will override anything that
+        # happened in the meantime.
+        # https://stackoverflow.com/questions/43770520/how-to-specify-default-merge-strategy-on-git-stash-pop
+        git stash
+        git pull -s recursive --rebase
+        git cherry-pick -n -m1 -Xtheirs stash
     - name: Adding data to repo
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       uses: EndBug/add-and-commit@v9
@@ -732,9 +747,12 @@ jobs:
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
-        # that any local results for this commit will override anything we
-        # just pulled in in that case.
-        git pull -s recursive -X ours --autostash --rebase
+        # that any local results for this commit will override anything that
+        # happened in the meantime.
+        # https://stackoverflow.com/questions/43770520/how-to-specify-default-merge-strategy-on-git-stash-pop
+        git stash
+        git pull -s recursive --rebase
+        git cherry-pick -n -m1 -Xtheirs stash
     - name: Adding data to repo
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       uses: EndBug/add-and-commit@v9

@@ -375,17 +375,18 @@ jobs:
         repository: mdboom/pyperformance
         path: pyperformance
         ref: ${{ env.PYPERFORMANCE_HASH }}
-    - name: Build with clang
-      if: ${{ inputs.clang }}
-      run: |
-        Write-Error "Using the latest clang compiler on Windows isn't currently supported by bench-runner"
-        exit 1
     - name: Build Python
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
+        # The build.bat script is much easier to use from cmd
+      shell: cmd
       run: |
         cd cpython
-        PCbuild\build.bat ($env:BUILD_FLAGS -split ' ') ${{ inputs.pgo == true && '--pgo' || '' }} ${{ inputs.jit == true && '--experimental-jit' || '' }} ${{ inputs.tier2 == true && '--experimental-jit-interpreter' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} -c Release
+        PCbuild\build.bat %BUILD_FLAGS% ${{ (inputs.pgo == true && inputs.clang != true) && '--pgo' || '' }} ${{ inputs.jit == true && '--experimental-jit' || '' }} ${{ inputs.tier2 == true && '--experimental-jit-interpreter' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} -c Release ${{ inputs.clang == true && '"/p:PlatformToolset=clangcl"' }} ${{ inputs.clang == true && '"/p:LLVMInstallDir=C:\Program Files\LLVM"' }} ${{ inputs.clang == true && '"/p:LLVMToolsVersion=19.1.6"' }}
+    - name: Copy Python to different location
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
         # Copy the build products to a place that libraries can find them.
+        cd cpython
         Copy-Item -Path $env:BUILD_DEST -Destination "libs" -Recurse
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
@@ -482,17 +483,18 @@ jobs:
         repository: mdboom/pyperformance
         path: pyperformance
         ref: ${{ env.PYPERFORMANCE_HASH }}
-    - name: Build with clang
-      if: ${{ inputs.clang }}
-      run: |
-        Write-Error "Using the latest clang compiler on Windows isn't currently supported by bench-runner"
-        exit 1
     - name: Build Python
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
+        # The build.bat script is much easier to use from cmd
+      shell: cmd
       run: |
         cd cpython
-        PCbuild\build.bat ($env:BUILD_FLAGS -split ' ') ${{ inputs.pgo == true && '--pgo' || '' }} ${{ inputs.jit == true && '--experimental-jit' || '' }} ${{ inputs.tier2 == true && '--experimental-jit-interpreter' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} -c Release
+        PCbuild\build.bat %BUILD_FLAGS% ${{ (inputs.pgo == true && inputs.clang != true) && '--pgo' || '' }} ${{ inputs.jit == true && '--experimental-jit' || '' }} ${{ inputs.tier2 == true && '--experimental-jit-interpreter' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} -c Release ${{ inputs.clang == true && '"/p:PlatformToolset=clangcl"' }} ${{ inputs.clang == true && '"/p:LLVMInstallDir=C:\Program Files\LLVM"' }} ${{ inputs.clang == true && '"/p:LLVMToolsVersion=19.1.6"' }}
+    - name: Copy Python to different location
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
         # Copy the build products to a place that libraries can find them.
+        cd cpython
         Copy-Item -Path $env:BUILD_DEST -Destination "libs" -Recurse
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}

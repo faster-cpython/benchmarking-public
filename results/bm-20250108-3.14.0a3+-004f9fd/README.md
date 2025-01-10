@@ -8,6 +8,11 @@
 - commit merge base: [845d924efb2a144120421260e62b9c4c9726fc69](https://github.com/python/cpython/commit/845d924efb2a144120421260e62b9c4c9726fc69)
 - ref: 004f9fd1f22643100aa8
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250108-azure-x86_64-python-004f9fd1f22643100aa8-3.14.0a3%2B-004f9fd-pystats.json)
+- [pystats table](bm-20250108-azure-x86_64-python-004f9fd1f22643100aa8-3.14.0a3%2B-004f9fd-pystats.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12680527959)

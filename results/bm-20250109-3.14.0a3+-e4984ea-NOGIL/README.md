@@ -41,3 +41,11 @@
 - [📄table](bm-20250109-linux-x86_64-kumaraditya303-fast_coro-3.14.0a3%2B-e4984ea-vs-3.13.0.md)
 - [📈time plot](bm-20250109-linux-x86_64-kumaraditya303-fast_coro-3.14.0a3%2B-e4984ea-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.006x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
+- Memory usage: 1.01x
+- [🧠memory plot](bm-20250109-linux-x86_64-kumaraditya303-fast_coro-3.14.0a3%2B-e4984ea-vs-base-mem.svg)
+- [📄table](bm-20250109-linux-x86_64-kumaraditya303-fast_coro-3.14.0a3%2B-e4984ea-vs-base.md)
+- [📈time plot](bm-20250109-linux-x86_64-kumaraditya303-fast_coro-3.14.0a3%2B-e4984ea-vs-base.svg)
+

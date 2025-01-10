@@ -89,6 +89,7 @@
 
 - Geometric mean: 1.010x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
+- new benchmarks: mypy2
 - [🧠memory plot](bm-20250102-linux-x86_64-eendebakpt-iter_freelists-3.14.0a3%2B-05f479c-vs-base-mem.svg)
 - [📄table](bm-20250102-linux-x86_64-eendebakpt-iter_freelists-3.14.0a3%2B-05f479c-vs-base.md)
 - [📈time plot](bm-20250102-linux-x86_64-eendebakpt-iter_freelists-3.14.0a3%2B-05f479c-vs-base.svg)

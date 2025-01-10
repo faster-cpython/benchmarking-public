@@ -45,7 +45,6 @@
 
 - Geometric mean: 1.005x faster (HPT: reliability of 99.71%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
-- missing benchmarks: 🔴 mypy2
 - [🧠memory plot](bm-20250102-linux-x86_64-kumaraditya303-current_task-3.14.0a3%2B-b20a605-vs-base-mem.svg)
 - [📄table](bm-20250102-linux-x86_64-kumaraditya303-current_task-3.14.0a3%2B-b20a605-vs-base.md)
 - [📈time plot](bm-20250102-linux-x86_64-kumaraditya303-current_task-3.14.0a3%2B-b20a605-vs-base.svg)

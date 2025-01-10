@@ -41,3 +41,11 @@
 - [📄table](bm-20250110-linux-x86_64-faster%252dcpython-escaping_decref_1-3.14.0a3%2B-74f69b8-vs-3.13.0.md)
 - [📈time plot](bm-20250110-linux-x86_64-faster%252dcpython-escaping_decref_1-3.14.0a3%2B-74f69b8-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.004x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
+- [🧠memory plot](bm-20250110-linux-x86_64-faster%252dcpython-escaping_decref_1-3.14.0a3%2B-74f69b8-vs-base-mem.svg)
+- [📄table](bm-20250110-linux-x86_64-faster%252dcpython-escaping_decref_1-3.14.0a3%2B-74f69b8-vs-base.md)
+- [📈time plot](bm-20250110-linux-x86_64-faster%252dcpython-escaping_decref_1-3.14.0a3%2B-74f69b8-vs-base.svg)
+

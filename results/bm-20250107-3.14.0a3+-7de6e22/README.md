@@ -172,6 +172,7 @@
 
 - Geometric mean: 1.001x slower (HPT: reliability of 98.10%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
+- new benchmarks: mypy2
 - [📄table](bm-20250107-pythonperf1-amd64-kumaraditya303-fast_state-3.14.0a3%2B-7de6e22-vs-base.md)
 - [📈time plot](bm-20250107-pythonperf1-amd64-kumaraditya303-fast_state-3.14.0a3%2B-7de6e22-vs-base.svg)
 

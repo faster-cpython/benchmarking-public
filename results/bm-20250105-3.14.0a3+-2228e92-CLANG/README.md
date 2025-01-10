@@ -130,7 +130,6 @@
 
 - Geometric mean: 1.049x slower (HPT: reliability of 100.00%, 1.02x slower at 99th %ile)
 - Memory usage: unknown
-- missing benchmarks: 🔴 mypy2
 - [📄table](bm-20250105-pythonperf1-amd64-python-2228e92da31ca7344a16-3.14.0a3%2B-2228e92-vs-base.md)
 - [📈time plot](bm-20250105-pythonperf1-amd64-python-2228e92da31ca7344a16-3.14.0a3%2B-2228e92-vs-base.svg)
 

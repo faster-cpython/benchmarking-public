@@ -172,6 +172,7 @@
 
 - Geometric mean: 1.011x slower (HPT: reliability of 99.98%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
+- new benchmarks: mypy2
 - [📄table](bm-20250105-pythonperf1-amd64-kumaraditya303-future_iter-3.14.0a3%2B-82b905d-vs-base.md)
 - [📈time plot](bm-20250105-pythonperf1-amd64-kumaraditya303-future_iter-3.14.0a3%2B-82b905d-vs-base.svg)
 

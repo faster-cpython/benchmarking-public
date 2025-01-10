@@ -375,7 +375,7 @@ jobs:
       shell: cmd
       run: |
         cd cpython
-        PCbuild\build.bat %BUILD_FLAGS% ${{ (inputs.pgo == true && inputs.clang != true) && '--pgo' || '' }} ${{ inputs.jit == true && '--experimental-jit' || '' }} ${{ inputs.tier2 == true && '--experimental-jit-interpreter' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} -c Release ${{ inputs.clang == true && '"/p:PlatformToolset=clangcl"' }} ${{ inputs.clang == true && '"/p:LLVMInstallDir=C:\Program Files\LLVM"' }} ${{ inputs.clang == true && '"/p:LLVMToolsVersion=19.1.6"' }}
+        PCbuild\build.bat %BUILD_FLAGS% ${{ (inputs.pgo == true && inputs.clang != true) && '--pgo' || '' }} ${{ inputs.jit == true && '--experimental-jit' || '' }} ${{ inputs.tier2 == true && '--experimental-jit-interpreter' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} -c Release ${{ inputs.clang == true && '"/p:PlatformToolset=clangcl"' || '' }} ${{ inputs.clang == true && '"/p:LLVMInstallDir=C:\Program Files\LLVM"' || '' }} ${{ inputs.clang == true && '"/p:LLVMToolsVersion=19.1.6"' || '' }}
     - name: Copy Python to different location
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
@@ -480,7 +480,7 @@ jobs:
       shell: cmd
       run: |
         cd cpython
-        PCbuild\build.bat %BUILD_FLAGS% ${{ (inputs.pgo == true && inputs.clang != true) && '--pgo' || '' }} ${{ inputs.jit == true && '--experimental-jit' || '' }} ${{ inputs.tier2 == true && '--experimental-jit-interpreter' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} -c Release ${{ inputs.clang == true && '"/p:PlatformToolset=clangcl"' }} ${{ inputs.clang == true && '"/p:LLVMInstallDir=C:\Program Files\LLVM"' }} ${{ inputs.clang == true && '"/p:LLVMToolsVersion=19.1.6"' }}
+        PCbuild\build.bat %BUILD_FLAGS% ${{ (inputs.pgo == true && inputs.clang != true) && '--pgo' || '' }} ${{ inputs.jit == true && '--experimental-jit' || '' }} ${{ inputs.tier2 == true && '--experimental-jit-interpreter' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} -c Release ${{ inputs.clang == true && '"/p:PlatformToolset=clangcl"' || '' }} ${{ inputs.clang == true && '"/p:LLVMInstallDir=C:\Program Files\LLVM"' || '' }} ${{ inputs.clang == true && '"/p:LLVMToolsVersion=19.1.6"' || '' }}
     - name: Copy Python to different location
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |

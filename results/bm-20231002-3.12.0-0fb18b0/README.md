@@ -135,17 +135,16 @@
 
 ## darwin arm64 (darwin)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/7646930307)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12751211058)
 - cpu model: missing
-- platform: macOS-14.2.1-arm64-arm-64bit
+- platform: macOS-15.2-arm64-arm-64bit
 - [raw results](bm-20231002-darwin-arm64-python-v3.12.0-3.12.0-0fb18b0.json)
 
 ### vs. 3.10.4
 
 - Geometric mean: 1.209x faster (HPT: reliability of 100.00%, 1.13x faster at 99th %ile)
 - Memory usage: 1.11x
-- missing benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_io, async_tree_eager_memoization, bpe_tokeniser, connected_components, djangocms, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, many_optionals, pylint, shortest_path, sphinx, subparsers, thrift
-- new benchmarks: aiohttp, async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, asyncio_tcp, asyncio_tcp_ssl, gunicorn, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io_tg, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, gunicorn
 - [📄table](bm-20231002-darwin-arm64-python-v3.12.0-3.12.0-0fb18b0-vs-3.10.4.md)
 - [📈time plot](bm-20231002-darwin-arm64-python-v3.12.0-3.12.0-0fb18b0-vs-3.10.4.svg)
 
@@ -153,8 +152,6 @@
 
 - Geometric mean: 1.037x faster (HPT: reliability of 87.37%, 1.00x faster at 99th %ile)
 - Memory usage: 0.88x
-- missing benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, bpe_tokeniser, connected_components, djangocms, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, many_optionals, pylint, shortest_path, sphinx, subparsers, thrift
-- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20231002-darwin-arm64-python-v3.12.0-3.12.0-0fb18b0-vs-3.13.0.md)
 - [📈time plot](bm-20231002-darwin-arm64-python-v3.12.0-3.12.0-0fb18b0-vs-3.13.0.svg)
 

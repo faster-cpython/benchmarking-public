@@ -95,8 +95,8 @@
 
 - Geometric mean: 1.006x faster (HPT: reliability of 65.02%, 1.00x slower at 99th %ile)
 - Memory usage: 0.51x
-- missing benchmarks: sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, bpe_tokeniser, flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
+- missing benchmarks: connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
+- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20240930-darwin-arm64-Yhg1s-3.13_revert_incremen-3.13.0rc2%2B-1ba3555-vs-3.12.0.md)
 - [📈time plot](bm-20240930-darwin-arm64-Yhg1s-3.13_revert_incremen-3.13.0rc2%2B-1ba3555-vs-3.12.0.svg)
 

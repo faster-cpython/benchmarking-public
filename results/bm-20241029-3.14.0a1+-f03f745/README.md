@@ -115,8 +115,7 @@
 
 - Geometric mean: 1.021x faster (HPT: reliability of 98.20%, 1.00x faster at 99th %ile)
 - Memory usage: 1.17x
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, gunicorn, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, bpe_tokeniser, connected_components, genshi_text, genshi_xml, html5lib, k_core, pylint, shortest_path, sphinx, thrift
+- missing benchmarks: chameleon, dask, djangocms, gevent_hub, gunicorn, many_optionals, subparsers
 - [📄table](bm-20241029-darwin-arm64-faster%252dcpython-use_stackrefs-3.14.0a1%2B-f03f745-vs-3.12.0.md)
 - [📈time plot](bm-20241029-darwin-arm64-faster%252dcpython-use_stackrefs-3.14.0a1%2B-f03f745-vs-3.12.0.svg)
 

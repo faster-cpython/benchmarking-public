@@ -154,8 +154,8 @@
 
 - Geometric mean: 1.271x slower (HPT: reliability of 100.00%, 1.32x slower at 99th %ile)
 - Memory usage: 0.84x
-- missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
-- new benchmarks: bpe_tokeniser, genshi_text, genshi_xml, html5lib, pylint, thrift
+- missing benchmarks: async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, connected_components, dask, djangocms, gevent_hub, gunicorn, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20241012-darwin-arm64-python-330c527299a5380f39c6-3.14.0a0-330c527-vs-3.12.0.md)
 - [📈time plot](bm-20241012-darwin-arm64-python-330c527299a5380f39c6-3.14.0a0-330c527-vs-3.12.0.svg)
 

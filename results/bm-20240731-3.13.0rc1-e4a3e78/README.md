@@ -188,8 +188,8 @@
 
 - Geometric mean: 1.291x faster (HPT: reliability of 100.00%, 1.19x faster at 99th %ile)
 - Memory usage: 0.65x
-- missing benchmarks: aiohttp, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser
+- missing benchmarks: connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, sqlite_synth, subparsers
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io_tg, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, asyncio_tcp, asyncio_tcp_ssl, mypy2
 - [📄table](bm-20240731-darwin-arm64-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.10.4.md)
 - [📈time plot](bm-20240731-darwin-arm64-python-v3.13.0rc1-3.13.0rc1-e4a3e78-vs-3.10.4.svg)
 

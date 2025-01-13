@@ -135,17 +135,17 @@
 
 ## darwin arm64 (darwin)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/7646924903)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12751204569)
 - cpu model: missing
-- platform: macOS-14.2.1-arm64-arm-64bit
+- platform: macOS-15.2-arm64-arm-64bit
 - [raw results](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120.json)
 
 ### vs. 3.12.0
 
 - Geometric mean: 1.172x slower (HPT: reliability of 100.00%, 1.13x slower at 99th %ile)
 - Memory usage: 0.91x
-- missing benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg
-- new benchmarks: flaskblogging, genshi_text, genshi_xml, html5lib, pylint, thrift
+- missing benchmarks: aiohttp, async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, asyncio_tcp, asyncio_tcp_ssl, gunicorn, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_io, async_tree_eager_memoization, bpe_tokeniser, connected_components, djangocms, genshi_text, genshi_xml, gevent_hub, html5lib, k_core, many_optionals, pylint, shortest_path, sphinx, subparsers, thrift
 - [📄table](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120-vs-3.12.0.md)
 - [📈time plot](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120-vs-3.12.0.svg)
 
@@ -153,8 +153,7 @@
 
 - Geometric mean: 1.135x slower (HPT: reliability of 100.00%, 1.09x slower at 99th %ile)
 - Memory usage: 0.80x
-- missing benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager, async_tree_eager_cpu_io_mixed, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io, async_tree_eager_io_tg, async_tree_eager_memoization, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, djangocms, gevent_hub, k_core, many_optionals, shortest_path, sphinx, subparsers
-- new benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, flaskblogging, mypy2, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- missing benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io_tg, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, gunicorn
 - [📄table](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120-vs-3.13.0.md)
 - [📈time plot](bm-20220323-darwin-arm64-python-v3.10.4-3.10.4-9d38120-vs-3.13.0.svg)
 

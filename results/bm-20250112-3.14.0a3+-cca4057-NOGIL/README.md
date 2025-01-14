@@ -41,3 +41,11 @@
 - [📄table](bm-20250112-linux-x86_64-kumaraditya303-per_thread_tasks-3.14.0a3%2B-cca4057-vs-3.13.0.md)
 - [📈time plot](bm-20250112-linux-x86_64-kumaraditya303-per_thread_tasks-3.14.0a3%2B-cca4057-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.004x faster (HPT: reliability of 99.89%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250112-linux-x86_64-kumaraditya303-per_thread_tasks-3.14.0a3%2B-cca4057-vs-base-mem.svg)
+- [📄table](bm-20250112-linux-x86_64-kumaraditya303-per_thread_tasks-3.14.0a3%2B-cca4057-vs-base.md)
+- [📈time plot](bm-20250112-linux-x86_64-kumaraditya303-per_thread_tasks-3.14.0a3%2B-cca4057-vs-base.svg)
+

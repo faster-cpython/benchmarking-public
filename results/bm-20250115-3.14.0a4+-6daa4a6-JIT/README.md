@@ -8,6 +8,15 @@
 - commit merge base: [f7ceb317aec498823555885a4b7fed5e0244f300](https://github.com/python/cpython/commit/f7ceb317aec498823555885a4b7fed5e0244f300)
 - ref: justin_binary_op_swa
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250115-azure-x86_64-brandtbucher-justin_binary_op_swa-3.14.0a4%2B-6daa4a6-pystats.json)
+- [pystats table](bm-20250115-azure-x86_64-brandtbucher-justin_binary_op_swa-3.14.0a4%2B-6daa4a6-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20250115-azure-x86_64-brandtbucher-justin_binary_op_swa-3.14.0a4%2B-6daa4a6-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12800535638)

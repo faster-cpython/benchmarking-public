@@ -30,7 +30,7 @@
 | 0.48% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
 | 0.48% | `python` | `find_name_in_mro` | lookup |
 | 0.47% | `python` | `_PyEval_FrameClearAndPop` | interpreter |
-| 0.47% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.47% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.45% | `python` | `_Py_Dealloc` | memory |
 | 0.44% | `python` | `_PyCode_Quicken` | interpreter |
 | 0.44% | `python` | `dict_traverse` | gc |
@@ -106,7 +106,7 @@
 | 0.29% | `python` | `PyType_IsSubtype` | dynamic |
 | 0.29% | `python` | `_PyTuple_FromArray.part.0` | tuple |
 | 0.28% | `python` | `update_one_slot` | lookup |
-| 0.28% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.28% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.27% | `libc-2.31.so` | `__strlen_avx2` | libc |
 | 0.26% | `python` | `dict_traverse` | gc |
 | 0.26% | `python` | `unicode_dealloc` | memory |
@@ -141,7 +141,7 @@
 | 0.53% | `python` | `PyObject_GC_Del` | gc |
 | 0.52% | `python` | `PyObject_RichCompareBool` | dynamic |
 | 0.51% | `python` | `dict_dealloc` | memory |
-| 0.49% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.49% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.48% | `python` | `_PyObject_GC_New` | gc |
 | 0.46% | `python` | `_PyObject_GenericGetAttrWithDict` | dynamic |
 | 0.44% | `python` | `PyType_GenericAlloc` | memory |
@@ -274,7 +274,7 @@
 | 0.46% | `python` | `_PyObject_Calloc` | memory |
 | 0.45% | `python` | `list_dealloc` | memory |
 | 0.44% | `python` | `_PyTuple_FromArray.part.0` | tuple |
-| 0.44% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.44% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.43% | `python` | `_PyObject_Realloc` | memory |
 | 0.42% | `python` | `dict_dealloc` | memory |
 | 0.40% | `python` | `PyObject_GetAttr` | dynamic |
@@ -295,7 +295,7 @@
 | 0.30% | `python` | `_Py_NewReference` | memory |
 | 0.30% | `python` | `PyCMethod_New` | memory |
 | 0.29% | `python` | `PyIter_Send` | dynamic |
-| 0.27% | `python` | `_PyThreadState_PushFrame` | interpreter |
+| 0.27% | `python` | `_PyThreadState_PushFrame` | threading |
 | 0.27% | `python` | `list_extend_lock_held` | list |
 | 0.27% | `python` | `PyObject_VectorcallMethod` | dynamic |
 | 0.27% | `python` | `_PyDict_FromItems` | dict |
@@ -323,7 +323,7 @@
 | 0.99% | `python` | `_Py_dict_lookup` | lookup |
 | 0.99% | `python` | `unicodekeys_lookup_unicode` | lookup |
 | 0.85% | `python` | `PyObject_GC_UnTrack` | gc |
-| 0.84% | `python` | `PyThread_get_thread_ident` | unknown |
+| 0.84% | `python` | `PyThread_get_thread_ident` | threading |
 | 0.79% | `python` | `_PyType_LookupRef` | lookup |
 | 0.74% | `python` | `context_tp_dealloc` | memory |
 | 0.72% | `python` | `_Py_Dealloc` | memory |
@@ -374,7 +374,7 @@
 | 1.02% | `python` | `initialize_locals` | interpreter |
 | 1.01% | `python` | `unicodekeys_lookup_unicode` | lookup |
 | 0.95% | `python` | `PyObject_GC_UnTrack` | gc |
-| 0.89% | `python` | `PyThread_get_thread_ident` | unknown |
+| 0.89% | `python` | `PyThread_get_thread_ident` | threading |
 | 0.85% | `python` | `_Py_dict_lookup` | lookup |
 | 0.76% | `python` | `_PyType_LookupRef` | lookup |
 | 0.75% | `python` | `_Py_Dealloc` | memory |
@@ -433,17 +433,17 @@
 | 0.60% | `python` | `tuple_dealloc` | memory |
 | 0.59% | `python` | `gen_dealloc` | memory |
 | 0.59% | `python` | `context_tp_dealloc` | memory |
-| 0.58% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.58% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.52% | `python` | `PyDict_GetItemRef` | dict |
 | 0.51% | `python` | `slot_tp_richcompare` | dynamic |
 | 0.49% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
-| 0.49% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.49% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.48% | `python` | `PyType_GenericAlloc` | memory |
 | 0.44% | `python` | `_PyGC_VisitFrameStack` | gc |
 | 0.44% | `python` | `_PyObject_Calloc` | memory |
 | 0.41% | `python` | `_PyObject_Realloc` | memory |
 | 0.40% | `python` | `PyObject_GC_Del` | gc |
-| 0.39% | `python` | `_PyThreadState_PushFrame` | interpreter |
+| 0.39% | `python` | `_PyThreadState_PushFrame` | threading |
 | 0.38% | `python` | `_PyObject_GC_New` | gc |
 | 0.37% | `python` | `PyObject_GenericGetAttr` | dynamic |
 | 0.37% | `[kernel.kallsyms]` | `clear_page_erms` | kernel |
@@ -502,12 +502,12 @@
 | 0.71% | `python` | `subtype_dealloc` | memory |
 | 0.56% | `python` | `tuple_dealloc` | memory |
 | 0.54% | `python` | `slot_tp_richcompare` | dynamic |
-| 0.53% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.53% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.50% | `python` | `PyType_GenericAlloc` | memory |
 | 0.50% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
 | 0.49% | `python` | `_PyGC_VisitFrameStack` | gc |
 | 0.48% | `python` | `PyDict_GetItemRef` | dict |
-| 0.47% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.47% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.47% | `[kernel.kallsyms]` | `rmqueue` | kernel |
 | 0.46% | `[kernel.kallsyms]` | `clear_page_erms` | kernel |
 | 0.45% | `python` | `_PyObject_Calloc` | memory |
@@ -515,7 +515,7 @@
 | 0.43% | `python` | `gen_dealloc` | memory |
 | 0.42% | `python` | `PyObject_GC_Del` | gc |
 | 0.41% | `python` | `PyObject_GetAttr` | dynamic |
-| 0.39% | `python` | `_PyThreadState_PushFrame` | interpreter |
+| 0.39% | `python` | `_PyThreadState_PushFrame` | threading |
 | 0.36% | `python` | `context_run` | unknown |
 | 0.35% | `[kernel.kallsyms]` | `native_irq_return_iret` | kernel |
 | 0.35% | `[kernel.kallsyms]` | `free_pcppages_bulk` | kernel |
@@ -577,7 +577,7 @@
 | 0.44% | `python` | `PyObject_GetAttr` | dynamic |
 | 0.43% | `python` | `_Py_Dealloc` | memory |
 | 0.41% | `python` | `PyIter_Send` | dynamic |
-| 0.40% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.40% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.40% | `python` | `list_dealloc` | memory |
 | 0.39% | `python` | `_PyArg_UnpackKeywords` | calls |
 | 0.38% | `python` | `_PyTuple_FromArray.part.0` | tuple |
@@ -595,11 +595,11 @@
 | 0.30% | `python` | `_PyObject_MakeTpCall` | dynamic |
 | 0.29% | `python` | `list_extend_lock_held` | list |
 | 0.29% | `_asyncio.cpython-314-x86_64-linux-gnu.so` | `TaskObj_traverse` | library |
-| 0.28% | `python` | `_PyThreadState_PushFrame` | interpreter |
+| 0.28% | `python` | `_PyThreadState_PushFrame` | threading |
 | 0.28% | `python` | `PyCMethod_New` | memory |
 | 0.27% | `_asyncio.cpython-314-x86_64-linux-gnu.so` | `TaskObj_clear` | library |
 | 0.27% | `python` | `_Py_NewReference` | memory |
-| 0.27% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.27% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 
 ## async_tree_memoization_tg
 
@@ -636,7 +636,7 @@
 | 0.47% | `python` | `_PyObject_Calloc` | memory |
 | 0.46% | `python` | `gen_dealloc` | memory |
 | 0.45% | `python` | `context_tp_dealloc` | memory |
-| 0.42% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.42% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.40% | `python` | `_PyObject_GC_New` | gc |
 | 0.39% | `python` | `_PyObject_GetMethod` | dynamic |
 | 0.39% | `python` | `PyIter_Send` | dynamic |
@@ -654,7 +654,7 @@
 | 0.31% | `python` | `_PyGC_VisitFrameStack` | gc |
 | 0.31% | `_asyncio.cpython-314-x86_64-linux-gnu.so` | `task_step_impl` | library |
 | 0.30% | `python` | `list_extend_lock_held` | list |
-| 0.29% | `python` | `_PyThreadState_PushFrame` | interpreter |
+| 0.29% | `python` | `_PyThreadState_PushFrame` | threading |
 | 0.29% | `python` | `dict_dealloc` | memory |
 | 0.28% | `[kernel.kallsyms]` | `rmqueue` | kernel |
 | 0.28% | `python` | `insertdict` | dict |
@@ -701,7 +701,7 @@
 | 0.45% | `python` | `PyObject_GetAttr` | dynamic |
 | 0.44% | `python` | `_PyObject_GetMethod` | dynamic |
 | 0.43% | `python` | `_Py_Dealloc` | memory |
-| 0.43% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.43% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.42% | `[kernel.kallsyms]` | `native_irq_return_iret` | kernel |
 | 0.42% | `python` | `_PyObject_GC_New` | gc |
 | 0.40% | `_asyncio.cpython-314-x86_64-linux-gnu.so` | `TaskObj_traverse` | library |
@@ -722,7 +722,7 @@
 | 0.30% | `python` | `dict_traverse` | gc |
 | 0.29% | `python` | `insertdict` | dict |
 | 0.29% | `python` | `_Py_NewReference` | memory |
-| 0.27% | `python` | `_PyThreadState_PushFrame` | interpreter |
+| 0.27% | `python` | `_PyThreadState_PushFrame` | threading |
 | 0.27% | `python` | `list_dealloc` | memory |
 | 0.26% | `python` | `_PyObject_MakeTpCall` | dynamic |
 | 0.26% | `python` | `_PyObject_GC_NewVar` | gc |
@@ -760,7 +760,7 @@
 | 1.84% | `python` | `PyObject_GC_UnTrack` | gc |
 | 1.74% | `python` | `PyObject_RichCompareBool` | dynamic |
 | 1.70% | `python` | `PyList_New` | memory |
-| 1.55% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 1.55% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 1.50% | `python` | `zip_next` | unknown |
 | 1.26% | `python` | `PySlice_AdjustIndices` | miscobj |
 | 1.21% | `python` | `_Py_Dealloc` | memory |
@@ -814,7 +814,7 @@
 | 0.32% | `python` | `type_call` | dynamic |
 | 0.30% | `python` | `bytes_richcompare` | str |
 | 0.29% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
-| 0.28% | `python` | `PyThreadState_Get` | unknown |
+| 0.28% | `python` | `PyThreadState_Get` | threading |
 | 0.27% | `python` | `_Py_CheckFunctionResult` | calls |
 | 0.25% | `python` | `method_dealloc` | memory |
 | 0.25% | `python` | `PyMethod_New` | memory |
@@ -859,10 +859,10 @@
 | 0.45% | `python` | `PyObject_RichCompare` | dynamic |
 | 0.43% | `python` | `PyLong_AsLongAndOverflow` | int |
 | 0.42% | `python` | `visit_decref` | gc |
-| 0.40% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.40% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.40% | `python` | `PyObject_GC_Del` | gc |
 | 0.39% | `python` | `PyObject_GC_UnTrack` | gc |
-| 0.38% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.38% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.36% | `python` | `range_vectorcall` | miscobj |
 | 0.36% | `python` | `r_object` | import |
 | 0.36% | `python` | `_PyTuple_FromStackRefSteal` | tuple |
@@ -896,7 +896,7 @@
 | 0.88% | `python` | `PyObject_GC_Del` | gc |
 | 0.86% | `python` | `long_hash` | int |
 | 0.86% | `python` | `unsafe_tuple_compare` | unknown |
-| 0.86% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.86% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.85% | `python` | `tuple_dealloc` | memory |
 | 0.84% | `python` | `_PyObject_GC_New` | gc |
 | 0.75% | `python` | `_PyList_AppendTakeRefListResize` | list |
@@ -927,7 +927,7 @@
 | 0.33% | `python` | `_Py_NewReference` | memory |
 | 0.33% | `python` | `_Py_type_getattro` | lookup |
 | 0.32% | `python` | `_PyDict_SetItem_Take2` | dict |
-| 0.29% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.29% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.28% | `python` | `make_gen` | miscobj |
 | 0.27% | `python` | `r_object` | import |
 | 0.26% | `python` | `find_empty_slot` | dict |
@@ -964,7 +964,7 @@
 | 0.61% | `python` | `_PyType_LookupRef` | lookup |
 | 0.59% | `python` | `_PyGC_Collect` | gc |
 | 0.56% | `python` | `visit_reachable` | gc |
-| 0.53% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.53% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.52% | `python` | `type_ready` | dynamic |
 | 0.52% | `python` | `initialize_locals` | interpreter |
 | 0.51% | `python` | `_PyDict_GetItemRef_KnownHash` | dict |
@@ -988,7 +988,7 @@
 | 0.32% | `[kernel.kallsyms]` | `rmqueue` | kernel |
 | 0.32% | `python` | `ThreadHandle_join` | unknown |
 | 0.32% | `[kernel.kallsyms]` | `clear_page_erms` | kernel |
-| 0.31% | `python` | `convertitem.constprop.0` | library |
+| 0.31% | `python` | `convertitem.constprop.0` | unknown |
 | 0.31% | `python` | `list_dealloc` | memory |
 | 0.30% | `python` | `_PyTuple_FromArray.part.0` | tuple |
 | 0.29% | `libpthread-2.31.so` | `__pthread_mutex_lock` | library |
@@ -1027,7 +1027,7 @@
 | 0.97% | `python` | `_Py_MakeCoro` | unknown |
 | 0.84% | `python` | `_Py_dict_lookup` | lookup |
 | 0.83% | `python` | `_PyCoro_GetAwaitableIter` | unknown |
-| 0.79% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.79% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.59% | `python` | `visit_decref` | gc |
 | 0.49% | `python` | `r_object` | import |
 | 0.44% | `python` | `_Py_NewReference` | memory |
@@ -1075,7 +1075,7 @@
 | 0.68% | `python` | `PyUnicode_New.part.0` | memory |
 | 0.68% | `python` | `_PyObject_GC_NewVar` | gc |
 | 0.63% | `python` | `frame_dealloc` | memory |
-| 0.62% | `python` | `find_first_nonascii` | unknown |
+| 0.62% | `python` | `find_first_nonascii` | str |
 | 0.61% | `python` | `sys_trace_start` | library |
 | 0.61% | `python` | `_Py_Dealloc` | memory |
 | 0.59% | `python` | `sys_trace_return` | library |
@@ -1186,7 +1186,7 @@
 | 0.60% | `python` | `insert_to_emptydict` | dict |
 | 0.59% | `python` | `_PyObject_Realloc` | memory |
 | 0.59% | `python` | `long_richcompare` | int |
-| 0.59% | `python` | `_PyThreadState_PushFrame` | interpreter |
+| 0.59% | `python` | `_PyThreadState_PushFrame` | threading |
 | 0.58% | `python` | `_PyLong_New` | memory |
 | 0.56% | `python` | `gc_collect_region.isra.0` | gc |
 | 0.56% | `python` | `PyObject_GC_UnTrack` | gc |
@@ -1199,18 +1199,18 @@
 | 0.45% | `python` | `PySys_Audit` | unknown |
 | 0.44% | `python` | `_PyDict_SetItem_Take2` | dict |
 | 0.44% | `python` | `PyLong_FromVoidPtr` | int |
-| 0.40% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.40% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.38% | `python` | `_Py_NewReference` | memory |
 | 0.37% | `python` | `_PyObject_Calloc` | memory |
 | 0.35% | `python` | `visit_decref` | gc |
 | 0.33% | `python` | `_PyTuple_FromArray.part.0` | tuple |
 | 0.31% | `python` | `PyList_New` | memory |
 | 0.31% | `python` | `dict_merge` | dict |
-| 0.30% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.30% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.30% | `python` | `r_object` | import |
 | 0.29% | `libc-2.31.so` | `__memcpy_avx_unaligned_erms` | libc |
 | 0.28% | `python` | `PyType_GenericAlloc` | memory |
-| 0.28% | `python` | `new_dict.isra.0` | unknown |
+| 0.28% | `python` | `new_dict.isra.0` | dict |
 | 0.27% | `python` | `PyObject_GenericGetAttr` | dynamic |
 
 ## deltablue
@@ -1224,9 +1224,9 @@
 | 1.97% | `python` | `unicodekeys_lookup_unicode` | lookup |
 | 1.79% | `python` | `_PyObject_Malloc` | memory |
 | 1.26% | `python` | `_PyObject_Free` | memory |
-| 1.23% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 1.23% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.96% | `python` | `visit_decref` | gc |
-| 0.89% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.89% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.83% | `python` | `_Py_dict_lookup` | lookup |
 | 0.80% | `python` | `_PyType_LookupRef` | lookup |
 | 0.65% | `python` | `_PyObject_GetMethod` | dynamic |
@@ -1278,7 +1278,7 @@
 | 0.65% | `python` | `insertdict` | dict |
 | 0.65% | `python` | `PyObject_GC_UnTrack` | gc |
 | 0.64% | `python` | `visit_reachable` | gc |
-| 0.59% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.59% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.58% | `python` | `r_object` | import |
 | 0.55% | `python` | `PyObject_GetOptionalAttr` | dynamic |
 | 0.51% | `python` | `_PyObject_GC_New` | gc |
@@ -1293,7 +1293,7 @@
 | 0.45% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
 | 0.44% | `python` | `PyDict_GetItemRef` | dict |
 | 0.41% | `python` | `_PyGC_Collect` | gc |
-| 0.37% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.37% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.37% | `python` | `_PyType_GetDict` | dynamic |
 | 0.36% | `python` | `siphash13` | str |
 | 0.35% | `libz.so.1.2.11` | `inflateBackEnd` | library |
@@ -1310,11 +1310,11 @@
 | 0.29% | `python` | `_PyUnicode_FromUCS1.part.0` | str |
 | 0.29% | `python` | `PyObject_Vectorcall` | dynamic |
 | 0.29% | `python` | `PyList_New` | memory |
-| 0.27% | `python` | `new_dict.isra.0` | unknown |
+| 0.27% | `python` | `new_dict.isra.0` | dict |
 | 0.27% | `python` | `object_isinstance` | dynamic |
 | 0.26% | `python` | `_PyPegen_is_memoized` | interpreter |
 | 0.26% | `python` | `_PyTuple_FromStackRefSteal` | tuple |
-| 0.26% | `python` | `_PyThreadState_PushFrame` | interpreter |
+| 0.26% | `python` | `_PyThreadState_PushFrame` | threading |
 | 0.25% | `python` | `_PyObject_GetMethod` | dynamic |
 
 ## docutils
@@ -1352,7 +1352,7 @@
 | 0.49% | `python` | `dict_dealloc` | memory |
 | 0.48% | `python` | `PyList_New` | memory |
 | 0.47% | `python` | `_PyUnicode_JoinArray.part.0` | str |
-| 0.47% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.47% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.46% | `python` | `sre_ucs1_count` | library |
 | 0.46% | `python` | `_PyTuple_FromStackRefSteal` | tuple |
 | 0.42% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
@@ -1416,7 +1416,7 @@
 | 0.40% | `python` | `long_dealloc` | memory |
 | 0.38% | `python` | `list_dealloc` | memory |
 | 0.38% | `python` | `PyBytes_FromStringAndSize` | str |
-| 0.37% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.37% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.34% | `python` | `PyLong_FromString` | int |
 | 0.34% | `python` | `PyType_GenericAlloc` | memory |
 | 0.33% | `python` | `find_name_in_mro` | lookup |
@@ -1500,7 +1500,7 @@
 | 0.52% | `python` | `_Py_dict_lookup` | lookup |
 | 0.51% | `python` | `list_dealloc` | memory |
 | 0.51% | `python` | `float_mul` | float |
-| 0.48% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.48% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.42% | `math.cpython-314-x86_64-linux-gnu.so` | `math_sqrt` | library |
 | 0.42% | `python` | `PyLong_AsDouble` | int |
 | 0.41% | `[kernel.kallsyms]` | `clear_page_erms` | kernel |
@@ -1591,7 +1591,7 @@
 | 0.84% | `python` | `compute_range_length` | unknown |
 | 0.84% | `python` | `unicodekeys_lookup_unicode` | lookup |
 | 0.76% | `python` | `long_richcompare` | int |
-| 0.75% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.75% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.72% | `python` | `_PyObject_GC_NewVar` | gc |
 | 0.69% | `python` | `_PyGC_Collect` | gc |
 | 0.69% | `python` | `long_add_method` | int |
@@ -1615,9 +1615,9 @@
 | 0.40% | `python` | `_Py_NewReference` | memory |
 | 0.38% | `python` | `PyObject_ClearManagedDict` | dynamic |
 | 0.38% | `python` | `_PyObject_GC_Link` | gc |
-| 0.38% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.38% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.38% | `python` | `PyType_GenericAlloc` | memory |
-| 0.37% | `python` | `_PyThreadState_PushFrame` | interpreter |
+| 0.37% | `python` | `_PyThreadState_PushFrame` | threading |
 | 0.37% | `python` | `PyObject_GetItem` | dynamic |
 | 0.34% | `python` | `long_div` | int |
 | 0.31% | `python` | `PyObject_VisitManagedDict` | dynamic |
@@ -1642,7 +1642,7 @@
 | 1.18% | `python` | `insertdict` | dict |
 | 1.17% | `python` | `tuple_dealloc` | memory |
 | 1.06% | `python` | `_PyTuple_FromStackRefSteal` | tuple |
-| 1.01% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 1.01% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.95% | `python` | `dict_dealloc` | memory |
 | 0.85% | `python` | `insert_to_emptydict` | dict |
 | 0.79% | `python` | `_PyDict_FromItems` | dict |
@@ -1673,7 +1673,7 @@
 | 0.32% | `python` | `_PyFunction_FromConstructor` | unknown |
 | 0.32% | `python` | `PyObject_GC_Del` | gc |
 | 0.31% | `python` | `find_empty_slot` | dict |
-| 0.31% | `python` | `new_dict.isra.0` | unknown |
+| 0.31% | `python` | `new_dict.isra.0` | dict |
 | 0.30% | `python` | `r_object` | import |
 | 0.30% | `python` | `PyObject_GetAttr` | dynamic |
 | 0.29% | `python` | `_PyGC_Collect` | gc |
@@ -1698,7 +1698,7 @@
 | 1.03% | `python` | `long_bitwise` | int |
 | 0.91% | `python` | `_Py_dict_lookup` | lookup |
 | 0.84% | `python` | `gc_collect_region.isra.0` | gc |
-| 0.64% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.64% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.60% | `python` | `visit_decref` | gc |
 | 0.56% | `python` | `_PyEvalFramePushAndInit` | interpreter |
 | 0.53% | `python` | `_PyLong_Add` | int |
@@ -1740,7 +1740,7 @@
 | 0.62% | `python` | `visit_decref` | gc |
 | 0.61% | `python` | `PyLong_FromSsize_t` | int |
 | 0.57% | `python` | `PyLong_FromLong` | int |
-| 0.57% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.57% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.54% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
 | 0.45% | `python` | `r_object` | import |
 | 0.41% | `python` | `PySequence_Contains` | dynamic |
@@ -1804,7 +1804,7 @@
 | 0.34% | `python` | `list_subscript` | list |
 | 0.33% | `python` | `PyObject_IsTrue` | dynamic |
 | 0.32% | `python` | `PyObject_GenericGetAttr` | dynamic |
-| 0.32% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.32% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.32% | `python` | `list_contains` | list |
 | 0.31% | `python` | `update_one_slot` | lookup |
 | 0.31% | `python` | `find_name_in_mro` | lookup |
@@ -1858,7 +1858,7 @@
 | 0.39% | `python` | `PyDict_GetItemRef` | dict |
 | 0.39% | `python` | `resize_compact` | str |
 | 0.37% | `python` | `maybe_small_long` | unknown |
-| 0.36% | `python` | `new_keys_object.constprop.0` | unknown |
+| 0.36% | `python` | `new_keys_object.constprop.0` | dict |
 | 0.35% | `python` | `_PyObject_Realloc` | memory |
 | 0.33% | `python` | `PyBytes_FromStringAndSize` | str |
 | 0.33% | `python` | `visit_decref` | gc |
@@ -1866,7 +1866,7 @@
 | 0.29% | `python` | `PyObject_GC_UnTrack` | gc |
 | 0.28% | `python` | `_PyUnicodeWriter_Init` | str |
 | 0.28% | `python` | `r_object` | import |
-| 0.28% | `python` | `vgetargskeywords.constprop.0` | calls |
+| 0.28% | `python` | `vgetargskeywords.constprop.0` | unknown |
 | 0.27% | `python` | `visit_reachable` | gc |
 | 0.27% | `python` | `Py_HashBuffer` | unknown |
 | 0.27% | `python` | `PyObject_Malloc` | dynamic |
@@ -1889,11 +1889,11 @@
 | 2.57% | `_json.cpython-314-x86_64-linux-gnu.so` | `encoder_listencode_obj` | library |
 | 2.19% | `python` | `resize_compact` | str |
 | 1.87% | `_json.cpython-314-x86_64-linux-gnu.so` | `encoder_encode_key_value` | library |
-| 1.77% | `python` | `vgetargskeywords.constprop.0` | calls |
+| 1.77% | `python` | `vgetargskeywords.constprop.0` | unknown |
 | 1.54% | `python` | `PyUnicode_New` | memory |
 | 1.54% | `python` | `PyErr_CheckSignals` | exceptions |
 | 1.39% | `libc-2.31.so` | `__memcpy_avx_unaligned_erms` | libc |
-| 1.26% | `python` | `convertitem.constprop.0` | library |
+| 1.26% | `python` | `convertitem.constprop.0` | unknown |
 | 1.24% | `python` | `_PyObject_Realloc` | memory |
 | 1.23% | `python` | `PyDict_Next` | dict |
 | 1.22% | `python` | `PyObject_Str` | dynamic |
@@ -1907,7 +1907,7 @@
 | 0.80% | `python` | `_PyUnicodeWriter_PrepareInternal` | str |
 | 0.79% | `python` | `_PyType_LookupRef` | lookup |
 | 0.78% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
-| 0.66% | `python` | `PyThread_get_thread_ident` | unknown |
+| 0.66% | `python` | `PyThread_get_thread_ident` | threading |
 | 0.62% | `python` | `visit_decref` | gc |
 | 0.56% | `python` | `_PyTuple_FromArray.part.0` | tuple |
 | 0.45% | `python` | `PyObject_GC_UnTrack` | gc |
@@ -1931,7 +1931,7 @@
 | 0.29% | `python` | `update_one_slot` | lookup |
 | 0.28% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
 | 0.27% | `python` | `_PyObject_MakeTpCall` | dynamic |
-| 0.27% | `python` | `find_first_nonascii` | unknown |
+| 0.27% | `python` | `find_first_nonascii` | str |
 | 0.27% | `python` | `_Py_hashtable_get_entry_generic` | lookup |
 | 0.27% | `python` | `func_dealloc` | memory |
 | 0.25% | `python` | `siphash13` | str |
@@ -2010,16 +2010,16 @@
 | 1.14% | `python` | `PyDict_GetItemRef` | dict |
 | 0.87% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
 | 0.81% | `python` | `_PyType_LookupRef` | lookup |
-| 0.78% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.78% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.76% | `python` | `PyUnicode_Contains` | str |
 | 0.74% | `python` | `_Py_Dealloc` | memory |
 | 0.67% | `python` | `PyObject_GC_UnTrack` | gc |
 | 0.63% | `python` | `PyObject_GenericGetAttr` | dynamic |
 | 0.60% | `python` | `PyObject_GetAttr` | dynamic |
-| 0.59% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.59% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.52% | `python` | `tuple_dealloc` | memory |
 | 0.48% | `python` | `gc_collect_region.isra.0` | gc |
-| 0.45% | `python` | `_PyThreadState_PushFrame` | interpreter |
+| 0.45% | `python` | `_PyThreadState_PushFrame` | threading |
 | 0.41% | `python` | `_Py_NewReference` | memory |
 | 0.40% | `python` | `PyUnicode_Format` | str |
 | 0.37% | `python` | `PySlice_AdjustIndices` | miscobj |
@@ -2073,7 +2073,7 @@
 | 0.42% | `python` | `_Py_Dealloc` | memory |
 | 0.42% | `libc-2.31.so` | `_int_malloc` | libc |
 | 0.41% | `python` | `find_name_in_mro` | lookup |
-| 0.40% | `python` | `PyThread_get_thread_ident` | unknown |
+| 0.40% | `python` | `PyThread_get_thread_ident` | threading |
 | 0.39% | `python` | `update_one_slot` | lookup |
 | 0.39% | `[kernel.kallsyms]` | `native_irq_return_iret` | kernel |
 | 0.37% | `[kernel.kallsyms]` | `clear_page_erms` | kernel |
@@ -2113,7 +2113,7 @@
 | 0.35% | `python` | `PyObject_GetItem` | dynamic |
 | 0.35% | `python` | `insertdict` | dict |
 | 0.34% | `python` | `subtype_dealloc` | memory |
-| 0.33% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.33% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.33% | `python` | `_PyFloat_FromDouble_ConsumeInputs` | float |
 | 0.31% | `python` | `tuple_dealloc` | memory |
 | 0.30% | `python` | `_Py_Dealloc` | memory |
@@ -2388,7 +2388,7 @@
 | 0.46% | `python` | `list_slice_lock_held.isra.0` | list |
 | 0.44% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
 | 0.43% | `python` | `_PyDict_LoadBuiltinsFromGlobals` | dict |
-| 0.42% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.42% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.42% | `python` | `PyLong_AsSsize_t` | int |
 | 0.40% | `python` | `func_dealloc` | memory |
 | 0.40% | `python` | `visit_decref` | gc |
@@ -2416,7 +2416,7 @@
 | 1.67% | `python` | `unicodekeys_lookup_unicode` | lookup |
 | 1.52% | `[kernel.kallsyms]` | `__d_lookup_rcu` | kernel |
 | 1.28% | `libpthread-2.31.so` | `__pthread_mutex_lock` | library |
-| 1.24% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 1.24% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 1.21% | `[kernel.kallsyms]` | `ext4_htree_store_dirent` | kernel |
 | 1.17% | `[kernel.kallsyms]` | `__ext4fs_dirhash` | kernel |
 | 1.16% | `libpthread-2.31.so` | `pthread_mutex_unlock` | library |
@@ -2449,7 +2449,7 @@
 | 0.49% | `[kernel.kallsyms]` | `__slab_free` | kernel |
 | 0.48% | `python` | `structseq_dealloc` | memory |
 | 0.48% | `python` | `visit_decref` | gc |
-| 0.47% | `python` | `find_first_nonascii` | unknown |
+| 0.47% | `python` | `find_first_nonascii` | str |
 | 0.47% | `python` | `_Py_NewReference` | memory |
 | 0.47% | `python` | `ScandirIterator_iternext` | unknown |
 | 0.46% | `[kernel.kallsyms]` | `ext4_getattr` | kernel |
@@ -2532,7 +2532,7 @@
 | 0.48% | `python` | `_Py_Dealloc` | memory |
 | 0.48% | `python` | `_PyType_LookupRef` | lookup |
 | 0.46% | `python` | `r_object` | import |
-| 0.45% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.45% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.42% | `python` | `PyLong_FromSsize_t` | int |
 | 0.41% | `python` | `PyNumber_Add` | dynamic |
 | 0.40% | `python` | `PyUnicode_AsEncodedString.part.0` | str |
@@ -2593,7 +2593,7 @@
 | 4.19% | `python` | `_PyObject_Free` | memory |
 | 3.41% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
 | 1.81% | `python` | `_Py_dict_lookup` | lookup |
-| 1.78% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 1.78% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 1.73% | `python` | `tuple_dealloc` | memory |
 | 1.50% | `python` | `long_to_decimal_string_internal` | int |
 | 1.42% | `python` | `_PyTuple_FromStackRefSteal` | tuple |
@@ -2620,7 +2620,7 @@
 | 0.46% | `python` | `_PyEvalFramePushAndInit` | interpreter |
 | 0.44% | `python` | `subtype_dealloc` | memory |
 | 0.44% | `python` | `PyObject_GC_Del` | gc |
-| 0.44% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.44% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.44% | `python` | `PyErr_CheckSignals` | exceptions |
 | 0.43% | `python` | `list_sort_impl` | list |
 | 0.43% | `python` | `list_dealloc` | memory |
@@ -2675,7 +2675,7 @@
 | 0.55% | `libc-2.31.so` | `_int_free` | libc |
 | 0.52% | `python` | `_PyEvalFramePushAndInit` | interpreter |
 | 0.51% | `python` | `dict_get` | dict |
-| 0.50% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.50% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.49% | `libc-2.31.so` | `__memcpy_avx_unaligned_erms` | libc |
 | 0.48% | `python` | `PyObject_ClearManagedDict` | dynamic |
 | 0.47% | `python` | `PyType_GenericAlloc` | memory |
@@ -2752,7 +2752,7 @@
 | 0.37% | `libc-2.31.so` | `unlink_chunk.isra.0` | libc |
 | 0.37% | `python` | `slice_dealloc` | memory |
 | 0.35% | `python` | `_PyBytes_FromList` | unknown |
-| 0.35% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.35% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.33% | `python` | `long_rshift` | int |
 | 0.30% | `python` | `gc_collect_region.isra.0` | gc |
 | 0.30% | `python` | `PySlice_Unpack` | miscobj |
@@ -2789,7 +2789,7 @@
 | 0.56% | `python` | `_PyEvalFramePushAndInit` | interpreter |
 | 0.52% | `python` | `_PyEval_FrameClearAndPop` | interpreter |
 | 0.51% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
-| 0.50% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.50% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.49% | `python` | `PyObject_GetAttr` | dynamic |
 | 0.48% | `python` | `_PyPegen_is_memoized` | interpreter |
 | 0.44% | `python` | `_PyObject_GenericGetAttrWithDict` | dynamic |
@@ -2843,7 +2843,7 @@
 | 0.56% | `[kernel.kallsyms]` | `native_irq_return_iret` | kernel |
 | 0.56% | `libc-2.31.so` | `_int_malloc` | libc |
 | 0.55% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
-| 0.55% | `python` | `find_first_nonascii` | unknown |
+| 0.55% | `python` | `find_first_nonascii` | str |
 | 0.53% | `python` | `insertdict` | dict |
 | 0.50% | `[kernel.kallsyms]` | `filemap_map_pages` | kernel |
 | 0.49% | `python` | `PyUnicode_New.part.0` | memory |
@@ -2851,7 +2851,7 @@
 | 0.47% | `python` | `_Py_Dealloc` | memory |
 | 0.46% | `python` | `dict_setdefault_ref_lock_held` | dict |
 | 0.45% | `python` | `PyDict_GetItemRef` | dict |
-| 0.44% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.44% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.44% | `python` | `build_indices_unicode` | dict |
 | 0.42% | `python` | `dict_dealloc` | memory |
 | 0.42% | `[kernel.kallsyms]` | `sync_regs` | kernel |
@@ -2907,7 +2907,7 @@
 | 0.86% | `libc-2.31.so` | `__strlen_avx2` | libc |
 | 0.83% | `python` | `tuple_dealloc` | memory |
 | 0.83% | `python` | `_PyCode_Quicken` | interpreter |
-| 0.76% | `python` | `find_first_nonascii` | unknown |
+| 0.76% | `python` | `find_first_nonascii` | str |
 | 0.73% | `libc-2.31.so` | `__memcpy_avx_unaligned_erms` | libc |
 | 0.72% | `[kernel.kallsyms]` | `native_irq_return_iret` | kernel |
 | 0.71% | `python` | `_PyUnicode_FromUCS1.part.0` | str |
@@ -2932,7 +2932,7 @@
 | 0.41% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
 | 0.41% | `python` | `PyDict_GetItemRef` | dict |
 | 0.40% | `[kernel.kallsyms]` | `zap_pte_range.isra.0` | kernel |
-| 0.39% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.39% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.37% | `ld-2.31.so` | `check_match` | library |
 | 0.36% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
 | 0.35% | `python` | `find_empty_slot` | dict |
@@ -2970,20 +2970,20 @@
 | 1.32% | `python` | `PyType_IsSubtype` | dynamic |
 | 1.23% | `python` | `PyType_GenericAlloc` | memory |
 | 1.10% | `python` | `_Py_Dealloc` | memory |
-| 1.03% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 1.03% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.98% | `python` | `PyNumber_Subtract` | dynamic |
 | 0.89% | `python` | `float_sub` | float |
 | 0.83% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
 | 0.76% | `python` | `_Py_NewReference` | memory |
 | 0.66% | `python` | `PyLong_AsDouble` | int |
-| 0.66% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.66% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.65% | `python` | `unicodekeys_lookup_unicode` | lookup |
 | 0.60% | `python` | `vectorcall_maybe.constprop.0` | unknown |
 | 0.59% | `python` | `_PyEval_Vector` | interpreter |
 | 0.57% | `python` | `PyObject_GC_Del` | gc |
 | 0.51% | `python` | `float_richcompare` | float |
 | 0.50% | `python` | `PyObject_ClearWeakRefs` | dynamic |
-| 0.49% | `python` | `_PyThreadState_PushFrame` | interpreter |
+| 0.49% | `python` | `_PyThreadState_PushFrame` | threading |
 | 0.48% | `python` | `tuple_dealloc` | memory |
 | 0.44% | `python` | `PyObject_GC_UnTrack` | gc |
 | 0.42% | `python` | `PyNumber_Multiply` | dynamic |
@@ -3017,7 +3017,7 @@
 | 0.66% | `python` | `sre_search` | library |
 | 0.65% | `python` | `_PyTuple_FromStackRefSteal` | tuple |
 | 0.62% | `python` | `initialize_locals` | interpreter |
-| 0.61% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.61% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.58% | `python` | `gc_collect_region.isra.0` | gc |
 | 0.58% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
 | 0.55% | `python` | `PyUnicode_Contains` | str |
@@ -3046,7 +3046,7 @@
 | 0.32% | `python` | `PyLong_AsSsize_t` | int |
 | 0.31% | `python` | `PyList_New` | memory |
 | 0.31% | `python` | `_PyObject_GC_New` | gc |
-| 0.30% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.30% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.29% | `python` | `PyType_IsSubtype` | dynamic |
 | 0.28% | `python` | `_PyLong_Add` | int |
 | 0.28% | `python` | `_PyType_GetDict` | dynamic |
@@ -3144,7 +3144,7 @@
 | 0.31% | `python` | `siphash13` | str |
 | 0.30% | `python` | `_PyObject_Realloc` | memory |
 | 0.27% | `python` | `find_name_in_mro` | lookup |
-| 0.27% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.27% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.26% | `python` | `update_one_slot` | lookup |
 | 0.26% | `python` | `PyUnicode_Substring` | str |
 | 0.26% | `python` | `PyObject_GC_UnTrack` | gc |
@@ -3166,7 +3166,7 @@
 | 1.27% | `python` | `PyObject_GetAttr` | dynamic |
 | 0.84% | `python` | `_PyObject_Malloc` | memory |
 | 0.84% | `python` | `gc_collect_region.isra.0` | gc |
-| 0.80% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.80% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.73% | `python` | `_Py_dict_lookup` | lookup |
 | 0.62% | `python` | `_PyObject_Free` | memory |
 | 0.55% | `python` | `initialize_locals` | interpreter |
@@ -3200,7 +3200,7 @@
 | 1.11% | `python` | `_Py_dict_lookup` | lookup |
 | 0.91% | `python` | `_PyObject_Malloc` | memory |
 | 0.88% | `python` | `gc_collect_region.isra.0` | gc |
-| 0.75% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.75% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.71% | `python` | `PyDict_GetItemRef` | dict |
 | 0.64% | `python` | `store_instance_attr_lock_held` | unknown |
 | 0.58% | `python` | `_PyObject_Free` | memory |
@@ -3233,7 +3233,7 @@
 | 2.85% | `python` | `_PyLong_FromMedium` | int |
 | 2.53% | `python` | `vgetargs1_impl` | calls |
 | 2.47% | `python` | `PyObject_GetItem` | dynamic |
-| 1.70% | `python` | `convertitem.constprop.0` | library |
+| 1.70% | `python` | `convertitem.constprop.0` | unknown |
 | 1.62% | `python` | `PyLong_AsSsize_t` | int |
 | 1.36% | `python` | `long_dealloc` | memory |
 | 1.32% | `python` | `_Py_NewReference` | memory |
@@ -3299,7 +3299,7 @@
 | 0.67% | `python` | `PyLong_FromLong` | int |
 | 0.61% | `python` | `_PyObject_Free` | memory |
 | 0.58% | `python` | `visit_decref` | gc |
-| 0.53% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.53% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.50% | `python` | `float_dealloc` | memory |
 | 0.48% | `python` | `r_object` | import |
 | 0.36% | `python` | `visit_reachable` | gc |
@@ -3343,7 +3343,7 @@
 | 0.63% | `python` | `tuple_dealloc` | memory |
 | 0.63% | `python` | `PyUnicode_Format` | str |
 | 0.58% | `python` | `PyDict_GetItemRef` | dict |
-| 0.56% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.56% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.54% | `python` | `_PyEval_FrameClearAndPop` | interpreter |
 | 0.46% | `python` | `list_dealloc` | memory |
 | 0.46% | `python` | `sre_search` | library |
@@ -3390,7 +3390,7 @@
 | 1.46% | `python` | `tuple_dealloc` | memory |
 | 1.11% | `python` | `initialize_locals` | interpreter |
 | 0.96% | `python` | `visit_decref` | gc |
-| 0.88% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.88% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.81% | `python` | `PyObject_GenericGetAttr` | dynamic |
 | 0.75% | `python` | `find_name_in_mro` | lookup |
 | 0.73% | `python` | `PyObject_GetAttr` | dynamic |
@@ -3460,7 +3460,7 @@
 | 1.09% | `python` | `initialize_locals` | interpreter |
 | 1.00% | `python` | `visit_decref` | gc |
 | 0.79% | `python` | `dict_dealloc` | memory |
-| 0.75% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.75% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.67% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
 | 0.65% | `python` | `PyObject_GC_UnTrack` | gc |
 | 0.64% | `python` | `find_name_in_mro` | lookup |
@@ -3516,7 +3516,7 @@
 | 2.04% | `python` | `PyType_IsSubtype` | dynamic |
 | 1.71% | `python` | `tuple_dealloc` | memory |
 | 1.63% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
-| 1.50% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 1.50% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 1.45% | `python` | `_PyObject_GenericGetAttrWithDict` | dynamic |
 | 1.36% | `python` | `_Py_dict_lookup` | lookup |
 | 1.22% | `python` | `dictiter_iternextitem` | dict |
@@ -3560,10 +3560,10 @@
 | 0.31% | `python` | `PyList_New` | memory |
 | 0.30% | `python` | `_PyEval_Vector` | interpreter |
 | 0.30% | `python` | `cfunction_vectorcall_O` | calls |
-| 0.30% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.30% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.29% | `python` | `_PyCode_Quicken` | interpreter |
 | 0.27% | `python` | `PyObject_GetIter` | dynamic |
-| 0.26% | `python` | `new_dict.isra.0` | unknown |
+| 0.26% | `python` | `new_dict.isra.0` | dict |
 | 0.26% | `python` | `gen_iternext` | miscobj |
 | 0.26% | `python` | `dict_traverse` | gc |
 | 0.26% | `python` | `_Py_hashtable_get_entry_generic` | lookup |
@@ -3583,7 +3583,7 @@
 | 1.60% | `python` | `tuple_dealloc` | memory |
 | 1.55% | `python` | `_PyObject_GenericGetAttrWithDict` | dynamic |
 | 1.51% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
-| 1.42% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 1.42% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 1.26% | `python` | `dictiter_iternextitem` | dict |
 | 1.14% | `python` | `gc_collect_region.isra.0` | gc |
 | 1.07% | `python` | `_PyTuple_FromStackRefSteal` | tuple |
@@ -3644,7 +3644,7 @@
 | 2.76% | `python` | `unicodekeys_lookup_unicode` | lookup |
 | 2.63% | `python` | `_PyObject_Malloc` | memory |
 | 2.47% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
-| 2.26% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 2.26% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 2.03% | `python` | `_Py_dict_lookup` | lookup |
 | 2.02% | `python` | `_PyObject_Free` | memory |
 | 1.93% | `python` | `initialize_locals` | interpreter |
@@ -3662,7 +3662,7 @@
 | 0.52% | `python` | `tuple_dealloc` | memory |
 | 0.49% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
 | 0.48% | `python` | `_PyLong_Add` | int |
-| 0.48% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.48% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.44% | `python` | `_PyLong_FromMedium` | int |
 | 0.41% | `python` | `subtype_dealloc` | memory |
 | 0.41% | `python` | `dictiter_iternextitem` | dict |
@@ -3675,7 +3675,7 @@
 | 0.31% | `python` | `visit_add_to_container` | gc |
 | 0.31% | `python` | `visit_reachable` | gc |
 | 0.31% | `python` | `siphash13` | str |
-| 0.31% | `python` | `_PyThreadState_PushFrame` | interpreter |
+| 0.31% | `python` | `_PyThreadState_PushFrame` | threading |
 | 0.30% | `libc-2.31.so` | `__memcpy_avx_unaligned_erms` | libc |
 | 0.30% | `python` | `r_object` | import |
 | 0.30% | `python` | `insert_to_emptydict` | dict |
@@ -3698,7 +3698,7 @@
 | 2.48% | `python` | `_Py_dict_lookup` | lookup |
 | 2.20% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
 | 2.06% | `python` | `_PyObject_Free` | memory |
-| 1.88% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 1.88% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 1.81% | `python` | `gc_collect_region.isra.0` | gc |
 | 1.77% | `python` | `initialize_locals` | interpreter |
 | 1.29% | `python` | `_PyType_LookupRef` | lookup |
@@ -3730,7 +3730,7 @@
 | 0.36% | `python` | `_PyObject_GenericGetAttrWithDict` | dynamic |
 | 0.36% | `python` | `_PyLong_FromMedium` | int |
 | 0.35% | `python` | `update_one_slot` | lookup |
-| 0.35% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.35% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.34% | `python` | `_PyEval_Vector` | interpreter |
 | 0.33% | `python` | `PyObject_GC_Del` | gc |
 | 0.29% | `python` | `_Py_hashtable_get_entry_generic` | lookup |
@@ -3738,7 +3738,7 @@
 | 0.27% | `python` | `subtype_dealloc` | memory |
 | 0.26% | `python` | `_PyUnicode_JoinArray.part.0` | str |
 | 0.26% | `python` | `PyObject_IsTrue` | dynamic |
-| 0.26% | `python` | `_PyThreadState_PushFrame` | interpreter |
+| 0.26% | `python` | `_PyThreadState_PushFrame` | threading |
 | 0.25% | `python` | `_PyDict_GetItemRef_KnownHash` | dict |
 | 0.25% | `python` | `PyDict_GetItemRef` | dict |
 | 0.25% | `python` | `PyUnicode_New.part.0` | memory |
@@ -3770,7 +3770,7 @@
 | 0.68% | `libsqlite3.so.0.8.6` | `sqlite3_extended_errcode` | library |
 | 0.67% | `python` | `long_to_decimal_string_internal` | int |
 | 0.63% | `libsqlite3.so.0.8.6` | `sqlite3_vtab_config` | library |
-| 0.60% | `python` | `_PyThreadState_MustExit` | interpreter |
+| 0.60% | `python` | `_PyThreadState_MustExit` | threading |
 | 0.57% | `libc-2.31.so` | `_int_free` | libc |
 | 0.55% | `python` | `PyList_New` | memory |
 | 0.53% | `libsqlite3.so.0.8.6` | `sqlite3_wal_checkpoint` | library |
@@ -3778,7 +3778,7 @@
 | 0.49% | `libc-2.31.so` | `__memcpy_avx_unaligned_erms` | libc |
 | 0.47% | `python` | `PyObject_GC_UnTrack` | gc |
 | 0.47% | `python` | `long_dealloc` | memory |
-| 0.46% | `python` | `_PyThreadState_Attach` | interpreter |
+| 0.46% | `python` | `_PyThreadState_Attach` | threading |
 | 0.45% | `python` | `_Py_NewReference` | memory |
 | 0.44% | `libsqlite3.so.0.8.6` | `sqlite3_step` | library |
 | 0.43% | `python` | `PyFloat_FromDouble` | float |
@@ -3788,9 +3788,9 @@
 | 0.42% | `libsqlite3.so.0.8.6` | `sqlite3_enable_shared_cache` | library |
 | 0.41% | `python` | `r_object` | import |
 | 0.40% | `python` | `list_dealloc` | memory |
-| 0.39% | `python` | `_PyThreadState_Detach` | interpreter |
+| 0.39% | `python` | `_PyThreadState_Detach` | threading |
 | 0.38% | `libsqlite3.so.0.8.6` | `sqlite3_mutex_try` | library |
-| 0.37% | `python` | `PyThread_get_thread_ident` | unknown |
+| 0.37% | `python` | `PyThread_get_thread_ident` | threading |
 | 0.36% | `python` | `visit_reachable` | gc |
 | 0.36% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
 | 0.36% | `python` | `_PyTuple_FromArray.part.0` | tuple |
@@ -3825,7 +3825,7 @@
 | 3.09% | `python` | `_PyObject_Malloc` | memory |
 | 2.53% | `python` | `_Py_dict_lookup` | lookup |
 | 2.46% | `python` | `_PyObject_Free` | memory |
-| 2.06% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 2.06% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 1.78% | `python` | `tuple_dealloc` | memory |
 | 1.63% | `python` | `gc_collect_region.isra.0` | gc |
 | 1.56% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
@@ -3897,11 +3897,11 @@
 | 1.33% | `python` | `PyObject_GC_Track` | gc |
 | 1.30% | `python` | `tuple_dealloc` | memory |
 | 1.16% | `_decimal.cpython-314-x86_64-linux-gnu.so` | `nm_mpd_qmul` | library |
-| 1.16% | `python` | `vgetargskeywords.constprop.0` | calls |
+| 1.16% | `python` | `vgetargskeywords.constprop.0` | unknown |
 | 1.12% | `python` | `unicodekeys_lookup_unicode` | lookup |
 | 1.11% | `python` | `_Py_dict_lookup` | lookup |
 | 1.02% | `_decimal.cpython-314-x86_64-linux-gnu.so` | `_mpd_baseshiftr` | library |
-| 0.96% | `python` | `convertitem.constprop.0` | library |
+| 0.96% | `python` | `convertitem.constprop.0` | unknown |
 | 0.96% | `_decimal.cpython-314-x86_64-linux-gnu.so` | `mpd_qquantize` | library |
 | 0.94% | `python` | `_PyTuple_FromArray.part.0` | tuple |
 | 0.92% | `python` | `PyObject_GenericGetAttr` | dynamic |
@@ -3989,7 +3989,7 @@
 | 0.73% | `python` | `_PyEval_FrameClearAndPop` | interpreter |
 | 0.72% | `python` | `_PyEvalFramePushAndInit` | interpreter |
 | 0.67% | `python` | `PyObject_ClearManagedDict` | dynamic |
-| 0.66% | `python` | `_PyStack_UnpackDict` | unknown |
+| 0.66% | `python` | `_PyStack_UnpackDict` | interpreter |
 | 0.62% | `python` | `PyLong_AsLong` | int |
 | 0.59% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
 | 0.59% | `fastbinary.cpython-314-x86_64-linux-gnu.so` | `apache::thrift::py::ProtocolBase<apache::thrift::py::BinaryProtocol>::readStruct` | library |
@@ -3998,7 +3998,7 @@
 | 0.57% | `fastbinary.cpython-314-x86_64-linux-gnu.so` | `apache::thrift::py::ProtocolBase<apache::thrift::py::BinaryProtocol>::readBytes` | library |
 | 0.57% | `python` | `PyTuple_Size` | tuple |
 | 0.53% | `libc-2.31.so` | `__memcpy_avx_unaligned_erms` | libc |
-| 0.51% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 0.51% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 0.50% | `python` | `PyObject_GenericGetAttr` | dynamic |
 | 0.50% | `python` | `PyObject_Call` | dynamic |
 | 0.48% | `python` | `PyDict_Next` | dict |
@@ -4021,7 +4021,7 @@
 | 0.35% | `python` | `PyObject_GC_Del` | gc |
 | 0.35% | `python` | `vgetargs1_impl` | calls |
 | 0.35% | `python` | `PyObject_GetAttr` | dynamic |
-| 0.34% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.34% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.33% | `python` | `_PyObject_Realloc` | memory |
 | 0.32% | `python` | `find_name_in_mro` | lookup |
 | 0.31% | `python` | `type_call` | dynamic |
@@ -4032,13 +4032,13 @@
 | 0.29% | `python` | `_PyType_GetDict` | dynamic |
 | 0.29% | `python` | `_PyDict_FromItems` | dict |
 | 0.29% | `python` | `update_one_slot` | lookup |
-| 0.29% | `python` | `find_first_nonascii` | unknown |
+| 0.29% | `python` | `find_first_nonascii` | str |
 | 0.28% | `python` | `_PyGC_Collect` | gc |
 | 0.28% | `python` | `resize_compact` | str |
 | 0.27% | `python` | `PyObject_ClearWeakRefs` | dynamic |
 | 0.27% | `python` | `list_dealloc` | memory |
 | 0.26% | `python` | `_Py_hashtable_get_entry_generic` | lookup |
-| 0.26% | `python` | `convertitem.constprop.0` | library |
+| 0.26% | `python` | `convertitem.constprop.0` | unknown |
 | 0.25% | `python` | `PyObject_GetOptionalAttr` | dynamic |
 
 ## tomli_loads
@@ -4099,7 +4099,7 @@
 | 2.43% | `python` | `weakref___new__` | memory |
 | 2.31% | `python` | `unicodekeys_lookup_unicode` | lookup |
 | 1.98% | `python` | `_PyObject_MakeTpCall` | dynamic |
-| 1.76% | `python` | `_PyType_LookupRefAndVersion` | unknown |
+| 1.76% | `python` | `_PyType_LookupRefAndVersion` | lookup |
 | 1.58% | `python` | `PyArg_UnpackTuple` | calls |
 | 1.32% | `python` | `PyObject_RichCompareBool` | dynamic |
 | 1.17% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
@@ -4129,7 +4129,7 @@
 | 0.41% | `python` | `tuple_richcompare` | tuple |
 | 0.40% | `python` | `_Py_CheckFunctionResult` | calls |
 | 0.39% | `python` | `visit_reachable` | gc |
-| 0.39% | `python` | `weakref___init__` | unknown |
+| 0.39% | `python` | `weakref___init__` | miscobj |
 | 0.38% | `python` | `frame_dealloc` | memory |
 | 0.38% | `python` | `PyObject_GetIter` | dynamic |
 | 0.38% | `python` | `PyObject_Call` | dynamic |
@@ -4144,7 +4144,7 @@
 | 0.32% | `python` | `tuple_iter` | tuple |
 | 0.31% | `python` | `_PyEvalFramePushAndInit` | interpreter |
 | 0.30% | `python` | `_PyGC_Collect` | gc |
-| 0.30% | `python` | `weakref_richcompare` | unknown |
+| 0.30% | `python` | `weakref_richcompare` | miscobj |
 | 0.30% | `python` | `update_one_slot` | lookup |
 | 0.29% | `python` | `_Py_hashtable_get_entry_generic` | lookup |
 | 0.29% | `python` | `siphash13` | str |
@@ -4153,7 +4153,7 @@
 | 0.27% | `python` | `setiter_iternext` | miscobj |
 | 0.27% | `python` | `_PyCode_Quicken` | interpreter |
 | 0.27% | `python` | `lru_cache_make_key` | unknown |
-| 0.26% | `python` | `vgetargskeywords.constprop.0` | calls |
+| 0.26% | `python` | `vgetargskeywords.constprop.0` | unknown |
 | 0.26% | `python` | `PyObject_GenericGetAttr` | dynamic |
 | 0.25% | `python` | `_PyEval_Vector` | interpreter |
 
@@ -4176,7 +4176,7 @@
 | 0.85% | `python` | `PyObject_GetItem` | dynamic |
 | 0.82% | `python` | `initialize_locals` | interpreter |
 | 0.79% | `python` | `bytes_subscript` | str |
-| 0.78% | `python` | `find_first_nonascii` | unknown |
+| 0.78% | `python` | `find_first_nonascii` | str |
 | 0.76% | `python` | `PyBytes_FromStringAndSize` | str |
 | 0.73% | `python` | `PyLong_AsSsize_t` | int |
 | 0.71% | `libc-2.31.so` | `__memset_avx2_unaligned_erms` | libc |
@@ -4184,7 +4184,7 @@
 | 0.66% | `python` | `PyUnicode_Decode.part.0` | str |
 | 0.65% | `python` | `_Py_convert_optional_to_ssize_t` | unknown |
 | 0.61% | `python` | `siphash13` | str |
-| 0.59% | `python` | `_PyThreadState_PopFrame` | interpreter |
+| 0.59% | `python` | `_PyThreadState_PopFrame` | threading |
 | 0.58% | `python` | `gc_collect_region.isra.0` | gc |
 | 0.58% | `python` | `PyObject_IsInstance` | dynamic |
 | 0.58% | `python` | `PyLong_FromSsize_t` | int |
@@ -4232,7 +4232,7 @@
 | 0.94% | `python` | `initialize_locals` | interpreter |
 | 0.90% | `python` | `gc_collect_region.isra.0` | gc |
 | 0.89% | `python` | `_PyFrame_ClearExceptCode` | interpreter |
-| 0.88% | `python` | `find_first_nonascii` | unknown |
+| 0.88% | `python` | `find_first_nonascii` | str |
 | 0.80% | `python` | `PyUnicode_Contains` | str |
 | 0.73% | `python` | `tuple_dealloc` | memory |
 | 0.68% | `python` | `PyUnicode_New.part.0` | memory |
@@ -4293,7 +4293,7 @@
 
 ### interpreter
 
-33.35% total
+32.94% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |
@@ -4302,10 +4302,8 @@
 | 0.78% | python | initialize_locals |
 | 0.67% | python | _PyEval_FrameClearAndPop |
 | 0.42% | python | _PyEvalFramePushAndInit |
-| 0.27% | python | _PyThreadState_PopFrame |
 | 0.26% | python | _PyEval_Vector |
 | 0.21% | python | _PyCode_Quicken |
-| 0.13% | python | _PyThreadState_PushFrame |
 | 0.09% | python | _PyPegen_is_memoized |
 | 0.09% | python | _PyEval_SliceIndex |
 | 0.08% | python | call_instrumentation_vector.part.0 |
@@ -4313,14 +4311,12 @@
 | 0.05% | python | _Py_call_instrumentation_line |
 | 0.05% | python | _PyPegen_expect_token |
 | 0.04% | python | _PyPegen_update_memo |
+| 0.03% | python | _PyStack_UnpackDict |
 | 0.02% | python | _PyCode_Validate |
 | 0.02% | python | _PyEval_GetAwaitable |
 | 0.02% | python | _PyFrame_Traverse |
 | 0.02% | python | _PyPegen_fill_token |
-| 0.01% | python | _PyThreadState_MustExit |
-| 0.01% | python | _PyThreadState_Attach |
 | 0.01% | python | _PyPegen_insert_memo |
-| 0.01% | python | _PyThreadState_Detach |
 | 0.01% | python | _PyEval_LoadGlobalStackRef |
 | 0.01% | python | _PyFrame_New_NoTrack |
 | 0.01% | python | _PyPegen_name_token |
@@ -4337,7 +4333,7 @@
 
 ### memory
 
-12.33% total
+12.34% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |
@@ -4411,6 +4407,7 @@
 | 0.01% | python | type_dealloc |
 | 0.01% | python | _PyMem_RawMalloc |
 | 0.01% | python | dictview_dealloc |
+| 0.01% | python | _PyType_AllocNoTrack |
 | 0.01% | python | match_dealloc |
 | 0.01% | python | setiter_dealloc |
 | 0.01% | python | OSError_new |
@@ -4469,7 +4466,7 @@
 
 ### library
 
-7.64% total
+7.57% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |
@@ -4485,7 +4482,6 @@
 | 0.14% | python | sre_ucs1_count |
 | 0.08% | tracer.cpython-314-x86_64-linux-gnu.so | CTracer_trace |
 | 0.08% | _json.cpython-314-x86_64-linux-gnu.so | py_encode_basestring_ascii |
-| 0.07% | python | convertitem.constprop.0 |
 | 0.06% | libsqlite3.so.0.8.6 | sqlite3_reset |
 | 0.06% | ld-2.31.so | do_lookup_x |
 | 0.05% | libm-2.31.so | __cos_fma |
@@ -4627,13 +4623,14 @@
 
 ### lookup
 
-6.22% total
+6.70% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |
 | 2.64% | python | unicodekeys_lookup_unicode |
 | 1.80% | python | _Py_dict_lookup |
 | 0.88% | python | _PyType_LookupRef |
+| 0.47% | python | _PyType_LookupRefAndVersion |
 | 0.27% | python | find_name_in_mro |
 | 0.25% | python | update_one_slot |
 | 0.22% | python | _Py_hashtable_get_entry_generic |
@@ -4642,6 +4639,7 @@
 | 0.02% | python | PyMember_GetOne |
 | 0.02% | python | _Py_hashtable_get |
 | 0.01% | python | PyMember_SetOne |
+| 0.01% | python | member_get |
 | 0.00% | python | _Py_hashtable_destroy |
 
 ### dynamic
@@ -4804,230 +4802,6 @@
 | 0.00% | python | PyLong_AsUnsignedLong |
 | 0.00% | python | long_or |
 | 0.00% | python | long_vectorcall |
-
-### unknown
-
-3.41% total
-
-| percentage | object | symbol |
-| ---: | :--- | :--- |
-| 0.47% | python | _PyType_LookupRefAndVersion |
-| 0.10% | python | find_first_nonascii |
-| 0.08% | python | new_dict.isra.0 |
-| 0.07% | python | func_clear |
-| 0.06% | python | PyThreadState_Get |
-| 0.06% | python | PyThread_get_thread_ident |
-| 0.06% | python | compute_range_length |
-| 0.04% | python | min_max |
-| 0.03% | python | _PyStack_UnpackDict |
-| 0.03% | python | context_run |
-| 0.03% | python | maybe_small_long |
-| 0.03% | python | Py_HashBuffer |
-| 0.03% | python | _PyCfg_OptimizeCodeUnit |
-| 0.03% | python | store_instance_attr_lock_held |
-| 0.03% | python | sys_audit_tstate |
-| 0.03% | python | zip_next |
-| 0.03% | python | _Py_MakeCoro |
-| 0.02% | python | new_keys_object.constprop.0 |
-| 0.02% | python | hashtable_unicode_compare |
-| 0.02% | python | _PyAssemble_MakeCodeObject |
-| 0.02% | python | do_mkvalue |
-| 0.02% | python | PyContextVar_Get |
-| 0.02% | python | build_string |
-| 0.02% | python | tailmatch |
-| 0.02% | python | _PyCfg_OptimizedCfgToInstructionSequence |
-| 0.02% | python | memcmp@plt |
-| 0.02% | python | primary_rule |
-| 0.02% | python | bounded_lru_cache_wrapper |
-| 0.02% | python | pthread_self@plt |
-| 0.02% | python | _PyArena_Malloc |
-| 0.02% | python | _Py_Specialize_LoadAttr |
-| 0.02% | python | PyIndex_Check |
-| 0.02% | python | _PyFunction_ClearCodeByVersion |
-| 0.02% | python | term_rule |
-| 0.02% | python | slot_tp_init |
-| 0.02% | python | pysiphash |
-| 0.02% | python | builtin_sum |
-| 0.02% | python | _io_BytesIO_read |
-| 0.02% | python | PySys_Audit |
-| 0.02% | python | hashtable_unicode_hash |
-| 0.02% | python | _PyCoro_GetAwaitableIter |
-| 0.02% | python | code_hash |
-| 0.02% | python | _io_TextIOWrapper_write |
-| 0.02% | python | slot_mp_subscript |
-| 0.01% | python | wrapperdescr_call |
-| 0.01% | python | PyContext_CopyCurrent |
-| 0.01% | python | slot_mp_ass_subscript |
-| 0.01% | python | builtin_hasattr |
-| 0.01% | [vdso] | __vdso_clock_gettime |
-| 0.01% | python | build_indices_generic |
-| 0.01% | python | _PyFunction_SetVersion |
-| 0.01% | python | unsafe_tuple_compare |
-| 0.01% | python | _io_open |
-| 0.01% | python | any_find_slice |
-| 0.01% | python | fill_time |
-| 0.01% | python | _Py_convert_optional_to_ssize_t |
-| 0.01% | python | _PyContext_Exit |
-| 0.01% | python | map_next |
-| 0.01% | python | findchar |
-| 0.01% | python | vectorcall_maybe.constprop.0 |
-| 0.01% | python | strlen@plt |
-| 0.01% | python | _Py_GetBaseCodeUnit |
-| 0.01% | python | _PyModule_ClearDict |
-| 0.01% | python | dictitems_iter |
-| 0.01% | python | inversion_rule |
-| 0.01% | python | mro_implementation_unlocked |
-| 0.01% | python | path_converter |
-| 0.01% | python | unsafe_long_compare |
-| 0.01% | python | codegen_visit_expr |
-| 0.01% | python | slot_tp_hash |
-| 0.01% | python | member_get |
-| 0.01% | python | sum_rule |
-| 0.01% | python | shift_expr_rule |
-| 0.01% | python | _Py_Specialize_Call |
-| 0.01% | python | PyType_FromMetaclass |
-| 0.01% | python | countformat |
-| 0.01% | python | _Py_GetErrorHandler |
-| 0.01% | python | _PyIO_find_line_ending |
-| 0.01% | python | PyType_GetBaseByToken |
-| 0.01% | python | os_stat |
-| 0.01% | python | analyze_descriptor_load.constprop.0 |
-| 0.01% | python | symtable_visit_expr |
-| 0.01% | python | mro_internal_unlocked.isra.0 |
-| 0.01% | python | astfold_expr |
-| 0.01% | python | builtin_print |
-| 0.01% | python | _io_FileIO___init__ |
-| 0.01% | python | insert_split_key |
-| 0.01% | python | bitwise_or_rule |
-| 0.01% | python | subtype_clear |
-| 0.01% | python | bitwise_xor_rule |
-| 0.01% | python | basicblock_remove_redundant_nops |
-| 0.01% | python | _PyInstructionSequence_Addop |
-| 0.01% | python | _Py_mbstowcs |
-| 0.01% | python | builtin_any |
-| 0.01% | python | write_bytes |
-| 0.01% | python | va_build_value |
-| 0.01% | python | builtin___build_class__ |
-| 0.01% | python | write_location_info_entry |
-| 0.01% | python | binary_op1 |
-| 0.01% | python | bitwise_and_rule |
-| 0.01% | python | weakref___init__ |
-| 0.01% | python | os_fspath |
-| 0.01% | python | unsafe_latin_compare |
-| 0.01% | python | 0x0000000000082770 |
-| 0.01% | python | setitem_take2_lock_held |
-| 0.01% | python | slot_tp_iter |
-| 0.01% | python | _PyCompile_EnsureArrayLargeEnough |
-| 0.01% | python | _PyCfg_FromInstructionSequence |
-| 0.01% | python | lru_cache_make_key |
-| 0.01% | python | getset_set |
-| 0.01% | python | assign_version_tag |
-| 0.01% | python | func_descr_get |
-| 0.01% | python | ScandirIterator_iternext |
-| 0.01% | python | builtin_id |
-| 0.01% | python | write_str |
-| 0.01% | python | _PyFrame_MakeAndSetFrameObject |
-| 0.01% | python | _PyBytes_FromList |
-| 0.01% | python | remove_unreachable |
-| 0.01% | python | sm_descr_get |
-| 0.01% | python | atom_rule |
-| 0.01% | python | update_slot |
-| 0.01% | python | _pystat_fromstructstat |
-| 0.01% | python | _PyType_AllocNoTrack |
-| 0.01% | python | analyze_block |
-| 0.01% | python | wrap_objobjargproc |
-| 0.01% | python | _PyObjectDict_SetItem |
-| 0.01% | python | _Py_bytes_lower |
-| 0.01% | python | _Py_call_instrumentation_arg |
-| 0.01% | python | scan_block_for_locals |
-| 0.01% | python | posix_do_stat.isra.0 |
-| 0.01% | python | chain_next |
-| 0.01% | python | _PyFunction_FromConstructor |
-| 0.01% | python | pthread_mutex_unlock@plt |
-| 0.01% | python | t_primary_rule |
-| 0.01% | python | pthread_mutex_lock@plt |
-| 0.01% | python | expression_rule |
-| 0.01% | python | disjunction_rule |
-| 0.01% | python | _validate_inner |
-| 0.01% | python | _PyDictKeys_StringLookup |
-| 0.01% | python | _PyTokenizer_Get |
-| 0.01% | python | best_base |
-| 0.01% | python | slot_sq_contains |
-| 0.01% | python | import_ensure_initialized.isra.0 |
-| 0.01% | python | PyType_GetModule |
-| 0.01% | python | _io__Buffered_read |
-| 0.01% | python | memmove@plt |
-| 0.00% | python | _Py_module_getattro_impl |
-| 0.00% | python | 0x0000000000082778 |
-| 0.00% | python | weakref_richcompare |
-| 0.00% | python | conjunction_rule |
-| 0.00% | python | _PyAST_Name |
-| 0.00% | python | wrap_descr_get |
-| 0.00% | python | PyStructSequence_SetItem |
-| 0.00% | python | PyThread_get_thread_ident_ex |
-| 0.00% | python | recursive_issubclass |
-| 0.00% | python | subtype_dict |
-| 0.00% | python | factor_rule |
-| 0.00% | python | __errno_location@plt |
-| 0.00% | python | duplicate_exits_without_lineno |
-| 0.00% | python | PyFile_WriteObject |
-| 0.00% | python | _Py_call_instrumentation |
-| 0.00% | python | _PyInterpreterState_GetConfig |
-| 0.00% | python | _PyFrame_ClearLocals |
-| 0.00% | python | slot_sq_item |
-| 0.00% | python | merge_at |
-| 0.00% | python | clear_weakref_lock_held |
-| 0.00% | python | propagate_line_numbers |
-| 0.00% | python | _abc__abc_instancecheck |
-| 0.00% | python | _PyWeakref_ClearRef |
-| 0.00% | python | classmethod_get |
-| 0.00% | python | builtin_issubclass |
-| 0.00% | python | _Py_VaBuildStack |
-| 0.00% | python | rlock_acquire |
-| 0.00% | python | do_strip |
-| 0.00% | python | slot_sq_length |
-| 0.00% | python | ThreadHandle_join |
-| 0.00% | python | slot_tp_iternext |
-| 0.00% | python | slot_nb_subtract |
-| 0.00% | python | find_frozen.part.0 |
-| 0.00% | python | specialize_dict_access.isra.0 |
-| 0.00% | python | _PyMutex_LockTimed |
-| 0.00% | python | await_primary_rule |
-| 0.00% | python | _PyBytes_Resize |
-| 0.00% | python | _PyArena_AddPyObject |
-| 0.00% | python | remove_all_subclasses |
-| 0.00% | python | gallop_right |
-| 0.00% | python | pthread_cond_signal@plt |
-| 0.00% | python | weakref_hash |
-| 0.00% | python | copy_lock_held |
-| 0.00% | python | specialize_py_call |
-| 0.00% | python | unsafe_object_compare |
-| 0.00% | python | _PyStaticType_GetState |
-| 0.00% | python | wrapperdescr_get |
-| 0.00% | python | _PyCfg_ToInstructionSequence |
-| 0.00% | python | _Py_SetImmortal |
-| 0.00% | python | label_exception_targets |
-| 0.00% | python | _Py_Specialize_ToBool |
-| 0.00% | python | _Py_slot_tp_getattr_hook |
-| 0.00% | python | gallop_left |
-| 0.00% | python | _PyLexer_token_setup |
-| 0.00% | python | gen_close |
-| 0.00% | python | do_mktuple |
-| 0.00% | python | cm_descr_get |
-| 0.00% | python | _buffered_readline |
-| 0.00% | python | _textiowrapper_writeflush |
-| 0.00% | python | _Py_GetConfig |
-| 0.00% | python | _Py_Specialize_LoadGlobal |
-| 0.00% | python | _PyTypes_Fini |
-| 0.00% | python | simple_stmt_rule |
-| 0.00% | python | insert_split_value.isra.0 |
-| 0.00% | python | builtin_eval |
-| 0.00% | python | iter_iternext |
-| 0.00% | python | PyCallable_Check |
-| 0.00% | python | member_set |
-| 0.00% | python | _Py_module_getattro |
-| 0.00% | python | _PyInstructionSequence_ApplyLabelMap |
-| 0.00% | python | wrapper_call |
 
 ### kernel
 
@@ -5203,7 +4977,7 @@
 
 ### dict
 
-2.69% total
+2.77% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |
@@ -5216,6 +4990,7 @@
 | 0.14% | python | _PyDict_GetItemRef_KnownHash |
 | 0.12% | python | find_empty_slot |
 | 0.11% | python | dict_get |
+| 0.08% | python | new_dict.isra.0 |
 | 0.07% | python | dictiter_iternextitem |
 | 0.07% | python | PyDict_SetItem |
 | 0.07% | python | _PyDict_FromItems |
@@ -5226,9 +5001,9 @@
 | 0.04% | python | PyDict_Contains |
 | 0.04% | python | _PyDict_LoadGlobalStackRef |
 | 0.03% | python | dict_subscript |
-| 0.03% | python | clone_combined_dict_keys.isra.0 |
 | 0.03% | python | _PyDict_LoadBuiltinsFromGlobals |
 | 0.03% | python | PyDict_Clear |
+| 0.02% | python | new_keys_object.constprop.0 |
 | 0.02% | python | PyDict_GetItemWithError |
 | 0.02% | python | PyDict_GetItem |
 | 0.01% | python | dict_update |
@@ -5240,6 +5015,7 @@
 | 0.01% | python | dict_tp_clear |
 | 0.01% | python | _PyDict_Next |
 | 0.01% | python | dict_pop |
+| 0.01% | python | _PyDictKeys_StringLookup |
 | 0.01% | python | dict_length |
 | 0.01% | python | _PyDict_Next.part.0 |
 | 0.01% | python | PyDict_SetDefaultRef |
@@ -5251,7 +5027,7 @@
 
 ### str
 
-2.60% total
+2.70% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |
@@ -5260,6 +5036,7 @@
 | 0.13% | python | intern_constants |
 | 0.12% | python | replace |
 | 0.12% | python | _PyUnicode_JoinArray.part.0 |
+| 0.10% | python | find_first_nonascii |
 | 0.10% | python | PyUnicode_Substring |
 | 0.08% | python | _copy_characters.part.0.constprop.0 |
 | 0.07% | python | PyUnicode_RichCompare |
@@ -5342,6 +5119,219 @@
 | 0.00% | python | PyUnicode_DecodeFSDefaultAndSize |
 | 0.00% | python | stringlib__two_way |
 
+### unknown
+
+2.69% total
+
+| percentage | object | symbol |
+| ---: | :--- | :--- |
+| 0.07% | python | convertitem.constprop.0 |
+| 0.07% | python | func_clear |
+| 0.06% | python | compute_range_length |
+| 0.06% | python | vgetargskeywords.constprop.0 |
+| 0.04% | python | min_max |
+| 0.03% | python | context_run |
+| 0.03% | python | maybe_small_long |
+| 0.03% | python | Py_HashBuffer |
+| 0.03% | python | _PyCfg_OptimizeCodeUnit |
+| 0.03% | python | store_instance_attr_lock_held |
+| 0.03% | python | clone_combined_dict_keys.isra.0 |
+| 0.03% | python | sys_audit_tstate |
+| 0.03% | python | zip_next |
+| 0.03% | python | _Py_MakeCoro |
+| 0.02% | python | hashtable_unicode_compare |
+| 0.02% | python | _PyAssemble_MakeCodeObject |
+| 0.02% | python | do_mkvalue |
+| 0.02% | python | PyContextVar_Get |
+| 0.02% | python | build_string |
+| 0.02% | python | tailmatch |
+| 0.02% | python | _PyCfg_OptimizedCfgToInstructionSequence |
+| 0.02% | python | memcmp@plt |
+| 0.02% | python | primary_rule |
+| 0.02% | python | bounded_lru_cache_wrapper |
+| 0.02% | python | pthread_self@plt |
+| 0.02% | python | _PyArena_Malloc |
+| 0.02% | python | _Py_Specialize_LoadAttr |
+| 0.02% | python | PyIndex_Check |
+| 0.02% | python | _PyFunction_ClearCodeByVersion |
+| 0.02% | python | term_rule |
+| 0.02% | python | slot_tp_init |
+| 0.02% | python | pysiphash |
+| 0.02% | python | builtin_sum |
+| 0.02% | python | _io_BytesIO_read |
+| 0.02% | python | PySys_Audit |
+| 0.02% | python | hashtable_unicode_hash |
+| 0.02% | python | _PyCoro_GetAwaitableIter |
+| 0.02% | python | code_hash |
+| 0.02% | python | _io_TextIOWrapper_write |
+| 0.02% | python | slot_mp_subscript |
+| 0.01% | python | wrapperdescr_call |
+| 0.01% | python | PyContext_CopyCurrent |
+| 0.01% | python | slot_mp_ass_subscript |
+| 0.01% | python | builtin_hasattr |
+| 0.01% | [vdso] | __vdso_clock_gettime |
+| 0.01% | python | build_indices_generic |
+| 0.01% | python | _PyFunction_SetVersion |
+| 0.01% | python | unsafe_tuple_compare |
+| 0.01% | python | _io_open |
+| 0.01% | python | any_find_slice |
+| 0.01% | python | fill_time |
+| 0.01% | python | _Py_convert_optional_to_ssize_t |
+| 0.01% | python | _PyContext_Exit |
+| 0.01% | python | map_next |
+| 0.01% | python | findchar |
+| 0.01% | python | vectorcall_maybe.constprop.0 |
+| 0.01% | python | strlen@plt |
+| 0.01% | python | _Py_GetBaseCodeUnit |
+| 0.01% | python | _PyModule_ClearDict |
+| 0.01% | python | dictitems_iter |
+| 0.01% | python | inversion_rule |
+| 0.01% | python | mro_implementation_unlocked |
+| 0.01% | python | path_converter |
+| 0.01% | python | unsafe_long_compare |
+| 0.01% | python | codegen_visit_expr |
+| 0.01% | python | slot_tp_hash |
+| 0.01% | python | sum_rule |
+| 0.01% | python | shift_expr_rule |
+| 0.01% | python | _Py_Specialize_Call |
+| 0.01% | python | PyType_FromMetaclass |
+| 0.01% | python | countformat |
+| 0.01% | python | _Py_GetErrorHandler |
+| 0.01% | python | _PyIO_find_line_ending |
+| 0.01% | python | PyType_GetBaseByToken |
+| 0.01% | python | os_stat |
+| 0.01% | python | analyze_descriptor_load.constprop.0 |
+| 0.01% | python | symtable_visit_expr |
+| 0.01% | python | mro_internal_unlocked.isra.0 |
+| 0.01% | python | astfold_expr |
+| 0.01% | python | builtin_print |
+| 0.01% | python | _io_FileIO___init__ |
+| 0.01% | python | insert_split_key |
+| 0.01% | python | bitwise_or_rule |
+| 0.01% | python | subtype_clear |
+| 0.01% | python | bitwise_xor_rule |
+| 0.01% | python | basicblock_remove_redundant_nops |
+| 0.01% | python | _PyInstructionSequence_Addop |
+| 0.01% | python | _Py_mbstowcs |
+| 0.01% | python | builtin_any |
+| 0.01% | python | write_bytes |
+| 0.01% | python | va_build_value |
+| 0.01% | python | builtin___build_class__ |
+| 0.01% | python | write_location_info_entry |
+| 0.01% | python | binary_op1 |
+| 0.01% | python | bitwise_and_rule |
+| 0.01% | python | os_fspath |
+| 0.01% | python | unsafe_latin_compare |
+| 0.01% | python | 0x0000000000082770 |
+| 0.01% | python | setitem_take2_lock_held |
+| 0.01% | python | slot_tp_iter |
+| 0.01% | python | _PyCompile_EnsureArrayLargeEnough |
+| 0.01% | python | _PyCfg_FromInstructionSequence |
+| 0.01% | python | lru_cache_make_key |
+| 0.01% | python | getset_set |
+| 0.01% | python | assign_version_tag |
+| 0.01% | python | func_descr_get |
+| 0.01% | python | ScandirIterator_iternext |
+| 0.01% | python | builtin_id |
+| 0.01% | python | write_str |
+| 0.01% | python | _PyFrame_MakeAndSetFrameObject |
+| 0.01% | python | _PyBytes_FromList |
+| 0.01% | python | remove_unreachable |
+| 0.01% | python | sm_descr_get |
+| 0.01% | python | atom_rule |
+| 0.01% | python | update_slot |
+| 0.01% | python | _pystat_fromstructstat |
+| 0.01% | python | analyze_block |
+| 0.01% | python | wrap_objobjargproc |
+| 0.01% | python | _PyObjectDict_SetItem |
+| 0.01% | python | _Py_bytes_lower |
+| 0.01% | python | _Py_call_instrumentation_arg |
+| 0.01% | python | scan_block_for_locals |
+| 0.01% | python | posix_do_stat.isra.0 |
+| 0.01% | python | chain_next |
+| 0.01% | python | _PyFunction_FromConstructor |
+| 0.01% | python | pthread_mutex_unlock@plt |
+| 0.01% | python | t_primary_rule |
+| 0.01% | python | pthread_mutex_lock@plt |
+| 0.01% | python | expression_rule |
+| 0.01% | python | disjunction_rule |
+| 0.01% | python | _validate_inner |
+| 0.01% | python | _PyTokenizer_Get |
+| 0.01% | python | best_base |
+| 0.01% | python | slot_sq_contains |
+| 0.01% | python | import_ensure_initialized.isra.0 |
+| 0.01% | python | PyType_GetModule |
+| 0.01% | python | _io__Buffered_read |
+| 0.01% | python | memmove@plt |
+| 0.00% | python | _Py_module_getattro_impl |
+| 0.00% | python | 0x0000000000082778 |
+| 0.00% | python | conjunction_rule |
+| 0.00% | python | _PyAST_Name |
+| 0.00% | python | wrap_descr_get |
+| 0.00% | python | PyStructSequence_SetItem |
+| 0.00% | python | recursive_issubclass |
+| 0.00% | python | subtype_dict |
+| 0.00% | python | factor_rule |
+| 0.00% | python | __errno_location@plt |
+| 0.00% | python | duplicate_exits_without_lineno |
+| 0.00% | python | PyFile_WriteObject |
+| 0.00% | python | _Py_call_instrumentation |
+| 0.00% | python | _PyInterpreterState_GetConfig |
+| 0.00% | python | _PyFrame_ClearLocals |
+| 0.00% | python | slot_sq_item |
+| 0.00% | python | merge_at |
+| 0.00% | python | clear_weakref_lock_held |
+| 0.00% | python | propagate_line_numbers |
+| 0.00% | python | _abc__abc_instancecheck |
+| 0.00% | python | _PyWeakref_ClearRef |
+| 0.00% | python | classmethod_get |
+| 0.00% | python | builtin_issubclass |
+| 0.00% | python | _Py_VaBuildStack |
+| 0.00% | python | rlock_acquire |
+| 0.00% | python | do_strip |
+| 0.00% | python | slot_sq_length |
+| 0.00% | python | ThreadHandle_join |
+| 0.00% | python | slot_tp_iternext |
+| 0.00% | python | slot_nb_subtract |
+| 0.00% | python | find_frozen.part.0 |
+| 0.00% | python | specialize_dict_access.isra.0 |
+| 0.00% | python | _PyMutex_LockTimed |
+| 0.00% | python | await_primary_rule |
+| 0.00% | python | _PyBytes_Resize |
+| 0.00% | python | _PyArena_AddPyObject |
+| 0.00% | python | remove_all_subclasses |
+| 0.00% | python | gallop_right |
+| 0.00% | python | pthread_cond_signal@plt |
+| 0.00% | python | copy_lock_held |
+| 0.00% | python | specialize_py_call |
+| 0.00% | python | unsafe_object_compare |
+| 0.00% | python | _PyStaticType_GetState |
+| 0.00% | python | wrapperdescr_get |
+| 0.00% | python | _PyCfg_ToInstructionSequence |
+| 0.00% | python | _Py_SetImmortal |
+| 0.00% | python | label_exception_targets |
+| 0.00% | python | _Py_Specialize_ToBool |
+| 0.00% | python | _Py_slot_tp_getattr_hook |
+| 0.00% | python | gallop_left |
+| 0.00% | python | _PyLexer_token_setup |
+| 0.00% | python | gen_close |
+| 0.00% | python | do_mktuple |
+| 0.00% | python | cm_descr_get |
+| 0.00% | python | _buffered_readline |
+| 0.00% | python | _textiowrapper_writeflush |
+| 0.00% | python | _Py_GetConfig |
+| 0.00% | python | _Py_Specialize_LoadGlobal |
+| 0.00% | python | _PyTypes_Fini |
+| 0.00% | python | simple_stmt_rule |
+| 0.00% | python | insert_split_value.isra.0 |
+| 0.00% | python | builtin_eval |
+| 0.00% | python | iter_iternext |
+| 0.00% | python | PyCallable_Check |
+| 0.00% | python | member_set |
+| 0.00% | python | _Py_module_getattro |
+| 0.00% | python | _PyInstructionSequence_ApplyLabelMap |
+| 0.00% | python | wrapper_call |
+
 ### libc
 
 2.30% total
@@ -5390,7 +5380,7 @@
 
 ### miscobj
 
-1.98% total
+2.00% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |
@@ -5426,13 +5416,16 @@
 | 0.01% | python | _PySlice_GetLongIndices |
 | 0.01% | python | deque_clear.part.0 |
 | 0.01% | python | set_update_iterable_lock_held |
+| 0.01% | python | weakref___init__ |
 | 0.01% | python | set_vectorcall |
 | 0.01% | python | set_richcompare |
 | 0.01% | python | set_iter |
 | 0.01% | python | set_difference_update_internal |
+| 0.00% | python | weakref_richcompare |
 | 0.00% | python | set_add |
 | 0.00% | python | _PyGen_yf |
 | 0.00% | python | set_discard |
+| 0.00% | python | weakref_hash |
 | 0.00% | python | range_reverse |
 | 0.00% | python | deque_iter |
 
@@ -5510,16 +5503,30 @@
 | 0.01% | python | float_rem |
 | 0.01% | python | float_add |
 
+### threading
+
+0.58% total
+
+| percentage | object | symbol |
+| ---: | :--- | :--- |
+| 0.27% | python | _PyThreadState_PopFrame |
+| 0.13% | python | _PyThreadState_PushFrame |
+| 0.06% | python | PyThreadState_Get |
+| 0.06% | python | PyThread_get_thread_ident |
+| 0.01% | python | _PyThreadState_MustExit |
+| 0.01% | python | _PyThreadState_Attach |
+| 0.01% | python | _PyThreadState_Detach |
+| 0.00% | python | PyThread_get_thread_ident_ex |
+
 ### calls
 
-0.59% total
+0.53% total
 
 | percentage | object | symbol |
 | ---: | :--- | :--- |
 | 0.07% | python | _Py_CheckFunctionResult |
 | 0.07% | python | vgetargs1_impl |
 | 0.06% | python | _PyFunction_Vectorcall |
-| 0.06% | python | vgetargskeywords.constprop.0 |
 | 0.06% | python | _PyArg_UnpackKeywords |
 | 0.04% | python | PyArg_UnpackTuple |
 | 0.03% | python | method_vectorcall |

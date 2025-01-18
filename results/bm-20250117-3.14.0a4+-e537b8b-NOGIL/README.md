@@ -41,3 +41,11 @@
 - [📄table](bm-20250117-linux-x86_64-kumaraditya303-gc-3.14.0a4%2B-e537b8b-vs-3.13.0.md)
 - [📈time plot](bm-20250117-linux-x86_64-kumaraditya303-gc-3.14.0a4%2B-e537b8b-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.003x slower (HPT: reliability of 85.87%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250117-linux-x86_64-kumaraditya303-gc-3.14.0a4%2B-e537b8b-vs-base-mem.svg)
+- [📄table](bm-20250117-linux-x86_64-kumaraditya303-gc-3.14.0a4%2B-e537b8b-vs-base.md)
+- [📈time plot](bm-20250117-linux-x86_64-kumaraditya303-gc-3.14.0a4%2B-e537b8b-vs-base.svg)
+

@@ -2,7 +2,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | aiohttp |  | [[default run]](#aiohttp-on-darwin-arm64-default) | [[default run]](#aiohttp-on-linux-aarch64-default) | [[default run]](#aiohttp-on-linux-x86_64-default) | [[default run]](#aiohttp-on-windows-x86-default) | [[default run]](#aiohttp-on-windows-x86_64-default) |
 | chameleon | [[pystats run]](#chameleon-on-collect-stats-pystats) | [[default run]](#chameleon-on-darwin-arm64-default) | [[default run]](#chameleon-on-linux-aarch64-default) | [[default run]](#chameleon-on-linux-x86_64-default) | [[default run]](#chameleon-on-windows-x86-default) | [[default run]](#chameleon-on-windows-x86_64-default) |
-| dask |  | [[default run]](#dask-on-darwin-arm64-default) |  |  |  |  |
+| dask |  | [[nogil build]](#dask-on-darwin-arm64-nogil) |  |  |  |  |
 | djangocms | [[pystats build]](#djangocms-on-collect-stats-pystats) | [[default build]](#djangocms-on-darwin-arm64-default) | [[default run]](#djangocms-on-linux-aarch64-default) | [[default run]](#djangocms-on-linux-x86_64-default) | [[default build]](#djangocms-on-windows-x86-default) | [[default build]](#djangocms-on-windows-x86_64-default) |
 | flaskblogging | [[pystats run]](#flaskblogging-on-collect-stats-pystats) | [[default run]](#flaskblogging-on-darwin-arm64-default) | [[default run]](#flaskblogging-on-linux-aarch64-default) | [[default run]](#flaskblogging-on-linux-x86_64-default) | [[default run]](#flaskblogging-on-windows-x86-default) | [[default run]](#flaskblogging-on-windows-x86_64-default) |
 | gevent_hub | [[pystats run]](#gevent_hub-on-collect-stats-pystats) | [[default run]](#gevent_hub-on-darwin-arm64-default) | [[default run]](#gevent_hub-on-linux-aarch64-default) | [[default run]](#gevent_hub-on-linux-x86_64-default) | [[default build]](#gevent_hub-on-windows-x86-default) | [[default build]](#gevent_hub-on-windows-x86_64-default) |
@@ -13,47 +13,13 @@
 | sqlalchemy_declarative |  |  |  |  | [[default build]](#sqlalchemy_declarative-on-windows-x86-default) | [[default build]](#sqlalchemy_declarative-on-windows-x86_64-default) |
 | sqlalchemy_imperative |  |  |  |  | [[default build]](#sqlalchemy_imperative-on-windows-x86-default) | [[default build]](#sqlalchemy_imperative-on-windows-x86_64-default) |
 | tornado_http | [[pystats run]](#tornado_http-on-collect-stats-pystats) | [[default run]](#tornado_http-on-darwin-arm64-default) | [[default run]](#tornado_http-on-linux-aarch64-default) | [[default run]](#tornado_http-on-linux-x86_64-default) | [[default run]](#tornado_http-on-windows-x86-default) | [[default run]](#tornado_http-on-windows-x86_64-default) |
-## aiohttp on linux-aarch64 default
-
-<details>
-<summary>Log for aiohttp on linux-aarch64 default</summary>
-
-```
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output /tmp/tmp01dh5hah
-Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py", line 69, in <module>
-    with context:
-         ^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
-    return next(self.gen)
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/netutils.py", line 36, in serving
-    waitUntilUp(addr)
-    ~~~~~~~~~~~^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/netutils.py", line 66, in waitUntilUp
-    raise Exception('Timeout reached when trying to connect')
-Exception: Timeout reached when trying to connect
-Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-             ^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-            ^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
-Command failed with exit code 1
-```
-
-</details>
-
 ## aiohttp on darwin-arm64 default
 
 <details>
 <summary>Log for aiohttp on darwin-arm64 default</summary>
 
 ```
-# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/bin/python -u /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output /tmp/tmp3qmrkwni
+# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/bin/python -u /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmpr5ubdgfp
 Traceback (most recent call last):
   File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py", line 69, in <module>
     with context:
@@ -87,33 +53,33 @@ Command failed with exit code 1
 
 </details>
 
-## aiohttp on windows-x86_64 default
+## aiohttp on linux-aarch64 default
 
 <details>
-<summary>Log for aiohttp on windows-x86_64 default</summary>
+<summary>Log for aiohttp on linux-aarch64 default</summary>
 
 ```
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Scripts\python.exe' -u 'C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_aiohttp\run_benchmark.py' --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output 'C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpanf8b2ti'
+# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmpe2lhri8o
 Traceback (most recent call last):
-  File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_aiohttp\run_benchmark.py", line 69, in <module>
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py", line 69, in <module>
     with context:
          ^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\cpython\Lib\contextlib.py", line 141, in __enter__
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
     return next(self.gen)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_aiohttp\netutils.py", line 36, in serving
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/netutils.py", line 36, in serving
     waitUntilUp(addr)
     ~~~~~~~~~~~^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_aiohttp\netutils.py", line 66, in waitUntilUp
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/netutils.py", line 66, in waitUntilUp
     raise Exception('Timeout reached when trying to connect')
 Exception: Timeout reached when trying to connect
 Traceback (most recent call last):
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\run.py", line 170, in run_benchmarks
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
              ^^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 189, in run
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
     bench = _run_perf_script(
             ^^^^^^^^^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 240, in _run_perf_script
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
     raise RuntimeError("Benchmark died")
 RuntimeError: Benchmark died
 Command failed with exit code 1
@@ -127,30 +93,64 @@ Command failed with exit code 1
 <summary>Log for aiohttp on linux-x86_64 default</summary>
 
 ```
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output /tmp/tmp6wz83u91
+# /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/bin/python -u /home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmpxm257qqp
 Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py", line 69, in <module>
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py", line 69, in <module>
     with context:
+Command failed with exit code 1
          ^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
     return next(self.gen)
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/netutils.py", line 36, in serving
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/netutils.py", line 36, in serving
     waitUntilUp(addr)
     ~~~~~~~~~~~^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/netutils.py", line 66, in waitUntilUp
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/netutils.py", line 66, in waitUntilUp
 ##[error]    raise Exception('Timeout reached when trying to connect')
 Exception: Timeout reached when trying to connect
 Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
              ^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
     bench = _run_perf_script(
             ^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
     raise RuntimeError("Benchmark died")
 RuntimeError: Benchmark died
+```
+
+</details>
+
+## aiohttp on windows-x86_64 default
+
+<details>
+<summary>Log for aiohttp on windows-x86_64 default</summary>
+
+```
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Scripts\python.exe' -u 'C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_aiohttp\run_benchmark.py' --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output 'C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpi6pomukd'
+Traceback (most recent call last):
+  File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_aiohttp\run_benchmark.py", line 69, in <module>
+    with context:
+         ^^^^^^^
 Command failed with exit code 1
+  File "C:\actions-runner\_work\benchmarking\benchmarking\cpython\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_aiohttp\netutils.py", line 36, in serving
+    waitUntilUp(addr)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_aiohttp\netutils.py", line 66, in waitUntilUp
+    raise Exception('Timeout reached when trying to connect')
+Exception: Timeout reached when trying to connect
+Traceback (most recent call last):
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\run.py", line 170, in run_benchmarks
+    result = bench.run(
+             ^^^^^^^^^^
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 189, in run
+    bench = _run_perf_script(
+            ^^^^^^^^^^^^^^^^^
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 240, in _run_perf_script
+    raise RuntimeError("Benchmark died")
+RuntimeError: Benchmark died
 ```
 
 </details>
@@ -161,7 +161,7 @@ Command failed with exit code 1
 <summary>Log for aiohttp on windows-x86 default</summary>
 
 ```
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Scripts\python.exe' -u 'C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_aiohttp\run_benchmark.py' --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output 'C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmppdi8rzz2'
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Scripts\python.exe' -u 'C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_aiohttp\run_benchmark.py' --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output 'C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmp_zcox9_3'
 Traceback (most recent call last):
   File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_aiohttp\run_benchmark.py", line 69, in <module>
     with context:
@@ -182,121 +182,6 @@ Traceback (most recent call last):
     bench = _run_perf_script(
             ^^^^^^^^^^^^^^^^^
   File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
-Command failed with exit code 1
-```
-
-</details>
-
-## chameleon on collect-stats pystats
-
-<details>
-<summary>Log for chameleon on collect-stats pystats</summary>
-
-```
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/template.py", line 205, in __init__
-    super(PageTemplate, self).__init__(body, **config)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/template.py", line 137, in __init__
-    self.write(body)
-    ~~~~~~~~~~^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/template.py", line 235, in write
-    self.cook(body)
-    ~~~~~~~~~^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/template.py", line 167, in cook
-    program = self._cook(body, digest, names)
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/template.py", line 245, in _cook
-    source = self._compile(body, builtins)
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/template.py", line 276, in _compile
-    program = self.parse(body)
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/template.py", line 227, in parse
-    return MacroProgram(
-        body, self.mode, self.filename,
-    ...<9 lines>...
-        tokenizer=self.tokenizer
-    )
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/program.py", line 174, in __init__
-    super(MacroProgram, self).__init__(*args, **kwargs)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/program.py", line 35, in __init__
-    node = self.visit(kind, args)
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/program.py", line 41, in visit
-    return visitor(*args)
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/program.py", line 320, in visit_element
-    ATTRIBUTES = self._create_attributes_nodes(
-        prepared, I18N_ATTRIBUTES, STATIC_ATTRIBUTES,
-    )
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/program.py", line 794, in _create_attributes_nodes
-    default = ast.Str(s=text) if text is not None else None
-              ^^^^^^^
-AttributeError: module 'ast' has no attribute 'Str'
-Traceback (most recent call last):
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-             ^^^^^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-            ^^^^^^^^^^^^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
-Python benchmark suite 1.11.0
-
-
-==================================================
-```
-
-</details>
-
-## chameleon on linux-aarch64 default
-
-<details>
-<summary>Log for chameleon on linux-aarch64 default</summary>
-
-```
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_chameleon/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output /tmp/tmppafx60xk
-Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_chameleon/run_benchmark.py", line 5, in <module>
-    from chameleon import PageTemplate
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/__init__.py", line 1, in <module>
-    from .zpt.template import PageTemplate
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/template.py", line 6, in <module>
-    from ..tales import PythonExpr
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/tales.py", line 27, in <module>
-    from .compiler import Interpolator
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/compiler.py", line 34, in <module>
-    from .tal import ErrorInfo
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/tal.py", line 26, in <module>
-    from chameleon import interfaces
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/interfaces.py", line 1, in <module>
-    from zope.interface import Interface
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
-    _wire()
-    ~~~~~^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
-    from zope.interface.interfaces import IElement
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
-    class IElement(Interface):
-    ...<93 lines>...
-            """
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
-    self.__attrs = self.__compute_attrs(attrs)
-                   ~~~~~~~~~~~~~~~~~~~~^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
-    aname: update_value(aname, aval)
-           ~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
-    raise InvalidInterface("Concrete attribute, " + aname)
-zope.interface.exceptions.InvalidInterface: Concrete attribute, __classdictcell__
-Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-             ^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-            ^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
     raise RuntimeError("Benchmark died")
 RuntimeError: Benchmark died
 Command failed with exit code 1
@@ -313,34 +198,34 @@ Command failed with exit code 1
 Traceback (most recent call last):
   File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/data-files/benchmarks/bm_chameleon/run_benchmark.py", line 5, in <module>
     from chameleon import PageTemplate
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/__init__.py", line 1, in <module>
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/__init__.py", line 1, in <module>
     from .zpt.template import PageTemplate
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/template.py", line 6, in <module>
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/template.py", line 6, in <module>
     from ..tales import PythonExpr
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/tales.py", line 27, in <module>
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/tales.py", line 27, in <module>
     from .compiler import Interpolator
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/compiler.py", line 34, in <module>
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/compiler.py", line 34, in <module>
     from .tal import ErrorInfo
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/tal.py", line 26, in <module>
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/tal.py", line 26, in <module>
     from chameleon import interfaces
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/interfaces.py", line 1, in <module>
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/interfaces.py", line 1, in <module>
     from zope.interface import Interface
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
     _wire()
     ~~~~~^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
     from zope.interface.interfaces import IElement
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
     class IElement(Interface):
     ...<93 lines>...
             """
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
     self.__attrs = self.__compute_attrs(attrs)
                    ~~~~~~~~~~~~~~~~~~~~^^^^^^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
     aname: update_value(aname, aval)
            ~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
     raise InvalidInterface("Concrete attribute, " + aname)
 zope.interface.exceptions.InvalidInterface: Concrete attribute, __classdictcell__
 Traceback (most recent call last):
@@ -364,104 +249,104 @@ Command failed with exit code 1
 
 </details>
 
-## chameleon on windows-x86_64 default
+## chameleon on collect-stats pystats
 
 <details>
-<summary>Log for chameleon on windows-x86_64 default</summary>
+<summary>Log for chameleon on collect-stats pystats</summary>
 
 ```
-    ~~~~^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\data-files\benchmarks\bm_chameleon\run_benchmark.py", line 25, in main
-    tmpl = PageTemplate(BIGTABLE_ZPT)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\template.py", line 205, in __init__
-    super(PageTemplate, self).__init__(body, **config)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 137, in __init__
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/template.py", line 137, in __init__
     self.write(body)
     ~~~~~~~~~~^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 235, in write
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/template.py", line 235, in write
     self.cook(body)
     ~~~~~~~~~^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 167, in cook
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/template.py", line 167, in cook
     program = self._cook(body, digest, names)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 245, in _cook
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/template.py", line 245, in _cook
     source = self._compile(body, builtins)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 276, in _compile
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/template.py", line 276, in _compile
     program = self.parse(body)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\template.py", line 227, in parse
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/template.py", line 227, in parse
     return MacroProgram(
         body, self.mode, self.filename,
     ...<9 lines>...
         tokenizer=self.tokenizer
     )
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\program.py", line 174, in __init__
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/program.py", line 174, in __init__
     super(MacroProgram, self).__init__(*args, **kwargs)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\chameleon\program.py", line 35, in __init__
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/program.py", line 35, in __init__
     node = self.visit(kind, args)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\chameleon\program.py", line 41, in visit
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/program.py", line 41, in visit
     return visitor(*args)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\program.py", line 320, in visit_element
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/program.py", line 320, in visit_element
     ATTRIBUTES = self._create_attributes_nodes(
         prepared, I18N_ATTRIBUTES, STATIC_ATTRIBUTES,
     )
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\program.py", line 794, in _create_attributes_nodes
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/program.py", line 794, in _create_attributes_nodes
     default = ast.Str(s=text) if text is not None else None
               ^^^^^^^
 AttributeError: module 'ast' has no attribute 'Str'
 Traceback (most recent call last):
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\run.py", line 170, in run_benchmarks
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
              ^^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 189, in run
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
     bench = _run_perf_script(
             ^^^^^^^^^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 240, in _run_perf_script
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
     raise RuntimeError("Benchmark died")
 RuntimeError: Benchmark died
 Command failed with exit code 1
+
+ERROR: No benchmark was run
+Python benchmark suite 1.11.0
+
+
+==================================================
 ```
 
 </details>
 
-## chameleon on linux-x86_64 default
+## chameleon on linux-aarch64 default
 
 <details>
-<summary>Log for chameleon on linux-x86_64 default</summary>
+<summary>Log for chameleon on linux-aarch64 default</summary>
 
 ```
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_chameleon/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output /tmp/tmpr0t6i834
+# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_chameleon/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmp3aojbmog
 Traceback (most recent call last):
   File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_chameleon/run_benchmark.py", line 5, in <module>
     from chameleon import PageTemplate
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/__init__.py", line 1, in <module>
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/__init__.py", line 1, in <module>
     from .zpt.template import PageTemplate
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/template.py", line 6, in <module>
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/template.py", line 6, in <module>
     from ..tales import PythonExpr
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/tales.py", line 27, in <module>
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/tales.py", line 27, in <module>
     from .compiler import Interpolator
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/compiler.py", line 34, in <module>
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/compiler.py", line 34, in <module>
     from .tal import ErrorInfo
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/tal.py", line 26, in <module>
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/tal.py", line 26, in <module>
     from chameleon import interfaces
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/interfaces.py", line 1, in <module>
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/interfaces.py", line 1, in <module>
     from zope.interface import Interface
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
     _wire()
     ~~~~~^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
     from zope.interface.interfaces import IElement
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
     class IElement(Interface):
     ...<93 lines>...
             """
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
     self.__attrs = self.__compute_attrs(attrs)
                    ~~~~~~~~~~~~~~~~~~~~^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
     aname: update_value(aname, aval)
            ~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
     raise InvalidInterface("Concrete attribute, " + aname)
 zope.interface.exceptions.InvalidInterface: Concrete attribute, __classdictcell__
 Traceback (most recent call last):
@@ -479,48 +364,125 @@ Command failed with exit code 1
 
 </details>
 
+## chameleon on linux-x86_64 default
+
+<details>
+<summary>Log for chameleon on linux-x86_64 default</summary>
+
+```
+# /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/bin/python -u /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_chameleon/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmphcip9596
+Traceback (most recent call last):
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_chameleon/run_benchmark.py", line 5, in <module>
+    from chameleon import PageTemplate
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/__init__.py", line 1, in <module>
+    from .zpt.template import PageTemplate
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/zpt/template.py", line 6, in <module>
+    from ..tales import PythonExpr
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/tales.py", line 27, in <module>
+    from .compiler import Interpolator
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/compiler.py", line 34, in <module>
+    from .tal import ErrorInfo
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/tal.py", line 26, in <module>
+    from chameleon import interfaces
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/chameleon/interfaces.py", line 1, in <module>
+    from zope.interface import Interface
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
+    _wire()
+    ~~~~~^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
+    from zope.interface.interfaces import IElement
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
+    class IElement(Interface):
+    ...<93 lines>...
+            """
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
+    self.__attrs = self.__compute_attrs(attrs)
+                   ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
+    aname: update_value(aname, aval)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
+    raise InvalidInterface("Concrete attribute, " + aname)
+zope.interface.exceptions.InvalidInterface: Concrete attribute, __classdictcell__
+Traceback (most recent call last):
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
+    result = bench.run(
+             ^^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
+    bench = _run_perf_script(
+            ^^^^^^^^^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
+    raise RuntimeError("Benchmark died")
+RuntimeError: Benchmark died
+Command failed with exit code 1
+```
+
+</details>
+
+## chameleon on windows-x86_64 default
+
+<details>
+<summary>Log for chameleon on windows-x86_64 default</summary>
+
+```
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Scripts\python.exe' -u 'C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\data-files\benchmarks\bm_chameleon\run_benchmark.py' --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output 'C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmp87ayzv75'
+Traceback (most recent call last):
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\data-files\benchmarks\bm_chameleon\run_benchmark.py", line 35, in <module>
+    main()
+    ~~~~^^
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\data-files\benchmarks\bm_chameleon\run_benchmark.py", line 25, in main
+    tmpl = PageTemplate(BIGTABLE_ZPT)
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\template.py", line 205, in __init__
+    super(PageTemplate, self).__init__(body, **config)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+Command failed with exit code 1
+```
+
+</details>
+
 ## chameleon on windows-x86 default
 
 <details>
 <summary>Log for chameleon on windows-x86 default</summary>
 
 ```
+    main()
     ~~~~^^
   File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\data-files\benchmarks\bm_chameleon\run_benchmark.py", line 25, in main
     tmpl = PageTemplate(BIGTABLE_ZPT)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\template.py", line 205, in __init__
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\template.py", line 205, in __init__
     super(PageTemplate, self).__init__(body, **config)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 137, in __init__
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 137, in __init__
     self.write(body)
     ~~~~~~~~~~^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 235, in write
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 235, in write
     self.cook(body)
     ~~~~~~~~~^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 167, in cook
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 167, in cook
     program = self._cook(body, digest, names)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 245, in _cook
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 245, in _cook
     source = self._compile(body, builtins)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 276, in _compile
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\chameleon\template.py", line 276, in _compile
     program = self.parse(body)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\template.py", line 227, in parse
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\template.py", line 227, in parse
     return MacroProgram(
         body, self.mode, self.filename,
     ...<9 lines>...
         tokenizer=self.tokenizer
     )
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\program.py", line 174, in __init__
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\program.py", line 174, in __init__
     super(MacroProgram, self).__init__(*args, **kwargs)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\chameleon\program.py", line 35, in __init__
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\chameleon\program.py", line 35, in __init__
     node = self.visit(kind, args)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\chameleon\program.py", line 41, in visit
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\chameleon\program.py", line 41, in visit
     return visitor(*args)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\program.py", line 320, in visit_element
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\program.py", line 320, in visit_element
     ATTRIBUTES = self._create_attributes_nodes(
         prepared, I18N_ATTRIBUTES, STATIC_ATTRIBUTES,
     )
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\program.py", line 794, in _create_attributes_nodes
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\chameleon\zpt\program.py", line 794, in _create_attributes_nodes
     default = ast.Str(s=text) if text is not None else None
               ^^^^^^^
 AttributeError: module 'ast' has no attribute 'Str'
@@ -534,67 +496,126 @@ Traceback (most recent call last):
   File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 240, in _run_perf_script
     raise RuntimeError("Benchmark died")
 RuntimeError: Benchmark died
-Command failed with exit code 1
 ```
 
 </details>
 
-## dask on darwin-arm64 default
+## dask on darwin-arm64 nogil
 
 <details>
-<summary>Log for dask on darwin-arm64 default</summary>
+<summary>Log for dask on darwin-arm64 nogil</summary>
 
 ```
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/distributed/client.py", line 2341, in map
-    futures = self._graph_to_futures(
-        dsk,
-    ...<9 lines>...
-        span_metadata=SpanMetadata(collections=[{"type": "Future"}]),
-    )
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/distributed/client.py", line 3355, in _graph_to_futures
-    header, frames = serialize(ToPickle(dsk), on_error="raise")
-                     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/distributed/protocol/serialize.py", line 392, in serialize
-    raise TypeError(msg, str_x) from exc
-TypeError: ('Could not serialize object of type HighLevelGraph', '<ToPickle: HighLevelGraph with 1 layers.\n<dask.highlevelgraph.HighLevelGraph object at 0x1054ffb60>\n 0. 4384094736\n>')
-Traceback (most recent call last):
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/data-files/benchmarks/bm_dask/run_benchmark.py", line 32, in <module>
-    runner.bench_async_func('dask', benchmark)
-    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 610, in bench_async_func
-    result = self._main(task)
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 465, in _main
-    bench = self._manager()
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 678, in _manager
-    bench = Manager(self).create_bench()
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 243, in create_bench
-    worker_bench, run = self.create_worker_bench()
-                        ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
-    suite = self.create_suite()
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 132, in create_suite
-    suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 118, in spawn_worker
-    raise RuntimeError("%s failed with exit code %s"
-                       % (cmd[0], exitcode))
-RuntimeError: /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/bin/python failed with exit code 1
-Traceback (most recent call last):
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-        bench_venv.python,
-    ...<3 lines>...
-        verbose=options.verbose,
-    )
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-        python,
-    ...<4 lines>...
-        verbose=verbose,
-    )
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
+      msgpack/_cmsgpack.c:6941:16: warning: 'Py_OptimizeFlag' is deprecated [-Wdeprecated-declarations]
+       6941 |   if (unlikely(__pyx_assertions_enabled())) {
+            |                ^
+      msgpack/_cmsgpack.c:2027:41: note: expanded from macro '__pyx_assertions_enabled'
+       2027 |   #define __pyx_assertions_enabled()  (!Py_OptimizeFlag)
+            |                                         ^
+      /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Include/cpython/pydebug.h:13:1: note: 'Py_OptimizeFlag' has been explicitly marked deprecated here
+         13 | Py_DEPRECATED(3.12) PyAPI_DATA(int) Py_OptimizeFlag;
+            | ^
+      /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Include/pyport.h:270:54: note: expanded from macro 'Py_DEPRECATED'
+        270 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+            |                                                      ^
+      msgpack/_cmsgpack.c:21391:69: error: unknown type name '__pyx_vectorcallfunc'; did you mean 'vectorcallfunc'?
+       21391 | static PyObject *__Pyx_PyVectorcall_FastCallDict_kw(PyObject *func, __pyx_vectorcallfunc vc, PyObject *const *args, size_t nargs, PyObject *kw)
+             |                                                                     ^~~~~~~~~~~~~~~~~~~~
+             |                                                                     vectorcallfunc
+      /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Include/object.h:368:21: note: 'vectorcallfunc' declared here
+        368 | typedef PyObject *(*vectorcallfunc)(PyObject *callable, PyObject *const *args,
+            |                     ^
+      msgpack/_cmsgpack.c:21436:80: error: unknown type name '__pyx_vectorcallfunc'; did you mean 'vectorcallfunc'?
+       21436 | static CYTHON_INLINE PyObject *__Pyx_PyVectorcall_FastCallDict(PyObject *func, __pyx_vectorcallfunc vc, PyObject *const *args, size_t nargs, PyObject *kw)
+             |                                                                                ^~~~~~~~~~~~~~~~~~~~
+             |                                                                                vectorcallfunc
+      /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Include/object.h:368:21: note: 'vectorcallfunc' declared here
+        368 | typedef PyObject *(*vectorcallfunc)(PyObject *callable, PyObject *const *args,
+            |                     ^
+      msgpack/_cmsgpack.c:22125:6: error: unknown type name '__pyx_vectorcallfunc'; did you mean 'vectorcallfunc'?
+       22125 |      __pyx_vectorcallfunc vc = __Pyx_CyFunction_func_vectorcall(cyfunc);
+             |      ^~~~~~~~~~~~~~~~~~~~
+             |      vectorcallfunc
+      /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Include/object.h:368:21: note: 'vectorcallfunc' declared here
+        368 | typedef PyObject *(*vectorcallfunc)(PyObject *callable, PyObject *const *args,
+            |                     ^
+      1 warning and 4 errors generated.
+      error: command '/usr/bin/gcc' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for msgpack
+  Building wheel for tornado (pyproject.toml): started
+  Building wheel for tornado (pyproject.toml): finished with status 'done'
+  Created wheel for tornado: filename=tornado-6.4.2-cp38-abi3-macosx_15_0_arm64.whl size=430356 sha256=b867366558040f35b1b5b43d6918bba305e04de353b30fb49a0a9a9432531579
+  Stored in directory: /Users/benchmarking/Library/Caches/pip/wheels/a8/e5/88/3cd86cb4cde879e236de8364eb6ac55af6710c80838f1e5141
+Successfully built tornado
+Failed to build msgpack
+ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (msgpack)
 Command failed with exit code 1
+
+
+==================================================
+```
+
+</details>
+
+## djangocms on darwin-arm64 default
+
+<details>
+<summary>Log for djangocms on darwin-arm64 default</summary>
+
+```
+                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-djangocms/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 251, in build_wheel
+          return _build_backend().build_wheel(wheel_directory, config_settings,
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                              metadata_directory)
+                                              ^^^^^^^^^^^^^^^^^^^
+        File "/private/tmp/pip-install-offrlw30/pillow_d38c2a99e6ec4dabbe92192032778f2d/_custom_build/backend.py", line 26, in build_wheel
+          return super().build_wheel(wheel_directory, config_settings, metadata_directory)
+                 ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/private/tmp/pip-build-env-ivr6swr8/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 438, in build_wheel
+          return _build(['bdist_wheel', '--dist-info-dir', str(metadata_directory)])
+        File "/private/tmp/pip-build-env-ivr6swr8/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 426, in _build
+          return self._build_with_temp_dir(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^
+              cmd,
+              ^^^^
+          ...<3 lines>...
+              self._arbitrary_args(config_settings),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          )
+          ^
+        File "/private/tmp/pip-build-env-ivr6swr8/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 407, in _build_with_temp_dir
+          self.run_setup()
+          ~~~~~~~~~~~~~~^^
+        File "/private/tmp/pip-install-offrlw30/pillow_d38c2a99e6ec4dabbe92192032778f2d/_custom_build/backend.py", line 20, in run_setup
+          return super().run_setup(setup_script)
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+        File "/private/tmp/pip-build-env-ivr6swr8/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 320, in run_setup
+          exec(code, locals())
+          ~~~~^^^^^^^^^^^^^^^^
+        File "<string>", line 1042, in <module>
+      RequiredDependencyException:
+      
+      The headers or library files could not be found for jpeg,
+      a required dependency when compiling Pillow from source.
+      
+      Please see the install instructions at:
+         https://pillow.readthedocs.io/en/latest/installation/basic-installation.html
+      
+      
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for pillow
+Failed to build pillow
+ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (pillow)
+Command failed with exit code 1
+
+
+==================================================
 ```
 
 </details>
@@ -665,19 +686,19 @@ Command failed with exit code 1
 <summary>Log for djangocms on linux-aarch64 default</summary>
 
 ```
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_djangocms/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output /tmp/tmp3qr681m4
+# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_djangocms/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmpc9ky2rvh
 
 Clone template using django-admin
 
-Install requirements in /tmp/djangocms_bench_93vwyo05/testsite/requirements.in
+Install requirements in /tmp/djangocms_bench_uqf11ow3/testsite/requirements.in
 
 Run migrations
 django-admin startproject "testsite" --template https://github.com/django-cms/cms-template/archive/4.1.tar.gz
-cd "/tmp/djangocms_bench_93vwyo05/testsite"
-python -m pip install -r "/tmp/djangocms_bench_93vwyo05/testsite/requirements.in"
+cd "/tmp/djangocms_bench_uqf11ow3/testsite"
+python -m pip install -r "/tmp/djangocms_bench_uqf11ow3/testsite/requirements.in"
 python -m manage migrate
 
-CommandError: /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/bin/python -m manage migrate failed.
+CommandError: /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/bin/python -m manage migrate failed.
 Traceback (most recent call last):
   File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_djangocms/run_benchmark.py", line 234, in <module>
     sitedir, elapsed = setup(datadir)
@@ -687,163 +708,7 @@ Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/subprocess.py", line 419, in check_call
     raise CalledProcessError(retcode, cmd)
-subprocess.CalledProcessError: Command '['/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/bin/djangocms', 'testsite', '--no-input']' returned non-zero exit status 1.
-Command failed with exit code 1
-Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-```
-
-</details>
-
-## djangocms on darwin-arm64 default
-
-<details>
-<summary>Log for djangocms on darwin-arm64 default</summary>
-
-```
-                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-djangocms/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 251, in build_wheel
-          return _build_backend().build_wheel(wheel_directory, config_settings,
-                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                              metadata_directory)
-                                              ^^^^^^^^^^^^^^^^^^^
-        File "/private/tmp/pip-install-hxe1taju/pillow_05460d913d5a442b94576dc053e14352/_custom_build/backend.py", line 26, in build_wheel
-          return super().build_wheel(wheel_directory, config_settings, metadata_directory)
-                 ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/private/tmp/pip-build-env-gdhggv7m/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 438, in build_wheel
-          return _build(['bdist_wheel', '--dist-info-dir', str(metadata_directory)])
-        File "/private/tmp/pip-build-env-gdhggv7m/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 426, in _build
-          return self._build_with_temp_dir(
-                 ~~~~~~~~~~~~~~~~~~~~~~~~~^
-              cmd,
-              ^^^^
-          ...<3 lines>...
-              self._arbitrary_args(config_settings),
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-          )
-          ^
-        File "/private/tmp/pip-build-env-gdhggv7m/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 407, in _build_with_temp_dir
-          self.run_setup()
-          ~~~~~~~~~~~~~~^^
-        File "/private/tmp/pip-install-hxe1taju/pillow_05460d913d5a442b94576dc053e14352/_custom_build/backend.py", line 20, in run_setup
-          return super().run_setup(setup_script)
-                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
-        File "/private/tmp/pip-build-env-gdhggv7m/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 320, in run_setup
-          exec(code, locals())
-          ~~~~^^^^^^^^^^^^^^^^
-        File "<string>", line 1042, in <module>
-      RequiredDependencyException:
-      
-      The headers or library files could not be found for jpeg,
-      a required dependency when compiling Pillow from source.
-      
-      Please see the install instructions at:
-         https://pillow.readthedocs.io/en/latest/installation/basic-installation.html
-      
-      
-      [end of output]
-  
-  note: This error originates from a subprocess, and is likely not a problem with pip.
-  ERROR: Failed building wheel for pillow
-Failed to build pillow
-ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (pillow)
-Command failed with exit code 1
-
-
-==================================================
-```
-
-</details>
-
-## djangocms on windows-x86_64 default
-
-<details>
-<summary>Log for djangocms on windows-x86_64 default</summary>
-
-```
-    File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-djangocms\Lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\_in_process.py", line 251, in build_wheel
-      return _build_backend().build_wheel(wheel_directory, config_settings,
-             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                          metadata_directory)
-                                          ^^^^^^^^^^^^^^^^^^^
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-uv6_9cpc\pillow_5db9d148dd70407da4ca107309ffb423\_custom_build\backend.py", line 26, in build_wheel
-      return super().build_wheel(wheel_directory, config_settings, metadata_directory)
-             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-sbebwssa\overlay\Lib\site-packages\setuptools\build_meta.py", line 438, in build_wheel
-      return _build(['bdist_wheel', '--dist-info-dir', str(metadata_directory)])
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-sbebwssa\overlay\Lib\site-packages\setuptools\build_meta.py", line 426, in _build
-      return self._build_with_temp_dir(
-             ~~~~~~~~~~~~~~~~~~~~~~~~~^
-          cmd,
-          ^^^^
-      ...<3 lines>...
-          self._arbitrary_args(config_settings),
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-      )
-      ^
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-sbebwssa\overlay\Lib\site-packages\setuptools\build_meta.py", line 407, in _build_with_temp_dir
-      self.run_setup()
-      ~~~~~~~~~~~~~~^^
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-uv6_9cpc\pillow_5db9d148dd70407da4ca107309ffb423\_custom_build\backend.py", line 20, in run_setup
-      return super().run_setup(setup_script)
-             ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-sbebwssa\overlay\Lib\site-packages\setuptools\build_meta.py", line 320, in run_setup
-      exec(code, locals())
-      ~~~~^^^^^^^^^^^^^^^^
-    File "<string>", line 1042, in <module>
-  RequiredDependencyException:
-  
-  The headers or library files could not be found for zlib,
-  a required dependency when compiling Pillow from source.
-  
-  Please see the install instructions at:
-     https://pillow.readthedocs.io/en/latest/installation/basic-installation.html
-  
-  
-  <string>:52: RuntimeWarning: Pillow 11.0.0 does not support Python 3.14 and does not provide prebuilt Windows binaries. We do not recommend building from source on Windows.
-  [end of output]
-  
-  note: This error originates from a subprocess, and is likely not a problem with pip.
-  ERROR: Failed building wheel for pillow
-Failed to build lxml pillow
-ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (lxml, pillow)
-Command failed with exit code 1
-
-
-==================================================
-```
-
-</details>
-
-## djangocms on linux-x86_64 default
-
-<details>
-<summary>Log for djangocms on linux-x86_64 default</summary>
-
-```
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_djangocms/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output /tmp/tmpvy303cb6
-
-Clone template using django-admin
-
-Install requirements in /tmp/djangocms_bench_dkkg6h6a/testsite/requirements.in
-
-Run migrations
-django-admin startproject "testsite" --template https://github.com/django-cms/cms-template/archive/4.1.tar.gz
-cd "/tmp/djangocms_bench_dkkg6h6a/testsite"
-python -m pip install -r "/tmp/djangocms_bench_dkkg6h6a/testsite/requirements.in"
-python -m manage migrate
-
-CommandError: /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/bin/python -m manage migrate failed.
-Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_djangocms/run_benchmark.py", line 234, in <module>
-    sitedir, elapsed = setup(datadir)
-                       ~~~~~^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_djangocms/run_benchmark.py", line 75, in setup
-    subprocess.check_call(ARGV_CREATE, cwd=rootdir)
-    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/subprocess.py", line 419, in check_call
-    raise CalledProcessError(retcode, cmd)
-subprocess.CalledProcessError: Command '['/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/bin/djangocms', 'testsite', '--no-input']' returned non-zero exit status 1.
+subprocess.CalledProcessError: Command '['/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/bin/djangocms', 'testsite', '--no-input']' returned non-zero exit status 1.
 Traceback (most recent call last):
   File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -859,23 +724,67 @@ Command failed with exit code 1
 
 </details>
 
-## djangocms on windows-x86 default
+## djangocms on linux-x86_64 default
 
 <details>
-<summary>Log for djangocms on windows-x86 default</summary>
+<summary>Log for djangocms on linux-x86_64 default</summary>
 
 ```
-    File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-djangocms\Lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\_in_process.py", line 251, in build_wheel
+# /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/bin/python -u /home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_djangocms/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmpa0qs3w_l
+
+Clone template using django-admin
+
+Install requirements in /tmp/djangocms_bench_6iv8e_jq/testsite/requirements.in
+
+Run migrations
+django-admin startproject "testsite" --template https://github.com/django-cms/cms-template/archive/4.1.tar.gz
+cd "/tmp/djangocms_bench_6iv8e_jq/testsite"
+python -m pip install -r "/tmp/djangocms_bench_6iv8e_jq/testsite/requirements.in"
+python -m manage migrate
+
+CommandError: /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/bin/python -m manage migrate failed.
+Traceback (most recent call last):
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_djangocms/run_benchmark.py", line 234, in <module>
+    sitedir, elapsed = setup(datadir)
+                       ~~~~~^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_djangocms/run_benchmark.py", line 75, in setup
+    subprocess.check_call(ARGV_CREATE, cwd=rootdir)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/subprocess.py", line 419, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/bin/djangocms', 'testsite', '--no-input']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
+    result = bench.run(
+             ^^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
+    bench = _run_perf_script(
+            ^^^^^^^^^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
+    raise RuntimeError("Benchmark died")
+RuntimeError: Benchmark died
+Command failed with exit code 1
+```
+
+</details>
+
+## djangocms on windows-x86_64 default
+
+<details>
+<summary>Log for djangocms on windows-x86_64 default</summary>
+
+```
+    File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-djangocms\Lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\_in_process.py", line 251, in build_wheel
       return _build_backend().build_wheel(wheel_directory, config_settings,
              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                                           metadata_directory)
                                           ^^^^^^^^^^^^^^^^^^^
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-86udrou8\pillow_794acbb7ff8045c6b3be823f2b0afc21\_custom_build\backend.py", line 26, in build_wheel
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-f7qi5unk\pillow_4c71788a828249e4b15ac99551b7986d\_custom_build\backend.py", line 26, in build_wheel
       return super().build_wheel(wheel_directory, config_settings, metadata_directory)
              ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-j6gu_g07\overlay\Lib\site-packages\setuptools\build_meta.py", line 438, in build_wheel
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-tggzk5x0\overlay\Lib\site-packages\setuptools\build_meta.py", line 438, in build_wheel
       return _build(['bdist_wheel', '--dist-info-dir', str(metadata_directory)])
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-j6gu_g07\overlay\Lib\site-packages\setuptools\build_meta.py", line 426, in _build
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-tggzk5x0\overlay\Lib\site-packages\setuptools\build_meta.py", line 426, in _build
       return self._build_with_temp_dir(
              ~~~~~~~~~~~~~~~~~~~~~~~~~^
           cmd,
@@ -885,13 +794,13 @@ Command failed with exit code 1
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
       )
       ^
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-j6gu_g07\overlay\Lib\site-packages\setuptools\build_meta.py", line 407, in _build_with_temp_dir
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-tggzk5x0\overlay\Lib\site-packages\setuptools\build_meta.py", line 407, in _build_with_temp_dir
       self.run_setup()
       ~~~~~~~~~~~~~~^^
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-86udrou8\pillow_794acbb7ff8045c6b3be823f2b0afc21\_custom_build\backend.py", line 20, in run_setup
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-f7qi5unk\pillow_4c71788a828249e4b15ac99551b7986d\_custom_build\backend.py", line 20, in run_setup
       return super().run_setup(setup_script)
              ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-j6gu_g07\overlay\Lib\site-packages\setuptools\build_meta.py", line 320, in run_setup
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-tggzk5x0\overlay\Lib\site-packages\setuptools\build_meta.py", line 320, in run_setup
       exec(code, locals())
       ~~~~^^^^^^^^^^^^^^^^
     File "<string>", line 1042, in <module>
@@ -919,13 +828,112 @@ Command failed with exit code 1
 
 </details>
 
+## djangocms on windows-x86 default
+
+<details>
+<summary>Log for djangocms on windows-x86 default</summary>
+
+```
+    File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-djangocms\Lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\_in_process.py", line 251, in build_wheel
+      return _build_backend().build_wheel(wheel_directory, config_settings,
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                          metadata_directory)
+                                          ^^^^^^^^^^^^^^^^^^^
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-sln93moa\pillow_8b1125d5156649f0afede48271761c18\_custom_build\backend.py", line 26, in build_wheel
+      return super().build_wheel(wheel_directory, config_settings, metadata_directory)
+             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-r24xg7ia\overlay\Lib\site-packages\setuptools\build_meta.py", line 438, in build_wheel
+      return _build(['bdist_wheel', '--dist-info-dir', str(metadata_directory)])
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-r24xg7ia\overlay\Lib\site-packages\setuptools\build_meta.py", line 426, in _build
+      return self._build_with_temp_dir(
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^
+          cmd,
+          ^^^^
+      ...<3 lines>...
+          self._arbitrary_args(config_settings),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      )
+      ^
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-r24xg7ia\overlay\Lib\site-packages\setuptools\build_meta.py", line 407, in _build_with_temp_dir
+      self.run_setup()
+      ~~~~~~~~~~~~~~^^
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-sln93moa\pillow_8b1125d5156649f0afede48271761c18\_custom_build\backend.py", line 20, in run_setup
+      return super().run_setup(setup_script)
+             ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-r24xg7ia\overlay\Lib\site-packages\setuptools\build_meta.py", line 320, in run_setup
+      exec(code, locals())
+      ~~~~^^^^^^^^^^^^^^^^
+    File "<string>", line 1042, in <module>
+  RequiredDependencyException:
+  
+  The headers or library files could not be found for zlib,
+  a required dependency when compiling Pillow from source.
+  
+  Please see the install instructions at:
+     https://pillow.readthedocs.io/en/latest/installation/basic-installation.html
+  
+  
+  <string>:52: RuntimeWarning: Pillow 11.0.0 does not support Python 3.14 and does not provide prebuilt Windows binaries. We do not recommend building from source on Windows.
+  [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for pillow
+Failed to build lxml pillow
+ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (lxml, pillow)
+Command failed with exit code 1
+
+
+==================================================
+```
+
+</details>
+
+## flaskblogging on darwin-arm64 default
+
+<details>
+<summary>Log for flaskblogging on darwin-arm64 default</summary>
+
+```
+# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/bin/python -u /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmpw0bgtwpy
+Traceback (most recent call last):
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py", line 76, in <module>
+    with context:
+         ^^^^^^^
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/netutils.py", line 36, in serving
+    waitUntilUp(addr)
+    ~~~~~~~~~~~^^^^^^
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/netutils.py", line 66, in waitUntilUp
+    raise Exception('Timeout reached when trying to connect')
+Exception: Timeout reached when trying to connect
+Traceback (most recent call last):
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/run.py", line 170, in run_benchmarks
+    result = bench.run(
+        bench_venv.python,
+    ...<3 lines>...
+        verbose=options.verbose,
+    )
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 189, in run
+    bench = _run_perf_script(
+        python,
+    ...<4 lines>...
+        verbose=verbose,
+    )
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
+    raise RuntimeError("Benchmark died")
+RuntimeError: Benchmark died
+Command failed with exit code 1
+```
+
+</details>
+
 ## flaskblogging on collect-stats pystats
 
 <details>
 <summary>Log for flaskblogging on collect-stats pystats</summary>
 
 ```
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/netutils.py", line 66, in waitUntilUp
 ##[error]    raise Exception('Timeout reached when trying to connect')
 Exception: Timeout reached when trying to connect
 Traceback (most recent call last):
@@ -938,6 +946,7 @@ Traceback (most recent call last):
   File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
     raise RuntimeError("Benchmark died")
 RuntimeError: Benchmark died
+Command failed with exit code 1
 
 ERROR: No benchmark was run
 Environment variables:
@@ -985,7 +994,7 @@ Python benchmark suite 1.11.0
 <summary>Log for flaskblogging on linux-aarch64 default</summary>
 
 ```
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output /tmp/tmpr5s6t7gl
+# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmpn7jqw3_5
 Traceback (most recent call last):
   File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py", line 76, in <module>
     with context:
@@ -1013,39 +1022,33 @@ Command failed with exit code 1
 
 </details>
 
-## flaskblogging on darwin-arm64 default
+## flaskblogging on linux-x86_64 default
 
 <details>
-<summary>Log for flaskblogging on darwin-arm64 default</summary>
+<summary>Log for flaskblogging on linux-x86_64 default</summary>
 
 ```
-# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/bin/python -u /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output /tmp/tmp8prpbr1z
+# /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/bin/python -u /home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmp7ehyixdt
 Traceback (most recent call last):
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py", line 76, in <module>
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py", line 76, in <module>
     with context:
          ^^^^^^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
     return next(self.gen)
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/netutils.py", line 36, in serving
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/netutils.py", line 36, in serving
     waitUntilUp(addr)
     ~~~~~~~~~~~^^^^^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/netutils.py", line 66, in waitUntilUp
-    raise Exception('Timeout reached when trying to connect')
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/netutils.py", line 66, in waitUntilUp
+##[error]    raise Exception('Timeout reached when trying to connect')
 Exception: Timeout reached when trying to connect
 Traceback (most recent call last):
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/run.py", line 170, in run_benchmarks
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
-        bench_venv.python,
-    ...<3 lines>...
-        verbose=options.verbose,
-    )
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 189, in run
+             ^^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
     bench = _run_perf_script(
-        python,
-    ...<4 lines>...
-        verbose=verbose,
-    )
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
+            ^^^^^^^^^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
     raise RuntimeError("Benchmark died")
 RuntimeError: Benchmark died
 Command failed with exit code 1
@@ -1059,8 +1062,9 @@ Command failed with exit code 1
 <summary>Log for flaskblogging on windows-x86_64 default</summary>
 
 ```
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Scripts\python.exe' -u 'C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_flaskblogging\run_benchmark.py' --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output 'C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpz6h_k0r0'
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Scripts\python.exe' -u 'C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_flaskblogging\run_benchmark.py' --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output 'C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmp5qfa1ynm'
 Traceback (most recent call last):
+Command failed with exit code 1
   File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_flaskblogging\run_benchmark.py", line 76, in <module>
     with context:
          ^^^^^^^
@@ -1082,41 +1086,6 @@ Traceback (most recent call last):
   File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 240, in _run_perf_script
     raise RuntimeError("Benchmark died")
 RuntimeError: Benchmark died
-Command failed with exit code 1
-```
-
-</details>
-
-## flaskblogging on linux-x86_64 default
-
-<details>
-<summary>Log for flaskblogging on linux-x86_64 default</summary>
-
-```
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output /tmp/tmpq78bsj3w
-Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py", line 76, in <module>
-    with context:
-         ^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
-    return next(self.gen)
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/netutils.py", line 36, in serving
-    waitUntilUp(addr)
-    ~~~~~~~~~~~^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/netutils.py", line 66, in waitUntilUp
-##[error]    raise Exception('Timeout reached when trying to connect')
-Exception: Timeout reached when trying to connect
-Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-             ^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-            ^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
-Command failed with exit code 1
 ```
 
 </details>
@@ -1127,8 +1096,9 @@ Command failed with exit code 1
 <summary>Log for flaskblogging on windows-x86 default</summary>
 
 ```
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Scripts\python.exe' -u 'C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_flaskblogging\run_benchmark.py' --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output 'C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmph27h54ih'
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Scripts\python.exe' -u 'C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_flaskblogging\run_benchmark.py' --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output 'C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmps7qtvwvs'
 Traceback (most recent call last):
+Command failed with exit code 1
   File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_flaskblogging\run_benchmark.py", line 76, in <module>
     with context:
          ^^^^^^^
@@ -1141,6 +1111,74 @@ Traceback (most recent call last):
     raise Exception('Timeout reached when trying to connect')
 Exception: Timeout reached when trying to connect
 Traceback (most recent call last):
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\run.py", line 170, in run_benchmarks
+    result = bench.run(
+             ^^^^^^^^^^
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 189, in run
+    bench = _run_perf_script(
+            ^^^^^^^^^^^^^^^^^
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 240, in _run_perf_script
+    raise RuntimeError("Benchmark died")
+RuntimeError: Benchmark died
+```
+
+</details>
+
+## gevent_hub on darwin-arm64 default
+
+<details>
+<summary>Log for gevent_hub on darwin-arm64 default</summary>
+
+```
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 151, in get
+    self.value = self.validate(self._default())
+                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 259, in validate
+    return self._import_one_of([self.shortname_map.get(x, x) for x in value])
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 230, in _import_one_of
+    return self._import_one(item)
+           ~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 248, in _import_one
+    module = importlib.import_module(module)
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/gevent/libev/corecext.pyx", line 819, in init gevent.libev.corecext
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
+    _wire()
+    ~~~~~^^
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
+    from zope.interface.interfaces import IElement
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
+    class IElement(Interface):
+    ...<93 lines>...
+            """
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
+    self.__attrs = self.__compute_attrs(attrs)
+                   ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
+    aname: update_value(aname, aval)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
+    raise InvalidInterface("Concrete attribute, " + aname)
+zope.interface.exceptions.InvalidInterface: Concrete attribute, __classdictcell__
+Traceback (most recent call last):
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/run.py", line 170, in run_benchmarks
+    result = bench.run(
+        bench_venv.python,
+    ...<3 lines>...
+        verbose=options.verbose,
+    )
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 189, in run
+    bench = _run_perf_script(
+        python,
+    ...<4 lines>...
+        verbose=verbose,
+    )
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
+    raise RuntimeError("Benchmark died")
+RuntimeError: Benchmark died
 Command failed with exit code 1
 ```
 
@@ -1152,37 +1190,37 @@ Command failed with exit code 1
 <summary>Log for gevent_hub on collect-stats pystats</summary>
 
 ```
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 151, in get
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 151, in get
     self.value = self.validate(self._default())
                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 259, in validate
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 259, in validate
     return self._import_one_of([self.shortname_map.get(x, x) for x in value])
            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 230, in _import_one_of
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 230, in _import_one_of
     return self._import_one(item)
            ~~~~~~~~~~~~~~~~^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 248, in _import_one
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 248, in _import_one
     module = importlib.import_module(module)
   File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/importlib/__init__.py", line 88, in import_module
     return _bootstrap._gcd_import(name[level:], package, level)
            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "src/gevent/libev/corecext.pyx", line 819, in init gevent.libev.corecext
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
     _wire()
     ~~~~~^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
     from zope.interface.interfaces import IElement
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
     class IElement(Interface):
     ...<93 lines>...
             """
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
     self.__attrs = self.__compute_attrs(attrs)
                    ~~~~~~~~~~~~~~~~~~~~^^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
     aname: update_value(aname, aval)
            ~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
     raise InvalidInterface("Concrete attribute, " + aname)
 zope.interface.exceptions.InvalidInterface: Concrete attribute, __classdictcell__
 Traceback (most recent call last):
@@ -1213,42 +1251,42 @@ Python benchmark suite 1.11.0
 
 ```
     import gevent
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/__init__.py", line 71, in <module>
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/__init__.py", line 71, in <module>
     from gevent._config import config
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 730, in <module>
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 730, in <module>
     Loop().get()
     ~~~~~~~~~~^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 151, in get
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 151, in get
     self.value = self.validate(self._default())
                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 259, in validate
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 259, in validate
     return self._import_one_of([self.shortname_map.get(x, x) for x in value])
            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 230, in _import_one_of
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 230, in _import_one_of
     return self._import_one(item)
            ~~~~~~~~~~~~~~~~^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 248, in _import_one
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 248, in _import_one
     module = importlib.import_module(module)
   File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/importlib/__init__.py", line 88, in import_module
     return _bootstrap._gcd_import(name[level:], package, level)
            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "src/gevent/libev/corecext.pyx", line 819, in init gevent.libev.corecext
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
     _wire()
     ~~~~~^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
     from zope.interface.interfaces import IElement
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
     class IElement(Interface):
     ...<93 lines>...
             """
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
     self.__attrs = self.__compute_attrs(attrs)
                    ~~~~~~~~~~~~~~~~~~~~^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
     aname: update_value(aname, aval)
            ~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
     raise InvalidInterface("Concrete attribute, " + aname)
 zope.interface.exceptions.InvalidInterface: Concrete attribute, __classdictcell__
 Traceback (most recent call last):
@@ -1266,59 +1304,59 @@ Command failed with exit code 1
 
 </details>
 
-## gevent_hub on darwin-arm64 default
+## gevent_hub on linux-x86_64 default
 
 <details>
-<summary>Log for gevent_hub on darwin-arm64 default</summary>
+<summary>Log for gevent_hub on linux-x86_64 default</summary>
 
 ```
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 151, in get
+    import gevent
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/__init__.py", line 71, in <module>
+    from gevent._config import config
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 730, in <module>
+    Loop().get()
+    ~~~~~~~~~~^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 151, in get
     self.value = self.validate(self._default())
                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 259, in validate
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 259, in validate
     return self._import_one_of([self.shortname_map.get(x, x) for x in value])
            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 230, in _import_one_of
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 230, in _import_one_of
     return self._import_one(item)
            ~~~~~~~~~~~~~~~~^^^^^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 248, in _import_one
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 248, in _import_one
     module = importlib.import_module(module)
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/importlib/__init__.py", line 88, in import_module
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/importlib/__init__.py", line 88, in import_module
     return _bootstrap._gcd_import(name[level:], package, level)
            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "src/gevent/libev/corecext.pyx", line 819, in init gevent.libev.corecext
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
     _wire()
     ~~~~~^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
     from zope.interface.interfaces import IElement
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
     class IElement(Interface):
     ...<93 lines>...
             """
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
     self.__attrs = self.__compute_attrs(attrs)
                    ~~~~~~~~~~~~~~~~~~~~^^^^^^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
     aname: update_value(aname, aval)
            ~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
     raise InvalidInterface("Concrete attribute, " + aname)
 zope.interface.exceptions.InvalidInterface: Concrete attribute, __classdictcell__
 Traceback (most recent call last):
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/run.py", line 170, in run_benchmarks
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
-        bench_venv.python,
-    ...<3 lines>...
-        verbose=options.verbose,
-    )
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 189, in run
+             ^^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
     bench = _run_perf_script(
-        python,
-    ...<4 lines>...
-        verbose=verbose,
-    )
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
+            ^^^^^^^^^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
     raise RuntimeError("Benchmark died")
 RuntimeError: Benchmark died
 Command failed with exit code 1
@@ -1355,7 +1393,7 @@ Command failed with exit code 1
     running build_ext
     building 'greenlet._greenlet' extension
     creating build\temp.win-amd64-cpython-314\Release\src\greenlet
-    "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX86\x64\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -DWIN32=1 -IC:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-gevent_hub\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64 -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64 "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include" "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" /EHsc /Tpsrc/greenlet/greenlet.cpp /Fobuild\temp.win-amd64-cpython-314\Release\src\greenlet\greenlet.obj /EHsr /GT /std:c++20
+    "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX86\x64\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -DWIN32=1 -IC:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-gevent_hub\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64 -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64 "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include" "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" /EHsc /Tpsrc/greenlet/greenlet.cpp /Fobuild\temp.win-amd64-cpython-314\Release\src\greenlet\greenlet.obj /EHsr /GT /std:c++20
     greenlet.cpp
     C:\actions-runner\_work\benchmarking\benchmarking\cpython\include\internal/pycore_frame.h(196): error C4576: a parenthesized type followed by an initializer list is a non-standard explicit type conversion syntax
     C:\actions-runner\_work\benchmarking\benchmarking\cpython\include\internal/pycore_frame.h(378): error C4576: a parenthesized type followed by an initializer list is a non-standard explicit type conversion syntax
@@ -1382,66 +1420,6 @@ Command failed with exit code 1
 
 
 ==================================================
-```
-
-</details>
-
-## gevent_hub on linux-x86_64 default
-
-<details>
-<summary>Log for gevent_hub on linux-x86_64 default</summary>
-
-```
-    import gevent
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/__init__.py", line 71, in <module>
-    from gevent._config import config
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 730, in <module>
-    Loop().get()
-    ~~~~~~~~~~^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 151, in get
-    self.value = self.validate(self._default())
-                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 259, in validate
-    return self._import_one_of([self.shortname_map.get(x, x) for x in value])
-           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 230, in _import_one_of
-    return self._import_one(item)
-           ~~~~~~~~~~~~~~~~^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/gevent/_config.py", line 248, in _import_one
-    module = importlib.import_module(module)
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/importlib/__init__.py", line 88, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "src/gevent/libev/corecext.pyx", line 819, in init gevent.libev.corecext
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/__init__.py", line 58, in <module>
-    _wire()
-    ~~~~~^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 1154, in _wire
-    from zope.interface.interfaces import IElement
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interfaces.py", line 56, in <module>
-    class IElement(Interface):
-    ...<93 lines>...
-            """
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 794, in __init__
-    self.__attrs = self.__compute_attrs(attrs)
-                   ~~~~~~~~~~~~~~~~~~~~^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 813, in __compute_attrs
-    aname: update_value(aname, aval)
-           ~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/zope/interface/interface.py", line 809, in update_value
-    raise InvalidInterface("Concrete attribute, " + aname)
-zope.interface.exceptions.InvalidInterface: Concrete attribute, __classdictcell__
-Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-             ^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-            ^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
-Command failed with exit code 1
 ```
 
 </details>
@@ -1475,7 +1453,7 @@ Command failed with exit code 1
     running build_ext
     building 'greenlet._greenlet' extension
     creating build\temp.win32-cpython-314\Release\src\greenlet
-    "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX86\x86\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -DWIN32=1 -IC:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-gevent_hub\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32 -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32 "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include" "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" /EHsc /Tpsrc/greenlet/greenlet.cpp /Fobuild\temp.win32-cpython-314\Release\src\greenlet\greenlet.obj /EHsr /GT /std:c++20
+    "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX86\x86\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -DWIN32=1 -IC:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-gevent_hub\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32 -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32 "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include" "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" /EHsc /Tpsrc/greenlet/greenlet.cpp /Fobuild\temp.win32-cpython-314\Release\src\greenlet\greenlet.obj /EHsr /GT /std:c++20
     greenlet.cpp
     C:\actions-runner\_work\benchmarking\benchmarking\cpython\include\internal/pycore_frame.h(196): error C4576: a parenthesized type followed by an initializer list is a non-standard explicit type conversion syntax
     C:\actions-runner\_work\benchmarking\benchmarking\cpython\include\internal/pycore_frame.h(378): error C4576: a parenthesized type followed by an initializer list is a non-standard explicit type conversion syntax
@@ -1506,87 +1484,13 @@ Command failed with exit code 1
 
 </details>
 
-## gunicorn on collect-stats pystats
-
-<details>
-<summary>Log for gunicorn on collect-stats pystats</summary>
-
-```
-# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/bin/python -u /home/mdboom/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --hook=pystats --loops=128 --output /tmp/tmpjqie0phc
-Traceback (most recent call last):
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 84, in <module>
-    with context:
-         ^^^^^^^
-Command failed with exit code 1
-
-ERROR: No benchmark was run
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
-    return next(self.gen)
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/netutils.py", line 36, in serving
-    waitUntilUp(addr)
-    ~~~~~~~~~~~^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/netutils.py", line 66, in waitUntilUp
-##[error]    raise Exception('Timeout reached when trying to connect')
-Exception: Timeout reached when trying to connect
-Traceback (most recent call last):
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-             ^^^^^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-            ^^^^^^^^^^^^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
-Python benchmark suite 1.11.0
-
-
-==================================================
-```
-
-</details>
-
-## gunicorn on linux-aarch64 default
-
-<details>
-<summary>Log for gunicorn on linux-aarch64 default</summary>
-
-```
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output /tmp/tmp4ygeg6p7
-Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 84, in <module>
-    with context:
-         ^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
-    return next(self.gen)
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/netutils.py", line 36, in serving
-    waitUntilUp(addr)
-    ~~~~~~~~~~~^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/netutils.py", line 66, in waitUntilUp
-    raise Exception('Timeout reached when trying to connect')
-Exception: Timeout reached when trying to connect
-Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-             ^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-            ^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
-Command failed with exit code 1
-```
-
-</details>
-
 ## gunicorn on darwin-arm64 default
 
 <details>
 <summary>Log for gunicorn on darwin-arm64 default</summary>
 
 ```
-# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/bin/python -u /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output /tmp/tmpgsybsifn
+# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/bin/python -u /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmp8_9m96cz
 Traceback (most recent call last):
   File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 84, in <module>
     with context:
@@ -1620,47 +1524,53 @@ Command failed with exit code 1
 
 </details>
 
-## gunicorn on windows-x86_64 default
+## gunicorn on collect-stats pystats
 
 <details>
-<summary>Log for gunicorn on windows-x86_64 default</summary>
+<summary>Log for gunicorn on collect-stats pystats</summary>
 
 ```
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Scripts\python.exe' -u 'C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_gunicorn\run_benchmark.py' --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output 'C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpkii39q5t'
+# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/bin/python -u /home/mdboom/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --hook=pystats --loops=128 --output /tmp/tmpudyntaqi
 Traceback (most recent call last):
-  File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_gunicorn\run_benchmark.py", line 84, in <module>
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 84, in <module>
     with context:
          ^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\cpython\Lib\contextlib.py", line 141, in __enter__
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
+Command failed with exit code 1
     return next(self.gen)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_gunicorn\netutils.py", line 36, in serving
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/netutils.py", line 36, in serving
     waitUntilUp(addr)
     ~~~~~~~~~~~^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_gunicorn\netutils.py", line 66, in waitUntilUp
-    raise Exception('Timeout reached when trying to connect')
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/netutils.py", line 66, in waitUntilUp
+##[error]    raise Exception('Timeout reached when trying to connect')
 Exception: Timeout reached when trying to connect
 Traceback (most recent call last):
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\run.py", line 170, in run_benchmarks
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
              ^^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 189, in run
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
     bench = _run_perf_script(
             ^^^^^^^^^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 240, in _run_perf_script
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
     raise RuntimeError("Benchmark died")
 RuntimeError: Benchmark died
-Command failed with exit code 1
+
+ERROR: No benchmark was run
+Python benchmark suite 1.11.0
+
+
+==================================================
 ```
 
 </details>
 
-## gunicorn on linux-x86_64 default
+## gunicorn on linux-aarch64 default
 
 <details>
-<summary>Log for gunicorn on linux-x86_64 default</summary>
+<summary>Log for gunicorn on linux-aarch64 default</summary>
 
 ```
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output /tmp/tmpkwg95i65
+# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/bin/python -u /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmpbpk0b7sk
 Traceback (most recent call last):
   File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 84, in <module>
     with context:
@@ -1671,7 +1581,7 @@ Traceback (most recent call last):
     waitUntilUp(addr)
     ~~~~~~~~~~~^^^^^^
   File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/netutils.py", line 66, in waitUntilUp
-##[error]    raise Exception('Timeout reached when trying to connect')
+    raise Exception('Timeout reached when trying to connect')
 Exception: Timeout reached when trying to connect
 Traceback (most recent call last):
   File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
@@ -1688,13 +1598,33 @@ Command failed with exit code 1
 
 </details>
 
-## gunicorn on windows-x86 default
+## gunicorn on linux-x86_64 default
 
 <details>
-<summary>Log for gunicorn on windows-x86 default</summary>
+<summary>Log for gunicorn on linux-x86_64 default</summary>
 
 ```
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Scripts\python.exe' -u 'C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_gunicorn\run_benchmark.py' --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output 'C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpho7tmy4y'
+# /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/bin/python -u /home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmpe3g4w1tj
+Traceback (most recent call last):
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 84, in <module>
+    with context:
+Command failed with exit code 1
+         ^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/netutils.py", line 36, in serving
+    waitUntilUp(addr)
+```
+
+</details>
+
+## gunicorn on windows-x86_64 default
+
+<details>
+<summary>Log for gunicorn on windows-x86_64 default</summary>
+
+```
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Scripts\python.exe' -u 'C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_gunicorn\run_benchmark.py' --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output 'C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpxjxg4fnx'
 Traceback (most recent call last):
   File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_gunicorn\run_benchmark.py", line 84, in <module>
     with context:
@@ -1722,13 +1652,107 @@ Command failed with exit code 1
 
 </details>
 
+## gunicorn on windows-x86 default
+
+<details>
+<summary>Log for gunicorn on windows-x86 default</summary>
+
+```
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Scripts\python.exe' -u 'C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_gunicorn\run_benchmark.py' --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --output 'C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpesyz0tbz'
+Traceback (most recent call last):
+  File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_gunicorn\run_benchmark.py", line 84, in <module>
+    with context:
+         ^^^^^^^
+  File "C:\actions-runner\_work\benchmarking\benchmarking\cpython\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_gunicorn\netutils.py", line 36, in serving
+    waitUntilUp(addr)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\actions-runner\_work\benchmarking\benchmarking\pyston-benchmarks\benchmarks\bm_gunicorn\netutils.py", line 66, in waitUntilUp
+    raise Exception('Timeout reached when trying to connect')
+Exception: Timeout reached when trying to connect
+Traceback (most recent call last):
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\run.py", line 170, in run_benchmarks
+    result = bench.run(
+             ^^^^^^^^^^
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 189, in run
+    bench = _run_perf_script(
+            ^^^^^^^^^^^^^^^^^
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 240, in _run_perf_script
+    raise RuntimeError("Benchmark died")
+RuntimeError: Benchmark died
+Command failed with exit code 1
+```
+
+</details>
+
+## kinto on darwin-arm64 default
+
+<details>
+<summary>Log for kinto on darwin-arm64 default</summary>
+
+```
+      [thread 4][clang] plugins/http/https.o
+      [thread 0][clang] plugins/http/spdy3.o
+      [thread 3][clang] plugins/signal/signal_plugin.o
+      [thread 6][clang] plugins/syslog/syslog_plugin.o
+      [thread 4][clang] plugins/rsyslog/rsyslog_plugin.o
+      [thread 3][clang] plugins/logsocket/logsocket_plugin.o
+      [thread 0][clang] plugins/router_uwsgi/router_uwsgi.o
+      [thread 5][clang] plugins/router_redirect/router_redirect.o
+      [thread 1][clang] plugins/router_basicauth/router_basicauth.o
+      [thread 7][clang] plugins/zergpool/zergpool.o
+      [thread 6][clang] plugins/redislog/redislog_plugin.o
+      [thread 4][clang] plugins/mongodblog/mongodblog_plugin.o
+      [thread 2][clang] plugins/router_rewrite/router_rewrite.o
+      [thread 0][clang] plugins/router_http/router_http.o
+      [thread 5][clang] plugins/logfile/logfile.o
+      [thread 3][clang] plugins/router_cache/router_cache.o
+      [thread 1][clang] plugins/rawrouter/rawrouter.o
+      [thread 7][clang] plugins/router_static/router_static.o
+      [thread 2][clang] plugins/sslrouter/sslrouter.o
+      [thread 6][clang] plugins/spooler/spooler_plugin.o
+      [thread 4][clang] plugins/cheaper_busyness/cheaper_busyness.o
+      [thread 0][clang] plugins/symcall/symcall_plugin.o
+      [thread 3][clang] plugins/transformation_tofile/tofile.o
+      [thread 5][clang] plugins/transformation_gzip/gzip.o
+      [thread 7][clang] plugins/transformation_chunked/chunked.o
+      [thread 1][clang] plugins/transformation_offload/offload.o
+      [thread 2][clang] plugins/router_memcached/router_memcached.o
+      [thread 6][clang] plugins/router_redis/router_redis.o
+      [thread 0][clang] plugins/router_hash/router_hash.o
+      [thread 3][clang] plugins/router_expires/expires.o
+      [thread 4][clang] plugins/router_metrics/plugin.o
+      [thread 5][clang] plugins/transformation_template/tt.o
+      [thread 7][clang] plugins/stats_pusher_socket/plugin.o
+      *** uWSGI linking ***
+      clang -o build/bdist.macosx-15.2-arm64/wheel/uWSGI-2.0.28.data/scripts/uwsgi -L/usr/local/lib -Wl,-rpath,/usr/local/lib core/utils.o core/protocol.o core/socket.o core/logging.o core/master.o core/master_utils.o core/emperor.o core/notify.o core/mule.o core/subscription.o core/stats.o core/sendfile.o core/async.o core/master_checks.o core/fifo.o core/offload.o core/io.o core/static.o core/websockets.o core/spooler.o core/snmp.o core/exceptions.o core/config.o core/setup_utils.o core/clock.o core/init.o core/buffer.o core/reader.o core/writer.o core/alarm.o core/cron.o core/hooks.o core/plugins.o core/lock.o core/cache.o core/daemons.o core/errors.o core/hash.o core/master_events.o core/chunked.o core/queue.o core/event.o core/signal.o core/strings.o core/progress.o core/timebomb.o core/ini.o core/fsmon.o core/mount.o core/metrics.o core/plugins_builder.o core/sharedarea.o core/rpc.o core/gateway.o core/loop.o core/cookie.o core/querystring.o core/rb_timers.o core/transformations.o core/uwsgi.o proto/base.o proto/uwsgi.o proto/http.o proto/fastcgi.o proto/scgi.o proto/puwsgi.o core/zlib.o core/yaml.o core/xmlconf.o core/dot_h.o core/config_py.o plugins/python/python_plugin.o plugins/python/pyutils.o plugins/python/pyloader.o plugins/python/wsgi_handlers.o plugins/python/wsgi_headers.o plugins/python/wsgi_subhandler.o plugins/python/web3_subhandler.o plugins/python/pump_subhandler.o plugins/python/gil.o plugins/python/uwsgi_pymodule.o plugins/python/profiler.o plugins/python/symimporter.o plugins/python/tracebacker.o plugins/python/raw.o plugins/gevent/gevent.o plugins/gevent/hooks.o plugins/ping/ping_plugin.o plugins/cache/cache.o plugins/nagios/nagios.o plugins/rrdtool/rrdtool.o plugins/carbon/carbon.o plugins/rpc/rpc_plugin.o plugins/corerouter/cr_common.o plugins/corerouter/cr_map.o plugins/corerouter/corerouter.o plugins/fastrouter/fastrouter.o plugins/http/http.o plugins/http/keepalive.o plugins/http/https.o plugins/http/spdy3.o plugins/signal/signal_plugin.o plugins/syslog/syslog_plugin.o plugins/rsyslog/rsyslog_plugin.o plugins/logsocket/logsocket_plugin.o plugins/router_uwsgi/router_uwsgi.o plugins/router_redirect/router_redirect.o plugins/router_basicauth/router_basicauth.o plugins/zergpool/zergpool.o plugins/redislog/redislog_plugin.o plugins/mongodblog/mongodblog_plugin.o plugins/router_rewrite/router_rewrite.o plugins/router_http/router_http.o plugins/logfile/logfile.o plugins/router_cache/router_cache.o plugins/rawrouter/rawrouter.o plugins/router_static/router_static.o plugins/sslrouter/sslrouter.o plugins/spooler/spooler_plugin.o plugins/cheaper_busyness/cheaper_busyness.o plugins/symcall/symcall_plugin.o plugins/transformation_tofile/tofile.o plugins/transformation_gzip/gzip.o plugins/transformation_chunked/chunked.o plugins/transformation_offload/offload.o plugins/router_memcached/router_memcached.o plugins/router_redis/router_redis.o plugins/router_hash/router_hash.o plugins/router_expires/expires.o plugins/router_metrics/plugin.o plugins/transformation_template/tt.o plugins/stats_pusher_socket/plugin.o -lpthread -lm -lz -lexpat -ldl -framework CoreFoundation -lpython3.14
+      ld: library 'python3.14' not found
+      clang: error: linker command failed with exit code 1 (use -v to see invocation)
+      *** error linking uWSGI ***
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for uWSGI
+  Running setup.py clean for uWSGI
+Successfully built kinto
+Failed to build uWSGI
+ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (uWSGI)
+Command failed with exit code 1
+
+
+==================================================
+```
+
+</details>
+
 ## kinto on collect-stats pystats
 
 <details>
 <summary>Log for kinto on collect-stats pystats</summary>
 
 ```
-# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/bin/python -u /home/mdboom/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_kinto/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT --hook=pystats --output /tmp/tmpvxhhhu1e
+# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/bin/python -u /home/mdboom/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_kinto/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID --hook=pystats --output /tmp/tmp37_ylvqs
 Traceback (most recent call last):
   File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/pyston-benchmarks/benchmarks/bm_kinto/run_benchmark.py", line 73, in <module>
     raise Exception("nginx is not installed")
@@ -1760,39 +1784,39 @@ Python benchmark suite 1.11.0
 <summary>Log for kinto on linux-aarch64 default</summary>
 
 ```
-      [thread 14][gcc] plugins/http/spdy3.o
-      [thread 39][gcc] plugins/ugreen/ugreen.o
-      [thread 70][gcc] plugins/signal/signal_plugin.o
-      [thread 71][gcc] plugins/syslog/syslog_plugin.o
-      [thread 54][gcc] plugins/rsyslog/rsyslog_plugin.o
-      [thread 57][gcc] plugins/logsocket/logsocket_plugin.o
-      [thread 33][gcc] plugins/router_uwsgi/router_uwsgi.o
-      [thread 73][gcc] plugins/router_redirect/router_redirect.o
-      [thread 51][gcc] plugins/router_basicauth/router_basicauth.o
-      [thread 16][gcc] plugins/zergpool/zergpool.o
-      [thread 32][gcc] plugins/redislog/redislog_plugin.o
+      [thread 48][gcc] plugins/http/https.o
+      [thread 57][gcc] plugins/ugreen/ugreen.o
+      [thread 47][gcc] plugins/signal/signal_plugin.o
+      [thread 15][gcc] plugins/http/spdy3.o
+      [thread 69][gcc] plugins/rsyslog/rsyslog_plugin.o
+      [thread 46][gcc] plugins/logsocket/logsocket_plugin.o
+      [thread 26][gcc] plugins/router_uwsgi/router_uwsgi.o
+      [thread 59][gcc] plugins/router_redirect/router_redirect.o
+      [thread 73][gcc] plugins/router_basicauth/router_basicauth.o
+      [thread 20][gcc] plugins/zergpool/zergpool.o
+      [thread 34][gcc] plugins/redislog/redislog_plugin.o
       [thread 65][gcc] plugins/mongodblog/mongodblog_plugin.o
-      [thread 64][gcc] plugins/router_rewrite/router_rewrite.o
+      [thread 30][gcc] plugins/router_rewrite/router_rewrite.o
       [thread 29][gcc] plugins/router_http/router_http.o
-      [thread 0][gcc] plugins/logfile/logfile.o
-      [thread 22][gcc] plugins/router_cache/router_cache.o
-      [thread 40][gcc] plugins/rawrouter/rawrouter.o
-      [thread 24][gcc] plugins/router_static/router_static.o
-      [thread 19][gcc] plugins/sslrouter/sslrouter.o
-      [thread 18][gcc] plugins/spooler/spooler_plugin.o
-      [thread 34][gcc] plugins/cheaper_busyness/cheaper_busyness.o
-      [thread 9][gcc] plugins/symcall/symcall_plugin.o
-      [thread 63][gcc] plugins/transformation_tofile/tofile.o
-      [thread 45][gcc] plugins/transformation_gzip/gzip.o
+      [thread 78][gcc] plugins/logfile/logfile.o
+      [thread 64][gcc] plugins/router_cache/router_cache.o
+      [thread 19][gcc] plugins/rawrouter/rawrouter.o
+      [thread 14][gcc] plugins/router_static/router_static.o
+      [thread 17][gcc] plugins/sslrouter/sslrouter.o
+      [thread 45][gcc] plugins/spooler/spooler_plugin.o
+      [thread 21][gcc] plugins/cheaper_busyness/cheaper_busyness.o
+      [thread 36][gcc] plugins/symcall/symcall_plugin.o
+      [thread 62][gcc] plugins/transformation_tofile/tofile.o
+      [thread 43][gcc] plugins/transformation_gzip/gzip.o
       [thread 74][gcc] plugins/transformation_chunked/chunked.o
-      [thread 15][gcc] plugins/transformation_offload/offload.o
-      [thread 46][gcc] plugins/router_memcached/router_memcached.o
-      [thread 11][gcc] plugins/router_redis/router_redis.o
-      [thread 28][gcc] plugins/router_hash/router_hash.o
-      [thread 17][gcc] plugins/router_expires/expires.o
-      [thread 72][gcc] plugins/router_metrics/plugin.o
-      [thread 77][gcc] plugins/transformation_template/tt.o
-      [thread 38][gcc] plugins/stats_pusher_socket/plugin.o
+      [thread 16][gcc] plugins/router_memcached/router_memcached.o
+      [thread 12][gcc] plugins/transformation_offload/offload.o
+      [thread 41][gcc] plugins/router_redis/router_redis.o
+      [thread 28][gcc] plugins/router_expires/expires.o
+      [thread 66][gcc] plugins/router_hash/router_hash.o
+      [thread 37][gcc] plugins/router_metrics/plugin.o
+      [thread 75][gcc] plugins/transformation_template/tt.o
+      [thread 22][gcc] plugins/stats_pusher_socket/plugin.o
       *** uWSGI linking ***
       gcc -o build/bdist.linux-aarch64/wheel/uWSGI-2.0.28.data/scripts/uwsgi -L/usr/local/lib -Wl,-rpath,/usr/local/lib core/utils.o core/protocol.o core/socket.o core/logging.o core/master.o core/master_utils.o core/emperor.o core/notify.o core/mule.o core/subscription.o core/stats.o core/sendfile.o core/async.o core/master_checks.o core/fifo.o core/offload.o core/io.o core/static.o core/websockets.o core/spooler.o core/snmp.o core/exceptions.o core/config.o core/setup_utils.o core/clock.o core/init.o core/buffer.o core/reader.o core/writer.o core/alarm.o core/cron.o core/hooks.o core/plugins.o core/lock.o core/cache.o core/daemons.o core/errors.o core/hash.o core/master_events.o core/chunked.o core/queue.o core/event.o core/signal.o core/strings.o core/progress.o core/timebomb.o core/ini.o core/fsmon.o core/mount.o core/metrics.o core/plugins_builder.o core/sharedarea.o core/rpc.o core/gateway.o core/loop.o core/cookie.o core/querystring.o core/rb_timers.o core/transformations.o core/uwsgi.o proto/base.o proto/uwsgi.o proto/http.o proto/fastcgi.o proto/scgi.o proto/puwsgi.o lib/linux_ns.o core/zlib.o core/yaml.o core/ssl.o core/legion.o core/xmlconf.o core/dot_h.o core/config_py.o plugins/python/python_plugin.o plugins/python/pyutils.o plugins/python/pyloader.o plugins/python/wsgi_handlers.o plugins/python/wsgi_headers.o plugins/python/wsgi_subhandler.o plugins/python/web3_subhandler.o plugins/python/pump_subhandler.o plugins/python/gil.o plugins/python/uwsgi_pymodule.o plugins/python/profiler.o plugins/python/symimporter.o plugins/python/tracebacker.o plugins/python/raw.o plugins/gevent/gevent.o plugins/gevent/hooks.o plugins/ping/ping_plugin.o plugins/cache/cache.o plugins/nagios/nagios.o plugins/rrdtool/rrdtool.o plugins/carbon/carbon.o plugins/rpc/rpc_plugin.o plugins/corerouter/cr_common.o plugins/corerouter/cr_map.o plugins/corerouter/corerouter.o plugins/fastrouter/fastrouter.o plugins/http/http.o plugins/http/keepalive.o plugins/http/https.o plugins/http/spdy3.o plugins/ugreen/ugreen.o plugins/signal/signal_plugin.o plugins/syslog/syslog_plugin.o plugins/rsyslog/rsyslog_plugin.o plugins/logsocket/logsocket_plugin.o plugins/router_uwsgi/router_uwsgi.o plugins/router_redirect/router_redirect.o plugins/router_basicauth/router_basicauth.o plugins/zergpool/zergpool.o plugins/redislog/redislog_plugin.o plugins/mongodblog/mongodblog_plugin.o plugins/router_rewrite/router_rewrite.o plugins/router_http/router_http.o plugins/logfile/logfile.o plugins/router_cache/router_cache.o plugins/rawrouter/rawrouter.o plugins/router_static/router_static.o plugins/sslrouter/sslrouter.o plugins/spooler/spooler_plugin.o plugins/cheaper_busyness/cheaper_busyness.o plugins/symcall/symcall_plugin.o plugins/transformation_tofile/tofile.o plugins/transformation_gzip/gzip.o plugins/transformation_chunked/chunked.o plugins/transformation_offload/offload.o plugins/router_memcached/router_memcached.o plugins/router_redis/router_redis.o plugins/router_hash/router_hash.o plugins/router_expires/expires.o plugins/router_metrics/plugin.o plugins/transformation_template/tt.o plugins/stats_pusher_socket/plugin.o -lpthread -lm -rdynamic -ldl -lz -luuid -lssl -lcrypto -lxml2 -ldl -lm -lpython3.14 -lcrypt
       /usr/bin/ld: cannot find -lpython3.14: No such file or directory
@@ -1814,49 +1838,49 @@ Command failed with exit code 1
 
 </details>
 
-## kinto on darwin-arm64 default
+## kinto on linux-x86_64 default
 
 <details>
-<summary>Log for kinto on darwin-arm64 default</summary>
+<summary>Log for kinto on linux-x86_64 default</summary>
 
 ```
-      [thread 6][clang] plugins/http/https.o
-      [thread 5][clang] plugins/http/spdy3.o
-      [thread 4][clang] plugins/signal/signal_plugin.o
-      [thread 7][clang] plugins/syslog/syslog_plugin.o
-      [thread 2][clang] plugins/rsyslog/rsyslog_plugin.o
-      [thread 1][clang] plugins/logsocket/logsocket_plugin.o
-      [thread 0][clang] plugins/router_uwsgi/router_uwsgi.o
-      [thread 6][clang] plugins/router_redirect/router_redirect.o
-      [thread 4][clang] plugins/router_basicauth/router_basicauth.o
-      [thread 5][clang] plugins/zergpool/zergpool.o
-      [thread 7][clang] plugins/redislog/redislog_plugin.o
-      [thread 3][clang] plugins/mongodblog/mongodblog_plugin.o
-      [thread 2][clang] plugins/router_rewrite/router_rewrite.o
-      [thread 0][clang] plugins/router_http/router_http.o
-      [thread 1][clang] plugins/logfile/logfile.o
-      [thread 6][clang] plugins/router_cache/router_cache.o
-      [thread 4][clang] plugins/rawrouter/rawrouter.o
-      [thread 5][clang] plugins/router_static/router_static.o
-      [thread 7][clang] plugins/sslrouter/sslrouter.o
-      [thread 3][clang] plugins/spooler/spooler_plugin.o
-      [thread 2][clang] plugins/cheaper_busyness/cheaper_busyness.o
-      [thread 0][clang] plugins/symcall/symcall_plugin.o
-      [thread 1][clang] plugins/transformation_tofile/tofile.o
-      [thread 6][clang] plugins/transformation_gzip/gzip.o
-      [thread 4][clang] plugins/transformation_chunked/chunked.o
-      [thread 5][clang] plugins/transformation_offload/offload.o
-      [thread 7][clang] plugins/router_memcached/router_memcached.o
-      [thread 3][clang] plugins/router_redis/router_redis.o
-      [thread 2][clang] plugins/router_hash/router_hash.o
-      [thread 6][clang] plugins/router_expires/expires.o
-      [thread 0][clang] plugins/router_metrics/plugin.o
-      [thread 1][clang] plugins/transformation_template/tt.o
-      [thread 5][clang] plugins/stats_pusher_socket/plugin.o
+      [thread 4][gcc] plugins/http/spdy3.o
+      [thread 2][gcc] plugins/ugreen/ugreen.o
+      [thread 13][gcc] plugins/signal/signal_plugin.o
+      [thread 6][gcc] plugins/syslog/syslog_plugin.o
+      [thread 5][gcc] plugins/rsyslog/rsyslog_plugin.o
+      [thread 10][gcc] plugins/logsocket/logsocket_plugin.o
+      [thread 1][gcc] plugins/router_uwsgi/router_uwsgi.o
+      [thread 17][gcc] plugins/router_redirect/router_redirect.o
+      [thread 12][gcc] plugins/router_basicauth/router_basicauth.o
+      [thread 23][gcc] plugins/zergpool/zergpool.o
+      [thread 15][gcc] plugins/redislog/redislog_plugin.o
+      [thread 20][gcc] plugins/mongodblog/mongodblog_plugin.o
+      [thread 18][gcc] plugins/router_rewrite/router_rewrite.o
+      [thread 2][gcc] plugins/router_http/router_http.o
+      [thread 6][gcc] plugins/logfile/logfile.o
+      [thread 22][gcc] plugins/router_cache/router_cache.o
+      [thread 13][gcc] plugins/rawrouter/rawrouter.o
+      [thread 7][gcc] plugins/router_static/router_static.o
+      [thread 11][gcc] plugins/sslrouter/sslrouter.o
+      [thread 1][gcc] plugins/spooler/spooler_plugin.o
+      [thread 3][gcc] plugins/cheaper_busyness/cheaper_busyness.o
+      [thread 17][gcc] plugins/symcall/symcall_plugin.o
+      [thread 5][gcc] plugins/transformation_tofile/tofile.o
+      [thread 10][gcc] plugins/transformation_gzip/gzip.o
+      [thread 12][gcc] plugins/transformation_chunked/chunked.o
+      [thread 21][gcc] plugins/transformation_offload/offload.o
+      [thread 23][gcc] plugins/router_memcached/router_memcached.o
+      [thread 20][gcc] plugins/router_redis/router_redis.o
+      [thread 15][gcc] plugins/router_hash/router_hash.o
+      [thread 16][gcc] plugins/router_expires/expires.o
+      [thread 18][gcc] plugins/router_metrics/plugin.o
+      [thread 4][gcc] plugins/transformation_template/tt.o
+      [thread 2][gcc] plugins/stats_pusher_socket/plugin.o
       *** uWSGI linking ***
-      clang -o build/bdist.macosx-15.2-arm64/wheel/uWSGI-2.0.28.data/scripts/uwsgi -L/usr/local/lib -Wl,-rpath,/usr/local/lib core/utils.o core/protocol.o core/socket.o core/logging.o core/master.o core/master_utils.o core/emperor.o core/notify.o core/mule.o core/subscription.o core/stats.o core/sendfile.o core/async.o core/master_checks.o core/fifo.o core/offload.o core/io.o core/static.o core/websockets.o core/spooler.o core/snmp.o core/exceptions.o core/config.o core/setup_utils.o core/clock.o core/init.o core/buffer.o core/reader.o core/writer.o core/alarm.o core/cron.o core/hooks.o core/plugins.o core/lock.o core/cache.o core/daemons.o core/errors.o core/hash.o core/master_events.o core/chunked.o core/queue.o core/event.o core/signal.o core/strings.o core/progress.o core/timebomb.o core/ini.o core/fsmon.o core/mount.o core/metrics.o core/plugins_builder.o core/sharedarea.o core/rpc.o core/gateway.o core/loop.o core/cookie.o core/querystring.o core/rb_timers.o core/transformations.o core/uwsgi.o proto/base.o proto/uwsgi.o proto/http.o proto/fastcgi.o proto/scgi.o proto/puwsgi.o core/zlib.o core/yaml.o core/xmlconf.o core/dot_h.o core/config_py.o plugins/python/python_plugin.o plugins/python/pyutils.o plugins/python/pyloader.o plugins/python/wsgi_handlers.o plugins/python/wsgi_headers.o plugins/python/wsgi_subhandler.o plugins/python/web3_subhandler.o plugins/python/pump_subhandler.o plugins/python/gil.o plugins/python/uwsgi_pymodule.o plugins/python/profiler.o plugins/python/symimporter.o plugins/python/tracebacker.o plugins/python/raw.o plugins/gevent/gevent.o plugins/gevent/hooks.o plugins/ping/ping_plugin.o plugins/cache/cache.o plugins/nagios/nagios.o plugins/rrdtool/rrdtool.o plugins/carbon/carbon.o plugins/rpc/rpc_plugin.o plugins/corerouter/cr_common.o plugins/corerouter/cr_map.o plugins/corerouter/corerouter.o plugins/fastrouter/fastrouter.o plugins/http/http.o plugins/http/keepalive.o plugins/http/https.o plugins/http/spdy3.o plugins/signal/signal_plugin.o plugins/syslog/syslog_plugin.o plugins/rsyslog/rsyslog_plugin.o plugins/logsocket/logsocket_plugin.o plugins/router_uwsgi/router_uwsgi.o plugins/router_redirect/router_redirect.o plugins/router_basicauth/router_basicauth.o plugins/zergpool/zergpool.o plugins/redislog/redislog_plugin.o plugins/mongodblog/mongodblog_plugin.o plugins/router_rewrite/router_rewrite.o plugins/router_http/router_http.o plugins/logfile/logfile.o plugins/router_cache/router_cache.o plugins/rawrouter/rawrouter.o plugins/router_static/router_static.o plugins/sslrouter/sslrouter.o plugins/spooler/spooler_plugin.o plugins/cheaper_busyness/cheaper_busyness.o plugins/symcall/symcall_plugin.o plugins/transformation_tofile/tofile.o plugins/transformation_gzip/gzip.o plugins/transformation_chunked/chunked.o plugins/transformation_offload/offload.o plugins/router_memcached/router_memcached.o plugins/router_redis/router_redis.o plugins/router_hash/router_hash.o plugins/router_expires/expires.o plugins/router_metrics/plugin.o plugins/transformation_template/tt.o plugins/stats_pusher_socket/plugin.o -lpthread -lm -lz -lexpat -ldl -framework CoreFoundation -lpython3.14
-      ld: library 'python3.14' not found
-      clang: error: linker command failed with exit code 1 (use -v to see invocation)
+      gcc -o build/bdist.linux-x86_64/wheel/uWSGI-2.0.28.data/scripts/uwsgi -L/usr/local/lib -Wl,-rpath,/usr/local/lib core/utils.o core/protocol.o core/socket.o core/logging.o core/master.o core/master_utils.o core/emperor.o core/notify.o core/mule.o core/subscription.o core/stats.o core/sendfile.o core/async.o core/master_checks.o core/fifo.o core/offload.o core/io.o core/static.o core/websockets.o core/spooler.o core/snmp.o core/exceptions.o core/config.o core/setup_utils.o core/clock.o core/init.o core/buffer.o core/reader.o core/writer.o core/alarm.o core/cron.o core/hooks.o core/plugins.o core/lock.o core/cache.o core/daemons.o core/errors.o core/hash.o core/master_events.o core/chunked.o core/queue.o core/event.o core/signal.o core/strings.o core/progress.o core/timebomb.o core/ini.o core/fsmon.o core/mount.o core/metrics.o core/plugins_builder.o core/sharedarea.o core/rpc.o core/gateway.o core/loop.o core/cookie.o core/querystring.o core/rb_timers.o core/transformations.o core/uwsgi.o proto/base.o proto/uwsgi.o proto/http.o proto/fastcgi.o proto/scgi.o proto/puwsgi.o lib/linux_ns.o core/zlib.o core/yaml.o core/ssl.o core/legion.o core/xmlconf.o core/dot_h.o core/config_py.o plugins/python/python_plugin.o plugins/python/pyutils.o plugins/python/pyloader.o plugins/python/wsgi_handlers.o plugins/python/wsgi_headers.o plugins/python/wsgi_subhandler.o plugins/python/web3_subhandler.o plugins/python/pump_subhandler.o plugins/python/gil.o plugins/python/uwsgi_pymodule.o plugins/python/profiler.o plugins/python/symimporter.o plugins/python/tracebacker.o plugins/python/raw.o plugins/gevent/gevent.o plugins/gevent/hooks.o plugins/ping/ping_plugin.o plugins/cache/cache.o plugins/nagios/nagios.o plugins/rrdtool/rrdtool.o plugins/carbon/carbon.o plugins/rpc/rpc_plugin.o plugins/corerouter/cr_common.o plugins/corerouter/cr_map.o plugins/corerouter/corerouter.o plugins/fastrouter/fastrouter.o plugins/http/http.o plugins/http/keepalive.o plugins/http/https.o plugins/http/spdy3.o plugins/ugreen/ugreen.o plugins/signal/signal_plugin.o plugins/syslog/syslog_plugin.o plugins/rsyslog/rsyslog_plugin.o plugins/logsocket/logsocket_plugin.o plugins/router_uwsgi/router_uwsgi.o plugins/router_redirect/router_redirect.o plugins/router_basicauth/router_basicauth.o plugins/zergpool/zergpool.o plugins/redislog/redislog_plugin.o plugins/mongodblog/mongodblog_plugin.o plugins/router_rewrite/router_rewrite.o plugins/router_http/router_http.o plugins/logfile/logfile.o plugins/router_cache/router_cache.o plugins/rawrouter/rawrouter.o plugins/router_static/router_static.o plugins/sslrouter/sslrouter.o plugins/spooler/spooler_plugin.o plugins/cheaper_busyness/cheaper_busyness.o plugins/symcall/symcall_plugin.o plugins/transformation_tofile/tofile.o plugins/transformation_gzip/gzip.o plugins/transformation_chunked/chunked.o plugins/transformation_offload/offload.o plugins/router_memcached/router_memcached.o plugins/router_redis/router_redis.o plugins/router_hash/router_hash.o plugins/router_expires/expires.o plugins/router_metrics/plugin.o plugins/transformation_template/tt.o plugins/stats_pusher_socket/plugin.o -lpthread -lm -rdynamic -ldl -lz -luuid -lssl -lcrypto -lxml2 -ldl -lm -lpython3.14 -lcrypt
+      /usr/bin/ld: cannot find -lpython3.14: No such file or directory
+      collect2: error: ld returned 1 exit status
       *** error linking uWSGI ***
       [end of output]
   
@@ -1906,12 +1930,12 @@ Collecting uWSGI==2.0.28
       ...<31 lines>...
       exec(compile(setup_py_code, filename, "exec"))
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-      ''' % ('C:\\Windows\\ServiceProfiles\\NetworkService\\AppData\\Local\\Temp\\pip-install-svbq7_rf\\uwsgi_2693a8de5d364bd0b6334d0b9c8f7348\\setup.py',), "<pip-setuptools-caller>", "exec"))
+      ''' % ('C:\\Windows\\ServiceProfiles\\NetworkService\\AppData\\Local\\Temp\\pip-install-iz3rvwl7\\uwsgi_a6ca4786816f4e69830905590ed33236\\setup.py',), "<pip-setuptools-caller>", "exec"))
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     File "<pip-setuptools-caller>", line 34, in <module>
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-svbq7_rf\uwsgi_2693a8de5d364bd0b6334d0b9c8f7348\setup.py", line 3, in <module>
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-iz3rvwl7\uwsgi_a6ca4786816f4e69830905590ed33236\setup.py", line 3, in <module>
       import uwsgiconfig as uc
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-svbq7_rf\uwsgi_2693a8de5d364bd0b6334d0b9c8f7348\uwsgiconfig.py", line 8, in <module>
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-iz3rvwl7\uwsgi_a6ca4786816f4e69830905590ed33236\uwsgiconfig.py", line 8, in <module>
       uwsgi_os = os.uname()[0]
                  ^^^^^^^^
   AttributeError: module 'os' has no attribute 'uname'. Did you mean: 'name'?
@@ -1926,66 +1950,6 @@ See above for output.
 
 note: This is an issue with the package mentioned above, not pip.
 hint: See above for details.
-Command failed with exit code 1
-
-
-==================================================
-```
-
-</details>
-
-## kinto on linux-x86_64 default
-
-<details>
-<summary>Log for kinto on linux-x86_64 default</summary>
-
-```
-      [thread 10][gcc -pthread] plugins/http/spdy3.o
-      [thread 8][gcc -pthread] plugins/ugreen/ugreen.o
-      [thread 5][gcc -pthread] plugins/signal/signal_plugin.o
-      [thread 7][gcc -pthread] plugins/syslog/syslog_plugin.o
-      [thread 0][gcc -pthread] plugins/rsyslog/rsyslog_plugin.o
-      [thread 12][gcc -pthread] plugins/logsocket/logsocket_plugin.o
-      [thread 4][gcc -pthread] plugins/router_uwsgi/router_uwsgi.o
-      [thread 11][gcc -pthread] plugins/router_redirect/router_redirect.o
-      [thread 18][gcc -pthread] plugins/router_basicauth/router_basicauth.o
-      [thread 16][gcc -pthread] plugins/zergpool/zergpool.o
-      [thread 1][gcc -pthread] plugins/redislog/redislog_plugin.o
-      [thread 14][gcc -pthread] plugins/mongodblog/mongodblog_plugin.o
-      [thread 19][gcc -pthread] plugins/router_rewrite/router_rewrite.o
-      [thread 9][gcc -pthread] plugins/router_http/router_http.o
-      [thread 8][gcc -pthread] plugins/logfile/logfile.o
-      [thread 0][gcc -pthread] plugins/router_cache/router_cache.o
-      [thread 5][gcc -pthread] plugins/rawrouter/rawrouter.o
-      [thread 13][gcc -pthread] plugins/router_static/router_static.o
-      [thread 12][gcc -pthread] plugins/sslrouter/sslrouter.o
-      [thread 18][gcc -pthread] plugins/spooler/spooler_plugin.o
-      [thread 4][gcc -pthread] plugins/cheaper_busyness/cheaper_busyness.o
-      [thread 11][gcc -pthread] plugins/symcall/symcall_plugin.o
-      [thread 7][gcc -pthread] plugins/transformation_tofile/tofile.o
-      [thread 15][gcc -pthread] plugins/transformation_gzip/gzip.o
-      [thread 2][gcc -pthread] plugins/transformation_chunked/chunked.o
-      [thread 19][gcc -pthread] plugins/transformation_offload/offload.o
-      [thread 10][gcc -pthread] plugins/router_memcached/router_memcached.o
-      [thread 16][gcc -pthread] plugins/router_redis/router_redis.o
-      [thread 9][gcc -pthread] plugins/router_hash/router_hash.o
-      [thread 14][gcc -pthread] plugins/router_expires/expires.o
-      [thread 1][gcc -pthread] plugins/router_metrics/plugin.o
-      [thread 17][gcc -pthread] plugins/transformation_template/tt.o
-      [thread 13][gcc -pthread] plugins/stats_pusher_socket/plugin.o
-      *** uWSGI linking ***
-      gcc -pthread -o build/bdist.linux-x86_64/wheel/uWSGI-2.0.28.data/scripts/uwsgi -L/usr/local/lib -Wl,-rpath,/usr/local/lib core/utils.o core/protocol.o core/socket.o core/logging.o core/master.o core/master_utils.o core/emperor.o core/notify.o core/mule.o core/subscription.o core/stats.o core/sendfile.o core/async.o core/master_checks.o core/fifo.o core/offload.o core/io.o core/static.o core/websockets.o core/spooler.o core/snmp.o core/exceptions.o core/config.o core/setup_utils.o core/clock.o core/init.o core/buffer.o core/reader.o core/writer.o core/alarm.o core/cron.o core/hooks.o core/plugins.o core/lock.o core/cache.o core/daemons.o core/errors.o core/hash.o core/master_events.o core/chunked.o core/queue.o core/event.o core/signal.o core/strings.o core/progress.o core/timebomb.o core/ini.o core/fsmon.o core/mount.o core/metrics.o core/plugins_builder.o core/sharedarea.o core/rpc.o core/gateway.o core/loop.o core/cookie.o core/querystring.o core/rb_timers.o core/transformations.o core/uwsgi.o proto/base.o proto/uwsgi.o proto/http.o proto/fastcgi.o proto/scgi.o proto/puwsgi.o lib/linux_ns.o core/zlib.o core/yaml.o core/ssl.o core/legion.o core/xmlconf.o core/dot_h.o core/config_py.o plugins/python/python_plugin.o plugins/python/pyutils.o plugins/python/pyloader.o plugins/python/wsgi_handlers.o plugins/python/wsgi_headers.o plugins/python/wsgi_subhandler.o plugins/python/web3_subhandler.o plugins/python/pump_subhandler.o plugins/python/gil.o plugins/python/uwsgi_pymodule.o plugins/python/profiler.o plugins/python/symimporter.o plugins/python/tracebacker.o plugins/python/raw.o plugins/gevent/gevent.o plugins/gevent/hooks.o plugins/ping/ping_plugin.o plugins/cache/cache.o plugins/nagios/nagios.o plugins/rrdtool/rrdtool.o plugins/carbon/carbon.o plugins/rpc/rpc_plugin.o plugins/corerouter/cr_common.o plugins/corerouter/cr_map.o plugins/corerouter/corerouter.o plugins/fastrouter/fastrouter.o plugins/http/http.o plugins/http/keepalive.o plugins/http/https.o plugins/http/spdy3.o plugins/ugreen/ugreen.o plugins/signal/signal_plugin.o plugins/syslog/syslog_plugin.o plugins/rsyslog/rsyslog_plugin.o plugins/logsocket/logsocket_plugin.o plugins/router_uwsgi/router_uwsgi.o plugins/router_redirect/router_redirect.o plugins/router_basicauth/router_basicauth.o plugins/zergpool/zergpool.o plugins/redislog/redislog_plugin.o plugins/mongodblog/mongodblog_plugin.o plugins/router_rewrite/router_rewrite.o plugins/router_http/router_http.o plugins/logfile/logfile.o plugins/router_cache/router_cache.o plugins/rawrouter/rawrouter.o plugins/router_static/router_static.o plugins/sslrouter/sslrouter.o plugins/spooler/spooler_plugin.o plugins/cheaper_busyness/cheaper_busyness.o plugins/symcall/symcall_plugin.o plugins/transformation_tofile/tofile.o plugins/transformation_gzip/gzip.o plugins/transformation_chunked/chunked.o plugins/transformation_offload/offload.o plugins/router_memcached/router_memcached.o plugins/router_redis/router_redis.o plugins/router_hash/router_hash.o plugins/router_expires/expires.o plugins/router_metrics/plugin.o plugins/transformation_template/tt.o plugins/stats_pusher_socket/plugin.o -lpthread -lm -rdynamic -ldl -lz -luuid -lssl -lcrypto -lxml2 -lpthread -ldl -lutil -lm -lpython3.14 -lcrypt
-      /usr/bin/ld: cannot find -lpython3.14
-      collect2: error: ld returned 1 exit status
-      *** error linking uWSGI ***
-      [end of output]
-  
-  note: This error originates from a subprocess, and is likely not a problem with pip.
-  ERROR: Failed building wheel for uWSGI
-  Running setup.py clean for uWSGI
-Successfully built kinto
-Failed to build uWSGI
-ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (uWSGI)
 Command failed with exit code 1
 
 
@@ -2026,12 +1990,12 @@ Collecting uWSGI==2.0.28
       ...<31 lines>...
       exec(compile(setup_py_code, filename, "exec"))
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-      ''' % ('C:\\Windows\\ServiceProfiles\\NetworkService\\AppData\\Local\\Temp\\pip-install-qfzk8xhs\\uwsgi_0e4d87f4b8904d96aa9afa953cfd19e3\\setup.py',), "<pip-setuptools-caller>", "exec"))
+      ''' % ('C:\\Windows\\ServiceProfiles\\NetworkService\\AppData\\Local\\Temp\\pip-install-6qo19ah5\\uwsgi_bb90181b345544b58ee59a0fd41c5ff6\\setup.py',), "<pip-setuptools-caller>", "exec"))
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     File "<pip-setuptools-caller>", line 34, in <module>
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-qfzk8xhs\uwsgi_0e4d87f4b8904d96aa9afa953cfd19e3\setup.py", line 3, in <module>
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-6qo19ah5\uwsgi_bb90181b345544b58ee59a0fd41c5ff6\setup.py", line 3, in <module>
       import uwsgiconfig as uc
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-qfzk8xhs\uwsgi_0e4d87f4b8904d96aa9afa953cfd19e3\uwsgiconfig.py", line 8, in <module>
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-6qo19ah5\uwsgi_bb90181b345544b58ee59a0fd41c5ff6\uwsgiconfig.py", line 8, in <module>
       uwsgi_os = os.uname()[0]
                  ^^^^^^^^
   AttributeError: module 'os' has no attribute 'uname'. Did you mean: 'name'?
@@ -2054,6 +2018,66 @@ Command failed with exit code 1
 
 </details>
 
+## mypy2 on darwin-arm64 default
+
+<details>
+<summary>Log for mypy2 on darwin-arm64 default</summary>
+
+```
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+Command failed with exit code 1
+(falling back to unique venv)
+Creating the virtual environment /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-mypy2
+# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/python.exe -m venv --without-pip /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-mypy2
+# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-mypy2/bin/python -m ensurepip -v -U
+Using pip 24.3.1 from /tmp/tmpzkiqewi9/pip-24.3.1-py3-none-any.whl/pip (python 3.14)
+Looking in links: /tmp/tmpzkiqewi9
+Processing /tmp/tmpzkiqewi9/pip-24.3.1-py3-none-any.whl
+Installing collected packages: pip
+  changing mode of /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-mypy2/bin/pip3 to 755
+  changing mode of /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-mypy2/bin/pip3.14 to 755
+Successfully installed pip-24.3.1
+# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
+Collecting setuptools>=18.5
+  Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
+Collecting wheel
+  Using cached wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
+Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
+Installing collected packages: wheel, setuptools
+Successfully installed setuptools-75.8.0 wheel-0.45.1
+# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-mypy2/bin/python -m pip --version
+pip 24.3.1 from /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-mypy2/lib/python3.14/site-packages/pip (python 3.14)
+Installing requirements into the virtual environment /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-mypy2
+# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.8.1
+Collecting mypy==1.13.0
+  Using cached mypy-1.13.0-py3-none-any.whl
+Collecting mypy-extensions==1.0.0
+  Using cached mypy_extensions-1.0.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting typing-extensions==4.2.0
+  Using cached typing_extensions-4.2.0-py3-none-any.whl.metadata (6.2 kB)
+Collecting pyperf==2.8.1
+  Using cached pyperf-2.8.1-py3-none-any.whl.metadata (5.9 kB)
+INFO: pip is looking at multiple versions of mypy to determine which version is compatible with other requirements. This could take a while.
+ERROR: Cannot install mypy==1.13.0 and typing-extensions==4.2.0 because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    The user requested typing-extensions==4.2.0
+    mypy 1.13.0 depends on typing_extensions>=4.6.0
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip to attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+Command failed with exit code 1
+
+
+==================================================
+```
+
+</details>
+
 ## mypy2 on collect-stats pystats
 
 <details>
@@ -2064,17 +2088,17 @@ Command failed with exit code 1
 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
 Command failed with exit code 1
 (falling back to unique venv)
-Creating the virtual environment /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688-bm-mypy2
-# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/cpython/python -m venv --without-pip /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688-bm-mypy2
-# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688-bm-mypy2/bin/python -m ensurepip -v -U
-Using pip 24.3.1 from /tmp/tmpytu775yr/pip-24.3.1-py3-none-any.whl/pip (python 3.14)
-Looking in links: /tmp/tmpytu775yr
-Processing /tmp/tmpytu775yr/pip-24.3.1-py3-none-any.whl
+Creating the virtual environment /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688-bm-mypy2
+# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/cpython/python -m venv --without-pip /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688-bm-mypy2
+# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688-bm-mypy2/bin/python -m ensurepip -v -U
+Using pip 24.3.1 from /tmp/tmpvctc6pz5/pip-24.3.1-py3-none-any.whl/pip (python 3.14)
+Looking in links: /tmp/tmpvctc6pz5
+Processing /tmp/tmpvctc6pz5/pip-24.3.1-py3-none-any.whl
 Installing collected packages: pip
-  changing mode of /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688-bm-mypy2/bin/pip3 to 755
-  changing mode of /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688-bm-mypy2/bin/pip3.14 to 755
+  changing mode of /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688-bm-mypy2/bin/pip3 to 755
+  changing mode of /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688-bm-mypy2/bin/pip3.14 to 755
 Successfully installed pip-24.3.1
-# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
+# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
 Collecting setuptools>=18.5
   Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
 Collecting wheel
@@ -2083,10 +2107,10 @@ Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
 Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
 Installing collected packages: wheel, setuptools
 Successfully installed setuptools-75.8.0 wheel-0.45.1
-# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688-bm-mypy2/bin/python -m pip --version
-pip 24.3.1 from /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688-bm-mypy2/lib/python3.14/site-packages/pip (python 3.14)
-Installing requirements into the virtual environment /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688-bm-mypy2
-# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.8.1
+# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688-bm-mypy2/bin/python -m pip --version
+pip 24.3.1 from /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688-bm-mypy2/lib/python3.14/site-packages/pip (python 3.14)
+Installing requirements into the virtual environment /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688-bm-mypy2
+# /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.8.1
 Collecting mypy==1.13.0
   Using cached mypy-1.13.0-py3-none-any.whl
 Collecting mypy-extensions==1.0.0
@@ -2120,20 +2144,20 @@ Command failed with exit code 1
 <summary>Log for mypy2 on linux-aarch64 default</summary>
 
 ```
-
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
 Command failed with exit code 1
 (falling back to unique venv)
-Creating the virtual environment /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688-bm-mypy2
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/python -m venv --without-pip /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688-bm-mypy2
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688-bm-mypy2/bin/python -m ensurepip -v -U
-Using pip 24.3.1 from /tmp/tmpvsnp9yps/pip-24.3.1-py3-none-any.whl/pip (python 3.14)
-Looking in links: /tmp/tmpvsnp9yps
-Processing /tmp/tmpvsnp9yps/pip-24.3.1-py3-none-any.whl
+Creating the virtual environment /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688-bm-mypy2
+# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/python -m venv --without-pip /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688-bm-mypy2
+# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688-bm-mypy2/bin/python -m ensurepip -v -U
+Using pip 24.3.1 from /tmp/tmpb_rfv3h7/pip-24.3.1-py3-none-any.whl/pip (python 3.14)
+Looking in links: /tmp/tmpb_rfv3h7
+Processing /tmp/tmpb_rfv3h7/pip-24.3.1-py3-none-any.whl
 Installing collected packages: pip
-  changing mode of /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688-bm-mypy2/bin/pip3 to 755
-  changing mode of /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688-bm-mypy2/bin/pip3.14 to 755
+  changing mode of /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688-bm-mypy2/bin/pip3 to 755
+  changing mode of /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688-bm-mypy2/bin/pip3.14 to 755
 Successfully installed pip-24.3.1
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
+# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
 Collecting setuptools>=18.5
   Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
 Collecting wheel
@@ -2142,10 +2166,10 @@ Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
 Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
 Installing collected packages: wheel, setuptools
 Successfully installed setuptools-75.8.0 wheel-0.45.1
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688-bm-mypy2/bin/python -m pip --version
-pip 24.3.1 from /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688-bm-mypy2/lib/python3.14/site-packages/pip (python 3.14)
-Installing requirements into the virtual environment /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688-bm-mypy2
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.8.1
+# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688-bm-mypy2/bin/python -m pip --version
+pip 24.3.1 from /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688-bm-mypy2/lib/python3.14/site-packages/pip (python 3.14)
+Installing requirements into the virtual environment /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688-bm-mypy2
+# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.8.1
 Collecting mypy==1.13.0
   Using cached mypy-1.13.0-py3-none-any.whl
 Collecting mypy-extensions==1.0.0
@@ -2164,8 +2188,8 @@ The conflict is caused by:
 To fix this you could try to:
 1. loosen the range of package versions you've specified
 2. remove package versions to allow pip to attempt to solve the dependency conflict
-
 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+
 Command failed with exit code 1
 
 
@@ -2174,26 +2198,26 @@ Command failed with exit code 1
 
 </details>
 
-## mypy2 on darwin-arm64 default
+## mypy2 on linux-x86_64 default
 
 <details>
-<summary>Log for mypy2 on darwin-arm64 default</summary>
+<summary>Log for mypy2 on linux-x86_64 default</summary>
 
 ```
 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
 Command failed with exit code 1
 (falling back to unique venv)
-Creating the virtual environment /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-mypy2
-# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/python.exe -m venv --without-pip /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-mypy2
-# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-mypy2/bin/python -m ensurepip -v -U
-Using pip 24.3.1 from /tmp/tmpn_ennhc7/pip-24.3.1-py3-none-any.whl/pip (python 3.14)
-Looking in links: /tmp/tmpn_ennhc7
-Processing /tmp/tmpn_ennhc7/pip-24.3.1-py3-none-any.whl
+Creating the virtual environment /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688-bm-mypy2
+# /home/ddfun/actions-runner/_work/benchmarking/benchmarking/cpython/python -m venv --without-pip /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688-bm-mypy2
+# /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688-bm-mypy2/bin/python -m ensurepip -v -U
+Using pip 24.3.1 from /tmp/tmpgu6a2mhg/pip-24.3.1-py3-none-any.whl/pip (python 3.14)
+Looking in links: /tmp/tmpgu6a2mhg
+Processing /tmp/tmpgu6a2mhg/pip-24.3.1-py3-none-any.whl
 Installing collected packages: pip
-  changing mode of /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-mypy2/bin/pip3 to 755
-  changing mode of /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-mypy2/bin/pip3.14 to 755
+  changing mode of /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688-bm-mypy2/bin/pip3 to 755
+  changing mode of /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688-bm-mypy2/bin/pip3.14 to 755
 Successfully installed pip-24.3.1
-# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
+# /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
 Collecting setuptools>=18.5
   Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
 Collecting wheel
@@ -2202,10 +2226,10 @@ Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
 Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
 Installing collected packages: wheel, setuptools
 Successfully installed setuptools-75.8.0 wheel-0.45.1
-# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-mypy2/bin/python -m pip --version
-pip 24.3.1 from /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-mypy2/lib/python3.14/site-packages/pip (python 3.14)
-Installing requirements into the virtual environment /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-mypy2
-# /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.8.1
+# /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688-bm-mypy2/bin/python -m pip --version
+pip 24.3.1 from /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688-bm-mypy2/lib/python3.14/site-packages/pip (python 3.14)
+Installing requirements into the virtual environment /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688-bm-mypy2
+# /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.8.1
 Collecting mypy==1.13.0
   Using cached mypy-1.13.0-py3-none-any.whl
 Collecting mypy-extensions==1.0.0
@@ -2244,15 +2268,15 @@ Command failed with exit code 1
 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
 Command failed with exit code 1
 (falling back to unique venv)
-Creating the virtual environment C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-mypy2
-# 'C:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64\python.exe' -m venv --without-pip 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-mypy2'
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m ensurepip -v -U
-Using pip 24.3.1 from C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpzqh6kzpm\pip-24.3.1-py3-none-any.whl\pip (python 3.14)
-Looking in links: c:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpzqh6kzpm
-Processing c:\windows\servic~1\networ~1\appdata\local\temp\tmpzqh6kzpm\pip-24.3.1-py3-none-any.whl
+Creating the virtual environment C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-mypy2
+# 'C:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64\python.exe' -m venv --without-pip 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-mypy2'
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m ensurepip -v -U
+Using pip 24.3.1 from C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmplbfcdpmo\pip-24.3.1-py3-none-any.whl\pip (python 3.14)
+Looking in links: c:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmplbfcdpmo
+Processing c:\windows\servic~1\networ~1\appdata\local\temp\tmplbfcdpmo\pip-24.3.1-py3-none-any.whl
 Installing collected packages: pip
 Successfully installed pip-24.3.1
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m pip install -U 'setuptools>=18.5' wheel
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m pip install -U 'setuptools>=18.5' wheel
 Collecting setuptools>=18.5
   Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
 Collecting wheel
@@ -2261,71 +2285,11 @@ Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
 Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
 Installing collected packages: wheel, setuptools
 Successfully installed setuptools-75.8.0 wheel-0.45.1
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m pip --version
-pip 24.3.1 from C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-mypy2\Lib\site-packages\pip (python 3.14)
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m pip --version
+pip 24.3.1 from C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-mypy2\Lib\site-packages\pip (python 3.14)
 
-Installing requirements into the virtual environment C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-mypy2
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.8.1
-Collecting mypy==1.13.0
-  Using cached mypy-1.13.0-py3-none-any.whl
-Collecting mypy-extensions==1.0.0
-  Using cached mypy_extensions-1.0.0-py3-none-any.whl.metadata (1.1 kB)
-Collecting typing-extensions==4.2.0
-  Using cached typing_extensions-4.2.0-py3-none-any.whl.metadata (6.2 kB)
-Collecting pyperf==2.8.1
-  Using cached pyperf-2.8.1-py3-none-any.whl.metadata (5.9 kB)
-INFO: pip is looking at multiple versions of mypy to determine which version is compatible with other requirements. This could take a while.
-ERROR: Cannot install mypy==1.13.0 and typing-extensions==4.2.0 because these package versions have conflicting dependencies.
-
-The conflict is caused by:
-    The user requested typing-extensions==4.2.0
-    mypy 1.13.0 depends on typing_extensions>=4.6.0
-
-To fix this you could try to:
-1. loosen the range of package versions you've specified
-2. remove package versions to allow pip to attempt to solve the dependency conflict
-
-ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
-Command failed with exit code 1
-
-
-==================================================
-```
-
-</details>
-
-## mypy2 on linux-x86_64 default
-
-<details>
-<summary>Log for mypy2 on linux-x86_64 default</summary>
-
-```
-ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
-Command failed with exit code 1
-(falling back to unique venv)
-Creating the virtual environment /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688-bm-mypy2
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/python -m venv --without-pip /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688-bm-mypy2
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688-bm-mypy2/bin/python -m ensurepip -v -U
-Using pip 24.3.1 from /tmp/tmp5lh1iqb8/pip-24.3.1-py3-none-any.whl/pip (python 3.14)
-Looking in links: /tmp/tmp5lh1iqb8
-Processing /tmp/tmp5lh1iqb8/pip-24.3.1-py3-none-any.whl
-Installing collected packages: pip
-  changing mode of /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688-bm-mypy2/bin/pip3 to 755
-  changing mode of /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688-bm-mypy2/bin/pip3.14 to 755
-Successfully installed pip-24.3.1
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
-Collecting setuptools>=18.5
-  Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
-Collecting wheel
-  Using cached wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
-Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
-Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
-Installing collected packages: wheel, setuptools
-Successfully installed setuptools-75.8.0 wheel-0.45.1
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688-bm-mypy2/bin/python -m pip --version
-pip 24.3.1 from /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688-bm-mypy2/lib/python3.14/site-packages/pip (python 3.14)
-Installing requirements into the virtual environment /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688-bm-mypy2
-# /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.8.1
+Installing requirements into the virtual environment C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-mypy2
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.8.1
 Collecting mypy==1.13.0
   Using cached mypy-1.13.0-py3-none-any.whl
 Collecting mypy-extensions==1.0.0
@@ -2364,15 +2328,15 @@ Command failed with exit code 1
 ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
 Command failed with exit code 1
 (falling back to unique venv)
-Creating the virtual environment C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-mypy2
-# 'C:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32\python.exe' -m venv --without-pip 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-mypy2'
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m ensurepip -v -U
-Using pip 24.3.1 from C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpzippb37g\pip-24.3.1-py3-none-any.whl\pip (python 3.14)
-Looking in links: c:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpzippb37g
-Processing c:\windows\servic~1\networ~1\appdata\local\temp\tmpzippb37g\pip-24.3.1-py3-none-any.whl
+Creating the virtual environment C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-mypy2
+# 'C:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32\python.exe' -m venv --without-pip 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-mypy2'
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m ensurepip -v -U
+Using pip 24.3.1 from C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpm3tf83jt\pip-24.3.1-py3-none-any.whl\pip (python 3.14)
+Looking in links: c:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpm3tf83jt
+Processing c:\windows\servic~1\networ~1\appdata\local\temp\tmpm3tf83jt\pip-24.3.1-py3-none-any.whl
 Installing collected packages: pip
 Successfully installed pip-24.3.1
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m pip install -U 'setuptools>=18.5' wheel
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m pip install -U 'setuptools>=18.5' wheel
 Collecting setuptools>=18.5
   Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
 Collecting wheel
@@ -2381,11 +2345,11 @@ Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
 Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
 Installing collected packages: wheel, setuptools
 Successfully installed setuptools-75.8.0 wheel-0.45.1
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m pip --version
-pip 24.3.1 from C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-mypy2\Lib\site-packages\pip (python 3.14)
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m pip --version
+pip 24.3.1 from C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-mypy2\Lib\site-packages\pip (python 3.14)
 
-Installing requirements into the virtual environment C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-mypy2
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.8.1
+Installing requirements into the virtual environment C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-mypy2
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-mypy2\Scripts\python.exe' -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.8.1
 Collecting mypy==1.13.0
   Using cached mypy-1.13.0-py3-none-any.whl
 Collecting mypy-extensions==1.0.0
@@ -2414,6 +2378,66 @@ Command failed with exit code 1
 
 </details>
 
+## pytorch_alexnet_inference on darwin-arm64 default
+
+<details>
+<summary>Log for pytorch_alexnet_inference on darwin-arm64 default</summary>
+
+```
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [31 lines of output]
+      Running from numpy source directory.
+      <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates
+      Traceback (most recent call last):
+        File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+          main()
+          ~~~~^^
+        File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+          json_out['return_val'] = hook(**hook_input['kwargs'])
+                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 149, in prepare_metadata_for_build_wheel
+          return hook(metadata_directory, config_settings)
+        File "/private/tmp/pip-build-env-cvi4b91f/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 377, in prepare_metadata_for_build_wheel
+          self.run_setup()
+          ~~~~~~~~~~~~~~^^
+        File "/private/tmp/pip-build-env-cvi4b91f/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 522, in run_setup
+          super().run_setup(setup_script=setup_script)
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/private/tmp/pip-build-env-cvi4b91f/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 320, in run_setup
+          exec(code, locals())
+          ~~~~^^^^^^^^^^^^^^^^
+        File "<string>", line 489, in <module>
+        File "<string>", line 465, in setup_package
+        File "/private/tmp/pip-install-w7iudqp8/numpy_86f52fcf6555442ebf992b08ca7c9769/numpy/distutils/core.py", line 24, in <module>
+          from numpy.distutils.command import config, config_compiler, \
+          ...<2 lines>...
+               install_clib
+        File "/private/tmp/pip-install-w7iudqp8/numpy_86f52fcf6555442ebf992b08ca7c9769/numpy/distutils/command/config.py", line 19, in <module>
+          from numpy.distutils.mingw32ccompiler import generate_manifest
+        File "/private/tmp/pip-install-w7iudqp8/numpy_86f52fcf6555442ebf992b08ca7c9769/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
+          from distutils.msvccompiler import get_build_version as get_build_msvc_version
+      ModuleNotFoundError: No module named 'distutils.msvccompiler'
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+Command failed with exit code 1
+
+
+==================================================
+```
+
+</details>
+
 ## pytorch_alexnet_inference on collect-stats pystats
 
 <details>
@@ -2429,32 +2453,32 @@ Command failed with exit code 1
       Running from numpy source directory.
       <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates
       Traceback (most recent call last):
-        File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+        File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
           main()
           ~~~~^^
-        File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+        File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
           json_out['return_val'] = hook(**hook_input['kwargs'])
                                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 149, in prepare_metadata_for_build_wheel
+        File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 149, in prepare_metadata_for_build_wheel
           return hook(metadata_directory, config_settings)
-        File "/tmp/pip-build-env-bbvzltwx/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 377, in prepare_metadata_for_build_wheel
+        File "/tmp/pip-build-env-0le8pl37/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 377, in prepare_metadata_for_build_wheel
           self.run_setup()
           ~~~~~~~~~~~~~~^^
-        File "/tmp/pip-build-env-bbvzltwx/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 522, in run_setup
+        File "/tmp/pip-build-env-0le8pl37/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 522, in run_setup
           super().run_setup(setup_script=setup_script)
           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-bbvzltwx/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 320, in run_setup
+        File "/tmp/pip-build-env-0le8pl37/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 320, in run_setup
           exec(code, locals())
           ~~~~^^^^^^^^^^^^^^^^
         File "<string>", line 489, in <module>
         File "<string>", line 465, in setup_package
-        File "/tmp/pip-install-uo8u1j5g/numpy_19f7df0510f0416781b058956751d1bd/numpy/distutils/core.py", line 24, in <module>
+        File "/tmp/pip-install-68ddf9b2/numpy_76fcdb235c9146678decec19faefddf3/numpy/distutils/core.py", line 24, in <module>
           from numpy.distutils.command import config, config_compiler, \
           ...<2 lines>...
                install_clib
-        File "/tmp/pip-install-uo8u1j5g/numpy_19f7df0510f0416781b058956751d1bd/numpy/distutils/command/config.py", line 19, in <module>
+        File "/tmp/pip-install-68ddf9b2/numpy_76fcdb235c9146678decec19faefddf3/numpy/distutils/command/config.py", line 19, in <module>
           from numpy.distutils.mingw32ccompiler import generate_manifest
-        File "/tmp/pip-install-uo8u1j5g/numpy_19f7df0510f0416781b058956751d1bd/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
+        File "/tmp/pip-install-68ddf9b2/numpy_76fcdb235c9146678decec19faefddf3/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
           from distutils.msvccompiler import get_build_version as get_build_msvc_version
       ModuleNotFoundError: No module named 'distutils.msvccompiler'
       [end of output]
@@ -2488,32 +2512,32 @@ Command failed with exit code 1
       Running from numpy source directory.
       <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates
       Traceback (most recent call last):
-        File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+        File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
           main()
           ~~~~^^
-        File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+        File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
           json_out['return_val'] = hook(**hook_input['kwargs'])
                                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 149, in prepare_metadata_for_build_wheel
+        File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 149, in prepare_metadata_for_build_wheel
           return hook(metadata_directory, config_settings)
-        File "/tmp/pip-build-env-1_8setbv/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 377, in prepare_metadata_for_build_wheel
+        File "/tmp/pip-build-env-srbjv1sb/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 377, in prepare_metadata_for_build_wheel
           self.run_setup()
           ~~~~~~~~~~~~~~^^
-        File "/tmp/pip-build-env-1_8setbv/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 522, in run_setup
+        File "/tmp/pip-build-env-srbjv1sb/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 522, in run_setup
           super().run_setup(setup_script=setup_script)
           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-1_8setbv/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 320, in run_setup
+        File "/tmp/pip-build-env-srbjv1sb/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 320, in run_setup
           exec(code, locals())
           ~~~~^^^^^^^^^^^^^^^^
         File "<string>", line 489, in <module>
         File "<string>", line 465, in setup_package
-        File "/tmp/pip-install-cnxqzcfb/numpy_07a511e217924cdf80fd65e84e553dfa/numpy/distutils/core.py", line 24, in <module>
+        File "/tmp/pip-install-mc27ykq1/numpy_3e644fb4bccd4b239354c1917236b507/numpy/distutils/core.py", line 24, in <module>
           from numpy.distutils.command import config, config_compiler, \
           ...<2 lines>...
                install_clib
-        File "/tmp/pip-install-cnxqzcfb/numpy_07a511e217924cdf80fd65e84e553dfa/numpy/distutils/command/config.py", line 19, in <module>
+        File "/tmp/pip-install-mc27ykq1/numpy_3e644fb4bccd4b239354c1917236b507/numpy/distutils/command/config.py", line 19, in <module>
           from numpy.distutils.mingw32ccompiler import generate_manifest
-        File "/tmp/pip-install-cnxqzcfb/numpy_07a511e217924cdf80fd65e84e553dfa/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
+        File "/tmp/pip-install-mc27ykq1/numpy_3e644fb4bccd4b239354c1917236b507/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
           from distutils.msvccompiler import get_build_version as get_build_msvc_version
       ModuleNotFoundError: No module named 'distutils.msvccompiler'
       [end of output]
@@ -2534,10 +2558,10 @@ Command failed with exit code 1
 
 </details>
 
-## pytorch_alexnet_inference on darwin-arm64 default
+## pytorch_alexnet_inference on linux-x86_64 default
 
 <details>
-<summary>Log for pytorch_alexnet_inference on darwin-arm64 default</summary>
+<summary>Log for pytorch_alexnet_inference on linux-x86_64 default</summary>
 
 ```
   error: subprocess-exited-with-error
@@ -2548,32 +2572,32 @@ Command failed with exit code 1
       Running from numpy source directory.
       <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates
       Traceback (most recent call last):
-        File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+        File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
           main()
           ~~~~^^
-        File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+        File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
           json_out['return_val'] = hook(**hook_input['kwargs'])
                                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 149, in prepare_metadata_for_build_wheel
+        File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 149, in prepare_metadata_for_build_wheel
           return hook(metadata_directory, config_settings)
-        File "/private/tmp/pip-build-env-iddtxuf3/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 377, in prepare_metadata_for_build_wheel
+        File "/tmp/pip-build-env-7ve0sp1w/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 377, in prepare_metadata_for_build_wheel
           self.run_setup()
           ~~~~~~~~~~~~~~^^
-        File "/private/tmp/pip-build-env-iddtxuf3/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 522, in run_setup
+        File "/tmp/pip-build-env-7ve0sp1w/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 522, in run_setup
           super().run_setup(setup_script=setup_script)
           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/private/tmp/pip-build-env-iddtxuf3/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 320, in run_setup
+        File "/tmp/pip-build-env-7ve0sp1w/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 320, in run_setup
           exec(code, locals())
           ~~~~^^^^^^^^^^^^^^^^
         File "<string>", line 489, in <module>
         File "<string>", line 465, in setup_package
-        File "/private/tmp/pip-install-vx97ji5u/numpy_3a56f78c9cf548ccb3bef89455b43ec0/numpy/distutils/core.py", line 24, in <module>
+        File "/tmp/pip-install-p_gdmfsw/numpy_b9d0a08fc53f4f5e908fdc3973829321/numpy/distutils/core.py", line 24, in <module>
           from numpy.distutils.command import config, config_compiler, \
           ...<2 lines>...
                install_clib
-        File "/private/tmp/pip-install-vx97ji5u/numpy_3a56f78c9cf548ccb3bef89455b43ec0/numpy/distutils/command/config.py", line 19, in <module>
+        File "/tmp/pip-install-p_gdmfsw/numpy_b9d0a08fc53f4f5e908fdc3973829321/numpy/distutils/command/config.py", line 19, in <module>
           from numpy.distutils.mingw32ccompiler import generate_manifest
-        File "/private/tmp/pip-install-vx97ji5u/numpy_3a56f78c9cf548ccb3bef89455b43ec0/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
+        File "/tmp/pip-install-p_gdmfsw/numpy_b9d0a08fc53f4f5e908fdc3973829321/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
           from distutils.msvccompiler import get_build_version as get_build_msvc_version
       ModuleNotFoundError: No module named 'distutils.msvccompiler'
       [end of output]
@@ -2600,18 +2624,18 @@ Command failed with exit code 1
 <summary>Log for pytorch_alexnet_inference on windows-x86_64 default</summary>
 
 ```
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-chtjqteu\overlay\Lib\site-packages\setuptools\build_meta.py", line 320, in run_setup
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-orn4g7rs\overlay\Lib\site-packages\setuptools\build_meta.py", line 320, in run_setup
       exec(code, locals())
       ~~~~^^^^^^^^^^^^^^^^
     File "<string>", line 489, in <module>
     File "<string>", line 465, in setup_package
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-ch1auhh4\numpy_7c5651b3780146a39174f59d9c09990c\numpy\distutils\core.py", line 24, in <module>
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-ew8e8jp_\numpy_b994b493055d4b5a9fbbeb9b30131099\numpy\distutils\core.py", line 24, in <module>
       from numpy.distutils.command import config, config_compiler, \
       ...<2 lines>...
            install_clib
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-ch1auhh4\numpy_7c5651b3780146a39174f59d9c09990c\numpy\distutils\command\config.py", line 19, in <module>
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-ew8e8jp_\numpy_b994b493055d4b5a9fbbeb9b30131099\numpy\distutils\command\config.py", line 19, in <module>
       from numpy.distutils.mingw32ccompiler import generate_manifest
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-ch1auhh4\numpy_7c5651b3780146a39174f59d9c09990c\numpy\distutils\mingw32ccompiler.py", line 28, in <module>
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-ew8e8jp_\numpy_b994b493055d4b5a9fbbeb9b30131099\numpy\distutils\mingw32ccompiler.py", line 28, in <module>
       from distutils.msvccompiler import get_build_version as get_build_msvc_version
   ModuleNotFoundError: No module named 'distutils.msvccompiler'
   [end of output]
@@ -2627,15 +2651,15 @@ note: This is an issue with the package mentioned above, not pip.
 hint: See above for details.
 Command failed with exit code 1
 (falling back to unique venv)
-Creating the virtual environment C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-pytorch_alexnet_inference
-# 'C:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64\python.exe' -m venv --without-pip 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-pytorch_alexnet_inference'
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-pytorch_alexnet_inference\Scripts\python.exe' -m ensurepip -v -U
-Using pip 24.3.1 from C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmperl3mz8k\pip-24.3.1-py3-none-any.whl\pip (python 3.14)
-Looking in links: c:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmperl3mz8k
-Processing c:\windows\servic~1\networ~1\appdata\local\temp\tmperl3mz8k\pip-24.3.1-py3-none-any.whl
+Creating the virtual environment C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-pytorch_alexnet_inference
+# 'C:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64\python.exe' -m venv --without-pip 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-pytorch_alexnet_inference'
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-pytorch_alexnet_inference\Scripts\python.exe' -m ensurepip -v -U
+Using pip 24.3.1 from C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpksi6yzjc\pip-24.3.1-py3-none-any.whl\pip (python 3.14)
+Looking in links: c:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpksi6yzjc
+Processing c:\windows\servic~1\networ~1\appdata\local\temp\tmpksi6yzjc\pip-24.3.1-py3-none-any.whl
 Installing collected packages: pip
 Successfully installed pip-24.3.1
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-pytorch_alexnet_inference\Scripts\python.exe' -m pip install -U 'setuptools>=18.5' wheel
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-pytorch_alexnet_inference\Scripts\python.exe' -m pip install -U 'setuptools>=18.5' wheel
 Collecting setuptools>=18.5
   Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
 Collecting wheel
@@ -2643,70 +2667,10 @@ Collecting wheel
 Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
 Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
 Installing collected packages: wheel, setuptools
-ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: 'C:\\actions-runner\\_work\\benchmarking\\benchmarking\\venv\\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-pytorch_alexnet_inference\\Lib\\site-packages\\pkg_resources\\tests\\data\\my-test-package_unpacked-egg\\my_test_package-1.0-py3.7.egg\\EGG-INFO\\dependency_links.txt'
+ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: 'C:\\actions-runner\\_work\\benchmarking\\benchmarking\\venv\\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-pytorch_alexnet_inference\\Lib\\site-packages\\pkg_resources\\tests\\data\\my-test-package_unpacked-egg\\my_test_package-1.0-py3.7.egg\\EGG-INFO\\dependency_links.txt'
 
 Command failed with exit code 1
-Remove directory C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-pytorch_alexnet_inference
-
-
-==================================================
-```
-
-</details>
-
-## pytorch_alexnet_inference on linux-x86_64 default
-
-<details>
-<summary>Log for pytorch_alexnet_inference on linux-x86_64 default</summary>
-
-```
-  error: subprocess-exited-with-error
-  
-  × Preparing metadata (pyproject.toml) did not run successfully.
-  │ exit code: 1
-  ╰─> [31 lines of output]
-      Running from numpy source directory.
-      <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates
-      Traceback (most recent call last):
-        File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
-          main()
-          ~~~~^^
-        File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
-          json_out['return_val'] = hook(**hook_input['kwargs'])
-                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688-bm-pytorch_alexnet_inference/lib/python3.14/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 149, in prepare_metadata_for_build_wheel
-          return hook(metadata_directory, config_settings)
-        File "/tmp/pip-build-env-vc5wo2ja/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 377, in prepare_metadata_for_build_wheel
-          self.run_setup()
-          ~~~~~~~~~~~~~~^^
-        File "/tmp/pip-build-env-vc5wo2ja/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 522, in run_setup
-          super().run_setup(setup_script=setup_script)
-          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-vc5wo2ja/overlay/lib/python3.14/site-packages/setuptools/build_meta.py", line 320, in run_setup
-          exec(code, locals())
-          ~~~~^^^^^^^^^^^^^^^^
-        File "<string>", line 489, in <module>
-        File "<string>", line 465, in setup_package
-        File "/tmp/pip-install-aygz4o23/numpy_999fd35efb1846799c6ad9c53685ca8a/numpy/distutils/core.py", line 24, in <module>
-          from numpy.distutils.command import config, config_compiler, \
-          ...<2 lines>...
-               install_clib
-        File "/tmp/pip-install-aygz4o23/numpy_999fd35efb1846799c6ad9c53685ca8a/numpy/distutils/command/config.py", line 19, in <module>
-          from numpy.distutils.mingw32ccompiler import generate_manifest
-        File "/tmp/pip-install-aygz4o23/numpy_999fd35efb1846799c6ad9c53685ca8a/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
-          from distutils.msvccompiler import get_build_version as get_build_msvc_version
-      ModuleNotFoundError: No module named 'distutils.msvccompiler'
-      [end of output]
-  
-  note: This error originates from a subprocess, and is likely not a problem with pip.
-error: metadata-generation-failed
-
-× Encountered error while generating package metadata.
-╰─> See above for output.
-
-note: This is an issue with the package mentioned above, not pip.
-hint: See above for details.
-Command failed with exit code 1
+Remove directory C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-pytorch_alexnet_inference
 
 
 ==================================================
@@ -2720,18 +2684,18 @@ Command failed with exit code 1
 <summary>Log for pytorch_alexnet_inference on windows-x86 default</summary>
 
 ```
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-lu_2gm7t\overlay\Lib\site-packages\setuptools\build_meta.py", line 320, in run_setup
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-build-env-8hucomli\overlay\Lib\site-packages\setuptools\build_meta.py", line 320, in run_setup
       exec(code, locals())
       ~~~~^^^^^^^^^^^^^^^^
     File "<string>", line 489, in <module>
     File "<string>", line 465, in setup_package
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-bsvpzyco\numpy_b9e69894f4d745d9b8670918e1b91c04\numpy\distutils\core.py", line 24, in <module>
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-qaf0v0_q\numpy_1b9138a5bcbb4450a297b9b3096f77b3\numpy\distutils\core.py", line 24, in <module>
       from numpy.distutils.command import config, config_compiler, \
       ...<2 lines>...
            install_clib
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-bsvpzyco\numpy_b9e69894f4d745d9b8670918e1b91c04\numpy\distutils\command\config.py", line 19, in <module>
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-qaf0v0_q\numpy_1b9138a5bcbb4450a297b9b3096f77b3\numpy\distutils\command\config.py", line 19, in <module>
       from numpy.distutils.mingw32ccompiler import generate_manifest
-    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-bsvpzyco\numpy_b9e69894f4d745d9b8670918e1b91c04\numpy\distutils\mingw32ccompiler.py", line 28, in <module>
+    File "C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp\pip-install-qaf0v0_q\numpy_1b9138a5bcbb4450a297b9b3096f77b3\numpy\distutils\mingw32ccompiler.py", line 28, in <module>
       from distutils.msvccompiler import get_build_version as get_build_msvc_version
   ModuleNotFoundError: No module named 'distutils.msvccompiler'
   [end of output]
@@ -2747,15 +2711,15 @@ note: This is an issue with the package mentioned above, not pip.
 hint: See above for details.
 Command failed with exit code 1
 (falling back to unique venv)
-Creating the virtual environment C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-pytorch_alexnet_inference
-# 'C:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32\python.exe' -m venv --without-pip 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-pytorch_alexnet_inference'
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-pytorch_alexnet_inference\Scripts\python.exe' -m ensurepip -v -U
-Using pip 24.3.1 from C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpawke1q3f\pip-24.3.1-py3-none-any.whl\pip (python 3.14)
-Looking in links: c:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmpawke1q3f
-Processing c:\windows\servic~1\networ~1\appdata\local\temp\tmpawke1q3f\pip-24.3.1-py3-none-any.whl
+Creating the virtual environment C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-pytorch_alexnet_inference
+# 'C:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32\python.exe' -m venv --without-pip 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-pytorch_alexnet_inference'
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-pytorch_alexnet_inference\Scripts\python.exe' -m ensurepip -v -U
+Using pip 24.3.1 from C:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmp6_nlbef2\pip-24.3.1-py3-none-any.whl\pip (python 3.14)
+Looking in links: c:\WINDOWS\SERVIC~1\NETWOR~1\AppData\Local\Temp\tmp6_nlbef2
+Processing c:\windows\servic~1\networ~1\appdata\local\temp\tmp6_nlbef2\pip-24.3.1-py3-none-any.whl
 Installing collected packages: pip
 Successfully installed pip-24.3.1
-# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-pytorch_alexnet_inference\Scripts\python.exe' -m pip install -U 'setuptools>=18.5' wheel
+# 'C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-pytorch_alexnet_inference\Scripts\python.exe' -m pip install -U 'setuptools>=18.5' wheel
 Collecting setuptools>=18.5
   Using cached setuptools-75.8.0-py3-none-any.whl.metadata (6.7 kB)
 Collecting wheel
@@ -2763,10 +2727,10 @@ Collecting wheel
 Using cached setuptools-75.8.0-py3-none-any.whl (1.2 MB)
 Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
 Installing collected packages: wheel, setuptools
-ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: 'C:\\actions-runner\\_work\\benchmarking\\benchmarking\\venv\\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-pytorch_alexnet_inference\\Lib\\site-packages\\pkg_resources\\tests\\data\\my-test-package_unpacked-egg\\my_test_package-1.0-py3.7.egg\\EGG-INFO\\dependency_links.txt'
+ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: 'C:\\actions-runner\\_work\\benchmarking\\benchmarking\\venv\\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-pytorch_alexnet_inference\\Lib\\site-packages\\pkg_resources\\tests\\data\\my-test-package_unpacked-egg\\my_test_package-1.0-py3.7.egg\\EGG-INFO\\dependency_links.txt'
 
 Command failed with exit code 1
-Remove directory C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-pytorch_alexnet_inference
+Remove directory C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-pytorch_alexnet_inference
 
 
 ==================================================
@@ -2809,7 +2773,7 @@ Remove directory C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3
   running build_ext
   building 'greenlet._greenlet' extension
   creating build\temp.win-amd64-cpython-314\Release\src\greenlet
-  "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX86\x64\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -DWIN32=1 -IC:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-sqlalchemy_declarative\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64 -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64 "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include" "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" /EHsc /Tpsrc/greenlet/greenlet.cpp /Fobuild\temp.win-amd64-cpython-314\Release\src\greenlet\greenlet.obj /EHsr /GT
+  "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX86\x64\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -DWIN32=1 -IC:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-sqlalchemy_declarative\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64 -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64 "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include" "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" /EHsc /Tpsrc/greenlet/greenlet.cpp /Fobuild\temp.win-amd64-cpython-314\Release\src\greenlet\greenlet.obj /EHsr /GT
   greenlet.cpp
   C:\actions-runner\_work\benchmarking\benchmarking\cpython\include\internal\pycore_stackref.h(278): error C7555: use of designated initializers requires at least '/std:c++20'
   C:\actions-runner\_work\benchmarking\benchmarking\cpython\include\internal\pycore_stackref.h(278): error C2737: 'PyStackRef_NULL': const object must be initialized
@@ -2869,7 +2833,7 @@ Command failed with exit code 1
   running build_ext
   building 'greenlet._greenlet' extension
   creating build\temp.win32-cpython-314\Release\src\greenlet
-  "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX86\x86\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -DWIN32=1 -IC:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-sqlalchemy_declarative\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32 -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32 "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include" "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" /EHsc /Tpsrc/greenlet/greenlet.cpp /Fobuild\temp.win32-cpython-314\Release\src\greenlet\greenlet.obj /EHsr /GT
+  "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX86\x86\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -DWIN32=1 -IC:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-sqlalchemy_declarative\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32 -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32 "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include" "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" /EHsc /Tpsrc/greenlet/greenlet.cpp /Fobuild\temp.win32-cpython-314\Release\src\greenlet\greenlet.obj /EHsr /GT
   greenlet.cpp
   C:\actions-runner\_work\benchmarking\benchmarking\cpython\include\internal\pycore_stackref.h(278): error C7555: use of designated initializers requires at least '/std:c++20'
   C:\actions-runner\_work\benchmarking\benchmarking\cpython\include\internal\pycore_stackref.h(278): error C2737: 'PyStackRef_NULL': const object must be initialized
@@ -2929,7 +2893,7 @@ Command failed with exit code 1
   running build_ext
   building 'greenlet._greenlet' extension
   creating build\temp.win-amd64-cpython-314\Release\src\greenlet
-  "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX86\x64\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -DWIN32=1 -IC:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688-bm-sqlalchemy_imperative\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64 -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64 "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include" "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" /EHsc /Tpsrc/greenlet/greenlet.cpp /Fobuild\temp.win-amd64-cpython-314\Release\src\greenlet\greenlet.obj /EHsr /GT
+  "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX86\x64\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -DWIN32=1 -IC:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688-bm-sqlalchemy_imperative\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64 -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\amd64 "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include" "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" /EHsc /Tpsrc/greenlet/greenlet.cpp /Fobuild\temp.win-amd64-cpython-314\Release\src\greenlet\greenlet.obj /EHsr /GT
   greenlet.cpp
   C:\actions-runner\_work\benchmarking\benchmarking\cpython\include\internal\pycore_stackref.h(278): error C7555: use of designated initializers requires at least '/std:c++20'
   C:\actions-runner\_work\benchmarking\benchmarking\cpython\include\internal\pycore_stackref.h(278): error C2737: 'PyStackRef_NULL': const object must be initialized
@@ -2989,7 +2953,7 @@ Command failed with exit code 1
   running build_ext
   building 'greenlet._greenlet' extension
   creating build\temp.win32-cpython-314\Release\src\greenlet
-  "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX86\x86\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -DWIN32=1 -IC:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688-bm-sqlalchemy_imperative\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32 -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32 "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include" "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" /EHsc /Tpsrc/greenlet/greenlet.cpp /Fobuild\temp.win32-cpython-314\Release\src\greenlet\greenlet.obj /EHsr /GT
+  "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\bin\HostX86\x86\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -DWIN32=1 -IC:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688-bm-sqlalchemy_imperative\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\include -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32 -IC:\actions-runner\_work\benchmarking\benchmarking\cpython\PCBuild\win32 "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include" "-IC:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" /EHsc /Tpsrc/greenlet/greenlet.cpp /Fobuild\temp.win32-cpython-314\Release\src\greenlet\greenlet.obj /EHsr /GT
   greenlet.cpp
   C:\actions-runner\_work\benchmarking\benchmarking\cpython\include\internal\pycore_stackref.h(278): error C7555: use of designated initializers requires at least '/std:c++20'
   C:\actions-runner\_work\benchmarking\benchmarking\cpython\include\internal\pycore_stackref.h(278): error C2737: 'PyStackRef_NULL': const object must be initialized
@@ -3014,6 +2978,66 @@ Command failed with exit code 1
 
 </details>
 
+## tornado_http on darwin-arm64 default
+
+<details>
+<summary>Log for tornado_http on darwin-arm64 default</summary>
+
+```
+        sock, self._handle_connection
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/netutil.py", line 247, in add_accept_handler
+    io_loop = IOLoop.current()
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/ioloop.py", line 265, in current
+    loop = asyncio.get_event_loop()
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/asyncio/events.py", line 719, in get_event_loop
+    raise RuntimeError('There is no current event loop in thread %r.'
+                       % threading.current_thread().name)
+RuntimeError: There is no current event loop in thread 'MainThread'.
+Traceback (most recent call last):
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 102, in <module>
+    runner.bench_time_func('tornado_http', bench_tornado)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+    result = self._main(task)
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 465, in _main
+    bench = self._manager()
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 678, in _manager
+    bench = Manager(self).create_bench()
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 243, in create_bench
+    worker_bench, run = self.create_worker_bench()
+                        ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+    suite = self.create_suite()
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 132, in create_suite
+    suite = self.spawn_worker(self.calibrate_loops, 0)
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+    raise RuntimeError("%s failed with exit code %s"
+                       % (cmd[0], exitcode))
+RuntimeError: /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-5a5208f8d9a4-compat-cb6a104a6688/bin/python failed with exit code 1
+Traceback (most recent call last):
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/run.py", line 170, in run_benchmarks
+    result = bench.run(
+        bench_venv.python,
+    ...<3 lines>...
+        verbose=options.verbose,
+    )
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 189, in run
+    bench = _run_perf_script(
+        python,
+    ...<4 lines>...
+        verbose=verbose,
+    )
+  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
+    raise RuntimeError("Benchmark died")
+RuntimeError: Benchmark died
+Command failed with exit code 1
+```
+
+</details>
+
 ## tornado_http on collect-stats pystats
 
 <details>
@@ -3024,9 +3048,9 @@ Command failed with exit code 1
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     )
     ^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/netutil.py", line 247, in add_accept_handler
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/netutil.py", line 247, in add_accept_handler
     io_loop = IOLoop.current()
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/ioloop.py", line 265, in current
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/ioloop.py", line 265, in current
     loop = asyncio.get_event_loop()
   File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/asyncio/events.py", line 719, in get_event_loop
     raise RuntimeError('There is no current event loop in thread %r.'
@@ -3036,23 +3060,23 @@ Traceback (most recent call last):
   File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 102, in <module>
     runner.bench_time_func('tornado_http', bench_tornado)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-0d57dd0c23e2-compat-cb6a104a6688/bin/python failed with exit code 1
+RuntimeError: /home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-566f0849c7c1-compat-cb6a104a6688/bin/python failed with exit code 1
 Traceback (most recent call last):
   File "/home/mdboom/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3083,16 +3107,16 @@ Python benchmark suite 1.11.0
   File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 54, in make_http_server
     server.add_sockets(sockets)
     ~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/tcpserver.py", line 204, in add_sockets
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/tcpserver.py", line 204, in add_sockets
     self._handlers[sock.fileno()] = add_accept_handler(
                                     ~~~~~~~~~~~~~~~~~~^
         sock, self._handle_connection
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     )
     ^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/netutil.py", line 247, in add_accept_handler
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/netutil.py", line 247, in add_accept_handler
     io_loop = IOLoop.current()
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/ioloop.py", line 265, in current
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/ioloop.py", line 265, in current
     loop = asyncio.get_event_loop()
   File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/asyncio/events.py", line 719, in get_event_loop
     raise RuntimeError('There is no current event loop in thread %r.'
@@ -3102,23 +3126,23 @@ Traceback (most recent call last):
   File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 102, in <module>
     runner.bench_time_func('tornado_http', bench_tornado)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-1bbac01bddc6-compat-cb6a104a6688/bin/python failed with exit code 1
+RuntimeError: /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-2eda947b77c5-compat-cb6a104a6688/bin/python failed with exit code 1
 Traceback (most recent call last):
   File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3134,59 +3158,59 @@ Command failed with exit code 1
 
 </details>
 
-## tornado_http on darwin-arm64 default
+## tornado_http on linux-x86_64 default
 
 <details>
-<summary>Log for tornado_http on darwin-arm64 default</summary>
+<summary>Log for tornado_http on linux-x86_64 default</summary>
 
 ```
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 54, in make_http_server
+    server.add_sockets(sockets)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/tcpserver.py", line 204, in add_sockets
+    self._handlers[sock.fileno()] = add_accept_handler(
+                                    ~~~~~~~~~~~~~~~~~~^
         sock, self._handle_connection
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     )
     ^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/netutil.py", line 247, in add_accept_handler
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/netutil.py", line 247, in add_accept_handler
     io_loop = IOLoop.current()
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/ioloop.py", line 265, in current
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/ioloop.py", line 265, in current
     loop = asyncio.get_event_loop()
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/asyncio/events.py", line 719, in get_event_loop
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/asyncio/events.py", line 719, in get_event_loop
     raise RuntimeError('There is no current event loop in thread %r.'
                        % threading.current_thread().name)
 RuntimeError: There is no current event loop in thread 'MainThread'.
 Traceback (most recent call last):
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 102, in <module>
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 102, in <module>
     runner.bench_time_func('tornado_http', bench_tornado)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-f0f9f90e3807-compat-cb6a104a6688/bin/python failed with exit code 1
+RuntimeError: /home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-e330b1bcb589-compat-cb6a104a6688/bin/python failed with exit code 1
 Traceback (most recent call last):
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/run.py", line 170, in run_benchmarks
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
-        bench_venv.python,
-    ...<3 lines>...
-        verbose=options.verbose,
-    )
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 189, in run
+             ^^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
     bench = _run_perf_script(
-        python,
-    ...<4 lines>...
-        verbose=verbose,
-    )
-  File "/Users/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.13/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
+            ^^^^^^^^^^^^^^^^^
+  File "/home/ddfun/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
     raise RuntimeError("Benchmark died")
 RuntimeError: Benchmark died
 Command failed with exit code 1
@@ -3203,16 +3227,16 @@ Command failed with exit code 1
   File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\data-files\benchmarks\bm_tornado_http\run_benchmark.py", line 54, in make_http_server
     server.add_sockets(sockets)
     ~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\tornado\tcpserver.py", line 204, in add_sockets
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Lib\site-packages\tornado\tcpserver.py", line 204, in add_sockets
     self._handlers[sock.fileno()] = add_accept_handler(
                                     ~~~~~~~~~~~~~~~~~~^
         sock, self._handle_connection
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     )
     ^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\tornado\netutil.py", line 247, in add_accept_handler
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Lib\site-packages\tornado\netutil.py", line 247, in add_accept_handler
     io_loop = IOLoop.current()
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\tornado\ioloop.py", line 265, in current
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Lib\site-packages\tornado\ioloop.py", line 265, in current
     loop = asyncio.get_event_loop()
   File "C:\actions-runner\_work\benchmarking\benchmarking\cpython\Lib\asyncio\events.py", line 719, in get_event_loop
     raise RuntimeError('There is no current event loop in thread %r.'
@@ -3222,23 +3246,23 @@ Traceback (most recent call last):
   File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\data-files\benchmarks\bm_tornado_http\run_benchmark.py", line 102, in <module>
     runner.bench_time_func('tornado_http', bench_tornado)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\pyperf\_runner.py", line 499, in bench_time_func
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Lib\site-packages\pyperf\_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\pyperf\_runner.py", line 465, in _main
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Lib\site-packages\pyperf\_runner.py", line 465, in _main
     bench = self._manager()
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\pyperf\_runner.py", line 678, in _manager
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Lib\site-packages\pyperf\_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 243, in create_bench
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 142, in create_worker_bench
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 132, in create_suite
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 118, in spawn_worker
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-81fae27ee7dd-compat-cb6a104a6688\Scripts\python.exe failed with exit code 1
+RuntimeError: C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-64e4aa605b10-compat-cb6a104a6688\Scripts\python.exe failed with exit code 1
 Traceback (most recent call last):
   File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3247,66 +3271,6 @@ Traceback (most recent call last):
     bench = _run_perf_script(
             ^^^^^^^^^^^^^^^^^
   File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
-Command failed with exit code 1
-```
-
-</details>
-
-## tornado_http on linux-x86_64 default
-
-<details>
-<summary>Log for tornado_http on linux-x86_64 default</summary>
-
-```
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 54, in make_http_server
-    server.add_sockets(sockets)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/tcpserver.py", line 204, in add_sockets
-    self._handlers[sock.fileno()] = add_accept_handler(
-                                    ~~~~~~~~~~~~~~~~~~^
-        sock, self._handle_connection
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/netutil.py", line 247, in add_accept_handler
-    io_loop = IOLoop.current()
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/tornado/ioloop.py", line 265, in current
-    loop = asyncio.get_event_loop()
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/cpython/Lib/asyncio/events.py", line 719, in get_event_loop
-    raise RuntimeError('There is no current event loop in thread %r.'
-                       % threading.current_thread().name)
-RuntimeError: There is no current event loop in thread 'MainThread'.
-Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 102, in <module>
-    runner.bench_time_func('tornado_http', bench_tornado)
-    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 499, in bench_time_func
-    result = self._main(task)
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 465, in _main
-    bench = self._manager()
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_runner.py", line 678, in _manager
-    bench = Manager(self).create_bench()
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 243, in create_bench
-    worker_bench, run = self.create_worker_bench()
-                        ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
-    suite = self.create_suite()
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 132, in create_suite
-    suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/lib/python3.14/site-packages/pyperf/_manager.py", line 118, in spawn_worker
-    raise RuntimeError("%s failed with exit code %s"
-                       % (cmd[0], exitcode))
-RuntimeError: /home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/cpython3.14-b8f83472b670-compat-cb6a104a6688/bin/python failed with exit code 1
-Traceback (most recent call last):
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-             ^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-            ^^^^^^^^^^^^^^^^^
-  File "/home/benchmarking/actions-runner/_work/benchmarking/benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
     raise RuntimeError("Benchmark died")
 RuntimeError: Benchmark died
 Command failed with exit code 1
@@ -3323,16 +3287,16 @@ Command failed with exit code 1
   File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\data-files\benchmarks\bm_tornado_http\run_benchmark.py", line 54, in make_http_server
     server.add_sockets(sockets)
     ~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\tornado\tcpserver.py", line 204, in add_sockets
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\tornado\tcpserver.py", line 204, in add_sockets
     self._handlers[sock.fileno()] = add_accept_handler(
                                     ~~~~~~~~~~~~~~~~~~^
         sock, self._handle_connection
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     )
     ^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\tornado\netutil.py", line 247, in add_accept_handler
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\tornado\netutil.py", line 247, in add_accept_handler
     io_loop = IOLoop.current()
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\tornado\ioloop.py", line 265, in current
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\tornado\ioloop.py", line 265, in current
     loop = asyncio.get_event_loop()
   File "C:\actions-runner\_work\benchmarking\benchmarking\cpython\Lib\asyncio\events.py", line 719, in get_event_loop
     raise RuntimeError('There is no current event loop in thread %r.'
@@ -3342,23 +3306,23 @@ Traceback (most recent call last):
   File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\data-files\benchmarks\bm_tornado_http\run_benchmark.py", line 102, in <module>
     runner.bench_time_func('tornado_http', bench_tornado)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\pyperf\_runner.py", line 499, in bench_time_func
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\pyperf\_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\pyperf\_runner.py", line 465, in _main
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\pyperf\_runner.py", line 465, in _main
     bench = self._manager()
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\pyperf\_runner.py", line 678, in _manager
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\pyperf\_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 243, in create_bench
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 142, in create_worker_bench
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 132, in create_suite
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 118, in spawn_worker
+  File "C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Lib\site-packages\pyperf\_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-89a32d3d62d8-compat-cb6a104a6688\Scripts\python.exe failed with exit code 1
+RuntimeError: C:\actions-runner\_work\benchmarking\benchmarking\venv\cpython3.14-1b395caa47fe-compat-cb6a104a6688\Scripts\python.exe failed with exit code 1
 Traceback (most recent call last):
   File "C:\actions-runner\_work\benchmarking\benchmarking\venv\Lib\site-packages\pyperformance\run.py", line 170, in run_benchmarks
     result = bench.run(

@@ -1,21 +1,21 @@
 # Results
 
-- fork: python/v3.12.0b1
+- fork: python/5612078f68e9688fbf3b
 - version: 3.12.0b1
 - config: 
 - commit hash: [5612078](https://github.com/python/cpython/commit/5612078)
 - commit date: 2023-05-22T14:07:36+02:00
-- fork: python/5612078f68e9688fbf3b
 - commit merge base: [5360cb3d5608ab375de6cd8c0b408459f3fa953a](https://github.com/python/cpython/commit/5360cb3d5608ab375de6cd8c0b408459f3fa953a)
+- fork: python/v3.12.0b1
 - ref: 5612078f68e9688fbf3b, v3.12.0b1
 
 ## linux x86_64 (linux)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5246839304)
-- cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
-- platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/10941608962)
+- cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-193-generic-x86_64-with-glibc2.31
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/5246839304)
+- platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
 - [raw results](bm-20230522-linux-x86_64-python-5612078f68e9688fbf3b-3.12.0b1-5612078.json)
 - [raw results](bm-20230522-linux-x86_64-python-v3.12.0b1-3.12.0b1-5612078.json)
 

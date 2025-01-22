@@ -13,6 +13,10 @@
 - [pystats raw](bm-20250121-azure-x86_64-brandtbucher-remove_optimizer_api-3.14.0a4%2B-085e172-pystats.json)
 - [pystats table](bm-20250121-azure-x86_64-brandtbucher-remove_optimizer_api-3.14.0a4%2B-085e172-pystats.md)
 
+### vs. base
+
+- [pystats diff](bm-20250121-azure-x86_64-brandtbucher-remove_optimizer_api-3.14.0a4%2B-085e172-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12900857584)

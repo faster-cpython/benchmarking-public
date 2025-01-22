@@ -13,6 +13,10 @@
 - [pystats raw](bm-20250122-azure-x86_64-python-86c1a60d5a28cfb51f88-3.14.0a4%2B-86c1a60-pystats.json)
 - [pystats table](bm-20250122-azure-x86_64-python-86c1a60d5a28cfb51f88-3.14.0a4%2B-86c1a60-pystats.md)
 
+### vs. base
+
+- [pystats diff](bm-20250122-azure-x86_64-python-86c1a60d5a28cfb51f88-3.14.0a4%2B-86c1a60-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12900853590)

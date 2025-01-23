@@ -13,6 +13,10 @@
 - [pystats raw](bm-20250123-azure-x86_64-faster%252dcpython-remove_most_conditio-3.14.0a4%2B-584015a-pystats.json)
 - [pystats table](bm-20250123-azure-x86_64-faster%252dcpython-remove_most_conditio-3.14.0a4%2B-584015a-pystats.md)
 
+### vs. base
+
+- [pystats diff](bm-20250123-azure-x86_64-faster%252dcpython-remove_most_conditio-3.14.0a4%2B-584015a-pystats-vs-base.md)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12931778503)

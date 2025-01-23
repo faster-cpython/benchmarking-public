@@ -8,6 +8,48 @@
 - commit merge base: [f18b2264929c56360c868d7ad77508035d751352](https://github.com/python/cpython/commit/f18b2264929c56360c868d7ad77508035d751352)
 - ref: aa_test_2025_2
 
+## linux aarch64 (arminc)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12935113701)
+- cpu model: missing
+- platform: Linux-5.15.0-101-generic-aarch64-with-glibc2.35
+- [raw results](bm-20250123-arminc-aarch64-mdboom-aa_test_2025_2-3.14.0a4%2B-8ffb2c1.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.086x faster (HPT: reliability of 99.51%, 1.00x faster at 99th %ile)
+- Memory usage: 1.56x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpickle, unpickle_list
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
+- [📄table](bm-20250123-arminc-aarch64-mdboom-aa_test_2025_2-3.14.0a4%2B-8ffb2c1-vs-3.10.4.md)
+- [📈time plot](bm-20250123-arminc-aarch64-mdboom-aa_test_2025_2-3.14.0a4%2B-8ffb2c1-vs-3.10.4.svg)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.136x slower (HPT: reliability of 100.00%, 1.11x slower at 99th %ile)
+- Memory usage: 1.25x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, gunicorn, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpickle, unpickle_list
+- new benchmarks: bpe_tokeniser, connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
+- [📄table](bm-20250123-arminc-aarch64-mdboom-aa_test_2025_2-3.14.0a4%2B-8ffb2c1-vs-3.12.0.md)
+- [📈time plot](bm-20250123-arminc-aarch64-mdboom-aa_test_2025_2-3.14.0a4%2B-8ffb2c1-vs-3.12.0.svg)
+
+### vs. 3.13.0
+
+- Geometric mean: 1.137x slower (HPT: reliability of 100.00%, 1.10x slower at 99th %ile)
+- Memory usage: 1.22x
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http
+- new benchmarks: dulwich_log
+- [📄table](bm-20250123-arminc-aarch64-mdboom-aa_test_2025_2-3.14.0a4%2B-8ffb2c1-vs-3.13.0.md)
+- [📈time plot](bm-20250123-arminc-aarch64-mdboom-aa_test_2025_2-3.14.0a4%2B-8ffb2c1-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.001x faster (HPT: reliability of 99.85%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250123-arminc-aarch64-mdboom-aa_test_2025_2-3.14.0a4%2B-8ffb2c1-vs-base-mem.svg)
+- [📄table](bm-20250123-arminc-aarch64-mdboom-aa_test_2025_2-3.14.0a4%2B-8ffb2c1-vs-base.md)
+- [📈time plot](bm-20250123-arminc-aarch64-mdboom-aa_test_2025_2-3.14.0a4%2B-8ffb2c1-vs-base.svg)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12935113701)

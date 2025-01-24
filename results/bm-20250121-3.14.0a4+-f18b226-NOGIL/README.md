@@ -10,7 +10,7 @@
 
 ## linux aarch64 (arminc)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12909106070)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12935113701)
 - cpu model: missing
 - platform: Linux-5.15.0-101-generic-aarch64-with-glibc2.35
 - [raw results](bm-20250121-arminc-aarch64-python-f18b2264929c56360c86-3.14.0a4%2B-f18b226.json)

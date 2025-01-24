@@ -41,6 +41,15 @@
 - [📄table](bm-20250122-linux-x86_64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-3.13.0.md)
 - [📈time plot](bm-20250122-linux-x86_64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.003x slower (HPT: reliability of 57.43%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- missing benchmarks: 🔴 xml_etree_generate, xml_etree_iterparse, xml_etree_parse, xml_etree_process
+- [🧠memory plot](bm-20250122-linux-x86_64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-base-mem.svg)
+- [📄table](bm-20250122-linux-x86_64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-base.md)
+- [📈time plot](bm-20250122-linux-x86_64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-base.svg)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12939809594)
@@ -73,6 +82,15 @@
 - missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http, xml_etree_generate, xml_etree_iterparse, xml_etree_parse, xml_etree_process
 - [📄table](bm-20250122-pythonperf2-x86_64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-3.13.0.md)
 - [📈time plot](bm-20250122-pythonperf2-x86_64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.003x slower (HPT: reliability of 89.40%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
+- missing benchmarks: 🔴 xml_etree_generate, xml_etree_iterparse, xml_etree_parse, xml_etree_process
+- [🧠memory plot](bm-20250122-pythonperf2-x86_64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-base-mem.svg)
+- [📄table](bm-20250122-pythonperf2-x86_64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-base.md)
+- [📈time plot](bm-20250122-pythonperf2-x86_64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-base.svg)
 
 ## darwin arm64 (darwin)
 

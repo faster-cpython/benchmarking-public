@@ -8,6 +8,49 @@
 - commit merge base: [3829104ab412a47bf3f36b8c133c886d2cc9a6d4](https://github.com/python/cpython/commit/3829104ab412a47bf3f36b8c133c886d2cc9a6d4)
 - ref: 1b4e8c39e99ce39b39c7
 
+## linux aarch64 (arminc)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12939809594)
+- cpu model: missing
+- platform: Linux-5.15.0-101-generic-aarch64-with-glibc2.35
+- [raw results](bm-20250122-arminc-aarch64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.093x faster (HPT: reliability of 99.83%, 1.01x faster at 99th %ile)
+- Memory usage: 1.57x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpickle, unpickle_list, xml_etree_generate, xml_etree_iterparse, xml_etree_parse, xml_etree_process
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
+- [📄table](bm-20250122-arminc-aarch64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-3.10.4.md)
+- [📈time plot](bm-20250122-arminc-aarch64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-3.10.4.svg)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.134x slower (HPT: reliability of 100.00%, 1.12x slower at 99th %ile)
+- Memory usage: 1.26x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, gunicorn, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpickle, unpickle_list, xml_etree_generate, xml_etree_iterparse, xml_etree_parse, xml_etree_process
+- new benchmarks: bpe_tokeniser, connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
+- [📄table](bm-20250122-arminc-aarch64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-3.12.0.md)
+- [📈time plot](bm-20250122-arminc-aarch64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-3.12.0.svg)
+
+### vs. 3.13.0
+
+- Geometric mean: 1.137x slower (HPT: reliability of 100.00%, 1.10x slower at 99th %ile)
+- Memory usage: 1.23x
+- missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http, xml_etree_generate, xml_etree_iterparse, xml_etree_parse, xml_etree_process
+- new benchmarks: dulwich_log
+- [📄table](bm-20250122-arminc-aarch64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-3.13.0.md)
+- [📈time plot](bm-20250122-arminc-aarch64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.001x slower (HPT: reliability of 97.17%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
+- missing benchmarks: 🔴 xml_etree_generate, xml_etree_iterparse, xml_etree_parse, xml_etree_process
+- [🧠memory plot](bm-20250122-arminc-aarch64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-base-mem.svg)
+- [📄table](bm-20250122-arminc-aarch64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-base.md)
+- [📈time plot](bm-20250122-arminc-aarch64-nascheme-1b4e8c39e99ce39b39c7-3.14.0a4%2B-1b4e8c3-vs-base.svg)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/12939809594)

@@ -41,3 +41,11 @@
 - [📄table](bm-20250127-linux-x86_64-eendebakpt-pycfunctionobject_fr-3.14.0a4%2B-7a165db-vs-3.13.0.md)
 - [📈time plot](bm-20250127-linux-x86_64-eendebakpt-pycfunctionobject_fr-3.14.0a4%2B-7a165db-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.003x faster (HPT: reliability of 97.49%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250127-linux-x86_64-eendebakpt-pycfunctionobject_fr-3.14.0a4%2B-7a165db-vs-base-mem.svg)
+- [📄table](bm-20250127-linux-x86_64-eendebakpt-pycfunctionobject_fr-3.14.0a4%2B-7a165db-vs-base.md)
+- [📈time plot](bm-20250127-linux-x86_64-eendebakpt-pycfunctionobject_fr-3.14.0a4%2B-7a165db-vs-base.svg)
+

@@ -13,6 +13,10 @@
 - [pystats raw](bm-20250127-azure-x86_64-eendebakpt-iterator_freelists-3.14.0a4%2B-b2dd84b-pystats.json)
 - [pystats table](bm-20250127-azure-x86_64-eendebakpt-iterator_freelists-3.14.0a4%2B-b2dd84b-pystats.md)
 
+### vs. base
+
+- [pystats diff](bm-20250127-azure-x86_64-eendebakpt-iterator_freelists-3.14.0a4%2B-b2dd84b-pystats-vs-base.md)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13009997240)

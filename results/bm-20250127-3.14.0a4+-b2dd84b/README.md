@@ -8,6 +8,11 @@
 - commit merge base: [7ec17429d462aee071c067e3b84c8a7e4fcf7263](https://github.com/python/cpython/commit/7ec17429d462aee071c067e3b84c8a7e4fcf7263)
 - ref: iterator_freelists
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250127-azure-x86_64-eendebakpt-iterator_freelists-3.14.0a4%2B-b2dd84b-pystats.json)
+- [pystats table](bm-20250127-azure-x86_64-eendebakpt-iterator_freelists-3.14.0a4%2B-b2dd84b-pystats.md)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13009997240)
@@ -80,4 +85,12 @@
 - missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http
 - [📄table](bm-20250127-darwin-arm64-eendebakpt-iterator_freelists-3.14.0a4%2B-b2dd84b-vs-3.13.0.md)
 - [📈time plot](bm-20250127-darwin-arm64-eendebakpt-iterator_freelists-3.14.0a4%2B-b2dd84b-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.003x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250127-darwin-arm64-eendebakpt-iterator_freelists-3.14.0a4%2B-b2dd84b-vs-base-mem.svg)
+- [📄table](bm-20250127-darwin-arm64-eendebakpt-iterator_freelists-3.14.0a4%2B-b2dd84b-vs-base.md)
+- [📈time plot](bm-20250127-darwin-arm64-eendebakpt-iterator_freelists-3.14.0a4%2B-b2dd84b-vs-base.svg)
 

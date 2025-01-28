@@ -82,3 +82,10 @@
 - [📄table](bm-20250128-pythonperf1-amd64-faster%252dcpython-close_escapes_2-3.14.0a4%2B-fa5c6fd-vs-3.13.0.md)
 - [📈time plot](bm-20250128-pythonperf1-amd64-faster%252dcpython-close_escapes_2-3.14.0a4%2B-fa5c6fd-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.007x slower (HPT: reliability of 99.94%, 1.00x slower at 99th %ile)
+- Memory usage: unknown
+- [📄table](bm-20250128-pythonperf1-amd64-faster%252dcpython-close_escapes_2-3.14.0a4%2B-fa5c6fd-vs-base.md)
+- [📈time plot](bm-20250128-pythonperf1-amd64-faster%252dcpython-close_escapes_2-3.14.0a4%2B-fa5c6fd-vs-base.svg)
+

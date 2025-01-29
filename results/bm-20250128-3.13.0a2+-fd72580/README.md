@@ -41,3 +41,11 @@
 - [📄table](bm-20250128-linux-x86_64-mdboom-specialize_compact_i-3.13.0a2%2B-fd72580-vs-3.13.0.md)
 - [📈time plot](bm-20250128-linux-x86_64-mdboom-specialize_compact_i-3.13.0a2%2B-fd72580-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.002x slower (HPT: reliability of 50.59%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250128-linux-x86_64-mdboom-specialize_compact_i-3.13.0a2%2B-fd72580-vs-base-mem.svg)
+- [📄table](bm-20250128-linux-x86_64-mdboom-specialize_compact_i-3.13.0a2%2B-fd72580-vs-base.md)
+- [📈time plot](bm-20250128-linux-x86_64-mdboom-specialize_compact_i-3.13.0a2%2B-fd72580-vs-base.svg)
+

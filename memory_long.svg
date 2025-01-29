@@ -685,11 +685,12 @@
 <use transform="translate(223)" xlink:href="#h"/>
 </g>
 <g stroke="#1f77b4" stroke-opacity=".9">
-<path d="m70.6 637 29.2-230 28.4 216 80.4-14.4 41.7-14.4h37.7l81.1-57.6v0h40.5l61.4-14.4 19.2 14.4h53.3l34.7 14.4 8.79-144h82.6" clip-path="url(#o)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
+<path d="m70.6 637 29.2-230 28.4 216 13.2-216 67.2 202 41.7-14.4h37.7l81.1-57.6v0h40.5l61.4-14.4 19.2 14.4h53.3l34.7 14.4 8.79-144h82.6" clip-path="url(#o)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
 <g clip-path="url(#o)" fill="#1f77b4" fill-opacity=".9">
 <use x="70.590129" y="636.506246" xlink:href="#a"/>
 <use x="99.752079" y="406.033466" xlink:href="#a"/>
 <use x="128.133114" y="622.101697" xlink:href="#a"/>
+<use x="141.331571" y="406.033466" xlink:href="#a"/>
 <use x="208.540578" y="607.697149" xlink:href="#a"/>
 <use x="250.23589" y="593.2926" xlink:href="#a"/>
 <use x="287.93386" y="593.2926" xlink:href="#a"/>

@@ -41,6 +41,14 @@
 - [📄table](bm-20250129-pythonperf2-x86_64-faster%252dcpython-close_escapes_2-3.14.0a4%2B-620dde2-vs-3.13.0.md)
 - [📈time plot](bm-20250129-pythonperf2-x86_64-faster%252dcpython-close_escapes_2-3.14.0a4%2B-620dde2-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.002x faster (HPT: reliability of 86.73%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250129-pythonperf2-x86_64-faster%252dcpython-close_escapes_2-3.14.0a4%2B-620dde2-vs-base-mem.svg)
+- [📄table](bm-20250129-pythonperf2-x86_64-faster%252dcpython-close_escapes_2-3.14.0a4%2B-620dde2-vs-base.md)
+- [📈time plot](bm-20250129-pythonperf2-x86_64-faster%252dcpython-close_escapes_2-3.14.0a4%2B-620dde2-vs-base.svg)
+
 ## windows x86 (pythonperf1_win32)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13031160420)

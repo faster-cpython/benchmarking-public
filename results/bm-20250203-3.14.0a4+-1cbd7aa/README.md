@@ -41,3 +41,11 @@
 - [📄table](bm-20250203-pythonperf2-x86_64-mdboom-specialize_compact_i-3.14.0a4%2B-1cbd7aa-vs-3.13.0.md)
 - [📈time plot](bm-20250203-pythonperf2-x86_64-mdboom-specialize_compact_i-3.14.0a4%2B-1cbd7aa-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.001x faster (HPT: reliability of 64.72%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250203-pythonperf2-x86_64-mdboom-specialize_compact_i-3.14.0a4%2B-1cbd7aa-vs-base-mem.svg)
+- [📄table](bm-20250203-pythonperf2-x86_64-mdboom-specialize_compact_i-3.14.0a4%2B-1cbd7aa-vs-base.md)
+- [📈time plot](bm-20250203-pythonperf2-x86_64-mdboom-specialize_compact_i-3.14.0a4%2B-1cbd7aa-vs-base.svg)
+

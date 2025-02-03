@@ -134,3 +134,46 @@
 - [📄table](bm-20250201-pythonperf2-x86_64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-base.md)
 - [📈time plot](bm-20250201-pythonperf2-x86_64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-base.svg)
 
+## darwin arm64 (darwin)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13093635868)
+- cpu model: missing
+- platform: macOS-15.3-arm64-arm-64bit-Mach-O
+- [raw results](bm-20250201-darwin-arm64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.324x faster (HPT: reliability of 100.00%, 1.16x faster at 99th %ile)
+- Memory usage: 1.29x
+- missing benchmarks: chameleon, dask, djangocms, gevent_hub, tornado_http
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io_tg, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20250201-darwin-arm64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-3.10.4.md)
+- [📈time plot](bm-20250201-darwin-arm64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-3.10.4.svg)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.051x faster (HPT: reliability of 72.17%, 1.00x faster at 99th %ile)
+- Memory usage: 1.21x
+- missing benchmarks: chameleon, dask, djangocms, gevent_hub, gunicorn, tornado_http
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20250201-darwin-arm64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-3.12.0.md)
+- [📈time plot](bm-20250201-darwin-arm64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-3.12.0.svg)
+
+### vs. 3.13.0
+
+- Geometric mean: 1.055x faster (HPT: reliability of 99.71%, 1.00x faster at 99th %ile)
+- Memory usage: 1.20x
+- missing benchmarks: chameleon, dask, djangocms, gevent_hub, gunicorn, tornado_http
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20250201-darwin-arm64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-3.13.0.md)
+- [📈time plot](bm-20250201-darwin-arm64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.053x slower (HPT: reliability of 99.99%, 1.03x slower at 99th %ile)
+- Memory usage: 1.13x
+- missing benchmarks: 🔴 dask
+- [🧠memory plot](bm-20250201-darwin-arm64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-base-mem.svg)
+- [📄table](bm-20250201-darwin-arm64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-base.md)
+- [📈time plot](bm-20250201-darwin-arm64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-base.svg)
+

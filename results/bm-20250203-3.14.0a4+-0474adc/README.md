@@ -8,6 +8,15 @@
 - commit merge base: [5ab9604683a58e613c6eba309ed89ed2092e3e2d](https://github.com/python/cpython/commit/5ab9604683a58e613c6eba309ed89ed2092e3e2d)
 - ref: binary_subscr_to_op
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250203-azure-x86_64-iritkatriel-binary_subscr_to_op-3.14.0a4%2B-0474adc-pystats.json)
+- [pystats table](bm-20250203-azure-x86_64-iritkatriel-binary_subscr_to_op-3.14.0a4%2B-0474adc-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20250203-azure-x86_64-iritkatriel-binary_subscr_to_op-3.14.0a4%2B-0474adc-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13125128215)
@@ -40,4 +49,12 @@
 - missing benchmarks: chameleon, djangocms, gevent_hub, gunicorn, tornado_http
 - [📄table](bm-20250203-linux-x86_64-iritkatriel-binary_subscr_to_op-3.14.0a4%2B-0474adc-vs-3.13.0.md)
 - [📈time plot](bm-20250203-linux-x86_64-iritkatriel-binary_subscr_to_op-3.14.0a4%2B-0474adc-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.007x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250203-linux-x86_64-iritkatriel-binary_subscr_to_op-3.14.0a4%2B-0474adc-vs-base-mem.svg)
+- [📄table](bm-20250203-linux-x86_64-iritkatriel-binary_subscr_to_op-3.14.0a4%2B-0474adc-vs-base.md)
+- [📈time plot](bm-20250203-linux-x86_64-iritkatriel-binary_subscr_to_op-3.14.0a4%2B-0474adc-vs-base.svg)
 

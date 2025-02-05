@@ -8,6 +8,15 @@
 - commit merge base: [bb5c6875d6e84bf2b4e134ed482141a51d223f09](https://github.com/python/cpython/commit/bb5c6875d6e84bf2b4e134ed482141a51d223f09)
 - ref: no_generators_alt_al
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250204-azure-x86_64-brandtbucher-no_generators_alt_al-3.14.0a4%2B-c28475f-pystats.json)
+- [pystats table](bm-20250204-azure-x86_64-brandtbucher-no_generators_alt_al-3.14.0a4%2B-c28475f-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20250204-azure-x86_64-brandtbucher-no_generators_alt_al-3.14.0a4%2B-c28475f-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13146612206)

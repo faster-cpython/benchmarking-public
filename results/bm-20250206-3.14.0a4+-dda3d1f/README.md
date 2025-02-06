@@ -8,6 +8,15 @@
 - commit merge base: [cdcacec79f7a216c3c988baa4dc31ce4e76c97ac](https://github.com/python/cpython/commit/cdcacec79f7a216c3c988baa4dc31ce4e76c97ac)
 - ref: binary_subscr_to_op
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250206-azure-x86_64-iritkatriel-binary_subscr_to_op-3.14.0a4%2B-dda3d1f-pystats.json)
+- [pystats table](bm-20250206-azure-x86_64-iritkatriel-binary_subscr_to_op-3.14.0a4%2B-dda3d1f-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20250206-azure-x86_64-iritkatriel-binary_subscr_to_op-3.14.0a4%2B-dda3d1f-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/13181958329)

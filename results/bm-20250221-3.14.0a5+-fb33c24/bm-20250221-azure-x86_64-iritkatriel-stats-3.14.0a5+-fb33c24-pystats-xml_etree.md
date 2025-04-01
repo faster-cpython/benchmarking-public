@@ -10810,88 +10810,6 @@ specialized instruction deoptimizes.
 
 </details>
 
-### CALL_LIST_APPEND
-
-<details>
-<summary> Successors and predecessors for CALL_LIST_APPEND </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_FAST</td>
-<td align="right">653,086</td>
-<td align="right">99.9%</td>
-</tr>
-<tr>
-<td align="left">RETURN_VALUE</td>
-<td align="right">644</td>
-<td align="right">0.1%</td>
-</tr>
-<tr>
-<td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">8</td>
-<td align="right">0.0%</td>
-</tr>
-<tr>
-<td align="left">LOAD_FAST_CHECK</td>
-<td align="right">4</td>
-<td align="right">0.0%</td>
-</tr>
-<tr>
-<td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">4</td>
-<td align="right">0.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">653,694</td>
-<td align="right">100.0%</td>
-</tr>
-<tr>
-<td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">36</td>
-<td align="right">0.0%</td>
-</tr>
-<tr>
-<td align="left">NOP</td>
-<td align="right">8</td>
-<td align="right">0.0%</td>
-</tr>
-<tr>
-<td align="left">JUMP_FORWARD</td>
-<td align="right">7</td>
-<td align="right">0.0%</td>
-</tr>
-<tr>
-<td align="left">LOAD_FAST</td>
-<td align="right">4</td>
-<td align="right">0.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
 ### CLEANUP_THROW
 
 <details>
@@ -11073,6 +10991,88 @@ specialized instruction deoptimizes.
 <td align="left">PUSH_EXC_INFO</td>
 <td align="right">12</td>
 <td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### CALL_LIST_APPEND
+
+<details>
+<summary> Successors and predecessors for CALL_LIST_APPEND </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_FAST</td>
+<td align="right">653,086</td>
+<td align="right">99.9%</td>
+</tr>
+<tr>
+<td align="left">RETURN_VALUE</td>
+<td align="right">644</td>
+<td align="right">0.1%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST_IMMORTAL</td>
+<td align="right">8</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST_CHECK</td>
+<td align="right">4</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
+<td align="right">4</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">JUMP_BACKWARD_NO_JIT</td>
+<td align="right">653,694</td>
+<td align="right">100.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST_IMMORTAL</td>
+<td align="right">36</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">NOP</td>
+<td align="right">8</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">JUMP_FORWARD</td>
+<td align="right">7</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST</td>
+<td align="right">4</td>
+<td align="right">0.0%</td>
 </tr>
 </tbody>
 </table>
@@ -13739,7 +13739,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">177,295,404</td>
+<td align="right">177,295,681</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -13759,12 +13759,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">776,110,972</td>
+<td align="right">776,111,600</td>
 <td align="right">38.0%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">835,011,859</td>
+<td align="right">835,012,667</td>
 <td align="right">34.7%</td>
 </tr>
 <tr>
@@ -13779,12 +13779,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">443,363,442</td>
+<td align="right">443,364,735</td>
 <td align="right">21.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">459,841,033</td>
+<td align="right">459,842,145</td>
 <td align="right">19.1%</td>
 </tr>
 <tr>
@@ -13809,27 +13809,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">123,399,086</td>
+<td align="right">123,398,131</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">57,250</td>
+<td align="right">58,205</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">55,480</td>
+<td align="right">56,425</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">46,022,811</td>
+<td align="right">46,022,765</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">6,023</td>
+<td align="right">6,069</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -13869,10 +13869,10 @@ Collected/visits gives some measure of efficiency.
 <tr>
 <td align="right">1</td>
 <td align="right">11,968</td>
-<td align="right">25,134</td>
-<td align="right">285,518,880</td>
-<td align="right">33,535,155</td>
-<td align="right">12,824,328</td>
+<td align="right">25,054</td>
+<td align="right">286,020,199</td>
+<td align="right">33,603,819</td>
+<td align="right">12,816,095</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -14016,4 +14016,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-02-21
+Stats gathered on: 2025-04-01

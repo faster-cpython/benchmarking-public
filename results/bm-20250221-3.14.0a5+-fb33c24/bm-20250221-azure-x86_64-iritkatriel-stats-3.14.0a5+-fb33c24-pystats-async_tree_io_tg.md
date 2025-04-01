@@ -10249,7 +10249,7 @@ Specialized hits
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that complete.
 </details>
 </td>
-<td align="right">1,684,548,927</td>
+<td align="right">1,684,548,939</td>
 <td align="right">47.8%</td>
 </tr>
 <tr>
@@ -10261,7 +10261,7 @@ Specialized misses
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </details>
 </td>
-<td align="right">129,793</td>
+<td align="right">129,781</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -10363,12 +10363,12 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </tr>
 <tr>
 <td align="left">RESUME</td>
-<td align="right">14,593</td>
+<td align="right">14,581</td>
 <td align="right">10.1%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">14,593</td>
+<td align="right">14,581</td>
 <td align="right">10.1%</td>
 </tr>
 <tr>
@@ -10532,22 +10532,22 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
-<td align="right">89,113,760</td>
+<td align="right">89,113,800</td>
 <td align="right">45.7%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
-<td align="right">89,113,880</td>
+<td align="right">89,113,920</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">105,675,226</td>
+<td align="right">105,675,202</td>
 <td align="right">54.3%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
-<td align="right">105,028,786</td>
+<td align="right">105,028,762</td>
 <td align="right">53.9%</td>
 </tr>
 <tr>
@@ -10562,7 +10562,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">105,675,129</td>
+<td align="right">105,675,120</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10577,17 +10577,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
-<td align="right">1,921,767,060</td>
+<td align="right">1,921,767,100</td>
 <td align="right">64.1%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">421,712,065</td>
+<td align="right">421,712,101</td>
 <td align="right">15.6%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">511,825,276</td>
+<td align="right">511,825,301</td>
 <td align="right">17.1%</td>
 </tr>
 <tr>
@@ -10597,17 +10597,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter immortal decrefs</td>
-<td align="right">285,244,840</td>
+<td align="right">285,244,800</td>
 <td align="right">9.5%</td>
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">184,169,545</td>
+<td align="right">184,169,537</td>
 <td align="right">6.8%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">280,434,214</td>
+<td align="right">280,434,217</td>
 <td align="right">9.4%</td>
 </tr>
 <tr>
@@ -10632,27 +10632,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">42,675,429</td>
+<td align="right">42,675,421</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">331</td>
+<td align="right">339</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">408</td>
+<td align="right">428</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">44,008,499</td>
+<td align="right">44,008,481</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">101</td>
+<td align="right">119</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -10691,11 +10691,11 @@ Collected/visits gives some measure of efficiency.
 </tr>
 <tr>
 <td align="right">1</td>
-<td align="right">25,853</td>
+<td align="right">25,841</td>
 <td align="right">160</td>
-<td align="right">1,022,314,128</td>
-<td align="right">98,792,329</td>
-<td align="right">62,648,668</td>
+<td align="right">1,009,335,774</td>
+<td align="right">95,945,296</td>
+<td align="right">62,632,512</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -10839,4 +10839,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-02-21
+Stats gathered on: 2025-04-01

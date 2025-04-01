@@ -1048,7 +1048,7 @@ instruction is not counted.
 <td align="right">3,420</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
-<td align="right">180.7%</td>
+<td align="right">174.9%</td>
 </tr>
 <tr>
 <td align="left">DELETE_ATTR</td>
@@ -14820,7 +14820,7 @@ Specialized hits
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that complete.
 </details>
 </td>
-<td align="right">3,415,480,780</td>
+<td align="right">3,415,480,980</td>
 <td align="right">40.9%</td>
 </tr>
 <tr>
@@ -14832,7 +14832,7 @@ Specialized misses
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </details>
 </td>
-<td align="right">455,153,080</td>
+<td align="right">455,152,880</td>
 <td align="right">5.4%</td>
 </tr>
 </tbody>
@@ -15103,22 +15103,22 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
-<td align="right">356,605,660</td>
+<td align="right">356,789,020</td>
 <td align="right">52.9%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
-<td align="right">356,595,940</td>
+<td align="right">356,800,300</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">317,746,140</td>
+<td align="right">317,562,660</td>
 <td align="right">47.1%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
-<td align="right">316,914,660</td>
+<td align="right">316,731,180</td>
 <td align="right">47.0%</td>
 </tr>
 <tr>
@@ -15133,7 +15133,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">353,999,408</td>
+<td align="right">353,759,626</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -15144,27 +15144,27 @@ other names.
 <tr>
 <td align="left">Interpreter mortal increfs</td>
 <td align="right">3,210,715,900</td>
-<td align="right">42.1%</td>
+<td align="right">42.2%</td>
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
 <td align="right">4,048,718,280</td>
-<td align="right">47.6%</td>
+<td align="right">47.7%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">2,007,084,486</td>
+<td align="right">1,999,616,387</td>
 <td align="right">26.3%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">1,759,457,565</td>
+<td align="right">1,751,969,145</td>
 <td align="right">20.7%</td>
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
 <td align="right">970,373,880</td>
-<td align="right">12.7%</td>
+<td align="right">12.8%</td>
 </tr>
 <tr>
 <td align="left">Interpreter immortal decrefs</td>
@@ -15173,13 +15173,13 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">1,434,140,926</td>
-<td align="right">18.8%</td>
+<td align="right">1,426,140,779</td>
+<td align="right">18.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">1,359,206,807</td>
-<td align="right">16.0%</td>
+<td align="right">1,351,432,561</td>
+<td align="right">15.9%</td>
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -15203,27 +15203,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">460,492,640</td>
+<td align="right">467,950,663</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">44,055,920</td>
+<td align="right">36,597,897</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">46,537,281</td>
+<td align="right">38,888,405</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">197,493,614</td>
+<td align="right">197,684,404</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">3,242,546</td>
+<td align="right">3,051,756</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -15262,11 +15262,11 @@ Collected/visits gives some measure of efficiency.
 </tr>
 <tr>
 <td align="right">1</td>
-<td align="right">26,000</td>
-<td align="right">73,032,060</td>
-<td align="right">1,151,552,897</td>
-<td align="right">45,089,760</td>
-<td align="right">99,721,180</td>
+<td align="right">25,940</td>
+<td align="right">73,024,860</td>
+<td align="right">1,160,022,600</td>
+<td align="right">43,928,800</td>
+<td align="right">101,389,080</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -15410,4 +15410,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-02-21
+Stats gathered on: 2025-04-01

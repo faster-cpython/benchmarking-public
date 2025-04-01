@@ -6304,7 +6304,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">562,508</td>
+<td align="right">562,507</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -6315,22 +6315,22 @@ other names.
 <tr>
 <td align="left">Interpreter mortal increfs</td>
 <td align="right">886,959,400</td>
-<td align="right">61.5%</td>
+<td align="right">61.6%</td>
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
 <td align="right">980,728,920</td>
-<td align="right">71.7%</td>
+<td align="right">71.9%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">98,237,588</td>
-<td align="right">6.8%</td>
+<td align="right">96,658,857</td>
+<td align="right">6.7%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">18,621,457</td>
-<td align="right">1.4%</td>
+<td align="right">17,042,727</td>
+<td align="right">1.2%</td>
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -6344,13 +6344,13 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">197,749,848</td>
-<td align="right">13.7%</td>
+<td align="right">196,171,117</td>
+<td align="right">13.6%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">128,709,599</td>
-<td align="right">9.4%</td>
+<td align="right">127,130,867</td>
+<td align="right">9.3%</td>
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -6374,17 +6374,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">162,349,952</td>
+<td align="right">163,928,683</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">1,578,848</td>
+<td align="right">117</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">1,578,837</td>
+<td align="right">112</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -6581,4 +6581,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-02-21
+Stats gathered on: 2025-04-01

@@ -10587,17 +10587,17 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
-<td align="right">53,827,565</td>
+<td align="right">53,827,570</td>
 <td align="right">21.7%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
-<td align="right">53,827,685</td>
+<td align="right">53,827,690</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">194,481,610</td>
+<td align="right">194,481,618</td>
 <td align="right">78.3%</td>
 </tr>
 <tr>
@@ -10607,7 +10607,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Allocations to 4 kbytes</td>
-<td align="right">2,002,410</td>
+<td align="right">2,002,418</td>
 <td align="right">0.8%</td>
 </tr>
 <tr>
@@ -10617,7 +10617,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">194,481,513</td>
+<td align="right">194,481,532</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10627,42 +10627,42 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal increfs</td>
-<td align="right">831,550,938</td>
+<td align="right">831,550,940</td>
 <td align="right">59.0%</td>
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
-<td align="right">872,622,943</td>
+<td align="right">872,622,950</td>
 <td align="right">54.9%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">156,740,494</td>
+<td align="right">156,740,544</td>
 <td align="right">11.1%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">347,971,158</td>
+<td align="right">347,971,218</td>
 <td align="right">21.9%</td>
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
-<td align="right">170,911,542</td>
+<td align="right">170,911,540</td>
 <td align="right">12.1%</td>
 </tr>
 <tr>
 <td align="left">Interpreter immortal decrefs</td>
-<td align="right">214,211,497</td>
+<td align="right">214,211,490</td>
 <td align="right">13.5%</td>
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">251,316,484</td>
+<td align="right">251,316,560</td>
 <td align="right">17.8%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">155,733,620</td>
+<td align="right">155,733,686</td>
 <td align="right">9.8%</td>
 </tr>
 <tr>
@@ -10687,27 +10687,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">30,205,622</td>
+<td align="right">30,205,568</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">238</td>
+<td align="right">292</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">297</td>
+<td align="right">362</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">2,665,069</td>
+<td align="right">2,665,060</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">91</td>
+<td align="right">100</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -10748,9 +10748,9 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">13,900</td>
 <td align="right">160</td>
-<td align="right">442,020,936</td>
-<td align="right">30,704,200</td>
-<td align="right">35,068,120</td>
+<td align="right">442,226,744</td>
+<td align="right">30,724,040</td>
+<td align="right">35,069,480</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -10894,4 +10894,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-02-21
+Stats gathered on: 2025-04-01

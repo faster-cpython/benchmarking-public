@@ -10223,7 +10223,7 @@ Specialized hits
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that complete.
 </details>
 </td>
-<td align="right">757,604,000</td>
+<td align="right">757,603,900</td>
 <td align="right">43.7%</td>
 </tr>
 <tr>
@@ -10235,7 +10235,7 @@ Specialized misses
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </details>
 </td>
-<td align="right">3,436,340</td>
+<td align="right">3,436,440</td>
 <td align="right">0.2%</td>
 </tr>
 </tbody>
@@ -10332,12 +10332,12 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </tr>
 <tr>
 <td align="left">RESUME</td>
-<td align="right">12,160</td>
+<td align="right">12,260</td>
 <td align="right">0.4%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">12,160</td>
+<td align="right">12,260</td>
 <td align="right">0.4%</td>
 </tr>
 <tr>
@@ -10536,7 +10536,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">61,926,100</td>
+<td align="right">61,927,309</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10556,12 +10556,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">153,410,952</td>
+<td align="right">153,411,003</td>
 <td align="right">12.8%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">231,817,225</td>
+<td align="right">231,818,483</td>
 <td align="right">17.1%</td>
 </tr>
 <tr>
@@ -10576,12 +10576,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">82,065,654</td>
+<td align="right">82,065,763</td>
 <td align="right">6.9%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">113,114,861</td>
+<td align="right">113,113,763</td>
 <td align="right">8.4%</td>
 </tr>
 <tr>
@@ -10606,27 +10606,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">34,720,246</td>
+<td align="right">34,720,193</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">560,154</td>
+<td align="right">560,207</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">559,083</td>
+<td align="right">559,621</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">561,051</td>
+<td align="right">561,024</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">109</td>
+<td align="right">136</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -10667,9 +10667,9 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">12,720</td>
 <td align="right">160</td>
-<td align="right">354,141,342</td>
-<td align="right">32,302,100</td>
-<td align="right">26,244,780</td>
+<td align="right">345,813,400</td>
+<td align="right">29,868,840</td>
+<td align="right">26,268,420</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -10813,4 +10813,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-02-21
+Stats gathered on: 2025-04-01

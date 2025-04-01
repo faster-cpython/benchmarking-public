@@ -11896,22 +11896,22 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
-<td align="right">92,612,184</td>
+<td align="right">92,612,205</td>
 <td align="right">52.3%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
-<td align="right">92,612,334</td>
+<td align="right">92,612,355</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">84,421,685</td>
+<td align="right">84,421,664</td>
 <td align="right">47.7%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
-<td align="right">84,400,040</td>
+<td align="right">84,400,019</td>
 <td align="right">47.7%</td>
 </tr>
 <tr>
@@ -11926,7 +11926,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">84,421,896</td>
+<td align="right">84,421,872</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -11946,12 +11946,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">954,959,789</td>
+<td align="right">954,959,865</td>
 <td align="right">22.6%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">1,044,684,808</td>
+<td align="right">1,044,684,881</td>
 <td align="right">21.3%</td>
 </tr>
 <tr>
@@ -11966,12 +11966,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">474,376,677</td>
+<td align="right">474,376,753</td>
 <td align="right">11.2%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">538,619,295</td>
+<td align="right">538,619,374</td>
 <td align="right">11.0%</td>
 </tr>
 <tr>
@@ -11996,27 +11996,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">17,700,040</td>
+<td align="right">17,699,976</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">306</td>
+<td align="right">370</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">361</td>
+<td align="right">440</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">17,194,332</td>
+<td align="right">17,194,320</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">97</td>
+<td align="right">109</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -12057,9 +12057,9 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">8,384</td>
 <td align="right">533</td>
-<td align="right">459,604,877</td>
-<td align="right">66,754,117</td>
-<td align="right">16,634,296</td>
+<td align="right">459,611,616</td>
+<td align="right">66,754,676</td>
+<td align="right">16,634,339</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -12203,4 +12203,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-02-21
+Stats gathered on: 2025-04-01

@@ -8,6 +8,15 @@
 - commit merge base: [1a9d4a1fb3d4beda7c7e8483af7c6bc7ac477e9f](https://github.com/python/cpython/commit/1a9d4a1fb3d4beda7c7e8483af7c6bc7ac477e9f)
 - ref: jit_guard_dict_tuple
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250401-azure-x86_64-brandtbucher-jit_guard_dict_tuple-3.14.0a6%2B-99d6288-pystats.json)
+- [pystats table](bm-20250401-azure-x86_64-brandtbucher-jit_guard_dict_tuple-3.14.0a6%2B-99d6288-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20250401-azure-x86_64-brandtbucher-jit_guard_dict_tuple-3.14.0a6%2B-99d6288-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14209259473)

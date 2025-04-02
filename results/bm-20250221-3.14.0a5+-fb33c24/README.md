@@ -54,8 +54,6 @@
 
 - Geometric mean: 1.008x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
 - Memory usage: 1.01x
-- missing benchmarks: 🔴 sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile
-- new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
 - [🧠memory plot](bm-20250221-linux-x86_64-iritkatriel-stats-3.14.0a5%2B-fb33c24-vs-base-mem.svg)
 - [📄table](bm-20250221-linux-x86_64-iritkatriel-stats-3.14.0a5%2B-fb33c24-vs-base.md)
 - [📈time plot](bm-20250221-linux-x86_64-iritkatriel-stats-3.14.0a5%2B-fb33c24-vs-base.svg)

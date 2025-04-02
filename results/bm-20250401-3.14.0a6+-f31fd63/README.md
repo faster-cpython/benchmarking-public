@@ -8,6 +8,15 @@
 - commit merge base: [00f0771e4dbd8c8b66b302ebc16bb21f5d46b304](https://github.com/python/cpython/commit/00f0771e4dbd8c8b66b302ebc16bb21f5d46b304)
 - ref: unbox_unsigned
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6%2B-f31fd63-pystats.json)
+- [pystats table](bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6%2B-f31fd63-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6%2B-f31fd63-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14212515183)

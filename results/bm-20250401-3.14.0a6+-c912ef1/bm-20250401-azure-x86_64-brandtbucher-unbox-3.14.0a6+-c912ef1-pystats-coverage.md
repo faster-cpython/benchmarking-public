@@ -30,7 +30,11 @@ instruction is not counted.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">73,502,550</td>
+=======
+<td align="right">73,498,074</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">17.8%</td>
 <td align="right">17.8%</td>
 <td align="right"></td>
@@ -51,14 +55,22 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">29,523,300</td>
+=======
+<td align="right">29,518,260</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">7.2%</td>
 <td align="right">53.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">29,196,360</td>
+=======
+<td align="right">29,195,460</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">7.1%</td>
 <td align="right">60.3%</td>
 <td align="right"></td>
@@ -121,7 +133,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">310,785</td>
+=======
+<td align="right">302,337</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.1%</td>
 <td align="right">99.3%</td>
 <td align="right"></td>
@@ -163,13 +179,18 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">151,905</td>
+=======
+<td align="right">150,837</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">99.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">87,560</td>
 <td align="right">0.0%</td>
 <td align="right">99.7%</td>
@@ -185,27 +206,46 @@ instruction is not counted.
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
 <td align="right">72,685</td>
+=======
+<td align="right">85,640</td>
+<td align="right">0.0%</td>
+<td align="right">99.7%</td>
+<td align="right">13.4%</td>
+</tr>
+<tr>
+<td align="left">RETURN_VALUE</td>
+<td align="right">72,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">99.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">72,000</td>
+<td align="right">71,280</td>
 <td align="right">0.0%</td>
 <td align="right">99.8%</td>
-<td align="right">0.2%</td>
+<td align="right">0.3%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">LOAD_CONST_IMMORTAL</td>
 <td align="right">55,500</td>
+=======
+<td align="left">TO_BOOL_BOOL</td>
+<td align="right">64,957</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">99.8%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">54,585</td>
+=======
+<td align="right">53,877</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">99.8%</td>
 <td align="right"></td>
@@ -226,14 +266,22 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">41,265</td>
+=======
+<td align="right">41,097</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">99.8%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">PUSH_NULL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">37,860</td>
+=======
+<td align="right">37,320</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">99.8%</td>
 <td align="right"></td>
@@ -242,12 +290,17 @@ instruction is not counted.
 <td align="left">POP_JUMP_IF_TRUE</td>
 <td align="right">32,445</td>
 <td align="right">0.0%</td>
-<td align="right">99.8%</td>
+<td align="right">99.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">CALL_ISINSTANCE</td>
 <td align="right">29,520</td>
+=======
+<td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
+<td align="right">28,017</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">99.8%</td>
 <td align="right"></td>
@@ -267,15 +320,25 @@ instruction is not counted.
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">COMPARE_OP_STR</td>
 <td align="right">25,260</td>
+=======
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">24,357</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">99.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">CALL_NON_PY_GENERAL</td>
 <td align="right">25,200</td>
+=======
+<td align="left">POP_TOP</td>
+<td align="right">24,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">99.9%</td>
 <td align="right"></td>
@@ -288,15 +351,20 @@ instruction is not counted.
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">NOP</td>
 <td align="right">20,040</td>
+=======
+<td align="left">CALL_BUILTIN_FAST_WITH_KEYWORDS</td>
+<td align="right">19,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">99.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
-<td align="left">CALL_BUILTIN_FAST_WITH_KEYWORDS</td>
-<td align="right">19,920</td>
+<td align="left">NOP</td>
+<td align="right">19,860</td>
 <td align="right">0.0%</td>
 <td align="right">99.9%</td>
 <td align="right"></td>
@@ -442,6 +510,7 @@ instruction is not counted.
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">CALL_BUILTIN_O</td>
 <td align="right">8,220</td>
 <td align="right">0.0%</td>
@@ -458,13 +527,10 @@ instruction is not counted.
 <tr>
 <td align="left">BINARY_OP_SUBSCR_DICT</td>
 <td align="right">6,600</td>
-<td align="right">0.0%</td>
-<td align="right">100.0%</td>
-<td align="right"></td>
-</tr>
-<tr>
+=======
 <td align="left">COPY_FREE_VARS</td>
 <td align="right">6,480</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
@@ -472,6 +538,18 @@ instruction is not counted.
 <tr>
 <td align="left">CALL_BUILTIN_CLASS</td>
 <td align="right">6,480</td>
+<td align="right">0.0%</td>
+<td align="right">100.0%</td>
+<td align="right"></td>
+</tr>
+<tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
+<td align="left">CALL_BUILTIN_CLASS</td>
+<td align="right">6,480</td>
+=======
+<td align="left">SWAP</td>
+<td align="right">6,420</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
@@ -505,8 +583,13 @@ instruction is not counted.
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">MAKE_FUNCTION</td>
 <td align="right">5,880</td>
+=======
+<td align="left">BUILD_MAP</td>
+<td align="right">5,580</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
@@ -528,6 +611,13 @@ instruction is not counted.
 <tr>
 <td align="left">CALL_LEN</td>
 <td align="right">5,280</td>
+<td align="right">0.0%</td>
+<td align="right">100.0%</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">STORE_FAST_LOAD_FAST</td>
+<td align="right">5,100</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
@@ -577,6 +667,7 @@ instruction is not counted.
 <tr>
 <td align="left">LOAD_ATTR_METHOD_WITH_VALUES</td>
 <td align="right">3,700</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right">14.6%</td>
@@ -584,18 +675,26 @@ instruction is not counted.
 <tr>
 <td align="left">END_FOR</td>
 <td align="right">3,600</td>
+=======
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
-<td align="right"></td>
+<td align="right">14.6%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">LOAD_COMMON_CONSTANT</td>
 <td align="right">3,600</td>
+=======
+<td align="left">CHECK_EXC_MATCH</td>
+<td align="right">3,540</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">CALL_PY_GENERAL</td>
 <td align="right">3,540</td>
 <td align="right">0.0%</td>
@@ -604,13 +703,20 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">CHECK_EXC_MATCH</td>
+=======
+<td align="left">POP_EXCEPT</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">3,540</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">POP_EXCEPT</td>
+=======
+<td align="left">PUSH_EXC_INFO</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">3,540</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
@@ -1244,19 +1350,32 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">STORE_FAST LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">77,565</td>
+=======
+<td align="right">76,317</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">148.9%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">53,460</td>
+=======
+<td align="right">52,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">148.9%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">TO_BOOL_BOOL POP_JUMP_IF_FALSE</td>
 <td align="right">47,980</td>
+=======
+<td align="left">LOAD_GLOBAL_BUILTIN LOAD_FAST</td>
+<td align="right">49,980</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">148.9%</td>
 </tr>
@@ -1268,7 +1387,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">LOAD_FAST CALL_PY_EXACT_ARGS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">43,920</td>
+=======
+<td align="right">43,560</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">148.9%</td>
 </tr>
@@ -1286,25 +1409,41 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT FOR_ITER_LIST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">34,305</td>
+=======
+<td align="right">34,137</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">149.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">33,165</td>
+=======
+<td align="right">32,997</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">149.0%</td>
 </tr>
 <tr>
 <td align="left">PUSH_NULL LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">30,300</td>
+=======
+<td align="right">29,940</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">149.0%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">28,965</td>
+=======
+<td align="right">28,797</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">149.0%</td>
 </tr>
@@ -1334,7 +1473,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">LOAD_FAST LOAD_ATTR_METHOD_NO_DICT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">24,225</td>
+=======
+<td align="right">23,877</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">149.0%</td>
 </tr>
@@ -1436,7 +1579,17 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">17,700</td>
+=======
+<td align="right">17,520</td>
+<td align="right">0.0%</td>
+<td align="right">149.1%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL_BOOL POP_JUMP_IF_TRUE</td>
+<td align="right">17,517</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">149.1%</td>
 </tr>
@@ -1454,7 +1607,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">LOAD_FAST CALL_METHOD_DESCRIPTOR_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">13,845</td>
+=======
+<td align="right">13,857</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">149.1%</td>
 </tr>
@@ -1634,7 +1791,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST TO_BOOL_BOOL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">8,745</td>
+=======
+<td align="right">8,757</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.0%</td>
 <td align="right">149.2%</td>
 </tr>
@@ -1963,6 +2124,7 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
 <td align="right">3,540</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -2005,6 +2167,8 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">POP_ITER</td>
 <td align="right">3,600</td>
+=======
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -2318,12 +2482,20 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">STORE_FAST</td>
 <td align="right">9,600</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">47.9%</td>
+=======
+<td align="right">48.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
 <td align="right">7,440</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">37.1%</td>
+=======
+<td align="right">37.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_NOT_NONE</td>
@@ -2331,6 +2503,7 @@ specialized instruction deoptimizes.
 <td align="right">5.1%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">POP_JUMP_IF_FALSE</td>
 <td align="right">780</td>
 <td align="right">3.9%</td>
@@ -2339,6 +2512,16 @@ specialized instruction deoptimizes.
 <td align="left">JUMP_FORWARD</td>
 <td align="right">660</td>
 <td align="right">3.3%</td>
+=======
+<td align="left">JUMP_FORWARD</td>
+<td align="right">660</td>
+<td align="right">3.3%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_FALSE</td>
+<td align="right">600</td>
+<td align="right">3.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 </tbody>
 </table>
@@ -2355,17 +2538,30 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">10,680</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">53.3%</td>
+=======
+<td align="right">53.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
 <td align="right">5,560</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">27.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
 <td align="right">2,520</td>
 <td align="right">12.6%</td>
+=======
+<td align="right">28.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL_MODULE</td>
+<td align="right">2,340</td>
+<td align="right">11.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
@@ -2543,6 +2739,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">8,820</td>
 <td align="right">30.9%</td>
 </tr>
@@ -2550,16 +2747,34 @@ specialized instruction deoptimizes.
 <td align="left">POP_JUMP_IF_FALSE</td>
 <td align="right">7,380</td>
 <td align="right">25.8%</td>
+=======
+<td align="right">8,460</td>
+<td align="right">34.9%</td>
+</tr>
+<tr>
+<td align="left">CACHE</td>
+<td align="right">3,900</td>
+<td align="right">16.1%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_FALSE</td>
+<td align="right">3,780</td>
+<td align="right">15.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
 <td align="right">3,660</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">12.8%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_GEN</td>
 <td align="right">3,600</td>
 <td align="right">12.6%</td>
+=======
+<td align="right">15.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_O</td>
@@ -2580,6 +2795,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">10,860</td>
 <td align="right">38.0%</td>
 </tr>
@@ -2592,6 +2808,20 @@ specialized instruction deoptimizes.
 <td align="left">RESUME_CHECK</td>
 <td align="right">4,260</td>
 <td align="right">14.9%</td>
+=======
+<td align="right">10,500</td>
+<td align="right">43.3%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST</td>
+<td align="right">4,680</td>
+<td align="right">19.3%</td>
+</tr>
+<tr>
+<td align="left">RESUME_CHECK</td>
+<td align="right">3,900</td>
+<td align="right">16.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
@@ -2692,23 +2922,41 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">21,300</td>
 <td align="right">56.3%</td>
+=======
+<td align="right">20,580</td>
+<td align="right">55.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">9,180</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">24.2%</td>
+=======
+<td align="right">24.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">STORE_FAST_LOAD_FAST</td>
 <td align="right">5,100</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">13.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
 <td align="right">2,100</td>
 <td align="right">5.5%</td>
+=======
+<td align="right">13.7%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR</td>
+<td align="right">2,280</td>
+<td align="right">6.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
@@ -2729,6 +2977,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">30,300</td>
 <td align="right">80.0%</td>
 </tr>
@@ -2741,6 +2990,20 @@ specialized instruction deoptimizes.
 <td align="left">LOAD_CONST_IMMORTAL</td>
 <td align="right">2,220</td>
 <td align="right">5.9%</td>
+=======
+<td align="right">29,940</td>
+<td align="right">80.2%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST_LOAD_FAST</td>
+<td align="right">2,280</td>
+<td align="right">6.1%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST_IMMORTAL</td>
+<td align="right">2,040</td>
+<td align="right">5.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">CALL_FUNCTION_EX</td>
@@ -2750,7 +3013,7 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
 <td align="right">840</td>
-<td align="right">2.2%</td>
+<td align="right">2.3%</td>
 </tr>
 </tbody>
 </table>
@@ -2847,22 +3110,39 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">CALL_ISINSTANCE</td>
 <td align="right">21,600</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">29.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
 <td align="right">12,000</td>
 <td align="right">16.3%</td>
+=======
+<td align="right">29.9%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST_IMMORTAL</td>
+<td align="right">11,460</td>
+<td align="right">15.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">9,120</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">12.4%</td>
+=======
+<td align="right">12.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">POP_EXCEPT</td>
 <td align="right">3,060</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">4.1%</td>
+=======
+<td align="right">4.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
@@ -2884,27 +3164,44 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
 <td align="right">23,220</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">31.5%</td>
+=======
+<td align="right">32.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
 <td align="right">15,360</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">20.8%</td>
 </tr>
 <tr>
 <td align="left">INTERPRETER_EXIT</td>
 <td align="right">5,640</td>
 <td align="right">7.6%</td>
+=======
+<td align="right">21.2%</td>
+</tr>
+<tr>
+<td align="left">INTERPRETER_EXIT</td>
+<td align="right">8,880</td>
+<td align="right">12.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LIST_APPEND</td>
 <td align="right">5,640</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">7.6%</td>
+=======
+<td align="right">7.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
 <td align="right">3,660</td>
-<td align="right">5.0%</td>
+<td align="right">5.1%</td>
 </tr>
 </tbody>
 </table>
@@ -4868,7 +5165,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">77,565</td>
+=======
+<td align="right">76,317</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -4900,7 +5201,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">43,920</td>
+=======
+<td align="right">43,560</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -5610,8 +5915,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">24,705</td>
 <td align="right">76.1%</td>
+=======
+<td align="right">17,517</td>
+<td align="right">71.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">TO_BOOL_LIST</td>
@@ -5656,9 +5966,15 @@ specialized instruction deoptimizes.
 <td align="right">29.5%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">LOAD_GLOBAL_MODULE</td>
 <td align="right">4,260</td>
 <td align="right">13.1%</td>
+=======
+<td align="left">JUMP_BACKWARD_NO_JIT</td>
+<td align="right">2,397</td>
+<td align="right">9.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
@@ -5972,7 +6288,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">28,965</td>
+=======
+<td align="right">28,797</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">19.1%</td>
 </tr>
 <tr>
@@ -6009,8 +6329,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">77,565</td>
 <td align="right">51.1%</td>
+=======
+<td align="right">76,317</td>
+<td align="right">50.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
@@ -7842,8 +8167,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">13,845</td>
 <td align="right">49.4%</td>
+=======
+<td align="right">13,857</td>
+<td align="right">49.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
@@ -7884,8 +8214,13 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">8,745</td>
 <td align="right">31.2%</td>
+=======
+<td align="right">8,757</td>
+<td align="right">31.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">YIELD_VALUE</td>
@@ -8232,8 +8567,13 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">43,920</td>
 <td align="right">0.2%</td>
+=======
+<td align="right">43,560</td>
+<td align="right">0.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
@@ -8269,7 +8609,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">53,460</td>
+=======
+<td align="right">52,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.2%</td>
 </tr>
 <tr>
@@ -8802,13 +9146,21 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">34,305</td>
+=======
+<td align="right">34,137</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">83.1%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
 <td align="right">6,820</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">16.5%</td>
+=======
+<td align="right">16.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
@@ -8829,13 +9181,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">28,965</td>
 <td align="right">70.2%</td>
+=======
+<td align="right">28,797</td>
+<td align="right">70.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
 <td align="right">6,720</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">16.3%</td>
+=======
+<td align="right">16.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">STORE_FAST_LOAD_FAST</td>
@@ -8926,8 +9287,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_SUBSCR_DICT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">257,220</td>
 <td align="right">82.8%</td>
+=======
+<td align="right">256,500</td>
+<td align="right">84.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
@@ -8945,9 +9311,15 @@ specialized instruction deoptimizes.
 <td align="right">3.1%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="left">EXTENDED_ARG</td>
 <td align="right">7,140</td>
 <td align="right">2.3%</td>
+=======
+<td align="left">LIST_APPEND</td>
+<td align="right">5,940</td>
+<td align="right">2.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 </tbody>
 </table>
@@ -8963,6 +9335,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">259,200</td>
 <td align="right">83.4%</td>
 </tr>
@@ -8970,6 +9343,15 @@ specialized instruction deoptimizes.
 <td align="left">FOR_ITER_LIST</td>
 <td align="right">34,305</td>
 <td align="right">11.0%</td>
+=======
+<td align="right">258,480</td>
+<td align="right">85.5%</td>
+</tr>
+<tr>
+<td align="left">FOR_ITER_LIST</td>
+<td align="right">34,137</td>
+<td align="right">11.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
@@ -9199,8 +9581,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">24,225</td>
 <td align="right">44.4%</td>
+=======
+<td align="right">23,877</td>
+<td align="right">44.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_NONDESCRIPTOR_WITH_VALUES</td>
@@ -9236,8 +9623,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">33,165</td>
 <td align="right">60.8%</td>
+=======
+<td align="right">32,997</td>
+<td align="right">61.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
@@ -9872,6 +10264,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">28,060</td>
 <td align="right">39.0%</td>
 </tr>
@@ -9879,21 +10272,36 @@ specialized instruction deoptimizes.
 <td align="left">LOAD_FAST</td>
 <td align="right">11,440</td>
 <td align="right">15.9%</td>
+=======
+<td align="right">27,520</td>
+<td align="right">38.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
 <td align="right">11,400</td>
-<td align="right">15.8%</td>
+<td align="right">16.0%</td>
+</tr>
+<tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
+<td align="left">NOP</td>
+<td align="right">5,560</td>
+<td align="right">7.7%</td>
+=======
+<td align="left">LOAD_FAST</td>
+<td align="right">11,080</td>
+<td align="right">15.5%</td>
 </tr>
 <tr>
 <td align="left">NOP</td>
 <td align="right">5,560</td>
-<td align="right">7.7%</td>
+<td align="right">7.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
 <td align="right">4,760</td>
-<td align="right">6.6%</td>
+<td align="right">6.7%</td>
 </tr>
 </tbody>
 </table>
@@ -9909,6 +10317,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">46,740</td>
 <td align="right">64.9%</td>
 </tr>
@@ -9921,11 +10330,24 @@ specialized instruction deoptimizes.
 <td align="left">COPY</td>
 <td align="right">3,600</td>
 <td align="right">5.0%</td>
+=======
+<td align="right">49,980</td>
+<td align="right">70.1%</td>
+</tr>
+<tr>
+<td align="left">CALL_ISINSTANCE</td>
+<td align="right">8,920</td>
+<td align="right">12.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">CHECK_EXC_MATCH</td>
 <td align="right">3,540</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">4.9%</td>
+=======
+<td align="right">5.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
@@ -10088,6 +10510,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">53,460</td>
 <td align="right">61.1%</td>
 </tr>
@@ -10105,6 +10528,25 @@ specialized instruction deoptimizes.
 <td align="left">CACHE</td>
 <td align="right">4,380</td>
 <td align="right">5.0%</td>
+=======
+<td align="right">52,920</td>
+<td align="right">61.8%</td>
+</tr>
+<tr>
+<td align="left">CACHE</td>
+<td align="right">11,220</td>
+<td align="right">13.1%</td>
+</tr>
+<tr>
+<td align="left">RESUME_CHECK</td>
+<td align="right">7,580</td>
+<td align="right">8.9%</td>
+</tr>
+<tr>
+<td align="left">POP_TOP</td>
+<td align="right">3,900</td>
+<td align="right">4.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
@@ -10125,6 +10567,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">28,060</td>
 <td align="right">32.0%</td>
 </tr>
@@ -10147,6 +10590,30 @@ specialized instruction deoptimizes.
 <td align="left">RESUME_CHECK</td>
 <td align="right">7,880</td>
 <td align="right">9.0%</td>
+=======
+<td align="right">27,520</td>
+<td align="right">32.1%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL_MODULE</td>
+<td align="right">18,320</td>
+<td align="right">21.4%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST</td>
+<td align="right">13,200</td>
+<td align="right">15.4%</td>
+</tr>
+<tr>
+<td align="left">POP_TOP</td>
+<td align="right">8,460</td>
+<td align="right">9.9%</td>
+</tr>
+<tr>
+<td align="left">RESUME_CHECK</td>
+<td align="right">7,580</td>
+<td align="right">8.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 </tbody>
 </table>
@@ -10525,6 +10992,7 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">8,745</td>
 <td align="right">12.0%</td>
 </tr>
@@ -10532,6 +11000,10 @@ specialized instruction deoptimizes.
 <td align="left">CALL_BUILTIN_O</td>
 <td align="right">8,220</td>
 <td align="right">11.3%</td>
+=======
+<td align="right">8,757</td>
+<td align="right">13.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">CALL_ISINSTANCE</td>
@@ -10557,8 +11029,13 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">24,705</td>
 <td align="right">34.0%</td>
+=======
+<td align="right">17,517</td>
+<td align="right">27.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 </tbody>
 </table>
@@ -11429,7 +11906,11 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">29,311,365</td>
+=======
+<td align="right">29,312,997</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -11706,8 +12187,13 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">260,700</td>
 <td align="right">82.7%</td>
+=======
+<td align="right">259,980</td>
+<td align="right">85.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">
@@ -11718,8 +12204,13 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">54,045</td>
 <td align="right">17.1%</td>
+=======
+<td align="right">42,357</td>
+<td align="right">14.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 </tbody>
 </table>
@@ -11816,8 +12307,13 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">157,825</td>
 <td align="right">77.2%</td>
+=======
+<td align="right">156,217</td>
+<td align="right">77.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">
@@ -11948,7 +12444,11 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">14,759,460</td>
+=======
+<td align="right">14,757,120</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">50.3%</td>
 </tr>
 <tr>
@@ -12193,8 +12693,13 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">114,065</td>
 <td align="right">93.7%</td>
+=======
+<td align="right">105,257</td>
+<td align="right">93.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">
@@ -12357,7 +12862,11 @@ Basic
 Instructions that are not and cannot be specialized, e.g. `LOAD_FAST`.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">279,263,880</td>
+=======
+<td align="right">279,220,548</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">67.7%</td>
 </tr>
 <tr>
@@ -12381,7 +12890,11 @@ Specialized hits
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">118,343,125</td>
+=======
+<td align="right">118,301,425</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">28.7%</td>
 </tr>
 <tr>
@@ -12570,8 +13083,13 @@ Also includes the count of frame objects created.
 </tr>
 <tr>
 <td align="left">Calls to Python functions inlined</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">29,213,340</td>
 <td align="right">100.0%</td>
+=======
+<td align="right">29,201,280</td>
+<td align="right">99.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">Calls via PyEval_EvalFrame (total)</td>
@@ -12630,7 +13148,11 @@ Also includes the count of frame objects created.
 </tr>
 <tr>
 <td align="left">Frames pushed</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">29,208,360</td>
+=======
+<td align="right">29,206,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -12664,22 +13186,38 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">488,360</td>
+=======
+<td align="right">489,660</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">0.8%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">485,860</td>
+=======
+<td align="right">487,180</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">58,522,080</td>
+=======
+<td align="right">58,519,780</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">99.2%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">58,516,860</td>
+=======
+<td align="right">58,514,560</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right">99.2%</td>
 </tr>
 <tr>
@@ -12694,7 +13232,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">58,536,538</td>
+=======
+<td align="right">58,533,752</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -12704,6 +13246,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">45,204,940</td>
 <td align="right">7.7%</td>
 </tr>
@@ -12741,6 +13284,45 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">296,843,434</td>
 <td align="right">50.2%</td>
+=======
+<td align="right">45,189,628</td>
+<td align="right">6.8%</td>
+</tr>
+<tr>
+<td align="left">Interpreter mortal decrefs</td>
+<td align="right">89,280,748</td>
+<td align="right">11.6%</td>
+</tr>
+<tr>
+<td align="left">Mortal increfs</td>
+<td align="right">307,129,229</td>
+<td align="right">46.2%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">205,431,110</td>
+<td align="right">26.8%</td>
+</tr>
+<tr>
+<td align="left">Interpreter immortal increfs</td>
+<td align="right">74,263,980</td>
+<td align="right">11.2%</td>
+</tr>
+<tr>
+<td align="left">Interpreter immortal decrefs</td>
+<td align="right">175,813,840</td>
+<td align="right">22.9%</td>
+</tr>
+<tr>
+<td align="left">Immortal increfs</td>
+<td align="right">237,950,435</td>
+<td align="right">35.8%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">296,827,108</td>
+<td align="right">38.7%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -12764,27 +13346,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">29,198,992</td>
+=======
+<td align="right">29,200,687</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">3,808</td>
+=======
+<td align="right">2,293</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">3,907</td>
+=======
+<td align="right">2,324</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">42,633</td>
+=======
+<td align="right">42,171</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-coverage.md
 <td align="right">407</td>
+=======
+<td align="right">329</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coverage.md
 <td align="right"></td>
 </tr>
 </tbody>

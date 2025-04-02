@@ -10737,7 +10737,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_parse.md
 <td align="right">13,820,349</td>
+=======
+<td align="right">13,813,567</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_parse.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -10757,6 +10761,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_parse.md
 <td align="right">54,081,027</td>
 <td align="right">9.4%</td>
 </tr>
@@ -10764,6 +10769,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">45,437,272</td>
 <td align="right">7.6%</td>
+=======
+<td align="right">53,982,064</td>
+<td align="right">8.4%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">45,338,355</td>
+<td align="right">6.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_parse.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -10777,6 +10791,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_parse.md
 <td align="right">73,570,357</td>
 <td align="right">12.8%</td>
 </tr>
@@ -10784,6 +10799,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">58,889,643</td>
 <td align="right">9.9%</td>
+=======
+<td align="right">73,487,715</td>
+<td align="right">11.4%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">58,823,929</td>
+<td align="right">8.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_parse.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -10807,27 +10831,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_parse.md
 <td align="right">25,616,568</td>
+=======
+<td align="right">25,710,228</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_parse.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_parse.md
 <td align="right">313,170</td>
+=======
+<td align="right">219,510</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_parse.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_parse.md
 <td align="right">349,465</td>
+=======
+<td align="right">267,108</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_parse.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_parse.md
 <td align="right">7,612,176</td>
+=======
+<td align="right">7,600,904</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_parse.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_parse.md
 <td align="right">36,372</td>
+=======
+<td align="right">47,644</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_parse.md
 <td align="right"></td>
 </tr>
 </tbody>
@@ -10867,10 +10911,17 @@ Collected/visits gives some measure of efficiency.
 <tr>
 <td align="right">1</td>
 <td align="right">607</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_parse.md
 <td align="right">1,067,240</td>
 <td align="right">11,944,816</td>
 <td align="right">732,240</td>
 <td align="right">1,193,607</td>
+=======
+<td align="right">1,067,340</td>
+<td align="right">11,961,310</td>
+<td align="right">728,584</td>
+<td align="right">1,197,288</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_parse.md
 </tr>
 <tr>
 <td align="right">2</td>

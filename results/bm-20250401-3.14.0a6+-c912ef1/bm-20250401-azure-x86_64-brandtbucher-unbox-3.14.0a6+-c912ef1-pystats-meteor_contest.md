@@ -5987,6 +5987,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-meteor_contest.md
 <td align="right">13,432,125</td>
 <td align="right">2.1%</td>
 </tr>
@@ -5994,6 +5995,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">9,988,610</td>
 <td align="right">1.4%</td>
+=======
+<td align="right">13,432,124</td>
+<td align="right">1.9%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">9,988,608</td>
+<td align="right">1.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-meteor_contest.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -6037,27 +6047,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-meteor_contest.md
 <td align="right">195</td>
+=======
+<td align="right">196</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-meteor_contest.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-meteor_contest.md
 <td align="right">25</td>
+=======
+<td align="right">24</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-meteor_contest.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-meteor_contest.md
 <td align="right">22</td>
+=======
+<td align="right">12</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-meteor_contest.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-meteor_contest.md
 <td align="right">3,038</td>
+=======
+<td align="right">3,040</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-meteor_contest.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-meteor_contest.md
 <td align="right">2</td>
+=======
+<td align="right">0</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-meteor_contest.md
 <td align="right"></td>
 </tr>
 </tbody>

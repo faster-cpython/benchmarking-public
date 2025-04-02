@@ -8163,7 +8163,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-go.md
 <td align="right">9,533,482</td>
+=======
+<td align="right">9,598,643</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-go.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -8183,6 +8187,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-go.md
 <td align="right">32,616,906</td>
 <td align="right">4.3%</td>
 </tr>
@@ -8190,6 +8195,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">28,632,535</td>
 <td align="right">3.6%</td>
+=======
+<td align="right">32,699,534</td>
+<td align="right">3.0%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">28,739,317</td>
+<td align="right">2.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-go.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -8203,6 +8217,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-go.md
 <td align="right">15,655,506</td>
 <td align="right">2.1%</td>
 </tr>
@@ -8210,6 +8225,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">10,266,897</td>
 <td align="right">1.3%</td>
+=======
+<td align="right">15,740,320</td>
+<td align="right">1.5%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">10,958,197</td>
+<td align="right">0.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-go.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -8233,27 +8257,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-go.md
 <td align="right">1,355</td>
+=======
+<td align="right">42,566</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-go.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-go.md
 <td align="right">45</td>
+=======
+<td align="right">34</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-go.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-go.md
 <td align="right">41</td>
+=======
+<td align="right">30</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-go.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-go.md
 <td align="right">1,279</td>
+=======
+<td align="right">1,277</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-go.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-go.md
 <td align="right">1</td>
+=======
+<td align="right">3</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-go.md
 <td align="right"></td>
 </tr>
 </tbody>

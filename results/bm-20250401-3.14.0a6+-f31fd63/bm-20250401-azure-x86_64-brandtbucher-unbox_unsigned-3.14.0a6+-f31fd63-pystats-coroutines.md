@@ -5521,7 +5521,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">116,538,060</td>
+<td align="right">116,538,061</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -5541,12 +5541,16 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-coroutines.md
 <td align="right">3,662</td>
+=======
+<td align="right">3,663</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coroutines.md
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">4,442</td>
+<td align="right">4,444</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -5561,8 +5565,13 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-coroutines.md
 <td align="right">116,538,842</td>
 <td align="right">16.7%</td>
+=======
+<td align="right">116,538,543</td>
+<td align="right">11.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coroutines.md
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
@@ -5591,17 +5600,29 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-coroutines.md
 <td align="right">198</td>
+=======
+<td align="right">197</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coroutines.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-coroutines.md
 <td align="right">22</td>
+=======
+<td align="right">23</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coroutines.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-coroutines.md
 <td align="right">18</td>
+=======
+<td align="right">15</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-coroutines.md
 <td align="right"></td>
 </tr>
 <tr>

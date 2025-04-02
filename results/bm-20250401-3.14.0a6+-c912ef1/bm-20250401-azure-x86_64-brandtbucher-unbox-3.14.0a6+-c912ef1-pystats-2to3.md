@@ -3499,6 +3499,61 @@ specialized instruction deoptimizes.
 </details>
 
 ### JUMP_BACKWARD
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
+=======
+
+<details>
+<summary> Successors and predecessors for JUMP_BACKWARD </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">POP_TOP</td>
+<td align="right">160</td>
+<td align="right">50.0%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_FALSE</td>
+<td align="right">80</td>
+<td align="right">25.0%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">80</td>
+<td align="right">25.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">JUMP_BACKWARD_NO_JIT</td>
+<td align="right">320</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### JUMP_FORWARD
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 
 <details>
 <summary> Successors and predecessors for JUMP_BACKWARD </summary>
@@ -3768,27 +3823,48 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">1,440</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">21.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST</td>
 <td align="right">1,360</td>
 <td align="right">20.0%</td>
+=======
+<td align="right">22.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST</td>
+<td align="right">1,120</td>
+<td align="right">17.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">STORE_ATTR</td>
 <td align="right">960</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">14.1%</td>
+=======
+<td align="right">14.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
 <td align="right">880</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">12.9%</td>
+=======
+<td align="right">13.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL</td>
 <td align="right">240</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">3.5%</td>
+=======
+<td align="right">3.7%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 </tbody>
 </table>
@@ -3803,6 +3879,7 @@ specialized instruction deoptimizes.
 </thead>
 <tbody>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="left">LOAD_CONST</td>
 <td align="right">1,360</td>
 <td align="right">20.0%</td>
@@ -3811,21 +3888,43 @@ specialized instruction deoptimizes.
 <td align="left">RETURN_VALUE</td>
 <td align="right">1,200</td>
 <td align="right">17.6%</td>
+=======
+<td align="left">RETURN_VALUE</td>
+<td align="right">1,200</td>
+<td align="right">18.3%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST</td>
+<td align="right">1,120</td>
+<td align="right">17.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">COMPARE_OP</td>
 <td align="right">880</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">12.9%</td>
+=======
+<td align="right">13.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">880</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">12.9%</td>
+=======
+<td align="right">13.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">CALL</td>
 <td align="right">800</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">11.8%</td>
+=======
+<td align="right">12.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 </tbody>
 </table>
@@ -5919,6 +6018,8 @@ specialized instruction deoptimizes.
 </details>
 
 ### CALL_METHOD_DESCRIPTOR_NOARGS
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
+=======
 
 <details>
 <summary> Successors and predecessors for CALL_METHOD_DESCRIPTOR_NOARGS </summary>
@@ -5981,6 +6082,7 @@ specialized instruction deoptimizes.
 </details>
 
 ### CALL_METHOD_DESCRIPTOR_O
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 
 <details>
 <summary> Successors and predecessors for CALL_METHOD_DESCRIPTOR_O </summary>
@@ -6853,6 +6955,7 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">1,540</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">23.2%</td>
 </tr>
 <tr>
@@ -6864,16 +6967,37 @@ specialized instruction deoptimizes.
 <td align="left">STORE_ATTR_INSTANCE_VALUE</td>
 <td align="right">920</td>
 <td align="right">13.9%</td>
+=======
+<td align="right">24.5%</td>
+</tr>
+<tr>
+<td align="left">STORE_ATTR_INSTANCE_VALUE</td>
+<td align="right">920</td>
+<td align="right">14.6%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST_IMMORTAL</td>
+<td align="right">780</td>
+<td align="right">12.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
 <td align="right">740</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">11.1%</td>
+=======
+<td align="right">11.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
 <td align="right">580</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">8.7%</td>
+=======
+<td align="right">9.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 </tbody>
 </table>
@@ -6890,27 +7014,48 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">RETURN_VALUE</td>
 <td align="right">1,620</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">24.4%</td>
+=======
+<td align="right">25.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">1,060</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">16.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
 <td align="right">960</td>
 <td align="right">14.5%</td>
+=======
+<td align="right">16.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
 <td align="right">940</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">14.2%</td>
+=======
+<td align="right">15.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST_IMMORTAL</td>
+<td align="right">780</td>
+<td align="right">12.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">COMPARE_OP_INT</td>
 <td align="right">360</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">5.4%</td>
+=======
+<td align="right">5.7%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 </tbody>
 </table>
@@ -6935,16 +7080,25 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">380</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">28.4%</td>
+=======
+<td align="right">25.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">BUILD_TUPLE</td>
 <td align="right">260</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">19.4%</td>
+=======
+<td align="right">17.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_NOT_NONE</td>
 <td align="right">200</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">14.9%</td>
 </tr>
 <tr>
@@ -6956,6 +7110,19 @@ specialized instruction deoptimizes.
 <td align="left">PUSH_NULL</td>
 <td align="right">60</td>
 <td align="right">4.5%</td>
+=======
+<td align="right">13.2%</td>
+</tr>
+<tr>
+<td align="left">STORE_FAST_STORE_FAST</td>
+<td align="right">120</td>
+<td align="right">7.9%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_SLOT</td>
+<td align="right">80</td>
+<td align="right">5.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 </tbody>
 </table>
@@ -6972,6 +7139,7 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">MAKE_FUNCTION</td>
 <td align="right">260</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">19.4%</td>
 </tr>
 <tr>
@@ -6993,6 +7161,29 @@ specialized instruction deoptimizes.
 <td align="left">CALL_KW_PY</td>
 <td align="right">120</td>
 <td align="right">9.0%</td>
+=======
+<td align="right">17.1%</td>
+</tr>
+<tr>
+<td align="left">STORE_FAST</td>
+<td align="right">200</td>
+<td align="right">13.2%</td>
+</tr>
+<tr>
+<td align="left">CALL_KW</td>
+<td align="right">180</td>
+<td align="right">11.8%</td>
+</tr>
+<tr>
+<td align="left">BINARY_OP</td>
+<td align="right">140</td>
+<td align="right">9.2%</td>
+</tr>
+<tr>
+<td align="left">CALL_KW_PY</td>
+<td align="right">120</td>
+<td align="right">7.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 </tbody>
 </table>
@@ -7463,17 +7654,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">UNPACK_SEQUENCE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">200</td>
 <td align="right">32.3%</td>
+=======
+<td align="right">260</td>
+<td align="right">32.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_NOARGS</td>
 <td align="right">120</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">19.4%</td>
+=======
+<td align="right">15.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
 <td align="right">120</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">19.4%</td>
 </tr>
 <tr>
@@ -7485,6 +7686,19 @@ specialized instruction deoptimizes.
 <td align="left">RETURN_VALUE</td>
 <td align="right">80</td>
 <td align="right">12.9%</td>
+=======
+<td align="right">15.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST_MORTAL</td>
+<td align="right">120</td>
+<td align="right">15.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_BUILTIN_FAST</td>
+<td align="right">100</td>
+<td align="right">12.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 </tbody>
 </table>
@@ -7500,13 +7714,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST_STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">560</td>
 <td align="right">90.3%</td>
+=======
+<td align="right">740</td>
+<td align="right">92.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
 <td align="right">60</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">9.7%</td>
+=======
+<td align="right">7.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 </tbody>
 </table>
@@ -7790,15 +8013,26 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">40</td>
 <td align="right">33.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
+=======
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 <td align="right">40</td>
 <td align="right">33.3%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
+=======
+<td align="left">LOAD_DEREF</td>
+<td align="right">40</td>
+<td align="right">33.3%</td>
+</tr>
+<tr>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
 <td align="right">40</td>
 <td align="right">33.3%</td>
@@ -9826,7 +10060,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">14,110</td>
+=======
+<td align="right">13,983</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -9846,6 +10084,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">51,928</td>
 <td align="right">30.7%</td>
 </tr>
@@ -9853,6 +10092,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">50,918</td>
 <td align="right">27.8%</td>
+=======
+<td align="right">51,999</td>
+<td align="right">25.3%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">50,888</td>
+<td align="right">22.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -9866,6 +10114,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">51,205</td>
 <td align="right">30.2%</td>
 </tr>
@@ -9873,6 +10122,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">45,472</td>
 <td align="right">24.8%</td>
+=======
+<td align="right">51,009</td>
+<td align="right">24.8%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">45,680</td>
+<td align="right">19.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -9896,27 +10154,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">9,929</td>
+=======
+<td align="right">10,115</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">5,351</td>
+=======
+<td align="right">5,165</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">5,167</td>
+=======
+<td align="right">4,663</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">2,885</td>
+=======
+<td align="right">2,831</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-2to3.md
 <td align="right">1,235</td>
+=======
+<td align="right">1,289</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-2to3.md
 <td align="right"></td>
 </tr>
 </tbody>

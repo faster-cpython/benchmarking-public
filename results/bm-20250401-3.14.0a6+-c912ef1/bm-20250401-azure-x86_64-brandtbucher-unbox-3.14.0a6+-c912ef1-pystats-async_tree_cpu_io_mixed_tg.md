@@ -10607,18 +10607,32 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right">46,483,495</td>
 <td align="right">19.4%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
 <td align="right">46,483,615</td>
+=======
+<td align="right">53,827,571</td>
+<td align="right">21.7%</td>
+</tr>
+<tr>
+<td align="left">Frees to freelist</td>
+<td align="right">53,827,691</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right">193,079,940</td>
 <td align="right">80.6%</td>
+=======
+<td align="right">194,481,615</td>
+<td align="right">78.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_cpu_io_mixed_tg.md
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
@@ -10627,7 +10641,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Allocations to 4 kbytes</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right">2,002,420</td>
+=======
+<td align="right">2,002,415</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right">0.8%</td>
 </tr>
 <tr>
@@ -10637,7 +10655,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right">193,079,846</td>
+=======
+<td align="right">194,481,530</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -10647,6 +10669,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right">826,339,720</td>
 <td align="right">64.3%</td>
 </tr>
@@ -10684,6 +10707,45 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">154,331,967</td>
 <td align="right">11.2%</td>
+=======
+<td align="right">831,550,938</td>
+<td align="right">59.0%</td>
+</tr>
+<tr>
+<td align="left">Interpreter mortal decrefs</td>
+<td align="right">872,622,949</td>
+<td align="right">54.9%</td>
+</tr>
+<tr>
+<td align="left">Mortal increfs</td>
+<td align="right">156,767,192</td>
+<td align="right">11.1%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">347,997,867</td>
+<td align="right">21.9%</td>
+</tr>
+<tr>
+<td align="left">Interpreter immortal increfs</td>
+<td align="right">170,911,542</td>
+<td align="right">12.1%</td>
+</tr>
+<tr>
+<td align="left">Interpreter immortal decrefs</td>
+<td align="right">214,211,491</td>
+<td align="right">13.5%</td>
+</tr>
+<tr>
+<td align="left">Immortal increfs</td>
+<td align="right">251,343,198</td>
+<td align="right">17.8%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">155,760,323</td>
+<td align="right">9.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_cpu_io_mixed_tg.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -10707,27 +10769,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right">28,803,581</td>
+=======
+<td align="right">30,178,928</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right">319</td>
+=======
+<td align="right">26,932</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right">390</td>
+=======
+<td align="right">27,001</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right">2,665,052</td>
+=======
+<td align="right">2,665,057</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right">108</td>
+=======
+<td align="right">103</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right"></td>
 </tr>
 </tbody>
@@ -10768,9 +10850,15 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">13,900</td>
 <td align="right">160</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_tree_cpu_io_mixed_tg.md
 <td align="right">442,116,586</td>
 <td align="right">30,723,538</td>
 <td align="right">35,066,442</td>
+=======
+<td align="right">442,226,672</td>
+<td align="right">30,724,040</td>
+<td align="right">35,069,480</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_cpu_io_mixed_tg.md
 </tr>
 <tr>
 <td align="right">2</td>

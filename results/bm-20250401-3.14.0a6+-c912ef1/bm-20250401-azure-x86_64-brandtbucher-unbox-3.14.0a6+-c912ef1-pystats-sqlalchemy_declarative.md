@@ -37,14 +37,22 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">21,599,325</td>
+=======
+<td align="right">21,587,235</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">4.7%</td>
 <td align="right">24.6%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">19,852,665</td>
+=======
+<td align="right">19,852,695</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">4.3%</td>
 <td align="right">28.9%</td>
 <td align="right"></td>
@@ -65,7 +73,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">15,225,870</td>
+=======
+<td align="right">15,225,930</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">3.3%</td>
 <td align="right">39.1%</td>
 <td align="right"></td>
@@ -93,7 +105,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">11,449,328</td>
+=======
+<td align="right">11,456,672</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">2.5%</td>
 <td align="right">50.8%</td>
 <td align="right"></td>
@@ -114,7 +130,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">8,352,885</td>
+=======
+<td align="right">8,340,795</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">1.8%</td>
 <td align="right">56.9%</td>
 <td align="right"></td>
@@ -149,7 +169,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_SLOT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">7,017,037</td>
+=======
+<td align="right">7,017,045</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">1.5%</td>
 <td align="right">65.3%</td>
 <td align="right">4.2%</td>
@@ -177,7 +201,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">6,484,245</td>
+=======
+<td align="right">6,484,275</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">1.4%</td>
 <td align="right">71.1%</td>
 <td align="right"></td>
@@ -247,7 +275,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">3,756,945</td>
+=======
+<td align="right">3,756,975</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">0.8%</td>
 <td align="right">81.5%</td>
 <td align="right"></td>
@@ -317,10 +349,17 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_WITH_HINT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">2,408,812</td>
 <td align="right">0.5%</td>
 <td align="right">88.1%</td>
 <td align="right">5.5%</td>
+=======
+<td align="right">2,401,468</td>
+<td align="right">0.5%</td>
+<td align="right">88.2%</td>
+<td align="right">5.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 </tr>
 <tr>
 <td align="left">JUMP_FORWARD</td>
@@ -408,7 +447,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">1,541,525</td>
+=======
+<td align="right">1,541,556</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">0.3%</td>
 <td align="right">93.5%</td>
 <td align="right"></td>
@@ -499,7 +542,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">CONTAINS_OP_SET</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">957,105</td>
+=======
+<td align="right">957,135</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">0.2%</td>
 <td align="right">97.1%</td>
 <td align="right">0.6%</td>
@@ -1351,7 +1398,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT FOR_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">2,061,645</td>
+=======
+<td align="right">2,061,675</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">0.4%</td>
 <td align="right">49.8%</td>
 </tr>
@@ -1363,7 +1414,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">STORE_FAST LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">2,026,005</td>
+=======
+<td align="right">2,026,035</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">0.4%</td>
 <td align="right">50.7%</td>
 </tr>
@@ -1495,7 +1550,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">CONTAINS_OP POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">1,522,305</td>
+=======
+<td align="right">1,522,335</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">0.3%</td>
 <td align="right">58.7%</td>
 </tr>
@@ -3599,7 +3658,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">195,225</td>
+=======
+<td align="right">195,255</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">12.7%</td>
 </tr>
 <tr>
@@ -3631,7 +3694,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">1,522,305</td>
+=======
+<td align="right">1,522,335</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">98.8%</td>
 </tr>
 <tr>
@@ -3641,7 +3708,7 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
-<td align="right">980</td>
+<td align="right">981</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -3996,7 +4063,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">2,061,645</td>
+=======
+<td align="right">2,061,675</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">54.9%</td>
 </tr>
 <tr>
@@ -4038,7 +4109,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">441,825</td>
+=======
+<td align="right">441,855</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">11.8%</td>
 </tr>
 <tr>
@@ -4478,7 +4553,7 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">7,795,880</td>
-<td align="right">68.1%</td>
+<td align="right">68.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_SLOT</td>
@@ -4497,7 +4572,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">284,788</td>
+=======
+<td align="right">284,932</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">2.5%</td>
 </tr>
 </tbody>
@@ -4904,7 +4983,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">2,026,005</td>
+=======
+<td align="right">2,026,035</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">13.3%</td>
 </tr>
 <tr>
@@ -5321,8 +5404,13 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">1,522,305</td>
 <td align="right">7.0%</td>
+=======
+<td align="right">1,522,335</td>
+<td align="right">7.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 </tr>
 <tr>
 <td align="left">TO_BOOL</td>
@@ -5562,7 +5650,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">CONTAINS_OP_SET</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">879,105</td>
+=======
+<td align="right">879,135</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">13.6%</td>
 </tr>
 <tr>
@@ -5594,7 +5686,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">628,065</td>
+=======
+<td align="right">628,095</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">9.7%</td>
 </tr>
 <tr>
@@ -5949,7 +6045,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">2,026,005</td>
+=======
+<td align="right">2,026,035</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">10.2%</td>
 </tr>
 <tr>
@@ -8552,7 +8652,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">765,105</td>
+=======
+<td align="right">765,135</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">79.9%</td>
 </tr>
 <tr>
@@ -8589,7 +8693,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">879,105</td>
+=======
+<td align="right">879,135</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">91.9%</td>
 </tr>
 <tr>
@@ -8912,7 +9020,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">628,065</td>
+=======
+<td align="right">628,095</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">7.5%</td>
 </tr>
 <tr>
@@ -8939,7 +9051,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">2,061,645</td>
+=======
+<td align="right">2,061,675</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">24.7%</td>
 </tr>
 <tr>
@@ -9440,6 +9556,7 @@ specialized instruction deoptimizes.
 <td align="right">97.3%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="left">LOAD_ATTR_WITH_HINT</td>
 <td align="right">21,600</td>
 <td align="right">1.4%</td>
@@ -9447,6 +9564,15 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">LOAD_ATTR</td>
 <td align="right">14,480</td>
+=======
+<td align="left">LOAD_ATTR</td>
+<td align="right">21,680</td>
+<td align="right">1.4%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_WITH_HINT</td>
+<td align="right">14,400</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">0.9%</td>
 </tr>
 <tr>
@@ -9472,6 +9598,11 @@ specialized instruction deoptimizes.
 <td align="right">71.3%</td>
 </tr>
 <tr>
+<td align="left">LOAD_ATTR</td>
+<td align="right">57,600</td>
+<td align="right">3.7%</td>
+</tr>
+<tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">54,240</td>
 <td align="right">3.4%</td>
@@ -9486,11 +9617,14 @@ specialized instruction deoptimizes.
 <td align="right">50,400</td>
 <td align="right">3.2%</td>
 </tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
 <td align="right">48,720</td>
 <td align="right">3.1%</td>
 </tr>
+=======
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 </tbody>
 </table>
 
@@ -9827,7 +9961,11 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">1,280,740</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">53.2%</td>
+=======
+<td align="right">53.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
@@ -9879,7 +10017,7 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">LOAD_ATTR</td>
 <td align="right">186,380</td>
-<td align="right">7.7%</td>
+<td align="right">7.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_NONDESCRIPTOR_WITH_VALUES</td>
@@ -11641,7 +11779,11 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">1,540,425</td>
+=======
+<td align="right">1,540,455</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">40.5%</td>
 </tr>
 <tr>
@@ -11653,7 +11795,11 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">2,253,465</td>
+=======
+<td align="right">2,253,495</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">59.3%</td>
 </tr>
 <tr>
@@ -11687,7 +11833,7 @@ Specialized instructions that deopt.
 </tr>
 <tr>
 <td align="left">Failure</td>
-<td align="right">1,100</td>
+<td align="right">1,101</td>
 <td align="right">90.2%</td>
 </tr>
 </tbody>
@@ -11705,17 +11851,17 @@ Specialized instructions that deopt.
 <tr>
 <td align="left">other</td>
 <td align="right">540</td>
-<td align="right">49.1%</td>
+<td align="right">49.0%</td>
 </tr>
 <tr>
 <td align="left">tuple</td>
 <td align="right">520</td>
-<td align="right">47.3%</td>
+<td align="right">47.2%</td>
 </tr>
 <tr>
 <td align="left">list</td>
-<td align="right">40</td>
-<td align="right">3.6%</td>
+<td align="right">41</td>
+<td align="right">3.7%</td>
 </tr>
 </tbody>
 </table>
@@ -11746,7 +11892,11 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">3,754,185</td>
+=======
+<td align="right">3,754,215</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">27.0%</td>
 </tr>
 <tr>
@@ -11881,7 +12031,11 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">11,414,300</td>
+=======
+<td align="right">11,421,500</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">25.6%</td>
 </tr>
 <tr>
@@ -11893,7 +12047,11 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">30,225,273</td>
+=======
+<td align="right">30,224,968</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">67.8%</td>
 </tr>
 <tr>
@@ -11905,7 +12063,11 @@ miss
 Specialized instructions that deopt.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">2,887,496</td>
+=======
+<td align="right">2,880,465</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">6.5%</td>
 </tr>
 </tbody>
@@ -11922,13 +12084,18 @@ Specialized instructions that deopt.
 <tbody>
 <tr>
 <td align="left">Success</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">55,389</td>
 <td align="right">65.8%</td>
+=======
+<td align="right">55,253</td>
+<td align="right">65.7%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 </tr>
 <tr>
 <td align="left">Failure</td>
 <td align="right">28,820</td>
-<td align="right">34.2%</td>
+<td align="right">34.3%</td>
 </tr>
 </tbody>
 </table>
@@ -12535,7 +12702,11 @@ Basic
 Instructions that are not and cannot be specialized, e.g. `LOAD_FAST`.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">267,541,185</td>
+=======
+<td align="right">267,444,375</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">58.3%</td>
 </tr>
 <tr>
@@ -12547,7 +12718,11 @@ Not specialized
 Instructions that could be specialized but aren't, e.g. `LOAD_ATTR`, `BINARY_SLICE`.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">28,898,418</td>
+=======
+<td align="right">28,905,823</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">6.3%</td>
 </tr>
 <tr>
@@ -12559,7 +12734,11 @@ Specialized hits
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">158,760,963</td>
+=======
+<td align="right">158,736,478</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">34.6%</td>
 </tr>
 <tr>
@@ -12571,7 +12750,11 @@ Specialized misses
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">3,871,496</td>
+=======
+<td align="right">3,864,465</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">0.8%</td>
 </tr>
 </tbody>
@@ -12593,7 +12776,11 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">11,414,300</td>
+=======
+<td align="right">11,421,500</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">39.0%</td>
 </tr>
 <tr>
@@ -12603,7 +12790,11 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">3,754,185</td>
+=======
+<td align="right">3,754,215</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">12.8%</td>
 </tr>
 <tr>
@@ -12613,7 +12804,11 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">1,540,425</td>
+=======
+<td align="right">1,540,455</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">5.3%</td>
 </tr>
 <tr>
@@ -12664,7 +12859,7 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
 <td align="right">922,480</td>
-<td align="right">23.8%</td>
+<td align="right">23.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_NONDESCRIPTOR_WITH_VALUES</td>
@@ -12678,7 +12873,11 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_SLOT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">294,824</td>
+=======
+<td align="right">295,137</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right">7.6%</td>
 </tr>
 <tr>
@@ -12698,8 +12897,13 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_WITH_HINT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">132,232</td>
 <td align="right">3.4%</td>
+=======
+<td align="right">124,888</td>
+<td align="right">3.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 </tr>
 <tr>
 <td align="left">STORE_ATTR_INSTANCE_VALUE</td>
@@ -12872,7 +13076,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">16,723,661</td>
+=======
+<td align="right">16,711,469</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -12882,6 +13090,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">207,750,033</td>
 <td align="right">53.5%</td>
 </tr>
@@ -12899,6 +13108,25 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">101,284,029</td>
 <td align="right">24.8%</td>
+=======
+<td align="right">207,749,848</td>
+<td align="right">48.6%</td>
+</tr>
+<tr>
+<td align="left">Interpreter mortal decrefs</td>
+<td align="right">237,519,295</td>
+<td align="right">51.5%</td>
+</tr>
+<tr>
+<td align="left">Mortal increfs</td>
+<td align="right">94,497,814</td>
+<td align="right">22.1%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">101,300,414</td>
+<td align="right">21.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -12912,6 +13140,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">71,180,977</td>
 <td align="right">18.3%</td>
 </tr>
@@ -12919,6 +13148,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">67,347,584</td>
 <td align="right">16.5%</td>
+=======
+<td align="right">74,226,130</td>
+<td align="right">17.4%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">73,302,192</td>
+<td align="right">15.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -12942,27 +13180,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">23,089,966</td>
+=======
+<td align="right">23,050,949</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">682,358</td>
+=======
+<td align="right">721,688</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">881,380</td>
+=======
+<td align="right">923,389</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">9,108,438</td>
+=======
+<td align="right">9,105,759</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_declarative.md
 <td align="right">199,022</td>
+=======
+<td align="right">201,701</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_declarative.md
 <td align="right"></td>
 </tr>
 </tbody>

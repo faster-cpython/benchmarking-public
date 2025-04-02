@@ -10580,7 +10580,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_compile.md
 <td align="right">18,916,471</td>
+=======
+<td align="right">18,916,473</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_compile.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -10600,6 +10604,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_compile.md
 <td align="right">74,338,193</td>
 <td align="right">13.3%</td>
 </tr>
@@ -10607,6 +10612,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">93,470,264</td>
 <td align="right">15.0%</td>
+=======
+<td align="right">74,219,129</td>
+<td align="right">10.3%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">93,351,204</td>
+<td align="right">10.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_compile.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -10620,6 +10634,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_compile.md
 <td align="right">83,491,788</td>
 <td align="right">14.9%</td>
 </tr>
@@ -10627,6 +10642,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">86,488,674</td>
 <td align="right">13.9%</td>
+=======
+<td align="right">72,605,811</td>
+<td align="right">10.1%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">84,204,296</td>
+<td align="right">9.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_compile.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -10650,27 +10674,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_compile.md
 <td align="right">7,024,487</td>
+=======
+<td align="right">7,019,950</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_compile.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_compile.md
 <td align="right">33</td>
+=======
+<td align="right">4,570</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_compile.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_compile.md
 <td align="right">83</td>
+=======
+<td align="right">9,101</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_compile.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_compile.md
 <td align="right">14,277,524</td>
+=======
+<td align="right">14,149,440</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_compile.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_compile.md
 <td align="right">56</td>
+=======
+<td align="right">4,540</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_compile.md
 <td align="right"></td>
 </tr>
 </tbody>

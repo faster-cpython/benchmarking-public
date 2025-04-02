@@ -5926,7 +5926,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-nbody.md
 <td align="right">491</td>
+=======
+<td align="right">481</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-nbody.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -5946,6 +5950,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-nbody.md
 <td align="right">4,801,824</td>
 <td align="right">0.3%</td>
 </tr>
@@ -5953,6 +5958,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">996,056,675</td>
 <td align="right">45.6%</td>
+=======
+<td align="right">4,801,805</td>
+<td align="right">0.2%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">996,056,646</td>
+<td align="right">39.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-nbody.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -5966,12 +5980,20 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-nbody.md
 <td align="right">1,264</td>
+=======
+<td align="right">945</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-nbody.md
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-nbody.md
 <td align="right">873</td>
+=======
+<td align="right">864</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-nbody.md
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -5996,17 +6018,29 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-nbody.md
 <td align="right">176</td>
+=======
+<td align="right">195</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-nbody.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-nbody.md
 <td align="right">44</td>
+=======
+<td align="right">25</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-nbody.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-nbody.md
 <td align="right">42</td>
+=======
+<td align="right">18</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-nbody.md
 <td align="right"></td>
 </tr>
 <tr>

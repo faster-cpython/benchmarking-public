@@ -9925,7 +9925,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-python_startup_no_site.md
 <td align="right">206,448</td>
+=======
+<td align="right">202,959</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-python_startup_no_site.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -9945,6 +9949,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-python_startup_no_site.md
 <td align="right">474,632</td>
 <td align="right">18.2%</td>
 </tr>
@@ -9952,6 +9957,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">559,979</td>
 <td align="right">18.9%</td>
+=======
+<td align="right">474,546</td>
+<td align="right">14.0%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">560,286</td>
+<td align="right">14.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-python_startup_no_site.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -9965,6 +9979,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-python_startup_no_site.md
 <td align="right">610,128</td>
 <td align="right">23.3%</td>
 </tr>
@@ -9972,6 +9987,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">673,365</td>
 <td align="right">22.8%</td>
+=======
+<td align="right">561,277</td>
+<td align="right">16.5%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">675,774</td>
+<td align="right">16.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-python_startup_no_site.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -9995,27 +10019,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-python_startup_no_site.md
 <td align="right">83,570</td>
+=======
+<td align="right">84,320</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-python_startup_no_site.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-python_startup_no_site.md
 <td align="right">15,050</td>
+=======
+<td align="right">14,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-python_startup_no_site.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-python_startup_no_site.md
 <td align="right">13,717</td>
+=======
+<td align="right">13,535</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-python_startup_no_site.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-python_startup_no_site.md
 <td align="right">79,484</td>
+=======
+<td align="right">79,687</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-python_startup_no_site.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-python_startup_no_site.md
 <td align="right">3,956</td>
+=======
+<td align="right">3,753</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-python_startup_no_site.md
 <td align="right"></td>
 </tr>
 </tbody>

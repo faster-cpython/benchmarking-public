@@ -30,30 +30,52 @@ instruction is not counted.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">198,958,467</td>
 <td align="right">16.0%</td>
 <td align="right">16.0%</td>
+=======
+<td align="right">198,936,559</td>
+<td align="right">16.3%</td>
+<td align="right">16.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">57,668,567</td>
 <td align="right">4.6%</td>
 <td align="right">20.7%</td>
+=======
+<td align="right">57,672,143</td>
+<td align="right">4.7%</td>
+<td align="right">21.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">49,194,681</td>
+=======
+<td align="right">49,184,644</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">4.0%</td>
 <td align="right">24.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">49,047,299</td>
 <td align="right">4.0%</td>
 <td align="right">28.6%</td>
+=======
+<td align="right">47,630,703</td>
+<td align="right">3.9%</td>
+<td align="right">28.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -65,14 +87,23 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">46,593,986</td>
+=======
+<td align="right">46,597,329</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">3.8%</td>
 <td align="right">36.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">POP_TOP</td>
 <td align="right">36,832,358</td>
+=======
+<td align="left">LOAD_FAST_LOAD_FAST</td>
+<td align="right">36,453,582</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">3.0%</td>
 <td align="right">39.3%</td>
 <td align="right"></td>
@@ -86,29 +117,47 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">35,548,204</td>
 <td align="right">2.9%</td>
+=======
+<td align="right">33,049,152</td>
+<td align="right">2.7%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">45.1%</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">32,420,888</td>
+=======
+<td align="right">32,431,994</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">2.6%</td>
 <td align="right">47.7%</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">29,358,495</td>
+=======
+<td align="right">29,350,766</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">2.4%</td>
 <td align="right">50.0%</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">29,084,339</td>
 <td align="right">2.3%</td>
+=======
+<td align="right">27,208,582</td>
+<td align="right">2.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">52.4%</td>
 <td align="right"></td>
 </tr>
@@ -121,7 +170,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">25,674,248</td>
+=======
+<td align="right">25,669,656</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">2.1%</td>
 <td align="right">56.6%</td>
 <td align="right">22.2%</td>
@@ -135,16 +188,28 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">22,903,202</td>
 <td align="right">1.8%</td>
 <td align="right">60.5%</td>
+=======
+<td align="right">20,443,410</td>
+<td align="right">1.7%</td>
+<td align="right">60.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_WITH_HINT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">20,348,510</td>
 <td align="right">1.6%</td>
 <td align="right">62.2%</td>
+=======
+<td align="right">20,343,396</td>
+<td align="right">1.7%</td>
+<td align="right">62.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">38.4%</td>
 </tr>
 <tr>
@@ -156,14 +221,22 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">15,949,182</td>
+=======
+<td align="right">15,945,248</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">1.3%</td>
 <td align="right">64.8%</td>
 <td align="right">0.4%</td>
 </tr>
 <tr>
 <td align="left">CALL_ISINSTANCE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">15,673,453</td>
+=======
+<td align="right">15,670,007</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">1.3%</td>
 <td align="right">66.1%</td>
 <td align="right"></td>
@@ -183,10 +256,17 @@ instruction is not counted.
 <td align="right">0.2%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">LOAD_ATTR</td>
 <td align="right">14,464,749</td>
 <td align="right">1.2%</td>
 <td align="right">69.6%</td>
+=======
+<td align="left">LOAD_SMALL_INT</td>
+<td align="right">11,814,951</td>
+<td align="right">1.0%</td>
+<td align="right">69.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -197,10 +277,24 @@ instruction is not counted.
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">LOAD_SMALL_INT</td>
 <td align="right">11,851,782</td>
 <td align="right">1.0%</td>
 <td align="right">71.6%</td>
+=======
+<td align="left">FOR_ITER_GEN</td>
+<td align="right">11,355,184</td>
+<td align="right">0.9%</td>
+<td align="right">71.3%</td>
+<td align="right">0.2%</td>
+</tr>
+<tr>
+<td align="left">INTERPRETER_EXIT</td>
+<td align="right">11,304,615</td>
+<td align="right">0.9%</td>
+<td align="right">72.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -240,23 +334,37 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">9,494,447</td>
+=======
+<td align="right">9,495,879</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.8%</td>
 <td align="right">76.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">PUSH_NULL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">9,479,748</td>
+=======
+<td align="right">9,489,977</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.8%</td>
 <td align="right">77.4%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">STORE_FAST_STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">9,224,041</td>
 <td align="right">0.7%</td>
 <td align="right">78.2%</td>
+=======
+<td align="right">9,222,930</td>
+<td align="right">0.8%</td>
+<td align="right">78.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -296,12 +404,17 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">COMPARE_OP_INT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">8,150,264</td>
+=======
+<td align="right">8,150,175</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.7%</td>
 <td align="right">82.3%</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">COPY</td>
 <td align="right">8,135,009</td>
 <td align="right">0.7%</td>
@@ -311,6 +424,10 @@ instruction is not counted.
 <tr>
 <td align="left">INTERPRETER_EXIT</td>
 <td align="right">8,044,579</td>
+=======
+<td align="left">UNPACK_SEQUENCE_TWO_TUPLE</td>
+<td align="right">7,830,376</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.6%</td>
 <td align="right">83.6%</td>
 <td align="right"></td>
@@ -345,7 +462,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">BUILD_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">5,936,844</td>
+=======
+<td align="right">5,936,452</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.5%</td>
 <td align="right">86.3%</td>
 <td align="right"></td>
@@ -359,7 +480,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">5,735,276</td>
+=======
+<td align="right">5,734,103</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.5%</td>
 <td align="right">87.2%</td>
 <td align="right">7.0%</td>
@@ -372,8 +497,13 @@ instruction is not counted.
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">END_FOR</td>
 <td align="right">5,420,227</td>
+=======
+<td align="left">BINARY_OP_SUBSCR_LIST_INT</td>
+<td align="right">5,365,808</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.4%</td>
 <td align="right">88.1%</td>
 <td align="right"></td>
@@ -470,6 +600,7 @@ instruction is not counted.
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">CALL_BUILTIN_FAST</td>
 <td align="right">3,410,079</td>
 <td align="right">0.3%</td>
@@ -480,12 +611,36 @@ instruction is not counted.
 <td align="left">CONTAINS_OP</td>
 <td align="right">3,408,053</td>
 <td align="right">0.3%</td>
+=======
+<td align="left">CONTAINS_OP</td>
+<td align="right">3,410,343</td>
+<td align="right">0.3%</td>
+<td align="right">92.7%</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">CALL_BUILTIN_FAST</td>
+<td align="right">3,408,850</td>
+<td align="right">0.3%</td>
+<td align="right">93.0%</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">BUILD_LIST</td>
+<td align="right">3,047,921</td>
+<td align="right">0.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">93.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">BUILD_LIST</td>
 <td align="right">3,071,092</td>
+=======
+<td align="left">IS_OP</td>
+<td align="right">3,034,955</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.2%</td>
 <td align="right">93.5%</td>
 <td align="right"></td>
@@ -555,7 +710,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">TO_BOOL_NONE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">2,306,891</td>
+=======
+<td align="right">2,311,535</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.2%</td>
 <td align="right">95.7%</td>
 <td align="right">21.8%</td>
@@ -611,7 +770,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">CALL_LEN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">1,791,518</td>
+=======
+<td align="right">1,791,443</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.1%</td>
 <td align="right">97.0%</td>
 <td align="right"></td>
@@ -737,7 +900,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">CALL_LIST_APPEND</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">963,550</td>
+=======
+<td align="right">963,421</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.1%</td>
 <td align="right">98.8%</td>
 <td align="right"></td>
@@ -1038,7 +1205,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_GETITEM</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">49,952</td>
+=======
+<td align="right">50,226</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right">0.1%</td>
@@ -1314,7 +1485,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">24,334,341</td>
+=======
+<td align="right">24,341,358</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">2.0%</td>
 <td align="right">4.4%</td>
 </tr>
@@ -1325,14 +1500,24 @@ the corresponding unspecialized instruction are not counted as pairs.
 <td align="right">6.2%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">TO_BOOL_BOOL POP_JUMP_IF_FALSE</td>
 <td align="right">22,236,303</td>
+=======
+<td align="left">LOAD_FAST LOAD_ATTR_INSTANCE_VALUE</td>
+<td align="right">22,199,260</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">1.8%</td>
 <td align="right">8.0%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">LOAD_FAST LOAD_ATTR_INSTANCE_VALUE</td>
 <td align="right">22,203,825</td>
+=======
+<td align="left">TO_BOOL_BOOL POP_JUMP_IF_FALSE</td>
+<td align="right">22,189,762</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">1.8%</td>
 <td align="right">9.8%</td>
 </tr>
@@ -1344,7 +1529,17 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">LOAD_FAST LOAD_ATTR_WITH_HINT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">17,949,844</td>
+=======
+<td align="right">17,943,483</td>
+<td align="right">1.5%</td>
+<td align="right">12.9%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL_BUILTIN LOAD_FAST</td>
+<td align="right">16,778,333</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">1.4%</td>
 <td align="right">12.8%</td>
 </tr>
@@ -1374,6 +1569,7 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">CALL_ISINSTANCE TO_BOOL_BOOL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">14,187,672</td>
 <td align="right">1.1%</td>
 <td align="right">19.1%</td>
@@ -1387,6 +1583,15 @@ the corresponding unspecialized instruction are not counted as pairs.
 <tr>
 <td align="left">LOAD_FAST LOAD_GLOBAL_MODULE</td>
 <td align="right">11,421,218</td>
+=======
+<td align="right">14,183,923</td>
+<td align="right">1.2%</td>
+<td align="right">19.4%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST LOAD_GLOBAL_MODULE</td>
+<td align="right">11,420,816</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.9%</td>
 <td align="right">21.0%</td>
 </tr>
@@ -1398,7 +1603,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT FOR_ITER_LIST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">10,724,773</td>
+=======
+<td align="right">10,722,644</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.9%</td>
 <td align="right">22.8%</td>
 </tr>
@@ -1445,8 +1654,13 @@ the corresponding unspecialized instruction are not counted as pairs.
 <td align="right">27.9%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">GET_YIELD_FROM_ITER LOAD_CONST_IMMORTAL</td>
 <td align="right">8,257,912</td>
+=======
+<td align="left">CACHE RESUME_CHECK</td>
+<td align="right">8,303,805</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.7%</td>
 <td align="right">28.6%</td>
 </tr>
@@ -1463,10 +1677,17 @@ the corresponding unspecialized instruction are not counted as pairs.
 <td align="right">29.9%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">JUMP_BACKWARD_NO_JIT FOR_ITER_GEN</td>
 <td align="right">7,948,001</td>
 <td align="right">0.6%</td>
 <td align="right">30.5%</td>
+=======
+<td align="left">POP_JUMP_IF_TRUE JUMP_BACKWARD_NO_JIT</td>
+<td align="right">7,973,015</td>
+<td align="right">0.7%</td>
+<td align="right">30.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">PUSH_NULL LOAD_FAST</td>
@@ -1494,13 +1715,22 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">7,409,334</td>
+=======
+<td align="right">7,400,208</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.6%</td>
 <td align="right">33.6%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">POP_ITER LOAD_CONST_IMMORTAL</td>
 <td align="right">7,359,238</td>
+=======
+<td align="left">RETURN_VALUE INTERPRETER_EXIT</td>
+<td align="right">7,265,730</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.6%</td>
 <td align="right">34.2%</td>
 </tr>
@@ -1512,13 +1742,21 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">STORE_FAST LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">7,233,771</td>
+=======
+<td align="right">7,232,416</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.6%</td>
 <td align="right">35.3%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,994,886</td>
+=======
+<td align="right">6,993,921</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.6%</td>
 <td align="right">35.9%</td>
 </tr>
@@ -1530,7 +1768,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">UNPACK_SEQUENCE_TWO_TUPLE STORE_FAST_STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,945,237</td>
+=======
+<td align="right">6,944,141</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.6%</td>
 <td align="right">37.0%</td>
 </tr>
@@ -1542,7 +1784,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">COMPARE_OP_INT POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,873,096</td>
+=======
+<td align="right">6,872,983</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.6%</td>
 <td align="right">38.1%</td>
 </tr>
@@ -1550,6 +1796,21 @@ the corresponding unspecialized instruction are not counted as pairs.
 <td align="left">LOAD_ATTR_MODULE CALL_ISINSTANCE</td>
 <td align="right">6,861,389</td>
 <td align="right">0.6%</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
+=======
+<td align="right">37.6%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL_BUILTIN LOAD_FAST_LOAD_FAST</td>
+<td align="right">6,714,506</td>
+<td align="right">0.5%</td>
+<td align="right">38.2%</td>
+</tr>
+<tr>
+<td align="left">RESUME_CHECK LOAD_GLOBAL_BUILTIN</td>
+<td align="right">6,504,813</td>
+<td align="right">0.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">38.7%</td>
 </tr>
 <tr>
@@ -1620,7 +1881,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">5,670,321</td>
+=======
+<td align="right">5,666,620</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.5%</td>
 <td align="right">44.8%</td>
 </tr>
@@ -1637,8 +1902,13 @@ the corresponding unspecialized instruction are not counted as pairs.
 <td align="right">45.7%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">END_FOR POP_ITER</td>
 <td align="right">5,420,227</td>
+=======
+<td align="left">LOAD_FAST LOAD_ATTR_METHOD_NO_DICT</td>
+<td align="right">5,201,104</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.4%</td>
 <td align="right">46.1%</td>
 </tr>
@@ -1698,7 +1968,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">STORE_FAST_STORE_FAST LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">4,759,834</td>
+=======
+<td align="right">4,755,654</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.4%</td>
 <td align="right">50.1%</td>
 </tr>
@@ -1770,7 +2044,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST UNPACK_SEQUENCE_TWO_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,983,369</td>
+=======
+<td align="right">3,982,472</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.3%</td>
 <td align="right">54.2%</td>
 </tr>
@@ -1794,13 +2072,21 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,909,006</td>
+=======
+<td align="right">3,910,784</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.3%</td>
 <td align="right">55.5%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST POP_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,758,322</td>
+=======
+<td align="right">3,756,706</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.3%</td>
 <td align="right">55.8%</td>
 </tr>
@@ -1848,13 +2134,22 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">FOR_ITER UNPACK_SEQUENCE_TWO_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,464,368</td>
+=======
+<td align="right">3,464,244</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.3%</td>
 <td align="right">58.1%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">STORE_FAST LOAD_FAST_LOAD_FAST</td>
 <td align="right">3,428,851</td>
+=======
+<td align="left">LOAD_FAST LOAD_SMALL_INT</td>
+<td align="right">3,452,054</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.3%</td>
 <td align="right">58.4%</td>
 </tr>
@@ -1883,8 +2178,13 @@ the corresponding unspecialized instruction are not counted as pairs.
 <td align="right">59.5%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">JUMP_BACKWARD_NO_JIT LOAD_FAST</td>
 <td align="right">3,258,089</td>
+=======
+<td align="left">LOAD_FAST CALL_NON_PY_GENERAL</td>
+<td align="right">3,327,431</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">0.3%</td>
 <td align="right">59.7%</td>
 </tr>
@@ -2061,8 +2361,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,435,695</td>
 <td align="right">77.9%</td>
+=======
+<td align="right">8,303,805</td>
+<td align="right">72.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
@@ -2880,8 +3185,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,532,185</td>
 <td align="right">81.2%</td>
+=======
+<td align="right">7,265,730</td>
+<td align="right">64.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">YIELD_VALUE</td>
@@ -3213,6 +3523,7 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,758,322</td>
 <td align="right">30.5%</td>
 </tr>
@@ -3220,6 +3531,15 @@ specialized instruction deoptimizes.
 <td align="left">FOR_ITER</td>
 <td align="right">1,322,675</td>
 <td align="right">10.7%</td>
+=======
+<td align="right">3,756,706</td>
+<td align="right">34.4%</td>
+</tr>
+<tr>
+<td align="left">FOR_ITER</td>
+<td align="right">1,322,522</td>
+<td align="right">12.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">FOR_ITER_TUPLE</td>
@@ -3655,8 +3975,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">INTERPRETER_EXIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,532,185</td>
 <td align="right">14.0%</td>
+=======
+<td align="right">7,265,730</td>
+<td align="right">15.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
@@ -4594,7 +4919,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">872,556</td>
+=======
+<td align="right">872,427</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">14.7%</td>
 </tr>
 <tr>
@@ -4989,8 +5318,13 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">724,526</td>
 <td align="right">21.3%</td>
+=======
+<td align="right">724,516</td>
+<td align="right">21.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
@@ -5016,6 +5350,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">1,788,572</td>
 <td align="right">52.5%</td>
 </tr>
@@ -5023,6 +5358,15 @@ specialized instruction deoptimizes.
 <td align="left">POP_JUMP_IF_TRUE</td>
 <td align="right">1,334,550</td>
 <td align="right">39.2%</td>
+=======
+<td align="right">1,799,202</td>
+<td align="right">52.8%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">1,326,210</td>
+<td align="right">38.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
@@ -5674,12 +6018,20 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">UNPACK_SEQUENCE_TWO_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,464,368</td>
+=======
+<td align="right">3,464,244</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">59.6%</td>
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">1,322,675</td>
+=======
+<td align="right">1,322,522</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">22.8%</td>
 </tr>
 <tr>
@@ -5873,8 +6225,13 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">472,593</td>
 <td align="right">10.7%</td>
+=======
+<td align="right">472,489</td>
+<td align="right">15.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
@@ -5895,8 +6252,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,179,196</td>
 <td align="right">72.1%</td>
+=======
+<td align="right">1,802,300</td>
+<td align="right">59.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">YIELD_VALUE</td>
@@ -6561,7 +6923,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">24,334,341</td>
+=======
+<td align="right">24,341,358</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">12.2%</td>
 </tr>
 <tr>
@@ -6571,8 +6937,13 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">15,480,377</td>
 <td align="right">7.8%</td>
+=======
+<td align="right">16,778,333</td>
+<td align="right">8.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_NONE</td>
@@ -6593,7 +6964,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">22,203,825</td>
+=======
+<td align="right">22,199,260</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">11.2%</td>
 </tr>
 <tr>
@@ -6608,7 +6983,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">11,421,218</td>
+=======
+<td align="right">11,420,816</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">5.7%</td>
 </tr>
 <tr>
@@ -7018,8 +7397,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,487,851</td>
 <td align="right">29.4%</td>
+=======
+<td align="right">3,452,054</td>
+<td align="right">29.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
@@ -7038,7 +7422,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">CALL_LEN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">549,109</td>
+=======
+<td align="right">549,094</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">4.6%</td>
 </tr>
 </tbody>
@@ -7393,6 +7781,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">22,236,303</td>
 <td align="right">45.3%</td>
 </tr>
@@ -7400,6 +7789,15 @@ specialized instruction deoptimizes.
 <td align="left">COMPARE_OP_INT</td>
 <td align="right">6,873,096</td>
 <td align="right">14.0%</td>
+=======
+<td align="right">22,189,762</td>
+<td align="right">46.6%</td>
+</tr>
+<tr>
+<td align="left">COMPARE_OP_INT</td>
+<td align="right">6,872,983</td>
+<td align="right">14.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">COMPARE_OP_STR</td>
@@ -7408,8 +7806,13 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">IS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,179,196</td>
 <td align="right">6.5%</td>
+=======
+<td align="right">1,802,300</td>
+<td align="right">3.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">TO_BOOL_ALWAYS_TRUE</td>
@@ -7430,8 +7833,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">24,334,341</td>
 <td align="right">49.6%</td>
+=======
+<td align="right">24,341,358</td>
+<td align="right">51.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
@@ -7639,8 +8047,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">12,847,167</td>
 <td align="right">56.1%</td>
+=======
+<td align="right">10,395,196</td>
+<td align="right">50.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">TO_BOOL_ALWAYS_TRUE</td>
@@ -7649,6 +8062,7 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">1,334,550</td>
 <td align="right">5.8%</td>
 </tr>
@@ -7656,6 +8070,15 @@ specialized instruction deoptimizes.
 <td align="left">CONTAINS_OP_SET</td>
 <td align="right">1,087,079</td>
 <td align="right">4.7%</td>
+=======
+<td align="right">1,326,210</td>
+<td align="right">6.5%</td>
+</tr>
+<tr>
+<td align="left">CONTAINS_OP_SET</td>
+<td align="right">1,093,696</td>
+<td align="right">5.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">TO_BOOL_LIST</td>
@@ -7676,6 +8099,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">9,767,549</td>
 <td align="right">42.6%</td>
 </tr>
@@ -7683,6 +8107,15 @@ specialized instruction deoptimizes.
 <td align="left">LOAD_FAST</td>
 <td align="right">7,409,334</td>
 <td align="right">32.4%</td>
+=======
+<td align="right">7,973,015</td>
+<td align="right">39.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST</td>
+<td align="right">7,400,208</td>
+<td align="right">36.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
@@ -8337,7 +8770,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,994,886</td>
+=======
+<td align="right">6,993,921</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">14.2%</td>
 </tr>
 <tr>
@@ -8379,7 +8816,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">7,233,771</td>
+=======
+<td align="right">7,232,416</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">14.7%</td>
 </tr>
 <tr>
@@ -8501,7 +8942,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">UNPACK_SEQUENCE_TWO_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,945,237</td>
+=======
+<td align="right">6,944,141</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">75.3%</td>
 </tr>
 <tr>
@@ -8538,7 +8983,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">4,759,834</td>
+=======
+<td align="right">4,755,654</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">51.6%</td>
 </tr>
 <tr>
@@ -8553,7 +9002,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">839,037</td>
+=======
+<td align="right">841,522</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">9.1%</td>
 </tr>
 <tr>
@@ -9465,7 +9918,7 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">1,371</td>
+<td align="right">1,368</td>
 <td align="right">2.7%</td>
 </tr>
 <tr>
@@ -9487,7 +9940,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">49,148</td>
+=======
+<td align="right">49,419</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">98.4%</td>
 </tr>
 <tr>
@@ -9537,7 +9994,7 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">592,136</td>
+<td align="right">592,133</td>
 <td align="right">11.0%</td>
 </tr>
 <tr>
@@ -9574,7 +10031,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">601,324</td>
+=======
+<td align="right">601,302</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">11.2%</td>
 </tr>
 <tr>
@@ -10481,7 +10942,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">1,736,846</td>
+=======
+<td align="right">1,734,591</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">11.1%</td>
 </tr>
 <tr>
@@ -10508,7 +10973,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">14,187,672</td>
+=======
+<td align="right">14,183,923</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">90.5%</td>
 </tr>
 <tr>
@@ -10769,7 +11238,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">1,259,301</td>
+=======
+<td align="right">1,259,254</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">70.3%</td>
 </tr>
 <tr>
@@ -10784,7 +11257,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">131,775</td>
+=======
+<td align="right">131,833</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">7.4%</td>
 </tr>
 <tr>
@@ -10806,7 +11283,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">549,109</td>
+=======
+<td align="right">549,094</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">30.7%</td>
 </tr>
 <tr>
@@ -10871,7 +11352,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">BUILD_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">42,148</td>
+=======
+<td align="right">42,146</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">4.4%</td>
 </tr>
 </tbody>
@@ -10893,7 +11378,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">185,695</td>
+=======
+<td align="right">185,717</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">19.3%</td>
 </tr>
 <tr>
@@ -11261,7 +11750,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,328,500</td>
+=======
+<td align="right">3,327,431</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">58.0%</td>
 </tr>
 <tr>
@@ -11298,12 +11791,21 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">2,463,353</td>
 <td align="right">43.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">833,544</td>
+=======
+<td align="right">2,460,234</td>
+<td align="right">42.9%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST</td>
+<td align="right">833,543</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">14.5%</td>
 </tr>
 <tr>
@@ -11820,7 +12322,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">845,409</td>
+=======
+<td align="right">845,380</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">10.4%</td>
 </tr>
 <tr>
@@ -11852,7 +12358,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,873,096</td>
+=======
+<td align="right">6,872,983</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">84.3%</td>
 </tr>
 <tr>
@@ -12225,7 +12735,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">10,724,773</td>
+=======
+<td align="right">10,722,644</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">67.2%</td>
 </tr>
 <tr>
@@ -12262,17 +12776,29 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,994,886</td>
+=======
+<td align="right">6,993,921</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">43.9%</td>
 </tr>
 <tr>
 <td align="left">UNPACK_SEQUENCE_TWO_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,983,369</td>
+=======
+<td align="right">3,982,472</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">25.0%</td>
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,758,322</td>
+=======
+<td align="right">3,756,706</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">23.6%</td>
 </tr>
 <tr>
@@ -12455,9 +12981,15 @@ specialized instruction deoptimizes.
 <td align="right">33.6%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">POP_TOP</td>
 <td align="right">8,506,069</td>
 <td align="right">29.2%</td>
+=======
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">7,973,015</td>
+<td align="right">29.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
@@ -12488,8 +13020,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">10,724,773</td>
 <td align="right">36.9%</td>
+=======
+<td align="right">10,722,644</td>
+<td align="right">39.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">FOR_ITER_GEN</td>
@@ -12759,7 +13296,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">22,203,825</td>
+=======
+<td align="right">22,199,260</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">86.5%</td>
 </tr>
 <tr>
@@ -12796,7 +13337,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">5,670,321</td>
+=======
+<td align="right">5,666,620</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">22.1%</td>
 </tr>
 <tr>
@@ -12923,7 +13468,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">5,198,959</td>
+=======
+<td align="right">5,201,104</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">54.8%</td>
 </tr>
 <tr>
@@ -12960,7 +13509,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,909,006</td>
+=======
+<td align="right">3,910,784</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">41.2%</td>
 </tr>
 <tr>
@@ -12975,7 +13528,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">684,551</td>
+=======
+<td align="right">684,521</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">7.2%</td>
 </tr>
 <tr>
@@ -13507,7 +14064,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">455,250</td>
+=======
+<td align="right">456,556</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">2.2%</td>
 </tr>
 <tr>
@@ -13738,12 +14299,20 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">7,233,771</td>
+=======
+<td align="right">7,232,416</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">24.6%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,506,321</td>
+=======
+<td align="right">6,504,813</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">22.2%</td>
 </tr>
 <tr>
@@ -13753,7 +14322,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">2,321,648</td>
+=======
+<td align="right">2,319,401</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">7.9%</td>
 </tr>
 <tr>
@@ -13775,8 +14348,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">15,480,377</td>
 <td align="right">52.7%</td>
+=======
+<td align="right">16,778,333</td>
+<td align="right">57.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
@@ -13785,7 +14363,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">CALL_ISINSTANCE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">1,736,846</td>
+=======
+<td align="right">1,734,591</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">5.9%</td>
 </tr>
 <tr>
@@ -13820,7 +14402,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">11,421,218</td>
+=======
+<td align="right">11,420,816</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">35.2%</td>
 </tr>
 <tr>
@@ -14040,9 +14626,15 @@ specialized instruction deoptimizes.
 <td align="right">19.4%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="left">FOR_ITER_GEN</td>
 <td align="right">8,163,277</td>
 <td align="right">14.2%</td>
+=======
+<td align="left">CACHE</td>
+<td align="right">8,303,805</td>
+<td align="right">14.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">CACHE</td>
@@ -14078,7 +14670,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,506,321</td>
+=======
+<td align="right">6,504,813</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">11.3%</td>
 </tr>
 <tr>
@@ -14662,8 +15258,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_ISINSTANCE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">14,187,672</td>
 <td align="right">39.9%</td>
+=======
+<td align="right">14,183,923</td>
+<td align="right">42.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">COPY</td>
@@ -14699,8 +15300,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">22,236,303</td>
 <td align="right">62.6%</td>
+=======
+<td align="right">22,189,762</td>
+<td align="right">67.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
@@ -14908,8 +15514,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">1,331,913</td>
 <td align="right">57.7%</td>
+=======
+<td align="right">1,331,830</td>
+<td align="right">57.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_WITH_HINT</td>
@@ -14923,6 +15534,7 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">93,762</td>
 <td align="right">4.1%</td>
 </tr>
@@ -14930,6 +15542,15 @@ specialized instruction deoptimizes.
 <td align="left">CALL_NON_PY_GENERAL</td>
 <td align="right">81,522</td>
 <td align="right">3.5%</td>
+=======
+<td align="right">93,613</td>
+<td align="right">4.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_NON_PY_GENERAL</td>
+<td align="right">83,983</td>
+<td align="right">3.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 </tbody>
 </table>
@@ -14945,12 +15566,21 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">1,693,258</td>
 <td align="right">73.4%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
 <td align="right">598,649</td>
+=======
+<td align="right">1,694,948</td>
+<td align="right">73.3%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">601,583</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">26.0%</td>
 </tr>
 <tr>
@@ -15221,17 +15851,29 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,983,369</td>
+=======
+<td align="right">3,982,472</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">50.9%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,464,368</td>
+=======
+<td align="right">3,464,244</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">44.2%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">246,943</td>
+=======
+<td align="right">246,905</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">3.2%</td>
 </tr>
 <tr>
@@ -15258,7 +15900,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST_STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,945,237</td>
+=======
+<td align="right">6,944,141</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">88.7%</td>
 </tr>
 <tr>
@@ -15635,8 +16281,13 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">22,957,444</td>
 <td align="right">86.5%</td>
+=======
+<td align="right">17,769,775</td>
+<td align="right">82.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">
@@ -15889,8 +16540,13 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">58,666,808</td>
 <td align="right">87.8%</td>
+=======
+<td align="right">60,031,675</td>
+<td align="right">88.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">
@@ -16055,7 +16711,11 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">17,181,786</td>
+=======
+<td align="right">17,177,354</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">94.2%</td>
 </tr>
 <tr>
@@ -16183,7 +16843,11 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,400,877</td>
+=======
+<td align="right">3,403,164</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">45.1%</td>
 </tr>
 <tr>
@@ -16229,7 +16893,11 @@ Specialized instructions that deopt.
 </tr>
 <tr>
 <td align="left">Failure</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,463</td>
+=======
+<td align="right">6,465</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">84.1%</td>
 </tr>
 </tbody>
@@ -16246,7 +16914,11 @@ Specialized instructions that deopt.
 <tbody>
 <tr>
 <td align="left">tuple</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,290</td>
+=======
+<td align="right">3,292</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">50.9%</td>
 </tr>
 <tr>
@@ -16305,8 +16977,13 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">33,400,299</td>
 <td align="right">84.7%</td>
+=======
+<td align="right">30,146,071</td>
+<td align="right">83.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">
@@ -16477,7 +17154,11 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">80,281,493</td>
+=======
+<td align="right">80,271,264</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">62.4%</td>
 </tr>
 <tr>
@@ -16489,7 +17170,11 @@ miss
 Specialized instructions that deopt.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">33,954,410</td>
+=======
+<td align="right">33,946,718</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">26.4%</td>
 </tr>
 </tbody>
@@ -16659,7 +17344,11 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">61,770,024</td>
+=======
+<td align="right">61,772,973</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">99.9%</td>
 </tr>
 <tr>
@@ -17191,8 +17880,13 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">41,223,753</td>
 <td align="right">90.0%</td>
+=======
+<td align="right">38,727,707</td>
+<td align="right">89.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">
@@ -17321,7 +18015,11 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">7,943,018</td>
+=======
+<td align="right">7,942,121</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">86.5%</td>
 </tr>
 </tbody>
@@ -17404,7 +18102,11 @@ Basic
 Instructions that are not and cannot be specialized, e.g. `LOAD_FAST`.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">654,978,474</td>
+=======
+<td align="right">646,125,290</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">52.8%</td>
 </tr>
 <tr>
@@ -17416,7 +18118,11 @@ Not specialized
 Instructions that could be specialized but aren't, e.g. `LOAD_ATTR`, `BINARY_SLICE`.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">38,545,170</td>
+=======
+<td align="right">38,539,423</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">3.1%</td>
 </tr>
 <tr>
@@ -17428,8 +18134,13 @@ Specialized hits
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">498,109,674</td>
 <td align="right">40.2%</td>
+=======
+<td align="right">490,434,961</td>
+<td align="right">40.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">
@@ -17440,8 +18151,13 @@ Specialized misses
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">48,877,637</td>
 <td align="right">3.9%</td>
+=======
+<td align="right">48,862,763</td>
+<td align="right">4.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 </tbody>
 </table>
@@ -17487,12 +18203,20 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">3,400,877</td>
+=======
+<td align="right">3,403,164</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">7.3%</td>
 </tr>
 <tr>
 <td align="left">STORE_ATTR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">1,381,494</td>
+=======
+<td align="right">1,381,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">2.9%</td>
 </tr>
 <tr>
@@ -17612,6 +18336,7 @@ Also includes the count of frame objects created.
 <tbody>
 <tr>
 <td align="left">Calls to PyEval_EvalDefault</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">8,265,953</td>
 <td align="right">12.0%</td>
 </tr>
@@ -17628,6 +18353,24 @@ Also includes the count of frame objects created.
 <tr>
 <td align="left">Calls via PyEval_EvalFrame (vector)</td>
 <td align="right">6,268,786</td>
+=======
+<td align="right">11,525,989</td>
+<td align="right">16.7%</td>
+</tr>
+<tr>
+<td align="left">Calls to Python functions inlined</td>
+<td align="right">57,542,386</td>
+<td align="right">83.3%</td>
+</tr>
+<tr>
+<td align="left">Calls via PyEval_EvalFrame (total)</td>
+<td align="right">11,525,989</td>
+<td align="right">16.7%</td>
+</tr>
+<tr>
+<td align="left">Calls via PyEval_EvalFrame (vector)</td>
+<td align="right">6,280,053</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">9.1%</td>
 </tr>
 <tr>
@@ -17642,7 +18385,11 @@ Also includes the count of frame objects created.
 </tr>
 <tr>
 <td align="left">Calls via PyEval_EvalFrame (function vectorcall)</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">6,267,680</td>
+=======
+<td align="right">6,278,947</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">9.1%</td>
 </tr>
 <tr>
@@ -17652,8 +18399,13 @@ Also includes the count of frame objects created.
 </tr>
 <tr>
 <td align="left">Calls via PyEval_EvalFrame (slot)</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">372,423</td>
 <td align="right">0.5%</td>
+=======
+<td align="right">388,042</td>
+<td align="right">0.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">Calls via PyEval_EvalFrame (function ex)</td>
@@ -17677,7 +18429,11 @@ Also includes the count of frame objects created.
 </tr>
 <tr>
 <td align="left">Frames pushed</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">47,973,629</td>
+=======
+<td align="right">47,976,987</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right">69.5%</td>
 </tr>
 </tbody>
@@ -17711,16 +18467,26 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">46,135,476</td>
 <td align="right">48.9%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
 <td align="right">46,161,095</td>
+=======
+<td align="right">46,753,985</td>
+<td align="right">49.3%</td>
+</tr>
+<tr>
+<td align="left">Frees to freelist</td>
+<td align="right">46,779,467</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">48,184,712</td>
 <td align="right">51.1%</td>
 </tr>
@@ -17728,6 +18494,15 @@ other names.
 <td align="left">Allocations to 512 bytes</td>
 <td align="right">47,833,962</td>
 <td align="right">50.7%</td>
+=======
+<td align="right">48,110,201</td>
+<td align="right">50.7%</td>
+</tr>
+<tr>
+<td align="left">Allocations to 512 bytes</td>
+<td align="right">47,759,603</td>
+<td align="right">50.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">Allocations to 4 kbytes</td>
@@ -17741,7 +18516,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">46,815,683</td>
+=======
+<td align="right">46,709,670</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -17751,6 +18530,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">466,942,887</td>
 <td align="right">49.0%</td>
 </tr>
@@ -17788,6 +18568,45 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">144,361,665</td>
 <td align="right">14.6%</td>
+=======
+<td align="right">465,441,870</td>
+<td align="right">44.6%</td>
+</tr>
+<tr>
+<td align="left">Interpreter mortal decrefs</td>
+<td align="right">570,714,688</td>
+<td align="right">49.0%</td>
+</tr>
+<tr>
+<td align="left">Mortal increfs</td>
+<td align="right">269,584,458</td>
+<td align="right">25.8%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">244,925,669</td>
+<td align="right">21.0%</td>
+</tr>
+<tr>
+<td align="left">Interpreter immortal increfs</td>
+<td align="right">133,287,479</td>
+<td align="right">12.8%</td>
+</tr>
+<tr>
+<td align="left">Interpreter immortal decrefs</td>
+<td align="right">200,101,898</td>
+<td align="right">17.2%</td>
+</tr>
+<tr>
+<td align="left">Immortal increfs</td>
+<td align="right">174,743,242</td>
+<td align="right">16.8%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">148,913,369</td>
+<td align="right">12.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -17811,27 +18630,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">55,061,136</td>
+=======
+<td align="right">54,992,305</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">1,550,855</td>
+=======
+<td align="right">1,601,999</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">1,823,942</td>
+=======
+<td align="right">1,946,712</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">29,084,656</td>
+=======
+<td align="right">28,996,382</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">275,155</td>
+=======
+<td align="right">346,703</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 <td align="right"></td>
 </tr>
 </tbody>
@@ -17871,10 +18710,17 @@ Collected/visits gives some measure of efficiency.
 <tr>
 <td align="right">1</td>
 <td align="right">1,322</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-pylint.md
 <td align="right">26,495</td>
 <td align="right">70,847,908</td>
 <td align="right">10,759,157</td>
 <td align="right">2,115,009</td>
+=======
+<td align="right">26,857</td>
+<td align="right">70,539,549</td>
+<td align="right">10,990,082</td>
+<td align="right">1,949,377</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-pylint.md
 </tr>
 <tr>
 <td align="right">2</td>

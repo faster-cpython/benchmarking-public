@@ -7648,7 +7648,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-crypto_pyaes.md
 <td align="right">113,905,200</td>
+=======
+<td align="right">113,905,202</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-crypto_pyaes.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -7673,8 +7677,13 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-crypto_pyaes.md
 <td align="right">137,555,643</td>
 <td align="right">18.3%</td>
+=======
+<td align="right">137,555,645</td>
+<td align="right">10.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-crypto_pyaes.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -7688,13 +7697,22 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-crypto_pyaes.md
 <td align="right">165,675,903</td>
 <td align="right">23.8%</td>
+=======
+<td align="right">165,675,605</td>
+<td align="right">18.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-crypto_pyaes.md
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
 <td align="right">84,590,363</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-crypto_pyaes.md
 <td align="right">11.2%</td>
+=======
+<td align="right">6.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-crypto_pyaes.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -7733,12 +7751,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">240</td>
+<td align="right">239</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">0</td>
+<td align="right">1</td>
 <td align="right"></td>
 </tr>
 </tbody>

@@ -30,826 +30,850 @@ instruction is not counted.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">94,564,784</td>
+<td align="right">47,101,111</td>
 <td align="right">20.1%</td>
 <td align="right">20.1%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">24,267,441</td>
+<td align="right">12,087,467</td>
 <td align="right">5.1%</td>
 <td align="right">25.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">20,287,799</td>
+<td align="right">10,104,982</td>
 <td align="right">4.3%</td>
 <td align="right">29.5%</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">18,874,612</td>
+<td align="right">9,401,011</td>
 <td align="right">4.0%</td>
 <td align="right">33.5%</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">17,073,740</td>
+<td align="right">8,504,135</td>
 <td align="right">3.6%</td>
 <td align="right">37.1%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">16,796,728</td>
+<td align="right">8,366,222</td>
 <td align="right">3.6%</td>
 <td align="right">40.7%</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="left">RETURN_VALUE</td>
 <td align="right">16,274,335</td>
+=======
+<td align="left">POP_JUMP_IF_FALSE</td>
+<td align="right">8,312,596</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">3.5%</td>
 <td align="right">44.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="left">POP_JUMP_IF_FALSE</td>
 <td align="right">15,651,594</td>
 <td align="right">3.3%</td>
 <td align="right">47.5%</td>
+=======
+<td align="left">RETURN_VALUE</td>
+<td align="right">8,106,039</td>
+<td align="right">3.5%</td>
+<td align="right">47.7%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">14,895,412</td>
+=======
+<td align="right">7,419,345</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">3.2%</td>
 <td align="right">50.6%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
-<td align="right">12,008,557</td>
+<td align="right">5,981,363</td>
 <td align="right">2.5%</td>
 <td align="right">53.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">11,312,629</td>
+<td align="right">5,634,617</td>
 <td align="right">2.4%</td>
 <td align="right">55.6%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">STORE_ATTR_INSTANCE_VALUE</td>
-<td align="right">10,927,280</td>
+<td align="right">5,442,580</td>
 <td align="right">2.3%</td>
 <td align="right">57.9%</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
-<td align="right">10,676,355</td>
+<td align="right">5,317,751</td>
 <td align="right">2.3%</td>
 <td align="right">60.2%</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">10,419,159</td>
 <td align="right">2.2%</td>
+=======
+<td align="right">4,672,744</td>
+<td align="right">2.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">62.4%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">8,323,031</td>
+<td align="right">4,145,480</td>
 <td align="right">1.8%</td>
 <td align="right">64.1%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
-<td align="right">8,104,252</td>
+<td align="right">4,036,550</td>
 <td align="right">1.7%</td>
 <td align="right">65.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">7,689,105</td>
+<td align="right">3,829,920</td>
 <td align="right">1.6%</td>
 <td align="right">67.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_WITH_VALUES</td>
-<td align="right">6,378,830</td>
+<td align="right">3,177,175</td>
 <td align="right">1.4%</td>
 <td align="right">68.9%</td>
 <td align="right">0.2%</td>
 </tr>
 <tr>
 <td align="left">PUSH_NULL</td>
-<td align="right">5,734,303</td>
+<td align="right">2,856,356</td>
 <td align="right">1.2%</td>
 <td align="right">70.1%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">NOP</td>
-<td align="right">5,727,889</td>
+<td align="right">2,852,938</td>
 <td align="right">1.2%</td>
 <td align="right">71.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
-<td align="right">5,617,338</td>
+<td align="right">2,797,897</td>
 <td align="right">1.2%</td>
 <td align="right">72.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BUILD_TUPLE</td>
-<td align="right">5,199,588</td>
+<td align="right">2,589,836</td>
 <td align="right">1.1%</td>
 <td align="right">73.6%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_MODULE</td>
-<td align="right">5,100,426</td>
+<td align="right">2,540,463</td>
 <td align="right">1.1%</td>
 <td align="right">74.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">4,947,547</td>
+=======
+<td align="right">2,464,292</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">1.0%</td>
 <td align="right">75.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">4,828,908</td>
+<td align="right">2,405,187</td>
 <td align="right">1.0%</td>
 <td align="right">76.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_DICT</td>
-<td align="right">4,416,991</td>
+<td align="right">2,199,971</td>
 <td align="right">0.9%</td>
 <td align="right">77.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
-<td align="right">4,299,957</td>
+<td align="right">2,141,697</td>
 <td align="right">0.9%</td>
 <td align="right">78.6%</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">COMPARE_OP_INT</td>
-<td align="right">4,031,411</td>
+<td align="right">2,007,960</td>
 <td align="right">0.9%</td>
 <td align="right">79.4%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_NOT_NONE</td>
-<td align="right">4,026,505</td>
+<td align="right">2,005,524</td>
 <td align="right">0.9%</td>
 <td align="right">80.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_LIST</td>
-<td align="right">3,509,199</td>
+<td align="right">1,747,829</td>
 <td align="right">0.7%</td>
 <td align="right">81.0%</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
-<td align="right">3,259,101</td>
+<td align="right">1,623,465</td>
 <td align="right">0.7%</td>
 <td align="right">81.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BUILD_LIST</td>
-<td align="right">2,866,624</td>
+<td align="right">1,427,784</td>
 <td align="right">0.6%</td>
 <td align="right">82.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_ISINSTANCE</td>
-<td align="right">2,734,835</td>
+<td align="right">1,362,165</td>
 <td align="right">0.6%</td>
 <td align="right">82.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CHECK_EXC_MATCH</td>
-<td align="right">2,606,319</td>
+<td align="right">1,298,129</td>
 <td align="right">0.6%</td>
 <td align="right">83.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">POP_EXCEPT</td>
-<td align="right">2,606,319</td>
+<td align="right">1,298,129</td>
 <td align="right">0.6%</td>
 <td align="right">84.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">PUSH_EXC_INFO</td>
-<td align="right">2,606,319</td>
+<td align="right">1,298,129</td>
 <td align="right">0.6%</td>
 <td align="right">84.6%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">COPY_FREE_VARS</td>
-<td align="right">2,603,016</td>
+<td align="right">1,296,515</td>
 <td align="right">0.6%</td>
 <td align="right">85.1%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_FAST</td>
-<td align="right">2,471,119</td>
+<td align="right">1,230,789</td>
 <td align="right">0.5%</td>
 <td align="right">85.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
-<td align="right">2,469,112</td>
+<td align="right">1,229,947</td>
 <td align="right">0.5%</td>
 <td align="right">86.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
-<td align="right">2,374,771</td>
+<td align="right">1,182,801</td>
 <td align="right">0.5%</td>
 <td align="right">86.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
-<td align="right">2,216,817</td>
+<td align="right">1,104,235</td>
 <td align="right">0.5%</td>
 <td align="right">87.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_LIST_APPEND</td>
-<td align="right">2,213,943</td>
+<td align="right">1,102,703</td>
 <td align="right">0.5%</td>
 <td align="right">87.6%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">COPY</td>
-<td align="right">2,080,570</td>
+<td align="right">1,036,280</td>
 <td align="right">0.4%</td>
 <td align="right">88.1%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">INTERPRETER_EXIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,949,788</td>
+=======
+<td align="right">971,144</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">0.4%</td>
 <td align="right">88.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_NONE</td>
-<td align="right">1,948,994</td>
+<td align="right">970,744</td>
 <td align="right">0.4%</td>
 <td align="right">88.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP_DICT</td>
-<td align="right">1,947,427</td>
+<td align="right">969,957</td>
 <td align="right">0.4%</td>
 <td align="right">89.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">STORE_FAST_STORE_FAST</td>
-<td align="right">1,946,503</td>
+<td align="right">969,552</td>
 <td align="right">0.4%</td>
 <td align="right">89.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
-<td align="right">1,835,879</td>
+<td align="right">914,438</td>
 <td align="right">0.4%</td>
 <td align="right">90.1%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
-<td align="right">1,832,058</td>
+<td align="right">912,566</td>
 <td align="right">0.4%</td>
 <td align="right">90.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_PY_GENERAL</td>
-<td align="right">1,697,296</td>
+<td align="right">845,405</td>
 <td align="right">0.4%</td>
 <td align="right">90.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_LEN</td>
-<td align="right">1,689,510</td>
+<td align="right">841,520</td>
 <td align="right">0.4%</td>
 <td align="right">91.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">IS_OP</td>
-<td align="right">1,688,571</td>
+<td align="right">841,100</td>
 <td align="right">0.4%</td>
 <td align="right">91.6%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_SLOT</td>
-<td align="right">1,558,666</td>
+<td align="right">776,326</td>
 <td align="right">0.3%</td>
 <td align="right">91.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_INTERRUPT</td>
-<td align="right">1,558,662</td>
+<td align="right">776,322</td>
 <td align="right">0.3%</td>
 <td align="right">92.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_STR_INT</td>
-<td align="right">1,557,134</td>
+<td align="right">775,574</td>
 <td align="right">0.3%</td>
 <td align="right">92.6%</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">CALL_TYPE_1</td>
-<td align="right">1,428,905</td>
+<td align="right">711,695</td>
 <td align="right">0.3%</td>
 <td align="right">92.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_STR</td>
-<td align="right">1,309,542</td>
+<td align="right">652,233</td>
 <td align="right">0.3%</td>
 <td align="right">93.1%</td>
-<td align="right">0.0%</td>
+<td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST_WITH_KEYWORDS</td>
-<td align="right">1,305,878</td>
+<td align="right">650,418</td>
 <td align="right">0.3%</td>
 <td align="right">93.4%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">FORMAT_SIMPLE</td>
-<td align="right">1,295,000</td>
+<td align="right">645,000</td>
 <td align="right">0.3%</td>
 <td align="right">93.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BUILD_STRING</td>
-<td align="right">1,295,000</td>
+<td align="right">645,000</td>
 <td align="right">0.3%</td>
 <td align="right">94.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_O</td>
-<td align="right">1,169,450</td>
+<td align="right">582,499</td>
 <td align="right">0.2%</td>
 <td align="right">94.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_FAST_WITH_KEYWORDS</td>
-<td align="right">1,055,440</td>
+<td align="right">525,690</td>
 <td align="right">0.2%</td>
 <td align="right">94.4%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_INT</td>
-<td align="right">1,055,219</td>
+<td align="right">525,599</td>
 <td align="right">0.2%</td>
 <td align="right">94.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_CLASS</td>
-<td align="right">1,047,719</td>
+<td align="right">521,868</td>
 <td align="right">0.2%</td>
 <td align="right">94.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">JUMP_FORWARD</td>
-<td align="right">1,044,118</td>
+<td align="right">520,087</td>
 <td align="right">0.2%</td>
 <td align="right">95.1%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_GETITEM</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,042,240</td>
+=======
+<td align="right">519,124</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">0.2%</td>
 <td align="right">95.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">RAISE_VARARGS</td>
-<td align="right">1,042,216</td>
+<td align="right">519,096</td>
 <td align="right">0.2%</td>
 <td align="right">95.6%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">RERAISE</td>
-<td align="right">1,041,439</td>
+<td align="right">518,709</td>
 <td align="right">0.2%</td>
 <td align="right">95.8%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBTRACT_INT</td>
-<td align="right">1,039,129</td>
+<td align="right">517,569</td>
 <td align="right">0.2%</td>
 <td align="right">96.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_O</td>
-<td align="right">909,144</td>
+<td align="right">452,844</td>
 <td align="right">0.2%</td>
 <td align="right">96.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BINARY_SLICE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">784,515</td>
+=======
+<td align="right">390,741</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">0.2%</td>
 <td align="right">96.4%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_ADD_INT</td>
-<td align="right">782,997</td>
+<td align="right">390,007</td>
 <td align="right">0.2%</td>
 <td align="right">96.5%</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">COMPARE_OP_STR</td>
-<td align="right">782,497</td>
+<td align="right">389,767</td>
 <td align="right">0.2%</td>
 <td align="right">96.7%</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
-<td align="right">782,075</td>
+<td align="right">389,583</td>
 <td align="right">0.2%</td>
 <td align="right">96.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">UNPACK_SEQUENCE_TWO_TUPLE</td>
-<td align="right">780,220</td>
+<td align="right">388,659</td>
 <td align="right">0.2%</td>
 <td align="right">97.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_KW_NON_PY</td>
-<td align="right">779,331</td>
+<td align="right">388,161</td>
 <td align="right">0.2%</td>
 <td align="right">97.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">UNPACK_SEQUENCE_TUPLE</td>
-<td align="right">777,008</td>
+<td align="right">387,008</td>
 <td align="right">0.2%</td>
-<td align="right">97.4%</td>
+<td align="right">97.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">STORE_SUBSCR_DICT</td>
-<td align="right">658,121</td>
+<td align="right">327,791</td>
 <td align="right">0.1%</td>
 <td align="right">97.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_RANGE</td>
-<td align="right">655,342</td>
+<td align="right">326,441</td>
 <td align="right">0.1%</td>
 <td align="right">97.6%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_LIST_INT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">648,064</td>
+=======
+<td align="right">322,803</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">0.1%</td>
 <td align="right">97.8%</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_TUPLE</td>
-<td align="right">535,874</td>
+<td align="right">266,904</td>
 <td align="right">0.1%</td>
 <td align="right">97.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BUILD_MAP</td>
-<td align="right">533,542</td>
+<td align="right">265,742</td>
 <td align="right">0.1%</td>
 <td align="right">98.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BINARY_OP</td>
-<td align="right">525,360</td>
+<td align="right">261,800</td>
 <td align="right">0.1%</td>
 <td align="right">98.1%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_NOARGS</td>
-<td align="right">522,728</td>
+<td align="right">260,387</td>
 <td align="right">0.1%</td>
 <td align="right">98.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">IMPORT_NAME</td>
-<td align="right">521,885</td>
+<td align="right">259,935</td>
 <td align="right">0.1%</td>
 <td align="right">98.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_KW_PY</td>
-<td align="right">520,846</td>
+<td align="right">259,416</td>
 <td align="right">0.1%</td>
 <td align="right">98.4%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_FUNCTION_EX</td>
-<td align="right">520,656</td>
+<td align="right">259,355</td>
 <td align="right">0.1%</td>
 <td align="right">98.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">DICT_MERGE</td>
-<td align="right">520,590</td>
+<td align="right">259,290</td>
 <td align="right">0.1%</td>
 <td align="right">98.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_SUPER_ATTR_METHOD</td>
-<td align="right">520,331</td>
+<td align="right">259,161</td>
 <td align="right">0.1%</td>
 <td align="right">98.8%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">EXIT_INIT_CHECK</td>
-<td align="right">519,821</td>
+<td align="right">258,911</td>
 <td align="right">0.1%</td>
 <td align="right">98.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_ALLOC_AND_ENTER_INIT</td>
-<td align="right">519,821</td>
+<td align="right">258,911</td>
 <td align="right">0.1%</td>
 <td align="right">99.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP_SET</td>
-<td align="right">519,590</td>
+<td align="right">258,810</td>
 <td align="right">0.1%</td>
 <td align="right">99.1%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_MULTIPLY_INT</td>
-<td align="right">519,562</td>
+<td align="right">258,782</td>
 <td align="right">0.1%</td>
 <td align="right">99.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">EXTENDED_ARG</td>
-<td align="right">391,709</td>
+<td align="right">195,149</td>
 <td align="right">0.1%</td>
 <td align="right">99.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">UNPACK_SEQUENCE_LIST</td>
-<td align="right">390,313</td>
+<td align="right">194,403</td>
 <td align="right">0.1%</td>
 <td align="right">99.4%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_BOUND_METHOD_EXACT_ARGS</td>
-<td align="right">389,569</td>
+<td align="right">194,049</td>
 <td align="right">0.1%</td>
 <td align="right">99.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_STR_1</td>
-<td align="right">389,489</td>
+<td align="right">193,969</td>
 <td align="right">0.1%</td>
 <td align="right">99.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">MAKE_CELL</td>
-<td align="right">266,577</td>
+<td align="right">132,806</td>
 <td align="right">0.1%</td>
 <td align="right">99.6%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">STORE_DEREF</td>
-<td align="right">265,023</td>
+<td align="right">132,032</td>
 <td align="right">0.1%</td>
 <td align="right">99.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">COMPARE_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">264,589</td>
+=======
+<td align="right">131,798</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">0.1%</td>
 <td align="right">99.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_NONE</td>
-<td align="right">262,598</td>
+<td align="right">130,806</td>
 <td align="right">0.1%</td>
 <td align="right">99.8%</td>
 <td align="right">0.3%</td>
 </tr>
 <tr>
 <td align="left">SET_FUNCTION_ATTRIBUTE</td>
-<td align="right">261,915</td>
+<td align="right">130,484</td>
 <td align="right">0.1%</td>
 <td align="right">99.8%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">MAKE_FUNCTION</td>
-<td align="right">261,656</td>
+<td align="right">130,355</td>
 <td align="right">0.1%</td>
 <td align="right">99.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">TO_BOOL</td>
-<td align="right">261,103</td>
+<td align="right">130,108</td>
 <td align="right">0.1%</td>
 <td align="right">99.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_TUPLE_INT</td>
-<td align="right">259,627</td>
+<td align="right">129,366</td>
 <td align="right">0.1%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_EXTEND</td>
-<td align="right">17,136</td>
+<td align="right">8,556</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_INPLACE_ADD_UNICODE</td>
-<td align="right">13,209</td>
+<td align="right">6,579</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_ADD_UNICODE</td>
-<td align="right">10,619</td>
+<td align="right">5,289</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">SWAP</td>
-<td align="right">8,288</td>
+<td align="right">4,128</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">UNARY_INVERT</td>
-<td align="right">3,889</td>
+<td align="right">1,939</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LIST_APPEND</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_AND_CLEAR</td>
-<td align="right">1,813</td>
+<td align="right">903</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">STORE_SUBSCR</td>
-<td align="right">1,090</td>
+<td align="right">569</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">IMPORT_FROM</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_SUPER_ATTR_ATTR</td>
-<td align="right">777</td>
-<td align="right">0.0%</td>
-<td align="right">100.0%</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">CALL_INTRINSIC_1</td>
-<td align="right">518</td>
-<td align="right">0.0%</td>
-<td align="right">100.0%</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">LIST_EXTEND</td>
-<td align="right">518</td>
-<td align="right">0.0%</td>
-<td align="right">100.0%</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">CALL_BOUND_METHOD_GENERAL</td>
-<td align="right">518</td>
+<td align="right">387</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
@@ -862,8 +886,22 @@ instruction is not counted.
 <td align="right"></td>
 </tr>
 <tr>
-<td align="left">CALL_KW_BOUND_METHOD</td>
-<td align="right">259</td>
+<td align="left">CALL_INTRINSIC_1</td>
+<td align="right">258</td>
+<td align="right">0.0%</td>
+<td align="right">100.0%</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">LIST_EXTEND</td>
+<td align="right">258</td>
+<td align="right">0.0%</td>
+<td align="right">100.0%</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">CALL_BOUND_METHOD_GENERAL</td>
+<td align="right">258</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
@@ -876,8 +914,15 @@ instruction is not counted.
 <td align="right"></td>
 </tr>
 <tr>
+<td align="left">CALL_KW_BOUND_METHOD</td>
+<td align="right">129</td>
+<td align="right">0.0%</td>
+<td align="right">100.0%</td>
+<td align="right"></td>
+</tr>
+<tr>
 <td align="left">BINARY_OP_SUBTRACT_FLOAT</td>
-<td align="right">64</td>
+<td align="right">63</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
@@ -915,7 +960,11 @@ instruction is not counted.
 <td align="right">8</td>
 <td align="right">0.0%</td>
 <td align="right">100.0%</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">3,537.5%</td>
+=======
+<td align="right">1,900.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD</td>
@@ -1007,73 +1056,81 @@ the corresponding unspecialized instruction are not counted as pairs.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">17,690,298</td>
+<td align="right">8,811,165</td>
 <td align="right">3.8%</td>
 <td align="right">3.8%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST LOAD_FAST</td>
-<td align="right">14,068,759</td>
+<td align="right">7,007,541</td>
 <td align="right">3.0%</td>
 <td align="right">6.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN LOAD_FAST</td>
-<td align="right">9,107,388</td>
+<td align="right">4,536,197</td>
 <td align="right">1.9%</td>
 <td align="right">8.7%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">8,329,790</td>
+=======
+<td align="right">4,278,247</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">1.8%</td>
 <td align="right">10.4%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK LOAD_FAST</td>
-<td align="right">8,326,080</td>
+<td align="right">4,147,097</td>
 <td align="right">1.8%</td>
 <td align="right">12.2%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS RESUME_CHECK</td>
-<td align="right">8,075,365</td>
+<td align="right">4,022,222</td>
 <td align="right">1.7%</td>
 <td align="right">13.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE LOAD_FAST</td>
-<td align="right">6,762,043</td>
+<td align="right">3,368,003</td>
 <td align="right">1.4%</td>
 <td align="right">15.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST STORE_ATTR_INSTANCE_VALUE</td>
-<td align="right">6,240,366</td>
+<td align="right">3,108,146</td>
 <td align="right">1.3%</td>
 <td align="right">16.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST LOAD_SMALL_INT</td>
-<td align="right">5,978,199</td>
+<td align="right">2,977,667</td>
 <td align="right">1.3%</td>
 <td align="right">17.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST CALL_PY_EXACT_ARGS</td>
-<td align="right">5,338,306</td>
+<td align="right">2,658,876</td>
 <td align="right">1.1%</td>
 <td align="right">19.1%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">5,334,072</td>
+=======
+<td align="right">2,656,853</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">1.1%</td>
 <td align="right">20.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE LOAD_ATTR_MODULE</td>
-<td align="right">5,092,070</td>
+<td align="right">2,536,267</td>
 <td align="right">1.1%</td>
 <td align="right">21.3%</td>
 </tr>
@@ -1085,517 +1142,547 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">LOAD_FAST LOAD_ATTR_METHOD_WITH_VALUES</td>
-<td align="right">4,947,784</td>
+<td align="right">2,464,392</td>
 <td align="right">1.0%</td>
 <td align="right">23.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST LOAD_FAST</td>
-<td align="right">4,939,681</td>
+<td align="right">2,460,321</td>
 <td align="right">1.0%</td>
 <td align="right">24.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST LOAD_ATTR_METHOD_NO_DICT</td>
-<td align="right">4,842,521</td>
+<td align="right">2,411,911</td>
 <td align="right">1.0%</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
+=======
+<td align="right">24.5%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_TRUE LOAD_FAST</td>
+<td align="right">2,341,363</td>
+<td align="right">1.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">25.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST STORE_ATTR_INSTANCE_VALUE</td>
-<td align="right">4,686,895</td>
+<td align="right">2,334,415</td>
 <td align="right">1.0%</td>
 <td align="right">26.5%</td>
 </tr>
 <tr>
 <td align="left">STORE_ATTR_INSTANCE_VALUE LOAD_FAST_LOAD_FAST</td>
-<td align="right">4,680,405</td>
+<td align="right">2,331,175</td>
 <td align="right">1.0%</td>
 <td align="right">27.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT LOAD_FAST</td>
-<td align="right">3,933,184</td>
+<td align="right">1,959,004</td>
 <td align="right">0.8%</td>
 <td align="right">28.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL RETURN_VALUE</td>
-<td align="right">3,655,008</td>
+<td align="right">1,820,575</td>
 <td align="right">0.8%</td>
 <td align="right">29.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST POP_JUMP_IF_NOT_NONE</td>
-<td align="right">3,636,710</td>
+<td align="right">1,811,379</td>
 <td align="right">0.8%</td>
 <td align="right">29.8%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK LOAD_GLOBAL_BUILTIN</td>
-<td align="right">3,385,981</td>
+<td align="right">1,686,491</td>
 <td align="right">0.7%</td>
 <td align="right">30.6%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_BOOL POP_JUMP_IF_FALSE</td>
-<td align="right">3,262,953</td>
+<td align="right">1,625,213</td>
 <td align="right">0.7%</td>
 <td align="right">31.2%</td>
 </tr>
 <tr>
 <td align="left">COMPARE_OP_INT POP_JUMP_IF_FALSE</td>
-<td align="right">3,252,339</td>
+<td align="right">1,619,928</td>
 <td align="right">0.7%</td>
 <td align="right">31.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_WITH_VALUES LOAD_FAST</td>
-<td align="right">3,249,741</td>
+<td align="right">1,618,630</td>
 <td align="right">0.7%</td>
 <td align="right">32.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST RETURN_VALUE</td>
-<td align="right">3,125,508</td>
+<td align="right">1,556,796</td>
 <td align="right">0.7%</td>
 <td align="right">33.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST CALL_PY_EXACT_ARGS</td>
-<td align="right">3,117,676</td>
+<td align="right">1,552,864</td>
 <td align="right">0.7%</td>
 <td align="right">34.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_MODULE PUSH_NULL</td>
-<td align="right">3,003,756</td>
+<td align="right">1,496,144</td>
 <td align="right">0.6%</td>
 <td align="right">34.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT COMPARE_OP_INT</td>
-<td align="right">2,861,742</td>
+<td align="right">1,425,371</td>
 <td align="right">0.6%</td>
 <td align="right">35.2%</td>
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT FOR_ITER_LIST</td>
-<td align="right">2,735,816</td>
+<td align="right">1,362,626</td>
 <td align="right">0.6%</td>
 <td align="right">35.8%</td>
 </tr>
 <tr>
 <td align="left">CALL_ISINSTANCE TO_BOOL_BOOL</td>
-<td align="right">2,734,832</td>
+<td align="right">1,362,162</td>
 <td align="right">0.6%</td>
 <td align="right">36.4%</td>
 </tr>
 <tr>
 <td align="left">NOP LOAD_FAST</td>
-<td align="right">2,732,036</td>
+<td align="right">1,360,795</td>
 <td align="right">0.6%</td>
 <td align="right">36.9%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE POP_TOP</td>
-<td align="right">2,609,150</td>
+<td align="right">1,299,657</td>
 <td align="right">0.6%</td>
 <td align="right">37.5%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE POP_TOP</td>
-<td align="right">2,607,098</td>
+<td align="right">1,298,518</td>
 <td align="right">0.6%</td>
 <td align="right">38.0%</td>
 </tr>
 <tr>
 <td align="left">CHECK_EXC_MATCH POP_JUMP_IF_FALSE</td>
-<td align="right">2,606,319</td>
+<td align="right">1,298,129</td>
 <td align="right">0.6%</td>
 <td align="right">38.6%</td>
 </tr>
 <tr>
 <td align="left">PUSH_EXC_INFO LOAD_GLOBAL_BUILTIN</td>
-<td align="right">2,606,319</td>
+<td align="right">1,298,129</td>
 <td align="right">0.6%</td>
 <td align="right">39.1%</td>
 </tr>
 <tr>
 <td align="left">COPY_FREE_VARS RESUME_CHECK</td>
-<td align="right">2,603,015</td>
+<td align="right">1,296,514</td>
 <td align="right">0.6%</td>
 <td align="right">39.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">2,595,245</td>
+<td align="right">1,292,644</td>
 <td align="right">0.6%</td>
 <td align="right">40.3%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_BOOL POP_JUMP_IF_TRUE</td>
-<td align="right">2,354,383</td>
+<td align="right">1,172,682</td>
 <td align="right">0.5%</td>
 <td align="right">40.8%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST STORE_FAST</td>
-<td align="right">2,348,093</td>
+<td align="right">1,169,513</td>
 <td align="right">0.5%</td>
 <td align="right">41.2%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS COPY_FREE_VARS</td>
-<td align="right">2,340,647</td>
+<td align="right">1,165,836</td>
 <td align="right">0.5%</td>
 <td align="right">41.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST LOAD_ATTR</td>
-<td align="right">2,338,986</td>
+<td align="right">1,165,085</td>
 <td align="right">0.5%</td>
 <td align="right">42.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN LOAD_GLOBAL_BUILTIN</td>
-<td align="right">2,082,365</td>
+<td align="right">1,037,185</td>
 <td align="right">0.4%</td>
 <td align="right">42.7%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE RETURN_VALUE</td>
-<td align="right">2,082,106</td>
+<td align="right">1,037,036</td>
 <td align="right">0.4%</td>
 <td align="right">43.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST PUSH_NULL</td>
-<td align="right">2,081,226</td>
+<td align="right">1,036,801</td>
 <td align="right">0.4%</td>
 <td align="right">43.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST TO_BOOL_LIST</td>
-<td align="right">2,080,548</td>
+<td align="right">1,036,258</td>
 <td align="right">0.4%</td>
 <td align="right">44.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST LOAD_GLOBAL_MODULE</td>
-<td align="right">2,080,186</td>
+<td align="right">1,036,156</td>
 <td align="right">0.4%</td>
-<td align="right">44.5%</td>
+<td align="right">44.4%</td>
 </tr>
 <tr>
 <td align="left">PUSH_NULL LOAD_FAST</td>
-<td align="right">1,963,328</td>
+<td align="right">977,927</td>
 <td align="right">0.4%</td>
 <td align="right">44.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST LOAD_CONST_IMMORTAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,959,766</td>
+=======
+<td align="right">976,180</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">0.4%</td>
 <td align="right">45.3%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
+=======
+<td align="left">CONTAINS_OP POP_JUMP_IF_FALSE</td>
+<td align="right">972,557</td>
+<td align="right">0.4%</td>
+<td align="right">45.7%</td>
+</tr>
+<tr>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="left">NOP LOAD_GLOBAL_MODULE</td>
-<td align="right">1,952,600</td>
+<td align="right">972,530</td>
 <td align="right">0.4%</td>
 <td align="right">45.7%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE INTERPRETER_EXIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,949,788</td>
+=======
+<td align="right">971,144</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">0.4%</td>
 <td align="right">46.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST BUILD_TUPLE</td>
-<td align="right">1,949,043</td>
+<td align="right">970,792</td>
 <td align="right">0.4%</td>
 <td align="right">46.5%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_NOT_NONE LOAD_FAST</td>
-<td align="right">1,946,141</td>
+<td align="right">969,321</td>
 <td align="right">0.4%</td>
 <td align="right">46.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL LOAD_FAST</td>
-<td align="right">1,831,398</td>
+<td align="right">912,168</td>
 <td align="right">0.4%</td>
 <td align="right">47.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST CALL_LIST_APPEND</td>
-<td align="right">1,824,663</td>
+<td align="right">908,813</td>
 <td align="right">0.4%</td>
 <td align="right">47.7%</td>
 </tr>
 <tr>
 <td align="left">POP_ITER LOAD_FAST</td>
-<td align="right">1,824,273</td>
+<td align="right">908,681</td>
 <td align="right">0.4%</td>
 <td align="right">48.1%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_LIST POP_JUMP_IF_TRUE</td>
-<td align="right">1,817,665</td>
+<td align="right">905,325</td>
 <td align="right">0.4%</td>
 <td align="right">48.5%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST LOAD_FAST_LOAD_FAST</td>
-<td align="right">1,709,665</td>
+<td align="right">851,535</td>
 <td align="right">0.4%</td>
 <td align="right">48.8%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_GENERAL RESUME_CHECK</td>
-<td align="right">1,696,195</td>
+<td align="right">844,825</td>
 <td align="right">0.4%</td>
 <td align="right">49.2%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_LIST POP_JUMP_IF_FALSE</td>
-<td align="right">1,691,533</td>
+<td align="right">842,503</td>
 <td align="right">0.4%</td>
 <td align="right">49.6%</td>
 </tr>
 <tr>
 <td align="left">CACHE RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,689,045</td>
+=======
+<td align="right">841,310</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">0.4%</td>
 <td align="right">49.9%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_NONE LOAD_FAST</td>
-<td align="right">1,688,687</td>
+<td align="right">841,087</td>
 <td align="right">0.4%</td>
 <td align="right">50.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN LOAD_FAST_LOAD_FAST</td>
-<td align="right">1,688,685</td>
+<td align="right">841,085</td>
 <td align="right">0.4%</td>
 <td align="right">50.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE IS_OP</td>
-<td align="right">1,688,501</td>
+<td align="right">841,031</td>
 <td align="right">0.4%</td>
 <td align="right">51.0%</td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP_DICT POP_JUMP_IF_FALSE</td>
-<td align="right">1,687,903</td>
+<td align="right">840,693</td>
 <td align="right">0.4%</td>
 <td align="right">51.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST LOAD_DEREF</td>
-<td align="right">1,686,608</td>
+<td align="right">840,048</td>
 <td align="right">0.4%</td>
 <td align="right">51.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST BINARY_OP_SUBSCR_DICT</td>
-<td align="right">1,686,091</td>
+<td align="right">839,791</td>
 <td align="right">0.4%</td>
 <td align="right">52.1%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK NOP</td>
-<td align="right">1,568,764</td>
+<td align="right">781,354</td>
 <td align="right">0.3%</td>
 <td align="right">52.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,565,187</td>
+<td align="right">779,597</td>
 <td align="right">0.3%</td>
 <td align="right">52.7%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER FOR_ITER_LIST</td>
-<td align="right">1,564,101</td>
+<td align="right">779,031</td>
 <td align="right">0.3%</td>
 <td align="right">53.1%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST POP_ITER</td>
-<td align="right">1,563,338</td>
+<td align="right">778,658</td>
 <td align="right">0.3%</td>
 <td align="right">53.4%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,562,036</td>
+<td align="right">778,006</td>
 <td align="right">0.3%</td>
 <td align="right">53.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN BUILD_TUPLE</td>
-<td align="right">1,561,772</td>
+<td align="right">777,872</td>
 <td align="right">0.3%</td>
 <td align="right">54.1%</td>
 </tr>
 <tr>
 <td align="left">BUILD_TUPLE CHECK_EXC_MATCH</td>
-<td align="right">1,561,770</td>
+<td align="right">777,870</td>
 <td align="right">0.3%</td>
 <td align="right">54.4%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE LOAD_FAST</td>
-<td align="right">1,560,219</td>
+<td align="right">777,099</td>
 <td align="right">0.3%</td>
 <td align="right">54.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN LOAD_GLOBAL_MODULE</td>
-<td align="right">1,560,216</td>
+<td align="right">777,096</td>
 <td align="right">0.3%</td>
 <td align="right">55.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT LOAD_FAST</td>
-<td align="right">1,558,923</td>
+<td align="right">776,453</td>
 <td align="right">0.3%</td>
 <td align="right">55.4%</td>
 </tr>
 <tr>
 <td align="left">STORE_ATTR_INSTANCE_VALUE LOAD_SMALL_INT</td>
-<td align="right">1,558,663</td>
+<td align="right">776,323</td>
 <td align="right">0.3%</td>
 <td align="right">55.7%</td>
 </tr>
 <tr>
 <td align="left">POP_EXCEPT JUMP_BACKWARD_NO_INTERRUPT</td>
-<td align="right">1,558,662</td>
+<td align="right">776,322</td>
 <td align="right">0.3%</td>
 <td align="right">56.1%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST POP_EXCEPT</td>
-<td align="right">1,558,662</td>
+<td align="right">776,322</td>
 <td align="right">0.3%</td>
 <td align="right">56.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF LOAD_FAST</td>
-<td align="right">1,558,144</td>
+<td align="right">776,064</td>
 <td align="right">0.3%</td>
 <td align="right">56.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT BINARY_OP_SUBSCR_STR_INT</td>
-<td align="right">1,556,602</td>
+<td align="right">775,302</td>
 <td align="right">0.3%</td>
 <td align="right">57.0%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_STR_INT LOAD_FAST</td>
-<td align="right">1,556,590</td>
+<td align="right">775,290</td>
 <td align="right">0.3%</td>
 <td align="right">57.4%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP JUMP_BACKWARD_NO_JIT</td>
-<td align="right">1,555,885</td>
+<td align="right">774,974</td>
 <td align="right">0.3%</td>
 <td align="right">57.7%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP LOAD_FAST</td>
-<td align="right">1,445,096</td>
+<td align="right">719,825</td>
 <td align="right">0.3%</td>
 <td align="right">58.0%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK LOAD_GLOBAL_MODULE</td>
-<td align="right">1,433,959</td>
+<td align="right">714,276</td>
 <td align="right">0.3%</td>
 <td align="right">58.3%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST NOP</td>
-<td align="right">1,431,773</td>
+<td align="right">713,133</td>
 <td align="right">0.3%</td>
 <td align="right">58.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_WITH_VALUES LOAD_FAST_LOAD_FAST</td>
-<td align="right">1,430,004</td>
+<td align="right">712,273</td>
 <td align="right">0.3%</td>
 <td align="right">58.9%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE LOAD_DEREF</td>
-<td align="right">1,429,939</td>
+<td align="right">712,209</td>
 <td align="right">0.3%</td>
 <td align="right">59.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE LOAD_FAST_LOAD_FAST</td>
-<td align="right">1,429,764</td>
+<td align="right">712,163</td>
 <td align="right">0.3%</td>
 <td align="right">59.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST CALL_TYPE_1</td>
-<td align="right">1,428,905</td>
+<td align="right">711,695</td>
 <td align="right">0.3%</td>
 <td align="right">59.8%</td>
 </tr>
 <tr>
 <td align="left">CALL_TYPE_1 LOAD_FAST_LOAD_FAST</td>
-<td align="right">1,428,904</td>
+<td align="right">711,694</td>
 <td align="right">0.3%</td>
 <td align="right">60.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE CALL_ISINSTANCE</td>
-<td align="right">1,428,904</td>
+<td align="right">711,694</td>
 <td align="right">0.3%</td>
 <td align="right">60.4%</td>
 </tr>
 <tr>
 <td align="left">BUILD_TUPLE BINARY_OP_SUBSCR_DICT</td>
-<td align="right">1,428,903</td>
+<td align="right">711,693</td>
 <td align="right">0.3%</td>
 <td align="right">60.7%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_DICT RETURN_VALUE</td>
-<td align="right">1,428,903</td>
+<td align="right">711,693</td>
 <td align="right">0.3%</td>
 <td align="right">61.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,428,903</td>
+<td align="right">711,693</td>
 <td align="right">0.3%</td>
 <td align="right">61.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE TO_BOOL_LIST</td>
-<td align="right">1,428,646</td>
+<td align="right">711,566</td>
 <td align="right">0.3%</td>
 <td align="right">61.6%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,428,644</td>
+<td align="right">711,564</td>
 <td align="right">0.3%</td>
 <td align="right">62.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE STORE_FAST</td>
-<td align="right">1,428,428</td>
+<td align="right">711,478</td>
 <td align="right">0.3%</td>
 <td align="right">62.3%</td>
 </tr>
@@ -1636,19 +1723,31 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">392,907</td>
+=======
+<td align="right">195,693</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">50.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">390,572</td>
+<td align="right">194,532</td>
 <td align="right">49.8%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_ADD_INT</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">0.1%</td>
 </tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
+=======
+<tr>
+<td align="left">BINARY_OP</td>
+<td align="right">43</td>
+<td align="right">0.0%</td>
+</tr>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tbody>
 </table>
 
@@ -1663,22 +1762,26 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">782,702</td>
+=======
+<td align="right">389,838</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">99.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_O</td>
-<td align="right">517</td>
+<td align="right">257</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">259</td>
+<td align="right">129</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -1708,12 +1811,16 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,689,045</td>
+=======
+<td align="right">841,310</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">86.6%</td>
 </tr>
 <tr>
 <td align="left">COPY_FREE_VARS</td>
-<td align="right">260,814</td>
+<td align="right">129,904</td>
 <td align="right">13.4%</td>
 </tr>
 <tr>
@@ -1743,12 +1850,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">DICT_MERGE</td>
-<td align="right">520,590</td>
+<td align="right">259,290</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
 <td align="left">PUSH_NULL</td>
-<td align="right">66</td>
+<td align="right">65</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -1765,12 +1872,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">520,072</td>
+<td align="right">259,032</td>
 <td align="right">99.9%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -1795,12 +1902,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">BINARY_OP_ADD_UNICODE</td>
-<td align="right">10,101</td>
+<td align="right">5,031</td>
 <td align="right">76.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">23.5%</td>
 </tr>
 </tbody>
@@ -1817,17 +1924,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">9,324</td>
+<td align="right">4,644</td>
 <td align="right">70.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">23.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">5.9%</td>
 </tr>
 </tbody>
@@ -1852,12 +1959,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">BUILD_TUPLE</td>
-<td align="right">1,561,770</td>
+<td align="right">777,870</td>
 <td align="right">59.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,044,549</td>
+<td align="right">520,259</td>
 <td align="right">40.1%</td>
 </tr>
 </tbody>
@@ -1874,7 +1981,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">2,606,319</td>
+<td align="right">1,298,129</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -1899,7 +2006,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">519,821</td>
+<td align="right">258,911</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -1916,7 +2023,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">519,821</td>
+<td align="right">258,911</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -1941,7 +2048,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,295,000</td>
+<td align="right">645,000</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -1958,7 +2065,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">BUILD_STRING</td>
-<td align="right">1,295,000</td>
+<td align="right">645,000</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -1983,27 +2090,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">782,449</td>
+<td align="right">389,719</td>
 <td align="right">42.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">654,047</td>
+<td align="right">325,796</td>
 <td align="right">35.6%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
-<td align="right">389,536</td>
+<td align="right">194,016</td>
 <td align="right">21.2%</td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_CLASS</td>
-<td align="right">4,142</td>
+<td align="right">2,062</td>
 <td align="right">0.2%</td>
 </tr>
 <tr>
 <td align="left">SWAP</td>
-<td align="right">1,813</td>
+<td align="right">903</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -2020,27 +2127,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
-<td align="right">1,564,101</td>
+<td align="right">779,031</td>
 <td align="right">85.2%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_TUPLE</td>
-<td align="right">263,663</td>
+<td align="right">131,323</td>
 <td align="right">14.4%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_RANGE</td>
-<td align="right">3,690</td>
+<td align="right">1,869</td>
 <td align="right">0.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_AND_CLEAR</td>
-<td align="right">1,813</td>
+<td align="right">903</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
-<td align="right">1,562</td>
+<td align="right">782</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -2065,7 +2172,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,949,788</td>
+=======
+<td align="right">971,144</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -2090,7 +2201,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
-<td align="right">261,655</td>
+<td align="right">130,354</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -2112,12 +2223,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">SET_FUNCTION_ATTRIBUTE</td>
-<td align="right">261,397</td>
+<td align="right">130,226</td>
 <td align="right">99.9%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">259</td>
+<td align="right">129</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -2142,27 +2253,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">1,568,764</td>
+<td align="right">781,354</td>
 <td align="right">27.4%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">1,431,773</td>
+<td align="right">713,133</td>
 <td align="right">25.0%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">910,129</td>
+<td align="right">453,309</td>
 <td align="right">15.9%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">909,156</td>
+<td align="right">452,855</td>
 <td align="right">15.9%</td>
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_INTERRUPT</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">9.1%</td>
 </tr>
 </tbody>
@@ -2179,22 +2290,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">2,732,036</td>
+<td align="right">1,360,795</td>
 <td align="right">47.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
-<td align="right">1,952,600</td>
+<td align="right">972,530</td>
 <td align="right">34.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,040,144</td>
+<td align="right">518,064</td>
 <td align="right">18.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -2224,22 +2335,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">1,558,662</td>
+<td align="right">776,322</td>
 <td align="right">59.8%</td>
 </tr>
 <tr>
 <td align="left">COPY</td>
-<td align="right">1,041,439</td>
+<td align="right">518,709</td>
 <td align="right">40.0%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">3,109</td>
+<td align="right">1,549</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">SWAP</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -2261,22 +2372,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_INTERRUPT</td>
-<td align="right">1,558,662</td>
+<td align="right">776,322</td>
 <td align="right">59.8%</td>
 </tr>
 <tr>
 <td align="left">RERAISE</td>
-<td align="right">1,041,439</td>
+<td align="right">518,709</td>
 <td align="right">40.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">3,109</td>
+<td align="right">1,549</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -2306,22 +2417,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
-<td align="right">1,563,338</td>
+<td align="right">778,658</td>
 <td align="right">85.3%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_TUPLE</td>
-<td align="right">262,886</td>
+<td align="right">130,936</td>
 <td align="right">14.3%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_RANGE</td>
-<td align="right">3,176</td>
+<td align="right">1,615</td>
 <td align="right">0.2%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
-<td align="right">2,658</td>
+<td align="right">1,357</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -2338,27 +2449,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,824,273</td>
+<td align="right">908,681</td>
 <td align="right">99.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">1,560</td>
+<td align="right">780</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">1,554</td>
+<td align="right">774</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">1,554</td>
+<td align="right">774</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">SWAP</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -2383,27 +2494,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">2,609,150</td>
+<td align="right">1,299,657</td>
 <td align="right">33.9%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">2,607,098</td>
+<td align="right">1,298,518</td>
 <td align="right">33.9%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_O</td>
-<td align="right">1,168,155</td>
+<td align="right">581,854</td>
 <td align="right">15.2%</td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_FAST</td>
-<td align="right">910,126</td>
+<td align="right">453,306</td>
 <td align="right">11.8%</td>
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
-<td align="right">390,378</td>
+<td align="right">194,467</td>
 <td align="right">5.1%</td>
 </tr>
 </tbody>
@@ -2420,27 +2531,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">1,555,885</td>
+<td align="right">774,974</td>
 <td align="right">20.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,445,096</td>
+<td align="right">719,825</td>
 <td align="right">18.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">1,299,084</td>
+<td align="right">647,131</td>
 <td align="right">16.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,042,992</td>
+<td align="right">519,482</td>
 <td align="right">13.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">1,039,109</td>
+<td align="right">517,549</td>
 <td align="right">13.5%</td>
 </tr>
 </tbody>
@@ -2465,27 +2576,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_DICT</td>
-<td align="right">1,041,440</td>
+<td align="right">518,710</td>
 <td align="right">40.0%</td>
 </tr>
 <tr>
 <td align="left">RERAISE</td>
-<td align="right">1,041,439</td>
+<td align="right">518,709</td>
 <td align="right">40.0%</td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_FAST</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">19.9%</td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_FAST_WITH_KEYWORDS</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">RAISE_VARARGS</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -2502,7 +2613,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">2,606,319</td>
+<td align="right">1,298,129</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -2527,22 +2638,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR_MODULE</td>
-<td align="right">3,003,756</td>
+<td align="right">1,496,144</td>
 <td align="right">52.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">2,081,226</td>
+<td align="right">1,036,801</td>
 <td align="right">36.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">389,536</td>
+<td align="right">194,016</td>
 <td align="right">6.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
-<td align="right">259,780</td>
+<td align="right">129,390</td>
 <td align="right">4.5%</td>
 </tr>
 <tr>
@@ -2564,27 +2675,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,963,328</td>
+<td align="right">977,927</td>
 <td align="right">34.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">1,298,181</td>
+<td align="right">646,620</td>
 <td align="right">22.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
-<td align="right">1,039,885</td>
+<td align="right">517,935</td>
 <td align="right">18.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
-<td align="right">520,090</td>
+<td align="right">259,050</td>
 <td align="right">9.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">390,572</td>
+<td align="right">194,532</td>
 <td align="right">6.8%</td>
 </tr>
 </tbody>
@@ -2609,27 +2720,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">3,655,008</td>
+<td align="right">1,820,575</td>
 <td align="right">22.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">3,125,508</td>
+<td align="right">1,556,796</td>
 <td align="right">19.2%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">2,082,106</td>
+<td align="right">1,037,036</td>
 <td align="right">12.8%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_DICT</td>
-<td align="right">1,428,903</td>
+<td align="right">711,693</td>
 <td align="right">8.8%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST_WITH_KEYWORDS</td>
-<td align="right">1,042,993</td>
+<td align="right">519,483</td>
 <td align="right">6.4%</td>
 </tr>
 </tbody>
@@ -2646,27 +2757,35 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">5,334,072</td>
+=======
+<td align="right">2,656,853</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">32.8%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">2,609,150</td>
+<td align="right">1,299,657</td>
 <td align="right">16.0%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">2,082,106</td>
+<td align="right">1,037,036</td>
 <td align="right">12.8%</td>
 </tr>
 <tr>
 <td align="left">INTERPRETER_EXIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,949,788</td>
+=======
+<td align="right">971,144</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">12.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,560,219</td>
+<td align="right">777,099</td>
 <td align="right">9.6%</td>
 </tr>
 </tbody>
@@ -2691,23 +2810,23 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
-<td align="right">1,036</td>
-<td align="right">95.0%</td>
+<td align="right">516</td>
+<td align="right">90.7%</td>
 </tr>
 <tr>
 <td align="left">STORE_SUBSCR</td>
-<td align="right">45</td>
-<td align="right">4.1%</td>
+<td align="right">44</td>
+<td align="right">7.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
 <td align="right">5</td>
-<td align="right">0.5%</td>
+<td align="right">0.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">4</td>
-<td align="right">0.4%</td>
+<td align="right">0.7%</td>
 </tr>
 </tbody>
 </table>
@@ -2723,28 +2842,28 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,036</td>
-<td align="right">95.0%</td>
+<td align="right">516</td>
+<td align="right">90.7%</td>
 </tr>
 <tr>
 <td align="left">STORE_SUBSCR</td>
-<td align="right">45</td>
-<td align="right">4.1%</td>
+<td align="right">44</td>
+<td align="right">7.7%</td>
 </tr>
 <tr>
 <td align="left">EXTENDED_ARG</td>
 <td align="right">4</td>
-<td align="right">0.4%</td>
+<td align="right">0.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
 <td align="right">4</td>
-<td align="right">0.4%</td>
+<td align="right">0.7%</td>
 </tr>
 <tr>
 <td align="left">STORE_SUBSCR_DICT</td>
 <td align="right">1</td>
-<td align="right">0.1%</td>
+<td align="right">0.2%</td>
 </tr>
 </tbody>
 </table>
@@ -2768,23 +2887,23 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">260,332</td>
+<td align="right">129,682</td>
 <td align="right">99.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.2%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL</td>
-<td align="right">179</td>
+<td align="right">95</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">68</td>
-<td align="right">0.0%</td>
+<td align="right">67</td>
+<td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP</td>
@@ -2805,12 +2924,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">260,890</td>
+<td align="right">129,979</td>
 <td align="right">99.9%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL</td>
-<td align="right">179</td>
+<td align="right">95</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -2850,13 +2969,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">3,885</td>
-<td align="right">99.9%</td>
+<td align="right">1,935</td>
+<td align="right">99.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">4</td>
-<td align="right">0.1%</td>
+<td align="right">0.2%</td>
 </tr>
 </tbody>
 </table>
@@ -2872,7 +2991,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">BINARY_OP_EXTEND</td>
-<td align="right">3,889</td>
+<td align="right">1,939</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -2897,15 +3016,16 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">262,913</td>
+<td align="right">130,963</td>
 <td align="right">50.0%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">259,778</td>
+<td align="right">129,388</td>
 <td align="right">49.4%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
 <td align="right">777</td>
 <td align="right">0.1%</td>
@@ -2913,11 +3033,20 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
 <td align="right">777</td>
+=======
+<td align="left">LOAD_CONST_MORTAL</td>
+<td align="right">390</td>
+<td align="right">0.1%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
+<td align="right">387</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">522</td>
+<td align="right">262</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -2934,27 +3063,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">260,559</td>
+<td align="right">129,779</td>
 <td align="right">49.6%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">259,777</td>
+<td align="right">129,387</td>
 <td align="right">49.4%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_GENERAL</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">0.6%</td>
 </tr>
 <tr>
 <td align="left">UNPACK_SEQUENCE_LIST</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_INT</td>
-<td align="right">516</td>
+<td align="right">256</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -2979,27 +3108,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">649,832</td>
+<td align="right">323,662</td>
 <td align="right">22.7%</td>
 </tr>
 <tr>
 <td align="left">STORE_ATTR_INSTANCE_VALUE</td>
-<td align="right">522,403</td>
+<td align="right">260,193</td>
 <td align="right">18.2%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">519,041</td>
+<td align="right">258,521</td>
 <td align="right">18.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">390,054</td>
+<td align="right">194,274</td>
 <td align="right">13.6%</td>
 </tr>
 <tr>
 <td align="left">BUILD_STRING</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">13.6%</td>
 </tr>
 </tbody>
@@ -3016,27 +3145,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">1,172,503</td>
+<td align="right">583,993</td>
 <td align="right">40.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">523,700</td>
+<td align="right">260,840</td>
 <td align="right">18.3%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
-<td align="right">389,536</td>
+<td align="right">194,016</td>
 <td align="right">13.6%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">389,018</td>
+<td align="right">193,758</td>
 <td align="right">13.6%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_O</td>
-<td align="right">388,498</td>
+<td align="right">193,498</td>
 <td align="right">13.6%</td>
 </tr>
 </tbody>
@@ -3061,27 +3190,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">269,878</td>
+<td align="right">134,418</td>
 <td align="right">50.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">259,777</td>
+<td align="right">129,387</td>
 <td align="right">48.7%</td>
 </tr>
 <tr>
 <td align="left">STORE_ATTR_INSTANCE_VALUE</td>
-<td align="right">2,333</td>
+<td align="right">1,163</td>
 <td align="right">0.4%</td>
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">CALL_INTRINSIC_1</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -3098,17 +3227,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">522,923</td>
+<td align="right">260,453</td>
 <td align="right">98.0%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
-<td align="right">9,583</td>
+<td align="right">4,773</td>
 <td align="right">1.8%</td>
 </tr>
 <tr>
 <td align="left">STORE_DEREF</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">0.2%</td>
 </tr>
 </tbody>
@@ -3133,7 +3262,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FORMAT_SIMPLE</td>
-<td align="right">1,295,000</td>
+<td align="right">645,000</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -3150,22 +3279,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">BUILD_LIST</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">30.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">388,499</td>
+<td align="right">193,499</td>
 <td align="right">30.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
-<td align="right">258,999</td>
+<td align="right">128,999</td>
 <td align="right">20.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">258,998</td>
+<td align="right">128,998</td>
 <td align="right">20.0%</td>
 </tr>
 <tr>
@@ -3195,27 +3324,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">1,949,043</td>
+<td align="right">970,792</td>
 <td align="right">37.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,561,772</td>
+<td align="right">777,872</td>
 <td align="right">30.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">649,903</td>
+<td align="right">323,732</td>
 <td align="right">12.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
-<td align="right">390,054</td>
+<td align="right">194,274</td>
 <td align="right">7.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">388,502</td>
+<td align="right">193,502</td>
 <td align="right">7.5%</td>
 </tr>
 </tbody>
@@ -3232,27 +3361,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CHECK_EXC_MATCH</td>
-<td align="right">1,561,770</td>
+<td align="right">777,870</td>
 <td align="right">30.0%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_DICT</td>
-<td align="right">1,428,903</td>
+<td align="right">711,693</td>
 <td align="right">27.5%</td>
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">10.0%</td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
-<td align="right">390,054</td>
+<td align="right">194,274</td>
 <td align="right">7.5%</td>
 </tr>
 <tr>
 <td align="left">BUILD_LIST</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">7.5%</td>
 </tr>
 </tbody>
@@ -3359,7 +3488,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LIST_EXTEND</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -3376,7 +3505,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">BUILD_MAP</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -3463,17 +3592,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">260,577</td>
+<td align="right">129,797</td>
 <td align="right">98.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
-<td align="right">3,632</td>
+<td align="right">1,812</td>
 <td align="right">1.4%</td>
 </tr>
 <tr>
 <td align="left">COMPARE_OP</td>
-<td align="right">375</td>
+<td align="right">183</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -3500,12 +3629,16 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">264,189</td>
+=======
+<td align="right">131,590</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">99.8%</td>
 </tr>
 <tr>
 <td align="left">COMPARE_OP</td>
-<td align="right">375</td>
+<td align="right">183</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -3540,27 +3673,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">1,297,072</td>
+<td align="right">646,032</td>
 <td align="right">58.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">524,995</td>
+<td align="right">261,485</td>
 <td align="right">23.7%</td>
 </tr>
 <tr>
 <td align="left">BUILD_TUPLE</td>
-<td align="right">390,054</td>
+<td align="right">194,274</td>
 <td align="right">17.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">3,885</td>
+<td align="right">1,935</td>
 <td align="right">0.2%</td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
-<td align="right">779</td>
+<td align="right">477</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -3576,6 +3709,7 @@ specialized instruction deoptimizes.
 </thead>
 <tbody>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="left">POP_JUMP_IF_TRUE</td>
 <td align="right">1,300,957</td>
 <td align="right">58.7%</td>
@@ -3584,10 +3718,20 @@ specialized instruction deoptimizes.
 <td align="left">POP_JUMP_IF_FALSE</td>
 <td align="right">915,073</td>
 <td align="right">41.3%</td>
+=======
+<td align="left">POP_JUMP_IF_FALSE</td>
+<td align="right">972,557</td>
+<td align="right">88.1%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">131,193</td>
+<td align="right">11.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
-<td align="right">779</td>
+<td align="right">477</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -3622,12 +3766,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RAISE_VARARGS</td>
-<td align="right">1,041,439</td>
+<td align="right">518,709</td>
 <td align="right">50.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_SLOT</td>
-<td align="right">1,039,108</td>
+<td align="right">517,548</td>
 <td align="right">49.9%</td>
 </tr>
 <tr>
@@ -3659,12 +3803,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_EXCEPT</td>
-<td align="right">1,041,439</td>
+<td align="right">518,709</td>
 <td align="right">50.1%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_INT</td>
-<td align="right">1,039,112</td>
+<td align="right">517,552</td>
 <td align="right">49.9%</td>
 </tr>
 <tr>
@@ -3704,27 +3848,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
-<td align="right">2,340,647</td>
+<td align="right">1,165,836</td>
 <td align="right">89.9%</td>
 </tr>
 <tr>
 <td align="left">CACHE</td>
-<td align="right">260,814</td>
+<td align="right">129,904</td>
 <td align="right">10.0%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_GENERAL</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">CALL_KW_BOUND_METHOD</td>
-<td align="right">259</td>
+<td align="right">129</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">CALL_ALLOC_AND_ENTER_INIT</td>
-<td align="right">258</td>
+<td align="right">128</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -3741,7 +3885,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">2,603,015</td>
+<td align="right">1,296,514</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -3771,7 +3915,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">520,590</td>
+<td align="right">259,290</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -3788,7 +3932,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_FUNCTION_EX</td>
-<td align="right">520,590</td>
+<td align="right">259,290</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -3813,22 +3957,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">99.2%</td>
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">1,060</td>
+<td align="right">540</td>
 <td align="right">0.3%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
-<td align="right">1,050</td>
+<td align="right">530</td>
 <td align="right">0.3%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">1,040</td>
+<td align="right">520</td>
 <td align="right">0.3%</td>
 </tr>
 <tr>
@@ -3850,17 +3994,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_NONE</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">99.2%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
-<td align="right">2,072</td>
+<td align="right">1,032</td>
 <td align="right">0.5%</td>
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">1,058</td>
+<td align="right">538</td>
 <td align="right">0.3%</td>
 </tr>
 <tr>
@@ -3895,22 +4039,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">778,106</td>
+<td align="right">387,585</td>
 <td align="right">99.5%</td>
 </tr>
 <tr>
 <td align="left">EXTENDED_ARG</td>
-<td align="right">2,072</td>
+<td align="right">1,032</td>
 <td align="right">0.3%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
-<td align="right">1,562</td>
+<td align="right">782</td>
 <td align="right">0.2%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
-<td align="right">335</td>
+<td align="right">184</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -3927,17 +4071,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">UNPACK_SEQUENCE_TWO_TUPLE</td>
-<td align="right">779,071</td>
+<td align="right">388,031</td>
 <td align="right">99.6%</td>
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
-<td align="right">2,658</td>
+<td align="right">1,357</td>
 <td align="right">0.3%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
-<td align="right">335</td>
+<td align="right">184</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -3972,7 +4116,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">IMPORT_NAME</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -3989,7 +4133,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -4014,12 +4158,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">521,108</td>
+<td align="right">259,548</td>
 <td align="right">99.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -4036,12 +4180,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">521,108</td>
+<td align="right">259,548</td>
 <td align="right">99.9%</td>
 </tr>
 <tr>
 <td align="left">IMPORT_FROM</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -4066,12 +4210,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
-<td align="right">1,688,501</td>
+<td align="right">841,031</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">65</td>
+<td align="right">64</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -4103,17 +4247,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">1,039,116</td>
+<td align="right">517,556</td>
 <td align="right">61.5%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">649,389</td>
+<td align="right">323,479</td>
 <td align="right">38.5%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">66</td>
+<td align="right">65</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -4138,7 +4282,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_EXCEPT</td>
-<td align="right">1,558,662</td>
+<td align="right">776,322</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -4155,12 +4299,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,039,108</td>
+<td align="right">517,548</td>
 <td align="right">66.7%</td>
 </tr>
 <tr>
 <td align="left">NOP</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">33.3%</td>
 </tr>
 </tbody>
@@ -4185,27 +4329,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">652,236</td>
+<td align="right">324,895</td>
 <td align="right">62.5%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">389,019</td>
+<td align="right">193,759</td>
 <td align="right">37.3%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">1,298</td>
+<td align="right">648</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST_STORE_FAST</td>
-<td align="right">1,295</td>
+<td align="right">645</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">259</td>
+<td align="right">129</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -4222,27 +4366,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,041,517</td>
-<td align="right">99.8%</td>
+<td align="right">518,786</td>
+<td align="right">99.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">1,295</td>
+<td align="right">645</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">524</td>
+<td align="right">264</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">BUILD_LIST</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">259</td>
+<td align="right">129</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -4267,17 +4411,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">33.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">33.3%</td>
 </tr>
 <tr>
 <td align="left">CALL_LEN</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">33.3%</td>
 </tr>
 </tbody>
@@ -4294,7 +4438,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -4319,7 +4463,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -4336,7 +4480,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_INTRINSIC_1</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -4361,22 +4505,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">2,338,986</td>
+<td align="right">1,165,085</td>
 <td align="right">71.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_MODULE</td>
-<td align="right">519,555</td>
+<td align="right">258,775</td>
 <td align="right">15.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">389,543</td>
+<td align="right">194,023</td>
 <td align="right">12.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
-<td align="right">10,873</td>
+<td align="right">5,438</td>
 <td align="right">0.3%</td>
 </tr>
 <tr>
@@ -4398,27 +4542,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">909,894</td>
+<td align="right">453,204</td>
 <td align="right">27.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">519,559</td>
+<td align="right">258,779</td>
 <td align="right">15.9%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">519,555</td>
+<td align="right">258,775</td>
 <td align="right">15.9%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_NOARGS</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">15.9%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_GENERAL</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">15.9%</td>
 </tr>
 </tbody>
@@ -4443,27 +4587,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,686,608</td>
+<td align="right">840,048</td>
 <td align="right">20.3%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">1,429,939</td>
+<td align="right">712,209</td>
 <td align="right">17.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
-<td align="right">1,043,511</td>
+<td align="right">519,741</td>
 <td align="right">12.5%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">780,174</td>
+<td align="right">388,613</td>
 <td align="right">9.4%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">779,590</td>
+<td align="right">388,290</td>
 <td align="right">9.4%</td>
 </tr>
 </tbody>
@@ -4480,27 +4624,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,558,144</td>
+<td align="right">776,064</td>
 <td align="right">18.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
-<td align="right">1,170,160</td>
+<td align="right">582,820</td>
 <td align="right">14.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_WITH_VALUES</td>
-<td align="right">1,168,089</td>
+<td align="right">581,789</td>
 <td align="right">14.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">1,042,993</td>
+<td align="right">519,483</td>
 <td align="right">12.5%</td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP_DICT</td>
-<td align="right">778,554</td>
+<td align="right">387,774</td>
 <td align="right">9.4%</td>
 </tr>
 </tbody>
@@ -4525,27 +4669,32 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">14,068,759</td>
+<td align="right">7,007,541</td>
 <td align="right">14.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">9,107,388</td>
+<td align="right">4,536,197</td>
 <td align="right">9.6%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">8,329,790</td>
 <td align="right">8.8%</td>
+=======
+<td align="right">4,278,247</td>
+<td align="right">9.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">8,326,080</td>
+<td align="right">4,147,097</td>
 <td align="right">8.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">6,762,043</td>
+<td align="right">3,368,003</td>
 <td align="right">7.2%</td>
 </tr>
 </tbody>
@@ -4562,27 +4711,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">17,690,298</td>
+<td align="right">8,811,165</td>
 <td align="right">18.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">5,978,199</td>
+<td align="right">2,977,667</td>
 <td align="right">6.3%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
-<td align="right">5,338,306</td>
+<td align="right">2,658,876</td>
 <td align="right">5.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_WITH_VALUES</td>
-<td align="right">4,947,784</td>
+<td align="right">2,464,392</td>
 <td align="right">5.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">4,939,681</td>
+<td align="right">2,460,321</td>
 <td align="right">5.2%</td>
 </tr>
 </tbody>
@@ -4607,7 +4756,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">GET_ITER</td>
-<td align="right">1,813</td>
+<td align="right">903</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -4624,7 +4773,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">SWAP</td>
-<td align="right">1,813</td>
+<td align="right">903</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -4649,27 +4798,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_ATTR_INSTANCE_VALUE</td>
-<td align="right">4,680,405</td>
+<td align="right">2,331,175</td>
 <td align="right">27.4%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">1,709,665</td>
+<td align="right">851,535</td>
 <td align="right">10.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,688,685</td>
+<td align="right">841,085</td>
 <td align="right">9.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_WITH_VALUES</td>
-<td align="right">1,430,004</td>
+<td align="right">712,273</td>
 <td align="right">8.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
-<td align="right">1,429,764</td>
+<td align="right">712,163</td>
 <td align="right">8.4%</td>
 </tr>
 </tbody>
@@ -4686,27 +4835,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_ATTR_INSTANCE_VALUE</td>
-<td align="right">6,240,366</td>
+<td align="right">3,108,146</td>
 <td align="right">36.5%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
-<td align="right">3,117,676</td>
+<td align="right">1,552,864</td>
 <td align="right">18.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">2,595,245</td>
+<td align="right">1,292,644</td>
 <td align="right">15.2%</td>
 </tr>
 <tr>
 <td align="left">BUILD_TUPLE</td>
-<td align="right">1,949,043</td>
+<td align="right">970,792</td>
 <td align="right">11.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,057,508</td>
+<td align="right">526,718</td>
 <td align="right">6.2%</td>
 </tr>
 </tbody>
@@ -4813,27 +4962,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">5,978,199</td>
+<td align="right">2,977,667</td>
 <td align="right">52.8%</td>
 </tr>
 <tr>
 <td align="left">STORE_ATTR_INSTANCE_VALUE</td>
-<td align="right">1,558,663</td>
+<td align="right">776,323</td>
 <td align="right">13.8%</td>
 </tr>
 <tr>
 <td align="left">CALL_LEN</td>
-<td align="right">1,298,374</td>
+<td align="right">646,684</td>
 <td align="right">11.5%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">1,039,109</td>
+<td align="right">517,549</td>
 <td align="right">9.2%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_NOT_NONE</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">4.6%</td>
 </tr>
 </tbody>
@@ -4850,27 +4999,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">COMPARE_OP_INT</td>
-<td align="right">2,861,742</td>
+<td align="right">1,425,371</td>
 <td align="right">25.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,558,923</td>
+<td align="right">776,453</td>
 <td align="right">13.8%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_STR_INT</td>
-<td align="right">1,556,602</td>
+<td align="right">775,302</td>
 <td align="right">13.8%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">1,045,848</td>
+<td align="right">520,908</td>
 <td align="right">9.2%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBTRACT_INT</td>
-<td align="right">1,039,115</td>
+<td align="right">517,555</td>
 <td align="right">9.2%</td>
 </tr>
 </tbody>
@@ -4942,17 +5091,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
-<td align="right">260,295</td>
+<td align="right">129,645</td>
 <td align="right">97.6%</td>
 </tr>
 <tr>
 <td align="left">MAKE_CELL</td>
-<td align="right">6,216</td>
+<td align="right">3,096</td>
 <td align="right">2.3%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_GENERAL</td>
-<td align="right">65</td>
+<td align="right">64</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -4974,12 +5123,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">260,360</td>
+<td align="right">129,709</td>
 <td align="right">97.7%</td>
 </tr>
 <tr>
 <td align="left">MAKE_CELL</td>
-<td align="right">6,216</td>
+<td align="right">3,096</td>
 <td align="right">2.3%</td>
 </tr>
 <tr>
@@ -5009,6 +5158,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">3,262,953</td>
 <td align="right">20.8%</td>
 </tr>
@@ -5031,6 +5181,30 @@ specialized instruction deoptimizes.
 <td align="left">CONTAINS_OP_DICT</td>
 <td align="right">1,687,903</td>
 <td align="right">10.8%</td>
+=======
+<td align="right">1,625,213</td>
+<td align="right">19.6%</td>
+</tr>
+<tr>
+<td align="left">COMPARE_OP_INT</td>
+<td align="right">1,619,928</td>
+<td align="right">19.5%</td>
+</tr>
+<tr>
+<td align="left">CHECK_EXC_MATCH</td>
+<td align="right">1,298,129</td>
+<td align="right">15.6%</td>
+</tr>
+<tr>
+<td align="left">CONTAINS_OP</td>
+<td align="right">972,557</td>
+<td align="right">11.7%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL_LIST</td>
+<td align="right">842,503</td>
+<td align="right">10.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 </tbody>
 </table>
@@ -5046,6 +5220,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">8,329,790</td>
 <td align="right">53.2%</td>
 </tr>
@@ -5068,6 +5243,30 @@ specialized instruction deoptimizes.
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
 <td align="right">779,895</td>
 <td align="right">5.0%</td>
+=======
+<td align="right">4,278,247</td>
+<td align="right">51.5%</td>
+</tr>
+<tr>
+<td align="left">POP_TOP</td>
+<td align="right">1,298,518</td>
+<td align="right">15.6%</td>
+</tr>
+<tr>
+<td align="left">LOAD_DEREF</td>
+<td align="right">712,209</td>
+<td align="right">8.6%</td>
+</tr>
+<tr>
+<td align="left">NOP</td>
+<td align="right">453,309</td>
+<td align="right">5.5%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL_BUILTIN</td>
+<td align="right">388,464</td>
+<td align="right">4.7%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 </tbody>
 </table>
@@ -5091,17 +5290,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">1,299,154</td>
+<td align="right">647,074</td>
 <td align="right">66.7%</td>
 </tr>
 <tr>
 <td align="left">EXTENDED_ARG</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">19.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">261,338</td>
+<td align="right">130,168</td>
 <td align="right">13.4%</td>
 </tr>
 <tr>
@@ -5123,22 +5322,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,688,687</td>
+<td align="right">841,087</td>
 <td align="right">86.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">259,519</td>
+<td align="right">129,259</td>
 <td align="right">13.3%</td>
 </tr>
 <tr>
 <td align="left">BUILD_MAP</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
-<td align="right">258</td>
+<td align="right">128</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -5168,12 +5367,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">3,636,710</td>
+<td align="right">1,811,379</td>
 <td align="right">90.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">389,795</td>
+<td align="right">194,145</td>
 <td align="right">9.7%</td>
 </tr>
 </tbody>
@@ -5190,27 +5389,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,946,141</td>
+<td align="right">969,321</td>
 <td align="right">48.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">779,072</td>
+<td align="right">388,032</td>
 <td align="right">19.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">12.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">389,535</td>
+<td align="right">194,015</td>
 <td align="right">9.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
-<td align="right">259,583</td>
+<td align="right">129,322</td>
 <td align="right">6.4%</td>
 </tr>
 </tbody>
@@ -5235,6 +5434,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">2,354,383</td>
 <td align="right">22.6%</td>
 </tr>
@@ -5257,6 +5457,30 @@ specialized instruction deoptimizes.
 <td align="left">TO_BOOL_INT</td>
 <td align="right">1,039,638</td>
 <td align="right">10.0%</td>
+=======
+<td align="right">1,172,682</td>
+<td align="right">25.1%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL_LIST</td>
+<td align="right">905,325</td>
+<td align="right">19.4%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL_STR</td>
+<td align="right">521,298</td>
+<td align="right">11.2%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL_INT</td>
+<td align="right">517,818</td>
+<td align="right">11.1%</td>
+</tr>
+<tr>
+<td align="left">IS_OP</td>
+<td align="right">517,556</td>
+<td align="right">11.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 </tbody>
 </table>
@@ -5272,6 +5496,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">4,960,381</td>
 <td align="right">47.6%</td>
 </tr>
@@ -5294,6 +5519,30 @@ specialized instruction deoptimizes.
 <td align="left">NOP</td>
 <td align="right">909,156</td>
 <td align="right">8.7%</td>
+=======
+<td align="right">2,341,363</td>
+<td align="right">50.1%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL_BUILTIN</td>
+<td align="right">711,564</td>
+<td align="right">15.2%</td>
+</tr>
+<tr>
+<td align="left">STORE_FAST</td>
+<td align="right">517,548</td>
+<td align="right">11.1%</td>
+</tr>
+<tr>
+<td align="left">JUMP_BACKWARD_NO_JIT</td>
+<td align="right">455,893</td>
+<td align="right">9.8%</td>
+</tr>
+<tr>
+<td align="left">NOP</td>
+<td align="right">452,855</td>
+<td align="right">9.7%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 </tbody>
 </table>
@@ -5317,12 +5566,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">1,041,439</td>
+<td align="right">518,709</td>
 <td align="right">99.9%</td>
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -5339,12 +5588,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">COPY</td>
-<td align="right">1,041,439</td>
+<td align="right">518,709</td>
 <td align="right">99.9%</td>
 </tr>
 <tr>
 <td align="left">PUSH_EXC_INFO</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -5369,7 +5618,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_EXCEPT</td>
-<td align="right">1,041,439</td>
+<td align="right">518,709</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -5386,7 +5635,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">PUSH_EXC_INFO</td>
-<td align="right">1,041,439</td>
+<td align="right">518,709</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -5411,12 +5660,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">MAKE_FUNCTION</td>
-<td align="right">261,397</td>
+<td align="right">130,226</td>
 <td align="right">99.8%</td>
 </tr>
 <tr>
 <td align="left">SET_FUNCTION_ATTRIBUTE</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.2%</td>
 </tr>
 </tbody>
@@ -5433,17 +5682,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">260,879</td>
+<td align="right">129,968</td>
 <td align="right">99.6%</td>
 </tr>
 <tr>
 <td align="left">SET_FUNCTION_ATTRIBUTE</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.2%</td>
 </tr>
 <tr>
 <td align="left">STORE_DEREF</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.2%</td>
 </tr>
 </tbody>
@@ -5515,27 +5764,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">259,777</td>
+<td align="right">129,387</td>
 <td align="right">98.0%</td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_CLASS</td>
-<td align="right">1,554</td>
+<td align="right">774</td>
 <td align="right">0.6%</td>
 </tr>
 <tr>
 <td align="left">BUILD_LIST</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">0.4%</td>
 </tr>
 <tr>
 <td align="left">BUILD_MAP</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">0.4%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.2%</td>
 </tr>
 </tbody>
@@ -5552,27 +5801,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">260,879</td>
+<td align="right">129,968</td>
 <td align="right">98.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,551</td>
+<td align="right">771</td>
 <td align="right">0.6%</td>
 </tr>
 <tr>
 <td align="left">BUILD_LIST</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">0.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.2%</td>
 </tr>
 </tbody>
@@ -5597,27 +5846,31 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">5,334,072</td>
+=======
+<td align="right">2,656,853</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">22.0%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
-<td align="right">2,348,093</td>
+<td align="right">1,169,513</td>
 <td align="right">9.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">1,428,428</td>
+<td align="right">711,478</td>
 <td align="right">5.9%</td>
 </tr>
 <tr>
 <td align="left">BUILD_LIST</td>
-<td align="right">1,172,503</td>
+<td align="right">583,993</td>
 <td align="right">4.8%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
-<td align="right">1,054,390</td>
+<td align="right">525,160</td>
 <td align="right">4.3%</td>
 </tr>
 </tbody>
@@ -5634,27 +5887,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">14,068,759</td>
+<td align="right">7,007,541</td>
 <td align="right">58.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">1,709,665</td>
+<td align="right">851,535</td>
 <td align="right">7.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,562,036</td>
+<td align="right">778,006</td>
 <td align="right">6.4%</td>
 </tr>
 <tr>
 <td align="left">POP_EXCEPT</td>
-<td align="right">1,558,662</td>
+<td align="right">776,322</td>
 <td align="right">6.4%</td>
 </tr>
 <tr>
 <td align="left">NOP</td>
-<td align="right">1,431,773</td>
+<td align="right">713,133</td>
 <td align="right">5.9%</td>
 </tr>
 </tbody>
@@ -5679,22 +5932,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">UNPACK_SEQUENCE_TWO_TUPLE</td>
-<td align="right">780,212</td>
+<td align="right">388,651</td>
 <td align="right">40.1%</td>
 </tr>
 <tr>
 <td align="left">UNPACK_SEQUENCE_TUPLE</td>
-<td align="right">777,004</td>
+<td align="right">387,004</td>
 <td align="right">39.9%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST_STORE_FAST</td>
-<td align="right">388,502</td>
+<td align="right">193,502</td>
 <td align="right">20.0%</td>
 </tr>
 <tr>
 <td align="left">UNPACK_SEQUENCE_LIST</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -5716,27 +5969,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">778,648</td>
+<td align="right">387,867</td>
 <td align="right">40.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">389,536</td>
+<td align="right">194,016</td>
 <td align="right">20.0%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">388,502</td>
+<td align="right">193,502</td>
 <td align="right">20.0%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST_STORE_FAST</td>
-<td align="right">388,502</td>
+<td align="right">193,502</td>
 <td align="right">20.0%</td>
 </tr>
 <tr>
 <td align="left">JUMP_FORWARD</td>
-<td align="right">1,295</td>
+<td align="right">645</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -5761,22 +6014,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">3,626</td>
+<td align="right">1,806</td>
 <td align="right">43.8%</td>
 </tr>
 <tr>
 <td align="left">BUILD_LIST</td>
-<td align="right">1,813</td>
+<td align="right">903</td>
 <td align="right">21.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_AND_CLEAR</td>
-<td align="right">1,813</td>
+<td align="right">903</td>
 <td align="right">21.9%</td>
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">12.5%</td>
 </tr>
 </tbody>
@@ -5793,27 +6046,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_EXCEPT</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">37.5%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
-<td align="right">1,813</td>
+<td align="right">903</td>
 <td align="right">21.9%</td>
 </tr>
 <tr>
 <td align="left">BUILD_LIST</td>
-<td align="right">1,813</td>
+<td align="right">903</td>
 <td align="right">21.9%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">12.5%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">6.2%</td>
 </tr>
 </tbody>
@@ -5967,17 +6220,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">391,380</td>
+<td align="right">194,950</td>
 <td align="right">50.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">389,535</td>
+<td align="right">194,015</td>
 <td align="right">49.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">2,074</td>
+<td align="right">1,034</td>
 <td align="right">0.3%</td>
 </tr>
 <tr>
@@ -6004,22 +6257,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">779,350</td>
+<td align="right">388,180</td>
 <td align="right">99.5%</td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_CLASS</td>
-<td align="right">1,554</td>
+<td align="right">774</td>
 <td align="right">0.2%</td>
 </tr>
 <tr>
 <td align="left">BINARY_SLICE</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
-<td align="right">1,035</td>
+<td align="right">515</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -6049,13 +6302,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">10,101</td>
+<td align="right">5,031</td>
 <td align="right">95.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">516</td>
-<td align="right">4.9%</td>
+<td align="right">256</td>
+<td align="right">4.8%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP</td>
@@ -6076,17 +6329,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">BINARY_OP_INPLACE_ADD_UNICODE</td>
-<td align="right">10,101</td>
+<td align="right">5,031</td>
 <td align="right">95.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">259</td>
+<td align="right">129</td>
 <td align="right">2.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">259</td>
+<td align="right">129</td>
 <td align="right">2.4%</td>
 </tr>
 </tbody>
@@ -6111,18 +6364,18 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">13,218</td>
-<td align="right">77.1%</td>
+<td align="right">6,588</td>
+<td align="right">77.0%</td>
 </tr>
 <tr>
 <td align="left">UNARY_INVERT</td>
-<td align="right">3,889</td>
+<td align="right">1,939</td>
 <td align="right">22.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
 <td align="right">27</td>
-<td align="right">0.2%</td>
+<td align="right">0.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
@@ -6148,18 +6401,18 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">TO_BOOL_INT</td>
-<td align="right">15,567</td>
+<td align="right">7,767</td>
 <td align="right">90.8%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">1,556</td>
+<td align="right">776</td>
 <td align="right">9.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">5</td>
-<td align="right">0.0%</td>
+<td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
@@ -6193,7 +6446,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">519,558</td>
+<td align="right">258,778</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -6215,7 +6468,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_BUILTIN_FAST_WITH_KEYWORDS</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -6255,22 +6508,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,686,091</td>
+<td align="right">839,791</td>
 <td align="right">38.2%</td>
 </tr>
 <tr>
 <td align="left">BUILD_TUPLE</td>
-<td align="right">1,428,903</td>
+<td align="right">711,693</td>
 <td align="right">32.4%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">1,042,216</td>
+<td align="right">519,096</td>
 <td align="right">23.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">259,776</td>
+<td align="right">129,386</td>
 <td align="right">5.9%</td>
 </tr>
 <tr>
@@ -6292,27 +6545,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">1,428,903</td>
+<td align="right">711,693</td>
 <td align="right">32.4%</td>
 </tr>
 <tr>
 <td align="left">PUSH_EXC_INFO</td>
-<td align="right">1,041,440</td>
+<td align="right">518,710</td>
 <td align="right">23.6%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">1,037,295</td>
+<td align="right">516,645</td>
 <td align="right">23.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
-<td align="right">909,090</td>
+<td align="right">452,790</td>
 <td align="right">20.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_MODULE</td>
-<td align="right">258</td>
+<td align="right">128</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -6337,12 +6590,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">1,039,108</td>
+<td align="right">517,548</td>
 <td align="right">99.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">0.3%</td>
 </tr>
 <tr>
@@ -6369,7 +6622,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,042,240</td>
+=======
+<td align="right">519,124</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -6394,7 +6651,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">648,022</td>
+<td align="right">322,762</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -6426,12 +6683,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">UNPACK_SEQUENCE_TUPLE</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">59.9%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">259,518</td>
+<td align="right">129,258</td>
 <td align="right">40.0%</td>
 </tr>
 <tr>
@@ -6471,12 +6728,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">1,556,602</td>
+<td align="right">775,302</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
-<td align="right">516</td>
+<td align="right">256</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -6503,12 +6760,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,556,590</td>
+<td align="right">775,290</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">529</td>
+<td align="right">269</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -6543,7 +6800,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">259,606</td>
+<td align="right">129,345</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -6565,12 +6822,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">259,518</td>
-<td align="right">100.0%</td>
+<td align="right">129,258</td>
+<td align="right">99.9%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">65</td>
+<td align="right">64</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -6610,13 +6867,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">43</td>
-<td align="right">67.2%</td>
+<td align="right">42</td>
+<td align="right">66.7%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP</td>
 <td align="right">21</td>
-<td align="right">32.8%</td>
+<td align="right">33.3%</td>
 </tr>
 </tbody>
 </table>
@@ -6632,7 +6889,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">64</td>
+<td align="right">63</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -6657,7 +6914,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">1,039,115</td>
+<td align="right">517,555</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -6684,12 +6941,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">519,556</td>
+<td align="right">258,776</td>
 <td align="right">50.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">519,555</td>
+<td align="right">258,775</td>
 <td align="right">50.0%</td>
 </tr>
 <tr>
@@ -6729,12 +6986,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">99.9%</td>
 </tr>
 <tr>
 <td align="left">PUSH_NULL</td>
-<td align="right">257</td>
+<td align="right">127</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -6766,12 +7023,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">519,563</td>
+<td align="right">258,783</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
 <td align="left">COPY_FREE_VARS</td>
-<td align="right">258</td>
+<td align="right">128</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -6796,7 +7053,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">389,535</td>
+<td align="right">194,015</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -6833,7 +7090,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">389,569</td>
+<td align="right">194,049</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -6858,13 +7115,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">516</td>
-<td align="right">99.6%</td>
+<td align="right">256</td>
+<td align="right">99.2%</td>
 </tr>
 <tr>
 <td align="left">CALL</td>
 <td align="right">2</td>
-<td align="right">0.4%</td>
+<td align="right">0.8%</td>
 </tr>
 </tbody>
 </table>
@@ -6880,7 +7137,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -6905,27 +7162,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,043,031</td>
+<td align="right">519,520</td>
 <td align="right">99.6%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_ADD_INT</td>
-<td align="right">1,554</td>
+<td align="right">774</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,551</td>
+<td align="right">771</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">1,035</td>
+<td align="right">515</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">259</td>
+<td align="right">129</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -6942,22 +7199,26 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,041,442</td>
+=======
+<td align="right">518,709</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">99.4%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
-<td align="right">4,142</td>
+<td align="right">2,062</td>
 <td align="right">0.4%</td>
 </tr>
 <tr>
 <td align="left">STORE_DEREF</td>
-<td align="right">1,554</td>
+<td align="right">774</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">581</td>
+<td align="right">320</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -6982,27 +7243,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">1,040,662</td>
+<td align="right">518,322</td>
 <td align="right">42.1%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_NOARGS</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">21.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">21.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">389,536</td>
+<td align="right">194,016</td>
 <td align="right">15.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -7019,27 +7280,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
-<td align="right">1,040,143</td>
+<td align="right">518,063</td>
 <td align="right">42.1%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">910,126</td>
+<td align="right">453,306</td>
 <td align="right">36.8%</td>
 </tr>
 <tr>
 <td align="left">PUSH_EXC_INFO</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">21.0%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -7064,22 +7325,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">BINARY_OP_MULTIPLY_INT</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">49.2%</td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_FAST_WITH_KEYWORDS</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">49.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">15,799</td>
+<td align="right">7,869</td>
 <td align="right">1.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">517</td>
+<td align="right">257</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -7101,22 +7362,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">49.2%</td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_FAST_WITH_KEYWORDS</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">49.2%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">13,209</td>
+<td align="right">6,579</td>
 <td align="right">1.3%</td>
 </tr>
 <tr>
 <td align="left">PUSH_EXC_INFO</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">0.3%</td>
 </tr>
 <tr>
@@ -7146,7 +7407,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">909,111</td>
+<td align="right">452,811</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -7183,7 +7444,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
-<td align="right">909,090</td>
+<td align="right">452,790</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -7218,12 +7479,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
-<td align="right">1,428,904</td>
+<td align="right">711,694</td>
 <td align="right">52.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,305,924</td>
+<td align="right">650,464</td>
 <td align="right">47.8%</td>
 </tr>
 <tr>
@@ -7255,7 +7516,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
-<td align="right">2,734,832</td>
+<td align="right">1,362,162</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -7290,13 +7551,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
-<td align="right">258</td>
-<td align="right">99.6%</td>
+<td align="right">128</td>
+<td align="right">99.2%</td>
 </tr>
 <tr>
 <td align="left">CALL_KW</td>
 <td align="right">1</td>
-<td align="right">0.4%</td>
+<td align="right">0.8%</td>
 </tr>
 </tbody>
 </table>
@@ -7312,7 +7573,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">COPY_FREE_VARS</td>
-<td align="right">259</td>
+<td align="right">129</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -7337,7 +7598,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
-<td align="right">779,330</td>
+<td align="right">388,160</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -7359,7 +7620,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">779,331</td>
+<td align="right">388,161</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -7384,7 +7645,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
-<td align="right">520,840</td>
+<td align="right">259,410</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -7406,7 +7667,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">520,846</td>
+<td align="right">259,416</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -7431,12 +7692,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,300,974</td>
+<td align="right">647,984</td>
 <td align="right">77.0%</td>
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">23.0%</td>
 </tr>
 <tr>
@@ -7468,27 +7729,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">1,298,374</td>
+<td align="right">646,684</td>
 <td align="right">76.8%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">388,521</td>
+<td align="right">193,521</td>
 <td align="right">23.0%</td>
 </tr>
 <tr>
 <td align="left">LIST_APPEND</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">COMPARE_OP_INT</td>
-<td align="right">517</td>
+<td align="right">257</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -7513,17 +7774,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,824,663</td>
+<td align="right">908,813</td>
 <td align="right">82.4%</td>
 </tr>
 <tr>
 <td align="left">BUILD_TUPLE</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">17.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">779</td>
+<td align="right">389</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -7545,27 +7806,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">1,045,065</td>
+<td align="right">520,515</td>
 <td align="right">47.2%</td>
 </tr>
 <tr>
 <td align="left">NOP</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">17.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">260,298</td>
+<td align="right">129,648</td>
 <td align="right">11.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">259,777</td>
+<td align="right">129,387</td>
 <td align="right">11.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">259,518</td>
+<td align="right">129,258</td>
 <td align="right">11.7%</td>
 </tr>
 </tbody>
@@ -7590,27 +7851,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">909,090</td>
+<td align="right">452,790</td>
 <td align="right">38.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">526,547</td>
+<td align="right">262,257</td>
 <td align="right">22.2%</td>
 </tr>
 <tr>
 <td align="left">BUILD_LIST</td>
-<td align="right">389,536</td>
+<td align="right">194,016</td>
 <td align="right">16.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">278,684</td>
+<td align="right">138,804</td>
 <td align="right">11.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">259,259</td>
+<td align="right">129,129</td>
 <td align="right">10.9%</td>
 </tr>
 </tbody>
@@ -7627,27 +7888,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">1,054,390</td>
+<td align="right">525,160</td>
 <td align="right">44.4%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">909,090</td>
+<td align="right">452,790</td>
 <td align="right">38.3%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
-<td align="right">389,536</td>
+<td align="right">194,016</td>
 <td align="right">16.4%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
-<td align="right">18,648</td>
+<td align="right">9,288</td>
 <td align="right">0.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">1,295</td>
+<td align="right">645</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -7672,12 +7933,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">1,305,360</td>
+<td align="right">650,160</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
-<td align="right">517</td>
+<td align="right">257</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -7699,22 +7960,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">1,042,993</td>
+<td align="right">519,483</td>
 <td align="right">79.9%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">261,590</td>
+<td align="right">130,290</td>
 <td align="right">20.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -7739,12 +8000,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">99.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
-<td align="right">3,153</td>
+<td align="right">1,592</td>
 <td align="right">0.6%</td>
 </tr>
 <tr>
@@ -7766,22 +8027,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_BUILTIN_FAST</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">99.4%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">1,554</td>
+<td align="right">774</td>
 <td align="right">0.3%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">1,554</td>
+<td align="right">774</td>
 <td align="right">0.3%</td>
 </tr>
 <tr>
 <td align="left">UNPACK_SEQUENCE_TWO_TUPLE</td>
-<td align="right">44</td>
+<td align="right">43</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -7811,27 +8072,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">779,849</td>
+<td align="right">388,419</td>
 <td align="right">66.7%</td>
 </tr>
 <tr>
 <td align="left">BUILD_LIST</td>
-<td align="right">388,498</td>
+<td align="right">193,498</td>
 <td align="right">33.2%</td>
 </tr>
 <tr>
 <td align="left">BINARY_SLICE</td>
-<td align="right">517</td>
+<td align="right">257</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">517</td>
+<td align="right">257</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">BUILD_TUPLE</td>
-<td align="right">44</td>
+<td align="right">43</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -7848,22 +8109,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">1,168,155</td>
+<td align="right">581,854</td>
 <td align="right">99.9%</td>
 </tr>
 <tr>
 <td align="left">STORE_DEREF</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">259</td>
+<td align="right">129</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -7888,27 +8149,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,169,902</td>
+<td align="right">582,692</td>
 <td align="right">47.4%</td>
 </tr>
 <tr>
 <td align="left">BUILD_TUPLE</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">21.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">389,580</td>
+<td align="right">194,059</td>
 <td align="right">15.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">15.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_SUPER_ATTR_METHOD</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -7925,27 +8186,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">908,638</td>
+<td align="right">452,597</td>
 <td align="right">36.8%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">520,136</td>
+<td align="right">259,095</td>
 <td align="right">21.1%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">390,378</td>
+<td align="right">194,467</td>
 <td align="right">15.8%</td>
 </tr>
 <tr>
 <td align="left">CALL_LEN</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">15.7%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_NONE</td>
-<td align="right">259,518</td>
+<td align="right">129,258</td>
 <td align="right">10.5%</td>
 </tr>
 </tbody>
@@ -7970,27 +8231,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">5,338,306</td>
+<td align="right">2,658,876</td>
 <td align="right">50.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">3,117,676</td>
+<td align="right">1,552,864</td>
 <td align="right">29.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">649,617</td>
+<td align="right">323,576</td>
 <td align="right">6.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_WITH_VALUES</td>
-<td align="right">520,881</td>
+<td align="right">259,451</td>
 <td align="right">4.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_MODULE</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">4.9%</td>
 </tr>
 </tbody>
@@ -8007,17 +8268,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">8,075,365</td>
+<td align="right">4,022,222</td>
 <td align="right">75.6%</td>
 </tr>
 <tr>
 <td align="left">COPY_FREE_VARS</td>
-<td align="right">2,340,647</td>
+<td align="right">1,165,836</td>
 <td align="right">21.9%</td>
 </tr>
 <tr>
 <td align="left">MAKE_CELL</td>
-<td align="right">260,295</td>
+<td align="right">129,645</td>
 <td align="right">2.4%</td>
 </tr>
 <tr>
@@ -8052,27 +8313,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
-<td align="right">520,331</td>
+<td align="right">259,161</td>
 <td align="right">30.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">30.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">390,053</td>
+<td align="right">194,273</td>
 <td align="right">23.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">263,405</td>
+<td align="right">131,195</td>
 <td align="right">15.5%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">0.2%</td>
 </tr>
 </tbody>
@@ -8089,17 +8350,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">1,696,195</td>
+<td align="right">844,825</td>
 <td align="right">99.9%</td>
 </tr>
 <tr>
 <td align="left">COPY_FREE_VARS</td>
-<td align="right">1,036</td>
+<td align="right">516</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">MAKE_CELL</td>
-<td align="right">65</td>
+<td align="right">64</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -8124,7 +8385,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">389,488</td>
+<td align="right">193,968</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -8146,7 +8407,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">389,489</td>
+<td align="right">193,969</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -8171,7 +8432,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,428,905</td>
+<td align="right">711,695</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -8188,7 +8449,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">1,428,904</td>
+<td align="right">711,694</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -8218,17 +8479,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">2,861,742</td>
+<td align="right">1,425,371</td>
 <td align="right">71.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,169,124</td>
+<td align="right">582,304</td>
 <td align="right">29.0%</td>
 </tr>
 <tr>
 <td align="left">CALL_LEN</td>
-<td align="right">517</td>
+<td align="right">257</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -8255,12 +8516,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">3,252,339</td>
+<td align="right">1,619,928</td>
 <td align="right">80.7%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">779,072</td>
+<td align="right">388,032</td>
 <td align="right">19.3%</td>
 </tr>
 </tbody>
@@ -8285,12 +8546,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
-<td align="right">778,036</td>
+<td align="right">387,516</td>
 <td align="right">99.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">4,445</td>
+<td align="right">2,235</td>
 <td align="right">0.6%</td>
 </tr>
 <tr>
@@ -8317,7 +8578,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">782,489</td>
+=======
+<td align="right">389,758</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -8347,17 +8612,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">907,536</td>
+<td align="right">452,016</td>
 <td align="right">46.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">778,554</td>
+<td align="right">387,774</td>
 <td align="right">40.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">261,329</td>
+<td align="right">130,159</td>
 <td align="right">13.4%</td>
 </tr>
 <tr>
@@ -8384,12 +8649,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">1,687,903</td>
+<td align="right">840,693</td>
 <td align="right">86.7%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">259,518</td>
+<td align="right">129,258</td>
 <td align="right">13.3%</td>
 </tr>
 <tr>
@@ -8419,7 +8684,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -8446,7 +8711,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -8486,12 +8751,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">2,735,816</td>
+<td align="right">1,362,626</td>
 <td align="right">63.6%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
-<td align="right">1,564,101</td>
+<td align="right">779,031</td>
 <td align="right">36.4%</td>
 </tr>
 <tr>
@@ -8518,17 +8783,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">2,348,093</td>
+<td align="right">1,169,513</td>
 <td align="right">54.6%</td>
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
-<td align="right">1,563,338</td>
+<td align="right">778,658</td>
 <td align="right">36.4%</td>
 </tr>
 <tr>
 <td align="left">UNPACK_SEQUENCE_TUPLE</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">9.0%</td>
 </tr>
 <tr>
@@ -8558,12 +8823,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">651,648</td>
+<td align="right">324,568</td>
 <td align="right">99.4%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
-<td align="right">3,690</td>
+<td align="right">1,869</td>
 <td align="right">0.6%</td>
 </tr>
 <tr>
@@ -8585,12 +8850,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">652,166</td>
+<td align="right">324,826</td>
 <td align="right">99.5%</td>
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
-<td align="right">3,176</td>
+<td align="right">1,615</td>
 <td align="right">0.5%</td>
 </tr>
 </tbody>
@@ -8615,12 +8880,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">272,211</td>
+<td align="right">135,581</td>
 <td align="right">50.8%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
-<td align="right">263,663</td>
+<td align="right">131,323</td>
 <td align="right">49.2%</td>
 </tr>
 </tbody>
@@ -8637,12 +8902,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">272,988</td>
+<td align="right">135,968</td>
 <td align="right">50.9%</td>
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
-<td align="right">262,886</td>
+<td align="right">130,936</td>
 <td align="right">49.1%</td>
 </tr>
 </tbody>
@@ -8667,27 +8932,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">1,555,885</td>
+<td align="right">774,974</td>
 <td align="right">32.2%</td>
 </tr>
 <tr>
 <td align="left">CALL_LIST_APPEND</td>
-<td align="right">1,045,065</td>
+<td align="right">520,515</td>
 <td align="right">21.6%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">915,313</td>
+<td align="right">455,893</td>
 <td align="right">19.0%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">518,518</td>
+<td align="right">258,258</td>
 <td align="right">10.7%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">390,054</td>
+<td align="right">194,274</td>
 <td align="right">8.1%</td>
 </tr>
 </tbody>
@@ -8704,27 +8969,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
-<td align="right">2,735,816</td>
+<td align="right">1,362,626</td>
 <td align="right">56.7%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
-<td align="right">778,106</td>
+<td align="right">387,585</td>
 <td align="right">16.1%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_RANGE</td>
-<td align="right">651,648</td>
+<td align="right">324,568</td>
 <td align="right">13.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">390,054</td>
+<td align="right">194,274</td>
 <td align="right">8.1%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_TUPLE</td>
-<td align="right">272,211</td>
+<td align="right">135,581</td>
 <td align="right">5.6%</td>
 </tr>
 </tbody>
@@ -8749,27 +9014,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">17,690,298</td>
+<td align="right">8,811,165</td>
 <td align="right">87.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">2,595,245</td>
+<td align="right">1,292,644</td>
 <td align="right">12.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">2,068</td>
-<td align="right">0.0%</td>
-</tr>
-<tr>
-<td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">111</td>
+<td align="right">1,028</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
 <td align="right">77</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
+<td align="right">68</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -8786,27 +9051,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">6,762,043</td>
+<td align="right">3,368,003</td>
 <td align="right">33.3%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_LIST</td>
-<td align="right">1,428,646</td>
+<td align="right">711,566</td>
 <td align="right">7.0%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">1,428,428</td>
+<td align="right">711,478</td>
 <td align="right">7.0%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_NONE</td>
-<td align="right">1,299,154</td>
+<td align="right">647,074</td>
 <td align="right">6.4%</td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
-<td align="right">1,297,072</td>
+<td align="right">646,032</td>
 <td align="right">6.4%</td>
 </tr>
 </tbody>
@@ -8831,27 +9096,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">4,842,521</td>
+<td align="right">2,411,911</td>
 <td align="right">59.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">1,170,160</td>
+<td align="right">582,820</td>
 <td align="right">14.4%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_DICT</td>
-<td align="right">909,090</td>
+<td align="right">452,790</td>
 <td align="right">11.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">789,271</td>
+<td align="right">393,159</td>
 <td align="right">9.7%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">389,018</td>
+<td align="right">193,758</td>
 <td align="right">4.8%</td>
 </tr>
 </tbody>
@@ -8868,27 +9133,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">3,933,184</td>
+<td align="right">1,959,004</td>
 <td align="right">48.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">1,297,655</td>
+<td align="right">646,354</td>
 <td align="right">16.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">1,048,175</td>
+<td align="right">522,065</td>
 <td align="right">12.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">1,043,511</td>
+<td align="right">519,741</td>
 <td align="right">12.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">4.8%</td>
 </tr>
 </tbody>
@@ -8913,22 +9178,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">4,947,784</td>
+<td align="right">2,464,392</td>
 <td align="right">77.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">1,168,089</td>
+<td align="right">581,789</td>
 <td align="right">18.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">259,776</td>
+<td align="right">129,386</td>
 <td align="right">4.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_MODULE</td>
-<td align="right">3,108</td>
+<td align="right">1,548</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -8950,27 +9215,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">3,249,741</td>
+<td align="right">1,618,630</td>
 <td align="right">50.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">1,430,004</td>
+<td align="right">712,273</td>
 <td align="right">22.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">918,675</td>
+<td align="right">457,565</td>
 <td align="right">14.4%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
-<td align="right">520,881</td>
+<td align="right">259,451</td>
 <td align="right">8.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_MORTAL</td>
-<td align="right">259,515</td>
+<td align="right">129,255</td>
 <td align="right">4.1%</td>
 </tr>
 </tbody>
@@ -8995,22 +9260,22 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
-<td align="right">5,092,070</td>
+<td align="right">2,536,267</td>
 <td align="right">99.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_MODULE</td>
-<td align="right">6,474</td>
+<td align="right">3,224</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,554</td>
+<td align="right">774</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_DICT</td>
-<td align="right">258</td>
+<td align="right">128</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -9032,27 +9297,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">PUSH_NULL</td>
-<td align="right">3,003,756</td>
+<td align="right">1,496,144</td>
 <td align="right">58.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">1,039,367</td>
+<td align="right">517,677</td>
 <td align="right">20.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
-<td align="right">519,555</td>
+<td align="right">258,775</td>
 <td align="right">10.2%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">10.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_MODULE</td>
-<td align="right">6,474</td>
+<td align="right">3,224</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -9077,12 +9342,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,039,109</td>
+<td align="right">517,549</td>
 <td align="right">66.7%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">33.3%</td>
 </tr>
 <tr>
@@ -9104,12 +9369,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">COPY</td>
-<td align="right">1,039,108</td>
+<td align="right">517,548</td>
 <td align="right">66.7%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">33.3%</td>
 </tr>
 <tr>
@@ -9144,27 +9409,31 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,959,766</td>
+=======
+<td align="right">976,180</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">13.2%</td>
 </tr>
 <tr>
 <td align="left">STORE_ATTR_INSTANCE_VALUE</td>
-<td align="right">1,300,471</td>
+<td align="right">647,741</td>
 <td align="right">8.7%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
-<td align="right">1,299,084</td>
+<td align="right">647,131</td>
 <td align="right">8.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
-<td align="right">1,048,175</td>
+<td align="right">522,065</td>
 <td align="right">7.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">1,042,993</td>
+<td align="right">519,483</td>
 <td align="right">7.0%</td>
 </tr>
 </tbody>
@@ -9181,27 +9450,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">3,655,008</td>
+<td align="right">1,820,575</td>
 <td align="right">24.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,831,398</td>
+<td align="right">912,168</td>
 <td align="right">12.3%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST_WITH_KEYWORDS</td>
-<td align="right">1,305,360</td>
+<td align="right">650,160</td>
 <td align="right">8.8%</td>
 </tr>
 <tr>
 <td align="left">RAISE_VARARGS</td>
-<td align="right">1,041,439</td>
+<td align="right">518,709</td>
 <td align="right">7.0%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_GETITEM</td>
-<td align="right">1,039,108</td>
+<td align="right">517,548</td>
 <td align="right">7.0%</td>
 </tr>
 </tbody>
@@ -9226,27 +9495,31 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,298,122</td>
+=======
+<td align="right">646,566</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">26.2%</td>
 </tr>
 <tr>
 <td align="left">PUSH_NULL</td>
-<td align="right">1,039,885</td>
+<td align="right">517,935</td>
 <td align="right">21.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">10.5%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">389,536</td>
+<td align="right">194,016</td>
 <td align="right">7.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
-<td align="right">388,499</td>
+<td align="right">193,499</td>
 <td align="right">7.9%</td>
 </tr>
 </tbody>
@@ -9263,27 +9536,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,171,195</td>
+<td align="right">583,335</td>
 <td align="right">23.7%</td>
 </tr>
 <tr>
 <td align="left">CALL_KW_NON_PY</td>
-<td align="right">779,330</td>
+<td align="right">388,160</td>
 <td align="right">15.8%</td>
 </tr>
 <tr>
 <td align="left">COMPARE_OP_STR</td>
-<td align="right">778,036</td>
+<td align="right">387,516</td>
 <td align="right">15.7%</td>
 </tr>
 <tr>
 <td align="left">CALL_KW_PY</td>
-<td align="right">520,840</td>
+<td align="right">259,410</td>
 <td align="right">10.5%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_GENERAL</td>
-<td align="right">520,331</td>
+<td align="right">259,161</td>
 <td align="right">10.5%</td>
 </tr>
 </tbody>
@@ -9308,27 +9581,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">3,385,981</td>
+<td align="right">1,686,491</td>
 <td align="right">17.9%</td>
 </tr>
 <tr>
 <td align="left">PUSH_EXC_INFO</td>
-<td align="right">2,606,319</td>
+<td align="right">1,298,129</td>
 <td align="right">13.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">2,082,365</td>
+<td align="right">1,037,185</td>
 <td align="right">11.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,565,187</td>
+<td align="right">779,597</td>
 <td align="right">8.3%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">1,562,036</td>
+<td align="right">778,006</td>
 <td align="right">8.3%</td>
 </tr>
 </tbody>
@@ -9345,27 +9618,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">9,107,388</td>
+<td align="right">4,536,197</td>
 <td align="right">48.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">2,082,365</td>
+<td align="right">1,037,185</td>
 <td align="right">11.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">1,688,685</td>
+<td align="right">841,085</td>
 <td align="right">8.9%</td>
 </tr>
 <tr>
 <td align="left">BUILD_TUPLE</td>
-<td align="right">1,561,772</td>
+<td align="right">777,872</td>
 <td align="right">8.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
-<td align="right">1,560,216</td>
+<td align="right">777,096</td>
 <td align="right">8.3%</td>
 </tr>
 </tbody>
@@ -9390,27 +9663,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">2,080,186</td>
+<td align="right">1,036,156</td>
 <td align="right">17.3%</td>
 </tr>
 <tr>
 <td align="left">NOP</td>
-<td align="right">1,952,600</td>
+<td align="right">972,530</td>
 <td align="right">16.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,560,216</td>
+<td align="right">777,096</td>
 <td align="right">13.0%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">1,433,959</td>
+<td align="right">714,276</td>
 <td align="right">11.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">1,042,732</td>
+<td align="right">519,352</td>
 <td align="right">8.7%</td>
 </tr>
 </tbody>
@@ -9427,27 +9700,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR_MODULE</td>
-<td align="right">5,092,070</td>
+<td align="right">2,536,267</td>
 <td align="right">42.4%</td>
 </tr>
 <tr>
 <td align="left">IS_OP</td>
-<td align="right">1,688,501</td>
+<td align="right">841,031</td>
 <td align="right">14.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">1,429,764</td>
+<td align="right">712,163</td>
 <td align="right">11.9%</td>
 </tr>
 <tr>
 <td align="left">CALL_ISINSTANCE</td>
-<td align="right">1,428,904</td>
+<td align="right">711,694</td>
 <td align="right">11.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,428,903</td>
+<td align="right">711,693</td>
 <td align="right">11.9%</td>
 </tr>
 </tbody>
@@ -9472,13 +9745,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">776</td>
-<td align="right">99.9%</td>
+<td align="right">386</td>
+<td align="right">99.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_SUPER_ATTR</td>
 <td align="right">1</td>
-<td align="right">0.1%</td>
+<td align="right">0.3%</td>
 </tr>
 </tbody>
 </table>
@@ -9494,7 +9767,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -9519,7 +9792,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">520,330</td>
+<td align="right">259,160</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -9541,12 +9814,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">519,554</td>
+<td align="right">258,774</td>
 <td align="right">99.9%</td>
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -9571,27 +9844,35 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
-<td align="right">8,075,365</td>
+<td align="right">4,022,222</td>
 <td align="right">48.1%</td>
 </tr>
 <tr>
 <td align="left">COPY_FREE_VARS</td>
-<td align="right">2,603,015</td>
+<td align="right">1,296,514</td>
 <td align="right">15.5%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_GENERAL</td>
-<td align="right">1,696,195</td>
+<td align="right">844,825</td>
 <td align="right">10.1%</td>
 </tr>
 <tr>
 <td align="left">CACHE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,689,045</td>
+=======
+<td align="right">841,310</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">10.1%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_GETITEM</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,042,240</td>
+=======
+<td align="right">519,124</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">6.2%</td>
 </tr>
 </tbody>
@@ -9608,27 +9889,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">8,326,080</td>
+<td align="right">4,147,097</td>
 <td align="right">49.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">3,385,981</td>
+<td align="right">1,686,491</td>
 <td align="right">20.2%</td>
 </tr>
 <tr>
 <td align="left">NOP</td>
-<td align="right">1,568,764</td>
+<td align="right">781,354</td>
 <td align="right">9.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
-<td align="right">1,433,959</td>
+<td align="right">714,276</td>
 <td align="right">8.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_DEREF</td>
-<td align="right">779,590</td>
+<td align="right">388,290</td>
 <td align="right">4.6%</td>
 </tr>
 </tbody>
@@ -9653,12 +9934,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">6,240,366</td>
+<td align="right">3,108,146</td>
 <td align="right">57.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">4,686,895</td>
+<td align="right">2,334,415</td>
 <td align="right">42.9%</td>
 </tr>
 <tr>
@@ -9685,27 +9966,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
-<td align="right">4,680,405</td>
+<td align="right">2,331,175</td>
 <td align="right">42.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_SMALL_INT</td>
-<td align="right">1,558,663</td>
+<td align="right">776,323</td>
 <td align="right">14.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,303,305</td>
+<td align="right">649,145</td>
 <td align="right">11.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">1,300,471</td>
+<td align="right">647,741</td>
 <td align="right">11.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
-<td align="right">1,039,886</td>
+<td align="right">517,936</td>
 <td align="right">9.5%</td>
 </tr>
 </tbody>
@@ -9730,12 +10011,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">657,603</td>
+<td align="right">327,533</td>
 <td align="right">99.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">517</td>
+<td align="right">257</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -9757,17 +10038,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">398,083</td>
+<td align="right">198,273</td>
 <td align="right">60.5%</td>
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">259,518</td>
+<td align="right">129,258</td>
 <td align="right">39.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -9802,27 +10083,27 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_ISINSTANCE</td>
-<td align="right">2,734,832</td>
+<td align="right">1,362,162</td>
 <td align="right">48.7%</td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_FAST</td>
-<td align="right">1,040,143</td>
+<td align="right">518,063</td>
 <td align="right">18.5%</td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_O</td>
-<td align="right">909,090</td>
+<td align="right">452,790</td>
 <td align="right">16.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">520,329</td>
+<td align="right">259,159</td>
 <td align="right">9.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">391,138</td>
+<td align="right">194,837</td>
 <td align="right">7.0%</td>
 </tr>
 </tbody>
@@ -9839,12 +10120,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">3,262,953</td>
+<td align="right">1,625,213</td>
 <td align="right">58.1%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">2,354,383</td>
+<td align="right">1,172,682</td>
 <td align="right">41.9%</td>
 </tr>
 <tr>
@@ -9874,17 +10155,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">COPY</td>
-<td align="right">1,039,112</td>
+<td align="right">517,552</td>
 <td align="right">98.5%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP_EXTEND</td>
-<td align="right">15,567</td>
+<td align="right">7,767</td>
 <td align="right">1.5%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP</td>
-<td align="right">516</td>
+<td align="right">256</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -9911,12 +10192,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">1,039,638</td>
+<td align="right">517,818</td>
 <td align="right">98.5%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">15,578</td>
+<td align="right">7,778</td>
 <td align="right">1.5%</td>
 </tr>
 <tr>
@@ -9946,12 +10227,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">2,080,548</td>
+<td align="right">1,036,258</td>
 <td align="right">59.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">1,428,646</td>
+<td align="right">711,566</td>
 <td align="right">40.7%</td>
 </tr>
 <tr>
@@ -9973,12 +10254,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">1,817,665</td>
+<td align="right">905,325</td>
 <td align="right">51.8%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">1,691,533</td>
+<td align="right">842,503</td>
 <td align="right">48.2%</td>
 </tr>
 <tr>
@@ -10008,12 +10289,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
-<td align="right">259,518</td>
+<td align="right">129,258</td>
 <td align="right">98.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">3,080</td>
+<td align="right">1,548</td>
 <td align="right">1.2%</td>
 </tr>
 </tbody>
@@ -10030,13 +10311,8 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">262,597</td>
+<td align="right">130,806</td>
 <td align="right">100.0%</td>
-</tr>
-<tr>
-<td align="left">TO_BOOL_STR</td>
-<td align="right">1</td>
-<td align="right">0.0%</td>
 </tr>
 </tbody>
 </table>
@@ -10060,22 +10336,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">1,049,755</td>
+<td align="right">522,837</td>
 <td align="right">80.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">259,777</td>
+<td align="right">129,387</td>
 <td align="right">19.8%</td>
 </tr>
 <tr>
 <td align="left">COPY</td>
 <td align="right">9</td>
-<td align="right">0.0%</td>
-</tr>
-<tr>
-<td align="left">TO_BOOL_NONE</td>
-<td align="right">1</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -10092,12 +10363,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">1,046,657</td>
+<td align="right">521,298</td>
 <td align="right">79.9%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">262,885</td>
+<td align="right">130,935</td>
 <td align="right">20.1%</td>
 </tr>
 </tbody>
@@ -10122,12 +10393,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
-<td align="right">389,536</td>
+<td align="right">194,016</td>
 <td align="right">99.8%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.2%</td>
 </tr>
 </tbody>
@@ -10144,12 +10415,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">389,536</td>
+<td align="right">194,016</td>
 <td align="right">99.8%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST_STORE_FAST</td>
-<td align="right">777</td>
+<td align="right">387</td>
 <td align="right">0.2%</td>
 </tr>
 </tbody>
@@ -10174,12 +10445,12 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">BINARY_OP_SUBSCR_LIST_INT</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">50.0%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
-<td align="right">388,500</td>
+<td align="right">193,500</td>
 <td align="right">50.0%</td>
 </tr>
 <tr>
@@ -10206,7 +10477,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST_STORE_FAST</td>
-<td align="right">777,004</td>
+<td align="right">387,004</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -10236,17 +10507,17 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER</td>
-<td align="right">779,071</td>
-<td align="right">99.9%</td>
+<td align="right">388,031</td>
+<td align="right">99.8%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
-<td align="right">1,053</td>
+<td align="right">533</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_NOARGS</td>
-<td align="right">44</td>
+<td align="right">43</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -10273,7 +10544,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST_STORE_FAST</td>
-<td align="right">780,212</td>
+<td align="right">388,651</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -10776,8 +11047,13 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">525,009</td>
 <td align="right">4.6%</td>
+=======
+<td align="right">261,499</td>
+<td align="right">4.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 <tr>
 <td align="left">
@@ -10788,8 +11064,13 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">10,954,817</td>
 <td align="right">95.4%</td>
+=======
+<td align="right">5,133,676</td>
+<td align="right">95.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 <tr>
 <td align="left">
@@ -10817,6 +11098,7 @@ Specialized instructions that deopt.
 <tbody>
 <tr>
 <td align="left">Success</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">52</td>
 <td align="right">14.8%</td>
 </tr>
@@ -10824,6 +11106,15 @@ Specialized instructions that deopt.
 <td align="left">Failure</td>
 <td align="right">300</td>
 <td align="right">85.2%</td>
+=======
+<td align="right">51</td>
+<td align="right">16.9%</td>
+</tr>
+<tr>
+<td align="left">Failure</td>
+<td align="right">250</td>
+<td align="right">83.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 </tbody>
 </table>
@@ -10839,13 +11130,13 @@ Specialized instructions that deopt.
 <tbody>
 <tr>
 <td align="left">remainder</td>
-<td align="right">139</td>
-<td align="right">46.3%</td>
+<td align="right">114</td>
+<td align="right">45.6%</td>
 </tr>
 <tr>
 <td align="left">multiply different types</td>
-<td align="right">93</td>
-<td align="right">31.0%</td>
+<td align="right">50</td>
+<td align="right">20.0%</td>
 </tr>
 <tr>
 <td align="left">out of range</td>
@@ -10854,8 +11145,8 @@ Specialized instructions that deopt.
 </tr>
 <tr>
 <td align="left">subscr list slice</td>
-<td align="right">24</td>
-<td align="right">8.0%</td>
+<td align="right">43</td>
+<td align="right">17.2%</td>
 </tr>
 </tbody>
 </table>
@@ -10886,7 +11177,11 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">784,515</td>
+=======
+<td align="right">390,741</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -10930,7 +11225,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">31,288,198</td>
+<td align="right">15,584,061</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -11067,7 +11362,11 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">264,189</td>
+=======
+<td align="right">131,590</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">5.2%</td>
 </tr>
 <tr>
@@ -11079,7 +11378,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">4,813,907</td>
+<td align="right">2,397,726</td>
 <td align="right">94.8%</td>
 </tr>
 <tr>
@@ -11109,12 +11408,17 @@ Specialized instructions that deopt.
 <tr>
 <td align="left">Success</td>
 <td align="right">25</td>
-<td align="right">6.2%</td>
+<td align="right">12.0%</td>
 </tr>
 <tr>
 <td align="left">Failure</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">375</td>
 <td align="right">93.8%</td>
+=======
+<td align="right">184</td>
+<td align="right">88.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 </tbody>
 </table>
@@ -11130,7 +11434,11 @@ Specialized instructions that deopt.
 <tbody>
 <tr>
 <td align="left">different types</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">375</td>
+=======
+<td align="right">184</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -11162,7 +11470,7 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
-<td align="right">2,216,036</td>
+<td align="right">1,103,756</td>
 <td align="right">47.3%</td>
 </tr>
 <tr>
@@ -11174,7 +11482,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">2,467,017</td>
+<td align="right">1,228,767</td>
 <td align="right">52.7%</td>
 </tr>
 </tbody>
@@ -11192,12 +11500,12 @@ Specialized instructions that complete.
 <tr>
 <td align="left">Success</td>
 <td align="right">2</td>
-<td align="right">0.3%</td>
+<td align="right">0.4%</td>
 </tr>
 <tr>
 <td align="left">Failure</td>
-<td align="right">779</td>
-<td align="right">99.7%</td>
+<td align="right">477</td>
+<td align="right">99.6%</td>
 </tr>
 </tbody>
 </table>
@@ -11213,18 +11521,18 @@ Specialized instructions that complete.
 <tbody>
 <tr>
 <td align="left">str</td>
-<td align="right">573</td>
-<td align="right">73.6%</td>
-</tr>
-<tr>
-<td align="left">tuple</td>
-<td align="right">138</td>
-<td align="right">17.7%</td>
+<td align="right">317</td>
+<td align="right">66.5%</td>
 </tr>
 <tr>
 <td align="left">list</td>
-<td align="right">68</td>
-<td align="right">8.7%</td>
+<td align="right">86</td>
+<td align="right">18.0%</td>
+</tr>
+<tr>
+<td align="left">tuple</td>
+<td align="right">74</td>
+<td align="right">15.5%</td>
 </tr>
 </tbody>
 </table>
@@ -11255,7 +11563,7 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
-<td align="right">781,734</td>
+<td align="right">389,393</td>
 <td align="right">12.5%</td>
 </tr>
 <tr>
@@ -11267,7 +11575,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">5,491,157</td>
+<td align="right">2,735,026</td>
 <td align="right">87.5%</td>
 </tr>
 <tr>
@@ -11297,12 +11605,12 @@ Specialized instructions that deopt.
 <tr>
 <td align="left">Success</td>
 <td align="right">6</td>
-<td align="right">1.8%</td>
+<td align="right">3.2%</td>
 </tr>
 <tr>
 <td align="left">Failure</td>
-<td align="right">335</td>
-<td align="right">98.2%</td>
+<td align="right">184</td>
+<td align="right">96.8%</td>
 </tr>
 </tbody>
 </table>
@@ -11318,23 +11626,23 @@ Specialized instructions that deopt.
 <tbody>
 <tr>
 <td align="left">enumerate</td>
-<td align="right">200</td>
-<td align="right">59.7%</td>
+<td align="right">93</td>
+<td align="right">50.5%</td>
 </tr>
 <tr>
 <td align="left">dict keys</td>
-<td align="right">88</td>
-<td align="right">26.3%</td>
+<td align="right">46</td>
+<td align="right">25.0%</td>
 </tr>
 <tr>
 <td align="left">zip</td>
-<td align="right">45</td>
-<td align="right">13.4%</td>
+<td align="right">44</td>
+<td align="right">23.9%</td>
 </tr>
 <tr>
 <td align="left">dict values</td>
-<td align="right">2</td>
-<td align="right">0.6%</td>
+<td align="right">1</td>
+<td align="right">0.5%</td>
 </tr>
 </tbody>
 </table>
@@ -11365,7 +11673,7 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
-<td align="right">3,247,978</td>
+<td align="right">1,617,777</td>
 <td align="right">7.3%</td>
 </tr>
 <tr>
@@ -11377,7 +11685,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">41,405,663</td>
+<td align="right">20,623,019</td>
 <td align="right">92.7%</td>
 </tr>
 <tr>
@@ -11389,7 +11697,7 @@ miss
 Specialized instructions that deopt.
 </details>
 </td>
-<td align="right">24,319</td>
+<td align="right">12,486</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -11406,13 +11714,13 @@ Specialized instructions that deopt.
 <tbody>
 <tr>
 <td align="left">Success</td>
-<td align="right">371</td>
-<td align="right">29.7%</td>
+<td align="right">315</td>
+<td align="right">40.2%</td>
 </tr>
 <tr>
 <td align="left">Failure</td>
-<td align="right">878</td>
-<td align="right">70.3%</td>
+<td align="right">469</td>
+<td align="right">59.8%</td>
 </tr>
 </tbody>
 </table>
@@ -11428,23 +11736,23 @@ Specialized instructions that deopt.
 <tbody>
 <tr>
 <td align="left">method</td>
-<td align="right">320</td>
-<td align="right">36.4%</td>
-</tr>
-<tr>
-<td align="left">mutable class</td>
-<td align="right">134</td>
-<td align="right">15.3%</td>
+<td align="right">191</td>
+<td align="right">40.7%</td>
 </tr>
 <tr>
 <td align="left">not managed dict</td>
-<td align="right">134</td>
-<td align="right">15.3%</td>
+<td align="right">69</td>
+<td align="right">14.7%</td>
 </tr>
 <tr>
 <td align="left">module attr not found</td>
-<td align="right">134</td>
-<td align="right">15.3%</td>
+<td align="right">69</td>
+<td align="right">14.7%</td>
+</tr>
+<tr>
+<td align="left">mutable class</td>
+<td align="right">49</td>
+<td align="right">10.4%</td>
 </tr>
 </tbody>
 </table>
@@ -11487,7 +11795,7 @@ deopt
 Specialized instructions that deopt.
 </details>
 </td>
-<td align="right">36</td>
+<td align="right">396</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -11499,7 +11807,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">30,883,133</td>
+<td align="right">15,381,978</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -11511,7 +11819,7 @@ miss
 Specialized instructions that deopt.
 </details>
 </td>
-<td align="right">36</td>
+<td align="right">396</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -11528,7 +11836,7 @@ Specialized instructions that deopt.
 <tbody>
 <tr>
 <td align="left">Success</td>
-<td align="right">150</td>
+<td align="right">170</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -11565,7 +11873,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">521,108</td>
+<td align="right">259,548</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -11619,7 +11927,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">10,919,510</td>
+<td align="right">5,438,710</td>
 <td align="right">99.9%</td>
 </tr>
 <tr>
@@ -11631,7 +11939,7 @@ miss
 Specialized instructions that deopt.
 </details>
 </td>
-<td align="right">7,770</td>
+<td align="right">3,870</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -11685,7 +11993,7 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
-<td align="right">1,044</td>
+<td align="right">524</td>
 <td align="right">0.2%</td>
 </tr>
 <tr>
@@ -11697,7 +12005,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">658,128</td>
+<td align="right">327,798</td>
 <td align="right">99.8%</td>
 </tr>
 </tbody>
@@ -11719,7 +12027,7 @@ Specialized instructions that complete.
 </tr>
 <tr>
 <td align="left">Failure</td>
-<td align="right">45</td>
+<td align="right">44</td>
 <td align="right">97.8%</td>
 </tr>
 </tbody>
@@ -11736,7 +12044,7 @@ Specialized instructions that complete.
 <tbody>
 <tr>
 <td align="left">list slice</td>
-<td align="right">45</td>
+<td align="right">44</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -11768,7 +12076,7 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
-<td align="right">260,892</td>
+<td align="right">129,981</td>
 <td align="right">2.2%</td>
 </tr>
 <tr>
@@ -11780,7 +12088,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">11,753,102</td>
+<td align="right">5,853,974</td>
 <td align="right">97.8%</td>
 </tr>
 <tr>
@@ -11792,7 +12100,7 @@ miss
 Specialized instructions that deopt.
 </details>
 </td>
-<td align="right">794</td>
+<td align="right">390</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -11809,13 +12117,13 @@ Specialized instructions that deopt.
 <tbody>
 <tr>
 <td align="left">Success</td>
-<td align="right">33</td>
-<td align="right">15.6%</td>
+<td align="right">32</td>
+<td align="right">25.2%</td>
 </tr>
 <tr>
 <td align="left">Failure</td>
-<td align="right">179</td>
-<td align="right">84.4%</td>
+<td align="right">95</td>
+<td align="right">74.8%</td>
 </tr>
 </tbody>
 </table>
@@ -11831,18 +12139,18 @@ Specialized instructions that deopt.
 <tbody>
 <tr>
 <td align="left">tuple</td>
-<td align="right">114</td>
-<td align="right">63.7%</td>
+<td align="right">51</td>
+<td align="right">53.7%</td>
 </tr>
 <tr>
 <td align="left">dict</td>
-<td align="right">44</td>
-<td align="right">24.6%</td>
+<td align="right">23</td>
+<td align="right">24.2%</td>
 </tr>
 <tr>
 <td align="left">sequence</td>
 <td align="right">21</td>
-<td align="right">11.7%</td>
+<td align="right">22.1%</td>
 </tr>
 </tbody>
 </table>
@@ -11885,7 +12193,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">1,947,541</td>
+<td align="right">970,070</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -11946,7 +12254,11 @@ Basic
 Instructions that are not and cannot be specialized, e.g. `LOAD_FAST`.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">264,193,841</td>
+=======
+<td align="right">131,591,022</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">56.1%</td>
 </tr>
 <tr>
@@ -11958,7 +12270,11 @@ Not specialized
 Instructions that could be specialized but aren't, e.g. `LOAD_ATTR`, `BINARY_SLICE`.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">8,095,218</td>
+=======
+<td align="right">4,032,867</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">1.7%</td>
 </tr>
 <tr>
@@ -11970,7 +12286,11 @@ Specialized hits
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">199,001,329</td>
+=======
+<td align="right">99,118,514</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">42.2%</td>
 </tr>
 <tr>
@@ -11982,7 +12302,11 @@ Specialized misses
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">33,279</td>
+=======
+<td align="right">17,366</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -12004,42 +12328,50 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR</td>
-<td align="right">3,247,978</td>
+<td align="right">1,617,777</td>
 <td align="right">40.2%</td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
-<td align="right">2,216,036</td>
+<td align="right">1,103,756</td>
 <td align="right">27.4%</td>
 </tr>
 <tr>
 <td align="left">BINARY_SLICE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">784,515</td>
+=======
+<td align="right">390,741</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">9.7%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
-<td align="right">781,734</td>
+<td align="right">389,393</td>
 <td align="right">9.7%</td>
 </tr>
 <tr>
 <td align="left">BINARY_OP</td>
-<td align="right">525,009</td>
+<td align="right">261,499</td>
 <td align="right">6.5%</td>
 </tr>
 <tr>
 <td align="left">COMPARE_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">264,189</td>
+=======
+<td align="right">131,590</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">3.3%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL</td>
-<td align="right">260,892</td>
+<td align="right">129,981</td>
 <td align="right">3.2%</td>
 </tr>
 <tr>
 <td align="left">STORE_SUBSCR</td>
-<td align="right">1,044</td>
+<td align="right">524</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -12074,26 +12406,32 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
-<td align="right">14,270</td>
-<td align="right">42.5%</td>
+<td align="right">7,455</td>
+<td align="right">42.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_WITH_VALUES</td>
-<td align="right">10,049</td>
-<td align="right">29.9%</td>
+<td align="right">5,031</td>
+<td align="right">28.7%</td>
 </tr>
 <tr>
 <td align="left">STORE_ATTR_INSTANCE_VALUE</td>
-<td align="right">7,770</td>
-<td align="right">23.2%</td>
+<td align="right">3,870</td>
+<td align="right">22.1%</td>
 </tr>
 <tr>
-<td align="left">TO_BOOL_NONE</td>
-<td align="right">770</td>
+<td align="left">LOAD_GLOBAL_BUILTIN</td>
+<td align="right">396</td>
 <td align="right">2.3%</td>
 </tr>
 <tr>
+<td align="left">TO_BOOL_NONE</td>
+<td align="right">387</td>
+<td align="right">2.2%</td>
+</tr>
+<tr>
 <td align="left">RESUME</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">283</td>
 <td align="right">0.8%</td>
 </tr>
@@ -12101,25 +12439,29 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 <td align="left">RESUME_CHECK</td>
 <td align="right">283</td>
 <td align="right">0.8%</td>
+=======
+<td align="right">152</td>
+<td align="right">0.9%</td>
+</tr>
+<tr>
+<td align="left">RESUME_CHECK</td>
+<td align="right">152</td>
+<td align="right">0.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
 <td align="right">48</td>
-<td align="right">0.1%</td>
-</tr>
-<tr>
-<td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">36</td>
-<td align="right">0.1%</td>
-</tr>
-<tr>
-<td align="left">TO_BOOL_STR</td>
-<td align="right">21</td>
-<td align="right">0.1%</td>
+<td align="right">0.3%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
 <td align="right">16</td>
+<td align="right">0.1%</td>
+</tr>
+<tr>
+<td align="left">BINARY_OP_SUBSCR_LIST_INT</td>
+<td align="right">6</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -12154,22 +12496,38 @@ Also includes the count of frame objects created.
 <tbody>
 <tr>
 <td align="left">Calls to PyEval_EvalDefault</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,949,860</td>
+=======
+<td align="right">971,215</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">11.6%</td>
 </tr>
 <tr>
 <td align="left">Calls to Python functions inlined</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">14,846,876</td>
+=======
+<td align="right">7,395,015</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">88.4%</td>
 </tr>
 <tr>
 <td align="left">Calls via PyEval_EvalFrame (total)</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,949,860</td>
+=======
+<td align="right">971,215</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">11.6%</td>
 </tr>
 <tr>
 <td align="left">Calls via PyEval_EvalFrame (vector)</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,949,860</td>
+=======
+<td align="right">971,215</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">11.6%</td>
 </tr>
 <tr>
@@ -12184,7 +12542,11 @@ Also includes the count of frame objects created.
 </tr>
 <tr>
 <td align="left">Calls via PyEval_EvalFrame (function vectorcall)</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,949,860</td>
+=======
+<td align="right">971,215</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right">11.6%</td>
 </tr>
 <tr>
@@ -12214,12 +12576,12 @@ Also includes the count of frame objects created.
 </tr>
 <tr>
 <td align="left">Frame objects created</td>
-<td align="right">1,568,000</td>
+<td align="right">780,980</td>
 <td align="right">9.3%</td>
 </tr>
 <tr>
 <td align="left">Frames pushed</td>
-<td align="right">17,316,557</td>
+<td align="right">8,625,141</td>
 <td align="right">103.1%</td>
 </tr>
 </tbody>
@@ -12253,16 +12615,26 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">23,011,501</td>
 <td align="right">49.3%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
 <td align="right">23,012,644</td>
+=======
+<td align="right">10,595,738</td>
+<td align="right">47.4%</td>
+</tr>
+<tr>
+<td align="left">Frees to freelist</td>
+<td align="right">10,596,840</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">23,632,738</td>
 <td align="right">50.7%</td>
 </tr>
@@ -12270,29 +12642,43 @@ other names.
 <td align="left">Allocations to 512 bytes</td>
 <td align="right">23,351,982</td>
 <td align="right">50.1%</td>
+=======
+<td align="right">11,770,912</td>
+<td align="right">52.6%</td>
+</tr>
+<tr>
+<td align="left">Allocations to 512 bytes</td>
+<td align="right">11,631,076</td>
+<td align="right">52.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 <tr>
 <td align="left">Allocations to 4 kbytes</td>
-<td align="right">274,022</td>
+<td align="right">136,482</td>
 <td align="right">0.6%</td>
 </tr>
 <tr>
 <td align="left">Allocations over 4 kbytes</td>
-<td align="right">6,734</td>
+<td align="right">3,354</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">23,647,954</td>
+=======
+<td align="right">11,772,454</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Inline values</td>
-<td align="right">1,300,189</td>
+<td align="right">647,589</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Interpreter mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">204,987,037</td>
 <td align="right">58.4%</td>
 </tr>
@@ -12330,6 +12716,45 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">55,303,693</td>
 <td align="right">14.7%</td>
+=======
+<td align="right">104,956,053</td>
+<td align="right">53.1%</td>
+</tr>
+<tr>
+<td align="left">Interpreter mortal decrefs</td>
+<td align="right">115,072,994</td>
+<td align="right">51.1%</td>
+</tr>
+<tr>
+<td align="left">Mortal increfs</td>
+<td align="right">36,350,798</td>
+<td align="right">18.4%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">44,965,412</td>
+<td align="right">20.0%</td>
+</tr>
+<tr>
+<td align="left">Interpreter immortal increfs</td>
+<td align="right">31,319,817</td>
+<td align="right">15.8%</td>
+</tr>
+<tr>
+<td align="left">Interpreter immortal decrefs</td>
+<td align="right">37,804,231</td>
+<td align="right">16.8%</td>
+</tr>
+<tr>
+<td align="left">Immortal increfs</td>
+<td align="right">25,136,637</td>
+<td align="right">12.7%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">27,546,742</td>
+<td align="right">12.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -12338,7 +12763,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Materialize dict (new key)</td>
-<td align="right">518</td>
+<td align="right">258</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -12353,27 +12778,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">4,938,615</td>
+=======
+<td align="right">2,722,891</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,863,652</td>
+=======
+<td align="right">665,662</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">2,382,931</td>
+=======
+<td align="right">664,983</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">3,774,187</td>
+=======
+<td align="right">2,138,816</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">519,931</td>
+=======
+<td align="right">46</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 <td align="right"></td>
 </tr>
 </tbody>
@@ -12412,11 +12857,19 @@ Collected/visits gives some measure of efficiency.
 </tr>
 <tr>
 <td align="right">1</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-argparse_subparsers.md
 <td align="right">1,037</td>
 <td align="right">1,561,912</td>
 <td align="right">29,431,258</td>
 <td align="right">663,909</td>
 <td align="right">1,967,071</td>
+=======
+<td align="right">517</td>
+<td align="right">778,465</td>
+<td align="right">13,081,464</td>
+<td align="right">126,858</td>
+<td align="right">976,295</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-argparse_subparsers.md
 </tr>
 <tr>
 <td align="right">2</td>

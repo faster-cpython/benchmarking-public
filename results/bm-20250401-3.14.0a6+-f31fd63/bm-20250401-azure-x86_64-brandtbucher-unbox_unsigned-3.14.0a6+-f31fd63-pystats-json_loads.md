@@ -5354,7 +5354,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-json_loads.md
 <td align="right">96,153,782</td>
+=======
+<td align="right">96,153,784</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-json_loads.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -5374,6 +5378,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-json_loads.md
 <td align="right">168,668,948</td>
 <td align="right">55.1%</td>
 </tr>
@@ -5381,6 +5386,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">270,029,413</td>
 <td align="right">81.7%</td>
+=======
+<td align="right">168,668,949</td>
+<td align="right">53.6%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">270,029,417</td>
+<td align="right">78.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-json_loads.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -5399,8 +5413,13 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-json_loads.md
 <td align="right">21,197,303</td>
 <td align="right">6.4%</td>
+=======
+<td align="right">21,197,301</td>
+<td align="right">6.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-json_loads.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -5434,7 +5453,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-json_loads.md
 <td align="right">26</td>
+=======
+<td align="right">25</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-json_loads.md
 <td align="right"></td>
 </tr>
 <tr>

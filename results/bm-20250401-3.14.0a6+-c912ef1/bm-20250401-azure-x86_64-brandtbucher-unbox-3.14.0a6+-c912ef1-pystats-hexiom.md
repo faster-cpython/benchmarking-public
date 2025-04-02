@@ -8346,7 +8346,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-hexiom.md
 <td align="right">11,305,442</td>
+=======
+<td align="right">11,305,447</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-hexiom.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -8366,6 +8370,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-hexiom.md
 <td align="right">14,922,807</td>
 <td align="right">2.5%</td>
 </tr>
@@ -8373,6 +8378,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">15,448,230</td>
 <td align="right">2.3%</td>
+=======
+<td align="right">14,894,971</td>
+<td align="right">1.9%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">15,420,398</td>
+<td align="right">1.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-hexiom.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -8386,8 +8400,13 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-hexiom.md
 <td align="right">92,402,343</td>
 <td align="right">15.3%</td>
+=======
+<td align="right">91,900,891</td>
+<td align="right">11.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-hexiom.md
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
@@ -8416,17 +8435,29 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-hexiom.md
 <td align="right">51,188</td>
+=======
+<td align="right">51,181</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-hexiom.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-hexiom.md
 <td align="right">32</td>
+=======
+<td align="right">39</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-hexiom.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-hexiom.md
 <td align="right">58</td>
+=======
+<td align="right">44</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-hexiom.md
 <td align="right"></td>
 </tr>
 <tr>

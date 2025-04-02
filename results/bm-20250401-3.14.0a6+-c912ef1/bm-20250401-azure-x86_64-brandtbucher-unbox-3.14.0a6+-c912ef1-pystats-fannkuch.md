@@ -5555,6 +5555,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-fannkuch.md
 <td align="right">2,090,958,849</td>
 <td align="right">69.5%</td>
 </tr>
@@ -5562,6 +5563,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">2,261,297,545</td>
 <td align="right">65.4%</td>
+=======
+<td align="right">2,090,958,612</td>
+<td align="right">52.6%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">2,261,297,552</td>
+<td align="right">41.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-fannkuch.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -5585,17 +5595,21 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">353</td>
+<td align="right">351</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">27</td>
+<td align="right">29</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-fannkuch.md
 <td align="right">22</td>
+=======
+<td align="right">20</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-fannkuch.md
 <td align="right"></td>
 </tr>
 <tr>

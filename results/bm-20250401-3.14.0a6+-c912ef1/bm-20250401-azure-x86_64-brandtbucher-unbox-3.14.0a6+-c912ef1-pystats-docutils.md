@@ -15133,7 +15133,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-docutils.md
 <td align="right">353,619,378</td>
+=======
+<td align="right">353,759,900</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-docutils.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -15153,6 +15157,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-docutils.md
 <td align="right">1,999,478,672</td>
 <td align="right">29.3%</td>
 </tr>
@@ -15165,6 +15170,20 @@ other names.
 <td align="left">Interpreter immortal increfs</td>
 <td align="right">202,898,040</td>
 <td align="right">3.0%</td>
+=======
+<td align="right">2,001,823,905</td>
+<td align="right">26.3%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">1,754,176,917</td>
+<td align="right">20.7%</td>
+</tr>
+<tr>
+<td align="left">Interpreter immortal increfs</td>
+<td align="right">970,373,880</td>
+<td align="right">12.7%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-docutils.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal decrefs</td>
@@ -15173,6 +15192,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-docutils.md
 <td align="right">1,429,429,912</td>
 <td align="right">20.9%</td>
 </tr>
@@ -15180,6 +15200,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">1,317,355,558</td>
 <td align="right">18.3%</td>
+=======
+<td align="right">1,428,598,244</td>
+<td align="right">18.8%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">1,353,889,773</td>
+<td align="right">15.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-docutils.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -15203,27 +15232,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-docutils.md
 <td align="right">467,861,327</td>
+=======
+<td align="right">465,899,581</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-docutils.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-docutils.md
 <td align="right">36,678,413</td>
+=======
+<td align="right">38,648,979</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-docutils.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-docutils.md
 <td align="right">38,336,393</td>
+=======
+<td align="right">41,221,206</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-docutils.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-docutils.md
 <td align="right">198,344,132</td>
+=======
+<td align="right">197,402,995</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-docutils.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-docutils.md
 <td align="right">2,419,168</td>
+=======
+<td align="right">3,333,165</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-docutils.md
 <td align="right"></td>
 </tr>
 </tbody>
@@ -15262,11 +15311,19 @@ Collected/visits gives some measure of efficiency.
 </tr>
 <tr>
 <td align="right">1</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-docutils.md
 <td align="right">25,900</td>
 <td align="right">72,871,660</td>
 <td align="right">1,155,706,780</td>
 <td align="right">43,973,700</td>
 <td align="right">101,014,840</td>
+=======
+<td align="right">25,940</td>
+<td align="right">73,024,860</td>
+<td align="right">1,160,022,630</td>
+<td align="right">43,928,800</td>
+<td align="right">101,389,080</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-docutils.md
 </tr>
 <tr>
 <td align="right">2</td>

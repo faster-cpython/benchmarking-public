@@ -30,184 +30,285 @@ instruction is not counted.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">136,017,252</td>
+=======
+<td align="right">136,736,100</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">12.5%</td>
 <td align="right">12.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">115,964,016</td>
+=======
+<td align="right">116,553,840</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">10.6%</td>
 <td align="right">23.1%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">94,115,652</td>
+=======
+<td align="right">94,650,180</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">8.6%</td>
 <td align="right">31.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">61,146,168</td>
+=======
+<td align="right">61,487,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">5.6%</td>
 <td align="right">37.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">57,078,600</td>
+=======
+<td align="right">57,447,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">5.2%</td>
 <td align="right">42.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">45,995,124</td>
+=======
+<td align="right">46,280,820</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">4.2%</td>
 <td align="right">46.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">40,919,400</td>
+=======
+<td align="right">41,057,640</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">3.7%</td>
 <td align="right">50.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">SWAP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">38,228,088</td>
+=======
+<td align="right">38,476,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">3.5%</td>
 <td align="right">54.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">38,154,840</td>
+=======
+<td align="right">38,293,080</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">3.5%</td>
 <td align="right">57.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">IS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">32,931,900</td>
+=======
+<td align="right">33,070,140</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">3.0%</td>
 <td align="right">60.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">32,379,120</td>
+=======
+<td align="right">32,563,440</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">3.0%</td>
-<td align="right">63.4%</td>
+<td align="right">63.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LIST_APPEND</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">31,900,428</td>
+=======
+<td align="right">32,103,180</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">2.9%</td>
 <td align="right">66.4%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">31,396,560</td>
+=======
+<td align="right">31,534,800</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">2.9%</td>
-<td align="right">69.2%</td>
+<td align="right">69.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">30,584,892</td>
+=======
+<td align="right">30,658,620</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">2.8%</td>
 <td align="right">72.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">29,773,884</td>
+=======
+<td align="right">29,921,340</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">2.7%</td>
 <td align="right">74.8%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">28,631,760</td>
+=======
+<td align="right">28,770,000</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">2.6%</td>
 <td align="right">77.4%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">23,826,672</td>
+=======
+<td align="right">23,946,480</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">2.2%</td>
 <td align="right">79.6%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">23,544,708</td>
 <td align="right">2.2%</td>
+=======
+<td align="right">23,563,140</td>
+<td align="right">2.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">81.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">16,748,784</td>
+=======
+<td align="right">16,850,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.5%</td>
-<td align="right">83.2%</td>
+<td align="right">83.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">PUSH_NULL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">16,258,344</td>
+=======
+<td align="right">16,359,720</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.5%</td>
 <td align="right">84.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,684,332</td>
+=======
+<td align="right">12,767,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
 <td align="right">85.9%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BUILD_LIST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,396</td>
+=======
+<td align="right">12,764,340</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
 <td align="right">87.1%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_FUNCTION_EX</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,336</td>
+=======
+<td align="right">12,764,280</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
 <td align="right">88.2%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_AND_CLEAR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
 <td align="right">89.4%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_TYPE_1</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
-<td align="right">90.5%</td>
+<td align="right">90.6%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_FAST</td>
 <td align="right">11,981,100</td>
 <td align="right">1.1%</td>
-<td align="right">91.6%</td>
+<td align="right">91.7%</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -226,21 +327,33 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,292,320</td>
+=======
+<td align="right">9,356,850</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.9%</td>
 <td align="right">94.5%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">NOP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">7,151,676</td>
+=======
+<td align="right">7,188,540</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.7%</td>
 <td align="right">95.1%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_CLASS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">7,151,616</td>
+=======
+<td align="right">7,188,480</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.7%</td>
 <td align="right">95.8%</td>
 <td align="right"></td>
@@ -268,35 +381,55 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,884,400</td>
+=======
+<td align="right">3,902,835</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.4%</td>
 <td align="right">97.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">JUMP_FORWARD</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,868</td>
+=======
+<td align="right">3,594,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">97.6%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,868</td>
+=======
+<td align="right">3,594,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">98.0%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">BUILD_MAP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">98.3%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">98.6%</td>
 <td align="right"></td>
@@ -338,7 +471,11 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_NONE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">811,008</td>
+=======
+<td align="right">829,440</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.1%</td>
 <td align="right">100.0%</td>
 <td align="right"></td>
@@ -587,267 +724,446 @@ the corresponding unspecialized instruction are not counted as pairs.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">55,308,288</td>
+=======
+<td align="right">55,649,280</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">5.1%</td>
 <td align="right">5.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST CALL_NON_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">54,497,280</td>
+=======
+<td align="right">54,819,840</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">5.0%</td>
 <td align="right">10.1%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">44,580,984</td>
+=======
+<td align="right">44,866,680</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">4.1%</td>
-<td align="right">14.1%</td>
+<td align="right">14.2%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_TUPLE STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">41,005,836</td>
+=======
+<td align="right">41,273,100</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">3.8%</td>
 <td align="right">17.9%</td>
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT FOR_ITER_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">40,821,516</td>
+=======
+<td align="right">41,088,780</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">3.7%</td>
-<td align="right">21.6%</td>
+<td align="right">21.7%</td>
 </tr>
 <tr>
 <td align="left">LIST_APPEND JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">31,900,428</td>
+=======
+<td align="right">32,103,180</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">2.9%</td>
-<td align="right">24.5%</td>
+<td align="right">24.6%</td>
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL LIST_APPEND</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">31,900,428</td>
+=======
+<td align="right">32,103,180</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">2.9%</td>
 <td align="right">27.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE IS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">30,167,040</td>
+=======
+<td align="right">30,305,280</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">2.8%</td>
-<td align="right">30.2%</td>
+<td align="right">30.3%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">23,826,612</td>
+=======
+<td align="right">23,946,420</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">2.2%</td>
 <td align="right">32.4%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">23,826,552</td>
+=======
+<td align="right">23,946,360</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">2.2%</td>
 <td align="right">34.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">23,433,276</td>
+=======
+<td align="right">23,516,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">2.1%</td>
-<td align="right">36.7%</td>
+<td align="right">36.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">21,061,632</td>
+=======
+<td align="right">21,135,360</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.9%</td>
 <td align="right">38.7%</td>
 </tr>
 <tr>
 <td align="left">IS_OP POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">20,250,624</td>
 <td align="right">1.9%</td>
+=======
+<td align="right">20,305,920</td>
+<td align="right">1.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">40.5%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER FOR_ITER_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">16,257,084</td>
+=======
+<td align="right">16,358,460</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.5%</td>
 <td align="right">42.0%</td>
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL GET_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">16,257,024</td>
+=======
+<td align="right">16,358,400</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.5%</td>
 <td align="right">43.5%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_TUPLE POP_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">16,072,764</td>
+=======
+<td align="right">16,174,140</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.5%</td>
 <td align="right">45.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">15,138,876</td>
+=======
+<td align="right">15,175,740</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.4%</td>
 <td align="right">46.4%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">14,721,364</td>
+=======
+<td align="right">14,776,660</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.3%</td>
 <td align="right">47.7%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">14,303,292</td>
+=======
+<td align="right">14,377,020</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.3%</td>
 <td align="right">49.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,856</td>
+=======
+<td align="right">12,764,800</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
 <td align="right">50.2%</td>
 </tr>
 <tr>
 <td align="left">PUSH_NULL CALL_FUNCTION_EX</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,336</td>
+=======
+<td align="right">12,764,280</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
-<td align="right">51.3%</td>
+<td align="right">51.4%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER LOAD_FAST_AND_CLEAR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
 <td align="right">52.5%</td>
 </tr>
 <tr>
 <td align="left">BUILD_LIST SWAP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
 <td align="right">53.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_AND_CLEAR SWAP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
 <td align="right">54.8%</td>
 </tr>
 <tr>
 <td align="left">SWAP GET_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
 <td align="right">56.0%</td>
 </tr>
 <tr>
 <td align="left">SWAP BUILD_LIST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
-<td align="right">57.1%</td>
+<td align="right">57.2%</td>
 </tr>
 <tr>
 <td align="left">CALL_FUNCTION_EX RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
 <td align="right">58.3%</td>
 </tr>
 <tr>
 <td align="left">POP_ITER SWAP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
 <td align="right">59.5%</td>
 </tr>
 <tr>
 <td align="left">IS_OP POP_JUMP_IF_TRUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
-<td align="right">60.6%</td>
+<td align="right">60.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST CALL_TYPE_1</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
 <td align="right">61.8%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST PUSH_NULL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
-<td align="right">62.9%</td>
+<td align="right">63.0%</td>
 </tr>
 <tr>
 <td align="left">SWAP STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.2%</td>
-<td align="right">64.1%</td>
+<td align="right">64.2%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="left">LOAD_FAST LOAD_CONST_IMMORTAL</td>
 <td align="right">11,563,128</td>
+=======
+<td align="left">RETURN_VALUE STORE_FAST</td>
+<td align="right">11,612,340</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.1%</td>
 <td align="right">65.2%</td>
 </tr>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="left">RETURN_VALUE STORE_FAST</td>
 <td align="right">11,538,612</td>
+=======
+<td align="left">LOAD_FAST LOAD_CONST_IMMORTAL</td>
+<td align="right">11,581,560</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.1%</td>
-<td align="right">66.2%</td>
+<td align="right">66.3%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">11,404,284</td>
+=======
+<td align="right">11,459,580</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.0%</td>
 <td align="right">67.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST CALL_PY_EXACT_ARGS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">11,145,296</td>
+=======
+<td align="right">11,182,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.0%</td>
 <td align="right">68.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST LOAD_ATTR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,428</td>
+=======
+<td align="right">9,169,940</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.8%</td>
-<td align="right">69.1%</td>
+<td align="right">69.2%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.8%</td>
-<td align="right">69.9%</td>
+<td align="right">70.0%</td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP POP_JUMP_IF_TRUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.8%</td>
 <td align="right">70.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR CONTAINS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.8%</td>
-<td align="right">71.6%</td>
+<td align="right">71.7%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.8%</td>
-<td align="right">72.4%</td>
+<td align="right">72.5%</td>
 </tr>
 <tr>
 <td align="left">CALL_TYPE_1 CALL_PY_EXACT_ARGS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.8%</td>
 <td align="right">73.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.8%</td>
-<td align="right">74.1%</td>
+<td align="right">74.2%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">8,921,088</td>
+=======
+<td align="right">8,985,600</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.8%</td>
-<td align="right">74.9%</td>
+<td align="right">75.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL LOAD_CONST_IMMORTAL</td>
@@ -865,7 +1181,7 @@ the corresponding unspecialized instruction are not counted as pairs.
 <td align="left">CALL_BUILTIN_FAST TO_BOOL_BOOL</td>
 <td align="right">7,987,200</td>
 <td align="right">0.7%</td>
-<td align="right">77.1%</td>
+<td align="right">77.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL CALL_BUILTIN_FAST</td>
@@ -875,19 +1191,31 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">7,569,408</td>
+=======
+<td align="right">7,587,840</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.7%</td>
-<td align="right">78.5%</td>
+<td align="right">78.6%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST NOP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">7,151,616</td>
+=======
+<td align="right">7,188,480</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.7%</td>
 <td align="right">79.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN LOAD_ATTR_CLASS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">7,151,616</td>
+=======
+<td align="right">7,188,480</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.7%</td>
 <td align="right">79.9%</td>
 </tr>
@@ -899,7 +1227,11 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">6,647,868</td>
+=======
+<td align="right">6,666,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.6%</td>
 <td align="right">81.1%</td>
 </tr>
@@ -919,7 +1251,7 @@ the corresponding unspecialized instruction are not counted as pairs.
 <td align="left">LOAD_CONST_IMMORTAL RETURN_VALUE</td>
 <td align="right">3,994,080</td>
 <td align="right">0.4%</td>
-<td align="right">82.2%</td>
+<td align="right">82.3%</td>
 </tr>
 <tr>
 <td align="left">CACHE RESUME_CHECK</td>
@@ -937,7 +1269,7 @@ the corresponding unspecialized instruction are not counted as pairs.
 <td align="left">RETURN_VALUE INTERPRETER_EXIT</td>
 <td align="right">3,993,900</td>
 <td align="right">0.4%</td>
-<td align="right">83.3%</td>
+<td align="right">83.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN LOAD_FAST_LOAD_FAST</td>
@@ -955,7 +1287,7 @@ the corresponding unspecialized instruction are not counted as pairs.
 <td align="left">RETURN_VALUE TO_BOOL_BOOL</td>
 <td align="right">3,993,600</td>
 <td align="right">0.4%</td>
-<td align="right">84.4%</td>
+<td align="right">84.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST CALL_BUILTIN_FAST</td>
@@ -995,157 +1327,261 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">LOAD_FAST PUSH_NULL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,576,768</td>
+=======
+<td align="right">3,595,200</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">87.0%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,576,108</td>
+=======
+<td align="right">3,594,540</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">87.3%</td>
 </tr>
 <tr>
 <td align="left">NOP LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,868</td>
+=======
+<td align="right">3,594,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">87.6%</td>
 </tr>
 <tr>
 <td align="left">PUSH_NULL LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,868</td>
+=======
+<td align="right">3,594,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">87.9%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST JUMP_FORWARD</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,868</td>
+=======
+<td align="right">3,594,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">88.3%</td>
 </tr>
 <tr>
 <td align="left">NOP LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">88.6%</td>
 </tr>
 <tr>
 <td align="left">BUILD_MAP STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">88.9%</td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
-<td align="right">89.2%</td>
+<td align="right">89.3%</td>
 </tr>
 <tr>
 <td align="left">JUMP_FORWARD LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">89.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">89.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST CALL_PY_EXACT_ARGS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">90.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST CALL_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">90.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">90.9%</td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">91.2%</td>
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL CONTAINS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
-<td align="right">91.5%</td>
+<td align="right">91.6%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_GENERAL RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">91.9%</td>
 </tr>
 <tr>
 <td align="left">CALL_TYPE_1 STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">92.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_CLASS LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">92.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_CLASS LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
-<td align="right">92.8%</td>
+<td align="right">92.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL CALL_NON_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">93.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">93.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">93.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE CALL_METHOD_DESCRIPTOR_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">94.2%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK BUILD_MAP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">94.5%</td>
 </tr>
 <tr>
 <td align="left">POP_ITER LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,391,528</td>
+=======
+<td align="right">3,409,960</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">94.8%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,391,488</td>
+=======
+<td align="right">3,409,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.3%</td>
 <td align="right">95.1%</td>
 </tr>
@@ -1165,7 +1601,7 @@ the corresponding unspecialized instruction are not counted as pairs.
 <td align="left">POP_JUMP_IF_FALSE LOAD_GLOBAL_MODULE</td>
 <td align="right">3,072,000</td>
 <td align="right">0.3%</td>
-<td align="right">95.9%</td>
+<td align="right">96.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_CLASS_WITH_METACLASS_CHECK GET_ITER</td>
@@ -1241,7 +1677,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">PUSH_NULL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,336</td>
+=======
+<td align="right">12,764,280</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -1258,7 +1698,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -1330,18 +1774,26 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">16,257,024</td>
+=======
+<td align="right">16,358,400</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">50.2%</td>
 </tr>
 <tr>
 <td align="left">SWAP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">39.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_CLASS_WITH_METACLASS_CHECK</td>
 <td align="right">3,072,000</td>
-<td align="right">9.5%</td>
+<td align="right">9.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
@@ -1367,18 +1819,26 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">16,257,084</td>
+=======
+<td align="right">16,358,460</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">50.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_AND_CLEAR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">39.2%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
 <td align="right">3,072,060</td>
-<td align="right">9.5%</td>
+<td align="right">9.4%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
@@ -1479,7 +1939,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">7,151,616</td>
+=======
+<td align="right">7,188,480</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -1501,12 +1965,20 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,868</td>
+=======
+<td align="right">3,594,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">50.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">50.0%</td>
 </tr>
 </tbody>
@@ -1573,7 +2045,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">16,072,764</td>
+=======
+<td align="right">16,174,140</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">96.0%</td>
 </tr>
 <tr>
@@ -1605,12 +2081,21 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">SWAP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
 <td align="right">75.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
 <td align="right">3,391,528</td>
+=======
+<td align="right">12,764,160</td>
+<td align="right">75.8%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL_MODULE</td>
+<td align="right">3,409,960</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">20.2%</td>
 </tr>
 <tr>
@@ -1774,12 +2259,20 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">78.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,576,768</td>
+=======
+<td align="right">3,595,200</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">22.0%</td>
 </tr>
 <tr>
@@ -1811,12 +2304,20 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_FUNCTION_EX</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,336</td>
+=======
+<td align="right">12,764,280</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">78.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,868</td>
+=======
+<td align="right">3,594,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">22.0%</td>
 </tr>
 <tr>
@@ -1856,8 +2357,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_FUNCTION_EX</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
 <td align="right">44.3%</td>
+=======
+<td align="right">12,764,160</td>
+<td align="right">44.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
@@ -1871,13 +2377,22 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">12.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,391,488</td>
 <td align="right">11.8%</td>
+=======
+<td align="right">3,409,920</td>
+<td align="right">11.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 </tbody>
 </table>
@@ -1893,6 +2408,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">11,538,612</td>
 <td align="right">40.3%</td>
 </tr>
@@ -1900,6 +2416,15 @@ specialized instruction deoptimizes.
 <td align="left">LOAD_GLOBAL_MODULE</td>
 <td align="right">9,105,408</td>
 <td align="right">31.8%</td>
+=======
+<td align="right">11,612,340</td>
+<td align="right">40.4%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL_MODULE</td>
+<td align="right">9,169,920</td>
+<td align="right">31.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 <tr>
 <td align="left">INTERPRETER_EXIT</td>
@@ -2067,7 +2592,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">SWAP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -2094,7 +2623,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">SWAP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -2129,7 +2662,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -2146,7 +2683,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -2362,17 +2903,29 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_ATTR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">71.8%</td>
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">28.2%</td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,116</td>
+=======
+<td align="right">3,140</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -2389,17 +2942,29 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">71.8%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">28.2%</td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,116</td>
+=======
+<td align="right">3,140</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -2467,6 +3032,7 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">GET_ITER</td>
 <td align="right">3,072,060</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">79.1%</td>
 </tr>
 <tr>
@@ -2477,6 +3043,18 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">FOR_ITER</td>
 <td align="right">972</td>
+=======
+<td align="right">78.7%</td>
+</tr>
+<tr>
+<td align="left">JUMP_BACKWARD_NO_JIT</td>
+<td align="right">829,800</td>
+<td align="right">21.3%</td>
+</tr>
+<tr>
+<td align="left">FOR_ITER</td>
+<td align="right">975</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -2493,7 +3071,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,576,108</td>
+=======
+<td align="right">3,594,540</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">92.1%</td>
 </tr>
 <tr>
@@ -2503,7 +3085,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">972</td>
+=======
+<td align="right">975</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -2528,7 +3114,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">30,167,040</td>
+=======
+<td align="right">30,305,280</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">91.6%</td>
 </tr>
 <tr>
@@ -2555,6 +3145,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">20,250,624</td>
 <td align="right">61.5%</td>
 </tr>
@@ -2562,6 +3153,15 @@ specialized instruction deoptimizes.
 <td align="left">POP_JUMP_IF_TRUE</td>
 <td align="right">12,681,216</td>
 <td align="right">38.5%</td>
+=======
+<td align="right">20,305,920</td>
+<td align="right">61.4%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">12,764,160</td>
+<td align="right">38.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
@@ -2590,7 +3190,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,868</td>
+=======
+<td align="right">3,594,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -2607,7 +3211,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -2637,7 +3245,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">31,900,428</td>
+=======
+<td align="right">32,103,180</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -2654,7 +3266,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">31,900,428</td>
+=======
+<td align="right">32,103,180</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -2721,7 +3337,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,428</td>
+=======
+<td align="right">9,169,940</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">98.0%</td>
 </tr>
 <tr>
@@ -2731,7 +3351,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">2,312</td>
+=======
+<td align="right">2,330</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -2758,7 +3382,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CONTAINS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">98.0%</td>
 </tr>
 <tr>
@@ -2768,7 +3396,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">2,312</td>
+=======
+<td align="right">2,330</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -2855,22 +3487,38 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">55,308,288</td>
+=======
+<td align="right">55,649,280</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">47.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">23,433,276</td>
+=======
+<td align="right">23,516,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">20.2%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">14,303,292</td>
+=======
+<td align="right">14,377,020</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">12.3%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">11,404,284</td>
+=======
+<td align="right">11,459,580</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">9.8%</td>
 </tr>
 <tr>
@@ -2892,11 +3540,16 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">54,497,280</td>
+=======
+<td align="right">54,819,840</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">47.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">21,061,632</td>
 <td align="right">18.2%</td>
 </tr>
@@ -2913,6 +3566,24 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">PUSH_NULL</td>
 <td align="right">3,576,768</td>
+=======
+<td align="right">21,135,360</td>
+<td align="right">18.1%</td>
+</tr>
+<tr>
+<td align="left">CALL_TYPE_1</td>
+<td align="right">12,764,160</td>
+<td align="right">11.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST_IMMORTAL</td>
+<td align="right">11,581,560</td>
+<td align="right">9.9%</td>
+</tr>
+<tr>
+<td align="left">PUSH_NULL</td>
+<td align="right">3,595,200</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">3.1%</td>
 </tr>
 </tbody>
@@ -2937,7 +3608,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">GET_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -2954,7 +3629,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">SWAP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -2979,27 +3658,44 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">15,138,876</td>
 <td align="right">39.7%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
 <td align="right">9,105,408</td>
+=======
+<td align="right">15,175,740</td>
+<td align="right">39.6%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">23.9%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
 <td align="right">3,993,900</td>
-<td align="right">10.5%</td>
+<td align="right">10.4%</td>
 </tr>
 <tr>
 <td align="left">PUSH_NULL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,868</td>
+=======
+<td align="right">3,594,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">9.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_CLASS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">9.4%</td>
 </tr>
 </tbody>
@@ -3016,27 +3712,39 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">11,145,296</td>
+=======
+<td align="right">11,182,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">29.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,428</td>
+=======
+<td align="right">9,169,940</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">23.9%</td>
 </tr>
 <tr>
 <td align="left">CALL_BUILTIN_FAST</td>
 <td align="right">3,993,600</td>
-<td align="right">10.5%</td>
+<td align="right">10.4%</td>
 </tr>
 <tr>
 <td align="left">CALL_ISINSTANCE</td>
 <td align="right">3,993,600</td>
-<td align="right">10.5%</td>
+<td align="right">10.4%</td>
 </tr>
 <tr>
 <td align="left">CALL_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">9.4%</td>
 </tr>
 </tbody>
@@ -3232,17 +3940,25 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">IS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">20,250,624</td>
+=======
+<td align="right">20,305,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">66.2%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
 <td align="right">3,993,600</td>
-<td align="right">13.1%</td>
+<td align="right">13.0%</td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">11.7%</td>
 </tr>
 <tr>
@@ -3269,13 +3985,18 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">14,303,292</td>
 <td align="right">46.8%</td>
+=======
+<td align="right">14,377,020</td>
+<td align="right">46.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
 <td align="right">6,758,400</td>
-<td align="right">22.1%</td>
+<td align="right">22.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
@@ -3314,7 +4035,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">811,008</td>
+=======
+<td align="right">829,440</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -3331,7 +4056,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">811,008</td>
+=======
+<td align="right">829,440</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -3398,18 +4127,31 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">IS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
 <td align="right">42.6%</td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
 <td align="right">9,105,408</td>
+=======
+<td align="right">12,764,160</td>
+<td align="right">42.7%</td>
+</tr>
+<tr>
+<td align="left">CONTAINS_OP</td>
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">30.6%</td>
 </tr>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
 <td align="right">7,987,260</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">26.8%</td>
+=======
+<td align="right">26.7%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 </tbody>
 </table>
@@ -3425,23 +4167,35 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">30.6%</td>
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">8,921,088</td>
+=======
+<td align="right">8,985,600</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">30.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">7,569,408</td>
+=======
+<td align="right">7,587,840</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">25.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
 <td align="right">3,993,600</td>
-<td align="right">13.4%</td>
+<td align="right">13.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
@@ -3638,28 +4392,45 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">41,005,836</td>
+=======
+<td align="right">41,273,100</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">43.6%</td>
 </tr>
 <tr>
 <td align="left">SWAP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">13.5%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">11,538,612</td>
+=======
+<td align="right">11,612,340</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">12.3%</td>
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">6,647,868</td>
 <td align="right">7.1%</td>
+=======
+<td align="right">6,666,300</td>
+<td align="right">7.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
 <td align="right">4,300,800</td>
-<td align="right">4.6%</td>
+<td align="right">4.5%</td>
 </tr>
 </tbody>
 </table>
@@ -3675,27 +4446,47 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">44,580,984</td>
+=======
+<td align="right">44,866,680</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">47.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">14,721,364</td>
+=======
+<td align="right">14,776,660</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">15.6%</td>
 </tr>
 <tr>
 <td align="left">PUSH_NULL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">13.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">11,404,284</td>
+=======
+<td align="right">11,459,580</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">12.1%</td>
 </tr>
 <tr>
 <td align="left">NOP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">7,151,616</td>
+=======
+<td align="right">7,188,480</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">7.6%</td>
 </tr>
 </tbody>
@@ -3762,17 +4553,29 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">BUILD_LIST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">33.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_AND_CLEAR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">33.2%</td>
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">33.2%</td>
 </tr>
 <tr>
@@ -3794,17 +4597,29 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">GET_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">33.2%</td>
 </tr>
 <tr>
 <td align="left">BUILD_LIST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,276</td>
+=======
+<td align="right">12,764,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">33.2%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">33.2%</td>
 </tr>
 <tr>
@@ -4121,7 +4936,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -4138,7 +4957,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -4262,12 +5085,21 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">54,497,280</td>
 <td align="right">89.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
 <td align="right">3,575,808</td>
+=======
+<td align="right">54,819,840</td>
+<td align="right">89.2%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST_IMMORTAL</td>
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">5.8%</td>
 </tr>
 <tr>
@@ -4299,22 +5131,39 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LIST_APPEND</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">31,900,428</td>
+=======
+<td align="right">32,103,180</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">52.2%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">16,257,024</td>
+=======
+<td align="right">16,358,400</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">26.6%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">6,647,868</td>
 <td align="right">10.9%</td>
 </tr>
 <tr>
 <td align="left">CONTAINS_OP</td>
 <td align="right">3,575,808</td>
+=======
+<td align="right">6,666,300</td>
+<td align="right">10.8%</td>
+</tr>
+<tr>
+<td align="left">CONTAINS_OP</td>
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">5.8%</td>
 </tr>
 <tr>
@@ -4344,6 +5193,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">11,145,296</td>
 <td align="right">46.8%</td>
 </tr>
@@ -4355,6 +5205,19 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">3,575,808</td>
+=======
+<td align="right">11,182,160</td>
+<td align="right">46.7%</td>
+</tr>
+<tr>
+<td align="left">CALL_TYPE_1</td>
+<td align="right">9,169,920</td>
+<td align="right">38.3%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST</td>
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">15.0%</td>
 </tr>
 <tr>
@@ -4381,7 +5244,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">23,826,612</td>
+=======
+<td align="right">23,946,420</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -4411,7 +5278,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -4438,7 +5309,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -4468,7 +5343,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -4485,12 +5364,20 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">71.8%</td>
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">28.2%</td>
 </tr>
 </tbody>
@@ -4619,12 +5506,20 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">40,821,516</td>
+=======
+<td align="right">41,088,780</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">71.5%</td>
 </tr>
 <tr>
 <td align="left">GET_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">16,257,084</td>
+=======
+<td align="right">16,358,460</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">28.5%</td>
 </tr>
 </tbody>
@@ -4641,12 +5536,20 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">41,005,836</td>
+=======
+<td align="right">41,273,100</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">71.8%</td>
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">16,072,764</td>
+=======
+<td align="right">16,174,140</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">28.2%</td>
 </tr>
 </tbody>
@@ -4671,22 +5574,34 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LIST_APPEND</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">31,900,428</td>
+=======
+<td align="right">32,103,180</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">69.4%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">8,921,088</td>
+=======
+<td align="right">8,985,600</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">19.4%</td>
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
 <td align="right">3,993,960</td>
-<td align="right">8.7%</td>
+<td align="right">8.6%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_NONE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">811,008</td>
+=======
+<td align="right">829,440</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.8%</td>
 </tr>
 <tr>
@@ -4708,17 +5623,25 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER_TUPLE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">40,821,516</td>
+=======
+<td align="right">41,088,780</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">88.8%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
 <td align="right">4,300,800</td>
-<td align="right">9.4%</td>
+<td align="right">9.3%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">811,368</td>
+=======
+<td align="right">829,800</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">1.8%</td>
 </tr>
 <tr>
@@ -4748,7 +5671,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">7,151,616</td>
+=======
+<td align="right">7,188,480</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -4765,12 +5692,20 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">50.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">50.0%</td>
 </tr>
 </tbody>
@@ -5075,8 +6010,13 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">11,563,128</td>
 <td align="right">49.1%</td>
+=======
+<td align="right">11,581,560</td>
+<td align="right">49.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 <tr>
 <td align="left">LOAD_CONST_IMMORTAL</td>
@@ -5127,8 +6067,13 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">CALL_NON_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
 <td align="right">15.2%</td>
+=======
+<td align="right">3,594,240</td>
+<td align="right">15.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
@@ -5219,12 +6164,20 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">14,721,364</td>
+=======
+<td align="right">14,776,660</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">36.0%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">22.3%</td>
 </tr>
 <tr>
@@ -5235,12 +6188,17 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
 <td align="right">3,993,600</td>
-<td align="right">9.8%</td>
+<td align="right">9.7%</td>
 </tr>
 <tr>
 <td align="left">NOP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
 <td align="right">8.7%</td>
+=======
+<td align="right">3,594,240</td>
+<td align="right">8.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 </tbody>
 </table>
@@ -5256,28 +6214,41 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">23,433,276</td>
+=======
+<td align="right">23,516,220</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">57.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_CLASS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">7,151,616</td>
+=======
+<td align="right">7,188,480</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">17.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
 <td align="right">3,993,900</td>
-<td align="right">9.8%</td>
+<td align="right">9.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
 <td align="right">8.7%</td>
+=======
+<td align="right">3,594,240</td>
+<td align="right">8.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 <tr>
 <td align="left">CHECK_EXC_MATCH</td>
 <td align="right">2,764,800</td>
-<td align="right">6.8%</td>
+<td align="right">6.7%</td>
 </tr>
 </tbody>
 </table>
@@ -5301,27 +6272,47 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">44,580,984</td>
+=======
+<td align="right">44,866,680</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">32.8%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">23,826,552</td>
+=======
+<td align="right">23,946,360</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">17.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">21,061,632</td>
+=======
+<td align="right">21,135,360</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">15.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,856</td>
+=======
+<td align="right">12,764,800</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">9.3%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">6.7%</td>
 </tr>
 </tbody>
@@ -5338,27 +6329,47 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">55,308,288</td>
+=======
+<td align="right">55,649,280</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">40.7%</td>
 </tr>
 <tr>
 <td align="left">IS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">30,167,040</td>
+=======
+<td align="right">30,305,280</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">22.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_LOAD_FAST</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">15,138,876</td>
+=======
+<td align="right">15,175,740</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">11.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,856</td>
+=======
+<td align="right">12,764,800</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">9.3%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_BUILTIN</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,105,408</td>
+=======
+<td align="right">9,169,920</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">6.7%</td>
 </tr>
 </tbody>
@@ -5383,7 +6394,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">CALL_PY_EXACT_ARGS</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">23,826,612</td>
+=======
+<td align="right">23,946,420</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">75.9%</td>
 </tr>
 <tr>
@@ -5393,7 +6408,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">CALL_PY_GENERAL</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">11.4%</td>
 </tr>
 <tr>
@@ -5420,7 +6439,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">23,826,552</td>
+=======
+<td align="right">23,946,360</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">75.9%</td>
 </tr>
 <tr>
@@ -5430,7 +6453,11 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">BUILD_MAP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,575,808</td>
+=======
+<td align="right">3,594,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">11.4%</td>
 </tr>
 <tr>
@@ -5719,7 +6746,11 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">56,058,576</td>
+=======
+<td align="right">56,279,760</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -5773,7 +6804,11 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -5795,7 +6830,11 @@ Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </tr>
 <tr>
 <td align="left">Failure</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,116</td>
+=======
+<td align="right">3,140</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -5812,6 +6851,7 @@ Lists the number of "deferred" (i.e. not specialized) instructions executed.
 <tbody>
 <tr>
 <td align="left">other</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">2,232</td>
 <td align="right">71.6%</td>
 </tr>
@@ -5819,6 +6859,15 @@ Lists the number of "deferred" (i.e. not specialized) instructions executed.
 <td align="left">tuple</td>
 <td align="right">884</td>
 <td align="right">28.4%</td>
+=======
+<td align="right">2,250</td>
+<td align="right">71.7%</td>
+</tr>
+<tr>
+<td align="left">tuple</td>
+<td align="right">890</td>
+<td align="right">28.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 </tbody>
 </table>
@@ -5849,7 +6898,11 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,883,428</td>
+=======
+<td align="right">3,901,860</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">5.9%</td>
 </tr>
 <tr>
@@ -5861,7 +6914,11 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">61,809,540</td>
+=======
+<td align="right">62,178,180</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">94.1%</td>
 </tr>
 </tbody>
@@ -5883,7 +6940,11 @@ Specialized instructions that complete.
 </tr>
 <tr>
 <td align="left">Failure</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">972</td>
+=======
+<td align="right">975</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -5900,7 +6961,11 @@ Specialized instructions that complete.
 <tbody>
 <tr>
 <td align="left">set</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">952</td>
+=======
+<td align="right">955</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">97.9%</td>
 </tr>
 <tr>
@@ -5937,8 +7002,13 @@ deferred
 Lists the number of "deferred" (i.e. not specialized) instructions executed.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,289,788</td>
 <td align="right">47.5%</td>
+=======
+<td align="right">9,354,300</td>
+<td align="right">47.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 <tr>
 <td align="left">
@@ -5949,7 +7019,11 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">7,828,176</td>
+=======
+<td align="right">7,865,040</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">40.0%</td>
 </tr>
 <tr>
@@ -5962,7 +7036,7 @@ Specialized instructions that deopt.
 </details>
 </td>
 <td align="right">2,442,240</td>
-<td align="right">12.5%</td>
+<td align="right">12.4%</td>
 </tr>
 </tbody>
 </table>
@@ -5983,7 +7057,11 @@ Specialized instructions that deopt.
 </tr>
 <tr>
 <td align="left">Failure</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">2,312</td>
+=======
+<td align="right">2,330</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">4.8%</td>
 </tr>
 </tbody>
@@ -6000,7 +7078,11 @@ Specialized instructions that deopt.
 <tbody>
 <tr>
 <td align="left">metaclass attribute</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">2,292</td>
+=======
+<td align="right">2,310</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">99.1%</td>
 </tr>
 </tbody>
@@ -6032,7 +7114,11 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">176,936,652</td>
+=======
+<td align="right">177,793,740</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -6284,7 +7370,11 @@ Basic
 Instructions that are not and cannot be specialized, e.g. `LOAD_FAST`.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">583,592,736</td>
+=======
+<td align="right">586,532,640</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">53.4%</td>
 </tr>
 <tr>
@@ -6296,7 +7386,11 @@ Not specialized
 Instructions that could be specialized but aren't, e.g. `LOAD_ATTR`, `BINARY_SLICE`.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">26,046,412</td>
+=======
+<td align="right">26,212,345</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">2.4%</td>
 </tr>
 <tr>
@@ -6308,7 +7402,11 @@ Specialized hits
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that complete.
 </details>
 </td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">480,272,832</td>
+=======
+<td align="right">482,558,400</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">44.0%</td>
 </tr>
 <tr>
@@ -6342,17 +7440,29 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 <tbody>
 <tr>
 <td align="left">CONTAINS_OP</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">12,681,216</td>
+=======
+<td align="right">12,764,160</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">48.7%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">9,289,788</td>
+=======
+<td align="right">9,354,300</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">35.7%</td>
 </tr>
 <tr>
 <td align="left">FOR_ITER</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">3,883,428</td>
+=======
+<td align="right">3,901,860</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">14.9%</td>
 </tr>
 <tr>
@@ -6497,7 +7607,11 @@ Also includes the count of frame objects created.
 </tr>
 <tr>
 <td align="left">Calls to Python functions inlined</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">27,402,600</td>
+=======
+<td align="right">27,540,840</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">87.3%</td>
 </tr>
 <tr>
@@ -6553,11 +7667,15 @@ Also includes the count of frame objects created.
 <tr>
 <td align="left">Frame objects created</td>
 <td align="right">5,529,600</td>
-<td align="right">17.6%</td>
+<td align="right">17.5%</td>
 </tr>
 <tr>
 <td align="left">Frames pushed</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">31,396,560</td>
+=======
+<td align="right">31,534,800</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -6591,16 +7709,26 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">111,207,980</td>
 <td align="right">80.9%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
 <td align="right">111,207,880</td>
+=======
+<td align="right">111,899,120</td>
+<td align="right">81.0%</td>
+</tr>
+<tr>
+<td align="left">Frees to freelist</td>
+<td align="right">111,899,020</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">26,187,748</td>
 <td align="right">19.1%</td>
 </tr>
@@ -6608,6 +7736,15 @@ other names.
 <td align="left">Allocations to 512 bytes</td>
 <td align="right">26,187,748</td>
 <td align="right">19.1%</td>
+=======
+<td align="right">26,252,260</td>
+<td align="right">19.0%</td>
+</tr>
+<tr>
+<td align="left">Allocations to 512 bytes</td>
+<td align="right">26,252,260</td>
+<td align="right">19.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 <tr>
 <td align="left">Allocations to 4 kbytes</td>
@@ -6621,7 +7758,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">38,868,949</td>
+=======
+<td align="right">39,016,396</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -6631,6 +7772,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">332,828,280</td>
 <td align="right">44.5%</td>
 </tr>
@@ -6668,6 +7810,45 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">106,687,425</td>
 <td align="right">12.5%</td>
+=======
+<td align="right">334,072,440</td>
+<td align="right">36.9%</td>
+</tr>
+<tr>
+<td align="left">Interpreter mortal decrefs</td>
+<td align="right">436,001,260</td>
+<td align="right">42.0%</td>
+</tr>
+<tr>
+<td align="left">Mortal increfs</td>
+<td align="right">269,358,232</td>
+<td align="right">29.7%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">305,579,606</td>
+<td align="right">29.4%</td>
+</tr>
+<tr>
+<td align="left">Interpreter immortal increfs</td>
+<td align="right">161,235,000</td>
+<td align="right">17.8%</td>
+</tr>
+<tr>
+<td align="left">Interpreter immortal decrefs</td>
+<td align="right">187,547,640</td>
+<td align="right">18.1%</td>
+</tr>
+<tr>
+<td align="left">Immortal increfs</td>
+<td align="right">140,991,382</td>
+<td align="right">15.6%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">109,857,728</td>
+<td align="right">10.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -6701,17 +7882,29 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">37,192</td>
+=======
+<td align="right">331</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">25,721,333</td>
+=======
+<td align="right">25,822,733</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-typing_runtime_protocols.md
 <td align="right">18,595</td>
+=======
+<td align="right">157</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-typing_runtime_protocols.md
 <td align="right"></td>
 </tr>
 </tbody>

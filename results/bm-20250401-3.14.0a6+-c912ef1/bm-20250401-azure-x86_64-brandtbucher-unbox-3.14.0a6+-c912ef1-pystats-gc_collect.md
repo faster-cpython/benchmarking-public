@@ -6392,7 +6392,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-gc_collect.md
 <td align="right">4,813,768</td>
+=======
+<td align="right">4,813,855</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-gc_collect.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -6412,6 +6416,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-gc_collect.md
 <td align="right">8,522,954</td>
 <td align="right">9.6%</td>
 </tr>
@@ -6419,6 +6424,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">17,479,898</td>
 <td align="right">18.6%</td>
+=======
+<td align="right">8,522,948</td>
+<td align="right">10.0%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">17,479,917</td>
+<td align="right">15.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-gc_collect.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -6432,6 +6446,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-gc_collect.md
 <td align="right">652,374</td>
 <td align="right">0.7%</td>
 </tr>
@@ -6439,6 +6454,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">852,965</td>
 <td align="right">0.9%</td>
+=======
+<td align="right">652,093</td>
+<td align="right">0.8%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">853,050</td>
+<td align="right">0.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-gc_collect.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -6462,17 +6486,29 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-gc_collect.md
 <td align="right">228</td>
+=======
+<td align="right">236</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-gc_collect.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-gc_collect.md
 <td align="right">40</td>
+=======
+<td align="right">32</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-gc_collect.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-gc_collect.md
 <td align="right">31</td>
+=======
+<td align="right">21</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-gc_collect.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -6530,8 +6566,13 @@ Collected/visits gives some measure of efficiency.
 <tr>
 <td align="right">2</td>
 <td align="right">4,158</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-gc_collect.md
 <td align="right">4,366,272</td>
 <td align="right">945,000,628</td>
+=======
+<td align="right">4,366,278</td>
+<td align="right">947,228,786</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-gc_collect.md
 <td align="right">0</td>
 <td align="right">0</td>
 </tr>

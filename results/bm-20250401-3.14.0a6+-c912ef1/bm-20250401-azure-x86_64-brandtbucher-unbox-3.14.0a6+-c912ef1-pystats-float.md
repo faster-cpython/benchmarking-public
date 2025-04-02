@@ -5950,6 +5950,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-float.md
 <td align="right">24,001,208</td>
 <td align="right">2.7%</td>
 </tr>
@@ -5957,6 +5958,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">216,013,028</td>
 <td align="right">20.2%</td>
+=======
+<td align="right">24,001,209</td>
+<td align="right">2.5%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">216,013,030</td>
+<td align="right">18.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-float.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -5970,8 +5980,13 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-float.md
 <td align="right">36,001,748</td>
 <td align="right">4.1%</td>
+=======
+<td align="right">36,001,389</td>
+<td align="right">3.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-float.md
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
@@ -6000,12 +6015,20 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-float.md
 <td align="right">192</td>
+=======
+<td align="right">191</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-float.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-float.md
 <td align="right">28</td>
+=======
+<td align="right">29</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-float.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -6061,9 +6084,15 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">5,880</td>
 <td align="right">160</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-float.md
 <td align="right">135,960,263</td>
 <td align="right">5,572,720</td>
 <td align="right">11,452,420</td>
+=======
+<td align="right">136,039,568</td>
+<td align="right">5,568,580</td>
+<td align="right">11,458,600</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-float.md
 </tr>
 <tr>
 <td align="right">2</td>

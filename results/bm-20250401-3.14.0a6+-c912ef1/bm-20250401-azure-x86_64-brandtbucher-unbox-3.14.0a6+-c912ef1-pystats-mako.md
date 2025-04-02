@@ -7975,7 +7975,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-mako.md
 <td align="right">89,079,646</td>
+=======
+<td align="right">89,119,129</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-mako.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -7995,6 +7999,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-mako.md
 <td align="right">371,690,030</td>
 <td align="right">33.9%</td>
 </tr>
@@ -8002,6 +8007,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">306,909,433</td>
 <td align="right">28.0%</td>
+=======
+<td align="right">371,698,059</td>
+<td align="right">31.4%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">307,016,480</td>
+<td align="right">21.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-mako.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -8015,6 +8029,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-mako.md
 <td align="right">89,009,355</td>
 <td align="right">8.1%</td>
 </tr>
@@ -8022,6 +8037,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">3,267,831</td>
 <td align="right">0.3%</td>
+=======
+<td align="right">88,867,221</td>
+<td align="right">7.5%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">3,334,380</td>
+<td align="right">0.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-mako.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -8045,27 +8069,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-mako.md
 <td align="right">47,268</td>
+=======
+<td align="right">47,547</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-mako.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-mako.md
 <td align="right">8,352</td>
+=======
+<td align="right">8,073</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-mako.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-mako.md
 <td align="right">9,141</td>
+=======
+<td align="right">9,042</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-mako.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-mako.md
 <td align="right">278,060</td>
+=======
+<td align="right">277,873</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-mako.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-mako.md
 <td align="right">820</td>
+=======
+<td align="right">1,007</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-mako.md
 <td align="right"></td>
 </tr>
 </tbody>

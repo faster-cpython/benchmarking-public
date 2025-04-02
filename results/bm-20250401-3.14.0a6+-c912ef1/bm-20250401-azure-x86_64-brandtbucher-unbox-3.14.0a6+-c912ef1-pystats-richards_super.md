@@ -6371,7 +6371,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-richards_super.md
 <td align="right">281,357</td>
+=======
+<td align="right">281,351</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-richards_super.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -6391,6 +6395,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-richards_super.md
 <td align="right">79,746,572</td>
 <td align="right">11.2%</td>
 </tr>
@@ -6398,6 +6403,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">32,054,671</td>
 <td align="right">4.6%</td>
+=======
+<td align="right">78,890,146</td>
+<td align="right">9.4%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">31,198,240</td>
+<td align="right">3.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-richards_super.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -6411,6 +6425,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-richards_super.md
 <td align="right">112,682,492</td>
 <td align="right">15.8%</td>
 </tr>
@@ -6418,6 +6433,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">78,149,473</td>
 <td align="right">11.3%</td>
+=======
+<td align="right">111,825,826</td>
+<td align="right">13.4%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">77,293,052</td>
+<td align="right">9.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-richards_super.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -6441,17 +6465,29 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-richards_super.md
 <td align="right">86,360,668</td>
+=======
+<td align="right">87,217,094</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-richards_super.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-richards_super.md
 <td align="right">856,552</td>
+=======
+<td align="right">126</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-richards_super.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-richards_super.md
 <td align="right">856,548</td>
+=======
+<td align="right">114</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-richards_super.md
 <td align="right"></td>
 </tr>
 <tr>

@@ -8545,8 +8545,13 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-tomli_loads.md
 <td align="right">825,606,763</td>
 <td align="right">10.3%</td>
+=======
+<td align="right">825,617,064</td>
+<td align="right">4.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-tomli_loads.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -8560,6 +8565,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-tomli_loads.md
 <td align="right">731,892,276</td>
 <td align="right">9.8%</td>
 </tr>
@@ -8567,6 +8573,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">725,537,881</td>
 <td align="right">9.1%</td>
+=======
+<td align="right">644,382,796</td>
+<td align="right">5.2%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">597,780,020</td>
+<td align="right">3.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-tomli_loads.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -8590,27 +8605,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-tomli_loads.md
 <td align="right">50,153,720</td>
+=======
+<td align="right">50,153,815</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-tomli_loads.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-tomli_loads.md
 <td align="right">220</td>
+=======
+<td align="right">125</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-tomli_loads.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-tomli_loads.md
 <td align="right">249</td>
+=======
+<td align="right">141</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-tomli_loads.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-tomli_loads.md
 <td align="right">72,703,272</td>
+=======
+<td align="right">72,713,684</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-tomli_loads.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-tomli_loads.md
 <td align="right">68</td>
+=======
+<td align="right">76</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-tomli_loads.md
 <td align="right"></td>
 </tr>
 </tbody>
@@ -8651,9 +8686,15 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">900</td>
 <td align="right">100</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-tomli_loads.md
 <td align="right">42,585,059</td>
 <td align="right">476,520</td>
 <td align="right">1,783,520</td>
+=======
+<td align="right">42,131,746</td>
+<td align="right">518,440</td>
+<td align="right">1,741,820</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-tomli_loads.md
 </tr>
 <tr>
 <td align="right">2</td>

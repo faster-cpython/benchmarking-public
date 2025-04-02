@@ -4934,6 +4934,7 @@ specialized instruction deoptimizes.
 
 </details>
 
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 ### LOAD_COMMON_CONSTANT
 
 <details>
@@ -4976,6 +4977,8 @@ specialized instruction deoptimizes.
 
 </details>
 
+=======
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 ### LOAD_DEREF
 
 <details>
@@ -6868,6 +6871,7 @@ specialized instruction deoptimizes.
 
 </details>
 
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 ### RESUME
 
 <details>
@@ -6950,6 +6954,8 @@ specialized instruction deoptimizes.
 
 </details>
 
+=======
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 ### BINARY_OP_ADD_INT
 
 <details>
@@ -11722,27 +11728,49 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">POP_TOP</td>
 <td align="right">51</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">30.2%</td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
 <td align="right">25</td>
 <td align="right">14.8%</td>
+=======
+<td align="right">30.9%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">24</td>
+<td align="right">14.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 </tr>
 <tr>
 <td align="left">EXTENDED_ARG</td>
 <td align="right">20</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">11.8%</td>
+=======
+<td align="right">12.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 </tr>
 <tr>
 <td align="left">POP_ITER</td>
 <td align="right">16</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">9.5%</td>
 </tr>
 <tr>
 <td align="left">LIST_APPEND</td>
 <td align="right">13</td>
 <td align="right">7.7%</td>
+=======
+<td align="right">9.7%</td>
+</tr>
+<tr>
+<td align="left">STORE_SUBSCR</td>
+<td align="right">12</td>
+<td align="right">7.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 </tr>
 </tbody>
 </table>
@@ -11758,7 +11786,11 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_NO_JIT</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">169</td>
+=======
+<td align="right">165</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -11784,7 +11816,11 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">LOAD_FAST</td>
 <td align="right">84</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">17.8%</td>
+=======
+<td align="right">17.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 </tr>
 <tr>
 <td align="left">LOAD_ATTR</td>
@@ -11799,7 +11835,11 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
 <td align="right">36</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">7.6%</td>
+=======
+<td align="right">7.7%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 </tr>
 <tr>
 <td align="left">POP_TOP</td>
@@ -11831,7 +11871,11 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">CALL_KW</td>
 <td align="right">75</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">15.9%</td>
+=======
+<td align="right">16.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 </tr>
 <tr>
 <td align="left">CALL</td>
@@ -11849,6 +11893,91 @@ specialized instruction deoptimizes.
 
 </details>
 
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
+=======
+### RESUME
+
+<details>
+<summary> Successors and predecessors for RESUME </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">CALL</td>
+<td align="right">160</td>
+<td align="right">50.0%</td>
+</tr>
+<tr>
+<td align="left">CACHE</td>
+<td align="right">56</td>
+<td align="right">17.5%</td>
+</tr>
+<tr>
+<td align="left">MAKE_CELL</td>
+<td align="right">21</td>
+<td align="right">6.6%</td>
+</tr>
+<tr>
+<td align="left">POP_TOP</td>
+<td align="right">18</td>
+<td align="right">5.6%</td>
+</tr>
+<tr>
+<td align="left">CALL_BOUND_METHOD_EXACT_ARGS</td>
+<td align="right">17</td>
+<td align="right">5.3%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_FAST</td>
+<td align="right">167</td>
+<td align="right">52.2%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL</td>
+<td align="right">83</td>
+<td align="right">25.9%</td>
+</tr>
+<tr>
+<td align="left">POP_TOP</td>
+<td align="right">14</td>
+<td align="right">4.4%</td>
+</tr>
+<tr>
+<td align="left">LOAD_DEREF</td>
+<td align="right">14</td>
+<td align="right">4.4%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST</td>
+<td align="right">10</td>
+<td align="right">3.1%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 
 </details>
 
@@ -13457,7 +13586,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">21,668,501</td>
+=======
+<td align="right">21,009,225</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -13477,6 +13610,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">84,181,122</td>
 <td align="right">27.8%</td>
 </tr>
@@ -13484,6 +13618,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">94,274,861</td>
 <td align="right">28.7%</td>
+=======
+<td align="right">83,537,208</td>
+<td align="right">25.5%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">93,522,818</td>
+<td align="right">26.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -13497,6 +13640,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">66,311,196</td>
 <td align="right">21.9%</td>
 </tr>
@@ -13504,6 +13648,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">60,071,830</td>
 <td align="right">18.3%</td>
+=======
+<td align="right">58,120,000</td>
+<td align="right">17.7%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">59,998,537</td>
+<td align="right">16.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -13527,27 +13680,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">4,996,323</td>
+=======
+<td align="right">5,013,477</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">269,290</td>
+=======
+<td align="right">252,136</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">287,198</td>
+=======
+<td align="right">258,977</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">24,692,191</td>
+=======
+<td align="right">24,703,463</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlglot_v2_optimize.md
 <td align="right">18,317</td>
+=======
+<td align="right">7,045</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlglot_v2_optimize.md
 <td align="right"></td>
 </tr>
 </tbody>

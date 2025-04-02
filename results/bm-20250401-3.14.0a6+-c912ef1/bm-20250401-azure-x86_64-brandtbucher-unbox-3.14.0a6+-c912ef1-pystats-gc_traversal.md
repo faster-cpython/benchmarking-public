@@ -5293,7 +5293,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-gc_traversal.md
 <td align="right">27</td>
+=======
+<td align="right">16</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-gc_traversal.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -5352,7 +5356,11 @@ Collected/visits gives some measure of efficiency.
 <td align="right">2</td>
 <td align="right">3,840</td>
 <td align="right">160</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-gc_traversal.md
 <td align="right">4,681,972,496</td>
+=======
+<td align="right">4,684,032,272</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-gc_traversal.md
 <td align="right">0</td>
 <td align="right">0</td>
 </tr>

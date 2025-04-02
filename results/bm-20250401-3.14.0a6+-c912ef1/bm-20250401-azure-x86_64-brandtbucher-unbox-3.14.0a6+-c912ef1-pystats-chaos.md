@@ -7170,6 +7170,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-chaos.md
 <td align="right">13,802,145</td>
 <td align="right">2.2%</td>
 </tr>
@@ -7177,6 +7178,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">175,233,285</td>
 <td align="right">23.1%</td>
+=======
+<td align="right">16,202,446</td>
+<td align="right">1.9%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">177,633,587</td>
+<td align="right">14.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-chaos.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -7190,6 +7200,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-chaos.md
 <td align="right">37,908,645</td>
 <td align="right">6.2%</td>
 </tr>
@@ -7197,6 +7208,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">46,401,745</td>
 <td align="right">6.1%</td>
+=======
+<td align="right">33,707,326</td>
+<td align="right">3.9%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">47,601,745</td>
+<td align="right">3.9%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-chaos.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -7220,17 +7240,25 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-chaos.md
 <td align="right">197</td>
+=======
+<td align="right">1,200,496</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-chaos.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">23</td>
+<td align="right">24</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-chaos.md
 <td align="right">24</td>
+=======
+<td align="right">18</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-chaos.md
 <td align="right"></td>
 </tr>
 <tr>

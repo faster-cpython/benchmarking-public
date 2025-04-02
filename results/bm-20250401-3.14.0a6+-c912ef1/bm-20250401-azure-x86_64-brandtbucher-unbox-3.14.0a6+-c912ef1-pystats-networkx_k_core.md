@@ -11945,22 +11945,38 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-networkx_k_core.md
 <td align="right">92,611,877</td>
+=======
+<td align="right">92,612,256</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-networkx_k_core.md
 <td align="right">52.3%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-networkx_k_core.md
 <td align="right">92,612,027</td>
+=======
+<td align="right">92,612,406</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-networkx_k_core.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-networkx_k_core.md
 <td align="right">84,421,754</td>
+=======
+<td align="right">84,421,613</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-networkx_k_core.md
 <td align="right">47.7%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-networkx_k_core.md
 <td align="right">84,400,109</td>
+=======
+<td align="right">84,399,968</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-networkx_k_core.md
 <td align="right">47.7%</td>
 </tr>
 <tr>
@@ -11975,7 +11991,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-networkx_k_core.md
 <td align="right">84,421,963</td>
+=======
+<td align="right">84,421,821</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-networkx_k_core.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -11995,6 +12015,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-networkx_k_core.md
 <td align="right">954,959,829</td>
 <td align="right">23.1%</td>
 </tr>
@@ -12002,6 +12023,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">1,044,684,840</td>
 <td align="right">24.2%</td>
+=======
+<td align="right">954,959,872</td>
+<td align="right">22.6%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">1,044,684,888</td>
+<td align="right">21.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-networkx_k_core.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -12015,6 +12045,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-networkx_k_core.md
 <td align="right">491,152,529</td>
 <td align="right">11.9%</td>
 </tr>
@@ -12022,6 +12053,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">538,619,411</td>
 <td align="right">12.5%</td>
+=======
+<td align="right">474,376,748</td>
+<td align="right">11.2%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">538,619,369</td>
+<td align="right">11.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-networkx_k_core.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -12045,27 +12085,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-networkx_k_core.md
 <td align="right">17,700,035</td>
+=======
+<td align="right">17,699,968</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-networkx_k_core.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-networkx_k_core.md
 <td align="right">311</td>
+=======
+<td align="right">378</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-networkx_k_core.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-networkx_k_core.md
 <td align="right">399</td>
+=======
+<td align="right">438</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-networkx_k_core.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-networkx_k_core.md
 <td align="right">17,194,283</td>
+=======
+<td align="right">17,194,327</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-networkx_k_core.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-networkx_k_core.md
 <td align="right">146</td>
+=======
+<td align="right">102</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-networkx_k_core.md
 <td align="right"></td>
 </tr>
 </tbody>
@@ -12106,9 +12166,15 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">8,384</td>
 <td align="right">533</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-networkx_k_core.md
 <td align="right">459,497,459</td>
 <td align="right">66,757,686</td>
 <td align="right">16,626,215</td>
+=======
+<td align="right">459,611,598</td>
+<td align="right">66,754,676</td>
+<td align="right">16,634,339</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-networkx_k_core.md
 </tr>
 <tr>
 <td align="right">2</td>

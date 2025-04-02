@@ -10550,6 +10550,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_generators.md
 <td align="right">442,236,953</td>
 <td align="right">31.0%</td>
 </tr>
@@ -10557,6 +10558,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">584,368,387</td>
 <td align="right">31.4%</td>
+=======
+<td align="right">442,237,036</td>
+<td align="right">28.5%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">584,368,470</td>
+<td align="right">26.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_generators.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -10570,6 +10580,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_generators.md
 <td align="right">206,404,244</td>
 <td align="right">14.5%</td>
 </tr>
@@ -10577,6 +10588,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">186,363,723</td>
 <td align="right">10.0%</td>
+=======
+<td align="right">206,403,850</td>
+<td align="right">13.3%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">186,363,936</td>
+<td align="right">8.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_generators.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -10600,27 +10620,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_generators.md
 <td align="right">5,626</td>
+=======
+<td align="right">5,526</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_generators.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_generators.md
 <td align="right">234</td>
+=======
+<td align="right">334</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_generators.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_generators.md
 <td align="right">334</td>
+=======
+<td align="right">370</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_generators.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_generators.md
 <td align="right">6,004,099</td>
+=======
+<td align="right">6,004,141</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_generators.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_generators.md
 <td align="right">121</td>
+=======
+<td align="right">79</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_generators.md
 <td align="right"></td>
 </tr>
 </tbody>
@@ -10661,9 +10701,15 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">3,000</td>
 <td align="right">160</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-async_generators.md
 <td align="right">41,478,798</td>
 <td align="right">9,292,960</td>
 <td align="right">123,300</td>
+=======
+<td align="right">43,132,492</td>
+<td align="right">9,851,520</td>
+<td align="right">46,680</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_generators.md
 </tr>
 <tr>
 <td align="right">2</td>

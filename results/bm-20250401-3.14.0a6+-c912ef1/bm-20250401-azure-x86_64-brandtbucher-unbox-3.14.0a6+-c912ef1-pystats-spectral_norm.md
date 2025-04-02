@@ -5959,7 +5959,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-spectral_norm.md
 <td align="right">517,470</td>
+=======
+<td align="right">517,465</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-spectral_norm.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -5979,6 +5983,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-spectral_norm.md
 <td align="right">81,063,545</td>
 <td align="right">24.8%</td>
 </tr>
@@ -5986,6 +5991,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">121,266,976</td>
 <td align="right">22.9%</td>
+=======
+<td align="right">81,063,549</td>
+<td align="right">12.4%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">121,266,974</td>
+<td align="right">10.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-spectral_norm.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -5999,8 +6013,13 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-spectral_norm.md
 <td align="right">2,164,565</td>
 <td align="right">0.7%</td>
+=======
+<td align="right">2,164,269</td>
+<td align="right">0.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-spectral_norm.md
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
@@ -6029,17 +6048,29 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-spectral_norm.md
 <td align="right">195</td>
+=======
+<td align="right">191</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-spectral_norm.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-spectral_norm.md
 <td align="right">25</td>
+=======
+<td align="right">29</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-spectral_norm.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-spectral_norm.md
 <td align="right">21</td>
+=======
+<td align="right">19</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-spectral_norm.md
 <td align="right"></td>
 </tr>
 <tr>

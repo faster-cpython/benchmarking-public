@@ -9593,6 +9593,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Allocations</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-dulwich_log.md
 <td align="right">18,997,540</td>
 <td align="right">50.6%</td>
 </tr>
@@ -9600,6 +9601,15 @@ other names.
 <td align="left">Allocations to 512 bytes</td>
 <td align="right">18,425,020</td>
 <td align="right">49.1%</td>
+=======
+<td align="right">19,930,192</td>
+<td align="right">49.0%</td>
+</tr>
+<tr>
+<td align="left">Allocations to 512 bytes</td>
+<td align="right">19,357,672</td>
+<td align="right">47.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-dulwich_log.md
 </tr>
 <tr>
 <td align="left">Allocations to 4 kbytes</td>
@@ -9613,7 +9623,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-dulwich_log.md
 <td align="right">19,711,249</td>
+=======
+<td align="right">20,643,713</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-dulwich_log.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -9633,6 +9647,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-dulwich_log.md
 <td align="right">24,945,824</td>
 <td align="right">10.5%</td>
 </tr>
@@ -9640,6 +9655,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">44,485,313</td>
 <td align="right">16.8%</td>
+=======
+<td align="right">27,547,876</td>
+<td align="right">10.4%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">48,392,777</td>
+<td align="right">15.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-dulwich_log.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -9653,6 +9677,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-dulwich_log.md
 <td align="right">36,471,452</td>
 <td align="right">15.3%</td>
 </tr>
@@ -9660,6 +9685,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">29,143,291</td>
 <td align="right">11.0%</td>
+=======
+<td align="right">34,201,770</td>
+<td align="right">12.9%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">27,422,629</td>
+<td align="right">8.5%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-dulwich_log.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -9683,27 +9717,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-dulwich_log.md
 <td align="right">1,313,772</td>
+=======
+<td align="right">1,872,128</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-dulwich_log.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-dulwich_log.md
 <td align="right">187,428</td>
+=======
+<td align="right">188,512</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-dulwich_log.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-dulwich_log.md
 <td align="right">188,771</td>
+=======
+<td align="right">191,120</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-dulwich_log.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-dulwich_log.md
 <td align="right">935,124</td>
+=======
+<td align="right">934,219</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-dulwich_log.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-dulwich_log.md
 <td align="right">1,356</td>
+=======
+<td align="right">2,621</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-dulwich_log.md
 <td align="right"></td>
 </tr>
 </tbody>

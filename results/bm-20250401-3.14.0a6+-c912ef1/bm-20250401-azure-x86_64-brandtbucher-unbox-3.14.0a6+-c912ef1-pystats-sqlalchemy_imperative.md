@@ -11115,7 +11115,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_imperative.md
 <td align="right">12,889,096</td>
+=======
+<td align="right">12,793,063</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_imperative.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -11126,11 +11130,16 @@ other names.
 <tr>
 <td align="left">Interpreter mortal increfs</td>
 <td align="right">184,457,840</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_imperative.md
 <td align="right">52.2%</td>
+=======
+<td align="right">47.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_imperative.md
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
 <td align="right">207,706,260</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_imperative.md
 <td align="right">55.9%</td>
 </tr>
 <tr>
@@ -11142,6 +11151,19 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">81,654,036</td>
 <td align="right">22.0%</td>
+=======
+<td align="right">48.8%</td>
+</tr>
+<tr>
+<td align="left">Mortal increfs</td>
+<td align="right">76,137,165</td>
+<td align="right">19.5%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">81,955,388</td>
+<td align="right">19.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_imperative.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -11150,6 +11172,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter immortal decrefs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_imperative.md
 <td align="right">1,445,760</td>
 <td align="right">0.4%</td>
 </tr>
@@ -11162,6 +11185,20 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">80,718,976</td>
 <td align="right">21.7%</td>
+=======
+<td align="right">49,121,600</td>
+<td align="right">11.5%</td>
+</tr>
+<tr>
+<td align="left">Immortal increfs</td>
+<td align="right">86,601,043</td>
+<td align="right">22.2%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">86,608,260</td>
+<td align="right">20.4%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_imperative.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -11185,27 +11222,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_imperative.md
 <td align="right">28,754,178</td>
+=======
+<td align="right">28,454,196</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_imperative.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_imperative.md
 <td align="right">1,329,682</td>
+=======
+<td align="right">1,629,664</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_imperative.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_imperative.md
 <td align="right">1,467,786</td>
+=======
+<td align="right">1,773,764</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_imperative.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_imperative.md
 <td align="right">5,871,236</td>
+=======
+<td align="right">5,865,240</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_imperative.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-sqlalchemy_imperative.md
 <td align="right">138,104</td>
+=======
+<td align="right">144,100</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-sqlalchemy_imperative.md
 <td align="right"></td>
 </tr>
 </tbody>

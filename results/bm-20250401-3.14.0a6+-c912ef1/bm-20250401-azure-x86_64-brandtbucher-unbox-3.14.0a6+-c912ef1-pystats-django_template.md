@@ -8735,7 +8735,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-django_template.md
 <td align="right">34,015,866</td>
+=======
+<td align="right">34,015,865</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-django_template.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -8755,6 +8759,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-django_template.md
 <td align="right">144,810,120</td>
 <td align="right">18.2%</td>
 </tr>
@@ -8762,6 +8767,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">128,649,866</td>
 <td align="right">15.0%</td>
+=======
+<td align="right">147,234,351</td>
+<td align="right">17.0%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">131,074,096</td>
+<td align="right">13.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-django_template.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -8775,6 +8789,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-django_template.md
 <td align="right">94,318,568</td>
 <td align="right">11.8%</td>
 </tr>
@@ -8782,6 +8797,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">104,179,342</td>
 <td align="right">12.1%</td>
+=======
+<td align="right">89,446,089</td>
+<td align="right">10.3%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">106,652,304</td>
+<td align="right">10.7%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-django_template.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -8805,27 +8829,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-django_template.md
 <td align="right">13,792,293</td>
+=======
+<td align="right">13,791,073</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-django_template.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-django_template.md
 <td align="right">1,227</td>
+=======
+<td align="right">2,447</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-django_template.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-django_template.md
 <td align="right">2,464</td>
+=======
+<td align="right">2,460</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-django_template.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-django_template.md
 <td align="right">31,590,523</td>
+=======
+<td align="right">31,591,747</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-django_template.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-django_template.md
 <td align="right">1,237</td>
+=======
+<td align="right">13</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-django_template.md
 <td align="right"></td>
 </tr>
 </tbody>

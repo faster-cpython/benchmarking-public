@@ -5595,7 +5595,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_v8.md
 <td align="right">45,233,050</td>
+=======
+<td align="right">45,233,042</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_v8.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -5615,6 +5619,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_v8.md
 <td align="right">45,478,539</td>
 <td align="right">28.3%</td>
 </tr>
@@ -5622,6 +5627,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">54,088,129</td>
 <td align="right">30.9%</td>
+=======
+<td align="right">45,477,029</td>
+<td align="right">27.0%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">54,086,611</td>
+<td align="right">25.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_v8.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -5635,6 +5649,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_v8.md
 <td align="right">40,864,623</td>
 <td align="right">25.4%</td>
 </tr>
@@ -5642,6 +5657,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">39,017,713</td>
 <td align="right">22.3%</td>
+=======
+<td align="right">38,681,551</td>
+<td align="right">23.0%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">39,013,189</td>
+<td align="right">18.2%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_v8.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -5665,27 +5689,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_v8.md
 <td align="right">385,461</td>
+=======
+<td align="right">386,971</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_v8.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_v8.md
 <td align="right">1,539</td>
+=======
+<td align="right">29</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_v8.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_v8.md
 <td align="right">3,062</td>
+=======
+<td align="right">41</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_v8.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_v8.md
 <td align="right">2,420,068</td>
+=======
+<td align="right">2,421,579</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_v8.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-regex_v8.md
 <td align="right">1,532</td>
+=======
+<td align="right">21</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-regex_v8.md
 <td align="right"></td>
 </tr>
 </tbody>

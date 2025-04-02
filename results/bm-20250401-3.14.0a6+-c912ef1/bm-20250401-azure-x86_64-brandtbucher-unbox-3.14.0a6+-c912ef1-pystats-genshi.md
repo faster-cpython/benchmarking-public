@@ -11787,6 +11787,88 @@ specialized instruction deoptimizes.
 
 </details>
 
+### BINARY_OP_SUBSCR_STR_INT
+
+<details>
+<summary> Successors and predecessors for BINARY_OP_SUBSCR_STR_INT </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_FAST_LOAD_FAST</td>
+<td align="right">130</td>
+<td align="right">33.5%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST</td>
+<td align="right">124</td>
+<td align="right">32.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_SMALL_INT</td>
+<td align="right">68</td>
+<td align="right">17.5%</td>
+</tr>
+<tr>
+<td align="left">BINARY_OP_ADD_INT</td>
+<td align="right">44</td>
+<td align="right">11.3%</td>
+</tr>
+<tr>
+<td align="left">BINARY_OP</td>
+<td align="right">22</td>
+<td align="right">5.7%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">STORE_FAST</td>
+<td align="right">290</td>
+<td align="right">74.7%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST_IMMORTAL</td>
+<td align="right">59</td>
+<td align="right">15.2%</td>
+</tr>
+<tr>
+<td align="left">BINARY_OP_INPLACE_ADD_UNICODE</td>
+<td align="right">24</td>
+<td align="right">6.2%</td>
+</tr>
+<tr>
+<td align="left">CALL_BUILTIN_O</td>
+<td align="right">9</td>
+<td align="right">2.3%</td>
+</tr>
+<tr>
+<td align="left">PUSH_EXC_INFO</td>
+<td align="right">6</td>
+<td align="right">1.5%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
 ### LOAD_BUILD_CLASS
 
 <details>
@@ -11829,52 +11911,17 @@ specialized instruction deoptimizes.
 
 </details>
 
-### LOAD_LOCALS
-
-<details>
-<summary> Successors and predecessors for LOAD_LOCALS </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">STORE_NAME</td>
-<td align="right">18</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">STORE_DEREF</td>
-<td align="right">18</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-genshi.md
 ### UNARY_NOT
 
 <details>
 <summary> Successors and predecessors for UNARY_NOT </summary>
+=======
+### LOAD_LOCALS
+
+<details>
+<summary> Successors and predecessors for LOAD_LOCALS </summary>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-genshi.md
 
 <table>
 <thead>
@@ -11886,6 +11933,7 @@ specialized instruction deoptimizes.
 </thead>
 <tbody>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-genshi.md
 <td align="left">TO_BOOL_INT</td>
 <td align="right">21</td>
 <td align="right">67.7%</td>
@@ -11894,6 +11942,11 @@ specialized instruction deoptimizes.
 <td align="left">TO_BOOL_LIST</td>
 <td align="right">10</td>
 <td align="right">32.3%</td>
+=======
+<td align="left">STORE_NAME</td>
+<td align="right">18</td>
+<td align="right">100.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-genshi.md
 </tr>
 </tbody>
 </table>
@@ -11908,6 +11961,7 @@ specialized instruction deoptimizes.
 </thead>
 <tbody>
 <tr>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-genshi.md
 <td align="left">COPY</td>
 <td align="right">21</td>
 <td align="right">67.7%</td>
@@ -11916,6 +11970,11 @@ specialized instruction deoptimizes.
 <td align="left">CALL_PY_EXACT_ARGS</td>
 <td align="right">10</td>
 <td align="right">32.3%</td>
+=======
+<td align="left">STORE_DEREF</td>
+<td align="right">18</td>
+<td align="right">100.0%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-genshi.md
 </tr>
 </tbody>
 </table>
@@ -14145,7 +14204,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-genshi.md
 <td align="right">41,197,539</td>
+=======
+<td align="right">41,197,302</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-genshi.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -14165,6 +14228,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-genshi.md
 <td align="right">194,474,310</td>
 <td align="right">16.9%</td>
 </tr>
@@ -14172,6 +14236,15 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">247,709,278</td>
 <td align="right">20.2%</td>
+=======
+<td align="right">194,473,888</td>
+<td align="right">15.4%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">247,709,229</td>
+<td align="right">16.6%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-genshi.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -14185,6 +14258,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-genshi.md
 <td align="right">87,056,502</td>
 <td align="right">7.6%</td>
 </tr>
@@ -14192,6 +14266,15 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">86,416,804</td>
 <td align="right">7.1%</td>
+=======
+<td align="right">86,801,517</td>
+<td align="right">6.9%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">86,469,981</td>
+<td align="right">5.8%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-genshi.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -14215,27 +14298,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-genshi.md
 <td align="right">26,103,977</td>
+=======
+<td align="right">26,091,981</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-genshi.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-genshi.md
 <td align="right">7,640</td>
+=======
+<td align="right">19,638</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-genshi.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-genshi.md
 <td align="right">6,973</td>
+=======
+<td align="right">30,896</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-genshi.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-genshi.md
 <td align="right">8,858,770</td>
+=======
+<td align="right">8,846,647</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-genshi.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-genshi.md
 <td align="right">653</td>
+=======
+<td align="right">12,766</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-genshi.md
 <td align="right"></td>
 </tr>
 </tbody>
@@ -14275,10 +14378,17 @@ Collected/visits gives some measure of efficiency.
 <tr>
 <td align="right">1</td>
 <td align="right">819</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-c912ef1/bm-20250401-azure-x86_64-brandtbucher-unbox-3.14.0a6+-c912ef1-pystats-genshi.md
 <td align="right">28,593</td>
 <td align="right">10,054,613</td>
 <td align="right">564,788</td>
 <td align="right">1,560,300</td>
+=======
+<td align="right">27,697</td>
+<td align="right">9,810,435</td>
+<td align="right">593,982</td>
+<td align="right">1,531,115</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-genshi.md
 </tr>
 <tr>
 <td align="right">2</td>

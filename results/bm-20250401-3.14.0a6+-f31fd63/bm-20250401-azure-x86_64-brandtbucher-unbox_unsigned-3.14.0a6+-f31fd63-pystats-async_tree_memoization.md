@@ -10840,16 +10840,26 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-async_tree_memoization.md
 <td align="right">45,578,307</td>
 <td align="right">41.3%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
 <td align="right">45,578,367</td>
+=======
+<td align="right">53,190,944</td>
+<td align="right">44.1%</td>
+</tr>
+<tr>
+<td align="left">Frees to freelist</td>
+<td align="right">53,191,004</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_memoization.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-async_tree_memoization.md
 <td align="right">64,692,624</td>
 <td align="right">58.7%</td>
 </tr>
@@ -10861,6 +10871,19 @@ other names.
 <tr>
 <td align="left">Allocations to 4 kbytes</td>
 <td align="right">46,278</td>
+=======
+<td align="right">67,492,041</td>
+<td align="right">55.9%</td>
+</tr>
+<tr>
+<td align="left">Allocations to 512 bytes</td>
+<td align="right">67,445,764</td>
+<td align="right">55.9%</td>
+</tr>
+<tr>
+<td align="left">Allocations to 4 kbytes</td>
+<td align="right">46,277</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_memoization.md
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -10870,7 +10893,11 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-async_tree_memoization.md
 <td align="right">66,369,073</td>
+=======
+<td align="right">69,167,925</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_memoization.md
 <td align="right"></td>
 </tr>
 <tr>
@@ -10885,6 +10912,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-async_tree_memoization.md
 <td align="right">976,208,933</td>
 <td align="right">69.9%</td>
 </tr>
@@ -10897,6 +10925,20 @@ other names.
 <td align="left">Mortal decrefs</td>
 <td align="right">271,019,941</td>
 <td align="right">19.4%</td>
+=======
+<td align="right">997,030,068</td>
+<td align="right">58.7%</td>
+</tr>
+<tr>
+<td align="left">Mortal increfs</td>
+<td align="right">194,363,113</td>
+<td align="right">13.0%</td>
+</tr>
+<tr>
+<td align="left">Mortal decrefs</td>
+<td align="right">276,664,086</td>
+<td align="right">16.3%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_memoization.md
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -10905,6 +10947,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter immortal decrefs</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-async_tree_memoization.md
 <td align="right">15,369,460</td>
 <td align="right">1.1%</td>
 </tr>
@@ -10917,6 +10960,20 @@ other names.
 <td align="left">Immortal decrefs</td>
 <td align="right">134,019,119</td>
 <td align="right">9.6%</td>
+=======
+<td align="right">287,710,452</td>
+<td align="right">16.9%</td>
+</tr>
+<tr>
+<td align="left">Immortal increfs</td>
+<td align="right">115,524,389</td>
+<td align="right">7.7%</td>
+</tr>
+<tr>
+<td align="left">Immortal decrefs</td>
+<td align="right">136,855,472</td>
+<td align="right">8.1%</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_memoization.md
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -10940,27 +10997,47 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-async_tree_memoization.md
 <td align="right">40,416,265</td>
+=======
+<td align="right">43,175,513</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_memoization.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-async_tree_memoization.md
 <td align="right">569,395</td>
+=======
+<td align="right">610,187</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_memoization.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-async_tree_memoization.md
 <td align="right">568,951</td>
+=======
+<td align="right">609,439</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_memoization.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-async_tree_memoization.md
 <td align="right">3,860,141</td>
+=======
+<td align="right">3,860,148</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_memoization.md
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-async_tree_memoization.md
 <td align="right">159</td>
+=======
+<td align="right">152</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_memoization.md
 <td align="right"></td>
 </tr>
 </tbody>
@@ -11001,9 +11078,15 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">13,800</td>
 <td align="right">160</td>
+<<<<<<< Updated upstream:results/bm-20250401-3.14.0a6+-f31fd63/bm-20250401-azure-x86_64-brandtbucher-unbox_unsigned-3.14.0a6+-f31fd63-pystats-async_tree_memoization.md
 <td align="right">402,279,050</td>
 <td align="right">23,905,453</td>
 <td align="right">35,884,419</td>
+=======
+<td align="right">402,694,244</td>
+<td align="right">23,989,214</td>
+<td align="right">35,884,373</td>
+>>>>>>> Stashed changes:results/bm-20250221-3.14.0a5+-fb33c24/bm-20250221-azure-x86_64-iritkatriel-stats-3.14.0a5+-fb33c24-pystats-async_tree_memoization.md
 </tr>
 <tr>
 <td align="right">2</td>

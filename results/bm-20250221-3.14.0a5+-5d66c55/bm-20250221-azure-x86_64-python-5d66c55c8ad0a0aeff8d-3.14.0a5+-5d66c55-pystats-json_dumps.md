@@ -5517,12 +5517,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">223,717,089</td>
+<td align="right">223,717,093</td>
 <td align="right">28.1%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">122,906,425</td>
+<td align="right">122,906,429</td>
 <td align="right">15.1%</td>
 </tr>
 <tr>
@@ -5557,17 +5557,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">15</td>
+<td align="right">22</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">7,681,918</td>
+<td align="right">7,681,916</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">2</td>
+<td align="right">4</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -5754,4 +5754,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-02-21
+Stats gathered on: 2025-04-02

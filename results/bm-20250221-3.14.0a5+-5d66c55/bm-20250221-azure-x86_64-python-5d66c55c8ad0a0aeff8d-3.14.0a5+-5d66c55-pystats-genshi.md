@@ -11864,48 +11864,6 @@ specialized instruction deoptimizes.
 
 </details>
 
-### UNARY_INVERT
-
-<details>
-<summary> Successors and predecessors for UNARY_INVERT </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_FAST</td>
-<td align="right">8</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">BINARY_OP_EXTEND</td>
-<td align="right">8</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
 ### UNARY_NOT
 
 <details>
@@ -12308,12 +12266,12 @@ specialized instruction deoptimizes.
 <td align="right">8.6%</td>
 </tr>
 <tr>
-<td align="left">RETURN_VALUE</td>
+<td align="left">LOAD_SMALL_INT</td>
 <td align="right">8</td>
 <td align="right">4.3%</td>
 </tr>
 <tr>
-<td align="left">LOAD_SMALL_INT</td>
+<td align="left">RETURN_VALUE</td>
 <td align="right">8</td>
 <td align="right">4.3%</td>
 </tr>
@@ -12414,6 +12372,48 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
 <td align="right">2</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### UNARY_INVERT
+
+<details>
+<summary> Successors and predecessors for UNARY_INVERT </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_FAST</td>
+<td align="right">8</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">BINARY_OP_EXTEND</td>
+<td align="right">8</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -14066,22 +14066,22 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
-<td align="right">72,116,297</td>
+<td align="right">72,116,086</td>
 <td align="right">67.3%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
-<td align="right">72,114,044</td>
+<td align="right">72,114,634</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">35,020,776</td>
+<td align="right">35,021,027</td>
 <td align="right">32.7%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
-<td align="right">35,015,326</td>
+<td align="right">35,015,577</td>
 <td align="right">32.7%</td>
 </tr>
 <tr>
@@ -14096,7 +14096,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">41,194,851</td>
+<td align="right">41,197,215</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -14116,12 +14116,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">194,473,323</td>
+<td align="right">194,473,670</td>
 <td align="right">15.4%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">247,705,719</td>
+<td align="right">247,708,899</td>
 <td align="right">16.6%</td>
 </tr>
 <tr>
@@ -14136,12 +14136,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">86,752,375</td>
+<td align="right">86,825,173</td>
 <td align="right">6.9%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">86,399,923</td>
+<td align="right">86,493,743</td>
 <td align="right">5.8%</td>
 </tr>
 <tr>
@@ -14166,27 +14166,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">26,104,406</td>
+<td align="right">26,086,095</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">7,213</td>
+<td align="right">25,524</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">5,954</td>
+<td align="right">42,573</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">8,858,894</td>
+<td align="right">8,840,811</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">519</td>
+<td align="right">18,602</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -14225,11 +14225,11 @@ Collected/visits gives some measure of efficiency.
 </tr>
 <tr>
 <td align="right">1</td>
-<td align="right">798</td>
-<td align="right">26,803</td>
-<td align="right">9,220,997</td>
-<td align="right">557,278</td>
-<td align="right">1,519,496</td>
+<td align="right">819</td>
+<td align="right">27,697</td>
+<td align="right">9,810,288</td>
+<td align="right">593,982</td>
+<td align="right">1,531,115</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -14373,4 +14373,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-02-21
+Stats gathered on: 2025-04-02

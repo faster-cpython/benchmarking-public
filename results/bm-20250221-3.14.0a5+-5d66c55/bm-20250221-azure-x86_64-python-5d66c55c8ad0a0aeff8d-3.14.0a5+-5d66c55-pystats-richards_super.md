@@ -6371,7 +6371,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">281,360</td>
+<td align="right">281,350</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -6382,27 +6382,27 @@ other names.
 <tr>
 <td align="left">Interpreter mortal increfs</td>
 <td align="right">496,405,060</td>
-<td align="right">59.2%</td>
+<td align="right">59.3%</td>
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
 <td align="right">551,173,360</td>
-<td align="right">68.1%</td>
+<td align="right">68.3%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">80,808,678</td>
-<td align="right">9.6%</td>
+<td align="right">79,875,997</td>
+<td align="right">9.5%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">33,116,779</td>
-<td align="right">4.1%</td>
+<td align="right">32,184,087</td>
+<td align="right">4.0%</td>
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
 <td align="right">147,901,200</td>
-<td align="right">17.6%</td>
+<td align="right">17.7%</td>
 </tr>
 <tr>
 <td align="left">Interpreter immortal decrefs</td>
@@ -6411,13 +6411,13 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">113,744,358</td>
-<td align="right">13.6%</td>
+<td align="right">112,811,677</td>
+<td align="right">13.5%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">79,211,577</td>
-<td align="right">9.8%</td>
+<td align="right">78,278,907</td>
+<td align="right">9.7%</td>
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -6441,17 +6441,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">85,298,562</td>
+<td align="right">86,231,243</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">1,918,658</td>
+<td align="right">985,977</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">1,918,645</td>
+<td align="right">985,969</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -6648,4 +6648,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-02-21
+Stats gathered on: 2025-04-02

@@ -10562,7 +10562,7 @@ Specialized hits
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that complete.
 </details>
 </td>
-<td align="right">869,845,860</td>
+<td align="right">869,845,800</td>
 <td align="right">44.0%</td>
 </tr>
 <tr>
@@ -10574,7 +10574,7 @@ Specialized misses
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </details>
 </td>
-<td align="right">5,633,960</td>
+<td align="right">5,634,020</td>
 <td align="right">0.3%</td>
 </tr>
 </tbody>
@@ -10686,12 +10686,12 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </tr>
 <tr>
 <td align="left">RESUME</td>
-<td align="right">12,280</td>
+<td align="right">12,340</td>
 <td align="right">0.2%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">12,280</td>
+<td align="right">12,340</td>
 <td align="right">0.2%</td>
 </tr>
 <tr>
@@ -10855,17 +10855,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">196,582,367</td>
+<td align="right">196,582,363</td>
 <td align="right">77.3%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
-<td align="right">195,139,823</td>
+<td align="right">195,139,817</td>
 <td align="right">76.7%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 4 kbytes</td>
-<td align="right">1,442,544</td>
+<td align="right">1,442,546</td>
 <td align="right">0.6%</td>
 </tr>
 <tr>
@@ -10875,7 +10875,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">198,259,064</td>
+<td align="right">198,258,935</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10890,17 +10890,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
-<td align="right">940,925,843</td>
+<td align="right">940,925,837</td>
 <td align="right">55.4%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">174,123,009</td>
+<td align="right">174,123,169</td>
 <td align="right">11.6%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">389,983,579</td>
+<td align="right">389,983,592</td>
 <td align="right">23.0%</td>
 </tr>
 <tr>
@@ -10910,17 +10910,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter immortal decrefs</td>
-<td align="right">233,246,757</td>
+<td align="right">233,246,763</td>
 <td align="right">13.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">233,289,219</td>
+<td align="right">233,289,357</td>
 <td align="right">15.5%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">135,048,391</td>
+<td align="right">135,048,686</td>
 <td align="right">7.9%</td>
 </tr>
 <tr>
@@ -10945,27 +10945,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">39,136,516</td>
+<td align="right">39,136,389</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">586,944</td>
+<td align="right">587,071</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">586,716</td>
+<td align="right">586,815</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">2,105,154</td>
+<td align="right">2,105,131</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">146</td>
+<td align="right">169</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -11006,9 +11006,9 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">13,260</td>
 <td align="right">160</td>
-<td align="right">440,416,165</td>
-<td align="right">35,809,260</td>
-<td align="right">33,960,380</td>
+<td align="right">444,550,514</td>
+<td align="right">37,144,460</td>
+<td align="right">33,980,860</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -11152,4 +11152,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-02-21
+Stats gathered on: 2025-04-02

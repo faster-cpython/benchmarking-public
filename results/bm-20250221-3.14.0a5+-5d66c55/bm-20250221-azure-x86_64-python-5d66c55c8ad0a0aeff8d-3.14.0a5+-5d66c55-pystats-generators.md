@@ -6326,7 +6326,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">47,991,242</td>
+<td align="right">47,991,240</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -6351,7 +6351,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">66,148,703</td>
+<td align="right">66,148,702</td>
 <td align="right">7.7%</td>
 </tr>
 <tr>
@@ -6371,7 +6371,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">167,885,659</td>
+<td align="right">167,885,660</td>
 <td align="right">19.5%</td>
 </tr>
 <tr>
@@ -6406,7 +6406,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">15</td>
+<td align="right">5</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -6457,9 +6457,9 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">2,940</td>
 <td align="right">160</td>
-<td align="right">42,637,508</td>
-<td align="right">9,550,220</td>
-<td align="right">57,460</td>
+<td align="right">38,344,230</td>
+<td align="right">8,831,320</td>
+<td align="right">39,100</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -6603,4 +6603,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-02-21
+Stats gathered on: 2025-04-02

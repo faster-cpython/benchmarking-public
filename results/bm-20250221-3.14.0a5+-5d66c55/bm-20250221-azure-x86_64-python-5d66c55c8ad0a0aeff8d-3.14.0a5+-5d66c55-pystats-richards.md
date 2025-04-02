@@ -6304,7 +6304,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">562,511</td>
+<td align="right">562,508</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -6315,22 +6315,22 @@ other names.
 <tr>
 <td align="left">Interpreter mortal increfs</td>
 <td align="right">886,959,400</td>
-<td align="right">61.3%</td>
+<td align="right">61.5%</td>
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
 <td align="right">980,728,920</td>
-<td align="right">71.5%</td>
+<td align="right">71.8%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">100,082,432</td>
-<td align="right">6.9%</td>
+<td align="right">97,631,504</td>
+<td align="right">6.8%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">20,466,304</td>
-<td align="right">1.5%</td>
+<td align="right">18,015,372</td>
+<td align="right">1.3%</td>
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
@@ -6344,13 +6344,13 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">199,594,692</td>
-<td align="right">13.8%</td>
+<td align="right">197,143,764</td>
+<td align="right">13.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">130,554,440</td>
-<td align="right">9.5%</td>
+<td align="right">128,103,516</td>
+<td align="right">9.4%</td>
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -6374,17 +6374,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">160,505,108</td>
+<td align="right">162,956,036</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">3,423,692</td>
+<td align="right">972,764</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">3,423,679</td>
+<td align="right">972,751</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -6581,4 +6581,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-02-21
+Stats gathered on: 2025-04-02

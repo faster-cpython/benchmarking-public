@@ -980,7 +980,7 @@
 <use transform="translate(223)" xlink:href="#l"/>
 </g>
 <g stroke="#1f77b4" stroke-opacity=".9">
-<path d="m216 958 128-47.3 152 23.7h36 1.02l8 31.6h7.92 8.03 7.95 7.12 9.29 8.19 2.28 5.59 8.18l3.62 7.89 1.7-7.89h2.57l8 7.89 4.74-7.89 3.65 7.89h1.73 6.12 8.01 8.24 8.08 7.94 8.25 2.21 2.22 2.3 1.26" clip-path="url(#j)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
+<path d="m216 958 128-47.3 152 23.7h36 1.02l8 31.6h7.92 8.03 7.95 7.12 9.29 8.19 2.28 5.59 8.18l3.62 7.89 1.7-7.89h2.57l8 7.89 4.74-7.89 3.65 7.89h1.73 6.12 8.01 8.24 8.08 7.94 8.25 2.21 2.22 2.3 1.26 2.14" clip-path="url(#j)" fill="none" stroke-linecap="square" stroke-width="1.5"/>
 <g clip-path="url(#j)" fill="#1f77b4" fill-opacity=".9">
 <use x="215.678357" y="957.773676" xlink:href="#a"/>
 <use x="343.65805" y="910.443849" xlink:href="#a"/>
@@ -1014,6 +1014,7 @@
 <use x="682.690472" y="973.550285" xlink:href="#a"/>
 <use x="684.99446" y="973.550285" xlink:href="#a"/>
 <use x="686.256387" y="973.550285" xlink:href="#a"/>
+<use x="688.399695" y="973.550285" xlink:href="#a"/>
 </g>
 </g>
 <g stroke="#1f77b4" stroke-opacity=".9">

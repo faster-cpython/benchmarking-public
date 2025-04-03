@@ -13,6 +13,10 @@
 - [pystats raw](bm-20250331-azure-x86_64-python-0cd4befb02df07c0b320-3.14.0a6%2B-0cd4bef-pystats.json)
 - [pystats table](bm-20250331-azure-x86_64-python-0cd4befb02df07c0b320-3.14.0a6%2B-0cd4bef-pystats.md)
 
+### vs. base
+
+- [pystats diff](bm-20250331-azure-x86_64-python-0cd4befb02df07c0b320-3.14.0a6%2B-0cd4bef-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14178800386)
@@ -46,4 +50,12 @@
 - new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
 - [📄table](bm-20250331-linux-x86_64-python-0cd4befb02df07c0b320-3.14.0a6%2B-0cd4bef-vs-3.13.0.md)
 - [📈time plot](bm-20250331-linux-x86_64-python-0cd4befb02df07c0b320-3.14.0a6%2B-0cd4bef-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.004x faster (HPT: reliability of 99.88%, 1.00x slower at 99th %ile)
+- Memory usage: 1.01x
+- [🧠memory plot](bm-20250331-linux-x86_64-python-0cd4befb02df07c0b320-3.14.0a6%2B-0cd4bef-vs-base-mem.svg)
+- [📄table](bm-20250331-linux-x86_64-python-0cd4befb02df07c0b320-3.14.0a6%2B-0cd4bef-vs-base.md)
+- [📈time plot](bm-20250331-linux-x86_64-python-0cd4befb02df07c0b320-3.14.0a6%2B-0cd4bef-vs-base.svg)
 

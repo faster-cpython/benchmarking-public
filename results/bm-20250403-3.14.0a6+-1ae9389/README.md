@@ -13,6 +13,10 @@
 - [pystats raw](bm-20250403-azure-x86_64-iritkatriel-subscr_stats-3.14.0a6%2B-1ae9389-pystats.json)
 - [pystats table](bm-20250403-azure-x86_64-iritkatriel-subscr_stats-3.14.0a6%2B-1ae9389-pystats.md)
 
+### vs. base
+
+- [pystats diff](bm-20250403-azure-x86_64-iritkatriel-subscr_stats-3.14.0a6%2B-1ae9389-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14259155879)

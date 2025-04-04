@@ -10,7 +10,7 @@
 
 ## linux x86_64 (linux)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14264844030)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14266922219)
 - cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
 - platform: Linux-5.4.0-208-generic-x86_64-with-glibc2.31
 - [raw results](bm-20250404-linux-x86_64-faster%252dcpython-tos_caching_1-3.14.0a6%2B-492df4e.json)
@@ -86,7 +86,7 @@
 
 ## darwin arm64 (darwin)
 
-- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14264844030)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14266936556)
 - cpu model: missing
 - platform: macOS-15.3.2-arm64-arm-64bit-Mach-O
 - [raw results](bm-20250404-darwin-arm64-faster%252dcpython-tos_caching_1-3.14.0a6%2B-492df4e.json)

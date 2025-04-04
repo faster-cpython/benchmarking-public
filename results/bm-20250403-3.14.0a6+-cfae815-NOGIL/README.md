@@ -42,3 +42,11 @@
 - [📄table](bm-20250403-linux-x86_64-kumaraditya303-freelist_async-3.14.0a6%2B-cfae815-vs-3.13.0.md)
 - [📈time plot](bm-20250403-linux-x86_64-kumaraditya303-freelist_async-3.14.0a6%2B-cfae815-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.005x faster (HPT: reliability of 99.96%, 1.00x faster at 99th %ile)
+- Memory usage: 0.99x
+- [🧠memory plot](bm-20250403-linux-x86_64-kumaraditya303-freelist_async-3.14.0a6%2B-cfae815-vs-base-mem.svg)
+- [📄table](bm-20250403-linux-x86_64-kumaraditya303-freelist_async-3.14.0a6%2B-cfae815-vs-base.md)
+- [📈time plot](bm-20250403-linux-x86_64-kumaraditya303-freelist_async-3.14.0a6%2B-cfae815-vs-base.svg)
+

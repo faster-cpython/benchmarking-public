@@ -118,3 +118,11 @@
 - [📄table](bm-20250404-darwin-arm64-faster%252dcpython-tos_caching_1-3.14.0a6%2B-492df4e-vs-3.13.0.md)
 - [📈time plot](bm-20250404-darwin-arm64-faster%252dcpython-tos_caching_1-3.14.0a6%2B-492df4e-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.083x slower (HPT: reliability of 100.00%, 1.07x slower at 99th %ile)
+- Memory usage: 0.99x
+- [🧠memory plot](bm-20250404-darwin-arm64-faster%252dcpython-tos_caching_1-3.14.0a6%2B-492df4e-vs-base-mem.svg)
+- [📄table](bm-20250404-darwin-arm64-faster%252dcpython-tos_caching_1-3.14.0a6%2B-492df4e-vs-base.md)
+- [📈time plot](bm-20250404-darwin-arm64-faster%252dcpython-tos_caching_1-3.14.0a6%2B-492df4e-vs-base.svg)
+

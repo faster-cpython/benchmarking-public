@@ -13,7 +13,7 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 <!-- START table -->
 - [Most recent  pystats on main (1a9d4a1)](results/bm-20250401-3.14.0a6%2B-1a9d4a1/bm-20250401-azure-x86_64-python-1a9d4a1fb3d4beda7c7e-3.14.0a6%2B-1a9d4a1-pystats.md)
 - [Most recent PYTHON_UOPS pystats on main (425f60b)](results/bm-20250329-3.14.0a6%2B-425f60b-PYTHON_UOPS/bm-20250329-azure-x86_64-python-425f60b9eb253c57bc32-3.14.0a6%2B-425f60b-pystats.md)
-- [Most recent JIT pystats on main (1a9d4a1)](results/bm-20250401-3.14.0a6%2B-1a9d4a1-JIT/bm-20250401-azure-x86_64-python-1a9d4a1fb3d4beda7c7e-3.14.0a6%2B-1a9d4a1-pystats.md)
+- [Most recent JIT pystats on main (06822bf)](results/bm-20250402-3.14.0a6%2B-06822bf-JIT/bm-20250402-azure-x86_64-python-06822bfbf625e9777813-3.14.0a6%2B-06822bf-pystats.md)
 
 ## linux aarch64 (arminc)
 | date | fork/ref | hash/flags | vs. 3.10.4: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |

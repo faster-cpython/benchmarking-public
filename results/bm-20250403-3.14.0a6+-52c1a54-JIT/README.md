@@ -8,6 +8,11 @@
 - commit merge base: [06822bfbf625e9777813542be0b8a2d10a685f30](https://github.com/python/cpython/commit/06822bfbf625e9777813542be0b8a2d10a685f30)
 - ref: jit_contains_op_set_
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250403-azure-x86_64-tomasr8-jit_contains_op_set_-3.14.0a6%2B-52c1a54-pystats.json)
+- [pystats table](bm-20250403-azure-x86_64-tomasr8-jit_contains_op_set_-3.14.0a6%2B-52c1a54-pystats.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14259391645)

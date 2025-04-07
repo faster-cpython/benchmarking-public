@@ -8,6 +8,15 @@
 - commit merge base: [7bb1e1a23634bae81bf76fdb34e9f9f7e59b3793](https://github.com/python/cpython/commit/7bb1e1a23634bae81bf76fdb34e9f9f7e59b3793)
 - ref: stats
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250406-azure-x86_64-iritkatriel-stats-3.14.0a6%2B-4300c89-pystats.json)
+- [pystats table](bm-20250406-azure-x86_64-iritkatriel-stats-3.14.0a6%2B-4300c89-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20250406-azure-x86_64-iritkatriel-stats-3.14.0a6%2B-4300c89-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14297206278)
@@ -41,4 +50,12 @@
 - new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
 - [📄table](bm-20250406-linux-x86_64-iritkatriel-stats-3.14.0a6%2B-4300c89-vs-3.13.0.md)
 - [📈time plot](bm-20250406-linux-x86_64-iritkatriel-stats-3.14.0a6%2B-4300c89-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.008x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250406-linux-x86_64-iritkatriel-stats-3.14.0a6%2B-4300c89-vs-base-mem.svg)
+- [📄table](bm-20250406-linux-x86_64-iritkatriel-stats-3.14.0a6%2B-4300c89-vs-base.md)
+- [📈time plot](bm-20250406-linux-x86_64-iritkatriel-stats-3.14.0a6%2B-4300c89-vs-base.svg)
 

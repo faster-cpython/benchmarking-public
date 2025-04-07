@@ -84,3 +84,11 @@
 - [📄table](bm-20250407-pythonperf2-x86_64-Fidget%252dSpinner-lto_fix-3.14.0a6%2B-8891cd2-vs-3.13.0.md)
 - [📈time plot](bm-20250407-pythonperf2-x86_64-Fidget%252dSpinner-lto_fix-3.14.0a6%2B-8891cd2-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.000x faster (HPT: reliability of 91.94%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250407-pythonperf2-x86_64-Fidget%252dSpinner-lto_fix-3.14.0a6%2B-8891cd2-vs-base-mem.svg)
+- [📄table](bm-20250407-pythonperf2-x86_64-Fidget%252dSpinner-lto_fix-3.14.0a6%2B-8891cd2-vs-base.md)
+- [📈time plot](bm-20250407-pythonperf2-x86_64-Fidget%252dSpinner-lto_fix-3.14.0a6%2B-8891cd2-vs-base.svg)
+

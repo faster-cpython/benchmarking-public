@@ -226,7 +226,7 @@
 <use transform="translate(159)" xlink:href="#b"/>
 <use transform="translate(223)" xlink:href="#m"/>
 </g>
-<path d="m607 264h7.53l7.69 7.89h7.9l7.75-7.89 7.62 7.89h7.92 4.25l3.42-7.89h7.82" clip-path="url(#i)" fill="none" stroke="#1f77b4" stroke-linecap="square" stroke-opacity=".9" stroke-width="1.5"/>
+<path d="m607 264h7.53l7.69 7.89h7.9l7.75-7.89 7.62 7.89h7.92 4.25l3.42-7.89h4.95 2.87" clip-path="url(#i)" fill="none" stroke="#1f77b4" stroke-linecap="square" stroke-opacity=".9" stroke-width="1.5"/>
 <defs>
 <path id="a" d="m-2.5 2.5h5v-5h-5z" stroke="#1f77b4" stroke-opacity=".9"/>
 </defs>
@@ -240,6 +240,7 @@
 <use x="652.916908" y="272.38173" xlink:href="#a"/>
 <use x="657.168222" y="272.38173" xlink:href="#a"/>
 <use x="660.590215" y="264.493426" xlink:href="#a"/>
+<use x="665.540041" y="264.493426" xlink:href="#a"/>
 <use x="668.408949" y="264.493426" xlink:href="#a"/>
 </g>
 <g stroke="#1f77b4" stroke-opacity=".9">

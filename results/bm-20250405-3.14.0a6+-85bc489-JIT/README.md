@@ -168,6 +168,13 @@
 - [📄table](bm-20250405-pythonperf1-amd64-python-85bc489b649fe261f962-3.14.0a6%2B-85bc489-vs-3.13.0.md)
 - [📈time plot](bm-20250405-pythonperf1-amd64-python-85bc489b649fe261f962-3.14.0a6%2B-85bc489-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.002x slower (HPT: reliability of 97.10%, 1.00x slower at 99th %ile)
+- Memory usage: unknown
+- [📄table](bm-20250405-pythonperf1-amd64-python-85bc489b649fe261f962-3.14.0a6%2B-85bc489-vs-base.md)
+- [📈time plot](bm-20250405-pythonperf1-amd64-python-85bc489b649fe261f962-3.14.0a6%2B-85bc489-vs-base.svg)
+
 ## windows x86 (pythonperf1_win32)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14286973937)

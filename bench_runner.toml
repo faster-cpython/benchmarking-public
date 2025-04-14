@@ -1,0 +1,95 @@
+[bases]
+# List the base versions you want to compare every benchmark run to
+versions = ["3.10.4", "3.12.0", "3.13.0"]
+
+[notify]
+notification_issue = 182
+
+[benchmarks]
+# List any benchmarks you want to exclude from results here
+excluded_benchmarks = [
+    # Benchmarks where the mean execution count < 5
+    "aiohttp",
+    "asyncio_tcp",
+    "asyncio_tcp_ssl",
+    "bench_mp_pool",
+    "bench_thread_pool",
+    "deepcopy_reduce",
+    "logging_silent",
+    "pickle",
+    "pickle_dict",
+    "pickle_list",
+    "unpack_sequence",
+    "unpickle",
+    "unpickle_list",
+]
+
+# os: one of 'linux', 'darwin', 'windows'
+# arch: 'amd64' or 'arm64' (used for display only)
+# hostname: Must match the hostname of the machine (as retrieved from
+#   socket.gethostname()).
+# available: True if the machine is available (we need to keep the
+#   metadata around for old machines for the generated results). (Default: True)
+
+# For backward compatibility reasons, the machines with hostnames "pyperf" and
+# "CPythons-Mac-mini.local" must be named "linux" and "darwin" permanently, since
+# we used to identify machines by their OS alone.
+
+[[runners]]
+
+[runners.linux]
+os = "linux"
+arch = "x86_64"
+hostname = "pyperf"
+
+[runners.darwin]
+os = "darwin"
+arch = "arm64"
+hostname = "CPythons-Mac-mini.local"
+
+[runners.pythonperf1]
+os = "windows"
+arch = "x86_64"
+hostname = "WIN-5FKPU9U7KDT"
+env = { BUILD_DEST = "PCBuild/amd64" }
+
+[runners.pythonperf1_win32]
+os = "windows"
+arch = "x86"
+hostname = "WIN-5FKPU9U7KDT"
+github_runner_name = "windows-x86_64-pythonperf1"
+env = { BUILD_FLAGS = "-p Win32", BUILD_DEST = "PCBuild/win32" }
+include_in_all = false
+
+[runners.pythonperf2]
+os = "linux"
+arch = "x86_64"
+hostname = "pythonperf2"
+include_in_all = false
+
+[runners.arminc]
+os = "linux"
+arch = "aarch64"
+hostname = "aarch64-faster-cpython-benchmarks"
+
+[runners.azure]
+os = "linux"
+arch = "x86_64"
+hostname = "cpython-benchmarking-azure"
+available = false
+
+[plot]
+bases = ["3.10.4", "3.12.0", "3.13.0", "3.13.0"]
+versions = [[3, 11], [3, 13], [3, 14], [3, 14]]
+runners = [
+    "linux",
+    "pythonperf2",
+    "arminc",
+    "darwin",
+    "pythonperf1",
+    "pythonperf1_win32",
+]
+names = ["linux", "linux2", "linux-aarch64", "macos", "win64", "win32"]
+colors = ["C0", "C0", "C4", "C2", "C3", "C3"]
+styles = ["-", ":", "--", "-", "-", ":"]
+markers = ["s", "s", "s", "^", ".", "."]

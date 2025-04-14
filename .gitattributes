@@ -1,0 +1,4 @@
+[attr]generated linguist-generated=true diff=generated
+
+.github/workflows/benchmark.yml
+.github/workflows/_benchmark.yml

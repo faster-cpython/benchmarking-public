@@ -1,0 +1,197 @@
+# Generated file: !!! DO NOT EDIT !!!
+---
+env:
+  PYPERFORMANCE_HASH: 56d12a8fd7cc1432835965d374929bfa7f6f7a07
+  PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
+name: benchmark
+run-name: benchmarking ${{ inputs.fork }}/${{ inputs.ref }} ${{ inputs.tier2 == true
+  && 'T2' || '' }} ${{ inputs.jit == true && 'JIT' || '' }} ${{ inputs.nogil == true
+  && 'NOGIL' || '' }} ${{ inputs.clang == true && 'CLANG' || '' }}
+on:
+  workflow_dispatch:
+    inputs:
+      fork:
+        description: Fork of cpython to benchmark
+        default: python
+      ref:
+        description: Branch, tag or (full) SHA commit to benchmark
+        default: main
+      machine:
+        description: Machine to run on
+        default: linux-amd64
+        type: choice
+        options:
+        - linux-x86_64-linux
+        - darwin-arm64-darwin
+        - windows-x86_64-pythonperf1
+        - windows-x86-pythonperf1_win32
+        - linux-x86_64-pythonperf2
+        - linux-aarch64-arminc
+        - all
+        - __really_all
+      benchmarks:
+        description: Benchmarks to run (comma-separated; empty runs all benchmarks)
+        type: string
+      benchmark_base:
+        description: Also benchmark the base of this commit
+        type: boolean
+        default: false
+      pystats:
+        description: Also collect pystats for this commit
+        type: boolean
+        default: false
+
+      tier2:
+        description: tier 2 interpreter
+        type: boolean
+        default: false
+      jit:
+        description: JIT
+        type: boolean
+        default: false
+      nogil:
+        description: free threading
+        type: boolean
+        default: false
+      clang:
+        description: build with latest clang and tailcall
+        type: boolean
+        default: false
+jobs:
+  # Determine the base commit of the selected commit. The output is passed to
+  # the `base` job below. If the data already exists for this commit, it will be
+  # skipped.
+  determine_base:
+    runs-on: ubuntu-latest
+    outputs:
+      head: ${{ steps.base.outputs.head }}
+      date: ${{ steps.base.outputs.date }}
+      version: ${{ steps.base.outputs.version }}
+      ref: ${{ steps.base.outputs.ref }}
+      need_to_run: ${{ steps.base.outputs.need_to_run }}
+    steps:
+    - name: Checkout benchmarking
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - name: Setup system Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: pip
+    - name: Checkout CPython
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+        repository: ${{ inputs.fork }}/cpython
+        path: cpython
+        ref: ${{ inputs.ref }}
+        fetch-depth: 0
+    - name: Install dependencies from PyPI
+      run: |
+        pip install -r requirements.txt
+    - name: Determine base
+      id: base
+      run: |
+        python -m bench_runner get_merge_base ${{ inputs.benchmark_base }} ${{ inputs.machine }} ${{ inputs.pystats }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} >> $GITHUB_OUTPUT
+        cat $GITHUB_OUTPUT
+
+    env:
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
+        == true && 'clang' || '' }}
+  head:
+    uses: ./.github/workflows/_benchmark.yml
+    with:
+      fork: ${{ inputs.fork }}
+      ref: ${{ inputs.ref }}
+      machine: ${{ inputs.machine }}
+      benchmarks: ${{ inputs.benchmarks }}
+      pgo: true
+      perf: false
+      force: true
+      tier2: ${{ inputs.tier2 }}
+      jit: ${{ inputs.jit }}
+      nogil: ${{ inputs.nogil }}
+      clang: ${{ inputs.clang }}
+    secrets: inherit
+
+  base:
+    uses: ./.github/workflows/_benchmark.yml
+    needs: determine_base
+    if: ${{ needs.determine_base.outputs.need_to_run != 'false' }}
+    with:
+      fork: python
+      ref: ${{ needs.determine_base.outputs.ref }}
+      machine: ${{ inputs.machine }}
+      benchmarks: ${{ inputs.benchmarks }}
+      pgo: true
+      perf: false
+      force: false
+      tier2: ${{ inputs.tier2 }}
+      jit: ${{ inputs.jit }}
+      nogil: ${{ inputs.nogil }}
+      clang: ${{ inputs.clang }}
+    secrets: inherit
+
+  pystats-head:
+    uses: ./.github/workflows/_pystats.yml
+    if: ${{ inputs.pystats }}
+    with:
+      fork: ${{ inputs.fork }}
+      ref: ${{ inputs.ref }}
+      benchmarks: ${{ inputs.benchmarks }}
+      individual: true
+      force: true
+      tier2: ${{ inputs.tier2 }}
+      jit: ${{ inputs.jit }}
+      nogil: ${{ inputs.nogil }}
+      clang: ${{ inputs.clang }}
+    secrets: inherit
+
+  pystats-base:
+    uses: ./.github/workflows/_pystats.yml
+    needs: determine_base
+    if: ${{ inputs.pystats && needs.determine_base.outputs.need_to_run != 'false'
+      }}
+    with:
+      fork: python
+      ref: ${{ needs.determine_base.outputs.ref }}
+      benchmarks: ${{ inputs.benchmarks }}
+      individual: true
+      force: false
+      tier2: ${{ inputs.tier2 }}
+      jit: ${{ inputs.jit }}
+      nogil: ${{ inputs.nogil }}
+      clang: ${{ inputs.clang }}
+    secrets: inherit
+
+  generate:
+    uses: ./.github/workflows/_generate.yml
+    with:
+      force: false
+    if: ${{ always() }}
+    needs: [head, base, pystats-head, pystats-base]
+    secrets: inherit
+
+  publish:
+    uses: ./.github/workflows/_publish.yml
+    if: ${{ always() }}
+    needs: [generate]
+    secrets: inherit
+
+  notify:
+    uses: ./.github/workflows/_notify.yml
+    if: ${{ always() }}
+    needs: [publish, determine_base]
+    with:
+      fork: ${{ inputs.fork }}
+      ref: ${{ inputs.ref }}
+      head: ${{ needs.determine_base.outputs.head }}
+      date: ${{ needs.determine_base.outputs.date }}
+      version: ${{ needs.determine_base.outputs.version }}
+      tier2: ${{ inputs.tier2 }}
+      jit: ${{ inputs.jit }}
+      nogil: ${{ inputs.nogil }}
+      clang: ${{ inputs.clang }}
+    secrets: inherit

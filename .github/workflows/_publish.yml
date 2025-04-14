@@ -1,0 +1,36 @@
+# Generated file: !!! DO NOT EDIT !!!
+---
+env:
+  PYPERFORMANCE_HASH: 56d12a8fd7cc1432835965d374929bfa7f6f7a07
+  PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
+name: _publish
+on:
+  workflow_call:
+    inputs:
+      dry_run:
+        type: boolean
+        default: false
+
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run: Do not commit to the repo'
+        type: boolean
+        default: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout benchmarking
+      uses: actions/checkout@v4
+      with:
+        ref: main
+          # This has to be enough depth to handle since the last time we published.
+          # As a rule of thumb, (number of machines * 2, plus the generated stuff) * 2
+        fetch-depth: 20
+        token: ${{ secrets.BENCHMARK_MIRROR }}
+    - name: Mirror
+      run: |
+        git remote add public https://github.com/${{ github.repository }}-public
+        git push -f public main

@@ -1,0 +1,395 @@
+{
+  "_specialized_instructions": [
+    "BINARY_OP_ADD_FLOAT",
+    "BINARY_OP_ADD_INT",
+    "BINARY_OP_ADD_UNICODE",
+    "BINARY_OP_EXTEND",
+    "BINARY_OP_INPLACE_ADD_UNICODE",
+    "BINARY_OP_MULTIPLY_FLOAT",
+    "BINARY_OP_MULTIPLY_INT",
+    "BINARY_OP_SUBSCR_DICT",
+    "BINARY_OP_SUBSCR_GETITEM",
+    "BINARY_OP_SUBSCR_LIST_INT",
+    "BINARY_OP_SUBSCR_STR_INT",
+    "BINARY_OP_SUBSCR_TUPLE_INT",
+    "BINARY_OP_SUBTRACT_FLOAT",
+    "BINARY_OP_SUBTRACT_INT",
+    "CALL_ALLOC_AND_ENTER_INIT",
+    "CALL_BOUND_METHOD_EXACT_ARGS",
+    "CALL_BOUND_METHOD_GENERAL",
+    "CALL_BUILTIN_CLASS",
+    "CALL_BUILTIN_FAST",
+    "CALL_BUILTIN_FAST_WITH_KEYWORDS",
+    "CALL_BUILTIN_O",
+    "CALL_ISINSTANCE",
+    "CALL_KW_BOUND_METHOD",
+    "CALL_KW_NON_PY",
+    "CALL_KW_PY",
+    "CALL_LEN",
+    "CALL_LIST_APPEND",
+    "CALL_METHOD_DESCRIPTOR_FAST",
+    "CALL_METHOD_DESCRIPTOR_FAST_WITH_KEYWORDS",
+    "CALL_METHOD_DESCRIPTOR_NOARGS",
+    "CALL_METHOD_DESCRIPTOR_O",
+    "CALL_NON_PY_GENERAL",
+    "CALL_PY_EXACT_ARGS",
+    "CALL_PY_GENERAL",
+    "CALL_STR_1",
+    "CALL_TUPLE_1",
+    "CALL_TYPE_1",
+    "COMPARE_OP_FLOAT",
+    "COMPARE_OP_INT",
+    "COMPARE_OP_STR",
+    "CONTAINS_OP_DICT",
+    "CONTAINS_OP_SET",
+    "FOR_ITER_GEN",
+    "FOR_ITER_LIST",
+    "FOR_ITER_RANGE",
+    "FOR_ITER_TUPLE",
+    "JUMP_BACKWARD_JIT",
+    "JUMP_BACKWARD_NO_JIT",
+    "LOAD_ATTR_CLASS",
+    "LOAD_ATTR_CLASS_WITH_METACLASS_CHECK",
+    "LOAD_ATTR_GETATTRIBUTE_OVERRIDDEN",
+    "LOAD_ATTR_INSTANCE_VALUE",
+    "LOAD_ATTR_METHOD_LAZY_DICT",
+    "LOAD_ATTR_METHOD_NO_DICT",
+    "LOAD_ATTR_METHOD_WITH_VALUES",
+    "LOAD_ATTR_MODULE",
+    "LOAD_ATTR_NONDESCRIPTOR_NO_DICT",
+    "LOAD_ATTR_NONDESCRIPTOR_WITH_VALUES",
+    "LOAD_ATTR_PROPERTY",
+    "LOAD_ATTR_SLOT",
+    "LOAD_ATTR_WITH_HINT",
+    "LOAD_CONST_IMMORTAL",
+    "LOAD_CONST_MORTAL",
+    "LOAD_GLOBAL_BUILTIN",
+    "LOAD_GLOBAL_MODULE",
+    "LOAD_SUPER_ATTR_ATTR",
+    "LOAD_SUPER_ATTR_METHOD",
+    "RESUME_CHECK",
+    "SEND_GEN",
+    "STORE_ATTR_INSTANCE_VALUE",
+    "STORE_ATTR_SLOT",
+    "STORE_ATTR_WITH_HINT",
+    "STORE_SUBSCR_DICT",
+    "STORE_SUBSCR_LIST_INT",
+    "TO_BOOL_ALWAYS_TRUE",
+    "TO_BOOL_BOOL",
+    "TO_BOOL_INT",
+    "TO_BOOL_LIST",
+    "TO_BOOL_NONE",
+    "TO_BOOL_STR",
+    "UNPACK_SEQUENCE_LIST",
+    "UNPACK_SEQUENCE_TUPLE",
+    "UNPACK_SEQUENCE_TWO_TUPLE"
+  ],
+  "_stats_defines": {
+    "0": [
+      "TOTAL"
+    ],
+    "1": [
+      "VECTOR"
+    ],
+    "2": [
+      "GENERATOR"
+    ],
+    "3": [
+      "LEGACY"
+    ],
+    "4": [
+      "FUNCTION_VECTORCALL"
+    ],
+    "5": [
+      "BUILD_CLASS"
+    ],
+    "6": [
+      "SLOT"
+    ],
+    "7": [
+      "FUNCTION_EX"
+    ],
+    "8": [
+      "API"
+    ],
+    "9": [
+      "METHOD"
+    ],
+    "10": [
+      "KINDS"
+    ]
+  },
+  "_defines": {
+    "0": [
+      "OTHER"
+    ],
+    "1": [
+      "NO_DICT"
+    ],
+    "2": [
+      "OVERRIDDEN"
+    ],
+    "3": [
+      "OUT_OF_VERSIONS"
+    ],
+    "4": [
+      "OUT_OF_RANGE"
+    ],
+    "5": [
+      "EXPECTED_ERROR"
+    ],
+    "6": [
+      "WRONG_NUMBER_ARGUMENTS"
+    ],
+    "7": [
+      "CODE_COMPLEX_PARAMETERS"
+    ],
+    "8": [
+      "CODE_NOT_OPTIMIZED"
+    ],
+    "17": [
+      "LOAD_GLOBAL_NON_DICT",
+      "ATTR_AUDITED_SLOT",
+      "BINARY_OP_MULTIPLY_DIFFERENT_TYPES",
+      "CALL_METH_DESCR_VARARGS",
+      "COMPARE_OP_LIST",
+      "ITER_BYTES",
+      "TO_BOOL_SET"
+    ],
+    "18": [
+      "LOAD_GLOBAL_NON_STRING_OR_SPLIT",
+      "ATTR_NOT_MANAGED_DICT",
+      "SUBSCR_BYTEARRAY_INT",
+      "BINARY_OP_MULTIPLY_OTHER",
+      "CALL_METH_DESCR_VARARGS_KEYWORDS",
+      "COMPARE_OP_SET",
+      "ITER_RANGE",
+      "TO_BOOL_TUPLE"
+    ],
+    "9": [
+      "SUPER_BAD_CLASS",
+      "ATTR_OVERRIDING_DESCRIPTOR",
+      "SUBSCR_ARRAY_INT",
+      "BINARY_OP_ADD_DIFFERENT_TYPES",
+      "UNPACK_SEQUENCE_ITERATOR",
+      "TO_BOOL_BYTEARRAY",
+      "CONTAINS_OP_STR"
+    ],
+    "10": [
+      "SUPER_SHADOWED",
+      "ATTR_NON_OVERRIDING_DESCRIPTOR",
+      "SUBSCR_ARRAY_SLICE",
+      "BINARY_OP_ADD_OTHER",
+      "ITER_GENERATOR",
+      "UNPACK_SEQUENCE_SEQUENCE",
+      "TO_BOOL_BYTES",
+      "CONTAINS_OP_TUPLE"
+    ],
+    "11": [
+      "ATTR_NOT_DESCRIPTOR",
+      "SUBSCR_LIST_SLICE",
+      "BINARY_OP_AND_DIFFERENT_TYPES",
+      "CALL_INSTANCE_METHOD",
+      "ITER_COROUTINE",
+      "TO_BOOL_DICT",
+      "CONTAINS_OP_LIST"
+    ],
+    "12": [
+      "ATTR_METHOD",
+      "SUBSCR_BUFFER_INT",
+      "BINARY_OP_AND_INT",
+      "CALL_CMETHOD",
+      "COMPARE_OP_DIFFERENT_TYPES",
+      "ITER_ASYNC_GENERATOR",
+      "TO_BOOL_FLOAT",
+      "CONTAINS_OP_USER_CLASS"
+    ],
+    "13": [
+      "ATTR_MUTABLE_CLASS",
+      "SUBSCR_BUFFER_SLICE",
+      "BINARY_OP_AND_OTHER",
+      "CALL_CFUNC_VARARGS",
+      "COMPARE_OP_STRING",
+      "ITER_LIST",
+      "TO_BOOL_MAPPING"
+    ],
+    "14": [
+      "ATTR_PROPERTY",
+      "BINARY_OP_FLOOR_DIVIDE",
+      "CALL_CFUNC_VARARGS_KEYWORDS",
+      "COMPARE_OP_BIG_INT",
+      "ITER_TUPLE",
+      "TO_BOOL_MEMORY_VIEW"
+    ],
+    "15": [
+      "ATTR_NON_OBJECT_SLOT",
+      "BINARY_OP_LSHIFT",
+      "CALL_CFUNC_NOARGS",
+      "COMPARE_OP_BYTES",
+      "ITER_SET",
+      "TO_BOOL_NUMBER"
+    ],
+    "16": [
+      "ATTR_READ_ONLY",
+      "BINARY_OP_MATRIX_MULTIPLY",
+      "CALL_CFUNC_METHOD_FASTCALL_KEYWORDS",
+      "COMPARE_OP_TUPLE",
+      "ITER_STRING",
+      "TO_BOOL_SEQUENCE"
+    ],
+    "19": [
+      "ATTR_NON_STRING",
+      "SUBSCR_BYTEARRAY_SLICE",
+      "BINARY_OP_OR",
+      "CALL_METH_DESCR_METHOD_FASTCALL_KEYWORDS",
+      "COMPARE_OP_BOOL",
+      "ITER_ITERTOOLS"
+    ],
+    "20": [
+      "ATTR_MODULE_ATTR_NOT_FOUND",
+      "SUBSCR_PY_SIMPLE",
+      "BINARY_OP_POWER",
+      "CALL_BAD_CALL_FLAGS",
+      "COMPARE_OP_BASEOBJECT",
+      "ITER_DICT_KEYS"
+    ],
+    "21": [
+      "ATTR_SHADOWED",
+      "SUBSCR_PY_OTHER",
+      "BINARY_OP_REMAINDER",
+      "CALL_INIT_NOT_PYTHON",
+      "COMPARE_OP_FLOAT_LONG",
+      "ITER_DICT_ITEMS"
+    ],
+    "22": [
+      "ATTR_BUILTIN_CLASS_METHOD",
+      "SUBSCR_DICT_SUBCLASS_NO_OVERRIDE",
+      "BINARY_OP_RSHIFT",
+      "CALL_PEP_523",
+      "COMPARE_OP_LONG_FLOAT",
+      "ITER_DICT_VALUES"
+    ],
+    "23": [
+      "ATTR_CLASS_METHOD_OBJ",
+      "SUBSCR_NOT_HEAP_TYPE",
+      "BINARY_OP_SUBTRACT_DIFFERENT_TYPES",
+      "CALL_BOUND_METHOD",
+      "ITER_ENUMERATE"
+    ],
+    "24": [
+      "ATTR_OBJECT_SLOT",
+      "BINARY_OP_SUBTRACT_OTHER",
+      "ITER_MAP"
+    ],
+    "26": [
+      "ATTR_INSTANCE_ATTRIBUTE",
+      "BINARY_OP_TRUE_DIVIDE_FLOAT",
+      "CALL_CLASS_MUTABLE",
+      "ITER_SEQ_ITER"
+    ],
+    "27": [
+      "ATTR_METACLASS_ATTRIBUTE",
+      "BINARY_OP_TRUE_DIVIDE_OTHER",
+      "ITER_REVERSED_LIST"
+    ],
+    "28": [
+      "ATTR_PROPERTY_NOT_PY_FUNCTION",
+      "BINARY_OP_XOR",
+      "CALL_METHOD_WRAPPER",
+      "ITER_CALLABLE"
+    ],
+    "29": [
+      "ATTR_NOT_IN_KEYS",
+      "BINARY_OP_OR_INT",
+      "CALL_OPERATOR_WRAPPER",
+      "ITER_ASCII_STRING"
+    ],
+    "30": [
+      "ATTR_NOT_IN_DICT",
+      "BINARY_OP_OR_DIFFERENT_TYPES",
+      "CALL_INIT_NOT_SIMPLE",
+      "ITER_ASYNC_GENERATOR_SEND"
+    ],
+    "31": [
+      "ATTR_CLASS_ATTR_SIMPLE",
+      "BINARY_OP_XOR_INT",
+      "CALL_METACLASS"
+    ],
+    "32": [
+      "ATTR_CLASS_ATTR_DESCRIPTOR",
+      "BINARY_OP_XOR_DIFFERENT_TYPES",
+      "CALL_INIT_NOT_INLINE_VALUES"
+    ],
+    "33": [
+      "ATTR_BUILTIN_CLASS_METHOD_OBJ",
+      "BINARY_OP_SUBSCR"
+    ],
+    "34": [
+      "ATTR_METACLASS_OVERRIDDEN",
+      "BINARY_OP_SUBSCR_LIST_SLICE"
+    ],
+    "35": [
+      "ATTR_SPLIT_DICT",
+      "BINARY_OP_SUBSCR_TUPLE_SLICE"
+    ],
+    "36": [
+      "ATTR_DESCR_NOT_DEFERRED",
+      "BINARY_OP_SUBSCR_STRING_SLICE"
+    ],
+    "25": [
+      "BINARY_OP_TRUE_DIVIDE_DIFFERENT_TYPES",
+      "ITER_ZIP"
+    ],
+    "37": [
+      "BINARY_OP_SUBSCR_NOT_HEAP_TYPE"
+    ],
+    "38": [
+      "BINARY_OP_SUBSCR_OTHER_SLICE"
+    ],
+    "39": [
+      "BINARY_OP_SUBSCR_MAPPINGPROXY"
+    ],
+    "40": [
+      "BINARY_OP_SUBSCR_RE_MATCH"
+    ],
+    "41": [
+      "BINARY_OP_SUBSCR_ARRAY"
+    ],
+    "42": [
+      "BINARY_OP_SUBSCR_DEQUE"
+    ],
+    "43": [
+      "BINARY_OP_SUBSCR_ENUMDICT"
+    ],
+    "44": [
+      "BINARY_OP_SUBSCR_STACKSUMMARY"
+    ],
+    "45": [
+      "BINARY_OP_SUBSCR_DEFAULTDICT"
+    ],
+    "46": [
+      "BINARY_OP_SUBSCR_COUNTER"
+    ],
+    "47": [
+      "BINARY_OP_SUBSCR_ORDEREDDICT"
+    ],
+    "48": [
+      "BINARY_OP_SUBSCR_BYTES"
+    ],
+    "49": [
+      "BINARY_OP_SUBSCR_STRUCTTIME"
+    ],
+    "50": [
+      "BINARY_OP_SUBSCR_RANGE"
+    ]
+  },
+  "metadata": {
+    "commit_id": "4300c89ec",
+    "commit_fork": "iritkatriel",
+    "commit_branch": "stats",
+    "commit_date": "2025-04-06T23:23:53+01:00",
+    "commit_merge_base": "7bb1e1a23634bae81bf76fdb34e9f9f7e59b3793",
+    "benchmark_hash": "dcfded",
+    "github_actor": "iritkatriel"
+  }
+}

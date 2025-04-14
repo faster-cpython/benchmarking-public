@@ -2,7 +2,7 @@
 
 - fork: python/f963239ff1f986742d4c
 - version: 3.14.0a5+
-- config: 
+- config: CLANG
 - commit hash: [f963239](https://github.com/python/cpython/commit/f963239)
 - commit date: 2025-02-25T12:03:28-05:00
 - commit merge base: [c5f925c8c948736bd64652918b4e0186b91abbb5](https://github.com/python/cpython/commit/c5f925c8c948736bd64652918b4e0186b91abbb5)

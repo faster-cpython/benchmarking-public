@@ -2,7 +2,7 @@
 
 - fork: Fidget-Spinner/tail_call
 - version: 3.14.0a4+
-- config: 
+- config: CLANG
 - commit hash: [df5d01c](https://github.com/Fidget%2dSpinner/cpython/commit/df5d01c)
 - commit date: 2025-01-16T20:44:01+08:00
 - commit merge base: [313b96eb8b8d0ad3bac58d633822a0a3705ce60b](https://github.com/python/cpython/commit/313b96eb8b8d0ad3bac58d633822a0a3705ce60b)

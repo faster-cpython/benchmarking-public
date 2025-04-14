@@ -2,7 +2,7 @@
 
 - fork: python/a3990df6121880e8c678
 - version: 3.14.0a5+
-- config: 
+- config: CLANG
 - commit hash: [a3990df](https://github.com/python/cpython/commit/a3990df)
 - commit date: 2025-03-08T16:37:05-05:00
 - commit merge base: [edd1eca336976b3431cf636aea87f08a40c94935](https://github.com/python/cpython/commit/edd1eca336976b3431cf636aea87f08a40c94935)

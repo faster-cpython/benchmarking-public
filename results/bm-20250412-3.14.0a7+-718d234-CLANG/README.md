@@ -2,7 +2,7 @@
 
 - fork: python/718d234e4086a65d78c8
 - version: 3.14.0a7+
-- config: 
+- config: CLANG
 - commit hash: [718d234](https://github.com/python/cpython/commit/718d234)
 - commit date: 2025-04-12T22:35:28+00:00
 - commit merge base: [f2f86d3f459a89273ea22389bb57eed402908302](https://github.com/python/cpython/commit/f2f86d3f459a89273ea22389bb57eed402908302)

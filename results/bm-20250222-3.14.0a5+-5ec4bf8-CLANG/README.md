@@ -2,7 +2,7 @@
 
 - fork: python/5ec4bf86b7f4455432ae
 - version: 3.14.0a5+
-- config: 
+- config: CLANG
 - commit hash: [5ec4bf8](https://github.com/python/cpython/commit/5ec4bf8)
 - commit date: 2025-02-22T17:54:43+00:00
 - commit merge base: [3cc9e867eba1ed139cf28c74b4a788bcc4801394](https://github.com/python/cpython/commit/3cc9e867eba1ed139cf28c74b4a788bcc4801394)

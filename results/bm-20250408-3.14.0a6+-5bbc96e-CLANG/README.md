@@ -2,7 +2,7 @@
 
 - fork: faster-cpython/tos_caching_1
 - version: 3.14.0a6+
-- config: 
+- config: CLANG
 - commit hash: [5bbc96e](https://github.com/faster%2dcpython/cpython/commit/5bbc96e)
 - commit date: 2025-04-08T14:26:05+01:00
 - commit merge base: [275056a7fdcbe36aaac494b4183ae59943a338eb](https://github.com/python/cpython/commit/275056a7fdcbe36aaac494b4183ae59943a338eb)

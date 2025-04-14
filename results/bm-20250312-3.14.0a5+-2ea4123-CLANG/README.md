@@ -2,7 +2,7 @@
 
 - fork: brandtbucher/msvc_musttail
 - version: 3.14.0a5+
-- config: 
+- config: CLANG
 - commit hash: [2ea4123](https://github.com/brandtbucher/cpython/commit/2ea4123)
 - commit date: 2025-03-12T11:03:59-07:00
 - commit merge base: [f963239ff1f986742d4c6bab2ab7b73f5a4047f6](https://github.com/python/cpython/commit/f963239ff1f986742d4c6bab2ab7b73f5a4047f6)

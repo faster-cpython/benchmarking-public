@@ -2,7 +2,7 @@
 
 - fork: brandtbucher/keep_stack_pointer
 - version: 3.14.0a6+
-- config: 
+- config: CLANG
 - commit hash: [b3d84fd](https://github.com/brandtbucher/cpython/commit/b3d84fd)
 - commit date: 2025-03-26T14:29:09-07:00
 - commit merge base: [4b3d5b604210f68005ef64d5346ca169385f5acf](https://github.com/python/cpython/commit/4b3d5b604210f68005ef64d5346ca169385f5acf)

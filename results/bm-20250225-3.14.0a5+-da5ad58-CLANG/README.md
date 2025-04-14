@@ -2,7 +2,7 @@
 
 - fork: Fidget-Spinner/disable_tailcall
 - version: 3.14.0a5+
-- config: 
+- config: CLANG
 - commit hash: [da5ad58](https://github.com/Fidget%2dSpinner/cpython/commit/da5ad58)
 - commit date: 2025-02-25T23:32:59+08:00
 - commit merge base: [5ec4bf86b7f4455432aebace996ef390ae3e9302](https://github.com/python/cpython/commit/5ec4bf86b7f4455432aebace996ef390ae3e9302)

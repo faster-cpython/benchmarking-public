@@ -2,7 +2,7 @@
 
 - fork: Fidget-Spinner/grand_unified_tailca
 - version: 3.14.0a5+
-- config: JIT
+- config: CLANG,JIT
 - commit hash: [d07479b](https://github.com/Fidget%2dSpinner/cpython/commit/d07479b)
 - commit date: 2025-02-13T02:47:37+08:00
 - commit merge base: [1b27f36eb0ef146aa60b261a1cffcc6fd55c0e88](https://github.com/python/cpython/commit/1b27f36eb0ef146aa60b261a1cffcc6fd55c0e88)

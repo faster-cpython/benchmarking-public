@@ -2,7 +2,7 @@
 
 - fork: mdboom/msvc_musttail_clang_
 - version: 3.14.0a6+
-- config: 
+- config: CLANG
 - commit hash: [18326e0](https://github.com/mdboom/cpython/commit/18326e0)
 - commit date: 2025-04-01T10:09:15-04:00
 - commit merge base: [3b3720f1a26ab34377542b48eb6a6565f78ff892](https://github.com/python/cpython/commit/3b3720f1a26ab34377542b48eb6a6565f78ff892)

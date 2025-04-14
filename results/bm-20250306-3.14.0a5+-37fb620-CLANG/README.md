@@ -2,7 +2,7 @@
 
 - fork: Fidget-Spinner/clang_hot
 - version: 3.14.0a5+
-- config: 
+- config: CLANG
 - commit hash: [37fb620](https://github.com/Fidget%2dSpinner/cpython/commit/37fb620)
 - commit date: 2025-03-06T03:29:24+08:00
 - commit merge base: [d7bb7c781771650a4edcdee9dfd1ab9c4083e9fd](https://github.com/python/cpython/commit/d7bb7c781771650a4edcdee9dfd1ab9c4083e9fd)

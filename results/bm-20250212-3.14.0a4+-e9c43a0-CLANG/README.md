@@ -2,7 +2,7 @@
 
 - fork: mdboom/early_tail_call_load
 - version: 3.14.0a4+
-- config: 
+- config: CLANG
 - commit hash: [e9c43a0](https://github.com/mdboom/cpython/commit/e9c43a0)
 - commit date: 2025-02-12T17:09:18-06:00
 - commit merge base: [d05053a203d922c8056f12ef3c9338229fdce043](https://github.com/python/cpython/commit/d05053a203d922c8056f12ef3c9338229fdce043)

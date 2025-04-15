@@ -42,3 +42,11 @@
 - [📄table](bm-20250415-linux-x86_64-mdboom-pyframe_clearexceptc-3.14.0a7%2B-89a680f-vs-3.13.0.md)
 - [📈time plot](bm-20250415-linux-x86_64-mdboom-pyframe_clearexceptc-3.14.0a7%2B-89a680f-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.004x slower (HPT: reliability of 99.86%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250415-linux-x86_64-mdboom-pyframe_clearexceptc-3.14.0a7%2B-89a680f-vs-base-mem.svg)
+- [📄table](bm-20250415-linux-x86_64-mdboom-pyframe_clearexceptc-3.14.0a7%2B-89a680f-vs-base.md)
+- [📈time plot](bm-20250415-linux-x86_64-mdboom-pyframe_clearexceptc-3.14.0a7%2B-89a680f-vs-base.svg)
+

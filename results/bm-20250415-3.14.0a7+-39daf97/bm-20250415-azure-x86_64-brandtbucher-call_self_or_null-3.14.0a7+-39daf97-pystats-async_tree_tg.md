@@ -3920,48 +3920,6 @@ specialized instruction deoptimizes.
 
 </details>
 
-### IMPORT_FROM
-
-<details>
-<summary> Successors and predecessors for IMPORT_FROM </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">IMPORT_NAME</td>
-<td align="right">1</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">STORE_FAST</td>
-<td align="right">1</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
 ### IMPORT_NAME
 
 <details>
@@ -4059,63 +4017,6 @@ specialized instruction deoptimizes.
 <td align="left">STORE_FAST</td>
 <td align="right">64</td>
 <td align="right">16.7%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### JUMP_BACKWARD
-
-<details>
-<summary> Successors and predecessors for JUMP_BACKWARD </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">POP_TOP</td>
-<td align="right">3</td>
-<td align="right">50.0%</td>
-</tr>
-<tr>
-<td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">1</td>
-<td align="right">16.7%</td>
-</tr>
-<tr>
-<td align="left">STORE_ATTR</td>
-<td align="right">1</td>
-<td align="right">16.7%</td>
-</tr>
-<tr>
-<td align="left">STORE_FAST</td>
-<td align="right">1</td>
-<td align="right">16.7%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">6</td>
-<td align="right">100.0%</td>
 </tr>
 </tbody>
 </table>
@@ -4774,48 +4675,6 @@ specialized instruction deoptimizes.
 <td align="left">LOAD_ATTR_INSTANCE_VALUE</td>
 <td align="right">7,166,372</td>
 <td align="right">10.9%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### LOAD_FAST_CHECK
-
-<details>
-<summary> Successors and predecessors for LOAD_FAST_CHECK </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">JUMP_FORWARD</td>
-<td align="right">1</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">SWAP</td>
-<td align="right">1</td>
-<td align="right">100.0%</td>
 </tr>
 </tbody>
 </table>
@@ -5957,48 +5816,6 @@ specialized instruction deoptimizes.
 
 </details>
 
-### STORE_FAST_LOAD_FAST
-
-<details>
-<summary> Successors and predecessors for STORE_FAST_LOAD_FAST </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">COPY</td>
-<td align="right">1</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_ATTR</td>
-<td align="right">1</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
 ### STORE_FAST_STORE_FAST
 
 <details>
@@ -6049,48 +5866,6 @@ specialized instruction deoptimizes.
 <td align="left">LOAD_GLOBAL</td>
 <td align="right">22</td>
 <td align="right">11.5%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### STORE_GLOBAL
-
-<details>
-<summary> Successors and predecessors for STORE_GLOBAL </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">CALL</td>
-<td align="right">1</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_CONST</td>
-<td align="right">1</td>
-<td align="right">100.0%</td>
 </tr>
 </tbody>
 </table>
@@ -8035,48 +7810,6 @@ specialized instruction deoptimizes.
 
 </details>
 
-### COMPARE_OP_STR
-
-<details>
-<summary> Successors and predecessors for COMPARE_OP_STR </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_CONST_IMMORTAL</td>
-<td align="right">1</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">1</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
 ### CONTAINS_OP_DICT
 
 <details>
@@ -8268,58 +8001,6 @@ specialized instruction deoptimizes.
 <td align="left">POP_ITER</td>
 <td align="right">598,464</td>
 <td align="right">5.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### FOR_ITER_TUPLE
-
-<details>
-<summary> Successors and predecessors for FOR_ITER_TUPLE </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">GET_ITER</td>
-<td align="right">1</td>
-<td align="right">50.0%</td>
-</tr>
-<tr>
-<td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">1</td>
-<td align="right">50.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">POP_ITER</td>
-<td align="right">1</td>
-<td align="right">50.0%</td>
-</tr>
-<tr>
-<td align="left">STORE_FAST</td>
-<td align="right">1</td>
-<td align="right">50.0%</td>
 </tr>
 </tbody>
 </table>
@@ -9613,48 +9294,6 @@ specialized instruction deoptimizes.
 
 </details>
 
-### TO_BOOL_ALWAYS_TRUE
-
-<details>
-<summary> Successors and predecessors for TO_BOOL_ALWAYS_TRUE </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">TO_BOOL</td>
-<td align="right">1</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">1</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
 ### TO_BOOL_BOOL
 
 <details>
@@ -9958,6 +9597,367 @@ specialized instruction deoptimizes.
 <td align="left">LOAD_FAST_BORROW</td>
 <td align="right">63</td>
 <td align="right">25.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### IMPORT_FROM
+
+<details>
+<summary> Successors and predecessors for IMPORT_FROM </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">IMPORT_NAME</td>
+<td align="right">1</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">STORE_FAST</td>
+<td align="right">1</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### JUMP_BACKWARD
+
+<details>
+<summary> Successors and predecessors for JUMP_BACKWARD </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">POP_TOP</td>
+<td align="right">3</td>
+<td align="right">50.0%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">1</td>
+<td align="right">16.7%</td>
+</tr>
+<tr>
+<td align="left">STORE_ATTR</td>
+<td align="right">1</td>
+<td align="right">16.7%</td>
+</tr>
+<tr>
+<td align="left">STORE_FAST</td>
+<td align="right">1</td>
+<td align="right">16.7%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">JUMP_BACKWARD_NO_JIT</td>
+<td align="right">6</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### LOAD_FAST_CHECK
+
+<details>
+<summary> Successors and predecessors for LOAD_FAST_CHECK </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">JUMP_FORWARD</td>
+<td align="right">1</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">SWAP</td>
+<td align="right">1</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### STORE_FAST_LOAD_FAST
+
+<details>
+<summary> Successors and predecessors for STORE_FAST_LOAD_FAST </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">COPY</td>
+<td align="right">1</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_ATTR</td>
+<td align="right">1</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### STORE_GLOBAL
+
+<details>
+<summary> Successors and predecessors for STORE_GLOBAL </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">CALL</td>
+<td align="right">1</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_CONST</td>
+<td align="right">1</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### COMPARE_OP_STR
+
+<details>
+<summary> Successors and predecessors for COMPARE_OP_STR </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_CONST_IMMORTAL</td>
+<td align="right">1</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">POP_JUMP_IF_FALSE</td>
+<td align="right">1</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### FOR_ITER_TUPLE
+
+<details>
+<summary> Successors and predecessors for FOR_ITER_TUPLE </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">GET_ITER</td>
+<td align="right">1</td>
+<td align="right">50.0%</td>
+</tr>
+<tr>
+<td align="left">JUMP_BACKWARD_NO_JIT</td>
+<td align="right">1</td>
+<td align="right">50.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">POP_ITER</td>
+<td align="right">1</td>
+<td align="right">50.0%</td>
+</tr>
+<tr>
+<td align="left">STORE_FAST</td>
+<td align="right">1</td>
+<td align="right">50.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### TO_BOOL_ALWAYS_TRUE
+
+<details>
+<summary> Successors and predecessors for TO_BOOL_ALWAYS_TRUE </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">TO_BOOL</td>
+<td align="right">1</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">POP_JUMP_IF_FALSE</td>
+<td align="right">1</td>
+<td align="right">100.0%</td>
 </tr>
 </tbody>
 </table>
@@ -11459,7 +11459,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">53,057,893</td>
+<td align="right">53,057,895</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -11479,12 +11479,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">184,702,990</td>
+<td align="right">184,702,993</td>
 <td align="right">23.1%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">246,246,915</td>
+<td align="right">246,246,923</td>
 <td align="right">27.4%</td>
 </tr>
 <tr>
@@ -11499,12 +11499,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">101,412,822</td>
+<td align="right">101,412,828</td>
 <td align="right">12.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">155,290,005</td>
+<td align="right">155,290,007</td>
 <td align="right">17.3%</td>
 </tr>
 <tr>
@@ -11529,27 +11529,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">27,480,358</td>
+<td align="right">27,480,352</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">395</td>
+<td align="right">401</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">466</td>
+<td align="right">477</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">9,717,244</td>
+<td align="right">9,717,245</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">149</td>
+<td align="right">148</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -11590,9 +11590,9 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">14,273</td>
 <td align="right">389</td>
-<td align="right">380,278,317</td>
-<td align="right">30,388,749</td>
-<td align="right">29,366,262</td>
+<td align="right">380,238,800</td>
+<td align="right">30,398,393</td>
+<td align="right">29,356,618</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -11736,4 +11736,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-04-15
+Stats gathered on: 2025-04-16

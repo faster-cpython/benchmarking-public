@@ -6018,7 +6018,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">48,000,823</td>
+<td align="right">48,000,820</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -6038,12 +6038,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">48,201,246</td>
+<td align="right">48,201,243</td>
 <td align="right">10.3%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">180,212,953</td>
+<td align="right">180,212,944</td>
 <td align="right">26.8%</td>
 </tr>
 <tr>
@@ -6058,12 +6058,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">36,032,230</td>
+<td align="right">36,032,223</td>
 <td align="right">7.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">12,032,303</td>
+<td align="right">12,032,302</td>
 <td align="right">1.8%</td>
 </tr>
 <tr>
@@ -6088,27 +6088,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">194</td>
+<td align="right">197</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">26</td>
+<td align="right">23</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">19</td>
+<td align="right">11</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">12,230,778</td>
+<td align="right">12,230,780</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">2</td>
+<td align="right">0</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -6149,7 +6149,7 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">5,880</td>
 <td align="right">160</td>
-<td align="right">138,711,500</td>
+<td align="right">138,711,596</td>
 <td align="right">5,492,960</td>
 <td align="right">11,429,300</td>
 </tr>
@@ -6295,4 +6295,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-04-15
+Stats gathered on: 2025-04-16

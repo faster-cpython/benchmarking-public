@@ -5477,7 +5477,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">96,153,662</td>
+<td align="right">96,153,665</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -5497,12 +5497,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">170,205,062</td>
+<td align="right">170,205,064</td>
 <td align="right">58.3%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">270,029,404</td>
+<td align="right">270,029,409</td>
 <td align="right">85.2%</td>
 </tr>
 <tr>
@@ -5517,12 +5517,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">101,991,122</td>
+<td align="right">101,991,124</td>
 <td align="right">34.9%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">21,197,300</td>
+<td align="right">21,197,299</td>
 <td align="right">6.7%</td>
 </tr>
 <tr>
@@ -5547,17 +5547,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">198</td>
+<td align="right">196</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">22</td>
+<td align="right">24</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">8</td>
+<td align="right">15</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -5754,4 +5754,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-04-15
+Stats gathered on: 2025-04-16

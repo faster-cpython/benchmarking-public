@@ -5629,12 +5629,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">4,554,194</td>
+<td align="right">4,554,191</td>
 <td align="right">33.7%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">6,317,536</td>
+<td align="right">6,317,533</td>
 <td align="right">41.3%</td>
 </tr>
 <tr>
@@ -5649,12 +5649,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">3,209,838</td>
+<td align="right">3,209,835</td>
 <td align="right">23.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">2,151,216</td>
+<td align="right">2,151,213</td>
 <td align="right">14.1%</td>
 </tr>
 <tr>
@@ -5679,12 +5679,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">346</td>
+<td align="right">349</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">34</td>
+<td align="right">31</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -5886,4 +5886,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-04-15
+Stats gathered on: 2025-04-16

@@ -10658,7 +10658,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">134,308,063</td>
+<td align="right">134,308,065</td>
 <td align="right">27.5%</td>
 </tr>
 <tr>
@@ -10668,7 +10668,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Allocations to 4 kbytes</td>
-<td align="right">203</td>
+<td align="right">205</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -10678,7 +10678,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">134,307,876</td>
+<td align="right">134,307,882</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10698,12 +10698,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">460,338,200</td>
+<td align="right">460,338,202</td>
 <td align="right">37.0%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">608,469,459</td>
+<td align="right">608,469,463</td>
 <td align="right">36.1%</td>
 </tr>
 <tr>
@@ -10718,12 +10718,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">200,665,325</td>
+<td align="right">200,665,343</td>
 <td align="right">16.1%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">198,379,757</td>
+<td align="right">198,379,773</td>
 <td align="right">11.8%</td>
 </tr>
 <tr>
@@ -10748,27 +10748,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">5,533</td>
+<td align="right">5,506</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">327</td>
+<td align="right">354</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">411</td>
+<td align="right">421</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">12,119,729</td>
+<td align="right">12,119,746</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">111</td>
+<td align="right">94</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -10809,7 +10809,7 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">3,000</td>
 <td align="right">160</td>
-<td align="right">43,335,390</td>
+<td align="right">43,335,330</td>
 <td align="right">9,765,300</td>
 <td align="right">126,120</td>
 </tr>
@@ -10955,4 +10955,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-04-15
+Stats gathered on: 2025-04-16

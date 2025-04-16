@@ -9853,7 +9853,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">19,333,871</td>
+<td align="right">19,334,574</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -9869,22 +9869,22 @@ other names.
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
 <td align="right">124,573,480</td>
-<td align="right">59.7%</td>
+<td align="right">59.6%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">29,523,958</td>
+<td align="right">29,561,358</td>
 <td align="right">16.4%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">46,618,741</td>
+<td align="right">46,656,819</td>
 <td align="right">22.3%</td>
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
 <td align="right">9,094,500</td>
-<td align="right">5.1%</td>
+<td align="right">5.0%</td>
 </tr>
 <tr>
 <td align="left">Interpreter immortal decrefs</td>
@@ -9893,12 +9893,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">36,832,455</td>
+<td align="right">36,869,882</td>
 <td align="right">20.5%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">30,828,377</td>
+<td align="right">30,846,353</td>
 <td align="right">14.8%</td>
 </tr>
 <tr>
@@ -9923,27 +9923,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">1,314,473</td>
+<td align="right">1,305,167</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">186,727</td>
+<td align="right">196,033</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">292,973</td>
+<td align="right">340,048</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">1,592,893</td>
+<td align="right">1,555,399</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">107,007</td>
+<td align="right">144,501</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -10130,4 +10130,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-04-15
+Stats gathered on: 2025-04-16

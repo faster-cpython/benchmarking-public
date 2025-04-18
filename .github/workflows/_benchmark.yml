@@ -108,11 +108,6 @@ jobs:
       run: |
         git gc
     - uses: fregante/setup-git-user@v2
-    - name: Setup system Python
-      if: ${{ runner.arch == 'X64' }}
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
     - name: Checkout CPython
       uses: actions/checkout@v4
       with:
@@ -158,7 +153,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         cd cpython
-        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }}
+        ./configure --enable-option-checking=fatal ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }} ${PYTHON_CONFIGURE_FLAGS:-}
         make ${{ runner.arch == 'ARM64' && '-j' || '-j4' }}
         ./python -VV
     - name: Install pyperformance
@@ -168,7 +163,7 @@ jobs:
     - name: Tune system
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system ${{ inputs.perf && 'reset' || 'tune' }}
+        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system ${{ inputs.perf && 'reset' || 'tune ${CPU_AFFINITY:+--affinity="$CPU_AFFINITY"}' }}
     - name: Tune for (Linux) perf
       if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
       run: |
@@ -179,6 +174,10 @@ jobs:
       run: |
         rm -rf ~/.debug/*
         venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} --run_id ${{ github.run_id }}
+    - name: Untune system
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system reset
       # Pull again, since another job may have committed results in the meantime
     - name: Pull benchmarking
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
@@ -277,11 +276,9 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         cd cpython
-        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }}
+        ./configure --enable-option-checking=fatal ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }} ${PYTHON_CONFIGURE_FLAGS:-}
         make -j4
         ./python.exe -VV
-      # On macos ARM64, actions/setup-python isn't available, so we rely on a
-      # pre-installed homebrew one, used through a venv
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
@@ -541,11 +538,6 @@ jobs:
       run: |
         git gc
     - uses: fregante/setup-git-user@v2
-    - name: Setup system Python
-      if: ${{ runner.arch == 'X64' }}
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
     - name: Checkout CPython
       uses: actions/checkout@v4
       with:
@@ -591,7 +583,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         cd cpython
-        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }}
+        ./configure --enable-option-checking=fatal ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }} ${PYTHON_CONFIGURE_FLAGS:-}
         make ${{ runner.arch == 'ARM64' && '-j' || '-j4' }}
         ./python -VV
     - name: Install pyperformance
@@ -601,7 +593,7 @@ jobs:
     - name: Tune system
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system ${{ inputs.perf && 'reset' || 'tune' }}
+        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system ${{ inputs.perf && 'reset' || 'tune ${CPU_AFFINITY:+--affinity="$CPU_AFFINITY"}' }}
     - name: Tune for (Linux) perf
       if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
       run: |
@@ -612,6 +604,10 @@ jobs:
       run: |
         rm -rf ~/.debug/*
         venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} --run_id ${{ github.run_id }}
+    - name: Untune system
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system reset
       # Pull again, since another job may have committed results in the meantime
     - name: Pull benchmarking
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
@@ -662,11 +658,6 @@ jobs:
       run: |
         git gc
     - uses: fregante/setup-git-user@v2
-    - name: Setup system Python
-      if: ${{ runner.arch == 'X64' }}
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
     - name: Checkout CPython
       uses: actions/checkout@v4
       with:
@@ -712,7 +703,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         cd cpython
-        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }}
+        ./configure --enable-option-checking=fatal ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }} ${PYTHON_CONFIGURE_FLAGS:-}
         make ${{ runner.arch == 'ARM64' && '-j' || '-j4' }}
         ./python -VV
     - name: Install pyperformance
@@ -722,7 +713,7 @@ jobs:
     - name: Tune system
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system ${{ inputs.perf && 'reset' || 'tune' }}
+        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system ${{ inputs.perf && 'reset' || 'tune ${CPU_AFFINITY:+--affinity="$CPU_AFFINITY"}' }}
     - name: Tune for (Linux) perf
       if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
       run: |
@@ -733,6 +724,10 @@ jobs:
       run: |
         rm -rf ~/.debug/*
         venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} --run_id ${{ github.run_id }}
+    - name: Untune system
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system reset
       # Pull again, since another job may have committed results in the meantime
     - name: Pull benchmarking
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}

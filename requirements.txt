@@ -1,1 +1,1 @@
-bench_runner==1.6.4
+bench_runner==1.7.1

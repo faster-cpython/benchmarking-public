@@ -135,7 +135,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         cd cpython
-        ./configure --enable-pystats --prefix=$PWD/install ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }}
+        ./configure --enable-option-checking=fatal --enable-pystats --prefix=$PWD/install ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }}
         make -j4
         make install
     - name: Install pyperformance into the system python

@@ -659,7 +659,7 @@
 </g>
 </g>
 <g stroke="#1f77b4" stroke-opacity=".9">
-<path d="m71.4 649 58.1-11.1 54.3-4.42 55.5-0.511 57-7.01 55.9-4.55 55-7.89 57.1-0.199 55.4 5.15 56.4-2.41 55.7 0.145" clip-path="url(#l)" fill="none" stroke-dasharray="1.5,2.475" stroke-width="1.5"/>
+<path d="m71.4 649 58.1-11.1 54.3-4.42 55.5-0.511 57-7.01 55.9-4.55 55-7.89 57.1-0.199 55.4 5.15 56.4-2.41 55.7 0.145 54.4 5.07" clip-path="url(#l)" fill="none" stroke-dasharray="1.5,2.475" stroke-width="1.5"/>
 <g clip-path="url(#l)" fill="#1f77b4" fill-opacity=".9">
 <use x="71.388926" y="648.564762" xlink:href="#a"/>
 <use x="129.493044" y="637.479529" xlink:href="#a"/>
@@ -672,6 +672,7 @@
 <use x="519.710665" y="618.049271" xlink:href="#a"/>
 <use x="576.121928" y="615.64399" xlink:href="#a"/>
 <use x="631.863991" y="615.789088" xlink:href="#a"/>
+<use x="686.256387" y="620.862624" xlink:href="#a"/>
 </g>
 </g>
 <g stroke="#9467bd" stroke-opacity=".9">

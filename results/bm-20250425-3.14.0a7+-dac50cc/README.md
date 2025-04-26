@@ -42,6 +42,14 @@
 - [📄table](bm-20250425-arminc-aarch64-JelleZijlstra-sunder_io-3.14.0a7%2B-dac50cc-vs-3.13.0.md)
 - [📈time plot](bm-20250425-arminc-aarch64-JelleZijlstra-sunder_io-3.14.0a7%2B-dac50cc-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.002x faster (HPT: reliability of 75.82%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250425-arminc-aarch64-JelleZijlstra-sunder_io-3.14.0a7%2B-dac50cc-vs-base-mem.svg)
+- [📄table](bm-20250425-arminc-aarch64-JelleZijlstra-sunder_io-3.14.0a7%2B-dac50cc-vs-base.md)
+- [📈time plot](bm-20250425-arminc-aarch64-JelleZijlstra-sunder_io-3.14.0a7%2B-dac50cc-vs-base.svg)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14673719246)

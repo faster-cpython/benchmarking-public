@@ -8,6 +8,15 @@
 - commit merge base: [844596c09fc812a58ac1b381b51bee12d327da31](https://github.com/python/cpython/commit/844596c09fc812a58ac1b381b51bee12d327da31)
 - ref: get_iter_stats
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250428-azure-x86_64-faster%252dcpython-get_iter_stats-3.14.0a7%2B-a455573-pystats.json)
+- [pystats table](bm-20250428-azure-x86_64-faster%252dcpython-get_iter_stats-3.14.0a7%2B-a455573-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20250428-azure-x86_64-faster%252dcpython-get_iter_stats-3.14.0a7%2B-a455573-pystats-vs-base.md)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14713743645)

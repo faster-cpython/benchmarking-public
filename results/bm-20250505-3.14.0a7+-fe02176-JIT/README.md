@@ -13,6 +13,10 @@
 - [pystats raw](bm-20250505-azure-x86_64-brandtbucher-jit_recursive-3.14.0a7%2B-fe02176-pystats.json)
 - [pystats table](bm-20250505-azure-x86_64-brandtbucher-jit_recursive-3.14.0a7%2B-fe02176-pystats.md)
 
+### vs. base
+
+- [pystats diff](bm-20250505-azure-x86_64-brandtbucher-jit_recursive-3.14.0a7%2B-fe02176-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/14852534960)

@@ -169,3 +169,11 @@
 - [📄table](bm-20250508-darwin-arm64-faster%252dcpython-make_decref_a_call-3.15.0a0-bdf907f-vs-3.13.0.md)
 - [📈time plot](bm-20250508-darwin-arm64-faster%252dcpython-make_decref_a_call-3.15.0a0-bdf907f-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.064x faster (HPT: reliability of 96.91%, 1.00x slower at 99th %ile)
+- Memory usage: 0.99x
+- [🧠memory plot](bm-20250508-darwin-arm64-faster%252dcpython-make_decref_a_call-3.15.0a0-bdf907f-vs-base-mem.svg)
+- [📄table](bm-20250508-darwin-arm64-faster%252dcpython-make_decref_a_call-3.15.0a0-bdf907f-vs-base.md)
+- [📈time plot](bm-20250508-darwin-arm64-faster%252dcpython-make_decref_a_call-3.15.0a0-bdf907f-vs-base.svg)
+

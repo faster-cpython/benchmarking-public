@@ -126,3 +126,10 @@
 - [📄table](bm-20250528-pythonperf1-amd64-faster%252dcpython-specialize_for_iter_-3.15.0a0-a684067-vs-3.13.0.md)
 - [📈time plot](bm-20250528-pythonperf1-amd64-faster%252dcpython-specialize_for_iter_-3.15.0a0-a684067-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.001x faster (HPT: reliability of 69.18%, 1.00x slower at 99th %ile)
+- Memory usage: unknown
+- [📄table](bm-20250528-pythonperf1-amd64-faster%252dcpython-specialize_for_iter_-3.15.0a0-a684067-vs-base.md)
+- [📈time plot](bm-20250528-pythonperf1-amd64-faster%252dcpython-specialize_for_iter_-3.15.0a0-a684067-vs-base.svg)
+

@@ -35,23 +35,97 @@ excluded_benchmarks = [
 # "CPythons-Mac-mini.local" must be named "linux" and "darwin" permanently, since
 # we used to identify machines by their OS alone.
 
-[[runners]]
-
 [runners.linux]
 os = "linux"
 arch = "x86_64"
 hostname = "pyperf"
+plot = { name = "linux", color = "C0", style = "-", marker = "s" }
+
+[runners.linux_clang]
+os = "linux"
+arch = "x86_64"
+hostname = "pyperf"
+github_runner_name = "linux-x86_64-linux"
+include_in_all = false
+plot = { name = "linux clang", color = "C0", style = "-", marker = "s" }
+[runners.linux_clang.env]
+CC = "$(which clang-19)"
+LLVM_AR = "$(which llvm-ar-19)"
+LLVM_PROFDATA = "$(which llvm-profdata-19)"
+
+[runners.pythonperf2]
+os = "linux"
+arch = "x86_64"
+hostname = "pythonperf2"
+include_in_all = false
+plot = { name = "linux2", color = "C0", style = ":", marker = "s" }
+
+[runners.pythonperf2_clang]
+os = "linux"
+arch = "x86_64"
+hostname = "pythonperf2"
+github_runner_name = "linux-x86_64-pythonperf2"
+include_in_all = false
+plot = { name = "linux2 clang", color = "C0", style = ":", marker = "s" }
+[runners.pythonperf2_clang.env]
+cc = "$(which clang-19)"
+llvm_ar = "$(which llvm-ar-19)"
+llvm_profdata = "$(which llvm-profdata-19)"
+
+[runners.arminc]
+os = "linux"
+arch = "aarch64"
+hostname = "aarch64-faster-cpython-benchmarks"
+plot = { name = "linux arm64", color = "C4", style = "--", marker = "s" }
+
+[runners.arminc_clang]
+os = "linux"
+arch = "aarch64"
+hostname = "aarch64-faster-cpython-benchmarks"
+github_runner_name = "linux-x86_64-arminc"
+include_in_all = false
+plot = { name = "linux arm64 clang", color = "C4", style = "--", marker = "s" }
+[runners.arminc_clang.env]
+cc = "$(which clang-19)"
+llvm_ar = "$(which llvm-ar-19)"
+llvm_profdata = "$(which llvm-profdata-19)"
 
 [runners.darwin]
 os = "darwin"
 arch = "arm64"
 hostname = "CPythons-Mac-mini.local"
+plot = { name = "macos", color = "C2", style = "-", marker = "^" }
+
+[runners.darwin_clang]
+os = "darwin"
+arch = "arm64"
+hostname = "CPythons-Mac-mini.local"
+github_runner_name = "darwin-arm64-darwin"
+include_in_all = false
+plot = { name = "macos clang", color = "C2", style = "-", marker = "^" }
+[runners.darwin_clang.env]
+PATH = "$(brew --prefix llvm)/bin:$PATH"
+CC = "$(brew --prefix llvm)/bin/clang"
+LDFLAGS = "-L$(brew --prefix llvm)/lib"
+CFLAGS = "-L$(brew --prefix llvm)/include"
 
 [runners.pythonperf1]
 os = "windows"
 arch = "x86_64"
 hostname = "WIN-5FKPU9U7KDT"
 env = { BUILD_DEST = "PCBuild/amd64" }
+plot = { name = "win64", color = "C3", style = "-", marker = "." }
+
+[runners.pythonperf1_clang]
+os = "windows"
+arch = "x86_64"
+hostname = "WIN-5FKPU9U7KDT"
+github_runner_name = "windows-x86_64-pythonperf1"
+include_in_all = false
+plot = { name = "win64 clang", color = "C3", style = "-", marker = "." }
+[runners.pythonperf1_clang.env]
+BUILD_DEST = "PCBuild/amd64"
+PYTHON_CONFIGURE_FLAGS = '`"/p:PlatformToolset`=clangcl`" `"/p:LLVMInstallDir=C:\Program Files\LLVM`" `"/p:LLVMToolsVersion=19.1.6`"'
 
 [runners.pythonperf1_win32]
 os = "windows"
@@ -60,17 +134,19 @@ hostname = "WIN-5FKPU9U7KDT"
 github_runner_name = "windows-x86_64-pythonperf1"
 env = { BUILD_FLAGS = "-p Win32", BUILD_DEST = "PCBuild/win32" }
 include_in_all = false
+plot = { name = "win32", color = "C3", style = ":", marker = "." }
 
-[runners.pythonperf2]
-os = "linux"
+[runners.pythonperf1_win32_clang]
+os = "windows"
 arch = "x86_64"
-hostname = "pythonperf2"
+hostname = "WIN-5FKPU9U7KDT"
+github_runner_name = "windows-x86_64-pythonperf1"
 include_in_all = false
-
-[runners.arminc]
-os = "linux"
-arch = "aarch64"
-hostname = "aarch64-faster-cpython-benchmarks"
+plot = { name = "win32 clang", color = "C3", style = ":", marker = "." }
+[runners.pythonperf1_win32_clang.env]
+BUILD_DEST = "PCBuild/win32"
+BUILD_FLAGS = "-p Win32"
+PYTHON_CONFIGURE_FLAGS = '`"/p:PlatformToolset`=clangcl`" `"/p:LLVMInstallDir=C:\Program Files\LLVM`" `"/p:LLVMToolsVersion=19.1.6`"'
 
 [runners.azure]
 os = "linux"
@@ -78,18 +154,47 @@ arch = "x86_64"
 hostname = "cpython-benchmarking-azure"
 available = false
 
-[plot]
-bases = ["3.10.4", "3.12.0", "3.13.0", "3.13.0"]
-versions = [[3, 11], [3, 13], [3, 14], [3, 14]]
-runners = [
-    "linux",
-    "pythonperf2",
-    "arminc",
-    "darwin",
-    "pythonperf1",
-    "pythonperf1_win32",
+[longitudinal_plot]
+subplots = [
+    { base = "3.10.4", version = "3.11" },
+    { base = "3.12.0", version = "3.13" },
+    { base = "3.13.0", version = "3.14" },
+    { base = "3.13.0", version = "3.14", flags = ["JIT"] }
 ]
-names = ["linux", "linux2", "linux-aarch64", "macos", "win64", "win32"]
-colors = ["C0", "C0", "C4", "C2", "C3", "C3"]
-styles = ["-", ":", "--", "-", "-", ":"]
-markers = ["s", "s", "s", "^", ".", "."]
+
+[[flag_effect_plot.subplots]]
+name = "JIT"
+head_flags = ["JIT"]
+version = "3.14"
+
+[[flag_effect_plot.subplots]]
+name = "Tail calling interpreter"
+head_flags = ["TAILCALL"]
+runner_map = { linux_clang = "linux", pythonperf2_clang = "linux2", arminc_clang = "arminc", darwin_clang = "darwin", pythonperf1_clang = "pythonperf1", pythonperf1_win32_clang = "pythonperf1_win32" }
+version = "3.14"
+
+[[flag_effect_plot.subplots]]
+name = "Free-threading"
+head_flags = ["NOGIL"]
+version = "3.14"
+
+[benchmark_longitudinal_plot]
+base = "3.13.0"
+version = "3.14"
+runners = ["linux"]
+
+[weekly.default]
+flags = []
+runners = ["linux", "pythonperf2", "darwin", "arminc", "pythonperf1", "pythonperf1_win32"]
+
+[weekly.jit]
+flags = ["JIT"]
+runners = ["linux", "pythonperf2", "darwin", "arminc", "pythonperf1", "pythonperf1_win32"]
+
+[weekly.nogil]
+flags = ["NOGIL"]
+runners = ["linux", "pythonperf2", "darwin", "arminc", "pythonperf1", "pythonperf1_win32"]
+
+[weekly.tailcall]
+flags = ["TAILCALL"]
+runners = ["linux_clang", "pythonperf2_clang", "darwin_clang", "arminc_clang", "pythonperf1_clang", "pythonperf1_win32_clang"]

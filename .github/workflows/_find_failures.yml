@@ -1,13 +1,12 @@
 # Generated file: !!! DO NOT EDIT !!!
 ---
-env:
-  PYPERFORMANCE_HASH: 56d12a8fd7cc1432835965d374929bfa7f6f7a07
-  PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
 name: _find_failures
+
 on:
   schedule:
   - cron: 0 8 * * 0
   workflow_dispatch: {}
+
 jobs:
   find_failures:
     runs-on: ubuntu-latest

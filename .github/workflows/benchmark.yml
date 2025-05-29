@@ -1,12 +1,11 @@
 # Generated file: !!! DO NOT EDIT !!!
 ---
-env:
-  PYPERFORMANCE_HASH: 56d12a8fd7cc1432835965d374929bfa7f6f7a07
-  PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
 name: benchmark
-run-name: benchmarking ${{ inputs.fork }}/${{ inputs.ref }} ${{ inputs.tier2 == true
-  && 'T2' || '' }} ${{ inputs.jit == true && 'JIT' || '' }} ${{ inputs.nogil == true
-  && 'NOGIL' || '' }} ${{ inputs.clang == true && 'CLANG' || '' }}
+run-name: benchmarking ${{ inputs.fork }}/${{ inputs.ref }} on ${{ inputs.machine
+  }} ${{ inputs.tier2 == true && 'T2' || '' }} ${{ inputs.jit == true && 'JIT' ||
+  '' }} ${{ inputs.nogil == true && 'NOGIL' || '' }} ${{ inputs.tailcall == true &&
+  'TAILCALL' || '' }}
+
 on:
   workflow_dispatch:
     inputs:
@@ -22,11 +21,17 @@ on:
         type: choice
         options:
         - linux-x86_64-linux
-        - darwin-arm64-darwin
-        - windows-x86_64-pythonperf1
-        - windows-x86-pythonperf1_win32
+        - linux-x86_64-linux_clang
         - linux-x86_64-pythonperf2
+        - linux-x86_64-pythonperf2_clang
         - linux-aarch64-arminc
+        - linux-aarch64-arminc_clang
+        - darwin-arm64-darwin
+        - darwin-arm64-darwin_clang
+        - windows-x86_64-pythonperf1
+        - windows-x86_64-pythonperf1_clang
+        - windows-x86-pythonperf1_win32
+        - windows-x86_64-pythonperf1_win32_clang
         - all
         - __really_all
       benchmarks:
@@ -53,8 +58,8 @@ on:
         description: free threading
         type: boolean
         default: false
-      clang:
-        description: build with latest clang and tailcall
+      tailcall:
+        description: tail-calling interpreter
         type: boolean
         default: false
 jobs:
@@ -93,13 +98,13 @@ jobs:
     - name: Determine base
       id: base
       run: |
-        python -m bench_runner get_merge_base ${{ inputs.benchmark_base }} ${{ inputs.machine }} ${{ inputs.pystats }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} >> $GITHUB_OUTPUT
+        python -m bench_runner get_merge_base ${{ inputs.benchmark_base }} ${{ inputs.machine }} ${{ inputs.pystats }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 'tailcall' || '' }} >> $GITHUB_OUTPUT
         cat $GITHUB_OUTPUT
 
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
-        == true && 'clang' || '' }}
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}
   head:
     uses: ./.github/workflows/_benchmark.yml
     with:
@@ -113,7 +118,7 @@ jobs:
       tier2: ${{ inputs.tier2 }}
       jit: ${{ inputs.jit }}
       nogil: ${{ inputs.nogil }}
-      clang: ${{ inputs.clang }}
+      tailcall: ${{ inputs.tailcall }}
     secrets: inherit
 
   base:
@@ -131,7 +136,7 @@ jobs:
       tier2: ${{ inputs.tier2 }}
       jit: ${{ inputs.jit }}
       nogil: ${{ inputs.nogil }}
-      clang: ${{ inputs.clang }}
+      tailcall: ${{ inputs.tailcall }}
     secrets: inherit
 
   pystats-head:
@@ -141,12 +146,11 @@ jobs:
       fork: ${{ inputs.fork }}
       ref: ${{ inputs.ref }}
       benchmarks: ${{ inputs.benchmarks }}
-      individual: true
       force: true
       tier2: ${{ inputs.tier2 }}
       jit: ${{ inputs.jit }}
       nogil: ${{ inputs.nogil }}
-      clang: ${{ inputs.clang }}
+      tailcall: ${{ inputs.tailcall }}
     secrets: inherit
 
   pystats-base:
@@ -158,12 +162,11 @@ jobs:
       fork: python
       ref: ${{ needs.determine_base.outputs.ref }}
       benchmarks: ${{ inputs.benchmarks }}
-      individual: true
       force: false
       tier2: ${{ inputs.tier2 }}
       jit: ${{ inputs.jit }}
       nogil: ${{ inputs.nogil }}
-      clang: ${{ inputs.clang }}
+      tailcall: ${{ inputs.tailcall }}
     secrets: inherit
 
   generate:
@@ -193,5 +196,5 @@ jobs:
       tier2: ${{ inputs.tier2 }}
       jit: ${{ inputs.jit }}
       nogil: ${{ inputs.nogil }}
-      clang: ${{ inputs.clang }}
+      tailcall: ${{ inputs.tailcall }}
     secrets: inherit

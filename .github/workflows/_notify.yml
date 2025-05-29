@@ -1,9 +1,7 @@
 # Generated file: !!! DO NOT EDIT !!!
 ---
-env:
-  PYPERFORMANCE_HASH: 56d12a8fd7cc1432835965d374929bfa7f6f7a07
-  PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
 name: _notify
+
 on:
   workflow_call:
     inputs:
@@ -30,8 +28,8 @@ on:
         description: free threading
         type: boolean
         default: false
-      clang:
-        description: build with latest clang and tailcall
+      tailcall:
+        description: tail-calling interpreter
         type: boolean
         default: false
 jobs:
@@ -56,11 +54,11 @@ jobs:
       run: python -m bench_runner notify --fork ${{ inputs.fork }} --ref ${{ inputs.ref
         }} --head ${{ inputs.head }} --date ${{ inputs.date }} --version ${{ inputs.version
         }} --flags ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit ==
-        true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
-        == true && 'clang' || '' }}
+        true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}
       env:
         GH_TOKEN: ${{ github.token }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
-        == true && 'clang' || '' }}
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}

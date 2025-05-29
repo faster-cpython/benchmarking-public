@@ -1,9 +1,7 @@
 # Generated file: !!! DO NOT EDIT !!!
 ---
-env:
-  PYPERFORMANCE_HASH: 56d12a8fd7cc1432835965d374929bfa7f6f7a07
-  PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
 name: _benchmark
+
 on:
   workflow_call:
     inputs:
@@ -41,8 +39,8 @@ on:
         description: free threading
         type: boolean
         default: false
-      clang:
-        description: build with latest clang and tailcall
+      tailcall:
+        description: tail-calling interpreter
         type: boolean
         default: false
   workflow_dispatch:
@@ -61,11 +59,17 @@ on:
         type: choice
         options:
         - linux-x86_64-linux
-        - darwin-arm64-darwin
-        - windows-x86_64-pythonperf1
-        - windows-x86-pythonperf1_win32
+        - linux-x86_64-linux_clang
         - linux-x86_64-pythonperf2
+        - linux-x86_64-pythonperf2_clang
         - linux-aarch64-arminc
+        - linux-aarch64-arminc_clang
+        - darwin-arm64-darwin
+        - darwin-arm64-darwin_clang
+        - windows-x86_64-pythonperf1
+        - windows-x86_64-pythonperf1_clang
+        - windows-x86-pythonperf1_win32
+        - windows-x86_64-pythonperf1_win32_clang
         - all
       benchmarks:
         description: Benchmarks to run (comma-separated; empty runs all benchmarks)
@@ -89,8 +93,8 @@ on:
         description: free threading
         type: boolean
         default: false
-      clang:
-        description: build with latest clang and tailcall
+      tailcall:
+        description: tail-calling interpreter
         type: boolean
         default: false
 jobs:
@@ -108,79 +112,17 @@ jobs:
       run: |
         git gc
     - uses: fregante/setup-git-user@v2
-    - name: Checkout CPython
-      uses: actions/checkout@v4
+    - name: Setup system Python
+      if: ${{ runner.arch == 'X64' }}
+      uses: actions/setup-python@v5
       with:
-        persist-credentials: false
-        repository: ${{ inputs.fork }}/cpython
-        path: cpython
-        ref: ${{ inputs.ref }}
-        fetch-depth: 50
-    - name: Install dependencies from PyPI
+        python-version: '3.11'
+    - name: Building Python and running pyperformance
       run: |
-        rm -rf venv
-        python -m venv venv
-        venv/bin/python -m pip install --upgrade pip
-        venv/bin/python -m pip install -r requirements.txt
-    - name: Should we run?
-      if: ${{ always() }}
-      id: should_run
-      run: |
-        venv/bin/python -m bench_runner should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} false ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} >> $GITHUB_OUTPUT
-    - name: Checkout python-macrobenchmarks
-      uses: actions/checkout@v4
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      with:
-        persist-credentials: false
-        repository: pyston/python-macrobenchmarks
-        path: pyston-benchmarks
-        ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
-    - name: Checkout pyperformance
-      uses: actions/checkout@v4
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      with:
-        persist-credentials: false
-        repository: mdboom/pyperformance
-        path: pyperformance
-        ref: ${{ env.PYPERFORMANCE_HASH }}
-    - name: Build with clang
-      if: ${{ inputs.clang }}
-      run: |
-        echo "CC=`which clang-19`" >> $GITHUB_ENV
-        echo "LLVM_AR=`which llvm-ar-19`" >> $GITHUB_ENV
-        echo "LLVM_PROFDATA=`which llvm-profdata-19`" >> $GITHUB_ENV
-    - name: Build Python
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        cd cpython
-        ./configure --enable-option-checking=fatal ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }} ${PYTHON_CONFIGURE_FLAGS:-}
-        make ${{ runner.arch == 'ARM64' && '-j' || '-j4' }}
-        ./python -VV
-    - name: Install pyperformance
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        venv/bin/python -m pip install ./pyperformance
-    - name: Tune system
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system ${{ inputs.perf && 'reset' || 'tune ${CPU_AFFINITY:+--affinity="$CPU_AFFINITY"}' }}
-    - name: Tune for (Linux) perf
-      if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
-      run: |
-        # Must match the PERF_PERIOD value in profiling_plot.py
-        sudo bash -c "echo 100000 > /proc/sys/kernel/perf_event_max_sample_rate"
-    - name: Running pyperformance
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        rm -rf ~/.debug/*
-        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} --run_id ${{ github.run_id }}
-    - name: Untune system
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system reset
+        python workflow_bootstrap.py ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 'tailcall' || '' }} ${{ inputs.force && '--force' || '' }} ${{ inputs.pgo && '--pgo' || '' }} ${{ inputs.perf && '--perf' || '' }} --run_id ${{ github.run_id }}
       # Pull again, since another job may have committed results in the meantime
     - name: Pull benchmarking
-      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
+      if: ${{ !inputs.perf }}
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
@@ -188,12 +130,12 @@ jobs:
         # just pulled in in that case.
         git pull -s recursive -X ours --autostash --rebase
     - name: Adding data to repo
-      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
+      if: ${{ !inputs.perf }}
       uses: EndBug/add-and-commit@v9
       with:
         add: results
     - name: Upload benchmark artifacts
-      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
+      if: ${{ !inputs.perf }}
       uses: actions/upload-artifact@v4
       with:
         name: benchmark
@@ -201,7 +143,7 @@ jobs:
           benchmark.json
         overwrite: true
     - name: Upload perf artifacts
-      if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
+      if: ${{ inputs.perf }}
       uses: actions/upload-artifact@v4
       with:
         name: perf
@@ -212,8 +154,307 @@ jobs:
       || inputs.machine == 'all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
-        == true && 'clang' || '' }}
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}
+  benchmark-linux-x86_64-linux_clang:
+    runs-on: [self-hosted, linux, bare-metal, linux-x86_64-linux]
+    timeout-minutes: 1440
+
+    steps:
+    - name: Setup environment
+      run: |-
+        echo "CC=$(which clang-19)" >> $GITHUB_ENV
+        echo "LLVM_AR=$(which llvm-ar-19)" >> $GITHUB_ENV
+        echo "LLVM_PROFDATA=$(which llvm-profdata-19)" >> $GITHUB_ENV
+        echo "BENCHMARK_MACHINE_NICKNAME=linux_clang" >> $GITHUB_ENV
+    - name: Checkout benchmarking
+      uses: actions/checkout@v4
+    - name: git gc
+      run: |
+        git gc
+    - uses: fregante/setup-git-user@v2
+    - name: Setup system Python
+      if: ${{ runner.arch == 'X64' }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Building Python and running pyperformance
+      run: |
+        python workflow_bootstrap.py ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 'tailcall' || '' }} ${{ inputs.force && '--force' || '' }} ${{ inputs.pgo && '--pgo' || '' }} ${{ inputs.perf && '--perf' || '' }} --run_id ${{ github.run_id }}
+      # Pull again, since another job may have committed results in the meantime
+    - name: Pull benchmarking
+      if: ${{ !inputs.perf }}
+      run: |
+        # Another benchmarking task may have created results for the same
+        # commit while the above was running. This "magic" incantation means
+        # that any local results for this commit will override anything we
+        # just pulled in in that case.
+        git pull -s recursive -X ours --autostash --rebase
+    - name: Adding data to repo
+      if: ${{ !inputs.perf }}
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: results
+    - name: Upload benchmark artifacts
+      if: ${{ !inputs.perf }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: benchmark
+        path: |
+          benchmark.json
+        overwrite: true
+    - name: Upload perf artifacts
+      if: ${{ inputs.perf }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: perf
+        path: |
+          profiling/results
+
+    if: ${{ (inputs.machine == 'linux-x86_64-linux_clang' || inputs.machine == '__really_all')
+      }}
+    env:
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}
+  benchmark-linux-x86_64-pythonperf2:
+    runs-on: [self-hosted, linux, bare-metal, linux-x86_64-pythonperf2]
+    timeout-minutes: 1440
+
+    steps:
+    - name: Setup environment
+      run: |-
+        echo "BENCHMARK_MACHINE_NICKNAME=pythonperf2" >> $GITHUB_ENV
+    - name: Checkout benchmarking
+      uses: actions/checkout@v4
+    - name: git gc
+      run: |
+        git gc
+    - uses: fregante/setup-git-user@v2
+    - name: Setup system Python
+      if: ${{ runner.arch == 'X64' }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Building Python and running pyperformance
+      run: |
+        python workflow_bootstrap.py ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 'tailcall' || '' }} ${{ inputs.force && '--force' || '' }} ${{ inputs.pgo && '--pgo' || '' }} ${{ inputs.perf && '--perf' || '' }} --run_id ${{ github.run_id }}
+      # Pull again, since another job may have committed results in the meantime
+    - name: Pull benchmarking
+      if: ${{ !inputs.perf }}
+      run: |
+        # Another benchmarking task may have created results for the same
+        # commit while the above was running. This "magic" incantation means
+        # that any local results for this commit will override anything we
+        # just pulled in in that case.
+        git pull -s recursive -X ours --autostash --rebase
+    - name: Adding data to repo
+      if: ${{ !inputs.perf }}
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: results
+    - name: Upload benchmark artifacts
+      if: ${{ !inputs.perf }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: benchmark
+        path: |
+          benchmark.json
+        overwrite: true
+    - name: Upload perf artifacts
+      if: ${{ inputs.perf }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: perf
+        path: |
+          profiling/results
+
+    if: ${{ (inputs.machine == 'linux-x86_64-pythonperf2' || inputs.machine == '__really_all')
+      }}
+    env:
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}
+  benchmark-linux-x86_64-pythonperf2_clang:
+    runs-on: [self-hosted, linux, bare-metal, linux-x86_64-pythonperf2]
+    timeout-minutes: 1440
+
+    steps:
+    - name: Setup environment
+      run: |-
+        echo "cc=$(which clang-19)" >> $GITHUB_ENV
+        echo "llvm_ar=$(which llvm-ar-19)" >> $GITHUB_ENV
+        echo "llvm_profdata=$(which llvm-profdata-19)" >> $GITHUB_ENV
+        echo "BENCHMARK_MACHINE_NICKNAME=pythonperf2_clang" >> $GITHUB_ENV
+    - name: Checkout benchmarking
+      uses: actions/checkout@v4
+    - name: git gc
+      run: |
+        git gc
+    - uses: fregante/setup-git-user@v2
+    - name: Setup system Python
+      if: ${{ runner.arch == 'X64' }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Building Python and running pyperformance
+      run: |
+        python workflow_bootstrap.py ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 'tailcall' || '' }} ${{ inputs.force && '--force' || '' }} ${{ inputs.pgo && '--pgo' || '' }} ${{ inputs.perf && '--perf' || '' }} --run_id ${{ github.run_id }}
+      # Pull again, since another job may have committed results in the meantime
+    - name: Pull benchmarking
+      if: ${{ !inputs.perf }}
+      run: |
+        # Another benchmarking task may have created results for the same
+        # commit while the above was running. This "magic" incantation means
+        # that any local results for this commit will override anything we
+        # just pulled in in that case.
+        git pull -s recursive -X ours --autostash --rebase
+    - name: Adding data to repo
+      if: ${{ !inputs.perf }}
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: results
+    - name: Upload benchmark artifacts
+      if: ${{ !inputs.perf }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: benchmark
+        path: |
+          benchmark.json
+        overwrite: true
+    - name: Upload perf artifacts
+      if: ${{ inputs.perf }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: perf
+        path: |
+          profiling/results
+
+    if: ${{ (inputs.machine == 'linux-x86_64-pythonperf2_clang' || inputs.machine
+      == '__really_all') }}
+    env:
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}
+  benchmark-linux-aarch64-arminc:
+    runs-on: [self-hosted, linux, bare-metal, linux-aarch64-arminc]
+    timeout-minutes: 1440
+
+    steps:
+    - name: Setup environment
+      run: |-
+        echo "BENCHMARK_MACHINE_NICKNAME=arminc" >> $GITHUB_ENV
+    - name: Checkout benchmarking
+      uses: actions/checkout@v4
+    - name: git gc
+      run: |
+        git gc
+    - uses: fregante/setup-git-user@v2
+    - name: Setup system Python
+      if: ${{ runner.arch == 'X64' }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Building Python and running pyperformance
+      run: |
+        python workflow_bootstrap.py ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 'tailcall' || '' }} ${{ inputs.force && '--force' || '' }} ${{ inputs.pgo && '--pgo' || '' }} ${{ inputs.perf && '--perf' || '' }} --run_id ${{ github.run_id }}
+      # Pull again, since another job may have committed results in the meantime
+    - name: Pull benchmarking
+      if: ${{ !inputs.perf }}
+      run: |
+        # Another benchmarking task may have created results for the same
+        # commit while the above was running. This "magic" incantation means
+        # that any local results for this commit will override anything we
+        # just pulled in in that case.
+        git pull -s recursive -X ours --autostash --rebase
+    - name: Adding data to repo
+      if: ${{ !inputs.perf }}
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: results
+    - name: Upload benchmark artifacts
+      if: ${{ !inputs.perf }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: benchmark
+        path: |
+          benchmark.json
+        overwrite: true
+    - name: Upload perf artifacts
+      if: ${{ inputs.perf }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: perf
+        path: |
+          profiling/results
+
+    if: ${{ (inputs.machine == 'linux-aarch64-arminc' || inputs.machine == '__really_all'
+      || inputs.machine == 'all') }}
+    env:
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}
+  benchmark-linux-aarch64-arminc_clang:
+    runs-on: [self-hosted, linux, bare-metal, linux-x86_64-arminc]
+    timeout-minutes: 1440
+
+    steps:
+    - name: Setup environment
+      run: |-
+        echo "cc=$(which clang-19)" >> $GITHUB_ENV
+        echo "llvm_ar=$(which llvm-ar-19)" >> $GITHUB_ENV
+        echo "llvm_profdata=$(which llvm-profdata-19)" >> $GITHUB_ENV
+        echo "BENCHMARK_MACHINE_NICKNAME=arminc_clang" >> $GITHUB_ENV
+    - name: Checkout benchmarking
+      uses: actions/checkout@v4
+    - name: git gc
+      run: |
+        git gc
+    - uses: fregante/setup-git-user@v2
+    - name: Setup system Python
+      if: ${{ runner.arch == 'X64' }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Building Python and running pyperformance
+      run: |
+        python workflow_bootstrap.py ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 'tailcall' || '' }} ${{ inputs.force && '--force' || '' }} ${{ inputs.pgo && '--pgo' || '' }} ${{ inputs.perf && '--perf' || '' }} --run_id ${{ github.run_id }}
+      # Pull again, since another job may have committed results in the meantime
+    - name: Pull benchmarking
+      if: ${{ !inputs.perf }}
+      run: |
+        # Another benchmarking task may have created results for the same
+        # commit while the above was running. This "magic" incantation means
+        # that any local results for this commit will override anything we
+        # just pulled in in that case.
+        git pull -s recursive -X ours --autostash --rebase
+    - name: Adding data to repo
+      if: ${{ !inputs.perf }}
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: results
+    - name: Upload benchmark artifacts
+      if: ${{ !inputs.perf }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: benchmark
+        path: |
+          benchmark.json
+        overwrite: true
+    - name: Upload perf artifacts
+      if: ${{ inputs.perf }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: perf
+        path: |
+          profiling/results
+
+    if: ${{ (inputs.machine == 'linux-aarch64-arminc_clang' || inputs.machine == '__really_all')
+      }}
+    env:
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}
   benchmark-darwin-arm64-darwin:
     runs-on: [self-hosted, macos, bare-metal, darwin-arm64-darwin]
 
@@ -226,70 +467,11 @@ jobs:
     - name: git gc
       run: |
         git gc
-    - name: Checkout CPython
-      uses: actions/checkout@v4
-      with:
-        persist-credentials: false
-        repository: ${{ inputs.fork }}/cpython
-        path: cpython
-        ref: ${{ inputs.ref }}
-        fetch-depth: 50
-    - name: Install dependencies from PyPI
+    - name: Building Python and running pyperformance
       run: |
-        rm -rf venv
-        python3 -m venv venv
-        venv/bin/python -m pip install --upgrade pip
-        venv/bin/python -m pip install -r requirements.txt
-    - name: Should we run?
-      if: ${{ always() }}
-      id: should_run
-      run: |
-        venv/bin/python -m bench_runner should_run ${{ inputs.force }} ${{ inputs.force }} ${{ inputs.ref }} ${{ inputs.machine }} false ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} >> $GITHUB_OUTPUT
-    - name: Checkout python-macrobenchmarks
-      uses: actions/checkout@v4
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      with:
-        persist-credentials: false
-        repository: pyston/python-macrobenchmarks
-        path: pyston-benchmarks
-        ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
-    - name: Checkout pyperformance
-      uses: actions/checkout@v4
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      with:
-        persist-credentials: false
-        repository: mdboom/pyperformance
-        path: pyperformance
-        ref: ${{ env.PYPERFORMANCE_HASH }}
-    - name: Setup environment
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        echo "PKG_CONFIG_PATH=$(brew --prefix openssl@1.1)/lib/pkgconfig" >> $GITHUB_ENV
-    - name: Build with clang
-      if: ${{ inputs.clang }}
-      run: |
-        echo "PATH=$(brew --prefix llvm)/bin:$PATH" >> $GITHUB_ENV
-        echo "CC=$(brew --prefix llvm)/bin/clang" >> $GITHUB_ENV
-        echo "LDFLAGS=-L$(brew --prefix llvm)/lib" >> $GITHUB_ENV
-        echo "CFLAGS=-I$(brew --prefix llvm)/include" >> $GITHUB_ENV
-    - name: Build Python
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        cd cpython
-        ./configure --enable-option-checking=fatal ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }} ${PYTHON_CONFIGURE_FLAGS:-}
-        make -j4
-        ./python.exe -VV
-    - name: Install pyperformance
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        venv/bin/python -m pip install ./pyperformance
-    - name: Running pyperformance
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        venv/bin/python -m bench_runner run_benchmarks benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} --run_id ${{ github.run_id }}
+        python3 workflow_bootstrap.py ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 'tailcall' || '' }} ${{ inputs.force && '--force' || '' }} ${{ inputs.pgo && '--pgo' || '' }} --run_id ${{ github.run_id }}
       # Pull again, since another job may have committed results in the meantime
     - name: Pull benchmarking
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
@@ -297,12 +479,10 @@ jobs:
         # just pulled in in that case.
         git pull -s recursive -X ours --autostash --rebase
     - name: Add data to repo
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: EndBug/add-and-commit@v9
       with:
         add: results
     - name: Upload artifacts
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: actions/upload-artifact@v4
       with:
         name: benchmark
@@ -313,8 +493,52 @@ jobs:
       || inputs.machine == 'all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
-        == true && 'clang' || '' }}
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}
+  benchmark-darwin-arm64-darwin_clang:
+    runs-on: [self-hosted, macos, bare-metal, darwin-arm64-darwin]
+
+    steps:
+    - name: Setup environment
+      run: |-
+        echo "PATH=$(brew --prefix llvm)/bin:$PATH" >> $GITHUB_ENV
+        echo "CC=$(brew --prefix llvm)/bin/clang" >> $GITHUB_ENV
+        echo "LDFLAGS=-L$(brew --prefix llvm)/lib" >> $GITHUB_ENV
+        echo "CFLAGS=-L$(brew --prefix llvm)/include" >> $GITHUB_ENV
+        echo "BENCHMARK_MACHINE_NICKNAME=darwin_clang" >> $GITHUB_ENV
+    - name: Checkout benchmarking
+      uses: actions/checkout@v4
+    - name: git gc
+      run: |
+        git gc
+    - name: Building Python and running pyperformance
+      run: |
+        python3 workflow_bootstrap.py ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 'tailcall' || '' }} ${{ inputs.force && '--force' || '' }} ${{ inputs.pgo && '--pgo' || '' }} --run_id ${{ github.run_id }}
+      # Pull again, since another job may have committed results in the meantime
+    - name: Pull benchmarking
+      run: |
+        # Another benchmarking task may have created results for the same
+        # commit while the above was running. This "magic" incantation means
+        # that any local results for this commit will override anything we
+        # just pulled in in that case.
+        git pull -s recursive -X ours --autostash --rebase
+    - name: Add data to repo
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: results
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: benchmark
+        path: |
+          benchmark.json
+        overwrite: true
+    if: ${{ (inputs.machine == 'darwin-arm64-darwin_clang' || inputs.machine == '__really_all')
+      }}
+    env:
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}
   benchmark-windows-x86_64-pythonperf1:
     runs-on: [self-hosted, windows, bare-metal, windows-x86_64-pythonperf1]
 
@@ -334,65 +558,11 @@ jobs:
     - name: git gc
       run: |
         git gc
-    - name: Checkout CPython
-      uses: actions/checkout@v4
-      with:
-        persist-credentials: false
-        repository: ${{ inputs.fork }}/cpython
-        path: cpython
-        ref: ${{ inputs.ref }}
-        fetch-depth: 50
-    - name: Install dependencies from PyPI
+    - name: Building Python and running pyperformance
       run: |
-        Remove-Item venv -Recurse -ErrorAction SilentlyContinue
-        py -m venv venv
-        venv\Scripts\python.exe -m pip install --upgrade pip
-        venv\Scripts\python.exe -m pip install -r requirements.txt
-    - name: Should we run?
-      if: ${{ always() }}
-      id: should_run
-      run: |
-        venv\Scripts\python.exe -m bench_runner should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} false "${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }}" >> $GITHUB_OUTPUT
-    - name: Checkout python-macrobenchmarks
-      uses: actions/checkout@v4
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      with:
-        persist-credentials: false
-        repository: pyston/python-macrobenchmarks
-        path: pyston-benchmarks
-        ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
-    - name: Checkout pyperformance
-      uses: actions/checkout@v4
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      with:
-        persist-credentials: false
-        repository: mdboom/pyperformance
-        path: pyperformance
-        ref: ${{ env.PYPERFORMANCE_HASH }}
-    - name: Build Python
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        # The build.bat script is much easier to use from cmd
-      shell: cmd
-      run: |
-        cd cpython
-        PCbuild\build.bat %BUILD_FLAGS% ${{ (inputs.pgo == true) && '--pgo' || '' }} ${{ inputs.clang == true && '--tail-call-interp' || '' }} ${{ inputs.jit == true && '--experimental-jit' || '' }} ${{ inputs.tier2 == true && '--experimental-jit-interpreter' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} -c Release ${{ inputs.clang == true && '"/p:PlatformToolset=clangcl"' || '' }} ${{ inputs.clang == true && '"/p:LLVMInstallDir=C:\Program Files\LLVM"' || '' }} ${{ inputs.clang == true && '"/p:LLVMToolsVersion=19.1.6"' || '' }}
-    - name: Copy Python to different location
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        # Copy the build products to a place that libraries can find them.
-        cd cpython
-        Copy-Item -Path $env:BUILD_DEST -Destination "libs" -Recurse
-    - name: Install pyperformance
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        venv\Scripts\python.exe -m pip install .\pyperformance
-    - name: Running pyperformance
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        venv\Scripts\python.exe -m bench_runner run_benchmarks benchmark ${{ (inputs.nogil == true && '(get-item cpython/$env:BUILD_DEST/python3.*.exe).FullName' || 'cpython/$env:BUILD_DEST/python.exe') }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} "${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }}" --run_id ${{ github.run_id }}
+        py workflow_bootstrap.py ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} ${{ inputs.benchmarks || 'all' }} "${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 'tailcall' || '' }}" ${{ inputs.force && '--force' || '' }} ${{ inputs.pgo && '--pgo' || '' }} --run_id ${{ github.run_id }}
       # Pull again, since another job may have committed results in the meantime
     - name: Pull benchmarking
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
@@ -400,12 +570,10 @@ jobs:
         # just pulled in in that case.
         git pull -s recursive -X ours --autostash --rebase
     - name: Add data to repo
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: EndBug/add-and-commit@v9
       with:
         add: results
     - name: Upload artifacts
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: actions/upload-artifact@v4
       with:
         name: benchmark
@@ -417,8 +585,57 @@ jobs:
       || inputs.machine == 'all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
-        == true && 'clang' || '' }}
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}
+  benchmark-windows-x86_64-pythonperf1_clang:
+    runs-on: [self-hosted, windows, bare-metal, windows-x86_64-pythonperf1]
+
+    steps:
+      # Tell git to checkout repos with symlinks (required by pyston
+      # benchmarks).
+      # Requires "Developer Mode" switched on in Windows 10/11
+    - name: Setup environment
+      run: |-
+        echo "BUILD_DEST=PCBuild/amd64" >> $env:GITHUB_ENV
+        echo "PYTHON_CONFIGURE_FLAGS=`"/p:PlatformToolset`=clangcl`" `"/p:LLVMInstallDir=C:\Program Files\LLVM`" `"/p:LLVMToolsVersion=19.1.6`"" >> $env:GITHUB_ENV
+        echo "BENCHMARK_MACHINE_NICKNAME=pythonperf1_clang" >> $env:GITHUB_ENV
+    - name: Enable symlinks for git
+      run: |
+        git config --global core.symlinks true
+    - name: Checkout benchmarking
+      uses: actions/checkout@v4
+    - name: git gc
+      run: |
+        git gc
+    - name: Building Python and running pyperformance
+      run: |
+        py workflow_bootstrap.py ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} ${{ inputs.benchmarks || 'all' }} "${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 'tailcall' || '' }}" ${{ inputs.force && '--force' || '' }} ${{ inputs.pgo && '--pgo' || '' }} --run_id ${{ github.run_id }}
+      # Pull again, since another job may have committed results in the meantime
+    - name: Pull benchmarking
+      run: |
+        # Another benchmarking task may have created results for the same
+        # commit while the above was running. This "magic" incantation means
+        # that any local results for this commit will override anything we
+        # just pulled in in that case.
+        git pull -s recursive -X ours --autostash --rebase
+    - name: Add data to repo
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: results
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: benchmark
+        path: |
+          benchmark.json
+        overwrite: true
+
+    if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1_clang' || inputs.machine
+      == '__really_all') }}
+    env:
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}
   benchmark-windows-x86-pythonperf1_win32:
     runs-on: [self-hosted, windows, bare-metal, windows-x86_64-pythonperf1]
 
@@ -439,65 +656,11 @@ jobs:
     - name: git gc
       run: |
         git gc
-    - name: Checkout CPython
-      uses: actions/checkout@v4
-      with:
-        persist-credentials: false
-        repository: ${{ inputs.fork }}/cpython
-        path: cpython
-        ref: ${{ inputs.ref }}
-        fetch-depth: 50
-    - name: Install dependencies from PyPI
+    - name: Building Python and running pyperformance
       run: |
-        Remove-Item venv -Recurse -ErrorAction SilentlyContinue
-        py -m venv venv
-        venv\Scripts\python.exe -m pip install --upgrade pip
-        venv\Scripts\python.exe -m pip install -r requirements.txt
-    - name: Should we run?
-      if: ${{ always() }}
-      id: should_run
-      run: |
-        venv\Scripts\python.exe -m bench_runner should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} false "${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }}" >> $GITHUB_OUTPUT
-    - name: Checkout python-macrobenchmarks
-      uses: actions/checkout@v4
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      with:
-        persist-credentials: false
-        repository: pyston/python-macrobenchmarks
-        path: pyston-benchmarks
-        ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
-    - name: Checkout pyperformance
-      uses: actions/checkout@v4
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      with:
-        persist-credentials: false
-        repository: mdboom/pyperformance
-        path: pyperformance
-        ref: ${{ env.PYPERFORMANCE_HASH }}
-    - name: Build Python
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-        # The build.bat script is much easier to use from cmd
-      shell: cmd
-      run: |
-        cd cpython
-        PCbuild\build.bat %BUILD_FLAGS% ${{ (inputs.pgo == true) && '--pgo' || '' }} ${{ inputs.clang == true && '--tail-call-interp' || '' }} ${{ inputs.jit == true && '--experimental-jit' || '' }} ${{ inputs.tier2 == true && '--experimental-jit-interpreter' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} -c Release ${{ inputs.clang == true && '"/p:PlatformToolset=clangcl"' || '' }} ${{ inputs.clang == true && '"/p:LLVMInstallDir=C:\Program Files\LLVM"' || '' }} ${{ inputs.clang == true && '"/p:LLVMToolsVersion=19.1.6"' || '' }}
-    - name: Copy Python to different location
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        # Copy the build products to a place that libraries can find them.
-        cd cpython
-        Copy-Item -Path $env:BUILD_DEST -Destination "libs" -Recurse
-    - name: Install pyperformance
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        venv\Scripts\python.exe -m pip install .\pyperformance
-    - name: Running pyperformance
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        venv\Scripts\python.exe -m bench_runner run_benchmarks benchmark ${{ (inputs.nogil == true && '(get-item cpython/$env:BUILD_DEST/python3.*.exe).FullName' || 'cpython/$env:BUILD_DEST/python.exe') }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} "${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }}" --run_id ${{ github.run_id }}
+        py workflow_bootstrap.py ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} ${{ inputs.benchmarks || 'all' }} "${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 'tailcall' || '' }}" ${{ inputs.force && '--force' || '' }} ${{ inputs.pgo && '--pgo' || '' }} --run_id ${{ github.run_id }}
       # Pull again, since another job may have committed results in the meantime
     - name: Pull benchmarking
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
@@ -505,12 +668,10 @@ jobs:
         # just pulled in in that case.
         git pull -s recursive -X ours --autostash --rebase
     - name: Add data to repo
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: EndBug/add-and-commit@v9
       with:
         add: results
     - name: Upload artifacts
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: actions/upload-artifact@v4
       with:
         name: benchmark
@@ -522,245 +683,55 @@ jobs:
       '__really_all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
-        == true && 'clang' || '' }}
-  benchmark-linux-x86_64-pythonperf2:
-    runs-on: [self-hosted, linux, bare-metal, linux-x86_64-pythonperf2]
-    timeout-minutes: 1440
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}
+  benchmark-windows-x86_64-pythonperf1_win32_clang:
+    runs-on: [self-hosted, windows, bare-metal, windows-x86_64-pythonperf1]
 
     steps:
+      # Tell git to checkout repos with symlinks (required by pyston
+      # benchmarks).
+      # Requires "Developer Mode" switched on in Windows 10/11
     - name: Setup environment
       run: |-
-        echo "BENCHMARK_MACHINE_NICKNAME=pythonperf2" >> $GITHUB_ENV
+        echo "BUILD_DEST=PCBuild/win32" >> $env:GITHUB_ENV
+        echo "BUILD_FLAGS=-p Win32" >> $env:GITHUB_ENV
+        echo "PYTHON_CONFIGURE_FLAGS=`"/p:PlatformToolset`=clangcl`" `"/p:LLVMInstallDir=C:\Program Files\LLVM`" `"/p:LLVMToolsVersion=19.1.6`"" >> $env:GITHUB_ENV
+        echo "BENCHMARK_MACHINE_NICKNAME=pythonperf1_win32_clang" >> $env:GITHUB_ENV
+    - name: Enable symlinks for git
+      run: |
+        git config --global core.symlinks true
     - name: Checkout benchmarking
       uses: actions/checkout@v4
     - name: git gc
       run: |
         git gc
-    - uses: fregante/setup-git-user@v2
-    - name: Checkout CPython
-      uses: actions/checkout@v4
-      with:
-        persist-credentials: false
-        repository: ${{ inputs.fork }}/cpython
-        path: cpython
-        ref: ${{ inputs.ref }}
-        fetch-depth: 50
-    - name: Install dependencies from PyPI
+    - name: Building Python and running pyperformance
       run: |
-        rm -rf venv
-        python -m venv venv
-        venv/bin/python -m pip install --upgrade pip
-        venv/bin/python -m pip install -r requirements.txt
-    - name: Should we run?
-      if: ${{ always() }}
-      id: should_run
-      run: |
-        venv/bin/python -m bench_runner should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} false ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} >> $GITHUB_OUTPUT
-    - name: Checkout python-macrobenchmarks
-      uses: actions/checkout@v4
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      with:
-        persist-credentials: false
-        repository: pyston/python-macrobenchmarks
-        path: pyston-benchmarks
-        ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
-    - name: Checkout pyperformance
-      uses: actions/checkout@v4
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      with:
-        persist-credentials: false
-        repository: mdboom/pyperformance
-        path: pyperformance
-        ref: ${{ env.PYPERFORMANCE_HASH }}
-    - name: Build with clang
-      if: ${{ inputs.clang }}
-      run: |
-        echo "CC=`which clang-19`" >> $GITHUB_ENV
-        echo "LLVM_AR=`which llvm-ar-19`" >> $GITHUB_ENV
-        echo "LLVM_PROFDATA=`which llvm-profdata-19`" >> $GITHUB_ENV
-    - name: Build Python
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        cd cpython
-        ./configure --enable-option-checking=fatal ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }} ${PYTHON_CONFIGURE_FLAGS:-}
-        make ${{ runner.arch == 'ARM64' && '-j' || '-j4' }}
-        ./python -VV
-    - name: Install pyperformance
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        venv/bin/python -m pip install ./pyperformance
-    - name: Tune system
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system ${{ inputs.perf && 'reset' || 'tune ${CPU_AFFINITY:+--affinity="$CPU_AFFINITY"}' }}
-    - name: Tune for (Linux) perf
-      if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
-      run: |
-        # Must match the PERF_PERIOD value in profiling_plot.py
-        sudo bash -c "echo 100000 > /proc/sys/kernel/perf_event_max_sample_rate"
-    - name: Running pyperformance
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        rm -rf ~/.debug/*
-        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} --run_id ${{ github.run_id }}
-    - name: Untune system
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system reset
+        py workflow_bootstrap.py ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} ${{ inputs.benchmarks || 'all' }} "${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 'tailcall' || '' }}" ${{ inputs.force && '--force' || '' }} ${{ inputs.pgo && '--pgo' || '' }} --run_id ${{ github.run_id }}
       # Pull again, since another job may have committed results in the meantime
     - name: Pull benchmarking
-      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       run: |
         # Another benchmarking task may have created results for the same
         # commit while the above was running. This "magic" incantation means
         # that any local results for this commit will override anything we
         # just pulled in in that case.
         git pull -s recursive -X ours --autostash --rebase
-    - name: Adding data to repo
-      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
+    - name: Add data to repo
       uses: EndBug/add-and-commit@v9
       with:
         add: results
-    - name: Upload benchmark artifacts
-      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
+    - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
         name: benchmark
         path: |
           benchmark.json
         overwrite: true
-    - name: Upload perf artifacts
-      if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
-      uses: actions/upload-artifact@v4
-      with:
-        name: perf
-        path: |
-          profiling/results
 
-    if: ${{ (inputs.machine == 'linux-x86_64-pythonperf2' || inputs.machine == '__really_all')
-      }}
+    if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1_win32_clang' || inputs.machine
+      == '__really_all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
-        == true && 'clang' || '' }}
-  benchmark-linux-aarch64-arminc:
-    runs-on: [self-hosted, linux, bare-metal, linux-aarch64-arminc]
-    timeout-minutes: 1440
-
-    steps:
-    - name: Setup environment
-      run: |-
-        echo "BENCHMARK_MACHINE_NICKNAME=arminc" >> $GITHUB_ENV
-    - name: Checkout benchmarking
-      uses: actions/checkout@v4
-    - name: git gc
-      run: |
-        git gc
-    - uses: fregante/setup-git-user@v2
-    - name: Checkout CPython
-      uses: actions/checkout@v4
-      with:
-        persist-credentials: false
-        repository: ${{ inputs.fork }}/cpython
-        path: cpython
-        ref: ${{ inputs.ref }}
-        fetch-depth: 50
-    - name: Install dependencies from PyPI
-      run: |
-        rm -rf venv
-        python -m venv venv
-        venv/bin/python -m pip install --upgrade pip
-        venv/bin/python -m pip install -r requirements.txt
-    - name: Should we run?
-      if: ${{ always() }}
-      id: should_run
-      run: |
-        venv/bin/python -m bench_runner should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} false ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} >> $GITHUB_OUTPUT
-    - name: Checkout python-macrobenchmarks
-      uses: actions/checkout@v4
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      with:
-        persist-credentials: false
-        repository: pyston/python-macrobenchmarks
-        path: pyston-benchmarks
-        ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
-    - name: Checkout pyperformance
-      uses: actions/checkout@v4
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      with:
-        persist-credentials: false
-        repository: mdboom/pyperformance
-        path: pyperformance
-        ref: ${{ env.PYPERFORMANCE_HASH }}
-    - name: Build with clang
-      if: ${{ inputs.clang }}
-      run: |
-        echo "CC=`which clang-19`" >> $GITHUB_ENV
-        echo "LLVM_AR=`which llvm-ar-19`" >> $GITHUB_ENV
-        echo "LLVM_PROFDATA=`which llvm-profdata-19`" >> $GITHUB_ENV
-    - name: Build Python
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        cd cpython
-        ./configure --enable-option-checking=fatal ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }} ${PYTHON_CONFIGURE_FLAGS:-}
-        make ${{ runner.arch == 'ARM64' && '-j' || '-j4' }}
-        ./python -VV
-    - name: Install pyperformance
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        venv/bin/python -m pip install ./pyperformance
-    - name: Tune system
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system ${{ inputs.perf && 'reset' || 'tune ${CPU_AFFINITY:+--affinity="$CPU_AFFINITY"}' }}
-    - name: Tune for (Linux) perf
-      if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
-      run: |
-        # Must match the PERF_PERIOD value in profiling_plot.py
-        sudo bash -c "echo 100000 > /proc/sys/kernel/perf_event_max_sample_rate"
-    - name: Running pyperformance
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        rm -rf ~/.debug/*
-        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} --run_id ${{ github.run_id }}
-    - name: Untune system
-      if: ${{ steps.should_run.outputs.should_run != 'false' }}
-      run: |
-        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system reset
-      # Pull again, since another job may have committed results in the meantime
-    - name: Pull benchmarking
-      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
-      run: |
-        # Another benchmarking task may have created results for the same
-        # commit while the above was running. This "magic" incantation means
-        # that any local results for this commit will override anything we
-        # just pulled in in that case.
-        git pull -s recursive -X ours --autostash --rebase
-    - name: Adding data to repo
-      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
-      uses: EndBug/add-and-commit@v9
-      with:
-        add: results
-    - name: Upload benchmark artifacts
-      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
-      uses: actions/upload-artifact@v4
-      with:
-        name: benchmark
-        path: |
-          benchmark.json
-        overwrite: true
-    - name: Upload perf artifacts
-      if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
-      uses: actions/upload-artifact@v4
-      with:
-        name: perf
-        path: |
-          profiling/results
-
-    if: ${{ (inputs.machine == 'linux-aarch64-arminc' || inputs.machine == '__really_all'
-      || inputs.machine == 'all') }}
-    env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
-        == true && 'clang' || '' }}
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
+        == true && 'tailcall' || '' }}

@@ -42,6 +42,11 @@
 - [📄table](bm-20250527-arminc-aarch64-python-f6f4e8a6622d55664179-3.15.0a0-f6f4e8a-vs-3.13.0.md)
 - [📈time plot](bm-20250527-arminc-aarch64-python-f6f4e8a6622d55664179-3.15.0a0-f6f4e8a-vs-3.13.0.svg)
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250527-azure-x86_64-python-f6f4e8a6622d55664179-3.15.0a0-f6f4e8a-pystats.json)
+- [pystats table](bm-20250527-azure-x86_64-python-f6f4e8a6622d55664179-3.15.0a0-f6f4e8a-pystats.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15295821692)

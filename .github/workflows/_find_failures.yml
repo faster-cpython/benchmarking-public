@@ -4,7 +4,7 @@ name: _find_failures
 
 on:
   schedule:
-  - cron: 0 8 * * 0
+  - cron: 0 22 * * 0
   workflow_dispatch: {}
 
 jobs:

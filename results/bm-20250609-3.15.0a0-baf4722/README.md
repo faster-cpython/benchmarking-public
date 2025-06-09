@@ -42,6 +42,14 @@
 - [📄table](bm-20250609-linux-x86_64-faster%252dcpython-specialize_for_iter_-3.15.0a0-baf4722-vs-3.13.0.md)
 - [📈time plot](bm-20250609-linux-x86_64-faster%252dcpython-specialize_for_iter_-3.15.0a0-baf4722-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.000x slower (HPT: reliability of 97.46%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250609-linux-x86_64-faster%252dcpython-specialize_for_iter_-3.15.0a0-baf4722-vs-base-mem.svg)
+- [📄table](bm-20250609-linux-x86_64-faster%252dcpython-specialize_for_iter_-3.15.0a0-baf4722-vs-base.md)
+- [📈time plot](bm-20250609-linux-x86_64-faster%252dcpython-specialize_for_iter_-3.15.0a0-baf4722-vs-base.svg)
+
 ## windows amd64 (pythonperf1)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15534215930)
@@ -75,6 +83,13 @@
 - new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
 - [📄table](bm-20250609-pythonperf1-amd64-faster%252dcpython-specialize_for_iter_-3.15.0a0-baf4722-vs-3.13.0.md)
 - [📈time plot](bm-20250609-pythonperf1-amd64-faster%252dcpython-specialize_for_iter_-3.15.0a0-baf4722-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.000x slower (HPT: reliability of 68.90%, 1.00x slower at 99th %ile)
+- Memory usage: unknown
+- [📄table](bm-20250609-pythonperf1-amd64-faster%252dcpython-specialize_for_iter_-3.15.0a0-baf4722-vs-base.md)
+- [📈time plot](bm-20250609-pythonperf1-amd64-faster%252dcpython-specialize_for_iter_-3.15.0a0-baf4722-vs-base.svg)
 
 ## darwin arm64 (darwin)
 

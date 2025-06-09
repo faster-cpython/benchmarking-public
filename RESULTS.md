@@ -873,6 +873,11 @@ Each result column below is of the form:
 | [2023-02-07](results/bm-20230207-3.10.10-aad5f6a) | python/aad5f6a89125ad4529ab | aad5f6a |  |  |  |  |
 | [2022-03-23](results/bm-20220323-3.10.4-9d38120) | python/v3.10.4 | 9d38120 |  | 1.236x ↓<br>[📄](results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf2-x86_64-python-v3.10.4-3.10.4-9d38120-vs-3.12.0.md)[📈](results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf2-x86_64-python-v3.10.4-3.10.4-9d38120-vs-3.12.0.svg) | 1.224x ↓<br>[📄](results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf2-x86_64-python-v3.10.4-3.10.4-9d38120-vs-3.13.0.md)[📈](results/bm-20220323-3.10.4-9d38120/bm-20220323-pythonperf2-x86_64-python-v3.10.4-3.10.4-9d38120-vs-3.13.0.svg) |  |
 
+## linux x86_64 (pythonperf2_clang)
+| date | fork/ref | hash/flags | vs. 3.10.4: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |
+| --- | --- | --- | ---: | ---: | ---: | ---: |
+| [2025-05-26](results/bm-20250526-3.14.0b2-12d3f88) | python/v3.14.0b2 | 12d3f88 |  |  |  |  |
+
 ## windows amd64 (pythonperf1)
 | date | fork/ref | hash/flags | vs. 3.10.4: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
@@ -1364,6 +1369,7 @@ Each result column below is of the form:
 | [2025-05-24](results/bm-20250524-3.15.0a0-2fd09b0-TAILCALL) | python/2fd09b011031f3c00c34 | 2fd09b0 (TAILCALL) |  |  |  |  |
 | [2025-05-18](results/bm-20250518-3.15.0a0-009e7b3-TAILCALL) | python/009e7b36981fd07f7cca | 009e7b3 (TAILCALL) |  |  |  |  |
 | [2025-05-10](results/bm-20250510-3.15.0a0-1a87b6e-TAILCALL) | python/1a87b6e9ae6da255f304 | 1a87b6e (TAILCALL) |  |  |  |  |
+| [2025-05-26](results/bm-20250526-3.14.0b2-12d3f88) | python/v3.14.0b2 | 12d3f88 |  |  |  |  |
 | [2025-05-03](results/bm-20250503-3.14.0a7%2B-7363e8d-TAILCALL) | python/7363e8d24d14abf65163 | 7363e8d (TAILCALL) |  |  |  |  |
 | [2025-04-26](results/bm-20250426-3.14.0a7%2B-4f18916-TAILCALL) | python/4f18916c5c28321f363e | 4f18916 (TAILCALL) |  |  |  |  |
 | [2025-04-19](results/bm-20250419-3.14.0a7%2B-71da68d-TAILCALL) | python/71da68d5887b6c058907 | 71da68d (TAILCALL) |  |  |  |  |

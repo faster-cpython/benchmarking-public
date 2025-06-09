@@ -56,6 +56,11 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 | [2025-06-06](results/bm-20250606-3.15.0a0-f00512d) | python/f00512db20561370faad | f00512d | 1.360x ↑<br>[📄](results/bm-20250606-3.15.0a0-f00512d/bm-20250606-pythonperf2-x86_64-python-f00512db20561370faad-3.15.0a0-f00512d-vs-3.10.4.md)[📈](results/bm-20250606-3.15.0a0-f00512d/bm-20250606-pythonperf2-x86_64-python-f00512db20561370faad-3.15.0a0-f00512d-vs-3.10.4.svg) | 1.055x ↑<br>[📄](results/bm-20250606-3.15.0a0-f00512d/bm-20250606-pythonperf2-x86_64-python-f00512db20561370faad-3.15.0a0-f00512d-vs-3.12.0.md)[📈](results/bm-20250606-3.15.0a0-f00512d/bm-20250606-pythonperf2-x86_64-python-f00512db20561370faad-3.15.0a0-f00512d-vs-3.12.0.svg) | 1.065x ↑<br>[📄](results/bm-20250606-3.15.0a0-f00512d/bm-20250606-pythonperf2-x86_64-python-f00512db20561370faad-3.15.0a0-f00512d-vs-3.13.0.md)[📈](results/bm-20250606-3.15.0a0-f00512d/bm-20250606-pythonperf2-x86_64-python-f00512db20561370faad-3.15.0a0-f00512d-vs-3.13.0.svg) |  |
 | [2025-05-26](results/bm-20250526-3.14.0b2-12d3f88) | python/v3.14.0b2 | 12d3f88 | 1.353x ↑<br>[📄](results/bm-20250526-3.14.0b2-12d3f88/bm-20250526-pythonperf2-x86_64-python-v3.14.0b2-3.14.0b2-12d3f88-vs-3.10.4.md)[📈](results/bm-20250526-3.14.0b2-12d3f88/bm-20250526-pythonperf2-x86_64-python-v3.14.0b2-3.14.0b2-12d3f88-vs-3.10.4.svg) | 1.052x ↑<br>[📄](results/bm-20250526-3.14.0b2-12d3f88/bm-20250526-pythonperf2-x86_64-python-v3.14.0b2-3.14.0b2-12d3f88-vs-3.12.0.md)[📈](results/bm-20250526-3.14.0b2-12d3f88/bm-20250526-pythonperf2-x86_64-python-v3.14.0b2-3.14.0b2-12d3f88-vs-3.12.0.svg) | 1.061x ↑<br>[📄](results/bm-20250526-3.14.0b2-12d3f88/bm-20250526-pythonperf2-x86_64-python-v3.14.0b2-3.14.0b2-12d3f88-vs-3.13.0.md)[📈](results/bm-20250526-3.14.0b2-12d3f88/bm-20250526-pythonperf2-x86_64-python-v3.14.0b2-3.14.0b2-12d3f88-vs-3.13.0.svg) |  |
 
+## linux x86_64 (pythonperf2_clang)
+| date | fork/ref | hash/flags | vs. 3.10.4: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |
+| --- | --- | --- | ---: | ---: | ---: | ---: |
+| [2025-05-26](results/bm-20250526-3.14.0b2-12d3f88) | python/v3.14.0b2 | 12d3f88 |  |  |  |  |
+
 ## windows amd64 (pythonperf1)
 | date | fork/ref | hash/flags | vs. 3.10.4: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
@@ -111,6 +116,7 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 | [2025-06-07](results/bm-20250607-3.15.0a0-8fdbbf8-TAILCALL) | python/8fdbbf8b18f1405abe67 | 8fdbbf8 (TAILCALL) |  |  |  |  |
 | [2025-06-01](results/bm-20250601-3.15.0a0-cebae97-TAILCALL) | python/cebae977a63f32c3c03d | cebae97 (TAILCALL) |  |  |  |  |
 | [2025-05-24](results/bm-20250524-3.15.0a0-2fd09b0-TAILCALL) | python/2fd09b011031f3c00c34 | 2fd09b0 (TAILCALL) |  |  |  |  |
+| [2025-05-26](results/bm-20250526-3.14.0b2-12d3f88) | python/v3.14.0b2 | 12d3f88 |  |  |  |  |
 
 
 <!-- END table -->

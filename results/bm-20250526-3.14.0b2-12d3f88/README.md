@@ -75,3 +75,17 @@
 - [📄table](bm-20250526-pythonperf2-x86_64-python-v3.14.0b2-3.14.0b2-12d3f88-vs-3.13.0.md)
 - [📈time plot](bm-20250526-pythonperf2-x86_64-python-v3.14.0b2-3.14.0b2-12d3f88-vs-3.13.0.svg)
 
+## linux x86_64 (pythonperf2_clang)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15534738803)
+- cpu model: 12th Gen Intel(R) Core(TM) i9-12900
+- platform: Linux-5.15.0-141-generic-x86_64-with-glibc2.35
+- [raw results](bm-20250526-pythonperf2_clang-x86_64-python-v3.14.0b2-3.14.0b2-12d3f88.json)
+
+## darwin arm64 (darwin_clang)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15534738803)
+- cpu model: missing
+- platform: macOS-15.5-arm64-arm-64bit-Mach-O
+- [raw results](bm-20250526-darwin_clang-arm64-python-v3.14.0b2-3.14.0b2-12d3f88.json)
+

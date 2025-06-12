@@ -597,7 +597,7 @@ jobs:
     - name: Setup environment
       run: |-
         echo "BUILD_DEST=PCBuild/amd64" >> $env:GITHUB_ENV
-        echo "PYTHON_CONFIGURE_FLAGS=`"/p:PlatformToolset`=clangcl`" `"/p:LLVMInstallDir=C:\Program Files\LLVM`" `"/p:LLVMToolsVersion=19.1.6`"" >> $env:GITHUB_ENV
+        echo "PYTHON_CONFIGURE_FLAGS=`"/p:PlatformToolset`=clangcl`" `"/p:LLVMInstallDir`=C:\Program Files\LLVM`" `"/p:LLVMToolsVersion`=19.1.6`"" >> $env:GITHUB_ENV
         echo "BENCHMARK_MACHINE_NICKNAME=pythonperf1_clang" >> $env:GITHUB_ENV
     - name: Enable symlinks for git
       run: |
@@ -696,7 +696,7 @@ jobs:
       run: |-
         echo "BUILD_DEST=PCBuild/win32" >> $env:GITHUB_ENV
         echo "BUILD_FLAGS=-p Win32" >> $env:GITHUB_ENV
-        echo "PYTHON_CONFIGURE_FLAGS=`"/p:PlatformToolset`=clangcl`" `"/p:LLVMInstallDir=C:\Program Files\LLVM`" `"/p:LLVMToolsVersion=19.1.6`"" >> $env:GITHUB_ENV
+        echo "PYTHON_CONFIGURE_FLAGS=`"/p:PlatformToolset`=clangcl`" `"/p:LLVMInstallDir`=C:\Program Files\LLVM`" `"/p:LLVMToolsVersion`=19.1.6`"" >> $env:GITHUB_ENV
         echo "BENCHMARK_MACHINE_NICKNAME=pythonperf1_win32_clang" >> $env:GITHUB_ENV
     - name: Enable symlinks for git
       run: |

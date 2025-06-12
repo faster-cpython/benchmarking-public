@@ -124,7 +124,7 @@ include_in_all = false
 plot = { name = "win64 clang", color = "C3", style = "-", marker = "." }
 [runners.pythonperf1_clang.env]
 BUILD_DEST = "PCBuild/amd64"
-PYTHON_CONFIGURE_FLAGS = '`"/p:PlatformToolset`=clangcl`" `"/p:LLVMInstallDir=C:\Program Files\LLVM`" `"/p:LLVMToolsVersion=19.1.6`"'
+PYTHON_CONFIGURE_FLAGS = '`"/p:PlatformToolset`=clangcl`" `"/p:LLVMInstallDir`=C:\Program Files\LLVM`" `"/p:LLVMToolsVersion`=19.1.6`"'
 
 [runners.pythonperf1_win32]
 os = "windows"
@@ -145,7 +145,7 @@ plot = { name = "win32 clang", color = "C3", style = ":", marker = "." }
 [runners.pythonperf1_win32_clang.env]
 BUILD_DEST = "PCBuild/win32"
 BUILD_FLAGS = "-p Win32"
-PYTHON_CONFIGURE_FLAGS = '`"/p:PlatformToolset`=clangcl`" `"/p:LLVMInstallDir=C:\Program Files\LLVM`" `"/p:LLVMToolsVersion=19.1.6`"'
+PYTHON_CONFIGURE_FLAGS = '`"/p:PlatformToolset`=clangcl`" `"/p:LLVMInstallDir`=C:\Program Files\LLVM`" `"/p:LLVMToolsVersion`=19.1.6`"'
 
 [runners.azure]
 os = "linux"

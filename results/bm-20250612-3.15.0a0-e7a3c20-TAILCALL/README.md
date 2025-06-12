@@ -15,3 +15,10 @@
 - platform: Windows-11-10.0.26100-SP0
 - [raw results](bm-20250612-pythonperf1_clang-amd64-python-main-3.15.0a0-e7a3c20.json)
 
+### vs. base
+
+- Geometric mean: 1.041x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
+- Memory usage: unknown
+- [📄table](bm-20250612-pythonperf1_clang-amd64-python-main-3.15.0a0-e7a3c20-vs-base.md)
+- [📈time plot](bm-20250612-pythonperf1_clang-amd64-python-main-3.15.0a0-e7a3c20-vs-base.svg)
+

@@ -81,6 +81,7 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 | [2025-05-24](results/bm-20250524-3.15.0a0-2fd09b0-TAILCALL) | python/2fd09b011031f3c00c34 | 2fd09b0 (TAILCALL) |  |  |  |  |
 | [2025-05-10](results/bm-20250510-3.15.0a0-1a87b6e-TAILCALL) | python/1a87b6e9ae6da255f304 | 1a87b6e (TAILCALL) |  |  |  |  |
 | [2025-05-26](results/bm-20250526-3.14.0b2-12d3f88) | python/v3.14.0b2 | 12d3f88 |  |  |  |  |
+| [2025-03-04](results/bm-20250304-3.14.0a5%2B-d8a1cf4) | python/d8a1cf469e40b538a84e | d8a1cf4 |  |  |  |  |
 
 ## windows amd64 (pythonperf1_win32)
 | date | fork/ref | hash/flags | vs. 3.10.4: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |

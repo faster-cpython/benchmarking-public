@@ -1081,6 +1081,7 @@ Each result column below is of the form:
 | [2025-03-15](results/bm-20250315-3.14.0a6%2B-e82c2ca-TAILCALL) | python/e82c2ca2a59235bc1965 | e82c2ca (TAILCALL) |  |  |  |  |
 | [2025-03-08](results/bm-20250308-3.14.0a5%2B-a3990df-TAILCALL) | python/a3990df6121880e8c678 | a3990df (TAILCALL) |  |  |  |  |
 | [2025-03-06](results/bm-20250306-3.14.0a5%2B-37fb620-TAILCALL) | Fidget-Spinner/clang_hot | 37fb620 (TAILCALL) |  |  |  |  |
+| [2025-03-04](results/bm-20250304-3.14.0a5%2B-d8a1cf4) | python/d8a1cf469e40b538a84e | d8a1cf4 |  |  |  |  |
 | [2025-03-01](results/bm-20250301-3.14.0a5%2B-c9932a9-TAILCALL) | python/c9932a9ec8a3077933a8 | c9932a9 (TAILCALL) |  |  |  |  |
 | [2025-02-25](results/bm-20250225-3.14.0a5%2B-da5ad58-TAILCALL) | Fidget-Spinner/disable_tailcall | da5ad58 (TAILCALL) |  |  |  | 1.002x ↑<br>[📄](results/bm-20250225-3.14.0a5%2B-da5ad58-TAILCALL/bm-20250225-pythonperf1_clang-amd64-Fidget%252dSpinner-disable_tailcall-3.14.0a5%2B-da5ad58-vs-base.md)[📈](results/bm-20250225-3.14.0a5%2B-da5ad58-TAILCALL/bm-20250225-pythonperf1_clang-amd64-Fidget%252dSpinner-disable_tailcall-3.14.0a5%2B-da5ad58-vs-base.svg) |
 | [2025-02-22](results/bm-20250222-3.14.0a5%2B-5ec4bf8-TAILCALL) | python/5ec4bf86b7f4455432ae | 5ec4bf8 (TAILCALL) |  |  |  |  |

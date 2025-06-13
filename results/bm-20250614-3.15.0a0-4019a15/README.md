@@ -76,6 +76,14 @@
 - [📄table](bm-20250614-linux-x86_64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-3.13.0.md)
 - [📈time plot](bm-20250614-linux-x86_64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.008x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250614-linux-x86_64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-base-mem.svg)
+- [📄table](bm-20250614-linux-x86_64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-base.md)
+- [📈time plot](bm-20250614-linux-x86_64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-base.svg)
+
 ## windows amd64 (pythonperf1)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15639848326)
@@ -110,6 +118,13 @@
 - [📄table](bm-20250614-pythonperf1-amd64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-3.13.0.md)
 - [📈time plot](bm-20250614-pythonperf1-amd64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.005x faster (HPT: reliability of 99.93%, 1.00x faster at 99th %ile)
+- Memory usage: unknown
+- [📄table](bm-20250614-pythonperf1-amd64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-base.md)
+- [📈time plot](bm-20250614-pythonperf1-amd64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-base.svg)
+
 ## darwin arm64 (darwin)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15639848326)
@@ -143,4 +158,12 @@
 - new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
 - [📄table](bm-20250614-darwin-arm64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-3.13.0.md)
 - [📈time plot](bm-20250614-darwin-arm64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.078x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250614-darwin-arm64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-base-mem.svg)
+- [📄table](bm-20250614-darwin-arm64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-base.md)
+- [📈time plot](bm-20250614-darwin-arm64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-base.svg)
 

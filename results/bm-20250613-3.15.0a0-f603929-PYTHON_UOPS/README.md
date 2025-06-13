@@ -13,6 +13,10 @@
 - [pystats raw](bm-20250613-azure-x86_64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-f603929-pystats.json)
 - [pystats table](bm-20250613-azure-x86_64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-f603929-pystats.md)
 
+### vs. base
+
+- [pystats diff](bm-20250613-azure-x86_64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-f603929-pystats-vs-base.md)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15633716768)
@@ -46,4 +50,12 @@
 - new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
 - [📄table](bm-20250613-pythonperf2-x86_64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-f603929-vs-3.13.0.md)
 - [📈time plot](bm-20250613-pythonperf2-x86_64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-f603929-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.034x slower (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250613-pythonperf2-x86_64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-f603929-vs-base-mem.svg)
+- [📄table](bm-20250613-pythonperf2-x86_64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-f603929-vs-base.md)
+- [📈time plot](bm-20250613-pythonperf2-x86_64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-f603929-vs-base.svg)
 

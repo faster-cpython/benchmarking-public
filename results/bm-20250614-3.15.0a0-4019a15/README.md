@@ -42,6 +42,14 @@
 - [📄table](bm-20250614-arminc-aarch64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-3.13.0.md)
 - [📈time plot](bm-20250614-arminc-aarch64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.000x slower (HPT: reliability of 67.75%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250614-arminc-aarch64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-base-mem.svg)
+- [📄table](bm-20250614-arminc-aarch64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-base.md)
+- [📈time plot](bm-20250614-arminc-aarch64-Fidget%252dSpinner-pylong_compactadd-3.15.0a0-4019a15-vs-base.svg)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15639848326)

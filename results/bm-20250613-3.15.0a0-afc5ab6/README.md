@@ -8,6 +8,40 @@
 - commit merge base: [f4bc3a932082411243da9bb909841138ee2eea97](https://github.com/python/cpython/commit/f4bc3a932082411243da9bb909841138ee2eea97)
 - ref: afc5ab6cce9d7095b99c
 
+## linux aarch64 (arminc)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15639848326)
+- cpu model: missing
+- platform: Linux-5.15.0-101-generic-aarch64-with-glibc2.35
+- [raw results](bm-20250613-arminc-aarch64-python-afc5ab6cce9d7095b99c-3.15.0a0-afc5ab6.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.230x faster (HPT: reliability of 100.00%, 1.21x faster at 99th %ile)
+- Memory usage: 1.37x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, bench_mp_pool, bench_thread_pool, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http, unpickle, unpickle_list
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, bpe_tokeniser, connected_components, k_core, many_optionals, shortest_path, sphinx, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, subparsers
+- [📄table](bm-20250613-arminc-aarch64-python-afc5ab6cce9d7095b99c-3.15.0a0-afc5ab6-vs-3.10.4.md)
+- [📈time plot](bm-20250613-arminc-aarch64-python-afc5ab6cce9d7095b99c-3.15.0a0-afc5ab6-vs-3.10.4.svg)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.025x slower (HPT: reliability of 99.99%, 1.02x faster at 99th %ile)
+- Memory usage: 1.10x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, bench_mp_pool, bench_thread_pool, chameleon, dask, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http, unpickle, unpickle_list
+- new benchmarks: bpe_tokeniser, connected_components, k_core, many_optionals, shortest_path, sphinx, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, subparsers
+- [📄table](bm-20250613-arminc-aarch64-python-afc5ab6cce9d7095b99c-3.15.0a0-afc5ab6-vs-3.12.0.md)
+- [📈time plot](bm-20250613-arminc-aarch64-python-afc5ab6cce9d7095b99c-3.15.0a0-afc5ab6-vs-3.12.0.svg)
+
+### vs. 3.13.0
+
+- Geometric mean: 1.023x slower (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
+- Memory usage: 1.07x
+- missing benchmarks: bench_mp_pool, bench_thread_pool, chameleon, djangocms, gevent_hub, gunicorn, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
+- new benchmarks: dulwich_log, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
+- [📄table](bm-20250613-arminc-aarch64-python-afc5ab6cce9d7095b99c-3.15.0a0-afc5ab6-vs-3.13.0.md)
+- [📈time plot](bm-20250613-arminc-aarch64-python-afc5ab6cce9d7095b99c-3.15.0a0-afc5ab6-vs-3.13.0.svg)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15639848326)

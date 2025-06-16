@@ -2279,12 +2279,12 @@ specialized instruction deoptimizes.
 <td align="right">23.1%</td>
 </tr>
 <tr>
-<td align="left">BINARY_OP_SUBTRACT_FLOAT</td>
+<td align="left">BINARY_OP</td>
 <td align="right">40</td>
 <td align="right">15.4%</td>
 </tr>
 <tr>
-<td align="left">BINARY_OP</td>
+<td align="left">BINARY_OP_SUBTRACT_FLOAT</td>
 <td align="right">40</td>
 <td align="right">15.4%</td>
 </tr>
@@ -6611,6 +6611,48 @@ specialized instruction deoptimizes.
 
 </details>
 
+### CALL_TUPLE_1
+
+<details>
+<summary> Successors and predecessors for CALL_TUPLE_1 </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_FAST</td>
+<td align="right">30,720</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">STORE_FAST</td>
+<td align="right">30,720</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
 ### LOAD_BUILD_CLASS
 
 <details>
@@ -6853,48 +6895,6 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">STORE_DEREF</td>
 <td align="right">60</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### CALL_TUPLE_1
-
-<details>
-<summary> Successors and predecessors for CALL_TUPLE_1 </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_FAST</td>
-<td align="right">30,720</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">STORE_FAST</td>
-<td align="right">30,720</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -8039,7 +8039,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">53,392,835</td>
+<td align="right">53,392,838</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -8059,12 +8059,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">130,770,170</td>
+<td align="right">130,770,180</td>
 <td align="right">24.1%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">159,494,937</td>
+<td align="right">159,494,959</td>
 <td align="right">26.6%</td>
 </tr>
 <tr>
@@ -8079,12 +8079,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">123,767,255</td>
+<td align="right">123,767,263</td>
 <td align="right">22.8%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">105,977,309</td>
+<td align="right">105,977,307</td>
 <td align="right">17.7%</td>
 </tr>
 <tr>
@@ -8109,27 +8109,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">5,261,188</td>
+<td align="right">5,261,185</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">192</td>
+<td align="right">195</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">524</td>
+<td align="right">558</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">13,213,330</td>
+<td align="right">13,213,325</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">510</td>
+<td align="right">515</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -8316,4 +8316,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-15
+Stats gathered on: 2025-06-16

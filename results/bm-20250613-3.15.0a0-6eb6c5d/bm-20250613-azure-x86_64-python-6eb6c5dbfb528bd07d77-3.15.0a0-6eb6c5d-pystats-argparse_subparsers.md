@@ -12427,7 +12427,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">23,987,967</td>
+<td align="right">23,988,057</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -12447,12 +12447,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">92,349,560</td>
+<td align="right">92,351,157</td>
 <td align="right">30.5%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">104,117,995</td>
+<td align="right">104,119,671</td>
 <td align="right">32.1%</td>
 </tr>
 <tr>
@@ -12467,12 +12467,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">74,435,667</td>
+<td align="right">74,435,573</td>
 <td align="right">24.6%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">69,133,236</td>
+<td align="right">69,133,169</td>
 <td align="right">21.3%</td>
 </tr>
 <tr>
@@ -12497,27 +12497,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">9,665,755</td>
+<td align="right">9,664,958</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">1,292,944</td>
+<td align="right">1,293,741</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">1,293,844</td>
+<td align="right">1,294,557</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">6,369,512</td>
+<td align="right">6,369,585</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">1,502</td>
+<td align="right">1,429</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -12558,7 +12558,7 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">1,296</td>
 <td align="right">2,168,504</td>
-<td align="right">41,743,372</td>
+<td align="right">41,743,387</td>
 <td align="right">734,432</td>
 <td align="right">2,596,972</td>
 </tr>
@@ -12704,4 +12704,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-15
+Stats gathered on: 2025-06-16

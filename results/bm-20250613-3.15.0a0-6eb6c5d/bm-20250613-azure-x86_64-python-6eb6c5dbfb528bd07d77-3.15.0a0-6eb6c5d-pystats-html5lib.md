@@ -14483,7 +14483,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">9,761,639</td>
+<td align="right">9,761,641</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -14503,12 +14503,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">61,304,807</td>
+<td align="right">61,306,340</td>
 <td align="right">18.4%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">48,494,518</td>
+<td align="right">48,496,053</td>
 <td align="right">13.9%</td>
 </tr>
 <tr>
@@ -14523,12 +14523,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">73,462,120</td>
+<td align="right">73,463,693</td>
 <td align="right">22.0%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">66,580,492</td>
+<td align="right">66,582,073</td>
 <td align="right">19.1%</td>
 </tr>
 <tr>
@@ -14553,27 +14553,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">7,119,652</td>
+<td align="right">7,118,197</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">39,214</td>
+<td align="right">40,669</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">39,494</td>
+<td align="right">41,086</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">879,852</td>
+<td align="right">879,750</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">405</td>
+<td align="right">507</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -14614,7 +14614,7 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">1,038</td>
 <td align="right">296,250</td>
-<td align="right">19,533,891</td>
+<td align="right">19,533,801</td>
 <td align="right">1,239,936</td>
 <td align="right">1,778,011</td>
 </tr>
@@ -14760,4 +14760,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-15
+Stats gathered on: 2025-06-16

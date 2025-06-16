@@ -6408,7 +6408,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">3,429</td>
+<td align="right">3,430</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -6424,16 +6424,16 @@ other names.
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
 <td align="right">465,121,380</td>
-<td align="right">69.8%</td>
+<td align="right">69.9%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">97,244,105</td>
+<td align="right">96,787,148</td>
 <td align="right">13.5%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">17,627,857</td>
+<td align="right">17,170,904</td>
 <td align="right">2.6%</td>
 </tr>
 <tr>
@@ -6448,13 +6448,13 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">196,197,825</td>
+<td align="right">195,740,868</td>
 <td align="right">27.2%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">127,715,993</td>
-<td align="right">19.2%</td>
+<td align="right">127,259,032</td>
+<td align="right">19.1%</td>
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -6478,17 +6478,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">163,343,555</td>
+<td align="right">163,800,512</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">585,245</td>
+<td align="right">128,288</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">585,239</td>
+<td align="right">128,283</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -6685,4 +6685,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-15
+Stats gathered on: 2025-06-16

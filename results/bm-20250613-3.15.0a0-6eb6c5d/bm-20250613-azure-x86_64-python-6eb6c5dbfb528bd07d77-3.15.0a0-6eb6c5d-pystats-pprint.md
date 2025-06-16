@@ -6922,6 +6922,53 @@ specialized instruction deoptimizes.
 
 </details>
 
+### JUMP_BACKWARD
+
+<details>
+<summary> Successors and predecessors for JUMP_BACKWARD </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">4</td>
+<td align="right">57.1%</td>
+</tr>
+<tr>
+<td align="left">POP_TOP</td>
+<td align="right">3</td>
+<td align="right">42.9%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">JUMP_BACKWARD_NO_JIT</td>
+<td align="right">7</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
 ### JUMP_BACKWARD_NO_INTERRUPT
 
 <details>
@@ -6999,6 +7046,78 @@ specialized instruction deoptimizes.
 <td align="left">LOAD_SMALL_INT</td>
 <td align="right">64</td>
 <td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### RESUME
+
+<details>
+<summary> Successors and predecessors for RESUME </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">CALL</td>
+<td align="right">13</td>
+<td align="right">44.8%</td>
+</tr>
+<tr>
+<td align="left">CACHE</td>
+<td align="right">12</td>
+<td align="right">41.4%</td>
+</tr>
+<tr>
+<td align="left">COPY_FREE_VARS</td>
+<td align="right">2</td>
+<td align="right">6.9%</td>
+</tr>
+<tr>
+<td align="left">MAKE_CELL</td>
+<td align="right">2</td>
+<td align="right">6.9%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_FAST_BORROW</td>
+<td align="right">13</td>
+<td align="right">44.8%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL</td>
+<td align="right">12</td>
+<td align="right">41.4%</td>
+</tr>
+<tr>
+<td align="left">NOP</td>
+<td align="right">2</td>
+<td align="right">6.9%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST_BORROW_LOAD_FAST_BORROW</td>
+<td align="right">2</td>
+<td align="right">6.9%</td>
 </tr>
 </tbody>
 </table>
@@ -7264,125 +7383,6 @@ specialized instruction deoptimizes.
 <td align="left">LOAD_ATTR</td>
 <td align="right">21</td>
 <td align="right">33.3%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### JUMP_BACKWARD
-
-<details>
-<summary> Successors and predecessors for JUMP_BACKWARD </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">4</td>
-<td align="right">57.1%</td>
-</tr>
-<tr>
-<td align="left">POP_TOP</td>
-<td align="right">3</td>
-<td align="right">42.9%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">JUMP_BACKWARD_NO_JIT</td>
-<td align="right">7</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### RESUME
-
-<details>
-<summary> Successors and predecessors for RESUME </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">CALL</td>
-<td align="right">13</td>
-<td align="right">44.8%</td>
-</tr>
-<tr>
-<td align="left">CACHE</td>
-<td align="right">12</td>
-<td align="right">41.4%</td>
-</tr>
-<tr>
-<td align="left">COPY_FREE_VARS</td>
-<td align="right">2</td>
-<td align="right">6.9%</td>
-</tr>
-<tr>
-<td align="left">MAKE_CELL</td>
-<td align="right">2</td>
-<td align="right">6.9%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_FAST_BORROW</td>
-<td align="right">13</td>
-<td align="right">44.8%</td>
-</tr>
-<tr>
-<td align="left">LOAD_GLOBAL</td>
-<td align="right">12</td>
-<td align="right">41.4%</td>
-</tr>
-<tr>
-<td align="left">NOP</td>
-<td align="right">2</td>
-<td align="right">6.9%</td>
-</tr>
-<tr>
-<td align="left">LOAD_FAST_BORROW_LOAD_FAST_BORROW</td>
-<td align="right">2</td>
-<td align="right">6.9%</td>
 </tr>
 </tbody>
 </table>
@@ -8682,7 +8682,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">812,801,327</td>
+<td align="right">812,801,333</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -8702,12 +8702,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">2,062,744,607</td>
+<td align="right">2,062,744,603</td>
 <td align="right">25.6%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">2,528,024,117</td>
+<td align="right">2,528,024,120</td>
 <td align="right">28.9%</td>
 </tr>
 <tr>
@@ -8722,12 +8722,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">1,670,777,829</td>
+<td align="right">1,670,777,821</td>
 <td align="right">20.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">1,216,003,184</td>
+<td align="right">1,216,003,169</td>
 <td align="right">13.9%</td>
 </tr>
 <tr>
@@ -8752,27 +8752,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">211,220,143</td>
+<td align="right">211,220,154</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">87</td>
+<td align="right">76</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">187</td>
+<td align="right">181</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">576,000,601</td>
+<td align="right">576,000,596</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">131</td>
+<td align="right">136</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -8959,4 +8959,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-15
+Stats gathered on: 2025-06-16

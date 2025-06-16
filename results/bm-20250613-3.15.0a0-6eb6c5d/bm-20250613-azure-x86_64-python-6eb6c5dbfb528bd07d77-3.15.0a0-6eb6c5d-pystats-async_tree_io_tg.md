@@ -10161,7 +10161,7 @@ Specialized hits
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that complete.
 </details>
 </td>
-<td align="right">1,501,446,853</td>
+<td align="right">1,501,446,831</td>
 <td align="right">42.5%</td>
 </tr>
 <tr>
@@ -10173,7 +10173,7 @@ Specialized misses
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </details>
 </td>
-<td align="right">137,927</td>
+<td align="right">137,949</td>
 <td align="right">0.0%</td>
 </tr>
 </tbody>
@@ -10275,13 +10275,13 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </tr>
 <tr>
 <td align="left">RESUME</td>
-<td align="right">22,727</td>
-<td align="right">14.1%</td>
+<td align="right">22,749</td>
+<td align="right">14.2%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">22,727</td>
-<td align="right">14.1%</td>
+<td align="right">22,749</td>
+<td align="right">14.2%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
@@ -10444,22 +10444,22 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
-<td align="right">115,989,027</td>
+<td align="right">115,988,962</td>
 <td align="right">55.9%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
-<td align="right">115,989,147</td>
+<td align="right">115,989,082</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">91,673,334</td>
+<td align="right">91,673,378</td>
 <td align="right">44.1%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
-<td align="right">91,026,894</td>
+<td align="right">91,026,938</td>
 <td align="right">43.8%</td>
 </tr>
 <tr>
@@ -10474,7 +10474,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">91,673,240</td>
+<td align="right">91,673,283</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10489,17 +10489,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
-<td align="right">1,183,893,367</td>
+<td align="right">1,183,893,302</td>
 <td align="right">59.3%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">444,103,092</td>
+<td align="right">444,102,434</td>
 <td align="right">24.3%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">525,261,252</td>
+<td align="right">525,260,637</td>
 <td align="right">26.3%</td>
 </tr>
 <tr>
@@ -10514,12 +10514,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">148,891,856</td>
+<td align="right">148,891,229</td>
 <td align="right">8.2%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">253,558,782</td>
+<td align="right">253,558,119</td>
 <td align="right">12.7%</td>
 </tr>
 <tr>
@@ -10544,27 +10544,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">46,034,767</td>
+<td align="right">46,035,424</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">953</td>
+<td align="right">296</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">1,031</td>
+<td align="right">368</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">44,008,053</td>
+<td align="right">44,008,057</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">107</td>
+<td align="right">103</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -10603,11 +10603,11 @@ Collected/visits gives some measure of efficiency.
 </tr>
 <tr>
 <td align="right">1</td>
-<td align="right">25,827</td>
+<td align="right">25,849</td>
 <td align="right">160</td>
-<td align="right">1,015,533,794</td>
-<td align="right">99,559,357</td>
-<td align="right">62,584,716</td>
+<td align="right">1,023,542,898</td>
+<td align="right">101,278,254</td>
+<td align="right">62,609,755</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -10751,4 +10751,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-15
+Stats gathered on: 2025-06-16

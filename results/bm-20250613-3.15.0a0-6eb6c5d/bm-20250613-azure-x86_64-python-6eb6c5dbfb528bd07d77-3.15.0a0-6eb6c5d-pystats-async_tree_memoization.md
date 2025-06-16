@@ -10523,7 +10523,7 @@ Specialized hits
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that complete.
 </details>
 </td>
-<td align="right">815,751,989</td>
+<td align="right">815,751,984</td>
 <td align="right">39.4%</td>
 </tr>
 <tr>
@@ -10535,7 +10535,7 @@ Specialized misses
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </details>
 </td>
-<td align="right">11,143,011</td>
+<td align="right">11,143,016</td>
 <td align="right">0.5%</td>
 </tr>
 </tbody>
@@ -10652,12 +10652,12 @@ Specialized instructions, e.g. `LOAD_ATTR_MODULE` that deopt.
 </tr>
 <tr>
 <td align="left">RESUME</td>
-<td align="right">11,551</td>
+<td align="right">11,556</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
 <td align="left">RESUME_CHECK</td>
-<td align="right">11,551</td>
+<td align="right">11,556</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -10806,27 +10806,27 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
-<td align="right">59,618,593</td>
+<td align="right">59,618,607</td>
 <td align="right">52.4%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
-<td align="right">59,618,653</td>
+<td align="right">59,618,667</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">54,058,056</td>
+<td align="right">54,058,071</td>
 <td align="right">47.6%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
-<td align="right">54,011,773</td>
+<td align="right">54,011,785</td>
 <td align="right">47.5%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 4 kbytes</td>
-<td align="right">46,283</td>
+<td align="right">46,286</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -10836,7 +10836,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">55,735,418</td>
+<td align="right">55,735,550</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10851,17 +10851,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
-<td align="right">565,638,746</td>
+<td align="right">565,638,762</td>
 <td align="right">57.5%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">193,271,844</td>
+<td align="right">193,294,879</td>
 <td align="right">21.2%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">268,306,935</td>
+<td align="right">268,330,059</td>
 <td align="right">27.3%</td>
 </tr>
 <tr>
@@ -10876,12 +10876,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">97,092,821</td>
+<td align="right">97,109,296</td>
 <td align="right">10.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">134,102,883</td>
+<td align="right">134,119,271</td>
 <td align="right">13.6%</td>
 </tr>
 <tr>
@@ -10906,27 +10906,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">40,328,735</td>
+<td align="right">40,308,980</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">656,905</td>
+<td align="right">676,660</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">656,647</td>
+<td align="right">676,427</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">3,859,736</td>
+<td align="right">3,859,740</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">124</td>
+<td align="right">120</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -10965,11 +10965,11 @@ Collected/visits gives some measure of efficiency.
 </tr>
 <tr>
 <td align="right">1</td>
-<td align="right">13,750</td>
+<td align="right">13,755</td>
 <td align="right">160</td>
-<td align="right">396,386,601</td>
-<td align="right">23,619,830</td>
-<td align="right">35,773,621</td>
+<td align="right">396,471,969</td>
+<td align="right">23,602,517</td>
+<td align="right">35,791,720</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -11113,4 +11113,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-15
+Stats gathered on: 2025-06-16

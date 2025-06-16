@@ -9791,12 +9791,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">18,621,394</td>
+<td align="right">18,621,496</td>
 <td align="right">47.3%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
-<td align="right">18,048,874</td>
+<td align="right">18,048,976</td>
 <td align="right">45.8%</td>
 </tr>
 <tr>
@@ -9811,7 +9811,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">19,335,406</td>
+<td align="right">19,335,484</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -9831,12 +9831,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">27,583,997</td>
+<td align="right">27,575,001</td>
 <td align="right">16.4%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">45,315,631</td>
+<td align="right">45,306,611</td>
 <td align="right">23.1%</td>
 </tr>
 <tr>
@@ -9851,12 +9851,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">36,110,841</td>
+<td align="right">36,120,599</td>
 <td align="right">21.5%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">29,131,767</td>
+<td align="right">29,141,549</td>
 <td align="right">14.9%</td>
 </tr>
 <tr>
@@ -9881,27 +9881,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">1,305,537</td>
+<td align="right">1,295,967</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">195,663</td>
+<td align="right">205,233</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">204,621</td>
+<td align="right">205,039</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">927,184</td>
+<td align="right">936,373</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">9,236</td>
+<td align="right">47</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -10088,4 +10088,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-15
+Stats gathered on: 2025-06-16

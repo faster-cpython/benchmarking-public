@@ -9676,7 +9676,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">143,957,263</td>
+<td align="right">143,957,265</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -9696,12 +9696,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">1,541,386,317</td>
+<td align="right">1,541,356,601</td>
 <td align="right">35.9%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">1,775,437,085</td>
+<td align="right">1,775,407,371</td>
 <td align="right">31.2%</td>
 </tr>
 <tr>
@@ -9716,12 +9716,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">418,594,415</td>
+<td align="right">418,564,697</td>
 <td align="right">9.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">1,179,976,887</td>
+<td align="right">1,179,947,167</td>
 <td align="right">20.7%</td>
 </tr>
 <tr>
@@ -9746,27 +9746,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">76,744,617</td>
+<td align="right">76,759,478</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">29,883</td>
+<td align="right">15,022</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">59,775</td>
+<td align="right">30,063</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">50,248,537</td>
+<td align="right">50,263,393</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">29,903</td>
+<td align="right">15,047</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -9807,7 +9807,7 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">2,280</td>
 <td align="right">0</td>
-<td align="right">38,901,258</td>
+<td align="right">38,901,270</td>
 <td align="right">1,482,100</td>
 <td align="right">4,604,920</td>
 </tr>
@@ -9953,4 +9953,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-15
+Stats gathered on: 2025-06-16

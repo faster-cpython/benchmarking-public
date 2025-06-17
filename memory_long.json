@@ -878,5 +878,7 @@
   "bm-20241007-3.13.0-60403a5/bm-20241007-linux-x86_64-python-v3.13.0-3.13.0-60403a5.json,bm-20250526-3.14.0b2-12d3f88/bm-20250526-linux-x86_64-python-v3.14.0b2-3.14.0b2-12d3f88.json,3.13.0": 1.06,
   "bm-20241007-3.13.0-60403a5/bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5.json,bm-20250526-3.14.0b2-12d3f88/bm-20250526-pythonperf1-amd64-python-v3.14.0b2-3.14.0b2-12d3f88.json,3.13.0": null,
   "bm-20241007-3.13.0-60403a5/bm-20241007-pythonperf1_win32-x86-python-v3.13.0-3.13.0-60403a5.json,bm-20250526-3.14.0b2-12d3f88/bm-20250526-pythonperf1_win32-amd64-python-v3.14.0b2-3.14.0b2-12d3f88.json,3.13.0": null,
-  "bm-20241007-3.13.0-60403a5/bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5.json,bm-20250616-3.14.0b2+-964c29d/bm-20250616-pythonperf1-amd64-python-3.14-3.14.0b2+-964c29d.json,3.13.0": null
+  "bm-20241007-3.13.0-60403a5/bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5.json,bm-20250616-3.14.0b2+-964c29d/bm-20250616-pythonperf1-amd64-python-3.14-3.14.0b2+-964c29d.json,3.13.0": null,
+  "bm-20241007-3.13.0-60403a5/bm-20241007-linux-x86_64-python-v3.13.0-3.13.0-60403a5.json,bm-20250617-3.14.0b2+-c1735c5/bm-20250617-linux-x86_64-python-3.14-3.14.0b2+-c1735c5.json,3.13.0": 1.06,
+  "bm-20241007-3.13.0-60403a5/bm-20241007-arminc-aarch64-python-v3.13.0-3.13.0-60403a5.json,bm-20250616-3.14.0b2+-964c29d/bm-20250616-arminc-aarch64-python-3.14-3.14.0b2+-964c29d.json,3.13.0": 1.07
 }

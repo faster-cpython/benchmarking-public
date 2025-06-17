@@ -1,10 +1,10 @@
 # Generated file: !!! DO NOT EDIT !!!
 ---
 name: benchmark
-run-name: benchmarking ${{ inputs.fork }}/${{ inputs.ref }} on ${{ inputs.machine
-  }} ${{ inputs.tier2 == true && 'T2' || '' }} ${{ inputs.jit == true && 'JIT' ||
-  '' }} ${{ inputs.nogil == true && 'NOGIL' || '' }} ${{ inputs.tailcall == true &&
-  'TAILCALL' || '' }}
+run-name: benchmarking ${{ inputs.fork }}/${{ inputs.ref }} on ${{ 
+  inputs.machine }} ${{ inputs.tier2 == true && 'T2' || '' }} ${{ inputs.jit == 
+  true && 'JIT' || '' }} ${{ inputs.nogil == true && 'NOGIL' || '' }} ${{ 
+  inputs.tailcall == true && 'TAILCALL' || '' }}
 
 on:
   workflow_dispatch:
@@ -35,7 +35,8 @@ on:
         - all
         - __really_all
       benchmarks:
-        description: Benchmarks to run (comma-separated; empty runs all benchmarks)
+        description: Benchmarks to run (comma-separated; empty runs all 
+          benchmarks)
         type: string
       benchmark_base:
         description: Also benchmark the base of this commit
@@ -102,9 +103,9 @@ jobs:
         cat $GITHUB_OUTPUT
 
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}
   head:
     uses: ./.github/workflows/_benchmark.yml
     with:
@@ -156,8 +157,8 @@ jobs:
   pystats-base:
     uses: ./.github/workflows/_pystats.yml
     needs: determine_base
-    if: ${{ inputs.pystats && needs.determine_base.outputs.need_to_run != 'false'
-      }}
+    if: ${{ inputs.pystats && needs.determine_base.outputs.need_to_run != 
+      'false' }}
     with:
       fork: python
       ref: ${{ needs.determine_base.outputs.ref }}

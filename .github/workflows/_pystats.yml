@@ -14,7 +14,8 @@ on:
         type: string
         default: main
       benchmarks:
-        description: Benchmarks to run (comma-separated; empty runs all benchmarks)
+        description: Benchmarks to run (comma-separated; empty runs all 
+          benchmarks)
         type: string
       force:
         description: Rerun and replace results if commit already exists
@@ -45,7 +46,8 @@ on:
         description: Branch, tag or (full) SHA commit to benchmark
         type: string
       benchmarks:
-        description: Benchmarks to run (comma-separated; empty runs all benchmarks)
+        description: Benchmarks to run (comma-separated; empty runs all 
+          benchmarks)
         type: string
       dry_run:
         description: 'Dry run: Do not commit to the repo'
@@ -98,6 +100,6 @@ jobs:
       with:
         add: results
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}

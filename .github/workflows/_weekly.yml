@@ -54,13 +54,17 @@ jobs:
     if: ${{ always() }}
     with:
       force: false
-    needs: [pystats, pystats-tier2, weekly-default-linux, weekly-default-pythonperf2,
-      weekly-default-darwin, weekly-default-arminc, weekly-default-pythonperf1, weekly-default-pythonperf1_win32,
-      weekly-jit-linux, weekly-jit-pythonperf2, weekly-jit-darwin, weekly-jit-arminc,
-      weekly-jit-pythonperf1, weekly-jit-pythonperf1_win32, weekly-nogil-linux, weekly-nogil-pythonperf2,
-      weekly-nogil-darwin, weekly-nogil-arminc, weekly-nogil-pythonperf1, weekly-nogil-pythonperf1_win32,
-      weekly-tailcall-linux_clang, weekly-tailcall-pythonperf2_clang, weekly-tailcall-darwin_clang,
-      weekly-tailcall-arminc_clang, weekly-tailcall-pythonperf1_clang, weekly-tailcall-pythonperf1_win32_clang]
+    needs: [pystats, pystats-tier2, weekly-default-linux, 
+        weekly-default-pythonperf2, weekly-default-darwin, weekly-default-arminc,
+      weekly-default-pythonperf1, weekly-default-pythonperf1_win32, 
+        weekly-jit-linux, weekly-jit-pythonperf2, weekly-jit-darwin, 
+        weekly-jit-arminc, weekly-jit-pythonperf1, weekly-jit-pythonperf1_win32, 
+        weekly-nogil-linux, weekly-nogil-pythonperf2, weekly-nogil-darwin, 
+        weekly-nogil-arminc, weekly-nogil-pythonperf1, 
+        weekly-nogil-pythonperf1_win32, weekly-tailcall-linux_clang, 
+        weekly-tailcall-pythonperf2_clang, weekly-tailcall-darwin_clang, 
+        weekly-tailcall-arminc_clang, weekly-tailcall-pythonperf1_clang, 
+        weekly-tailcall-pythonperf1_win32_clang]
     secrets: inherit
 
   publish:

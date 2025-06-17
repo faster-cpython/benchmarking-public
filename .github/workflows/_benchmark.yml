@@ -15,7 +15,8 @@ on:
         description: Machine to run on
         type: string
       benchmarks:
-        description: Benchmarks to run (comma-separated; empty runs all benchmarks)
+        description: Benchmarks to run (comma-separated; empty runs all 
+          benchmarks)
         type: string
       pgo:
         description: Build with PGO
@@ -72,7 +73,8 @@ on:
         - windows-x86_64-pythonperf1_win32_clang
         - all
       benchmarks:
-        description: Benchmarks to run (comma-separated; empty runs all benchmarks)
+        description: Benchmarks to run (comma-separated; empty runs all 
+          benchmarks)
         type: string
       force:
         description: Rerun and replace results if commit already exists
@@ -150,12 +152,12 @@ jobs:
         path: |
           profiling/results
 
-    if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == '__really_all'
-      || inputs.machine == 'all') }}
+    if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == 
+      '__really_all' || inputs.machine == 'all') }}
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}
   benchmark-linux-x86_64-linux_clang:
     runs-on: [self-hosted, linux, bare-metal, linux-x86_64-linux]
     timeout-minutes: 1440
@@ -211,12 +213,12 @@ jobs:
         path: |
           profiling/results
 
-    if: ${{ (inputs.machine == 'linux-x86_64-linux_clang' || inputs.machine == '__really_all')
-      }}
+    if: ${{ (inputs.machine == 'linux-x86_64-linux_clang' || inputs.machine == 
+      '__really_all') }}
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}
   benchmark-linux-x86_64-pythonperf2:
     runs-on: [self-hosted, linux, bare-metal, linux-x86_64-pythonperf2]
     timeout-minutes: 1440
@@ -269,12 +271,12 @@ jobs:
         path: |
           profiling/results
 
-    if: ${{ (inputs.machine == 'linux-x86_64-pythonperf2' || inputs.machine == '__really_all')
-      }}
+    if: ${{ (inputs.machine == 'linux-x86_64-pythonperf2' || inputs.machine == 
+      '__really_all') }}
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}
   benchmark-linux-x86_64-pythonperf2_clang:
     runs-on: [self-hosted, linux, bare-metal, linux-x86_64-pythonperf2]
     timeout-minutes: 1440
@@ -330,12 +332,12 @@ jobs:
         path: |
           profiling/results
 
-    if: ${{ (inputs.machine == 'linux-x86_64-pythonperf2_clang' || inputs.machine
-      == '__really_all') }}
+    if: ${{ (inputs.machine == 'linux-x86_64-pythonperf2_clang' || 
+      inputs.machine == '__really_all') }}
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}
   benchmark-linux-aarch64-arminc:
     runs-on: [self-hosted, linux, bare-metal, linux-aarch64-arminc]
     timeout-minutes: 1440
@@ -388,12 +390,12 @@ jobs:
         path: |
           profiling/results
 
-    if: ${{ (inputs.machine == 'linux-aarch64-arminc' || inputs.machine == '__really_all'
-      || inputs.machine == 'all') }}
+    if: ${{ (inputs.machine == 'linux-aarch64-arminc' || inputs.machine == 
+      '__really_all' || inputs.machine == 'all') }}
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}
   benchmark-linux-aarch64-arminc_clang:
     runs-on: [self-hosted, linux, bare-metal, linux-x86_64-arminc]
     timeout-minutes: 1440
@@ -449,12 +451,12 @@ jobs:
         path: |
           profiling/results
 
-    if: ${{ (inputs.machine == 'linux-aarch64-arminc_clang' || inputs.machine == '__really_all')
-      }}
+    if: ${{ (inputs.machine == 'linux-aarch64-arminc_clang' || inputs.machine ==
+      '__really_all') }}
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}
   benchmark-darwin-arm64-darwin:
     runs-on: [self-hosted, macos, bare-metal, darwin-arm64-darwin]
 
@@ -489,12 +491,12 @@ jobs:
         path: |
           benchmark.json
         overwrite: true
-    if: ${{ (inputs.machine == 'darwin-arm64-darwin' || inputs.machine == '__really_all'
-      || inputs.machine == 'all') }}
+    if: ${{ (inputs.machine == 'darwin-arm64-darwin' || inputs.machine == 
+      '__really_all' || inputs.machine == 'all') }}
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}
   benchmark-darwin-arm64-darwin_clang:
     runs-on: [self-hosted, macos, bare-metal, darwin-arm64-darwin]
 
@@ -533,12 +535,12 @@ jobs:
         path: |
           benchmark.json
         overwrite: true
-    if: ${{ (inputs.machine == 'darwin-arm64-darwin_clang' || inputs.machine == '__really_all')
-      }}
+    if: ${{ (inputs.machine == 'darwin-arm64-darwin_clang' || inputs.machine == 
+      '__really_all') }}
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}
   benchmark-windows-x86_64-pythonperf1:
     runs-on: [self-hosted, windows, bare-metal, windows-x86_64-pythonperf1]
 
@@ -581,12 +583,12 @@ jobs:
           benchmark.json
         overwrite: true
 
-    if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1' || inputs.machine == '__really_all'
-      || inputs.machine == 'all') }}
+    if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1' || inputs.machine ==
+      '__really_all' || inputs.machine == 'all') }}
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}
   benchmark-windows-x86_64-pythonperf1_clang:
     runs-on: [self-hosted, windows, bare-metal, windows-x86_64-pythonperf1]
 
@@ -630,12 +632,12 @@ jobs:
           benchmark.json
         overwrite: true
 
-    if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1_clang' || inputs.machine
-      == '__really_all') }}
+    if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1_clang' || 
+      inputs.machine == '__really_all') }}
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}
   benchmark-windows-x86-pythonperf1_win32:
     runs-on: [self-hosted, windows, bare-metal, windows-x86_64-pythonperf1]
 
@@ -679,12 +681,12 @@ jobs:
           benchmark.json
         overwrite: true
 
-    if: ${{ (inputs.machine == 'windows-x86-pythonperf1_win32' || inputs.machine ==
-      '__really_all') }}
+    if: ${{ (inputs.machine == 'windows-x86-pythonperf1_win32' || inputs.machine
+      == '__really_all') }}
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}
   benchmark-windows-x86_64-pythonperf1_win32_clang:
     runs-on: [self-hosted, windows, bare-metal, windows-x86_64-pythonperf1]
 
@@ -729,9 +731,9 @@ jobs:
           benchmark.json
         overwrite: true
 
-    if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1_win32_clang' || inputs.machine
-      == '__really_all') }}
+    if: ${{ (inputs.machine == 'windows-x86_64-pythonperf1_win32_clang' || 
+      inputs.machine == '__really_all') }}
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}

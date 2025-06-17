@@ -51,14 +51,15 @@ jobs:
         pip install -r requirements.txt
     - name: Send notifications
       if: env.WORKFLOW_CONCLUSION == 'success'
-      run: python -m bench_runner notify --fork ${{ inputs.fork }} --ref ${{ inputs.ref
-        }} --head ${{ inputs.head }} --date ${{ inputs.date }} --version ${{ inputs.version
-        }} --flags ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit ==
-        true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      run: python -m bench_runner notify --fork ${{ inputs.fork }} --ref ${{ 
+        inputs.ref }} --head ${{ inputs.head }} --date ${{ inputs.date }} 
+        --version ${{ inputs.version }} --flags ${{ inputs.tier2 == true && 
+        'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ 
+        inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall == true && 
+        'tailcall' || '' }}
       env:
         GH_TOKEN: ${{ github.token }}
     env:
-      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.tailcall
-        == true && 'tailcall' || '' }}
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true
+        && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ 
+        inputs.tailcall == true && 'tailcall' || '' }}

@@ -42,6 +42,15 @@
 - [📄table](bm-20250617-arminc-aarch64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-3.13.0.md)
 - [📈time plot](bm-20250617-arminc-aarch64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.164x slower (HPT: reliability of 100.00%, 1.16x slower at 99th %ile)
+- Memory usage: 1.00x
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, bench_mp_pool, bench_thread_pool, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- [🧠memory plot](bm-20250617-arminc-aarch64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base-mem.svg)
+- [📄table](bm-20250617-arminc-aarch64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.md)
+- [📈time plot](bm-20250617-arminc-aarch64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.svg)
+
 ## linux x86_64 (azure)
 
 - [pystats raw](bm-20250617-azure-x86_64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-pystats.json)

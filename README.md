@@ -104,9 +104,9 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 ## windows amd64 (pythonperf1_win32_clang)
 | date | fork/ref | hash/flags | vs. 3.10.4: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
+| [2025-06-17](results/bm-20250617-3.15.0a0-fba5dde-TAILCALL) | python/fba5dded6df3c2b19435 | fba5dde (TAILCALL) |  |  |  |  |
 | [2025-06-14](results/bm-20250614-3.15.0a0-2e15a50-TAILCALL) | python/2e15a50851da66eb8227 | 2e15a50 (TAILCALL) |  |  |  |  |
 | [2025-06-01](results/bm-20250601-3.15.0a0-cebae97-TAILCALL) | python/cebae977a63f32c3c03d | cebae97 (TAILCALL) |  |  |  |  |
-| [2025-05-26](results/bm-20250526-3.14.0b2-12d3f88) | python/v3.14.0b2 | 12d3f88 |  |  |  |  |
 
 ## windows x86 (pythonperf1_win32)
 | date | fork/ref | hash/flags | vs. 3.10.4: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |

@@ -47,6 +47,10 @@
 - [pystats raw](bm-20250618-azure-x86_64-faster%252dcpython-specialize_for_compa-3.15.0a0-e27d994-pystats.json)
 - [pystats table](bm-20250618-azure-x86_64-faster%252dcpython-specialize_for_compa-3.15.0a0-e27d994-pystats.md)
 
+### vs. base
+
+- [pystats diff](bm-20250618-azure-x86_64-faster%252dcpython-specialize_for_compa-3.15.0a0-e27d994-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15733751827)

@@ -5376,7 +5376,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">191,281</td>
+<td align="right">191,280</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -5401,7 +5401,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">46,611,401</td>
+<td align="right">46,611,400</td>
 <td align="right">60.2%</td>
 </tr>
 <tr>
@@ -5421,7 +5421,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">30,263,959</td>
+<td align="right">30,263,960</td>
 <td align="right">39.1%</td>
 </tr>
 <tr>
@@ -5456,7 +5456,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">9</td>
+<td align="right">7</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -5515,7 +5515,7 @@ Collected/visits gives some measure of efficiency.
 <td align="right">2</td>
 <td align="right">3,840</td>
 <td align="right">160</td>
-<td align="right">4,708,049,168</td>
+<td align="right">4,708,045,328</td>
 <td align="right">0</td>
 <td align="right">0</td>
 </tr>
@@ -6179,4 +6179,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-12
+Stats gathered on: 2025-06-20

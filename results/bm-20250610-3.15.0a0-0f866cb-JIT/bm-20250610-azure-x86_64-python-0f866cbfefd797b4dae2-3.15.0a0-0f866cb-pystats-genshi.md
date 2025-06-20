@@ -12127,48 +12127,6 @@ specialized instruction deoptimizes.
 
 </details>
 
-### UNARY_INVERT
-
-<details>
-<summary> Successors and predecessors for UNARY_INVERT </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_FAST_BORROW</td>
-<td align="right">8</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">BINARY_OP_EXTEND</td>
-<td align="right">8</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
 ### UNARY_NOT
 
 <details>
@@ -12613,12 +12571,12 @@ specialized instruction deoptimizes.
 <td align="right">7.5%</td>
 </tr>
 <tr>
-<td align="left">RETURN_VALUE</td>
+<td align="left">LOAD_SMALL_INT</td>
 <td align="right">8</td>
 <td align="right">4.3%</td>
 </tr>
 <tr>
-<td align="left">LOAD_SMALL_INT</td>
+<td align="left">RETURN_VALUE</td>
 <td align="right">8</td>
 <td align="right">4.3%</td>
 </tr>
@@ -12719,6 +12677,48 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">POP_JUMP_IF_FALSE</td>
 <td align="right">2</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### UNARY_INVERT
+
+<details>
+<summary> Successors and predecessors for UNARY_INVERT </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_FAST_BORROW</td>
+<td align="right">8</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">BINARY_OP_EXTEND</td>
+<td align="right">8</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -14449,7 +14449,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">40,419,788</td>
+<td align="right">40,419,637</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -14469,12 +14469,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">271,417,925</td>
+<td align="right">271,417,830</td>
 <td align="right">32.4%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">267,154,577</td>
+<td align="right">267,154,316</td>
 <td align="right">29.3%</td>
 </tr>
 <tr>
@@ -14489,12 +14489,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">86,280,653</td>
+<td align="right">86,304,405</td>
 <td align="right">10.3%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">86,418,137</td>
+<td align="right">86,442,042</td>
 <td align="right">9.5%</td>
 </tr>
 <tr>
@@ -14519,27 +14519,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">26,104,179</td>
+<td align="right">26,098,346</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">7,441</td>
+<td align="right">13,274</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">6,549</td>
+<td align="right">18,262</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">8,858,634</td>
+<td align="right">8,852,642</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">622</td>
+<td align="right">6,614</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -14580,7 +14580,7 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">799</td>
 <td align="right">26,888</td>
-<td align="right">9,471,175</td>
+<td align="right">9,471,181</td>
 <td align="right">558,681</td>
 <td align="right">1,536,748</td>
 </tr>
@@ -15524,4 +15524,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-12
+Stats gathered on: 2025-06-20

@@ -3779,6 +3779,68 @@ specialized instruction deoptimizes.
 
 </details>
 
+### JUMP_BACKWARD
+
+<details>
+<summary> Successors and predecessors for JUMP_BACKWARD </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">POP_TOP</td>
+<td align="right">6</td>
+<td align="right">26.1%</td>
+</tr>
+<tr>
+<td align="left">STORE_FAST</td>
+<td align="right">5</td>
+<td align="right">21.7%</td>
+</tr>
+<tr>
+<td align="left">EXTENDED_ARG</td>
+<td align="right">3</td>
+<td align="right">13.0%</td>
+</tr>
+<tr>
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">3</td>
+<td align="right">13.0%</td>
+</tr>
+<tr>
+<td align="left">STORE_ATTR</td>
+<td align="right">3</td>
+<td align="right">13.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">JUMP_BACKWARD_JIT</td>
+<td align="right">23</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
 ### JUMP_FORWARD
 
 <details>
@@ -9405,68 +9467,6 @@ specialized instruction deoptimizes.
 
 </details>
 
-### JUMP_BACKWARD
-
-<details>
-<summary> Successors and predecessors for JUMP_BACKWARD </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">POP_TOP</td>
-<td align="right">6</td>
-<td align="right">26.1%</td>
-</tr>
-<tr>
-<td align="left">STORE_FAST</td>
-<td align="right">5</td>
-<td align="right">21.7%</td>
-</tr>
-<tr>
-<td align="left">EXTENDED_ARG</td>
-<td align="right">3</td>
-<td align="right">13.0%</td>
-</tr>
-<tr>
-<td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">3</td>
-<td align="right">13.0%</td>
-</tr>
-<tr>
-<td align="left">STORE_ATTR</td>
-<td align="right">3</td>
-<td align="right">13.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">JUMP_BACKWARD_JIT</td>
-<td align="right">23</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
 
 </details>
 
@@ -10935,7 +10935,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">12,010,469</td>
+<td align="right">12,010,461</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10955,12 +10955,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">121,713,457</td>
+<td align="right">121,664,543</td>
 <td align="right">33.3%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">123,016,555</td>
+<td align="right">122,967,627</td>
 <td align="right">31.8%</td>
 </tr>
 <tr>
@@ -10975,12 +10975,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">92,149,538</td>
+<td align="right">92,033,883</td>
 <td align="right">25.2%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">81,450,321</td>
+<td align="right">81,334,681</td>
 <td align="right">21.1%</td>
 </tr>
 <tr>
@@ -11005,27 +11005,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">24,927,323</td>
+<td align="right">24,997,674</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">448,913</td>
+<td align="right">378,562</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">527,949</td>
+<td align="right">445,686</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">7,569,300</td>
+<td align="right">7,581,234</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">79,119</td>
+<td align="right">67,185</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -11066,7 +11066,7 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">607</td>
 <td align="right">1,067,004</td>
-<td align="right">11,982,308</td>
+<td align="right">11,982,326</td>
 <td align="right">732,283</td>
 <td align="right">1,197,096</td>
 </tr>
@@ -12344,4 +12344,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-12
+Stats gathered on: 2025-06-20

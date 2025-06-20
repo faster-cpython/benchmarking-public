@@ -30,7 +30,7 @@ instruction is not counted.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_BORROW</td>
-<td align="right">73,474,344</td>
+<td align="right">73,474,398</td>
 <td align="right">17.8%</td>
 <td align="right">17.8%</td>
 <td align="right"></td>
@@ -121,7 +121,7 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_JIT</td>
-<td align="right">302,322</td>
+<td align="right">302,349</td>
 <td align="right">0.1%</td>
 <td align="right">99.3%</td>
 <td align="right"></td>
@@ -163,7 +163,7 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">154,782</td>
+<td align="right">154,809</td>
 <td align="right">0.0%</td>
 <td align="right">99.7%</td>
 <td align="right"></td>
@@ -184,7 +184,7 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
-<td align="right">73,402</td>
+<td align="right">73,429</td>
 <td align="right">0.0%</td>
 <td align="right">99.7%</td>
 <td align="right"></td>
@@ -212,7 +212,7 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
-<td align="right">56,382</td>
+<td align="right">56,409</td>
 <td align="right">0.0%</td>
 <td align="right">99.8%</td>
 <td align="right"></td>
@@ -226,21 +226,21 @@ instruction is not counted.
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
-<td align="right">41,262</td>
+<td align="right">41,289</td>
 <td align="right">0.0%</td>
 <td align="right">99.8%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">32,382</td>
+<td align="right">32,409</td>
 <td align="right">0.0%</td>
 <td align="right">99.8%</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
-<td align="right">29,802</td>
+<td align="right">29,829</td>
 <td align="right">0.0%</td>
 <td align="right">99.8%</td>
 <td align="right"></td>
@@ -1240,7 +1240,7 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">STORE_FAST LOAD_FAST_BORROW</td>
-<td align="right">79,002</td>
+<td align="right">79,029</td>
 <td align="right">0.0%</td>
 <td align="right">99.5%</td>
 </tr>
@@ -1276,13 +1276,13 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT LOAD_FAST_BORROW</td>
-<td align="right">34,902</td>
+<td align="right">34,929</td>
 <td align="right">0.0%</td>
 <td align="right">99.5%</td>
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_JIT FOR_ITER_LIST</td>
-<td align="right">34,302</td>
+<td align="right">34,329</td>
 <td align="right">0.0%</td>
 <td align="right">99.6%</td>
 </tr>
@@ -1294,7 +1294,7 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST STORE_FAST</td>
-<td align="right">28,962</td>
+<td align="right">28,989</td>
 <td align="right">0.0%</td>
 <td align="right">99.6%</td>
 </tr>
@@ -1318,7 +1318,7 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">TO_BOOL_BOOL POP_JUMP_IF_TRUE</td>
-<td align="right">24,702</td>
+<td align="right">24,729</td>
 <td align="right">0.0%</td>
 <td align="right">99.6%</td>
 </tr>
@@ -1330,7 +1330,7 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">LOAD_FAST_BORROW LOAD_ATTR_METHOD_NO_DICT</td>
-<td align="right">24,182</td>
+<td align="right">24,209</td>
 <td align="right">0.0%</td>
 <td align="right">99.6%</td>
 </tr>
@@ -1450,7 +1450,7 @@ the corresponding unspecialized instruction are not counted as pairs.
 </tr>
 <tr>
 <td align="left">LOAD_FAST_BORROW CALL_METHOD_DESCRIPTOR_FAST</td>
-<td align="right">13,842</td>
+<td align="right">13,869</td>
 <td align="right">0.0%</td>
 <td align="right">99.7%</td>
 </tr>
@@ -1539,14 +1539,14 @@ the corresponding unspecialized instruction are not counted as pairs.
 <td align="right">99.7%</td>
 </tr>
 <tr>
-<td align="left">STORE_FAST LOAD_GLOBAL_BUILTIN</td>
-<td align="right">9,600</td>
+<td align="left">POP_JUMP_IF_TRUE JUMP_BACKWARD_JIT</td>
+<td align="right">9,609</td>
 <td align="right">0.0%</td>
 <td align="right">99.7%</td>
 </tr>
 <tr>
-<td align="left">POP_JUMP_IF_TRUE JUMP_BACKWARD_JIT</td>
-<td align="right">9,582</td>
+<td align="left">STORE_FAST LOAD_GLOBAL_BUILTIN</td>
+<td align="right">9,600</td>
 <td align="right">0.0%</td>
 <td align="right">99.7%</td>
 </tr>
@@ -1617,14 +1617,14 @@ the corresponding unspecialized instruction are not counted as pairs.
 <td align="right">99.8%</td>
 </tr>
 <tr>
-<td align="left">JUMP_BACKWARD_JIT LOAD_FAST_BORROW</td>
-<td align="right">8,760</td>
+<td align="left">CALL_METHOD_DESCRIPTOR_FAST TO_BOOL_BOOL</td>
+<td align="right">8,769</td>
 <td align="right">0.0%</td>
 <td align="right">99.8%</td>
 </tr>
 <tr>
-<td align="left">CALL_METHOD_DESCRIPTOR_FAST TO_BOOL_BOOL</td>
-<td align="right">8,742</td>
+<td align="left">JUMP_BACKWARD_JIT LOAD_FAST_BORROW</td>
+<td align="right">8,760</td>
 <td align="right">0.0%</td>
 <td align="right">99.8%</td>
 </tr>
@@ -5021,7 +5021,7 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">79,002</td>
+<td align="right">79,029</td>
 <td align="right">0.1%</td>
 </tr>
 </tbody>
@@ -5778,7 +5778,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
-<td align="right">24,702</td>
+<td align="right">24,729</td>
 <td align="right">76.3%</td>
 </tr>
 <tr>
@@ -5820,13 +5820,13 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">JUMP_BACKWARD_JIT</td>
-<td align="right">9,582</td>
+<td align="right">9,609</td>
 <td align="right">29.6%</td>
 </tr>
 <tr>
 <td align="left">LOAD_GLOBAL_MODULE</td>
 <td align="right">4,260</td>
-<td align="right">13.2%</td>
+<td align="right">13.1%</td>
 </tr>
 <tr>
 <td align="left">LOAD_CONST</td>
@@ -6140,7 +6140,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
-<td align="right">28,962</td>
+<td align="right">28,989</td>
 <td align="right">18.7%</td>
 </tr>
 <tr>
@@ -6177,7 +6177,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_BORROW</td>
-<td align="right">79,002</td>
+<td align="right">79,029</td>
 <td align="right">51.0%</td>
 </tr>
 <tr>
@@ -8077,8 +8077,8 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_BORROW</td>
-<td align="right">13,842</td>
-<td align="right">46.4%</td>
+<td align="right">13,869</td>
+<td align="right">46.5%</td>
 </tr>
 <tr>
 <td align="left">LOAD_ATTR_METHOD_NO_DICT</td>
@@ -8119,13 +8119,13 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">TO_BOOL_BOOL</td>
-<td align="right">8,742</td>
-<td align="right">29.3%</td>
+<td align="right">8,769</td>
+<td align="right">29.4%</td>
 </tr>
 <tr>
 <td align="left">YIELD_VALUE</td>
 <td align="right">7,200</td>
-<td align="right">24.2%</td>
+<td align="right">24.1%</td>
 </tr>
 <tr>
 <td align="left">RETURN_VALUE</td>
@@ -9042,7 +9042,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">JUMP_BACKWARD_JIT</td>
-<td align="right">34,302</td>
+<td align="right">34,329</td>
 <td align="right">83.1%</td>
 </tr>
 <tr>
@@ -9069,7 +9069,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">STORE_FAST</td>
-<td align="right">28,962</td>
+<td align="right">28,989</td>
 <td align="right">70.2%</td>
 </tr>
 <tr>
@@ -9186,7 +9186,7 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">9,582</td>
+<td align="right">9,609</td>
 <td align="right">3.2%</td>
 </tr>
 <tr>
@@ -9213,8 +9213,8 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">FOR_ITER_LIST</td>
-<td align="right">34,302</td>
-<td align="right">11.3%</td>
+<td align="right">34,329</td>
+<td align="right">11.4%</td>
 </tr>
 <tr>
 <td align="left">LOAD_FAST_BORROW</td>
@@ -9486,7 +9486,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_BORROW</td>
-<td align="right">24,182</td>
+<td align="right">24,209</td>
 <td align="right">42.9%</td>
 </tr>
 <tr>
@@ -9523,7 +9523,7 @@ specialized instruction deoptimizes.
 <tbody>
 <tr>
 <td align="left">LOAD_FAST_BORROW</td>
-<td align="right">34,902</td>
+<td align="right">34,929</td>
 <td align="right">61.9%</td>
 </tr>
 <tr>
@@ -10658,7 +10658,7 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">CALL_METHOD_DESCRIPTOR_FAST</td>
-<td align="right">8,742</td>
+<td align="right">8,769</td>
 <td align="right">11.9%</td>
 </tr>
 <tr>
@@ -10690,7 +10690,7 @@ specialized instruction deoptimizes.
 </tr>
 <tr>
 <td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">24,702</td>
+<td align="right">24,729</td>
 <td align="right">33.7%</td>
 </tr>
 </tbody>
@@ -11522,7 +11522,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">29,313,222</td>
+<td align="right">29,313,249</td>
 <td align="right">100.0%</td>
 </tr>
 <tr>
@@ -11811,7 +11811,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">54,042</td>
+<td align="right">54,069</td>
 <td align="right">17.6%</td>
 </tr>
 </tbody>
@@ -11949,7 +11949,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">180,022</td>
+<td align="right">180,049</td>
 <td align="right">86.8%</td>
 </tr>
 <tr>
@@ -12326,7 +12326,7 @@ hit
 Specialized instructions that complete.
 </details>
 </td>
-<td align="right">114,782</td>
+<td align="right">114,809</td>
 <td align="right">93.8%</td>
 </tr>
 <tr>
@@ -12490,7 +12490,7 @@ Basic
 Instructions that are not and cannot be specialized, e.g. `LOAD_FAST`.
 </details>
 </td>
-<td align="right">279,296,808</td>
+<td align="right">279,296,916</td>
 <td align="right">67.7%</td>
 </tr>
 <tr>
@@ -12514,7 +12514,7 @@ Specialized hits
 Specialized instructions, e.g. `LOAD_ATTR_MODULE` that complete.
 </details>
 </td>
-<td align="right">118,262,590</td>
+<td align="right">118,262,725</td>
 <td align="right">28.7%</td>
 </tr>
 <tr>
@@ -12807,12 +12807,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">58,515,460</td>
+<td align="right">58,515,700</td>
 <td align="right">99.2%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
-<td align="right">58,510,180</td>
+<td align="right">58,510,420</td>
 <td align="right">99.1%</td>
 </tr>
 <tr>
@@ -12827,7 +12827,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">58,529,864</td>
+<td align="right">58,530,115</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -12837,27 +12837,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal increfs</td>
-<td align="right">44,303,944</td>
+<td align="right">44,304,238</td>
 <td align="right">6.8%</td>
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
-<td align="right">88,389,664</td>
+<td align="right">88,389,718</td>
 <td align="right">12.0%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">365,438,509</td>
+<td align="right">365,439,594</td>
 <td align="right">56.4%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">292,884,587</td>
+<td align="right">292,886,165</td>
 <td align="right">39.8%</td>
 </tr>
 <tr>
 <td align="left">Interpreter immortal increfs</td>
-<td align="right">487,500</td>
+<td align="right">486,780</td>
 <td align="right">0.1%</td>
 </tr>
 <tr>
@@ -12867,12 +12867,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">238,182,031</td>
+<td align="right">238,182,317</td>
 <td align="right">36.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">355,323,691</td>
+<td align="right">355,323,259</td>
 <td align="right">48.2%</td>
 </tr>
 <tr>
@@ -12897,27 +12897,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">29,181,144</td>
+<td align="right">29,181,120</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">2,696</td>
+<td align="right">2,720</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">2,928</td>
+<td align="right">2,962</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">42,359</td>
+<td align="right">42,329</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">541</td>
+<td align="right">571</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -13709,4 +13709,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-12
+Stats gathered on: 2025-06-20

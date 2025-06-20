@@ -5528,7 +5528,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">16</td>
+<td align="right">20</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -6125,4 +6125,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-12
+Stats gathered on: 2025-06-20

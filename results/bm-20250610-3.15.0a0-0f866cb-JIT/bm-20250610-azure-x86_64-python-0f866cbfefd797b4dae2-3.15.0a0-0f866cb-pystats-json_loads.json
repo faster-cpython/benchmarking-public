@@ -322,7 +322,7 @@
   "Object materialize dict (str subclass)": 0,
   "Object method cache hits": 192,
   "Object method cache misses": 28,
-  "Object method cache collisions": 16,
+  "Object method cache collisions": 20,
   "Object method cache dunder hits": 0,
   "Object method cache dunder misses": 0,
   "GC[0] collections": 0,

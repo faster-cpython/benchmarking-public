@@ -44,7 +44,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.043x faster (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.032x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20250619-arminc-aarch64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base-mem.svg)
 - [📄table](bm-20250619-arminc-aarch64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.md)
@@ -53,11 +53,6 @@
 ## linux x86_64 (azure)
 
 - [pystats raw](bm-20250619-azure-x86_64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-pystats.json)
-- [pystats table](bm-20250619-azure-x86_64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-pystats.md)
-
-### vs. base
-
-- [pystats diff](bm-20250619-azure-x86_64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-pystats-vs-base.md)
 
 ## linux x86_64 (linux)
 
@@ -95,8 +90,8 @@
 
 ### vs. base
 
-- Geometric mean: 1.005x slower (HPT: reliability of 65.39%, 1.00x slower at 99th %ile)
-- Memory usage: 1.00x
+- Geometric mean: 1.004x slower (HPT: reliability of 98.93%, 1.00x slower at 99th %ile)
+- Memory usage: 0.99x
 - [🧠memory plot](bm-20250619-linux-x86_64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base-mem.svg)
 - [📄table](bm-20250619-linux-x86_64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.md)
 - [📈time plot](bm-20250619-linux-x86_64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.svg)
@@ -137,7 +132,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.080x faster (HPT: reliability of 74.98%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.003x faster (HPT: reliability of 82.73%, 1.00x faster at 99th %ile)
 - Memory usage: unknown
 - [📄table](bm-20250619-pythonperf1-amd64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.md)
 - [📈time plot](bm-20250619-pythonperf1-amd64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.svg)
@@ -178,8 +173,8 @@
 
 ### vs. base
 
-- Geometric mean: 1.069x faster (HPT: reliability of 99.50%, 1.00x faster at 99th %ile)
-- Memory usage: 0.99x
+- Geometric mean: 1.001x faster (HPT: reliability of 99.09%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
 - [🧠memory plot](bm-20250619-darwin-arm64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base-mem.svg)
 - [📄table](bm-20250619-darwin-arm64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.md)
 - [📈time plot](bm-20250619-darwin-arm64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.svg)

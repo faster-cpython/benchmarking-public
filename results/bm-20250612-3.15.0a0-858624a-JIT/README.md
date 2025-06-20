@@ -44,6 +44,9 @@
 
 ### vs. base
 
+- Geometric mean: 1.040x slower (HPT: reliability of 100.00%, 1.01x slower at 99th %ile)
+- Memory usage: 1.00x
+- missing benchmarks: 🔴 djangocms
 - [🧠memory plot](bm-20250612-arminc-aarch64-brandtbucher-justin_hot-3.15.0a0-858624a-vs-base-mem.svg)
 - [📄table](bm-20250612-arminc-aarch64-brandtbucher-justin_hot-3.15.0a0-858624a-vs-base.md)
 - [📈time plot](bm-20250612-arminc-aarch64-brandtbucher-justin_hot-3.15.0a0-858624a-vs-base.svg)
@@ -93,6 +96,9 @@
 
 ### vs. base
 
+- Geometric mean: 1.007x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- missing benchmarks: 🔴 djangocms
 - [🧠memory plot](bm-20250612-linux-x86_64-brandtbucher-justin_hot-3.15.0a0-858624a-vs-base-mem.svg)
 - [📄table](bm-20250612-linux-x86_64-brandtbucher-justin_hot-3.15.0a0-858624a-vs-base.md)
 - [📈time plot](bm-20250612-linux-x86_64-brandtbucher-justin_hot-3.15.0a0-858624a-vs-base.svg)

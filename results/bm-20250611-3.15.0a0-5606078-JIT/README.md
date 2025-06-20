@@ -53,6 +53,9 @@
 
 ### vs. base
 
+- Geometric mean: 1.010x faster (HPT: reliability of 99.95%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- missing benchmarks: 🔴 djangocms
 - [🧠memory plot](bm-20250611-linux-x86_64-brandtbucher-justin_hot-3.15.0a0-5606078-vs-base-mem.svg)
 - [📄table](bm-20250611-linux-x86_64-brandtbucher-justin_hot-3.15.0a0-5606078-vs-base.md)
 - [📈time plot](bm-20250611-linux-x86_64-brandtbucher-justin_hot-3.15.0a0-5606078-vs-base.svg)

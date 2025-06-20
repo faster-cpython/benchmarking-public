@@ -44,9 +44,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.043x faster (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
-- Memory usage: 1.00x
-- new benchmarks: djangocms
 - [🧠memory plot](bm-20250619-arminc-aarch64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base-mem.svg)
 - [📄table](bm-20250619-arminc-aarch64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.md)
 - [📈time plot](bm-20250619-arminc-aarch64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.svg)
@@ -96,8 +93,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.005x slower (HPT: reliability of 65.39%, 1.00x slower at 99th %ile)
-- Memory usage: 1.00x
 - [🧠memory plot](bm-20250619-linux-x86_64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base-mem.svg)
 - [📄table](bm-20250619-linux-x86_64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.md)
 - [📈time plot](bm-20250619-linux-x86_64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.svg)
@@ -138,8 +133,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.080x faster (HPT: reliability of 74.98%, 1.00x slower at 99th %ile)
-- Memory usage: unknown
 - [📄table](bm-20250619-pythonperf1-amd64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.md)
 - [📈time plot](bm-20250619-pythonperf1-amd64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.svg)
 
@@ -179,8 +172,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.069x faster (HPT: reliability of 99.50%, 1.00x faster at 99th %ile)
-- Memory usage: 0.99x
 - [🧠memory plot](bm-20250619-darwin-arm64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base-mem.svg)
 - [📄table](bm-20250619-darwin-arm64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.md)
 - [📈time plot](bm-20250619-darwin-arm64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-vs-base.svg)

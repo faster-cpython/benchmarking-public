@@ -54,6 +54,10 @@
 
 - [pystats raw](bm-20250619-azure-x86_64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-pystats.json)
 
+### vs. base
+
+- [pystats diff](bm-20250619-azure-x86_64-brandtbucher-justin_hot-3.15.0a0-d2c9ae9-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15770125023)

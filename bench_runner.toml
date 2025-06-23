@@ -12,6 +12,7 @@ excluded_benchmarks = [
     "aiohttp",
     "asyncio_tcp",
     "asyncio_tcp_ssl",
+    "bench_mp_pool",
     "concurrent_imap",
     "deepcopy_reduce",
     "logging_silent",

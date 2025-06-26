@@ -44,8 +44,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.052x slower (HPT: reliability of 100.00%, 1.08x slower at 99th %ile)
-- Memory usage: 1.22x
 - [🧠memory plot](bm-20250524-arminc-aarch64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base-mem.svg)
 - [📄table](bm-20250524-arminc-aarch64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base.md)
 - [📈time plot](bm-20250524-arminc-aarch64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base.svg)
@@ -86,9 +84,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.012x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
-- Memory usage: 1.21x
-- missing benchmarks: 🔴 dask
 - [🧠memory plot](bm-20250524-linux-x86_64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base-mem.svg)
 - [📄table](bm-20250524-linux-x86_64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base.md)
 - [📈time plot](bm-20250524-linux-x86_64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base.svg)
@@ -129,9 +124,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.091x slower (HPT: reliability of 100.00%, 1.07x slower at 99th %ile)
-- Memory usage: 1.23x
-- missing benchmarks: 🔴 djangocms
 - [🧠memory plot](bm-20250524-pythonperf2-x86_64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base-mem.svg)
 - [📄table](bm-20250524-pythonperf2-x86_64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base.md)
 - [📈time plot](bm-20250524-pythonperf2-x86_64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base.svg)
@@ -172,8 +164,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.043x slower (HPT: reliability of 100.00%, 1.05x slower at 99th %ile)
-- Memory usage: unknown
 - [📄table](bm-20250524-pythonperf1-amd64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base.md)
 - [📈time plot](bm-20250524-pythonperf1-amd64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base.svg)
 
@@ -213,8 +203,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.096x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
-- Memory usage: unknown
 - [📄table](bm-20250524-pythonperf1_win32-x86-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base.md)
 - [📈time plot](bm-20250524-pythonperf1_win32-x86-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base.svg)
 
@@ -254,9 +242,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.047x faster (HPT: reliability of 95.50%, 1.00x slower at 99th %ile)
-- Memory usage: 1.16x
-- missing benchmarks: 🔴 dask
 - [🧠memory plot](bm-20250524-darwin-arm64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base-mem.svg)
 - [📄table](bm-20250524-darwin-arm64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base.md)
 - [📈time plot](bm-20250524-darwin-arm64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-vs-base.svg)

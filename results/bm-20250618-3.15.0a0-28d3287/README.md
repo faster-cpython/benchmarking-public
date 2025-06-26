@@ -44,9 +44,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.001x faster (HPT: reliability of 92.46%, 1.00x faster at 99th %ile)
-- Memory usage: 1.00x
-- missing benchmarks: 🔴 asyncio_tcp, asyncio_tcp_ssl, bench_mp_pool, bench_thread_pool, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [🧠memory plot](bm-20250618-linux-x86_64-mdboom-faster_pprint_merge_-3.15.0a0-28d3287-vs-base-mem.svg)
 - [📄table](bm-20250618-linux-x86_64-mdboom-faster_pprint_merge_-3.15.0a0-28d3287-vs-base.md)
 - [📈time plot](bm-20250618-linux-x86_64-mdboom-faster_pprint_merge_-3.15.0a0-28d3287-vs-base.svg)

@@ -44,8 +44,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.015x faster (HPT: reliability of 82.06%, 1.00x slower at 99th %ile)
-- Memory usage: 1.02x
 - [🧠memory plot](bm-20250617-arminc-aarch64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base-mem.svg)
 - [📄table](bm-20250617-arminc-aarch64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.md)
 - [📈time plot](bm-20250617-arminc-aarch64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.svg)
@@ -86,8 +84,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.008x faster (HPT: reliability of 92.05%, 1.00x slower at 99th %ile)
-- Memory usage: 1.01x
 - [🧠memory plot](bm-20250617-linux-x86_64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base-mem.svg)
 - [📄table](bm-20250617-linux-x86_64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.md)
 - [📈time plot](bm-20250617-linux-x86_64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.svg)
@@ -128,8 +124,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.006x slower (HPT: reliability of 98.17%, 1.00x slower at 99th %ile)
-- Memory usage: 1.02x
 - [🧠memory plot](bm-20250617-pythonperf2-x86_64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base-mem.svg)
 - [📄table](bm-20250617-pythonperf2-x86_64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.md)
 - [📈time plot](bm-20250617-pythonperf2-x86_64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.svg)
@@ -170,8 +164,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.051x faster (HPT: reliability of 82.60%, 1.00x faster at 99th %ile)
-- Memory usage: unknown
 - [📄table](bm-20250617-pythonperf1-amd64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.md)
 - [📈time plot](bm-20250617-pythonperf1-amd64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.svg)
 
@@ -211,8 +203,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.051x faster (HPT: reliability of 83.39%, 1.00x faster at 99th %ile)
-- Memory usage: unknown
 - [📄table](bm-20250617-pythonperf1_win32-amd64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.md)
 - [📈time plot](bm-20250617-pythonperf1_win32-amd64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.svg)
 
@@ -252,8 +242,6 @@
 
 ### vs. base
 
-- Geometric mean: 1.017x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
-- Memory usage: 1.02x
 - [🧠memory plot](bm-20250617-darwin-arm64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base-mem.svg)
 - [📄table](bm-20250617-darwin-arm64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.md)
 - [📈time plot](bm-20250617-darwin-arm64-python-fba5dded6df3c2b19435-3.15.0a0-fba5dde-vs-base.svg)

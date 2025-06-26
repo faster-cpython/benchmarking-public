@@ -44,6 +44,8 @@
 
 ### vs. base
 
+- Geometric mean: 1.133x faster (HPT: reliability of 100.00%, 1.10x faster at 99th %ile)
+- Memory usage: 1.01x
 - [🧠memory plot](bm-20250618-linux-x86_64-mdboom-faster_pprint2-3.15.0a0-42218e4-vs-base-mem.svg)
 - [📄table](bm-20250618-linux-x86_64-mdboom-faster_pprint2-3.15.0a0-42218e4-vs-base.md)
 - [📈time plot](bm-20250618-linux-x86_64-mdboom-faster_pprint2-3.15.0a0-42218e4-vs-base.svg)

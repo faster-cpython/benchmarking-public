@@ -159,7 +159,9 @@ subplots = [
     { base = "3.10.4", version = "3.11" },
     { base = "3.12.0", version = "3.13" },
     { base = "3.13.0", version = "3.14" },
-    { base = "3.13.0", version = "3.14", flags = ["JIT"] }
+    { base = "3.13.0", version = "3.14", flags = ["JIT"] },
+    { base = "3.13.0", version = "3.15" },
+    { base = "3.13.0", version = "3.15", flags = ["JIT"] },
 ]
 
 [[flag_effect_plot.subplots]]

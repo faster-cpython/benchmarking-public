@@ -118,3 +118,45 @@
 - [📄table](bm-20250607-pythonperf1-amd64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-3.13.0.md)
 - [📈time plot](bm-20250607-pythonperf1-amd64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-3.13.0.svg)
 
+## darwin arm64 (darwin)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15927032174)
+- cpu model: missing
+- platform: macOS-15.5-arm64-arm-64bit-Mach-O
+- [raw results](bm-20250607-darwin-arm64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8.json)
+
+### vs. 3.10.4
+
+- Geometric mean: 1.262x faster (HPT: reliability of 100.00%, 1.11x faster at 99th %ile)
+- Memory usage: 1.19x
+- missing benchmarks: bench_mp_pool, bench_thread_pool, chameleon, djangocms, gevent_hub, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
+- new benchmarks: async_tree_cpu_io_mixed_tg, async_tree_eager_cpu_io_mixed_tg, async_tree_eager_io_tg, async_tree_eager_memoization_tg, async_tree_eager_tg, async_tree_io_tg, async_tree_memoization_tg, async_tree_none_tg, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
+- [📄table](bm-20250607-darwin-arm64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-3.10.4.md)
+- [📈time plot](bm-20250607-darwin-arm64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-3.10.4.svg)
+
+### vs. 3.12.0
+
+- Geometric mean: 1.003x slower (HPT: reliability of 94.14%, 1.00x slower at 99th %ile)
+- Memory usage: 1.14x
+- missing benchmarks: bench_mp_pool, bench_thread_pool, chameleon, djangocms, gevent_hub, gunicorn, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
+- new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
+- [📄table](bm-20250607-darwin-arm64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-3.12.0.md)
+- [📈time plot](bm-20250607-darwin-arm64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-3.12.0.svg)
+
+### vs. 3.13.0
+
+- Geometric mean: 1.002x slower (HPT: reliability of 52.07%, 1.00x faster at 99th %ile)
+- Memory usage: 1.13x
+- missing benchmarks: bench_mp_pool, bench_thread_pool, chameleon, djangocms, gevent_hub, gunicorn, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
+- new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
+- [📄table](bm-20250607-darwin-arm64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-3.13.0.md)
+- [📈time plot](bm-20250607-darwin-arm64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-3.13.0.svg)
+
+### vs. base
+
+- Geometric mean: 1.015x faster (HPT: reliability of 99.08%, 1.00x faster at 99th %ile)
+- Memory usage: 1.02x
+- [🧠memory plot](bm-20250607-darwin-arm64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-base-mem.svg)
+- [📄table](bm-20250607-darwin-arm64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-base.md)
+- [📈time plot](bm-20250607-darwin-arm64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-base.svg)
+

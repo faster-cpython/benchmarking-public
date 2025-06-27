@@ -44,6 +44,10 @@
 
 ### vs. base
 
+- Geometric mean: 1.009x slower (HPT: reliability of 96.24%, 1.00x slower at 99th %ile)
+- Memory usage: 1.02x
+- missing benchmarks: 🔴 djangocms
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, bench_mp_pool, bench_thread_pool, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [🧠memory plot](bm-20250614-arminc-aarch64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base-mem.svg)
 - [📄table](bm-20250614-arminc-aarch64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base.md)
 - [📈time plot](bm-20250614-arminc-aarch64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base.svg)

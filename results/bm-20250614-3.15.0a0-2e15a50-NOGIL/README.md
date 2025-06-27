@@ -84,6 +84,10 @@
 
 ### vs. base
 
+- Geometric mean: 1.057x slower (HPT: reliability of 100.00%, 1.09x slower at 99th %ile)
+- Memory usage: 1.22x
+- missing benchmarks: 🔴 djangocms
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, bench_mp_pool, bench_thread_pool, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [🧠memory plot](bm-20250614-linux-x86_64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base-mem.svg)
 - [📄table](bm-20250614-linux-x86_64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base.md)
 - [📈time plot](bm-20250614-linux-x86_64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base.svg)
@@ -164,6 +168,9 @@
 
 ### vs. base
 
+- Geometric mean: 1.138x slower (HPT: reliability of 100.00%, 1.18x slower at 99th %ile)
+- Memory usage: unknown
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, bench_mp_pool, bench_thread_pool, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20250614-pythonperf1-amd64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base.md)
 - [📈time plot](bm-20250614-pythonperf1-amd64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base.svg)
 
@@ -242,6 +249,9 @@
 
 ### vs. base
 
+- Geometric mean: 1.014x faster (HPT: reliability of 99.75%, 1.00x slower at 99th %ile)
+- Memory usage: 1.18x
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, bench_mp_pool, bench_thread_pool, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [🧠memory plot](bm-20250614-darwin-arm64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base-mem.svg)
 - [📄table](bm-20250614-darwin-arm64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base.md)
 - [📈time plot](bm-20250614-darwin-arm64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base.svg)

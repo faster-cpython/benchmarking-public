@@ -168,6 +168,10 @@
 
 ### vs. base
 
+- Geometric mean: 1.016x faster (HPT: reliability of 99.65%, 1.00x slower at 99th %ile)
+- Memory usage: 1.18x
+- missing benchmarks: 🔴 dask
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, bench_mp_pool, bench_thread_pool, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [🧠memory plot](bm-20250607-darwin-arm64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-base-mem.svg)
 - [📄table](bm-20250607-darwin-arm64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-base.md)
 - [📈time plot](bm-20250607-darwin-arm64-python-8fdbbf8b18f1405abe67-3.15.0a0-8fdbbf8-vs-base.svg)

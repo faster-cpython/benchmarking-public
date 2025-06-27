@@ -42,3 +42,11 @@
 - [📄table](bm-20250626-darwin-arm64-faster%252dcpython-explicit_check_perio-3.15.0a0-892a89d-vs-3.13.0.md)
 - [📈time plot](bm-20250626-darwin-arm64-faster%252dcpython-explicit_check_perio-3.15.0a0-892a89d-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.093x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
+- Memory usage: 1.01x
+- [🧠memory plot](bm-20250626-darwin-arm64-faster%252dcpython-explicit_check_perio-3.15.0a0-892a89d-vs-base-mem.svg)
+- [📄table](bm-20250626-darwin-arm64-faster%252dcpython-explicit_check_perio-3.15.0a0-892a89d-vs-base.md)
+- [📈time plot](bm-20250626-darwin-arm64-faster%252dcpython-explicit_check_perio-3.15.0a0-892a89d-vs-base.svg)
+

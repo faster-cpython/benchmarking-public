@@ -8853,7 +8853,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">35,821,303</td>
+<td align="right">35,821,317</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -8873,12 +8873,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">205,420,135</td>
+<td align="right">205,420,147</td>
 <td align="right">18.5%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">608,386,409</td>
+<td align="right">608,386,449</td>
 <td align="right">41.0%</td>
 </tr>
 <tr>
@@ -8893,12 +8893,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">30,063,745</td>
+<td align="right">30,063,756</td>
 <td align="right">2.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">42,460,253</td>
+<td align="right">42,460,239</td>
 <td align="right">2.9%</td>
 </tr>
 <tr>
@@ -8933,17 +8933,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">1,211</td>
+<td align="right">1,221</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">18,512,855</td>
+<td align="right">18,512,845</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">385</td>
+<td align="right">395</td>
 <td align="right"></td>
 </tr>
 </tbody>

@@ -12185,22 +12185,22 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
-<td align="right">91,191,870</td>
+<td align="right">91,192,329</td>
 <td align="right">57.8%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
-<td align="right">91,194,957</td>
+<td align="right">91,195,416</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">66,662,253</td>
+<td align="right">66,661,794</td>
 <td align="right">42.2%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
-<td align="right">66,640,245</td>
+<td align="right">66,639,786</td>
 <td align="right">42.2%</td>
 </tr>
 <tr>
@@ -12215,7 +12215,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">66,662,327</td>
+<td align="right">66,661,853</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -12235,12 +12235,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">1,606,568,072</td>
+<td align="right">1,606,568,075</td>
 <td align="right">68.4%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">1,614,325,781</td>
+<td align="right">1,614,325,778</td>
 <td align="right">75.5%</td>
 </tr>
 <tr>
@@ -12255,12 +12255,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">523,271,018</td>
+<td align="right">523,271,047</td>
 <td align="right">22.3%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">174,114,351</td>
+<td align="right">174,114,396</td>
 <td align="right">8.1%</td>
 </tr>
 <tr>
@@ -12285,27 +12285,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">17,430,544</td>
+<td align="right">17,430,537</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">2,963</td>
+<td align="right">2,970</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">2,953</td>
+<td align="right">3,042</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">16,929,764</td>
+<td align="right">16,929,753</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">772</td>
+<td align="right">783</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -12346,7 +12346,7 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">8,253</td>
 <td align="right">4,389</td>
-<td align="right">476,515,292</td>
+<td align="right">476,515,412</td>
 <td align="right">68,677,266</td>
 <td align="right">16,380,609</td>
 </tr>

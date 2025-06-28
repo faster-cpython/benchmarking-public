@@ -10005,12 +10005,12 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
-<td align="right">192,120</td>
+<td align="right">192,121</td>
 <td align="right">50.8%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
-<td align="right">195,260</td>
+<td align="right">195,261</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10035,7 +10035,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">185,302</td>
+<td align="right">185,280</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10050,17 +10050,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
-<td align="right">1,004,540</td>
+<td align="right">1,004,541</td>
 <td align="right">46.2%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">468,701</td>
+<td align="right">468,637</td>
 <td align="right">25.0%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">518,541</td>
+<td align="right">518,378</td>
 <td align="right">23.9%</td>
 </tr>
 <tr>
@@ -10075,12 +10075,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">560,486</td>
+<td align="right">560,345</td>
 <td align="right">30.0%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">614,335</td>
+<td align="right">614,294</td>
 <td align="right">28.3%</td>
 </tr>
 <tr>
@@ -10105,27 +10105,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">78,820</td>
+<td align="right">78,886</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">14,940</td>
+<td align="right">14,874</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">14,289</td>
+<td align="right">14,236</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">71,574</td>
+<td align="right">71,608</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">4,386</td>
+<td align="right">4,352</td>
 <td align="right"></td>
 </tr>
 </tbody>

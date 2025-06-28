@@ -2582,6 +2582,48 @@ specialized instruction deoptimizes.
 
 </details>
 
+### NOT_TAKEN
+
+<details>
+<summary> Successors and predecessors for NOT_TAKEN </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">ENTER_EXECUTOR</td>
+<td align="right">1,477,319</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_FAST_BORROW</td>
+<td align="right">1,477,319</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
 ### POP_EXCEPT
 
 <details>
@@ -3268,48 +3310,6 @@ specialized instruction deoptimizes.
 <td align="left">TO_BOOL_BOOL</td>
 <td align="right">1,638</td>
 <td align="right">0.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### UNARY_INVERT
-
-<details>
-<summary> Successors and predecessors for UNARY_INVERT </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_FAST_BORROW</td>
-<td align="right">168</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">BINARY_OP_EXTEND</td>
-<td align="right">168</td>
-<td align="right">100.0%</td>
 </tr>
 </tbody>
 </table>
@@ -4241,6 +4241,48 @@ specialized instruction deoptimizes.
 <td align="left">RETURN_GENERATOR</td>
 <td align="right">148</td>
 <td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### DELETE_ATTR
+
+<details>
+<summary> Successors and predecessors for DELETE_ATTR </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_DEREF</td>
+<td align="right">64</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_CONST</td>
+<td align="right">64</td>
+<td align="right">100.0%</td>
 </tr>
 </tbody>
 </table>
@@ -7551,12 +7593,12 @@ specialized instruction deoptimizes.
 <td align="right">7.5%</td>
 </tr>
 <tr>
-<td align="left">RETURN_VALUE</td>
+<td align="left">LOAD_SMALL_INT</td>
 <td align="right">168</td>
 <td align="right">4.3%</td>
 </tr>
 <tr>
-<td align="left">LOAD_SMALL_INT</td>
+<td align="left">RETURN_VALUE</td>
 <td align="right">168</td>
 <td align="right">4.3%</td>
 </tr>
@@ -8726,6 +8768,53 @@ specialized instruction deoptimizes.
 <td align="left">LOAD_FAST_BORROW</td>
 <td align="right">126</td>
 <td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### CALL_KW_BOUND_METHOD
+
+<details>
+<summary> Successors and predecessors for CALL_KW_BOUND_METHOD </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_CONST</td>
+<td align="right">1,524,212</td>
+<td align="right">100.0%</td>
+</tr>
+<tr>
+<td align="left">CALL_KW</td>
+<td align="right">21</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">RESUME_CHECK</td>
+<td align="right">1,524,233</td>
+<td align="right">100.0%</td>
 </tr>
 </tbody>
 </table>
@@ -12534,137 +12623,6 @@ specialized instruction deoptimizes.
 
 </details>
 
-### NOT_TAKEN
-
-<details>
-<summary> Successors and predecessors for NOT_TAKEN </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">ENTER_EXECUTOR</td>
-<td align="right">1,477,319</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_FAST_BORROW</td>
-<td align="right">1,477,319</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### DELETE_ATTR
-
-<details>
-<summary> Successors and predecessors for DELETE_ATTR </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_DEREF</td>
-<td align="right">64</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_CONST</td>
-<td align="right">64</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### CALL_KW_BOUND_METHOD
-
-<details>
-<summary> Successors and predecessors for CALL_KW_BOUND_METHOD </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_CONST</td>
-<td align="right">1,524,212</td>
-<td align="right">100.0%</td>
-</tr>
-<tr>
-<td align="left">CALL_KW</td>
-<td align="right">21</td>
-<td align="right">0.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">RESUME_CHECK</td>
-<td align="right">1,524,233</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
 ### ENTER_EXECUTOR
 
 <details>
@@ -12710,6 +12668,48 @@ specialized instruction deoptimizes.
 <td align="left">LOAD_FAST_BORROW</td>
 <td align="right">86,101</td>
 <td align="right">3.2%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### UNARY_INVERT
+
+<details>
+<summary> Successors and predecessors for UNARY_INVERT </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_FAST_BORROW</td>
+<td align="right">168</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">BINARY_OP_EXTEND</td>
+<td align="right">168</td>
+<td align="right">100.0%</td>
 </tr>
 </tbody>
 </table>
@@ -14439,7 +14439,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">39,827,788</td>
+<td align="right">39,827,722</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -14459,12 +14459,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">270,811,697</td>
+<td align="right">270,811,342</td>
 <td align="right">32.4%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">266,679,557</td>
+<td align="right">266,679,131</td>
 <td align="right">29.6%</td>
 </tr>
 <tr>
@@ -14479,12 +14479,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">85,137,979</td>
+<td align="right">85,137,465</td>
 <td align="right">10.2%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">79,640,761</td>
+<td align="right">79,640,315</td>
 <td align="right">8.8%</td>
 </tr>
 <tr>
@@ -14509,27 +14509,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">25,721,067</td>
+<td align="right">25,721,479</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">16,476</td>
+<td align="right">16,064</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">15,354</td>
+<td align="right">14,754</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">8,736,457</td>
+<td align="right">8,736,478</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">2,939</td>
+<td align="right">2,918</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -14570,9 +14570,9 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">826</td>
 <td align="right">38,022</td>
-<td align="right">10,192,849</td>
-<td align="right">569,121</td>
-<td align="right">1,575,858</td>
+<td align="right">10,193,025</td>
+<td align="right">569,071</td>
+<td align="right">1,575,908</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -15514,4 +15514,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-27
+Stats gathered on: 2025-06-28

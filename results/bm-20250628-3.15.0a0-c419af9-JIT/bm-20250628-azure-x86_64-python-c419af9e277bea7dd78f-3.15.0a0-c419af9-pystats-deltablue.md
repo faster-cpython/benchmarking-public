@@ -7853,7 +7853,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">5,062,866</td>
+<td align="right">5,062,875</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -7873,12 +7873,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">314,340,456</td>
+<td align="right">314,340,496</td>
 <td align="right">61.0%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">174,353,941</td>
+<td align="right">174,354,013</td>
 <td align="right">32.7%</td>
 </tr>
 <tr>
@@ -7893,12 +7893,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">42,053,680</td>
+<td align="right">42,053,675</td>
 <td align="right">8.2%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">41,788,853</td>
+<td align="right">41,788,821</td>
 <td align="right">7.8%</td>
 </tr>
 <tr>
@@ -7923,27 +7923,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">21,845,041</td>
+<td align="right">21,845,016</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">11,839</td>
+<td align="right">11,864</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">11,457</td>
+<td align="right">11,437</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">1,462</td>
+<td align="right">1,470</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">338</td>
+<td align="right">330</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -7984,7 +7984,7 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">880</td>
 <td align="right">1,295,280</td>
-<td align="right">21,453,853</td>
+<td align="right">21,453,898</td>
 <td align="right">629,140</td>
 <td align="right">1,524,280</td>
 </tr>
@@ -9260,4 +9260,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-27
+Stats gathered on: 2025-06-28

@@ -12805,12 +12805,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">18,645,764</td>
+<td align="right">18,645,662</td>
 <td align="right">47.3%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
-<td align="right">18,072,224</td>
+<td align="right">18,072,122</td>
 <td align="right">45.8%</td>
 </tr>
 <tr>
@@ -12825,7 +12825,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">19,666,588</td>
+<td align="right">19,666,281</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -12841,16 +12841,16 @@ other names.
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
 <td align="right">114,862,440</td>
-<td align="right">58.8%</td>
+<td align="right">58.7%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">28,175,378</td>
+<td align="right">28,185,860</td>
 <td align="right">16.7%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">46,355,048</td>
+<td align="right">46,365,311</td>
 <td align="right">23.7%</td>
 </tr>
 <tr>
@@ -12865,12 +12865,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">36,300,354</td>
-<td align="right">21.5%</td>
+<td align="right">36,310,848</td>
+<td align="right">21.6%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">27,488,288</td>
+<td align="right">27,508,642</td>
 <td align="right">14.1%</td>
 </tr>
 <tr>
@@ -12895,17 +12895,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">1,325,871</td>
+<td align="right">1,325,024</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">191,649</td>
+<td align="right">192,496</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">189,926</td>
+<td align="right">190,698</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -13849,4 +13849,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-27
+Stats gathered on: 2025-06-28

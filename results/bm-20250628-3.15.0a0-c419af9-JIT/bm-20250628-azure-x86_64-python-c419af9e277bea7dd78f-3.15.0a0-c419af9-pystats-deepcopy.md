@@ -6791,6 +6791,568 @@ specialized instruction deoptimizes.
 
 </details>
 
+### RETURN_GENERATOR
+
+<details>
+<summary> Successors and predecessors for RETURN_GENERATOR </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">COPY_FREE_VARS</td>
+<td align="right">921,600</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">STORE_FAST</td>
+<td align="right">921,600</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### YIELD_VALUE
+
+<details>
+<summary> Successors and predecessors for YIELD_VALUE </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">RETURN_VALUE</td>
+<td align="right">921,600</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">INTERPRETER_EXIT</td>
+<td align="right">921,600</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### BINARY_OP_ADD_FLOAT
+
+<details>
+<summary> Successors and predecessors for BINARY_OP_ADD_FLOAT </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">BINARY_OP_SUBTRACT_FLOAT</td>
+<td align="right">1,843,120</td>
+<td align="right">100.0%</td>
+</tr>
+<tr>
+<td align="left">BINARY_OP</td>
+<td align="right">40</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">STORE_FAST</td>
+<td align="right">1,843,160</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### CALL_ALLOC_AND_ENTER_INIT
+
+<details>
+<summary> Successors and predecessors for CALL_ALLOC_AND_ENTER_INIT </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">CALL</td>
+<td align="right">40</td>
+<td align="right">50.0%</td>
+</tr>
+<tr>
+<td align="left">PUSH_NULL</td>
+<td align="right">20</td>
+<td align="right">25.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_CONST</td>
+<td align="right">20</td>
+<td align="right">25.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">RESUME_CHECK</td>
+<td align="right">60</td>
+<td align="right">75.0%</td>
+</tr>
+<tr>
+<td align="left">STORE_FAST</td>
+<td align="right">20</td>
+<td align="right">25.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### CALL_BUILTIN_FAST
+
+<details>
+<summary> Successors and predecessors for CALL_BUILTIN_FAST </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_CONST</td>
+<td align="right">2,856,720</td>
+<td align="right">60.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST_BORROW</td>
+<td align="right">952,240</td>
+<td align="right">20.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_GLOBAL_BUILTIN</td>
+<td align="right">952,240</td>
+<td align="right">20.0%</td>
+</tr>
+<tr>
+<td align="left">CALL</td>
+<td align="right">200</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">STORE_FAST</td>
+<td align="right">2,856,840</td>
+<td align="right">60.0%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL_BOOL</td>
+<td align="right">1,904,480</td>
+<td align="right">40.0%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL</td>
+<td align="right">80</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### CALL_ISINSTANCE
+
+<details>
+<summary> Successors and predecessors for CALL_ISINSTANCE </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_GLOBAL_BUILTIN</td>
+<td align="right">1,873,800</td>
+<td align="right">100.0%</td>
+</tr>
+<tr>
+<td align="left">CALL</td>
+<td align="right">60</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">TO_BOOL_BOOL</td>
+<td align="right">1,873,800</td>
+<td align="right">100.0%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL</td>
+<td align="right">60</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### LOAD_ATTR_CLASS
+
+<details>
+<summary> Successors and predecessors for LOAD_ATTR_CLASS </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_FAST_BORROW</td>
+<td align="right">921,560</td>
+<td align="right">100.0%</td>
+</tr>
+<tr>
+<td align="left">LOAD_ATTR</td>
+<td align="right">20</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">PUSH_NULL</td>
+<td align="right">921,580</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### STORE_ATTR_INSTANCE_VALUE
+
+<details>
+<summary> Successors and predecessors for STORE_ATTR_INSTANCE_VALUE </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_FAST_BORROW</td>
+<td align="right">61,480</td>
+<td align="right">99.6%</td>
+</tr>
+<tr>
+<td align="left">STORE_ATTR</td>
+<td align="right">100</td>
+<td align="right">0.2%</td>
+</tr>
+<tr>
+<td align="left">STORE_ATTR_INSTANCE_VALUE</td>
+<td align="right">80</td>
+<td align="right">0.1%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST_BORROW_LOAD_FAST_BORROW</td>
+<td align="right">60</td>
+<td align="right">0.1%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_CONST</td>
+<td align="right">30,800</td>
+<td align="right">49.9%</td>
+</tr>
+<tr>
+<td align="left">LOAD_SMALL_INT</td>
+<td align="right">30,760</td>
+<td align="right">49.8%</td>
+</tr>
+<tr>
+<td align="left">LOAD_FAST_BORROW_LOAD_FAST_BORROW</td>
+<td align="right">80</td>
+<td align="right">0.1%</td>
+</tr>
+<tr>
+<td align="left">STORE_ATTR_INSTANCE_VALUE</td>
+<td align="right">80</td>
+<td align="right">0.1%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### STORE_SUBSCR_LIST_INT
+
+<details>
+<summary> Successors and predecessors for STORE_SUBSCR_LIST_INT </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_SMALL_INT</td>
+<td align="right">460,760</td>
+<td align="right">100.0%</td>
+</tr>
+<tr>
+<td align="left">STORE_SUBSCR</td>
+<td align="right">20</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_CONST</td>
+<td align="right">460,780</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### TO_BOOL_NONE
+
+<details>
+<summary> Successors and predecessors for TO_BOOL_NONE </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">LOAD_FAST_BORROW</td>
+<td align="right">952,240</td>
+<td align="right">100.0%</td>
+</tr>
+<tr>
+<td align="left">TO_BOOL</td>
+<td align="right">40</td>
+<td align="right">0.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">POP_JUMP_IF_FALSE</td>
+<td align="right">952,280</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
+### ENTER_EXECUTOR
+
+<details>
+<summary> Successors and predecessors for ENTER_EXECUTOR </summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Predecessors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">POP_JUMP_IF_TRUE</td>
+<td align="right">894,280</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Successors</th>
+<th align="right">Count</th>
+<th align="right">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">POP_ITER</td>
+<td align="right">894,280</td>
+<td align="right">100.0%</td>
+</tr>
+</tbody>
+</table>
+
+
+</details>
+
 ### LOAD_BUILD_CLASS
 
 <details>
@@ -7004,130 +7566,6 @@ specialized instruction deoptimizes.
 
 </details>
 
-### CALL_ALLOC_AND_ENTER_INIT
-
-<details>
-<summary> Successors and predecessors for CALL_ALLOC_AND_ENTER_INIT </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">CALL</td>
-<td align="right">40</td>
-<td align="right">50.0%</td>
-</tr>
-<tr>
-<td align="left">PUSH_NULL</td>
-<td align="right">20</td>
-<td align="right">25.0%</td>
-</tr>
-<tr>
-<td align="left">LOAD_CONST</td>
-<td align="right">20</td>
-<td align="right">25.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">RESUME_CHECK</td>
-<td align="right">60</td>
-<td align="right">75.0%</td>
-</tr>
-<tr>
-<td align="left">STORE_FAST</td>
-<td align="right">20</td>
-<td align="right">25.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### CALL_BUILTIN_FAST
-
-<details>
-<summary> Successors and predecessors for CALL_BUILTIN_FAST </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_CONST</td>
-<td align="right">2,856,720</td>
-<td align="right">60.0%</td>
-</tr>
-<tr>
-<td align="left">LOAD_FAST_BORROW</td>
-<td align="right">952,240</td>
-<td align="right">20.0%</td>
-</tr>
-<tr>
-<td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">952,240</td>
-<td align="right">20.0%</td>
-</tr>
-<tr>
-<td align="left">CALL</td>
-<td align="right">200</td>
-<td align="right">0.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">STORE_FAST</td>
-<td align="right">2,856,840</td>
-<td align="right">60.0%</td>
-</tr>
-<tr>
-<td align="left">TO_BOOL_BOOL</td>
-<td align="right">1,904,480</td>
-<td align="right">40.0%</td>
-</tr>
-<tr>
-<td align="left">TO_BOOL</td>
-<td align="right">80</td>
-<td align="right">0.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
 ### CALL_BUILTIN_FAST_WITH_KEYWORDS
 
 <details>
@@ -7167,444 +7605,6 @@ specialized instruction deoptimizes.
 <tr>
 <td align="left">STORE_DEREF</td>
 <td align="right">40</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### CALL_ISINSTANCE
-
-<details>
-<summary> Successors and predecessors for CALL_ISINSTANCE </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_GLOBAL_BUILTIN</td>
-<td align="right">1,873,800</td>
-<td align="right">100.0%</td>
-</tr>
-<tr>
-<td align="left">CALL</td>
-<td align="right">60</td>
-<td align="right">0.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">TO_BOOL_BOOL</td>
-<td align="right">1,873,800</td>
-<td align="right">100.0%</td>
-</tr>
-<tr>
-<td align="left">TO_BOOL</td>
-<td align="right">60</td>
-<td align="right">0.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### STORE_ATTR_INSTANCE_VALUE
-
-<details>
-<summary> Successors and predecessors for STORE_ATTR_INSTANCE_VALUE </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_FAST_BORROW</td>
-<td align="right">61,480</td>
-<td align="right">99.6%</td>
-</tr>
-<tr>
-<td align="left">STORE_ATTR</td>
-<td align="right">100</td>
-<td align="right">0.2%</td>
-</tr>
-<tr>
-<td align="left">STORE_ATTR_INSTANCE_VALUE</td>
-<td align="right">80</td>
-<td align="right">0.1%</td>
-</tr>
-<tr>
-<td align="left">LOAD_FAST_BORROW_LOAD_FAST_BORROW</td>
-<td align="right">60</td>
-<td align="right">0.1%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_CONST</td>
-<td align="right">30,800</td>
-<td align="right">49.9%</td>
-</tr>
-<tr>
-<td align="left">LOAD_SMALL_INT</td>
-<td align="right">30,760</td>
-<td align="right">49.8%</td>
-</tr>
-<tr>
-<td align="left">STORE_ATTR_INSTANCE_VALUE</td>
-<td align="right">80</td>
-<td align="right">0.1%</td>
-</tr>
-<tr>
-<td align="left">LOAD_FAST_BORROW_LOAD_FAST_BORROW</td>
-<td align="right">80</td>
-<td align="right">0.1%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### TO_BOOL_NONE
-
-<details>
-<summary> Successors and predecessors for TO_BOOL_NONE </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_FAST_BORROW</td>
-<td align="right">952,240</td>
-<td align="right">100.0%</td>
-</tr>
-<tr>
-<td align="left">TO_BOOL</td>
-<td align="right">40</td>
-<td align="right">0.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">POP_JUMP_IF_FALSE</td>
-<td align="right">952,280</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### RETURN_GENERATOR
-
-<details>
-<summary> Successors and predecessors for RETURN_GENERATOR </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">COPY_FREE_VARS</td>
-<td align="right">921,600</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">STORE_FAST</td>
-<td align="right">921,600</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### YIELD_VALUE
-
-<details>
-<summary> Successors and predecessors for YIELD_VALUE </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">RETURN_VALUE</td>
-<td align="right">921,600</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">INTERPRETER_EXIT</td>
-<td align="right">921,600</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### BINARY_OP_ADD_FLOAT
-
-<details>
-<summary> Successors and predecessors for BINARY_OP_ADD_FLOAT </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">BINARY_OP_SUBTRACT_FLOAT</td>
-<td align="right">1,843,120</td>
-<td align="right">100.0%</td>
-</tr>
-<tr>
-<td align="left">BINARY_OP</td>
-<td align="right">40</td>
-<td align="right">0.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">STORE_FAST</td>
-<td align="right">1,843,160</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### LOAD_ATTR_CLASS
-
-<details>
-<summary> Successors and predecessors for LOAD_ATTR_CLASS </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_FAST_BORROW</td>
-<td align="right">921,560</td>
-<td align="right">100.0%</td>
-</tr>
-<tr>
-<td align="left">LOAD_ATTR</td>
-<td align="right">20</td>
-<td align="right">0.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">PUSH_NULL</td>
-<td align="right">921,580</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### STORE_SUBSCR_LIST_INT
-
-<details>
-<summary> Successors and predecessors for STORE_SUBSCR_LIST_INT </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_SMALL_INT</td>
-<td align="right">460,760</td>
-<td align="right">100.0%</td>
-</tr>
-<tr>
-<td align="left">STORE_SUBSCR</td>
-<td align="right">20</td>
-<td align="right">0.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">LOAD_CONST</td>
-<td align="right">460,780</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-
-</details>
-
-### ENTER_EXECUTOR
-
-<details>
-<summary> Successors and predecessors for ENTER_EXECUTOR </summary>
-
-<table>
-<thead>
-<tr>
-<th align="left">Predecessors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">POP_JUMP_IF_TRUE</td>
-<td align="right">894,280</td>
-<td align="right">100.0%</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th align="left">Successors</th>
-<th align="right">Count</th>
-<th align="right">Percentage</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">POP_ITER</td>
-<td align="right">894,280</td>
 <td align="right">100.0%</td>
 </tr>
 </tbody>
@@ -8846,7 +8846,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">53,392,874</td>
+<td align="right">53,392,875</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -8866,12 +8866,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">130,773,378</td>
+<td align="right">130,773,371</td>
 <td align="right">24.0%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">161,284,511</td>
+<td align="right">161,284,499</td>
 <td align="right">27.4%</td>
 </tr>
 <tr>
@@ -8886,12 +8886,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">123,764,016</td>
+<td align="right">123,764,015</td>
 <td align="right">22.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">93,349,563</td>
+<td align="right">93,349,567</td>
 <td align="right">15.9%</td>
 </tr>
 <tr>
@@ -8916,27 +8916,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">5,261,249</td>
+<td align="right">5,261,257</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">831</td>
+<td align="right">823</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">1,293</td>
+<td align="right">1,273</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">13,212,584</td>
+<td align="right">13,212,580</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">896</td>
+<td align="right">900</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -9700,4 +9700,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-28
+Stats gathered on: 2025-06-29

@@ -14080,7 +14080,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">174,388,932</td>
+<td align="right">174,388,507</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -14100,12 +14100,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">889,854,875</td>
+<td align="right">889,854,716</td>
 <td align="right">55.3%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">1,019,282,768</td>
+<td align="right">1,019,282,166</td>
 <td align="right">57.6%</td>
 </tr>
 <tr>
@@ -14120,12 +14120,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">458,128,878</td>
+<td align="right">458,128,979</td>
 <td align="right">28.5%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">423,183,736</td>
+<td align="right">423,184,286</td>
 <td align="right">23.9%</td>
 </tr>
 <tr>
@@ -14150,27 +14150,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">121,461,233</td>
+<td align="right">121,461,306</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">69,085</td>
+<td align="right">69,012</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">66,064</td>
+<td align="right">66,079</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">45,309,387</td>
+<td align="right">45,309,345</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">8,613</td>
+<td align="right">8,655</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -14211,9 +14211,9 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">11,844</td>
 <td align="right">24,570</td>
-<td align="right">287,745,623</td>
-<td align="right">33,494,895</td>
-<td align="right">12,734,757</td>
+<td align="right">287,741,584</td>
+<td align="right">33,494,931</td>
+<td align="right">12,734,721</td>
 </tr>
 <tr>
 <td align="right">2</td>
@@ -15514,4 +15514,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-28
+Stats gathered on: 2025-06-29

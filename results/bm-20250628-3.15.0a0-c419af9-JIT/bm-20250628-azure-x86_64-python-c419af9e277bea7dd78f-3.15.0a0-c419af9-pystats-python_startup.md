@@ -10005,12 +10005,12 @@ other names.
 <tbody>
 <tr>
 <td align="left">Allocations from freelist</td>
-<td align="right">192,127</td>
+<td align="right">192,121</td>
 <td align="right">51.7%</td>
 </tr>
 <tr>
 <td align="left">Frees to freelist</td>
-<td align="right">195,267</td>
+<td align="right">195,261</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10035,7 +10035,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">178,593</td>
+<td align="right">178,623</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10050,17 +10050,17 @@ other names.
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
-<td align="right">1,004,542</td>
+<td align="right">1,004,541</td>
 <td align="right">46.5%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">458,308</td>
+<td align="right">458,285</td>
 <td align="right">24.7%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">504,846</td>
+<td align="right">504,800</td>
 <td align="right">23.4%</td>
 </tr>
 <tr>
@@ -10075,12 +10075,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">556,791</td>
+<td align="right">556,758</td>
 <td align="right">30.0%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">613,904</td>
+<td align="right">613,896</td>
 <td align="right">28.4%</td>
 </tr>
 <tr>
@@ -10105,27 +10105,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">78,993</td>
+<td align="right">78,995</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">14,767</td>
+<td align="right">14,765</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">13,783</td>
+<td align="right">13,672</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">71,568</td>
+<td align="right">71,595</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">4,392</td>
+<td align="right">4,365</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -10712,4 +10712,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-28
+Stats gathered on: 2025-06-29

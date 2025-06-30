@@ -80,6 +80,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: linux-x86_64-linux
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: false
@@ -93,6 +94,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: linux-x86_64-pythonperf2
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: false
@@ -106,6 +108,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: darwin-arm64-darwin
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: false
@@ -119,6 +122,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: linux-aarch64-arminc
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: false
@@ -132,6 +136,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: windows-x86_64-pythonperf1
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: false
@@ -145,6 +150,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: windows-x86-pythonperf1_win32
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: false
@@ -158,6 +164,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: linux-x86_64-linux
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: true
       nogil: false
@@ -171,6 +178,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: linux-x86_64-pythonperf2
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: true
       nogil: false
@@ -184,6 +192,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: darwin-arm64-darwin
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: true
       nogil: false
@@ -197,6 +206,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: linux-aarch64-arminc
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: true
       nogil: false
@@ -210,6 +220,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: windows-x86_64-pythonperf1
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: true
       nogil: false
@@ -223,6 +234,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: windows-x86-pythonperf1_win32
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: true
       nogil: false
@@ -236,6 +248,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: linux-x86_64-linux
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: true
@@ -249,6 +262,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: linux-x86_64-pythonperf2
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: true
@@ -262,6 +276,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: darwin-arm64-darwin
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: true
@@ -275,6 +290,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: linux-aarch64-arminc
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: true
@@ -288,6 +304,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: windows-x86_64-pythonperf1
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: true
@@ -301,6 +318,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: windows-x86-pythonperf1_win32
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: true
@@ -314,6 +332,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: linux-x86_64-linux_clang
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: false
@@ -327,6 +346,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: linux-x86_64-pythonperf2_clang
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: false
@@ -340,6 +360,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: darwin-arm64-darwin_clang
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: false
@@ -353,6 +374,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: linux-aarch64-arminc_clang
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: false
@@ -366,6 +388,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: windows-x86_64-pythonperf1_clang
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: false
@@ -379,6 +402,7 @@ jobs:
       ref: ${{ needs.determine_head.outputs.commit }}
       machine: windows-x86_64-pythonperf1_win32_clang
       benchmarks: all_and_excluded
+      pgo: true
       tier2: false
       jit: false
       nogil: false

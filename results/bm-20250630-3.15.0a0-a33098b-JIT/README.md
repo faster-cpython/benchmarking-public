@@ -8,6 +8,15 @@
 - commit merge base: [39478479146f1f4188119a0e7ffdcdc7b6016bd7](https://github.com/python/cpython/commit/39478479146f1f4188119a0e7ffdcdc7b6016bd7)
 - ref: jit_up_12_6
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250630-azure-x86_64-brandtbucher-jit_up_12_6-3.15.0a0-a33098b-pystats.json)
+- [pystats table](bm-20250630-azure-x86_64-brandtbucher-jit_up_12_6-3.15.0a0-a33098b-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20250630-azure-x86_64-brandtbucher-jit_up_12_6-3.15.0a0-a33098b-pystats-vs-base.md)
+
 ## linux x86_64 (linux)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15986773928)

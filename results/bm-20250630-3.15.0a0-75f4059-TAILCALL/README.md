@@ -22,6 +22,13 @@
 - platform: Windows-11-10.0.26100-SP0
 - [raw results](bm-20250630-pythonperf1_clang-amd64-python-75f40595e555e7d016cf-3.15.0a0-75f4059.json)
 
+## windows amd64 (pythonperf1_win32_clang)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15974405296)
+- cpu model: missing
+- platform: Windows-11-10.0.26100-SP0
+- [raw results](bm-20250630-pythonperf1_win32_clang-amd64-python-75f40595e555e7d016cf-3.15.0a0-75f4059.json)
+
 ## darwin arm64 (darwin_clang)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/15974405296)

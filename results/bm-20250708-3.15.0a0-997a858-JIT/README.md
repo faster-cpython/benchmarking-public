@@ -50,6 +50,15 @@
 - [📄table](bm-20250708-arminc-aarch64-brandtbucher-jit_targets-3.15.0a0-997a858-vs-base.md)
 - [📈time plot](bm-20250708-arminc-aarch64-brandtbucher-jit_targets-3.15.0a0-997a858-vs-base.svg)
 
+## linux x86_64 (azure)
+
+- [pystats raw](bm-20250708-azure-x86_64-brandtbucher-jit_targets-3.15.0a0-997a858-pystats.json)
+- [pystats table](bm-20250708-azure-x86_64-brandtbucher-jit_targets-3.15.0a0-997a858-pystats.md)
+
+### vs. base
+
+- [pystats diff](bm-20250708-azure-x86_64-brandtbucher-jit_targets-3.15.0a0-997a858-pystats-vs-base.md)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/16157891710)

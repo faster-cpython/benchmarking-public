@@ -149,3 +149,10 @@
 - [📄table](bm-20250628-darwin-arm64-python-c419af9e277bea7dd78f-3.15.0a0-c419af9-vs-3.13.0.md)
 - [📈time plot](bm-20250628-darwin-arm64-python-c419af9e277bea7dd78f-3.15.0a0-c419af9-vs-3.13.0.svg)
 
+## darwin arm64 (darwin_clang)
+
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/16177380102)
+- cpu model: missing
+- platform: macOS-15.5-arm64-arm-64bit-Mach-O
+- [raw results](bm-20250628-darwin_clang-arm64-python-c419af9e277bea7dd78f-3.15.0a0-c419af9.json)
+

@@ -10935,7 +10935,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">11,835,231</td>
+<td align="right">11,835,200</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10955,12 +10955,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">112,602,676</td>
+<td align="right">112,524,763</td>
 <td align="right">31.3%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">112,568,546</td>
+<td align="right">112,490,595</td>
 <td align="right">29.9%</td>
 </tr>
 <tr>
@@ -10975,12 +10975,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">88,779,651</td>
+<td align="right">88,693,549</td>
 <td align="right">24.7%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">74,475,663</td>
+<td align="right">74,389,598</td>
 <td align="right">19.8%</td>
 </tr>
 <tr>
@@ -11005,27 +11005,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">24,819,768</td>
+<td align="right">24,874,907</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">371,301</td>
+<td align="right">316,162</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">428,115</td>
+<td align="right">346,206</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">7,472,886</td>
+<td align="right">7,499,753</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">58,197</td>
+<td align="right">31,330</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -11066,7 +11066,7 @@ Collected/visits gives some measure of efficiency.
 <td align="right">1</td>
 <td align="right">618</td>
 <td align="right">1,062,972</td>
-<td align="right">12,210,231</td>
+<td align="right">12,210,249</td>
 <td align="right">735,601</td>
 <td align="right">1,211,641</td>
 </tr>
@@ -12351,4 +12351,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-29
+Stats gathered on: 2025-07-09

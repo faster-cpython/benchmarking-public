@@ -12805,12 +12805,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Allocations</td>
-<td align="right">18,645,722</td>
+<td align="right">18,645,656</td>
 <td align="right">47.3%</td>
 </tr>
 <tr>
 <td align="left">Allocations to 512 bytes</td>
-<td align="right">18,072,182</td>
+<td align="right">18,072,116</td>
 <td align="right">45.8%</td>
 </tr>
 <tr>
@@ -12825,7 +12825,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">19,666,148</td>
+<td align="right">19,665,981</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -12841,16 +12841,16 @@ other names.
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
 <td align="right">114,862,440</td>
-<td align="right">58.7%</td>
+<td align="right">58.8%</td>
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">28,196,461</td>
+<td align="right">28,156,903</td>
 <td align="right">16.7%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">46,375,712</td>
+<td align="right">46,336,082</td>
 <td align="right">23.7%</td>
 </tr>
 <tr>
@@ -12865,13 +12865,13 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">36,321,449</td>
-<td align="right">21.6%</td>
+<td align="right">36,281,933</td>
+<td align="right">21.5%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">27,529,084</td>
-<td align="right">14.1%</td>
+<td align="right">27,451,076</td>
+<td align="right">14.0%</td>
 </tr>
 <tr>
 <td align="left">Materialize dict (on request)</td>
@@ -12895,27 +12895,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">1,324,073</td>
+<td align="right">1,325,050</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">193,447</td>
+<td align="right">192,470</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">191,725</td>
+<td align="right">190,647</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">940,067</td>
+<td align="right">940,063</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">813</td>
+<td align="right">817</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -13849,4 +13849,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-29
+Stats gathered on: 2025-07-09

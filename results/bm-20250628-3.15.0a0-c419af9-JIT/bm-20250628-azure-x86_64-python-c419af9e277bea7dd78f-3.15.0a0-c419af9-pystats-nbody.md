@@ -6599,7 +6599,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">153</td>
+<td align="right">150</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -6619,12 +6619,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">623,805,446</td>
+<td align="right">623,805,444</td>
 <td align="right">99.1%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">1,273,008,559</td>
+<td align="right">1,273,008,554</td>
 <td align="right">99.5%</td>
 </tr>
 <tr>
@@ -6639,12 +6639,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">2,714</td>
+<td align="right">2,716</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">1,961</td>
+<td align="right">1,966</td>
 <td align="right">0.0%</td>
 </tr>
 <tr>
@@ -6679,7 +6679,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">100</td>
+<td align="right">103</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -7745,4 +7745,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-29
+Stats gathered on: 2025-07-09

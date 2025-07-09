@@ -10148,7 +10148,7 @@ other names.
 </tr>
 <tr>
 <td align="left">Frees</td>
-<td align="right">31,948,833</td>
+<td align="right">31,948,843</td>
 <td align="right"></td>
 </tr>
 <tr>
@@ -10159,7 +10159,7 @@ other names.
 <tr>
 <td align="left">Interpreter mortal increfs</td>
 <td align="right">134,390,373</td>
-<td align="right">36.7%</td>
+<td align="right">36.8%</td>
 </tr>
 <tr>
 <td align="left">Interpreter mortal decrefs</td>
@@ -10168,12 +10168,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Mortal increfs</td>
-<td align="right">89,447,396</td>
-<td align="right">24.5%</td>
+<td align="right">89,332,232</td>
+<td align="right">24.4%</td>
 </tr>
 <tr>
 <td align="left">Mortal decrefs</td>
-<td align="right">136,969,854</td>
+<td align="right">136,854,707</td>
 <td align="right">33.7%</td>
 </tr>
 <tr>
@@ -10188,12 +10188,12 @@ other names.
 </tr>
 <tr>
 <td align="left">Immortal increfs</td>
-<td align="right">116,487,689</td>
+<td align="right">116,449,329</td>
 <td align="right">31.9%</td>
 </tr>
 <tr>
 <td align="left">Immortal decrefs</td>
-<td align="right">119,782,723</td>
+<td align="right">119,744,346</td>
 <td align="right">29.5%</td>
 </tr>
 <tr>
@@ -10218,27 +10218,27 @@ other names.
 </tr>
 <tr>
 <td align="left">Method cache hits</td>
-<td align="right">17,088,703</td>
+<td align="right">17,127,062</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache misses</td>
-<td align="right">116,437</td>
+<td align="right">78,078</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache collisions</td>
-<td align="right">154,946</td>
+<td align="right">78,187</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder hits</td>
-<td align="right">7,334,368</td>
+<td align="right">7,372,771</td>
 <td align="right"></td>
 </tr>
 <tr>
 <td align="left">Method cache dunder misses</td>
-<td align="right">38,792</td>
+<td align="right">389</td>
 <td align="right"></td>
 </tr>
 </tbody>
@@ -10825,4 +10825,4 @@ A watched `globals()` dict has been modified
 </details>
 
 ---
-Stats gathered on: 2025-06-29
+Stats gathered on: 2025-07-09

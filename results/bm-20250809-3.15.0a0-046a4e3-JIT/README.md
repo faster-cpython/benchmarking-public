@@ -88,6 +88,7 @@
 
 - Geometric mean: 1.005x faster (HPT: reliability of 82.40%, 1.00x slower at 99th %ile)
 - Memory usage: 1.01x
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, bench_mp_pool, bench_thread_pool, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [🧠memory plot](bm-20250809-pythonperf2-x86_64-python-046a4e39b3f8ac5cb13e-3.15.0a0-046a4e3-vs-base-mem.svg)
 - [📄table](bm-20250809-pythonperf2-x86_64-python-046a4e39b3f8ac5cb13e-3.15.0a0-046a4e3-vs-base.md)
 - [📈time plot](bm-20250809-pythonperf2-x86_64-python-046a4e39b3f8ac5cb13e-3.15.0a0-046a4e3-vs-base.svg)
@@ -130,6 +131,7 @@
 
 - Geometric mean: 1.010x faster (HPT: reliability of 97.13%, 1.00x slower at 99th %ile)
 - Memory usage: unknown
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, bench_mp_pool, bench_thread_pool, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [📄table](bm-20250809-pythonperf1-amd64-python-046a4e39b3f8ac5cb13e-3.15.0a0-046a4e3-vs-base.md)
 - [📈time plot](bm-20250809-pythonperf1-amd64-python-046a4e39b3f8ac5cb13e-3.15.0a0-046a4e3-vs-base.svg)
 

@@ -42,6 +42,14 @@
 - [📄table](bm-20250822-arminc-aarch64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-dc660a2-vs-3.13.0.md)
 - [📈time plot](bm-20250822-arminc-aarch64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-dc660a2-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.007x faster (HPT: reliability of 99.92%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250822-arminc-aarch64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-dc660a2-vs-base-mem.svg)
+- [📄table](bm-20250822-arminc-aarch64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-dc660a2-vs-base.md)
+- [📈time plot](bm-20250822-arminc-aarch64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-dc660a2-vs-base.svg)
+
 ## linux x86_64 (pythonperf2)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/17163154481)

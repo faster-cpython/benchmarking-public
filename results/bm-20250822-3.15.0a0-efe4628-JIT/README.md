@@ -76,6 +76,14 @@
 - [📄table](bm-20250822-pythonperf2-x86_64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-efe4628-vs-3.13.0.md)
 - [📈time plot](bm-20250822-pythonperf2-x86_64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-efe4628-vs-3.13.0.svg)
 
+### vs. base
+
+- Geometric mean: 1.007x faster (HPT: reliability of 98.48%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
+- [🧠memory plot](bm-20250822-pythonperf2-x86_64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-efe4628-vs-base-mem.svg)
+- [📄table](bm-20250822-pythonperf2-x86_64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-efe4628-vs-base.md)
+- [📈time plot](bm-20250822-pythonperf2-x86_64-faster%252dcpython-tier_2_tos_caching-3.15.0a0-efe4628-vs-base.svg)
+
 ## windows amd64 (pythonperf1)
 
 - [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/17150126139)

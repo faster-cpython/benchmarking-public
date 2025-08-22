@@ -1095,5 +1095,6 @@
   "bm-20241007-3.13.0-60403a5/bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5.json,bm-20250821-3.15.0a0-a8d9d94-JIT/bm-20250821-pythonperf1-amd64-python-a8d9d947843200a09c15-3.15.0a0-a8d9d94.json,3.13.0": null,
   "bm-20241007-3.13.0-60403a5/bm-20241007-pythonperf2-x86_64-python-v3.13.0-3.13.0-60403a5.json,bm-20250821-3.15.0a0-a8d9d94-JIT/bm-20250821-pythonperf2-x86_64-python-a8d9d947843200a09c15-3.15.0a0-a8d9d94.json,3.13.0": 1.12,
   "bm-20241007-3.13.0-60403a5/bm-20241007-arminc-aarch64-python-v3.13.0-3.13.0-60403a5.json,bm-20250821-3.15.0a0-a8d9d94-JIT/bm-20250821-arminc-aarch64-python-a8d9d947843200a09c15-3.15.0a0-a8d9d94.json,3.13.0": 1.1,
-  "bm-20241007-3.13.0-60403a5/bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5.json,bm-20250822-3.15.0a0-f278afc-JIT/bm-20250822-pythonperf1-amd64-python-f278afcabf1a1c4162a0-3.15.0a0-f278afc.json,3.13.0": null
+  "bm-20241007-3.13.0-60403a5/bm-20241007-pythonperf1-amd64-python-v3.13.0-3.13.0-60403a5.json,bm-20250822-3.15.0a0-f278afc-JIT/bm-20250822-pythonperf1-amd64-python-f278afcabf1a1c4162a0-3.15.0a0-f278afc.json,3.13.0": null,
+  "bm-20241007-3.13.0-60403a5/bm-20241007-pythonperf2-x86_64-python-v3.13.0-3.13.0-60403a5.json,bm-20250822-3.15.0a0-f278afc-JIT/bm-20250822-pythonperf2-x86_64-python-f278afcabf1a1c4162a0-3.15.0a0-f278afc.json,3.13.0": 1.12
 }

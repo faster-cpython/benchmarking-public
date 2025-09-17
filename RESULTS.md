@@ -1368,6 +1368,7 @@ Each result column below is of the form:
 ## windows amd64 (pythonperf1_clang)
 | date | fork/ref | hash/flags | vs. 3.10.4: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
+| [2025-09-17](results/bm-20250917-3.15.0a0-81c975b-TAILCALL) | python/81c975bcfc1ac0533f94 | 81c975b (TAILCALL) |  |  |  |  |
 | [2025-09-13](results/bm-20250913-3.15.0a0-7168e98-TAILCALL) | python/7168e98c80d28ab71f39 | 7168e98 (TAILCALL) |  |  |  |  |
 | [2025-09-06](results/bm-20250906-3.15.0a0-c117b03-TAILCALL) | python/c117b033856ab7873972 | c117b03 (TAILCALL) |  |  |  |  |
 | [2025-08-30](results/bm-20250830-3.15.0a0-d3d94e0-TAILCALL) | python/d3d94e0ed715829d9bf9 | d3d94e0 (TAILCALL) |  |  |  |  |
